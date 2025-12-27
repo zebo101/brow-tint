@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "Video Cambia Acconciatura IA",
+    "description": "Crea video di trasformazione acconciature con IA. Vedi il tuo nuovo look in movimento."
+  },
+  "page": {
+    "title": "Video Cambia Acconciatura IA",
+    "description": "Crea video di trasformazione acconciature con IA. Vedi il tuo nuovo look in movimento."
+  },
+  "generator": {
+    "title": "Generatore Video Capelli",
+    "description": "Crea video animati di trasformazione acconciature con IA.",
+    "tabs": {
+      "text-to-video": "Descrivi Stile",
+      "image-to-video": "Foto a Video",
+      "video-to-video": "Trasforma Video"
+    },
+    "form": {
+      "provider": "Provider IA",
+      "model": "Modello Video",
+      "select_provider": "Seleziona Provider IA",
+      "select_model": "Seleziona Modello Video",
+      "prompt": "Descrizione Acconciatura",
+      "prompt_placeholder": "Descrivi la trasformazione dell'acconciatura: dal look attuale a quello desiderato, movimento, angoli",
+      "reference_image": "La Tua Foto",
+      "reference_image_placeholder": "Carica la tua foto per trasformazione video",
+      "reference_video": "URL Video di Riferimento",
+      "reference_video_placeholder": "Inserisci l'URL di un video acconciatura di riferimento",
+      "some_images_failed_to_upload": "Impossibile caricare immagine, elimina e ricarica",
+      "prompt_too_long": "La descrizione è troppo lunga, accorciala"
+    },
+    "generate": "Genera Video",
+    "checking_account": "Verifica account...",
+    "loading": "Caricamento...",
+    "generating": "Creazione del tuo video di trasformazione...",
+    "sign_in_to_generate": "Accedi per creare video",
+    "credits_cost": "Costa {credits} crediti",
+    "credits_remaining": "{credits} crediti rimanenti",
+    "buy_credits": "Acquista Crediti",
+    "progress": "Progresso",
+    "generated_videos": "Il Tuo Video di Trasformazione",
+    "ready_to_generate": "Pronto per Creare",
+    "ready_for_generating": "Pronto per Creazione",
+    "no_videos_generated": "Nessun video ancora creato"
+  }
+}
+
+

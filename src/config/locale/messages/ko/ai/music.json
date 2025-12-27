@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "AI 음악 생성기",
+    "description": "AI로 놀라운 음악을 생성하세요"
+  },
+  "page": {
+    "title": "AI 음악 생성기",
+    "description": "AI로 놀라운 음악을 생성하세요"
+  },
+  "generator": {
+    "title": "음악 생성기",
+    "prompt": "프롬프트",
+    "prompt_placeholder": "로미오와 줄리엣의 사랑 이야기",
+    "generate": "음악 생성",
+    "loading": "로딩 중...",
+    "generating": "생성 중...",
+    "sign_in_to_generate": "음악을 생성하려면 로그인",
+    "credits_cost": "{credits} 크레딧 소비",
+    "credits_remaining": "{credits} 크레딧 남음",
+    "buy_credits": "크레딧 구매",
+    "generation_progress": "생성 진행률",
+    "time_cost": "2-3분 정도 소요될 수 있습니다...",
+    "generated_song": "생성된 곡",
+    "ready_to_play": "재생 준비 완료",
+    "audio_generating": "오디오 생성 중...",
+    "generating_song": "곡 생성 중...",
+    "waiting_generation": "작품을 만드는 동안 기다려주세요",
+    "no_song_generated": "생성된 곡 없음",
+    "downloading": "다운로드 중...",
+    "download_success": "다운로드 완료",
+    "download_failed": "오디오 다운로드 실패",
+    "form": {
+      "custom_mode": "사용자 정의 모드",
+      "title": "제목",
+      "title_placeholder": "침묵의 소리",
+      "style": "음악 스타일",
+      "style_placeholder": "인디, 일렉트로닉, 신스, 120bpm, 디스토션",
+      "instrumental": "기악곡",
+      "prompt": "프롬프트",
+      "prompt_placeholder": "사랑에 관한 컨트리 포크 송",
+      "model": "모델",
+      "lyrics": "가사",
+      "lyrics_placeholder": "자신만의 가사를 작성하세요. 최상의 결과를 위해 두 절(8줄)을 권장합니다"
+    }
+  }
+}
+
+

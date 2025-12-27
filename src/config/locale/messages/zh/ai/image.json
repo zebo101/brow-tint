@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "AI 发型转换器 - 改变您的造型",
+    "description": "使用 AI 更换发型。上传照片，即刻尝试不同发型，由我们的 AI 发型转换器驱动。"
+  },
+  "page": {
+    "title": "AI 发型转换器",
+    "description": "使用 AI 更换发型。上传照片，即刻尝试不同发型。"
+  },
+  "generator": {
+    "title": "发型转换器",
+    "description": "上传照片，使用 AI 技术尝试不同发型。",
+    "tabs": {
+      "text-to-image": "风格描述",
+      "image-to-image": "照片上传"
+    },
+    "categories": {
+      "title": "选择发型",
+      "men": "男士发型",
+      "women": "女士发型",
+      "boys": "男童发型",
+      "girls": "女童发型"
+    },
+    "sidebar": {
+      "howtos": "使用教程",
+      "discover": "生成结果",
+      "tour_title": "功能引导",
+      "tour_description": "了解如何使用发型转换器",
+      "start_tour": "开始引导"
+    },
+    "form": {
+      "select_hairstyle_placeholder": "点击选择发型款式",
+      "provider": "AI 提供商",
+      "model": "发型模型",
+      "select_provider": "选择 AI 提供商",
+      "select_model": "选择发型模型",
+      "prompt": "发型描述",
+      "prompt_placeholder": "描述您想要的发型：长度、颜色、质地、风格（例如：短波波头、长卷金发、蓬松爆炸头）",
+      "reference_image": "您的照片",
+      "reference_image_placeholder": "上传您的照片以获得最佳效果",
+      "some_images_failed_to_upload": "部分图片上传失败，请删除后重新上传",
+      "prompt_too_long": "描述过长，请缩短"
+    },
+    "generate": "生成发型",
+    "checking_account": "正在检查账户...",
+    "loading": "加载中...",
+    "generating": "正在改变您的造型...",
+    "sign_in_to_generate": "登录以尝试新发型",
+    "credits_cost": "消耗 {credits} 积分",
+    "credits_remaining": "剩余 {credits} 积分",
+    "buy_credits": "购买积分",
+    "progress": "进度",
+    "generated_images": "您的新造型",
+    "preview_title": "AI发型预览",
+    "ready_to_generate": "准备转换",
+    "ready_for_generating": "准备转换中",
+    "no_images_generated": "暂无生成的AI发型",
+    "no_hairstyles": "暂无发型数据"
+  }
+}

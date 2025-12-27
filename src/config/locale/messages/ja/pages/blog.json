@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "title": "ブログ - AI Barber",
+    "description": "最新のヘアスタイルトレンド、AI機能、スタイリングのヒントをお読みください。"
+  },
+  "page": {
+    "title": "AI Barber ブログ",
+    "sections": {
+      "blog": {
+        "id": "blog",
+        "title": "ブログ",
+        "description": "最新のヘアスタイルトレンド、AI機能、スタイリングのヒントをお読みください。"
+      }
+    }
+  },
+  "messages": {
+    "all": "すべて",
+    "no_content": "コンテンツなし",
+    "crumb": "ブログ",
+    "toc": "目次"
+  }
+}
+
+

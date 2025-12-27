@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "Título",
+    "status": "Status",
+    "model": "Modelo",
+    "provider": "Provedor",
+    "created_at": "Criado Em",
+    "action": "Ação"
+  },
+  "list": {
+    "title": "Chats de IA",
+    "tabs": {
+      "all": "Todos",
+      "pending": "Pendentes",
+      "completed": "Concluídos",
+      "failed": "Falhados"
+    },
+    "buttons": {
+      "view": "Ver Chat",
+      "new": "Novo Chat"
+    },
+    "empty_message": "Nenhum chat encontrado"
+  }
+}
+
+

@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "发型转换 AI 视频",
+    "description": "使用 AI 创建发型转换视频。以动态方式展示您的新造型。"
+  },
+  "page": {
+    "title": "发型转换 AI 视频",
+    "description": "使用 AI 创建发型转换视频。以动态方式展示您的新造型。"
+  },
+  "generator": {
+    "title": "发型视频生成器",
+    "description": "使用 AI 创建动画发型转换视频。",
+    "tabs": {
+      "text-to-video": "描述风格",
+      "image-to-video": "照片转视频",
+      "video-to-video": "视频转换"
+    },
+    "form": {
+      "provider": "AI 提供商",
+      "model": "视频模型",
+      "select_provider": "选择 AI 提供商",
+      "select_model": "选择视频模型",
+      "prompt": "发型描述",
+      "prompt_placeholder": "描述发型转换：从当前造型到期望造型，动作，角度",
+      "reference_image": "您的照片",
+      "reference_image_placeholder": "上传照片进行视频转换",
+      "reference_video": "参考视频 URL",
+      "reference_video_placeholder": "输入参考发型视频的 URL",
+      "some_images_failed_to_upload": "图片上传失败，请删除后重新上传",
+      "prompt_too_long": "描述过长，请缩短"
+    },
+    "generate": "生成视频",
+    "checking_account": "正在检查账户...",
+    "loading": "加载中...",
+    "generating": "正在创建您的转换视频...",
+    "sign_in_to_generate": "登录以创建视频",
+    "credits_cost": "消耗 {credits} 积分",
+    "credits_remaining": "剩余 {credits} 积分",
+    "buy_credits": "购买积分",
+    "progress": "进度",
+    "generated_videos": "您的转换视频",
+    "ready_to_generate": "准备创建",
+    "ready_for_generating": "准备创建中",
+    "no_videos_generated": "尚未创建视频"
+  }
+}

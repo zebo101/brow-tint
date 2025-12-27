@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "title": "Blog - AI Barber",
+    "description": "Read latest hairstyle trends, AI features, and styling tips."
+  },
+  "page": {
+    "title": "AI Barber Blog",
+    "sections": {
+      "blog": {
+        "id": "blog",
+        "title": "Blog",
+        "description": "Read latest hairstyle trends, AI features, and styling tips."
+      }
+    }
+  },
+  "messages": {
+    "all": "All",
+    "no_content": "No Content",
+    "crumb": "Blog",
+    "toc": "Table of Contents"
+  }
+}

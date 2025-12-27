@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "AI Barber - Tu Estilista Personal de IA",
+    "description": "AI Barber es tu estilista virtual personal. Prueba innumerables peinados con IA antes de cortar. Transforma tu look al instante con nuestro Cambiador de Peinados IA.",
+    "keywords": "ai barbero, cambiador de peinados ia, peinado virtual, cambio de cabello ia, corte de pelo ia, generador de peinados"
+  },
+  "sign": {
+    "sign_in_title": "Iniciar sesión",
+    "sign_in_description": "Inicia sesión en tu cuenta",
+    "sign_up_title": "Registrarse",
+    "sign_up_description": "Crear una cuenta",
+    "email_title": "Correo electrónico",
+    "email_placeholder": "Ingresa tu correo electrónico",
+    "password_title": "Contraseña",
+    "password_placeholder": "Ingresa tu contraseña",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "or": "O",
+    "continue": "Continuar",
+    "no_account": "¿No tienes una cuenta?",
+    "already_have_account": "¿Ya tienes una cuenta?",
+    "email_sign_in": "Iniciar sesión con correo",
+    "google_sign_in_title": "Iniciar sesión con Google",
+    "github_sign_in_title": "Iniciar sesión con GitHub",
+    "close_title": "Cerrar",
+    "cancel_title": "Cancelar",
+    "sign_out_title": "Cerrar sesión",
+    "billing_title": "Facturación",
+    "name_title": "Nombre",
+    "name_placeholder": "Ingresa tu nombre",
+    "email_verification_hint": "Usa una dirección de correo a la que puedas acceder. Debes verificar tu correo después de registrarte.",
+    "admin_title": "Sistema de administración",
+    "credits_title": "Créditos: {credits}",
+    "verify_email_sent": "Correo de verificación enviado. Por favor revisa tu bandeja de entrada.",
+    "verify_email_required": "Por favor verifica tu dirección de correo antes de iniciar sesión.",
+    "resend_verification": "Reenviar correo de verificación",
+    "resend_verification_sent": "Correo de verificación reenviado. Por favor revisa tu bandeja de entrada.",
+    "verify_email_page_title": "Revisa tu correo",
+    "verify_email_page_description": "Para continuar, haz clic en el enlace enviado a",
+    "verify_email_continue": "Continuar",
+    "verify_email_tip": "Después de verificar, haz clic en el botón \"Continuar\".",
+    "verify_email_not_verified_yet": "Aún no verificado. Por favor haz clic primero en el enlace de tu correo.",
+    "verify_email_account_mismatch": "Sesión iniciada como {current}. Esta página está esperando {expected}.",
+    "resend_verification_countdown": "Reenviar correo de verificación ({seconds}s)",
+    "resend_verification_wait": "Por favor espera {seconds}s antes de reenviar.",
+    "back_to_sign_in": "Volver al inicio de sesión"
+  },
+  "payment": {
+    "choose_payment_method": "Elegir método de pago",
+    "choose_payment_method_description": "",
+    "cancel_title": "Cancelar"
+  },
+  "locale_detector": {
+    "title": "Detectamos que el idioma de tu navegador es {locale}. ¿Cambiar?",
+    "switch_to": "Cambiar a {locale}"
+  }
+}
+
+

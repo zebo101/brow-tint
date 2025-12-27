@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Cambiador de Peinados IA - Transforma tu Look",
+    "description": "Cambia tu peinado con IA. Sube tu foto y prueba diferentes peinados al instante con nuestro Cambiador de Peinados IA.",
+    "keywords": "cambiador de peinados ia, peinado virtual, corte de pelo ia, generador de peinados"
+  },
+  "page": {
+    "title": "Cambiador de Peinados IA",
+    "description": "Cambia tu peinado con IA. Sube tu foto y prueba diferentes peinados al instante."
+  },
+  "generator": {
+    "title": "Cambiador de Peinados",
+    "description": "Sube tu foto y prueba diferentes peinados con tecnología IA.",
+    "tabs": {
+      "text-to-image": "Descripción del Estilo",
+      "image-to-image": "Subir Foto"
+    },
+    "form": {
+      "provider": "Proveedor de IA",
+      "model": "Modelo de Peinado",
+      "select_provider": "Seleccionar Proveedor de IA",
+      "select_model": "Seleccionar Modelo de Peinado",
+      "prompt": "Descripción del Peinado",
+      "prompt_placeholder": "Describe tu peinado deseado: longitud, color, textura, estilo (ej: bob corto, cabello rubio largo ondulado, afro rizado)",
+      "reference_image": "Tu Foto",
+      "reference_image_placeholder": "Sube tu foto para mejores resultados",
+      "some_images_failed_to_upload": "Algunas imágenes no se pudieron subir, elimínalas y vuelve a subirlas",
+      "prompt_too_long": "La descripción es demasiado larga, por favor acórtala"
+    },
+    "generate": "Generar Peinado",
+    "checking_account": "Verificando cuenta...",
+    "loading": "Cargando...",
+    "generating": "Transformando tu look...",
+    "sign_in_to_generate": "Inicia sesión para probar nuevos peinados",
+    "credits_cost": "Cuesta {credits} créditos",
+    "credits_remaining": "{credits} créditos restantes",
+    "buy_credits": "Comprar Créditos",
+    "progress": "Progreso",
+    "generated_images": "Tu Nuevo Look",
+    "ready_to_generate": "Listo para Transformar",
+    "ready_for_generating": "Listo para Transformación",
+    "no_images_generated": "Aún no se han generado peinados"
+  }
+}
+
+

@@ -1,0 +1,123 @@
+{
+  "sidebar": {
+    "header": {
+      "brand": {
+        "title": "AI Barber チャット",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "AI Barber チャット"
+        },
+        "url": "/chat"
+      },
+      "show_trigger": false
+    },
+    "buttons": [
+      {
+        "title": "新しいチャット",
+        "icon": "Plus",
+        "url": "/chat",
+        "variant": "outline"
+      }
+    ],
+    "main_navs": [
+      {
+        "items": [
+          {
+            "title": "履歴",
+            "icon": "History",
+            "url": "/chat/history"
+          }
+        ]
+      }
+    ],
+    "bottom_nav": {
+      "items": []
+    },
+    "user": {
+      "nav": {
+        "items": [
+          {
+            "title": "プロフィール",
+            "url": "/settings/profile",
+            "icon": "User",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_email": false,
+      "show_signout": true,
+      "signout_callback": "/chat",
+      "signin_callback": "/chat"
+    },
+    "footer": {
+      "nav": {
+        "items": [
+          {
+            "title": "ホーム",
+            "url": "/",
+            "icon": "Home",
+            "target": "_blank"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/ai-barber",
+            "icon": "Github",
+            "target": "_blank"
+          },
+          {
+            "title": "Twitter",
+            "url": "https://x.com/ai_barber",
+            "icon": "RiTwitterXFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Discord",
+            "url": "https://discord.gg/ai-barber",
+            "icon": "RiDiscordFill",
+            "target": "_blank"
+          },
+          {
+            "title": "メール",
+            "url": "mailto:support@aibarber.net",
+            "icon": "Mail",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_theme": true,
+      "show_locale": false
+    },
+    "variant": "sidebar"
+  },
+  "library": {
+    "title": "ライブラリ",
+    "icon": "History",
+    "url": "/chat/history",
+    "more": "もっと見る",
+    "actions": {
+      "edit_title": "タイトルを編集",
+      "share": "共有",
+      "delete": "削除"
+    }
+  },
+  "generator": {
+    "title": "今日はどのヘアスタイルの質問をお手伝いできますか？",
+    "input_placeholder": "ヘアスタイル、トレンド、スタイリングのヒントについて聞いてください..."
+  },
+  "history": {
+    "title": "チャット履歴",
+    "description": "以前の会話を確認して再訪してください。",
+    "empty": "まだ会話がありません。",
+    "error": "会話の読み込みに失敗しました。",
+    "retry": "再試行",
+    "signin": "チャット履歴を表示するにはログインしてください。",
+    "summary": "{total}件中{from}-{to}件を表示",
+    "perPage": "ページあたり",
+    "prev": "前へ",
+    "next": "次へ",
+    "open": "チャットを開く",
+    "untitled": "タイトルなしの会話"
+  }
+}
+
+

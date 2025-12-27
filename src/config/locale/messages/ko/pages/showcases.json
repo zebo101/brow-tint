@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "작품 갤러리 - AI Barber",
+    "description": "AI Barber로 만든 놀라운 헤어스타일 변환 작품을 확인하세요"
+  },
+  "page": {
+    "title": "변환 작품 갤러리",
+    "sections": {
+      "showcases": {
+        "id": "showcases",
+        "title": "놀라운 헤어스타일 변환 작품",
+        "description": "사용자들이 AI Barber로 외모를 어떻게 변화시켰는지 확인하세요.",
+        "groups": [
+          {
+            "name": "all",
+            "title": "전체 스타일"
+          },
+          {
+            "name": "short-hair",
+            "title": "단발"
+          },
+          {
+            "name": "long-hair",
+            "title": "장발"
+          },
+          {
+            "name": "color-change",
+            "title": "염색"
+          },
+          {
+            "name": "men-styles",
+            "title": "남성 스타일"
+          },
+          {
+            "name": "women-styles",
+            "title": "여성 스타일"
+          },
+          {
+            "name": "trendy",
+            "title": "트렌디한 룩"
+          },
+          {
+            "name": "classic",
+            "title": "클래식 스타일"
+          }
+        ],
+        "items": [
+          {
+            "title": "픽시 컷 변환",
+            "description": "자신감 넘치는 대담한 단발 스타일",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/1.png",
+              "alt": "픽시 컷 변환"
+            },
+            "group": "short-hair"
+          },
+          {
+            "title": "비치 웨이브",
+            "description": "자연스러운 웨이브 장발 스타일",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/2.png",
+              "alt": "비치 웨이브"
+            },
+            "group": "long-hair"
+          },
+          {
+            "title": "플래티넘 블론드",
+            "description": "눈에 띄는 금발 색상 변환",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/3.png",
+              "alt": "플래티넘 블론드"
+            },
+            "group": "color-change"
+          },
+          {
+            "title": "모던 포마드",
+            "description": "현대적인 트위스트가 있는 클래식 남성 스타일",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/4.png",
+              "alt": "모던 포마드"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "레이어드 밥",
+            "description": "텍스처 레이어가 있는 트렌디한 밥 스타일",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/5.png",
+              "alt": "레이어드 밥"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "커튼 뱅",
+            "description": "인기 있는 커튼 뱅 헤어스타일",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/6.png",
+              "alt": "커튼 뱅"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "클래식 업스타일",
+            "description": "우아한 클래식 업스타일",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "클래식 업스타일"
+            },
+            "group": "classic"
+          },
+          {
+            "title": "페이드 헤어컷",
+            "description": "현대적인 스타일링의 깔끔한 페이드",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "페이드 헤어컷"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "발레이지 하이라이트",
+            "description": "아름다운 발레이지 색상 기법",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/9.png",
+              "alt": "발레이지 하이라이트"
+            },
+            "group": "color-change"
+          }
+        ]
+      }
+    }
+  }
+}
+
+

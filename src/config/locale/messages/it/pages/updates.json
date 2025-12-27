@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "title": "Aggiornamenti - AI Barber",
+    "description": "Visualizza le ultime funzionalità di AI Barber, aggiunte di acconciature e miglioramenti."
+  },
+  "page": {
+    "sections": {
+      "updates": {
+        "id": "updates",
+        "title": "Novità",
+        "description": "Ultime funzionalità, aggiunte di acconciature e miglioramenti a AI Barber."
+      }
+    }
+  }
+}
+
+

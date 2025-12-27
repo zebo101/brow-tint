@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "Frisuren-Wechsler KI-Video",
+    "description": "Erstellen Sie Frisuren-Transformationsvideos mit KI. Sehen Sie Ihren neuen Look in Bewegung."
+  },
+  "page": {
+    "title": "Frisuren-Wechsler KI-Video",
+    "description": "Erstellen Sie Frisuren-Transformationsvideos mit KI. Sehen Sie Ihren neuen Look in Bewegung."
+  },
+  "generator": {
+    "title": "Haar-Video-Generator",
+    "description": "Erstellen Sie animierte Frisuren-Transformationsvideos mit KI.",
+    "tabs": {
+      "text-to-video": "Stil beschreiben",
+      "image-to-video": "Foto zu Video",
+      "video-to-video": "Video transformieren"
+    },
+    "form": {
+      "provider": "KI-Anbieter",
+      "model": "Video-Modell",
+      "select_provider": "KI-Anbieter auswählen",
+      "select_model": "Video-Modell auswählen",
+      "prompt": "Frisuren-Beschreibung",
+      "prompt_placeholder": "Beschreiben Sie die Frisuren-Transformation: vom aktuellen zum gewünschten Look, Bewegung, Winkel",
+      "reference_image": "Ihr Foto",
+      "reference_image_placeholder": "Laden Sie Ihr Foto für die Video-Transformation hoch",
+      "reference_video": "Referenz-Video-URL",
+      "reference_video_placeholder": "Geben Sie die URL eines Referenz-Frisuren-Videos ein",
+      "some_images_failed_to_upload": "Bild konnte nicht hochgeladen werden, bitte löschen und erneut hochladen",
+      "prompt_too_long": "Beschreibung ist zu lang, bitte kürzen"
+    },
+    "generate": "Video generieren",
+    "checking_account": "Konto wird überprüft...",
+    "loading": "Laden...",
+    "generating": "Ihr Transformationsvideo wird erstellt...",
+    "sign_in_to_generate": "Anmelden, um Videos zu erstellen",
+    "credits_cost": "Kostet {credits} Credits",
+    "credits_remaining": "{credits} Credits verbleibend",
+    "buy_credits": "Credits kaufen",
+    "progress": "Fortschritt",
+    "generated_videos": "Ihr Transformationsvideo",
+    "ready_to_generate": "Bereit zum Erstellen",
+    "ready_for_generating": "Bereit für Erstellung",
+    "no_videos_generated": "Noch keine Videos erstellt"
+  }
+}
+
+

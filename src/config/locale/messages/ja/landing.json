@@ -1,0 +1,189 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "AI Barber",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Barber",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "機能",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "事例",
+          "url": "/showcases",
+          "icon": "BookOpenText"
+        },
+        {
+          "title": "料金",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "AI",
+          "icon": "RiRobot2Line",
+          "children": [
+            {
+              "title": "AIヘアスタイルチェンジャー",
+              "description": "AIでヘアスタイルを変更",
+              "url": "/ai-hairstyle-changer",
+              "icon": "RiImage2Line"
+            },
+            {
+              "title": "ヘアチェンジャービデオ",
+              "description": "様々なヘアスタイルを即座に試す",
+              "url": "/hair-changer-ai",
+              "icon": "RiScissors2Line"
+            },
+            {
+              "title": "AIバーバーチャット",
+              "description": "理容師とチャット",
+              "url": "/chat",
+              "icon": "RiRobot2Line"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "お支払い",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "アクティビティ",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "AI Barber",
+      "description": "AI Barberはあなた専属のバーチャルヘアスタイリストです。AIの力で完璧なルックスを発見しましょう。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Barber",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "製品",
+          "children": [
+            {
+              "title": "機能",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "料金",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "リソース",
+          "children": [
+            {
+              "title": "ドキュメント",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "ブログ",
+              "url": "/blog",
+              "target": "_self"
+            },
+            {
+              "title": "ヘルプセンター",
+              "url": "/help",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "法的情報",
+          "children": [
+            {
+              "title": "プライバシーポリシー",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "利用規約",
+              "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/ai_barber",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "Github",
+          "url": "https://github.com/ai-barber",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/ai-barber",
+          "target": "_blank"
+        },
+        {
+          "title": "メール",
+          "icon": "Mail",
+          "url": "mailto:support@aibarber.net",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "プライバシーポリシー",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "利用規約",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

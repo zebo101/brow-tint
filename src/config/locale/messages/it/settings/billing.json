@@ -1,0 +1,61 @@
+{
+  "fields": {
+    "subscription_no": "Numero Abbonamento",
+    "interval": "Intervallo",
+    "provider": "Provider",
+    "current_period": "Periodo Corrente",
+    "plan": "Piano",
+    "status": "Stato",
+    "amount": "Importo",
+    "created_at": "Creato Il",
+    "end_time": "Ora di Fine",
+    "action": "Azione"
+  },
+  "view": {
+    "title": "Piano Attuale",
+    "tip": "Il tuo abbonamento si rinnoverà automaticamente il {date}",
+    "end_tip": "Il tuo abbonamento verrà annullato automaticamente il {date}",
+    "no_subscription": "Nessun piano",
+    "buttons": {
+      "adjust": "Modifica Piano",
+      "subscribe": "Abbonati",
+      "manage": "Gestisci Abbonamento",
+      "cancel": "Annulla Abbonamento"
+    }
+  },
+  "list": {
+    "title": "Cronologia Abbonamenti",
+    "tabs": {
+      "all": "Tutti",
+      "active": "Attivi",
+      "pending_cancel": "Annullamento in Attesa",
+      "canceled": "Annullati",
+      "trialing": "In Prova",
+      "paused": "In Pausa",
+      "expired": "Scaduti"
+    }
+  },
+  "cancel": {
+    "title": "Annulla Abbonamento",
+    "description": "Sei sicuro di voler annullare il tuo abbonamento?",
+    "fields": {
+      "subscription_no": "Numero Abbonamento",
+      "subscription_amount": "Importo Abbonamento",
+      "interval_cycle": "Ciclo Intervallo",
+      "subscription_created_at": "Abbonamento Creato Il",
+      "current_period": "Periodo Corrente",
+      "start_at": "Inizio Il",
+      "end_at": "Fine Il"
+    },
+    "crumbs": {
+      "settings": "Impostazioni",
+      "billing": "Fatturazione",
+      "cancel": "Annulla Abbonamento"
+    },
+    "buttons": {
+      "confirm_cancel": "Conferma Annullamento"
+    }
+  }
+}
+
+

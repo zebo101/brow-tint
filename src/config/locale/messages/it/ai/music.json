@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "Generatore di Musica IA",
+    "description": "Genera musica incredibile con IA"
+  },
+  "page": {
+    "title": "Generatore di Musica IA",
+    "description": "Genera musica incredibile con IA"
+  },
+  "generator": {
+    "title": "Generatore di Musica",
+    "prompt": "Prompt",
+    "prompt_placeholder": "Una storia d'amore di Romeo e Giulietta",
+    "generate": "Genera Musica",
+    "loading": "Caricamento...",
+    "generating": "Generando...",
+    "sign_in_to_generate": "Accedi per generare musica",
+    "credits_cost": "Costa {credits} crediti",
+    "credits_remaining": "{credits} crediti rimanenti",
+    "buy_credits": "Acquista Crediti",
+    "generation_progress": "Progresso Generazione",
+    "time_cost": "Questo può richiedere fino a 2-3 minuti...",
+    "generated_song": "Canzone Generata",
+    "ready_to_play": "Pronta per la Riproduzione",
+    "audio_generating": "Generando Audio...",
+    "generating_song": "Generando Canzone...",
+    "waiting_generation": "Attendere mentre creiamo il tuo capolavoro",
+    "no_song_generated": "Nessuna Canzone Generata",
+    "downloading": "Download...",
+    "download_success": "Download completato con successo",
+    "download_failed": "Errore nel download dell'audio",
+    "form": {
+      "custom_mode": "Modalità Personalizzata",
+      "title": "Titolo",
+      "title_placeholder": "Il Suono del Silenzio",
+      "style": "Stile Musicale",
+      "style_placeholder": "indie, elettronica, sintetizzatori, 120bpm, distorto",
+      "instrumental": "Strumentale",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Una canzone folk country sull'amore",
+      "model": "Modello",
+      "lyrics": "Testi",
+      "lyrics_placeholder": "Scrivi i tuoi testi, due strofe (8 righe) per il miglior risultato"
+    }
+  }
+}
+
+

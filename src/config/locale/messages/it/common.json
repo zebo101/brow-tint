@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "AI Barber - Il Tuo Parrucchiere Personale AI",
+    "description": "AI Barber è il tuo parrucchiere virtuale personale. Prova innumerevoli acconciature con l'IA prima di tagliare. Trasforma il tuo look istantaneamente con il nostro AI Hairstyle Changer.",
+    "keywords": "ai barbiere, cambia acconciatura ia, acconciatura virtuale, cambio capelli ia, taglio capelli ia, generatore acconciature"
+  },
+  "sign": {
+    "sign_in_title": "Accedi",
+    "sign_in_description": "Accedi al tuo account",
+    "sign_up_title": "Registrati",
+    "sign_up_description": "Crea un account",
+    "email_title": "Email",
+    "email_placeholder": "Inserisci la tua email",
+    "password_title": "Password",
+    "password_placeholder": "Inserisci la tua password",
+    "forgot_password": "Password dimenticata?",
+    "or": "Oppure",
+    "continue": "Continua",
+    "no_account": "Non hai un account?",
+    "already_have_account": "Hai già un account?",
+    "email_sign_in": "Accedi con email",
+    "google_sign_in_title": "Accedi con Google",
+    "github_sign_in_title": "Accedi con GitHub",
+    "close_title": "Chiudi",
+    "cancel_title": "Annulla",
+    "sign_out_title": "Esci",
+    "billing_title": "Fatturazione",
+    "name_title": "Nome",
+    "name_placeholder": "Inserisci il tuo nome",
+    "email_verification_hint": "Usa un indirizzo email a cui puoi accedere. Devi verificare la tua email dopo la registrazione.",
+    "admin_title": "Sistema di amministrazione",
+    "credits_title": "Crediti: {credits}",
+    "verify_email_sent": "Email di verifica inviata. Controlla la tua casella di posta.",
+    "verify_email_required": "Verifica il tuo indirizzo email prima di accedere.",
+    "resend_verification": "Reinvia email di verifica",
+    "resend_verification_sent": "Email di verifica reinviata. Controlla la tua casella di posta.",
+    "verify_email_page_title": "Controlla la tua email",
+    "verify_email_page_description": "Per continuare, clicca sul link inviato a",
+    "verify_email_continue": "Continua",
+    "verify_email_tip": "Dopo la verifica, clicca sul pulsante \"Continua\".",
+    "verify_email_not_verified_yet": "Non ancora verificato. Clicca prima sul link nella tua email.",
+    "verify_email_account_mismatch": "Connesso come {current}. Questa pagina sta aspettando {expected}.",
+    "resend_verification_countdown": "Reinvia email di verifica ({seconds}s)",
+    "resend_verification_wait": "Attendi {seconds}s prima di reinviare.",
+    "back_to_sign_in": "Torna all'accesso"
+  },
+  "payment": {
+    "choose_payment_method": "Scegli il metodo di pagamento",
+    "choose_payment_method_description": "",
+    "cancel_title": "Annulla"
+  },
+  "locale_detector": {
+    "title": "Abbiamo rilevato che la lingua del tuo browser è {locale}. Cambiare?",
+    "switch_to": "Passa a {locale}"
+  }
+}
+
+

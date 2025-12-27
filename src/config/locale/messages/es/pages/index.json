@@ -1,0 +1,426 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "logos",
+      "introduce",
+      "benefits",
+      "usage",
+      "features",
+      "stats",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Tu Estilista Personal de IA",
+        "highlight_text": "AI Barber",
+        "description": "Abraza el futuro del peinado con AI Barber. Sube tu foto, resalta tu cabello y presencia una transformación impresionante usando nuestro Cambiador de Peinados IA.",
+        "tip": "🎁 Prueba el mejor Cambiador de Corte de Pelo IA ahora",
+        "buttons": [
+          {
+            "title": "Probar gratis",
+            "icon": "Zap",
+            "url": "/ai-hairstyle-changer",
+            "target": "_self",
+            "variant": "default"
+          },
+          {
+            "title": "Ver ejemplos",
+            "icon": "BookOpenText",
+            "url": "/subscribe",
+            "target": "_blank",
+            "variant": "outline"
+          }
+        ],
+        "show_avatars": true,
+        "avatars_tip": "999+ usuarios están usando AI Barber",
+        "show_award": false,
+        "image": {
+          "src": "/imgs/features/admin.png",
+          "alt": "AI Barber Hero",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/admin-dark.png",
+          "alt": "AI Barber Hero",
+          "width": 1200,
+          "height": 800
+        },
+        "carousel_images": [
+          {
+            "light": "/imgs/features/admin.png",
+            "dark": "/imgs/features/admin-dark.png",
+            "alt": "Interfaz Principal de AI Barber"
+          },
+          {
+            "light": "/imgs/features/admin-settings.png",
+            "dark": "/imgs/features/admin-settings.png",
+            "alt": "Configuración de AI Barber"
+          },
+          {
+            "light": "/imgs/features/landing-page.png",
+            "dark": "/imgs/features/landing-page.png",
+            "alt": "Página de Inicio de AI Barber"
+          },
+          {
+            "light": "/imgs/features/music.png",
+            "dark": "/imgs/features/music-dark.png",
+            "alt": "Generador de Música AI"
+          },
+          {
+            "light": "/imgs/features/user-billing.png",
+            "dark": "/imgs/features/user-billing.png",
+            "alt": "Panel de Facturación de Usuario"
+          }
+        ],
+        "background_image": {
+          "src": "/imgs/bg/hero.png",
+          "alt": "AI Barber Fondo"
+        }
+      },
+      "logos": {
+        "id": "logos",
+        "title": "Impulsado por Tecnología IA Avanzada",
+        "items": [
+          {
+            "title": "Next.js",
+            "image": {
+              "src": "/imgs/logos/nextjs.svg",
+              "alt": "Next.js"
+            }
+          },
+          {
+            "title": "React",
+            "image": {
+              "src": "/imgs/logos/react.svg",
+              "alt": "React"
+            }
+          },
+          {
+            "title": "TailwindCSS",
+            "image": {
+              "src": "/imgs/logos/tailwindcss.svg",
+              "alt": "TailwindCSS"
+            }
+          },
+          {
+            "title": "Shadcn/UI",
+            "image": {
+              "src": "/imgs/logos/shadcn.svg",
+              "alt": "Shadcn/UI"
+            }
+          },
+          {
+            "title": "Vercel",
+            "image": {
+              "src": "/imgs/logos/vercel.svg",
+              "alt": "Vercel"
+            }
+          }
+        ]
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "¿Qué es AI Barber?",
+        "label": "Introducción",
+        "description": "AI Barber es una herramienta virtual de peinados que usa IA avanzada para ayudarte a encontrar tu look perfecto.",
+        "image": {
+          "src": "/imgs/features/landing-page.png",
+          "alt": "Introducción AI Barber"
+        },
+        "items": [
+          {
+            "title": "Peinado Virtual",
+            "description": "Prueba innumerables peinados virtuales sin tocar unas tijeras.",
+            "icon": "RiMagicLine",
+            "image": {
+              "src": "/imgs/features/1.png",
+              "alt": "Peinado Virtual"
+            }
+          },
+          {
+            "title": "Resultados Realistas",
+            "description": "Nuestro Cambiador de Corte de Pelo IA genera resultados altamente realistas que parecen reales.",
+            "icon": "RiCameraLensLine",
+            "image": {
+              "src": "/imgs/features/2.png",
+              "alt": "Resultados Realistas"
+            }
+          },
+          {
+            "title": "Generador de Imágenes IA",
+            "description": "Usa nuestro generador de imágenes IA avanzado para crear conceptos únicos de peinados.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "/imgs/features/3.png",
+              "alt": "Generador de Imágenes IA"
+            }
+          },
+          {
+            "title": "Transferencia de Estilo",
+            "description": "Transfiere estilos de celebridades o modelos directamente a tu foto.",
+            "icon": "RiExchangeLine",
+            "image": {
+              "src": "/imgs/features/4.png",
+              "alt": "Transferencia de Estilo"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Por Qué Elegir AI Barber",
+        "label": "Beneficios",
+        "description": "Explora infinitas posibilidades con nuestra herramienta AI Barber segura y fácil de usar.",
+        "items": [
+          {
+            "title": "Súper Rápido",
+            "description": "Transforma tu cabello en un abrir y cerrar de ojos. Sin esperar días por resultados.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/user-billing.png",
+              "alt": "Procesamiento Rápido"
+            }
+          },
+          {
+            "title": "Seguro y Privado",
+            "description": "Tus fotos son tu negocio. Las mantenemos seguras y nunca las compartimos.",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/admin-settings.png",
+              "alt": "Seguro"
+            }
+          },
+          {
+            "title": "Súper Fácil de Usar",
+            "description": "Libera el estilista que llevas dentro con solo unos clics. No se requieren habilidades técnicas.",
+            "icon": "RiUserSmileLine",
+            "image": {
+              "src": "/imgs/features/landing-page.png",
+              "alt": "Fácil de Usar"
+            }
+          }
+        ]
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "Cómo Usar AI Barber",
+        "description": "Obtén tu nuevo look en tres simples pasos:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "uso"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Subir Foto",
+            "description": "Sube una foto clara de ti mismo a la plataforma AI Barber.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Subir"
+            }
+          },
+          {
+            "title": "Seleccionar Área",
+            "description": "Resalta el área del cabello que quieres cambiar.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Seleccionar"
+            }
+          },
+          {
+            "title": "Generar",
+            "description": "Elige tu estilo deseado y deja que el Cambiador de Peinados IA haga la magia.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Generar"
+            }
+          },
+          {
+            "title": "Descargar",
+            "description": "Guarda tu nuevo peinado virtual y compártelo con amigos.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Descargar"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Características Clave de AI Barber",
+        "description": "Todo lo que necesitas para un cambio de imagen virtual.",
+        "items": [
+          {
+            "title": "Cambiador de Corte de Pelo IA",
+            "description": "Experimenta con diferentes longitudes y estilos de corte al instante.",
+            "icon": "RiScissorsCutLine"
+          },
+          {
+            "title": "Peinado Virtual",
+            "description": "Visualiza cómo se ven diferentes peinados en ti antes de cortar.",
+            "icon": "RiWomenLine"
+          },
+          {
+            "title": "Experimentación de Color",
+            "description": "Prueba nuevos colores de cabello sin el daño químico.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "Alta Resolución",
+            "description": "Descarga imágenes de alta calidad de tus transformaciones.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "Comparación de Estilos",
+            "description": "Compara looks antes y después lado a lado.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Compatible con Móviles",
+            "description": "Usa AI Barber en cualquier dispositivo, en cualquier lugar.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "stats": {
+        "id": "stats",
+        "title": "La Gente Ama AI Barber",
+        "description": "Únete a miles de usuarios satisfechos transformando sus looks.",
+        "items": [
+          {
+            "title": "50,000+",
+            "description": "Transformaciones"
+          },
+          {
+            "title": "10,000+",
+            "description": "Usuarios Felices"
+          },
+          {
+            "title": "500+",
+            "description": "Estilos"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "Lo Que Dicen los Usuarios Sobre AI Barber",
+        "description": "Escucha a usuarios que encontraron su estilo perfecto.",
+        "items": [
+          {
+            "name": "Sarah Jenkins",
+            "role": "Bloguera de Moda",
+            "quote": "AI Barber me ayudó a decidir sobre un corte bob antes de hacerlo realmente. ¡Me salvó de un gran error!",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "sarah"
+            }
+          },
+          {
+            "name": "Mike Ross",
+            "role": "Modelo",
+            "quote": "Uso AI Barber para probar diferentes looks para sesiones de fotos. Es increíblemente realista.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "mike"
+            }
+          },
+          {
+            "name": "Emily Chen",
+            "role": "Estudiante",
+            "quote": "Divertido y fácil de usar. Me encantó probar colores locos con el Cambiador de Peinados IA.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "emily"
+            }
+          },
+          {
+            "name": "David Smith",
+            "role": "Actor",
+            "quote": "Excelente para visualizar looks de personajes. El detalle es asombroso.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "david"
+            }
+          },
+          {
+            "name": "Jessica Lee",
+            "role": "Estilista",
+            "quote": "Recomiendo esto a mis clientes para que puedan mostrarme exactamente lo que quieren.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "jessica"
+            }
+          },
+          {
+            "name": "Tom Brown",
+            "role": "Usuario",
+            "quote": "La mejor aplicación de peinados virtuales que he usado. ¡Muy recomendada!",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "tom"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Preguntas Frecuentes",
+        "description": "¿Tienes preguntas sobre AI Barber? Tenemos respuestas.",
+        "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
+        "items": [
+          {
+            "question": "¿Qué es AI Barber y cómo funciona?",
+            "answer": "AI Barber es una herramienta impulsada por IA que te permite probar virtualmente diferentes peinados. Simplemente sube tu foto, selecciona tu cabello y elige un estilo para generar un nuevo look."
+          },
+          {
+            "question": "¿Qué tan precisa es la transformación del peinado?",
+            "answer": "Nuestros algoritmos de IA avanzados están diseñados para producir transformaciones altamente realistas y precisas, teniendo en cuenta la forma de tu cara y la textura de tu cabello."
+          },
+          {
+            "question": "¿Puedo usar AI Barber para cualquier tipo o longitud de cabello?",
+            "answer": "Sí, AI Barber funciona con varios tipos y longitudes de cabello. Sin embargo, para mejores resultados, usa una foto clara con buena iluminación."
+          },
+          {
+            "question": "¿Hay algún costo?",
+            "answer": "Ofrecemos planes gratuitos y premium. El plan gratuito te permite probar funciones básicas, mientras que el plan premium desbloquea descargas de alta resolución y más estilos."
+          },
+          {
+            "question": "¿Mis datos están seguros?",
+            "answer": "Sí, nos tomamos en serio tu privacidad. Tus fotos se procesan de forma segura y no se comparten con terceros."
+          },
+          {
+            "question": "¿Puedo guardar o compartir los peinados generados?",
+            "answer": "¡Absolutamente! Puedes descargar tus transformaciones y compartirlas en redes sociales directamente desde la plataforma."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "¿Listo para un nuevo look?",
+        "description": "Comienza tu transformación de corte de pelo IA hoy.",
+        "buttons": [
+          {
+            "title": "Comenzar Ahora",
+            "url": "/ai-hairstyle-changer",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}
+

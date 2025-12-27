@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "헤어스타일 체인저 AI 비디오",
+    "description": "AI로 헤어스타일 변환 비디오를 만드세요. 동작으로 새 외모를 확인하세요."
+  },
+  "page": {
+    "title": "헤어스타일 체인저 AI 비디오",
+    "description": "AI로 헤어스타일 변환 비디오를 만드세요. 동작으로 새 외모를 확인하세요."
+  },
+  "generator": {
+    "title": "헤어 비디오 생성기",
+    "description": "AI로 애니메이션 헤어스타일 변환 비디오를 만드세요.",
+    "tabs": {
+      "text-to-video": "스타일 설명",
+      "image-to-video": "사진을 비디오로",
+      "video-to-video": "비디오 변환"
+    },
+    "form": {
+      "provider": "AI 제공업체",
+      "model": "비디오 모델",
+      "select_provider": "AI 제공업체 선택",
+      "select_model": "비디오 모델 선택",
+      "prompt": "헤어스타일 설명",
+      "prompt_placeholder": "헤어스타일 변환 설명: 현재에서 원하는 룩으로, 움직임, 각도",
+      "reference_image": "내 사진",
+      "reference_image_placeholder": "비디오 변환을 위해 사진 업로드",
+      "reference_video": "참조 비디오 URL",
+      "reference_video_placeholder": "참조 헤어스타일 비디오의 URL 입력",
+      "some_images_failed_to_upload": "이미지 업로드 실패, 삭제 후 다시 업로드하세요",
+      "prompt_too_long": "설명이 너무 깁니다. 짧게 해주세요"
+    },
+    "generate": "비디오 생성",
+    "checking_account": "계정 확인 중...",
+    "loading": "로딩 중...",
+    "generating": "변환 비디오 생성 중...",
+    "sign_in_to_generate": "비디오를 만들려면 로그인",
+    "credits_cost": "{credits} 크레딧 소비",
+    "credits_remaining": "남은 크레딧 {credits}",
+    "buy_credits": "크레딧 구매",
+    "progress": "진행률",
+    "generated_videos": "변환 비디오",
+    "ready_to_generate": "생성 준비 완료",
+    "ready_for_generating": "생성 준비 중",
+    "no_videos_generated": "아직 생성된 비디오 없음"
+  }
+}
+
+

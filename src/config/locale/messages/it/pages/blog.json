@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "title": "Blog - AI Barber",
+    "description": "Leggi le ultime tendenze di acconciature, funzionalità IA e consigli di styling."
+  },
+  "page": {
+    "title": "Blog AI Barber",
+    "sections": {
+      "blog": {
+        "id": "blog",
+        "title": "Blog",
+        "description": "Leggi le ultime tendenze di acconciature, funzionalità IA e consigli di styling."
+      }
+    }
+  },
+  "messages": {
+    "all": "Tutti",
+    "no_content": "Nessun Contenuto",
+    "crumb": "Blog",
+    "toc": "Indice"
+  }
+}
+
+

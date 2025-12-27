@@ -1,0 +1,121 @@
+{
+  "sidebar": {
+    "header": {
+      "brand": {
+        "title": "AI Barber 顾问",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "AI Barber 顾问"
+        },
+        "url": "/chat"
+      },
+      "show_trigger": false
+    },
+    "buttons": [
+      {
+        "title": "新对话",
+        "icon": "Plus",
+        "url": "/chat",
+        "variant": "outline"
+      }
+    ],
+    "main_navs": [
+      {
+        "items": [
+          {
+            "title": "历史记录",
+            "icon": "History",
+            "url": "/chat/history"
+          }
+        ]
+      }
+    ],
+    "bottom_nav": {
+      "items": []
+    },
+    "user": {
+      "nav": {
+        "items": [
+          {
+            "title": "个人资料",
+            "url": "/settings/profile",
+            "icon": "User",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_email": false,
+      "show_signout": true,
+      "signout_callback": "/chat",
+      "signin_callback": "/chat"
+    },
+    "footer": {
+      "nav": {
+        "items": [
+          {
+            "title": "首页",
+            "url": "/",
+            "icon": "Home",
+            "target": "_blank"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/ai-barber",
+            "icon": "Github",
+            "target": "_blank"
+          },
+          {
+            "title": "Twitter",
+            "url": "https://x.com/ai_barber",
+            "icon": "RiTwitterXFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Discord",
+            "url": "https://discord.gg/ai-barber",
+            "icon": "RiDiscordFill",
+            "target": "_blank"
+          },
+          {
+            "title": "邮箱",
+            "url": "mailto:support@aibarber.net",
+            "icon": "Mail",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_theme": true,
+      "show_locale": false
+    },
+    "variant": "sidebar"
+  },
+  "library": {
+    "title": "聊天库",
+    "icon": "History",
+    "url": "/chat/history",
+    "more": "更多",
+    "actions": {
+      "edit_title": "编辑标题",
+      "share": "分享",
+      "delete": "删除"
+    }
+  },
+  "generator": {
+    "title": "有什么发型问题我可以帮您？",
+    "input_placeholder": "询问我关于发型、流行趋势或造型技巧..."
+  },
+  "history": {
+    "title": "聊天历史",
+    "description": "查看和重访您之前的对话。",
+    "empty": "还没有对话记录。",
+    "error": "加载对话失败。",
+    "retry": "重试",
+    "signin": "登录查看您的聊天历史。",
+    "summary": "显示 {from}-{to}，共 {total} 条",
+    "perPage": "每页",
+    "prev": "上一页",
+    "next": "下一页",
+    "open": "打开聊天",
+    "untitled": "无标题对话"
+  }
+}

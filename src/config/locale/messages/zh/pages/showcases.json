@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "title": "作品展示 - AI Barber",
+    "description": "查看使用 AI Barber 创建的精彩发型转换效果"
+  },
+  "page": {
+    "title": "转换作品展示",
+    "sections": {
+      "showcases": {
+        "id": "showcases",
+        "title": "精彩发型转换展示",
+        "description": "看看我们的用户如何使用 AI Barber 改变造型。",
+        "groups": [
+          {
+            "name": "all",
+            "title": "全部风格"
+          },
+          {
+            "name": "short-hair",
+            "title": "短发"
+          },
+          {
+            "name": "long-hair",
+            "title": "长发"
+          },
+          {
+            "name": "color-change",
+            "title": "染发"
+          },
+          {
+            "name": "men-styles",
+            "title": "男士风格"
+          },
+          {
+            "name": "women-styles",
+            "title": "女士风格"
+          },
+          {
+            "name": "trendy",
+            "title": "潮流造型"
+          },
+          {
+            "name": "classic",
+            "title": "经典风格"
+          }
+        ],
+        "items": [
+          {
+            "title": "精灵短发转换",
+            "description": "大胆自信的短发造型",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/1.png",
+              "alt": "精灵短发转换"
+            },
+            "group": "short-hair"
+          },
+          {
+            "title": "海滩波浪卷",
+            "description": "自然波浪长发风格",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/2.png",
+              "alt": "海滩波浪卷"
+            },
+            "group": "long-hair"
+          },
+          {
+            "title": "铂金色",
+            "description": "惊艳的金色发色转换",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/3.png",
+              "alt": "铂金色"
+            },
+            "group": "color-change"
+          },
+          {
+            "title": "现代飞机头",
+            "description": "经典男士风格的现代演绎",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/4.png",
+              "alt": "现代飞机头"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "层次波波头",
+            "description": "时尚层次感波波头",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/5.png",
+              "alt": "层次波波头"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "八字刘海",
+            "description": "流行的八字刘海发型",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/6.png",
+              "alt": "八字刘海"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "经典盘发",
+            "description": "优雅的经典盘发风格",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "经典盘发"
+            },
+            "group": "classic"
+          },
+          {
+            "title": "渐变发型",
+            "description": "干净的渐变现代造型",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "渐变发型"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "挑染",
+            "description": "美丽的挑染发色技术",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/9.png",
+              "alt": "挑染"
+            },
+            "group": "color-change"
+          }
+        ]
+      }
+    }
+  }
+}

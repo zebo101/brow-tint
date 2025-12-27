@@ -1,0 +1,426 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "logos",
+      "introduce",
+      "benefits",
+      "usage",
+      "features",
+      "stats",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "당신만의 AI 헤어 스타일리스트",
+        "highlight_text": "AI Barber",
+        "description": "AI Barber와 함께 헤어 스타일링의 미래를 만나보세요. 사진을 업로드하고, 헤어 영역을 선택하면 AI 헤어스타일 체인저로 놀라운 변화를 경험할 수 있습니다.",
+        "tip": "🎁 지금 최고의 AI 헤어컷 체인저를 시도해보세요",
+        "buttons": [
+          {
+            "title": "무료로 시도",
+            "icon": "Zap",
+            "url": "/ai-hairstyle-changer",
+            "target": "_self",
+            "variant": "default"
+          },
+          {
+            "title": "예제 보기",
+            "icon": "BookOpenText",
+            "url": "/subscribe",
+            "target": "_blank",
+            "variant": "outline"
+          }
+        ],
+        "show_avatars": true,
+        "avatars_tip": "999+ 명의 사용자가 AI Barber를 사용 중입니다",
+        "show_award": false,
+        "image": {
+          "src": "/imgs/features/admin.png",
+          "alt": "AI Barber 히어로",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/admin-dark.png",
+          "alt": "AI Barber 히어로",
+          "width": 1200,
+          "height": 800
+        },
+        "carousel_images": [
+          {
+            "light": "/imgs/features/admin.png",
+            "dark": "/imgs/features/admin-dark.png",
+            "alt": "AI Barber 메인 인터페이스"
+          },
+          {
+            "light": "/imgs/features/admin-settings.png",
+            "dark": "/imgs/features/admin-settings.png",
+            "alt": "AI Barber 설정"
+          },
+          {
+            "light": "/imgs/features/landing-page.png",
+            "dark": "/imgs/features/landing-page.png",
+            "alt": "AI Barber 랜딩 페이지"
+          },
+          {
+            "light": "/imgs/features/music.png",
+            "dark": "/imgs/features/music-dark.png",
+            "alt": "AI 음악 생성기"
+          },
+          {
+            "light": "/imgs/features/user-billing.png",
+            "dark": "/imgs/features/user-billing.png",
+            "alt": "사용자 청구 대시보드"
+          }
+        ],
+        "background_image": {
+          "src": "/imgs/bg/hero.png",
+          "alt": "AI Barber 배경"
+        }
+      },
+      "logos": {
+        "id": "logos",
+        "title": "고급 AI 기술로 구동",
+        "items": [
+          {
+            "title": "Next.js",
+            "image": {
+              "src": "/imgs/logos/nextjs.svg",
+              "alt": "Next.js"
+            }
+          },
+          {
+            "title": "React",
+            "image": {
+              "src": "/imgs/logos/react.svg",
+              "alt": "React"
+            }
+          },
+          {
+            "title": "TailwindCSS",
+            "image": {
+              "src": "/imgs/logos/tailwindcss.svg",
+              "alt": "TailwindCSS"
+            }
+          },
+          {
+            "title": "Shadcn/UI",
+            "image": {
+              "src": "/imgs/logos/shadcn.svg",
+              "alt": "Shadcn/UI"
+            }
+          },
+          {
+            "title": "Vercel",
+            "image": {
+              "src": "/imgs/logos/vercel.svg",
+              "alt": "Vercel"
+            }
+          }
+        ]
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "AI Barber란 무엇인가요?",
+        "label": "소개",
+        "description": "AI Barber는 고급 AI를 사용하여 완벽한 외모를 찾도록 도와주는 가상 헤어스타일 도구입니다.",
+        "image": {
+          "src": "/imgs/features/landing-page.png",
+          "alt": "AI Barber 소개"
+        },
+        "items": [
+          {
+            "title": "가상 헤어스타일",
+            "description": "가위를 만지지 않고도 수많은 가상 헤어스타일을 시도해보세요.",
+            "icon": "RiMagicLine",
+            "image": {
+              "src": "/imgs/features/1.png",
+              "alt": "가상 헤어스타일"
+            }
+          },
+          {
+            "title": "현실적인 결과",
+            "description": "우리의 AI 헤어컷 체인저는 실제와 같은 매우 현실적인 결과를 생성합니다.",
+            "icon": "RiCameraLensLine",
+            "image": {
+              "src": "/imgs/features/2.png",
+              "alt": "현실적인 결과"
+            }
+          },
+          {
+            "title": "AI 이미지 생성기",
+            "description": "고급 AI 이미지 생성기를 사용하여 독특한 헤어스타일 컨셉을 만들어보세요.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "/imgs/features/3.png",
+              "alt": "AI 이미지 생성기"
+            }
+          },
+          {
+            "title": "스타일 전송",
+            "description": "유명인이나 모델의 스타일을 사진에 직접 전송하세요.",
+            "icon": "RiExchangeLine",
+            "image": {
+              "src": "/imgs/features/4.png",
+              "alt": "스타일 전송"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "왜 AI Barber를 선택해야 할까요",
+        "label": "장점",
+        "description": "안전하고 사용자 친화적인 AI Barber 도구로 무한한 가능성을 탐색하세요.",
+        "items": [
+          {
+            "title": "번개처럼 빠름",
+            "description": "눈 깜짝할 사이에 헤어스타일을 변화시키세요. 결과를 며칠 기다릴 필요가 없습니다.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/user-billing.png",
+              "alt": "빠른 처리"
+            }
+          },
+          {
+            "title": "안전하고 사적임",
+            "description": "당신의 사진은 당신의 것입니다. 우리는 그것들을 안전하게 보관하며 절대 공유하지 않습니다.",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/admin-settings.png",
+              "alt": "안전"
+            }
+          },
+          {
+            "title": "매우 사용자 친화적",
+            "description": "몇 번의 클릭만으로 내면의 스타일리스트를 발휘하세요. 기술적 기술이 필요하지 않습니다.",
+            "icon": "RiUserSmileLine",
+            "image": {
+              "src": "/imgs/features/landing-page.png",
+              "alt": "사용자 친화적"
+            }
+          }
+        ]
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "AI Barber 사용 방법",
+        "description": "세 가지 간단한 단계로 새로운 외모를 얻으세요:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "사용법"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "사진 업로드",
+            "description": "AI Barber 플랫폼에 자신의 명확한 사진을 업로드하세요.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "업로드"
+            }
+          },
+          {
+            "title": "영역 선택",
+            "description": "변경하고 싶은 헤어 영역을 강조 표시하세요.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "선택"
+            }
+          },
+          {
+            "title": "생성",
+            "description": "원하는 스타일을 선택하고 AI 헤어스타일 체인저가 마법을 부리도록 하세요.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "생성"
+            }
+          },
+          {
+            "title": "다운로드",
+            "description": "새로운 가상 헤어스타일을 저장하고 친구들과 공유하세요.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "다운로드"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "AI Barber의 주요 기능",
+        "description": "가상 메이크오버에 필요한 모든 것.",
+        "items": [
+          {
+            "title": "AI 헤어컷 체인저",
+            "description": "다양한 헤어컷 길이와 스타일을 즉시 실험해보세요.",
+            "icon": "RiScissorsCutLine"
+          },
+          {
+            "title": "가상 헤어스타일",
+            "description": "자르기 전에 다양한 헤어스타일이 어떻게 보이는지 시각화하세요.",
+            "icon": "RiWomenLine"
+          },
+          {
+            "title": "색상 실험",
+            "description": "화학적 손상 없이 새로운 헤어 컬러를 시도해보세요.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "고해상도",
+            "description": "변환된 고품질 이미지를 다운로드하세요.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "스타일 비교",
+            "description": "변화 전후의 외모를 나란히 비교하세요.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "모바일 친화적",
+            "description": "어디서나 어떤 기기에서든 AI Barber를 사용하세요.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "stats": {
+        "id": "stats",
+        "title": "사용자들이 AI Barber를 사랑합니다",
+        "description": "외모를 변화시키는 수천 명의 만족한 사용자들과 함께하세요.",
+        "items": [
+          {
+            "title": "50,000+",
+            "description": "변환"
+          },
+          {
+            "title": "10,000+",
+            "description": "만족한 사용자"
+          },
+          {
+            "title": "500+",
+            "description": "스타일"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "사용자들이 AI Barber에 대해 말하는 것",
+        "description": "완벽한 스타일을 찾은 사용자들의 이야기를 들어보세요.",
+        "items": [
+          {
+            "name": "Sarah Jenkins",
+            "role": "패션 블로거",
+            "quote": "AI Barber는 제가 실제로 밥 컷을 하기 전에 결정하는 데 도움을 주었습니다. 큰 실수를 피할 수 있었어요!",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "sarah"
+            }
+          },
+          {
+            "name": "Mike Ross",
+            "role": "모델",
+            "quote": "저는 AI Barber를 사용하여 촬영을 위한 다양한 룩을 테스트합니다. 매우 현실적입니다.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "mike"
+            }
+          },
+          {
+            "name": "Emily Chen",
+            "role": "학생",
+            "quote": "재미있고 사용하기 쉽습니다. AI 헤어스타일 체인저로 미친 색상을 시도하는 것을 좋아했습니다.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "emily"
+            }
+          },
+          {
+            "name": "David Smith",
+            "role": "배우",
+            "quote": "캐릭터 룩을 시각화하는 데 훌륭합니다. 세부사항이 놀랍습니다.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "david"
+            }
+          },
+          {
+            "name": "Jessica Lee",
+            "role": "스타일리스트",
+            "quote": "고객들에게 이것을 추천하여 정확히 원하는 것을 보여줄 수 있도록 합니다.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "jessica"
+            }
+          },
+          {
+            "name": "Tom Brown",
+            "role": "사용자",
+            "quote": "제가 사용한 최고의 가상 헤어스타일 앱입니다. 강력히 추천합니다!",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "tom"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "자주 묻는 질문",
+        "description": "AI Barber에 대한 질문이 있으신가요? 답변해드리겠습니다.",
+        "tip": "찾고 계신 내용을 찾을 수 없나요? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>지원팀</a>에 문의하세요",
+        "items": [
+          {
+            "question": "AI Barber란 무엇이며 어떻게 작동하나요?",
+            "answer": "AI Barber는 다양한 헤어스타일을 가상으로 시도할 수 있게 해주는 AI 기반 도구입니다. 사진을 업로드하고, 헤어를 선택한 다음 스타일을 선택하여 새로운 룩을 생성하세요."
+          },
+          {
+            "question": "헤어스타일 변환의 정확도는 어느 정도인가요?",
+            "answer": "우리의 고급 AI 알고리즘은 얼굴 모양과 헤어 질감을 고려하여 매우 현실적이고 정확한 변환을 생성하도록 설계되었습니다."
+          },
+          {
+            "question": "AI Barber는 모든 헤어 타입이나 길이에 사용할 수 있나요?",
+            "answer": "네, AI Barber는 다양한 헤어 타입과 길이에서 작동합니다. 그러나 최상의 결과를 위해서는 좋은 조명의 명확한 사진을 사용하세요."
+          },
+          {
+            "question": "비용이 발생하나요?",
+            "answer": "무료 및 프리미엄 플랜을 제공합니다. 무료 플랜은 기본 기능을 시도할 수 있게 해주며, 프리미엄 플랜은 고해상도 다운로드와 더 많은 스타일을 제공합니다."
+          },
+          {
+            "question": "내 데이터가 안전한가요?",
+            "answer": "네, 우리는 귀하의 개인정보를 진지하게 취급합니다. 귀하의 사진은 안전하게 처리되며 제3자와 공유되지 않습니다."
+          },
+          {
+            "question": "생성된 헤어스타일을 저장하거나 공유할 수 있나요?",
+            "answer": "물론입니다! 변환 결과를 다운로드하고 플랫폼에서 직접 소셜 미디어에 공유할 수 있습니다."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "새로운 외모를 준비하셨나요?",
+        "description": "오늘 AI 헤어컷 변환을 시작하세요.",
+        "buttons": [
+          {
+            "title": "지금 시작하기",
+            "url": "/ai-hairstyle-changer",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "title": "价格",
+    "description": "选择适合您的方案"
+  },
+  "page": {
+    "title": "价格",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "sr_only_title": "AI Barber 价格",
+        "title": "价格",
+        "description": "选择最适合您 AI 发型转换需求的完美方案。",
+        "groups": [
+          {
+            "name": "one-time",
+            "title": "按需付费"
+          },
+          {
+            "name": "monthly",
+            "title": "包月"
+          },
+          {
+            "name": "yearly",
+            "title": "包年",
+            "label": "立省 23%"
+          }
+        ],
+        "items": [
+          {
+            "title": "积分套餐",
+            "description": "随时开始，按需使用。一次性付款",
+            "features_title": "包含",
+            "features": [
+              "400 积分，有效期 1 年",
+              "文本生成图像和图像生成图像",
+              "使用 Nano Banana 2 AI 模型生成高质量图像",
+              "免费下载生成的图像"
+            ],
+            "interval": "one-time",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "original_price": "$39.9",
+            "unit": "/ 400 积分",
+            "is_featured": false,
+            "tip": "随时开始，按需使用。一次性付款",
+            "button": {
+              "title": "购买积分",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "credits-package",
+            "product_name": "积分套餐",
+            "credits": 400,
+            "valid_days": 365,
+            "group": "one-time"
+          },
+          {
+            "title": "入门版",
+            "description": "每月自动续费获取积分。随时可取消订阅！",
+            "features_title": "包含",
+            "features": [
+              "400 积分，有效期 1 个月",
+              "文本生成图像和图像生成图像",
+              "使用 Nano Banana 2 AI 模型生成高质量图像",
+              "免费下载生成的图像"
+            ],
+            "interval": "month",
+            "amount": 2490,
+            "currency": "USD",
+            "price": "$24.9",
+            "original_price": "$36.9",
+            "unit": "/ 月",
+            "is_featured": false,
+            "tip": "每月自动续费获取积分。随时可取消订阅！",
+            "button": {
+              "title": "订阅套餐",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "starter-monthly",
+            "product_name": "入门版",
+            "credits": 400,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "入门版"
+          },
+          {
+            "title": "高级版",
+            "description": "约 $19.2 / 月，相比月付节省 23%。随时可取消订阅！",
+            "features_title": "包含",
+            "features": [
+              "4800 积分，有效期 1 年",
+              "文本生成图像和图像生成图像",
+              "使用 Nano Banana 2 AI 模型生成高质量图像",
+              "免费下载生成的图像"
+            ],
+            "interval": "year",
+            "amount": 22990,
+            "currency": "USD",
+            "price": "$229.9",
+            "original_price": "$299.9",
+            "unit": "/ 年",
+            "is_featured": true,
+            "tip": "约 $19.2 / 月，相比月付节省 23%。",
+            "button": {
+              "title": "订阅套餐",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-yearly",
+            "product_name": "高级版",
+            "credits": 4800,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "高级版"
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "当前方案",
+    "processing": "处理中"
+  }
+}

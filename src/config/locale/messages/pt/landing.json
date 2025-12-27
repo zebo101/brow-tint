@@ -1,0 +1,189 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "AI Barber",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Barber",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Recursos",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Exemplos",
+          "url": "/showcases",
+          "icon": "BookOpenText"
+        },
+        {
+          "title": "Preços",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "IA",
+          "icon": "RiRobot2Line",
+          "children": [
+            {
+              "title": "Mudador de Penteado IA",
+              "description": "Mude seu penteado com IA",
+              "url": "/ai-hairstyle-changer",
+              "icon": "RiImage2Line"
+            },
+            {
+              "title": "Vídeo Mudador de Cabelo",
+              "description": "Experimente diferentes penteados instantaneamente",
+              "url": "/hair-changer-ai",
+              "icon": "RiScissors2Line"
+            },
+            {
+              "title": "Chat IA Barbeiro",
+              "description": "Converse com o barbeiro",
+              "url": "/chat",
+              "icon": "RiRobot2Line"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Faturamento",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Atividade",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "AI Barber",
+      "description": "AI Barber é o seu cabeleireiro virtual pessoal. Descubra seu visual perfeito com o poder da IA.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Barber",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Produto",
+          "children": [
+            {
+              "title": "Recursos",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "Preços",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Recursos",
+          "children": [
+            {
+              "title": "Documentação",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "Blog",
+              "url": "/blog",
+              "target": "_self"
+            },
+            {
+              "title": "Centro de Ajuda",
+              "url": "/help",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Legal",
+          "children": [
+            {
+              "title": "Política de Privacidade",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "Termos de Serviço",
+              "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/ai_barber",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "Github",
+          "url": "https://github.com/ai-barber",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/ai-barber",
+          "target": "_blank"
+        },
+        {
+          "title": "E-mail",
+          "icon": "Mail",
+          "url": "mailto:support@aibarber.net",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Política de Privacidade",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Termos de Serviço",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

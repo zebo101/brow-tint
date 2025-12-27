@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "Vídeo Mudador de Penteado IA",
+    "description": "Crie vídeos de transformação de penteados com IA. Veja seu novo visual em movimento."
+  },
+  "page": {
+    "title": "Vídeo Mudador de Penteado IA",
+    "description": "Crie vídeos de transformação de penteados com IA. Veja seu novo visual em movimento."
+  },
+  "generator": {
+    "title": "Gerador de Vídeo de Cabelo",
+    "description": "Crie vídeos animados de transformação de penteados com IA.",
+    "tabs": {
+      "text-to-video": "Descrever Estilo",
+      "image-to-video": "Foto para Vídeo",
+      "video-to-video": "Transformar Vídeo"
+    },
+    "form": {
+      "provider": "Provedor de IA",
+      "model": "Modelo de Vídeo",
+      "select_provider": "Selecionar Provedor de IA",
+      "select_model": "Selecionar Modelo de Vídeo",
+      "prompt": "Descrição do Penteado",
+      "prompt_placeholder": "Descreva a transformação do penteado: do visual atual ao desejado, movimento, ângulos",
+      "reference_image": "Sua Foto",
+      "reference_image_placeholder": "Envie sua foto para transformação de vídeo",
+      "reference_video": "URL do Vídeo de Referência",
+      "reference_video_placeholder": "Digite a URL de um vídeo de penteado de referência",
+      "some_images_failed_to_upload": "Falha ao enviar imagem, exclua e reenvie",
+      "prompt_too_long": "A descrição é muito longa, por favor encurte"
+    },
+    "generate": "Gerar Vídeo",
+    "checking_account": "Verificando conta...",
+    "loading": "Carregando...",
+    "generating": "Criando seu vídeo de transformação...",
+    "sign_in_to_generate": "Entre para criar vídeos",
+    "credits_cost": "Custa {credits} créditos",
+    "credits_remaining": "{credits} créditos restantes",
+    "buy_credits": "Comprar Créditos",
+    "progress": "Progresso",
+    "generated_videos": "Seu Vídeo de Transformação",
+    "ready_to_generate": "Pronto para Criar",
+    "ready_for_generating": "Pronto para Criação",
+    "no_videos_generated": "Ainda não foram criados vídeos"
+  }
+}
+
+

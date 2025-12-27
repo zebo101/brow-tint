@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "title": "Gallery - AI Barber",
+    "description": "See amazing hairstyle transformations created with AI Barber"
+  },
+  "page": {
+    "title": "Transformation Gallery",
+    "sections": {
+      "showcases": {
+        "id": "showcases",
+        "title": "Amazing Hairstyle Transformations",
+        "description": "See how our users transformed their looks with AI Barber.",
+        "groups": [
+          {
+            "name": "all",
+            "title": "All Styles"
+          },
+          {
+            "name": "short-hair",
+            "title": "Short Hair"
+          },
+          {
+            "name": "long-hair",
+            "title": "Long Hair"
+          },
+          {
+            "name": "color-change",
+            "title": "Color Change"
+          },
+          {
+            "name": "men-styles",
+            "title": "Men's Styles"
+          },
+          {
+            "name": "women-styles",
+            "title": "Women's Styles"
+          },
+          {
+            "name": "trendy",
+            "title": "Trendy Looks"
+          },
+          {
+            "name": "classic",
+            "title": "Classic Styles"
+          }
+        ],
+        "items": [
+          {
+            "title": "Pixie Cut Transformation",
+            "description": "Bold short hairstyle for confident look",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/1.png",
+              "alt": "Pixie cut transformation"
+            },
+            "group": "short-hair"
+          },
+          {
+            "title": "Beach Waves",
+            "description": "Natural wavy long hair style",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/2.png",
+              "alt": "Beach waves"
+            },
+            "group": "long-hair"
+          },
+          {
+            "title": "Platinum Blonde",
+            "description": "Stunning blonde color transformation",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/3.png",
+              "alt": "Platinum blonde"
+            },
+            "group": "color-change"
+          },
+          {
+            "title": "Modern Pompadour",
+            "description": "Classic men's style with modern twist",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/4.png",
+              "alt": "Modern pompadour"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "Layered Bob",
+            "description": "Trendy bob with textured layers",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/5.png",
+              "alt": "Layered bob"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "Curtain Bangs",
+            "description": "Popular curtain bangs hairstyle",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/6.png",
+              "alt": "Curtain bangs"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "Classic Updo",
+            "description": "Elegant classic updo style",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "Classic updo"
+            },
+            "group": "classic"
+          },
+          {
+            "title": "Fade Haircut",
+            "description": "Clean fade with modern styling",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "Fade haircut"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "Balayage Highlights",
+            "description": "Beautiful balayage color technique",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/9.png",
+              "alt": "Balayage highlights"
+            },
+            "group": "color-change"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "title": "AI Hairstyle Changer - Transform Your Look",
+    "description": "Change your hairstyle with AI. Upload your photo and try on different hairstyles instantly with our AI-powered hairstyle changer."
+  },
+  "page": {
+    "title": "AI Hairstyle Changer",
+    "description": "Change your hairstyle with AI. Upload your photo and try on different hairstyles instantly."
+  },
+  "generator": {
+    "title": "Hairstyle Changer",
+    "description": "Upload your photo and try on different hairstyles with AI technology.",
+    "tabs": {
+      "text-to-image": "Style Description",
+      "image-to-image": "Photo Upload"
+    },
+    "categories": {
+      "title": "Select Hairstyle",
+      "men": "Men's Hairstyles",
+      "women": "Women's Hairstyles",
+      "boys": "Boys' Hairstyles",
+      "girls": "Girls' Hairstyles"
+    },
+    "sidebar": {
+      "howtos": "How-tos",
+      "discover": "Discover",
+      "tour_title": "Tour the editor",
+      "tour_description": "Learn how to use the hairstyle changer",
+      "start_tour": "Start Tour"
+    },
+    "form": {
+      "select_hairstyle_placeholder": "Click to select hairstyle style",
+      "provider": "AI Provider",
+      "model": "Hairstyle Model",
+      "select_provider": "Select AI Provider",
+      "select_model": "Select Hairstyle Model",
+      "prompt": "Hairstyle Description",
+      "prompt_placeholder": "Describe your desired hairstyle: length, color, texture, style (e.g., short bob, long wavy blonde hair, curly afro)",
+      "reference_image": "Your Photo",
+      "reference_image_placeholder": "Upload your photo for the best results",
+      "some_images_failed_to_upload": "Some images failed to upload, please delete them and re-upload",
+      "prompt_too_long": "Description is too long, please shorten it"
+    },
+    "generate": "Generate Hairstyle",
+    "checking_account": "Checking Account...",
+    "loading": "Loading...",
+    "generating": "Transforming Your Look...",
+    "sign_in_to_generate": "Sign In to Try New Hairstyles",
+    "credits_cost": "Cost {credits} credits",
+    "credits_remaining": "Remaining {credits} credits",
+    "buy_credits": "Buy Credits",
+    "progress": "Progress",
+    "generated_images": "Your New Look",
+    "preview_title": "AI Hairstyle Preview",
+    "ready_to_generate": "Ready to Transform",
+    "ready_for_generating": "Ready for Transformation",
+    "no_images_generated": "No AI hairstyles generated yet",
+    "no_hairstyles": "No hairstyles available"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "AI Barber",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Barber",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "功能",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "案例",
+          "url": "/showcases",
+          "icon": "BookOpenText"
+        },
+        {
+          "title": "价格",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "AI 功能",
+          "icon": "RiRobot2Line",
+          "children": [
+            {
+              "title": "AI 发型转换器",
+              "description": "使用 AI 更换你的发型",
+              "url": "/ai-hairstyle-changer",
+              "icon": "RiImage2Line"
+            },
+            {
+              "title": "发型视频转换",
+              "description": "即时尝试不同发型",
+              "url": "/hairstyle-changer-ai-video",
+              "icon": "RiVideoLine"
+            },
+            {
+              "title": "AI 发型顾问",
+              "description": "与 AI 发型师对话",
+              "url": "/chat",
+              "icon": "RiRobot2Line"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "账单",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "活动",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "AI Barber",
+      "description": "AI Barber 是您的专属虚拟发型师。借助 AI 的力量，发现最适合您的完美造型。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Barber",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "产品",
+          "children": [
+            {
+              "title": "功能",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "价格",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "资源",
+          "children": [
+            {
+              "title": "文档",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "博客",
+              "url": "/blog",
+              "target": "_self"
+            },
+            {
+              "title": "帮助中心",
+              "url": "/help",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "法律",
+          "children": [
+            {
+              "title": "隐私政策",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "服务条款",
+              "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/ai_barber",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "Github",
+          "url": "https://github.com/ai-barber",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/ai-barber",
+          "target": "_blank"
+        },
+        {
+          "title": "邮箱",
+          "icon": "Mail",
+          "url": "mailto:support@aibarber.net",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "隐私政策",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "服务条款",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

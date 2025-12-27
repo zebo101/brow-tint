@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "title": "Blog - AI Barber",
+    "description": "Lesen Sie die neuesten Frisurentrends, KI-Funktionen und Styling-Tipps."
+  },
+  "page": {
+    "title": "AI Barber Blog",
+    "sections": {
+      "blog": {
+        "id": "blog",
+        "title": "Blog",
+        "description": "Lesen Sie die neuesten Frisurentrends, KI-Funktionen und Styling-Tipps."
+      }
+    }
+  },
+  "messages": {
+    "all": "Alle",
+    "no_content": "Kein Inhalt",
+    "crumb": "Blog",
+    "toc": "Inhaltsverzeichnis"
+  }
+}
+
+

@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "title": "AI Barber - あなた専属のAIヘアスタイリスト",
+    "description": "AI Barberはあなた専属のバーチャルヘアスタイリストです。実際にカットする前に、AIで無数のヘアスタイルを試してみましょう。AIヘアスタイルチェンジャーで瞬時にイメージチェンジ。",
+    "keywords": "ai 理容師, ai ヘアスタイルチェンジャー, バーチャルヘアスタイル, ai ヘアチェンジ, ai ヘアカット, ヘアスタイルジェネレーター"
+  },
+  "sign": {
+    "sign_in_title": "ログイン",
+    "sign_in_description": "アカウントにログイン",
+    "sign_up_title": "新規登録",
+    "sign_up_description": "アカウントを作成",
+    "email_title": "メールアドレス",
+    "email_placeholder": "メールアドレスを入力してください",
+    "password_title": "パスワード",
+    "password_placeholder": "パスワードを入力してください",
+    "forgot_password": "パスワードをお忘れですか？",
+    "or": "または",
+    "continue": "続ける",
+    "no_account": "アカウントをお持ちでないですか？",
+    "already_have_account": "すでにアカウントをお持ちですか？",
+    "email_sign_in": "メールでログイン",
+    "google_sign_in_title": "Googleでログイン",
+    "github_sign_in_title": "GitHubでログイン",
+    "close_title": "閉じる",
+    "cancel_title": "キャンセル",
+    "sign_out_title": "ログアウト",
+    "billing_title": "お支払い",
+    "name_title": "名前",
+    "name_placeholder": "名前を入力してください",
+    "email_verification_hint": "アクセス可能なメールアドレスを使用してください。登録後にメールを確認する必要があります。",
+    "admin_title": "管理システム",
+    "credits_title": "クレジット: {credits}",
+    "verify_email_sent": "確認メールを送信しました。受信トレイをご確認ください。",
+    "verify_email_required": "ログインする前にメールアドレスを確認してください。",
+    "resend_verification": "確認メールを再送信",
+    "resend_verification_sent": "確認メールを再送信しました。受信トレイをご確認ください。",
+    "verify_email_page_title": "メールを確認",
+    "verify_email_page_description": "続行するには、次のアドレスに送信されたリンクをクリックしてください",
+    "verify_email_continue": "続ける",
+    "verify_email_tip": "確認後、「続ける」ボタンをクリックしてください。",
+    "verify_email_not_verified_yet": "まだ確認されていません。最初にメールのリンクをクリックしてください。",
+    "verify_email_account_mismatch": "{current}でログインしています。このページは{expected}を待っています。",
+    "resend_verification_countdown": "確認メールを再送信 ({seconds}秒)",
+    "resend_verification_wait": "再送信する前に{seconds}秒お待ちください。",
+    "back_to_sign_in": "ログインに戻る"
+  },
+  "payment": {
+    "choose_payment_method": "お支払い方法を選択",
+    "choose_payment_method_description": "",
+    "cancel_title": "キャンセル"
+  },
+  "locale_detector": {
+    "title": "ブラウザの言語が{locale}であることを検出しました。切り替えますか？",
+    "switch_to": "{locale}に切り替える"
+  }
+}
+
+

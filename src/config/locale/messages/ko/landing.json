@@ -1,0 +1,190 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "AI Barber",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Barber",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "기능",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "예제",
+          "url": "/showcases",
+          "icon": "BookOpenText"
+        },
+        {
+          "title": "가격",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "AI",
+          "icon": "RiRobot2Line",
+          "children": [
+            {
+              "title": "AI 헤어스타일 체인저",
+              "description": "AI로 헤어스타일 변경",
+              "url": "/ai-hairstyle-changer",
+              "icon": "RiImage2Line"
+            },
+            {
+              "title": "헤어 체인저 비디오",
+              "description": "다양한 헤어스타일 즉시 시도",
+              "url": "/hair-changer-ai",
+              "icon": "RiScissors2Line"
+            },
+            {
+              "title": "AI 바버 챗",
+              "description": "이발사와 채팅",
+              "url": "/chat",
+              "icon": "RiRobot2Line"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "결제",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "활동",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "AI Barber",
+      "description": "AI Barber는 당신만의 가상 헤어 스타일리스트입니다. AI의 힘으로 완벽한 외모를 발견하세요.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI Barber",
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "제품",
+          "children": [
+            {
+              "title": "기능",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "가격",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "리소스",
+          "children": [
+            {
+              "title": "문서",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "블로그",
+              "url": "/blog",
+              "target": "_self"
+            },
+            {
+              "title": "고객 지원",
+              "url": "/help",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "법적 고지",
+          "children": [
+            {
+              "title": "개인정보 처리방침",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "서비스 약관",
+              "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/ai_barber",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "Github",
+          "url": "https://github.com/ai-barber",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/ai-barber",
+          "target": "_blank"
+        },
+        {
+          "title": "이메일",
+          "icon": "Mail",
+          "url": "mailto:support@aibarber.net",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "개인정보 처리방침",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "서비스 약관",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}
+

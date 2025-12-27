@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "Video Cambiador de Peinados IA",
+    "description": "Crea videos de transformación de peinados con IA. Ve tu nuevo look en movimiento."
+  },
+  "page": {
+    "title": "Video Cambiador de Peinados IA",
+    "description": "Crea videos de transformación de peinados con IA. Ve tu nuevo look en movimiento."
+  },
+  "generator": {
+    "title": "Generador de Video de Cabello",
+    "description": "Crea videos animados de transformación de peinados con IA.",
+    "tabs": {
+      "text-to-video": "Describir Estilo",
+      "image-to-video": "Foto a Video",
+      "video-to-video": "Transformar Video"
+    },
+    "form": {
+      "provider": "Proveedor de IA",
+      "model": "Modelo de Video",
+      "select_provider": "Seleccionar Proveedor de IA",
+      "select_model": "Seleccionar Modelo de Video",
+      "prompt": "Descripción del Peinado",
+      "prompt_placeholder": "Describe la transformación del peinado: del look actual al deseado, movimiento, ángulos",
+      "reference_image": "Tu Foto",
+      "reference_image_placeholder": "Sube tu foto para transformación de video",
+      "reference_video": "URL de Video de Referencia",
+      "reference_video_placeholder": "Ingresa la URL de un video de peinado de referencia",
+      "some_images_failed_to_upload": "Error al subir imagen, elimina y vuelve a subir",
+      "prompt_too_long": "La descripción es demasiado larga, acórtala"
+    },
+    "generate": "Generar Video",
+    "checking_account": "Verificando cuenta...",
+    "loading": "Cargando...",
+    "generating": "Creando tu video de transformación...",
+    "sign_in_to_generate": "Inicia sesión para crear videos",
+    "credits_cost": "Cuesta {credits} créditos",
+    "credits_remaining": "{credits} créditos restantes",
+    "buy_credits": "Comprar Créditos",
+    "progress": "Progreso",
+    "generated_videos": "Tu Video de Transformación",
+    "ready_to_generate": "Listo para Crear",
+    "ready_for_generating": "Listo para Creación",
+    "no_videos_generated": "Aún no se han creado videos"
+  }
+}
+
+

@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "title": "블로그 - AI Barber",
+    "description": "최신 헤어스타일 트렌드, AI 기능 및 스타일링 팁을 읽어보세요."
+  },
+  "page": {
+    "title": "AI Barber 블로그",
+    "sections": {
+      "blog": {
+        "id": "blog",
+        "title": "블로그",
+        "description": "최신 헤어스타일 트렌드, AI 기능 및 스타일링 팁을 읽어보세요."
+      }
+    }
+  },
+  "messages": {
+    "all": "전체",
+    "no_content": "콘텐츠 없음",
+    "crumb": "블로그",
+    "toc": "목차"
+  }
+}
+
+

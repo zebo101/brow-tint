@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "ギャラリー - AI Barber",
+    "description": "AI Barberで作成された素晴らしいヘアスタイル変換作品をご覧ください"
+  },
+  "page": {
+    "title": "変換ギャラリー",
+    "sections": {
+      "showcases": {
+        "id": "showcases",
+        "title": "素晴らしいヘアスタイル変換",
+        "description": "ユーザーがAI Barberでルックスをどのように変えたかご覧ください。",
+        "groups": [
+          {
+            "name": "all",
+            "title": "すべてのスタイル"
+          },
+          {
+            "name": "short-hair",
+            "title": "ショートヘア"
+          },
+          {
+            "name": "long-hair",
+            "title": "ロングヘア"
+          },
+          {
+            "name": "color-change",
+            "title": "カラー変更"
+          },
+          {
+            "name": "men-styles",
+            "title": "メンズスタイル"
+          },
+          {
+            "name": "women-styles",
+            "title": "レディーススタイル"
+          },
+          {
+            "name": "trendy",
+            "title": "トレンディなルックス"
+          },
+          {
+            "name": "classic",
+            "title": "クラシックスタイル"
+          }
+        ],
+        "items": [
+          {
+            "title": "ピクシーカット変換",
+            "description": "自信に満ちた大胆なショートヘアスタイル",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/1.png",
+              "alt": "ピクシーカット変換"
+            },
+            "group": "short-hair"
+          },
+          {
+            "title": "ビーチウェーブ",
+            "description": "自然なウェーブのロングヘアスタイル",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/2.png",
+              "alt": "ビーチウェーブ"
+            },
+            "group": "long-hair"
+          },
+          {
+            "title": "プラチナブロンド",
+            "description": "見事なブロンドカラー変換",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/3.png",
+              "alt": "プラチナブロンド"
+            },
+            "group": "color-change"
+          },
+          {
+            "title": "モダンポンパドール",
+            "description": "モダンなアレンジのクラシックメンズスタイル",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/4.png",
+              "alt": "モダンポンパドール"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "レイヤードボブ",
+            "description": "テクスチャー層のあるトレンディなボブ",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/5.png",
+              "alt": "レイヤードボブ"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "カーテンバング",
+            "description": "人気のカーテンバングヘアスタイル",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/6.png",
+              "alt": "カーテンバング"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "クラシックアップスタイル",
+            "description": "エレガントなクラシックアップスタイル",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "クラシックアップスタイル"
+            },
+            "group": "classic"
+          },
+          {
+            "title": "フェードヘアカット",
+            "description": "モダンスタイリングのクリーンなフェード",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "フェードヘアカット"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "バレイジハイライト",
+            "description": "美しいバレイジカラーテクニック",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/9.png",
+              "alt": "バレイジハイライト"
+            },
+            "group": "color-change"
+          }
+        ]
+      }
+    }
+  }
+}
+
+

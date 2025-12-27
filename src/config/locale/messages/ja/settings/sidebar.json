@@ -1,0 +1,48 @@
+{
+  "title": "設定",
+  "nav": {
+    "items": [
+      {
+        "title": "プロフィール",
+        "url": "/settings/profile",
+        "icon": "User"
+      },
+      {
+        "title": "お支払い",
+        "url": "/settings/billing",
+        "icon": "CreditCard"
+      },
+      {
+        "title": "支払い履歴",
+        "url": "/settings/payments",
+        "icon": "DollarSign"
+      },
+      {
+        "title": "クレジット",
+        "url": "/settings/credits",
+        "icon": "Coins"
+      },
+      {
+        "title": "APIキー",
+        "url": "/settings/apikeys",
+        "icon": "RiKeyLine"
+      }
+    ]
+  },
+  "top_nav": {
+    "items": [
+      {
+        "title": "アクティビティ",
+        "url": "/activity",
+        "icon": "Activity"
+      },
+      {
+        "title": "設定",
+        "url": "/settings",
+        "icon": "Settings"
+      }
+    ]
+  }
+}
+
+

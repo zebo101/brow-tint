@@ -1,0 +1,121 @@
+{
+  "sidebar": {
+    "header": {
+      "brand": {
+        "title": "AI Barber Chat",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "AI Barber Chat"
+        },
+        "url": "/chat"
+      },
+      "show_trigger": false
+    },
+    "buttons": [
+      {
+        "title": "New Chat",
+        "icon": "Plus",
+        "url": "/chat",
+        "variant": "outline"
+      }
+    ],
+    "main_navs": [
+      {
+        "items": [
+          {
+            "title": "History",
+            "icon": "History",
+            "url": "/chat/history"
+          }
+        ]
+      }
+    ],
+    "bottom_nav": {
+      "items": []
+    },
+    "user": {
+      "nav": {
+        "items": [
+          {
+            "title": "Profile",
+            "url": "/settings/profile",
+            "icon": "User",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_email": false,
+      "show_signout": true,
+      "signout_callback": "/chat",
+      "signin_callback": "/chat"
+    },
+    "footer": {
+      "nav": {
+        "items": [
+          {
+            "title": "Home",
+            "url": "/",
+            "icon": "Home",
+            "target": "_blank"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/ai-barber",
+            "icon": "Github",
+            "target": "_blank"
+          },
+          {
+            "title": "Twitter",
+            "url": "https://x.com/ai_barber",
+            "icon": "RiTwitterXFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Discord",
+            "url": "https://discord.gg/ai-barber",
+            "icon": "RiDiscordFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Email",
+            "url": "mailto:support@aibarber.net",
+            "icon": "Mail",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_theme": true,
+      "show_locale": false
+    },
+    "variant": "sidebar"
+  },
+  "library": {
+    "title": "Library",
+    "icon": "History",
+    "url": "/chat/history",
+    "more": "More",
+    "actions": {
+      "edit_title": "Edit Title",
+      "share": "Share",
+      "delete": "Delete"
+    }
+  },
+  "generator": {
+    "title": "What hairstyle question can I help you with today?",
+    "input_placeholder": "Ask me about hairstyles, trends, or styling tips..."
+  },
+  "history": {
+    "title": "Chat history",
+    "description": "Review and revisit your previous conversations.",
+    "empty": "No conversations yet.",
+    "error": "Failed to load conversations.",
+    "retry": "Try again",
+    "signin": "Sign in to view your chat history.",
+    "summary": "Showing {from}-{to} of {total}",
+    "perPage": "Per page",
+    "prev": "Previous",
+    "next": "Next",
+    "open": "Open chat",
+    "untitled": "Untitled conversation"
+  }
+}

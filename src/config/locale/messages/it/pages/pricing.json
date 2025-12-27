@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "Prezzi",
+    "description": "Inizia con un piano"
+  },
+  "page": {
+    "title": "Prezzi",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "sr_only_title": "Prezzi AI Barber",
+        "title": "Prezzi",
+        "description": "Scegli il piano perfetto per le tue esigenze di trasformazione acconciatura IA.",
+        "groups": [
+          {
+            "name": "one-time",
+            "title": "Pagamento unico"
+          },
+          {
+            "name": "monthly",
+            "title": "Mensile"
+          },
+          {
+            "name": "yearly",
+            "title": "Annuale",
+            "label": "risparmia 23%"
+          }
+        ],
+        "items": [
+          {
+            "title": "Pacchetto Crediti",
+            "description": "Inizia quando ne hai bisogno. Pagamento unico",
+            "features_title": "Include",
+            "features": [
+              "400 crediti, validi per 1 anno",
+              "Generazione da testo a immagine e da immagine a immagine",
+              "Immagini di alta qualità con modello IA Nano Banana 2",
+              "Download gratuito delle immagini generate"
+            ],
+            "interval": "one-time",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "original_price": "$39.9",
+            "unit": "/ 400 crediti",
+            "is_featured": false,
+            "tip": "Inizia quando ne hai bisogno. Pagamento unico",
+            "button": {
+              "title": "Acquista Crediti",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "credits-package",
+            "product_name": "Pacchetto Crediti",
+            "credits": 400,
+            "valid_days": 365,
+            "group": "one-time"
+          },
+          {
+            "title": "Piano Starter",
+            "description": "Rinnovo automatico mensile per ottenere crediti. Annullabile in qualsiasi momento!",
+            "features_title": "Include",
+            "features": [
+              "400 crediti, validi per 1 mese",
+              "Generazione da testo a immagine e da immagine a immagine",
+              "Immagini di alta qualità con modello IA Nano Banana 2",
+              "Download gratuito delle immagini generate"
+            ],
+            "interval": "month",
+            "amount": 2490,
+            "currency": "USD",
+            "price": "$24.9",
+            "original_price": "$36.9",
+            "unit": "/ mese",
+            "is_featured": false,
+            "tip": "Rinnovo automatico mensile per ottenere crediti. Annullabile in qualsiasi momento!",
+            "button": {
+              "title": "Iscriviti al Piano",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "starter-monthly",
+            "product_name": "Piano Starter",
+            "credits": 400,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Starter"
+          },
+          {
+            "title": "Piano Premium",
+            "description": "Circa $19.2 / mese, risparmia 23% vs piano mensile. Annullabile in qualsiasi momento!",
+            "features_title": "Include",
+            "features": [
+              "4800 crediti, validi per 1 anno",
+              "Generazione da testo a immagine e da immagine a immagine",
+              "Immagini di alta qualità con modello IA Nano Banana 2",
+              "Download gratuito delle immagini generate"
+            ],
+            "interval": "year",
+            "amount": 22990,
+            "currency": "USD",
+            "price": "$229.9",
+            "original_price": "$299.9",
+            "unit": "/ anno",
+            "is_featured": true,
+            "tip": "Circa $19.2 / mese, risparmia 23% vs piano mensile.",
+            "button": {
+              "title": "Iscriviti al Piano",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-yearly",
+            "product_name": "Piano Premium",
+            "credits": 4800,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Premium"
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "Piano Attuale",
+    "processing": "In elaborazione"
+  }
+}
+
+

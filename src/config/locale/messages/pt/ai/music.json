@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "Gerador de Música IA",
+    "description": "Gere música incrível com IA"
+  },
+  "page": {
+    "title": "Gerador de Música IA",
+    "description": "Gere música incrível com IA"
+  },
+  "generator": {
+    "title": "Gerador de Música",
+    "prompt": "Prompt",
+    "prompt_placeholder": "Uma história de amor de Romeu e Julieta",
+    "generate": "Gerar Música",
+    "loading": "Carregando...",
+    "generating": "Gerando...",
+    "sign_in_to_generate": "Entre para gerar música",
+    "credits_cost": "Custa {credits} créditos",
+    "credits_remaining": "{credits} créditos restantes",
+    "buy_credits": "Comprar Créditos",
+    "generation_progress": "Progresso da Geração",
+    "time_cost": "Isso pode levar até 2-3 minutos...",
+    "generated_song": "Música Gerada",
+    "ready_to_play": "Pronto para Reproduzir",
+    "audio_generating": "Gerando Áudio...",
+    "generating_song": "Gerando Música...",
+    "waiting_generation": "Por favor aguarde enquanto criamos sua obra-prima",
+    "no_song_generated": "Nenhuma Música Gerada",
+    "downloading": "Baixando...",
+    "download_success": "Download concluído com sucesso",
+    "download_failed": "Falha ao baixar áudio",
+    "form": {
+      "custom_mode": "Modo Personalizado",
+      "title": "Título",
+      "title_placeholder": "O Som do Silêncio",
+      "style": "Estilo de Música",
+      "style_placeholder": "indie, eletrônica, sintetizadores, 120bpm, distorcido",
+      "instrumental": "Instrumental",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Uma canção folk country sobre amor",
+      "model": "Modelo",
+      "lyrics": "Letras",
+      "lyrics_placeholder": "Escreva suas próprias letras, dois versos (8 linhas) para o melhor resultado"
+    }
+  }
+}
+
+

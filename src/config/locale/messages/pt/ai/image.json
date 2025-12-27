@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Mudador de Penteado IA - Transforme seu Visual",
+    "description": "Mude seu penteado com IA. Envie sua foto e experimente diferentes penteados instantaneamente com nosso Mudador de Penteado IA.",
+    "keywords": "mudador de penteado ia, penteado virtual, corte de cabelo ia, gerador de penteados"
+  },
+  "page": {
+    "title": "Mudador de Penteado IA",
+    "description": "Mude seu penteado com IA. Envie sua foto e experimente diferentes penteados instantaneamente."
+  },
+  "generator": {
+    "title": "Mudador de Penteado",
+    "description": "Envie sua foto e experimente diferentes penteados com tecnologia IA.",
+    "tabs": {
+      "text-to-image": "Descrição do Estilo",
+      "image-to-image": "Enviar Foto"
+    },
+    "form": {
+      "provider": "Provedor de IA",
+      "model": "Modelo de Penteado",
+      "select_provider": "Selecionar Provedor de IA",
+      "select_model": "Selecionar Modelo de Penteado",
+      "prompt": "Descrição do Penteado",
+      "prompt_placeholder": "Descreva seu penteado desejado: comprimento, cor, textura, estilo (ex: bob curto, cabelo loiro longo ondulado, afro cacheado)",
+      "reference_image": "Sua Foto",
+      "reference_image_placeholder": "Envie sua foto para melhores resultados",
+      "some_images_failed_to_upload": "Algumas imagens falharam ao enviar, exclua e reenvie",
+      "prompt_too_long": "A descrição é muito longa, por favor encurte"
+    },
+    "generate": "Gerar Penteado",
+    "checking_account": "Verificando conta...",
+    "loading": "Carregando...",
+    "generating": "Transformando seu visual...",
+    "sign_in_to_generate": "Entre para experimentar novos penteados",
+    "credits_cost": "Custa {credits} créditos",
+    "credits_remaining": "{credits} créditos restantes",
+    "buy_credits": "Comprar Créditos",
+    "progress": "Progresso",
+    "generated_images": "Seu Novo Visual",
+    "ready_to_generate": "Pronto para Transformar",
+    "ready_for_generating": "Pronto para Transformação",
+    "no_images_generated": "Ainda não foram gerados penteados"
+  }
+}
+
+

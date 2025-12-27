@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "KI-Frisuren-Wechsler - Verwandeln Sie Ihren Look",
+    "description": "Ändern Sie Ihre Frisur mit KI. Laden Sie Ihr Foto hoch und probieren Sie sofort verschiedene Frisuren mit unserem KI-Frisuren-Wechsler aus.",
+    "keywords": "ki frisuren wechsler, virtuelle frisur, ki haarschnitt, frisuren generator"
+  },
+  "page": {
+    "title": "KI-Frisuren-Wechsler",
+    "description": "Ändern Sie Ihre Frisur mit KI. Laden Sie Ihr Foto hoch und probieren Sie sofort verschiedene Frisuren aus."
+  },
+  "generator": {
+    "title": "Frisuren-Wechsler",
+    "description": "Laden Sie Ihr Foto hoch und probieren Sie verschiedene Frisuren mit KI-Technologie aus.",
+    "tabs": {
+      "text-to-image": "Stil-Beschreibung",
+      "image-to-image": "Foto hochladen"
+    },
+    "form": {
+      "provider": "KI-Anbieter",
+      "model": "Frisuren-Modell",
+      "select_provider": "KI-Anbieter auswählen",
+      "select_model": "Frisuren-Modell auswählen",
+      "prompt": "Frisuren-Beschreibung",
+      "prompt_placeholder": "Beschreiben Sie Ihre gewünschte Frisur: Länge, Farbe, Textur, Stil (z.B.: kurzer Bob, lange wellige blonde Haare, lockiger Afro)",
+      "reference_image": "Ihr Foto",
+      "reference_image_placeholder": "Laden Sie Ihr Foto für beste Ergebnisse hoch",
+      "some_images_failed_to_upload": "Einige Bilder konnten nicht hochgeladen werden, bitte löschen und erneut hochladen",
+      "prompt_too_long": "Beschreibung ist zu lang, bitte kürzen"
+    },
+    "generate": "Frisur generieren",
+    "checking_account": "Konto wird überprüft...",
+    "loading": "Laden...",
+    "generating": "Ihr Look wird verwandelt...",
+    "sign_in_to_generate": "Anmelden, um neue Frisuren auszuprobieren",
+    "credits_cost": "{credits} Credits kosten",
+    "credits_remaining": "{credits} Credits verbleibend",
+    "buy_credits": "Credits kaufen",
+    "progress": "Fortschritt",
+    "generated_images": "Ihr neuer Look",
+    "ready_to_generate": "Bereit zum Verwandeln",
+    "ready_for_generating": "Bereit für Verwandlung",
+    "no_images_generated": "Noch keine Frisuren generiert"
+  }
+}
+
+

@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "Galeria - AI Barber",
+    "description": "Veja transformações incríveis de penteados criadas com AI Barber"
+  },
+  "page": {
+    "title": "Galeria de Transformações",
+    "sections": {
+      "showcases": {
+        "id": "showcases",
+        "title": "Transformações Incríveis de Penteados",
+        "description": "Veja como nossos usuários transformaram seus visuais com AI Barber.",
+        "groups": [
+          {
+            "name": "all",
+            "title": "Todos os Estilos"
+          },
+          {
+            "name": "short-hair",
+            "title": "Cabelo Curto"
+          },
+          {
+            "name": "long-hair",
+            "title": "Cabelo Longo"
+          },
+          {
+            "name": "color-change",
+            "title": "Mudança de Cor"
+          },
+          {
+            "name": "men-styles",
+            "title": "Estilos Masculinos"
+          },
+          {
+            "name": "women-styles",
+            "title": "Estilos Femininos"
+          },
+          {
+            "name": "trendy",
+            "title": "Visuais Modernos"
+          },
+          {
+            "name": "classic",
+            "title": "Estilos Clássicos"
+          }
+        ],
+        "items": [
+          {
+            "title": "Transformação Pixie Cut",
+            "description": "Penteado curto ousado para visual confiante",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/1.png",
+              "alt": "Transformação pixie cut"
+            },
+            "group": "short-hair"
+          },
+          {
+            "title": "Ondas de Praia",
+            "description": "Estilo de cabelo longo ondulado natural",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/2.png",
+              "alt": "Ondas de praia"
+            },
+            "group": "long-hair"
+          },
+          {
+            "title": "Loiro Platina",
+            "description": "Transformação de cor loira impressionante",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/3.png",
+              "alt": "Loiro platina"
+            },
+            "group": "color-change"
+          },
+          {
+            "title": "Pompadour Moderno",
+            "description": "Estilo clássico masculino com toque moderno",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/4.png",
+              "alt": "Pompadour moderno"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "Bob em Camadas",
+            "description": "Bob moderno com camadas texturizadas",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/5.png",
+              "alt": "Bob em camadas"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "Franja Cortina",
+            "description": "Penteado de franja cortina popular",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/6.png",
+              "alt": "Franja cortina"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "Coque Clássico",
+            "description": "Estilo de coque clássico elegante",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "Coque clássico"
+            },
+            "group": "classic"
+          },
+          {
+            "title": "Corte Fade",
+            "description": "Fade limpo com estilo moderno",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "Corte fade"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "Mechas Balayage",
+            "description": "Técnica de cor balayage bonita",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/9.png",
+              "alt": "Mechas balayage"
+            },
+            "group": "color-change"
+          }
+        ]
+      }
+    }
+  }
+}
+
+

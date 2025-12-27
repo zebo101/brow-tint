@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "AIヘアスタイルチェンジャー - ルックスを変える",
+    "description": "AIでヘアスタイルを変更。写真をアップロードして、AIヘアスタイルチェンジャーで様々なヘアスタイルを即座に試せます。",
+    "keywords": "aiヘアスタイルチェンジャー, バーチャルヘアスタイル, aiヘアカット, ヘアスタイルジェネレーター"
+  },
+  "page": {
+    "title": "AIヘアスタイルチェンジャー",
+    "description": "AIでヘアスタイルを変更。写真をアップロードして様々なヘアスタイルを即座に試せます。"
+  },
+  "generator": {
+    "title": "ヘアスタイルチェンジャー",
+    "description": "写真をアップロードして、AI技術で様々なヘアスタイルを試してみましょう。",
+    "tabs": {
+      "text-to-image": "スタイルの説明",
+      "image-to-image": "写真アップロード"
+    },
+    "form": {
+      "provider": "AIプロバイダー",
+      "model": "ヘアスタイルモデル",
+      "select_provider": "AIプロバイダーを選択",
+      "select_model": "ヘアスタイルモデルを選択",
+      "prompt": "ヘアスタイルの説明",
+      "prompt_placeholder": "希望のヘアスタイルを説明：長さ、色、質感、スタイル（例：ショートボブ、ロングウェーブブロンド、カーリーアフロ）",
+      "reference_image": "あなたの写真",
+      "reference_image_placeholder": "最高の結果のために写真をアップロード",
+      "some_images_failed_to_upload": "一部の画像のアップロードに失敗しました。削除して再アップロードしてください",
+      "prompt_too_long": "説明が長すぎます。短くしてください"
+    },
+    "generate": "ヘアスタイル生成",
+    "checking_account": "アカウント確認中...",
+    "loading": "読み込み中...",
+    "generating": "ルックスを変更中...",
+    "sign_in_to_generate": "新しいヘアスタイルを試すにはログイン",
+    "credits_cost": "{credits}クレジット消費",
+    "credits_remaining": "残り{credits}クレジット",
+    "buy_credits": "クレジット購入",
+    "progress": "進行状況",
+    "generated_images": "新しいルックス",
+    "ready_to_generate": "変更準備完了",
+    "ready_for_generating": "変更準備中",
+    "no_images_generated": "まだヘアスタイルが生成されていません"
+  }
+}
+
+

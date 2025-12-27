@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "title": "タイトル",
+    "status": "ステータス",
+    "model": "モデル",
+    "provider": "プロバイダー",
+    "created_at": "作成日",
+    "action": "アクション"
+  },
+  "list": {
+    "title": "AIチャット",
+    "tabs": {
+      "all": "すべて",
+      "pending": "保留中",
+      "completed": "完了",
+      "failed": "失敗"
+    },
+    "buttons": {
+      "view": "チャットを見る",
+      "new": "新しいチャット"
+    },
+    "empty_message": "チャットが見つかりません"
+  }
+}
+
+

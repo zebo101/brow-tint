@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "料金",
+    "description": "プランを選択"
+  },
+  "page": {
+    "title": "料金",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "sr_only_title": "AI Barber 料金",
+        "title": "料金",
+        "description": "AIヘアスタイル変換のニーズに最適なプランをお選びください。",
+        "groups": [
+          {
+            "name": "one-time",
+            "title": "都度払い"
+          },
+          {
+            "name": "monthly",
+            "title": "月額"
+          },
+          {
+            "name": "yearly",
+            "title": "年額",
+            "label": "23%お得"
+          }
+        ],
+        "items": [
+          {
+            "title": "クレジットパッケージ",
+            "description": "必要なときにいつでも開始。1回限りのお支払い",
+            "features_title": "含まれるもの",
+            "features": [
+              "400クレジット、1年間有効",
+              "テキストから画像、画像から画像の生成",
+              "Nano Banana 2 AIモデルによる高品質画像",
+              "生成画像の無料ダウンロード"
+            ],
+            "interval": "one-time",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "original_price": "$39.9",
+            "unit": "/ 400クレジット",
+            "is_featured": false,
+            "tip": "必要なときにいつでも開始。1回限りのお支払い",
+            "button": {
+              "title": "クレジット購入",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "credits-package",
+            "product_name": "クレジットパッケージ",
+            "credits": 400,
+            "valid_days": 365,
+            "group": "one-time"
+          },
+          {
+            "title": "スタータープラン",
+            "description": "毎月自動更新でクレジット取得。いつでもキャンセル可能！",
+            "features_title": "含まれるもの",
+            "features": [
+              "400クレジット、1ヶ月間有効",
+              "テキストから画像、画像から画像の生成",
+              "Nano Banana 2 AIモデルによる高品質画像",
+              "生成画像の無料ダウンロード"
+            ],
+            "interval": "month",
+            "amount": 2490,
+            "currency": "USD",
+            "price": "$24.9",
+            "original_price": "$36.9",
+            "unit": "/ 月",
+            "is_featured": false,
+            "tip": "毎月自動更新でクレジット取得。いつでもキャンセル可能！",
+            "button": {
+              "title": "プラン登録",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "starter-monthly",
+            "product_name": "スタータープラン",
+            "credits": 400,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "スターター"
+          },
+          {
+            "title": "プレミアムプラン",
+            "description": "月額約$19.2、月額プランより23%お得。いつでもキャンセル可能！",
+            "features_title": "含まれるもの",
+            "features": [
+              "4800クレジット、1年間有効",
+              "テキストから画像、画像から画像の生成",
+              "Nano Banana 2 AIモデルによる高品質画像",
+              "生成画像の無料ダウンロード"
+            ],
+            "interval": "year",
+            "amount": 22990,
+            "currency": "USD",
+            "price": "$229.9",
+            "original_price": "$299.9",
+            "unit": "/ 年",
+            "is_featured": true,
+            "tip": "月額約$19.2、月額プランより23%お得。",
+            "button": {
+              "title": "プラン登録",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-yearly",
+            "product_name": "プレミアムプラン",
+            "credits": 4800,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "プレミアム"
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "現在のプラン",
+    "processing": "処理中"
+  }
+}
+
+

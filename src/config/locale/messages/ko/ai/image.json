@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "AI 헤어스타일 체인저 - 외모 변화",
+    "description": "AI로 헤어스타일을 변경하세요. 사진을 업로드하고 AI 기반 헤어스타일 체인저로 즉시 다양한 헤어스타일을 시도해보세요.",
+    "keywords": "ai 헤어스타일 체인저, 가상 헤어스타일, ai 헤어컷, 헤어스타일 생성기"
+  },
+  "page": {
+    "title": "AI 헤어스타일 체인저",
+    "description": "AI로 헤어스타일을 변경하세요. 사진을 업로드하고 즉시 다양한 헤어스타일을 시도해보세요."
+  },
+  "generator": {
+    "title": "헤어스타일 체인저",
+    "description": "사진을 업로드하고 AI 기술로 다양한 헤어스타일을 시도해보세요.",
+    "tabs": {
+      "text-to-image": "스타일 설명",
+      "image-to-image": "사진 업로드"
+    },
+    "form": {
+      "provider": "AI 제공업체",
+      "model": "헤어스타일 모델",
+      "select_provider": "AI 제공업체 선택",
+      "select_model": "헤어스타일 모델 선택",
+      "prompt": "헤어스타일 설명",
+      "prompt_placeholder": "원하는 헤어스타일 설명: 길이, 색상, 질감, 스타일 (예: 짧은 단발, 긴 웨이브 금발, 곱슬 아프로)",
+      "reference_image": "내 사진",
+      "reference_image_placeholder": "최상의 결과를 위해 사진 업로드",
+      "some_images_failed_to_upload": "일부 이미지 업로드 실패, 삭제 후 다시 업로드하세요",
+      "prompt_too_long": "설명이 너무 깁니다. 짧게 해주세요"
+    },
+    "generate": "헤어스타일 생성",
+    "checking_account": "계정 확인 중...",
+    "loading": "로딩 중...",
+    "generating": "외모를 변화시키는 중...",
+    "sign_in_to_generate": "새 헤어스타일을 시도하려면 로그인",
+    "credits_cost": "{credits} 크레딧 소비",
+    "credits_remaining": "남은 크레딧 {credits}",
+    "buy_credits": "크레딧 구매",
+    "progress": "진행률",
+    "generated_images": "새로운 외모",
+    "ready_to_generate": "변화 준비 완료",
+    "ready_for_generating": "변화 준비 중",
+    "no_images_generated": "아직 생성된 헤어스타일 없음"
+  }
+}
+
+

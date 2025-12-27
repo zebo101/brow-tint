@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "title": "Galerie - AI Barber",
+    "description": "Sehen Sie erstaunliche Frisuren-Transformationen, die mit AI Barber erstellt wurden"
+  },
+  "page": {
+    "title": "Transformations-Galerie",
+    "sections": {
+      "showcases": {
+        "id": "showcases",
+        "title": "Erstaunliche Frisuren-Transformationen",
+        "description": "Sehen Sie, wie unsere Benutzer ihre Looks mit AI Barber verwandelt haben.",
+        "groups": [
+          {
+            "name": "all",
+            "title": "Alle Styles"
+          },
+          {
+            "name": "short-hair",
+            "title": "Kurze Haare"
+          },
+          {
+            "name": "long-hair",
+            "title": "Lange Haare"
+          },
+          {
+            "name": "color-change",
+            "title": "Farbwechsel"
+          },
+          {
+            "name": "men-styles",
+            "title": "Herren-Styles"
+          },
+          {
+            "name": "women-styles",
+            "title": "Damen-Styles"
+          },
+          {
+            "name": "trendy",
+            "title": "Trendige Looks"
+          },
+          {
+            "name": "classic",
+            "title": "Klassische Styles"
+          }
+        ],
+        "items": [
+          {
+            "title": "Pixie-Schnitt Transformation",
+            "description": "Mutiger kurzer Haarschnitt für selbstbewussten Look",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/1.png",
+              "alt": "Pixie-Schnitt Transformation"
+            },
+            "group": "short-hair"
+          },
+          {
+            "title": "Beach Waves",
+            "description": "Natürlicher welliger Langhaar-Style",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/2.png",
+              "alt": "Beach Waves"
+            },
+            "group": "long-hair"
+          },
+          {
+            "title": "Platinblond",
+            "description": "Atemberaubende blonde Farbtransformation",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/3.png",
+              "alt": "Platinblond"
+            },
+            "group": "color-change"
+          },
+          {
+            "title": "Moderner Pompadour",
+            "description": "Klassischer Herren-Style mit modernem Twist",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/4.png",
+              "alt": "Moderner Pompadour"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "Gestufter Bob",
+            "description": "Trendiger Bob mit texturierten Schichten",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/5.png",
+              "alt": "Gestufter Bob"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "Vorhang-Pony",
+            "description": "Beliebter Vorhang-Pony Haarschnitt",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/6.png",
+              "alt": "Vorhang-Pony"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "Klassischer Hochsteck",
+            "description": "Eleganter klassischer Hochsteck-Style",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "Klassischer Hochsteck"
+            },
+            "group": "classic"
+          },
+          {
+            "title": "Fade Haarschnitt",
+            "description": "Sauberer Fade mit modernem Styling",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "Fade Haarschnitt"
+            },
+            "group": "men-styles"
+          },
+          {
+            "title": "Balayage Highlights",
+            "description": "Schöne Balayage-Färbetechnik",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/9.png",
+              "alt": "Balayage Highlights"
+            },
+            "group": "color-change"
+          }
+        ]
+      }
+    }
+  }
+}
+
+

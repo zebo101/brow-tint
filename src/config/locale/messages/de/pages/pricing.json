@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "Preise",
+    "description": "Wählen Sie einen Plan"
+  },
+  "page": {
+    "title": "Preise",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "sr_only_title": "AI Barber Preise",
+        "title": "Preise",
+        "description": "Wählen Sie den perfekten Plan für Ihre KI-Frisuren-Transformation.",
+        "groups": [
+          {
+            "name": "one-time",
+            "title": "Pay as you go"
+          },
+          {
+            "name": "monthly",
+            "title": "Monatlich"
+          },
+          {
+            "name": "yearly",
+            "title": "Jährlich",
+            "label": "23% sparen"
+          }
+        ],
+        "items": [
+          {
+            "title": "Credits-Paket",
+            "description": "Starten Sie jederzeit nach Bedarf. Einmalige Zahlung",
+            "features_title": "Beinhaltet",
+            "features": [
+              "400 Credits, 1 Jahr gültig",
+              "Text-zu-Bild und Bild-zu-Bild Generierung",
+              "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
+              "Kostenloser Download generierter Bilder"
+            ],
+            "interval": "one-time",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "original_price": "$39.9",
+            "unit": "/ 400 Credits",
+            "is_featured": false,
+            "tip": "Starten Sie jederzeit nach Bedarf. Einmalige Zahlung",
+            "button": {
+              "title": "Credits kaufen",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "credits-package",
+            "product_name": "Credits-Paket",
+            "credits": 400,
+            "valid_days": 365,
+            "group": "one-time"
+          },
+          {
+            "title": "Starter Plan",
+            "description": "Automatische monatliche Verlängerung für Credits. Jederzeit kündbar!",
+            "features_title": "Beinhaltet",
+            "features": [
+              "400 Credits, 1 Monat gültig",
+              "Text-zu-Bild und Bild-zu-Bild Generierung",
+              "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
+              "Kostenloser Download generierter Bilder"
+            ],
+            "interval": "month",
+            "amount": 2490,
+            "currency": "USD",
+            "price": "$24.9",
+            "original_price": "$36.9",
+            "unit": "/ Monat",
+            "is_featured": false,
+            "tip": "Automatische monatliche Verlängerung für Credits. Jederzeit kündbar!",
+            "button": {
+              "title": "Plan abonnieren",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "starter-monthly",
+            "product_name": "Starter Plan",
+            "credits": 400,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Starter"
+          },
+          {
+            "title": "Premium Plan",
+            "description": "Ca. $19.2 / Monat, 23% Ersparnis vs. Monatsplan. Jederzeit kündbar!",
+            "features_title": "Beinhaltet",
+            "features": [
+              "4800 Credits, 1 Jahr gültig",
+              "Text-zu-Bild und Bild-zu-Bild Generierung",
+              "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
+              "Kostenloser Download generierter Bilder"
+            ],
+            "interval": "year",
+            "amount": 22990,
+            "currency": "USD",
+            "price": "$229.9",
+            "original_price": "$299.9",
+            "unit": "/ Jahr",
+            "is_featured": true,
+            "tip": "Ca. $19.2 / Monat, 23% Ersparnis vs. Monatsplan.",
+            "button": {
+              "title": "Plan abonnieren",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-yearly",
+            "product_name": "Premium Plan",
+            "credits": 4800,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Premium"
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "Aktueller Plan",
+    "processing": "Wird verarbeitet"
+  }
+}
+
+

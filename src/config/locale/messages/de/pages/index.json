@@ -1,0 +1,426 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "logos",
+      "introduce",
+      "benefits",
+      "usage",
+      "features",
+      "stats",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Ihr persönlicher KI-Friseur",
+        "highlight_text": "AI Barber",
+        "description": "Erleben Sie die Zukunft des Friseurhandwerks mit AI Barber. Laden Sie Ihr Foto hoch, markieren Sie Ihr Haar und erleben Sie eine atemberaubende Verwandlung mit unserem KI-Frisuren-Wechsler.",
+        "tip": "🎁 Probieren Sie jetzt den besten KI-Haarschnitt-Wechsler aus",
+        "buttons": [
+          {
+            "title": "Kostenlos testen",
+            "icon": "Zap",
+            "url": "/ai-hairstyle-changer",
+            "target": "_self",
+            "variant": "default"
+          },
+          {
+            "title": "Beispiele ansehen",
+            "icon": "BookOpenText",
+            "url": "/subscribe",
+            "target": "_blank",
+            "variant": "outline"
+          }
+        ],
+        "show_avatars": true,
+        "avatars_tip": "999+ Benutzer verwenden AI Barber",
+        "show_award": false,
+        "image": {
+          "src": "/imgs/features/admin.png",
+          "alt": "AI Barber Hero",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/admin-dark.png",
+          "alt": "AI Barber Hero",
+          "width": 1200,
+          "height": 800
+        },
+        "carousel_images": [
+          {
+            "light": "/imgs/features/admin.png",
+            "dark": "/imgs/features/admin-dark.png",
+            "alt": "AI Barber Hauptoberfläche"
+          },
+          {
+            "light": "/imgs/features/admin-settings.png",
+            "dark": "/imgs/features/admin-settings.png",
+            "alt": "AI Barber Einstellungen"
+          },
+          {
+            "light": "/imgs/features/landing-page.png",
+            "dark": "/imgs/features/landing-page.png",
+            "alt": "AI Barber Landing Page"
+          },
+          {
+            "light": "/imgs/features/music.png",
+            "dark": "/imgs/features/music-dark.png",
+            "alt": "AI Musikgenerator"
+          },
+          {
+            "light": "/imgs/features/user-billing.png",
+            "dark": "/imgs/features/user-billing.png",
+            "alt": "Benutzer-Abrechnungs-Dashboard"
+          }
+        ],
+        "background_image": {
+          "src": "/imgs/bg/hero.png",
+          "alt": "AI Barber Hintergrund"
+        }
+      },
+      "logos": {
+        "id": "logos",
+        "title": "Angetrieben von fortschrittlicher KI-Technologie",
+        "items": [
+          {
+            "title": "Next.js",
+            "image": {
+              "src": "/imgs/logos/nextjs.svg",
+              "alt": "Next.js"
+            }
+          },
+          {
+            "title": "React",
+            "image": {
+              "src": "/imgs/logos/react.svg",
+              "alt": "React"
+            }
+          },
+          {
+            "title": "TailwindCSS",
+            "image": {
+              "src": "/imgs/logos/tailwindcss.svg",
+              "alt": "TailwindCSS"
+            }
+          },
+          {
+            "title": "Shadcn/UI",
+            "image": {
+              "src": "/imgs/logos/shadcn.svg",
+              "alt": "Shadcn/UI"
+            }
+          },
+          {
+            "title": "Vercel",
+            "image": {
+              "src": "/imgs/logos/vercel.svg",
+              "alt": "Vercel"
+            }
+          }
+        ]
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "Was ist AI Barber?",
+        "label": "Einführung",
+        "description": "AI Barber ist ein virtuelles Frisuren-Tool, das fortschrittliche KI verwendet, um Ihnen zu helfen, Ihren perfekten Look zu finden.",
+        "image": {
+          "src": "/imgs/features/landing-page.png",
+          "alt": "AI Barber Einführung"
+        },
+        "items": [
+          {
+            "title": "Virtuelle Frisur",
+            "description": "Probieren Sie unzählige virtuelle Frisuren aus, ohne eine Schere zu berühren.",
+            "icon": "RiMagicLine",
+            "image": {
+              "src": "/imgs/features/1.png",
+              "alt": "Virtuelle Frisur"
+            }
+          },
+          {
+            "title": "Realistische Ergebnisse",
+            "description": "Unser KI-Haarschnitt-Wechsler erzeugt hochrealistische Ergebnisse, die wie das echte Ding aussehen.",
+            "icon": "RiCameraLensLine",
+            "image": {
+              "src": "/imgs/features/2.png",
+              "alt": "Realistische Ergebnisse"
+            }
+          },
+          {
+            "title": "KI-Bildgenerator",
+            "description": "Verwenden Sie unseren fortschrittlichen KI-Bildgenerator, um einzigartige Frisuren-Konzepte zu erstellen.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "/imgs/features/3.png",
+              "alt": "KI-Bildgenerator"
+            }
+          },
+          {
+            "title": "Stil-Transfer",
+            "description": "Übertragen Sie Stile von Prominenten oder Models direkt auf Ihr Foto.",
+            "icon": "RiExchangeLine",
+            "image": {
+              "src": "/imgs/features/4.png",
+              "alt": "Stil-Transfer"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Warum AI Barber wählen",
+        "label": "Vorteile",
+        "description": "Erkunden Sie unendliche Möglichkeiten mit unserem sicheren und benutzerfreundlichen AI Barber-Tool.",
+        "items": [
+          {
+            "title": "Blitzschnell",
+            "description": "Verwandeln Sie Ihr Haar im Handumdrehen. Keine tagelange Wartezeit auf Ergebnisse.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/user-billing.png",
+              "alt": "Schnelle Verarbeitung"
+            }
+          },
+          {
+            "title": "Sicher und privat",
+            "description": "Ihre Bilder sind Ihre Angelegenheit. Wir bewahren sie sicher auf und teilen sie niemals.",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/admin-settings.png",
+              "alt": "Sicher"
+            }
+          },
+          {
+            "title": "Hervorragend benutzerfreundlich",
+            "description": "Entfesseln Sie den Stylisten in Ihnen mit nur wenigen Klicks. Keine technischen Fähigkeiten erforderlich.",
+            "icon": "RiUserSmileLine",
+            "image": {
+              "src": "/imgs/features/landing-page.png",
+              "alt": "Benutzerfreundlich"
+            }
+          }
+        ]
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "Wie man AI Barber verwendet",
+        "description": "Erhalten Sie Ihren neuen Look in drei einfachen Schritten:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "Verwendung"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Foto hochladen",
+            "description": "Laden Sie ein klares Foto von sich auf die AI Barber-Plattform hoch.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Hochladen"
+            }
+          },
+          {
+            "title": "Bereich auswählen",
+            "description": "Markieren Sie den Haarbereich, den Sie ändern möchten.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Auswählen"
+            }
+          },
+          {
+            "title": "Generieren",
+            "description": "Wählen Sie Ihren gewünschten Stil und lassen Sie den KI-Frisuren-Wechsler die Magie wirken.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Generieren"
+            }
+          },
+          {
+            "title": "Herunterladen",
+            "description": "Speichern Sie Ihre neue virtuelle Frisur und teilen Sie sie mit Freunden.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Herunterladen"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Hauptfunktionen von AI Barber",
+        "description": "Alles, was Sie für ein virtuelles Makeover benötigen.",
+        "items": [
+          {
+            "title": "KI-Haarschnitt-Wechsler",
+            "description": "Experimentieren Sie sofort mit verschiedenen Haarschnittlängen und -stilen.",
+            "icon": "RiScissorsCutLine"
+          },
+          {
+            "title": "Virtuelle Frisur",
+            "description": "Visualisieren Sie, wie verschiedene Frisuren an Ihnen aussehen, bevor Sie schneiden.",
+            "icon": "RiWomenLine"
+          },
+          {
+            "title": "Farbexperimente",
+            "description": "Probieren Sie neue Haarfarben ohne chemische Schäden aus.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "Hohe Auflösung",
+            "description": "Laden Sie hochwertige Bilder Ihrer Transformationen herunter.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "Stilvergleich",
+            "description": "Vergleichen Sie Vorher- und Nachher-Looks nebeneinander.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Mobilfreundlich",
+            "description": "Verwenden Sie AI Barber auf jedem Gerät, überall.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "stats": {
+        "id": "stats",
+        "title": "Menschen lieben AI Barber",
+        "description": "Schließen Sie sich Tausenden zufriedener Benutzer an, die ihre Looks verwandeln.",
+        "items": [
+          {
+            "title": "50.000+",
+            "description": "Transformationen"
+          },
+          {
+            "title": "10.000+",
+            "description": "Zufriedene Benutzer"
+          },
+          {
+            "title": "500+",
+            "description": "Stile"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "Was Benutzer über AI Barber sagen",
+        "description": "Hören Sie von Benutzern, die ihren perfekten Stil gefunden haben.",
+        "items": [
+          {
+            "name": "Sarah Jenkins",
+            "role": "Mode-Bloggerin",
+            "quote": "AI Barber half mir, mich für einen Bob-Schnitt zu entscheiden, bevor ich ihn tatsächlich machte. Hat mich vor einem großen Fehler bewahrt!",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "sarah"
+            }
+          },
+          {
+            "name": "Mike Ross",
+            "role": "Model",
+            "quote": "Ich verwende AI Barber, um verschiedene Looks für Fotoshootings zu testen. Es ist unglaublich realistisch.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "mike"
+            }
+          },
+          {
+            "name": "Emily Chen",
+            "role": "Studentin",
+            "quote": "Spaßig und einfach zu verwenden. Ich liebte es, verrückte Farben mit dem KI-Frisuren-Wechsler auszuprobieren.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "emily"
+            }
+          },
+          {
+            "name": "David Smith",
+            "role": "Schauspieler",
+            "quote": "Großartig zum Visualisieren von Charakter-Looks. Das Detail ist erstaunlich.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "david"
+            }
+          },
+          {
+            "name": "Jessica Lee",
+            "role": "Stylistin",
+            "quote": "Ich empfehle dies meinen Kunden, damit sie mir genau zeigen können, was sie wollen.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "jessica"
+            }
+          },
+          {
+            "name": "Tom Brown",
+            "role": "Benutzer",
+            "quote": "Die beste virtuelle Frisuren-App, die ich verwendet habe. Sehr empfehlenswert!",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "tom"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Häufig gestellte Fragen",
+        "description": "Haben Sie Fragen zu AI Barber? Wir haben Antworten.",
+        "tip": "Können Sie nicht finden, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Support-Team</a>",
+        "items": [
+          {
+            "question": "Was ist AI Barber und wie funktioniert es?",
+            "answer": "AI Barber ist ein KI-gestütztes Tool, mit dem Sie verschiedene Frisuren virtuell anprobieren können. Laden Sie einfach Ihr Foto hoch, wählen Sie Ihr Haar aus und wählen Sie einen Stil, um einen neuen Look zu generieren."
+          },
+          {
+            "question": "Wie genau ist die Frisuren-Transformation?",
+            "answer": "Unsere fortschrittlichen KI-Algorithmen sind darauf ausgelegt, hochrealistische und genaue Transformationen zu erzeugen, wobei Ihre Gesichtsform und Haartextur berücksichtigt werden."
+          },
+          {
+            "question": "Kann ich AI Barber für jeden Haartyp oder jede Haarlänge verwenden?",
+            "answer": "Ja, AI Barber funktioniert mit verschiedenen Haartypen und -längen. Für beste Ergebnisse verwenden Sie jedoch ein klares Foto mit guter Beleuchtung."
+          },
+          {
+            "question": "Gibt es Kosten?",
+            "answer": "Wir bieten sowohl kostenlose als auch Premium-Pläne an. Der kostenlose Plan ermöglicht es Ihnen, grundlegende Funktionen auszuprobieren, während der Premium-Plan hochauflösende Downloads und mehr Stile freischaltet."
+          },
+          {
+            "question": "Sind meine Daten sicher?",
+            "answer": "Ja, wir nehmen Ihre Privatsphäre ernst. Ihre Fotos werden sicher verarbeitet und nicht an Dritte weitergegeben."
+          },
+          {
+            "question": "Kann ich die generierten Frisuren speichern oder teilen?",
+            "answer": "Absolut! Sie können Ihre Transformationen herunterladen und direkt von der Plattform aus in sozialen Medien teilen."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Bereit für einen neuen Look?",
+        "description": "Starten Sie heute Ihre KI-Haarschnitt-Transformation.",
+        "buttons": [
+          {
+            "title": "Jetzt loslegen",
+            "url": "/ai-hairstyle-changer",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}
+

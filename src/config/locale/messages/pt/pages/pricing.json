@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "Preços",
+    "description": "Comece com um plano"
+  },
+  "page": {
+    "title": "Preços",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "sr_only_title": "Preços AI Barber",
+        "title": "Preços",
+        "description": "Escolha o plano perfeito para suas necessidades de transformação de penteado IA.",
+        "groups": [
+          {
+            "name": "one-time",
+            "title": "Pagamento único"
+          },
+          {
+            "name": "monthly",
+            "title": "Mensal"
+          },
+          {
+            "name": "yearly",
+            "title": "Anual",
+            "label": "economize 23%"
+          }
+        ],
+        "items": [
+          {
+            "title": "Pacote de Créditos",
+            "description": "Comece quando precisar. Pagamento único",
+            "features_title": "Inclui",
+            "features": [
+              "400 créditos, válidos por 1 ano",
+              "Geração de texto para imagem e imagem para imagem",
+              "Imagens de alta qualidade com modelo IA Nano Banana 2",
+              "Download gratuito das imagens geradas"
+            ],
+            "interval": "one-time",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "original_price": "$39.9",
+            "unit": "/ 400 créditos",
+            "is_featured": false,
+            "tip": "Comece quando precisar. Pagamento único",
+            "button": {
+              "title": "Comprar Créditos",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "credits-package",
+            "product_name": "Pacote de Créditos",
+            "credits": 400,
+            "valid_days": 365,
+            "group": "one-time"
+          },
+          {
+            "title": "Plano Inicial",
+            "description": "Renovação automática mensal para obter créditos. Cancele a qualquer momento!",
+            "features_title": "Inclui",
+            "features": [
+              "400 créditos, válidos por 1 mês",
+              "Geração de texto para imagem e imagem para imagem",
+              "Imagens de alta qualidade com modelo IA Nano Banana 2",
+              "Download gratuito das imagens geradas"
+            ],
+            "interval": "month",
+            "amount": 2490,
+            "currency": "USD",
+            "price": "$24.9",
+            "original_price": "$36.9",
+            "unit": "/ mês",
+            "is_featured": false,
+            "tip": "Renovação automática mensal para obter créditos. Cancele a qualquer momento!",
+            "button": {
+              "title": "Assinar Plano",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "starter-monthly",
+            "product_name": "Plano Inicial",
+            "credits": 400,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Inicial"
+          },
+          {
+            "title": "Plano Premium",
+            "description": "Aprox. $19.2 / mês, economize 23% vs plano mensal. Cancele a qualquer momento!",
+            "features_title": "Inclui",
+            "features": [
+              "4800 créditos, válidos por 1 ano",
+              "Geração de texto para imagem e imagem para imagem",
+              "Imagens de alta qualidade com modelo IA Nano Banana 2",
+              "Download gratuito das imagens geradas"
+            ],
+            "interval": "year",
+            "amount": 22990,
+            "currency": "USD",
+            "price": "$229.9",
+            "original_price": "$299.9",
+            "unit": "/ ano",
+            "is_featured": true,
+            "tip": "Aprox. $19.2 / mês, economize 23% vs plano mensal.",
+            "button": {
+              "title": "Assinar Plano",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-yearly",
+            "product_name": "Plano Premium",
+            "credits": 4800,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Premium"
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "Plano Atual",
+    "processing": "Processando"
+  }
+}
+
+

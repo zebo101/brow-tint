@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Hairstyle Changer AI Video",
+    "description": "Create hairstyle transformation videos with AI. See your new look in motion."
+  },
+  "page": {
+    "title": "Hairstyle Changer AI Video",
+    "description": "Create hairstyle transformation videos with AI. See your new look in motion."
+  },
+  "generator": {
+    "title": "Hair Video Generator",
+    "description": "Create animated hairstyle transformation videos with AI.",
+    "tabs": {
+      "text-to-video": "Describe Style",
+      "image-to-video": "Photo to Video",
+      "video-to-video": "Video Transform"
+    },
+    "form": {
+      "provider": "AI Provider",
+      "model": "Video Model",
+      "select_provider": "Select AI Provider",
+      "select_model": "Select Video Model",
+      "prompt": "Hairstyle Description",
+      "prompt_placeholder": "Describe the hairstyle transformation: from current to desired look, movement, angles",
+      "reference_image": "Your Photo",
+      "reference_image_placeholder": "Upload your photo for video transformation",
+      "reference_video": "Reference Video URL",
+      "reference_video_placeholder": "Enter the URL of a reference hairstyle video",
+      "some_images_failed_to_upload": "Image failed to upload, please delete and re-upload",
+      "prompt_too_long": "Description is too long, please shorten it"
+    },
+    "generate": "Generate Video",
+    "checking_account": "Checking Account...",
+    "loading": "Loading...",
+    "generating": "Creating Your Transformation Video...",
+    "sign_in_to_generate": "Sign In to Create Videos",
+    "credits_cost": "Cost {credits} credits",
+    "credits_remaining": "Remaining {credits} credits",
+    "buy_credits": "Buy Credits",
+    "progress": "Progress",
+    "generated_videos": "Your Transformation Video",
+    "ready_to_generate": "Ready to Create",
+    "ready_for_generating": "Ready for Creation",
+    "no_videos_generated": "No Videos Created Yet"
+  }
+}

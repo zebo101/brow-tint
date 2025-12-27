@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "title": "가격",
+    "description": "플랜 선택하기"
+  },
+  "page": {
+    "title": "가격",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "sr_only_title": "AI Barber 가격",
+        "title": "가격",
+        "description": "AI 헤어스타일 변환 요구에 완벽한 플랜을 선택하세요.",
+        "groups": [
+          {
+            "name": "one-time",
+            "title": "필요할 때 결제"
+          },
+          {
+            "name": "monthly",
+            "title": "월간"
+          },
+          {
+            "name": "yearly",
+            "title": "연간",
+            "label": "23% 절약"
+          }
+        ],
+        "items": [
+          {
+            "title": "크레딧 패키지",
+            "description": "필요할 때 언제든지 시작하세요. 일회성 결제",
+            "features_title": "포함 사항",
+            "features": [
+              "400 크레딧, 1년간 유효",
+              "텍스트-이미지 및 이미지-이미지 생성",
+              "Nano Banana 2 AI 모델로 고품질 이미지",
+              "생성된 이미지 무료 다운로드"
+            ],
+            "interval": "one-time",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "original_price": "$39.9",
+            "unit": "/ 400 크레딧",
+            "is_featured": false,
+            "tip": "필요할 때 언제든지 시작하세요. 일회성 결제",
+            "button": {
+              "title": "크레딧 구매",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "credits-package",
+            "product_name": "크레딧 패키지",
+            "credits": 400,
+            "valid_days": 365,
+            "group": "one-time"
+          },
+          {
+            "title": "스타터 플랜",
+            "description": "매월 자동 갱신으로 크레딧을 받으세요. 언제든지 구독 취소 가능!",
+            "features_title": "포함 사항",
+            "features": [
+              "400 크레딧, 1개월간 유효",
+              "텍스트-이미지 및 이미지-이미지 생성",
+              "Nano Banana 2 AI 모델로 고품질 이미지",
+              "생성된 이미지 무료 다운로드"
+            ],
+            "interval": "month",
+            "amount": 2490,
+            "currency": "USD",
+            "price": "$24.9",
+            "original_price": "$36.9",
+            "unit": "/ 월",
+            "is_featured": false,
+            "tip": "매월 자동 갱신으로 크레딧을 받으세요. 언제든지 구독 취소 가능!",
+            "button": {
+              "title": "플랜 구독",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "starter-monthly",
+            "product_name": "스타터 플랜",
+            "credits": 400,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "스타터"
+          },
+          {
+            "title": "프리미엄 플랜",
+            "description": "월 약 $19.2, 월간 플랜 대비 23% 절약. 언제든지 구독 취소 가능!",
+            "features_title": "포함 사항",
+            "features": [
+              "4800 크레딧, 1년간 유효",
+              "텍스트-이미지 및 이미지-이미지 생성",
+              "Nano Banana 2 AI 모델로 고품질 이미지",
+              "생성된 이미지 무료 다운로드"
+            ],
+            "interval": "year",
+            "amount": 22990,
+            "currency": "USD",
+            "price": "$229.9",
+            "original_price": "$299.9",
+            "unit": "/ 년",
+            "is_featured": true,
+            "tip": "월 약 $19.2, 월간 플랜 대비 23% 절약.",
+            "button": {
+              "title": "플랜 구독",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-yearly",
+            "product_name": "프리미엄 플랜",
+            "credits": 4800,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "프리미엄"
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "현재 플랜",
+    "processing": "처리 중"
+  }
+}
+
+

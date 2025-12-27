@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Cambia Acconciatura IA - Trasforma il Tuo Look",
+    "description": "Cambia la tua acconciatura con l'IA. Carica la tua foto e prova diverse acconciature istantaneamente con il nostro Cambia Acconciatura IA.",
+    "keywords": "cambia acconciatura ia, acconciatura virtuale, taglio capelli ia, generatore acconciature"
+  },
+  "page": {
+    "title": "Cambia Acconciatura IA",
+    "description": "Cambia la tua acconciatura con l'IA. Carica la tua foto e prova diverse acconciature istantaneamente."
+  },
+  "generator": {
+    "title": "Cambia Acconciatura",
+    "description": "Carica la tua foto e prova diverse acconciature con la tecnologia IA.",
+    "tabs": {
+      "text-to-image": "Descrizione Stile",
+      "image-to-image": "Carica Foto"
+    },
+    "form": {
+      "provider": "Provider IA",
+      "model": "Modello Acconciatura",
+      "select_provider": "Seleziona Provider IA",
+      "select_model": "Seleziona Modello Acconciatura",
+      "prompt": "Descrizione Acconciatura",
+      "prompt_placeholder": "Descrivi l'acconciatura desiderata: lunghezza, colore, texture, stile (es: bob corto, capelli biondi lunghi ondulati, afro riccio)",
+      "reference_image": "La Tua Foto",
+      "reference_image_placeholder": "Carica la tua foto per i migliori risultati",
+      "some_images_failed_to_upload": "Alcune immagini non sono state caricate, eliminale e ricarica",
+      "prompt_too_long": "La descrizione è troppo lunga, accorciala"
+    },
+    "generate": "Genera Acconciatura",
+    "checking_account": "Verifica account...",
+    "loading": "Caricamento...",
+    "generating": "Trasformando il tuo look...",
+    "sign_in_to_generate": "Accedi per provare nuove acconciature",
+    "credits_cost": "Costa {credits} crediti",
+    "credits_remaining": "{credits} crediti rimanenti",
+    "buy_credits": "Acquista Crediti",
+    "progress": "Progresso",
+    "generated_images": "Il Tuo Nuovo Look",
+    "ready_to_generate": "Pronto per Trasformare",
+    "ready_for_generating": "Pronto per Trasformazione",
+    "no_images_generated": "Nessuna acconciatura ancora generata"
+  }
+}
+
+
