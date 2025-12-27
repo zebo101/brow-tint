@@ -231,9 +231,13 @@ export async function POST(req: NextRequest) {
       }
 
       const imageUrl = imageUploadResult.url;
+      if (!imageUrl) {
+        console.error(`Failed to get image url for file: ${file.name}`);
+        continue;
+      }
 
       // 生成缩略图
-      let thumbnailUrl = imageUrl; // 默认使用原图
+      let thumbnailUrl: string = imageUrl; // 默认使用原图
       const thumbnailBuffer = await generateThumbnail(imageBuffer, file.type);
       if (thumbnailBuffer) {
         const thumbnailKey = `hairstyle/${fileCategory}/thumb/${digest}.${ext}`;
@@ -244,7 +248,7 @@ export async function POST(req: NextRequest) {
           disposition: 'inline',
         });
 
-        if (thumbnailUploadResult.success) {
+        if (thumbnailUploadResult.success && thumbnailUploadResult.url) {
           thumbnailUrl = thumbnailUploadResult.url;
         }
       }
