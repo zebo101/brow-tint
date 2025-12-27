@@ -17,6 +17,10 @@
     "ai-saas-framework",
     "ai-saas-development"
   ],
+  "engines": {
+    "node": ">=20.9.0",
+    "pnpm": ">=8.0.0"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
