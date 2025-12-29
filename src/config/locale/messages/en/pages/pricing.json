@@ -44,7 +44,7 @@
             "original_price": "$39.9",
             "unit": "/ 400 credits",
             "is_featured": false,
-            "tip": "Start any time as you need. One-time payment",
+            "tip": "",
             "button": {
               "title": "Buy Credits",
               "url": "/#pricing",
@@ -73,7 +73,7 @@
             "original_price": "$36.9",
             "unit": "/ month",
             "is_featured": false,
-            "tip": "Auto renew monthly to get credits. Subscription can be canceled anytime!",
+            "tip": "",
             "button": {
               "title": "Subscribe Plan",
               "url": "/#pricing",
@@ -103,7 +103,7 @@
             "original_price": "$299.9",
             "unit": "/ year",
             "is_featured": true,
-            "tip": "Around $19.2 / month, save 23% compared to monthly plan.",
+            "tip": "",
             "button": {
               "title": "Subscribe Plan",
               "url": "/#pricing",

@@ -39,42 +39,32 @@
         "avatars_tip": "999+ Benutzer verwenden AI Barber",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/admin.png",
+          "src": "/imgs/features/ai-hairstyle-changer.png",
           "alt": "AI Barber Hero",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
+          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
           "alt": "AI Barber Hero",
           "width": 1200,
           "height": 800
         },
         "carousel_images": [
           {
-            "light": "/imgs/features/admin.png",
-            "dark": "/imgs/features/admin-dark.png",
-            "alt": "AI Barber Hauptoberfläche"
+            "light": "/imgs/features/ai-hairstyle-changer.png",
+            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
+            "alt": "AI Barber hairstyle changer"
           },
           {
-            "light": "/imgs/features/admin-settings.png",
-            "dark": "/imgs/features/admin-settings.png",
+            "light": "/imgs/features/hairstyle-changer-ai-video.png",
+            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
             "alt": "AI Barber Einstellungen"
           },
           {
-            "light": "/imgs/features/landing-page.png",
-            "dark": "/imgs/features/landing-page.png",
-            "alt": "AI Barber Landing Page"
-          },
-          {
-            "light": "/imgs/features/music.png",
-            "dark": "/imgs/features/music-dark.png",
-            "alt": "AI Musikgenerator"
-          },
-          {
-            "light": "/imgs/features/user-billing.png",
-            "dark": "/imgs/features/user-billing.png",
-            "alt": "Benutzer-Abrechnungs-Dashboard"
+            "light": "/imgs/features/chat.png",
+            "dark": "/imgs/features/chat-dark.png",
+            "alt": "AI Barber Chat"
           }
         ],
         "background_image": {
@@ -130,7 +120,7 @@
         "label": "Einführung",
         "description": "AI Barber ist ein virtuelles Frisuren-Tool, das fortschrittliche KI verwendet, um Ihnen zu helfen, Ihren perfekten Look zu finden.",
         "image": {
-          "src": "/imgs/features/landing-page.png",
+          "src": "/imgs/features/landingpage.png",
           "alt": "AI Barber Einführung"
         },
         "items": [
@@ -185,7 +175,7 @@
             "description": "Verwandeln Sie Ihr Haar im Handumdrehen. Keine tagelange Wartezeit auf Ergebnisse.",
             "icon": "RiSpeedLine",
             "image": {
-              "src": "/imgs/features/user-billing.png",
+              "src": "/imgs/features/image1.png",
               "alt": "Schnelle Verarbeitung"
             }
           },
@@ -194,7 +184,7 @@
             "description": "Ihre Bilder sind Ihre Angelegenheit. Wir bewahren sie sicher auf und teilen sie niemals.",
             "icon": "RiLock2Line",
             "image": {
-              "src": "/imgs/features/admin-settings.png",
+              "src": "/imgs/features/image2.png",
               "alt": "Sicher"
             }
           },
@@ -203,7 +193,7 @@
             "description": "Entfesseln Sie den Stylisten in Ihnen mit nur wenigen Klicks. Keine technischen Fähigkeiten erforderlich.",
             "icon": "RiUserSmileLine",
             "image": {
-              "src": "/imgs/features/landing-page.png",
+              "src": "/imgs/features/image3.png",
               "alt": "Benutzerfreundlich"
             }
           }

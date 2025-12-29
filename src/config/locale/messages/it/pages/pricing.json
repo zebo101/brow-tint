@@ -44,7 +44,7 @@
             "original_price": "$39.9",
             "unit": "/ 400 crediti",
             "is_featured": false,
-            "tip": "Inizia quando ne hai bisogno. Pagamento unico",
+            "tip": "",
             "button": {
               "title": "Acquista Crediti",
               "url": "/#pricing",
@@ -73,7 +73,7 @@
             "original_price": "$36.9",
             "unit": "/ mese",
             "is_featured": false,
-            "tip": "Rinnovo automatico mensile per ottenere crediti. Annullabile in qualsiasi momento!",
+            "tip": "",
             "button": {
               "title": "Iscriviti al Piano",
               "url": "/#pricing",
@@ -103,7 +103,7 @@
             "original_price": "$299.9",
             "unit": "/ anno",
             "is_featured": true,
-            "tip": "Circa $19.2 / mese, risparmia 23% vs piano mensile.",
+            "tip": "",
             "button": {
               "title": "Iscriviti al Piano",
               "url": "/#pricing",
@@ -125,6 +125,8 @@
     "processing": "In elaborazione"
   }
 }
+
+
 
 
 

@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common/smart-icon';
 import { Button } from '@/shared/components/ui/button';
-import { Card, CardContent } from '@/shared/components/ui/card';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
 
@@ -111,83 +110,57 @@ export function Showcases({
         </motion.div>
       )}
 
-      <div className="container grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredItems.length > 0 ? (
-          filteredItems.map((item, index) => {
-            const hasButton = !!(item as any).button;
-            const cardContent = (
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.1,
-                  ease: [0.22, 1, 0.36, 1] as const,
-                }}
-              >
-                <Card className="dark:hover:shadow-primary/10 overflow-hidden p-0 transition-all hover:shadow-lg">
-                  <CardContent className="p-0">
-                    <motion.div
-                      className="relative aspect-16/10 w-full overflow-hidden"
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <Image
-                        src={item.image?.src ?? ''}
-                        alt={item.image?.alt ?? ''}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        fill
-                        className="rounded-t-lg object-cover transition-transform duration-300"
-                      />
-                    </motion.div>
-                    <div className="p-6">
-                      <h3 className="mb-2 line-clamp-1 text-xl font-semibold text-balance">
-                        {item.title}
-                      </h3>
-                      <p
-                        className="text-muted-foreground line-clamp-3 text-sm"
-                        dangerouslySetInnerHTML={{
-                          __html: item.description ?? '',
-                        }}
-                      />
-                      {hasButton && (
-                        <div className="mt-4">
-                          <Button
-                            asChild
-                            variant={(item as any).button.variant || 'default'}
-                            size={(item as any).button.size || 'sm'}
-                            className="bg-primary hover:bg-primary/90 h-8 w-full border-0 px-3 py-1.5 text-sm font-medium text-white"
-                          >
-                            <Link
-                              href={(item as any).button.url || ''}
-                              target={(item as any).button.target || '_self'}
-                            >
-                              {(item as any).button.icon && (
-                                <SmartIcon
-                                  name={(item as any).button.icon as string}
-                                  className="text-white"
-                                />
-                              )}
-                              {(item as any).button.title}
-                            </Link>
-                          </Button>
-                        </div>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            );
-
-            return hasButton ? (
-              <div key={index}>{cardContent}</div>
-            ) : (
-              <Link key={index} href={item.url || ''} target={item.target}>
-                {cardContent}
-              </Link>
-            );
-          })
+          filteredItems.map((item, index) => (
+            <motion.div
+              key={index}
+              className="group relative cursor-pointer overflow-hidden rounded-xl"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{
+                duration: 0.5,
+                delay: Math.min(index * 0.05, 0.3),
+                ease: [0.22, 1, 0.36, 1] as const,
+              }}
+            >
+              {/* Full-size image */}
+              <div className="relative aspect-square w-full overflow-hidden">
+                <Image
+                  src={item.image?.src ?? ''}
+                  alt={item.image?.alt ?? ''}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  fill
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                />
+              </div>
+              
+              {/* Hover overlay with prompt/description */}
+              <div className="pointer-events-none absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 transition-all duration-300 ease-out group-hover:pointer-events-auto group-hover:opacity-100">
+                <div className="translate-y-4 p-4 transition-transform duration-300 ease-out group-hover:translate-y-0">
+                  <h3 className="mb-1 text-lg font-bold text-white drop-shadow-lg">
+                    {item.title}
+                  </h3>
+                  {item.description && (
+                    <p className="mb-3 line-clamp-2 text-sm text-white/85 drop-shadow-md">
+                      {item.description}
+                    </p>
+                  )}
+                  <Button
+                    asChild
+                    size="sm"
+                    className="bg-primary hover:bg-primary/90 h-9 w-full border-0 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:scale-[1.02]"
+                  >
+                    <Link href="/ai-hairstyle-changer">
+                      <SmartIcon name="Wand2" className="mr-1.5 size-4" />
+                      Try This Style
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </motion.div>
+          ))
         ) : (
           <motion.div
             className="text-muted-foreground col-span-full text-center"

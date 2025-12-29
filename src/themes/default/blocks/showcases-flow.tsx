@@ -163,62 +163,56 @@ export function ShowcasesFlow({
       {filteredItems.length > 0 ? (
         <div className="container mx-auto columns-1 gap-4 space-y-4 sm:columns-2 lg:columns-3 xl:columns-4">
           {filteredItems.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              className="group relative cursor-zoom-in break-inside-avoid overflow-hidden rounded-xl"
+              className="group relative cursor-zoom-in break-inside-avoid overflow-hidden rounded-xl transition-transform duration-300 ease-out hover:scale-[1.02]"
               onClick={() => setSelectedIndex(index)}
-              initial={{ opacity: 0, y: 30, scale: 0.95 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.1,
-                ease: [0.22, 1, 0.36, 1] as const,
-              }}
-              whileHover={{ scale: 1.02 }}
             >
               <LazyImage
                 src={item.image?.src ?? ''}
                 alt={item.image?.alt ?? ''}
-                className="h-auto w-full transition-transform duration-300 group-hover:scale-105"
+                className="block h-auto w-full"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
               />
-              <div className="absolute inset-0 flex flex-col justify-end bg-black/60 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <h3 className="mb-2 translate-y-4 text-sm font-medium text-white transition-transform duration-300 group-hover:translate-y-0">
-                  {item.title}
-                </h3>
-                {/* {item.description && (
-                  <p className="line-clamp-2 translate-y-4 text-sm text-white/80 transition-transform delay-75 duration-300 group-hover:translate-y-0">
-                    {item.description}
-                  </p>
-                )} */}
-                {(item as any).button && (
-                  <div
-                    className="mt-3 translate-y-4 transition-transform delay-100 duration-300 group-hover:translate-y-0"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Button
-                      asChild
-                      variant={(item as any).button.variant || 'default'}
-                      size={(item as any).button.size || 'sm'}
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground h-8 w-full border-0 px-1 py-1.5 text-sm font-medium"
+              {/* Hover overlay - only visible on hover for performance */}
+              <div className="pointer-events-none absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 transition-opacity duration-300 ease-out group-hover:pointer-events-auto group-hover:opacity-100">
+                <div className="translate-y-2 p-4 transition-transform duration-300 ease-out group-hover:translate-y-0">
+                  <h3 className="mb-1 text-base font-semibold text-white drop-shadow-lg">
+                    {item.title}
+                  </h3>
+                  {item.description && (
+                    <p className="line-clamp-3 text-sm text-white/90 drop-shadow-md">
+                      {item.description}
+                    </p>
+                  )}
+                  {(item as any).button && (
+                    <div
+                      className="mt-3"
+                      onClick={(e) => e.stopPropagation()}
                     >
-                      <Link
-                        href={(item as any).button.url || ''}
-                        target={(item as any).button.target || '_self'}
+                      <Button
+                        asChild
+                        variant={(item as any).button.variant || 'default'}
+                        size={(item as any).button.size || 'sm'}
+                        className="bg-primary hover:bg-primary/90 text-primary-foreground h-8 w-full border-0 px-3 py-1.5 text-sm font-medium"
                       >
-                        {(item as any).button.icon && (
-                          <SmartIcon
-                            name={(item as any).button.icon as string}
-                          />
-                        )}
-                        {(item as any).button.title}
-                      </Link>
-                    </Button>
-                  </div>
-                )}
+                        <Link
+                          href={(item as any).button.url || ''}
+                          target={(item as any).button.target || '_self'}
+                        >
+                          {(item as any).button.icon && (
+                            <SmartIcon
+                              name={(item as any).button.icon as string}
+                            />
+                          )}
+                          {(item as any).button.title}
+                        </Link>
+                      </Button>
+                    </div>
+                  )}
+                </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       ) : (

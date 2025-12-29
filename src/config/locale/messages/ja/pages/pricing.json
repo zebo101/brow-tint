@@ -44,7 +44,7 @@
             "original_price": "$39.9",
             "unit": "/ 400クレジット",
             "is_featured": false,
-            "tip": "必要なときにいつでも開始。1回限りのお支払い",
+            "tip": "",
             "button": {
               "title": "クレジット購入",
               "url": "/#pricing",
@@ -73,7 +73,7 @@
             "original_price": "$36.9",
             "unit": "/ 月",
             "is_featured": false,
-            "tip": "毎月自動更新でクレジット取得。いつでもキャンセル可能！",
+            "tip": "",
             "button": {
               "title": "プラン登録",
               "url": "/#pricing",
@@ -103,7 +103,7 @@
             "original_price": "$299.9",
             "unit": "/ 年",
             "is_featured": true,
-            "tip": "月額約$19.2、月額プランより23%お得。",
+            "tip": "",
             "button": {
               "title": "プラン登録",
               "url": "/#pricing",
@@ -125,6 +125,8 @@
     "processing": "処理中"
   }
 }
+
+
 
 
 

@@ -747,7 +747,7 @@ export function ImageGenerator({
       <div className="container px-4">
         <div
           className={cn(
-            'relative mx-auto grid max-w-[1800px] items-start gap-4',
+            'relative mx-auto grid max-w-[1800px] items-stretch gap-4',
             'grid-cols-1',
             isLeftPanelOpen &&
               isRightPanelOpen &&
@@ -763,7 +763,7 @@ export function ImageGenerator({
         >
           {/* 左侧发型选择面板 - 桌面端 (紧凑下拉式) */}
           {isLeftPanelOpen && (
-            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex lg:min-h-[500px]">
+            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex">
               <div className="shrink-0 border-b p-4">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold">{t('categories.title')}</h3>
@@ -827,8 +827,8 @@ export function ImageGenerator({
           </Button>
 
           {/* 中间主区域 */}
-          <main className="min-w-0 flex-1 space-y-4 md:space-y-6">
-            <Card>
+          <main className="min-w-0 flex-1 space-y-4 md:space-y-6 flex flex-col">
+            <Card className="flex-1 flex flex-col">
               <CardContent className="space-y-4 p-4 md:space-y-6 md:p-6">
                 {/* 侧边栏展开按钮 - 桌面端 */}
                 <div className="hidden lg:flex justify-between items-center -mt-2 mb-2">
@@ -900,8 +900,8 @@ export function ImageGenerator({
                   </p>
                 )}
 
-                {/* AI服务商和模型选择 */}
-                <div className="grid grid-cols-2 gap-4">
+                {/* AI服务商和模型选择 - Hidden by default */}
+                {/* <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label>{t('form.provider')}</Label>
                     <Select
@@ -940,7 +940,7 @@ export function ImageGenerator({
                       </SelectContent>
                     </Select>
                   </div>
-                </div>
+                </div> */}
 
                 {/* AI发型描述 */}
                 <div className="space-y-2">
@@ -1123,7 +1123,7 @@ export function ImageGenerator({
 
           {/* 右侧教程和结果面板 */}
           {isRightPanelOpen && (
-            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex lg:min-h-[600px]">
+            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex">
               <Tabs
                 value={rightTab}
                 onValueChange={(value) =>

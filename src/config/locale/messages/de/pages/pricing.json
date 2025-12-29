@@ -44,7 +44,7 @@
             "original_price": "$39.9",
             "unit": "/ 400 Credits",
             "is_featured": false,
-            "tip": "Starten Sie jederzeit nach Bedarf. Einmalige Zahlung",
+            "tip": "",
             "button": {
               "title": "Credits kaufen",
               "url": "/#pricing",
@@ -73,7 +73,7 @@
             "original_price": "$36.9",
             "unit": "/ Monat",
             "is_featured": false,
-            "tip": "Automatische monatliche Verlängerung für Credits. Jederzeit kündbar!",
+            "tip": "",
             "button": {
               "title": "Plan abonnieren",
               "url": "/#pricing",
@@ -103,7 +103,7 @@
             "original_price": "$299.9",
             "unit": "/ Jahr",
             "is_featured": true,
-            "tip": "Ca. $19.2 / Monat, 23% Ersparnis vs. Monatsplan.",
+            "tip": "",
             "button": {
               "title": "Plan abonnieren",
               "url": "/#pricing",
@@ -125,6 +125,8 @@
     "processing": "Wird verarbeitet"
   }
 }
+
+
 
 
 

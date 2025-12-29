@@ -41,13 +41,13 @@
         "avatars_tip": "999+ users are using AI Barber",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/admin.png",
+          "src": "/imgs/features/ai-hairstyle-changer.png",
           "alt": "AI Barber Hero",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
+          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
           "alt": "AI Barber Hero",
           "width": 1200,
           "height": 800
@@ -59,24 +59,14 @@
             "alt": "AI Barber hairstyle changer"
           },
           {
-            "light": "/imgs/features/admin-settings.png",
-            "dark": "/imgs/features/admin-settings.png",
+            "light": "/imgs/features/hairstyle-changer-ai-video.png",
+            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
             "alt": "AI Barber Settings"
           },
           {
-            "light": "/imgs/features/landing-page.png",
-            "dark": "/imgs/features/landing-page.png",
-            "alt": "AI Barber Landing Page"
-          },
-          {
-            "light": "/imgs/features/music.png",
-            "dark": "/imgs/features/music-dark.png",
-            "alt": "AI Music Generator"
-          },
-          {
-            "light": "/imgs/features/user-billing.png",
-            "dark": "/imgs/features/user-billing.png",
-            "alt": "User Billing Dashboard"
+            "light": "/imgs/features/chat.png",
+            "dark": "/imgs/features/chat-dark.png",
+            "alt": "AI Barber Chat"
           }
         ],
         "background_image": {
@@ -132,7 +122,7 @@
         "label": "Introduction",
         "description": "AI Barber is a virtual hairstyle tool that uses advanced AI to help you find your perfect look.",
         "image": {
-          "src": "/imgs/features/landing-page.png",
+          "src": "/imgs/features/landingpage.png",
           "alt": "AI Barber Introduction"
         },
         "items": [
@@ -187,7 +177,7 @@
             "description": "Transform your hair in the blink of an eye. No waiting days for results.",
             "icon": "RiSpeedLine",
             "image": {
-              "src": "/imgs/features/user-billing.png",
+              "src": "/imgs/features/image1.png",
               "alt": "Fast Processing"
             }
           },
@@ -196,7 +186,7 @@
             "description": "Your pictures are your business. We keep them safe and never share them.",
             "icon": "RiLock2Line",
             "image": {
-              "src": "/imgs/features/admin-settings.png",
+              "src": "/imgs/features/image2.png",
               "alt": "Secure"
             }
           },
@@ -205,7 +195,7 @@
             "description": "Embrace the stylist within you in just a few clicks. No technical skills required.",
             "icon": "RiUserSmileLine",
             "image": {
-              "src": "/imgs/features/landing-page.png",
+              "src": "/imgs/features/image3.png",
               "alt": "User Friendly"
             }
           }

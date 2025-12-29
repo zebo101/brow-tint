@@ -44,7 +44,7 @@
             "original_price": "$39.9",
             "unit": "/ 400 积分",
             "is_featured": false,
-            "tip": "随时开始，按需使用。一次性付款",
+            "tip": "",
             "button": {
               "title": "购买积分",
               "url": "/#pricing",
@@ -73,7 +73,7 @@
             "original_price": "$36.9",
             "unit": "/ 月",
             "is_featured": false,
-            "tip": "每月自动续费获取积分。随时可取消订阅！",
+            "tip": "",
             "button": {
               "title": "订阅套餐",
               "url": "/#pricing",
@@ -103,7 +103,7 @@
             "original_price": "$299.9",
             "unit": "/ 年",
             "is_featured": true,
-            "tip": "约 $19.2 / 月，相比月付节省 23%。",
+            "tip": "",
             "button": {
               "title": "订阅套餐",
               "url": "/#pricing",

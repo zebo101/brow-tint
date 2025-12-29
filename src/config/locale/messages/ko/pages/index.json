@@ -39,42 +39,32 @@
         "avatars_tip": "999+ 명의 사용자가 AI Barber를 사용 중입니다",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/admin.png",
+          "src": "/imgs/features/ai-hairstyle-changer.png",
           "alt": "AI Barber 히어로",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
+          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
           "alt": "AI Barber 히어로",
           "width": 1200,
           "height": 800
         },
         "carousel_images": [
           {
-            "light": "/imgs/features/admin.png",
-            "dark": "/imgs/features/admin-dark.png",
-            "alt": "AI Barber 메인 인터페이스"
+            "light": "/imgs/features/ai-hairstyle-changer.png",
+            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
+            "alt": "AI Barber hairstyle changer"
           },
           {
-            "light": "/imgs/features/admin-settings.png",
-            "dark": "/imgs/features/admin-settings.png",
+            "light": "/imgs/features/hairstyle-changer-ai-video.png",
+            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
             "alt": "AI Barber 설정"
           },
           {
-            "light": "/imgs/features/landing-page.png",
-            "dark": "/imgs/features/landing-page.png",
-            "alt": "AI Barber 랜딩 페이지"
-          },
-          {
-            "light": "/imgs/features/music.png",
-            "dark": "/imgs/features/music-dark.png",
-            "alt": "AI 음악 생성기"
-          },
-          {
-            "light": "/imgs/features/user-billing.png",
-            "dark": "/imgs/features/user-billing.png",
-            "alt": "사용자 청구 대시보드"
+            "light": "/imgs/features/chat.png",
+            "dark": "/imgs/features/chat-dark.png",
+            "alt": "AI Barber Chat"
           }
         ],
         "background_image": {
@@ -130,7 +120,7 @@
         "label": "소개",
         "description": "AI Barber는 고급 AI를 사용하여 완벽한 외모를 찾도록 도와주는 가상 헤어스타일 도구입니다.",
         "image": {
-          "src": "/imgs/features/landing-page.png",
+          "src": "/imgs/features/landingpage.png",
           "alt": "AI Barber 소개"
         },
         "items": [
@@ -185,7 +175,7 @@
             "description": "눈 깜짝할 사이에 헤어스타일을 변화시키세요. 결과를 며칠 기다릴 필요가 없습니다.",
             "icon": "RiSpeedLine",
             "image": {
-              "src": "/imgs/features/user-billing.png",
+              "src": "/imgs/features/image1.png",
               "alt": "빠른 처리"
             }
           },
@@ -194,7 +184,7 @@
             "description": "당신의 사진은 당신의 것입니다. 우리는 그것들을 안전하게 보관하며 절대 공유하지 않습니다.",
             "icon": "RiLock2Line",
             "image": {
-              "src": "/imgs/features/admin-settings.png",
+              "src": "/imgs/features/image2.png",
               "alt": "안전"
             }
           },
@@ -203,7 +193,7 @@
             "description": "몇 번의 클릭만으로 내면의 스타일리스트를 발휘하세요. 기술적 기술이 필요하지 않습니다.",
             "icon": "RiUserSmileLine",
             "image": {
-              "src": "/imgs/features/landing-page.png",
+              "src": "/imgs/features/image3.png",
               "alt": "사용자 친화적"
             }
           }

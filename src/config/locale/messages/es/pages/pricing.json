@@ -44,7 +44,7 @@
             "original_price": "$39.9",
             "unit": "/ 400 créditos",
             "is_featured": false,
-            "tip": "Comienza cuando lo necesites. Pago único",
+            "tip": "",
             "button": {
               "title": "Comprar Créditos",
               "url": "/#pricing",
@@ -73,7 +73,7 @@
             "original_price": "$36.9",
             "unit": "/ mes",
             "is_featured": false,
-            "tip": "Renovación automática mensual para obtener créditos. ¡Cancela en cualquier momento!",
+            "tip": "",
             "button": {
               "title": "Suscribirse al Plan",
               "url": "/#pricing",
@@ -103,7 +103,7 @@
             "original_price": "$299.9",
             "unit": "/ año",
             "is_featured": true,
-            "tip": "Aprox. $19.2 / mes, ahorra 23% vs plan mensual.",
+            "tip": "",
             "button": {
               "title": "Suscribirse al Plan",
               "url": "/#pricing",
@@ -125,6 +125,8 @@
     "processing": "Procesando"
   }
 }
+
+
 
 
 

@@ -44,7 +44,7 @@
             "original_price": "$39.9",
             "unit": "/ 400 크레딧",
             "is_featured": false,
-            "tip": "필요할 때 언제든지 시작하세요. 일회성 결제",
+            "tip": "",
             "button": {
               "title": "크레딧 구매",
               "url": "/#pricing",
@@ -73,7 +73,7 @@
             "original_price": "$36.9",
             "unit": "/ 월",
             "is_featured": false,
-            "tip": "매월 자동 갱신으로 크레딧을 받으세요. 언제든지 구독 취소 가능!",
+            "tip": "",
             "button": {
               "title": "플랜 구독",
               "url": "/#pricing",
@@ -103,7 +103,7 @@
             "original_price": "$299.9",
             "unit": "/ 년",
             "is_featured": true,
-            "tip": "월 약 $19.2, 월간 플랜 대비 23% 절약.",
+            "tip": "",
             "button": {
               "title": "플랜 구독",
               "url": "/#pricing",
@@ -125,6 +125,8 @@
     "processing": "처리 중"
   }
 }
+
+
 
 
 

@@ -40,42 +40,32 @@
         "avatars_tip": "999+ 用户正在使用 AI Barber",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/admin.png",
-          "alt": "AI Barber 主界面",
+          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "alt": "AI Barber 主图",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "AI Barber 主界面",
+          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "alt": "AI Barber 主图",
           "width": 1200,
           "height": 800
         },
         "carousel_images": [
           {
-            "light": "/imgs/features/admin.png",
-            "dark": "/imgs/features/admin-dark.png",
-            "alt": "AI Barber 主界面"
+            "light": "/imgs/features/ai-hairstyle-changer.png",
+            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
+            "alt": "AI 发型转换器"
           },
           {
-            "light": "/imgs/features/admin-settings.png",
-            "dark": "/imgs/features/admin-settings.png",
+            "light": "/imgs/features/hairstyle-changer-ai-video.png",
+            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
             "alt": "AI Barber 设置"
           },
           {
-            "light": "/imgs/features/landing-page.png",
-            "dark": "/imgs/features/landing-page.png",
-            "alt": "AI Barber 首页"
-          },
-          {
-            "light": "/imgs/features/music.png",
-            "dark": "/imgs/features/music-dark.png",
-            "alt": "AI 音乐生成器"
-          },
-          {
-            "light": "/imgs/features/user-billing.png",
-            "dark": "/imgs/features/user-billing.png",
-            "alt": "用户账单面板"
+            "light": "/imgs/features/chat.png",
+            "dark": "/imgs/features/chat-dark.png",
+            "alt": "AI Barber 对话"
           }
         ],
         "background_image": {
@@ -131,7 +121,7 @@
         "label": "产品介绍",
         "description": "AI Barber 是一款虚拟发型工具，使用先进的 AI 技术帮助您找到完美造型。",
         "image": {
-          "src": "/imgs/features/landing-page.png",
+          "src": "/imgs/features/landingpage.png",
           "alt": "AI Barber 介绍"
         },
         "items": [
@@ -186,7 +176,7 @@
             "description": "眨眼间即可改变您的发型。无需等待数天。",
             "icon": "RiSpeedLine",
             "image": {
-              "src": "/imgs/features/user-billing.png",
+              "src": "/imgs/features/image1.png",
               "alt": "快速处理"
             }
           },
@@ -195,7 +185,7 @@
             "description": "您的照片属于您的隐私。我们确保它们安全，绝不分享。",
             "icon": "RiLock2Line",
             "image": {
-              "src": "/imgs/features/admin-settings.png",
+              "src": "/imgs/features/image2.png",
               "alt": "安全"
             }
           },
@@ -204,7 +194,7 @@
             "description": "只需几次点击，释放您内在的造型师。无需技术技能。",
             "icon": "RiUserSmileLine",
             "image": {
-              "src": "/imgs/features/landing-page.png",
+              "src": "/imgs/features/image3.png",
               "alt": "用户友好"
             }
           }
