@@ -89,7 +89,7 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
         throw new Error(message);
       }
 
-      setUser((prev) => (prev ? { ...prev, credits: data } : prev));
+      setUser((prev: User | null) => (prev ? { ...prev, credits: data } : prev));
     } catch (e) {
       if (process.env.NODE_ENV !== 'production') {
         console.log('fetch user credits failed:', e);
