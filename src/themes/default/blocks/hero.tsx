@@ -85,7 +85,7 @@ export function Hero({
         />
 
         {section.buttons && (
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             {section.buttons.map((button, idx) => {
               // 第一个按钮使用RainbowButton（不显示图标，保持简洁）
               if (idx === 0) {
@@ -95,7 +95,7 @@ export function Hero({
                       href={button.url ?? ''}
                       target={button.target ?? '_self'}
                     >
-                      <span>{button.title}</span>
+                      <span className="whitespace-nowrap">{button.title}</span>
                     </Link>
                   </RainbowButton>
                 );
@@ -106,7 +106,7 @@ export function Hero({
                   asChild
                   size={button.size || 'lg'}
                   variant={button.variant || 'default'}
-                  className="h-11 rounded-xl px-8 font-medium"
+                  className="h-11 whitespace-nowrap rounded-xl px-4 font-medium sm:px-8"
                   key={idx}
                 >
                   <Link
@@ -114,7 +114,7 @@ export function Hero({
                     target={button.target ?? '_self'}
                   >
                     {button.icon && <SmartIcon name={button.icon as string} />}
-                    <span>{button.title}</span>
+                    <span className="whitespace-nowrap">{button.title}</span>
                   </Link>
                 </Button>
               );

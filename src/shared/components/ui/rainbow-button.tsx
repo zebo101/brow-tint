@@ -21,7 +21,7 @@ export function RainbowButton({
   return (
     <Comp
       className={cn(
-        'group relative inline-flex h-11 cursor-pointer items-center justify-center gap-2.5 rounded-xl border border-white/10 px-8 py-2 text-base font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+        'group relative inline-flex h-11 min-w-fit cursor-pointer items-center justify-center gap-2.5 rounded-xl border border-white/10 whitespace-nowrap px-4 py-2 text-base font-medium transition-all focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 sm:px-8',
 
         // before styles - 彩虹光晕效果
         showRainbow && 'before:pointer-events-none before:absolute before:bottom-[-20%] before:left-1/2 before:z-[-1] before:h-[20%] before:w-3/5 before:-translate-x-1/2 before:animate-rainbow before:bg-[linear-gradient(90deg,hsl(var(--color-1)),hsl(var(--color-5)),hsl(var(--color-3)),hsl(var(--color-4)),hsl(var(--color-2)))] before:bg-[length:200%] before:[filter:blur(calc(0.8*1rem))] before:opacity-100 before:content-[""]',
