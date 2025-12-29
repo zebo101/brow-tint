@@ -54,9 +54,9 @@
         },
         "carousel_images": [
           {
-            "light": "/imgs/features/admin.png",
-            "dark": "/imgs/features/admin-dark.png",
-            "alt": "AI Barber Main Interface"
+            "light": "/imgs/features/ai-hairstyle-changer.png",
+            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
+            "alt": "AI Barber hairstyle changer"
           },
           {
             "light": "/imgs/features/admin-settings.png",
