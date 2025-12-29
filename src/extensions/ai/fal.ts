@@ -344,6 +344,12 @@ export class FalProvider implements AIProvider {
       delete input.image_input;
     }
 
+    // hairstyle_image: add hairstyle reference for edit models
+    if (options.hairstyle_image) {
+      input.reference_image_url = options.hairstyle_image;
+      delete input.hairstyle_image;
+    }
+
     // video_input is the default options
     if (options.video_input && Array.isArray(options.video_input)) {
       input.video_url = options.video_input[0];

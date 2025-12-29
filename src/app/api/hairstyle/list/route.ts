@@ -1,15 +1,19 @@
-import { NextRequest } from 'next/server';
 import { respData, respErr } from '@/shared/lib/resp';
 import { getHairstyles, getHairstyleCountByCategory } from '@/shared/models/hairstyle';
 
-export async function GET(req: NextRequest) {
+/**
+ * GET /api/hairstyle/list
+ * Get hairstyles list with optional filtering
+ */
+export async function GET(req: Request) {
   try {
-    const { searchParams } = new URL(req.url);
-    const category = searchParams.get('category') || undefined;
-    const status = (searchParams.get('status') || 'active') as 'active' | 'inactive';
-    const page = parseInt(searchParams.get('page') || '1', 10);
-    const limit = parseInt(searchParams.get('limit') || '1000', 10);
+    const url = new URL(req.url);
+    const category = url.searchParams.get('category') || undefined;
+    const status = (url.searchParams.get('status') as 'active' | 'inactive') || 'active';
+    const page = parseInt(url.searchParams.get('page') || '1', 10);
+    const limit = parseInt(url.searchParams.get('limit') || '1000', 10);
 
+    // Get hairstyles
     const hairstyles = await getHairstyles({
       category,
       status,
@@ -17,21 +21,23 @@ export async function GET(req: NextRequest) {
       limit,
     });
 
-    // 如果需要，获取各分类的数量统计
-    const includeCounts = searchParams.get('includeCounts') === 'true';
-    let counts: Record<string, number> | undefined;
-    if (includeCounts) {
-      counts = await getHairstyleCountByCategory(status);
-    }
+    // Get category counts
+    const categoryCounts = await getHairstyleCountByCategory(status);
 
     return respData({
-      hairstyles,
-      counts,
-      total: hairstyles.length,
+      hairstyles: hairstyles.map((h) => ({
+        id: h.id,
+        category: h.category,
+        sequence: h.sequence,
+        name: h.name,
+        tags: h.tags ? JSON.parse(h.tags) : [],
+        imageUrl: h.imageUrl,
+        thumbnailUrl: h.thumbnailUrl,
+      })),
+      categories: categoryCounts,
     });
-  } catch (e: any) {
-    console.error('Get hairstyles failed:', e);
-    return respErr(`Get hairstyles failed: ${e.message || 'Unknown error'}`);
+  } catch (e) {
+    console.error('Failed to get hairstyles:', e);
+    return respErr('Failed to get hairstyles');
   }
 }
-

@@ -290,6 +290,20 @@ export class ReplicateProvider implements AIProvider {
       }
     }
 
+    // hairstyle_image: add hairstyle reference image to the input
+    if (options.hairstyle_image) {
+      // Add hairstyle image as additional reference for image-to-image generation
+      if (!input.input_images) {
+        input.input_images = [];
+      }
+      if (Array.isArray(input.input_images)) {
+        input.input_images.push(options.hairstyle_image);
+      } else if (input.image_input && Array.isArray(input.image_input)) {
+        input.image_input.push(options.hairstyle_image);
+      }
+      delete input.hairstyle_image;
+    }
+
     // duration transform
     if (options.duration) {
       if (['openai/sora-2'].includes(model)) {

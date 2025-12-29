@@ -1,0 +1,32 @@
+{
+  "fields": {
+    "title": "Título",
+    "media_type": "Tipo de mídia",
+    "provider": "Provedor",
+    "model": "Modelo",
+    "prompt": "Prompt",
+    "options": "Opções",
+    "status": "Status",
+    "result": "Resultado",
+    "cost_credits": "Créditos",
+    "created_at": "Criado em",
+    "action": "Ação",
+    "click_to_view": "Clique para ver/salvar"
+  },
+  "list": {
+    "title": "Tarefas de IA",
+    "tabs": {
+      "all": "Todos",
+      "music": "Música",
+      "image": "Imagem",
+      "video": "Vídeo",
+      "audio": "Áudio",
+      "text": "Texto"
+    },
+    "buttons": {
+      "view": "Ver tarefa",
+      "refresh": "Atualizar tarefa"
+    },
+    "empty_message": "Nenhuma tarefa encontrada"
+  }
+}

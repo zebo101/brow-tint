@@ -19,7 +19,9 @@
       "men": "男士发型",
       "women": "女士发型",
       "boys": "男童发型",
-      "girls": "女童发型"
+      "girls": "女童发型",
+      "selected": "已选择",
+      "styles": "款"
     },
     "sidebar": {
       "howtos": "使用教程",
@@ -39,7 +41,10 @@
       "reference_image": "您的照片",
       "reference_image_placeholder": "上传您的照片以获得最佳效果",
       "some_images_failed_to_upload": "部分图片上传失败，请删除后重新上传",
-      "prompt_too_long": "描述过长，请缩短"
+      "prompt_too_long": "描述过长，请缩短",
+      "upload": "上传",
+      "upload_hint": "点击或拖拽上传照片",
+      "max_size": "最大"
     },
     "generate": "生成发型",
     "checking_account": "正在检查账户...",
@@ -55,6 +60,24 @@
     "ready_to_generate": "准备转换",
     "ready_for_generating": "准备转换中",
     "no_images_generated": "暂无生成的AI发型",
-    "no_hairstyles": "暂无发型数据"
+    "photoGuidelines": {
+      "title": "照片上传指南",
+      "suitableTitle": "合适的照片",
+      "suitableDescription": "请上传清晰的正脸照片。为了获得满意的效果，建议将头发向上或向后梳理，让头发自然垂落。",
+      "unsuitableTitle": "不合适的照片",
+      "unsuitableDescription": "请不要上传侧脸照片、光线昏暗的照片、头发或其他物体遮挡面部的照片。另外，请避免使用卡通图片。",
+      "dontShowAgain": "不再显示",
+      "confirm": "好的，我知道了"
+    },
+    "cropImage": {
+      "title": "裁剪图片",
+      "presetRatios": "预设比例",
+      "free": "自由",
+      "actions": "操作",
+      "resetCrop": "重置裁剪",
+      "rotate": "旋转90°",
+      "cancel": "取消",
+      "apply": "应用"
+    }
   }
 }

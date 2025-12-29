@@ -1,0 +1,32 @@
+{
+  "fields": {
+    "title": "Titel",
+    "media_type": "Medientyp",
+    "provider": "Anbieter",
+    "model": "Modell",
+    "prompt": "Prompt",
+    "options": "Optionen",
+    "status": "Status",
+    "result": "Ergebnis",
+    "cost_credits": "Kredite",
+    "created_at": "Erstellt am",
+    "action": "Aktion",
+    "click_to_view": "Klicken zum Ansehen/Speichern"
+  },
+  "list": {
+    "title": "KI-Aufgaben",
+    "tabs": {
+      "all": "Alle",
+      "music": "Musik",
+      "image": "Bild",
+      "video": "Video",
+      "audio": "Audio",
+      "text": "Text"
+    },
+    "buttons": {
+      "view": "Aufgabe anzeigen",
+      "refresh": "Aufgabe aktualisieren"
+    },
+    "empty_message": "Keine Aufgaben gefunden"
+  }
+}

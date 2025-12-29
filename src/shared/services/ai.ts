@@ -17,6 +17,7 @@ export function getAIManagerWithConfigs(configs: Configs) {
     aiManager.addProvider(
       new KieProvider({
         apiKey: configs.kie_api_key,
+        baseUrl: configs.kie_base_url,
         customStorage: configs.kie_custom_storage === 'true',
       })
     );

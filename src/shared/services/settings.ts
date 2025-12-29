@@ -820,6 +820,15 @@ export async function getSettings() {
       tab: 'ai',
     },
     {
+      name: 'kie_base_url',
+      title: 'Kie Base URL',
+      type: 'url',
+      placeholder: 'https://api.kie.ai/api/v1',
+      group: 'kie',
+      tip: 'Set any compatible API URL, leave empty to use the default Kie API URL',
+      tab: 'ai',
+    },
+    {
       name: 'kie_custom_storage',
       title: 'Kie Custom Storage',
       type: 'switch',

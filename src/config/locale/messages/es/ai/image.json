@@ -15,7 +15,24 @@
       "text-to-image": "Descripción del Estilo",
       "image-to-image": "Subir Foto"
     },
+    "categories": {
+      "title": "Seleccionar Peinado",
+      "men": "Peinados para Hombres",
+      "women": "Peinados para Mujeres",
+      "boys": "Peinados para Niños",
+      "girls": "Peinados para Niñas",
+      "selected": "Seleccionado",
+      "styles": "estilos"
+    },
+    "sidebar": {
+      "howtos": "Instrucciones",
+      "discover": "Ver resultados",
+      "tour_title": "Guía de funciones",
+      "tour_description": "Aprende a usar el cambiador de peinados",
+      "start_tour": "Iniciar guía"
+    },
     "form": {
+      "select_hairstyle_placeholder": "Haz clic para seleccionar peinado",
       "provider": "Proveedor de IA",
       "model": "Modelo de Peinado",
       "select_provider": "Seleccionar Proveedor de IA",
@@ -25,7 +42,10 @@
       "reference_image": "Tu Foto",
       "reference_image_placeholder": "Sube tu foto para mejores resultados",
       "some_images_failed_to_upload": "Algunas imágenes no se pudieron subir, elimínalas y vuelve a subirlas",
-      "prompt_too_long": "La descripción es demasiado larga, por favor acórtala"
+      "prompt_too_long": "La descripción es demasiado larga, por favor acórtala",
+      "upload": "Subir",
+      "upload_hint": "Haz clic o arrastra para subir fotos",
+      "max_size": "Máx"
     },
     "generate": "Generar Peinado",
     "checking_account": "Verificando cuenta...",
@@ -42,5 +62,6 @@
     "no_images_generated": "Aún no se han generado peinados"
   }
 }
+
 
 

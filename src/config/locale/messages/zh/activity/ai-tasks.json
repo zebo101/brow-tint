@@ -10,7 +10,8 @@
     "result": "结果",
     "cost_credits": "消耗积分",
     "created_at": "创建时间",
-    "action": "操作"
+    "action": "操作",
+    "click_to_view": "点击查看/保存"
   },
   "list": {
     "title": "AI 任务",

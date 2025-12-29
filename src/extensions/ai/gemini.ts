@@ -85,7 +85,30 @@ export class GeminiProvider implements AIProvider {
       }
     }
 
-    const { image_input, ...generationConfig } = options || {};
+    // Add hairstyle reference image if provided
+    if (options && options.hairstyle_image) {
+      try {
+        const imageResp = await fetch(options.hairstyle_image);
+        if (imageResp.ok) {
+          const arrayBuffer = await imageResp.arrayBuffer();
+          const buffer = Buffer.from(arrayBuffer);
+          const base64Image = buffer.toString('base64');
+          const mimeType =
+            imageResp.headers.get('content-type') || 'image/jpeg';
+
+          requestParts.push({
+            inlineData: {
+              mimeType,
+              data: base64Image,
+            },
+          });
+        }
+      } catch (e) {
+        console.error('failed to fetch hairstyle image', options.hairstyle_image, e);
+      }
+    }
+
+    const { image_input, hairstyle_image, ...generationConfig } = options || {};
 
     const payload = {
       contents: {

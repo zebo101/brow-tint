@@ -30,3 +30,6 @@ export * from '../sign/sign-user';
 export * from './audio-player';
 
 export * from './error-boundary';
+
+export * from './photo-guidelines-modal';
+export * from './crop-image-modal';

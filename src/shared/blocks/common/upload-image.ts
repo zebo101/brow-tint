@@ -31,3 +31,4 @@ export async function uploadImageFile(file: File): Promise<string> {
   return result.data.urls[0] as string;
 }
 
+

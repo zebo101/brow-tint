@@ -10,7 +10,8 @@
     "result": "Result",
     "cost_credits": "Cost Credits",
     "created_at": "Created At",
-    "action": "Action"
+    "action": "Action",
+    "click_to_view": "Click to view/save"
   },
   "list": {
     "title": "AI Tasks",

@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
+import { SYSTEM_PROMPT_MARKER } from '@/config/img-prompt';
 import { AITaskStatus } from '@/extensions/ai';
 import { AudioPlayer, Empty, LazyImage } from '@/shared/blocks/common';
 import { TableCard } from '@/shared/blocks/table';
@@ -39,7 +40,29 @@ export default async function AiTasksPage({
   const table: Table = {
     title: t('list.title'),
     columns: [
-      { name: 'prompt', title: t('fields.prompt'), type: 'copy' },
+      {
+        name: 'prompt',
+        title: t('fields.prompt'),
+        type: 'copy',
+        callback: (item: AITask) => {
+          // Hide system prompt and hairstyle suffix from display
+          let prompt = item.prompt || '';
+          
+          // Remove system prompt (marked with SYSTEM_PROMPT_MARKER)
+          const systemPromptIndex = prompt.indexOf(SYSTEM_PROMPT_MARKER);
+          if (systemPromptIndex > 0) {
+            prompt = prompt.substring(0, systemPromptIndex).trim();
+          }
+          
+          // Remove hairstyle suffix
+          const hairstyleIndex = prompt.indexOf(' hairstyle:');
+          if (hairstyleIndex > 0) {
+            prompt = prompt.substring(0, hairstyleIndex).trim();
+          }
+          
+          return prompt || '-';
+        },
+      },
       { name: 'mediaType', title: t('fields.media_type'), type: 'label' },
       { name: 'provider', title: t('fields.provider'), type: 'label' },
       { name: 'model', title: t('fields.model'), type: 'label' },
@@ -80,12 +103,23 @@ export default async function AiTasksPage({
               return (
                 <div className="flex flex-col gap-2">
                   {taskInfo.images.map((image: any, index: number) => (
-                    <LazyImage
+                    <a
                       key={index}
-                      src={image.imageUrl}
-                      alt="Generated image"
-                      className="h-32 w-auto"
-                    />
+                      href={image.imageUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative inline-block cursor-pointer"
+                      download
+                    >
+                      <LazyImage
+                        src={image.imageUrl}
+                        alt="Generated image"
+                        className="h-20 w-20 rounded-lg object-cover transition-transform hover:scale-105"
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black/50 opacity-0 transition-opacity group-hover:opacity-100">
+                        <span className="text-xs text-white">{t('fields.click_to_view')}</span>
+                      </div>
+                    </a>
                   ))}
                 </div>
               );
@@ -136,12 +170,7 @@ export default async function AiTasksPage({
       url: '/activity/ai-tasks',
       is_active: !type || type === 'all',
     },
-    {
-      name: 'music',
-      title: t('list.tabs.music'),
-      url: '/activity/ai-tasks?type=music',
-      is_active: type === 'music',
-    },
+
     {
       name: 'image',
       title: t('list.tabs.image'),

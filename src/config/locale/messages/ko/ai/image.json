@@ -15,7 +15,24 @@
       "text-to-image": "스타일 설명",
       "image-to-image": "사진 업로드"
     },
+    "categories": {
+      "title": "헤어스타일 선택",
+      "men": "남성 헤어스타일",
+      "women": "여성 헤어스타일",
+      "boys": "남아 헤어스타일",
+      "girls": "여아 헤어스타일",
+      "selected": "선택됨",
+      "styles": "스타일"
+    },
+    "sidebar": {
+      "howtos": "사용법",
+      "discover": "결과 보기",
+      "tour_title": "기능 가이드",
+      "tour_description": "헤어스타일 체인저 사용법 알아보기",
+      "start_tour": "가이드 시작"
+    },
     "form": {
+      "select_hairstyle_placeholder": "클릭하여 헤어스타일 선택",
       "provider": "AI 제공업체",
       "model": "헤어스타일 모델",
       "select_provider": "AI 제공업체 선택",
@@ -25,7 +42,10 @@
       "reference_image": "내 사진",
       "reference_image_placeholder": "최상의 결과를 위해 사진 업로드",
       "some_images_failed_to_upload": "일부 이미지 업로드 실패, 삭제 후 다시 업로드하세요",
-      "prompt_too_long": "설명이 너무 깁니다. 짧게 해주세요"
+      "prompt_too_long": "설명이 너무 깁니다. 짧게 해주세요",
+      "upload": "업로드",
+      "upload_hint": "클릭 또는 드래그하여 사진 업로드",
+      "max_size": "최대"
     },
     "generate": "헤어스타일 생성",
     "checking_account": "계정 확인 중...",
@@ -42,5 +62,6 @@
     "no_images_generated": "아직 생성된 헤어스타일 없음"
   }
 }
+
 
 

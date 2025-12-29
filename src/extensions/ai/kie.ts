@@ -22,6 +22,7 @@ import {
  */
 export interface KieConfigs extends AIConfigs {
   apiKey: string;
+  baseUrl?: string; // custom base url
   customStorage?: boolean; // use custom storage to save files
 }
 
@@ -41,6 +42,9 @@ export class KieProvider implements AIProvider {
   // init provider
   constructor(configs: KieConfigs) {
     this.configs = configs;
+    if (configs.baseUrl) {
+      this.baseUrl = configs.baseUrl;
+    }
   }
 
   async generateMusic({
@@ -157,6 +161,13 @@ export class KieProvider implements AIProvider {
       const options = params.options;
       if (options.image_input && Array.isArray(options.image_input)) {
         payload.input.image_input = options.image_input;
+      }
+      // hairstyle_image: add hairstyle reference to image inputs
+      if (options.hairstyle_image) {
+        if (!payload.input.image_input) {
+          payload.input.image_input = [];
+        }
+        payload.input.image_input.push(options.hairstyle_image);
       }
       if (options.aspect_ratio) {
         payload.input.aspect_ratio = options.aspect_ratio;

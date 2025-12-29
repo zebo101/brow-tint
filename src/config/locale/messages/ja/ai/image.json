@@ -15,7 +15,24 @@
       "text-to-image": "スタイルの説明",
       "image-to-image": "写真アップロード"
     },
+    "categories": {
+      "title": "ヘアスタイル選択",
+      "men": "メンズヘアスタイル",
+      "women": "レディースヘアスタイル",
+      "boys": "男の子ヘアスタイル",
+      "girls": "女の子ヘアスタイル",
+      "selected": "選択済み",
+      "styles": "スタイル"
+    },
+    "sidebar": {
+      "howtos": "使い方",
+      "discover": "結果を見る",
+      "tour_title": "機能ガイド",
+      "tour_description": "ヘアスタイルチェンジャーの使い方",
+      "start_tour": "ガイド開始"
+    },
     "form": {
+      "select_hairstyle_placeholder": "クリックしてヘアスタイルを選択",
       "provider": "AIプロバイダー",
       "model": "ヘアスタイルモデル",
       "select_provider": "AIプロバイダーを選択",
@@ -25,7 +42,10 @@
       "reference_image": "あなたの写真",
       "reference_image_placeholder": "最高の結果のために写真をアップロード",
       "some_images_failed_to_upload": "一部の画像のアップロードに失敗しました。削除して再アップロードしてください",
-      "prompt_too_long": "説明が長すぎます。短くしてください"
+      "prompt_too_long": "説明が長すぎます。短くしてください",
+      "upload": "アップロード",
+      "upload_hint": "クリックまたはドラッグで写真をアップロード",
+      "max_size": "最大"
     },
     "generate": "ヘアスタイル生成",
     "checking_account": "アカウント確認中...",
@@ -42,5 +62,6 @@
     "no_images_generated": "まだヘアスタイルが生成されていません"
   }
 }
+
 
 

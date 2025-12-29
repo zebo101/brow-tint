@@ -19,7 +19,9 @@
       "men": "Men's Hairstyles",
       "women": "Women's Hairstyles",
       "boys": "Boys' Hairstyles",
-      "girls": "Girls' Hairstyles"
+      "girls": "Girls' Hairstyles",
+      "selected": "Selected",
+      "styles": "styles"
     },
     "sidebar": {
       "howtos": "How-tos",
@@ -39,7 +41,10 @@
       "reference_image": "Your Photo",
       "reference_image_placeholder": "Upload your photo for the best results",
       "some_images_failed_to_upload": "Some images failed to upload, please delete them and re-upload",
-      "prompt_too_long": "Description is too long, please shorten it"
+      "prompt_too_long": "Description is too long, please shorten it",
+      "upload": "Upload",
+      "upload_hint": "Click or drag to upload photos",
+      "max_size": "Max"
     },
     "generate": "Generate Hairstyle",
     "checking_account": "Checking Account...",
@@ -55,6 +60,24 @@
     "ready_to_generate": "Ready to Transform",
     "ready_for_generating": "Ready for Transformation",
     "no_images_generated": "No AI hairstyles generated yet",
-    "no_hairstyles": "No hairstyles available"
+    "photoGuidelines": {
+      "title": "Photo Guidelines for Best Results",
+      "suitableTitle": "Suitable Photos",
+      "suitableDescription": "Please upload a clear, front-facing photo of your face. To create a satisfying look, it's ideal to pull your hair up or back. And let your hair hang naturally.",
+      "unsuitableTitle": "Unsuitable Photos",
+      "unsuitableDescription": "Please don't upload photos taken from the side, in low light, where your face is covered by hair or any other objects. Also, please avoid cartoon images.",
+      "dontShowAgain": "Don't show again",
+      "confirm": "OK, Got it"
+    },
+    "cropImage": {
+      "title": "Crop Image",
+      "presetRatios": "Preset Ratios",
+      "free": "Free",
+      "actions": "Actions",
+      "resetCrop": "Reset Crop",
+      "rotate": "Rotate 90°",
+      "cancel": "Cancel",
+      "apply": "Apply"
+    }
   }
 }

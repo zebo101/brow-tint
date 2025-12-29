@@ -7,6 +7,8 @@ import { toast } from 'sonner';
 
 import { Button } from '@/shared/components/ui/button';
 import { cn } from '@/shared/lib/utils';
+import { CropImageModal } from './crop-image-modal';
+import { PhotoGuidelinesModal } from './photo-guidelines-modal';
 import { isImageFile, uploadImageFile } from './upload-image';
 
 export type UploadStatus = 'idle' | 'uploading' | 'uploaded' | 'error';
@@ -25,9 +27,14 @@ interface ImageUploaderProps {
   maxSizeMB?: number;
   title?: string;
   emptyHint?: string;
+  uploadLabel?: string;
+  emptyUploadLabel?: string;
+  maxSizeLabel?: string;
   className?: string;
   defaultPreviews?: string[];
   onChange?: (items: ImageUploaderValue[]) => void;
+  showGuidelines?: boolean;
+  enableCrop?: boolean;
 }
 
 interface UploadItem extends ImageUploaderValue {
@@ -51,9 +58,14 @@ export function ImageUploader({
   maxSizeMB = 10,
   title,
   emptyHint,
+  uploadLabel = 'Upload',
+  emptyUploadLabel = 'Click or drag to upload photos',
+  maxSizeLabel = 'Max',
   className,
   defaultPreviews,
   onChange,
+  showGuidelines = false,
+  enableCrop = false,
 }: ImageUploaderProps) {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const isInitializedRef = useRef(false);
@@ -62,6 +74,15 @@ export function ImageUploader({
   const replaceTargetIdRef = useRef<string | null>(null);
   const dragCounterRef = useRef(0);
   const [isDragActive, setIsDragActive] = useState(false);
+
+  // Modal states
+  const [isGuidelinesOpen, setIsGuidelinesOpen] = useState(false);
+  const [isCropOpen, setIsCropOpen] = useState(false);
+  const [fileToCrop, setFileToCrop] = useState<{
+    file: File;
+    preview: string;
+    replaceTargetId: string | null;
+  } | null>(null);
 
   // 使用 defaultPreviews 初始化 items，只在组件挂载时执行一次
   const [items, setItems] = useState<UploadItem[]>(() => {
@@ -217,12 +238,8 @@ export function ImageUploader({
     });
   };
 
-  const handleFiles = (selectedFiles: File[]) => {
-    const replaceTargetId = replaceTargetIdRef.current;
+  const processFiles = (selectedFiles: File[], replaceTargetId: string | null) => {
     if (replaceTargetId) {
-      // reset immediately to avoid sticky replace mode
-      replaceTargetIdRef.current = null;
-
       const file = selectedFiles[0];
       if (!file) return;
       if (!isImageFile(file)) {
@@ -347,6 +364,69 @@ export function ImageUploader({
     }
   };
 
+  const handleFiles = (selectedFiles: File[]) => {
+    // If crop is enabled and there is at least one file, open crop modal for the first one
+    if (enableCrop && selectedFiles.length > 0) {
+      const file = selectedFiles[0];
+      if (isImageFile(file)) {
+        // Create a blob URL for the preview
+        const preview = URL.createObjectURL(file);
+        setFileToCrop({
+          file,
+          preview,
+          replaceTargetId: replaceTargetIdRef.current,
+        });
+        
+        // Reset replace target until crop is done or cancelled
+        // We stored it in fileToCrop state
+        replaceTargetIdRef.current = null;
+        
+        setIsCropOpen(true);
+        if (inputRef.current) inputRef.current.value = ''; // Reset input
+        return;
+      }
+    }
+
+    // Default flow
+    const replaceTargetId = replaceTargetIdRef.current;
+    if (replaceTargetId) {
+      replaceTargetIdRef.current = null;
+    }
+    processFiles(selectedFiles, replaceTargetId);
+  };
+
+  const handleCropApply = async (croppedImage: string) => {
+    setIsCropOpen(false);
+    
+    if (!fileToCrop) return;
+
+    // Convert data URL to File
+    try {
+      const res = await fetch(croppedImage);
+      const blob = await res.blob();
+      const file = new File([blob], fileToCrop.file.name, { type: 'image/jpeg' });
+      
+      // Clean up previous preview
+      URL.revokeObjectURL(fileToCrop.preview);
+      
+      // Process the cropped file
+      processFiles([file], fileToCrop.replaceTargetId);
+    } catch (e) {
+      console.error('Failed to process cropped image', e);
+      toast.error('Failed to process cropped image');
+    } finally {
+      setFileToCrop(null);
+    }
+  };
+
+  const handleCropClose = () => {
+    setIsCropOpen(false);
+    if (fileToCrop) {
+      URL.revokeObjectURL(fileToCrop.preview);
+      setFileToCrop(null);
+    }
+  };
+
   const handleSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFiles = Array.from(event.target.files || []);
     if (!selectedFiles.length) return;
@@ -414,6 +494,15 @@ export function ImageUploader({
   };
 
   const openFilePicker = () => {
+    if (showGuidelines) {
+      setIsGuidelinesOpen(true);
+    } else {
+      inputRef.current?.click();
+    }
+  };
+
+  const handeGuidelinesConfirm = () => {
+    setIsGuidelinesOpen(false);
     inputRef.current?.click();
   };
 
@@ -528,18 +617,29 @@ export function ImageUploader({
         ))}
 
         {items.length < maxCount && (
-          <div className="group border-border bg-muted/50 hover:border-border hover:bg-muted relative overflow-hidden rounded-xl border border-dashed p-1 shadow-sm transition">
+          <div className={cn(
+            "group border-border bg-muted/50 hover:border-border hover:bg-muted relative overflow-hidden rounded-xl border border-dashed p-1 shadow-sm transition",
+            items.length === 0 && "w-full"
+          )}>
             <div className="relative overflow-hidden rounded-lg">
               <button
                 type="button"
-                className="flex h-32 w-32 flex-col items-center justify-center gap-2"
+                className={cn(
+                  "flex flex-col items-center justify-center gap-2",
+                  items.length === 0 ? "h-48 w-full py-8" : "h-32 w-32"
+                )}
                 onClick={openFilePicker}
               >
-                <div className="border-border flex h-10 w-10 items-center justify-center rounded-full border border-dashed">
-                  <IconUpload className="h-5 w-5" />
+                <div className={cn(
+                  "border-border flex items-center justify-center rounded-full border border-dashed",
+                  items.length === 0 ? "h-14 w-14" : "h-10 w-10"
+                )}>
+                  <IconUpload className={cn(items.length === 0 ? "h-7 w-7" : "h-5 w-5")} />
                 </div>
-                <span className="text-xs font-medium">Upload</span>
-                <span className="text-primary text-xs">Max {maxSizeMB}MB</span>
+                <span className={cn("font-medium", items.length === 0 ? "text-sm" : "text-xs")}>
+                  {items.length === 0 ? emptyUploadLabel : uploadLabel}
+                </span>
+                <span className="text-primary text-xs">{maxSizeLabel} {maxSizeMB}MB</span>
               </button>
             </div>
           </div>
@@ -549,6 +649,20 @@ export function ImageUploader({
       {!title && (
         <div className="text-muted-foreground text-xs">{emptyHint}</div>
       )}
+
+      {/* Modals */}
+      <PhotoGuidelinesModal
+        open={isGuidelinesOpen}
+        onClose={() => setIsGuidelinesOpen(false)}
+        onConfirm={handeGuidelinesConfirm}
+      />
+
+      <CropImageModal
+        open={isCropOpen}
+        imageSrc={fileToCrop?.preview || ''}
+        onClose={handleCropClose}
+        onApply={handleCropApply}
+      />
     </div>
   );
 }

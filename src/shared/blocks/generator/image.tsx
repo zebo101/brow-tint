@@ -18,6 +18,7 @@ import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
 import { Link } from '@/core/i18n/navigation';
+import { HAIRSTYLE_SYSTEM_PROMPT } from '@/config/img-prompt';
 import { AIMediaType, AITaskStatus } from '@/extensions/ai/types';
 import {
   ImageDropzone,
@@ -25,6 +26,7 @@ import {
   ImageUploaderValue,
   LazyImage,
 } from '@/shared/blocks/common';
+import { HairstyleCategorySelector } from '@/shared/components/hairstyle-category-selector';
 import {
   Accordion,
   AccordionContent,
@@ -98,22 +100,23 @@ type HairstyleCategory = {
   count: number;
 };
 
+// Database hairstyle type
 interface Hairstyle {
   id: string;
   category: string;
   sequence: number;
   name: string;
-  tags: string | null;
+  tags: string[];
   imageUrl: string;
   thumbnailUrl: string;
-  status: string;
 }
 
-const HAIRSTYLE_CATEGORIES: HairstyleCategory[] = [
-  { key: 'men', count: 0 },
-  { key: 'women', count: 0 },
-  { key: 'boys', count: 0 },
-  { key: 'girls', count: 0 },
+// Fallback hardcoded categories (used when API fails or no data)
+const FALLBACK_CATEGORIES: HairstyleCategory[] = [
+  { key: 'men', count: 12 },
+  { key: 'women', count: 12 },
+  { key: 'boys', count: 12 },
+  { key: 'girls', count: 12 },
 ];
 
 const MODEL_OPTIONS = [
@@ -248,7 +251,7 @@ function extractImageUrls(result: any): string[] {
 
 export function ImageGenerator({
   allowMultipleImages = true,
-  maxImages = 9,
+  maxImages = 8,
   maxSizeMB = 5,
   srOnlyTitle,
   className,
@@ -266,11 +269,11 @@ export function ImageGenerator({
   const [selectedHairstyleName, setSelectedHairstyleName] = useState<
     string | null
   >(null);
+  const [selectedHairstyle, setSelectedHairstyle] = useState<Hairstyle | null>(null);
 
-  // image-to-image 默认消耗 4 积分
-  const [costCredits, setCostCredits] = useState<number>(4);
-  const [provider, setProvider] = useState(PROVIDER_OPTIONS[0]?.value ?? '');
-  const [model, setModel] = useState(MODEL_OPTIONS[0]?.value ?? '');
+  const [costCredits, setCostCredits] = useState<number>(6);
+  const [provider, setProvider] = useState(PROVIDER_OPTIONS[3]?.value ?? 'kie');
+  const [model, setModel] = useState('nano-banana-pro');
   const [prompt, setPrompt] = useState('');
   const [referenceImageItems, setReferenceImageItems] = useState<
     ImageUploaderValue[]
@@ -288,74 +291,55 @@ export function ImageGenerator({
     null
   );
   const [isMounted, setIsMounted] = useState(false);
+
+  // Dynamic hairstyles from database
   const [hairstyles, setHairstyles] = useState<Record<string, Hairstyle[]>>({});
-  const [hairstyleCategories, setHairstyleCategories] =
-    useState<HairstyleCategory[]>(HAIRSTYLE_CATEGORIES);
+  const [categoryData, setCategoryData] = useState<HairstyleCategory[]>([]);
   const [isLoadingHairstyles, setIsLoadingHairstyles] = useState(true);
 
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
 
+  // Fetch hairstyles from API on mount
   useEffect(() => {
     setIsMounted(true);
-  }, []);
-
-  // 从数据库加载发型数据
-  useEffect(() => {
+    
     const fetchHairstyles = async () => {
       try {
-        setIsLoadingHairstyles(true);
-        const resp = await fetch(
-          '/api/hairstyle/list?includeCounts=true&status=active'
-        );
-        if (!resp.ok) {
-          throw new Error('Failed to fetch hairstyles');
-        }
-
-        const result = await resp.json();
-        if (result.code !== 0) {
-          throw new Error(result.message || 'Failed to fetch hairstyles');
-        }
-
-        const { hairstyles: fetchedHairstyles, counts } = result.data;
-
-        // 按分类组织发型数据
-        const organized: Record<string, Hairstyle[]> = {
-          men: [],
-          women: [],
-          boys: [],
-          girls: [],
-        };
-
-        fetchedHairstyles.forEach((hs: Hairstyle) => {
-          if (organized[hs.category]) {
-            organized[hs.category].push(hs);
+        const resp = await fetch('/api/hairstyle/list');
+        if (!resp.ok) throw new Error('Failed to fetch');
+        
+        const { data } = await resp.json();
+        if (data?.hairstyles && data?.categories) {
+          // Group hairstyles by category
+          const grouped: Record<string, Hairstyle[]> = {};
+          for (const h of data.hairstyles) {
+            if (!grouped[h.category]) {
+              grouped[h.category] = [];
+            }
+            grouped[h.category].push(h);
           }
-        });
-
-        // 按序号排序
-        Object.keys(organized).forEach((key) => {
-          organized[key].sort((a, b) => a.sequence - b.sequence);
-        });
-
-        setHairstyles(organized);
-
-        // 更新分类计数
-        if (counts) {
-          setHairstyleCategories(
-            HAIRSTYLE_CATEGORIES.map((cat) => ({
-              ...cat,
-              count: counts[cat.key] || 0,
-            }))
+          setHairstyles(grouped);
+          
+          // Convert categories object to array
+          const cats: HairstyleCategory[] = Object.entries(data.categories).map(
+            ([key, count]) => ({ key: key as HairstyleCategoryKey, count: count as number })
           );
+          // Sort by predefined order
+          const order = ['men', 'women', 'boys', 'girls'];
+          cats.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
+          setCategoryData(cats.length > 0 ? cats : FALLBACK_CATEGORIES);
+        } else {
+          setCategoryData(FALLBACK_CATEGORIES);
         }
       } catch (error) {
-        console.error('Failed to fetch hairstyles:', error);
+        console.error('Failed to load hairstyles:', error);
+        setCategoryData(FALLBACK_CATEGORIES);
       } finally {
         setIsLoadingHairstyles(false);
       }
     };
-
+    
     fetchHairstyles();
   }, []);
 
@@ -379,9 +363,9 @@ export function ImageGenerator({
     }
 
     if (tab === 'text-to-image') {
-      setCostCredits(2);
-    } else {
       setCostCredits(4);
+    } else {
+      setCostCredits(6);
     }
   };
 
@@ -589,6 +573,23 @@ export function ImageGenerator({
     };
   }, [taskId, isGenerating, pollTaskStatus]);
 
+  // Smooth progress animation - increment progress slowly during generation
+  useEffect(() => {
+    if (!isGenerating || progress >= 90) {
+      return;
+    }
+
+    const smoothInterval = setInterval(() => {
+      setProgress((prev) => {
+        // Slow down as we approach 90%
+        const increment = prev < 50 ? 2 : prev < 70 ? 1 : 0.5;
+        return Math.min(prev + increment, 90);
+      });
+    }, 1000);
+
+    return () => clearInterval(smoothInterval);
+  }, [isGenerating, progress]);
+
   const handleGenerate = async () => {
     if (!user) {
       setIsShowSignModal(true);
@@ -601,8 +602,20 @@ export function ImageGenerator({
     }
 
     const trimmedPrompt = prompt.trim();
-    if (!trimmedPrompt) {
-      toast.error('Please enter a prompt before generating.');
+    const hasHairstyle = !!selectedHairstyle;
+    
+    // Construct the final prompt including hairstyle info if selected
+    let finalPrompt = trimmedPrompt;
+    if (selectedHairstyle) {
+      const hairstylePrompt = `${selectedHairstyle.name} hairstyle: professional style with great detail`;
+      finalPrompt = trimmedPrompt ? `${trimmedPrompt} ${hairstylePrompt}` : hairstylePrompt;
+    }
+    
+    // Append system prompt for better generation quality
+    finalPrompt = `${finalPrompt} ${HAIRSTYLE_SYSTEM_PROMPT}`;
+
+    if (!finalPrompt) {
+      toast.error('Please enter a prompt or select a hairstyle before generating.');
       return;
     }
 
@@ -628,6 +641,10 @@ export function ImageGenerator({
       if (!isTextToImageMode) {
         options.image_input = referenceImageUrls;
       }
+      
+      if (selectedHairstyle) {
+        options.hairstyle_image = selectedHairstyle.imageUrl;
+      }
 
       const resp = await fetch('/api/ai/generate', {
         method: 'POST',
@@ -639,7 +656,7 @@ export function ImageGenerator({
           scene: isTextToImageMode ? 'text-to-image' : 'image-to-image',
           provider,
           model,
-          prompt: trimmedPrompt,
+          prompt: finalPrompt,
           options,
         }),
       });
@@ -663,15 +680,15 @@ export function ImageGenerator({
         const imageUrls = extractImageUrls(parsedResult);
 
         if (imageUrls.length > 0) {
-          setGeneratedImages(
-            imageUrls.map((url, index) => ({
-              id: `${newTaskId}-${index}`,
-              url,
-              provider,
-              model,
-              prompt: trimmedPrompt,
-            }))
-          );
+            setGeneratedImages(
+              imageUrls.map((url, index) => ({
+                id: `${newTaskId}-${index}`,
+                url,
+                provider,
+                model,
+                prompt: finalPrompt,
+              }))
+            );
           toast.success('Image generated successfully');
           setProgress(100);
           resetTaskState();
@@ -744,9 +761,9 @@ export function ImageGenerator({
             !isLeftPanelOpen && !isRightPanelOpen && 'lg:grid-cols-1'
           )}
         >
-          {/* 左侧发型选择面板 - 桌面端 */}
+          {/* 左侧发型选择面板 - 桌面端 (紧凑下拉式) */}
           {isLeftPanelOpen && (
-            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex">
+            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex lg:min-h-[500px]">
               <div className="shrink-0 border-b p-4">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold">{t('categories.title')}</h3>
@@ -760,69 +777,18 @@ export function ImageGenerator({
                   </Button>
                 </div>
               </div>
-              <ScrollArea className="flex-1">
-                <div className="p-4">
-                  {isLoadingHairstyles ? (
-                    <div className="flex items-center justify-center py-8">
-                      <Loader2 className="text-muted-foreground h-6 w-6 animate-spin" />
-                    </div>
-                  ) : (
-                    <Accordion type="multiple" defaultValue={['men', 'women']}>
-                      {hairstyleCategories.map((category) => {
-                        const categoryTitle = t(`categories.${category.key}`);
-                        const categoryHairstyles =
-                          hairstyles[category.key] || [];
-                        return (
-                          <AccordionItem
-                            key={category.key}
-                            value={category.key}
-                          >
-                            <AccordionTrigger className="text-sm">
-                              {categoryTitle} ({category.count})
-                            </AccordionTrigger>
-                            <AccordionContent>
-                              {categoryHairstyles.length === 0 ? (
-                                <p className="text-muted-foreground py-4 text-center text-sm">
-                                  {t('no_hairstyles')}
-                                </p>
-                              ) : (
-                                <div className="grid grid-cols-3 gap-2 pt-2">
-                                  {categoryHairstyles.map((hairstyle) => {
-                                    return (
-                                      <button
-                                        key={hairstyle.id}
-                                        className="hover:border-primary group relative overflow-hidden rounded-lg border transition"
-                                        onClick={() => {
-                                          const promptText = `${hairstyle.name} hairstyle: professional style with great detail`;
-                                          setPrompt(promptText);
-                                          setSelectedHairstyleName(
-                                            hairstyle.name
-                                          );
-                                        }}
-                                      >
-                                        <img
-                                          src={hairstyle.thumbnailUrl}
-                                          alt={hairstyle.name}
-                                          className="aspect-square w-full object-cover"
-                                        />
-                                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-1.5 opacity-0 transition group-hover:opacity-100">
-                                          <p className="text-[10px] font-medium text-white">
-                                            {hairstyle.name}
-                                          </p>
-                                        </div>
-                                      </button>
-                                    );
-                                  })}
-                                </div>
-                              )}
-                            </AccordionContent>
-                          </AccordionItem>
-                        );
-                      })}
-                    </Accordion>
-                  )}
-                </div>
-              </ScrollArea>
+              <div className="p-4">
+                <HairstyleCategorySelector
+                  hairstyles={hairstyles}
+                  categories={categoryData}
+                  isLoading={isLoadingHairstyles}
+                  selectedHairstyle={selectedHairstyle}
+                  onSelect={(hairstyle: Hairstyle) => {
+                    setSelectedHairstyle(hairstyle);
+                    setSelectedHairstyleName(hairstyle.name);
+                  }}
+                />
+              </div>
             </aside>
           )}
 
@@ -833,88 +799,22 @@ export function ImageGenerator({
                 <SheetHeader className="shrink-0 border-b p-4">
                   <SheetTitle>{t('categories.title')}</SheetTitle>
                 </SheetHeader>
-                <ScrollArea className="flex-1">
-                  <div className="p-4">
-                    {isLoadingHairstyles ? (
-                      <div className="flex items-center justify-center py-8">
-                        <Loader2 className="text-muted-foreground h-6 w-6 animate-spin" />
-                      </div>
-                    ) : (
-                      <Accordion
-                        type="multiple"
-                        defaultValue={['men', 'women']}
-                      >
-                        {hairstyleCategories.map((category) => {
-                          const categoryTitle = t(`categories.${category.key}`);
-                          const categoryHairstyles =
-                            hairstyles[category.key] || [];
-                          return (
-                            <AccordionItem
-                              key={category.key}
-                              value={category.key}
-                            >
-                              <AccordionTrigger className="text-sm">
-                                {categoryTitle} ({category.count})
-                              </AccordionTrigger>
-                              <AccordionContent>
-                                {categoryHairstyles.length === 0 ? (
-                                  <p className="text-muted-foreground py-4 text-center text-sm">
-                                    {t('no_hairstyles')}
-                                  </p>
-                                ) : (
-                                  <div className="grid grid-cols-3 gap-2 pt-2">
-                                    {categoryHairstyles.map((hairstyle) => {
-                                      return (
-                                        <button
-                                          key={hairstyle.id}
-                                          className="hover:border-primary group relative overflow-hidden rounded-lg border transition active:scale-95"
-                                          onClick={() => {
-                                            const promptText = `${hairstyle.name} hairstyle: professional style with great detail`;
-                                            setPrompt(promptText);
-                                            setSelectedHairstyleName(
-                                              hairstyle.name
-                                            );
-                                            setIsLeftSheetOpen(false);
-                                          }}
-                                        >
-                                          <img
-                                            src={hairstyle.thumbnailUrl}
-                                            alt={hairstyle.name}
-                                            className="aspect-square w-full object-cover"
-                                          />
-                                          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-1.5 opacity-0 transition group-hover:opacity-100">
-                                            <p className="text-[10px] font-medium text-white">
-                                              {hairstyle.name}
-                                            </p>
-                                          </div>
-                                        </button>
-                                      );
-                                    })}
-                                  </div>
-                                )}
-                              </AccordionContent>
-                            </AccordionItem>
-                          );
-                        })}
-                      </Accordion>
-                    )}
-                  </div>
-                </ScrollArea>
+                <div className="flex-1 overflow-auto p-4">
+                  <HairstyleCategorySelector
+                    hairstyles={hairstyles}
+                    categories={categoryData}
+                    isLoading={isLoadingHairstyles}
+                    selectedHairstyle={selectedHairstyle}
+                    onSelect={(hairstyle: Hairstyle) => {
+                      setSelectedHairstyle(hairstyle);
+                      setSelectedHairstyleName(hairstyle.name);
+                    }}
+                  />
+                </div>
               </div>
             </SheetContent>
           </Sheet>
 
-          {/* 左侧打开按钮 - 桌面端 */}
-          {!isLeftPanelOpen && (
-            <Button
-              variant="outline"
-              size="icon"
-              className="bg-card fixed top-24 left-4 z-10 hidden h-10 w-10 shadow-lg lg:flex"
-              onClick={() => setIsLeftPanelOpen(true)}
-            >
-              <PanelLeft className="h-5 w-5" />
-            </Button>
-          )}
 
           {/* 左侧打开按钮 - 移动端 */}
           <Button
@@ -930,6 +830,35 @@ export function ImageGenerator({
           <main className="min-w-0 flex-1 space-y-4 md:space-y-6">
             <Card>
               <CardContent className="space-y-4 p-4 md:space-y-6 md:p-6">
+                {/* 侧边栏展开按钮 - 桌面端 */}
+                <div className="hidden lg:flex justify-between items-center -mt-2 mb-2">
+                  {!isLeftPanelOpen ? (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => setIsLeftPanelOpen(true)}
+                      className="gap-1 text-muted-foreground hover:text-foreground"
+                    >
+                      <PanelLeft className="h-4 w-4" />
+                      <span className="text-xs">{t('categories.title')}</span>
+                    </Button>
+                  ) : (
+                    <div />
+                  )}
+                  {!isRightPanelOpen ? (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => setIsRightPanelOpen(true)}
+                      className="gap-1 text-muted-foreground hover:text-foreground"
+                    >
+                      <span className="text-xs">{t('sidebar.discover')}</span>
+                      <PanelRight className="h-4 w-4" />
+                    </Button>
+                  ) : (
+                    <div />
+                  )}
+                </div>
                 {/* 发型选择提示 - 仅移动端显示 */}
                 <div className="lg:hidden">
                   <button
@@ -951,12 +880,18 @@ export function ImageGenerator({
                   </button>
                 </div>
 
-                {/* 大面积上传区 */}
-                <ImageDropzone
-                  hint={t('form.reference_image_placeholder')}
-                  ctaSubtitle="支持 JPG、PNG 格式"
+                {/* 多图上传区 */}
+                <ImageUploader
+                  title={t('form.reference_image')}
+                  allowMultiple={allowMultipleImages}
+                  maxImages={maxImages}
                   maxSizeMB={maxSizeMB}
+                  uploadLabel={t('form.upload')}
+                  emptyUploadLabel={t('form.upload_hint')}
+                  maxSizeLabel={t('form.max_size')}
                   onChange={handleReferenceImagesChange}
+                  showGuidelines={true}
+                  enableCrop={true}
                 />
 
                 {hasReferenceUploadError && (
@@ -1015,13 +950,6 @@ export function ImageGenerator({
                     value={prompt}
                     onChange={(e) => {
                       setPrompt(e.target.value);
-                      // 用户手动编辑时清除选中的发型名称
-                      if (
-                        selectedHairstyleName &&
-                        !e.target.value.includes(selectedHairstyleName)
-                      ) {
-                        setSelectedHairstyleName(null);
-                      }
                     }}
                     placeholder={t('form.prompt_placeholder')}
                     className="min-h-32"
@@ -1056,7 +984,7 @@ export function ImageGenerator({
                     onClick={handleGenerate}
                     disabled={
                       isGenerating ||
-                      !prompt.trim() ||
+                      (!prompt.trim() && !selectedHairstyle) ||
                       isPromptTooLong ||
                       isReferenceUploading ||
                       hasReferenceUploadError
@@ -1205,7 +1133,7 @@ export function ImageGenerator({
               >
                 <div className="shrink-0 border-b p-4">
                   <div className="flex items-center justify-between">
-                    <TabsList className="grid w-full max-w-[200px] grid-cols-2">
+                    <TabsList className="grid w-full max-w-[280px] grid-cols-2">
                       <TabsTrigger value="howtos" className="text-xs">
                         {t('sidebar.howtos')}
                       </TabsTrigger>
@@ -1305,17 +1233,6 @@ export function ImageGenerator({
             </aside>
           )}
 
-          {/* 右侧打开按钮 - 桌面端 */}
-          {!isRightPanelOpen && (
-            <Button
-              variant="outline"
-              size="icon"
-              className="bg-card fixed top-24 right-4 z-10 hidden h-10 w-10 shadow-lg lg:flex"
-              onClick={() => setIsRightPanelOpen(true)}
-            >
-              <PanelRight className="h-5 w-5" />
-            </Button>
-          )}
 
           {/* 右侧打开按钮 - 移动端（已隐藏，生成结果在下方显示） */}
           {/* <Button

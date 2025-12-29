@@ -41,7 +41,7 @@
             {
               "title": "헤어 체인저 비디오",
               "description": "다양한 헤어스타일 즉시 시도",
-              "url": "/hair-changer-ai",
+              "url": "/hairstyle-changer-ai-video",
               "icon": "RiScissors2Line"
             },
             {
@@ -187,4 +187,5 @@
     "show_locale": true
   }
 }
+
 

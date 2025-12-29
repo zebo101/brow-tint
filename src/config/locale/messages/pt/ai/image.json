@@ -15,7 +15,24 @@
       "text-to-image": "Descrição do Estilo",
       "image-to-image": "Enviar Foto"
     },
+    "categories": {
+      "title": "Selecionar Penteado",
+      "men": "Penteados Masculinos",
+      "women": "Penteados Femininos",
+      "boys": "Penteados para Meninos",
+      "girls": "Penteados para Meninas",
+      "selected": "Selecionado",
+      "styles": "estilos"
+    },
+    "sidebar": {
+      "howtos": "Instruções",
+      "discover": "Ver resultados",
+      "tour_title": "Guia de funções",
+      "tour_description": "Aprenda a usar o mudador de penteado",
+      "start_tour": "Iniciar guia"
+    },
     "form": {
+      "select_hairstyle_placeholder": "Clique para selecionar penteado",
       "provider": "Provedor de IA",
       "model": "Modelo de Penteado",
       "select_provider": "Selecionar Provedor de IA",
@@ -25,7 +42,10 @@
       "reference_image": "Sua Foto",
       "reference_image_placeholder": "Envie sua foto para melhores resultados",
       "some_images_failed_to_upload": "Algumas imagens falharam ao enviar, exclua e reenvie",
-      "prompt_too_long": "A descrição é muito longa, por favor encurte"
+      "prompt_too_long": "A descrição é muito longa, por favor encurte",
+      "upload": "Enviar",
+      "upload_hint": "Clique ou arraste para enviar fotos",
+      "max_size": "Máx"
     },
     "generate": "Gerar Penteado",
     "checking_account": "Verificando conta...",
@@ -42,5 +62,6 @@
     "no_images_generated": "Ainda não foram gerados penteados"
   }
 }
+
 
 

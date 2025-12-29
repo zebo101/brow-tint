@@ -15,7 +15,24 @@
       "text-to-image": "Descrizione Stile",
       "image-to-image": "Carica Foto"
     },
+    "categories": {
+      "title": "Seleziona Acconciatura",
+      "men": "Acconciature Uomo",
+      "women": "Acconciature Donna",
+      "boys": "Acconciature Bambino",
+      "girls": "Acconciature Bambina",
+      "selected": "Selezionato",
+      "styles": "stili"
+    },
+    "sidebar": {
+      "howtos": "Istruzioni",
+      "discover": "Vedi risultati",
+      "tour_title": "Guida funzioni",
+      "tour_description": "Impara ad usare il cambia acconciatura",
+      "start_tour": "Inizia guida"
+    },
     "form": {
+      "select_hairstyle_placeholder": "Clicca per selezionare acconciatura",
       "provider": "Provider IA",
       "model": "Modello Acconciatura",
       "select_provider": "Seleziona Provider IA",
@@ -25,7 +42,10 @@
       "reference_image": "La Tua Foto",
       "reference_image_placeholder": "Carica la tua foto per i migliori risultati",
       "some_images_failed_to_upload": "Alcune immagini non sono state caricate, eliminale e ricarica",
-      "prompt_too_long": "La descrizione è troppo lunga, accorciala"
+      "prompt_too_long": "La descrizione è troppo lunga, accorciala",
+      "upload": "Carica",
+      "upload_hint": "Clicca o trascina per caricare foto",
+      "max_size": "Max"
     },
     "generate": "Genera Acconciatura",
     "checking_account": "Verifica account...",
@@ -42,5 +62,6 @@
     "no_images_generated": "Nessuna acconciatura ancora generata"
   }
 }
+
 
 

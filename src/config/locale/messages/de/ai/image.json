@@ -15,7 +15,24 @@
       "text-to-image": "Stil-Beschreibung",
       "image-to-image": "Foto hochladen"
     },
+    "categories": {
+      "title": "Frisur auswählen",
+      "men": "Herrenfrisuren",
+      "women": "Damenfrisuren",
+      "boys": "Jungenfrisuren",
+      "girls": "Mädchenfrisuren",
+      "selected": "Ausgewählt",
+      "styles": "Stile"
+    },
+    "sidebar": {
+      "howtos": "Anleitungen",
+      "discover": "Ergebnisse ansehen",
+      "tour_title": "Funktions-Tour",
+      "tour_description": "Erfahren Sie, wie Sie den Frisuren-Wechsler nutzen",
+      "start_tour": "Tour starten"
+    },
     "form": {
+      "select_hairstyle_placeholder": "Klicken um Frisur auszuwählen",
       "provider": "KI-Anbieter",
       "model": "Frisuren-Modell",
       "select_provider": "KI-Anbieter auswählen",
@@ -25,7 +42,10 @@
       "reference_image": "Ihr Foto",
       "reference_image_placeholder": "Laden Sie Ihr Foto für beste Ergebnisse hoch",
       "some_images_failed_to_upload": "Einige Bilder konnten nicht hochgeladen werden, bitte löschen und erneut hochladen",
-      "prompt_too_long": "Beschreibung ist zu lang, bitte kürzen"
+      "prompt_too_long": "Beschreibung ist zu lang, bitte kürzen",
+      "upload": "Hochladen",
+      "upload_hint": "Klicken oder ziehen zum Hochladen",
+      "max_size": "Max"
     },
     "generate": "Frisur generieren",
     "checking_account": "Konto wird überprüft...",
@@ -42,5 +62,6 @@
     "no_images_generated": "Noch keine Frisuren generiert"
   }
 }
+
 
 

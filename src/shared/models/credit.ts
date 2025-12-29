@@ -223,8 +223,7 @@ export async function consumeCredits({
           asc(credit.expiresAt)
         )
         .limit(batchSize) // batch size
-        .offset((batchNo - 1) * batchSize) // offset
-        .for('update'); // lock for update
+        .offset((batchNo - 1) * batchSize); // offset
 
       // no more credits
       if (batchCredits?.length === 0) {
