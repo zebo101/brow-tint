@@ -113,7 +113,7 @@ export async function getHairstyleCountByCategory(
     .where(eq(hairstyle.status, status));
 
   const counts: Record<string, number> = {};
-  results.forEach((row) => {
+  results.forEach((row: { category: string }) => {
     counts[row.category] = (counts[row.category] || 0) + 1;
   });
 
