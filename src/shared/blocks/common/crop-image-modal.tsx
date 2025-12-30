@@ -66,43 +66,67 @@ export function CropImageModal({
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Reset crop area when image changes or modal opens
+  // Function to calculate and update image size
+  const updateImageSize = useCallback(() => {
+    const img = imageRef.current;
+    const container = containerRef.current;
+    
+    if (!img || !container) return;
+    
+    // Use requestAnimationFrame to ensure DOM is rendered
+    requestAnimationFrame(() => {
+      const containerWidth = container.clientWidth;
+      const containerHeight = container.clientHeight;
+      
+      // Ensure we have valid dimensions
+      if (!img.naturalWidth || !img.naturalHeight || !containerWidth || !containerHeight) {
+        return;
+      }
+
+      const imgRatio = img.naturalWidth / img.naturalHeight;
+      let displayWidth = containerWidth - (isMobile ? 32 : 48);
+      let displayHeight = displayWidth / imgRatio;
+
+      if (displayHeight > containerHeight - (isMobile ? 32 : 48)) {
+        displayHeight = containerHeight - (isMobile ? 32 : 48);
+        displayWidth = displayHeight * imgRatio;
+      }
+
+      // Ensure minimum sizes
+      displayWidth = Math.max(displayWidth, isMobile ? 200 : 300);
+      displayHeight = Math.max(displayHeight, isMobile ? 150 : 200);
+
+      setImageSize({ width: displayWidth, height: displayHeight });
+
+      // Set initial crop area to center 70% of image
+      const cropWidth = displayWidth * 0.7;
+      const cropHeight = displayHeight * 0.7;
+      setCropArea({
+        x: (displayWidth - cropWidth) / 2,
+        y: (displayHeight - cropHeight) / 2,
+        width: cropWidth,
+        height: cropHeight,
+      });
+    });
+  }, [isMobile]);
+
+  // Reset and recalculate when image source or modal state changes
   useEffect(() => {
-    if (open && imageRef.current) {
+    if (open && imageSrc) {
+      // Reset size to trigger loading state
+      setImageSize({ width: 0, height: 0 });
+      
       const img = imageRef.current;
-      const updateSize = () => {
-        const containerWidth = containerRef.current?.clientWidth || 600;
-        const containerHeight = containerRef.current?.clientHeight || 500;
-
-        const imgRatio = img.naturalWidth / img.naturalHeight;
-        let displayWidth = containerWidth - (isMobile ? 32 : 48);
-        let displayHeight = displayWidth / imgRatio;
-
-        if (displayHeight > containerHeight - (isMobile ? 32 : 48)) {
-          displayHeight = containerHeight - (isMobile ? 32 : 48);
-          displayWidth = displayHeight * imgRatio;
+      if (img) {
+        // If image is already loaded (cached), calculate immediately
+        if (img.complete && img.naturalWidth > 0) {
+          // Small delay to ensure dialog DOM is rendered
+          setTimeout(updateImageSize, 50);
         }
-
-        setImageSize({ width: displayWidth, height: displayHeight });
-
-        // Set initial crop area to center 70% of image
-        const cropWidth = displayWidth * 0.7;
-        const cropHeight = displayHeight * 0.7;
-        setCropArea({
-          x: (displayWidth - cropWidth) / 2,
-          y: (displayHeight - cropHeight) / 2,
-          width: cropWidth,
-          height: cropHeight,
-        });
-      };
-
-      if (img.complete) {
-        updateSize();
-      } else {
-        img.onload = updateSize;
+        // onLoad handler will be triggered for new images
       }
     }
-  }, [open, imageSrc, isMobile]);
+  }, [open, imageSrc, updateImageSize]);
 
   // Apply aspect ratio constraint
   useEffect(() => {
@@ -356,18 +380,18 @@ export function CropImageModal({
 
   return (
     <Dialog open={open} onOpenChange={(isOpen) => !isOpen && onClose()}>
-      <DialogContent className="max-h-[95vh] max-w-5xl overflow-hidden p-0 sm:max-w-5xl">
+      <DialogContent className="flex max-h-[90vh] max-w-5xl flex-col overflow-hidden p-0 sm:max-w-5xl">
         <DialogHeader className="shrink-0 border-b p-4 md:p-5">
           <div className="flex items-center justify-between">
             <DialogTitle>{t('title')}</DialogTitle>
           </div>
         </DialogHeader>
 
-        <div className="flex min-h-0 flex-1 flex-col overflow-hidden md:flex-row">
+        <div className="flex min-h-0 flex-1 flex-col overflow-auto md:flex-row">
           {/* Image Area */}
           <div
             ref={containerRef}
-            className="flex min-h-[200px] flex-1 items-center justify-center overflow-hidden bg-gray-100 p-2 md:min-h-[500px] md:p-6"
+            className="flex min-h-[200px] flex-1 items-center justify-center overflow-hidden bg-gray-100 p-2 md:min-h-[400px] md:p-6"
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
@@ -377,18 +401,30 @@ export function CropImageModal({
             <div
               className="relative"
               style={{
-                width: imageSize.width,
-                height: imageSize.height,
+                width: imageSize.width || '100%',
+                height: imageSize.height || 'auto',
+                minWidth: isMobile ? 200 : 300,
+                minHeight: isMobile ? 150 : 200,
               }}
             >
+              {/* Loading indicator */}
+              {imageSize.width === 0 && imageSrc && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" />
+                </div>
+              )}
               {/* Image */}
               <img
                 ref={imageRef}
-                src={imageSrc || '/placeholder.svg'}
+                src={imageSrc}
                 alt="To crop"
                 className="h-full w-full object-contain"
-                style={{ transform: `rotate(${rotation}deg)` }}
+                style={{ 
+                  transform: `rotate(${rotation}deg)`,
+                  opacity: imageSize.width > 0 ? 1 : 0,
+                }}
                 draggable={false}
+                onLoad={updateImageSize}
               />
 
               {/* Dark overlay outside crop area */}

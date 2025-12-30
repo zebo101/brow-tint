@@ -1,5 +1,8 @@
-import { respData, respErr } from '@/shared/lib/resp';
+import { respErr } from '@/shared/lib/resp';
 import { getHairstyles, getHairstyleCountByCategory } from '@/shared/models/hairstyle';
+
+// Cache the response for 1 hour - hairstyle data doesn't change frequently
+export const revalidate = 3600;
 
 /**
  * GET /api/hairstyle/list
@@ -24,7 +27,8 @@ export async function GET(req: Request) {
     // Get category counts
     const categoryCounts = await getHairstyleCountByCategory(status);
 
-    return respData({
+    // Create response with cache headers
+    const responseData = {
       hairstyles: hairstyles.map((h) => ({
         id: h.id,
         category: h.category,
@@ -35,6 +39,14 @@ export async function GET(req: Request) {
         thumbnailUrl: h.thumbnailUrl,
       })),
       categories: categoryCounts,
+    };
+
+    return new Response(JSON.stringify({ code: 0, data: responseData }), {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/json',
+        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      },
     });
   } catch (e) {
     console.error('Failed to get hairstyles:', e);

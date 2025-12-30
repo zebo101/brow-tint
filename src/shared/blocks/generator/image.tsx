@@ -27,6 +27,7 @@ import {
   LazyImage,
 } from '@/shared/blocks/common';
 import { HairstyleCategorySelector } from '@/shared/components/hairstyle-category-selector';
+import { useHairstyles } from '@/shared/hooks/use-hairstyles';
 import {
   Accordion,
   AccordionContent,
@@ -292,55 +293,18 @@ export function ImageGenerator({
   );
   const [isMounted, setIsMounted] = useState(false);
 
-  // Dynamic hairstyles from database
-  const [hairstyles, setHairstyles] = useState<Record<string, Hairstyle[]>>({});
-  const [categoryData, setCategoryData] = useState<HairstyleCategory[]>([]);
-  const [isLoadingHairstyles, setIsLoadingHairstyles] = useState(true);
+  // Dynamic hairstyles from cached hook
+  const {
+    hairstyles,
+    categories: categoryData,
+    isLoading: isLoadingHairstyles,
+  } = useHairstyles();
 
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
 
-  // Fetch hairstyles from API on mount
   useEffect(() => {
     setIsMounted(true);
-    
-    const fetchHairstyles = async () => {
-      try {
-        const resp = await fetch('/api/hairstyle/list');
-        if (!resp.ok) throw new Error('Failed to fetch');
-        
-        const { data } = await resp.json();
-        if (data?.hairstyles && data?.categories) {
-          // Group hairstyles by category
-          const grouped: Record<string, Hairstyle[]> = {};
-          for (const h of data.hairstyles) {
-            if (!grouped[h.category]) {
-              grouped[h.category] = [];
-            }
-            grouped[h.category].push(h);
-          }
-          setHairstyles(grouped);
-          
-          // Convert categories object to array
-          const cats: HairstyleCategory[] = Object.entries(data.categories).map(
-            ([key, count]) => ({ key: key as HairstyleCategoryKey, count: count as number })
-          );
-          // Sort by predefined order
-          const order = ['men', 'women', 'boys', 'girls'];
-          cats.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
-          setCategoryData(cats.length > 0 ? cats : FALLBACK_CATEGORIES);
-        } else {
-          setCategoryData(FALLBACK_CATEGORIES);
-        }
-      } catch (error) {
-        console.error('Failed to load hairstyles:', error);
-        setCategoryData(FALLBACK_CATEGORIES);
-      } finally {
-        setIsLoadingHairstyles(false);
-      }
-    };
-    
-    fetchHairstyles();
   }, []);
 
   const promptLength = prompt.trim().length;
@@ -751,19 +715,19 @@ export function ImageGenerator({
             'grid-cols-1',
             isLeftPanelOpen &&
               isRightPanelOpen &&
-              'lg:grid-cols-[minmax(340px,400px)_minmax(500px,1fr)_minmax(340px,400px)]',
+              'lg:grid-cols-[300px_1fr_300px]',
             isLeftPanelOpen &&
               !isRightPanelOpen &&
-              'lg:grid-cols-[minmax(340px,400px)_minmax(500px,1fr)]',
+              'lg:grid-cols-[300px_1fr]',
             !isLeftPanelOpen &&
               isRightPanelOpen &&
-              'lg:grid-cols-[minmax(500px,1fr)_minmax(340px,400px)]',
+              'lg:grid-cols-[1fr_300px]',
             !isLeftPanelOpen && !isRightPanelOpen && 'lg:grid-cols-1'
           )}
         >
           {/* 左侧发型选择面板 - 桌面端 (紧凑下拉式) */}
           {isLeftPanelOpen && (
-            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex">
+            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex h-full">
               <div className="shrink-0 border-b p-4">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold">{t('categories.title')}</h3>
@@ -827,9 +791,9 @@ export function ImageGenerator({
           </Button>
 
           {/* 中间主区域 */}
-          <main className="min-w-0 flex-1 space-y-4 md:space-y-6 flex flex-col">
-            <Card className="flex-1 flex flex-col">
-              <CardContent className="space-y-4 p-4 md:space-y-6 md:p-6">
+          <main className="min-w-0 flex-1 space-y-4 md:space-y-6 flex flex-col h-full">
+            <Card className="flex-1 flex flex-col h-full">
+              <CardContent className="space-y-4 p-4 md:space-y-6 md:p-6 flex-1 flex flex-col">
                 {/* 侧边栏展开按钮 - 桌面端 */}
                 <div className="hidden lg:flex justify-between items-center -mt-2 mb-2">
                   {!isLeftPanelOpen ? (
@@ -1123,7 +1087,7 @@ export function ImageGenerator({
 
           {/* 右侧教程和结果面板 */}
           {isRightPanelOpen && (
-            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex">
+            <aside className="bg-card hidden flex-col overflow-hidden rounded-lg border shadow-sm lg:flex h-full">
               <Tabs
                 value={rightTab}
                 onValueChange={(value) =>

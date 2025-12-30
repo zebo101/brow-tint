@@ -35,7 +35,7 @@ interface HairstyleCategorySelectorProps {
 
 // Preview images for each category (first few from the category)
 function CategoryPreview({ hairstyles }: { hairstyles: Hairstyle[] }) {
-  const previews = hairstyles.slice(0, 4);
+  const previews = hairstyles.slice(0, 3);
   
   if (previews.length === 0) {
     return (
@@ -43,7 +43,7 @@ function CategoryPreview({ hairstyles }: { hairstyles: Hairstyle[] }) {
         {[1, 2, 3, 4].map((i) => (
           <div
             key={i}
-            className="h-10 w-10 rounded bg-muted flex-shrink-0"
+            className="h-8 w-8 rounded bg-muted flex-shrink-0"
           />
         ))}
       </div>
@@ -55,9 +55,9 @@ function CategoryPreview({ hairstyles }: { hairstyles: Hairstyle[] }) {
       {previews.map((h) => (
         <img
           key={h.id}
-          src={h.thumbnailUrl}
+          src={h.thumbnailUrl || undefined}
           alt={h.name}
-          className="h-10 w-10 rounded object-cover flex-shrink-0 bg-background dark:bg-gray-300"
+          className="h-8 w-8 rounded object-cover flex-shrink-0 bg-background dark:bg-gray-300"
         />
       ))}
     </div>
@@ -140,7 +140,7 @@ export function HairstyleCategorySelector({
           <p className="text-xs text-muted-foreground mb-2">{t('categories.selected')}:</p>
           <div className="flex items-center gap-3">
             <img
-              src={selectedHairstyle.thumbnailUrl}
+              src={selectedHairstyle.thumbnailUrl || undefined}
               alt={selectedHairstyle.name}
               className="h-14 w-14 rounded-lg object-cover bg-background dark:bg-gray-300"
             />
@@ -176,7 +176,7 @@ export function HairstyleCategorySelector({
           </DialogHeader>
           <ScrollArea className="h-[60vh]">
             <div className="p-4">
-              <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-2">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
                 {currentHairstyles.map((hairstyle) => (
                   <button
                     key={hairstyle.id}
@@ -189,9 +189,9 @@ export function HairstyleCategorySelector({
                     style={{ contentVisibility: 'auto', containIntrinsicSize: '80px' }}
                   >
                     <img
-                      src={hairstyle.thumbnailUrl}
+                      src={hairstyle.thumbnailUrl || undefined}
                       alt={hairstyle.name}
-                      className="h-full w-full object-cover bg-background dark:bg-gray-200"
+                      className="h-full w-full object-contain bg-background dark:bg-gray-200"
                       loading="lazy"
                     />
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-1.5 opacity-0 transition-opacity group-hover:opacity-100">

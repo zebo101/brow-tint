@@ -92,7 +92,7 @@ export function HairstyleDropdown({
             {selectedHairstyle ? (
               <>
                 <img
-                  src={selectedHairstyle.thumbnailUrl}
+                  src={selectedHairstyle.thumbnailUrl || undefined}
                   alt={selectedHairstyle.name}
                   className="h-10 w-10 rounded-md object-cover flex-shrink-0"
                 />
@@ -162,7 +162,7 @@ export function HairstyleDropdown({
                     onClick={() => handleSelect(hairstyle)}
                   >
                     <img
-                      src={hairstyle.thumbnailUrl}
+                      src={hairstyle.thumbnailUrl || undefined}
                       alt={hairstyle.name}
                       className="h-full w-full object-cover"
                       loading="lazy"

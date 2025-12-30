@@ -29,7 +29,7 @@ export function LazyImage({
 }) {
   return (
     <LazyLoadImage
-      src={src}
+      src={src || undefined}
       alt={alt}
       width={width}
       height={height}
