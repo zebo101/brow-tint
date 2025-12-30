@@ -908,7 +908,7 @@ export function ImageGenerator({
 
                 {/* AI发型描述 */}
                 <div className="space-y-2">
-                  <Label htmlFor="image-prompt">{t('form.prompt')}</Label>
+                  <Label htmlFor="image-prompt" className="text-xs sm:text-sm">{t('form.prompt')}</Label>
                   <Textarea
                     id="image-prompt"
                     value={prompt}
@@ -916,7 +916,7 @@ export function ImageGenerator({
                       setPrompt(e.target.value);
                     }}
                     placeholder={t('form.prompt_placeholder')}
-                    className="min-h-32"
+                    className="min-h-32 text-xs sm:text-sm"
                   />
                   <div className="text-muted-foreground flex items-center justify-between text-xs">
                     <span>
