@@ -174,8 +174,8 @@ export function HairstyleCategorySelector({
               </span>
             </DialogTitle>
           </DialogHeader>
-          <ScrollArea className="h-[60vh]">
-            <div className="p-4">
+          <ScrollArea className="h-[calc(85vh-120px)] max-h-[500px]">
+            <div className="p-4 pt-2">
               <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
                 {currentHairstyles.map((hairstyle) => (
                   <button
