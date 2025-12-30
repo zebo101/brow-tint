@@ -57,30 +57,6 @@
             "url": "/",
             "icon": "Home",
             "target": "_blank"
-          },
-          {
-            "title": "GitHub",
-            "url": "https://github.com/ai-barber",
-            "icon": "Github",
-            "target": "_blank"
-          },
-          {
-            "title": "Twitter",
-            "url": "https://x.com/ai_barber",
-            "icon": "RiTwitterXFill",
-            "target": "_blank"
-          },
-          {
-            "title": "Discord",
-            "url": "https://discord.gg/ai-barber",
-            "icon": "RiDiscordFill",
-            "target": "_blank"
-          },
-          {
-            "title": "メール",
-            "url": "mailto:support@aibarber.net",
-            "icon": "Mail",
-            "target": "_blank"
           }
         ]
       },
@@ -101,7 +77,7 @@
     }
   },
   "generator": {
-    "title": "今日はどのヘアスタイルの質問をお手伝いできますか？",
+    "title": "何かお手伝いしましょうか？",
     "input_placeholder": "ヘアスタイル、トレンド、スタイリングのヒントについて聞いてください..."
   },
   "history": {
@@ -119,6 +95,7 @@
     "untitled": "タイトルなしの会話"
   }
 }
+
 
 
 

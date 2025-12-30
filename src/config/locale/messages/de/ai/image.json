@@ -57,11 +57,35 @@
     "buy_credits": "Credits kaufen",
     "progress": "Fortschritt",
     "generated_images": "Ihr neuer Look",
+    "preview_title": "KI-Frisur-Vorschau",
     "ready_to_generate": "Bereit zum Verwandeln",
     "ready_for_generating": "Bereit für Verwandlung",
-    "no_images_generated": "Noch keine Frisuren generiert"
+    "no_images_generated": "Noch keine Frisuren generiert",
+    "use_as_reference": "Als Referenz verwenden",
+    "download_image": "Bild herunterladen",
+    "example_image_hint": "Dies ist ein Beispielergebnis. Ihr generierter Stil wird hier angezeigt.",
+    "photoGuidelines": {
+      "title": "Foto-Richtlinien für beste Ergebnisse",
+      "suitableTitle": "Geeignete Fotos",
+      "suitableDescription": "Bitte laden Sie ein klares Frontalfoto Ihres Gesichts hoch. Für ein optimales Ergebnis ist es ideal, die Haare hochzustecken oder zurückzubinden und natürlich fallen zu lassen.",
+      "unsuitableTitle": "Ungeeignete Fotos",
+      "unsuitableDescription": "Bitte laden Sie keine Fotos von der Seite, bei schlechtem Licht oder mit verdecktem Gesicht hoch. Vermeiden Sie auch Cartoon-Bilder.",
+      "dontShowAgain": "Nicht mehr anzeigen",
+      "confirm": "OK, Verstanden"
+    },
+    "cropImage": {
+      "title": "Bild zuschneiden",
+      "presetRatios": "Voreingenstellte Verhältnisse",
+      "free": "Frei",
+      "actions": "Aktionen",
+      "resetCrop": "Zuschneiden zurücksetzen",
+      "rotate": "90° drehen",
+      "cancel": "Abbrechen",
+      "apply": "Anwenden"
+    }
   }
 }
+
 
 
 

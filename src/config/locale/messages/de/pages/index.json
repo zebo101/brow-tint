@@ -30,7 +30,7 @@
           {
             "title": "Beispiele ansehen",
             "icon": "BookOpenText",
-            "url": "/subscribe",
+            "url": "/showcases",
             "target": "_blank",
             "variant": "outline"
           }

@@ -108,7 +108,7 @@ export function Footer({ footer }: { footer: FooterType }) {
           </div>
 
           {/* 不透明度遮罩层，提升文字可读性 */}
-          <div className="bg-background/30 dark:bg-background/50 absolute inset-0 z-0 rounded-3xl" />
+          <div className="bg-background/5 dark:bg-background/20 absolute inset-0 z-0 rounded-3xl" />
 
           {/* 内容网格布局 */}
           <div className="relative z-10 flex flex-col justify-between gap-8 md:flex-row md:gap-12">
@@ -118,7 +118,7 @@ export function Footer({ footer }: { footer: FooterType }) {
 
               {footer.brand?.description ? (
                 <p
-                  className="text-muted-foreground text-sm text-balance"
+                  className="text-muted-foreground dark:text-zinc-200 text-sm text-balance"
                   dangerouslySetInnerHTML={{ __html: footer.brand.description }}
                 />
               ) : null}
@@ -130,7 +130,7 @@ export function Footer({ footer }: { footer: FooterType }) {
                       key={index}
                       href={item.url || ''}
                       target={item.target || ''}
-                      className="border-border/50 text-muted-foreground hover:bg-accent/10 hover:text-foreground rounded-lg border p-2 transition-all duration-300"
+                      className="border-border/50 text-muted-foreground dark:text-zinc-200 hover:bg-accent/10 hover:text-foreground dark:hover:text-white rounded-lg border p-2 transition-all duration-300"
                     >
                       {item.icon && (
                         <SmartIcon
@@ -150,7 +150,7 @@ export function Footer({ footer }: { footer: FooterType }) {
               {footer.nav?.items.map((item, idx) => (
                 <AnimatedContainer key={idx} delay={0.1 + idx * 0.1}>
                   <div>
-                    <h4 className="text-muted-foreground/70 mb-4 text-sm font-semibold uppercase">
+                    <h4 className="text-muted-foreground/70 dark:text-zinc-400 mb-4 text-sm font-semibold uppercase">
                       {item.title}
                     </h4>
                     <ul className="flex flex-col gap-2 text-sm">
@@ -159,7 +159,7 @@ export function Footer({ footer }: { footer: FooterType }) {
                           <Link
                             href={subItem.url || ''}
                             target={subItem.target || ''}
-                            className="text-muted-foreground hover:text-foreground font-medium whitespace-nowrap transition-all duration-300 hover:underline"
+                            className="text-muted-foreground dark:text-zinc-200 hover:text-foreground dark:hover:text-white font-medium whitespace-nowrap transition-all duration-300 hover:underline"
                           >
                             {subItem.title || ''}
                           </Link>
@@ -177,7 +177,7 @@ export function Footer({ footer }: { footer: FooterType }) {
         <AnimatedContainer delay={0.3} className="mt-4 px-2 md:px-8">
           <div className="flex flex-col items-start justify-between gap-4 text-sm sm:flex-row sm:items-center">
             <div className="flex w-full flex-col items-start gap-3 sm:w-auto">
-              <div className="text-muted-foreground text-xs sm:text-sm">
+              <div className="text-muted-foreground dark:text-zinc-400 text-xs sm:text-sm">
                 {footer.copyright ? (
                   <span
                     dangerouslySetInnerHTML={{ __html: footer.copyright }}
@@ -195,7 +195,7 @@ export function Footer({ footer }: { footer: FooterType }) {
                         key={index}
                         href={item.url || ''}
                         target={item.target || ''}
-                        className="hover:text-foreground whitespace-nowrap transition-colors duration-150 hover:underline"
+                        className="text-muted-foreground dark:text-zinc-400 hover:text-foreground dark:hover:text-zinc-100 whitespace-nowrap transition-colors duration-150 hover:underline"
                       >
                         {item.title || ''}
                       </Link>

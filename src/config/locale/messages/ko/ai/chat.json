@@ -57,30 +57,6 @@
             "url": "/",
             "icon": "Home",
             "target": "_blank"
-          },
-          {
-            "title": "GitHub",
-            "url": "https://github.com/ai-barber",
-            "icon": "Github",
-            "target": "_blank"
-          },
-          {
-            "title": "Twitter",
-            "url": "https://x.com/ai_barber",
-            "icon": "RiTwitterXFill",
-            "target": "_blank"
-          },
-          {
-            "title": "Discord",
-            "url": "https://discord.gg/ai-barber",
-            "icon": "RiDiscordFill",
-            "target": "_blank"
-          },
-          {
-            "title": "이메일",
-            "url": "mailto:support@aibarber.net",
-            "icon": "Mail",
-            "target": "_blank"
           }
         ]
       },
@@ -101,7 +77,7 @@
     }
   },
   "generator": {
-    "title": "오늘 어떤 헤어스타일 질문을 도와드릴까요?",
+    "title": "무엇을 도와드릴까요?",
     "input_placeholder": "헤어스타일, 트렌드 또는 스타일링 팁에 대해 물어보세요..."
   },
   "history": {
@@ -119,6 +95,7 @@
     "untitled": "제목 없는 대화"
   }
 }
+
 
 
 

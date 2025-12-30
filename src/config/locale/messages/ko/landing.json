@@ -19,9 +19,9 @@
           "icon": "Sparkles"
         },
         {
-          "title": "예제",
+          "title": "쇼케이스",
           "url": "/showcases",
-          "icon": "BookOpenText"
+          "icon": "Box"
         },
         {
           "title": "가격",
@@ -34,24 +34,25 @@
           "children": [
             {
               "title": "AI 헤어스타일 체인저",
-              "description": "AI로 헤어스타일 변경",
+              "description": "AI로 이미지 생성",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "헤어 체인저 비디오",
-              "description": "다양한 헤어스타일 즉시 시도",
+              "title": "헤어스타일 체인저 AI 비디오",
+              "description": "AI로 비디오 생성",
               "url": "/hairstyle-changer-ai-video",
-              "icon": "RiScissors2Line"
+              "icon": "RiVideoLine"
             },
             {
-              "title": "AI 바버 챗",
-              "description": "이발사와 채팅",
+              "title": "바버 챗",
+              "description": "AI 이발사와 채팅",
               "url": "/chat",
-              "icon": "RiRobot2Line"
+              "icon": "RiMessage2Line"
             }
           ]
-        }
+        },
+        {}
       ]
     },
     "buttons": [],
@@ -80,7 +81,7 @@
     "id": "footer",
     "brand": {
       "title": "AI Barber",
-      "description": "AI Barber는 당신만의 가상 헤어 스타일리스트입니다. AI의 힘으로 완벽한 외모를 발견하세요.",
+      "description": "AI Barber는 고급 AI를 사용하여 완벽한 룩을 찾는 데 도움을 주는 가상 헤어스타일 도구입니다.",
       "logo": {
         "src": "/logo.png",
         "alt": "AI Barber",
@@ -92,17 +93,25 @@
     "nav": {
       "items": [
         {
-          "title": "제품",
+          "title": "기능",
           "children": [
             {
-              "title": "기능",
-              "url": "/#features",
-              "target": "_self"
+              "title": "AI 헤어스타일",
+              "description": "이미지 생성",
+              "url": "/ai-hairstyle-changer",
+              "icon": "RiImage2Line"
             },
             {
-              "title": "가격",
-              "url": "/pricing",
-              "target": "_self"
+              "title": "AI 비디오",
+              "description": "비디오 생성",
+              "url": "/hairstyle-changer-ai-video",
+              "icon": "RiVideoLine"
+            },
+            {
+              "title": "바버 챗",
+              "description": "AI 이발사와 채팅",
+              "url": "/chat",
+              "icon": "RiMessage2Line"
             }
           ]
         },
@@ -120,24 +129,29 @@
               "target": "_self"
             },
             {
-              "title": "고객 지원",
-              "url": "/help",
+              "title": "채팅",
+              "url": "/chat",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "법적 고지",
+          "title": "친구",
           "children": [
             {
-              "title": "개인정보 처리방침",
-              "url": "/privacy-policy",
-              "target": "_self"
+              "title": "MCPALL",
+              "url": "https://mcpall.com",
+              "target": "_blank"
             },
             {
-              "title": "서비스 약관",
-              "url": "/terms-of-service",
-              "target": "_self"
+              "title": "imgs.chat",
+              "url": "https://imgs.chat",
+              "target": "_blank"
+            },
+            {
+              "title": "101st.dev",
+              "url": "https://101st.dev",
+              "target": "_blank"
             }
           ]
         }
@@ -148,25 +162,25 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/ai_barber",
+          "url": "https://x.com/xuq101",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "Github",
-          "url": "https://github.com/ai-barber",
+          "url": "https://github.com/zebo101",
           "target": "_blank"
         },
         {
           "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/ai-barber",
+          "url": "https://discord.gg/ptHj25mb",
           "target": "_blank"
         },
         {
           "title": "이메일",
           "icon": "Mail",
-          "url": "mailto:support@aibarber.net",
+          "url": "mailto:cy0410239@gmail.com",
           "target": "_self"
         }
       ]
@@ -174,7 +188,7 @@
     "agreement": {
       "items": [
         {
-          "title": "개인정보 처리방침",
+          "title": "개인정보 보호정책",
           "url": "/privacy-policy"
         },
         {
@@ -187,10 +201,4 @@
     "show_locale": true
   }
 }
-
-
-
-
-
-
 

@@ -57,11 +57,35 @@
     "buy_credits": "Comprar Créditos",
     "progress": "Progreso",
     "generated_images": "Tu Nuevo Look",
+    "preview_title": "Vista Previa de Peinado IA",
     "ready_to_generate": "Listo para Transformar",
     "ready_for_generating": "Listo para Transformación",
-    "no_images_generated": "Aún no se han generado peinados"
+    "no_images_generated": "Aún no se han generado peinados",
+    "use_as_reference": "Usar como referencia",
+    "download_image": "Descargar imagen",
+    "example_image_hint": "Este es un resultado de ejemplo. Su peinado generado aparecerá aquí.",
+    "photoGuidelines": {
+      "title": "Guía de fotos para mejores resultados",
+      "suitableTitle": "Fotos adecuadas",
+      "suitableDescription": "Sube una foto clara y frontal de tu rostro. Para obtener un mejor resultado, es ideal recogerse el cabello hacia atrás. Y deja que tu cabello caiga naturalmente.",
+      "unsuitableTitle": "Fotos inadecuadas",
+      "unsuitableDescription": "No subas fotos de perfil, con poca luz o donde el rostro esté cubierto por cabello u objetos. Evita también imágenes de dibujos animados.",
+      "dontShowAgain": "No mostrar de nuevo",
+      "confirm": "OK, Entendido"
+    },
+    "cropImage": {
+      "title": "Recortar imagen",
+      "presetRatios": "Proporciones preestablecidas",
+      "free": "Libre",
+      "actions": "Acciones",
+      "resetCrop": "Restablecer recorte",
+      "rotate": "Rotar 90°",
+      "cancel": "Cancelar",
+      "apply": "Aplicar"
+    }
   }
 }
+
 
 
 

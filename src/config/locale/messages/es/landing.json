@@ -19,9 +19,9 @@
           "icon": "Sparkles"
         },
         {
-          "title": "Casos de éxito",
+          "title": "Casos de uso",
           "url": "/showcases",
-          "icon": "BookOpenText"
+          "icon": "Box"
         },
         {
           "title": "Precios",
@@ -33,25 +33,26 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "Cambiador de Peinados IA",
-              "description": "Cambia tu peinado con IA",
+              "title": "Cambiador de peinado IA",
+              "description": "Usa IA para generar imágenes",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Video Cambiador de Cabello",
-              "description": "Prueba diferentes peinados al instante",
+              "title": "Vídeo cambiador de peinado IA",
+              "description": "Usa IA para generar vídeos",
               "url": "/hairstyle-changer-ai-video",
-              "icon": "RiScissors2Line"
+              "icon": "RiVideoLine"
             },
             {
-              "title": "Chat con IA Barbero",
-              "description": "Chatea con el barbero",
+              "title": "Chat con barbero",
+              "description": "Chatea con barbero IA",
               "url": "/chat",
-              "icon": "RiRobot2Line"
+              "icon": "RiMessage2Line"
             }
           ]
-        }
+        },
+        {}
       ]
     },
     "buttons": [],
@@ -80,7 +81,7 @@
     "id": "footer",
     "brand": {
       "title": "AI Barber",
-      "description": "AI Barber es tu estilista virtual personal. Descubre tu look perfecto con el poder de la IA.",
+      "description": "AI Barber es una herramienta virtual de peinado que utiliza IA avanzada para ayudarte a encontrar tu look perfecto.",
       "logo": {
         "src": "/logo.png",
         "alt": "AI Barber",
@@ -92,17 +93,25 @@
     "nav": {
       "items": [
         {
-          "title": "Producto",
+          "title": "Funciones",
           "children": [
             {
-              "title": "Funciones",
-              "url": "/#features",
-              "target": "_self"
+              "title": "Peinado IA",
+              "description": "generar imágenes",
+              "url": "/ai-hairstyle-changer",
+              "icon": "RiImage2Line"
             },
             {
-              "title": "Precios",
-              "url": "/pricing",
-              "target": "_self"
+              "title": "Vídeo IA",
+              "description": "generar vídeos",
+              "url": "/hairstyle-changer-ai-video",
+              "icon": "RiVideoLine"
+            },
+            {
+              "title": "Chat con barbero",
+              "description": "Chatea con barbero IA",
+              "url": "/chat",
+              "icon": "RiMessage2Line"
             }
           ]
         },
@@ -120,24 +129,29 @@
               "target": "_self"
             },
             {
-              "title": "Centro de Ayuda",
-              "url": "/help",
+              "title": "Chat",
+              "url": "/chat",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "Legal",
+          "title": "Amigos",
           "children": [
             {
-              "title": "Política de Privacidad",
-              "url": "/privacy-policy",
-              "target": "_self"
+              "title": "MCPALL",
+              "url": "https://mcpall.com",
+              "target": "_blank"
             },
             {
-              "title": "Términos de Servicio",
-              "url": "/terms-of-service",
-              "target": "_self"
+              "title": "imgs.chat",
+              "url": "https://imgs.chat",
+              "target": "_blank"
+            },
+            {
+              "title": "101st.dev",
+              "url": "https://101st.dev",
+              "target": "_blank"
             }
           ]
         }
@@ -148,25 +162,25 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/ai_barber",
+          "url": "https://x.com/xuq101",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "Github",
-          "url": "https://github.com/ai-barber",
+          "url": "https://github.com/zebo101",
           "target": "_blank"
         },
         {
           "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/ai-barber",
+          "url": "https://discord.gg/ptHj25mb",
           "target": "_blank"
         },
         {
-          "title": "Correo",
+          "title": "Correo electrónico",
           "icon": "Mail",
-          "url": "mailto:support@aibarber.net",
+          "url": "mailto:cy0410239@gmail.com",
           "target": "_self"
         }
       ]
@@ -174,11 +188,11 @@
     "agreement": {
       "items": [
         {
-          "title": "Política de Privacidad",
+          "title": "Política de privacidad",
           "url": "/privacy-policy"
         },
         {
-          "title": "Términos de Servicio",
+          "title": "Términos de servicio",
           "url": "/terms-of-service"
         }
       ]

@@ -93,8 +93,27 @@
     "nav": {
       "items": [
         {
-          "title": "About",
-          "children": []
+          "title": "Features",
+          "children": [
+            {
+              "title": "AI Hairstyle",
+              "description": "generate images",
+              "url": "/ai-hairstyle-changer",
+              "icon": "RiImage2Line"
+            },
+            {
+              "title": "AI video",
+              "description": "generate videos",
+              "url": "/hairstyle-changer-ai-video",
+              "icon": "RiVideoLine"
+            },
+            {
+              "title": "Barber Chat",
+              "description": "Chat with AI barber",
+              "url": "/chat",
+              "icon": "RiMessage2Line"
+            }
+          ]
         },
         {
           "title": "Resources",
@@ -120,18 +139,18 @@
           "title": "Friends",
           "children": [
             {
-              "title": "ShipAny",
-              "url": "https://shipany.ai",
+              "title": "MCPALL",
+              "url": "https://mcpall.com",
               "target": "_blank"
             },
             {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
+              "title": "imgs.chat",
+              "url": "https://imgs.chat",
               "target": "_blank"
             },
             {
-              "title": "MCP.so",
-              "url": "https://mcp.so",
+              "title": "101st.dev",
+              "url": "https://101st.dev",
               "target": "_blank"
             }
           ]
@@ -143,25 +162,25 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/your-app-name",
+          "url": "https://x.com/xuq101",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "Github",
-          "url": "https://github.com/your-app-name",
+          "url": "https://github.com/zebo101",
           "target": "_blank"
         },
         {
           "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/your-app-name",
+          "url": "https://discord.gg/ptHj25mb",
           "target": "_blank"
         },
         {
           "title": "Email",
           "icon": "Mail",
-          "url": "mailto:support@your-domain.com",
+          "url": "mailto:cy0410239@gmail.com",
           "target": "_self"
         }
       ]

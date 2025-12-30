@@ -57,11 +57,35 @@
     "buy_credits": "Comprar Créditos",
     "progress": "Progresso",
     "generated_images": "Seu Novo Visual",
+    "preview_title": "Pré-visualização de Penteado IA",
     "ready_to_generate": "Pronto para Transformar",
     "ready_for_generating": "Pronto para Transformação",
-    "no_images_generated": "Ainda não foram gerados penteados"
+    "no_images_generated": "Ainda não foram gerados penteados",
+    "use_as_reference": "Usar como referência",
+    "download_image": "Baixar imagem",
+    "example_image_hint": "Este é um resultado de exemplo. Seu penteado gerado aparecerá aqui.",
+    "photoGuidelines": {
+      "title": "Diretrizes de fotos para melhores resultados",
+      "suitableTitle": "Fotos adequadas",
+      "suitableDescription": "Envie uma foto nítida e frontal do seu rosto. Para um resultado satisfatório, é ideal prender o cabelo para trás. E deixe o cabelo cair naturalmente.",
+      "unsuitableTitle": "Fotos inadequadas",
+      "unsuitableDescription": "Não envie fotos de perfil, com pouca luz ou com o rosto coberto por cabelo ou objetos. Evite também imagens de desenhos animados.",
+      "dontShowAgain": "Não mostrar novamente",
+      "confirm": "OK, Entendi"
+    },
+    "cropImage": {
+      "title": "Cortar imagem",
+      "presetRatios": "Proporções predefinidas",
+      "free": "Livre",
+      "actions": "Ações",
+      "resetCrop": "Redefinir corte",
+      "rotate": "Girar 90°",
+      "cancel": "Cancelar",
+      "apply": "Aplicar"
+    }
   }
 }
+
 
 
 

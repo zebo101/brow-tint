@@ -57,30 +57,6 @@
             "url": "/",
             "icon": "Home",
             "target": "_blank"
-          },
-          {
-            "title": "GitHub",
-            "url": "https://github.com/ai-barber",
-            "icon": "Github",
-            "target": "_blank"
-          },
-          {
-            "title": "Twitter",
-            "url": "https://x.com/ai_barber",
-            "icon": "RiTwitterXFill",
-            "target": "_blank"
-          },
-          {
-            "title": "Discord",
-            "url": "https://discord.gg/ai-barber",
-            "icon": "RiDiscordFill",
-            "target": "_blank"
-          },
-          {
-            "title": "E-mail",
-            "url": "mailto:support@aibarber.net",
-            "icon": "Mail",
-            "target": "_blank"
           }
         ]
       },
@@ -101,7 +77,7 @@
     }
   },
   "generator": {
-    "title": "Com qual pergunta sobre penteado posso ajudá-lo hoje?",
+    "title": "Como posso ajudar?",
     "input_placeholder": "Pergunte-me sobre penteados, tendências ou dicas de estilo..."
   },
   "history": {
@@ -119,6 +95,7 @@
     "untitled": "Conversa sem título"
   }
 }
+
 
 
 

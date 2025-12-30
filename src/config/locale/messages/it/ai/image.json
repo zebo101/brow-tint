@@ -57,11 +57,35 @@
     "buy_credits": "Acquista Crediti",
     "progress": "Progresso",
     "generated_images": "Il Tuo Nuovo Look",
+    "preview_title": "Anteprima Acconciatura IA",
     "ready_to_generate": "Pronto per Trasformare",
     "ready_for_generating": "Pronto per Trasformazione",
-    "no_images_generated": "Nessuna acconciatura ancora generata"
+    "no_images_generated": "Nessuna acconciatura ancora generata",
+    "use_as_reference": "Usa come riferimento",
+    "download_image": "Scarica immagine",
+    "example_image_hint": "Questo è un risultato di esempio. La tua acconciatura generata apparirà qui.",
+    "photoGuidelines": {
+      "title": "Linee guida foto per risultati ottimali",
+      "suitableTitle": "Foto adatte",
+      "suitableDescription": "Carica una foto chiara e frontale del tuo viso. Per un risultato migliore, è ideale raccogliere i capelli indietro. E lascia cadere i capelli naturalmente.",
+      "unsuitableTitle": "Foto non adatte",
+      "unsuitableDescription": "Non caricare foto di profilo, con scarsa illuminazione o con il viso coperto da capelli o oggetti. Evita anche immagini di cartoni animati.",
+      "dontShowAgain": "Non mostrare più",
+      "confirm": "OK, Capito"
+    },
+    "cropImage": {
+      "title": "Ritaglia immagine",
+      "presetRatios": "Rapporti predefiniti",
+      "free": "Libero",
+      "actions": "Azioni",
+      "resetCrop": "Reimposta ritaglio",
+      "rotate": "Ruota 90°",
+      "cancel": "Annulla",
+      "apply": "Applica"
+    }
   }
 }
+
 
 
 

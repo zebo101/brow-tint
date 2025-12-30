@@ -60,6 +60,9 @@
     "ready_to_generate": "准备转换",
     "ready_for_generating": "准备转换中",
     "no_images_generated": "暂无生成的AI发型",
+    "use_as_reference": "用作参考图",
+    "download_image": "下载图片",
+    "example_image_hint": "这是一个示例效果，您生成的发型将显示在这里。",
     "photoGuidelines": {
       "title": "照片上传指南",
       "suitableTitle": "合适的照片",

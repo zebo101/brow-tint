@@ -21,7 +21,7 @@
         {
           "title": "事例",
           "url": "/showcases",
-          "icon": "BookOpenText"
+          "icon": "Box"
         },
         {
           "title": "料金",
@@ -34,24 +34,25 @@
           "children": [
             {
               "title": "AIヘアスタイルチェンジャー",
-              "description": "AIでヘアスタイルを変更",
+              "description": "AIで画像を生成",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
               "title": "ヘアチェンジャービデオ",
-              "description": "様々なヘアスタイルを即座に試す",
+              "description": "AIで動画を生成",
               "url": "/hairstyle-changer-ai-video",
-              "icon": "RiScissors2Line"
+              "icon": "RiVideoLine"
             },
             {
               "title": "AIバーバーチャット",
-              "description": "理容師とチャット",
+              "description": "AI理容師とチャット",
               "url": "/chat",
-              "icon": "RiRobot2Line"
+              "icon": "RiMessage2Line"
             }
           ]
-        }
+        },
+        {}
       ]
     },
     "buttons": [],
@@ -80,7 +81,7 @@
     "id": "footer",
     "brand": {
       "title": "AI Barber",
-      "description": "AI Barberはあなた専属のバーチャルヘアスタイリストです。AIの力で完璧なルックスを発見しましょう。",
+      "description": "AI Barberは、先進的なAIを使用して完璧なルックスを見つけるのを支援するバーチャルヘアスタイルツールです。",
       "logo": {
         "src": "/logo.png",
         "alt": "AI Barber",
@@ -92,17 +93,25 @@
     "nav": {
       "items": [
         {
-          "title": "製品",
+          "title": "機能",
           "children": [
             {
-              "title": "機能",
-              "url": "/#features",
-              "target": "_self"
+              "title": "AIヘアスタイル",
+              "description": "画像を生成",
+              "url": "/ai-hairstyle-changer",
+              "icon": "RiImage2Line"
             },
             {
-              "title": "料金",
-              "url": "/pricing",
-              "target": "_self"
+              "title": "AI動画",
+              "description": "動画を生成",
+              "url": "/hairstyle-changer-ai-video",
+              "icon": "RiVideoLine"
+            },
+            {
+              "title": "バーバーチャット",
+              "description": "AI理容師とチャット",
+              "url": "/chat",
+              "icon": "RiMessage2Line"
             }
           ]
         },
@@ -120,24 +129,29 @@
               "target": "_self"
             },
             {
-              "title": "ヘルプセンター",
-              "url": "/help",
+              "title": "チャット",
+              "url": "/chat",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "法的情報",
+          "title": "フレンド",
           "children": [
             {
-              "title": "プライバシーポリシー",
-              "url": "/privacy-policy",
-              "target": "_self"
+              "title": "MCPALL",
+              "url": "https://mcpall.com",
+              "target": "_blank"
             },
             {
-              "title": "利用規約",
-              "url": "/terms-of-service",
-              "target": "_self"
+              "title": "imgs.chat",
+              "url": "https://imgs.chat",
+              "target": "_blank"
+            },
+            {
+              "title": "101st.dev",
+              "url": "https://101st.dev",
+              "target": "_blank"
             }
           ]
         }
@@ -148,25 +162,25 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/ai_barber",
+          "url": "https://x.com/xuq101",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "Github",
-          "url": "https://github.com/ai-barber",
+          "url": "https://github.com/zebo101",
           "target": "_blank"
         },
         {
           "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/ai-barber",
+          "url": "https://discord.gg/ptHj25mb",
           "target": "_blank"
         },
         {
           "title": "メール",
           "icon": "Mail",
-          "url": "mailto:support@aibarber.net",
+          "url": "mailto:cy0410239@gmail.com",
           "target": "_self"
         }
       ]

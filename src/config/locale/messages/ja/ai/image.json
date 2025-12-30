@@ -56,12 +56,36 @@
     "credits_remaining": "残り{credits}クレジット",
     "buy_credits": "クレジット購入",
     "progress": "進行状況",
-    "generated_images": "新しいルックス",
+    "generated_images": "あなたの新しいルック",
+    "preview_title": "AIヘアスタイルプレビュー",
     "ready_to_generate": "変更準備完了",
     "ready_for_generating": "変更準備中",
-    "no_images_generated": "まだヘアスタイルが生成されていません"
+    "no_images_generated": "まだヘアスタイルが生成されていません",
+    "use_as_reference": "参照として使用",
+    "download_image": "画像をダウンロード",
+    "example_image_hint": "これはサンプル結果です。生成されたヘアスタイルはここに表示されます。",
+    "photoGuidelines": {
+      "title": "最適な結果のための写真ガイドライン",
+      "suitableTitle": "適切な写真",
+      "suitableDescription": "顔がはっきりと見える正面からの写真をアップロードしてください。満足のいく結果を得るには、髪を後ろにまとめるのが理想的です。また、髪を自然に下ろしてください。",
+      "unsuitableTitle": "不適切な写真",
+      "unsuitableDescription": "横顔、暗い場所、髪や他の物で顔が隠れている写真は避けてください。アニメ画像なども使用しないでください。",
+      "dontShowAgain": "今後表示しない",
+      "confirm": "OK, 理解しました"
+    },
+    "cropImage": {
+      "title": "画像をトリミング",
+      "presetRatios": "プリセット比率",
+      "free": "自由",
+      "actions": "操作",
+      "resetCrop": "トリミングをリセット",
+      "rotate": "90°回転",
+      "cancel": "キャンセル",
+      "apply": "適用"
+    }
   }
 }
+
 
 
 

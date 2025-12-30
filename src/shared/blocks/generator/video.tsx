@@ -69,6 +69,19 @@ const imageToVideoCredits = 8;
 const videoToVideoCredits = 10;
 
 const MODEL_OPTIONS = [
+  // Kie models
+  {
+    value: 'sora-2-pro-image-to-video',
+    label: 'Sora 2 Pro',
+    provider: 'kie',
+    scenes: ['image-to-video'],
+  },
+  {
+    value: 'sora-2-pro-text-to-video',
+    label: 'Sora 2 Pro',
+    provider: 'kie',
+    scenes: ['text-to-video'],
+  },
   // Replicate models
   {
     value: 'google/veo-3.1',
@@ -101,22 +114,13 @@ const MODEL_OPTIONS = [
     provider: 'fal',
     scenes: ['video-to-video'],
   },
-  // Kie models
-  {
-    value: 'sora-2-pro-image-to-video',
-    label: 'Sora 2 Pro',
-    provider: 'kie',
-    scenes: ['image-to-video'],
-  },
-  {
-    value: 'sora-2-pro-text-to-video',
-    label: 'Sora 2 Pro',
-    provider: 'kie',
-    scenes: ['text-to-video'],
-  },
 ];
 
 const PROVIDER_OPTIONS = [
+  {
+    value: 'kie',
+    label: 'Kie',
+  },
   {
     value: 'replicate',
     label: 'Replicate',
@@ -124,10 +128,6 @@ const PROVIDER_OPTIONS = [
   {
     value: 'fal',
     label: 'Fal',
-  },
-  {
-    value: 'kie',
-    label: 'Kie',
   },
 ];
 
@@ -620,11 +620,15 @@ export function VideoGenerator({
   };
 
   return (
-    <section className="py-16 md:py-24">
-      <div className="container">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-            <Card>
+    <section className="relative py-4 md:py-8 lg:py-12 overflow-hidden">
+      {/* Atmosphere Background */}
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+
+      <div className="container px-4">
+        <div className="mx-auto max-w-[1440px]">
+          <div className="grid grid-cols-1 gap-6 lg:gap-10 lg:justify-center lg:grid-cols-[minmax(400px,500px)_380px] items-stretch">
+            <Card className="rounded-3xl border-border/40 bg-card/60 shadow-xl backdrop-blur-xl transition-all duration-300">
               <CardHeader>
                 {srOnlyTitle && <h2 className="sr-only">{srOnlyTitle}</h2>}
                 <CardTitle className="flex items-center gap-2 text-xl font-semibold">
@@ -634,13 +638,13 @@ export function VideoGenerator({
               <CardContent className="space-y-6 pb-8">
                 <Tabs value={activeTab} onValueChange={handleTabChange}>
                   <TabsList className="bg-primary/10 grid w-full grid-cols-3">
-                    <TabsTrigger value="text-to-video">
+                    <TabsTrigger value="text-to-video" className="text-[10px] sm:text-xs px-1">
                       {t('tabs.text-to-video')}
                     </TabsTrigger>
-                    <TabsTrigger value="image-to-video">
+                    <TabsTrigger value="image-to-video" className="text-[10px] sm:text-xs px-1">
                       {t('tabs.image-to-video')}
                     </TabsTrigger>
-                    <TabsTrigger value="video-to-video">
+                    <TabsTrigger value="video-to-video" className="text-[10px] sm:text-xs px-1">
                       {t('tabs.video-to-video')}
                     </TabsTrigger>
                   </TabsList>
@@ -743,19 +747,19 @@ export function VideoGenerator({
                 </div>
 
                 {!isMounted ? (
-                  <Button className="w-full" disabled size="lg">
+                  <Button className="w-full text-xs sm:text-sm" disabled size="lg">
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     {t('loading')}
                   </Button>
                 ) : isCheckSign ? (
-                  <Button className="w-full" disabled size="lg">
+                  <Button className="w-full text-xs sm:text-sm" disabled size="lg">
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     {t('checking_account')}
                   </Button>
                 ) : user ? (
                   <Button
                     size="lg"
-                    className="w-full"
+                    className="w-full text-xs sm:text-sm"
                     onClick={handleGenerate}
                     disabled={
                       isGenerating ||
@@ -782,7 +786,7 @@ export function VideoGenerator({
                 ) : (
                   <Button
                     size="lg"
-                    className="w-full"
+                    className="w-full text-xs sm:text-sm"
                     onClick={() => setIsShowSignModal(true)}
                   >
                     <User className="mr-2 h-4 w-4" />
@@ -842,7 +846,7 @@ export function VideoGenerator({
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="rounded-3xl border-border/40 bg-card/60 shadow-xl backdrop-blur-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-xl font-semibold">
                   <Video className="h-5 w-5" />
@@ -866,19 +870,21 @@ export function VideoGenerator({
                             <Button
                               size="sm"
                               variant="ghost"
-                              className="ml-auto"
+                              className="ml-auto text-[10px] sm:text-xs"
                               onClick={() => handleDownloadVideo(video)}
                               disabled={downloadingVideoId === video.id}
                             >
                               {downloadingVideoId === video.id ? (
                                 <>
-                                  <Loader2 className="h-4 w-4 animate-spin" />
+                                  <Loader2 className="h-4 w-4 animate-spin mr-1" />
                                 </>
                               ) : (
                                 <>
-                                  <Download className="h-4 w-4" />
+                                  <Download className="h-4 w-4 mr-1" />
                                 </>
                               )}
+                              {/* Added label for consistency with image generator if needed, but keeping icon-only style if preferred by original code, though user asked for "same". The original only had icon. I will add text if it fits or keep icon. The original image generator has text. I will add text "Download" to make it "same". */}
+                              <span className="whitespace-nowrap">Download</span>
                             </Button>
                           </div>
                         </div>

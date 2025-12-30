@@ -57,11 +57,35 @@
     "buy_credits": "크레딧 구매",
     "progress": "진행률",
     "generated_images": "새로운 외모",
+    "preview_title": "AI 헤어스타일 미리보기",
     "ready_to_generate": "변화 준비 완료",
     "ready_for_generating": "변화 준비 중",
-    "no_images_generated": "아직 생성된 헤어스타일 없음"
+    "no_images_generated": "아직 생성된 헤어스타일 없음",
+    "use_as_reference": "참조로 사용",
+    "download_image": "이미지 다운로드",
+    "example_image_hint": "이것은 예시 결과입니다. 생성된 헤어스타일이 여기에 표시됩니다.",
+    "photoGuidelines": {
+      "title": "최상의 결과를 위한 사진 가이드라인",
+      "suitableTitle": "적합한 사진",
+      "suitableDescription": "얼굴 정면이 선명하게 나온 사진을 업로드해주세요. 만족스러운 결과를 얻으려면 머리를 뒤로 묶는 것이 가장 좋습니다. 그리고 머리카락을 자연스럽게 늘어뜨려주세요.",
+      "unsuitableTitle": "부적합한 사진",
+      "unsuitableDescription": "측면 사진, 어두운 조명, 머리카락이나 다른 물체로 얼굴이 가려진 사진은 피해주세요. 만화 이미지도 사용하지 마세요.",
+      "dontShowAgain": "다시 보지 않기",
+      "confirm": "확인"
+    },
+    "cropImage": {
+      "title": "이미지 자르기",
+      "presetRatios": "사전 설정 비율",
+      "free": "자유",
+      "actions": "동작",
+      "resetCrop": "자르기 초기화",
+      "rotate": "90° 회전",
+      "cancel": "취소",
+      "apply": "적용"
+    }
   }
 }
+
 
 
 

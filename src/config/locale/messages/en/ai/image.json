@@ -60,6 +60,9 @@
     "ready_to_generate": "Ready to Transform",
     "ready_for_generating": "Ready for Transformation",
     "no_images_generated": "No AI hairstyles generated yet",
+    "use_as_reference": "Use as Reference",
+    "download_image": "Download Image",
+    "example_image_hint": "This is an example result. Your generated hairstyle will appear here.",
     "photoGuidelines": {
       "title": "Photo Guidelines for Best Results",
       "suitableTitle": "Suitable Photos",

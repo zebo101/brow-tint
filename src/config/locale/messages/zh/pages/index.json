@@ -31,7 +31,7 @@
           {
             "title": "查看案例",
             "icon": "BookOpenText",
-            "url": "/subscribe",
+            "url": "/showcases",
             "target": "_blank",
             "variant": "outline"
           }
