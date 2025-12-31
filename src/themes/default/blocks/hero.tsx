@@ -106,7 +106,7 @@ export function Hero({
                   asChild
                   size={button.size || 'lg'}
                   variant={button.variant || 'default'}
-                  className="h-11 whitespace-nowrap rounded-xl px-4 font-medium sm:px-8"
+                  className="h-11 rounded-xl px-4 font-medium whitespace-nowrap sm:px-8"
                   key={idx}
                 >
                   <Link
@@ -211,6 +211,18 @@ function HeroBrowserPreview({ section }: { section: Section }) {
 
         {/* 主卡片容器 - 外圆角 1.5rem */}
         <div className="border-border/30 from-muted/40 via-background/60 to-muted/40 dark:border-border/40 dark:from-muted/5 dark:via-background/10 dark:to-muted/5 relative overflow-hidden rounded-[1.5rem] border bg-gradient-to-br p-6 shadow-2xl backdrop-blur-sm sm:p-8 dark:shadow-black/50">
+          {/* 背景图片层 */}
+          <div className="absolute inset-0 -z-0 overflow-hidden rounded-[1.5rem]">
+            <Image
+              src="/imgs/bg/hero-a.png"
+              alt="Card background"
+              className="object-cover opacity-30 dark:opacity-20"
+              fill
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, 1400px"
+              quality={80}
+            />
+          </div>
           {/* 内容容器 - 内圆角 = 1.5rem - 0.5rem = 1rem */}
           <div className="bg-background/95 dark:bg-background/80 relative overflow-hidden rounded-2xl shadow-2xl backdrop-blur-xl">
             {/* 浏览器顶部栏 */}
