@@ -5,8 +5,305 @@
     "keywords": "aiヘアスタイルチェンジャー, バーチャルヘアスタイル, aiヘアカット, ヘアスタイルジェネレーター"
   },
   "page": {
-    "title": "AIヘアスタイルチェンジャー",
-    "description": "AIでヘアスタイルを変更。写真をアップロードして様々なヘアスタイルを即座に試せます。"
+    "title": "無料オンラインAIヘアスタイルチェンジャー - 400種類以上のヘアスタイルを試す | AI Barber",
+    "description": "最高の無料オンラインAIヘアスタイルチェンジャーを体験してください。写真をアップロードして、400種類以上のヘアスタイルを即座に試せます。ダウンロード不要、新規ユーザーは100%無料でお試しいただけます。",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "features",
+      "stats",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "AIバーバーのヘアスタイルチェンジャー",
+        "highlight_text": "AI Barber",
+        "description": "最先端のAIヘアスタイルチェンジャーでヘアスタイリングの未来を取り入れましょう。写真をアップロードして、あなただけのために調整された400種類以上のトレンディなヘアスタイルをお試しください。",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "alt": "AI Hairstyle Changer Interface",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "alt": "AI Hairstyle Changer Interface Dark Mode",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/hero.png",
+          "alt": "AI Barber Hero Background"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "AI Barberヘアスタイルチェンジャーとは？",
+        "label": "紹介",
+        "description": "AI Barberは、美容院に行かずに完璧なルックスを見つけるのに役立つ、高度な人工知能を使用した最先端のバーチャルヘアスタイルツールです。",
+        "image": {
+          "src": "/imgs/features/landingpage.png",
+          "alt": "AI Barber Hairstyle Simulator"
+        },
+        "items": [
+          {
+            "title": "バーチャルヘアスタイル試着",
+            "description": "バズカット、ボブ、マレット、ピクシーカットなど、数え切れないほどのバーチャルヘアスタイルを即座に試着できます。",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "リアルなAI結果",
+            "description": "当社のAIヘアカットチェンジャーは、あなたの顔の形や髪の質感を尊重した非常にリアルな結果を生成します。",
+            "icon": "RiCameraLensLine"
+          },
+          {
+            "title": "ヘアカラーチェンジャー",
+            "description": "ヘアカラーフィルターを使って、バレイヤージュからカッパー、シルバーまで、さまざまなヘアカラーを試してみましょう。",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "スタイル転送",
+            "description": "画像生成技術を使って、有名人やモデルのスタイルを直接あなたの写真に転送します。",
+            "icon": "RiExchangeLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "当社のAIヘアスタイルチェンジャーを選ぶ理由",
+        "label": "メリット",
+        "description": "安全、高速、ユーザーフレンドリーなAIヘアシミュレーターで無限の可能性を探求しましょう。",
+        "items": [
+          {
+            "title": "超高速＆100%オンライン",
+            "description": "数秒で髪を変身させます。ソフトウェアのダウンロードは不要、結果を数日待つ必要もありません。ブラウザで直接動作します。",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Fast AI Processing"
+            }
+          },
+          {
+            "title": "プライバシー第一",
+            "description": "あなたの写真は安全に処理され、自動的に削除されます。私たちはあなたのプライバシーを尊重し、許可なく画像をトレーニングに使用することはありません。",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/image2.png",
+              "alt": "Secure and Private"
+            }
+          },
+          {
+            "title": "プロフェッショナル品質",
+            "description": "理容師やスタイリストに希望を正確に伝えるのに役立つ、サロン品質のビジュアライゼーションを入手できます。",
+            "icon": "RiUserSmileLine",
+            "image": {
+              "src": "/imgs/features/image3.png",
+              "alt": "Professional Results"
+            }
+          }
+        ]
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "AIヘアスタイルチェンジャーの使い方",
+        "description": "直感的なインターフェースで、3つの簡単なステップで新しいルックスを手に入れましょう：",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "AI Hairstyle Usage Guide"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "写真をアップロード",
+            "description": "最高の結果を得るには、顔がはっきりと見える正面からの写真をアップロードしてください。",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Upload Photo"
+            }
+          },
+          {
+            "title": "ヘアスタイルを選択",
+            "description": "カタログを閲覧し、メンズ、レディース、キッズなどのプリセットカテゴリからヘアスタイルを選択します。",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Select Hairstyle"
+            }
+          },
+          {
+            "title": "ルックスを説明",
+            "description": "結果をさらにカスタマイズするために、希望するヘアスタイルの説明を入力してください。",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Describe Hairstyle"
+            }
+          },
+          {
+            "title": "生成＆ダウンロード",
+            "description": "生成ボタンをクリックして魔法がかかるのを見て、お気に入りの新しいルックスをダウンロードしましょう。",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Generate and Download"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "AI Barberの主な機能",
+        "description": "完全なバーチャル変身に必要なすべて。",
+        "items": [
+          {
+            "title": "200種類以上の流行のヘアスタイル",
+            "description": "バズカット、ポンパドール、ボブ、ピクシーなど、膨大なヘアスタイルライブラリにアクセス。",
+            "icon": "RiScissorsCutLine"
+          },
+          {
+            "title": "スマート顔検出",
+            "description": "顔の形を自動的に検出し、ヘアスタイルが完璧にフィットするようにします。",
+            "icon": "RiWomenLine"
+          },
+          {
+            "title": "カラー実験",
+            "description": "化学的ダメージのリスクなしに新しいヘアカラーを試してみましょう。",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "高解像度ダウンロード",
+            "description": "共有に最適な、鮮明で高品質な画像をダウンロード。",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "スタイル比較",
+            "description": "ビフォーアフターを並べて比較し、最高の決断を下しましょう。",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "モバイル対応",
+            "description": "どこでも、どのデバイスでもAI Barberを使用できます。モバイル体験に最適化されています。",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "AI Barberについてのユーザーの声",
+        "description": "完璧なスタイルを見つけたユーザーの声を聞いてみましょう。",
+        "items": [
+          {
+            "name": "Sarah Jenkins",
+            "role": "ファッションブロガー",
+            "quote": "長い髪をボブにするのをためらっていました。AI Barberはそれがどのように見えるかを正確に示してくれ、とても気に入りました！最高のヘアスタイルアプリです。",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Sarah Jenkins"
+            }
+          },
+          {
+            "name": "Mike Ross",
+            "role": "モデル",
+            "quote": "私のポートフォリオに欠かせないツールです。実際に髪を変えることなく、写真撮影のためにさまざまなルックスをテストできます。リアリズムは比類のないものです。",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Mike Ross"
+            }
+          },
+          {
+            "name": "Emily Chen",
+            "role": "学生",
+            "quote": "とても楽しい！紫色の髪とピクシーカットを試してみました。とてもリアルだったので、母は私が実際にやったと思いました。",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Emily Chen"
+            }
+          },
+          {
+            "name": "David Smith",
+            "role": "ソフトウェアエンジニア",
+            "quote": "新しいメンズヘアカットを見つけるためにAI Barberを使いました。フェードとアンダーカットのオプションは素晴らしく、理髪師に何をしてほしいかを正確に説明するのに役立ちました。",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "David Smith"
+            }
+          },
+          {
+            "name": "Jessica Lee",
+            "role": "メイクアップアーティスト",
+            "quote": "ヘアカラーチェンジャーはすごい！髪を染める前にブロンド、カッパー、シルバーを試しました。この無料ツールのおかげで、悪い選択をせずに済みました。",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Jessica Lee"
+            }
+          },
+          {
+            "name": "Tom Brown",
+            "role": "学生",
+            "quote": "この無料のAIヘアスタイルチェンジャーはとても使いやすいです。写真をアップロードして、数秒で結果が得られました。バーチャル変身を探している人には強くお勧めします。",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Tom Brown"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "よくある質問",
+        "description": "AIヘアスタイルチェンジャーについて質問がありますか？私たちが答えます。",
+        "tip": "探しているものが見つかりませんか？<a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>サポートチーム</a>にお問い合わせください",
+        "items": [
+          {
+            "question": "このAIヘアスタイルチェンジャーは無料で使用できますか？",
+            "answer": "はい、AI Barberは新規ユーザーがAIヘアスタイルチェンジャーを試すための無料トライアルを提供しています。ツールの品質を確認するために、いくつかのヘアスタイルを生成できます。"
+          },
+          {
+            "question": "ヘアスタイルはどれくらいリアルですか？",
+            "answer": "私たちの高度なAIモデルは、何百万もの高品質な画像でトレーニングされており、ヘアスタイルが元の写真と自然に調和し、照明や角度を合わせてフォトリアルな外観を確保します。"
+          },
+          {
+            "question": "どのような写真が最適ですか？",
+            "answer": "最高の結果を得るには、照明の良い、顔がはっきりと見える正面からの写真をアップロードしてください。サングラス、マスク、または過度な髪で顔が隠れている写真は避けてください。無表情が最適です。"
+          },
+          {
+            "question": "髪の色だけを変えることはできますか？",
+            "answer": "はい！現在のスタイルを維持したまま特定のヘアカラーのみをテストしたり、スタイルとカラーを同時に変更したりできます。"
+          },
+          {
+            "question": "男性と女性の両方に対応していますか？",
+            "answer": "もちろんです。男性のヘアスタイル（バズカット、クルーカット、フェードなど）と女性のヘアスタイル（ボブ、レイヤード、ピクシーなど）、そしてキッズスタイル向けの幅広いカタログがあります。"
+          },
+          {
+            "question": "写真データは安全ですか？",
+            "answer": "私たちはプライバシーを真剣に受け止めています。アップロードされた写真は生成目的のために安全に処理され、永久に保存されたり、第三者と共有されたりすることはありません。"
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "新しいルックスの準備はできましたか？",
+        "description": "髪型で推測するのはやめましょう。今日AI Barberであなたの完璧なヘアスタイルを視覚化してください。",
+        "buttons": [
+          {
+            "title": "今すぐ変身を開始",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
   },
   "generator": {
     "title": "ヘアスタイルチェンジャー",
@@ -85,6 +382,7 @@
     }
   }
 }
+
 
 
 

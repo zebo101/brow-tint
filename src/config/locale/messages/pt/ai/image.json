@@ -5,8 +5,305 @@
     "keywords": "mudador de penteado ia, penteado virtual, corte de cabelo ia, gerador de penteados"
   },
   "page": {
-    "title": "Mudador de Penteado IA",
-    "description": "Mude seu penteado com IA. Envie sua foto e experimente diferentes penteados instantaneamente."
+    "title": "Simulador de Cabelo IA Grátis Online - Experimente 400+ Penteados | AI Barber",
+    "description": "Experimente o melhor simulador de cabelo IA gratuito online. Carregue sua foto e teste 400+ penteados instantaneamente. Sem download, teste 100% grátis para novos usuários.",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "features",
+      "stats",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Trocador de Penteados do Barbeiro IA",
+        "highlight_text": "Barbeiro IA",
+        "description": "Abrace o futuro do penteado com o mais avançado Mudador de Penteado IA. Carregue sua foto e experimente mais de 400 estilos de cabelo da moda feitos sob medida para você.",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "alt": "AI Hairstyle Changer Interface",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "alt": "AI Hairstyle Changer Interface Dark Mode",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/hero.png",
+          "alt": "AI Barber Hero Background"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "O que é o Mudador de Penteado AI Barber?",
+        "label": "Introdução",
+        "description": "AI Barber é uma ferramenta virtual de penteado de ponta que usa inteligência artificial avançada para ajudá-lo a encontrar seu visual perfeito sem visitar um salão.",
+        "image": {
+          "src": "/imgs/features/landingpage.png",
+          "alt": "AI Barber Hairstyle Simulator"
+        },
+        "items": [
+          {
+            "title": "Experimentação Virtual de Penteado",
+            "description": "Experimente inúmeros penteados virtuais incluindo Corte Buzz, Bob, Mullet e cortes Pixie instantaneamente.",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "Resultados IA Realistas",
+            "description": "Nosso Mudador de Corte IA gera resultados altamente realistas que respeitam o formato do seu rosto e textura do cabelo.",
+            "icon": "RiCameraLensLine"
+          },
+          {
+            "title": "Mudador de Cor de Cabelo",
+            "description": "Experimente diferentes cores de cabelo, desde Balayage até Cobre e Prata, com nosso filtro de cor de cabelo.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "Transferência de Estilo",
+            "description": "Transfira estilos de celebridades ou modelos diretamente para sua foto usando nossa tecnologia de imagem para imagem.",
+            "icon": "RiExchangeLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Por que Escolher Nosso Mudador de Penteado IA",
+        "label": "Benefícios",
+        "description": "Explore possiblidades infinitas com nosso simulador de cabelo IA seguro, rápido e fácil de usar.",
+        "items": [
+          {
+            "title": "Rápido como um Raio e 100% Online",
+            "description": "Transforme seu cabelo em segundos. Sem software para baixar, sem esperar dias pelos resultados. Funciona diretamente no seu navegador.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Fast AI Processing"
+            }
+          },
+          {
+            "title": "Privacidade em Primeiro Lugar",
+            "description": "Suas fotos são processadas com segurança e excluídas automaticamente. Valorizamos sua privacidade e nunca usamos suas imagens para treinamento sem permissão.",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/image2.png",
+              "alt": "Secure and Private"
+            }
+          },
+          {
+            "title": "Qualidade Profissional",
+            "description": "Obtenha visualizações de qualidade de salão que ajudam você a comunicar exatamente o que deseja ao seu cabeleireiro ou estilista.",
+            "icon": "RiUserSmileLine",
+            "image": {
+              "src": "/imgs/features/image3.png",
+              "alt": "Professional Results"
+            }
+          }
+        ]
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "Como Usar o Mudador de Penteado IA",
+        "description": "Obtenha seu novo visual em quatro passos simples com nossa interface intuitiva:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "AI Hairstyle Usage Guide"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Carregue Sua Foto",
+            "description": "Carregue uma foto nítida e frontal de si mesmo para obter os melhores resultados de transformação.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Upload Photo"
+            }
+          },
+          {
+            "title": "Selecione o Penteado",
+            "description": "Navegue pelo nosso catálogo e selecione um penteado de categorias predefinidas como Homens, Mulheres ou Crianças.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Select Hairstyle"
+            }
+          },
+          {
+            "title": "Descreva Seu Visual",
+            "description": "Insira uma descrição do penteado desejado ou imaginado para personalizar ainda mais o resultado.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Describe Hairstyle"
+            }
+          },
+          {
+            "title": "Gerar e Baixar",
+            "description": "Clique em gerar para ver a mágica acontecer e depois baixe seus novos visuais favoritos.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Generate and Download"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Principais Recursos do AI Barber",
+        "description": "Tudo o que você precisa para uma transformação virtual completa.",
+        "items": [
+          {
+            "title": "200+ Penteados da Moda",
+            "description": "Acesse uma enorme biblioteca de penteados, incluindo Buzz Cut, Pompadour, Bob, Pixie e muito mais.",
+            "icon": "RiScissorsCutLine"
+          },
+          {
+            "title": "Detecção Facial Inteligente",
+            "description": "Detecta automaticamente o formato do rosto para garantir que os penteados se encaixem perfeitamente.",
+            "icon": "RiWomenLine"
+          },
+          {
+            "title": "Experimentação de Cor",
+            "description": "Experimente novas cores de cabelo sem o risco de danos químicos.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "Downloads em Alta Resolução",
+            "description": "Baixe imagens nítidas e de alta qualidade, perfeitas para compartilhar.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "Comparação de Estilos",
+            "description": "Compare o antes e o depois lado a lado para tomar a melhor decisão.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Compatível com Dispositivos Móveis",
+            "description": "Use o AI Barber em qualquer dispositivo, em qualquer lugar. Otimizado para experiência móvel.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "O que os Usuários Dizem Sobre o AI Barber",
+        "description": "Ouça usuários que encontraram seu estilo perfeito.",
+        "items": [
+          {
+            "name": "Sarah Jenkins",
+            "role": "Blogueira de Moda",
+            "quote": "Eu estava hesitante em cortar meu cabelo longo em um bob. O AI Barber me mostrou exatamente como ficaria, e eu amei! Melhor app de penteados de todos.",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Sarah Jenkins"
+            }
+          },
+          {
+            "name": "Mike Ross",
+            "role": "Modelo",
+            "quote": "Ferramenta essencial para meu portfólio. Posso testar diferentes visuais para sessões de fotos sem realmente mudar meu cabelo. O realismo é inigualável.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Mike Ross"
+            }
+          },
+          {
+            "name": "Emily Chen",
+            "role": "Estudante",
+            "quote": "Muito divertido! Experimentei cabelo roxo e um corte pixie. Pareceu tão real que minha mãe achou que eu tinha feito de verdade.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Emily Chen"
+            }
+          },
+          {
+            "name": "David Smith",
+            "role": "Engenheiro de Software",
+            "quote": "Usei o AI Barber para encontrar um novo corte masculino. As opções de degradê e undercut pareciam incríveis e me ajudaram a explicar exatamente o que eu queria ao meu barbeiro.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "David Smith"
+            }
+          },
+          {
+            "name": "Jessica Lee",
+            "role": "Maquiadora",
+            "quote": "O mudador de cor de cabelo é incrível! Experimentei loiro, cobre e prata antes de pintar meu cabelo. Essa ferramenta gratuita me salvou de fazer uma escolha ruim.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Jessica Lee"
+            }
+          },
+          {
+            "name": "Tom Brown",
+            "role": "Estudante",
+            "quote": "Este mudador de penteado IA gratuito é tão fácil de usar. Carreguei minha foto e obtive resultados em segundos. Recomendo muito para quem procura uma transformação virtual.",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Tom Brown"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Perguntas Frequentes",
+        "description": "Tem dúvidas sobre nosso Mudador de Penteado IA? Nós temos as respostas.",
+        "tip": "Não encontra o que procura? Contate nossa <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
+        "items": [
+          {
+            "question": "Este Mudador de Penteado IA é gratuito para usar?",
+            "answer": "Sim, o AI Barber oferece um teste gratuito para novos usuários experimentarem nosso mudador de penteado IA. Você pode gerar vários penteados para ver a qualidade de nossa ferramenta."
+          },
+          {
+            "question": "Quão realistas são os penteados?",
+            "answer": "Nossos modelos avançados de IA são treinados em milhões de imagens de alta qualidade para garantir que os penteados se misturem naturalmente com sua foto original, combinando iluminação e ângulos para um visual fotorrealista."
+          },
+          {
+            "question": "Que tipo de fotos funcionam melhor?",
+            "answer": "Para os melhores resultados, carregue uma foto nítida e frontal com boa iluminação. Evite fotos onde seu rosto esteja coberto por óculos de sol, máscaras ou excesso de cabelo. Uma expressão neutra funciona melhor."
+          },
+          {
+            "question": "Posso mudar apenas a cor do cabelo?",
+            "answer": "Sim! Você pode usar nossa ferramenta para testar especificamente diferentes cores de cabelo mantendo seu estilo atual, ou mudar estilo e cor simultaneamente."
+          },
+          {
+            "question": "Funciona para homens e mulheres?",
+            "answer": "Com certeza. Temos extensos catálogos para penteados masculinos (Corte Buzz, Crew cut, Degradê, etc.) e penteados femininos (Bob, Camadas, Pixie, etc.), bem como estilos para crianças."
+          },
+          {
+            "question": "Meus dados de fotos estão seguros?",
+            "answer": "Levamos a privacidade a sério. Suas fotos carregadas são processadas com segurança para fins de geração e não são armazenadas permanentemente ou compartilhadas com terceiros."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Pronto para um Novo Visual?",
+        "description": "Não adivinhe com seu cabelo. Visualize seu penteado perfeito hoje com o AI Barber.",
+        "buttons": [
+          {
+            "title": "Começar Transformação Agora",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
   },
   "generator": {
     "title": "Mudador de Penteado",
@@ -85,6 +382,7 @@
     }
   }
 }
+
 
 
 

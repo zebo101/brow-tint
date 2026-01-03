@@ -23,9 +23,11 @@ interface CarouselImage {
 export function Hero({
   section,
   className,
+  customContent,
 }: {
   section: Section;
   className?: string;
+  customContent?: React.ReactNode;
 }) {
   const highlightText = section.highlight_text ?? '';
   let texts = null;
@@ -134,8 +136,14 @@ export function Hero({
         )}
       </div>
 
-      {(section.image?.src || section.image_invert?.src) && (
-        <HeroBrowserPreview section={section} />
+      {customContent ? (
+        <div className="relative mx-auto mt-12 max-w-[1400px] px-4 sm:mt-20">
+          {customContent}
+        </div>
+      ) : (
+        (section.image?.src || section.image_invert?.src) && (
+          <HeroBrowserPreview section={section} />
+        )
       )}
 
       {section.background_image?.src && (

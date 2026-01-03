@@ -22,20 +22,26 @@ export default async function AiHairstyleChangerPage({
 
   // get ai image data
   const t = await getTranslations('ai.image');
+  const pageData = t.raw('page');
+
+  // remove generator from sections as it will be inside hero
+  const { generator, ...sections } = pageData.sections || {};
 
   // build page sections
   const page: DynamicPage = {
+    ...pageData,
     sections: {
+      ...sections,
       hero: {
-        title: t.raw('page.title'),
-        description: t.raw('page.description'),
+        ...pageData.sections?.hero,
+        // pass custom content via data which DynamicPage spreads to block
+        data: {
+          customContent: <ImageGenerator srOnlyTitle={t.raw('generator.title')} />,
+        },
         background_image: {
           src: '/imgs/bg/image-bg2.png',
           alt: 'hero background',
         },
-      },
-      generator: {
-        component: <ImageGenerator srOnlyTitle={t.raw('generator.title')} />,
       },
     },
   };

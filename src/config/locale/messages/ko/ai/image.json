@@ -5,8 +5,305 @@
     "keywords": "ai 헤어스타일 체인저, 가상 헤어스타일, ai 헤어컷, 헤어스타일 생성기"
   },
   "page": {
-    "title": "AI 헤어스타일 체인저",
-    "description": "AI로 헤어스타일을 변경하세요. 사진을 업로드하고 즉시 다양한 헤어스타일을 시도해보세요."
+    "title": "무료 온라인 AI 헤어스타일 변경기 - 400개 이상의 헤어스타일 체험 | AI Barber",
+    "description": "최고의 무료 온라인 AI 헤어스타일 변경기를 경험해보세요. 사진을 업로드하고 즉시 400개 이상의 헤어스타일을 시도해보세요. 다운로드 필요 없음, 신규 사용자 100% 무료 체험.",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "features",
+      "stats",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "AI 이발사 헤어스타일 변환기",
+        "highlight_text": "AI 이발사",
+        "description": "가장 진보된 AI 헤어스타일 변경기로 헤어스타일링의 미래를 받아들이세요. 사진을 업로드하고 당신을 위해 맞춤화된 400개 이상의 트렌디한 헤어스타일을 시도해보세요.",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "alt": "AI Hairstyle Changer Interface",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "alt": "AI Hairstyle Changer Interface Dark Mode",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/hero.png",
+          "alt": "AI Barber Hero Background"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "AI Barber 헤어스타일 변경기란 무엇인가요?",
+        "label": "소개",
+        "description": "AI Barber는 미용실을 방문하지 않고도 완벽한 스타일을 찾을 수 있도록 돕는 최첨단 가상 헤어스타일 도구입니다.",
+        "image": {
+          "src": "/imgs/features/landingpage.png",
+          "alt": "AI Barber Hairstyle Simulator"
+        },
+        "items": [
+          {
+            "title": "가상 헤어스타일 체험",
+            "description": "버즈 컷, 밥, 멀렛, 픽시 컷 등 수많은 가상 헤어스타일을 즉시 시도해보세요.",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "현실적인 AI 결과",
+            "description": "우리의 AI 헤어컷 변경기는 당신의 얼굴형과 모발 질감을 고려하여 매우 현실적인 결과를 생성합니다.",
+            "icon": "RiCameraLensLine"
+          },
+          {
+            "title": "헤어 컬러 변경기",
+            "description": "헤어 컬러 필터로 발레아쥬부터 구리색, 은색까지 다양한 헤어 컬러를 실험해보세요.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "스타일 전송",
+            "description": "이미지-투-이미지 기술을 사용하여 연예인이나 모델의 스타일을 당신의 사진에 직접 적용해보세요.",
+            "icon": "RiExchangeLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "왜 우리의 AI 헤어스타일 변경기를 선택해야 할까요",
+        "label": "혜택",
+        "description": "안전하고 빠르며 사용자 친화적인 AI 헤어 시뮬레이터로 무한한 가능성을 탐험하세요.",
+        "items": [
+          {
+            "title": "번개처럼 빠른 속도 & 100% 온라인",
+            "description": "몇 초 만에 헤어스타일을 바꿔보세요. 다운로드할 소프트웨어 없이, 결과 확인을 위해 며칠을 기다릴 필요 없이. 브라우저에서 직접 작동합니다.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Fast AI Processing"
+            }
+          },
+          {
+            "title": "개인정보 보호 우선",
+            "description": "당신의 사진은 안전하게 처리되고 자동으로 삭제됩니다. 우리는 당신의 개인정보를 소중히 여기며 허가 없이 이미지를 훈련에 사용하지 않습니다.",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/image2.png",
+              "alt": "Secure and Private"
+            }
+          },
+          {
+            "title": "전문가급 품질",
+            "description": "미용사나 스타일리스트에게 원하는 바를 정확하게 전달할 수 있도록 돕는 미용실 수준의 시각화 결과를 얻으세요.",
+            "icon": "RiUserSmileLine",
+            "image": {
+              "src": "/imgs/features/image3.png",
+              "alt": "Professional Results"
+            }
+          }
+        ]
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "AI 헤어스타일 변경기 사용 방법",
+        "description": "직관적인 인터페이스로 세 가지 간단한 단계로 새로운 스타일을 얻으세요:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "AI Hairstyle Usage Guide"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "사진 업로드",
+            "description": "최고의 변환 결과를 위해 선명한 정면 사진을 업로드하세요.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Upload Photo"
+            }
+          },
+          {
+            "title": "헤어스타일 선택",
+            "description": "카탈로그를 둘러보고 남성, 여성, 어린이 같은 사전 설정 카테고리에서 헤어스타일을 선택하세요.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Select Hairstyle"
+            }
+          },
+          {
+            "title": "스타일 설명",
+            "description": "결과를 더 맞춤화하기 위해 원하는 또는 상상하는 헤어스타일의 설명을 입력하세요.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Describe Hairstyle"
+            }
+          },
+          {
+            "title": "생성 및 다운로드",
+            "description": "생성하기를 클릭하여 마법이 일어나는 것을 확인하고 마음에 드는 새로운 스타일을 다운로드하세요.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Generate and Download"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "AI Barber의 주요 기능",
+        "description": "완벽한 가상 메이크오버를 위해 필요한 모든 것.",
+        "items": [
+          {
+            "title": "200+ 트렌디한 헤어스타일",
+            "description": "버즈 컷, 폼파두르, 밥, 픽시 등 방대한 헤어스타일 라이브러리에 액세스하세요.",
+            "icon": "RiScissorsCutLine"
+          },
+          {
+            "title": "스마트 얼굴 감지",
+            "description": "얼굴형을 자동으로 감지하여 헤어스타일이 완벽하게 맞도록 보장합니다.",
+            "icon": "RiWomenLine"
+          },
+          {
+            "title": "컬러 실험",
+            "description": "화학적 손상 위험 없이 새로운 헤어 컬러를 시도해보세요.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "고해상도 다운로드",
+            "description": "공유하기에 완벽한 선명하고 고품질의 이미지를 다운로드하세요.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "스타일 비교",
+            "description": "전후 모습을 나란히 비교하여 최고의 결정을 내리세요.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "모바일 친화적",
+            "description": "어디서나 모든 기기에서 AI Barber를 사용하세요. 모바일 경험에 최적화되어 있습니다.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "AI Barber에 대한 사용자 후기",
+        "description": "완벽한 스타일을 찾은 사용자들의 이야기를 들어보세요.",
+        "items": [
+          {
+            "name": "Sarah Jenkins",
+            "role": "패션 블로거",
+            "quote": "긴 머리를 밥 스타일로 자르는 것을 망설였어요. AI Barber가 정확히 어떻게 보일지 보여줬고, 결과가 정말 마음에 들었어요! 최고의 헤어스타일 앱입니다.",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Sarah Jenkins"
+            }
+          },
+          {
+            "name": "Mike Ross",
+            "role": "모델",
+            "quote": "제 포트폴리오를 위한 필수 도구입니다. 실제 머리를 바꾸지 않고도 사진 촬영을 위해 다양한 스타일을 테스트할 수 있어요. 현실감이 타의 추종을 불허합니다.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Mike Ross"
+            }
+          },
+          {
+            "name": "Emily Chen",
+            "role": "학생",
+            "quote": "정말 재밌어요! 보라색 머리와 픽시 컷을 시도해봤는데, 너무 진짜 같아서 엄마가 정말로 머리를 한 줄 아셨어요.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Emily Chen"
+            }
+          },
+          {
+            "name": "David Smith",
+            "role": "소프트웨어 엔지니어",
+            "quote": "저는 새로운 남성 헤어컷을 찾기 위해 AI Barber를 사용했습니다. 페이드와 언더컷 옵션이 놀라웠고, 이발사에게 제가 원하는 것을 정확하게 설명하는 데 도움이 되었습니다.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "David Smith"
+            }
+          },
+          {
+            "name": "Jessica Lee",
+            "role": "메이크업 아티스트",
+            "quote": "헤어 컬러 변경기가 정말 놀랍습니다! 염색하기 전에 금발, 구리색, 은색을 시도해봤어요. 이 무료 도구 덕분에 잘못된 선택을 피할 수 있었습니다.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Jessica Lee"
+            }
+          },
+          {
+            "name": "Tom Brown",
+            "role": "학생",
+            "quote": "이 무료 AI 헤어스타일 변경기는 사용하기 정말 쉽습니다. 사진을 업로드하고 몇 초 만에 결과를 얻었죠. 가상 메이크오버를 원하는 모든 사람에게 강력히 추천합니다.",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Tom Brown"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "자주 묻는 질문",
+        "description": "AI 헤어스타일 변경기에 대해 궁금한 점이 있으신가요? 저희가 답변해 드립니다.",
+        "tip": "찾는 내용이 없나요? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>지원팀</a>에 문의하세요",
+        "items": [
+          {
+            "question": "이 AI 헤어스타일 변경기는 무료로 사용할 수 있나요?",
+            "answer": "네, AI Barber는 신규 사용자가 AI 헤어스타일 변경기를 체험할 수 있도록 무료 체험을 제공합니다. 여러 헤어스타일을 생성하여 도구의 품질을 확인할 수 있습니다."
+          },
+          {
+            "question": "헤어스타일이 얼마나 현실적인가요?",
+            "answer": "우리의 고급 AI 모델은 수백만 장의 고품질 이미지로 훈련되어 헤어스타일이 원본 사진과 자연스럽게 조화를 이루고 조명과 각도를 일치시켜 사실적인 모습을 제공합니다."
+          },
+          {
+            "question": "어떤 사진이 가장 적합한가요?",
+            "answer": "최상의 결과를 위해 조명이 좋은 선명한 정면 사진을 업로드하세요. 선글라스, 마스크 또는 과도한 머리카락으로 얼굴이 가려진 사진은 피하세요. 중립적인 표정이 가장 좋습니다."
+          },
+          {
+            "question": "머리 색깔만 바꿀 수 있나요?",
+            "answer": "네! 현재 스타일을 유지하면서 특정 헤어 컬러만 테스트하거나, 스타일과 색상을 동시에 변경할 수 있습니다."
+          },
+          {
+            "question": "남성과 여성 모두에게 작동하나요?",
+            "answer": "물론입니다. 남성 헤어스타일(버즈 컷, 크루 컷, 페이드 등)과 여성 헤어스타일(밥, 레이어드, 픽시 등), 그리고 어린이 스타일을 위한 광범위한 카탈로그가 있습니다."
+          },
+          {
+            "question": "내 사진 데이터는 안전한가요?",
+            "answer": "우리는 개인정보 보호를 중요하게 생각합니다. 업로드된 사진은 생성 목적을 위해 안전하게 처리되며 영구적으로 저장되거나 제3자와 공유되지 않습니다."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "새로운 모습을 원하시나요?",
+        "description": "헤어스타일로 추측하지 마세요. 오늘 AI Barber로 완벽한 헤어스타일을 시각화해보세요.",
+        "buttons": [
+          {
+            "title": "지금 변신 시작하기",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
   },
   "generator": {
     "title": "헤어스타일 체인저",
@@ -85,6 +382,7 @@
     }
   }
 }
+
 
 
 
