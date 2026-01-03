@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "AI Barber - Tu Estilista Personal de IA",
-    "description": "AI Barber es tu estilista virtual personal. Prueba innumerables peinados con IA antes de cortar. Transforma tu look al instante con nuestro Cambiador de Peinados IA.",
-    "keywords": "ai barbero, cambiador de peinados ia, peinado virtual, cambio de cabello ia, corte de pelo ia, generador de peinados"
+    "title": "Simulador de Corte de Pelo IA Gratis - Prueba 500+ Estilos | AI Barber",
+    "description": "Prueba gratis 500+ peinados tendencia (Wolf Cut, Bob, Buzz Cut) con AI Barber. Sube tu foto para un cambio de look virtual instantáneo. Mejor app de pelo IA 2026.",
+    "keywords": "simulador de pelo IA, probar peinados virtual, app de cabello gratis, corte de pelo virtual, filtro wolf cut, simulador corte bob, filtro buzz cut, cambiar color de pelo, generador de peinados online"
   },
   "sign": {
     "sign_in_title": "Iniciar sesión",
@@ -54,6 +54,7 @@
     "switch_to": "Cambiar a {locale}"
   }
 }
+
 
 
 

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "AI Barber - Ihr persönlicher AI-Friseur",
-    "description": "AI Barber ist Ihr persönlicher virtueller Friseur. Probieren Sie unzählige Frisuren mit AI aus, bevor Sie schneiden. Verwandeln Sie Ihren Look sofort mit unserem AI Hairstyle Changer.",
-    "keywords": "ai friseur, ai frisuren wechsler, virtuelle frisur, ai haar ändern, ai haarschnitt, frisuren generator"
+    "title": "Kostenloser KI Frisuren Tester - 500+ Frisuren (Bob, Pixie, Buzz Cut) | AI Barber",
+    "description": "Testen Sie 500+ Trendfrisuren wie Wolf Cut, Bob & Buzz Cut kostenlos. Foto hochladen & sofort neue Haarschnitte virtuell anprobieren. Bester KI Frisuren Simulator 2026.",
+    "keywords": "KI Frisuren Tester, Frisuren ausprobieren, virtueller Friseur, Haarschnitt Simulator, Frisuren App kostenlos, Wolf Cut testen, Bob Frisur testen, Buzz Cut Filter, Haarfarbe ändern, Online Frisuren Generator"
   },
   "sign": {
     "sign_in_title": "Anmelden",
@@ -54,6 +54,7 @@
     "switch_to": "Zu {locale} wechseln"
   }
 }
+
 
 
 

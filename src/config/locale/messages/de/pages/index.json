@@ -15,10 +15,10 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Ihr persönlicher KI-Friseur",
-        "highlight_text": "AI Barber",
-        "description": "Erleben Sie die Zukunft des Friseurhandwerks mit AI Barber. Laden Sie Ihr Foto hoch, markieren Sie Ihr Haar und erleben Sie eine atemberaubende Verwandlung mit unserem KI-Frisuren-Wechsler.",
-        "tip": "🎁 Probieren Sie jetzt den besten KI-Haarschnitt-Wechsler aus",
+        "title": "KI Frisuren Tester - Frisuren Ausprobieren Kostenlos",
+        "highlight_text": "KI Frisuren Tester",
+        "description": "Testen Sie über 200 Frisuren online mit unserem kostenlosen KI Frisuren Tester. Laden Sie Ihr Foto hoch und sehen Sie sofort, wie Sie mit neuen Haarschnitten, Haarfarben und Styles aussehen – ganz ohne Risiko.",
+        "tip": "🎁 Jetzt kostenlos Frisuren ausprobieren – Keine Anmeldung erforderlich",
         "buttons": [
           {
             "title": "Kostenlos testen",
