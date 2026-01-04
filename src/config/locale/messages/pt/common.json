@@ -52,8 +52,12 @@
   "locale_detector": {
     "title": "Detectamos que o idioma do seu navegador é {locale}. Mudar?",
     "switch_to": "Mudar para {locale}"
+  },
+  "theme": {
+    "pull_to_toggle": "Puxar"
   }
 }
+
 
 
 

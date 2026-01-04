@@ -5,6 +5,7 @@ import { Monitor, Moon, SunDim } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
 import { AnimatedThemeToggler } from '@/shared/components/magicui/animated-theme-toggler';
+import { PullCordThemeToggle } from '@/shared/components/magicui/pull-cord-theme-toggle';
 import { Button } from '@/shared/components/ui/button';
 import {
   ToggleGroup,
@@ -15,7 +16,7 @@ export function ThemeToggler({
   type = 'icon',
   className,
 }: {
-  type?: 'icon' | 'button' | 'toggle';
+  type?: 'icon' | 'button' | 'toggle' | 'pull-cord';
   className?: string;
 }) {
   const { theme, setTheme } = useTheme();
@@ -70,6 +71,8 @@ export function ThemeToggler({
         </ToggleGroupItem>
       </ToggleGroup>
     );
+  } else if (type === 'pull-cord') {
+    return <PullCordThemeToggle className={className} />;
   }
 
   return <AnimatedThemeToggler className={className} />;

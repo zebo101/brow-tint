@@ -52,8 +52,12 @@
   "locale_detector": {
     "title": "브라우저 언어가 {locale}(으)로 감지되었습니다. 전환하시겠습니까?",
     "switch_to": "{locale}(으)로 전환"
+  },
+  "theme": {
+    "pull_to_toggle": "당기기"
   }
 }
+
 
 
 

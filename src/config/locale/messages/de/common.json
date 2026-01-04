@@ -52,8 +52,12 @@
   "locale_detector": {
     "title": "Wir haben erkannt, dass Ihre Browsersprache {locale} ist. Wechseln?",
     "switch_to": "Zu {locale} wechseln"
+  },
+  "theme": {
+    "pull_to_toggle": "Ziehen"
   }
 }
+
 
 
 

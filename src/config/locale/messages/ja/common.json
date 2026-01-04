@@ -52,8 +52,12 @@
   "locale_detector": {
     "title": "ブラウザの言語が{locale}であることを検出しました。切り替えますか？",
     "switch_to": "{locale}に切り替える"
+  },
+  "theme": {
+    "pull_to_toggle": "引く"
   }
 }
+
 
 
 
