@@ -51,6 +51,7 @@ export interface FormSubmit {
         status: 'success' | 'error';
         message: string;
         redirect_url?: string;
+        refresh_user?: boolean;
       }
     | undefined
     | void

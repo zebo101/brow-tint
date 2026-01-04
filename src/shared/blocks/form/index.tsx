@@ -27,6 +27,8 @@ import {
   FormSubmit,
 } from '@/shared/types/blocks/form';
 
+import { useAppContext } from '@/shared/contexts/app';
+
 import { Checkbox } from './checkbox';
 import { Input } from './input';
 import { Markdown } from './markdown';
@@ -203,6 +205,7 @@ export function Form({
 
   const [loading, setLoading] = useState(false);
 
+  const { fetchUserInfo } = useAppContext();
   const router = useRouter();
   const FormSchema = generateFormSchema(fields);
   const defaultValues: Record<string, any> = {};
@@ -311,6 +314,10 @@ export function Form({
 
       if (res.redirect_url) {
         router.push(res.redirect_url as any);
+      }
+
+      if (res.refresh_user) {
+        await fetchUserInfo();
       }
 
       setLoading(false);

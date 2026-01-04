@@ -74,6 +74,15 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
 
     setIsAnimating(true);
     
+    // Fallback for browsers that don't support View Transitions
+    if (!document.startViewTransition) {
+      const dark = document.documentElement.classList.toggle("dark");
+      setTheme(dark ? "dark" : "light");
+      setIsDarkMode(dark);
+      setTimeout(() => setIsAnimating(false), 700);
+      return;
+    }
+    
     await document.startViewTransition(() => {
       flushSync(() => {
         const dark = document.documentElement.classList.toggle("dark");
@@ -238,14 +247,14 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
              <path d="M-1,3 L5,-1 M-1,7 L7,-1" stroke={ropeColor} strokeWidth="1" opacity="0.9" />
           </pattern>
           {/* Filter for slight wiggle/wave effect */}
-          <filter id="wiggle">
+          <filter id="pull-cord-wiggle">
             <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="1" result="noise" />
             <feDisplacementMap in="SourceGraphic" in2="noise" scale={isDragging ? 0 : 2} />
           </filter>
         </defs>
         
         {/* Rope Group with potential filter */}
-        <g filter="url(#wiggle)">
+        <g filter="url(#pull-cord-wiggle)">
           {/* Base rope Shape (background) */}
           <line
             x1="6"
@@ -296,7 +305,8 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
         )}
         style={{
           top: cordLength - 6, // Adjusted to overlap knot better
-          transition: isDragging ? "transform 0.1s" : "none"
+          transition: isDragging ? "transform 0.1s" : "none",
+          touchAction: "none"
         }}
         role="button"
         tabIndex={0}
