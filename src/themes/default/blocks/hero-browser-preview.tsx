@@ -60,33 +60,34 @@ export function HeroBrowserPreview({ section }: { section: Section }) {
 
   useEffect(() => {
     if (images.length <= 1 || isPaused) return;
+    const win = window as Window;
     const startInterval = () => {
       if (intervalRef.current !== null) return;
-      intervalRef.current = window.setInterval(() => {
+      intervalRef.current = win.setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % images.length);
       }, 5000);
     };
 
-    if ('requestIdleCallback' in window) {
-      idleHandleRef.current = (window as any).requestIdleCallback(
+    if (typeof win.requestIdleCallback === 'function') {
+      idleHandleRef.current = win.requestIdleCallback(
         startInterval,
         { timeout: 3500 }
       );
     } else {
-      idleHandleRef.current = window.setTimeout(startInterval, 3000);
+      idleHandleRef.current = win.setTimeout(startInterval, 3000);
     }
 
     return () => {
       if (idleHandleRef.current !== null) {
-        if ('cancelIdleCallback' in window) {
-          (window as any).cancelIdleCallback(idleHandleRef.current);
+        if (typeof win.cancelIdleCallback === 'function') {
+          win.cancelIdleCallback(idleHandleRef.current);
         } else {
-          window.clearTimeout(idleHandleRef.current);
+          win.clearTimeout(idleHandleRef.current);
         }
         idleHandleRef.current = null;
       }
       if (intervalRef.current !== null) {
-        window.clearInterval(intervalRef.current);
+        win.clearInterval(intervalRef.current);
         intervalRef.current = null;
       }
     };

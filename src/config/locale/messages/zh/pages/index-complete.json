@@ -40,13 +40,13 @@
         "avatars_tip": "999+ 用户正在使用 AI Barber",
         "show_award": false,
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/admin.png",
           "alt": "AI Barber 主界面",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/admin-dark.png",
           "alt": "AI Barber 主界面",
           "width": 1200,
           "height": 800
@@ -104,7 +104,7 @@
         "label": "产品介绍",
         "description": "AI Barber 是一款虚拟发型工具，使用先进的 AI 技术帮助您找到完美造型。",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landing-page.png",
           "alt": "AI Barber 介绍"
         },
         "items": [
@@ -159,7 +159,7 @@
             "description": "眨眼间即可改变您的发型。无需等待数天。",
             "icon": "RiSpeedLine",
             "image": {
-              "src": "/imgs/features/chat.png",
+              "src": "/imgs/features/user-billing.png",
               "alt": "快速处理"
             }
           },
@@ -168,7 +168,7 @@
             "description": "您的照片属于您的隐私。我们确保它们安全，绝不分享。",
             "icon": "RiLock2Line",
             "image": {
-              "src": "/imgs/features/chat-dark.png",
+              "src": "/imgs/features/admin-settings.png",
               "alt": "安全"
             }
           },
@@ -177,7 +177,7 @@
             "description": "只需几次点击，释放您内在的造型师。无需技术技能。",
             "icon": "RiUserSmileLine",
             "image": {
-              "src": "/imgs/features/landingpage.png",
+              "src": "/imgs/features/landing-page.png",
               "alt": "用户友好"
             }
           }
