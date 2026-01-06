@@ -1,7 +1,17 @@
 import Image from 'next/image';
-import { Star } from 'lucide-react';
 
 import { Avatar } from '@/shared/components/ui/avatar';
+
+const StarIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    aria-hidden
+  >
+    <path d="M12 2l2.47 5 5.53.8-4 3.9.94 5.5L12 14.8l-4.94 2.4.94-5.5-4-3.9 5.53-.8L12 2z" />
+  </svg>
+);
 
 const userImgUrls = [
   '/imgs/avatars/1.png',
@@ -25,7 +35,7 @@ export function SocialAvatars({ tip }: { tip: string }) {
       <div className="flex flex-col items-center gap-1 md:items-start">
         <div className="flex items-center gap-1">
           {Array.from({ length: 5 }).map((_, index) => (
-            <Star
+            <StarIcon
               key={index}
               className="size-4 fill-yellow-400 text-yellow-400"
             />

@@ -1,16 +1,13 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import dynamic from 'next/dynamic';
 
 import { Link, usePathname } from '@/core/i18n/navigation';
-import {
-  BrandLogo,
-  LocaleSelector,
-  SignUser,
-  SmartIcon,
-  ThemeToggler,
-} from '@/shared/blocks/common';
+import { BrandLogo } from '@/shared/blocks/common/brand-logo';
+import { LocaleSelector } from '@/shared/blocks/common/locale-selector';
+import { SmartIcon } from '@/shared/blocks/common/smart-icon';
+import { ThemeToggler } from '@/shared/blocks/common/theme-toggler';
 import {
   Accordion,
   AccordionContent,
@@ -29,6 +26,35 @@ import { useMedia } from '@/shared/hooks/use-media';
 import { cn } from '@/shared/lib/utils';
 import { NavItem } from '@/shared/types/blocks/common';
 import { Header as HeaderType } from '@/shared/types/blocks/landing';
+
+const MenuIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    className={className}
+    aria-hidden
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+);
+
+
+
+const CloseIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    className={className}
+    aria-hidden
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M6 18L18 6" />
+  </svg>
+);
+const SignUser = dynamic(() => import('@/shared/blocks/sign/sign-user').then((mod) => mod.SignUser), { ssr: false });
 
 // For Next.js hydration mismatch warning, conditionally render NavigationMenuTrigger only after mount to avoid inconsistency between server/client render
 function NavigationMenuTrigger(
@@ -94,13 +120,18 @@ export function Header({ header }: { header: HeaderType }) {
                   <Link
                     href={item.url || ''}
                     target={item.target || '_self'}
-                    className={`flex flex-row items-center gap-2 px-4 py-1.5 text-sm ${
+                  className={`flex flex-row items-center gap-2 px-4 py-1.5 text-sm ${
                       item.is_active || pathname.endsWith(item.url as string)
                         ? 'bg-muted/40 text-muted-foreground'
                         : ''
                     }`}
                   >
-                    {item.icon && <SmartIcon name={item.icon as string} />}
+                    {item.icon ? (
+                      <SmartIcon
+                        name={item.icon as string}
+                        className="size-4"
+                      />
+                    ) : null}
                     {item.title}
                   </Link>
                 </NavigationMenuLink>
@@ -110,9 +141,12 @@ export function Header({ header }: { header: HeaderType }) {
             return (
               <NavigationMenuItem key={idx}>
                 <NavigationMenuTrigger className="flex flex-row items-center gap-2 text-sm">
-                  {item.icon && (
-                    <SmartIcon name={item.icon as string} className="h-4 w-4" />
-                  )}
+                  {item.icon ? (
+                    <SmartIcon
+                      name={item.icon as string}
+                      className="size-4"
+                    />
+                  ) : null}
                   {item.title}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="min-w-2xs origin-top p-0.5">
@@ -126,9 +160,12 @@ export function Header({ header }: { header: HeaderType }) {
                           title={subItem.title || ''}
                           description={subItem.description || ''}
                         >
-                          {subItem.icon && (
-                            <SmartIcon name={subItem.icon as string} />
-                          )}
+                          {subItem.icon ? (
+                            <SmartIcon
+                              name={subItem.icon as string}
+                              className="size-4"
+                            />
+                          ) : null}
                         </ListItem>
                       ))}
                     </ul>
@@ -164,7 +201,15 @@ export function Header({ header }: { header: HeaderType }) {
                 {item.children && item.children.length > 0 ? (
                   <>
                     <AccordionTrigger className="data-[state=open]:bg-muted flex items-center justify-between px-4 py-3 text-lg **:!font-normal">
-                      {item.title}
+                      <span className="flex items-center gap-2">
+                        {item.icon ? (
+                          <SmartIcon
+                            name={item.icon as string}
+                            className="size-4"
+                          />
+                        ) : null}
+                        {item.title}
+                      </span>
                     </AccordionTrigger>
                     <AccordionContent className="pb-5">
                       <ul>
@@ -179,9 +224,9 @@ export function Header({ header }: { header: HeaderType }) {
                                 aria-hidden
                                 className="flex items-center justify-center *:size-4"
                               >
-                                {subItem.icon && (
+                                {subItem.icon ? (
                                   <SmartIcon name={subItem.icon as string} />
-                                )}
+                                ) : null}
                               </div>
                               <div className="text-base">{subItem.title}</div>
                             </Link>
@@ -196,7 +241,15 @@ export function Header({ header }: { header: HeaderType }) {
                     onClick={closeMenu}
                     className="data-[state=open]:bg-muted flex items-center justify-between px-4 py-3 text-lg **:!font-normal"
                   >
-                    {item.title}
+                    <span className="flex items-center gap-2">
+                      {item.icon ? (
+                        <SmartIcon
+                          name={item.icon as string}
+                          className="size-4"
+                        />
+                      ) : null}
+                      {item.title}
+                    </span>
                   </Link>
                 )}
               </AccordionItem>
@@ -275,8 +328,8 @@ export function Header({ header }: { header: HeaderType }) {
                   }
                   className="relative z-20 -m-2.5 -mr-3 block cursor-pointer p-2.5 lg:hidden"
                 >
-                  <Menu className="m-auto size-5 duration-200 in-data-[state=active]:scale-0 in-data-[state=active]:rotate-180 in-data-[state=active]:opacity-0" />
-                  <X className="absolute inset-0 m-auto size-5 scale-0 -rotate-180 opacity-0 duration-200 in-data-[state=active]:scale-100 in-data-[state=active]:rotate-0 in-data-[state=active]:opacity-100" />
+                  <MenuIcon className="m-auto size-5 duration-200 in-data-[state=active]:scale-0 in-data-[state=active]:rotate-180 in-data-[state=active]:opacity-0" />
+                  <CloseIcon className="absolute inset-0 m-auto size-5 scale-0 -rotate-180 opacity-0 duration-200 in-data-[state=active]:scale-100 in-data-[state=active]:rotate-0 in-data-[state=active]:opacity-100" />
                 </button>
               </div>
 
@@ -302,21 +355,19 @@ export function Header({ header }: { header: HeaderType }) {
                             : 'bg-primary text-primary-foreground hover:bg-primary/90 border-[0.5px] border-white/25 shadow-md ring-1 shadow-black/20 ring-(--ring-color) [--ring-color:color-mix(in_oklab,var(--color-foreground)15%,var(--color-primary))]'
                         )}
                       >
-                        {button.icon && (
-                          <SmartIcon
-                            name={button.icon as string}
-                            className="size-4"
-                          />
-                        )}
                         <span>{button.title}</span>
                       </Link>
                     ))}
 
-                  {header.show_theme ? <ThemeToggler type="pull-cord" /> : null}
                   {header.show_locale ? <LocaleSelector /> : null}
                   <div className="flex-1 md:hidden"></div>
                   {header.show_sign ? (
                     <SignUser userNav={header.user_nav} />
+                  ) : null}
+                  {header.show_theme ? (
+                    <div className="ml-6">
+                      <ThemeToggler type="pull-cord" />
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -327,3 +378,5 @@ export function Header({ header }: { header: HeaderType }) {
     </>
   );
 }
+
+

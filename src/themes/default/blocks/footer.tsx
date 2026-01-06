@@ -1,16 +1,13 @@
 'use client';
 
 import type { ComponentProps, ReactNode } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
 
 import { Link } from '@/core/i18n/navigation';
-import {
-  BrandLogo,
-  Copyright,
-  LocaleSelector,
-  ThemeToggler,
-} from '@/shared/blocks/common';
+import { BrandLogo } from '@/shared/blocks/common/brand-logo';
+import { Copyright } from '@/shared/blocks/common/copyright';
+import { LocaleSelector } from '@/shared/blocks/common/locale-selector';
 import { SmartIcon } from '@/shared/blocks/common/smart-icon';
+import { ThemeToggler } from '@/shared/blocks/common/theme-toggler';
 import { NavItem } from '@/shared/types/blocks/common';
 import { Footer as FooterType } from '@/shared/types/blocks/landing';
 
@@ -42,7 +39,7 @@ const TapeDecoration = () => (
 
 type ViewAnimationProps = {
   delay?: number;
-  className?: ComponentProps<typeof motion.div>['className'];
+  className?: ComponentProps<'div'>['className'];
   children: ReactNode;
 };
 
@@ -56,23 +53,7 @@ function AnimatedContainer({
   delay = 0.1,
   children,
 }: ViewAnimationProps) {
-  const shouldReduceMotion = useReducedMotion();
-
-  if (shouldReduceMotion) {
-    return <div className={className}>{children}</div>;
-  }
-
-  return (
-    <motion.div
-      initial={{ filter: 'blur(4px)', translateY: -8, opacity: 0 }}
-      whileInView={{ filter: 'blur(0px)', translateY: 0, opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ delay, duration: 0.8 }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
+  return <div className={className}>{children}</div>;
 }
 
 export function Footer({ footer }: { footer: FooterType }) {
@@ -132,12 +113,12 @@ export function Footer({ footer }: { footer: FooterType }) {
                       target={item.target || ''}
                       className="border-border/50 text-muted-foreground dark:text-zinc-200 hover:bg-accent/10 hover:text-foreground dark:hover:text-white rounded-lg border p-2 transition-all duration-300"
                     >
-                      {item.icon && (
-                        <SmartIcon
-                          name={item.icon as string}
-                          size={18}
-                          className="size-[18px]"
-                        />
+                      {item.icon ? (
+                        <SmartIcon name={item.icon as string} className="size-4" />
+                      ) : (
+                        <span className="text-xs font-medium">
+                          {item.title || ''}
+                        </span>
                       )}
                     </Link>
                   ))}

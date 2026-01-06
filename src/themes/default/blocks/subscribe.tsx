@@ -1,13 +1,53 @@
 'use client';
 
 import { useState } from 'react';
-import { Loader2, Mail, SendHorizonal } from 'lucide-react';
 import { toast } from 'sonner';
 
 import { Button } from '@/shared/components/ui/button';
-import { ScrollAnimation } from '@/shared/components/ui/scroll-animation';
 import { cn } from '@/shared/lib/utils';
 import type { Section } from '@/shared/types/blocks/landing';
+
+const MailIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    className={className}
+    aria-hidden
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16v12H4z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M22 6l-10 7L2 6" />
+  </svg>
+);
+
+const SendIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    className={className}
+    aria-hidden
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M22 2L11 13" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M22 2L15 22l-4-9-9-4 20-7z" />
+  </svg>
+);
+
+const SpinnerIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    className={className}
+    aria-hidden
+  >
+    <circle cx="12" cy="12" r="9" strokeOpacity="0.25" />
+    <path d="M21 12a9 9 0 0 0-9-9" />
+  </svg>
+);
 
 export function Subscribe({
   section,
@@ -62,60 +102,53 @@ export function Subscribe({
     >
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center">
-          <ScrollAnimation>
-            <h2 className="text-4xl font-semibold text-balance lg:text-5xl">
-              {section.title}
-            </h2>
-          </ScrollAnimation>
-          <ScrollAnimation delay={0.15}>
-            <p className="mt-4">{section.description}</p>
-          </ScrollAnimation>
+          <h2 className="text-4xl font-semibold text-balance lg:text-5xl">
+            {section.title}
+          </h2>
+          <p className="mt-4">{section.description}</p>
 
-          <ScrollAnimation delay={0.3}>
-            <div className="mx-auto mt-10 max-w-xl overflow-hidden lg:mt-12">
-              <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center overflow-hidden rounded-[calc(var(--radius)+0.75rem)] border pr-3 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
-                <Mail className="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" />
+          <div className="mx-auto mt-10 max-w-xl overflow-hidden lg:mt-12">
+            <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center overflow-hidden rounded-[calc(var(--radius)+0.75rem)] border pr-3 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
+              <MailIcon className="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" />
 
-                <input
-                  placeholder={
-                    section.submit?.input?.placeholder || 'Enter your email'
-                  }
-                  className="h-14 w-full bg-transparent pl-12 focus:outline-none"
-                  type="email"
-                  required
-                  aria-required="true"
-                  aria-invalid={!email}
-                  aria-describedby="email-error"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+              <input
+                placeholder={
+                  section.submit?.input?.placeholder || 'Enter your email'
+                }
+                className="h-14 w-full bg-transparent pl-12 focus:outline-none"
+                type="email"
+                required
+                aria-required="true"
+                aria-invalid={!email}
+                aria-describedby="email-error"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
 
-                {section.submit?.button && (
-                  <div className="md:pr-1.5 lg:pr-0">
-                    <Button
-                      aria-label="submit"
-                      className="rounded-(--radius)"
-                      onClick={handleSubscribe}
-                      disabled={loading}
-                      type="submit"
-                    >
+              {section.submit?.button && (
+                <div className="md:pr-1.5 lg:pr-0">
+                  <Button
+                    aria-label="submit"
+                    className="rounded-(--radius)"
+                    onClick={handleSubscribe}
+                    disabled={loading}
+                    type="submit"
+                  >
                       {loading ? (
-                        <Loader2 className="animate-spin" />
+                        <SpinnerIcon className="animate-spin" />
                       ) : (
                         <span className="hidden md:block">
                           {section.submit.button.title}
                         </span>
                       )}
-                      <SendHorizonal
+                      <SendIcon
                         className="relative mx-auto size-5 md:hidden"
-                        strokeWidth={2}
                       />
-                    </Button>
-                  </div>
-                )}
-              </div>
+                  </Button>
+                </div>
+              )}
             </div>
-          </ScrollAnimation>
+          </div>
         </div>
       </div>
     </section>

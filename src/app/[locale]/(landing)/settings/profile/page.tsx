@@ -63,7 +63,6 @@ export default async function ProfilePage() {
           status: 'success',
           message: 'Profile updated',
           redirect_url: '/settings/profile',
-          refresh_user: true,
         };
       },
       button: {

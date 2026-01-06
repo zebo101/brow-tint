@@ -1,7 +1,4 @@
-'use client';
-
 import { Link } from '@/core/i18n/navigation';
-import { SmartIcon } from '@/shared/blocks/common/smart-icon';
 import { Button } from '@/shared/components/ui/button';
 import { RainbowButton } from '@/shared/components/ui/rainbow-button';
 import { ScrollAnimation } from '@/shared/components/ui/scroll-animation';
@@ -67,9 +64,6 @@ export function Cta({
                       href={button.url || ''}
                       target={button.target || '_self'}
                     >
-                      {button.icon && (
-                        <SmartIcon name={button.icon as string} />
-                      )}
                       <span>{button.title}</span>
                     </Link>
                   </Button>

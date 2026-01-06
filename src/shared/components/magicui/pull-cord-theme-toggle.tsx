@@ -20,27 +20,36 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
   // Drag state
   const [isDragging, setIsDragging] = useState(false);
   const [dragY, setDragY] = useState(0);
+  const [dragX, setDragX] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   
   // Physics animation state
   const [springY, setSpringY] = useState(0);
+  const [springX, setSpringX] = useState(0);
   const velocityRef = useRef(0);
+  const velocityXRef = useRef(0);
   const lastDragYRef = useRef(0);
+  const lastDragXRef = useRef(0);
   const lastTimeRef = useRef(0);
   const animationFrameRef = useRef<number | null>(null);
   
   const containerRef = useRef<HTMLDivElement | null>(null);
   const handleRef = useRef<HTMLDivElement | null>(null);
   const startYRef = useRef<number>(0);
+  const startXRef = useRef<number>(0);
   
   // Drag threshold to trigger theme switch (in pixels)
   const DRAG_THRESHOLD = 80;
-  const MAX_DRAG = 120;
+  const MAX_DRAG = 180;
+  const MAX_RADIUS = 180;
   
   // Spring physics constants
-  const SPRING_STIFFNESS = 0.15;
-  const SPRING_DAMPING = 0.75;
-  const VELOCITY_SCALE = 0.3;
+  const SPRING_STIFFNESS = 0.12;
+  const SPRING_DAMPING = 0.82;
+  const SWAY_STIFFNESS = 0.07;
+  const SWAY_DAMPING = 0.86;
+  const VELOCITY_SCALE = 0.45;
+  const VELOCITY_CLAMP = 28;
 
   useEffect(() => {
     setMounted(true);
@@ -53,21 +62,42 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
       const springForce = -springY * SPRING_STIFFNESS;
       velocityRef.current += springForce;
       velocityRef.current *= SPRING_DAMPING;
-      
+      velocityRef.current = Math.max(
+        -VELOCITY_CLAMP,
+        Math.min(VELOCITY_CLAMP, velocityRef.current)
+      );
+
+      const springForceX = -springX * SWAY_STIFFNESS;
+      velocityXRef.current += springForceX;
+      velocityXRef.current *= SWAY_DAMPING;
+      velocityXRef.current = Math.max(
+        -VELOCITY_CLAMP,
+        Math.min(VELOCITY_CLAMP, velocityXRef.current)
+      );
+
       const newY = springY + velocityRef.current;
+      const newX = springX + velocityXRef.current;
       setSpringY(newY);
-      
-      if (Math.abs(velocityRef.current) > 0.1 || Math.abs(newY) > 0.1) {
+      setSpringX(newX);
+
+      if (
+        Math.abs(velocityRef.current) > 0.1 ||
+        Math.abs(newY) > 0.1 ||
+        Math.abs(velocityXRef.current) > 0.1 ||
+        Math.abs(newX) > 0.1
+      ) {
         animationFrameRef.current = requestAnimationFrame(spring);
       } else {
         setSpringY(0);
+        setSpringX(0);
         velocityRef.current = 0;
+        velocityXRef.current = 0;
         animationFrameRef.current = null;
       }
     };
     
     animationFrameRef.current = requestAnimationFrame(spring);
-  }, [springY]);
+  }, [springY, springX]);
 
   const triggerThemeChange = useCallback(async () => {
     if (!handleRef.current) return;
@@ -116,7 +146,7 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
     setTimeout(() => setIsAnimating(false), 700);
   }, [setTheme]);
 
-  const handleStart = useCallback((clientY: number) => {
+  const handleStart = useCallback((clientY: number, clientX: number) => {
     if (animationFrameRef.current) {
       cancelAnimationFrame(animationFrameRef.current);
       animationFrameRef.current = null;
@@ -124,29 +154,48 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
     
     setIsDragging(true);
     startYRef.current = clientY;
+    startXRef.current = clientX;
     lastDragYRef.current = 0;
+    lastDragXRef.current = 0;
     lastTimeRef.current = performance.now();
     setDragY(springY);
+    setDragX(springX);
     setSpringY(0);
+    setSpringX(0);
     velocityRef.current = 0;
-  }, [springY]);
+    velocityXRef.current = 0;
+  }, [springY, springX]);
 
-  const handleMove = useCallback((clientY: number) => {
+  const handleMove = useCallback((clientY: number, clientX: number) => {
     if (!isDragging) return;
     
     const now = performance.now();
     const deltaTime = now - lastTimeRef.current;
     
     const deltaY = clientY - startYRef.current;
-    const clampedDrag = Math.min(Math.max(0, deltaY), MAX_DRAG);
+    const deltaX = clientX - startXRef.current;
+    const distance = Math.hypot(deltaX, deltaY);
+    const scale = distance > MAX_RADIUS ? MAX_RADIUS / distance : 1;
+    const clampedDrag = deltaY * scale;
+    const clampedSway = deltaX * scale;
     
     if (deltaTime > 0) {
-      velocityRef.current = ((clampedDrag - lastDragYRef.current) / deltaTime) * 16 * VELOCITY_SCALE;
+      const nextVelocity =
+        ((clampedDrag - lastDragYRef.current) / deltaTime) * 16 * VELOCITY_SCALE;
+      velocityRef.current =
+        velocityRef.current * 0.35 + nextVelocity * 0.65;
+
+      const nextVelocityX =
+        ((clampedSway - lastDragXRef.current) / deltaTime) * 16 * 0.25;
+      velocityXRef.current =
+        velocityXRef.current * 0.35 + nextVelocityX * 0.65;
     }
     
     lastDragYRef.current = clampedDrag;
+    lastDragXRef.current = clampedSway;
     lastTimeRef.current = now;
     setDragY(clampedDrag);
+    setDragX(clampedSway);
   }, [isDragging]);
 
   const handleEnd = useCallback(() => {
@@ -159,23 +208,25 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
     }
     
     setSpringY(dragY);
+    setSpringX(dragX);
     setDragY(0);
+    setDragX(0);
     
     setTimeout(() => {
       animateSpring();
     }, 0);
-  }, [isDragging, dragY, triggerThemeChange, animateSpring]);
+  }, [isDragging, dragY, dragX, triggerThemeChange, animateSpring]);
 
   const onMouseDown = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
-    handleStart(e.clientY);
+    handleStart(e.clientY, e.clientX);
   }, [handleStart]);
 
   useEffect(() => {
     if (!isDragging) return;
 
     const onMouseMove = (e: MouseEvent) => {
-      handleMove(e.clientY);
+      handleMove(e.clientY, e.clientX);
     };
 
     const onMouseUp = () => {
@@ -192,11 +243,12 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
   }, [isDragging, handleMove, handleEnd]);
 
   const onTouchStart = useCallback((e: React.TouchEvent) => {
-    handleStart(e.touches[0].clientY);
+    handleStart(e.touches[0].clientY, e.touches[0].clientX);
   }, [handleStart]);
 
   const onTouchMove = useCallback((e: React.TouchEvent) => {
-    handleMove(e.touches[0].clientY);
+    e.preventDefault();
+    handleMove(e.touches[0].clientY, e.touches[0].clientX);
   }, [handleMove]);
 
   const onTouchEnd = useCallback(() => {
@@ -216,9 +268,19 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
   }
 
   const displayY = isDragging ? dragY : springY;
+  const displayX = isDragging ? dragX : springX;
+  const positiveY = Math.max(0, displayY);
   // Reduced base length to 20px (was 30px)
   const baseCordLength = 20;
-  const cordLength = baseCordLength + Math.max(0, displayY);
+  const cordLength = Math.max(10, baseCordLength + displayY);
+  const ropeSlack = Math.min(14, 4 + positiveY * 0.08);
+  const ropeEndX = 6;
+  const swayAbs = Math.min(12, Math.abs(displayX) * 0.3);
+  const control1X = 6 + displayX * 0.25;
+  const control1Y = Math.max(0, cordLength * 0.36 + ropeSlack * 0.15);
+  const control2X = 6 + displayX * 0.75;
+  const control2Y = Math.max(0, cordLength * 0.82 + ropeSlack * 0.4 + swayAbs);
+  const ropePath = `M 6 -10 C ${control1X} ${control1Y} ${control2X} ${control2Y} ${ropeEndX} ${cordLength}`;
   
   const ropeColor = isDarkMode ? "#e2e8f0" : "#475569"; 
   const ropeBaseColor = isDarkMode ? "#64748b" : "#94a3b8";
@@ -227,105 +289,105 @@ export const PullCordThemeToggle = ({ className }: PullCordThemeToggleProps) => 
     <div 
       ref={containerRef}
       className={cn(
-        "relative flex flex-col items-center select-none z-50 group", // Added group class
+        "relative flex flex-col items-center select-none overflow-visible z-50 group", // Added group class
         // Moved up slightly with negative margin
         "-mt-4",
         className
       )}
-      style={{ height: 50 + Math.max(0, displayY) }}
+      style={{ height: 56 }}
     >
-      {/* Rope SVG */}
-      <svg 
-        className="absolute top-0 left-1/2 -translate-x-1/2 overflow-visible"
-        width="12" 
-        height={cordLength + 12}
-        style={{ pointerEvents: 'none' }}
-      >
-        <defs>
-          <pattern id="rope-pattern" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-             {/* Thinner diagonal lines to create twisted effect */}
-             <path d="M-1,3 L5,-1 M-1,7 L7,-1" stroke={ropeColor} strokeWidth="1" opacity="0.9" />
-          </pattern>
-          {/* Filter for slight wiggle/wave effect */}
-          <filter id="pull-cord-wiggle">
-            <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="1" result="noise" />
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale={isDragging ? 0 : 2} />
-          </filter>
-        </defs>
-        
-        {/* Rope Group with potential filter */}
-        <g filter="url(#pull-cord-wiggle)">
-          {/* Base rope Shape (background) */}
-          <line
-            x1="6"
-            y1="-10"
-            x2="6"
-            y2={cordLength}
-            stroke={ropeBaseColor}
-            strokeWidth="2.5"
-            strokeLinecap="round"
-          />
-          
-          {/* Texture overlay */}
-          <rect
-            x="4.5"
-            y="-10"
-            width="3"
-            height={cordLength + 10}
-            fill="url(#rope-pattern)"
-          />
-        </g>
-
-        {/* The Knot at the bottom of the rope */}
-        <g transform={`translate(6, ${cordLength})`}>
-             <circle cx="0" cy="-1.5" r="2.5" fill={ropeBaseColor} />
-             <circle cx="0" cy="-1.5" r="2.5" fill="url(#rope-pattern)" />
-             <path 
-                d="M-2,-3 Q0,0 2,-3 Q3,-2 0,2 Q-3,-2 -2,-3" 
-                fill={ropeBaseColor} 
-                stroke={ropeColor}
-                strokeWidth="0.5"
-             />
-        </g>
-      </svg>
-
-      {/* Draggable Handle */}
       <div
-        ref={handleRef}
-        onMouseDown={onMouseDown}
-        onTouchStart={onTouchStart}
-        onTouchMove={onTouchMove}
-        onTouchEnd={onTouchEnd}
-        className={cn(
-          "absolute cursor-grab active:cursor-grabbing",
-          "w-12 h-12",
-          "flex items-center justify-center",
-          "transition-transform duration-100",
-          isDragging && "scale-110"
-        )}
-        style={{
-          top: cordLength - 6, // Adjusted to overlap knot better
-          transition: isDragging ? "transform 0.1s" : "none",
-          touchAction: "none"
-        }}
-        role="button"
-        tabIndex={0}
-        aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            triggerThemeChange();
-          }
-        }}
+        className="absolute top-0 left-1/2 overflow-visible"
+        style={{ transform: `translate3d(calc(-50% + ${displayX}px), 0, 0)` }}
       >
-        <Image 
-          src="/imgs/bg/dp.svg" 
-          alt="Theme Toggle Handle" 
-          width={40} 
-          height={40}
-          className="w-full h-full object-contain drop-shadow-lg dark:invert"
-          draggable={false}
-        />
+        {/* Rope SVG */}
+        <svg 
+          className="overflow-visible"
+          width="12" 
+          height={cordLength + 12}
+          style={{ pointerEvents: 'none' }}
+        >
+          <defs>
+            <pattern id="rope-pattern" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+               {/* Thinner diagonal lines to create twisted effect */}
+               <path d="M-1,3 L5,-1 M-1,7 L7,-1" stroke={ropeColor} strokeWidth="1" opacity="0.9" />
+            </pattern>
+          </defs>
+          
+          {/* Rope Group - filter removed to fix local dev rendering issues */}
+          <g>
+            {/* Base rope Shape (background) */}
+            <path
+              d={ropePath}
+              stroke={ropeBaseColor}
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              fill="none"
+            />
+            
+            {/* Texture overlay */}
+            <path
+              d={ropePath}
+              stroke="url(#rope-pattern)"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              fill="none"
+            />
+          </g>
+
+          {/* The Knot at the bottom of the rope (hidden behind the bulb) */}
+          <g transform={`translate(${ropeEndX}, ${cordLength})`} opacity="0">
+               <circle cx="0" cy="-1.5" r="2.5" fill={ropeBaseColor} />
+               <circle cx="0" cy="-1.5" r="2.5" fill="url(#rope-pattern)" />
+               <path 
+                  d="M-2,-3 Q0,0 2,-3 Q3,-2 0,2 Q-3,-2 -2,-3" 
+                  fill={ropeBaseColor} 
+                  stroke={ropeColor}
+                  strokeWidth="0.5"
+               />
+          </g>
+        </svg>
+
+        {/* Draggable Handle */}
+        <div
+          ref={handleRef}
+          onMouseDown={onMouseDown}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+          className={cn(
+            "absolute left-1/2 cursor-grab active:cursor-grabbing",
+            "w-12 h-12",
+            "flex items-center justify-center",
+            "transition-transform duration-100",
+            "z-10",
+            isDragging && "scale-110"
+          )}
+          style={{
+            top: cordLength - 6, // Slightly reduce overlap with rope end
+            transform: "translate3d(-50%, 0, 0)",
+            transition: isDragging ? "transform 0.1s" : "none",
+            touchAction: "none"
+          }}
+          role="button"
+          tabIndex={0}
+          aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              triggerThemeChange();
+            }
+          }}
+        >
+          <Image 
+            src="/imgs/bg/dp.svg" 
+            alt="Theme Toggle Handle" 
+            width={40} 
+            height={40}
+            className="w-full h-full object-contain drop-shadow-lg dark:invert"
+            draggable={false}
+          />
+        </div>
       </div>
       
       {/* Tooltip hint */}

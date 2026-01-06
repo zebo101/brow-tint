@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import { Check, Globe, Languages } from 'lucide-react';
@@ -33,7 +33,6 @@ export function LocaleSelector({
 
   const handleSwitchLanguage = (value: string) => {
     if (value !== currentLocale) {
-      // Update localStorage to sync with locale detector
       cacheSet('locale', value);
       const query = searchParams?.toString?.() ?? '';
       const href = query ? `${pathname}?${query}` : pathname;
@@ -43,7 +42,6 @@ export function LocaleSelector({
     }
   };
 
-  // Return a placeholder during SSR to avoid hydration mismatch
   if (!mounted) {
     return (
       <Button

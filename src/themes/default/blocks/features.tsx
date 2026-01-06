@@ -1,6 +1,3 @@
-'use client';
-
-import { SmartIcon } from '@/shared/blocks/common/smart-icon';
 import { ScrollAnimation } from '@/shared/components/ui/scroll-animation';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
@@ -34,7 +31,6 @@ export function Features({
             {section.items?.map((item, idx) => (
               <div className="space-y-3" key={idx}>
                 <div className="flex items-center gap-2">
-                  <SmartIcon name={item.icon as string} size={24} />
                   <h3 className="text-sm font-medium">{item.title}</h3>
                 </div>
                 <p className="text-sm">{item.description}</p>
