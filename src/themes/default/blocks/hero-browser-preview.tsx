@@ -46,7 +46,7 @@ export function HeroBrowserPreview({ section }: { section: Section }) {
   };
 
   useEffect(() => {
-    setLoadedSlides(images.map((_, idx) => idx === 0));
+    setLoadedSlides(images.map((_: CarouselImage, idx: number) => idx === 0));
   }, [images.length]);
 
   useEffect(() => {
