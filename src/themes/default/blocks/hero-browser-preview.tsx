@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import { cn } from '@/shared/lib/utils';
@@ -15,9 +15,6 @@ interface CarouselImage {
 export function HeroBrowserPreview({ section }: { section: Section }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [loadedSlides, setLoadedSlides] = useState<boolean[]>([]);
-  const idleHandleRef = useRef<number | null>(null);
-  const intervalRef = useRef<number | null>(null);
 
   const carouselImages = (section as any).carousel_images;
   const images =
@@ -46,51 +43,13 @@ export function HeroBrowserPreview({ section }: { section: Section }) {
   };
 
   useEffect(() => {
-    setLoadedSlides(images.map((_: CarouselImage, idx: number) => idx === 0));
-  }, [images.length]);
-
-  useEffect(() => {
-    setLoadedSlides((prev) => {
-      if (prev[currentSlide]) return prev;
-      const next = [...prev];
-      next[currentSlide] = true;
-      return next;
-    });
-  }, [currentSlide]);
-
-  useEffect(() => {
     if (images.length <= 1 || isPaused) return;
-    const win = window as Window;
-    const startInterval = () => {
-      if (intervalRef.current !== null) return;
-      intervalRef.current = win.setInterval(() => {
-        setCurrentSlide((prev) => (prev + 1) % images.length);
-      }, 5000);
-    };
 
-    if (typeof win.requestIdleCallback === 'function') {
-      idleHandleRef.current = win.requestIdleCallback(
-        startInterval,
-        { timeout: 3500 }
-      );
-    } else {
-      idleHandleRef.current = win.setTimeout(startInterval, 3000);
-    }
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 5000);
 
-    return () => {
-      if (idleHandleRef.current !== null) {
-        if (typeof win.cancelIdleCallback === 'function') {
-          win.cancelIdleCallback(idleHandleRef.current);
-        } else {
-          win.clearTimeout(idleHandleRef.current);
-        }
-        idleHandleRef.current = null;
-      }
-      if (intervalRef.current !== null) {
-        win.clearInterval(intervalRef.current);
-        intervalRef.current = null;
-      }
-    };
+    return () => clearInterval(timer);
   }, [images.length, isPaused]);
 
   return (
@@ -216,10 +175,6 @@ export function HeroBrowserPreview({ section }: { section: Section }) {
                       : 'absolute inset-0 opacity-0'
                   )}
                 >
-                  {!loadedSlides[idx] ? (
-                    <div className="bg-muted h-full w-full" aria-hidden="true" />
-                  ) : (
-                    <>
                   {image.dark && (
                     <Image
                       className="hidden w-full dark:block"
@@ -261,13 +216,10 @@ export function HeroBrowserPreview({ section }: { section: Section }) {
                       }
                       sizes="(max-width: 768px) 100vw, 1200px"
                       loading={idx === 0 ? 'eager' : 'lazy'}
-                      priority={idx === 0}
                       fetchPriority={idx === 0 ? 'high' : 'low'}
                       quality={60}
                       unoptimized={image.light.startsWith('http')}
                     />
-                  )}
-                    </>
                   )}
                 </div>
               ))}
