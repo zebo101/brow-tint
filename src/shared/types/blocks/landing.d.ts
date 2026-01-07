@@ -63,6 +63,12 @@ export interface Footer extends Section {
 }
 
 // hero props for hero component
+export interface CarouselImage {
+  light?: string;
+  dark?: string;
+  alt: string;
+}
+
 export interface Hero extends Section {
   id?: string;
   announcement?: Button;
@@ -70,6 +76,7 @@ export interface Hero extends Section {
   avatars_tip?: string;
   show_award?: boolean;
   highlight_text?: string;
+  carousel_images?: CarouselImage[];
 }
 
 export interface Logos extends Section {}

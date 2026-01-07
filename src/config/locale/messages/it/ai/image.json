@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "Cambia Acconciatura IA - Trasforma il Tuo Look",
-    "description": "Cambia la tua acconciatura con l'IA. Carica la tua foto e prova diverse acconciature istantaneamente con il nostro Cambia Acconciatura IA.",
-    "keywords": "cambia acconciatura ia, acconciatura virtuale, taglio capelli ia, generatore acconciature"
+    "title": "Cambia acconciatura IA gratis online | 500+ tagli | AI Barber",
+    "description": "Prova il cambia acconciatura IA gratis online. Carica una foto, visualizza 500+ tagli e colori e scarica la tua acconciatura virtuale in pochi secondi con AI Barber.",
+    "keywords": "cambia acconciatura ia, cambia acconciatura ia online, cambia acconciatura ia gratis, acconciatura virtuale, simulatore acconciature, provare acconciature, taglio virtuale, simulatore di tagli, cambio colore capelli, bob, pixie, fade, buzz cut, capelli ricci, acconciature uomo, acconciature donna, acconciature bambini"
   },
   "page": {
-    "title": "Simulatore di Capelli IA Gratis Online - Prova 400+ Acconciature | AI Barber",
-    "description": "Prova il miglior simulatore di capelli IA gratis online. Carica la tua foto e prova 400+ acconciature all'istante. Nessun download necessario, prova gratuita al 100% per nuovi utenti.",
+    "title": "Cambia acconciatura IA gratis online - 500+ tagli | AI Barber",
+    "description": "Usa il cambia acconciatura IA gratis online per provare 500+ tagli e colori in pochi secondi. Uomini 197, Donne 240, Bambini 56, Bambine 85. Scarica la tua acconciatura virtuale e condividila con barbiere o salone.",
     "show_sections": [
       "hero",
       "introduce",
@@ -22,9 +22,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Cambia Acconciature del Barbiere IA",
+        "title": "Cambia acconciatura IA gratis online",
         "highlight_text": "AI Barber",
-        "description": "Abbraccia il futuro dell'acconciatura con il più avanzato Cambiador di Acconciature IA. Carica la tua foto e prova 400+ acconciature alla moda su misura per te.",
+        "description": "Prova subito 500+ tagli e colori con il cambia acconciatura IA gratis. Carica una foto, visualizza stili uomo, donna, bambini e scarica il tuo nuovo look.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
           "alt": "AI Hairstyle Changer Interface",
@@ -45,9 +45,9 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "Cos'è il Cambiador di Acconciature AI Barber?",
+        "title": "Cos'è l'app AI Barber per cambiare acconciatura IA?",
         "label": "Introduzione",
-        "description": "AI Barber è uno strumento di acconciatura virtuale all'avanguardia che utilizza intelligenza artificiale avanzata per aiutarti a trovare il tuo look perfetto senza visitare un salone.",
+        "description": "AI Barber è un cambia acconciatura IA gratuito e simulatore di tagli che ti permette di provare tagli, lunghezze e colori sulla tua foto prima di andare dal barbiere o in salone.",
         "image": {
           "src": "/imgs/features/landingpage.png",
           "alt": "AI Barber Hairstyle Simulator"
@@ -55,22 +55,22 @@
         "items": [
           {
             "title": "Prova Acconciatura Virtuale",
-            "description": "Prova innumerevoli acconciature virtuali tra cui Taglio a Spazzola, Bob, Mullet e tagli Pixie all'istante.",
+            "description": "Prova stili corti, medi e lunghi come bob, pixie, fade, buzz cut e capelli lunghi a strati in pochi secondi.",
             "icon": "RiMagicLine"
           },
           {
             "title": "Risultati IA Realistici",
-            "description": "Il nostro Cambiador di Taglio IA genera risultati altamente realistici che rispettano la forma del tuo viso e la consistenza dei capelli.",
+            "description": "L'IA considera viso e luce per una preview naturale.",
             "icon": "RiCameraLensLine"
           },
           {
             "title": "Cambiador di Colore dei Capelli",
-            "description": "Sperimenta con diversi colori di capelli dal Balayage al Rame e Argento con il nostro filtro colore capelli.",
+            "description": "Prova nero, castano, biondo, rame, argento, rosa o blu prima di tingere.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "Trasferimento di Stile",
-            "description": "Trasferisci stili da celebrità o modelli direttamente sulla tua foto usando la nostra tecnologia immagine-a-immagine.",
+            "description": "Usa prompt per ricreare look da celebrity, K-pop o passerella.",
             "icon": "RiExchangeLine"
           }
         ],
@@ -81,11 +81,11 @@
         "id": "benefits",
         "title": "Perché Scegliere il Nostro Cambiador di Acconciature IA",
         "label": "Benefici",
-        "description": "Esplora infinite possibilità con il nostro simulatore di capelli IA sicuro, veloce e facile da usare.",
+        "description": "Anteprime rapide, private e realistiche per decidere taglio e colore con sicurezza.",
         "items": [
           {
             "title": "Veloce come un Fulmine e 100% Online",
-            "description": "Trasforma i tuoi capelli in secondi. Nessun software da scaricare, nessuna attesa di giorni per i risultati. Funziona direttamente nel tuo browser.",
+            "description": "Genera più look da una sola foto in pochi secondi, 100% online.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
@@ -94,7 +94,7 @@
           },
           {
             "title": "Privacy Prima di Tutto",
-            "description": "Le tue foto vengono elaborate in modo sicuro ed eliminate automaticamente. Apprezziamo la tua privacy e non usiamo mai le tue immagini per l'addestramento senza permesso.",
+            "description": "Le foto vengono elaborate in modo sicuro e non archiviate in modo permanente.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
@@ -103,7 +103,7 @@
           },
           {
             "title": "Qualità Professionale",
-            "description": "Ottieni visualizzazioni di qualità da salone che ti aiutano a comunicare esattamente ciò che vuoi al tuo barbiere o stilista.",
+            "description": "Scarica anteprime pronte per spiegare a barbiere o salone il taglio e colore desiderati.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
@@ -116,7 +116,7 @@
         "block": "features-step",
         "id": "usage",
         "title": "Come Usare il Cambiador di Acconciature IA",
-        "description": "Ottieni il tuo nuovo look in tre semplici passaggi con la nostra interfaccia intuitiva:",
+        "description": "Ottieni una preview realistica in quattro passaggi:",
         "image": {
           "src": "/imgs/features/1.png",
           "alt": "AI Hairstyle Usage Guide"
@@ -125,32 +125,32 @@
         "text_align": "center",
         "items": [
           {
-            "title": "Carica la Tua Foto",
-            "description": "Carica una foto chiara e frontale di te stesso per i migliori risultati di trasformazione.",
+            "title": "Carica una foto chiara",
+            "description": "Foto frontale con buona illuminazione per risultati migliori.",
             "image": {
               "src": "/imgs/features/5.png",
               "alt": "Upload Photo"
             }
           },
           {
-            "title": "Seleziona Acconciatura",
-            "description": "Sfoglia il nostro catalogo e seleziona un'acconciatura da categorie preimpostate come Uomini, Donne o Bambini.",
+            "title": "Scegli un'acconciatura",
+            "description": "Seleziona uno stile o una categoria e decidi la lunghezza.",
             "image": {
               "src": "/imgs/features/6.png",
               "alt": "Select Hairstyle"
             }
           },
           {
-            "title": "Descrivi il Tuo Look",
-            "description": "Inserisci una descrizione della tua acconciatura desiderata o immaginata per personalizzare ulteriormente il risultato.",
+            "title": "Aggiungi dettagli",
+            "description": "Indica lunghezza, texture, colore, frangia o fade.",
             "image": {
               "src": "/imgs/features/7.png",
               "alt": "Describe Hairstyle"
             }
           },
           {
-            "title": "Genera e Scarica",
-            "description": "Clicca genera per vedere la magia accadere, poi scarica i tuoi nuovi look preferiti.",
+            "title": "Genera e confronta",
+            "description": "Genera, scarica e confronta i risultati affiancati.",
             "image": {
               "src": "/imgs/features/8.png",
               "alt": "Generate and Download"
@@ -161,37 +161,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Caratteristiche Chiave di AI Barber",
-        "description": "Tutto ciò di cui hai bisogno per un restyling virtuale completo.",
+        "title": "Funzionalità chiave del cambia acconciatura IA",
+        "description": "Uno studio virtuale completo per tagli, colori e confronti.",
         "items": [
           {
-            "title": "200+ Acconciature alla Moda",
-            "description": "Accedi a una vasta libreria di acconciature tra cui Taglio a Spazzola, Pompadour, Bob, Pixie e altro.",
+            "title": "500+ tagli e acconciature per tutti",
+            "description": "Uomini 197, Donne 240, Bambini 56, Bambine 85: da buzz cut e fade a bob e pixie.",
             "icon": "RiScissorsCutLine"
           },
           {
             "title": "Rilevamento Facciale Intelligente",
-            "description": "Rileva automaticamente la forma del viso per garantire che le acconciature si adattino perfettamente.",
+            "description": "Il rilevamento del viso adatta ogni taglio alla tua attaccatura e alle proporzioni.",
             "icon": "RiWomenLine"
           },
           {
             "title": "Sperimentazione Colore",
-            "description": "Prova nuovi colori di capelli senza il rischio di danni chimici.",
+            "description": "Prova colpi di sole, balayage, rame, platino o colori vivaci prima del salone.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "Download ad Alta Risoluzione",
-            "description": "Scarica immagini chiare e di alta qualità perfette per la condivisione.",
+            "description": "Salva risultati ad alta risoluzione per condividerli con barbiere, stylist o amici.",
             "icon": "RiHdLine"
           },
           {
             "title": "Confronto Stili",
-            "description": "Confronta i look prima e dopo fianco a fianco per prendere la decisione migliore.",
+            "description": "Confronta più acconciature affiancate per scegliere il look migliore.",
             "icon": "RiCompareLine"
           },
           {
             "title": "Mobile Friendly",
-            "description": "Usa AI Barber su qualsiasi dispositivo, ovunque. Ottimizzato per l'esperienza mobile.",
+            "description": "Funziona su mobile e desktop per provare stili ovunque.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -260,16 +260,16 @@
       "faq": {
         "id": "faq",
         "title": "Domande Frequenti",
-        "description": "Hai domande sul nostro Cambiador di Acconciature IA? Abbiamo le risposte.",
+        "description": "FAQ sul cambia acconciatura IA, consigli foto e risultati migliori.",
         "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>team di supporto</a>",
         "items": [
           {
             "question": "È gratis usare questo Cambiador di Acconciature IA?",
-            "answer": "Sì, AI Barber offre una prova gratuita per i nuovi utenti per provare il nostro cambiador di acconciature IA. Puoi generare diverse acconciature per vedere la qualità del nostro strumento."
+            "answer": "Sì. Puoi provare il cambia acconciatura IA gratis online con una prova per vedere più stili."
           },
           {
             "question": "Quanto sono realistiche le acconciature?",
-            "answer": "I nostri modelli IA avanzati sono addestrati su milioni di immagini di alta qualità per garantire che le acconciature si fondano naturalmente con la tua foto originale, abbinando illuminazione e angoli per un look fotorealistico."
+            "answer": "L'IA integra ogni acconciatura nella tua foto per una preview realistica di taglio, lunghezza e colore."
           },
           {
             "question": "Che tipo di foto funzionano meglio?",
@@ -277,22 +277,42 @@
           },
           {
             "question": "Posso cambiare solo il colore dei capelli?",
-            "answer": "Sì! Puoi usare il nostro strumento per testare specificamente diversi colori di capelli mantenendo il tuo stile attuale, o cambiare sia stile che colore contemporaneamente."
+            "answer": "Sì. Puoi cambiare solo il colore o combinare taglio e colore e condividere il risultato con il salone."
           },
           {
             "question": "Funziona per uomini e donne?",
-            "answer": "Assolutamente. Abbiamo ampi cataloghi per acconciature maschili (Taglio a Spazzola, Crew cut, sfumatura, ecc.) e acconciature femminili (Bob, scalato, Pixie, ecc.), così come stili per bambini."
+            "answer": "Sì. Ci sono 500+ stili: Uomini 197, Donne 240, Bambini 56, Bambine 85."
           },
           {
             "question": "I miei dati fotografici sono sicuri?",
             "answer": "Prendiamo sul serio la privacy. Le tue foto caricate vengono elaborate in modo sicuro per lo scopo di generazione e non vengono memorizzate permanentemente né condivise con terze parti."
+          },
+          {
+            "question": "Posso mostrare l'acconciatura IA al barbiere o al salone vicino a me?",
+            "answer": "Sì. Scarica la preview e mostrala al barbiere o allo stylist per ottenere il look esatto."
+          },
+          {
+            "question": "Quanto tempo ci vuole per generare un'acconciatura?",
+            "answer": "Di solito bastano pochi secondi, in base a dimensione immagine e traffico."
+          },
+          {
+            "question": "Posso provare lunghezze corte, medie o lunghe?",
+            "answer": "Sì. Scegli un template o descrivi la lunghezza nel prompt."
+          },
+          {
+            "question": "Funziona con capelli ricci o texturizzati?",
+            "answer": "Sì. Prova ricci, onde o afro; foto più nitide danno risultati migliori."
+          },
+          {
+            "question": "Devo installare qualcosa?",
+            "answer": "No. Funziona nel browser, senza download."
           }
         ]
       },
       "cta": {
         "id": "cta",
         "title": "Pronto per un Nuovo Look?",
-        "description": "Non indovinare con i tuoi capelli. Visualizza la tua acconciatura perfetta oggi con AI Barber.",
+        "description": "Non indovinare con i capelli. Visualizza l'acconciatura perfetta con l'app gratuita AI Barber e mostrala al barbiere o salone locale.",
         "buttons": [
           {
             "title": "Inizia la Trasformazione Ora",
@@ -306,8 +326,8 @@
     }
   },
   "generator": {
-    "title": "Cambia Acconciatura",
-    "description": "Carica la tua foto e prova diverse acconciature con la tecnologia IA.",
+    "title": "Cambia acconciatura IA gratis online",
+    "description": "Carica una foto e prova 500+ tagli e colori con il cambia acconciatura IA gratis.",
     "tabs": {
       "text-to-image": "Descrizione Stile",
       "image-to-image": "Carica Foto"
@@ -335,7 +355,7 @@
       "select_provider": "Seleziona Provider IA",
       "select_model": "Seleziona Modello Acconciatura",
       "prompt": "Descrizione Acconciatura",
-      "prompt_placeholder": "Descrivi l'acconciatura desiderata: lunghezza, colore, texture, stile (es: bob corto, capelli biondi lunghi ondulati, afro riccio)",
+      "prompt_placeholder": "Descrivi la tua acconciatura: lunghezza, colore, texture, stile (es. bob corto, biondo ondulato lungo, crop texturizzato, afro riccio)",
       "reference_image": "La Tua Foto",
       "reference_image_placeholder": "Carica la tua foto per i migliori risultati",
       "some_images_failed_to_upload": "Alcune immagini non sono state caricate, eliminale e ricarica",
@@ -382,18 +402,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

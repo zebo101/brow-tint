@@ -1,11 +1,12 @@
 {
   "metadata": {
-    "title": "AI Hairstyle Changer - Transform Your Look",
-    "description": "Change your hairstyle with AI. Upload your photo and try on different hairstyles instantly with our AI-powered hairstyle changer."
+    "title": "AI Hairstyle Changer Online Free | Try 500+ Haircuts | AI Barber",
+    "description": "Try AI hairstyle changer online free. Upload a photo, preview 500+ haircuts and hair colors, and download your virtual hairstyle in seconds with AI Barber.",
+    "keywords": "ai hairstyle changer, ai hairstyle changer online, free ai hairstyle changer, virtual hairstyle, hairstyle simulator, hairstyle try on, virtual haircut, haircut simulator, hairstyle preview, hairstyle app online, try on hair color, hair color changer, short hair filter, long hair filter, bob haircut, pixie cut, fade haircut, buzz cut, curly hair styles, afro hairstyle, men hairstyles, women hairstyles, kids hairstyles"
   },
   "page": {
-    "title": "Free AI Hairstyle Changer Online - Try 400+ Hairstyles | AI Barber",
-    "description": "Experience the best free AI hairstyle changer online. Upload your photo and try on 400+ hairstyles instantly. No download needed, 100% free trial for new users.",
+    "title": "AI Hairstyle Changer Online Free - Try 500+ Haircuts | AI Barber",
+    "description": "Use the AI hairstyle changer online free to try 500+ haircuts and hair colors in seconds. Men's 197, Women's 240, Boys' 56, Girls' 85. Download your virtual hairstyle and share it with your barber or salon.",
     "show_sections": [
       "hero",
       "introduce",
@@ -21,9 +22,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "AI Hairstyle Changer",
+        "title": "AI Hairstyle Changer Online Free",
         "highlight_text": "AI Hairstyle Changer",
-        "description": "Embrace the future of hairstyling with the most advanced AI Hairstyle Changer. Upload your photo and try on 400+ trendy hairstyles tailored just for you.",
+        "description": "Instantly try 500+ haircuts and hair colors with the free AI hairstyle changer. Upload a photo, preview men's, women's, boys', and girls' styles, then download your new look.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
           "alt": "AI Hairstyle Changer Interface",
@@ -44,9 +45,9 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "What is AI Barber Hairstyle Changer?",
+        "title": "What Is the AI Hairstyle Changer?",
         "label": "Introduction",
-        "description": "AI Barber is a cutting-edge virtual hairstyle tool that uses advanced artificial intelligence to help you find your perfect look without visiting a salon.",
+        "description": "AI Barber is a free AI hairstyle changer and virtual haircut simulator that lets you test cuts, lengths, and colors on your own photo before visiting a barber or salon.",
         "image": {
           "src": "/imgs/features/landingpage.png",
           "alt": "AI Barber Hairstyle Simulator"
@@ -54,22 +55,22 @@
         "items": [
           {
             "title": "Virtual Hairstyle Try-On",
-            "description": "Try on countless virtual hairstyles including Buzz Cut, Bob, Mullet, and Pixie cuts instantly.",
+            "description": "Try short, medium, and long styles like bobs, pixies, fades, buzz cuts, and long layers in seconds.",
             "icon": "RiMagicLine"
           },
           {
             "title": "Realistic AI Results",
-            "description": "Our AI Haircut Changer generates highly realistic results that respect your face shape and hair texture.",
+            "description": "Face-aware AI blends hairline and lighting for a natural-looking hairstyle preview.",
             "icon": "RiCameraLensLine"
           },
           {
             "title": "Hair Color Changer",
-            "description": "Experiment with different hair colors from Balayage to Copper and Silver with our hair color filter.",
+            "description": "Preview black, brown, blonde, copper, silver, pink, or blue hair colors before you commit.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "Style Transfer",
-            "description": "Transfer styles from celebrities or models directly to your photo using our image-to-image technology.",
+            "description": "Use custom prompts to recreate celebrity, K-pop, or runway-inspired looks.",
             "icon": "RiExchangeLine"
           }
         ],
@@ -80,11 +81,11 @@
         "id": "benefits",
         "title": "Why Choose Our AI Hairstyle Changer",
         "label": "Benefits",
-        "description": "Explore infinite possibilities with our secure, fast, and user-friendly AI hair simulator.",
+        "description": "Fast, private, and realistic previews for confident haircut and color decisions.",
         "items": [
           {
             "title": "Lightning Fast & 100% Online",
-            "description": "Transform your hair in seconds. No software to download, no waiting days for results. Works directly in your browser.",
+            "description": "Generate multiple looks from one photo in seconds, 100% online.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
@@ -93,7 +94,7 @@
           },
           {
             "title": "Privacy First",
-            "description": "Your photos are processed securely and deleted automatically. We value your privacy and never use your images for training without permission.",
+            "description": "Photos are processed securely and never stored permanently.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
@@ -102,7 +103,7 @@
           },
           {
             "title": "Professional Quality",
-            "description": "Get salon-quality visualizations that help you communicate exactly what you want to your barber or stylist.",
+            "description": "Download salon-ready previews to communicate the exact cut and color you want.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
@@ -115,7 +116,7 @@
         "block": "features-step",
         "id": "usage",
         "title": "How to Use AI Hairstyle Changer",
-        "description": "Get your new look in three simple steps with our intuitive interface:",
+        "description": "Get a realistic hairstyle preview in four steps:",
         "image": {
           "src": "/imgs/features/1.png",
           "alt": "AI Hairstyle Usage Guide"
@@ -124,32 +125,32 @@
         "text_align": "center",
         "items": [
           {
-            "title": "Upload Your Photo",
-            "description": "Upload a clear, front-facing photo of yourself for the best transformation results.",
+            "title": "Upload a Clear Photo",
+            "description": "Use a front-facing photo with good lighting so the AI can map your hairline accurately.",
             "image": {
               "src": "/imgs/features/5.png",
               "alt": "Upload Photo"
             }
           },
           {
-            "title": "Select Hairstyle",
-            "description": "Browse our catalog and select a hairstyle from preset categories like Men, Women, or Kids.",
+            "title": "Choose a Hairstyle",
+            "description": "Pick a style or category and decide on a short, medium, or long look.",
             "image": {
               "src": "/imgs/features/6.png",
               "alt": "Select Hairstyle"
             }
           },
           {
-            "title": "Describe Your Look",
-            "description": "Input a description of your desired or imagined hairstyle to customize the result further.",
+            "title": "Add Style Details",
+            "description": "Describe length, texture, color, bangs, or fade to personalize the result.",
             "image": {
               "src": "/imgs/features/7.png",
               "alt": "Describe Hairstyle"
             }
           },
           {
-            "title": "Generate & Download",
-            "description": "Click generate to see the magic happen, then download your favorite new looks.",
+            "title": "Generate and Compare",
+            "description": "Generate, download, and compare results side by side before you decide.",
             "image": {
               "src": "/imgs/features/8.png",
               "alt": "Generate and Download"
@@ -160,37 +161,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Key Features of AI Barber",
-        "description": "Everything you need for a complete virtual makeover.",
+        "title": "Key Features of the AI Hairstyle Changer",
+        "description": "A complete virtual hairstyle studio for cuts, colors, and comparisons.",
         "items": [
           {
-            "title": "200+ Trendy Hairstyles",
-            "description": "Access a massive library of hairstyles including Buzz Cut, Pompadour, Bob, Pixie, and more.",
+            "title": "500+ Haircuts and Hairstyles for Everyone",
+            "description": "Men's 197, Women's 240, Boys' 56, Girls' 85 styles, from buzz cuts and fades to bobs and pixies.",
             "icon": "RiScissorsCutLine"
           },
           {
             "title": "Smart Face Detection",
-            "description": "Automatically detects face shape to ensure hairstyles fit perfectly.",
+            "description": "Face-aware detection adapts each haircut to your hairline and proportions.",
             "icon": "RiWomenLine"
           },
           {
             "title": "Color Experimentation",
-            "description": "Try out new hair colors without the chemical damage risk.",
+            "description": "Test highlights, balayage, copper, platinum, or vivid colors before a salon visit.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "High Resolution Downloads",
-            "description": "Download clear, high-quality images perfect for sharing.",
+            "description": "Save high-resolution results to share with your barber, stylist, or friends.",
             "icon": "RiHdLine"
           },
           {
             "title": "Style Comparison",
-            "description": "Compare before and after looks side-by-side to make the best decision.",
+            "description": "Compare multiple hairstyles side-by-side to choose the best look.",
             "icon": "RiCompareLine"
           },
           {
             "title": "Mobile Friendly",
-            "description": "Use AI Barber on any device, anywhere. Optimized for mobile experience.",
+            "description": "Works on mobile and desktop so you can try styles anywhere.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -198,12 +199,12 @@
       "testimonials": {
         "id": "testimonials",
         "title": "What Users Say About AI Barber",
-        "description": "Hear from users who found their perfect style.",
+        "description": "Real users who tried new haircuts with AI Barber.",
         "items": [
           {
             "name": "Sarah Jenkins",
             "role": "Fashion Blogger",
-            "quote": "I was hesitant to cut my long hair into a bob. AI Barber showed me exactly how it would look, and I loved it! Best hairstyle app ever.",
+            "quote": "I was unsure about a bob. The free AI hairstyle app showed a realistic preview, so I booked my salon appointment with confidence.",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Sarah Jenkins"
@@ -212,7 +213,7 @@
           {
             "name": "Mike Ross",
             "role": "Model",
-            "quote": "Essential tool for my portfolio. I can test different looks for photoshoots without actually changing my hair. The realism is unmatched.",
+            "quote": "I test different looks for shoots in the app and bring the best one to my barber. It saves time and guesswork.",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Mike Ross"
@@ -221,7 +222,7 @@
           {
             "name": "Emily Chen",
             "role": "Student",
-            "quote": "So much fun! I tried purple hair and a pixie cut. It looked so real my mom thought I actually did it.",
+            "quote": "Trying purple hair and a pixie cut in the app was surprisingly real. It helped me decide before changing my hair.",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Emily Chen"
@@ -230,7 +231,7 @@
           {
             "name": "David Smith",
             "role": "Software Engineer",
-            "quote": "I used AI Barber to find a new men's haircut. The fade and undercut options looked incredible and helped me explain exactly what I wanted to my barber.",
+            "quote": "The fade and undercut previews were spot on. I showed the image to my local barber and got the exact cut.",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "David Smith"
@@ -239,7 +240,7 @@
           {
             "name": "Jessica Lee",
             "role": "Makeup Artist",
-            "quote": "The hair color changer is amazing! I tried blonde, copper, and silver before dying my hair. This free tool saved me from making a bad choice.",
+            "quote": "The color previews are accurate. I tested blonde and copper in the app before my salon visit.",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Jessica Lee"
@@ -248,7 +249,7 @@
           {
             "name": "Tom Brown",
             "role": "Student",
-            "quote": "This free AI hairstyle changer is so easy to use. I uploaded my photo and got results in seconds. Highly recommend for anyone looking for a virtual makeover.",
+            "quote": "Fast, free, and easy. I uploaded one photo and got multiple hairstyle options in seconds.",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Tom Brown"
@@ -259,16 +260,16 @@
       "faq": {
         "id": "faq",
         "title": "Frequently Asked Questions",
-        "description": "Got questions about our AI Hairstyle Changer? We've got answers.",
+        "description": "FAQs about the AI hairstyle changer, photo tips, and how to get the best results.",
         "tip": "Can't find what you're looking for? Contact our <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>support team</a>",
         "items": [
           {
             "question": "Is this AI Hairstyle Changer free to use?",
-            "answer": "Yes, AI Barber offers a free trial for new users to try our AI hairstyle changer. You can generate several hairstyles to see the quality of our tool."
+            "answer": "Yes. You can try the AI hairstyle changer online free with a trial to preview multiple styles."
           },
           {
             "question": "How realistic are the hairstyles?",
-            "answer": "Our advanced AI models are trained on millions of high-quality images to ensure the hairstyles blend naturally with your original photo, matching lighting and angles for a photorealistic look."
+            "answer": "The AI blends each hairstyle with your photo for a realistic preview of cut, length, and color."
           },
           {
             "question": "What kind of photos work best?",
@@ -276,22 +277,42 @@
           },
           {
             "question": "Can I change hair color only?",
-            "answer": "Yes! You can use our tool to specifically test different hair colors while keeping your current style, or change both style and color simultaneously."
+            "answer": "Yes. Try color-only changes or combine a haircut and color, then share the result with your salon."
           },
           {
             "question": "Does it work for men and women?",
-            "answer": "Absolutely. We have extensive catalogs for men's hairstyles (Buzz cut, Crew cut, Fade, etc.) and women's hairstyles (Bob, Layered, Pixie, etc.), as well as styles for kids."
+            "answer": "Yes. There are 500+ styles: Men's 197, Women's 240, Boys' 56, Girls' 85."
           },
           {
             "question": "Is my photo data secure?",
             "answer": "We take privacy seriously. Your uploaded photos are processed securely for the generation purpose and are not stored permanently or shared with third parties."
+          },
+          {
+            "question": "Can I show my AI hairstyle to a local barber or salon near me?",
+            "answer": "Yes. Download your hairstyle preview and show it to your barber or stylist to get the exact look."
+          },
+          {
+            "question": "How long does it take to generate a hairstyle?",
+            "answer": "Most previews are ready in seconds, depending on image size and traffic."
+          },
+          {
+            "question": "Can I try different hair lengths like short, medium, or long?",
+            "answer": "Yes. Choose a template or describe the length you want in the prompt."
+          },
+          {
+            "question": "Will it work with curly or textured hair?",
+            "answer": "Yes. Try curls, waves, or afro textures; clearer photos give better results."
+          },
+          {
+            "question": "Do I need to install anything?",
+            "answer": "No. The AI hairstyle changer runs in your browser—no downloads needed."
           }
         ]
       },
       "cta": {
         "id": "cta",
         "title": "Ready for a New Look?",
-        "description": "Don't guess with your hair. Visualize your perfect hairstyle today with AI Barber.",
+        "description": "Stop guessing your haircut. Try the free AI hairstyle changer now and share your result with a barber or salon.",
         "buttons": [
           {
             "title": "Start Transformation Now",
@@ -305,8 +326,8 @@
     }
   },
   "generator": {
-    "title": "Hairstyle Changer",
-    "description": "Upload your photo and try on different hairstyles with AI technology.",
+    "title": "AI Hairstyle Changer Online Free",
+    "description": "Upload a photo and try 500+ haircuts and hair colors with the free AI hairstyle changer.",
     "tabs": {
       "text-to-image": "Style Description",
       "image-to-image": "Photo Upload"
@@ -334,7 +355,7 @@
       "select_provider": "Select AI Provider",
       "select_model": "Select Hairstyle Model",
       "prompt": "Hairstyle Description",
-      "prompt_placeholder": "Describe your desired hairstyle: length, color, texture, style (e.g., short bob, long wavy blonde hair, curly afro)",
+      "prompt_placeholder": "Describe your hairstyle: length, color, texture, style (e.g., short bob, long wavy blonde, textured crop, curly afro)",
       "reference_image": "Your Photo",
       "reference_image_placeholder": "Upload your photo for the best results",
       "some_images_failed_to_upload": "Some images failed to upload, please delete them and re-upload",

@@ -4,19 +4,14 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import { cn } from '@/shared/lib/utils';
-import { Section } from '@/shared/types/blocks/landing';
-
-interface CarouselImage {
-  light?: string;
-  dark?: string;
-  alt: string;
-}
+import { CarouselImage, Hero, Section } from '@/shared/types/blocks/landing';
 
 export function HeroBrowserPreview({ section }: { section: Section }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  const carouselImages = (section as any).carousel_images;
+  // Type-safe access to carousel_images from Hero interface
+  const carouselImages = (section as Hero).carousel_images;
   const images =
     carouselImages && carouselImages.length > 0
       ? carouselImages

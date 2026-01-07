@@ -1,11 +1,12 @@
 {
   "metadata": {
-    "title": "AI 发型转换器 - 改变您的造型",
-    "description": "使用 AI 更换发型。上传照片，即刻尝试不同发型，由我们的 AI 发型转换器驱动。"
+    "title": "免费AI发型转换器在线版 | 500+发型 | AI Barber",
+    "description": "免费在线试用AI发型转换器。上传照片，预览500+发型与发色，几秒内下载你的虚拟发型。",
+    "keywords": "AI发型转换器, 在线AI发型转换器, 免费AI发型转换器, 虚拟发型, 发型模拟器, 试发型, 虚拟剪发, 剪发模拟, 改变发色, 波波头, 精灵短发, 渐变, 寸头, 卷发, 男士发型, 女士发型, 儿童发型"
   },
   "page": {
-    "title": "免费在线AI发型转换器 - 尝试400+款发型 | AI Barber",
-    "description": "体验最好的免费在线AI发型转换器。上传照片，即刻尝试400+款发型。无需下载，新用户100%免费试用。",
+    "title": "免费AI发型转换器在线版 - 试用500+发型 | AI Barber",
+    "description": "使用免费AI发型转换器在线试用500+发型与发色。男士197款、女士240款、男童56款、女童85款。下载你的虚拟发型并分享给理发店或沙龙。",
     "show_sections": [
       "hero",
       "introduce",
@@ -21,9 +22,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "AI理发师的发型转换器",
+        "title": "免费AI发型转换器在线版",
         "highlight_text": "AI理发师",
-        "description": "拥抱发型设计的未来，使用最先进的AI发型转换器。上传您的照片，尝试为您量身定制的400多种时尚发型。",
+        "description": "使用免费AI发型转换器即可瞬间试用500+发型与发色。上传照片，预览男士、女士、男童、女童风格，并下载你的新造型。",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
           "alt": "AI Hairstyle Changer Interface",
@@ -44,9 +45,9 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "什么是AI Barber发型转换器？",
+        "title": "什么是AI Barber AI发型转换器应用？",
         "label": "简介",
-        "description": "AI Barber是一款尖端的虚拟发型工具，使用先进的人工智能帮助您找到完美造型，无需去理发店。",
+        "description": "AI Barber 是免费的AI发型转换器与剪发模拟器，可在你的照片上试剪发型、长度与发色，先预览再去理发店或沙龙。",
         "image": {
           "src": "/imgs/features/landingpage.png",
           "alt": "AI Barber Hairstyle Simulator"
@@ -54,22 +55,22 @@
         "items": [
           {
             "title": "虚拟试发型",
-            "description": "即刻尝试无数虚拟发型，包括平头、波波头、鲻鱼头和精灵短发等。",
+            "description": "几秒内试短发/中长发/长发，比如波波头、精灵短发、渐变、寸头和长层次。",
             "icon": "RiMagicLine"
           },
           {
             "title": "逼真的AI效果",
-            "description": "我们的AI发型转换器生成高度逼真的结果，尊重您的脸型和发质。",
+            "description": "人脸识别会结合发际线与光线，生成更自然的预览效果。",
             "icon": "RiCameraLensLine"
           },
           {
             "title": "发色转换器",
-            "description": "使用我们的发色滤镜，尝试从挑染到铜色和银色等不同发色。",
+            "description": "可先试黑、棕、金、铜、银、粉、蓝等发色再决定。",
             "icon": "RiPaletteLine"
           },
           {
             "title": "风格迁移",
-            "description": "使用我们的图像到图像技术，将明星或模特的风格直接迁移到您的照片上。",
+            "description": "用描述词复刻明星、K-pop 或秀场风格。",
             "icon": "RiExchangeLine"
           }
         ],
@@ -80,11 +81,11 @@
         "id": "benefits",
         "title": "为什么选择我们的AI发型转换器",
         "label": "优势",
-        "description": "通过我们安全、快速且用户友好的AI发型模拟器，探索无限可能。",
+        "description": "更快、更私密、更真实的预览，帮助你安心决定发型与发色。",
         "items": [
           {
             "title": "闪电般快速且100%在线",
-            "description": "几秒钟内转换您的发型。无需下载软件，无需等待数天才能看到结果。直接在浏览器中运行。",
+            "description": "一张照片即可生成多种造型，100%在线完成。",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
@@ -93,7 +94,7 @@
           },
           {
             "title": "隐私优先",
-            "description": "您的照片经过安全处理并自动删除。我们重视您的隐私，未经许可绝不使用您的图像进行训练。",
+            "description": "照片安全处理，不会被永久保存。",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
@@ -102,7 +103,7 @@
           },
           {
             "title": "专业品质",
-            "description": "获得沙龙级质量的可视化效果，帮助您准确地向理发师或造型师传达您的想法。",
+            "description": "下载高清预览图，方便与理发师或沙龙沟通。",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
@@ -115,7 +116,7 @@
         "block": "features-step",
         "id": "usage",
         "title": "如何使用AI发型转换器",
-        "description": "通过我们直观的界面，四个简单步骤即可获得新造型：",
+        "description": "四步获得真实发型预览：",
         "image": {
           "src": "/imgs/features/1.png",
           "alt": "AI Hairstyle Usage Guide"
@@ -124,8 +125,8 @@
         "text_align": "center",
         "items": [
           {
-            "title": "上传您的照片",
-            "description": "上传一张清晰的正面照片，以获得最佳转换效果。",
+            "title": "上传清晰照片",
+            "description": "正面、光线充足的照片效果更好。",
             "image": {
               "src": "/imgs/features/5.png",
               "alt": "Upload Photo"
@@ -133,23 +134,23 @@
           },
           {
             "title": "选择发型",
-            "description": "浏览我们的目录，从男士、女士或儿童等预设类别中选择发型。",
+            "description": "选择款式或类别，并决定短/中/长长度。",
             "image": {
               "src": "/imgs/features/6.png",
               "alt": "Select Hairstyle"
             }
           },
           {
-            "title": "描述您的造型",
-            "description": "输入您想要或想象中的发型描述，进一步自定义结果。",
+            "title": "补充细节",
+            "description": "填写长度、质地、颜色、刘海或渐变等信息。",
             "image": {
               "src": "/imgs/features/7.png",
               "alt": "Describe Hairstyle"
             }
           },
           {
-            "title": "生成并下载",
-            "description": "点击生成见证奇迹发生，然后下载您喜欢的新造型。",
+            "title": "生成并对比",
+            "description": "生成后下载，并将结果并排对比选择。",
             "image": {
               "src": "/imgs/features/8.png",
               "alt": "Generate and Download"
@@ -160,37 +161,37 @@
       },
       "features": {
         "id": "features",
-        "title": "AI Barber的核心功能",
-        "description": "完整虚拟改造所需的一切。",
+        "title": "AI发型转换器核心功能",
+        "description": "用于剪发、染发与对比的完整虚拟发型工作室。",
         "items": [
           {
-            "title": "200+时尚发型",
-            "description": "访问包含平头、油头、波波头、精灵短发等海量发型库。",
+            "title": "适合所有人的500+发型",
+            "description": "男士197款、女士240款、男童56款、女童85款，包含寸头、渐变、波波头、精灵短发等。",
             "icon": "RiScissorsCutLine"
           },
           {
             "title": "智能人脸检测",
-            "description": "自动检测脸型，确保发型完美贴合。",
+            "description": "智能人脸识别会根据发际线和脸部比例自动适配。",
             "icon": "RiWomenLine"
           },
           {
             "title": "发色实验",
-            "description": "尝试新发色，无需承担化学损伤风险。",
+            "description": "在去沙龙前先试试挑染、渐变挑染、铜色、铂金或亮色系。",
             "icon": "RiPaletteLine"
           },
           {
             "title": "高清下载",
-            "description": "下载清晰、高质量的图像，非常适合分享。",
+            "description": "保存高清结果，便于分享给理发师、造型师或朋友。",
             "icon": "RiHdLine"
           },
           {
             "title": "风格对比",
-            "description": "并排对比前后造型，做出最佳决定。",
+            "description": "多种发型并排对比，轻松选出最佳造型。",
             "icon": "RiCompareLine"
           },
           {
             "title": "移动友好",
-            "description": "随时随地在任何设备上使用AI Barber。为移动体验优化。",
+            "description": "支持手机与电脑，随时随地试发型。",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -259,16 +260,16 @@
       "faq": {
         "id": "faq",
         "title": "常见问题",
-        "description": "对我们的AI发型转换器有疑问？我们来解答。",
+        "description": "关于AI发型转换器的常见问题、照片技巧与最佳效果。",
         "tip": "找不到您要找的内容？联系我们的<a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>支持团队</a>",
         "items": [
           {
             "question": "这个AI发型转换器免费吗？",
-            "answer": "是的，AI Barber为新用户提供免费试用。您可以生成多种发型来体验我们工具的质量。"
+            "answer": "是的。你可以通过免费试用在线体验多种发型。"
           },
           {
             "question": "发型看起来真实吗？",
-            "answer": "我们先进的AI模型经过数百万张高质量图像训练，确保发型与您的原始照片自然融合，匹配光线和角度，呈现逼真效果。"
+            "answer": "AI会将发型自然融合到你的照片中，真实呈现剪裁、长度与颜色。"
           },
           {
             "question": "什么样的照片效果最好？",
@@ -276,22 +277,42 @@
           },
           {
             "question": "可以只改变发色吗？",
-            "answer": "可以！您可以使用我们的工具专门测试不同的发色，同时保持当前发型，或者同时改变发型和发色。"
+            "answer": "可以。可仅更换发色，或同时更换发型与发色并与沙龙分享结果。"
           },
           {
             "question": "适用于男性和女性吗？",
-            "answer": "当然。我们拥有丰富的男士发型目录（平头、寸头、渐变色等）和女士发型目录（波波头、层次、精灵短发等），以及儿童发型。"
+            "answer": "当然。提供500+发型：男士197款、女士240款、男童56款、女童85款。"
           },
           {
             "question": "我的照片数据安全吗？",
             "answer": "我们非常重视隐私。您上传的照片会经过安全处理用于生成目的，不会永久存储或与第三方共享。"
+          },
+          {
+            "question": "可以把AI发型给附近理发店或沙龙看吗？",
+            "answer": "可以。下载预览图并展示给理发师或造型师，方便复刻想要的造型。"
+          },
+          {
+            "question": "生成发型需要多长时间？",
+            "answer": "通常几秒钟即可完成，取决于图片大小和当前负载。"
+          },
+          {
+            "question": "可以试短发/中长发/长发吗？",
+            "answer": "可以。选择模板或在描述里写明长度。"
+          },
+          {
+            "question": "适合卷发或有纹理的头发吗？",
+            "answer": "可以。可尝试卷发、波浪、爆炸头等，照片越清晰效果越好。"
+          },
+          {
+            "question": "需要安装软件吗？",
+            "answer": "不需要，直接在浏览器中使用。"
           }
         ]
       },
       "cta": {
         "id": "cta",
         "title": "准备好换个新造型了吗？",
-        "description": "不要再猜测您的发型。今天就用AI Barber可视化您的完美发型。",
+        "description": "不要再猜测您的发型。今天就用AI Barber免费应用可视化您的完美发型，并展示给本地理发店或沙龙。",
         "buttons": [
           {
             "title": "立即开始变换",
@@ -305,8 +326,8 @@
     }
   },
   "generator": {
-    "title": "发型转换器",
-    "description": "上传照片，使用 AI 技术尝试不同发型。",
+    "title": "免费AI发型转换器在线版",
+    "description": "上传照片，使用免费AI发型转换器试用500+发型与发色。",
     "tabs": {
       "text-to-image": "风格描述",
       "image-to-image": "照片上传"
@@ -334,7 +355,7 @@
       "select_provider": "选择 AI 提供商",
       "select_model": "选择发型模型",
       "prompt": "发型描述",
-      "prompt_placeholder": "描述您想要的发型：长度、颜色、质地、风格（例如：短波波头、长卷金发、蓬松爆炸头）",
+      "prompt_placeholder": "描述你的发型：长度、颜色、质地、风格（例如：短波波头、长卷金发、纹理短发、卷曲爆炸头）",
       "reference_image": "您的照片",
       "reference_image_placeholder": "上传您的照片以获得最佳效果",
       "some_images_failed_to_upload": "部分图片上传失败，请删除后重新上传",

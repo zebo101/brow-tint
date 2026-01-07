@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "Cambiador de Peinados IA - Transforma tu Look",
-    "description": "Cambia tu peinado con IA. Sube tu foto y prueba diferentes peinados al instante con nuestro Cambiador de Peinados IA.",
-    "keywords": "cambiador de peinados ia, peinado virtual, corte de pelo ia, generador de peinados"
+    "title": "Cambiador de peinado IA gratis online | 500+ cortes | AI Barber",
+    "description": "Prueba el cambiador de peinado IA gratis online. Sube una foto, previsualiza 500+ cortes y colores, y descarga tu peinado virtual en segundos con AI Barber.",
+    "keywords": "cambiador de peinado ia, cambiador de peinado ia online, cambiador de peinado ia gratis, peinado virtual, simulador de peinados, probar peinados, corte virtual, simulador de cortes, cambio de color de pelo, corte bob, corte pixie, fade, buzz cut, peinados rizados, peinados de hombre, peinados de mujer, peinados infantiles"
   },
   "page": {
-    "title": "Simulador de Pelo IA Gratis Online - Prueba 400+ Peinados | AI Barber",
-    "description": "Experimenta el mejor simulador de pelo IA gratis online. Sube tu foto y prueba 400+ peinados al instante. Sin descarga, prueba 100% gratis para nuevos usuarios.",
+    "title": "Cambiador de peinado IA gratis online - 500+ cortes | AI Barber",
+    "description": "Usa el cambiador de peinado IA gratis online para probar 500+ cortes y colores en segundos. Hombres 197, Mujeres 240, Niños 56, Niñas 85. Descarga tu peinado virtual y compártelo con tu barbero o salón.",
     "show_sections": [
       "hero",
       "introduce",
@@ -22,9 +22,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Cambiador de Peinados del Barbero IA",
+        "title": "Cambiador de peinado IA gratis online",
         "highlight_text": "AI Barber",
-        "description": "Abraza el futuro del peinado con el más avanzado Cambiador de Peinados IA. Sube tu foto y prueba 400+ peinados de moda adaptados solo para ti.",
+        "description": "Prueba al instante 500+ cortes y colores con el cambiador de peinado IA gratis. Sube una foto, previsualiza estilos de hombres, mujeres, niños y niñas, y descarga tu nuevo look.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
           "alt": "AI Hairstyle Changer Interface",
@@ -45,9 +45,9 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "¿Qué es el Cambiador de Peinados AI Barber?",
+        "title": "¿Qué es la app de cambio de peinado IA de AI Barber?",
         "label": "Introducción",
-        "description": "AI Barber es una herramienta de peinado virtual de vanguardia que utiliza inteligencia artificial avanzada para ayudarte a encontrar tu look perfecto sin visitar un salón.",
+        "description": "AI Barber es un cambiador de peinado IA gratis y simulador de cortes que te permite probar cortes, largos y colores en tu propia foto antes de ir a la barbería o salón.",
         "image": {
           "src": "/imgs/features/landingpage.png",
           "alt": "AI Barber Hairstyle Simulator"
@@ -55,22 +55,22 @@
         "items": [
           {
             "title": "Prueba de Peinado Virtual",
-            "description": "Prueba innumerables peinados virtuales incluyendo corte rapado, Bob, Mullet y cortes Pixie al instante.",
+            "description": "Prueba estilos cortos, medios y largos como bob, pixie, degradados, buzz cut y capas largas en segundos.",
             "icon": "RiMagicLine"
           },
           {
             "title": "Resultados IA Realistas",
-            "description": "Nuestro Cambiador de Corte IA genera resultados altamente realistas que respetan la forma de tu cara y la textura del cabello.",
+            "description": "La IA tiene en cuenta el rostro y la luz para una vista previa natural.",
             "icon": "RiCameraLensLine"
           },
           {
             "title": "Cambiador de Color de Pelo",
-            "description": "Experimenta con diferentes colores de pelo desde Balayage hasta Cobre y Plata con nuestro filtro de color de pelo.",
+            "description": "Prueba negro, castaño, rubio, cobre, plata, rosa o azul antes de teñirte.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "Transferencia de Estilo",
-            "description": "Transfiere estilos de celebridades o modelos directamente a tu foto usando nuestra tecnología de imagen a imagen.",
+            "description": "Usa prompts para recrear looks de celebridades, K-pop o pasarela.",
             "icon": "RiExchangeLine"
           }
         ],
@@ -81,11 +81,11 @@
         "id": "benefits",
         "title": "Por qué elegir nuestro Cambiador de Peinados IA",
         "label": "Beneficios",
-        "description": "Explora infinitas posibilidades con nuestro simulador de pelo IA seguro, rápido y fácil de usar.",
+        "description": "Vistas previas rápidas, privadas y realistas para decidir corte y color con confianza.",
         "items": [
           {
             "title": "Rápido como el Rayo y 100% Online",
-            "description": "Transforma tu pelo en segundos. Sin software para descargar, sin esperar días por resultados. Funciona directamente en tu navegador.",
+            "description": "Genera varios looks desde una sola foto en segundos, 100% online.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
@@ -94,7 +94,7 @@
           },
           {
             "title": "Privacidad Primero",
-            "description": "Tus fotos se procesan de forma segura y se eliminan automáticamente. Valoramos tu privacidad y nunca usamos tus imágenes para entrenamiento sin permiso.",
+            "description": "Las fotos se procesan de forma segura y no se almacenan permanentemente.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
@@ -103,7 +103,7 @@
           },
           {
             "title": "Calidad Profesional",
-            "description": "Obtén visualizaciones con calidad de salón que te ayudan a comunicar exactamente lo que quieres a tu peluquero o estilista.",
+            "description": "Descarga una vista previa lista para enseñar en la barbería o salón.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
@@ -116,7 +116,7 @@
         "block": "features-step",
         "id": "usage",
         "title": "Cómo usar el Cambiador de Peinados IA",
-        "description": "Consigue tu nuevo look en tres sencillos pasos con nuestra interfaz intuitiva:",
+        "description": "Obtén una vista previa realista en cuatro pasos:",
         "image": {
           "src": "/imgs/features/1.png",
           "alt": "AI Hairstyle Usage Guide"
@@ -125,32 +125,32 @@
         "text_align": "center",
         "items": [
           {
-            "title": "Sube Tu Foto",
-            "description": "Sube una foto clara y frontal de ti mismo para los mejores resultados de transformación.",
+            "title": "Sube una foto clara",
+            "description": "Foto frontal con buena iluminación para mejores resultados.",
             "image": {
               "src": "/imgs/features/5.png",
               "alt": "Upload Photo"
             }
           },
           {
-            "title": "Selecciona Peinado",
-            "description": "Navega por nuestro catálogo y selecciona un peinado de categorías preestablecidas como Hombres, Mujeres o Niños.",
+            "title": "Elige un peinado",
+            "description": "Selecciona un estilo o categoría y decide el largo.",
             "image": {
               "src": "/imgs/features/6.png",
               "alt": "Select Hairstyle"
             }
           },
           {
-            "title": "Describe Tu Look",
-            "description": "Introduce una descripción de tu peinado deseado o imaginado para personalizar aún más el resultado.",
+            "title": "Añade detalles",
+            "description": "Indica largo, textura, color, flequillo o degradado.",
             "image": {
               "src": "/imgs/features/7.png",
               "alt": "Describe Hairstyle"
             }
           },
           {
-            "title": "Generar y Descargar",
-            "description": "Haz clic en generar para ver la magia y luego descarga tus nuevos looks favoritos.",
+            "title": "Genera y compara",
+            "description": "Genera, descarga y compara resultados lado a lado.",
             "image": {
               "src": "/imgs/features/8.png",
               "alt": "Generate and Download"
@@ -161,37 +161,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Características Clave de AI Barber",
-        "description": "Todo lo que necesitas para un cambio de imagen virtual completo.",
+        "title": "Funciones clave del cambiador de peinado IA",
+        "description": "Un estudio virtual completo para cortes, colores y comparaciones.",
         "items": [
           {
-            "title": "200+ Peinados de Moda",
-            "description": "Accede a una biblioteca masiva de peinados incluyendo corte rapado, Pompadour, Bob, Pixie y más.",
+            "title": "500+ cortes y peinados para todos",
+            "description": "Hombres 197, Mujeres 240, Niños 56, Niñas 85, desde buzz cut y degradado hasta bob y pixie.",
             "icon": "RiScissorsCutLine"
           },
           {
             "title": "Detección Facial Inteligente",
-            "description": "Detecta automáticamente la forma de la cara para asegurar que los peinados encajen perfectamente.",
+            "description": "La detección facial ajusta cada corte a tu línea de cabello y proporciones.",
             "icon": "RiWomenLine"
           },
           {
             "title": "Experimentación de Color",
-            "description": "Prueba nuevos colores de pelo sin el riesgo de daño químico.",
+            "description": "Prueba mechas, balayage, cobre, platino o colores intensos antes de ir al salón.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "Descargas en Alta Resolución",
-            "description": "Descarga imágenes claras y de alta calidad perfectas para compartir.",
+            "description": "Guarda resultados en alta resolución para compartir con tu barbero, estilista o amigos.",
             "icon": "RiHdLine"
           },
           {
             "title": "Comparación de Estilos",
-            "description": "Compara los looks de antes y después lado a lado para tomar la mejor decisión.",
+            "description": "Compara varios peinados lado a lado para elegir el mejor look.",
             "icon": "RiCompareLine"
           },
           {
             "title": "Compatible con Móviles",
-            "description": "Usa AI Barber en cualquier dispositivo, en cualquier lugar. Optimizado para experiencia móvil.",
+            "description": "Funciona en móvil y escritorio para probar estilos en cualquier lugar.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -260,16 +260,16 @@
       "faq": {
         "id": "faq",
         "title": "Preguntas Frecuentes",
-        "description": "¿Tienes preguntas sobre nuestro Cambiador de Peinados IA? Tenemos respuestas.",
+        "description": "FAQs sobre el cambiador de peinado IA, consejos de foto y mejores resultados.",
         "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
         "items": [
           {
             "question": "¿Es este Cambiador de Peinados IA gratis de usar?",
-            "answer": "Sí, AI Barber ofrece una prueba gratuita para nuevos usuarios para probar nuestro cambiador de peinados IA. Puedes generar varios peinados para ver la calidad de nuestra herramienta."
+            "answer": "Sí. Puedes probar el cambiador de peinado IA gratis online con una prueba para ver varios estilos."
           },
           {
             "question": "¿Qué tan realistas son los peinados?",
-            "answer": "Nuestros modelos avanzados de IA están entrenados en millones de imágenes de alta calidad para asegurar que los peinados se mezclen naturalmente con tu foto original, coincidiendo con la iluminación y ángulos para un look fotorrealista."
+            "answer": "La IA integra cada peinado en tu foto para un resultado realista de corte, largo y color."
           },
           {
             "question": "¿Qué tipo de fotos funcionan mejor?",
@@ -277,22 +277,42 @@
           },
           {
             "question": "¿Puedo cambiar solo el color de pelo?",
-            "answer": "¡Sí! Puedes usar nuestra herramienta para probar específicamente diferentes colores de pelo manteniendo tu estilo actual, o cambiar ambos estilo y color simultáneamente."
+            "answer": "Sí. Puedes cambiar solo el color o combinar corte y color y compartir el resultado con tu salón."
           },
           {
             "question": "¿Funciona para hombres y mujeres?",
-            "answer": "Absolutamente. Tenemos extensos catálogos para peinados de hombres (corte rapado, Crew cut, degradado, etc.) y peinados de mujeres (Bob, capas, Pixie, etc.), así como estilos para niños."
+            "answer": "Sí. Hay 500+ estilos: Hombres 197, Mujeres 240, Niños 56, Niñas 85."
           },
           {
             "question": "¿Están seguros mis datos de fotos?",
             "answer": "Tomamos la privacidad en serio. Tus fotos subidas se procesan de forma segura para el propósito de generación y no se almacenan permanentemente ni se comparten con terceros."
+          },
+          {
+            "question": "¿Puedo mostrar mi peinado IA a una barbería o salón cerca de mí?",
+            "answer": "Sí. Descarga la vista previa y muéstrala a tu barbero o estilista para lograr el look exacto."
+          },
+          {
+            "question": "¿Cuánto tarda en generar un peinado?",
+            "answer": "La mayoría de las vistas previas aparecen en segundos, según el tamaño de la imagen y la carga."
+          },
+          {
+            "question": "¿Puedo probar largos corto, medio o largo?",
+            "answer": "Sí. Elige una plantilla o describe el largo en el texto."
+          },
+          {
+            "question": "¿Funciona con cabello rizado o texturizado?",
+            "answer": "Sí. Prueba rizos, ondas o afro; las fotos claras dan mejores resultados."
+          },
+          {
+            "question": "¿Necesito instalar algo?",
+            "answer": "No. Funciona en el navegador, sin descargas."
           }
         ]
       },
       "cta": {
         "id": "cta",
         "title": "¿Listo para un Nuevo Look?",
-        "description": "No adivines con tu pelo. Visualiza tu peinado perfecto hoy con AI Barber.",
+        "description": "No adivines con tu pelo. Visualiza tu peinado perfecto con la app gratis de AI Barber y muéstralo a tu barbería o salón local.",
         "buttons": [
           {
             "title": "Empezar Transformación Ahora",
@@ -306,8 +326,8 @@
     }
   },
   "generator": {
-    "title": "Cambiador de Peinados",
-    "description": "Sube tu foto y prueba diferentes peinados con tecnología IA.",
+    "title": "Cambiador de peinado IA gratis online",
+    "description": "Sube una foto y prueba 500+ cortes y colores con el cambiador de peinado IA gratis.",
     "tabs": {
       "text-to-image": "Descripción del Estilo",
       "image-to-image": "Subir Foto"
@@ -335,7 +355,7 @@
       "select_provider": "Seleccionar Proveedor de IA",
       "select_model": "Seleccionar Modelo de Peinado",
       "prompt": "Descripción del Peinado",
-      "prompt_placeholder": "Describe tu peinado deseado: longitud, color, textura, estilo (ej: bob corto, cabello rubio largo ondulado, afro rizado)",
+      "prompt_placeholder": "Describe tu peinado: largo, color, textura, estilo (p. ej., bob corto, rubio ondulado largo, crop texturizado, afro rizado)",
       "reference_image": "Tu Foto",
       "reference_image_placeholder": "Sube tu foto para mejores resultados",
       "some_images_failed_to_upload": "Algunas imágenes no se pudieron subir, elimínalas y vuelve a subirlas",
@@ -382,18 +402,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
