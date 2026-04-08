@@ -8,6 +8,7 @@ import {
   Sparkles,
   User,
   Video,
+  X,
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
@@ -41,6 +42,12 @@ interface GeneratedVideo {
   model?: string;
   prompt?: string;
 }
+
+const EXAMPLE_VIDEO: GeneratedVideo = {
+  id: 'example-video',
+  url: '/video/v2.mp4',
+  prompt: 'Example hairstyle video',
+};
 
 interface BackendTask {
   id: string;
@@ -205,6 +212,7 @@ export function VideoGenerator({
     null
   );
   const [isMounted, setIsMounted] = useState(false);
+  const [showExampleVideo, setShowExampleVideo] = useState(true);
 
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
@@ -510,10 +518,11 @@ export function VideoGenerator({
 
     try {
       setDownloadingVideoId(video.id);
-      // fetch video via proxy
-      const resp = await fetch(
-        `/api/proxy/file?url=${encodeURIComponent(video.url)}`
-      );
+      const isLocalUrl = video.url.startsWith('/');
+      const fetchUrl = isLocalUrl
+        ? video.url
+        : `/api/proxy/file?url=${encodeURIComponent(video.url)}`;
+      const resp = await fetch(fetchUrl);
       if (!resp.ok) {
         throw new Error('Failed to fetch video');
       }
@@ -708,31 +717,69 @@ export function VideoGenerator({
                             className="h-auto w-full"
                             preload="metadata"
                           />
-
-                          <div className="absolute right-2 bottom-2 flex justify-end text-sm">
-                            <Button
-                              size="sm"
-                              variant="ghost"
-                              className="ml-auto text-[10px] sm:text-xs"
-                              onClick={() => handleDownloadVideo(video)}
-                              disabled={downloadingVideoId === video.id}
-                            >
-                              {downloadingVideoId === video.id ? (
-                                <>
-                                  <Loader2 className="h-4 w-4 animate-spin mr-1" />
-                                </>
-                              ) : (
-                                <>
-                                  <Download className="h-4 w-4 mr-1" />
-                                </>
-                              )}
-                              {/* Added label for consistency with image generator if needed, but keeping icon-only style if preferred by original code, though user asked for "same". The original only had icon. I will add text if it fits or keep icon. The original image generator has text. I will add text "Download" to make it "same". */}
-                              <span className="whitespace-nowrap">Download</span>
-                            </Button>
-                          </div>
+                        </div>
+                        <div className="grid grid-cols-1 gap-1.5">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            className="w-full justify-center text-xs px-2"
+                            onClick={() => handleDownloadVideo(video)}
+                            disabled={downloadingVideoId === video.id}
+                          >
+                            {downloadingVideoId === video.id ? (
+                              <Loader2 className="mr-1 h-3 w-3 flex-shrink-0 animate-spin" />
+                            ) : (
+                              <Download className="mr-1 h-3 w-3 flex-shrink-0" />
+                            )}
+                            <span className="text-[10px] whitespace-nowrap">
+                              Download Video
+                            </span>
+                          </Button>
                         </div>
                       </div>
                     ))}
+                  </div>
+                ) : showExampleVideo ? (
+                  <div className="space-y-3">
+                    <div className="relative overflow-hidden rounded-lg border">
+                      <video
+                        src={EXAMPLE_VIDEO.url}
+                        controls
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="h-auto w-full"
+                        preload="metadata"
+                      />
+                      <Button
+                        size="icon"
+                        variant="ghost"
+                        className="absolute right-2 top-2 h-5 w-5 rounded-full bg-black/50 text-white hover:bg-black/70"
+                        onClick={() => setShowExampleVideo(false)}
+                      >
+                        <X className="h-3 w-3" />
+                      </Button>
+                    </div>
+                    <div className="grid grid-cols-1 gap-1.5">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="w-full justify-center text-xs px-2"
+                        onClick={() => handleDownloadVideo(EXAMPLE_VIDEO)}
+                        disabled={downloadingVideoId === EXAMPLE_VIDEO.id}
+                      >
+                        {downloadingVideoId === EXAMPLE_VIDEO.id ? (
+                          <Loader2 className="mr-1 h-3 w-3 flex-shrink-0 animate-spin" />
+                        ) : (
+                          <Download className="mr-1 h-3 w-3 flex-shrink-0" />
+                        )}
+                        <span className="text-[10px] whitespace-nowrap">Download Video</span>
+                      </Button>
+                    </div>
+                    <p className="text-muted-foreground text-center text-xs">
+                      This is an example result. Your generated hairstyle video will appear here.
+                    </p>
                   </div>
                 ) : (
                   <div className="flex flex-col items-center justify-center py-16 text-center">
