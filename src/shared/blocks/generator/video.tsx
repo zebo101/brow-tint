@@ -193,7 +193,6 @@ export function VideoGenerator({
     ImageUploaderValue[]
   >([]);
   const [referenceImageUrls, setReferenceImageUrls] = useState<string[]>([]);
-  const [referenceVideoUrl, setReferenceVideoUrl] = useState<string>('');
   const [generatedVideos, setGeneratedVideos] = useState<GeneratedVideo[]>([]);
   const [isGenerating, setIsGenerating] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -217,9 +216,6 @@ export function VideoGenerator({
   const promptLength = prompt.trim().length;
   const remainingCredits = user?.credits?.remainingCredits ?? 0;
   const isPromptTooLong = promptLength > MAX_PROMPT_LENGTH;
-  const isTextToVideoMode = activeTab === 'text-to-video';
-  const isImageToVideoMode = activeTab === 'image-to-video';
-  const isVideoToVideoMode = activeTab === 'video-to-video';
 
   const taskStatusLabel = useMemo(() => {
     if (!taskStatus) {
@@ -423,23 +419,13 @@ export function VideoGenerator({
     }
 
     const trimmedPrompt = prompt.trim();
-    if (!trimmedPrompt && isTextToVideoMode) {
-      toast.error('Please enter a prompt before generating.');
-      return;
-    }
-
     if (!provider || !model) {
       toast.error('Provider or model is not configured correctly.');
       return;
     }
 
-    if (isImageToVideoMode && referenceImageUrls.length === 0) {
+    if (referenceImageUrls.length === 0) {
       toast.error('Please upload a reference image before generating.');
-      return;
-    }
-
-    if (isVideoToVideoMode && !referenceVideoUrl) {
-      toast.error('Please provide a reference video URL before generating.');
       return;
     }
 
@@ -453,13 +439,7 @@ export function VideoGenerator({
       const fullPrompt = buildVideoPrompt(activeTab, trimmedPrompt);
       const options: any = {};
 
-      if (isImageToVideoMode) {
-        options.image_input = referenceImageUrls;
-      }
-
-      if (isVideoToVideoMode) {
-        options.video_input = [referenceVideoUrl];
-      }
+      options.image_input = referenceImageUrls;
 
       const resp = await fetch('/api/ai/generate', {
         method: 'POST',
@@ -573,39 +553,22 @@ export function VideoGenerator({
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 pb-8">
-                {isImageToVideoMode && (
-                  <div className="space-y-4">
-                    <ImageUploader
-                      title={t('form.reference_image')}
-                      allowMultiple={true}
-                      maxImages={3}
-                      maxSizeMB={maxSizeMB}
-                      onChange={handleReferenceImagesChange}
-                      emptyHint={t('form.reference_image_placeholder')}
-                    />
+                <div className="space-y-4">
+                  <ImageUploader
+                    title={t('form.reference_image')}
+                    allowMultiple={true}
+                    maxImages={3}
+                    maxSizeMB={maxSizeMB}
+                    onChange={handleReferenceImagesChange}
+                    emptyHint={t('form.reference_image_placeholder')}
+                  />
 
-                    {hasReferenceUploadError && (
-                      <p className="text-destructive text-xs">
-                        {t('form.some_images_failed_to_upload')}
-                      </p>
-                    )}
-                  </div>
-                )}
-
-                {isVideoToVideoMode && (
-                  <div className="space-y-2">
-                    <Label htmlFor="video-url">
-                      {t('form.reference_video')}
-                    </Label>
-                    <Textarea
-                      id="video-url"
-                      value={referenceVideoUrl}
-                      onChange={(e) => setReferenceVideoUrl(e.target.value)}
-                      placeholder={t('form.reference_video_placeholder')}
-                      className="min-h-20"
-                    />
-                  </div>
-                )}
+                  {hasReferenceUploadError && (
+                    <p className="text-destructive text-xs">
+                      {t('form.some_images_failed_to_upload')}
+                    </p>
+                  )}
+                </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="video-prompt">{t('form.prompt')}</Label>
@@ -645,12 +608,10 @@ export function VideoGenerator({
                     onClick={handleGenerate}
                     disabled={
                       isGenerating ||
-                      (isTextToVideoMode && !prompt.trim()) ||
                       isPromptTooLong ||
                       isReferenceUploading ||
                       hasReferenceUploadError ||
-                      (isImageToVideoMode && referenceImageUrls.length === 0) ||
-                      (isVideoToVideoMode && !referenceVideoUrl)
+                      referenceImageUrls.length === 0
                     }
                   >
                     {isGenerating ? (
