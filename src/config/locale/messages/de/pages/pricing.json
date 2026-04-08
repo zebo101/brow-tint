@@ -32,7 +32,7 @@
             "description": "Starten Sie jederzeit nach Bedarf. Einmalige Zahlung",
             "features_title": "Beinhaltet",
             "features": [
-              "400 Credits, 1 Jahr gültig",
+              "120 Credits, 1 Jahr gültig",
               "Text-zu-Bild und Bild-zu-Bild Generierung",
               "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
               "Kostenloser Download generierter Bilder"
@@ -42,7 +42,7 @@
             "currency": "USD",
             "price": "$29.9",
             "original_price": "$39.9",
-            "unit": "/ 400 Credits",
+            "unit": "/ 120 Credits",
             "is_featured": false,
             "tip": "",
             "button": {
@@ -52,7 +52,7 @@
             },
             "product_id": "credits-package",
             "product_name": "Credits-Paket",
-            "credits": 400,
+            "credits": 120,
             "valid_days": 365,
             "group": "one-time"
           },
@@ -61,7 +61,7 @@
             "description": "Automatische monatliche Verlängerung für Credits. Jederzeit kündbar!",
             "features_title": "Beinhaltet",
             "features": [
-              "400 Credits, 1 Monat gültig",
+              "120 Credits, 1 Monat gültig",
               "Text-zu-Bild und Bild-zu-Bild Generierung",
               "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
               "Kostenloser Download generierter Bilder"
@@ -81,7 +81,7 @@
             },
             "product_id": "starter-monthly",
             "product_name": "Starter Plan",
-            "credits": 400,
+            "credits": 120,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "Starter"
@@ -91,7 +91,7 @@
             "description": "Ca. $19.2 / Monat, 23% Ersparnis vs. Monatsplan. Jederzeit kündbar!",
             "features_title": "Beinhaltet",
             "features": [
-              "4800 Credits, 1 Jahr gültig",
+              "1600 Credits, 1 Jahr gültig",
               "Text-zu-Bild und Bild-zu-Bild Generierung",
               "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
               "Kostenloser Download generierter Bilder"
@@ -111,7 +111,7 @@
             },
             "product_id": "premium-yearly",
             "product_name": "Premium Plan",
-            "credits": 4800,
+            "credits": 1600,
             "valid_days": 365,
             "group": "yearly",
             "plan_name": "Premium"
@@ -125,6 +125,7 @@
     "processing": "Wird verarbeitet"
   }
 }
+
 
 
 

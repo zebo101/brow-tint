@@ -15,6 +15,7 @@ export function LazyImage({
   fill,
   priority,
   sizes,
+  onLoad,
 }: {
   src: string;
   alt: string;
@@ -26,6 +27,7 @@ export function LazyImage({
   fill?: boolean;
   priority?: boolean;
   sizes?: string;
+  onLoad?: () => void;
 }) {
   return (
     <LazyLoadImage
@@ -36,6 +38,7 @@ export function LazyImage({
       effect="blur" // 支持 blur、opacity 等
       placeholderSrc={placeholderSrc} // 可选
       className={className}
+      afterLoad={onLoad}
     />
   );
 }

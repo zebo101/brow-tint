@@ -211,6 +211,7 @@ export function HeroBrowserPreview({ section }: { section: Section }) {
                       }
                       sizes="(max-width: 768px) 100vw, 1200px"
                       loading={idx === 0 ? 'eager' : 'lazy'}
+                      priority={idx === 0}
                       fetchPriority={idx === 0 ? 'high' : 'low'}
                       quality={60}
                       unoptimized={image.light.startsWith('http')}

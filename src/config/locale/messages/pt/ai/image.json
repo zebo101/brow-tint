@@ -49,7 +49,7 @@
         "label": "Introdução",
         "description": "A AI Barber é um trocador de penteado IA grátis e simulador de cortes que permite testar cortes, comprimentos e cores na sua própria foto antes de ir ao barbeiro ou salão.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/bg/image-bg4.png",
           "alt": "AI Barber Hairstyle Simulator"
         },
         "items": [
@@ -342,11 +342,10 @@
       "styles": "estilos"
     },
     "sidebar": {
-      "howtos": "Instruções",
+      "history": "Histórico",
       "discover": "Ver resultados",
-      "tour_title": "Guia de funções",
-      "tour_description": "Aprenda a usar o mudador de penteado",
-      "start_tour": "Iniciar guia"
+      "history_sign_in": "Entre para ver seu histórico de imagens geradas",
+      "history_empty": "Ainda não há imagens no histórico"
     },
     "form": {
       "select_hairstyle_placeholder": "Clique para selecionar penteado",
@@ -381,6 +380,11 @@
     "use_as_reference": "Usar como referência",
     "download_image": "Baixar imagem",
     "example_image_hint": "Este é um resultado de exemplo. Seu penteado gerado aparecerá aqui.",
+    "history_images": "Imagens do histórico",
+    "history_load_more": "Carregar mais",
+    "history_view_image": "Ver imagem do histórico",
+    "history_scroll_left": "Rolar para a esquerda",
+    "history_scroll_right": "Rolar para a direita",
     "photoGuidelines": {
       "title": "Diretrizes de fotos para melhores resultados",
       "suitableTitle": "Fotos adequadas",
@@ -402,3 +406,4 @@
     }
   }
 }
+

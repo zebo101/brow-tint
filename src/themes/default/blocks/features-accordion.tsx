@@ -18,17 +18,23 @@ export function FeaturesAccordion({
   section: Section;
   className?: string;
 }) {
-  const [activeItem, setActiveItem] = useState<string>('item-1');
+  const defaultItem = (section as any)?.default_item || 'item-1';
+  const [activeItem, setActiveItem] = useState<string>(defaultItem);
 
   const images: any = {};
   section.items?.forEach((item, idx) => {
     images[`item-${idx + 1}`] = {
       image: item.image?.src ?? '',
       alt: item.image?.alt || item.title || '',
+      width: item.image?.width || 1200,
+      height: item.image?.height || 800,
     };
   });
   const activeImage = images[activeItem]?.image;
   const activeAlt = images[activeItem]?.alt ?? '';
+  const activeWidth = images[activeItem]?.width ?? 1200;
+  const activeHeight = images[activeItem]?.height ?? 800;
+  const isVideo = typeof activeImage === 'string' && activeImage.endsWith('.mp4');
 
   return (
     // overflow-x-hidden to prevent horizontal scroll
@@ -71,23 +77,36 @@ export function FeaturesAccordion({
           </Accordion>
 
           {/* min-w-0/flex-shrink to prevent overflow */}
-          <div className="bg-background relative flex min-w-0 flex-shrink overflow-hidden rounded-3xl border p-2">
+          <div className="bg-background relative flex min-w-0 flex-shrink self-start overflow-hidden rounded-3xl border p-2">
             <div className="absolute inset-0 right-0 ml-auto w-15 border-l bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_8px)]"></div>
-            <div className="bg-background relative aspect-video w-full min-w-0 rounded-2xl">
+            <div className="bg-background relative w-full min-w-0 rounded-2xl">
               <div
                 key={`${activeItem}-id`}
-                className="relative size-full overflow-hidden rounded-2xl border shadow-md"
+                className="relative w-full overflow-hidden rounded-2xl border shadow-md"
               >
                 {activeImage ? (
-                  <Image
-                    src={activeImage}
-                    alt={activeAlt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 600px"
-                    className="object-contain object-center dark:mix-blend-normal"
-                  />
+                  isVideo ? (
+                    <video
+                      className="h-auto w-full object-contain object-center dark:mix-blend-normal"
+                      src={activeImage}
+                      autoPlay
+                      controls
+                      playsInline
+                      muted
+                      loop
+                    />
+                  ) : (
+                    <Image
+                      src={activeImage}
+                      alt={activeAlt}
+                      width={activeWidth}
+                      height={activeHeight}
+                      sizes="(max-width: 768px) 100vw, 600px"
+                      className="h-auto w-full object-contain object-center dark:mix-blend-normal"
+                    />
+                  )
                 ) : (
-                  <div className="h-full w-full bg-muted" aria-hidden />
+                  <div className="aspect-video w-full bg-muted" aria-hidden />
                 )}
               </div>
             </div>

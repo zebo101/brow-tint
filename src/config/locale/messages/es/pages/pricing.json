@@ -32,7 +32,7 @@
             "description": "Comienza cuando lo necesites. Pago único",
             "features_title": "Incluye",
             "features": [
-              "400 créditos, válidos por 1 año",
+              "120 créditos, válidos por 1 año",
               "Generación de texto a imagen e imagen a imagen",
               "Imágenes de alta calidad con modelo IA Nano Banana 2",
               "Descarga gratuita de imágenes generadas"
@@ -42,7 +42,7 @@
             "currency": "USD",
             "price": "$29.9",
             "original_price": "$39.9",
-            "unit": "/ 400 créditos",
+            "unit": "/ 120 créditos",
             "is_featured": false,
             "tip": "",
             "button": {
@@ -52,7 +52,7 @@
             },
             "product_id": "credits-package",
             "product_name": "Paquete de Créditos",
-            "credits": 400,
+            "credits": 120,
             "valid_days": 365,
             "group": "one-time"
           },
@@ -61,7 +61,7 @@
             "description": "Renovación automática mensual para obtener créditos. ¡Cancela en cualquier momento!",
             "features_title": "Incluye",
             "features": [
-              "400 créditos, válidos por 1 mes",
+              "120 créditos, válidos por 1 mes",
               "Generación de texto a imagen e imagen a imagen",
               "Imágenes de alta calidad con modelo IA Nano Banana 2",
               "Descarga gratuita de imágenes generadas"
@@ -81,7 +81,7 @@
             },
             "product_id": "starter-monthly",
             "product_name": "Plan Inicial",
-            "credits": 400,
+            "credits": 120,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "Inicial"
@@ -91,7 +91,7 @@
             "description": "Aprox. $19.2 / mes, ahorra 23% vs plan mensual. ¡Cancela en cualquier momento!",
             "features_title": "Incluye",
             "features": [
-              "4800 créditos, válidos por 1 año",
+              "1600 créditos, válidos por 1 año",
               "Generación de texto a imagen e imagen a imagen",
               "Imágenes de alta calidad con modelo IA Nano Banana 2",
               "Descarga gratuita de imágenes generadas"
@@ -111,7 +111,7 @@
             },
             "product_id": "premium-yearly",
             "product_name": "Plan Premium",
-            "credits": 4800,
+            "credits": 1600,
             "valid_days": 365,
             "group": "yearly",
             "plan_name": "Premium"
@@ -125,6 +125,7 @@
     "processing": "Procesando"
   }
 }
+
 
 
 

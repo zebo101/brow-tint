@@ -1,15 +1,341 @@
 {
   "metadata": {
-    "title": "Frisuren-Wechsler KI-Video",
-    "description": "Erstellen Sie Frisuren-Transformationsvideos mit KI. Sehen Sie Ihren neuen Look in Bewegung."
+    "title": "KI-Frisuren-Video | AI Barber",
+    "description": "Erstellen Sie KI-Frisuren-Transformationsvideos aus einem Foto. Probieren Sie neue Schnitte und Farben in Bewegung und laden Sie den Clip herunter.",
+    "keywords": "ki frisur video, frisuren wechsler video, haartransformation video, virtueller haarschnitt video, haarfarben wechsel video, animierte frisur, frisuren simulator video, vorher nachher haare, ki haar video generator"
   },
   "page": {
-    "title": "Frisuren-Wechsler KI-Video",
-    "description": "Erstellen Sie Frisuren-Transformationsvideos mit KI. Sehen Sie Ihren neuen Look in Bewegung."
+    "title": "KI-Frisuren-Video",
+    "description": "Verwandeln Sie ein Foto in ein KI-Frisuren-Video. Animieren Sie Schnitte und Farben, vergleichen Sie Vorher/Nachher und laden Sie den Clip herunter.",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "use_cases",
+      "features",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "KI-Frisuren-Video",
+        "highlight_text": "Frisuren-Video",
+        "description": "Erstellen Sie einen realistischen Transformations-Clip aus einem Foto.",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-video.png",
+          "alt": "KI-Frisuren-Video Vorschau",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-video-dark.png",
+          "alt": "KI-Frisuren-Video Vorschau Dunkel",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/video-bg.png",
+          "alt": "AI Barber Video Hintergrund"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "Was ist der Frisuren-Video-Generator?",
+        "label": "Einführung",
+        "description": "Aus einem Foto wird ein kurzes Video für Bewegung, Struktur und Farbe.",
+        "image": {
+          "src": "/imgs/bg/video-bg3.png",
+          "alt": "Frisuren-Video Einführung"
+        },
+        "items": [
+          {
+            "title": "Foto zu Video",
+            "description": "Ein Foto hochladen und Clip in Sekunden erhalten.",
+            "icon": "RiVideoLine"
+          },
+          {
+            "title": "Vorher & Nachher",
+            "description": "Original und neuer Look in einem Clip.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Farbe in Bewegung",
+            "description": "Blond, Kupfer oder Schwarz in Bewegung testen.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "Prompt-Steuerung",
+            "description": "Länge, Struktur und Winkel für Präzision beschreiben.",
+            "icon": "RiMagicLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Warum ein Frisuren-Video",
+        "label": "Vorteile",
+        "description": "Bewegte Vorschau erleichtert die Entscheidung.",
+        "items": [
+          {
+            "title": "Bewegung sehen",
+            "description": "Video zeigt, wie Stufen und Pony fallen.",
+            "icon": "RiVideoLine",
+            "image": {
+              "src": "/video/v1.mp4",
+              "alt": "Bewegung Vorschau"
+            }
+          },
+          {
+            "title": "Clip teilen",
+            "description": "Clip an Friseur oder Stylist senden.",
+            "icon": "RiShareLine",
+            "image": {
+              "src": "/video/v2.mp4",
+              "alt": "Clip teilen"
+            }
+          },
+          {
+            "title": "Schnell online",
+            "description": "Clip in Minuten aus einem Foto generieren.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/bg/video-bg2.png",
+              "alt": "Schnelle Generierung"
+            }
+          }
+        ],
+        "default_item": "item-1"
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "So erstellen Sie ein Frisuren-Video",
+        "description": "Clip in vier Schritten erstellen:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "Frisuren-Video Anleitung"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Foto hochladen",
+            "description": "Klares, frontales Foto verwenden.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Foto hochladen"
+            }
+          },
+          {
+            "title": "Stil wählen",
+            "description": "Vorlage wählen oder Schnitt und Farbe beschreiben.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Stil wählen"
+            }
+          },
+          {
+            "title": "Video generieren",
+            "description": "KI animiert die Transformation.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Video generieren"
+            }
+          },
+          {
+            "title": "Download & Teilen",
+            "description": "Clip speichern und im Salon zeigen.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Clip herunterladen"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Hauptfunktionen",
+        "description": "Prompts, Vorschau und HD-Download für Frisuren-Videos.",
+        "items": [
+          {
+            "title": "Foto-zu-Video",
+            "description": "Ein Bild in einen kurzen Clip verwandeln.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Stil-Prompts",
+            "description": "Länge, Struktur und Farbe angeben.",
+            "icon": "RiText"
+          },
+          {
+            "title": "Vorher/Nachher",
+            "description": "Alt und neu im selben Clip vergleichen.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "HD-Download",
+            "description": "Clip in guter Qualität speichern.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "Schnelles Rendering",
+            "description": "Videos schnell online erstellen.",
+            "icon": "RiSpeedLine"
+          },
+          {
+            "title": "Mobilfreundlich",
+            "description": "Funktioniert auf Handy und Desktop.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "Stimmen der Nutzer",
+        "description": "Kurze Clips machen die Salonauswahl klarer.",
+        "items": [
+          {
+            "name": "Ava Peterson",
+            "role": "Content Creator",
+            "quote": "Mit Bewegung war die Entscheidung leicht. Ich sah, wie die Stufen fallen.",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Ava Peterson"
+            }
+          },
+          {
+            "name": "Liam Torres",
+            "role": "Barber",
+            "quote": "Kunden schicken das Video und der Wunsch ist sofort klar.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Liam Torres"
+            }
+          },
+          {
+            "name": "Mia Chen",
+            "role": "Studentin",
+            "quote": "Kupfer vs. Blond in Bewegung hat mir schnell geholfen.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Mia Chen"
+            }
+          },
+          {
+            "name": "Noah Kim",
+            "role": "Fotograf",
+            "quote": "Der Clip zeigt Kunden, wie sich Haare in Bewegung verhalten.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "Noah Kim"
+            }
+          },
+          {
+            "name": "Sofia Alvarez",
+            "role": "Make-up-Artist",
+            "quote": "Ich nutze das Video mit Moodboards für ein klares Zielbild.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Sofia Alvarez"
+            }
+          },
+          {
+            "name": "Jordan Lee",
+            "role": "Stylist",
+            "quote": "Spart Zeit im Beratungsgespräch und reduziert Rückfragen.",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Jordan Lee"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "FAQ",
+        "description": "Antworten zu KI-Frisuren-Videos und Fotos.",
+        "tip": "Hilfe? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Support kontaktieren</a>",
+        "items": [
+          {
+            "question": "Was ist ein KI-Frisuren-Video?",
+            "answer": "Ein kurzer Clip aus Ihrem Foto, der einen neuen Schnitt oder Farbe zeigt."
+          },
+          {
+            "question": "Wie lang ist das Video?",
+            "answer": "Meist nur ein paar Sekunden und leicht zu teilen."
+          },
+          {
+            "question": "Kann ich eigene Prompts nutzen?",
+            "answer": "Ja. Beschreiben Sie Schnitt, Länge, Struktur und Farbe."
+          },
+          {
+            "question": "Welche Fotos funktionieren am besten?",
+            "answer": "Klare, frontale Fotos mit guter Beleuchtung."
+          },
+          {
+            "question": "Ist das Video downloadbar?",
+            "answer": "Ja. Clip herunterladen und dem Stylisten zeigen."
+          },
+          {
+            "question": "Brauche ich Editing-Skills?",
+            "answer": "Nein. Der Clip wird automatisch erstellt."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Frisuren-Video erstellen",
+        "description": "Kurzen Transformations-Clip erstellen und teilen.",
+        "buttons": [
+          {
+            "title": "Video starten",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "use_cases": {
+        "id": "use_cases",
+        "title": "Hochwertige Ergebnisse überall",
+        "description": "Für private und professionelle Anwendungen.",
+        "items": [
+          {
+            "title": "Virtuelle Try-Ons",
+            "description": "Ideal für Profilbilder, Try-ons oder Beauty-Portfolios.",
+            "icon": "RiUserLine"
+          },
+          {
+            "title": "Pro Visuals",
+            "description": "Headshots oder Fashion-Visuals mit individuellen Frisuren.",
+            "icon": "RiImageLine"
+          },
+          {
+            "title": "Konzeptkunst",
+            "description": "Charakterdesigns, Editorial-Looks oder digitale Modelle.",
+            "icon": "RiBrushLine"
+          },
+          {
+            "title": "Für Creator",
+            "description": "Für Stylisten, Content Creator und Look-Experimente.",
+            "icon": "RiSparkling2Line"
+          }
+        ]
+      }
+    }
   },
   "generator": {
-    "title": "Haar-Video-Generator",
-    "description": "Erstellen Sie animierte Frisuren-Transformationsvideos mit KI.",
+    "title": "KI-Frisuren-Video-Generator",
+    "description": "Erstellen Sie animierte Frisuren-Transformationsvideos aus Foto oder Prompt.",
     "tabs": {
       "text-to-video": "Stil beschreiben",
       "image-to-video": "Foto zu Video",
@@ -21,42 +347,27 @@
       "select_provider": "KI-Anbieter auswählen",
       "select_model": "Video-Modell auswählen",
       "prompt": "Frisuren-Beschreibung",
-      "prompt_placeholder": "Beschreiben Sie die Frisuren-Transformation: vom aktuellen zum gewünschten Look, Bewegung, Winkel",
+      "prompt_placeholder": "Beschreiben Sie die Frisurenänderung: Schnitt, Länge, Farbe, Struktur, Bewegung, Winkel (z. B. lang zu kurzem Bob, Blond zu Kupfer, sanfte Wellen).",
       "reference_image": "Ihr Foto",
-      "reference_image_placeholder": "Laden Sie Ihr Foto für die Video-Transformation hoch",
+      "reference_image_placeholder": "Laden Sie ein klares Foto für die besten Ergebnisse hoch.",
       "reference_video": "Referenz-Video-URL",
-      "reference_video_placeholder": "Geben Sie die URL eines Referenz-Frisuren-Videos ein",
+      "reference_video_placeholder": "Fügen Sie die URL eines Referenz-Frisurenvideos ein.",
       "some_images_failed_to_upload": "Bild konnte nicht hochgeladen werden, bitte löschen und erneut hochladen",
       "prompt_too_long": "Beschreibung ist zu lang, bitte kürzen"
     },
-    "generate": "Video generieren",
+    "generate": "Frisuren-Video generieren",
     "checking_account": "Konto wird überprüft...",
     "loading": "Laden...",
-    "generating": "Ihr Transformationsvideo wird erstellt...",
-    "sign_in_to_generate": "Anmelden, um Videos zu erstellen",
+    "generating": "Ihr Frisuren-Video wird erstellt...",
+    "sign_in_to_generate": "Anmelden, um Frisuren-Videos zu erstellen",
     "credits_cost": "Kostet {credits} Credits",
     "credits_remaining": "{credits} Credits verbleibend",
     "buy_credits": "Credits kaufen",
     "progress": "Fortschritt",
-    "generated_videos": "Ihr Transformationsvideo",
-    "ready_to_generate": "Bereit zum Erstellen",
-    "ready_for_generating": "Bereit für Erstellung",
-    "no_videos_generated": "Noch keine Videos erstellt"
+    "generated_videos": "Ihr Frisuren-Video",
+    "ready_to_generate": "Bereit zur Video-Erstellung",
+    "ready_for_generating": "Bereit für die Video-Erstellung",
+    "no_videos_generated": "Noch keine Frisuren-Videos"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

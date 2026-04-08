@@ -304,6 +304,11 @@ export class ReplicateProvider implements AIProvider {
       delete input.hairstyle_image;
     }
 
+    // negative_prompt: pass as a dedicated API parameter (not mixed into prompt text)
+    if (options.negative_prompt) {
+      input.negative_prompt = options.negative_prompt;
+    }
+
     // duration transform
     if (options.duration) {
       if (['openai/sora-2'].includes(model)) {

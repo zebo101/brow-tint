@@ -1,15 +1,341 @@
 {
   "metadata": {
-    "title": "Video Cambia Acconciatura IA",
-    "description": "Crea video di trasformazione acconciature con IA. Vedi il tuo nuovo look in movimento."
+    "title": "Video acconciatura IA | AI Barber",
+    "description": "Crea video di trasformazione acconciatura con IA da una foto. Prova tagli e colori in movimento e scarica il clip.",
+    "keywords": "video acconciatura ia, video cambia acconciatura, video trasformazione capelli, taglio virtuale video, cambio colore capelli video, acconciatura animata, simulatore acconciature video, prima e dopo capelli, generatore video acconciatura ia"
   },
   "page": {
-    "title": "Video Cambia Acconciatura IA",
-    "description": "Crea video di trasformazione acconciature con IA. Vedi il tuo nuovo look in movimento."
+    "title": "Video acconciatura IA",
+    "description": "Trasforma una foto in un video acconciatura IA. Anima tagli e colori, confronta prima/dopo e scarica il clip.",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "use_cases",
+      "features",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Video acconciatura IA",
+        "highlight_text": "Video acconciatura",
+        "description": "Crea un clip realistico di trasformazione da una sola foto.",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-video.png",
+          "alt": "Anteprima video acconciatura IA",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-video-dark.png",
+          "alt": "Anteprima video acconciatura IA scuro",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/video-bg.png",
+          "alt": "Sfondo video AI Barber"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "Cos'è il generatore di video acconciatura IA?",
+        "label": "Introduzione",
+        "description": "Trasforma una foto in un video breve per vedere movimento, texture e colore.",
+        "image": {
+          "src": "/imgs/bg/video-bg3.png",
+          "alt": "Introduzione video acconciatura IA"
+        },
+        "items": [
+          {
+            "title": "Foto in video",
+            "description": "Carica una foto e ottieni un clip in pochi secondi.",
+            "icon": "RiVideoLine"
+          },
+          {
+            "title": "Prima e dopo",
+            "description": "Mostra look originale e nuovo nello stesso clip.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Colore in movimento",
+            "description": "Anteprima di biondo, rame o nero con movimento naturale.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "Controllo prompt",
+            "description": "Descrivi lunghezza, texture e angoli per precisione.",
+            "icon": "RiMagicLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Perché creare un video acconciatura",
+        "label": "Vantaggi",
+        "description": "Un'anteprima in movimento facilita la decisione.",
+        "items": [
+          {
+            "title": "Vedi movimento",
+            "description": "Il video mostra strati e frangia in azione.",
+            "icon": "RiVideoLine",
+            "image": {
+              "src": "/video/v1.mp4",
+              "alt": "Movimento capelli"
+            }
+          },
+          {
+            "title": "Clip condivisibile",
+            "description": "Invia il clip a barbiere o stylist.",
+            "icon": "RiShareLine",
+            "image": {
+              "src": "/video/v2.mp4",
+              "alt": "Condividi clip"
+            }
+          },
+          {
+            "title": "Veloce online",
+            "description": "Genera il clip in pochi minuti da una foto.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/bg/video-bg2.png",
+              "alt": "Generazione rapida"
+            }
+          }
+        ],
+        "default_item": "item-1"
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "Come creare un video acconciatura",
+        "description": "Crea il clip in quattro passaggi:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "Guida video acconciatura"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Carica una foto",
+            "description": "Usa una foto frontale e ben illuminata.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Carica foto"
+            }
+          },
+          {
+            "title": "Scegli uno stile",
+            "description": "Seleziona un template o descrivi taglio e colore.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Scegli stile"
+            }
+          },
+          {
+            "title": "Genera il video",
+            "description": "L'IA anima la trasformazione.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Genera video"
+            }
+          },
+          {
+            "title": "Scarica e condividi",
+            "description": "Salva il clip e mostrala in salone.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Scarica video"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Funzioni chiave",
+        "description": "Prompt, anteprima e download HD per video acconciatura.",
+        "items": [
+          {
+            "title": "Foto in video",
+            "description": "Trasforma un'immagine in un clip breve.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Prompt di stile",
+            "description": "Indica lunghezza, texture e colore.",
+            "icon": "RiText"
+          },
+          {
+            "title": "Prima/Dopo",
+            "description": "Confronta look originale e nuovo in un clip.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Download HD",
+            "description": "Salva il clip in buona qualità.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "Rendering rapido",
+            "description": "Crea video velocemente online.",
+            "icon": "RiSpeedLine"
+          },
+          {
+            "title": "Mobile friendly",
+            "description": "Funziona su mobile e desktop.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "Cosa dicono gli utenti",
+        "description": "Clip brevi rendono più chiara la scelta in salone.",
+        "items": [
+          {
+            "name": "Ava Peterson",
+            "role": "Content Creator",
+            "quote": "Il movimento ha reso la scelta facile. Ho visto come cadono gli strati.",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Ava Peterson"
+            }
+          },
+          {
+            "name": "Liam Torres",
+            "role": "Barbiere",
+            "quote": "I clienti inviano il video e so subito il taglio desiderato.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Liam Torres"
+            }
+          },
+          {
+            "name": "Mia Chen",
+            "role": "Studentessa",
+            "quote": "Ho confrontato rame vs. biondo in movimento e ho deciso subito.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Mia Chen"
+            }
+          },
+          {
+            "name": "Noah Kim",
+            "role": "Fotografo",
+            "quote": "Il clip aiuta a vedere il movimento dei capelli in camera.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "Noah Kim"
+            }
+          },
+          {
+            "name": "Sofia Alvarez",
+            "role": "Make-up artist",
+            "quote": "Lo abbino ai moodboard per allineare il look finale.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Sofia Alvarez"
+            }
+          },
+          {
+            "name": "Jordan Lee",
+            "role": "Stylist",
+            "quote": "Fa risparmiare tempo in consulenza e riduce i passaggi.",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Jordan Lee"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "FAQ",
+        "description": "Risposte sui video acconciatura IA e foto consigliate.",
+        "tip": "Hai bisogno di aiuto? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Contatta il supporto</a>",
+        "items": [
+          {
+            "question": "Cos'è un video acconciatura IA?",
+            "answer": "Un clip breve generato dalla tua foto che mostra un nuovo taglio o colore."
+          },
+          {
+            "question": "Quanto dura il video?",
+            "answer": "Di solito pochi secondi ed è facile da condividere."
+          },
+          {
+            "question": "Posso usare il mio prompt?",
+            "answer": "Sì. Descrivi taglio, lunghezza, texture e colore."
+          },
+          {
+            "question": "Quali foto funzionano meglio?",
+            "answer": "Foto frontali, nitide e ben illuminate."
+          },
+          {
+            "question": "Il video è scaricabile?",
+            "answer": "Sì. Scarica il clip e condividilo con lo stylist."
+          },
+          {
+            "question": "Servono competenze di editing?",
+            "answer": "No. Il clip viene generato automaticamente."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Crea il tuo video acconciatura",
+        "description": "Genera un clip di trasformazione e condividilo con il tuo stylist.",
+        "buttons": [
+          {
+            "title": "Inizia video",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "use_cases": {
+        "id": "use_cases",
+        "title": "Risultati di alta qualità ovunque",
+        "description": "Per uso personale e professionale.",
+        "items": [
+          {
+            "title": "Try-on virtuali",
+            "description": "Ideale per foto profilo, prove o portfolio beauty.",
+            "icon": "RiUserLine"
+          },
+          {
+            "title": "Visual pro",
+            "description": "Crea headshot o visual fashion con acconciature personalizzate.",
+            "icon": "RiImageLine"
+          },
+          {
+            "title": "Concept art",
+            "description": "Progetta personaggi, look editoriali o modelli digitali.",
+            "icon": "RiBrushLine"
+          },
+          {
+            "title": "Per creator",
+            "description": "Perfetto per stylist, creator e chi esplora nuovi look.",
+            "icon": "RiSparkling2Line"
+          }
+        ]
+      }
+    }
   },
   "generator": {
-    "title": "Generatore Video Capelli",
-    "description": "Crea video animati di trasformazione acconciature con IA.",
+    "title": "Generatore video acconciatura IA",
+    "description": "Crea video animati di trasformazione acconciatura da foto o prompt.",
     "tabs": {
       "text-to-video": "Descrivi Stile",
       "image-to-video": "Foto a Video",
@@ -21,42 +347,27 @@
       "select_provider": "Seleziona Provider IA",
       "select_model": "Seleziona Modello Video",
       "prompt": "Descrizione Acconciatura",
-      "prompt_placeholder": "Descrivi la trasformazione dell'acconciatura: dal look attuale a quello desiderato, movimento, angoli",
+      "prompt_placeholder": "Descrivi il cambiamento: taglio, lunghezza, colore, texture, movimento, angoli (es. da lungo a bob corto, da biondo a rame, onde morbide).",
       "reference_image": "La Tua Foto",
-      "reference_image_placeholder": "Carica la tua foto per trasformazione video",
+      "reference_image_placeholder": "Carica una foto nitida per risultati migliori.",
       "reference_video": "URL Video di Riferimento",
-      "reference_video_placeholder": "Inserisci l'URL di un video acconciatura di riferimento",
+      "reference_video_placeholder": "Incolla l'URL di un video di acconciatura di riferimento.",
       "some_images_failed_to_upload": "Impossibile caricare immagine, elimina e ricarica",
       "prompt_too_long": "La descrizione è troppo lunga, accorciala"
     },
-    "generate": "Genera Video",
+    "generate": "Genera video acconciatura",
     "checking_account": "Verifica account...",
     "loading": "Caricamento...",
-    "generating": "Creazione del tuo video di trasformazione...",
-    "sign_in_to_generate": "Accedi per creare video",
+    "generating": "Creazione del tuo video acconciatura...",
+    "sign_in_to_generate": "Accedi per creare video acconciatura",
     "credits_cost": "Costa {credits} crediti",
     "credits_remaining": "{credits} crediti rimanenti",
     "buy_credits": "Acquista Crediti",
     "progress": "Progresso",
-    "generated_videos": "Il Tuo Video di Trasformazione",
-    "ready_to_generate": "Pronto per Creare",
-    "ready_for_generating": "Pronto per Creazione",
-    "no_videos_generated": "Nessun video ancora creato"
+    "generated_videos": "Il tuo video acconciatura",
+    "ready_to_generate": "Pronto per creare il video",
+    "ready_for_generating": "Pronto per la creazione del video",
+    "no_videos_generated": "Nessun video acconciatura ancora"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

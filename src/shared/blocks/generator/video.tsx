@@ -25,14 +25,8 @@ import {
 import { Label } from '@/shared/components/ui/label';
 import { Progress } from '@/shared/components/ui/progress';
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/shared/components/ui/select';
-import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
-import { Textarea } from '@/shared/components/ui/textarea';
+  Textarea,
+} from '@/shared/components/ui/textarea';
 import { useAppContext } from '@/shared/contexts/app';
 
 interface VideoGeneratorProps {
@@ -64,72 +58,53 @@ const POLL_INTERVAL = 15000;
 const GENERATION_TIMEOUT = 600000; // 10 minutes for video
 const MAX_PROMPT_LENGTH = 2000;
 
-const textToVideoCredits = 6;
-const imageToVideoCredits = 8;
-const videoToVideoCredits = 10;
+const imageToVideoCredits = 15;
+const FIXED_PROVIDER = 'replicate';
+const FIXED_MODEL = 'google/veo-3.1';
+const VIDEO_SYSTEM_PROMPT = [
+  'Portrait photo with a requested hairstyle transformation,',
+  '',
+  'professional hairstyle photography, natural lighting,',
+  '',
+  'high quality, detailed hair texture, same face identity,',
+  '',
+  'slow smooth 360 degree rotation around the subject,',
+  '',
+  'cinematic camera movement, portrait video,',
+  '',
+  'professional studio lighting, seamless loop.',
+].join('\n');
 
-const MODEL_OPTIONS = [
-  // Kie models
-  {
-    value: 'sora-2-pro-image-to-video',
-    label: 'Sora 2 Pro',
-    provider: 'kie',
-    scenes: ['image-to-video'],
-  },
-  {
-    value: 'sora-2-pro-text-to-video',
-    label: 'Sora 2 Pro',
-    provider: 'kie',
-    scenes: ['text-to-video'],
-  },
-  // Replicate models
-  {
-    value: 'google/veo-3.1',
-    label: 'Veo 3.1',
-    provider: 'replicate',
-    scenes: ['text-to-video', 'image-to-video'],
-  },
-  {
-    value: 'openai/sora-2',
-    label: 'Sora 2',
-    provider: 'replicate',
-    scenes: ['text-to-video', 'image-to-video'],
-  },
-  // Fal models
-  {
-    value: 'fal-ai/veo3',
-    label: 'Veo 3',
-    provider: 'fal',
-    scenes: ['text-to-video'],
-  },
-  {
-    value: 'fal-ai/wan-pro/image-to-video',
-    label: 'Wan Pro',
-    provider: 'fal',
-    scenes: ['image-to-video'],
-  },
-  {
-    value: 'fal-ai/kling-video/o1/video-to-video/edit',
-    label: 'Kling Video O1',
-    provider: 'fal',
-    scenes: ['video-to-video'],
-  },
-];
+const IMAGE_TO_VIDEO_HAIRSTYLE_PROMPT = [
+  'Use the uploaded portrait photo as the identity reference.',
+  '',
+  'Create a clean studio-style hairstyle showcase video of the same person. Preserve the same face, age, skin tone, facial features, expression, and overall identity. Change only the hairstyle and hair color requested by the user.',
+  '',
+  'Framing: centered head-and-shoulders beauty portrait, eye-level camera, single subject only, subject fills most of the frame, clean simple studio background, no full body, no hands in frame, no extra people, no distracting background elements.',
+  '',
+  'Motion: very slow, smooth, continuous full 360-degree rotation around the subject. Start from the front view, move through left side, back, right side, and return to the front view by the end of the video. Keep the subject centered and the composition stable throughout. The rotation must complete a full circle, not a partial turn. No fast movement, no sudden motion, no shaky camera, no abrupt stops, no incomplete 180-degree turn.',
+  '',
+  'Hair presentation: prioritize hairstyle visibility during the entire rotation. Clearly show the hairline, fringe, temples, side silhouette, crown volume, back shape, layers, curls, bangs, ends, and face-framing sections. Show soft natural hair movement with realistic strand detail, realistic shine, and believable texture. Make the hairstyle easy to evaluate for a real haircut decision.',
+  '',
+  'Lighting: soft professional studio beauty lighting, even exposure, realistic shadows, clean separation from the background, polished portrait look, highly detailed hair texture.',
+  '',
+  'Video style: premium beauty portrait video, realistic, elegant, clean, natural motion, one continuous seamless shot, no scene cuts, no transition effects, no morphing, no identity drift, no facial distortion, no accessories change, no clothing change.',
+].join('\n');
 
-const PROVIDER_OPTIONS = [
-  {
-    value: 'kie',
-    label: 'Kie',
-  },
-  {
-    value: 'replicate',
-    label: 'Replicate',
-  },
-  {
-    value: 'fal',
-    label: 'Fal',
-  },
-];
+function buildVideoPrompt(
+  scene: VideoGeneratorTab,
+  trimmedPrompt: string
+): string {
+  if (scene === 'image-to-video') {
+    return trimmedPrompt
+      ? `${IMAGE_TO_VIDEO_HAIRSTYLE_PROMPT}\n\nRequested hairstyle change: ${trimmedPrompt}`
+      : IMAGE_TO_VIDEO_HAIRSTYLE_PROMPT;
+  }
+
+  return trimmedPrompt
+    ? `${trimmedPrompt}\n\n${VIDEO_SYSTEM_PROMPT}`
+    : VIDEO_SYSTEM_PROMPT;
+}
 
 function parseTaskResult(taskResult: string | null): any {
   if (!taskResult) {
@@ -209,12 +184,10 @@ export function VideoGenerator({
 }: VideoGeneratorProps) {
   const t = useTranslations('ai.video.generator');
 
-  const [activeTab, setActiveTab] =
-    useState<VideoGeneratorTab>('text-to-video');
-
-  const [costCredits, setCostCredits] = useState<number>(textToVideoCredits);
-  const [provider, setProvider] = useState(PROVIDER_OPTIONS[0]?.value ?? '');
-  const [model, setModel] = useState(MODEL_OPTIONS[0]?.value ?? '');
+  const activeTab: VideoGeneratorTab = 'image-to-video';
+  const costCredits = imageToVideoCredits;
+  const provider = FIXED_PROVIDER;
+  const model = FIXED_MODEL;
   const [prompt, setPrompt] = useState('');
   const [referenceImageItems, setReferenceImageItems] = useState<
     ImageUploaderValue[]
@@ -247,43 +220,6 @@ export function VideoGenerator({
   const isTextToVideoMode = activeTab === 'text-to-video';
   const isImageToVideoMode = activeTab === 'image-to-video';
   const isVideoToVideoMode = activeTab === 'video-to-video';
-
-  const handleTabChange = (value: string) => {
-    const tab = value as VideoGeneratorTab;
-    setActiveTab(tab);
-
-    const availableModels = MODEL_OPTIONS.filter(
-      (option) => option.scenes.includes(tab) && option.provider === provider
-    );
-
-    if (availableModels.length > 0) {
-      setModel(availableModels[0].value);
-    } else {
-      setModel('');
-    }
-
-    if (tab === 'text-to-video') {
-      setCostCredits(textToVideoCredits);
-    } else if (tab === 'image-to-video') {
-      setCostCredits(imageToVideoCredits);
-    } else if (tab === 'video-to-video') {
-      setCostCredits(videoToVideoCredits);
-    }
-  };
-
-  const handleProviderChange = (value: string) => {
-    setProvider(value);
-
-    const availableModels = MODEL_OPTIONS.filter(
-      (option) => option.scenes.includes(activeTab) && option.provider === value
-    );
-
-    if (availableModels.length > 0) {
-      setModel(availableModels[0].value);
-    } else {
-      setModel('');
-    }
-  };
 
   const taskStatusLabel = useMemo(() => {
     if (!taskStatus) {
@@ -514,6 +450,7 @@ export function VideoGenerator({
     setGenerationStartTime(Date.now());
 
     try {
+      const fullPrompt = buildVideoPrompt(activeTab, trimmedPrompt);
       const options: any = {};
 
       if (isImageToVideoMode) {
@@ -534,7 +471,7 @@ export function VideoGenerator({
           scene: activeTab,
           provider,
           model,
-          prompt: trimmedPrompt,
+          prompt: fullPrompt,
           options,
         }),
       });
@@ -628,7 +565,7 @@ export function VideoGenerator({
       <div className="container px-4">
         <div className="mx-auto max-w-[1440px]">
           <div className="grid grid-cols-1 gap-6 lg:gap-10 lg:justify-center lg:grid-cols-[minmax(400px,500px)_380px] items-stretch">
-            <Card className="rounded-3xl border-border/40 bg-card/60 shadow-xl backdrop-blur-xl transition-all duration-300">
+            <Card className="rounded-3xl border-border/40 bg-card/40 shadow-xl backdrop-blur-xl transition-all duration-300">
               <CardHeader>
                 {srOnlyTitle && <h2 className="sr-only">{srOnlyTitle}</h2>}
                 <CardTitle className="flex items-center gap-2 text-xl font-semibold">
@@ -636,61 +573,6 @@ export function VideoGenerator({
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 pb-8">
-                <Tabs value={activeTab} onValueChange={handleTabChange}>
-                  <TabsList className="bg-primary/10 grid w-full grid-cols-3">
-                    <TabsTrigger value="text-to-video" className="text-[10px] sm:text-xs px-1">
-                      {t('tabs.text-to-video')}
-                    </TabsTrigger>
-                    <TabsTrigger value="image-to-video" className="text-[10px] sm:text-xs px-1">
-                      {t('tabs.image-to-video')}
-                    </TabsTrigger>
-                    <TabsTrigger value="video-to-video" className="text-[10px] sm:text-xs px-1">
-                      {t('tabs.video-to-video')}
-                    </TabsTrigger>
-                  </TabsList>
-                </Tabs>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label>{t('form.provider')}</Label>
-                    <Select
-                      value={provider}
-                      onValueChange={handleProviderChange}
-                    >
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder={t('form.select_provider')} />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {PROVIDER_OPTIONS.map((option) => (
-                          <SelectItem key={option.value} value={option.value}>
-                            {option.label}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label>{t('form.model')}</Label>
-                    <Select value={model} onValueChange={setModel}>
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder={t('form.select_model')} />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {MODEL_OPTIONS.filter(
-                          (option) =>
-                            option.scenes.includes(activeTab) &&
-                            option.provider === provider
-                        ).map((option) => (
-                          <SelectItem key={option.value} value={option.value}>
-                            {option.label}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-
                 {isImageToVideoMode && (
                   <div className="space-y-4">
                     <ImageUploader
@@ -846,7 +728,7 @@ export function VideoGenerator({
               </CardContent>
             </Card>
 
-            <Card className="rounded-3xl border-border/40 bg-card/60 shadow-xl backdrop-blur-xl transition-all duration-300">
+            <Card className="rounded-3xl border-border/40 bg-card/40 shadow-xl backdrop-blur-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-xl font-semibold">
                   <Video className="h-5 w-5" />

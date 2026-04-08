@@ -56,7 +56,7 @@ export async function POST(request: Request) {
       if (scene === 'text-to-video') {
         costCredits = 6;
       } else if (scene === 'image-to-video') {
-        costCredits = 8;
+        costCredits = 15;
       } else if (scene === 'video-to-video') {
         costCredits = 10;
       } else {

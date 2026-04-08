@@ -49,7 +49,7 @@
         "label": "Introduction",
         "description": "AI Barber is a free AI hairstyle changer and virtual haircut simulator that lets you test cuts, lengths, and colors on your own photo before visiting a barber or salon.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/bg/image-bg4.png",
           "alt": "AI Barber Hairstyle Simulator"
         },
         "items": [
@@ -342,11 +342,10 @@
       "styles": "styles"
     },
     "sidebar": {
-      "howtos": "How-tos",
+      "history": "History",
       "discover": "Discover",
-      "tour_title": "Tour the editor",
-      "tour_description": "Learn how to use the hairstyle changer",
-      "start_tour": "Start Tour"
+      "history_sign_in": "Sign in to view your generated image history",
+      "history_empty": "No history images yet"
     },
     "form": {
       "select_hairstyle_placeholder": "Click to select hairstyle style",
@@ -381,6 +380,11 @@
     "use_as_reference": "Use as Reference",
     "download_image": "Download Image",
     "example_image_hint": "This is an example result. Your generated hairstyle will appear here.",
+    "history_images": "History Images",
+    "history_load_more": "Load more",
+    "history_view_image": "View history image",
+    "history_scroll_left": "Scroll left",
+    "history_scroll_right": "Scroll right",
     "photoGuidelines": {
       "title": "Photo Guidelines for Best Results",
       "suitableTitle": "Suitable Photos",

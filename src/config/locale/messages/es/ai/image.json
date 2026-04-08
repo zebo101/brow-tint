@@ -49,7 +49,7 @@
         "label": "Introducción",
         "description": "AI Barber es un cambiador de peinado IA gratis y simulador de cortes que te permite probar cortes, largos y colores en tu propia foto antes de ir a la barbería o salón.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/bg/image-bg4.png",
           "alt": "AI Barber Hairstyle Simulator"
         },
         "items": [
@@ -342,11 +342,10 @@
       "styles": "estilos"
     },
     "sidebar": {
-      "howtos": "Instrucciones",
+      "history": "Historial",
       "discover": "Ver resultados",
-      "tour_title": "Guía de funciones",
-      "tour_description": "Aprende a usar el cambiador de peinados",
-      "start_tour": "Iniciar guía"
+      "history_sign_in": "Inicia sesión para ver tu historial de imágenes generadas",
+      "history_empty": "Aún no hay imágenes en el historial"
     },
     "form": {
       "select_hairstyle_placeholder": "Haz clic para seleccionar peinado",
@@ -381,6 +380,11 @@
     "use_as_reference": "Usar como referencia",
     "download_image": "Descargar imagen",
     "example_image_hint": "Este es un resultado de ejemplo. Su peinado generado aparecerá aquí.",
+    "history_images": "Imágenes del historial",
+    "history_load_more": "Cargar más",
+    "history_view_image": "Ver imagen del historial",
+    "history_scroll_left": "Desplazar a la izquierda",
+    "history_scroll_right": "Desplazar a la derecha",
     "photoGuidelines": {
       "title": "Guía de fotos para mejores resultados",
       "suitableTitle": "Fotos adecuadas",
@@ -402,3 +406,4 @@
     }
   }
 }
+

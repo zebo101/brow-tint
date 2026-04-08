@@ -39,11 +39,11 @@ function CategoryPreview({ hairstyles }: { hairstyles: Hairstyle[] }) {
   
   if (previews.length === 0) {
     return (
-      <div className="flex gap-1">
+      <div className="flex gap-1.5">
         {[1, 2, 3, 4].map((i) => (
           <div
             key={i}
-            className="h-8 w-8 rounded bg-muted flex-shrink-0"
+            className="h-9 w-9 rounded-lg border border-border/60 bg-muted/70 shadow-sm flex-shrink-0"
           />
         ))}
       </div>
@@ -51,13 +51,13 @@ function CategoryPreview({ hairstyles }: { hairstyles: Hairstyle[] }) {
   }
 
   return (
-    <div className="flex gap-1">
+    <div className="flex gap-1.5">
       {previews.map((h) => (
         <img
           key={h.id}
           src={h.thumbnailUrl || undefined}
           alt={h.name}
-          className="h-8 w-8 rounded object-cover flex-shrink-0 bg-background dark:bg-gray-300"
+          className="h-9 w-9 rounded-lg border border-border/60 object-cover shadow-sm flex-shrink-0 bg-background dark:bg-gray-300"
         />
       ))}
     </div>
@@ -114,22 +114,23 @@ export function HairstyleCategorySelector({
             key={cat.key}
             onClick={() => handleOpenCategory(cat.key)}
             className={cn(
-              'w-full flex items-center justify-between p-3 rounded-lg border transition-all hover:bg-accent',
-              isSelected && 'border-primary bg-accent/50'
+              'group w-full flex items-center justify-between rounded-xl border border-border/70 bg-background/80 px-3.5 py-3 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/30 hover:bg-accent/50 hover:shadow-md',
+              isSelected &&
+                'border-primary/60 bg-primary/5 shadow-[0_12px_28px_-18px_rgba(0,0,0,0.45)]'
             )}
           >
-            <div className="flex items-center gap-3 min-w-0">
+            <div className="flex items-center gap-3.5 min-w-0">
               <CategoryPreview hairstyles={categoryHairstyles} />
               <div className="text-left min-w-0">
-                <p className="font-medium text-sm truncate">
+                <p className="font-medium text-sm truncate text-foreground">
                   {t(`categories.${cat.key}`)}
                 </p>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs text-muted-foreground/90">
                   {cat.count} {t('categories.styles')}
                 </p>
               </div>
             </div>
-            <ChevronRight className="h-4 w-4 text-muted-foreground flex-shrink-0" />
+            <ChevronRight className="h-4 w-4 text-muted-foreground/80 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5" />
           </button>
         );
       })}
@@ -165,37 +166,39 @@ export function HairstyleCategorySelector({
 
       {/* Hairstyle Selection Dialog */}
       <Dialog open={!!openCategory} onOpenChange={() => setOpenCategory(null)}>
-        <DialogContent className="max-w-2xl max-h-[85vh] p-0">
-          <DialogHeader className="px-6 pt-6 pb-4 border-b">
-            <DialogTitle>
+        <DialogContent className="max-h-[92vh] max-w-[calc(100%-1rem)] overflow-hidden border border-border/60 bg-background/95 p-0 shadow-[0_32px_90px_-36px_rgba(0,0,0,0.55)] backdrop-blur-sm sm:max-w-2xl md:max-w-5xl">
+          <DialogHeader className="sticky top-0 z-10 border-b border-border/70 bg-background/95 px-6 py-5 backdrop-blur-sm md:px-8">
+            <DialogTitle className="text-lg font-semibold tracking-tight md:text-xl">
               {openCategory && t(`categories.${openCategory}`)}
-              <span className="ml-2 text-muted-foreground font-normal">
+              <span className="ml-2 text-base font-normal text-muted-foreground">
                 ({currentHairstyles.length})
               </span>
             </DialogTitle>
           </DialogHeader>
-          <ScrollArea className="h-[calc(85vh-120px)] max-h-[500px]">
-            <div className="p-4 pt-2">
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
+          <ScrollArea className="h-[calc(92vh-92px)] max-h-[760px]">
+            <div className="px-5 pb-6 pt-4 md:px-8 md:pb-8 md:pt-5">
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
                 {currentHairstyles.map((hairstyle) => (
                   <button
                     key={hairstyle.id}
                     className={cn(
-                      'group relative aspect-square overflow-hidden rounded-lg border transition-all hover:border-primary hover:ring-2 hover:ring-primary/20',
+                      'group relative aspect-square overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-b from-background to-muted/25 p-1.5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_18px_32px_-18px_rgba(0,0,0,0.45)]',
                       selectedHairstyle?.id === hairstyle.id &&
-                        'border-primary ring-2 ring-primary/20'
+                        'border-primary/70 bg-primary/[0.06] shadow-[0_18px_36px_-20px_rgba(0,0,0,0.5)] ring-2 ring-primary/15'
                     )}
                     onClick={() => handleSelect(hairstyle)}
                     style={{ contentVisibility: 'auto', containIntrinsicSize: '80px' }}
                   >
-                    <img
-                      src={hairstyle.thumbnailUrl || undefined}
-                      alt={hairstyle.name}
-                      className="h-full w-full object-contain bg-background dark:bg-gray-200"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-1.5 opacity-0 transition-opacity group-hover:opacity-100">
-                      <p className="text-[9px] font-medium text-white leading-tight truncate">
+                    <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-white dark:bg-gray-200">
+                      <img
+                        src={hairstyle.thumbnailUrl || undefined}
+                        alt={hairstyle.name}
+                        className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="absolute inset-x-1.5 bottom-1.5 rounded-xl bg-gradient-to-t from-black/80 via-black/35 to-transparent px-2 py-2 opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
+                      <p className="text-[10px] font-medium text-white leading-tight truncate">
                         {hairstyle.name}
                       </p>
                     </div>

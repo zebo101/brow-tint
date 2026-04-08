@@ -317,12 +317,28 @@ export class KieProvider implements AIProvider {
       Authorization: `Bearer ${this.configs.apiKey}`,
     };
 
-    const resp = await fetch(apiUrl, {
-      method: 'GET',
-      headers,
-    });
-    if (!resp.ok) {
-      throw new Error(`request failed with status: ${resp.status}`);
+    // Retry transient fetch failures (network errors, 5xx, 429)
+    let resp: Response | undefined;
+    let lastError: Error | undefined;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        resp = await fetch(apiUrl, {
+          method: 'GET',
+          headers,
+        });
+        if (resp.ok || (resp.status >= 400 && resp.status < 500 && resp.status !== 429)) {
+          break; // success or non-retryable client error
+        }
+        lastError = new Error(`request failed with status: ${resp.status}`);
+      } catch (e: any) {
+        lastError = e;
+      }
+      if (attempt < 2) {
+        await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)));
+      }
+    }
+    if (!resp || !resp.ok) {
+      throw lastError || new Error('query image failed after retries');
     }
 
     const { code, msg, data } = await resp.json();
@@ -407,12 +423,28 @@ export class KieProvider implements AIProvider {
       Authorization: `Bearer ${this.configs.apiKey}`,
     };
 
-    const resp = await fetch(apiUrl, {
-      method: 'GET',
-      headers,
-    });
-    if (!resp.ok) {
-      throw new Error(`request failed with status: ${resp.status}`);
+    // Retry transient fetch failures (network errors, 5xx, 429)
+    let resp: Response | undefined;
+    let lastError: Error | undefined;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        resp = await fetch(apiUrl, {
+          method: 'GET',
+          headers,
+        });
+        if (resp.ok || (resp.status >= 400 && resp.status < 500 && resp.status !== 429)) {
+          break;
+        }
+        lastError = new Error(`request failed with status: ${resp.status}`);
+      } catch (e: any) {
+        lastError = e;
+      }
+      if (attempt < 2) {
+        await new Promise((r) => setTimeout(r, 2000 * (attempt + 1)));
+      }
+    }
+    if (!resp || !resp.ok) {
+      throw lastError || new Error('query video failed after retries');
     }
 
     const { code, msg, data } = await resp.json();

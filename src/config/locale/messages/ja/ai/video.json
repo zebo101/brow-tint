@@ -1,15 +1,341 @@
 {
   "metadata": {
-    "title": "ヘアスタイルチェンジャーAIビデオ",
-    "description": "AIでヘアスタイル変換ビデオを作成。動きで新しいルックスを確認しましょう。"
+    "title": "AIヘアスタイル動画 | AI Barber",
+    "description": "写真からAIヘアスタイル変身動画を作成。カットやカラーを動きで試し、クリップをダウンロードできます。",
+    "keywords": "ai ヘアスタイル 動画, ヘアスタイルチェンジャー 動画, ヘア変身 動画, バーチャルヘアカット 動画, ヘアカラー変更 動画, ヘアスタイル アニメーション, ヘアスタイルシミュレーター 動画, ビフォーアフター 髪, ai ヘア動画 ジェネレーター"
   },
   "page": {
-    "title": "ヘアスタイルチェンジャーAIビデオ",
-    "description": "AIでヘアスタイル変換ビデオを作成。動きで新しいルックスを確認しましょう。"
+    "title": "AIヘアスタイル動画",
+    "description": "写真をAIヘアスタイル動画に。カットやカラーをアニメーションで試し、ビフォーアフターを比較してダウンロード。",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "use_cases",
+      "features",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "AIヘアスタイル動画",
+        "highlight_text": "ヘアスタイル動画",
+        "description": "1枚の写真からリアルな変身クリップを作成。",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-video.png",
+          "alt": "AIヘアスタイル動画プレビュー",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-video-dark.png",
+          "alt": "AIヘアスタイル動画プレビュー（ダーク）",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/video-bg.png",
+          "alt": "AI Barber 動画背景"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "AIヘアスタイル動画ジェネレーターとは？",
+        "label": "概要",
+        "description": "写真を短い動画にして、動き・質感・色を確認できます。",
+        "image": {
+          "src": "/imgs/bg/video-bg3.png",
+          "alt": "AIヘアスタイル動画概要"
+        },
+        "items": [
+          {
+            "title": "写真から動画",
+            "description": "写真1枚で数秒でクリップ生成。",
+            "icon": "RiVideoLine"
+          },
+          {
+            "title": "ビフォー＆アフター",
+            "description": "元の見た目と新しいスタイルを1本で比較。",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "カラーの動き",
+            "description": "ブロンドやカッパー、ブラックを動きで確認。",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "プロンプト調整",
+            "description": "長さ・質感・角度を指定して精度アップ。",
+            "icon": "RiMagicLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "動画で試す理由",
+        "label": "メリット",
+        "description": "動きのあるプレビューで決断が簡単に。",
+        "items": [
+          {
+            "title": "動きと質感",
+            "description": "レイヤーや前髪の動きを動画で確認。",
+            "icon": "RiVideoLine",
+            "image": {
+              "src": "/video/v1.mp4",
+              "alt": "髪の動きプレビュー"
+            }
+          },
+          {
+            "title": "共有しやすい",
+            "description": "クリップを美容師に送って要望を伝達。",
+            "icon": "RiShareLine",
+            "image": {
+              "src": "/video/v2.mp4",
+              "alt": "動画共有"
+            }
+          },
+          {
+            "title": "高速生成",
+            "description": "編集不要で数分で完成。",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/bg/video-bg2.png",
+              "alt": "高速生成"
+            }
+          }
+        ],
+        "default_item": "item-1"
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "作り方",
+        "description": "4ステップで作成：",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "ヘアスタイル動画ガイド"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "写真をアップロード",
+            "description": "正面で明るい写真を使うと精度が上がります。",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "写真をアップロード"
+            }
+          },
+          {
+            "title": "スタイルを選ぶ",
+            "description": "テンプレートまたはカットとカラーを指定。",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "スタイル選択"
+            }
+          },
+          {
+            "title": "動画を生成",
+            "description": "AIが自然な動きで変身をアニメ化。",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "動画生成"
+            }
+          },
+          {
+            "title": "ダウンロード＆共有",
+            "description": "クリップを保存して美容室に共有。",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "動画ダウンロード"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "主な機能",
+        "description": "プロンプト、プレビュー、HD保存まで対応。",
+        "items": [
+          {
+            "title": "写真→動画",
+            "description": "1枚の写真を短いクリップに変換。",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "スタイル指定",
+            "description": "長さ・質感・色を細かく指定。",
+            "icon": "RiText"
+          },
+          {
+            "title": "ビフォー/アフター",
+            "description": "元の髪型と新しい髪型を比較。",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "HDダウンロード",
+            "description": "高画質で保存して共有。",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "高速レンダリング",
+            "description": "複雑な編集ツールなしで生成。",
+            "icon": "RiSpeedLine"
+          },
+          {
+            "title": "モバイル対応",
+            "description": "スマホでもPCでも作成可能。",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "ユーザーの声",
+        "description": "短いクリップでサロンの判断がしやすくなります。",
+        "items": [
+          {
+            "name": "Ava Peterson",
+            "role": "コンテンツクリエイター",
+            "quote": "動きが分かって決断が簡単でした。レイヤーの落ち感が見えました。",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Ava Peterson"
+            }
+          },
+          {
+            "name": "Liam Torres",
+            "role": "理容師",
+            "quote": "動画が届くので希望のカットがすぐ分かります。",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Liam Torres"
+            }
+          },
+          {
+            "name": "Mia Chen",
+            "role": "学生",
+            "quote": "カッパーとブロンドを動きで比較してすぐ決められました。",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Mia Chen"
+            }
+          },
+          {
+            "name": "Noah Kim",
+            "role": "フォトグラファー",
+            "quote": "動きのある見え方を事前に確認できて助かります。",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "Noah Kim"
+            }
+          },
+          {
+            "name": "Sofia Alvarez",
+            "role": "メイクアップアーティスト",
+            "quote": "ムードボードと合わせて仕上がりを共有できます。",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Sofia Alvarez"
+            }
+          },
+          {
+            "name": "Jordan Lee",
+            "role": "スタイリスト",
+            "quote": "カウンセリングの時間が短くなりました。",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Jordan Lee"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "FAQ",
+        "description": "AIヘアスタイル動画の疑問に回答します。",
+        "tip": "お困りですか？ <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>サポート</a>へ連絡",
+        "items": [
+          {
+            "question": "AIヘアスタイル動画とは？",
+            "answer": "写真から生成される短い動画で、新しいカットやカラーを動きで確認できます。"
+          },
+          {
+            "question": "動画の長さは？",
+            "answer": "数秒程度で、プレビューと共有に最適です。"
+          },
+          {
+            "question": "プロンプトは自由に入力できますか？",
+            "answer": "はい。カット、長さ、質感、色を指定できます。"
+          },
+          {
+            "question": "最適な写真は？",
+            "answer": "正面で明るく、顔が隠れていない写真です。"
+          },
+          {
+            "question": "動画はダウンロードできますか？",
+            "answer": "はい。クリップを保存して共有できます。"
+          },
+          {
+            "question": "編集スキルは必要？",
+            "answer": "不要です。自動生成されます。"
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "ヘアスタイル動画を作成",
+        "description": "短い変身クリップを作成して美容師に共有しましょう。",
+        "buttons": [
+          {
+            "title": "動画を開始",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "use_cases": {
+        "id": "use_cases",
+        "title": "高品質な結果をどこでも",
+        "description": "個人・プロ用途に対応。",
+        "items": [
+          {
+            "title": "バーチャル試着",
+            "description": "プロフィール写真や試着、ビューティーポートフォリオに。",
+            "icon": "RiUserLine"
+          },
+          {
+            "title": "プロ向けビジュアル",
+            "description": "カスタムヘアでヘッドショットやファッションビジュアルを作成。",
+            "icon": "RiImageLine"
+          },
+          {
+            "title": "コンセプト制作",
+            "description": "キャラクター、エディトリアル、デジタルモデルに。",
+            "icon": "RiBrushLine"
+          },
+          {
+            "title": "クリエイター向け",
+            "description": "スタイリストやコンテンツ制作者にも最適。",
+            "icon": "RiSparkling2Line"
+          }
+        ]
+      }
+    }
   },
   "generator": {
-    "title": "ヘアビデオジェネレーター",
-    "description": "AIでアニメーションヘアスタイル変換ビデオを作成。",
+    "title": "AIヘアスタイル動画ジェネレーター",
+    "description": "写真やプロンプトからヘアスタイル変身動画を作成。",
     "tabs": {
       "text-to-video": "スタイルの説明",
       "image-to-video": "写真をビデオに",
@@ -21,42 +347,27 @@
       "select_provider": "AIプロバイダーを選択",
       "select_model": "ビデオモデルを選択",
       "prompt": "ヘアスタイルの説明",
-      "prompt_placeholder": "ヘアスタイル変換の説明：現在から希望のルックスへ、動き、角度",
+      "prompt_placeholder": "変身内容を説明：カット、長さ、色、質感、動き、角度（例：ロングからショートボブ、ブロンドからカッパー、柔らかなウェーブ）。",
       "reference_image": "あなたの写真",
-      "reference_image_placeholder": "ビデオ変換のために写真をアップロード",
+      "reference_image_placeholder": "高品質な写真をアップロードしてください。",
       "reference_video": "参照ビデオURL",
-      "reference_video_placeholder": "参照ヘアスタイルビデオのURLを入力",
+      "reference_video_placeholder": "参考となるヘアスタイル動画のURLを貼り付け。",
       "some_images_failed_to_upload": "画像のアップロードに失敗しました。削除して再アップロードしてください",
       "prompt_too_long": "説明が長すぎます。短くしてください"
     },
-    "generate": "ビデオ生成",
+    "generate": "ヘアスタイル動画を生成",
     "checking_account": "アカウント確認中...",
     "loading": "読み込み中...",
-    "generating": "変換ビデオを作成中...",
-    "sign_in_to_generate": "ビデオを作成するにはログイン",
+    "generating": "ヘアスタイル動画を作成中...",
+    "sign_in_to_generate": "動画作成のためにログイン",
     "credits_cost": "{credits}クレジット消費",
     "credits_remaining": "残り{credits}クレジット",
     "buy_credits": "クレジット購入",
     "progress": "進行状況",
-    "generated_videos": "変換ビデオ",
-    "ready_to_generate": "作成準備完了",
-    "ready_for_generating": "作成準備中",
-    "no_videos_generated": "まだビデオが作成されていません"
+    "generated_videos": "あなたのヘアスタイル動画",
+    "ready_to_generate": "動画作成の準備完了",
+    "ready_for_generating": "動画作成の準備中",
+    "no_videos_generated": "まだヘアスタイル動画がありません"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

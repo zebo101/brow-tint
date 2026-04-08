@@ -1,15 +1,341 @@
 {
   "metadata": {
-    "title": "发型转换 AI 视频",
-    "description": "使用 AI 创建发型转换视频。以动态方式展示您的新造型。"
+    "title": "AI发型视频 | AI Barber",
+    "description": "用照片生成AI发型变换视频。动态预览发型与发色，生成前后对比短片并下载。",
+    "keywords": "AI发型视频, 发型转换视频, 发型变换视频, 虚拟剪发视频, 发色变化视频, 动态发型, 发型模拟视频, 发型前后对比, AI发型视频生成器"
   },
   "page": {
-    "title": "发型转换 AI 视频",
-    "description": "使用 AI 创建发型转换视频。以动态方式展示您的新造型。"
+    "title": "AI发型视频",
+    "description": "将照片生成AI发型视频。动态展示新剪裁与发色，对比前后效果并下载短片。",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "use_cases",
+      "features",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "AI发型视频",
+        "highlight_text": "发型视频",
+        "description": "一张照片生成逼真的发型变换短片，动态预览新剪裁、长度与发色。",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-video.png",
+          "alt": "AI发型视频预览",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-video-dark.png",
+          "alt": "AI发型视频预览 深色",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/video-bg.png",
+          "alt": "AI发型视频背景"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "什么是AI发型视频生成器？",
+        "label": "简介",
+        "description": "AI Barber 可将照片生成发型变换短片，帮助你在决定剪发或染发前先看动态效果。",
+        "image": {
+          "src": "/imgs/bg/video-bg3.png",
+          "alt": "AI发型视频简介"
+        },
+        "items": [
+          {
+            "title": "照片转视频",
+            "description": "上传一张照片，几秒生成发型视频。",
+            "icon": "RiVideoLine"
+          },
+          {
+            "title": "前后对比",
+            "description": "同一短片中展示原始与新造型。",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "发色动态",
+            "description": "动态预览金色、铜色、黑色等发色变化。",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "提示词控制",
+            "description": "描述长度、质感与角度，精确控制效果。",
+            "icon": "RiMagicLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "为什么用发型视频",
+        "label": "优势",
+        "description": "动态预览让剪发与染发决策更直观。",
+        "items": [
+          {
+            "title": "看动态与质感",
+            "description": "视频展示层次、卷度与刘海的动态效果。",
+            "icon": "RiVideoLine",
+            "image": {
+              "src": "/video/v1.mp4",
+              "alt": "发型动态预览"
+            }
+          },
+          {
+            "title": "便于分享",
+            "description": "把短片发给理发师或造型师，沟通更清楚。",
+            "icon": "RiShareLine",
+            "image": {
+              "src": "/video/v2.mp4",
+              "alt": "分享发型视频"
+            }
+          },
+          {
+            "title": "在线快速生成",
+            "description": "无需剪辑基础，几分钟内从照片生成短片。",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/bg/video-bg2.png",
+              "alt": "快速生成"
+            }
+          }
+        ],
+        "default_item": "item-1"
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "如何制作发型视频",
+        "description": "四步生成发型变换短片：",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "发型视频教程"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "上传照片",
+            "description": "选择清晰正面照片并保持光线充足。",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "上传照片"
+            }
+          },
+          {
+            "title": "选择发型",
+            "description": "选择模板或描述想要的剪裁与发色。",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "选择发型"
+            }
+          },
+          {
+            "title": "生成视频",
+            "description": "AI 自动生成具有自然动态的短片。",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "生成视频"
+            }
+          },
+          {
+            "title": "下载分享",
+            "description": "保存短片并展示给理发店或沙龙。",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "下载分享"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "核心功能",
+        "description": "从提示词到高清下载，发型视频所需功能一应俱全。",
+        "items": [
+          {
+            "title": "照片转视频",
+            "description": "一张照片生成发型变换短片。",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "剪裁与发色提示词",
+            "description": "描述长度、质感、刘海与颜色，效果更精准。",
+            "icon": "RiText"
+          },
+          {
+            "title": "前后对比",
+            "description": "在同一视频中对比原始与新造型。",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "高清下载",
+            "description": "导出清晰短片并分享给造型师。",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "快速生成",
+            "description": "无需复杂剪辑，快速生成视频。",
+            "icon": "RiSpeedLine"
+          },
+          {
+            "title": "移动友好",
+            "description": "手机或电脑均可生成发型视频。",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "用户评价",
+        "description": "短片让沙龙选择更清晰。",
+        "items": [
+          {
+            "name": "Ava Peterson",
+            "role": "内容创作者",
+            "quote": "看到动态后决定更容易，层次走向一目了然。",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Ava Peterson"
+            }
+          },
+          {
+            "name": "Liam Torres",
+            "role": "理发师",
+            "quote": "客户直接发视频，我能立刻知道他们要的剪法。",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Liam Torres"
+            }
+          },
+          {
+            "name": "Mia Chen",
+            "role": "学生",
+            "quote": "对比铜色和金色的动态效果后很快做了决定。",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Mia Chen"
+            }
+          },
+          {
+            "name": "Noah Kim",
+            "role": "摄影师",
+            "quote": "动态短片让客户看到头发在镜头中的真实动感。",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "Noah Kim"
+            }
+          },
+          {
+            "name": "Sofia Alvarez",
+            "role": "化妆师",
+            "quote": "搭配灵感板一起沟通，成片更一致。",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Sofia Alvarez"
+            }
+          },
+          {
+            "name": "Jordan Lee",
+            "role": "造型师",
+            "quote": "减少沟通往返，咨询效率更高。",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Jordan Lee"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "常见问题",
+        "description": "关于AI发型视频的常见解答与照片建议。",
+        "tip": "需要帮助？联系 <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "items": [
+          {
+            "question": "什么是AI发型视频？",
+            "answer": "它是基于你的照片生成的短视频，展示新发型或发色的动态效果。"
+          },
+          {
+            "question": "视频时长多长？",
+            "answer": "一般为几秒钟，方便快速预览与分享。"
+          },
+          {
+            "question": "可以自定义提示词吗？",
+            "answer": "可以。描述剪裁、长度、质感与发色可获得更精准的效果。"
+          },
+          {
+            "question": "什么样的照片效果最好？",
+            "answer": "使用清晰正面照片，光线充足且面部无遮挡。"
+          },
+          {
+            "question": "视频可以下载吗？",
+            "answer": "可以下载并分享给理发师或沙龙。"
+          },
+          {
+            "question": "需要剪辑技能吗？",
+            "answer": "不需要，工具会自动生成短片。"
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "开始生成发型视频",
+        "description": "生成发型变换短片并分享给造型师。",
+        "buttons": [
+          {
+            "title": "开始生成",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "use_cases": {
+        "id": "use_cases",
+        "title": "高质量效果，适用于多场景",
+        "description": "用于个人与专业场景的发型视频与图片。",
+        "items": [
+          {
+            "title": "虚拟试发",
+            "description": "适合头像、试发或美妆作品集预览。",
+            "icon": "RiUserLine"
+          },
+          {
+            "title": "专业视觉",
+            "description": "制作定制发型的证件照或时尚视觉。",
+            "icon": "RiImageLine"
+          },
+          {
+            "title": "概念创作",
+            "description": "角色设定、编辑风格或数字建模参考。",
+            "icon": "RiBrushLine"
+          },
+          {
+            "title": "创作者必备",
+            "description": "适合理发师、内容创作者与风格探索者。",
+            "icon": "RiSparkling2Line"
+          }
+        ]
+      }
+    }
   },
   "generator": {
-    "title": "发型视频生成器",
-    "description": "使用 AI 创建动画发型转换视频。",
+    "title": "AI发型视频生成器",
+    "description": "通过照片或描述生成发型变换视频。",
     "tabs": {
       "text-to-video": "描述风格",
       "image-to-video": "照片转视频",
@@ -20,27 +346,27 @@
       "model": "视频模型",
       "select_provider": "选择 AI 提供商",
       "select_model": "选择视频模型",
-      "prompt": "发型描述",
-      "prompt_placeholder": "描述发型转换：从当前造型到期望造型，动作，角度",
+      "prompt": "发型视频提示词",
+      "prompt_placeholder": "描述发型变换：长度、颜色、质感、动态（例如：铜色短波波头，柔和波浪）。",
       "reference_image": "您的照片",
-      "reference_image_placeholder": "上传照片进行视频转换",
+      "reference_image_placeholder": "上传清晰照片以获得更佳效果。",
       "reference_video": "参考视频 URL",
-      "reference_video_placeholder": "输入参考发型视频的 URL",
+      "reference_video_placeholder": "粘贴参考发型视频的URL。",
       "some_images_failed_to_upload": "图片上传失败，请删除后重新上传",
       "prompt_too_long": "描述过长，请缩短"
     },
-    "generate": "生成视频",
+    "generate": "生成发型视频",
     "checking_account": "正在检查账户...",
     "loading": "加载中...",
-    "generating": "正在创建您的转换视频...",
-    "sign_in_to_generate": "登录以创建视频",
+    "generating": "正在生成你的发型视频...",
+    "sign_in_to_generate": "登录以生成发型视频",
     "credits_cost": "消耗 {credits} 积分",
     "credits_remaining": "剩余 {credits} 积分",
     "buy_credits": "购买积分",
     "progress": "进度",
-    "generated_videos": "您的转换视频",
-    "ready_to_generate": "准备创建",
-    "ready_for_generating": "准备创建中",
-    "no_videos_generated": "尚未创建视频"
+    "generated_videos": "你的发型视频",
+    "ready_to_generate": "准备生成视频",
+    "ready_for_generating": "准备开始生成",
+    "no_videos_generated": "暂无发型视频"
   }
 }

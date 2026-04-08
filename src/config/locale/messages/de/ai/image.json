@@ -49,7 +49,7 @@
         "label": "Einführung",
         "description": "AI Barber ist ein kostenloser KI-Frisuren-Wechsler und virtueller Haarschnitt-Simulator, mit dem Sie Schnitte, Längen und Farben an Ihrem Foto testen können, bevor Sie zum Friseur oder in den Salon gehen.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/bg/image-bg4.png",
           "alt": "AI Barber Hairstyle Simulator"
         },
         "items": [
@@ -342,11 +342,10 @@
       "styles": "Stile"
     },
     "sidebar": {
-      "howtos": "Anleitungen",
+      "history": "Verlauf",
       "discover": "Ergebnisse ansehen",
-      "tour_title": "Funktions-Tour",
-      "tour_description": "Erfahren Sie, wie Sie den Frisuren-Wechsler nutzen",
-      "start_tour": "Tour starten"
+      "history_sign_in": "Melden Sie sich an, um Ihren Bildverlauf anzusehen",
+      "history_empty": "Noch keine Verlaufbilder"
     },
     "form": {
       "select_hairstyle_placeholder": "Klicken um Frisur auszuwählen",
@@ -381,6 +380,11 @@
     "use_as_reference": "Als Referenz verwenden",
     "download_image": "Bild herunterladen",
     "example_image_hint": "Dies ist ein Beispielergebnis. Ihr generierter Stil wird hier angezeigt.",
+    "history_images": "Verlaufbilder",
+    "history_load_more": "Mehr laden",
+    "history_view_image": "Verlaufbild ansehen",
+    "history_scroll_left": "Nach links scrollen",
+    "history_scroll_right": "Nach rechts scrollen",
     "photoGuidelines": {
       "title": "Foto-Richtlinien für beste Ergebnisse",
       "suitableTitle": "Geeignete Fotos",
@@ -402,3 +406,4 @@
     }
   }
 }
+

@@ -32,7 +32,7 @@
             "description": "必要なときにいつでも開始。1回限りのお支払い",
             "features_title": "含まれるもの",
             "features": [
-              "400クレジット、1年間有効",
+              "120クレジット、1年間有効",
               "テキストから画像、画像から画像の生成",
               "Nano Banana 2 AIモデルによる高品質画像",
               "生成画像の無料ダウンロード"
@@ -42,7 +42,7 @@
             "currency": "USD",
             "price": "$29.9",
             "original_price": "$39.9",
-            "unit": "/ 400クレジット",
+            "unit": "/ 120クレジット",
             "is_featured": false,
             "tip": "",
             "button": {
@@ -52,7 +52,7 @@
             },
             "product_id": "credits-package",
             "product_name": "クレジットパッケージ",
-            "credits": 400,
+            "credits": 120,
             "valid_days": 365,
             "group": "one-time"
           },
@@ -61,7 +61,7 @@
             "description": "毎月自動更新でクレジット取得。いつでもキャンセル可能！",
             "features_title": "含まれるもの",
             "features": [
-              "400クレジット、1ヶ月間有効",
+              "120クレジット、1ヶ月間有効",
               "テキストから画像、画像から画像の生成",
               "Nano Banana 2 AIモデルによる高品質画像",
               "生成画像の無料ダウンロード"
@@ -81,7 +81,7 @@
             },
             "product_id": "starter-monthly",
             "product_name": "スタータープラン",
-            "credits": 400,
+            "credits": 120,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "スターター"
@@ -91,7 +91,7 @@
             "description": "月額約$19.2、月額プランより23%お得。いつでもキャンセル可能！",
             "features_title": "含まれるもの",
             "features": [
-              "4800クレジット、1年間有効",
+              "1600クレジット、1年間有効",
               "テキストから画像、画像から画像の生成",
               "Nano Banana 2 AIモデルによる高品質画像",
               "生成画像の無料ダウンロード"
@@ -111,7 +111,7 @@
             },
             "product_id": "premium-yearly",
             "product_name": "プレミアムプラン",
-            "credits": 4800,
+            "credits": 1600,
             "valid_days": 365,
             "group": "yearly",
             "plan_name": "プレミアム"
@@ -125,6 +125,7 @@
     "processing": "処理中"
   }
 }
+
 
 
 

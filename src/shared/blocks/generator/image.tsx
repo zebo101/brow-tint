@@ -1,13 +1,12 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ChevronRight,
   CreditCard,
   Download,
   ImageIcon,
   ImagePlus,
-  Lightbulb,
   Loader2,
   PanelLeft,
   PanelRight,
@@ -19,7 +18,7 @@ import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
 import { Link } from '@/core/i18n/navigation';
-import { HAIRSTYLE_SYSTEM_PROMPT } from '@/config/img-prompt';
+import { buildHairstylePrompt, HAIRSTYLE_NEGATIVE_PROMPT } from '@/config/img-prompt';
 import { AIMediaType, AITaskStatus } from '@/extensions/ai/types';
 import {
   ImageDropzone,
@@ -42,6 +41,12 @@ import {
   CardHeader,
   CardTitle,
 } from '@/shared/components/ui/card';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from '@/shared/components/ui/dialog';
 import { Label } from '@/shared/components/ui/label';
 import { Progress } from '@/shared/components/ui/progress';
 import { ScrollArea } from '@/shared/components/ui/scroll-area';
@@ -69,6 +74,7 @@ interface ImageGeneratorProps {
   maxSizeMB?: number;
   srOnlyTitle?: string;
   className?: string;
+  historyImages?: GeneratedImage[];
 }
 
 interface GeneratedImage {
@@ -77,6 +83,8 @@ interface GeneratedImage {
   provider?: string;
   model?: string;
   prompt?: string;
+  taskId?: string;
+  createdAt?: string;
 }
 
 interface BackendTask {
@@ -93,7 +101,9 @@ type ImageGeneratorTab = 'text-to-image' | 'image-to-image';
 
 const POLL_INTERVAL = 5000;
 const GENERATION_TIMEOUT = 180000;
+const MAX_POLL_ERRORS = 3;
 const MAX_PROMPT_LENGTH = 2000;
+const MAX_HISTORY_IMAGES = 24;
 
 type HairstyleCategoryKey = 'men' | 'women' | 'boys' | 'girls';
 
@@ -251,12 +261,37 @@ function extractImageUrls(result: any): string[] {
   return [];
 }
 
+function mergeUniqueImages(
+  existingImages: GeneratedImage[],
+  incomingImages: GeneratedImage[],
+  limit = MAX_HISTORY_IMAGES
+): GeneratedImage[] {
+  const seen = new Set<string>();
+
+  return [...incomingImages, ...existingImages]
+    .filter((image) => {
+      if (!image.url) {
+        return false;
+      }
+
+      const key = `${image.taskId ?? image.id}::${image.url}`;
+      if (seen.has(key)) {
+        return false;
+      }
+
+      seen.add(key);
+      return true;
+    })
+    .slice(0, limit);
+}
+
 export function ImageGenerator({
   allowMultipleImages = true,
   maxImages = 8,
   maxSizeMB = 5,
   srOnlyTitle,
   className,
+  historyImages = [],
 }: ImageGeneratorProps) {
   const t = useTranslations('ai.image.generator');
 
@@ -265,9 +300,8 @@ export function ImageGenerator({
 
   const [isLeftPanelOpen, setIsLeftPanelOpen] = useState(true);
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(true);
-  const [rightTab, setRightTab] = useState<'howtos' | 'discover'>('discover');
+  const [rightTab, setRightTab] = useState<'history' | 'discover'>('discover');
   const [isLeftSheetOpen, setIsLeftSheetOpen] = useState(false);
-  const [isRightSheetOpen, setIsRightSheetOpen] = useState(false);
   const [selectedHairstyleName, setSelectedHairstyleName] = useState<
     string | null
   >(null);
@@ -282,6 +316,10 @@ export function ImageGenerator({
   >([]);
   const [referenceImageUrls, setReferenceImageUrls] = useState<string[]>([]);
   const [generatedImages, setGeneratedImages] = useState<GeneratedImage[]>([]);
+  const [historyPanelImages, setHistoryPanelImages] =
+    useState<GeneratedImage[]>(historyImages);
+  const [selectedHistoryImage, setSelectedHistoryImage] =
+    useState<GeneratedImage | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [progress, setProgress] = useState(0);
   const [taskId, setTaskId] = useState<string | null>(null);
@@ -292,6 +330,8 @@ export function ImageGenerator({
   const [downloadingImageId, setDownloadingImageId] = useState<string | null>(
     null
   );
+  const [pollErrorCount, setPollErrorCount] = useState(0);
+  const pollErrorCountRef = useRef(0);
   const [isMounted, setIsMounted] = useState(false);
   const [showExampleImage, setShowExampleImage] = useState(true);
 
@@ -308,6 +348,10 @@ export function ImageGenerator({
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    setHistoryPanelImages(historyImages);
+  }, [historyImages]);
 
   const promptLength = prompt.trim().length;
   const remainingCredits = user?.credits?.remainingCredits ?? 0;
@@ -389,13 +433,30 @@ export function ImageGenerator({
     [referenceImageItems]
   );
 
+  const syncGeneratedImagesToHistory = useCallback(
+    (images: GeneratedImage[]) => {
+      if (!user || images.length === 0) {
+        return;
+      }
+
+      setHistoryPanelImages((prev) => mergeUniqueImages(prev, images));
+    },
+    [user]
+  );
+
+  const resetPollErrorCount = useCallback(() => {
+    pollErrorCountRef.current = 0;
+    setPollErrorCount(0);
+  }, []);
+
   const resetTaskState = useCallback(() => {
     setIsGenerating(false);
     setProgress(0);
     setTaskId(null);
     setGenerationStartTime(null);
     setTaskStatus(null);
-  }, []);
+    resetPollErrorCount();
+  }, [resetPollErrorCount]);
 
   const pollTaskStatus = useCallback(
     async (id: string) => {
@@ -424,6 +485,10 @@ export function ImageGenerator({
         const { code, message, data } = await resp.json();
         if (code !== 0) {
           throw new Error(message || 'Query task failed');
+        }
+
+        if (pollErrorCountRef.current > 0) {
+          resetPollErrorCount();
         }
 
         const task = data as BackendTask;
@@ -460,15 +525,17 @@ export function ImageGenerator({
           if (imageUrls.length === 0) {
             toast.error('The provider returned no images. Please retry.');
           } else {
-            setGeneratedImages(
-              imageUrls.map((url, index) => ({
-                id: `${task.id}-${index}`,
-                url,
-                provider: task.provider,
-                model: task.model,
-                prompt: task.prompt ?? undefined,
-              }))
-            );
+            const nextGeneratedImages = imageUrls.map((url, index) => ({
+              id: `${task.id}-${index}`,
+              taskId: task.id,
+              url,
+              provider: task.provider,
+              model: task.model,
+              prompt: task.prompt ?? undefined,
+            }));
+
+            setGeneratedImages(nextGeneratedImages);
+            syncGeneratedImagesToHistory(nextGeneratedImages);
             toast.success('Image generated successfully');
           }
 
@@ -492,15 +559,27 @@ export function ImageGenerator({
         return false;
       } catch (error: any) {
         console.error('Error polling image task:', error);
-        toast.error(`Query task failed: ${error.message}`);
-        resetTaskState();
+        const nextPollErrorCount = pollErrorCountRef.current + 1;
+        pollErrorCountRef.current = nextPollErrorCount;
+        setPollErrorCount(nextPollErrorCount);
 
-        fetchUserCredits();
+        if (nextPollErrorCount >= MAX_POLL_ERRORS) {
+          toast.error(`Query task failed: ${error.message}`);
+          resetTaskState();
+          fetchUserCredits();
+          return true;
+        }
 
-        return true;
+        return false;
       }
     },
-    [generationStartTime, resetTaskState]
+    [
+      generationStartTime,
+      resetTaskState,
+      fetchUserCredits,
+      resetPollErrorCount,
+      syncGeneratedImagesToHistory,
+    ]
   );
 
   useEffect(() => {
@@ -568,17 +647,14 @@ export function ImageGenerator({
     }
 
     const trimmedPrompt = prompt.trim();
-    const hasHairstyle = !!selectedHairstyle;
+    const subjectImageCount = isTextToImageMode ? 0 : referenceImageUrls.length;
     
     // Construct the final prompt including hairstyle info if selected
     let finalPrompt = trimmedPrompt;
     if (selectedHairstyle) {
-      const hairstylePrompt = `${selectedHairstyle.name} hairstyle: professional style with great detail`;
-      finalPrompt = trimmedPrompt ? `${trimmedPrompt} ${hairstylePrompt}` : hairstylePrompt;
+      const tags = Array.isArray(selectedHairstyle.tags) ? selectedHairstyle.tags : [];
+      finalPrompt = buildHairstylePrompt(selectedHairstyle.name, tags, trimmedPrompt, subjectImageCount);
     }
-    
-    // Append system prompt for better generation quality
-    finalPrompt = `${finalPrompt} ${HAIRSTYLE_SYSTEM_PROMPT}`;
 
     if (!finalPrompt) {
       toast.error('Please enter a prompt or select a hairstyle before generating.');
@@ -600,6 +676,7 @@ export function ImageGenerator({
     setTaskStatus(AITaskStatus.PENDING);
     setGeneratedImages([]);
     setGenerationStartTime(Date.now());
+    resetPollErrorCount();
 
     try {
       const options: any = {};
@@ -608,8 +685,10 @@ export function ImageGenerator({
         options.image_input = referenceImageUrls;
       }
       
-      if (selectedHairstyle) {
+      // Only send hairstyle reference image when user photo exists (image-to-image)
+      if (selectedHairstyle && !isTextToImageMode) {
         options.hairstyle_image = selectedHairstyle.imageUrl;
+        options.negative_prompt = HAIRSTYLE_NEGATIVE_PROMPT;
       }
 
       const resp = await fetch('/api/ai/generate', {
@@ -646,15 +725,18 @@ export function ImageGenerator({
         const imageUrls = extractImageUrls(parsedResult);
 
         if (imageUrls.length > 0) {
-            setGeneratedImages(
-              imageUrls.map((url, index) => ({
-                id: `${newTaskId}-${index}`,
-                url,
-                provider,
-                model,
-                prompt: finalPrompt,
-              }))
-            );
+          const nextGeneratedImages = imageUrls.map((url, index) => ({
+            id: `${newTaskId}-${index}`,
+            taskId: newTaskId,
+            url,
+            provider,
+            model,
+            prompt: finalPrompt,
+            createdAt: new Date().toISOString(),
+          }));
+
+          setGeneratedImages(nextGeneratedImages);
+          syncGeneratedImagesToHistory(nextGeneratedImages);
           toast.success('Image generated successfully');
           setProgress(100);
           resetTaskState();
@@ -759,7 +841,7 @@ export function ImageGenerator({
         >
           {/* 左侧发型选择面板 - 桌面端 (紧凑下拉式) */}
           {isLeftPanelOpen && (
-            <aside className="hidden flex-col overflow-hidden rounded-3xl border border-border/40 bg-card/60 shadow-xl backdrop-blur-xl lg:flex h-full transition-all duration-300">
+            <aside className="hidden flex-col overflow-hidden rounded-3xl border border-border/40 bg-card/40 shadow-xl backdrop-blur-xl lg:flex h-full transition-all duration-300">
               <div className="shrink-0 border-b p-4">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold">{t('categories.title')}</h3>
@@ -824,7 +906,7 @@ export function ImageGenerator({
 
           {/* 中间主区域 */}
           <main className="min-w-0 flex-1 space-y-4 md:space-y-6 flex flex-col h-full">
-            <Card className="flex-1 flex flex-col h-full rounded-3xl border-border/40 bg-card/60 shadow-xl backdrop-blur-xl transition-all duration-300">
+            <Card className="flex-1 flex flex-col h-full rounded-3xl border-border/40 bg-card/40 shadow-xl backdrop-blur-xl transition-all duration-300">
               <CardContent className="space-y-4 p-4 md:space-y-6 md:p-6 flex-1 flex flex-col">
                 {/* 侧边栏展开按钮 - 桌面端 */}
                 <div className="hidden lg:flex justify-between items-center -mt-2 mb-2">
@@ -848,7 +930,11 @@ export function ImageGenerator({
                       onClick={() => setIsRightPanelOpen(true)}
                       className="gap-1 text-muted-foreground hover:text-foreground"
                     >
-                      <span className="text-xs">{t('sidebar.discover')}</span>
+                      <span className="text-xs">
+                        {rightTab === 'history'
+                          ? t('sidebar.history')
+                          : t('sidebar.discover')}
+                      </span>
                       <PanelRight className="h-4 w-4" />
                     </Button>
                   ) : (
@@ -1179,21 +1265,21 @@ export function ImageGenerator({
             </Card>
           </main>
 
-          {/* 右侧教程和结果面板 */}
+          {/* 右侧历史和结果面板 */}
           {isRightPanelOpen && (
-            <aside className="hidden flex-col overflow-hidden rounded-3xl border border-border/40 bg-card/60 shadow-xl backdrop-blur-xl lg:flex h-full transition-all duration-300">
+            <aside className="hidden h-full flex-col overflow-hidden rounded-3xl border border-border/40 bg-card/40 shadow-xl backdrop-blur-xl transition-all duration-300 lg:flex">
               <Tabs
                 value={rightTab}
                 onValueChange={(value) =>
-                  setRightTab(value as 'howtos' | 'discover')
+                  setRightTab(value as 'history' | 'discover')
                 }
                 className="flex h-full flex-col"
               >
                 <div className="shrink-0 border-b p-4">
                   <div className="flex items-center justify-between">
                     <TabsList className="grid w-full max-w-[280px] grid-cols-2">
-                      <TabsTrigger value="howtos" className="text-xs">
-                        {t('sidebar.howtos')}
+                      <TabsTrigger value="history" className="text-xs">
+                        {t('sidebar.history')}
                       </TabsTrigger>
                       <TabsTrigger value="discover" className="text-xs">
                         {t('sidebar.discover')}
@@ -1212,25 +1298,135 @@ export function ImageGenerator({
 
                 <ScrollArea className="flex-1">
                   <div className="space-y-6 p-4">
-                    {/* How-tos 教程内容 */}
-                    {rightTab === 'howtos' && (
+                    {/* History 历史图片内容 */}
+                    {rightTab === 'history' && (
                       <div className="space-y-4">
-                        <div className="bg-muted/50 rounded-lg p-4 text-center">
-                          <div className="bg-primary/10 mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full">
-                            <Lightbulb className="text-primary h-6 w-6" />
-                          </div>
-                          <h4 className="mb-2 font-semibold">
-                            {t('sidebar.tour_title')}
+                        <div className="flex items-center gap-2">
+                          <ImageIcon className="h-5 w-5" />
+                          <h4 className="font-semibold">
+                            {t('history_images')}
                           </h4>
-                          <p className="text-muted-foreground text-xs">
-                            {t('sidebar.tour_description')}
-                          </p>
-                          <Button variant="outline" size="sm" className="mt-3">
-                            {t('sidebar.start_tour')}
-                          </Button>
                         </div>
+
+                        {!user ? (
+                          <div className="flex flex-col items-center justify-center py-12 text-center">
+                            <div className="bg-muted mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+                              <User className="text-muted-foreground h-8 w-8" />
+                            </div>
+                            <p className="text-muted-foreground text-sm">
+                              {t('sidebar.history_sign_in')}
+                            </p>
+                          </div>
+                        ) : historyPanelImages.length > 0 ? (
+                          <div className="flex flex-col gap-4 px-1 pb-2">
+                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                              {historyPanelImages.slice(0, 6).map((image) => (
+                                <button
+                                  key={image.id}
+                                  type="button"
+                                  className="group hover:border-foreground/20 w-full overflow-hidden rounded-xl border bg-background/40 text-left shadow-sm transition-colors"
+                                  onClick={() => setSelectedHistoryImage(image)}
+                                  aria-label={t('history_view_image')}
+                                >
+                                  <div className="relative aspect-[3/4] overflow-hidden">
+                                    <LazyImage
+                                      src={image.url}
+                                      alt={image.prompt || 'History image'}
+                                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                                    />
+                                  </div>
+                                </button>
+                              ))}
+                            </div>
+                            {historyPanelImages.length > 6 && (
+                              <div className="pt-2">
+                                <Link href="/activity/ai-tasks" className="block w-full">
+                                  <Button variant="secondary" size="sm" className="w-full text-xs">
+                                    <span>View All History</span>
+                                    <ChevronRight className="ml-1 h-3 w-3" />
+                                  </Button>
+                                </Link>
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <div className="flex flex-col items-center justify-center py-12 text-center">
+                            <div className="bg-muted mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+                              <ImageIcon className="text-muted-foreground h-10 w-10" />
+                            </div>
+                            <p className="text-muted-foreground text-sm">
+                              {t('sidebar.history_empty')}
+                            </p>
+                          </div>
+                        )}
                       </div>
                     )}
+
+                    <Dialog
+                      open={!!selectedHistoryImage}
+                      onOpenChange={(open) =>
+                        !open && setSelectedHistoryImage(null)
+                      }
+                    >
+                      <DialogContent className="max-h-[90vh] max-w-3xl overflow-hidden p-0 sm:max-w-3xl">
+                        {selectedHistoryImage && (
+                          <>
+                            <DialogHeader className="border-b px-6 py-4">
+                              <DialogTitle>{t('history_images')}</DialogTitle>
+                            </DialogHeader>
+                            <div className="space-y-4 p-4 md:p-6">
+                              <div className="overflow-hidden rounded-xl border">
+                                <LazyImage
+                                  src={selectedHistoryImage.url}
+                                  alt={
+                                    selectedHistoryImage.prompt ||
+                                    'History image'
+                                  }
+                                  className="h-auto max-h-[65vh] w-full object-contain"
+                                />
+                              </div>
+                              <div className="grid grid-cols-2 gap-2">
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  className="w-full justify-center"
+                                  onClick={() => {
+                                    handleUseAsReference(selectedHistoryImage);
+                                    setSelectedHistoryImage(null);
+                                  }}
+                                >
+                                  <ImagePlus className="mr-1.5 h-3.5 w-3.5 flex-shrink-0" />
+                                  <span className="text-[10px] sm:text-xs whitespace-nowrap">
+                                    {t('use_as_reference')}
+                                  </span>
+                                </Button>
+                                <Button
+                                  size="sm"
+                                  variant="outline"
+                                  className="w-full justify-center"
+                                  onClick={() =>
+                                    handleDownloadImage(selectedHistoryImage)
+                                  }
+                                  disabled={
+                                    downloadingImageId === selectedHistoryImage.id
+                                  }
+                                >
+                                  {downloadingImageId ===
+                                  selectedHistoryImage.id ? (
+                                    <Loader2 className="mr-1.5 h-3.5 w-3.5 flex-shrink-0 animate-spin" />
+                                  ) : (
+                                    <Download className="mr-1.5 h-3.5 w-3.5 flex-shrink-0" />
+                                  )}
+                                  <span className="text-[10px] sm:text-xs whitespace-nowrap">
+                                    {t('download_image')}
+                                  </span>
+                                </Button>
+                              </div>
+                            </div>
+                          </>
+                        )}
+                      </DialogContent>
+                    </Dialog>
 
                     {/* Discover 生成结果内容 */}
                     {rightTab === 'discover' && (

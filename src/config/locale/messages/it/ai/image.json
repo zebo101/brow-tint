@@ -49,7 +49,7 @@
         "label": "Introduzione",
         "description": "AI Barber è un cambia acconciatura IA gratuito e simulatore di tagli che ti permette di provare tagli, lunghezze e colori sulla tua foto prima di andare dal barbiere o in salone.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/bg/image-bg4.png",
           "alt": "AI Barber Hairstyle Simulator"
         },
         "items": [
@@ -342,11 +342,10 @@
       "styles": "stili"
     },
     "sidebar": {
-      "howtos": "Istruzioni",
+      "history": "Cronologia",
       "discover": "Vedi risultati",
-      "tour_title": "Guida funzioni",
-      "tour_description": "Impara ad usare il cambia acconciatura",
-      "start_tour": "Inizia guida"
+      "history_sign_in": "Accedi per vedere la cronologia delle immagini generate",
+      "history_empty": "Nessuna immagine nella cronologia"
     },
     "form": {
       "select_hairstyle_placeholder": "Clicca per selezionare acconciatura",
@@ -381,6 +380,11 @@
     "use_as_reference": "Usa come riferimento",
     "download_image": "Scarica immagine",
     "example_image_hint": "Questo è un risultato di esempio. La tua acconciatura generata apparirà qui.",
+    "history_images": "Immagini cronologia",
+    "history_load_more": "Carica altro",
+    "history_view_image": "Visualizza immagine cronologia",
+    "history_scroll_left": "Scorri a sinistra",
+    "history_scroll_right": "Scorri a destra",
     "photoGuidelines": {
       "title": "Linee guida foto per risultati ottimali",
       "suitableTitle": "Foto adatte",
@@ -402,3 +406,4 @@
     }
   }
 }
+

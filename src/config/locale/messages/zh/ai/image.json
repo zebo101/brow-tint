@@ -49,7 +49,7 @@
         "label": "简介",
         "description": "AI Barber 是免费的AI发型转换器与剪发模拟器，可在你的照片上试剪发型、长度与发色，先预览再去理发店或沙龙。",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/bg/image-bg4.png",
           "alt": "AI Barber Hairstyle Simulator"
         },
         "items": [
@@ -342,11 +342,10 @@
       "styles": "款"
     },
     "sidebar": {
-      "howtos": "使用教程",
+      "history": "历史图片",
       "discover": "生成结果",
-      "tour_title": "功能引导",
-      "tour_description": "了解如何使用发型转换器",
-      "start_tour": "开始引导"
+      "history_sign_in": "登录后查看您生成过的历史图片",
+      "history_empty": "暂无历史图片"
     },
     "form": {
       "select_hairstyle_placeholder": "点击选择发型款式",
@@ -381,6 +380,11 @@
     "use_as_reference": "用作参考图",
     "download_image": "下载图片",
     "example_image_hint": "这是一个示例效果，您生成的发型将显示在这里。",
+    "history_images": "历史图片",
+    "history_load_more": "加载更多",
+    "history_view_image": "查看历史图片",
+    "history_scroll_left": "向左滚动历史图片",
+    "history_scroll_right": "向右滚动历史图片",
     "photoGuidelines": {
       "title": "照片上传指南",
       "suitableTitle": "合适的照片",

@@ -1,15 +1,341 @@
 {
   "metadata": {
-    "title": "Vídeo Mudador de Penteado IA",
-    "description": "Crie vídeos de transformação de penteados com IA. Veja seu novo visual em movimento."
+    "title": "Vídeo de penteado IA | AI Barber",
+    "description": "Crie vídeos de transformação de penteado com IA a partir de uma foto. Teste cortes e cores em movimento e baixe o clipe.",
+    "keywords": "vídeo de penteado ia, vídeo trocador de penteado, vídeo de transformação de cabelo, corte virtual em vídeo, mudança de cor de cabelo em vídeo, penteado animado, simulador de penteados em vídeo, antes e depois cabelo, gerador de vídeo de penteado ia"
   },
   "page": {
-    "title": "Vídeo Mudador de Penteado IA",
-    "description": "Crie vídeos de transformação de penteados com IA. Veja seu novo visual em movimento."
+    "title": "Vídeo de penteado IA",
+    "description": "Transforme uma foto em um vídeo de penteado IA. Anime cortes e cores, compare antes/depois e baixe o clipe.",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "use_cases",
+      "features",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Vídeo de penteado IA",
+        "highlight_text": "Vídeo de penteado",
+        "description": "Crie um clipe realista de transformação a partir de uma foto.",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-video.png",
+          "alt": "Prévia de vídeo de penteado IA",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-video-dark.png",
+          "alt": "Prévia de vídeo de penteado IA escuro",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/video-bg.png",
+          "alt": "Fundo de vídeo AI Barber"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "O que é o gerador de vídeo de penteado IA?",
+        "label": "Introdução",
+        "description": "Transforme uma foto em um vídeo curto para ver movimento, textura e cor.",
+        "image": {
+          "src": "/imgs/bg/video-bg3.png",
+          "alt": "Introdução ao vídeo de penteado IA"
+        },
+        "items": [
+          {
+            "title": "Foto para vídeo",
+            "description": "Envie uma foto e gere um clipe em segundos.",
+            "icon": "RiVideoLine"
+          },
+          {
+            "title": "Antes e depois",
+            "description": "Mostre o visual original e o novo no mesmo clipe.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Cor em movimento",
+            "description": "Veja loiro, cobre ou preto com movimento natural.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "Controle por prompt",
+            "description": "Descreva comprimento, textura e ângulos para precisão.",
+            "icon": "RiMagicLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Por que criar um vídeo de penteado",
+        "label": "Benefícios",
+        "description": "Uma prévia em movimento facilita a decisão.",
+        "items": [
+          {
+            "title": "Ver movimento",
+            "description": "O vídeo mostra camadas e franja em ação.",
+            "icon": "RiVideoLine",
+            "image": {
+              "src": "/video/v1.mp4",
+              "alt": "Movimento do cabelo"
+            }
+          },
+          {
+            "title": "Clipe compartilhável",
+            "description": "Envie o clipe ao barbeiro ou cabeleireiro.",
+            "icon": "RiShareLine",
+            "image": {
+              "src": "/video/v2.mp4",
+              "alt": "Compartilhar clipe"
+            }
+          },
+          {
+            "title": "Rápido online",
+            "description": "Gere o clipe em minutos a partir de uma foto.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/bg/video-bg2.png",
+              "alt": "Geração rápida"
+            }
+          }
+        ],
+        "default_item": "item-1"
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "Como criar um vídeo de penteado",
+        "description": "Crie o clipe em quatro etapas:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "Guia de vídeo de penteado"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Envie uma foto",
+            "description": "Use uma foto frontal e bem iluminada.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Enviar foto"
+            }
+          },
+          {
+            "title": "Escolha um estilo",
+            "description": "Selecione um template ou descreva corte e cor.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Escolher estilo"
+            }
+          },
+          {
+            "title": "Gerar vídeo",
+            "description": "A IA anima a transformação.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Gerar vídeo"
+            }
+          },
+          {
+            "title": "Baixar e compartilhar",
+            "description": "Salve o clipe e mostre no salão.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Baixar vídeo"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Recursos principais",
+        "description": "Prompts, prévia e download HD para vídeos de penteado.",
+        "items": [
+          {
+            "title": "Foto para vídeo",
+            "description": "Transforme uma imagem em um clipe curto.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Prompts de estilo",
+            "description": "Informe comprimento, textura e cor.",
+            "icon": "RiText"
+          },
+          {
+            "title": "Antes/Depois",
+            "description": "Compare o visual original e o novo em um clipe.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Download HD",
+            "description": "Salve o clipe com boa qualidade.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "Render rápido",
+            "description": "Crie vídeos rápido online.",
+            "icon": "RiSpeedLine"
+          },
+          {
+            "title": "Mobile friendly",
+            "description": "Funciona no celular e no desktop.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "Depoimentos",
+        "description": "Clipes curtos deixam a decisão do salão mais clara.",
+        "items": [
+          {
+            "name": "Ava Peterson",
+            "role": "Criadora de conteúdo",
+            "quote": "Ver o movimento facilitou a escolha. As camadas ficaram claras.",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Ava Peterson"
+            }
+          },
+          {
+            "name": "Liam Torres",
+            "role": "Barbeiro",
+            "quote": "Os clientes enviam o vídeo e eu entendo o corte na hora.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Liam Torres"
+            }
+          },
+          {
+            "name": "Mia Chen",
+            "role": "Estudante",
+            "quote": "Comparei cobre vs. loiro em movimento e decidi rápido.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Mia Chen"
+            }
+          },
+          {
+            "name": "Noah Kim",
+            "role": "Fotógrafo",
+            "quote": "O clipe ajuda a visualizar o movimento do cabelo em câmera.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "Noah Kim"
+            }
+          },
+          {
+            "name": "Sofia Alvarez",
+            "role": "Maquiadora",
+            "quote": "Uso junto com moodboards para alinhar o resultado final.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Sofia Alvarez"
+            }
+          },
+          {
+            "name": "Jordan Lee",
+            "role": "Stylist",
+            "quote": "Economiza tempo nas consultas e reduz retrabalho.",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Jordan Lee"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "FAQ",
+        "description": "Respostas sobre vídeos de penteado IA e fotos recomendadas.",
+        "tip": "Precisa de ajuda? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Contate o suporte</a>",
+        "items": [
+          {
+            "question": "O que é um vídeo de penteado IA?",
+            "answer": "Um clipe curto gerado a partir da sua foto que mostra um novo corte ou cor."
+          },
+          {
+            "question": "Quanto dura o vídeo?",
+            "answer": "Normalmente alguns segundos e fácil de compartilhar."
+          },
+          {
+            "question": "Posso usar meu próprio prompt?",
+            "answer": "Sim. Descreva corte, comprimento, textura e cor."
+          },
+          {
+            "question": "Quais fotos funcionam melhor?",
+            "answer": "Fotos frontais, nítidas e bem iluminadas."
+          },
+          {
+            "question": "Posso baixar o vídeo?",
+            "answer": "Sim. Baixe o clipe e compartilhe com seu stylist."
+          },
+          {
+            "question": "Preciso de habilidades de edição?",
+            "answer": "Não. O clipe é gerado automaticamente."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Crie seu vídeo de penteado",
+        "description": "Gere um clipe de transformação e compartilhe com seu stylist.",
+        "buttons": [
+          {
+            "title": "Iniciar vídeo",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "use_cases": {
+        "id": "use_cases",
+        "title": "Resultados de alta qualidade em qualquer lugar",
+        "description": "Para usos pessoais e profissionais.",
+        "items": [
+          {
+            "title": "Try-on virtual",
+            "description": "Ideal para fotos de perfil, provas e portfólios de beleza.",
+            "icon": "RiUserLine"
+          },
+          {
+            "title": "Visuais profissionais",
+            "description": "Crie headshots e visuais de moda com penteados personalizados.",
+            "icon": "RiImageLine"
+          },
+          {
+            "title": "Arte conceitual",
+            "description": "Crie personagens, looks editoriais ou modelagem digital.",
+            "icon": "RiBrushLine"
+          },
+          {
+            "title": "Para criadores",
+            "description": "Perfeito para stylists, criadores de conteúdo e novos looks.",
+            "icon": "RiSparkling2Line"
+          }
+        ]
+      }
+    }
   },
   "generator": {
-    "title": "Gerador de Vídeo de Cabelo",
-    "description": "Crie vídeos animados de transformação de penteados com IA.",
+    "title": "Gerador de vídeo de penteado IA",
+    "description": "Crie vídeos animados de transformação de penteado a partir de foto ou prompt.",
     "tabs": {
       "text-to-video": "Descrever Estilo",
       "image-to-video": "Foto para Vídeo",
@@ -21,42 +347,27 @@
       "select_provider": "Selecionar Provedor de IA",
       "select_model": "Selecionar Modelo de Vídeo",
       "prompt": "Descrição do Penteado",
-      "prompt_placeholder": "Descreva a transformação do penteado: do visual atual ao desejado, movimento, ângulos",
+      "prompt_placeholder": "Descreva a mudança: corte, comprimento, cor, textura, movimento, ângulos (ex.: de longo para bob curto, de loiro para cobre, ondas suaves).",
       "reference_image": "Sua Foto",
-      "reference_image_placeholder": "Envie sua foto para transformação de vídeo",
+      "reference_image_placeholder": "Envie uma foto nítida para melhores resultados.",
       "reference_video": "URL do Vídeo de Referência",
-      "reference_video_placeholder": "Digite a URL de um vídeo de penteado de referência",
+      "reference_video_placeholder": "Cole a URL de um vídeo de penteado de referência.",
       "some_images_failed_to_upload": "Falha ao enviar imagem, exclua e reenvie",
       "prompt_too_long": "A descrição é muito longa, por favor encurte"
     },
-    "generate": "Gerar Vídeo",
+    "generate": "Gerar vídeo de penteado",
     "checking_account": "Verificando conta...",
     "loading": "Carregando...",
-    "generating": "Criando seu vídeo de transformação...",
-    "sign_in_to_generate": "Entre para criar vídeos",
+    "generating": "Criando seu vídeo de penteado...",
+    "sign_in_to_generate": "Entre para criar vídeos de penteado",
     "credits_cost": "Custa {credits} créditos",
     "credits_remaining": "{credits} créditos restantes",
     "buy_credits": "Comprar Créditos",
     "progress": "Progresso",
-    "generated_videos": "Seu Vídeo de Transformação",
-    "ready_to_generate": "Pronto para Criar",
-    "ready_for_generating": "Pronto para Criação",
-    "no_videos_generated": "Ainda não foram criados vídeos"
+    "generated_videos": "Seu vídeo de penteado",
+    "ready_to_generate": "Pronto para criar o vídeo",
+    "ready_for_generating": "Pronto para a criação do vídeo",
+    "no_videos_generated": "Nenhum vídeo de penteado ainda"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

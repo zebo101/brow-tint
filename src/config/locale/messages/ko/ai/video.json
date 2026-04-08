@@ -1,15 +1,341 @@
 {
   "metadata": {
-    "title": "헤어스타일 체인저 AI 비디오",
-    "description": "AI로 헤어스타일 변환 비디오를 만드세요. 동작으로 새 외모를 확인하세요."
+    "title": "AI 헤어스타일 영상 | AI Barber",
+    "description": "사진으로 AI 헤어스타일 변신 영상을 만드세요. 컷과 컬러를 움직임으로 확인하고 클립을 다운로드합니다.",
+    "keywords": "ai 헤어스타일 영상, 헤어스타일 체인저 영상, 헤어 변신 영상, 가상 헤어컷 영상, 헤어컬러 변경 영상, 애니메이션 헤어스타일, 헤어스타일 시뮬레이터 영상, 비포 애프터 머리, ai 헤어 영상 생성기"
   },
   "page": {
-    "title": "헤어스타일 체인저 AI 비디오",
-    "description": "AI로 헤어스타일 변환 비디오를 만드세요. 동작으로 새 외모를 확인하세요."
+    "title": "AI 헤어스타일 영상",
+    "description": "사진을 AI 헤어스타일 영상으로 변환하세요. 컷과 컬러를 애니메이션으로 확인하고 비포/애프터를 비교해 다운로드합니다.",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "use_cases",
+      "features",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "AI 헤어스타일 영상",
+        "highlight_text": "헤어스타일 영상",
+        "description": "사진 한 장으로 리얼한 변신 클립을 만드세요.",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-video.png",
+          "alt": "AI 헤어스타일 영상 미리보기",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-video-dark.png",
+          "alt": "AI 헤어스타일 영상 미리보기 다크",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/video-bg.png",
+          "alt": "AI Barber 영상 배경"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "AI 헤어스타일 영상 생성기란?",
+        "label": "소개",
+        "description": "사진을 짧은 영상으로 만들어 움직임, 질감, 색상을 확인합니다.",
+        "image": {
+          "src": "/imgs/bg/video-bg3.png",
+          "alt": "AI 헤어스타일 영상 소개"
+        },
+        "items": [
+          {
+            "title": "사진에서 영상",
+            "description": "사진 1장으로 몇 초 만에 클립 생성.",
+            "icon": "RiVideoLine"
+          },
+          {
+            "title": "비포/애프터",
+            "description": "원본과 새 스타일을 한 클립에서 비교.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "컬러 모션",
+            "description": "금발, 구리, 흑발 변화를 움직임으로 확인.",
+            "icon": "RiPaletteLine"
+          },
+          {
+            "title": "프롬프트 제어",
+            "description": "길이, 질감, 각도를 설명해 정밀 조정.",
+            "icon": "RiMagicLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "영상으로 시도하는 이유",
+        "label": "장점",
+        "description": "움직이는 미리보기로 결정이 쉬워집니다.",
+        "items": [
+          {
+            "title": "움직임 확인",
+            "description": "레이어와 앞머리 움직임을 영상으로 확인.",
+            "icon": "RiVideoLine",
+            "image": {
+              "src": "/video/v1.mp4",
+              "alt": "헤어 모션 미리보기"
+            }
+          },
+          {
+            "title": "공유 가능한 클립",
+            "description": "바버나 스타일리스트에게 클립을 전송.",
+            "icon": "RiShareLine",
+            "image": {
+              "src": "/video/v2.mp4",
+              "alt": "영상 공유"
+            }
+          },
+          {
+            "title": "빠른 온라인 생성",
+            "description": "사진만으로 몇 분 안에 완성.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/bg/video-bg2.png",
+              "alt": "빠른 생성"
+            }
+          }
+        ],
+        "default_item": "item-1"
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "만드는 법",
+        "description": "네 단계로 완성하세요:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "헤어스타일 영상 가이드"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "사진 업로드",
+            "description": "정면이고 밝은 사진이 가장 좋습니다.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "사진 업로드"
+            }
+          },
+          {
+            "title": "스타일 선택",
+            "description": "템플릿을 고르거나 컷과 컬러를 설명하세요.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "스타일 선택"
+            }
+          },
+          {
+            "title": "영상 생성",
+            "description": "AI가 자연스러운 움직임으로 변신을 생성.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "영상 생성"
+            }
+          },
+          {
+            "title": "다운로드 및 공유",
+            "description": "클립을 저장하고 살롱에 공유하세요.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "영상 다운로드"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "핵심 기능",
+        "description": "프롬프트, 미리보기, HD 저장까지 지원합니다.",
+        "items": [
+          {
+            "title": "사진→영상",
+            "description": "한 장의 사진을 짧은 클립으로 변환.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "스타일 프롬프트",
+            "description": "길이, 질감, 컬러를 지정.",
+            "icon": "RiText"
+          },
+          {
+            "title": "비포/애프터",
+            "description": "원본과 새 스타일을 한 영상에서 비교.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "HD 다운로드",
+            "description": "고화질로 저장해 공유 가능.",
+            "icon": "RiHdLine"
+          },
+          {
+            "title": "빠른 렌더링",
+            "description": "복잡한 도구 없이 빠르게 생성.",
+            "icon": "RiSpeedLine"
+          },
+          {
+            "title": "모바일 지원",
+            "description": "모바일과 데스크톱 모두 사용 가능.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "사용자 후기",
+        "description": "짧은 클립이 살롱 결정에 도움이 됩니다.",
+        "items": [
+          {
+            "name": "Ava Peterson",
+            "role": "콘텐츠 크리에이터",
+            "quote": "움직임을 보니 결정이 쉬웠어요. 레이어가 어떻게 떨어지는지 보여줬어요.",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Ava Peterson"
+            }
+          },
+          {
+            "name": "Liam Torres",
+            "role": "바버",
+            "quote": "고객이 영상을 보내서 원하는 컷을 바로 알 수 있어요.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Liam Torres"
+            }
+          },
+          {
+            "name": "Mia Chen",
+            "role": "학생",
+            "quote": "구리색과 금발을 움직임으로 비교하고 빠르게 결정했어요.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Mia Chen"
+            }
+          },
+          {
+            "name": "Noah Kim",
+            "role": "사진작가",
+            "quote": "촬영에서 머리 움직임을 미리 확인할 수 있어요.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "Noah Kim"
+            }
+          },
+          {
+            "name": "Sofia Alvarez",
+            "role": "메이크업 아티스트",
+            "quote": "무드보드와 함께 공유하면 방향이 명확해집니다.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Sofia Alvarez"
+            }
+          },
+          {
+            "name": "Jordan Lee",
+            "role": "스타일리스트",
+            "quote": "상담 시간이 줄고 커뮤니케이션이 쉬워져요.",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Jordan Lee"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "FAQ",
+        "description": "AI 헤어스타일 영상에 대한 질문과 답변.",
+        "tip": "도움이 필요하신가요? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>지원팀</a>에 문의하세요",
+        "items": [
+          {
+            "question": "AI 헤어스타일 영상이란?",
+            "answer": "사진에서 생성되는 짧은 영상으로 새로운 컷이나 컬러를 보여줍니다."
+          },
+          {
+            "question": "영상 길이는?",
+            "answer": "몇 초 정도로, 빠른 미리보기와 공유에 적합합니다."
+          },
+          {
+            "question": "프롬프트를 직접 입력할 수 있나요?",
+            "answer": "네. 컷, 길이, 질감, 컬러를 상세히 설명할 수 있습니다."
+          },
+          {
+            "question": "어떤 사진이 좋나요?",
+            "answer": "정면이고 밝으며 얼굴이 가려지지 않은 사진이 좋습니다."
+          },
+          {
+            "question": "영상 다운로드가 되나요?",
+            "answer": "네. 클립을 저장해 바버나 살롱에 공유할 수 있습니다."
+          },
+          {
+            "question": "편집 기술이 필요하나요?",
+            "answer": "아니요. 자동으로 생성됩니다."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "헤어스타일 영상 만들기",
+        "description": "짧은 변신 클립을 만들어 스타일리스트에게 공유하세요.",
+        "buttons": [
+          {
+            "title": "영상 시작",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "use_cases": {
+        "id": "use_cases",
+        "title": "어디서나 고품질 결과",
+        "description": "개인 및 전문 용도에 모두 적합합니다.",
+        "items": [
+          {
+            "title": "가상 체험",
+            "description": "프로필 사진, 시뮬레이션, 뷰티 포트폴리오에 적합.",
+            "icon": "RiUserLine"
+          },
+          {
+            "title": "프로 비주얼",
+            "description": "맞춤 헤어로 헤드샷과 패션 비주얼 제작.",
+            "icon": "RiImageLine"
+          },
+          {
+            "title": "컨셉 아트",
+            "description": "캐릭터 디자인, 에디토리얼, 디지털 모델링에 활용.",
+            "icon": "RiBrushLine"
+          },
+          {
+            "title": "크리에이터용",
+            "description": "스타일리스트, 콘텐츠 크리에이터에게 최적.",
+            "icon": "RiSparkling2Line"
+          }
+        ]
+      }
+    }
   },
   "generator": {
-    "title": "헤어 비디오 생성기",
-    "description": "AI로 애니메이션 헤어스타일 변환 비디오를 만드세요.",
+    "title": "AI 헤어스타일 영상 생성기",
+    "description": "사진 또는 프롬프트로 헤어스타일 변신 영상을 생성합니다.",
     "tabs": {
       "text-to-video": "스타일 설명",
       "image-to-video": "사진을 비디오로",
@@ -21,42 +347,27 @@
       "select_provider": "AI 제공업체 선택",
       "select_model": "비디오 모델 선택",
       "prompt": "헤어스타일 설명",
-      "prompt_placeholder": "헤어스타일 변환 설명: 현재에서 원하는 룩으로, 움직임, 각도",
+      "prompt_placeholder": "변화를 설명하세요: 컷, 길이, 색상, 질감, 움직임, 각도 (예: 긴 머리에서 짧은 보브, 금발에서 구리색, 부드러운 웨이브).",
       "reference_image": "내 사진",
-      "reference_image_placeholder": "비디오 변환을 위해 사진 업로드",
+      "reference_image_placeholder": "선명한 사진을 업로드하면 결과가 좋아집니다.",
       "reference_video": "참조 비디오 URL",
-      "reference_video_placeholder": "참조 헤어스타일 비디오의 URL 입력",
+      "reference_video_placeholder": "참고할 헤어스타일 영상 URL을 붙여 넣으세요.",
       "some_images_failed_to_upload": "이미지 업로드 실패, 삭제 후 다시 업로드하세요",
       "prompt_too_long": "설명이 너무 깁니다. 짧게 해주세요"
     },
-    "generate": "비디오 생성",
+    "generate": "헤어스타일 영상 생성",
     "checking_account": "계정 확인 중...",
     "loading": "로딩 중...",
-    "generating": "변환 비디오 생성 중...",
-    "sign_in_to_generate": "비디오를 만들려면 로그인",
+    "generating": "헤어스타일 영상을 생성 중...",
+    "sign_in_to_generate": "헤어스타일 영상 생성을 위해 로그인",
     "credits_cost": "{credits} 크레딧 소비",
     "credits_remaining": "남은 크레딧 {credits}",
     "buy_credits": "크레딧 구매",
     "progress": "진행률",
-    "generated_videos": "변환 비디오",
-    "ready_to_generate": "생성 준비 완료",
-    "ready_for_generating": "생성 준비 중",
-    "no_videos_generated": "아직 생성된 비디오 없음"
+    "generated_videos": "내 헤어스타일 영상",
+    "ready_to_generate": "영상 생성 준비 완료",
+    "ready_for_generating": "영상 생성 준비 중",
+    "no_videos_generated": "아직 헤어스타일 영상이 없습니다"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -22,20 +22,25 @@ export default async function HairstyleChangerAiVideoPage({
 
   // get ai video data
   const t = await getTranslations('ai.video');
+  const pageData = t.raw('page');
+
+  // remove generator from sections as it will be inside hero
+  const { generator, ...sections } = pageData.sections || {};
 
   // build page sections
   const page: DynamicPage = {
+    ...pageData,
     sections: {
+      ...sections,
       hero: {
-        title: t.raw('page.title'),
-        description: t.raw('page.description'),
-        background_image: {
-          src: '/imgs/bg/video-bg.png',
-          alt: 'hero background',
+        ...pageData.sections?.hero,
+        data: {
+          customContent: (
+            <div id="generator">
+              <VideoGenerator srOnlyTitle={t.raw('generator.title')} />
+            </div>
+          ),
         },
-      },
-      generator: {
-        component: <VideoGenerator srOnlyTitle={t.raw('generator.title')} />,
       },
     },
   };

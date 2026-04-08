@@ -1,46 +1,365 @@
 {
   "metadata": {
-    "title": "Hairstyle Changer AI Video",
-    "description": "Create hairstyle transformation videos with AI. See your new look in motion."
+    "title": "AI Hairstyle Video Generator | Photo to Hairstyle Video Online | AI Barber",
+    "description": "Create an AI hairstyle video from one photo. Preview haircuts, hair color changes, and before-and-after motion clips online, then download a shareable hairstyle transformation video for your barber or stylist.",
+    "keywords": "ai hairstyle video, ai hairstyle video generator, photo to hairstyle video, hairstyle changer video, hair transformation video, before and after hair video, ai haircut video, virtual hairstyle video, hairstyle motion preview, haircut preview video, hair color change video, hairstyle clip generator, hairstyle simulator video, hairstyle video online, barber hairstyle reference video"
   },
   "page": {
-    "title": "Hairstyle Changer AI Video",
-    "description": "Create hairstyle transformation videos with AI. See your new look in motion."
+    "title": "AI Hairstyle Video Generator - Create Hair Transformation Clips Online | AI Barber",
+    "description": "Turn one selfie into an AI hairstyle video online. Preview short, long, curly, fade, bangs, and hair color changes in motion, compare before and after, then download a hairstyle clip to share with your barber or salon.",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "generator",
+      "benefits",
+      "usage",
+      "features",
+      "stats",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "AI Hairstyle Video Generator Online",
+        "highlight_text": "AI Hairstyle Video",
+        "description": "Turn a photo into an AI hairstyle video in minutes. Preview haircuts, color changes, and before-and-after motion clips before you book your next barber or salon appointment.",
+        "image": {
+          "src": "/imgs/features/ai-hairstyle-video.png",
+          "alt": "AI Hairstyle Video Generator Interface",
+          "width": 1200,
+          "height": 800
+        },
+        "image_invert": {
+          "src": "/imgs/features/ai-hairstyle-video-dark.png",
+          "alt": "AI Hairstyle Video Generator Interface Dark Mode",
+          "width": 1200,
+          "height": 800
+        },
+        "background_image": {
+          "src": "/imgs/bg/video-bg.png",
+          "alt": "AI Barber Hairstyle Video Background"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "What Is the AI Hairstyle Video Generator?",
+        "label": "Introduction",
+        "description": "AI Barber turns a single photo into a hairstyle transformation video so you can preview cut, color, volume, and movement before making a real hair decision.",
+        "image": {
+          "src": "/imgs/bg/video-bg3.png",
+          "alt": "AI Hairstyle Video Generator Overview"
+        },
+        "items": [
+          {
+            "title": "Photo to Hairstyle Video",
+            "description": "Upload one portrait and generate a short hairstyle clip that shows your new look from a natural motion angle.",
+            "icon": "RiVideoLine"
+          },
+          {
+            "title": "Before & After Motion Preview",
+            "description": "See how a bob, fade, bangs, curls, or color change reads in motion instead of relying on a static mockup.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Barber & Stylist Reference Clip",
+            "description": "Download a clear hairstyle video you can send to your barber, salon, or colorist before your appointment.",
+            "icon": "RiShareLine"
+          },
+          {
+            "title": "Custom Hair Transformation Control",
+            "description": "Describe length, texture, parting, layers, fringe, fades, and hair color to generate a more specific hair transformation clip.",
+            "icon": "RiMagicLine"
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Why Choose Our AI Hairstyle Video Generator",
+        "label": "Benefits",
+        "description": "Create faster haircut decisions with motion-based previews, shareable clips, and a simple online workflow.",
+        "items": [
+          {
+            "title": "Preview Hair Movement Before You Cut",
+            "description": "Watch how layers, bangs, curls, volume, and face-framing pieces move so you can judge the style more confidently than with a still photo alone.",
+            "icon": "RiFilmLine",
+            "image": {
+              "src": "/video/v1.mp4",
+              "alt": "AI hairstyle movement preview video"
+            }
+          },
+          {
+            "title": "Share a Before-and-After Clip With Your Stylist",
+            "description": "Send a hairstyle transformation video instead of explaining the look from scratch. It helps barbers and salons understand your target shape and finish faster.",
+            "icon": "RiShareLine",
+            "image": {
+              "src": "/video/v2.mp4",
+              "alt": "Shareable hairstyle transformation video"
+            }
+          },
+          {
+            "title": "Make Hair Decisions Online in Minutes",
+            "description": "Go from upload to downloadable hairstyle clip in one online session, whether you are testing a new haircut, color refresh, or dramatic hair makeover.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/bg/video-bg2.png",
+              "alt": "Fast online hairstyle video workflow"
+            }
+          }
+        ],
+        "default_item": "item-1"
+      },
+      "usage": {
+        "block": "features-step",
+        "id": "usage",
+        "title": "How to Create an AI Hairstyle Video",
+        "description": "Generate a photo to hairstyle video in four simple steps:",
+        "image": {
+          "src": "/imgs/features/1.png",
+          "alt": "How to create an AI hairstyle video"
+        },
+        "image_position": "left",
+        "text_align": "center",
+        "items": [
+          {
+            "title": "Upload a Clear Portrait Photo",
+            "description": "Use a front-facing photo with good lighting so the generator can read your face shape, hairline, and starting hairstyle accurately.",
+            "image": {
+              "src": "/imgs/features/5.png",
+              "alt": "Upload portrait photo for hairstyle video"
+            }
+          },
+          {
+            "title": "Choose the Hairstyle Direction",
+            "description": "Pick the haircut or hair color idea you want to test, such as curtain bangs, a textured crop, a short bob, long waves, or a fade.",
+            "image": {
+              "src": "/imgs/features/6.png",
+              "alt": "Choose hairstyle direction"
+            }
+          },
+          {
+            "title": "Describe the Transformation",
+            "description": "Add details like length, texture, part, color, shine, volume, and motion so the before-and-after clip better matches the result you want.",
+            "image": {
+              "src": "/imgs/features/7.png",
+              "alt": "Describe hairstyle video transformation"
+            }
+          },
+          {
+            "title": "Generate, Compare, and Download",
+            "description": "Create your hairstyle video, review the motion preview, then download the clip to save, share, or bring to your next salon visit.",
+            "image": {
+              "src": "/imgs/features/8.png",
+              "alt": "Generate and download hairstyle video"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "features": {
+        "id": "features",
+        "title": "Key Features of the AI Hairstyle Video Generator",
+        "description": "A practical online workflow for hairstyle previews, before-and-after comparisons, and downloadable motion clips.",
+        "items": [
+          {
+            "title": "Photo-to-Video Hairstyle Preview",
+            "description": "Start with one image and turn it into a hairstyle video that shows your updated look in motion.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Detailed Hair Prompt Control",
+            "description": "Describe length, layers, fringe, fade level, curl pattern, color, and styling direction to guide the final clip.",
+            "icon": "RiEdit2Line"
+          },
+          {
+            "title": "Before & After Hair Comparison",
+            "description": "Use motion preview clips to compare your current hairstyle with a new haircut or color concept before committing.",
+            "icon": "RiCompareLine"
+          },
+          {
+            "title": "Downloadable Stylist Reference Video",
+            "description": "Save a hairstyle transformation clip you can text, email, or show directly to your barber, salon, or colorist.",
+            "icon": "RiDownload2Line"
+          },
+          {
+            "title": "Fast Browser-Based Workflow",
+            "description": "Create haircut preview videos online without editing software, complicated timelines, or manual video production.",
+            "icon": "RiSpeedLine"
+          },
+          {
+            "title": "Works on Mobile and Desktop",
+            "description": "Generate and review your hairstyle video on your phone or computer whenever you want a quick second opinion.",
+            "icon": "RiSmartphoneLine"
+          }
+        ]
+      },
+      "testimonials": {
+        "id": "testimonials",
+        "title": "What Users Say About AI Barber Hairstyle Videos",
+        "description": "Real people using hairstyle motion previews before salon visits, content shoots, and hair color changes.",
+        "items": [
+          {
+            "name": "Ava Peterson",
+            "role": "Content Creator",
+            "quote": "A static preview was not enough for me. The hairstyle video showed how the layers moved around my face, and that is what convinced me to book the cut.",
+            "image": {
+              "src": "/imgs/avatars/1.png",
+              "alt": "Ava Peterson"
+            }
+          },
+          {
+            "name": "Liam Torres",
+            "role": "Barber",
+            "quote": "Clients send me the transformation clip before they come in, and it makes the consultation much clearer than trying to describe a haircut over text.",
+            "image": {
+              "src": "/imgs/avatars/2.png",
+              "alt": "Liam Torres"
+            }
+          },
+          {
+            "name": "Mia Chen",
+            "role": "Student",
+            "quote": "I used it to compare blonde and copper in motion. Seeing the color shift in a short video made the choice much easier than looking at screenshots.",
+            "image": {
+              "src": "/imgs/avatars/3.png",
+              "alt": "Mia Chen"
+            }
+          },
+          {
+            "name": "Noah Kim",
+            "role": "Photographer",
+            "quote": "The before-and-after hairstyle clip helps my clients understand what a new fringe or shorter cut will look like on camera before the shoot day.",
+            "image": {
+              "src": "/imgs/avatars/4.png",
+              "alt": "Noah Kim"
+            }
+          },
+          {
+            "name": "Sofia Alvarez",
+            "role": "Makeup Artist",
+            "quote": "I like being able to send one motion preview to the hairstylist and the client. Everyone gets aligned on the overall beauty look much faster.",
+            "image": {
+              "src": "/imgs/avatars/5.png",
+              "alt": "Sofia Alvarez"
+            }
+          },
+          {
+            "name": "Jordan Lee",
+            "role": "Salon Client",
+            "quote": "I generated a hairstyle video from one selfie, downloaded it, and showed it at the salon. It reduced the back-and-forth and I got much closer to the result I wanted.",
+            "image": {
+              "src": "/imgs/avatars/6.png",
+              "alt": "Jordan Lee"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "description": "FAQs about AI hairstyle videos, photo-to-video workflow, downloadable clips, and how to get the most realistic preview.",
+        "tip": "Can't find what you're looking for? Contact our <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>support team</a>",
+        "items": [
+          {
+            "question": "What is an AI hairstyle video generator?",
+            "answer": "It is an online tool that turns your photo and hairstyle description into a short motion preview, so you can see a haircut or hair color change before making it real."
+          },
+          {
+            "question": "Can I create a hairstyle video from just one photo?",
+            "answer": "Yes. Upload a clear portrait photo and the tool can generate a photo to hairstyle video without requiring video editing experience."
+          },
+          {
+            "question": "What kind of hairstyles can I preview in video?",
+            "answer": "You can test short and long cuts, layers, fades, bangs, curly styles, sleek looks, and hair color changes such as blonde, brown, black, copper, or fashion shades."
+          },
+          {
+            "question": "Why use a hairstyle video instead of only a picture?",
+            "answer": "A video helps you judge movement, softness, volume, and how the hairstyle frames your face. That is especially useful for bangs, layers, curls, and before-and-after comparisons."
+          },
+          {
+            "question": "Can I download the hairstyle transformation clip?",
+            "answer": "Yes. Once your result is ready, you can download the video clip and keep it as a haircut reference or share it with your barber, stylist, or friends."
+          },
+          {
+            "question": "Can I show the video to my barber or salon?",
+            "answer": "Yes. The downloadable clip is designed to be easy to share, making it much simpler to communicate the haircut shape, color direction, and overall vibe you want."
+          },
+          {
+            "question": "What photos work best for a realistic hairstyle video?",
+            "answer": "Use a front-facing photo with good lighting, a visible hairline, and minimal face obstruction. Clear portraits usually produce better hairstyle motion previews than dark or angled photos."
+          },
+          {
+            "question": "Can I preview hair color changes in motion?",
+            "answer": "Yes. You can describe color updates such as blonde, copper, black, red, silver, or highlight-inspired looks and review how the new shade reads in a moving clip."
+          },
+          {
+            "question": "Do I need editing skills or video software?",
+            "answer": "No. The workflow is fully online. You upload a photo, describe the style change, and generate the hairstyle video directly in your browser."
+          },
+          {
+            "question": "How long does it take to generate a hairstyle video?",
+            "answer": "Most hairstyle videos are ready within a few minutes, depending on the selected model, your input, and current generation demand."
+          },
+          {
+            "question": "Is my uploaded photo handled securely?",
+            "answer": "We take privacy seriously. Your uploaded media is processed for generation and handled securely, and it is not shared with third parties."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Ready to Preview Your New Hair in Motion?",
+        "description": "Create an AI hairstyle video now, compare your before and after look, and download a clip you can share with your barber or salon.",
+        "buttons": [
+          {
+            "title": "Create Hairstyle Video Now",
+            "url": "#generator",
+            "target": "_self",
+            "icon": "Zap"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
   },
   "generator": {
-    "title": "Hair Video Generator",
-    "description": "Create animated hairstyle transformation videos with AI.",
+    "title": "AI Hairstyle Video Generator",
+    "description": "Create a photo to hairstyle video, before-and-after hair transformation clip, or motion preview for your next haircut.",
     "tabs": {
       "text-to-video": "Describe Style",
       "image-to-video": "Photo to Video",
-      "video-to-video": "Video Transform"
+      "video-to-video": "Video Restyle"
     },
     "form": {
       "provider": "AI Provider",
       "model": "Video Model",
       "select_provider": "Select AI Provider",
       "select_model": "Select Video Model",
-      "prompt": "Hairstyle Description",
-      "prompt_placeholder": "Describe the hairstyle transformation: from current to desired look, movement, angles",
+      "prompt": "Hairstyle Video Prompt",
+      "prompt_placeholder": "Describe the hairstyle transformation: length, color, texture, movement (e.g., blunt bob, rich copper color).",
       "reference_image": "Your Photo",
-      "reference_image_placeholder": "Upload your photo for video transformation",
+      "reference_image_placeholder": "Upload a clear portrait photo to create a hairstyle video from your image.",
       "reference_video": "Reference Video URL",
-      "reference_video_placeholder": "Enter the URL of a reference hairstyle video",
-      "some_images_failed_to_upload": "Image failed to upload, please delete and re-upload",
+      "reference_video_placeholder": "Paste a video URL if you want to restyle an existing hairstyle clip.",
+      "some_images_failed_to_upload": "Some images failed to upload. Please remove them and upload again.",
       "prompt_too_long": "Description is too long, please shorten it"
     },
-    "generate": "Generate Video",
+    "generate": "Generate Hairstyle Video",
     "checking_account": "Checking Account...",
     "loading": "Loading...",
-    "generating": "Creating Your Transformation Video...",
-    "sign_in_to_generate": "Sign In to Create Videos",
+    "generating": "Creating Your Hairstyle Video...",
+    "sign_in_to_generate": "Sign In to Create Hairstyle Videos",
     "credits_cost": "Cost {credits} credits",
     "credits_remaining": "Remaining {credits} credits",
     "buy_credits": "Buy Credits",
     "progress": "Progress",
-    "generated_videos": "Your Transformation Video",
-    "ready_to_generate": "Ready to Create",
-    "ready_for_generating": "Ready for Creation",
-    "no_videos_generated": "No Videos Created Yet"
+    "generated_videos": "Your Hairstyle Videos",
+    "ready_to_generate": "Preparing your hairstyle motion preview...",
+    "ready_for_generating": "Ready to create your hairstyle video",
+    "no_videos_generated": "No hairstyle videos generated yet"
   }
 }

@@ -32,7 +32,7 @@
             "description": "Start any time as you need. One-time payment",
             "features_title": "Includes",
             "features": [
-              "400 credits, valid for 1 year",
+              "120 credits, valid for 1 year",
               "Text-to-image and image-to-image generation",
               "High-quality images with Nano Banana 2 AI model",
               "Free download of generated images"
@@ -42,7 +42,7 @@
             "currency": "USD",
             "price": "$29.9",
             "original_price": "$39.9",
-            "unit": "/ 400 credits",
+            "unit": "/ 120 credits",
             "is_featured": false,
             "tip": "",
             "button": {
@@ -52,7 +52,7 @@
             },
             "product_id": "credits-package",
             "product_name": "Credits Package",
-            "credits": 400,
+            "credits": 120,
             "valid_days": 365,
             "group": "one-time"
           },
@@ -61,7 +61,7 @@
             "description": "Auto renew monthly to get credits. Subscription can be canceled anytime!",
             "features_title": "Includes",
             "features": [
-              "400 credits, valid for 1 month",
+              "120 credits, valid for 1 month",
               "Text-to-image and image-to-image generation",
               "High-quality images with Nano Banana 2 AI model",
               "Free download of generated images"
@@ -81,7 +81,7 @@
             },
             "product_id": "starter-monthly",
             "product_name": "Starter Plan",
-            "credits": 400,
+            "credits": 120,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "Starter"
@@ -91,7 +91,7 @@
             "description": "Around $19.2 / month, save 23% compared to monthly plan. Subscription can be canceled anytime!",
             "features_title": "Includes",
             "features": [
-              "4800 credits, valid for 1 year",
+              "1600 credits, valid for 1 year",
               "Text-to-image and image-to-image generation",
               "High-quality images with Nano Banana 2 AI model",
               "Free download of generated images"
@@ -111,7 +111,7 @@
             },
             "product_id": "premium-yearly",
             "product_name": "Premium Plan",
-            "credits": 4800,
+            "credits": 1600,
             "valid_days": 365,
             "group": "yearly",
             "plan_name": "Premium"

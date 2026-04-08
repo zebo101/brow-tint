@@ -49,7 +49,7 @@
         "label": "紹介",
         "description": "AI Barberは無料のAIヘアスタイルチェンジャー兼ヘアカットシミュレーターです。自分の写真でカット、長さ、カラーを試してから理美容室へ行けます。",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/bg/image-bg4.png",
           "alt": "AI Barber Hairstyle Simulator"
         },
         "items": [
@@ -342,11 +342,10 @@
       "styles": "スタイル"
     },
     "sidebar": {
-      "howtos": "使い方",
+      "history": "履歴画像",
       "discover": "結果を見る",
-      "tour_title": "機能ガイド",
-      "tour_description": "ヘアスタイルチェンジャーの使い方",
-      "start_tour": "ガイド開始"
+      "history_sign_in": "ログインして生成済み画像の履歴を表示",
+      "history_empty": "履歴画像はまだありません"
     },
     "form": {
       "select_hairstyle_placeholder": "クリックしてヘアスタイルを選択",
@@ -381,6 +380,11 @@
     "use_as_reference": "参照として使用",
     "download_image": "画像をダウンロード",
     "example_image_hint": "これはサンプル結果です。生成されたヘアスタイルはここに表示されます。",
+    "history_images": "履歴画像",
+    "history_load_more": "もっと見る",
+    "history_view_image": "履歴画像を見る",
+    "history_scroll_left": "左にスクロール",
+    "history_scroll_right": "右にスクロール",
     "photoGuidelines": {
       "title": "最適な結果のための写真ガイドライン",
       "suitableTitle": "適切な写真",
@@ -402,3 +406,4 @@
     }
   }
 }
+

@@ -350,6 +350,11 @@ export class FalProvider implements AIProvider {
       delete input.hairstyle_image;
     }
 
+    // negative_prompt: pass as a dedicated API parameter (not mixed into prompt text)
+    if (options.negative_prompt) {
+      input.negative_prompt = options.negative_prompt;
+    }
+
     // video_input is the default options
     if (options.video_input && Array.isArray(options.video_input)) {
       input.video_url = options.video_input[0];
