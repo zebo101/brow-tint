@@ -1,9 +1,9 @@
 import { getTranslations } from 'next-intl/server';
 
-import { envConfigs } from '@/config';
 import { defaultLocale } from '@/config/locale';
 import { redirect } from '@/core/i18n/navigation';
 import { SignIn } from '@/shared/blocks/sign/sign-in';
+import { buildAlternates } from '@/shared/lib/seo-metadata';
 import { getConfigs } from '@/shared/models/config';
 import { getSignUser } from '@/shared/models/user';
 
@@ -32,11 +32,10 @@ export async function generateMetadata({
 
   return {
     title: `${t('sign.sign_in_title')} - ${t('metadata.title')}`,
-    alternates: {
-      canonical:
-        locale !== defaultLocale
-          ? `${envConfigs.app_url}/${locale}/sign-in`
-          : `${envConfigs.app_url}/sign-in`,
+    alternates: buildAlternates('/sign-in', { locale, noIndex: true }),
+    robots: {
+      index: false,
+      follow: false,
     },
   };
 }

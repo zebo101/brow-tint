@@ -216,7 +216,7 @@ export async function getLocalPost({
     <MDXContent
       components={getMDXComponents({
         // this allows you to link to other pages with relative file paths
-        a: createRelativeLink(postsSource, localPost),
+        a: createRelativeLink(postsSource, localPost) as any,
       })}
     />
   );
@@ -264,7 +264,7 @@ export async function getLocalPage({
     <MDXContent
       components={getMDXComponents({
         // this allows you to link to other pages with relative file paths
-        a: createRelativeLink(pagesSource, localPage),
+        a: createRelativeLink(pagesSource, localPage) as any,
       })}
     />
   );

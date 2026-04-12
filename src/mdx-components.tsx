@@ -124,7 +124,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     );
   }
 
-  return mergedComponents;
+  return mergedComponents as MDXComponents;
 }
 
 export const useMDXComponents = getMDXComponents;

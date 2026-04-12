@@ -2,7 +2,10 @@ import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
-import { envConfigs } from '@/config';
+import { defaultLocale } from '@/config/locale';
+import { pagesSource } from '@/core/docs/source';
+import { buildAlternates } from '@/shared/lib/seo-metadata';
+import { buildCanonicalUrl } from '@/shared/lib/seo-paths';
 import { getLocalPage } from '@/shared/models/post';
 
 export const revalidate = 3600;
@@ -33,13 +36,13 @@ export async function generateMetadata({
   }
 
   // build canonical url
-  canonicalUrl =
-    locale !== envConfigs.locale
-      ? `${envConfigs.app_url}/${locale}/${staticPageSlug}`
-      : `${envConfigs.app_url}/${staticPageSlug}`;
+  canonicalUrl = buildCanonicalUrl(`/${staticPageSlug}`, locale);
 
   // get static page content
   const staticPage = await getLocalPage({ slug: staticPageSlug, locale });
+  const staticPageLocales = [defaultLocale, 'zh'].filter((entryLocale) =>
+    Boolean(pagesSource.getPage([staticPageSlug], entryLocale))
+  );
 
   // return static page metadata
   if (staticPage) {
@@ -49,9 +52,11 @@ export async function generateMetadata({
     return {
       title,
       description,
-      alternates: {
-        canonical: canonicalUrl,
-      },
+      alternates: buildAlternates(`/${staticPageSlug}`, {
+        locale,
+        availableLocales:
+          staticPageLocales.length > 0 ? staticPageLocales : [defaultLocale],
+      }),
     };
   }
 
@@ -73,9 +78,9 @@ export async function generateMetadata({
     return {
       title,
       description,
-      alternates: {
-        canonical: canonicalUrl,
-      },
+      alternates: buildAlternates(`/${staticPageSlug}`, {
+        locale,
+      }),
     };
   }
 
@@ -88,9 +93,9 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: {
-      canonical: canonicalUrl,
-    },
+    alternates: buildAlternates(`/${staticPageSlug}`, {
+      locale,
+    }),
   };
 }
 
