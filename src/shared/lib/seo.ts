@@ -1,11 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { envConfigs } from '@/config';
-import {
-  buildCanonicalUrl,
-  buildLanguageAlternates,
-  getSiteUrl,
-} from '@/shared/lib/seo-paths';
+import { getSiteUrl } from '@/shared/lib/seo-paths';
+import { buildAlternates } from '@/shared/lib/seo-metadata';
 
 // get metadata for page component
 export function getMetadata(
@@ -52,8 +49,11 @@ export function getMetadata(
 
     // canonical url
     const canonicalPath = options.canonicalUrl || '/';
-    const canonicalUrl = buildCanonicalUrl(canonicalPath, locale || '');
-    const languageAlternates = buildLanguageAlternates(canonicalPath);
+    const alternates = buildAlternates(canonicalPath, {
+      locale,
+      noIndex: options.noIndex,
+    });
+    const canonicalUrl = alternates.canonical;
 
     const title =
       passedMetadata.title || translatedMetadata.title || defaultMetadata.title;
@@ -89,10 +89,7 @@ export function getMetadata(
         passedMetadata.keywords ||
         translatedMetadata.keywords ||
         defaultMetadata.keywords,
-      alternates: {
-        canonical: canonicalUrl,
-        languages: languageAlternates,
-      },
+      alternates,
 
       openGraph: {
         type: 'website',

@@ -2,10 +2,7 @@ import { getTranslations } from 'next-intl/server';
 
 import { redirect } from '@/core/i18n/navigation';
 import { VerifyEmailPage } from '@/shared/blocks/sign/verify-email';
-import {
-  buildCanonicalUrl,
-  buildLanguageAlternates,
-} from '@/shared/lib/seo-paths';
+import { buildAlternates } from '@/shared/lib/seo-metadata';
 
 export async function generateMetadata({
   params,
@@ -17,10 +14,7 @@ export async function generateMetadata({
 
   return {
     title: `${t('sign.verify_email_page_title')} - ${t('metadata.title')}`,
-    alternates: {
-      canonical: buildCanonicalUrl('/verify-email', locale),
-      languages: buildLanguageAlternates('/verify-email'),
-    },
+    alternates: buildAlternates('/verify-email', { locale, noIndex: true }),
     robots: {
       index: false,
       follow: false,

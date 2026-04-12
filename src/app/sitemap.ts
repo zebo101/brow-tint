@@ -6,14 +6,11 @@ import { defaultLocale, locales } from '@/config/locale';
 import { docsSource, i18n, pagesSource, postsSource } from '@/core/docs/source';
 import { PostStatus, PostType, getPosts } from '@/shared/models/post';
 import { buildCanonicalUrl, isIndexablePath } from '@/shared/lib/seo-paths';
+import { expandStaticRoutes, StaticSitemapRoute } from './sitemap-routes';
 
 type SitemapEntry = MetadataRoute.Sitemap[number];
 
-const staticRoutes: Array<{
-  changeFrequency: NonNullable<SitemapEntry['changeFrequency']>;
-  path: string;
-  priority: number;
-}> = [
+const staticRoutes: StaticSitemapRoute[] = [
   { path: '/', changeFrequency: 'daily', priority: 1 },
   { path: '/pricing', changeFrequency: 'weekly', priority: 0.9 },
   { path: '/showcases', changeFrequency: 'weekly', priority: 0.85 },
@@ -22,7 +19,6 @@ const staticRoutes: Array<{
   { path: '/ai-music-generator', changeFrequency: 'weekly', priority: 0.75 },
   { path: '/blog', changeFrequency: 'daily', priority: 0.8 },
   { path: '/updates', changeFrequency: 'weekly', priority: 0.7 },
-  { path: '/docs', changeFrequency: 'weekly', priority: 0.65 },
 ];
 
 function getFileLastModified(filePath: string) {
@@ -78,15 +74,10 @@ function dedupeEntries(entries: SitemapEntry[]) {
 }
 
 function buildStaticRouteEntries() {
-  return staticRoutes.flatMap((route) =>
-    locales.map((locale) =>
-      createEntry(route.path, {
-        locale,
-        changeFrequency: route.changeFrequency,
-        priority: route.priority,
-      })
-    )
-  );
+  return expandStaticRoutes(staticRoutes, {
+    defaultLocale,
+    locales,
+  });
 }
 
 function buildSourceEntries(

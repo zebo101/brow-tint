@@ -3,10 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import { defaultLocale } from '@/config/locale';
 import { redirect } from '@/core/i18n/navigation';
 import { SignUp } from '@/shared/blocks/sign/sign-up';
-import {
-  buildCanonicalUrl,
-  buildLanguageAlternates,
-} from '@/shared/lib/seo-paths';
+import { buildAlternates } from '@/shared/lib/seo-metadata';
 import { getConfigs } from '@/shared/models/config';
 import { getSignUser } from '@/shared/models/user';
 
@@ -35,10 +32,7 @@ export async function generateMetadata({
 
   return {
     title: `${t('sign.sign_up_title')} - ${t('metadata.title')}`,
-    alternates: {
-      canonical: buildCanonicalUrl('/sign-up', locale),
-      languages: buildLanguageAlternates('/sign-up'),
-    },
+    alternates: buildAlternates('/sign-up', { locale, noIndex: true }),
     robots: {
       index: false,
       follow: false,

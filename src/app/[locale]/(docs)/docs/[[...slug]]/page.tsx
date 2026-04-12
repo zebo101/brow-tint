@@ -8,8 +8,8 @@ import {
   DocsTitle,
 } from 'fumadocs-ui/page';
 
-import { source } from '@/core/docs/source';
-import { buildCanonicalUrl, buildLanguageAlternates } from '@/shared/lib/seo-paths';
+import { i18n, source } from '@/core/docs/source';
+import { buildAlternates } from '@/shared/lib/seo-metadata';
 
 export const revalidate = 86400;
 export const dynamic = 'force-static';
@@ -59,15 +59,16 @@ export async function generateMetadata(props: {
   if (!page) notFound();
 
   const canonicalPath = page.url;
+  const availableLocales = i18n.languages.filter((locale) =>
+    Boolean(source.getPage(params.slug, locale))
+  );
 
   return {
     title: page.data.title,
     description: page.data.description,
-    alternates: {
-      canonical: buildCanonicalUrl(canonicalPath),
-      languages: buildLanguageAlternates(canonicalPath, {
-        locales: ['en', 'zh'],
-      }),
-    },
+    alternates: buildAlternates(canonicalPath, {
+      locale: params.locale,
+      availableLocales,
+    }),
   };
 }
