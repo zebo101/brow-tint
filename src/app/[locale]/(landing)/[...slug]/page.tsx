@@ -2,7 +2,11 @@ import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
-import { envConfigs } from '@/config';
+import { defaultLocale } from '@/config/locale';
+import {
+  buildCanonicalUrl,
+  buildLanguageAlternates,
+} from '@/shared/lib/seo-paths';
 import { getLocalPage } from '@/shared/models/post';
 
 export const revalidate = 3600;
@@ -33,10 +37,7 @@ export async function generateMetadata({
   }
 
   // build canonical url
-  canonicalUrl =
-    locale !== envConfigs.locale
-      ? `${envConfigs.app_url}/${locale}/${staticPageSlug}`
-      : `${envConfigs.app_url}/${staticPageSlug}`;
+  canonicalUrl = buildCanonicalUrl(`/${staticPageSlug}`, locale);
 
   // get static page content
   const staticPage = await getLocalPage({ slug: staticPageSlug, locale });
@@ -51,6 +52,13 @@ export async function generateMetadata({
       description,
       alternates: {
         canonical: canonicalUrl,
+        languages: buildLanguageAlternates(`/${staticPageSlug}`, {
+          locales:
+            staticPageSlug === 'privacy-policy' ||
+            staticPageSlug === 'terms-of-service'
+              ? [defaultLocale, 'zh']
+              : undefined,
+        }),
       },
     };
   }
@@ -70,14 +78,15 @@ export async function generateMetadata({
     title = t.raw('metadata.title');
     description = t.raw('metadata.description');
 
-    return {
-      title,
-      description,
-      alternates: {
-        canonical: canonicalUrl,
-      },
-    };
-  }
+      return {
+        title,
+        description,
+        alternates: {
+          canonical: canonicalUrl,
+          languages: buildLanguageAlternates(`/${staticPageSlug}`),
+        },
+      };
+    }
 
   // 3. return common metadata
   const tc = await getTranslations('common.metadata');
@@ -90,6 +99,7 @@ export async function generateMetadata({
     description,
     alternates: {
       canonical: canonicalUrl,
+      languages: buildLanguageAlternates(`/${staticPageSlug}`),
     },
   };
 }

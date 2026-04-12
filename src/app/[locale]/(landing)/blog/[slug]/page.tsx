@@ -1,8 +1,11 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
-import { envConfigs } from '@/config';
 import { Empty } from '@/shared/blocks/common';
+import {
+  buildCanonicalUrl,
+  buildLanguageAlternates,
+} from '@/shared/lib/seo-paths';
 import { getPost } from '@/shared/models/post';
 import { DynamicPage } from '@/shared/types/blocks/landing';
 
@@ -15,11 +18,7 @@ export async function generateMetadata({
 }) {
   const { locale, slug } = await params;
   const t = await getTranslations('pages.blog.metadata');
-
-  const canonicalUrl =
-    locale !== envConfigs.locale
-      ? `${envConfigs.app_url}/${locale}/blog/${slug}`
-      : `${envConfigs.app_url}/blog/${slug}`;
+  const canonicalPath = `/blog/${slug}`;
 
   const post = await getPost({ slug, locale });
   if (!post) {
@@ -27,7 +26,8 @@ export async function generateMetadata({
       title: `${slug} | ${t('title')}`,
       description: t('description'),
       alternates: {
-        canonical: canonicalUrl,
+        canonical: buildCanonicalUrl(canonicalPath, locale),
+        languages: buildLanguageAlternates(canonicalPath),
       },
     };
   }
@@ -36,7 +36,8 @@ export async function generateMetadata({
     title: `${post.title} | ${t('title')}`,
     description: post.description,
     alternates: {
-      canonical: canonicalUrl,
+      canonical: buildCanonicalUrl(canonicalPath, locale),
+      languages: buildLanguageAlternates(canonicalPath),
     },
   };
 }

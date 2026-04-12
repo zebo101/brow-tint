@@ -2,8 +2,11 @@ import moment from 'moment';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
-import { envConfigs } from '@/config';
 import { Empty } from '@/shared/blocks/common';
+import {
+  buildCanonicalUrl,
+  buildLanguageAlternates,
+} from '@/shared/lib/seo-paths';
 import {
   PostType as DBPostType,
   getPosts,
@@ -30,15 +33,14 @@ export async function generateMetadata({
 }) {
   const { locale, slug } = await params;
   const t = await getTranslations('pages.blog.metadata');
+  const canonicalPath = `/blog/category/${slug}`;
 
   return {
     title: `${slug} | ${t('title')}`,
     description: t('description'),
     alternates: {
-      canonical:
-        locale !== envConfigs.locale
-          ? `${envConfigs.app_url}/${locale}/blog/category/${slug}`
-          : `${envConfigs.app_url}/blog/category/${slug}`,
+      canonical: buildCanonicalUrl(canonicalPath, locale),
+      languages: buildLanguageAlternates(canonicalPath),
     },
   };
 }

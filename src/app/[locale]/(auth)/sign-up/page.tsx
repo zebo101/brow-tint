@@ -1,9 +1,12 @@
 import { getTranslations } from 'next-intl/server';
 
-import { envConfigs } from '@/config';
 import { defaultLocale } from '@/config/locale';
 import { redirect } from '@/core/i18n/navigation';
 import { SignUp } from '@/shared/blocks/sign/sign-up';
+import {
+  buildCanonicalUrl,
+  buildLanguageAlternates,
+} from '@/shared/lib/seo-paths';
 import { getConfigs } from '@/shared/models/config';
 import { getSignUser } from '@/shared/models/user';
 
@@ -33,10 +36,12 @@ export async function generateMetadata({
   return {
     title: `${t('sign.sign_up_title')} - ${t('metadata.title')}`,
     alternates: {
-      canonical:
-        locale !== defaultLocale
-          ? `${envConfigs.app_url}/${locale}/sign-up`
-          : `${envConfigs.app_url}/sign-up`,
+      canonical: buildCanonicalUrl('/sign-up', locale),
+      languages: buildLanguageAlternates('/sign-up'),
+    },
+    robots: {
+      index: false,
+      follow: false,
     },
   };
 }

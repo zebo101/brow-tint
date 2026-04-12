@@ -7,6 +7,13 @@ import { DashboardLayout } from '@/shared/blocks/dashboard/layout';
 import { getAllConfigs } from '@/shared/models/config';
 import { Sidebar as SidebarType } from '@/shared/types/blocks/dashboard';
 
+export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 /**
  * Admin layout to manage datas
  */

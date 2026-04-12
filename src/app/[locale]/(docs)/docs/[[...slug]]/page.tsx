@@ -9,6 +9,7 @@ import {
 } from 'fumadocs-ui/page';
 
 import { source } from '@/core/docs/source';
+import { buildCanonicalUrl, buildLanguageAlternates } from '@/shared/lib/seo-paths';
 
 export const revalidate = 86400;
 export const dynamic = 'force-static';
@@ -38,7 +39,7 @@ export default async function DocsContentPage(props: {
         <MDXContent
           components={getMDXComponents({
             // this allows you to link to other pages with relative file paths
-            a: createRelativeLink(source, page),
+            a: createRelativeLink(source, page) as any,
           })}
         />
       </DocsBody>
@@ -57,8 +58,16 @@ export async function generateMetadata(props: {
   const page = source.getPage(params.slug, params.locale);
   if (!page) notFound();
 
+  const canonicalPath = page.url;
+
   return {
     title: page.data.title,
     description: page.data.description,
+    alternates: {
+      canonical: buildCanonicalUrl(canonicalPath),
+      languages: buildLanguageAlternates(canonicalPath, {
+        locales: ['en', 'zh'],
+      }),
+    },
   };
 }

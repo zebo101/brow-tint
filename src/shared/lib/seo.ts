@@ -1,7 +1,11 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { envConfigs } from '@/config';
-import { defaultLocale } from '@/config/locale';
+import {
+  buildCanonicalUrl,
+  buildLanguageAlternates,
+  getSiteUrl,
+} from '@/shared/lib/seo-paths';
 
 // get metadata for page component
 export function getMetadata(
@@ -47,10 +51,9 @@ export function getMetadata(
     }
 
     // canonical url
-    const canonicalUrl = await getCanonicalUrl(
-      options.canonicalUrl || '',
-      locale || ''
-    );
+    const canonicalPath = options.canonicalUrl || '/';
+    const canonicalUrl = buildCanonicalUrl(canonicalPath, locale || '');
+    const languageAlternates = buildLanguageAlternates(canonicalPath);
 
     const title =
       passedMetadata.title || translatedMetadata.title || defaultMetadata.title;
@@ -64,7 +67,7 @@ export function getMetadata(
     if (imageUrl.startsWith('http')) {
       imageUrl = imageUrl;
     } else {
-      imageUrl = `${envConfigs.app_url}${imageUrl}`;
+      imageUrl = `${getSiteUrl()}${imageUrl}`;
     }
 
     // app name
@@ -88,6 +91,7 @@ export function getMetadata(
         defaultMetadata.keywords,
       alternates: {
         canonical: canonicalUrl,
+        languages: languageAlternates,
       },
 
       openGraph: {
@@ -105,7 +109,7 @@ export function getMetadata(
         title,
         description,
         images: [imageUrl.toString()],
-        site: envConfigs.app_url,
+        site: getSiteUrl(),
       },
 
       robots: {
@@ -127,30 +131,4 @@ async function getTranslatedMetadata(metadataKey: string, locale: string) {
     description: t.has('description') ? t('description') : '',
     keywords: t.has('keywords') ? t('keywords') : '',
   };
-}
-
-async function getCanonicalUrl(canonicalUrl: string, locale: string) {
-  if (!canonicalUrl) {
-    canonicalUrl = '/';
-  }
-
-  if (canonicalUrl.startsWith('http')) {
-    // full url
-    canonicalUrl = canonicalUrl;
-  } else {
-    // relative path
-    if (!canonicalUrl.startsWith('/')) {
-      canonicalUrl = `/${canonicalUrl}`;
-    }
-
-    canonicalUrl = `${envConfigs.app_url}${
-      !locale || locale === defaultLocale ? '' : `/${locale}`
-    }${canonicalUrl}`;
-
-    if (locale !== defaultLocale && canonicalUrl.endsWith('/')) {
-      canonicalUrl = canonicalUrl.slice(0, -1);
-    }
-  }
-
-  return canonicalUrl;
 }
