@@ -104,9 +104,14 @@ export function Pricing({
 
     // First look for a group with is_featured set to true
     const featuredGroup = section.groups?.find((g) => g.is_featured);
-    // If no featured group exists, fall back to the first group
+    // Prefer monthly by default when nothing else dictates the choice
+    const monthlyGroup = section.groups?.find((g) => g.name === 'monthly');
+    // Fall back to the first group if neither monthly nor featured exists
     return (
-      currentItem?.group || featuredGroup?.name || section.groups?.[0]?.name
+      currentItem?.group ||
+      featuredGroup?.name ||
+      monthlyGroup?.name ||
+      section.groups?.[0]?.name
     );
   });
 
