@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 interface Hairstyle {
   id: string;
@@ -8,6 +8,8 @@ interface Hairstyle {
   sequence: number;
   name: string;
   tags: string[];
+  description?: string;
+  prompt?: string;
   imageUrl: string;
   thumbnailUrl: string;
 }
@@ -33,19 +35,19 @@ interface CacheEntry {
 
 function getFromCache(): HairstyleData | null {
   if (typeof window === 'undefined') return null;
-  
+
   try {
     const cached = sessionStorage.getItem(CACHE_KEY);
     if (!cached) return null;
-    
+
     const entry: CacheEntry = JSON.parse(cached);
     const isExpired = Date.now() - entry.timestamp > CACHE_TTL;
-    
+
     if (isExpired) {
       sessionStorage.removeItem(CACHE_KEY);
       return null;
     }
-    
+
     return entry.data;
   } catch {
     return null;
@@ -54,7 +56,7 @@ function getFromCache(): HairstyleData | null {
 
 function setToCache(data: HairstyleData): void {
   if (typeof window === 'undefined') return;
-  
+
   try {
     const entry: CacheEntry = {
       data,
@@ -86,7 +88,7 @@ export function useHairstyles() {
 
   useEffect(() => {
     let isMounted = true;
-    
+
     const fetchHairstyles = async () => {
       // Check cache first
       const cached = getFromCache();
@@ -102,7 +104,7 @@ export function useHairstyles() {
       try {
         const resp = await fetch('/api/hairstyle/list');
         if (!resp.ok) throw new Error('Failed to fetch hairstyles');
-        
+
         const { data } = await resp.json();
         if (!data?.hairstyles || !data?.categories) {
           throw new Error('Invalid response format');

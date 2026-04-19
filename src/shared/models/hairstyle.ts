@@ -1,4 +1,5 @@
-import { eq, and, asc } from 'drizzle-orm';
+import { and, asc, eq } from 'drizzle-orm';
+
 import { db } from '@/core/db';
 import { hairstyle } from '@/config/db/schema.sqlite';
 import { getUuid } from '@/shared/lib/uuid';
@@ -11,14 +12,14 @@ export type NewHairstyle = {
   sequence: number;
   name: string;
   tags?: string | null; // JSON array
+  description?: string | null;
+  prompt?: string | null;
   imageUrl: string;
   thumbnailUrl: string;
   status?: HairstyleStatus;
 };
 
-export type UpdateHairstyle = Partial<
-  Omit<NewHairstyle, 'id' | 'createdAt'>
->;
+export type UpdateHairstyle = Partial<Omit<NewHairstyle, 'id' | 'createdAt'>>;
 
 export type Hairstyle = NewHairstyle & {
   createdAt: Date;
@@ -28,7 +29,10 @@ export type Hairstyle = NewHairstyle & {
 export async function createHairstyle(
   newHairstyle: NewHairstyle
 ): Promise<Hairstyle> {
-  const [result] = await db().insert(hairstyle).values(newHairstyle).returning();
+  const [result] = await db()
+    .insert(hairstyle)
+    .values(newHairstyle)
+    .returning();
 
   return result;
 }
@@ -119,4 +123,3 @@ export async function getHairstyleCountByCategory(
 
   return counts;
 }
-

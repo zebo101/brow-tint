@@ -19,17 +19,9 @@ export default async function ShowcasesPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  // get page data
+  // get page data — the JSON now drives the full DynamicPage (show_sections + sections map).
   const t = await getTranslations('pages.showcases');
-
-  const page: DynamicPage = {
-    title: t.raw('page.title'),
-    sections: {
-      showcases: {
-        ...t.raw('page.sections.showcases'),
-      },
-    },
-  };
+  const page: DynamicPage = t.raw('page');
 
   // load page component
   const Page = await getThemePage('dynamic-page');

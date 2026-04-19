@@ -609,6 +609,8 @@ export const hairstyle = table(
     sequence: integer('sequence').notNull(), // 序号 (1), (2), (3)...
     name: text('name').notNull(), // AI生成的发型名称
     tags: text('tags'), // JSON数组，AI生成的标签
+    description: text('description'), // human-readable 1-sentence summary (admin UI / tooltips)
+    prompt: text('prompt'), // long-form engineered description used in image-gen prompts
     imageUrl: text('image_url').notNull(), // 原始图片URL（透明背景PNG）
     thumbnailUrl: text('thumbnail_url').notNull(), // 缩略图URL（150x150）
     status: text('status').notNull().default('active'), // active, inactive

@@ -57,7 +57,7 @@ function CategoryPreview({ hairstyles }: { hairstyles: Hairstyle[] }) {
           key={h.id}
           src={h.thumbnailUrl || undefined}
           alt={h.name}
-          className="h-9 w-9 rounded-lg border border-border/60 object-cover shadow-sm flex-shrink-0 bg-background dark:bg-gray-300"
+          className="h-9 w-9 rounded-lg border border-border/60 object-cover shadow-sm flex-shrink-0 bg-background dark:bg-gradient-to-b dark:from-neutral-50 dark:to-stone-100"
         />
       ))}
     </div>
@@ -80,6 +80,41 @@ export function HairstyleCategorySelector({
     if (!openCategory) return [];
     return hairstyles[openCategory] || [];
   }, [hairstyles, openCategory]);
+
+  // Disambiguate name collisions in the open category by appending #1, #2, …
+  // only when a name appears more than once. Stable across re-renders because
+  // `currentHairstyles` preserves sequence-sorted order from the API.
+  const displayNames = useMemo(() => {
+    const count = new Map<string, number>();
+    for (const h of currentHairstyles) {
+      count.set(h.name, (count.get(h.name) ?? 0) + 1);
+    }
+    const seen = new Map<string, number>();
+    const map = new Map<string, string>();
+    for (const h of currentHairstyles) {
+      if ((count.get(h.name) ?? 0) > 1) {
+        const idx = (seen.get(h.name) ?? 0) + 1;
+        seen.set(h.name, idx);
+        map.set(h.id, `${h.name} #${idx}`);
+      } else {
+        map.set(h.id, h.name);
+      }
+    }
+    return map;
+  }, [currentHairstyles]);
+
+  // For the always-visible "Selected Hairstyle Preview" outside the dialog,
+  // disambiguate against all hairstyles in the selected's category (not just
+  // the currently-open one).
+  const selectedDisplayName = useMemo(() => {
+    if (!selectedHairstyle) return '';
+    const siblings = hairstyles[selectedHairstyle.category] ?? [];
+    const sameName = siblings.filter((h) => h.name === selectedHairstyle.name);
+    if (sameName.length <= 1) return selectedHairstyle.name;
+    const idx =
+      sameName.findIndex((h) => h.id === selectedHairstyle.id) + 1;
+    return `${selectedHairstyle.name} #${idx}`;
+  }, [hairstyles, selectedHairstyle]);
 
   const handleOpenCategory = (category: string) => {
     setOpenCategory(category);
@@ -143,11 +178,11 @@ export function HairstyleCategorySelector({
             <img
               src={selectedHairstyle.thumbnailUrl || undefined}
               alt={selectedHairstyle.name}
-              className="h-14 w-14 rounded-lg object-cover bg-background dark:bg-gray-300"
+              className="h-14 w-14 rounded-lg object-cover bg-background dark:bg-gradient-to-b dark:from-neutral-50 dark:to-stone-100"
             />
             <div className="min-w-0">
               <p className="font-medium text-sm truncate">
-                {selectedHairstyle.name}
+                {selectedDisplayName}
               </p>
               <div className="flex flex-wrap gap-1 mt-1">
                 {selectedHairstyle.tags.slice(0, 3).map((tag) => (
@@ -166,40 +201,49 @@ export function HairstyleCategorySelector({
 
       {/* Hairstyle Selection Dialog */}
       <Dialog open={!!openCategory} onOpenChange={() => setOpenCategory(null)}>
-        <DialogContent className="max-h-[92vh] max-w-[calc(100%-1rem)] overflow-hidden border border-border/60 bg-background/95 p-0 shadow-[0_32px_90px_-36px_rgba(0,0,0,0.55)] backdrop-blur-sm sm:max-w-2xl md:max-w-5xl">
-          <DialogHeader className="sticky top-0 z-10 border-b border-border/70 bg-background/95 px-6 py-5 backdrop-blur-sm md:px-8">
-            <DialogTitle className="text-lg font-semibold tracking-tight md:text-xl">
+        <DialogContent className="border-border/60 bg-background/95 max-h-[92vh] max-w-[calc(100%-1rem)] overflow-hidden border p-0 shadow-[0_32px_90px_-36px_rgba(0,0,0,0.55)] backdrop-blur-sm sm:max-w-2xl md:max-w-5xl">
+          <DialogHeader className="border-border/70 bg-background/95 sticky top-0 z-10 border-b px-4 py-3.5 backdrop-blur-sm sm:px-6 sm:py-4 md:px-8 md:py-5">
+            <DialogTitle className="text-base font-semibold tracking-tight sm:text-lg md:text-xl">
               {openCategory && t(`categories.${openCategory}`)}
-              <span className="ml-2 text-base font-normal text-muted-foreground">
+              <span className="text-muted-foreground ml-2 text-sm font-normal sm:text-base">
                 ({currentHairstyles.length})
               </span>
             </DialogTitle>
           </DialogHeader>
-          <ScrollArea className="h-[calc(92vh-92px)] max-h-[760px]">
-            <div className="px-5 pb-6 pt-4 md:px-8 md:pb-8 md:pt-5">
-              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+          <ScrollArea className="h-[calc(92vh-76px)] max-h-[760px] sm:h-[calc(92vh-92px)]">
+            <div className="px-3 pt-3 pb-5 sm:px-5 sm:pt-4 sm:pb-6 md:px-8 md:pt-5 md:pb-8">
+              <div className="grid grid-cols-3 gap-2 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 md:gap-3.5 lg:grid-cols-5 xl:grid-cols-6">
                 {currentHairstyles.map((hairstyle) => (
                   <button
                     key={hairstyle.id}
                     className={cn(
-                      'group relative aspect-square overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-b from-background to-muted/25 p-1.5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_18px_32px_-18px_rgba(0,0,0,0.45)]',
+                      'group border-border/50 bg-background/60 hover:border-primary/50 flex flex-col overflow-hidden rounded-xl border text-left shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md',
                       selectedHairstyle?.id === hairstyle.id &&
-                        'border-primary/70 bg-primary/[0.06] shadow-[0_18px_36px_-20px_rgba(0,0,0,0.5)] ring-2 ring-primary/15'
+                        'border-primary/70 ring-primary/20 ring-2'
                     )}
                     onClick={() => handleSelect(hairstyle)}
-                    style={{ contentVisibility: 'auto', containIntrinsicSize: '80px' }}
+                    style={{
+                      contentVisibility: 'auto',
+                      containIntrinsicSize: '120px',
+                    }}
                   >
-                    <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-white dark:bg-gray-200">
+                    <div className="relative aspect-square w-full overflow-hidden dark:bg-gradient-to-b dark:from-neutral-50 dark:to-stone-100">
                       <img
                         src={hairstyle.thumbnailUrl || undefined}
                         alt={hairstyle.name}
-                        className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+                        className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.04]"
                         loading="lazy"
                       />
                     </div>
-                    <div className="absolute inset-x-1.5 bottom-1.5 rounded-xl bg-gradient-to-t from-black/80 via-black/35 to-transparent px-2 py-2 opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
-                      <p className="text-[10px] font-medium text-white leading-tight truncate">
-                        {hairstyle.name}
+                    <div
+                      className={cn(
+                        'border-border/40 bg-background/80 border-t px-2 py-1.5',
+                        selectedHairstyle?.id === hairstyle.id &&
+                          'bg-primary/[0.06]'
+                      )}
+                    >
+                      <p className="text-foreground truncate text-[11px] leading-tight font-medium sm:text-xs">
+                        {displayNames.get(hairstyle.id) ?? hairstyle.name}
                       </p>
                     </div>
                   </button>
