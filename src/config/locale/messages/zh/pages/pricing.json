@@ -32,7 +32,7 @@
             "description": "随时开始，按需使用。一次性付款",
             "features_title": "包含",
             "features": [
-              "120 积分，有效期 1 年",
+              "300 积分，有效期 1 年",
               "文本生成图像和图像生成图像",
               "使用 Nano Banana 2 AI 模型生成高质量图像",
               "免费下载生成的图像"
@@ -42,7 +42,7 @@
             "currency": "USD",
             "price": "$29.9",
             "original_price": "$39.9",
-            "unit": "/ 120 积分",
+            "unit": "/ 300 积分",
             "is_featured": false,
             "tip": "",
             "button": {
@@ -52,7 +52,7 @@
             },
             "product_id": "credits-package",
             "product_name": "积分套餐",
-            "credits": 120,
+            "credits": 300,
             "valid_days": 365,
             "group": "one-time"
           },
@@ -61,7 +61,7 @@
             "description": "每月自动续费获取积分。随时可取消订阅！",
             "features_title": "包含",
             "features": [
-              "120 积分，有效期 1 个月",
+              "300 积分，有效期 1 个月",
               "文本生成图像和图像生成图像",
               "使用 Nano Banana 2 AI 模型生成高质量图像",
               "免费下载生成的图像"
@@ -81,7 +81,7 @@
             },
             "product_id": "starter-monthly",
             "product_name": "入门版",
-            "credits": 120,
+            "credits": 300,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "入门版"
@@ -91,7 +91,7 @@
             "description": "约 $19.2 / 月，相比月付节省 23%。随时可取消订阅！",
             "features_title": "包含",
             "features": [
-              "1600 积分，有效期 1 年",
+              "4000 积分，有效期 1 年",
               "文本生成图像和图像生成图像",
               "使用 Nano Banana 2 AI 模型生成高质量图像",
               "免费下载生成的图像"
@@ -111,7 +111,7 @@
             },
             "product_id": "premium-yearly",
             "product_name": "高级版",
-            "credits": 1600,
+            "credits": 4000,
             "valid_days": 365,
             "group": "yearly",
             "plan_name": "高级版"
