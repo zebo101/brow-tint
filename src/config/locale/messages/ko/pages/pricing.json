@@ -32,7 +32,7 @@
             "description": "필요할 때 언제든지 시작하세요. 일회성 결제",
             "features_title": "포함 사항",
             "features": [
-              "120 크레딧, 1년간 유효",
+              "300 크레딧, 1년간 유효",
               "텍스트-이미지 및 이미지-이미지 생성",
               "Nano Banana 2 AI 모델로 고품질 이미지",
               "생성된 이미지 무료 다운로드"
@@ -42,7 +42,7 @@
             "currency": "USD",
             "price": "$29.9",
             "original_price": "$39.9",
-            "unit": "/ 120 크레딧",
+            "unit": "/ 300 크레딧",
             "is_featured": false,
             "tip": "",
             "button": {
@@ -52,7 +52,7 @@
             },
             "product_id": "credits-package",
             "product_name": "크레딧 패키지",
-            "credits": 120,
+            "credits": 300,
             "valid_days": 365,
             "group": "one-time"
           },
@@ -61,7 +61,7 @@
             "description": "매월 자동 갱신으로 크레딧을 받으세요. 언제든지 구독 취소 가능!",
             "features_title": "포함 사항",
             "features": [
-              "120 크레딧, 1개월간 유효",
+              "300 크레딧, 1개월간 유효",
               "텍스트-이미지 및 이미지-이미지 생성",
               "Nano Banana 2 AI 모델로 고품질 이미지",
               "생성된 이미지 무료 다운로드"
@@ -81,7 +81,7 @@
             },
             "product_id": "starter-monthly",
             "product_name": "스타터 플랜",
-            "credits": 120,
+            "credits": 300,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "스타터"
@@ -91,7 +91,7 @@
             "description": "월 약 $19.2, 월간 플랜 대비 23% 절약. 언제든지 구독 취소 가능!",
             "features_title": "포함 사항",
             "features": [
-              "1600 크레딧, 1년간 유효",
+              "4000 크레딧, 1년간 유효",
               "텍스트-이미지 및 이미지-이미지 생성",
               "Nano Banana 2 AI 모델로 고품질 이미지",
               "생성된 이미지 무료 다운로드"
@@ -111,7 +111,7 @@
             },
             "product_id": "premium-yearly",
             "product_name": "프리미엄 플랜",
-            "credits": 1600,
+            "credits": 4000,
             "valid_days": 365,
             "group": "yearly",
             "plan_name": "프리미엄"
