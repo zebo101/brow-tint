@@ -63,3 +63,6 @@ src/config/db/migrations*
 .source
 
 .chats
+
+# One-off diagnostic / dedup caches
+scripts/.hairstyle-etag-cache.json

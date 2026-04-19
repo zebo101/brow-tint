@@ -83,7 +83,7 @@ export async function POST(req: Request) {
     if (!imageUrl) {
       return respErr('Failed to get image URL');
     }
-    
+
     const aiResult = await analyzeHairstyleWithAI(imageUrl);
 
     // Save to database
@@ -93,6 +93,8 @@ export async function POST(req: Request) {
       sequence,
       name: aiResult.name,
       tags: JSON.stringify(aiResult.tags),
+      description: aiResult.description || null,
+      prompt: aiResult.prompt || null,
       imageUrl: originalResult.url,
       thumbnailUrl: thumbnailResult.url,
       status: 'active',
@@ -105,6 +107,8 @@ export async function POST(req: Request) {
         sequence: hairstyle.sequence,
         name: hairstyle.name,
         tags: aiResult.tags,
+        description: aiResult.description,
+        prompt: aiResult.prompt,
         imageUrl: hairstyle.imageUrl,
         thumbnailUrl: hairstyle.thumbnailUrl,
       },

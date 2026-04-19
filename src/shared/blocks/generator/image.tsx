@@ -18,7 +18,10 @@ import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
 import { Link } from '@/core/i18n/navigation';
-import { buildHairstylePrompt, HAIRSTYLE_NEGATIVE_PROMPT } from '@/config/img-prompt';
+import {
+  buildHairstylePrompt,
+  HAIRSTYLE_NEGATIVE_PROMPT,
+} from '@/config/img-prompt';
 import { AIMediaType, AITaskStatus } from '@/extensions/ai/types';
 import {
   ImageDropzone,
@@ -27,7 +30,7 @@ import {
   LazyImage,
 } from '@/shared/blocks/common';
 import { HairstyleCategorySelector } from '@/shared/components/hairstyle-category-selector';
-import { useHairstyles } from '@/shared/hooks/use-hairstyles';
+import { StackedHairstyleCards } from '@/shared/components/stacked-hairstyle-cards';
 import {
   Accordion,
   AccordionContent,
@@ -66,6 +69,7 @@ import {
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { Textarea } from '@/shared/components/ui/textarea';
 import { useAppContext } from '@/shared/contexts/app';
+import { useHairstyles } from '@/shared/hooks/use-hairstyles';
 import { cn } from '@/shared/lib/utils';
 
 interface ImageGeneratorProps {
@@ -105,6 +109,11 @@ const MAX_POLL_ERRORS = 3;
 const MAX_PROMPT_LENGTH = 2000;
 const MAX_HISTORY_IMAGES = 24;
 
+const EXAMPLE_STACK_ITEMS = [
+  { id: 'example-11', src: '/imgs/cases/11.png', alt: 'Example hairstyle' },
+];
+const EXAMPLE_MAIN_IMAGE = EXAMPLE_STACK_ITEMS[0];
+
 type HairstyleCategoryKey = 'men' | 'women' | 'boys' | 'girls';
 
 type HairstyleCategory = {
@@ -119,6 +128,8 @@ interface Hairstyle {
   sequence: number;
   name: string;
   tags: string[];
+  description?: string;
+  prompt?: string;
   imageUrl: string;
   thumbnailUrl: string;
 }
@@ -305,7 +316,9 @@ export function ImageGenerator({
   const [selectedHairstyleName, setSelectedHairstyleName] = useState<
     string | null
   >(null);
-  const [selectedHairstyle, setSelectedHairstyle] = useState<Hairstyle | null>(null);
+  const [selectedHairstyle, setSelectedHairstyle] = useState<Hairstyle | null>(
+    null
+  );
 
   const [costCredits, setCostCredits] = useState<number>(6);
   const [provider, setProvider] = useState(PROVIDER_OPTIONS[3]?.value ?? 'kie');
@@ -318,7 +331,7 @@ export function ImageGenerator({
   const [generatedImages, setGeneratedImages] = useState<GeneratedImage[]>([]);
   const [historyPanelImages, setHistoryPanelImages] =
     useState<GeneratedImage[]>(historyImages);
-  const [selectedHistoryImage, setSelectedHistoryImage] =
+  const [selectedPreviewImage, setSelectedPreviewImage] =
     useState<GeneratedImage | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -341,6 +354,18 @@ export function ImageGenerator({
     categories: categoryData,
     isLoading: isLoadingHairstyles,
   } = useHairstyles();
+
+  // Disambiguate the selected hairstyle's name when the same `name` appears
+  // on more than one row in its category (can happen because the AI analyzer
+  // sometimes gives visually-similar cuts identical names).
+  const selectedDisplayName = useMemo(() => {
+    if (!selectedHairstyle) return '';
+    const siblings = hairstyles[selectedHairstyle.category] ?? [];
+    const sameName = siblings.filter((h) => h.name === selectedHairstyle.name);
+    if (sameName.length <= 1) return selectedHairstyle.name;
+    const idx = sameName.findIndex((h) => h.id === selectedHairstyle.id) + 1;
+    return `${selectedHairstyle.name} #${idx}`;
+  }, [hairstyles, selectedHairstyle]);
 
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
@@ -648,16 +673,26 @@ export function ImageGenerator({
 
     const trimmedPrompt = prompt.trim();
     const subjectImageCount = isTextToImageMode ? 0 : referenceImageUrls.length;
-    
+
     // Construct the final prompt including hairstyle info if selected
     let finalPrompt = trimmedPrompt;
     if (selectedHairstyle) {
-      const tags = Array.isArray(selectedHairstyle.tags) ? selectedHairstyle.tags : [];
-      finalPrompt = buildHairstylePrompt(selectedHairstyle.name, tags, trimmedPrompt, subjectImageCount);
+      const tags = Array.isArray(selectedHairstyle.tags)
+        ? selectedHairstyle.tags
+        : [];
+      finalPrompt = buildHairstylePrompt(
+        selectedHairstyle.name,
+        tags,
+        trimmedPrompt,
+        subjectImageCount,
+        selectedHairstyle.prompt || ''
+      );
     }
 
     if (!finalPrompt) {
-      toast.error('Please enter a prompt or select a hairstyle before generating.');
+      toast.error(
+        'Please enter a prompt or select a hairstyle before generating.'
+      );
       return;
     }
 
@@ -684,7 +719,7 @@ export function ImageGenerator({
       if (!isTextToImageMode) {
         options.image_input = referenceImageUrls;
       }
-      
+
       // Only send hairstyle reference image when user photo exists (image-to-image)
       if (selectedHairstyle && !isTextToImageMode) {
         options.hairstyle_image = selectedHairstyle.imageUrl;
@@ -763,13 +798,13 @@ export function ImageGenerator({
 
     try {
       setDownloadingImageId(image.id);
-      
+
       // Check if URL is local (starts with /) or external
       const isLocalUrl = image.url.startsWith('/');
-      const fetchUrl = isLocalUrl 
-        ? image.url 
+      const fetchUrl = isLocalUrl
+        ? image.url
         : `/api/proxy/file?url=${encodeURIComponent(image.url)}`;
-      
+
       const resp = await fetch(fetchUrl);
       if (!resp.ok) {
         throw new Error('Failed to fetch image');
@@ -805,7 +840,7 @@ export function ImageGenerator({
         url: image.url,
         status: 'uploaded',
       };
-      
+
       // Set as the only reference image
       setReferenceImageItems([newRefItem]);
       setReferenceImageUrls([image.url]);
@@ -816,10 +851,15 @@ export function ImageGenerator({
   };
 
   return (
-    <section className={cn('relative py-4 md:py-8 lg:py-12 overflow-hidden', className)}>
+    <section
+      className={cn(
+        'relative overflow-hidden py-4 md:py-8 lg:py-12',
+        className
+      )}
+    >
       {/* Atmosphere Background */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-background to-background" />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+      <div className="from-primary/5 via-background to-background absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] bg-[size:24px_24px]" />
 
       {srOnlyTitle && <h2 className="sr-only">{srOnlyTitle}</h2>}
       <div className="container px-4">
@@ -836,12 +876,14 @@ export function ImageGenerator({
             !isLeftPanelOpen &&
               isRightPanelOpen &&
               'lg:grid-cols-[minmax(400px,500px)_380px]',
-            !isLeftPanelOpen && !isRightPanelOpen && 'lg:grid-cols-[minmax(400px,500px)]'
+            !isLeftPanelOpen &&
+              !isRightPanelOpen &&
+              'lg:grid-cols-[minmax(400px,500px)]'
           )}
         >
           {/* 左侧发型选择面板 - 桌面端 (紧凑下拉式) */}
           {isLeftPanelOpen && (
-            <aside className="hidden flex-col overflow-hidden rounded-3xl border border-border/40 bg-card/40 shadow-xl backdrop-blur-xl lg:flex h-full transition-all duration-300">
+            <aside className="border-border/40 bg-card/40 hidden h-full flex-col overflow-hidden rounded-3xl border shadow-xl backdrop-blur-xl transition-all duration-300 lg:flex">
               <div className="shrink-0 border-b p-4">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold">{t('categories.title')}</h3>
@@ -870,10 +912,17 @@ export function ImageGenerator({
             </aside>
           )}
 
-          {/* 左侧发型选择面板 - 移动端 Sheet */}
+          {/* 移动端：从底部滑入的发型选择 Sheet */}
           <Sheet open={isLeftSheetOpen} onOpenChange={setIsLeftSheetOpen}>
-            <SheetContent side="left" className="w-[85vw] p-0 sm:max-w-sm">
+            <SheetContent
+              side="bottom"
+              className="h-[85vh] max-h-[85vh] rounded-t-2xl p-0"
+            >
               <div className="flex h-full flex-col">
+                <div
+                  className="bg-border mx-auto mt-2 h-1.5 w-10 shrink-0 rounded-full"
+                  aria-hidden
+                />
                 <SheetHeader className="shrink-0 border-b p-4">
                   <SheetTitle>{t('categories.title')}</SheetTitle>
                 </SheetHeader>
@@ -886,6 +935,7 @@ export function ImageGenerator({
                     onSelect={(hairstyle: Hairstyle) => {
                       setSelectedHairstyle(hairstyle);
                       setSelectedHairstyleName(hairstyle.name);
+                      setIsLeftSheetOpen(false);
                     }}
                   />
                 </div>
@@ -893,29 +943,18 @@ export function ImageGenerator({
             </SheetContent>
           </Sheet>
 
-
-          {/* 左侧打开按钮 - 移动端 */}
-          <Button
-            variant="outline"
-            size="icon"
-            className="bg-background/95 fixed bottom-4 left-4 z-40 h-12 w-12 shadow-lg backdrop-blur-sm lg:hidden"
-            onClick={() => setIsLeftSheetOpen(true)}
-          >
-            <PanelLeft className="h-5 w-5" />
-          </Button>
-
           {/* 中间主区域 */}
-          <main className="min-w-0 flex-1 space-y-4 md:space-y-6 flex flex-col h-full">
-            <Card className="flex-1 flex flex-col h-full rounded-3xl border-border/40 bg-card/40 shadow-xl backdrop-blur-xl transition-all duration-300">
-              <CardContent className="space-y-4 p-4 md:space-y-6 md:p-6 flex-1 flex flex-col">
+          <main className="flex h-full min-w-0 flex-1 flex-col space-y-4 md:space-y-6">
+            <Card className="border-border/40 bg-card/40 flex h-full flex-1 flex-col rounded-3xl shadow-xl backdrop-blur-xl transition-all duration-300">
+              <CardContent className="flex flex-1 flex-col space-y-4 p-4 md:space-y-6 md:p-6">
                 {/* 侧边栏展开按钮 - 桌面端 */}
-                <div className="hidden lg:flex justify-between items-center -mt-2 mb-2">
+                <div className="-mt-2 mb-2 hidden items-center justify-between lg:flex">
                   {!isLeftPanelOpen ? (
                     <Button
                       variant="ghost"
                       size="sm"
                       onClick={() => setIsLeftPanelOpen(true)}
-                      className="gap-1 text-muted-foreground hover:text-foreground"
+                      className="text-muted-foreground hover:text-foreground gap-1"
                     >
                       <PanelLeft className="h-4 w-4" />
                       <span className="text-xs">{t('categories.title')}</span>
@@ -928,7 +967,7 @@ export function ImageGenerator({
                       variant="ghost"
                       size="sm"
                       onClick={() => setIsRightPanelOpen(true)}
-                      className="gap-1 text-muted-foreground hover:text-foreground"
+                      className="text-muted-foreground hover:text-foreground gap-1"
                     >
                       <span className="text-xs">
                         {rightTab === 'history'
@@ -941,24 +980,48 @@ export function ImageGenerator({
                     <div />
                   )}
                 </div>
-                {/* 发型选择提示 - 仅移动端显示 */}
+                {/* 发型选择入口 - 仅移动端显示 */}
                 <div className="lg:hidden">
                   <button
                     type="button"
                     onClick={() => setIsLeftSheetOpen(true)}
-                    className="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus:ring-ring hover:bg-accent hover:text-accent-foreground flex w-full items-center justify-between rounded-lg border px-3 py-2 text-left text-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                    className={cn(
+                      'group border-border/70 bg-background/80 hover:border-primary/30 hover:bg-accent/50 flex w-full items-center gap-3 rounded-xl border px-3 py-2.5 text-left shadow-sm transition-all duration-200 hover:shadow-md',
+                      selectedHairstyle && 'border-primary/50 bg-primary/[0.04]'
+                    )}
+                    aria-label={t('form.select_hairstyle_placeholder')}
                   >
-                    <span
-                      className={
-                        selectedHairstyleName
-                          ? 'text-foreground'
-                          : 'text-muted-foreground'
-                      }
-                    >
-                      {selectedHairstyleName ||
-                        t('form.select_hairstyle_placeholder')}
-                    </span>
-                    <ChevronRight className="text-muted-foreground h-4 w-4" />
+                    {selectedHairstyle ? (
+                      <img
+                        src={selectedHairstyle.thumbnailUrl || undefined}
+                        alt={selectedHairstyle.name}
+                        className="border-border/60 bg-background h-11 w-11 flex-shrink-0 rounded-lg border object-cover shadow-sm dark:bg-gradient-to-b dark:from-white/45 dark:to-white/20"
+                      />
+                    ) : (
+                      <div className="from-primary/20 to-primary/5 text-primary flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br">
+                        <ImageIcon className="h-5 w-5" />
+                      </div>
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <p
+                        className={cn(
+                          'truncate text-sm font-medium',
+                          selectedHairstyle
+                            ? 'text-foreground'
+                            : 'text-muted-foreground'
+                        )}
+                      >
+                        {selectedHairstyle
+                          ? selectedDisplayName
+                          : t('form.select_hairstyle_placeholder')}
+                      </p>
+                      <p className="text-muted-foreground/90 mt-0.5 truncate text-xs">
+                        {selectedHairstyle
+                          ? t(`categories.${selectedHairstyle.category}`)
+                          : t('categories.title')}
+                      </p>
+                    </div>
+                    <ChevronRight className="text-muted-foreground/80 h-4 w-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5" />
                   </button>
                 </div>
 
@@ -1027,7 +1090,9 @@ export function ImageGenerator({
 
                 {/* AI发型描述 */}
                 <div className="space-y-2">
-                  <Label htmlFor="image-prompt" className="text-xs sm:text-sm">{t('form.prompt')}</Label>
+                  <Label htmlFor="image-prompt" className="text-xs sm:text-sm">
+                    {t('form.prompt')}
+                  </Label>
                   <Textarea
                     id="image-prompt"
                     value={prompt}
@@ -1051,12 +1116,20 @@ export function ImageGenerator({
 
                 {/* 生成按钮 */}
                 {!isMounted ? (
-                  <Button className="w-full text-xs sm:text-sm" disabled size="lg">
+                  <Button
+                    className="w-full text-xs sm:text-sm"
+                    disabled
+                    size="lg"
+                  >
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     {t('loading')}
                   </Button>
                 ) : isCheckSign ? (
-                  <Button className="w-full text-xs sm:text-sm" disabled size="lg">
+                  <Button
+                    className="w-full text-xs sm:text-sm"
+                    disabled
+                    size="lg"
+                  >
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     {t('checking_account')}
                   </Button>
@@ -1179,7 +1252,9 @@ export function ImageGenerator({
                             onClick={() => handleUseAsReference(image)}
                           >
                             <ImagePlus className="mr-1.5 h-3.5 w-3.5 flex-shrink-0" />
-                            <span className="text-[10px] sm:text-xs leading-tight whitespace-nowrap">{t('use_as_reference')}</span>
+                            <span className="text-[10px] leading-tight whitespace-nowrap sm:text-xs">
+                              {t('use_as_reference')}
+                            </span>
                           </Button>
                           <Button
                             size="sm"
@@ -1193,28 +1268,34 @@ export function ImageGenerator({
                             ) : (
                               <Download className="mr-1.5 h-3.5 w-3.5 flex-shrink-0" />
                             )}
-                            <span className="text-[10px] sm:text-xs leading-tight whitespace-nowrap">{t('download_image')}</span>
+                            <span className="text-[10px] leading-tight whitespace-nowrap sm:text-xs">
+                              {t('download_image')}
+                            </span>
                           </Button>
                         </div>
                       </div>
                     ))}
                   </div>
                 ) : showExampleImage ? (
-                  <div className="space-y-3">
-                    <div className="relative overflow-hidden rounded-lg border">
-                      <LazyImage
-                        src="/imgs/cases/1.png"
-                        alt="Example hairstyle"
-                        className="h-auto w-full"
-                      />
+                  <div className="space-y-4">
+                    <div className="relative isolate overflow-visible px-4 pt-6 pb-6 sm:px-8">
+                      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-2xl">
+                        <div className="from-primary/30 via-primary/10 absolute inset-0 bg-gradient-to-br to-transparent" />
+                        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,_rgba(255,255,255,0.18)_0%,_transparent_70%)]" />
+                        <div className="from-background/60 absolute inset-0 bg-gradient-to-t via-transparent to-transparent" />
+                      </div>
                       <Button
                         size="icon"
                         variant="ghost"
-                        className="absolute right-2 top-2 h-6 w-6 rounded-full bg-black/50 text-white hover:bg-black/70"
+                        className="absolute top-1 right-1 z-40 h-6 w-6 rounded-full bg-black/50 text-white hover:bg-black/70"
                         onClick={() => setShowExampleImage(false)}
                       >
                         <X className="h-4 w-4" />
                       </Button>
+                      <StackedHairstyleCards
+                        items={EXAMPLE_STACK_ITEMS}
+                        dialogTitle={t('preview_title')}
+                      />
                     </div>
                     {/* Action Buttons for Example */}
                     <div className="grid grid-cols-2 gap-2">
@@ -1222,27 +1303,35 @@ export function ImageGenerator({
                         size="sm"
                         variant="outline"
                         className="w-full justify-center"
-                        onClick={() => handleUseAsReference({
-                          id: 'example',
-                          url: '/imgs/cases/1.png',
-                          prompt: 'Example hairstyle'
-                        })}
+                        onClick={() =>
+                          handleUseAsReference({
+                            id: EXAMPLE_MAIN_IMAGE.id,
+                            url: EXAMPLE_MAIN_IMAGE.src,
+                            prompt: EXAMPLE_MAIN_IMAGE.alt,
+                          })
+                        }
                       >
                         <ImagePlus className="mr-1.5 h-3.5 w-3.5 flex-shrink-0" />
-                        <span className="text-[10px] sm:text-xs leading-tight whitespace-nowrap">{t('use_as_reference')}</span>
+                        <span className="text-[10px] leading-tight whitespace-nowrap sm:text-xs">
+                          {t('use_as_reference')}
+                        </span>
                       </Button>
                       <Button
                         size="sm"
                         variant="outline"
                         className="w-full justify-center"
-                        onClick={() => handleDownloadImage({
-                          id: 'example',
-                          url: '/imgs/cases/1.png',
-                          prompt: 'Example hairstyle'
-                        })}
+                        onClick={() =>
+                          handleDownloadImage({
+                            id: EXAMPLE_MAIN_IMAGE.id,
+                            url: EXAMPLE_MAIN_IMAGE.src,
+                            prompt: EXAMPLE_MAIN_IMAGE.alt,
+                          })
+                        }
                       >
                         <Download className="mr-1.5 h-3.5 w-3.5 flex-shrink-0" />
-                        <span className="text-[10px] sm:text-xs leading-tight whitespace-nowrap">{t('download_image')}</span>
+                        <span className="text-[10px] leading-tight whitespace-nowrap sm:text-xs">
+                          {t('download_image')}
+                        </span>
                       </Button>
                     </div>
                     <p className="text-muted-foreground text-center text-xs">
@@ -1267,7 +1356,7 @@ export function ImageGenerator({
 
           {/* 右侧历史和结果面板 */}
           {isRightPanelOpen && (
-            <aside className="hidden h-full flex-col overflow-hidden rounded-3xl border border-border/40 bg-card/40 shadow-xl backdrop-blur-xl transition-all duration-300 lg:flex">
+            <aside className="border-border/40 bg-card/40 hidden h-full flex-col overflow-hidden rounded-3xl border shadow-xl backdrop-blur-xl transition-all duration-300 lg:flex">
               <Tabs
                 value={rightTab}
                 onValueChange={(value) =>
@@ -1319,13 +1408,13 @@ export function ImageGenerator({
                           </div>
                         ) : historyPanelImages.length > 0 ? (
                           <div className="flex flex-col gap-4 px-1 pb-2">
-                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
                               {historyPanelImages.slice(0, 6).map((image) => (
                                 <button
                                   key={image.id}
                                   type="button"
-                                  className="group hover:border-foreground/20 w-full overflow-hidden rounded-xl border bg-background/40 text-left shadow-sm transition-colors"
-                                  onClick={() => setSelectedHistoryImage(image)}
+                                  className="group hover:border-foreground/20 bg-background/40 w-full overflow-hidden rounded-xl border text-left shadow-sm transition-colors"
+                                  onClick={() => setSelectedPreviewImage(image)}
                                   aria-label={t('history_view_image')}
                                 >
                                   <div className="relative aspect-[3/4] overflow-hidden">
@@ -1340,8 +1429,15 @@ export function ImageGenerator({
                             </div>
                             {historyPanelImages.length > 6 && (
                               <div className="pt-2">
-                                <Link href="/activity/ai-tasks" className="block w-full">
-                                  <Button variant="secondary" size="sm" className="w-full text-xs">
+                                <Link
+                                  href="/activity/ai-tasks"
+                                  className="block w-full"
+                                >
+                                  <Button
+                                    variant="secondary"
+                                    size="sm"
+                                    className="w-full text-xs"
+                                  >
                                     <span>View All History</span>
                                     <ChevronRight className="ml-1 h-3 w-3" />
                                   </Button>
@@ -1363,67 +1459,66 @@ export function ImageGenerator({
                     )}
 
                     <Dialog
-                      open={!!selectedHistoryImage}
+                      open={!!selectedPreviewImage}
                       onOpenChange={(open) =>
-                        !open && setSelectedHistoryImage(null)
+                        !open && setSelectedPreviewImage(null)
                       }
                     >
-                      <DialogContent className="max-h-[90vh] max-w-3xl overflow-hidden p-0 sm:max-w-3xl">
-                        {selectedHistoryImage && (
-                          <>
-                            <DialogHeader className="border-b px-6 py-4">
-                              <DialogTitle>{t('history_images')}</DialogTitle>
+                      <DialogContent className="max-h-[92vh] max-w-4xl overflow-hidden p-0 sm:max-w-4xl">
+                        {selectedPreviewImage && (
+                          <div className="flex max-h-[92vh] flex-col">
+                            <DialogHeader className="border-b px-6 py-3">
+                              <DialogTitle className="text-base">
+                                {t('preview_title')}
+                              </DialogTitle>
                             </DialogHeader>
-                            <div className="space-y-4 p-4 md:p-6">
-                              <div className="overflow-hidden rounded-xl border">
-                                <LazyImage
-                                  src={selectedHistoryImage.url}
-                                  alt={
-                                    selectedHistoryImage.prompt ||
-                                    'History image'
-                                  }
-                                  className="h-auto max-h-[65vh] w-full object-contain"
-                                />
-                              </div>
-                              <div className="grid grid-cols-2 gap-2">
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  className="w-full justify-center"
-                                  onClick={() => {
-                                    handleUseAsReference(selectedHistoryImage);
-                                    setSelectedHistoryImage(null);
-                                  }}
-                                >
-                                  <ImagePlus className="mr-1.5 h-3.5 w-3.5 flex-shrink-0" />
-                                  <span className="text-[10px] sm:text-xs whitespace-nowrap">
-                                    {t('use_as_reference')}
-                                  </span>
-                                </Button>
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  className="w-full justify-center"
-                                  onClick={() =>
-                                    handleDownloadImage(selectedHistoryImage)
-                                  }
-                                  disabled={
-                                    downloadingImageId === selectedHistoryImage.id
-                                  }
-                                >
-                                  {downloadingImageId ===
-                                  selectedHistoryImage.id ? (
-                                    <Loader2 className="mr-1.5 h-3.5 w-3.5 flex-shrink-0 animate-spin" />
-                                  ) : (
-                                    <Download className="mr-1.5 h-3.5 w-3.5 flex-shrink-0" />
-                                  )}
-                                  <span className="text-[10px] sm:text-xs whitespace-nowrap">
-                                    {t('download_image')}
-                                  </span>
-                                </Button>
-                              </div>
+                            <div className="bg-muted/30 flex flex-1 items-center justify-center overflow-hidden p-4 md:p-6">
+                              <LazyImage
+                                src={selectedPreviewImage.url}
+                                alt={
+                                  selectedPreviewImage.prompt ||
+                                  'Preview image'
+                                }
+                                className="max-h-[72vh] w-auto max-w-full rounded-lg object-contain"
+                              />
                             </div>
-                          </>
+                            <div className="grid grid-cols-2 gap-2 border-t px-4 py-3 md:px-6">
+                              <Button
+                                variant="outline"
+                                className="w-full justify-center"
+                                onClick={() => {
+                                  handleUseAsReference(selectedPreviewImage);
+                                  setSelectedPreviewImage(null);
+                                }}
+                              >
+                                <ImagePlus className="mr-2 h-4 w-4 flex-shrink-0" />
+                                <span className="whitespace-nowrap">
+                                  {t('use_as_reference')}
+                                </span>
+                              </Button>
+                              <Button
+                                variant="outline"
+                                className="w-full justify-center"
+                                onClick={() =>
+                                  handleDownloadImage(selectedPreviewImage)
+                                }
+                                disabled={
+                                  downloadingImageId ===
+                                  selectedPreviewImage.id
+                                }
+                              >
+                                {downloadingImageId ===
+                                selectedPreviewImage.id ? (
+                                  <Loader2 className="mr-2 h-4 w-4 flex-shrink-0 animate-spin" />
+                                ) : (
+                                  <Download className="mr-2 h-4 w-4 flex-shrink-0" />
+                                )}
+                                <span className="whitespace-nowrap">
+                                  {t('download_image')}
+                                </span>
+                              </Button>
+                            </div>
+                          </div>
                         )}
                       </DialogContent>
                     </Dialog>
@@ -1442,28 +1537,35 @@ export function ImageGenerator({
                           <div className="space-y-4">
                             {generatedImages.map((image) => (
                               <div key={image.id} className="space-y-3">
-                                <div className="overflow-hidden rounded-lg border">
+                                <button
+                                  type="button"
+                                  className="group hover:border-foreground/20 block w-full overflow-hidden rounded-lg border text-left transition-colors"
+                                  onClick={() => setSelectedPreviewImage(image)}
+                                  aria-label={t('history_view_image')}
+                                >
                                   <LazyImage
                                     src={image.url}
                                     alt={image.prompt || 'Generated image'}
-                                    className="h-auto w-full"
+                                    className="h-auto w-full transition-transform duration-300 group-hover:scale-[1.02]"
                                   />
-                                </div>
+                                </button>
                                 {/* Action Buttons */}
                                 <div className="grid grid-cols-2 gap-1.5">
                                   <Button
                                     size="sm"
                                     variant="outline"
-                                    className="w-full justify-center text-xs px-2"
+                                    className="w-full justify-center px-2 text-xs"
                                     onClick={() => handleUseAsReference(image)}
                                   >
                                     <ImagePlus className="mr-1 h-3 w-3 flex-shrink-0" />
-                                    <span className="text-[10px] whitespace-nowrap">{t('use_as_reference')}</span>
+                                    <span className="text-[10px] whitespace-nowrap">
+                                      {t('use_as_reference')}
+                                    </span>
                                   </Button>
                                   <Button
                                     size="sm"
                                     variant="outline"
-                                    className="w-full justify-center text-xs px-2"
+                                    className="w-full justify-center px-2 text-xs"
                                     onClick={() => handleDownloadImage(image)}
                                     disabled={downloadingImageId === image.id}
                                   >
@@ -1472,56 +1574,70 @@ export function ImageGenerator({
                                     ) : (
                                       <Download className="mr-1 h-3 w-3 flex-shrink-0" />
                                     )}
-                                    <span className="text-[10px] whitespace-nowrap">{t('download_image')}</span>
+                                    <span className="text-[10px] whitespace-nowrap">
+                                      {t('download_image')}
+                                    </span>
                                   </Button>
                                 </div>
                               </div>
                             ))}
                           </div>
                         ) : showExampleImage ? (
-                          <div className="space-y-3">
-                            <div className="relative overflow-hidden rounded-lg border">
-                              <LazyImage
-                                src="/imgs/cases/1.png"
-                                alt="Example hairstyle"
-                                className="h-auto w-full"
-                              />
+                          <div className="space-y-4">
+                            <div className="relative isolate overflow-visible px-2 pt-5 pb-5">
+                              <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-2xl">
+                                <div className="from-primary/30 via-primary/10 absolute inset-0 bg-gradient-to-br to-transparent" />
+                                <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,_rgba(255,255,255,0.18)_0%,_transparent_70%)]" />
+                                <div className="from-background/60 absolute inset-0 bg-gradient-to-t via-transparent to-transparent" />
+                              </div>
                               <Button
                                 size="icon"
                                 variant="ghost"
-                                className="absolute right-2 top-2 h-5 w-5 rounded-full bg-black/50 text-white hover:bg-black/70"
+                                className="absolute top-1 right-1 z-40 h-5 w-5 rounded-full bg-black/50 text-white hover:bg-black/70"
                                 onClick={() => setShowExampleImage(false)}
                               >
                                 <X className="h-3 w-3" />
                               </Button>
+                              <StackedHairstyleCards
+                                items={EXAMPLE_STACK_ITEMS}
+                                dialogTitle={t('preview_title')}
+                              />
                             </div>
                             {/* Action Buttons for Example */}
                             <div className="grid grid-cols-2 gap-1.5">
                               <Button
                                 size="sm"
                                 variant="outline"
-                                className="w-full justify-center text-xs px-2"
-                                onClick={() => handleUseAsReference({
-                                  id: 'example',
-                                  url: '/imgs/cases/1.png',
-                                  prompt: 'Example hairstyle'
-                                })}
+                                className="w-full justify-center px-2 text-xs"
+                                onClick={() =>
+                                  handleUseAsReference({
+                                    id: EXAMPLE_MAIN_IMAGE.id,
+                                    url: EXAMPLE_MAIN_IMAGE.src,
+                                    prompt: EXAMPLE_MAIN_IMAGE.alt,
+                                  })
+                                }
                               >
                                 <ImagePlus className="mr-1 h-3 w-3 flex-shrink-0" />
-                                <span className="text-[10px] whitespace-nowrap">{t('use_as_reference')}</span>
+                                <span className="text-[10px] whitespace-nowrap">
+                                  {t('use_as_reference')}
+                                </span>
                               </Button>
                               <Button
                                 size="sm"
                                 variant="outline"
-                                className="w-full justify-center text-xs px-2"
-                                onClick={() => handleDownloadImage({
-                                  id: 'example',
-                                  url: '/imgs/cases/1.png',
-                                  prompt: 'Example hairstyle'
-                                })}
+                                className="w-full justify-center px-2 text-xs"
+                                onClick={() =>
+                                  handleDownloadImage({
+                                    id: EXAMPLE_MAIN_IMAGE.id,
+                                    url: EXAMPLE_MAIN_IMAGE.src,
+                                    prompt: EXAMPLE_MAIN_IMAGE.alt,
+                                  })
+                                }
                               >
                                 <Download className="mr-1 h-3 w-3 flex-shrink-0" />
-                                <span className="text-[10px] whitespace-nowrap">{t('download_image')}</span>
+                                <span className="text-[10px] whitespace-nowrap">
+                                  {t('download_image')}
+                                </span>
                               </Button>
                             </div>
                             <p className="text-muted-foreground text-center text-xs">
@@ -1547,7 +1663,6 @@ export function ImageGenerator({
               </Tabs>
             </aside>
           )}
-
 
           {/* 右侧打开按钮 - 移动端（已隐藏，生成结果在下方显示） */}
           {/* <Button

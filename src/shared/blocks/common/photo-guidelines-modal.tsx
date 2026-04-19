@@ -10,9 +10,10 @@ import { Checkbox } from '@/shared/components/ui/checkbox';
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
+  DialogHeader,
   DialogTitle,
 } from '@/shared/components/ui/dialog';
-import { cn } from '@/shared/lib/utils';
 
 interface PhotoGuidelinesModalProps {
   open: boolean;
@@ -29,7 +30,6 @@ export function PhotoGuidelinesModal({
   const [dontShowAgain, setDontShowAgain] = useState(false);
   const [shouldSkip, setShouldSkip] = useState(false);
 
-  // Check localStorage on mount
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const shouldHide =
@@ -38,7 +38,6 @@ export function PhotoGuidelinesModal({
     }
   }, []);
 
-  // Auto-confirm if user previously chose "don't show again"
   useEffect(() => {
     if (open && shouldSkip) {
       onConfirm();
@@ -52,109 +51,139 @@ export function PhotoGuidelinesModal({
     onConfirm();
   };
 
-  // Don't render if should skip
   if (shouldSkip) return null;
 
   return (
     <Dialog open={open} onOpenChange={(isOpen) => !isOpen && onClose()}>
       <DialogContent
-        className="max-h-[90vh] max-w-5xl overflow-y-auto p-0"
+        className="border-border/60 bg-background/95 flex max-h-[92vh] w-[calc(100%-1.5rem)] flex-col gap-0 overflow-hidden border p-0 shadow-[0_32px_90px_-36px_rgba(0,0,0,0.55)] backdrop-blur-sm sm:max-w-xl md:max-w-3xl"
         showCloseButton={true}
       >
-        <div className="p-6 md:p-10">
-          {/* Title */}
-          <DialogTitle className="mb-6 pr-8 text-center text-xl font-bold md:mb-10 md:text-3xl">
+        <DialogHeader className="border-border/70 bg-background/95 shrink-0 border-b px-5 py-4 md:px-7 md:py-5">
+          <DialogTitle className="pr-8 text-left text-base font-semibold tracking-tight md:text-lg">
             {t('title')}
           </DialogTitle>
+          <DialogDescription className="sr-only">{t('title')}</DialogDescription>
+        </DialogHeader>
 
-          {/* Suitable Photos Section */}
-          <div className="mb-8 md:mb-10">
-            <div className="mb-3 flex items-center gap-2 md:mb-4">
-              <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500 md:h-7 md:w-7">
-                <Check className="h-3.5 w-3.5 text-white md:h-4 md:w-4" />
-              </div>
-              <h3 className="text-lg font-semibold md:text-xl">
-                {t('suitableTitle')}
-              </h3>
-            </div>
-            <p className="text-muted-foreground mb-4 text-sm leading-relaxed md:mb-6 md:text-base">
-              {t('suitableDescription')}
-            </p>
-            <div className="grid grid-cols-4 gap-2 md:gap-4">
-              {photoGuidelinesConfig.suitablePhotos.map((photo, index) => (
-                <div
-                  key={`suitable-${index}`}
-                  className="relative overflow-hidden rounded-xl border-2 border-emerald-400 shadow-sm transition-transform hover:scale-[1.02]"
-                >
-                  <img
-                    src={photo}
-                    alt={`${t('suitableTitle')} ${index + 1}`}
-                    className="aspect-square w-full object-cover"
-                  />
-                  <div className="absolute bottom-1 right-1 flex h-4 w-4 items-center justify-center rounded bg-emerald-500 shadow md:bottom-3 md:right-3 md:h-7 md:w-7">
-                    <Check className="h-2.5 w-2.5 text-white md:h-4 md:w-4" />
-                  </div>
-                </div>
-              ))}
-            </div>
+        <div className="flex-1 overflow-y-auto px-5 py-5 md:px-7 md:py-6">
+          <Section
+            variant="success"
+            icon={<Check className="h-3 w-3" />}
+            title={t('suitableTitle')}
+            description={t('suitableDescription')}
+            photos={photoGuidelinesConfig.suitablePhotos}
+            badgeIcon={<Check className="h-2.5 w-2.5 md:h-3 md:w-3" />}
+            altPrefix={t('suitableTitle')}
+          />
+
+          <div className="mt-6 md:mt-8">
+            <Section
+              variant="destructive"
+              icon={<X className="h-3 w-3" />}
+              title={t('unsuitableTitle')}
+              description={t('unsuitableDescription')}
+              photos={photoGuidelinesConfig.unsuitablePhotos}
+              badgeIcon={<X className="h-2.5 w-2.5 md:h-3 md:w-3" />}
+              altPrefix={t('unsuitableTitle')}
+            />
           </div>
+        </div>
 
-          {/* Unsuitable Photos Section */}
-          <div className="mb-8 md:mb-10">
-            <div className="mb-3 flex items-center gap-2 md:mb-4">
-              <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red-500 md:h-7 md:w-7">
-                <X className="h-3.5 w-3.5 text-white md:h-4 md:w-4" />
-              </div>
-              <h3 className="text-lg font-semibold md:text-xl">
-                {t('unsuitableTitle')}
-              </h3>
-            </div>
-            <p className="text-muted-foreground mb-4 text-sm leading-relaxed md:mb-6 md:text-base">
-              {t('unsuitableDescription')}
-            </p>
-            <div className="grid grid-cols-4 gap-2 md:gap-4">
-              {photoGuidelinesConfig.unsuitablePhotos.map((photo, index) => (
-                <div
-                  key={`unsuitable-${index}`}
-                  className="relative overflow-hidden rounded-xl border-2 border-red-400 shadow-sm transition-transform hover:scale-[1.02]"
-                >
-                  <img
-                    src={photo}
-                    alt={`${t('unsuitableTitle')} ${index + 1}`}
-                    className="aspect-square w-full object-cover"
-                  />
-                  <div className="absolute bottom-1 right-1 flex h-4 w-4 items-center justify-center rounded bg-red-500 shadow md:bottom-3 md:right-3 md:h-7 md:w-7">
-                    <X className="h-2.5 w-2.5 text-white md:h-4 md:w-4" />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Footer */}
-          <div className="flex flex-col items-center gap-3 pt-2 md:gap-4">
-            <label className="flex cursor-pointer items-center gap-2">
-              <Checkbox
-                checked={dontShowAgain}
-                onCheckedChange={(checked) =>
-                  setDontShowAgain(checked as boolean)
-                }
-                className="border-gray-300"
-              />
-              <span className="text-muted-foreground text-sm">
-                {t('dontShowAgain')}
-              </span>
-            </label>
-
-            <Button
-              onClick={handleConfirm}
-              className="w-full rounded-lg px-8 py-2.5 font-medium md:w-auto"
-            >
-              {t('confirm')}
-            </Button>
-          </div>
+        <div className="border-border/70 bg-background/95 flex shrink-0 flex-col-reverse items-stretch gap-3 border-t px-5 py-4 backdrop-blur-sm sm:flex-row sm:items-center sm:justify-between md:px-7">
+          <label className="flex cursor-pointer items-center gap-2">
+            <Checkbox
+              checked={dontShowAgain}
+              onCheckedChange={(checked) =>
+                setDontShowAgain(checked as boolean)
+              }
+            />
+            <span className="text-muted-foreground text-sm">
+              {t('dontShowAgain')}
+            </span>
+          </label>
+          <Button
+            onClick={handleConfirm}
+            className="sm:min-w-[140px]"
+            size="sm"
+          >
+            {t('confirm')}
+          </Button>
         </div>
       </DialogContent>
     </Dialog>
+  );
+}
+
+type SectionVariant = 'success' | 'destructive';
+
+function Section({
+  variant,
+  icon,
+  title,
+  description,
+  photos,
+  badgeIcon,
+  altPrefix,
+}: {
+  variant: SectionVariant;
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  photos: string[];
+  badgeIcon: React.ReactNode;
+  altPrefix: string;
+}) {
+  const tones =
+    variant === 'success'
+      ? {
+          chipBg: 'bg-emerald-500/15',
+          chipText: 'text-emerald-600 dark:text-emerald-400',
+          chipRing: 'ring-emerald-500/30',
+          cardBorder: 'border-emerald-500/25 hover:border-emerald-500/50',
+          badgeBg: 'bg-emerald-500',
+        }
+      : {
+          chipBg: 'bg-red-500/15',
+          chipText: 'text-red-600 dark:text-red-400',
+          chipRing: 'ring-red-500/30',
+          cardBorder: 'border-red-500/25 hover:border-red-500/50',
+          badgeBg: 'bg-red-500',
+        };
+
+  return (
+    <section>
+      <div className="mb-2.5 flex items-center gap-2.5">
+        <span
+          className={`inline-flex h-6 w-6 items-center justify-center rounded-full ring-1 ring-inset ${tones.chipBg} ${tones.chipText} ${tones.chipRing}`}
+        >
+          {icon}
+        </span>
+        <h3 className="text-sm font-semibold md:text-base">{title}</h3>
+      </div>
+      <p className="text-muted-foreground mb-3.5 text-xs leading-relaxed md:text-sm">
+        {description}
+      </p>
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
+        {photos.map((photo, index) => (
+          <figure
+            key={`${altPrefix}-${index}`}
+            className={`group bg-background relative overflow-hidden rounded-xl border shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md ${tones.cardBorder}`}
+          >
+            <img
+              src={photo}
+              alt={`${altPrefix} ${index + 1}`}
+              className="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+              loading="lazy"
+            />
+            <span
+              className={`absolute right-1.5 bottom-1.5 inline-flex h-5 w-5 items-center justify-center rounded-md text-white shadow ring-1 ring-white/40 md:h-6 md:w-6 ${tones.badgeBg}`}
+            >
+              {badgeIcon}
+            </span>
+          </figure>
+        ))}
+      </div>
+    </section>
   );
 }

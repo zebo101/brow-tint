@@ -1,5 +1,8 @@
 import { respErr } from '@/shared/lib/resp';
-import { getHairstyles, getHairstyleCountByCategory } from '@/shared/models/hairstyle';
+import {
+  getHairstyleCountByCategory,
+  getHairstyles,
+} from '@/shared/models/hairstyle';
 
 // Cache the response for 1 hour - hairstyle data doesn't change frequently
 export const revalidate = 3600;
@@ -12,7 +15,8 @@ export async function GET(req: Request) {
   try {
     const url = new URL(req.url);
     const category = url.searchParams.get('category') || undefined;
-    const status = (url.searchParams.get('status') as 'active' | 'inactive') || 'active';
+    const status =
+      (url.searchParams.get('status') as 'active' | 'inactive') || 'active';
     const page = parseInt(url.searchParams.get('page') || '1', 10);
     const limit = parseInt(url.searchParams.get('limit') || '1000', 10);
 
@@ -35,6 +39,8 @@ export async function GET(req: Request) {
         sequence: h.sequence,
         name: h.name,
         tags: h.tags ? JSON.parse(h.tags) : [],
+        description: h.description ?? '',
+        prompt: h.prompt ?? '',
         imageUrl: h.imageUrl,
         thumbnailUrl: h.thumbnailUrl,
       })),

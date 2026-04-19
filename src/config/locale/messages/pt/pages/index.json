@@ -8,6 +8,7 @@
       "usage",
       "features",
       "stats",
+      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -302,6 +303,41 @@
           }
         ],
         "className": "bg-muted"
+      },
+      "hairstyle_gallery": {
+        "block": "hairstyle-gallery",
+        "id": "hairstyle_gallery",
+        "title": "Explore Hairstyles by Category",
+        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
+        "limit": 12,
+        "cta_url": "/ai-hairstyle-changer",
+        "categories": [
+          {
+            "key": "men",
+            "title": "Penteados Masculinos",
+            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
+            "cta_label": "Try men's styles"
+          },
+          {
+            "key": "women",
+            "title": "Penteados Femininos",
+            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
+            "cta_label": "Try women's styles"
+          },
+          {
+            "key": "boys",
+            "title": "Penteados para Meninos",
+            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
+            "cta_label": "Try boys' styles"
+          },
+          {
+            "key": "girls",
+            "title": "Penteados para Meninas",
+            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
+            "cta_label": "Try girls' styles"
+          }
+        ],
+        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
       },
       "testimonials": {
         "id": "testimonials",
