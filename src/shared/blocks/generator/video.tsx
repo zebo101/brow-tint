@@ -66,8 +66,8 @@ const GENERATION_TIMEOUT = 600000; // 10 minutes for video
 const MAX_PROMPT_LENGTH = 2000;
 
 const imageToVideoCredits = 15;
-const FIXED_PROVIDER = 'replicate';
-const FIXED_MODEL = 'google/veo-3.1';
+const FIXED_PROVIDER = 'kie';
+const FIXED_MODEL = 'grok-imagine/image-to-video';
 const VIDEO_SYSTEM_PROMPT = [
   'Portrait photo with a requested hairstyle transformation,',
   '',

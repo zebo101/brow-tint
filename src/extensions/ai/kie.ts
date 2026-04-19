@@ -223,36 +223,66 @@ export class KieProvider implements AIProvider {
     }
 
     // build request params
-    let payload: any = {
-      model: params.model,
-      callBackUrl: params.callbackUrl,
-      input: {
-        aspect_ratio: 'landscape',
-        n_frames: '10',
-        size: 'standard',
-      },
-    };
+    let payload: any;
 
-    if (params.prompt) {
-      payload.input.prompt = params.prompt;
-    }
+    if (params.model === 'grok-imagine/image-to-video') {
+      // grok-imagine schema: mode / duration / resolution / aspect_ratio
+      payload = {
+        model: params.model,
+        callBackUrl: params.callbackUrl,
+        input: {
+          mode: 'normal',
+          duration: '6',
+          resolution: '720p',
+          aspect_ratio: '9:16',
+        },
+      };
 
-    if (params.options) {
-      const options = params.options;
-      // text-to-video: use prompt
-      // image-to-video: use image_input
-      // video-to-video: use video_input
-      if (options.image_input && Array.isArray(options.image_input)) {
+      if (params.prompt) {
+        payload.input.prompt = params.prompt;
+      }
+
+      const options = params.options ?? {};
+      if (Array.isArray(options.image_input) && options.image_input.length > 0) {
         payload.input.image_urls = options.image_input;
       }
-      if (options.aspect_ratio) {
-        payload.input.aspect_ratio = options.aspect_ratio;
+      if (options.mode) payload.input.mode = options.mode;
+      if (options.duration) payload.input.duration = String(options.duration);
+      if (options.resolution) payload.input.resolution = options.resolution;
+      if (options.aspect_ratio) payload.input.aspect_ratio = options.aspect_ratio;
+    } else {
+      // legacy schema (e.g. kling-style): aspect_ratio / n_frames / size
+      payload = {
+        model: params.model,
+        callBackUrl: params.callbackUrl,
+        input: {
+          aspect_ratio: 'landscape',
+          n_frames: '10',
+          size: 'standard',
+        },
+      };
+
+      if (params.prompt) {
+        payload.input.prompt = params.prompt;
       }
-      if (options.duration) {
-        payload.input.n_frames = options.duration;
-      }
-      if (!payload.input.n_frames) {
-        payload.input.n_frames = '10';
+
+      if (params.options) {
+        const options = params.options;
+        // text-to-video: use prompt
+        // image-to-video: use image_input
+        // video-to-video: use video_input
+        if (options.image_input && Array.isArray(options.image_input)) {
+          payload.input.image_urls = options.image_input;
+        }
+        if (options.aspect_ratio) {
+          payload.input.aspect_ratio = options.aspect_ratio;
+        }
+        if (options.duration) {
+          payload.input.n_frames = options.duration;
+        }
+        if (!payload.input.n_frames) {
+          payload.input.n_frames = '10';
+        }
       }
     }
 
