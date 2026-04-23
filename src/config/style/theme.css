@@ -50,8 +50,15 @@
   --shadow-2xl: 0px 2px 0px 0px hsl(0 0% 20% / 0.45);
   --tracking-normal: 0.025em;
   --spacing: 0.24rem;
-  --scrollbar-thumb: rgba(0, 0, 0, 0.2);
-  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.3);
+  --scrollbar-thumb-solid: rgba(88, 102, 224, 0.9);
+  --scrollbar-thumb-base-start: rgba(55, 69, 198, 0.98);
+  --scrollbar-thumb-base-end: rgba(108, 121, 233, 0.96);
+  --scrollbar-thumb-overlay: rgba(183, 190, 255, 0.82);
+  --scrollbar-thumb-overlay-soft: rgba(133, 145, 245, 0.14);
+  --scrollbar-thumb-base-start-hover: rgba(34, 53, 170, 1);
+  --scrollbar-thumb-base-end-hover: rgba(117, 136, 244, 0.99);
+  --scrollbar-thumb-overlay-hover: rgba(255, 214, 226, 0.78);
+  --scrollbar-thumb-overlay-soft-hover: rgba(255, 180, 206, 0.18);
   --color-1: 0 100% 63%;
   --color-2: 270 100% 63%;
   --color-3: 210 100% 63%;
@@ -109,8 +116,15 @@
   --shadow-xl:
     0px 2px 0px 0px hsl(0 0% 20% / 0.18), 0px 8px 10px -1px hsl(0 0% 20% / 0.18);
   --shadow-2xl: 0px 2px 0px 0px hsl(0 0% 20% / 0.45);
-  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
-  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.2);
+  --scrollbar-thumb-solid: rgba(113, 127, 255, 0.9);
+  --scrollbar-thumb-base-start: rgba(66, 81, 226, 0.98);
+  --scrollbar-thumb-base-end: rgba(128, 141, 255, 0.96);
+  --scrollbar-thumb-overlay: rgba(199, 205, 255, 0.78);
+  --scrollbar-thumb-overlay-soft: rgba(156, 166, 255, 0.16);
+  --scrollbar-thumb-base-start-hover: rgba(74, 92, 238, 1);
+  --scrollbar-thumb-base-end-hover: rgba(160, 173, 255, 0.99);
+  --scrollbar-thumb-overlay-hover: rgba(255, 221, 231, 0.74);
+  --scrollbar-thumb-overlay-soft-hover: rgba(255, 194, 215, 0.2);
   --color-1: 0 100% 63%;
   --color-2: 270 100% 63%;
   --color-3: 210 100% 63%;
