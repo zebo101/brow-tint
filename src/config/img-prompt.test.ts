@@ -3,7 +3,7 @@ import test from 'node:test';
 
 import { buildHairstylePrompt } from './img-prompt';
 
-test('buildHairstylePrompt embeds the engineered styledPrompt and artifact-ignore instruction when provided', () => {
+test('buildHairstylePrompt makes the reference image primary for image-to-image when styledPrompt is provided', () => {
   const styledPrompt =
     'Short textured crop, approximately 3 cm on top, messy finger-styled texture, tapered temples, matte finish.';
   const out = buildHairstylePrompt(
@@ -19,8 +19,12 @@ test('buildHairstylePrompt embeds the engineered styledPrompt and artifact-ignor
     'should embed the engineered prompt verbatim'
   );
   assert.ok(
-    out.includes('authoritative description'),
-    'should mark the engineered prompt as authoritative'
+    out.includes('primary visual authority'),
+    'should explicitly make the reference image primary'
+  );
+  assert.ok(
+    out.includes('Match the hairstyle in the reference image as closely as possible'),
+    'should strongly instruct the model to follow the reference hairstyle'
   );
   assert.ok(
     /Ignore any cutout edges, halos, transparent areas/.test(out),
@@ -31,19 +35,24 @@ test('buildHairstylePrompt embeds the engineered styledPrompt and artifact-ignor
       out.includes('Image 2 is a hairstyle reference'),
     'should still assign image roles'
   );
+  assert.ok(
+    !out.includes('Use the image ONLY to disambiguate shape details'),
+    'should not demote the reference image to a minor hint'
+  );
 });
 
-test('buildHairstylePrompt falls back to name+tags wording when no styledPrompt is given', () => {
+test('buildHairstylePrompt still prioritizes the reference image when no styledPrompt is given', () => {
   const out = buildHairstylePrompt('Short Textured Crop', ['short'], '', 1);
 
   assert.ok(
-    out.includes(
-      'Change ONLY the hair of the person to a Short Textured Crop style'
-    ),
-    'should use the legacy name-based wording'
+    out.includes('Use the hairstyle reference image as the primary source of truth'),
+    'should make the reference image primary even without a styledPrompt'
+  );
+  assert.ok(
+    out.includes('Match the hairstyle in the reference image as closely as possible'),
+    'should still strongly instruct reference following'
   );
   assert.ok(!out.includes('authoritative description'));
-  assert.ok(!out.includes('Ignore any cutout edges'));
 });
 
 test('buildHairstylePrompt in text-to-image mode uses styledPrompt when available', () => {

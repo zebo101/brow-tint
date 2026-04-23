@@ -28,10 +28,10 @@ export const HAIRSTYLE_NEGATIVE_PROMPT = [
  * is the hairstyle reference.
  *
  * When `styledPrompt` is provided (a vision-model-generated engineered
- * description of the target hairstyle), it becomes the authoritative style
- * signal and the reference image is demoted to a shape hint — with an
- * explicit instruction to ignore cutout artifacts. This makes generation
- * robust to imperfect manual cutouts in the reference PNG library.
+ * description of the target hairstyle), it should reinforce the reference
+ * image rather than override it. The reference image remains the primary
+ * visual authority for the haircut, while the text helps clarify details
+ * that may be harder to infer from the cutout alone.
  *
  * @param hairstyleName      e.g. "Short Textured Fade"
  * @param tags               e.g. ["short", "textured", "fade", "modern"]
@@ -63,20 +63,24 @@ export function buildHairstylePrompt(
       );
     }
 
-    // Authoritative target — prefer the engineered description over the name.
+    // Reference-first target: keep the haircut faithful to the reference image.
     if (hasStyledPrompt) {
       parts.push(
-        `Target hairstyle (authoritative description): ${styledPrompt}`,
-        `The reference image shows this hairstyle as a rough manual cutout on a transparent/plain background. Use the image ONLY to disambiguate shape details that the text leaves ambiguous. Ignore any cutout edges, halos, transparent areas, stray pixels, or segmentation artifacts in the reference — those are not part of the hairstyle. Do NOT replicate the reference's background, framing, or body outline.`,
-        `Change ONLY the hair of the person to match the target hairstyle described above.`,
-        `Adapt the hairstyle to the person's own head shape, hairline, forehead, temples, and face proportions. Do NOT transplant or paste the exact hair silhouette from the reference.`
+        `Target hairstyle (supporting description): ${styledPrompt}`,
+        `The hairstyle reference image is the primary visual authority for the target haircut.`,
+        `Match the hairstyle in the reference image as closely as possible, especially the overall silhouette, fringe or bangs shape, parting, fade or taper placement, sideburn shape, length distribution, and texture direction.`,
+        `Use the supporting description to reinforce the reference image, not to override it.`,
+        `The reference image may be a rough manual cutout on a transparent/plain background. Ignore any cutout edges, halos, transparent areas, stray pixels, or segmentation artifacts in the reference — those are not part of the hairstyle. Do NOT replicate the reference's background, framing, or body outline.`,
+        `Change ONLY the hair of the person to match the reference hairstyle.`,
+        `Recreate the same hairstyle naturally on the person's head while adapting it to the person's own head shape, hairline, forehead, temples, and face proportions. Do NOT paste the cutout itself onto the person.`
       );
     } else {
       // Fallback: older records without an engineered description.
       parts.push(
-        `Change ONLY the hair of the person to a ${hairstyleName} style.`,
-        `Use the hairstyle reference as a style guide only — for the haircut shape, length, texture, and styling direction.`,
-        `Adapt the hairstyle to the person's own head shape, hairline, forehead, temples, and face proportions. Do NOT transplant or paste the exact hair silhouette from the reference.`
+        `Change ONLY the hair of the person to match the ${hairstyleName} hairstyle reference image.`,
+        `Use the hairstyle reference image as the primary source of truth for the haircut's shape, silhouette, length, texture, parting, fade or taper placement, and styling direction.`,
+        `Match the hairstyle in the reference image as closely as possible while adapting it naturally to the person's own head shape, hairline, forehead, temples, and face proportions.`,
+        `Do NOT paste the cutout itself onto the person.`
       );
     }
   } else {

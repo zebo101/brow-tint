@@ -71,6 +71,13 @@ import { Textarea } from '@/shared/components/ui/textarea';
 import { useAppContext } from '@/shared/contexts/app';
 import { useHairstyles } from '@/shared/hooks/use-hairstyles';
 import { cn } from '@/shared/lib/utils';
+import {
+  getImageModelSelectValue,
+  getPreferredImageModel,
+  MODEL_OPTIONS,
+  resolveImageModelSelection,
+  type ImageGeneratorTab,
+} from './image-models';
 
 interface ImageGeneratorProps {
   allowMultipleImages?: boolean;
@@ -100,8 +107,6 @@ interface BackendTask {
   taskInfo: string | null;
   taskResult: string | null;
 }
-
-type ImageGeneratorTab = 'text-to-image' | 'image-to-image';
 
 const POLL_INTERVAL = 5000;
 const GENERATION_TIMEOUT = 180000;
@@ -140,63 +145,6 @@ const FALLBACK_CATEGORIES: HairstyleCategory[] = [
   { key: 'women', count: 12 },
   { key: 'boys', count: 12 },
   { key: 'girls', count: 12 },
-];
-
-const MODEL_OPTIONS = [
-  {
-    value: 'google/nano-banana-pro',
-    label: 'Nano Banana Pro',
-    provider: 'replicate',
-    scenes: ['text-to-image', 'image-to-image'],
-  },
-  {
-    value: 'bytedance/seedream-4',
-    label: 'Seedream 4',
-    provider: 'replicate',
-    scenes: ['text-to-image', 'image-to-image'],
-  },
-  {
-    value: 'fal-ai/nano-banana-pro',
-    label: 'Nano Banana Pro',
-    provider: 'fal',
-    scenes: ['text-to-image'],
-  },
-  {
-    value: 'fal-ai/nano-banana-pro/edit',
-    label: 'Nano Banana Pro',
-    provider: 'fal',
-    scenes: ['image-to-image'],
-  },
-  {
-    value: 'fal-ai/bytedance/seedream/v4/edit',
-    label: 'Seedream 4',
-    provider: 'fal',
-    scenes: ['image-to-image'],
-  },
-  {
-    value: 'fal-ai/z-image/turbo',
-    label: 'Z-Image Turbo',
-    provider: 'fal',
-    scenes: ['text-to-image'],
-  },
-  {
-    value: 'fal-ai/flux-2-flex',
-    label: 'Flux 2 Flex',
-    provider: 'fal',
-    scenes: ['text-to-image'],
-  },
-  {
-    value: 'gemini-3-pro-image-preview',
-    label: 'Gemini 3 Pro Image Preview',
-    provider: 'gemini',
-    scenes: ['text-to-image', 'image-to-image'],
-  },
-  {
-    value: 'nano-banana-pro',
-    label: 'Nano Banana Pro',
-    provider: 'kie',
-    scenes: ['text-to-image', 'image-to-image'],
-  },
 ];
 
 const PROVIDER_OPTIONS = [
@@ -322,7 +270,12 @@ export function ImageGenerator({
 
   const [costCredits, setCostCredits] = useState<number>(6);
   const [provider, setProvider] = useState(PROVIDER_OPTIONS[3]?.value ?? 'kie');
-  const [model, setModel] = useState('nano-banana-pro');
+  const [model, setModel] = useState(() =>
+    getPreferredImageModel({
+      activeTab: 'image-to-image',
+      provider: PROVIDER_OPTIONS[3]?.value ?? 'kie',
+    })
+  );
   const [prompt, setPrompt] = useState('');
   const [referenceImageItems, setReferenceImageItems] = useState<
     ImageUploaderValue[]
@@ -386,16 +339,12 @@ export function ImageGenerator({
   const handleTabChange = (value: string) => {
     const tab = value as ImageGeneratorTab;
     setActiveTab(tab);
-
-    const availableModels = MODEL_OPTIONS.filter(
-      (option) => option.scenes.includes(tab) && option.provider === provider
+    setModel(
+      getPreferredImageModel({
+        activeTab: tab,
+        provider,
+      })
     );
-
-    if (availableModels.length > 0) {
-      setModel(availableModels[0].value);
-    } else {
-      setModel('');
-    }
 
     if (tab === 'text-to-image') {
       setCostCredits(4);
@@ -406,16 +355,12 @@ export function ImageGenerator({
 
   const handleProviderChange = (value: string) => {
     setProvider(value);
-
-    const availableModels = MODEL_OPTIONS.filter(
-      (option) => option.scenes.includes(activeTab) && option.provider === value
+    setModel(
+      getPreferredImageModel({
+        activeTab,
+        provider: value,
+      })
     );
-
-    if (availableModels.length > 0) {
-      setModel(availableModels[0].value);
-    } else {
-      setModel('');
-    }
   };
 
   const taskStatusLabel = useMemo(() => {
@@ -1087,6 +1032,39 @@ export function ImageGenerator({
                     </Select>
                   </div>
                 </div> */}
+
+                {/* 模型选择 */}
+                <div className="space-y-2">
+                  <Label htmlFor="image-model" className="text-xs sm:text-sm">
+                    {t('form.model')}
+                  </Label>
+                  <Select
+                    value={getImageModelSelectValue(model)}
+                    onValueChange={(value) =>
+                      setModel(
+                        resolveImageModelSelection({
+                          activeTab,
+                          value,
+                        })
+                      )
+                    }
+                  >
+                    <SelectTrigger
+                      id="image-model"
+                      className="w-full text-xs sm:text-sm"
+                    >
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="nano-banana-pro">
+                        Nano Banana Pro
+                      </SelectItem>
+                      <SelectItem value="gpt-image-2">
+                        GPT Image 2
+                      </SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
 
                 {/* AI发型描述 */}
                 <div className="space-y-2">

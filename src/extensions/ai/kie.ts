@@ -157,17 +157,47 @@ export class KieProvider implements AIProvider {
       },
     };
 
-    if (params.options) {
-      const options = params.options;
-      if (options.image_input && Array.isArray(options.image_input)) {
-        payload.input.image_input = options.image_input;
+    // gpt-image-2-{text,image}-to-image use a different input schema than
+    // legacy kie image models (nano-banana-pro / seedream etc.):
+    //   - field name is `input_urls`
+    //   - supports `aspect_ratio` and `nsfw_checker`
+    //   - does NOT use legacy `image_input` / `resolution` / `output_format`
+    const isGptImage2 =
+      typeof params.model === 'string' &&
+      params.model.startsWith('gpt-image-2');
+
+    const options = params.options ?? {};
+
+    // Collect image inputs (user-uploaded subjects + optional hairstyle
+    // reference) into a single array, shared by both schemas.
+    const imageInputs: string[] = [];
+    if (Array.isArray(options.input_urls) && options.input_urls.length > 0) {
+      imageInputs.push(...options.input_urls);
+    }
+    if (Array.isArray(options.image_input) && options.image_input.length > 0) {
+      imageInputs.push(...options.image_input);
+    }
+    if (Array.isArray(options.image_urls) && options.image_urls.length > 0) {
+      imageInputs.push(...options.image_urls);
+    }
+    if (options.hairstyle_image) {
+      imageInputs.push(options.hairstyle_image);
+    }
+
+    if (isGptImage2) {
+      // GPT Image 2 schema
+      if (imageInputs.length > 0) {
+        payload.input.input_urls = imageInputs;
       }
-      // hairstyle_image: add hairstyle reference to image inputs
-      if (options.hairstyle_image) {
-        if (!payload.input.image_input) {
-          payload.input.image_input = [];
-        }
-        payload.input.image_input.push(options.hairstyle_image);
+      payload.input.aspect_ratio = options.aspect_ratio || 'auto';
+      payload.input.nsfw_checker =
+        typeof options.nsfw_checker === 'boolean'
+          ? options.nsfw_checker
+          : true;
+    } else if (params.options) {
+      // Legacy schema (nano-banana-pro, seedream-4, ...)
+      if (imageInputs.length > 0) {
+        payload.input.image_input = imageInputs;
       }
       if (options.aspect_ratio) {
         payload.input.aspect_ratio = options.aspect_ratio;
