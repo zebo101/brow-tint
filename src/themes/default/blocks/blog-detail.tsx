@@ -50,7 +50,7 @@ export function BlogDetail({ post }: { post: PostType }) {
 
             {/* Header Section */}
             <div className="mt-16 text-center">
-              <h1 className="text-foreground mx-auto mb-4 w-full text-3xl font-bold md:max-w-4xl md:text-4xl">
+              <h1 className="text-foreground font-display mx-auto mb-4 w-full text-3xl font-bold md:max-w-4xl md:text-4xl">
                 {post.title}
               </h1>
               <div className="text-muted-foreground text-md mb-8 flex items-center justify-center gap-4">

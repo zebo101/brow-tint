@@ -8,74 +8,50 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
-      "cta"
+      "cta",
+      "subscribe"
     ],
     "sections": {
       "hero": {
+        "block": "hero-editorial",
         "id": "hero",
-        "title": "あなた専属のAIヘアスタイリスト",
-        "highlight_text": "AI Barber",
-        "description": "AI Barberと共にヘアスタイリングの未来を体験しましょう。写真をアップロードし、ヘアエリアを選択すると、AIヘアスタイルチェンジャーで驚くべき変化を目撃できます。",
-        "tip": "🎁 今すぐ最高のAIヘアカットチェンジャーをお試しください",
+        "title": "#1 無料オンラインAI眉ティントジェネレーター",
+        "highlight_text": "Brow Tint",
+        "description": "Brow Tintで、リアルな眉ティントのスタイルをプレビューしましょう。プロ仕様の眉ティント、ティント眉ジェル、眉ラミネーション&ティントのプレビューに対応した無料オンラインAIツールです。写真をアップロードするだけで、GPT Image 2搭載により数秒で眉ティントのビフォーアフター結果を確認できます。",
         "buttons": [
           {
-            "title": "無料で試す",
+            "title": "Brow Tintを無料で試す",
             "icon": "Zap",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "variant": "default"
           },
           {
-            "title": "例を見る",
+            "title": "ショーケースを見る",
             "icon": "BookOpenText",
             "url": "/showcases",
             "target": "_blank",
             "variant": "outline"
           }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ ユーザーがAI Barberを使用中",
-        "show_award": false,
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Barber ヒーロー",
-          "width": 1200,
-          "height": 800
+          "src": "/imgs/bg/hero-2.png",
+          "alt": "AI眉ティントジェネレーター - オンラインで眉ティント結果をプレビュー",
+          "width": 800,
+          "height": 600
         },
-        "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Barber ヒーロー",
-          "width": 1200,
-          "height": 800
-        },
-        "carousel_images": [
-          {
-            "light": "/imgs/features/ai-hairstyle-changer.png",
-            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
-            "alt": "AI Barber hairstyle changer"
-          },
-          {
-            "light": "/imgs/features/hairstyle-changer-ai-video.png",
-            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
-            "alt": "AI Barber 設定"
-          },
-          {
-            "light": "/imgs/features/chat.png",
-            "dark": "/imgs/features/chat-dark.png",
-            "alt": "AI Barber Chat"
-          }
-        ],
         "background_image": {
-          "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber 背景"
-        }
+          "src": "/imgs/bg/hero-1.png",
+          "alt": "Brow Tint背景 - プロ仕様眉ティントプレビュー"
+        },
+        "powered_by": "GPT Image 2 搭載",
+        "editorial_labels": ["プレビュー", "トランスフォーム", "ディファイン"]
       },
       "logos": {
         "id": "logos",
-        "title": "先進AI技術で駆動",
+        "title": "Brow Tintを支える信頼のAI技術",
         "items": [
           {
             "title": "Next.js",
@@ -117,48 +93,48 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "AI Barberとは？",
-        "label": "紹介",
-        "description": "AI Barberは、高度なAIを使用して完璧なルックスを見つけるのを助けるバーチャルヘアスタイルツールです。",
+        "title": "Brow Tintとは？",
+        "label": "サービス紹介",
+        "description": "Brow Tintは、施術前にプロ仕様の眉ティント結果をプレビューできる無料オンラインAI眉ティントジェネレーターです。ティント眉ジェルのカラーを試したり、眉ラミネーション&ティントの組み合わせを探したり、ラッシュ&ブロウティントのスタイルを比較したりできます。GPT Image 2 AIが、あなたの顔の形と肌のトーンに合わせたフォトリアリスティックなプレビューを生成します。",
         "image": {
           "src": "/imgs/features/landingpage.png",
-          "alt": "AI Barber 紹介"
+          "alt": "Brow Tint AIジェネレーター - 眉ティントオンラインプレビュー無料"
         },
         "items": [
           {
-            "title": "バーチャルヘアスタイル",
-            "description": "はさみに触れることなく、無数のバーチャルヘアスタイルを試すことができます。",
+            "title": "バーチャル眉ティントプレビュー",
+            "description": "実際の施術なしに、無数の眉ティントカラーとスタイルをプレビューできます。AI眉ティントジェネレーターがプロ仕様の眉ティント結果をシミュレーションし、自宅にいながら理想のカラーを見つけられます。",
             "icon": "RiMagicLine",
             "image": {
               "src": "/imgs/features/1.png",
-              "alt": "バーチャルヘアスタイル"
+              "alt": "バーチャル眉ティントプレビュー - AI眉ティントジェネレーター"
             }
           },
           {
-            "title": "リアルな結果",
-            "description": "私たちのAIヘアカットチェンジャーは、本物のように見える非常にリアルな結果を生成します。",
+            "title": "リアルな眉ティントビフォーアフター",
+            "description": "GPT Image 2が生み出す、リアルな眉ティントビフォーアフター結果を確認できます。自然な眉とティント後の仕上がりをサイドバイサイドで比較し、予約前にスタイリストと共有しましょう。",
             "icon": "RiCameraLensLine",
             "image": {
               "src": "/imgs/features/2.png",
-              "alt": "リアルな結果"
+              "alt": "眉ティントビフォーアフター結果"
             }
           },
           {
-            "title": "AI画像ジェネレーター",
-            "description": "高度なAI画像ジェネレーターを使用して、ユニークなヘアスタイルコンセプトを作成します。",
+            "title": "高度なAI画像ジェネレーター",
+            "description": "GPT Image 2を活用したAI画像ジェネレーターが、あらゆる顔の形に合わせた眉ティントとティント眉ジェルのスタイルを生成します。あなたの特徴を分析し、肌のトーンに最も合う眉ティントカラーをご提案します。",
             "icon": "RiImage2Line",
             "image": {
               "src": "/imgs/features/3.png",
-              "alt": "AI画像ジェネレーター"
+              "alt": "眉ティントスタイル用AI画像ジェネレーター"
             }
           },
           {
-            "title": "スタイル転送",
-            "description": "有名人やモデルのスタイルを写真に直接転送します。",
+            "title": "ラッシュ&ブロウティントを一緒に",
+            "description": "ラッシュ&ブロウティントのスタイルを組み合わせてプレビューし、完璧なアイフレーミングの仕上がりを見つけましょう。1枚のフォトリアリスティックなプレビューで、まつ毛ティントとさまざまな眉ティントカラーの組み合わせを確認できます。",
             "icon": "RiExchangeLine",
             "image": {
               "src": "/imgs/features/4.png",
-              "alt": "スタイル転送"
+              "alt": "ラッシュ&ブロウティント組み合わせプレビュー"
             }
           }
         ],
@@ -167,35 +143,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "なぜAI Barberを選ぶのか",
+        "title": "眉ティントプレビューにBrow Tintを選ぶ理由",
         "label": "メリット",
-        "description": "安全でユーザーフレンドリーなAI Barberツールで無限の可能性を探求しましょう。",
+        "description": "最高の眉ティント体験をオンラインで提供します。高速・安全で、初めての眉ティント初心者からプロの眉アーティスト、サロンオーナーまで誰でも使いやすい設計です。",
         "items": [
           {
-            "title": "超高速",
-            "description": "瞬時にヘアスタイルを変えます。結果を何日も待つ必要はありません。",
+            "title": "超高速AI眉ティント生成",
+            "description": "数時間ではなく数秒でプロ仕様の眉ティントプレビューを生成します。GPT Image 2 AIが写真を即座に処理するため、サロンの予約を取ったり来院を待ったりすることなく眉ティント結果を確認できます。",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "高速処理"
+              "alt": "高速AI眉ティント生成"
             }
           },
           {
-            "title": "安全でプライベート",
-            "description": "あなたの写真はあなたのものです。私たちはそれらを安全に保管し、決して共有しません。",
+            "title": "安全でプライベートな写真処理",
+            "description": "お客様の写真は安全に処理され、第三者と共有されることは一切ありません。Brow Tintはプライバシーを尊重し、アップロードされた画像はすべて処理中に暗号化され、眉ティントプレビュー生成後に自動的に削除されます。",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "安全"
+              "alt": "安全な眉ティント写真処理"
             }
           },
           {
-            "title": "非常に使いやすい",
-            "description": "数回のクリックで内なるスタイリストを発揮できます。技術的なスキルは不要です。",
+            "title": "抜群の使いやすさ",
+            "description": "数回クリックするだけで最適なティント眉ジェルのカラーを見つけられます。専門知識は一切不要です。初めて眉ティントに挑戦するティーンエイジャーから、お客様にオプションを提案するサロンプロフェッショナルまで、誰でも簡単にプロ仕様の眉ティント結果をプレビューできます。",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "ユーザーフレンドリー"
+              "alt": "使いやすい眉ティントツール"
             }
           }
         ]
@@ -203,45 +179,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "AI Barberの使い方",
-        "description": "3つの簡単なステップで新しいルックスを手に入れましょう：",
+        "title": "AI眉ティントジェネレーターの使い方",
+        "description": "4つの簡単なステップで理想の眉ティントスタイルを手に入れましょう。アカウント不要で、今すぐ無料で眉ティント結果のプレビューを始められます。",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "使い方"
+          "alt": "AI眉ティントジェネレーターの使い方"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
             "title": "写真をアップロード",
-            "description": "AI Barberプラットフォームに自分の明確な写真をアップロードします。",
+            "description": "Brow Tintのプラットフォームに、正面を向いた鮮明な写真をアップロードしてください。最良の眉ティント結果を得るには、眉がはっきりと見える明るい照明の画像をお使いください。",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "アップロード"
+              "alt": "AI眉ティントプレビュー用に写真をアップロード"
             }
           },
           {
-            "title": "エリアを選択",
-            "description": "変更したいヘアエリアをハイライトします。",
+            "title": "眉ティントスタイルを選択",
+            "description": "ティント眉ジェル、眉ラミネーション&ティント、プロ仕様眉ティント、ブロウコードティントなど、幅広い眉ティントスタイルからお選びください。カスタムオプションも多数ご用意しています。",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "選択"
+              "alt": "眉ティントスタイルを選択"
             }
           },
           {
-            "title": "生成",
-            "description": "希望のスタイルを選択し、AIヘアスタイルチェンジャーに魔法をかけさせます。",
+            "title": "眉ティントプレビューを生成",
+            "description": "AI眉ティントジェネレーターが、新しい眉スタイルのリアルなプレビューを作成します。GPT Image 2技術により、数秒でフォトリアリスティックな眉ティントのビフォーアフター画像が生成されます。",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "生成"
+              "alt": "AI眉ティントプレビューを生成"
             }
           },
           {
-            "title": "ダウンロード",
-            "description": "新しいバーチャルヘアスタイルを保存し、友達と共有します。",
+            "title": "ダウンロードしてシェア",
+            "description": "眉ティントのビフォーアフター比較写真を高解像度で保存しましょう。スタイリストに見せたり、SNSに投稿したり、次回の眉ティント予約に持参したりできます。",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "ダウンロード"
+              "alt": "眉ティントビフォーアフター結果をダウンロード"
             }
           }
         ],
@@ -249,202 +225,188 @@
       },
       "features": {
         "id": "features",
-        "title": "AI Barberの主要機能",
-        "description": "バーチャルメイクオーバーに必要なすべて。",
+        "title": "Brow Tintジェネレーターの主な機能",
+        "description": "完璧な眉ティントプレビューに必要なすべてが揃っています。プロ仕様の眉ティントシミュレーションからティント眉ジェルのカラーマッチングまで。",
         "items": [
           {
-            "title": "AIヘアカットチェンジャー",
-            "description": "さまざまなヘアカットの長さとスタイルを即座に試すことができます。",
+            "title": "プロ仕様眉ティントプレビュー",
+            "description": "自宅でサロンクオリティのプロ仕様眉ティント結果をプレビューできます。AIが実際のサロンでの眉ティント施術の仕上がりを再現するため、予約前に期待できる結果がわかります。",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "バーチャルヘアスタイル",
-            "description": "カットする前に、さまざまなヘアスタイルがどのように見えるかを視覚化します。",
+            "title": "ティント眉ジェルカラーマッチング",
+            "description": "さまざまなティント眉ジェルのカラーを試して、それぞれが自然な肌のトーン、髪の色、顔の形にどう合うかを確認できます。あなたに最適なティント眉ジェルを見つけましょう。",
             "icon": "RiWomenLine"
           },
           {
-            "title": "カラー実験",
-            "description": "化学的なダメージなしで新しいヘアカラーを試すことができます。",
+            "title": "ブロウコードティントの可視化",
+            "description": "ブロウコードティントのフォーミュラを探索し、眉への正確なカラーマッチを可視化できます。決める前に複数のブロウコードティントオプションをサイドバイサイドで比較できます。",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "高解像度",
-            "description": "変換された高品質画像をダウンロードします。",
+            "title": "高解像度ダウンロード",
+            "description": "クリアで高解像度の眉ティントビフォーアフター画像をダウンロードできます。スタイリストへの共有、オンライン投稿、個人の参考用に最適です。",
             "icon": "RiHdLine"
           },
           {
-            "title": "スタイル比較",
-            "description": "変化前後のルックスを並べて比較します。",
+            "title": "ビフォーアフター比較",
+            "description": "直感的なサイドバイサイドスライダーで眉ティントのビフォーアフターを比較できます。ワンクリックで眉ティントがもたらす変化を確認しましょう。",
             "icon": "RiCompareLine"
           },
           {
-            "title": "モバイル対応",
-            "description": "どこでも、どのデバイスでもAI Barberを使用できます。",
+            "title": "モバイル対応眉ティントツール",
+            "description": "スマートフォン、タブレット、デスクトップなどあらゆるデバイスでBrow Tintジェネレーターをご利用いただけます。いつでもどこでも眉ティント結果をプレビューできます。",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "人々はAI Barberを愛しています",
-        "description": "ルックスを変える何千人もの満足したユーザーに参加しましょう。",
+        "title": "ユーザーがBrow Tintを愛用する理由",
+        "description": "無料AI眉ティントジェネレーターで理想の眉ティントスタイルを見つけた数千人の満足ユーザーの仲間入りをしましょう。",
         "items": [
           {
             "title": "50,000+",
-            "description": "変換"
+            "description": "生成された眉ティントスタイル数"
           },
           {
             "title": "10,000+",
-            "description": "満足したユーザー"
+            "description": "世界中の満足ユーザー数"
           },
           {
-            "title": "500+",
-            "description": "スタイル"
+            "title": "200+",
+            "description": "利用可能な眉ティントスタイル"
           }
         ],
         "className": "bg-muted"
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
-        "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
-        "categories": [
-          {
-            "key": "men",
-            "title": "メンズヘアスタイル",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
-          },
-          {
-            "key": "women",
-            "title": "レディースヘアスタイル",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
-          },
-          {
-            "key": "boys",
-            "title": "男の子ヘアスタイル",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
-          },
-          {
-            "key": "girls",
-            "title": "女の子ヘアスタイル",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
-          }
-        ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
-      },
       "testimonials": {
         "id": "testimonials",
-        "title": "ユーザーがAI Barberについて言っていること",
-        "description": "完璧なスタイルを見つけたユーザーからの声を聞いてください。",
+        "title": "Brow Tintユーザーの声",
+        "description": "無料AI眉ティントジェネレーターで理想の眉ティントスタイルを見つけた方々のリアルな感想です。",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "ファッションブロガー",
-            "quote": "AI Barberは、実際にボブカットをする前に決定するのに役立ちました。大きな間違いから救われました！",
+            "role": "ビューティーブロガー",
+            "quote": "Brow Tintのおかげで、サロン訪問前に正確な眉ティントカラーをプレビューできました。スタイリストに眉ティントのビフォーアフター写真を見せたら、思い通りの仕上がりになりました！",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "sarah"
+              "alt": "Sarah - Brow Tintユーザーレビュー"
             }
           },
           {
             "name": "Mike Ross",
-            "role": "モデル",
-            "quote": "撮影のためのさまざまなルックをテストするためにAI Barberを使用しています。信じられないほどリアルです。",
+            "role": "フォトグラファー",
+            "quote": "編集ビューティー撮影にBrow Tintを活用しています。AIが驚くほどリアルな眉ティントのビフォーアフタープレビューを生成し、クライアントが最終的な仕上がりをイメージできます。",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "mike"
+              "alt": "Mike - Brow Tintを使用するプロカメラマン"
             }
           },
           {
             "name": "Emily Chen",
             "role": "学生",
-            "quote": "楽しくて使いやすいです。AIヘアスタイルチェンジャーでクレイジーな色を試すのが大好きでした。",
+            "quote": "さまざまなティント眉ジェルのスタイルを試すのがこんなに楽しいとは！Brow Tintはオンラインで見つけた眉ティントツールの中で一番のお気に入りです。しかも完全無料で始められます。",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "emily"
+              "alt": "Emily - Brow Tint無料ユーザー"
             }
           },
           {
             "name": "David Smith",
-            "role": "俳優",
-            "quote": "キャラクターのルックスを視覚化するのに最適です。細部が素晴らしいです。",
+            "role": "メイクアップアーティスト",
+            "quote": "施術前にお客様にプロ仕様の眉ティントオプションを見せられるのは非常に価値があります。Brow Tintの眉ラミネーション&ティントプレビューは驚くほど精度が高いです。",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "david"
+              "alt": "David - Brow Tintを使用するメイクアップアーティスト"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "スタイリスト",
-            "quote": "クライアントにこれを推奨して、正確に何を望んでいるかを示してもらいます。",
+            "role": "サロンオーナー",
+            "quote": "眉ティント予約をされるすべてのお客様にBrow Tintをおすすめしています。施術を始める前にラッシュ&ブロウティントの結果を確認できるので、自信を持って施術でき、時間の節約にもなります。",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "jessica"
+              "alt": "Jessica - Brow Tintをすすめるサロンオーナー"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "ユーザー",
-            "quote": "私が使用した最高のバーチャルヘアスタイルアプリです。強くお勧めします！",
+            "role": "初めてのユーザー",
+            "quote": "初めて眉ティントをするのが不安でしたが、Brow Tintで最適なティント眉ジェルカラーを決める前にプレビューできました。本当に気に入っています！",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "tom"
+              "alt": "Tom - 初めてBrow Tintを使ったユーザー"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "よくある質問",
-        "description": "AI Barberについて質問がありますか？お答えします。",
-        "tip": "探しているものが見つかりませんか？<a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>サポートチーム</a>にお問い合わせください",
+        "title": "Brow Tintに関するよくある質問",
+        "description": "AI眉ティントジェネレーターに関するご質問はございますか？眉ティントプレビューに関する最も一般的な質問への回答をご覧ください。",
+        "tip": "お探しの情報が見つかりませんでしたか？<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>サポートチーム</a>までお問い合わせください",
         "items": [
           {
-            "question": "AI Barberとは何ですか？どのように機能しますか？",
-            "answer": "AI Barberは、さまざまなヘアスタイルをバーチャルで試すことができるAI駆動のツールです。写真をアップロードし、ヘアを選択して、スタイルを選択して新しいルックを生成するだけです。"
+            "question": "Brow Tintとは何ですか？AI眉ティントジェネレーターはどのように機能しますか？",
+            "answer": "Brow Tintは、GPT Image 2をベースに構築された無料オンラインAI搭載の眉ティントツールです。写真をアップロードし、ティント眉ジェル・眉ラミネーション&ティント・プロ仕様眉ティントなどの眉ティントスタイルを選ぶと、AIが数秒でフォトリアリスティックなプレビューを生成します。"
           },
           {
-            "question": "ヘアスタイル変換の精度はどの程度ですか？",
-            "answer": "私たちの高度なAIアルゴリズムは、顔の形とヘアの質感を考慮して、非常にリアルで正確な変換を生成するように設計されています。"
+            "question": "眉ティントビフォーアフター結果はどれほどリアルですか？",
+            "answer": "GPT Image 2 AIが、非常にリアルな眉ティントのビフォーアフター画像を生成します。AIがあなたの顔の形、肌のトーン、自然な眉の構造、髪の色を分析し、実際のサロン結果に近い正確な眉ティントプレビューをお届けします。"
           },
           {
-            "question": "AI Barberはあらゆるヘアタイプや長さに使用できますか？",
-            "answer": "はい、AI Barberはさまざまなヘアタイプと長さで機能します。ただし、最良の結果を得るには、良好な照明の明確な写真を使用してください。"
+            "question": "ラッシュ&ブロウティントのスタイルを一緒にプレビューできますか？",
+            "answer": "はい！Brow Tintはラッシュ&ブロウティントの組み合わせプレビューに対応しており、1枚の画像でアイフレーミング全体の仕上がりを確認できます。次回のサロン予約でまつ毛ティントと眉ティントの両方を検討されている方に特に便利です。"
           },
           {
-            "question": "費用はかかりますか？",
-            "answer": "無料とプレミアムプランを提供しています。無料プランでは基本的な機能を試すことができ、プレミアムプランでは高解像度ダウンロードとより多くのスタイルが利用できます。"
+            "question": "Brow Tintでどんな眉ティントスタイルを試せますか？",
+            "answer": "複数カラーのティント眉ジェル、眉ラミネーション&ティントの組み合わせ、プロ仕様眉ティント施術、ブロウコードティントフォーミュラ、ラッシュ&ブロウティントパッケージなど、幅広い眉ティントスタイルをプレビューできます。お好みに合わせたカスタムルックも多数ご用意しています。"
           },
           {
-            "question": "私のデータは安全ですか？",
-            "answer": "はい、私たちはあなたのプライバシーを真剣に受け止めています。あなたの写真は安全に処理され、第三者と共有されることはありません。"
+            "question": "Brow Tintは本当に無料で使えますか？",
+            "answer": "はい、Brow Tintは無料プランをご用意しており、基本的な眉ティントプレビューのAI眉ティントジェネレーターを無料でお使いいただけます。プレミアムプランでは、高解像度ダウンロード、より多くの眉ティントスタイル、優先AIプロセッシングなどの追加機能がご利用いただけます。"
           },
           {
-            "question": "生成されたヘアスタイルを保存または共有できますか？",
-            "answer": "もちろんです！変換結果をダウンロードし、プラットフォームから直接ソーシャルメディアで共有できます。"
+            "question": "Brow Tintを使用する際、写真データは安全ですか？",
+            "answer": "はい、ご安心ください。お客様の写真は暗号化により安全に処理され、第三者と共有されることは一切ありません。アップロードされたすべての画像は、眉ティントプレビューの生成後に自動的に削除されます。プライバシーを真剣に考えています。"
+          },
+          {
+            "question": "眉ティントとティント眉ジェルの違いは何ですか？",
+            "answer": "眉ティントは眉毛（場合によっては皮膚にも）に塗布するセミパーマネントの染料で、より豊かでくっきりとした仕上がりが4〜6週間続きます。ティント眉ジェルは毎日使うコスメで、眉用マスカラのようにカラーとホールドを加えます。Brow Tintでは、決める前に眉ティントとティント眉ジェル両方のオプションをプレビューできます。"
+          },
+          {
+            "question": "Brow Tintで眉ラミネーション&ティントをプレビューできますか？",
+            "answer": "はい！眉ラミネーション&ティントは最も人気の高いプレビュースタイルの一つです。AIが眉ラミネーションとティントを組み合わせた、ブラッシュアップされたふっくらとした仕上がりをシミュレーションするので、予約前にこのトレンドの施術が自分にどう見えるかを確認できます。"
+          },
+          {
+            "question": "肌のトーンに合う最適な眉ティントカラーを見つけるには？",
+            "answer": "Brow TintのAIがあなたの肌のトーン、自然な髪の色、顔の形を分析し、最適な眉ティントカラーをご提案します。また、さまざまなプロ仕様眉ティントカラーやティント眉ジェルのカラーを手動で確認することもでき、完璧なマッチが見つかるまで無制限にプレビューを生成できます。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "新しいルックの準備はできましたか？",
-        "description": "今日からAIヘアカット変換を始めましょう。",
+        "title": "理想の眉ティントを見つける準備はできましたか？",
+        "description": "今日から無料でAI眉ティントプレビューを始めましょう。写真をアップロードするだけで、サインアップ不要で数秒後に眉ティントビフォーアフター結果を確認できます。",
         "buttons": [
           {
-            "title": "今すぐ始める",
+            "title": "Brow Tintを無料で試す",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
+      },
+      "subscribe": {
+        "id": "subscribe",
+        "title": "Brow Tintの最新情報をお届け",
+        "description": "最新の眉ティントトレンド、新しいAI機能、限定の眉ティントのヒントをメールでお届けします。",
+        "submit": {
+          "title": "登録する",
+          "placeholder": "メールアドレスを入力"
+        }
       }
     }
   }

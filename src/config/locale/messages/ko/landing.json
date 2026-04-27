@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "AI Barber",
+      "title": "Brow Tint",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - AI Brow Tinting Generator",
         "width": 100,
         "height": 100
       },
@@ -24,7 +24,7 @@
           "icon": "Box"
         },
         {
-          "title": "가격",
+          "title": "요금제",
           "url": "/pricing",
           "icon": "DollarSign"
         },
@@ -33,20 +33,20 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "AI 헤어스타일 체인저",
-              "description": "AI로 이미지 생성",
+              "title": "AI 눈썹 틴트 생성기",
+              "description": "AI로 눈썹 틴트 및 틴티드 브로우 젤 스타일 미리보기",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "헤어스타일 체인저 AI 비디오",
-              "description": "AI로 비디오 생성",
+              "title": "AI 눈썹 틴트 영상",
+              "description": "AI로 눈썹 틴팅 변신 영상 제작",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "바버 챗",
-              "description": "AI 이발사와 채팅",
+              "title": "Brow Tint 어드바이저",
+              "description": "전문 AI 눈썹 틴팅 조언 받기",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -80,11 +80,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "AI Barber",
-      "description": "AI Barber는 고급 AI를 사용하여 완벽한 룩을 찾는 데 도움을 주는 가상 헤어스타일 도구입니다.",
+      "title": "Brow Tint",
+      "description": "Brow Tint는 GPT Image 2로 구동되는 무료 온라인 AI 눈썹 틴트 생성기입니다. 살롱 방문 전에 프로페셔널 눈썹 틴팅, 틴티드 브로우 젤, 눈썹 라미네이션 앤 틴트, 래시 앤 브로우 틴트 스타일을 미리 확인해 보세요.",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
         "width": 1024,
         "height": 1024
       },
@@ -93,23 +93,23 @@
     "nav": {
       "items": [
         {
-          "title": "기능",
+          "title": "AI 도구",
           "children": [
             {
-              "title": "AI 헤어스타일",
-              "description": "이미지 생성",
+              "title": "AI 눈썹 틴트 생성기",
+              "description": "AI로 눈썹 틴트 스타일 생성",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "AI 비디오",
-              "description": "비디오 생성",
+              "title": "AI 눈썹 틴트 영상",
+              "description": "눈썹 틴팅 변신 영상 제작",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "바버 챗",
-              "description": "AI 이발사와 채팅",
+              "title": "Brow Tint 어드바이저",
+              "description": "AI 눈썹 틴팅 전문가와 대화",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -119,24 +119,29 @@
           "title": "리소스",
           "children": [
             {
-              "title": "문서",
-              "url": "/docs",
-              "target": "_self"
-            },
-            {
               "title": "블로그",
               "url": "/blog",
               "target": "_self"
             },
             {
-              "title": "채팅",
-              "url": "/chat",
+              "title": "문서",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "쇼케이스",
+              "url": "/showcases",
+              "target": "_self"
+            },
+            {
+              "title": "요금제",
+              "url": "/pricing",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "친구",
+          "title": "파트너",
           "children": [
             {
               "title": "MCPALL",
@@ -188,11 +193,11 @@
     "agreement": {
       "items": [
         {
-          "title": "개인정보 보호정책",
+          "title": "개인정보 처리방침",
           "url": "/privacy-policy"
         },
         {
-          "title": "서비스 약관",
+          "title": "이용약관",
           "url": "/terms-of-service"
         }
       ]
@@ -201,12 +206,3 @@
     "show_locale": true
   }
 }
-
-
-
-
-
-
-
-
-

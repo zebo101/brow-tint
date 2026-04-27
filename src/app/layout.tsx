@@ -1,6 +1,11 @@
 import '@/config/style/global.css';
 
-import { JetBrains_Mono, Merriweather, Noto_Sans_Mono } from 'next/font/google';
+import {
+  Amita,
+  JetBrains_Mono,
+  Merriweather,
+  Noto_Sans_Mono,
+} from 'next/font/google';
 import { getLocale, setRequestLocale } from 'next-intl/server';
 import NextTopLoader from 'nextjs-toploader';
 
@@ -30,6 +35,14 @@ const merriweather = Merriweather({
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-mono',
+  display: 'swap',
+  preload: true,
+});
+
+const amita = Amita({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-display',
   display: 'swap',
   preload: true,
 });
@@ -100,7 +113,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${notoSansMono.variable} ${merriweather.variable} ${jetbrainsMono.variable}`}
+      className={`${notoSansMono.variable} ${merriweather.variable} ${jetbrainsMono.variable} ${amita.variable}`}
       suppressHydrationWarning
     >
       <head>

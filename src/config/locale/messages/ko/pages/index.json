@@ -8,74 +8,50 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
-      "cta"
+      "cta",
+      "subscribe"
     ],
     "sections": {
       "hero": {
+        "block": "hero-editorial",
         "id": "hero",
-        "title": "당신만의 AI 헤어 스타일리스트",
-        "highlight_text": "AI Barber",
-        "description": "AI Barber와 함께 헤어 스타일링의 미래를 만나보세요. 사진을 업로드하고, 헤어 영역을 선택하면 AI 헤어스타일 체인저로 놀라운 변화를 경험할 수 있습니다.",
-        "tip": "🎁 지금 최고의 AI 헤어컷 체인저를 시도해보세요",
+        "title": "#1 무료 온라인 AI 눈썹 틴트 생성기",
+        "highlight_text": "Brow Tint",
+        "description": "Brow Tint로 사실적인 눈썹 틴트 룩을 미리 확인해 보세요 — 프로페셔널 눈썹 틴팅, 틴티드 브로우 젤, 눈썹 라미네이션 앤 틴트 미리보기를 위한 무료 온라인 AI 도구입니다. 사진을 업로드하면 GPT Image 2로 구동되는 눈썹 틴트 전후 결과를 몇 초 만에 확인할 수 있습니다.",
         "buttons": [
           {
-            "title": "무료로 시도",
+            "title": "Brow Tint 무료 체험",
             "icon": "Zap",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "variant": "default"
           },
           {
-            "title": "예제 보기",
+            "title": "쇼케이스 보기",
             "icon": "BookOpenText",
             "url": "/showcases",
             "target": "_blank",
             "variant": "outline"
           }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ 명의 사용자가 AI Barber를 사용 중입니다",
-        "show_award": false,
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Barber 히어로",
-          "width": 1200,
-          "height": 800
+          "src": "/imgs/bg/hero-2.png",
+          "alt": "AI 눈썹 틴트 생성기 - 온라인으로 눈썹 틴팅 결과 미리보기",
+          "width": 800,
+          "height": 600
         },
-        "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Barber 히어로",
-          "width": 1200,
-          "height": 800
-        },
-        "carousel_images": [
-          {
-            "light": "/imgs/features/ai-hairstyle-changer.png",
-            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
-            "alt": "AI Barber hairstyle changer"
-          },
-          {
-            "light": "/imgs/features/hairstyle-changer-ai-video.png",
-            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
-            "alt": "AI Barber 설정"
-          },
-          {
-            "light": "/imgs/features/chat.png",
-            "dark": "/imgs/features/chat-dark.png",
-            "alt": "AI Barber Chat"
-          }
-        ],
         "background_image": {
-          "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber 배경"
-        }
+          "src": "/imgs/bg/hero-1.png",
+          "alt": "Brow Tint 배경 - 프로페셔널 눈썹 틴팅 미리보기"
+        },
+        "powered_by": "GPT Image 2 기반",
+        "editorial_labels": ["미리보기", "변환", "정의"]
       },
       "logos": {
         "id": "logos",
-        "title": "고급 AI 기술로 구동",
+        "title": "Brow Tint를 뒷받침하는 신뢰할 수 있는 AI 기술",
         "items": [
           {
             "title": "Next.js",
@@ -117,48 +93,48 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "AI Barber란 무엇인가요?",
+        "title": "Brow Tint란 무엇인가요?",
         "label": "소개",
-        "description": "AI Barber는 고급 AI를 사용하여 완벽한 외모를 찾도록 도와주는 가상 헤어스타일 도구입니다.",
+        "description": "Brow Tint는 결정하기 전에 프로페셔널 눈썹 틴팅 결과를 미리 확인할 수 있는 무료 온라인 AI 눈썹 틴트 생성기입니다. 틴티드 브로우 젤 색조를 시도하거나, 눈썹 라미네이션 앤 틴트 조합을 탐색하거나, 래시 앤 브로우 틴트 스타일을 비교하고 싶을 때, 저희 GPT Image 2 AI가 얼굴형과 피부 톤에 맞춘 실사 같은 미리보기를 생성해 드립니다.",
         "image": {
           "src": "/imgs/features/landingpage.png",
-          "alt": "AI Barber 소개"
+          "alt": "Brow Tint AI 생성기 - 무료로 온라인 눈썹 틴팅 미리보기"
         },
         "items": [
           {
-            "title": "가상 헤어스타일",
-            "description": "가위를 만지지 않고도 수많은 가상 헤어스타일을 시도해보세요.",
+            "title": "가상 눈썹 틴팅 미리보기",
+            "description": "제품을 하나도 사용하지 않고도 수많은 눈썹 틴트 색조와 스타일을 미리 확인해 보세요. AI 눈썹 틴트 생성기가 프로페셔널 눈썹 틴팅 결과를 시뮬레이션하여 집에서 편안하게 이상적인 색조를 찾을 수 있도록 도와드립니다.",
             "icon": "RiMagicLine",
             "image": {
               "src": "/imgs/features/1.png",
-              "alt": "가상 헤어스타일"
+              "alt": "가상 눈썹 틴팅 미리보기 - AI 눈썹 틴트 생성기"
             }
           },
           {
-            "title": "현실적인 결과",
-            "description": "우리의 AI 헤어컷 체인저는 실제와 같은 매우 현실적인 결과를 생성합니다.",
+            "title": "사실적인 눈썹 틴트 전후 비교",
+            "description": "GPT Image 2로 구동되는 생생한 눈썹 틴트 전후 결과를 확인하세요. 자연 눈썹과 틴팅된 룩을 나란히 비교하고, 예약 전에 스타일리스트와 비교 사진을 공유하세요.",
             "icon": "RiCameraLensLine",
             "image": {
               "src": "/imgs/features/2.png",
-              "alt": "현실적인 결과"
+              "alt": "눈썹 틴트 전후 결과"
             }
           },
           {
-            "title": "AI 이미지 생성기",
-            "description": "고급 AI 이미지 생성기를 사용하여 독특한 헤어스타일 컨셉을 만들어보세요.",
+            "title": "고급 AI 이미지 생성기",
+            "description": "AI 이미지 생성기는 GPT Image 2를 사용하여 모든 얼굴형에 어울리는 독특한 눈썹 틴트 및 틴티드 브로우 젤 스타일을 만들어냅니다. 얼굴 특징을 분석하여 피부 톤에 가장 잘 어울리는 눈썹 틴트 색조를 추천해 드립니다.",
             "icon": "RiImage2Line",
             "image": {
               "src": "/imgs/features/3.png",
-              "alt": "AI 이미지 생성기"
+              "alt": "눈썹 틴트 룩을 위한 AI 이미지 생성기"
             }
           },
           {
-            "title": "스타일 전송",
-            "description": "유명인이나 모델의 스타일을 사진에 직접 전송하세요.",
+            "title": "래시 앤 브로우 틴트 함께 보기",
+            "description": "래시 앤 브로우 틴트 스타일을 함께 미리 보며 완벽한 올인원 눈 프레이밍 룩을 찾아보세요. 하나의 실사 미리보기에서 래시 틴팅이 다양한 눈썹 틴트 색조와 어떻게 어울리는지 확인하세요.",
             "icon": "RiExchangeLine",
             "image": {
               "src": "/imgs/features/4.png",
-              "alt": "스타일 전송"
+              "alt": "래시 앤 브로우 틴트 조합 미리보기"
             }
           }
         ],
@@ -167,35 +143,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "왜 AI Barber를 선택해야 할까요",
+        "title": "눈썹 틴팅 미리보기에 Brow Tint를 선택해야 하는 이유",
         "label": "장점",
-        "description": "안전하고 사용자 친화적인 AI Barber 도구로 무한한 가능성을 탐색하세요.",
+        "description": "최고의 온라인 눈썹 틴트 경험 — 빠르고, 안전하며, 처음으로 눈썹 틴팅을 시작하는 초보자부터 전문 눈썹 아티스트, 살롱 오너까지 모두를 위해 설계되었습니다.",
         "items": [
           {
-            "title": "번개처럼 빠름",
-            "description": "눈 깜짝할 사이에 헤어스타일을 변화시키세요. 결과를 며칠 기다릴 필요가 없습니다.",
+            "title": "번개처럼 빠른 AI 눈썹 틴트 생성",
+            "description": "몇 시간이 아닌 몇 초 만에 프로페셔널 눈썹 틴트 미리보기를 생성하세요. GPT Image 2 AI가 사진을 즉시 처리하여 살롱 예약이나 대기 없이 눈썹 틴팅 결과를 바로 확인할 수 있습니다.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "빠른 처리"
+              "alt": "빠른 AI 눈썹 틴트 생성"
             }
           },
           {
-            "title": "안전하고 사적임",
-            "description": "당신의 사진은 당신의 것입니다. 우리는 그것들을 안전하게 보관하며 절대 공유하지 않습니다.",
+            "title": "안전하고 프라이빗한 사진 처리",
+            "description": "사진은 안전하게 처리되며 제3자와 절대 공유되지 않습니다. Brow Tint는 개인 정보를 존중합니다 — 업로드된 모든 이미지는 처리 중 암호화되며, 눈썹 틴트 미리보기 생성 후 자동으로 삭제됩니다.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "안전"
+              "alt": "안전한 눈썹 틴트 사진 처리"
             }
           },
           {
-            "title": "매우 사용자 친화적",
-            "description": "몇 번의 클릭만으로 내면의 스타일리스트를 발휘하세요. 기술적 기술이 필요하지 않습니다.",
+            "title": "매우 쉬운 사용법",
+            "description": "클릭 몇 번으로 최적의 틴티드 브로우 젤 색조를 찾아보세요 — 전문 기술이 필요 없습니다. Brow Tint는 처음 눈썹 틴트를 탐색하는 십대부터 고객에게 옵션을 시연하는 살롱 전문가까지 누구나 프로페셔널 눈썹 틴팅 결과를 미리 볼 수 있도록 설계되었습니다.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "사용자 친화적"
+              "alt": "사용하기 쉬운 눈썹 틴트 도구"
             }
           }
         ]
@@ -203,45 +179,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "AI Barber 사용 방법",
-        "description": "세 가지 간단한 단계로 새로운 외모를 얻으세요:",
+        "title": "AI 눈썹 틴트 생성기 사용 방법",
+        "description": "네 가지 간단한 단계로 완벽한 눈썹 틴트 룩을 완성하세요. 계정이 필요 없습니다 — 지금 바로 무료로 눈썹 틴팅 결과를 미리 확인해 보세요.",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "사용법"
+          "alt": "AI 눈썹 틴트 생성기 사용 방법"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
             "title": "사진 업로드",
-            "description": "AI Barber 플랫폼에 자신의 명확한 사진을 업로드하세요.",
+            "description": "Brow Tint 플랫폼에 선명한 정면 사진을 업로드하세요. 최상의 눈썹 틴트 결과를 위해 눈썹이 잘 보이는 밝은 조명의 이미지를 사용하세요.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "업로드"
+              "alt": "AI 눈썹 틴트 미리보기를 위한 사진 업로드"
             }
           },
           {
-            "title": "영역 선택",
-            "description": "변경하고 싶은 헤어 영역을 강조 표시하세요.",
+            "title": "눈썹 틴트 스타일 선택",
+            "description": "틴티드 브로우 젤, 눈썹 라미네이션 앤 틴트, 프로페셔널 눈썹 틴트, 브로우 코드 틴트 등 다양한 눈썹 틴팅 스타일 중에서 선택하세요.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "선택"
+              "alt": "눈썹 틴트 스타일 선택"
             }
           },
           {
-            "title": "생성",
-            "description": "원하는 스타일을 선택하고 AI 헤어스타일 체인저가 마법을 부리도록 하세요.",
+            "title": "눈썹 틴트 미리보기 생성",
+            "description": "AI 눈썹 틴트 생성기가 새로운 눈썹 룩의 사실적인 미리보기를 만들어드립니다. GPT Image 2 기술이 몇 초 만에 실사 같은 눈썹 틴트 전후 이미지를 생성합니다.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "생성"
+              "alt": "AI 눈썹 틴트 미리보기 생성"
             }
           },
           {
-            "title": "다운로드",
-            "description": "새로운 가상 헤어스타일을 저장하고 친구들과 공유하세요.",
+            "title": "다운로드 및 공유",
+            "description": "고해상도 눈썹 틴트 전후 비교 사진을 저장하세요. 스타일리스트와 공유하거나, 소셜 미디어에 올리거나, 다음 눈썹 틴팅 예약 시 참고 자료로 활용하세요.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "다운로드"
+              "alt": "눈썹 틴트 전후 결과 다운로드"
             }
           }
         ],
@@ -249,202 +225,188 @@
       },
       "features": {
         "id": "features",
-        "title": "AI Barber의 주요 기능",
-        "description": "가상 메이크오버에 필요한 모든 것.",
+        "title": "Brow Tint 생성기의 주요 기능",
+        "description": "완벽한 눈썹 틴트 미리보기에 필요한 모든 것 — 프로페셔널 눈썹 틴팅 시뮬레이션부터 틴티드 브로우 젤 색조 매칭까지.",
         "items": [
           {
-            "title": "AI 헤어컷 체인저",
-            "description": "다양한 헤어컷 길이와 스타일을 즉시 실험해보세요.",
+            "title": "프로페셔널 눈썹 틴트 미리보기",
+            "description": "집에서 편안하게 살롱 수준의 프로페셔널 눈썹 틴트 결과를 미리 확인하세요. AI가 살롱 눈썹 틴팅 시술의 정확한 룩을 재현하여 예약 전에 무엇을 기대할 수 있는지 알 수 있습니다.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "가상 헤어스타일",
-            "description": "자르기 전에 다양한 헤어스타일이 어떻게 보이는지 시각화하세요.",
+            "title": "틴티드 브로우 젤 색조 매칭",
+            "description": "다양한 틴티드 브로우 젤 색조를 시도하고 각각이 자연 피부 톤, 머리 색상, 얼굴형과 얼마나 잘 어울리는지 확인하세요. 나에게 가장 잘 맞는 틴티드 브로우 젤을 찾아보세요.",
             "icon": "RiWomenLine"
           },
           {
-            "title": "색상 실험",
-            "description": "화학적 손상 없이 새로운 헤어 컬러를 시도해보세요.",
+            "title": "브로우 코드 틴트 시각화",
+            "description": "브로우 코드 틴트 포뮬라를 탐색하고 눈썹에 정확히 맞는 색조를 시각화하세요. 결정하기 전에 여러 브로우 코드 틴트 옵션을 나란히 비교하세요.",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "고해상도",
-            "description": "변환된 고품질 이미지를 다운로드하세요.",
+            "title": "고해상도 다운로드",
+            "description": "선명한 고해상도 눈썹 틴트 전후 이미지를 다운로드하세요. 스타일리스트에게 보여주거나, 온라인에 공유하거나, 개인 참고 자료로 보관하기에 완벽합니다.",
             "icon": "RiHdLine"
           },
           {
-            "title": "스타일 비교",
-            "description": "변화 전후의 외모를 나란히 비교하세요.",
+            "title": "전후 비교",
+            "description": "직관적인 나란히 비교 슬라이더로 눈썹 틴트 전후 룩을 비교하세요. 클릭 한 번으로 눈썹 틴팅이 만들어내는 변신을 확인하세요.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "모바일 친화적",
-            "description": "어디서나 어떤 기기에서든 AI Barber를 사용하세요.",
+            "title": "모바일 친화적 눈썹 틴트 도구",
+            "description": "스마트폰, 태블릿, 데스크탑 어디서든 Brow Tint 생성기를 사용하세요. 이동 중에도 언제 어디서나 눈썹 틴팅 결과를 미리 확인할 수 있습니다.",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "사용자들이 AI Barber를 사랑합니다",
-        "description": "외모를 변화시키는 수천 명의 만족한 사용자들과 함께하세요.",
+        "title": "사용자들이 Brow Tint를 사랑하는 이유",
+        "description": "무료 AI 눈썹 틴트 생성기로 완벽한 눈썹 틴트 룩을 찾은 수천 명의 만족한 사용자와 함께하세요.",
         "items": [
           {
             "title": "50,000+",
-            "description": "변환"
+            "description": "생성된 눈썹 틴트 룩"
           },
           {
             "title": "10,000+",
-            "description": "만족한 사용자"
+            "description": "전 세계 만족한 사용자"
           },
           {
-            "title": "500+",
-            "description": "스타일"
+            "title": "200+",
+            "description": "이용 가능한 눈썹 틴트 스타일"
           }
         ],
         "className": "bg-muted"
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
-        "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
-        "categories": [
-          {
-            "key": "men",
-            "title": "남성 헤어스타일",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
-          },
-          {
-            "key": "women",
-            "title": "여성 헤어스타일",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
-          },
-          {
-            "key": "boys",
-            "title": "남아 헤어스타일",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
-          },
-          {
-            "key": "girls",
-            "title": "여아 헤어스타일",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
-          }
-        ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
-      },
       "testimonials": {
         "id": "testimonials",
-        "title": "사용자들이 AI Barber에 대해 말하는 것",
-        "description": "완벽한 스타일을 찾은 사용자들의 이야기를 들어보세요.",
+        "title": "Brow Tint에 대한 사용자 이야기",
+        "description": "무료 AI 눈썹 틴트 생성기로 완벽한 눈썹 틴트 룩을 찾은 실제 사용자들의 후기입니다.",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "패션 블로거",
-            "quote": "AI Barber는 제가 실제로 밥 컷을 하기 전에 결정하는 데 도움을 주었습니다. 큰 실수를 피할 수 있었어요!",
+            "role": "뷰티 블로거",
+            "quote": "Brow Tint 덕분에 살롱 방문 전에 정확한 눈썹 틴팅 색조를 미리 확인할 수 있었어요. 스타일리스트에게 눈썹 틴트 전후 사진을 보여주고 원하던 룩을 정확히 얻었습니다!",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "sarah"
+              "alt": "Sarah - Brow Tint User Review"
             }
           },
           {
             "name": "Mike Ross",
-            "role": "모델",
-            "quote": "저는 AI Barber를 사용하여 촬영을 위한 다양한 룩을 테스트합니다. 매우 현실적입니다.",
+            "role": "사진작가",
+            "quote": "에디토리얼 뷰티 촬영에 Brow Tint를 활용하고 있어요 — AI가 믿을 수 없을 만큼 사실적인 눈썹 틴트 전후 미리보기를 생성해서 고객들이 최종 룩을 시각화하는 데 큰 도움이 됩니다.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "mike"
+              "alt": "Mike - Professional Photographer Using Brow Tint"
             }
           },
           {
             "name": "Emily Chen",
             "role": "학생",
-            "quote": "재미있고 사용하기 쉽습니다. AI 헤어스타일 체인저로 미친 색상을 시도하는 것을 좋아했습니다.",
+            "quote": "다양한 틴티드 브로우 젤 룩을 시도해보는 게 이렇게 재미있을 수 없어요! Brow Tint는 온라인에서 찾은 최고의 눈썹 틴트 도구이고, 시작이 완전 무료랍니다.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "emily"
+              "alt": "Emily - Brow Tint Free User"
             }
           },
           {
             "name": "David Smith",
-            "role": "배우",
-            "quote": "캐릭터 룩을 시각화하는 데 훌륭합니다. 세부사항이 놀랍습니다.",
+            "role": "메이크업 아티스트",
+            "quote": "시술 전에 고객에게 프로페셔널 눈썹 틴트 옵션을 보여주는 것은 정말 소중한 경험입니다. Brow Tint의 눈썹 라미네이션 앤 틴트 미리보기는 놀라울 만큼 정확해요.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "david"
+              "alt": "David - Makeup Artist Using Brow Tint"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "스타일리스트",
-            "quote": "고객들에게 이것을 추천하여 정확히 원하는 것을 보여줄 수 있도록 합니다.",
+            "role": "살롱 오너",
+            "quote": "눈썹 틴팅 예약을 잡는 모든 고객에게 Brow Tint를 추천합니다. 시작 전에 래시 앤 브로우 틴트 결과를 미리 볼 수 있어서 자신감이 생기고 시간도 절약됩니다.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "jessica"
+              "alt": "Jessica - Salon Owner Recommends Brow Tint"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "사용자",
-            "quote": "제가 사용한 최고의 가상 헤어스타일 앱입니다. 강력히 추천합니다!",
+            "role": "첫 번째 사용자",
+            "quote": "처음으로 눈썹 틴팅을 받는 게 걱정됐어요. Brow Tint 덕분에 결정하기 전에 최적의 틴티드 브로우 젤 색조를 미리 확인할 수 있었습니다. 정말 마음에 들어요!",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "tom"
+              "alt": "Tom - First-Time Brow Tint User"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "자주 묻는 질문",
-        "description": "AI Barber에 대한 질문이 있으신가요? 답변해드리겠습니다.",
-        "tip": "찾고 계신 내용을 찾을 수 없나요? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>지원팀</a>에 문의하세요",
+        "title": "Brow Tint에 대해 자주 묻는 질문",
+        "description": "AI 눈썹 틴트 생성기에 대한 궁금증이 있으신가요? 눈썹 틴팅 미리보기에 관한 가장 일반적인 질문에 대한 답변입니다.",
+        "tip": "찾으시는 내용이 없으신가요? <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>고객 지원팀</a>에 문의하세요",
         "items": [
           {
-            "question": "AI Barber란 무엇이며 어떻게 작동하나요?",
-            "answer": "AI Barber는 다양한 헤어스타일을 가상으로 시도할 수 있게 해주는 AI 기반 도구입니다. 사진을 업로드하고, 헤어를 선택한 다음 스타일을 선택하여 새로운 룩을 생성하세요."
+            "question": "Brow Tint란 무엇이며 AI 눈썹 틴트 생성기는 어떻게 작동하나요?",
+            "answer": "Brow Tint는 GPT Image 2를 기반으로 구축된 무료 온라인 AI 눈썹 틴팅 도구입니다. 사진을 업로드하고 틴티드 브로우 젤, 눈썹 라미네이션 앤 틴트, 프로페셔널 눈썹 틴트 등 눈썹 틴트 스타일을 선택하면, AI가 몇 초 만에 새로운 눈썹 틴트를 한 실사 같은 미리보기를 생성해 드립니다."
           },
           {
-            "question": "헤어스타일 변환의 정확도는 어느 정도인가요?",
-            "answer": "우리의 고급 AI 알고리즘은 얼굴 모양과 헤어 질감을 고려하여 매우 현실적이고 정확한 변환을 생성하도록 설계되었습니다."
+            "question": "눈썹 틴트 전후 결과는 얼마나 사실적인가요?",
+            "answer": "GPT Image 2 AI는 매우 사실적인 눈썹 틴트 전후 이미지를 생성합니다. AI가 얼굴형, 피부 톤, 자연 눈썹 구조, 머리 색상을 분석하여 실제 살롱 결과와 매우 유사한 정확한 눈썹 틴팅 미리보기를 제공합니다."
           },
           {
-            "question": "AI Barber는 모든 헤어 타입이나 길이에 사용할 수 있나요?",
-            "answer": "네, AI Barber는 다양한 헤어 타입과 길이에서 작동합니다. 그러나 최상의 결과를 위해서는 좋은 조명의 명확한 사진을 사용하세요."
+            "question": "래시 앤 브로우 틴트 스타일을 함께 미리 볼 수 있나요?",
+            "answer": "네! Brow Tint는 래시 앤 브로우 틴트 조합 미리보기를 지원하여 한 이미지에서 완전한 눈 프레이밍 룩을 확인할 수 있습니다. 다음 살롱 방문 시 래시 틴팅과 눈썹 틴팅을 모두 고려하고 있다면 특히 유용합니다."
           },
           {
-            "question": "비용이 발생하나요?",
-            "answer": "무료 및 프리미엄 플랜을 제공합니다. 무료 플랜은 기본 기능을 시도할 수 있게 해주며, 프리미엄 플랜은 고해상도 다운로드와 더 많은 스타일을 제공합니다."
+            "question": "Brow Tint로 어떤 눈썹 틴트 스타일을 시도할 수 있나요?",
+            "answer": "다양한 색조의 틴티드 브로우 젤, 눈썹 라미네이션 앤 틴트 조합, 프로페셔널 눈썹 틴트 시술, 브로우 코드 틴트 포뮬라, 래시 앤 브로우 틴트 패키지 등 기호에 맞게 커스터마이즈된 다양한 눈썹 틴팅 스타일을 미리 볼 수 있습니다."
           },
           {
-            "question": "내 데이터가 안전한가요?",
-            "answer": "네, 우리는 귀하의 개인정보를 진지하게 취급합니다. 귀하의 사진은 안전하게 처리되며 제3자와 공유되지 않습니다."
+            "question": "Brow Tint는 정말 무료로 사용할 수 있나요?",
+            "answer": "네, Brow Tint는 기본 눈썹 틴팅 미리보기를 무료로 제공하는 무료 플랜을 제공합니다. 프리미엄 플랜은 고해상도 다운로드, 더 많은 눈썹 틴트 스타일, 우선 AI 처리 등 추가 기능을 이용할 수 있습니다."
           },
           {
-            "question": "생성된 헤어스타일을 저장하거나 공유할 수 있나요?",
-            "answer": "물론입니다! 변환 결과를 다운로드하고 플랫폼에서 직접 소셜 미디어에 공유할 수 있습니다."
+            "question": "Brow Tint 사용 시 사진 데이터는 안전한가요?",
+            "answer": "물론입니다. 사진은 암호화하여 안전하게 처리되며 제3자와 절대 공유되지 않습니다. 업로드된 모든 이미지는 눈썹 틴트 미리보기 생성 후 자동으로 삭제됩니다. 개인 정보 보호를 최우선으로 생각합니다."
+          },
+          {
+            "question": "눈썹 틴트와 틴티드 브로우 젤의 차이는 무엇인가요?",
+            "answer": "눈썹 틴트는 눈썹 모발과 경우에 따라 피부에 적용하는 반영구적 염료로, 더 풍성하고 선명한 룩을 4~6주간 유지합니다. 틴티드 브로우 젤은 색상과 고정력을 더하는 일상 화장품으로, 눈썹 마스카라와 유사합니다. Brow Tint로 두 가지 옵션을 모두 미리 확인한 후 결정하세요."
+          },
+          {
+            "question": "Brow Tint로 눈썹 라미네이션 앤 틴트를 미리 볼 수 있나요?",
+            "answer": "네! 눈썹 라미네이션 앤 틴트는 가장 인기 있는 미리보기 스타일 중 하나입니다. AI가 눈썹 라미네이션의 빗어 올린 풍성한 룩과 틴팅을 결합하여 시뮬레이션하므로, 예약 전에 이 트렌디한 시술이 나에게 어떻게 어울릴지 정확히 확인할 수 있습니다."
+          },
+          {
+            "question": "나의 피부 톤에 가장 잘 맞는 눈썹 틴트 색조를 어떻게 찾나요?",
+            "answer": "Brow Tint의 AI가 피부 톤, 자연 머리 색상, 얼굴형을 분석하여 가장 잘 어울리는 눈썹 틴트 색조를 제안합니다. 다양한 프로페셔널 눈썹 틴트 색조와 틴티드 브로우 젤 색상을 직접 탐색하며 완벽한 매칭을 찾을 때까지 무제한으로 미리보기를 생성할 수도 있습니다."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "새로운 외모를 준비하셨나요?",
-        "description": "오늘 AI 헤어컷 변환을 시작하세요.",
+        "title": "완벽한 눈썹 틴트를 찾을 준비가 되셨나요?",
+        "description": "오늘 무료 AI 눈썹 틴팅 미리보기를 시작하세요. 사진을 업로드하면 몇 초 만에 눈썹 틴트 전후 결과를 확인할 수 있습니다 — 회원 가입 필요 없음.",
         "buttons": [
           {
-            "title": "지금 시작하기",
+            "title": "Brow Tint 무료 체험",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
+      },
+      "subscribe": {
+        "id": "subscribe",
+        "title": "Brow Tint 최신 소식 받기",
+        "description": "최신 눈썹 틴팅 트렌드, 새로운 AI 기능, 독점 눈썹 틴트 팁을 받은 편지함으로 받아보세요.",
+        "submit": {
+          "title": "구독하기",
+          "placeholder": "이메일을 입력하세요"
+        }
       }
     }
   }

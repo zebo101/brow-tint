@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "AI Barber",
+      "title": "Brow Tint",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - AI Brow Tinting Generator",
         "width": 100,
         "height": 100
       },
@@ -19,7 +19,7 @@
           "icon": "Sparkles"
         },
         {
-          "title": "Schaufenster",
+          "title": "Beispiele",
           "url": "/showcases",
           "icon": "Box"
         },
@@ -33,20 +33,20 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "KI-Frisurenwechsler",
-              "description": "Verwenden Sie KI zur Bildgenerierung",
+              "title": "KI Brow Tint Generator",
+              "description": "Augenbrauentönung und getönte Brauengel-Looks mit KI in der Vorschau",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Frisurenwechsler KI-Video",
-              "description": "Verwenden Sie KI zur Videogenerierung",
+              "title": "KI Brow Tint Video",
+              "description": "Augenbrauentönung-Verwandlungsvideos mit KI erstellen",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Barbier-Chat",
-              "description": "Chatten Sie mit KI-Barbier",
+              "title": "Brow Tint Berater",
+              "description": "Expertenberatung zur Augenbrauentönung mit KI erhalten",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -80,11 +80,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "AI Barber",
-      "description": "AI Barber ist ein virtuelles Frisuren-Tool, das fortschrittliche KI verwendet, um Ihnen zu helfen, Ihren perfekten Look zu finden.",
+      "title": "Brow Tint",
+      "description": "Brow Tint ist ein kostenloser Online-KI-Augenbrauentönung-Generator, der von GPT Image 2 betrieben wird. Sehen Sie professionelle Augenbrauentönung, getöntes Brauengel, Augenbrauen-Laminierung und Tönung sowie Wimpern- und Brauentönung in der Vorschau – alles vor Ihrem Salonbesuch.",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
         "width": 1024,
         "height": 1024
       },
@@ -93,23 +93,23 @@
     "nav": {
       "items": [
         {
-          "title": "Funktionen",
+          "title": "KI-Tools",
           "children": [
             {
-              "title": "KI-Frisur",
-              "description": "Bilder generieren",
+              "title": "KI Brow Tint Generator",
+              "description": "Augenbrauentönung-Looks mit KI generieren",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "KI-Video",
-              "description": "Videos generieren",
+              "title": "KI Brow Tint Video",
+              "description": "Augenbrauentönung-Verwandlungsvideos erstellen",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Barbier-Chat",
-              "description": "Chatten Sie mit KI-Barbier",
+              "title": "Brow Tint Berater",
+              "description": "Mit KI-Augenbrauentönung-Experten chatten",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -119,24 +119,29 @@
           "title": "Ressourcen",
           "children": [
             {
-              "title": "Dokumente",
-              "url": "/docs",
-              "target": "_self"
-            },
-            {
               "title": "Blog",
               "url": "/blog",
               "target": "_self"
             },
             {
-              "title": "Chat",
-              "url": "/chat",
+              "title": "Dokumente",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "Beispiele",
+              "url": "/showcases",
+              "target": "_self"
+            },
+            {
+              "title": "Preise",
+              "url": "/pricing",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "Freunde",
+          "title": "Partner",
           "children": [
             {
               "title": "MCPALL",
@@ -188,7 +193,7 @@
     "agreement": {
       "items": [
         {
-          "title": "Datenschutzrichtlinie",
+          "title": "Datenschutz",
           "url": "/privacy-policy"
         },
         {

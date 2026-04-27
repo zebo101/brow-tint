@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "AI Barber",
+      "title": "Brow Tint",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - AI Brow Tinting Generator",
         "width": 100,
         "height": 100
       },
@@ -14,12 +14,12 @@
     "nav": {
       "items": [
         {
-          "title": "Funciones",
+          "title": "Características",
           "url": "/#features",
           "icon": "Sparkles"
         },
         {
-          "title": "Casos de uso",
+          "title": "Ejemplos",
           "url": "/showcases",
           "icon": "Box"
         },
@@ -33,20 +33,20 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "Cambiador de peinado IA",
-              "description": "Usa IA para generar imágenes",
+              "title": "Generador de Tinte de Cejas con IA",
+              "description": "Previsualiza looks de tinte de cejas y gel de cejas con tinte usando IA",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Vídeo cambiador de peinado IA",
-              "description": "Usa IA para generar vídeos",
+              "title": "Video de Tinte de Cejas con IA",
+              "description": "Crea videos de transformación de tinte de cejas con IA",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Chat con barbero",
-              "description": "Chatea con barbero IA",
+              "title": "Asesor de Tinte de Cejas",
+              "description": "Obtén consejos expertos de tinte de cejas con IA",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -80,11 +80,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "AI Barber",
-      "description": "AI Barber es una herramienta virtual de peinado que utiliza IA avanzada para ayudarte a encontrar tu look perfecto.",
+      "title": "Brow Tint",
+      "description": "Brow Tint es un generador de tinte de cejas con IA gratuito, impulsado por GPT Image 2. Previsualiza tinte de cejas profesional, gel de cejas con tinte, laminado y tinte de cejas, y estilos de tinte de pestañas y cejas — todo antes de tu visita al salón.",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
         "width": 1024,
         "height": 1024
       },
@@ -93,23 +93,23 @@
     "nav": {
       "items": [
         {
-          "title": "Funciones",
+          "title": "Herramientas IA",
           "children": [
             {
-              "title": "Peinado IA",
-              "description": "generar imágenes",
+              "title": "Generador de Tinte de Cejas con IA",
+              "description": "Genera looks de tinte de cejas con IA",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Vídeo IA",
-              "description": "generar vídeos",
+              "title": "Video de Tinte de Cejas con IA",
+              "description": "Crea videos de transformación de tinte de cejas",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Chat con barbero",
-              "description": "Chatea con barbero IA",
+              "title": "Asesor de Tinte de Cejas",
+              "description": "Chatea con el experto en tinte de cejas con IA",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -119,18 +119,23 @@
           "title": "Recursos",
           "children": [
             {
-              "title": "Documentos",
-              "url": "/docs",
-              "target": "_self"
-            },
-            {
               "title": "Blog",
               "url": "/blog",
               "target": "_self"
             },
             {
-              "title": "Chat",
-              "url": "/chat",
+              "title": "Documentos",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "Ejemplos",
+              "url": "/showcases",
+              "target": "_self"
+            },
+            {
+              "title": "Precios",
+              "url": "/pricing",
               "target": "_self"
             }
           ]
@@ -178,7 +183,7 @@
           "target": "_blank"
         },
         {
-          "title": "Correo electrónico",
+          "title": "Correo",
           "icon": "Mail",
           "url": "mailto:cy0410239@gmail.com",
           "target": "_self"
@@ -188,11 +193,11 @@
     "agreement": {
       "items": [
         {
-          "title": "Política de privacidad",
+          "title": "Política de Privacidad",
           "url": "/privacy-policy"
         },
         {
-          "title": "Términos de servicio",
+          "title": "Términos de Servicio",
           "url": "/terms-of-service"
         }
       ]

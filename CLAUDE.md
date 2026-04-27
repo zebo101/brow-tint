@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-This is a fork of **ShipAny Template Two** (`shipany-template-two` v1.8.0) — a Next.js 16 / React 19 AI SaaS boilerplate — specialized for an AI hairstyle / AI video / AI music product (see `.env.development` → `Ai Barber`). Package manager: **pnpm ≥ 8** on **Node ≥ 20.9**.
+This is a fork of **ShipAny Template Two** (`shipany-template-two` v1.8.0) — a Next.js 16 / React 19 AI SaaS boilerplate — specialized as **Brow Tint** (`tintbrow`), an AI brow tint / hairstyle / video / music product. Package manager: **pnpm ≥ 8** on **Node ≥ 20.9**.
 
 ## Common commands
 
@@ -40,14 +40,15 @@ There is no `test` script in `package.json`; tests are plain `*.test.ts` files u
 
 ## Architecture
 
-### Four-layer source split (`src/`)
+### Five-layer source split (`src/`)
 
 The top-level folders under `src/` are deliberately separated and should not be mixed. Prettier's `importOrder` enforces the boundary visually.
 
 - **`core/`** — framework plumbing wired to specific libraries. `auth/` (better-auth), `db/` (drizzle + provider dispatch), `i18n/` (next-intl routing/request config), `rbac/` (permission engine), `docs/` (fumadocs), `theme/`.
-- **`config/`** — per-deployment configuration: DB **schemas** (`schema.pg.ts` + `schema.sqlite.ts` behind `schema.ts` facade), locale message JSON (`locale/messages/**`), image prompts (`img-prompt.ts`), style tokens, `index.ts` exposing `envConfigs` (the env-var surface).
+- **`config/`** — per-deployment configuration: DB **schemas** (`schema.pg.ts` + `schema.sqlite.ts` behind `schema.ts` facade), locale message JSON (`locale/messages/**`), image prompts (`img-prompt.ts`), style tokens (`style/theme.css`, `style/global.css`), `index.ts` exposing `envConfigs` (the env-var surface).
 - **`extensions/`** — swappable third-party integrations exposing a common interface: `ads/`, `affiliate/`, `ai/` (fal, gemini, kie, replicate), `analytics/`, `customer_service/`, `email/` (resend/react-email), `payment/` (stripe, creem, paypal), `storage/` (R2/S3-like).
 - **`shared/`** — application code: `blocks/` (composed page sections), `components/` (primitives incl. shadcn/ui + magicui + ai-elements), `contexts/`, `hooks/`, `lib/`, `models/` (DB-backed entity helpers), `services/` (business logic that orchestrates extensions), `types/`.
+- **`themes/`** — presentation-layer blocks and layouts. Currently only `themes/default/`. Contains `blocks/` (all page-level section components: hero, header, footer, features, pricing, etc.), `layouts/` (page shells like `landing.tsx`), and `pages/` (dynamic/static page renderers). Block components receive `Section` data from i18n JSON and render it — keep text in locale JSON, not hardcoded in components.
 
 Alias: `@/*` → `./src/*`, plus `@/.source` → generated fumadocs index (`.source/`, produced by `pnpm postinstall` → `fumadocs-mdx`).
 
@@ -81,8 +82,29 @@ When editing DB code, touch the matching schema file and run `pnpm db:generate` 
 
 `next.config.mjs` sets `output: 'standalone'` everywhere **except** Vercel, disables `mdxRs` on Vercel (fumadocs-mdx incompatibility), enables `reactCompiler` and `turbopackFileSystemCacheForDev`. Two deploy paths are supported: Vercel (native) and Cloudflare Workers via `@opennextjs/cloudflare` (`cf:*` scripts, `wrangler.toml.example` as template).
 
+### Theme & styling
+
+- **Light-only**: `ThemeProvider` in `core/theme/provider.tsx` forces `forcedTheme="light"` with `enableSystem={false}`. Dark mode is disabled.
+- **Color palette**: `config/style/theme.css` uses oklch-based pink/rose tones (primary ≈ `oklch(0.87 0.07 7)`). Only `:root` is defined — no `.dark` block.
+- **Fonts**: body uses `Poppins` (`--font-sans`), monospace uses `Roboto Mono`. Hero/display text uses `Satoshi` (applied via `font-['Satoshi']` class in hero components).
+
+### Hero block variants
+
+The landing hero section is driven by the `"block"` field in i18n JSON (`pages/index.json` → `sections.hero.block`):
+
+- **`hero`** (`hero.tsx`) — standard centered hero with title, description, CTA buttons, and browser preview.
+- **`hero-editorial`** (`hero-editorial.tsx`) — full-viewport editorial layout with layered background/foreground images, giant brand text behind model, and editorial labels. Text fields (`powered_by`, `editorial_labels`, etc.) come from `section` data.
+- **`hero-app-frame`** (`hero-app-frame.tsx`) — app-frame style wrapper for embedding content.
+
+When adding text to any hero variant, always put it in the i18n JSON (`pages/index.json` hero section), not hardcoded in the component.
+
+### Patches
+
+`patches/` contains pnpm patches (applied via `pnpm install`). Currently: `@radix-ui/react-compose-refs` compatibility fix.
+
 ## Conventions
 
 - Prettier enforces import grouping: `react` → `next` → third-party → `@/core` → `@/config` → `@/extensions` → `@/shared` → `@/themes` → relative. Keep this order when adding imports.
 - Config is read exclusively through `envConfigs` in `src/config/index.ts` — do not add `process.env.*` reads elsewhere.
 - Services in `shared/services/` are the integration seam: they read DB-backed config (`shared/models/config`) and dispatch to the appropriate `extensions/*` provider; keep provider-specific code inside `extensions/`.
+- **No hardcoded UI text in components**: all user-facing strings must come from i18n locale JSON files under `src/config/locale/messages/`. Components read text from `section` props or `useTranslations()`. This applies to all 8 locales (`en, zh, ko, ja, de, es, it, pt`).

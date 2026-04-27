@@ -40,12 +40,12 @@ export function FeaturesList({
           </ScrollAnimation>
           <div className="w-full min-w-0 flex-1">
             <ScrollAnimation delay={0.1}>
-              <h2 className="text-foreground text-4xl font-semibold text-balance break-words">
+              <h2 className="text-foreground font-display text-4xl font-semibold text-balance break-words">
                 {section.title}
               </h2>
             </ScrollAnimation>
             <ScrollAnimation delay={0.2}>
-              <p className="text-md text-muted-foreground my-6 text-balance break-words">
+              <p className="text-md text-muted-foreground font-display my-6 text-balance break-words">
                 {section.description}
               </p>
             </ScrollAnimation>

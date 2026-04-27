@@ -8,21 +8,21 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
-      "cta"
+      "cta",
+      "subscribe"
     ],
     "sections": {
       "hero": {
+        "block": "hero-editorial",
         "id": "hero",
-        "title": "KI Frisuren Tester - Frisuren Ausprobieren Kostenlos",
-        "highlight_text": "KI Frisuren Tester",
-        "description": "Testen Sie über 200 Frisuren online mit unserem kostenlosen KI Frisuren Tester. Laden Sie Ihr Foto hoch und sehen Sie sofort, wie Sie mit neuen Haarschnitten, Haarfarben und Styles aussehen – ganz ohne Risiko.",
-        "tip": "🎁 Jetzt kostenlos Frisuren ausprobieren – Keine Anmeldung erforderlich",
+        "title": "#1 Kostenloser Online KI Brow Tint Generator",
+        "highlight_text": "Brow Tint",
+        "description": "Sehen Sie realistische Augenbrauentönung-Looks mit Brow Tint in der Vorschau — ein kostenloses Online-KI-Tool für professionelle Augenbrauentönung, getöntes Brauengel sowie Augenbrauen-Laminierung und Tönung. Laden Sie Ihr Foto hoch und sehen Sie Brow-Tint-Vorher-Nachher-Ergebnisse in Sekundenschnelle, betrieben von GPT Image 2.",
         "buttons": [
           {
-            "title": "Kostenlos testen",
+            "title": "Brow Tint kostenlos testen",
             "icon": "Zap",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
@@ -36,46 +36,22 @@
             "variant": "outline"
           }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ Benutzer verwenden AI Barber",
-        "show_award": false,
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Barber Hero",
-          "width": 1200,
-          "height": 800
+          "src": "/imgs/bg/hero-2.png",
+          "alt": "AI Brow Tint Generator - Preview Brow Tinting Results Online",
+          "width": 800,
+          "height": 600
         },
-        "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Barber Hero",
-          "width": 1200,
-          "height": 800
-        },
-        "carousel_images": [
-          {
-            "light": "/imgs/features/ai-hairstyle-changer.png",
-            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
-            "alt": "AI Barber hairstyle changer"
-          },
-          {
-            "light": "/imgs/features/hairstyle-changer-ai-video.png",
-            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
-            "alt": "AI Barber Einstellungen"
-          },
-          {
-            "light": "/imgs/features/chat.png",
-            "dark": "/imgs/features/chat-dark.png",
-            "alt": "AI Barber Chat"
-          }
-        ],
         "background_image": {
-          "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber Hintergrund"
-        }
+          "src": "/imgs/bg/hero-1.png",
+          "alt": "Brow Tint Background - Professional Brow Tinting Preview"
+        },
+        "powered_by": "Powered by GPT Image 2",
+        "editorial_labels": ["Vorschau", "Verwandlung", "Definition"]
       },
       "logos": {
         "id": "logos",
-        "title": "Angetrieben von fortschrittlicher KI-Technologie",
+        "title": "Vertrauenswürdige KI-Technologie hinter Brow Tint",
         "items": [
           {
             "title": "Next.js",
@@ -117,48 +93,48 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "Was ist AI Barber?",
+        "title": "Was ist Brow Tint?",
         "label": "Einführung",
-        "description": "AI Barber ist ein virtuelles Frisuren-Tool, das fortschrittliche KI verwendet, um Ihnen zu helfen, Ihren perfekten Look zu finden.",
+        "description": "Brow Tint ist ein kostenloser Online-KI-Augenbrauentönung-Generator, mit dem Sie professionelle Augenbrauentönung-Ergebnisse in der Vorschau sehen können, bevor Sie sich festlegen. Ob Sie getönte Brauengel-Farbtöne ausprobieren, Augenbrauen-Laminierung und Tönung erkunden oder Wimpern- und Brauentönung-Stile vergleichen möchten — unsere GPT Image 2 KI erstellt fotorealistische Vorschauen, die auf Ihre Gesichtsform und Ihren Hautton abgestimmt sind.",
         "image": {
           "src": "/imgs/features/landingpage.png",
-          "alt": "AI Barber Einführung"
+          "alt": "Brow Tint AI Generator - Preview Brow Tinting Online Free"
         },
         "items": [
           {
-            "title": "Virtuelle Frisur",
-            "description": "Probieren Sie unzählige virtuelle Frisuren aus, ohne eine Schere zu berühren.",
+            "title": "Virtuelle Augenbrauentönung-Vorschau",
+            "description": "Sehen Sie unzählige Augenbrauentönung-Farbtöne und -Stile in der Vorschau, ohne ein einziges Produkt zu verwenden. Unser KI-Augenbrauentönung-Generator simuliert professionelle Augenbrauentönung-Ergebnisse, damit Sie Ihren idealen Farbton bequem von zu Hause aus finden.",
             "icon": "RiMagicLine",
             "image": {
               "src": "/imgs/features/1.png",
-              "alt": "Virtuelle Frisur"
+              "alt": "Virtual Brow Tinting Preview - AI Brow Tint Generator"
             }
           },
           {
-            "title": "Realistische Ergebnisse",
-            "description": "Unser KI-Haarschnitt-Wechsler erzeugt hochrealistische Ergebnisse, die wie das echte Ding aussehen.",
+            "title": "Realistische Brow-Tint-Vorher-Nachher-Ergebnisse",
+            "description": "Sehen Sie lebensechte Brow-Tint-Vorher-Nachher-Ergebnisse, betrieben von GPT Image 2. Vergleichen Sie Ihre natürlichen Brauen mit getönten Looks nebeneinander und teilen Sie den Vergleich vor Ihrem Termin mit Ihrem Stylisten.",
             "icon": "RiCameraLensLine",
             "image": {
               "src": "/imgs/features/2.png",
-              "alt": "Realistische Ergebnisse"
+              "alt": "Brow Tint Before and After Results"
             }
           },
           {
-            "title": "KI-Bildgenerator",
-            "description": "Verwenden Sie unseren fortschrittlichen KI-Bildgenerator, um einzigartige Frisuren-Konzepte zu erstellen.",
+            "title": "Fortschrittlicher KI-Bildgenerator",
+            "description": "Unser KI-Bildgenerator verwendet GPT Image 2, um einzigartige Augenbrauentönung und getönte Brauengel-Looks für jede Gesichtsform zu erstellen. Er analysiert Ihre Gesichtszüge und empfiehlt die besten Augenbrauentönung-Farbtöne, die Ihren Hautton ergänzen.",
             "icon": "RiImage2Line",
             "image": {
               "src": "/imgs/features/3.png",
-              "alt": "KI-Bildgenerator"
+              "alt": "AI Image Generator for Brow Tint Looks"
             }
           },
           {
-            "title": "Stil-Transfer",
-            "description": "Übertragen Sie Stile von Prominenten oder Models direkt auf Ihr Foto.",
+            "title": "Wimpern- und Brauentönung kombiniert",
+            "description": "Sehen Sie kombinierte Wimpern- und Brauentönung-Stile in der Vorschau, um Ihren perfekten All-in-One-Look zu finden. Sehen Sie, wie Wimperntönung mit verschiedenen Augenbrauentönung-Farbtönen in einer einzigen fotorealistischen Vorschau harmoniert.",
             "icon": "RiExchangeLine",
             "image": {
               "src": "/imgs/features/4.png",
-              "alt": "Stil-Transfer"
+              "alt": "Lash and Brow Tint Combined Preview"
             }
           }
         ],
@@ -167,35 +143,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Warum AI Barber wählen",
+        "title": "Warum Brow Tint für Ihre Augenbrauentönung-Vorschau wählen",
         "label": "Vorteile",
-        "description": "Erkunden Sie unendliche Möglichkeiten mit unserem sicheren und benutzerfreundlichen AI Barber-Tool.",
+        "description": "Das beste Augenbrauentönung-Erlebnis online — schnell, sicher und für jeden konzipiert, vom Einsteiger in die Augenbrauentönung bis zum professionellen Brow-Artist und Saloninhaber.",
         "items": [
           {
-            "title": "Blitzschnell",
-            "description": "Verwandeln Sie Ihr Haar im Handumdrehen. Keine tagelange Wartezeit auf Ergebnisse.",
+            "title": "Blitzschnelle KI-Augenbrauentönung-Generierung",
+            "description": "Erstellen Sie professionelle Augenbrauentönung-Vorschauen in Sekunden, nicht in Stunden. Unsere GPT Image 2 KI verarbeitet Ihr Foto sofort, damit Sie Ihre Augenbrauentönung-Ergebnisse sehen können, ohne einen Salontermin zu buchen oder auf einen Termin zu warten.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Schnelle Verarbeitung"
+              "alt": "Fast AI Brow Tint Generation"
             }
           },
           {
-            "title": "Sicher und privat",
-            "description": "Ihre Bilder sind Ihre Angelegenheit. Wir bewahren sie sicher auf und teilen sie niemals.",
+            "title": "Sichere und private Fotoverarbeitung",
+            "description": "Ihre Fotos werden sicher verarbeitet und niemals an Dritte weitergegeben. Brow Tint respektiert Ihre Privatsphäre — alle hochgeladenen Bilder werden während der Verarbeitung verschlüsselt und nach der Generierung Ihrer Augenbrauentönung-Vorschau automatisch gelöscht.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Sicher"
+              "alt": "Secure Brow Tint Photo Processing"
             }
           },
           {
-            "title": "Hervorragend benutzerfreundlich",
-            "description": "Entfesseln Sie den Stylisten in Ihnen mit nur wenigen Klicks. Keine technischen Fähigkeiten erforderlich.",
+            "title": "Hervorragend einfach zu bedienen",
+            "description": "Finden Sie den besten getönten Brauengel-Farbton mit nur wenigen Klicks — keine technischen Kenntnisse erforderlich. Brow Tint ist so gestaltet, dass jeder professionelle Augenbrauentönung-Ergebnisse in der Vorschau sehen kann, von Teenagern, die ihr erstes Augenbrauentöning ausprobieren, bis hin zu Salonprofis, die Kunden Optionen präsentieren.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Benutzerfreundlich"
+              "alt": "Easy-to-Use Brow Tint Tool"
             }
           }
         ]
@@ -203,45 +179,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "Wie man AI Barber verwendet",
-        "description": "Erhalten Sie Ihren neuen Look in drei einfachen Schritten:",
+        "title": "So verwenden Sie den KI-Augenbrauentönung-Generator",
+        "description": "Erhalten Sie Ihren perfekten Augenbrauentönung-Look in vier einfachen Schritten. Kein Konto erforderlich — starten Sie jetzt kostenlos mit der Vorschau von Augenbrauentönung-Ergebnissen.",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "Verwendung"
+          "alt": "How to Use the AI Brow Tint Generator"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
             "title": "Foto hochladen",
-            "description": "Laden Sie ein klares Foto von sich auf die AI Barber-Plattform hoch.",
+            "description": "Laden Sie ein klares, frontal aufgenommenes Foto auf die Brow Tint Plattform hoch. Für die besten Augenbrauentönung-Ergebnisse verwenden Sie ein gut beleuchtetes Bild, auf dem Ihre Augenbrauen deutlich sichtbar sind.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Hochladen"
+              "alt": "Upload Photo for AI Brow Tint Preview"
             }
           },
           {
-            "title": "Bereich auswählen",
-            "description": "Markieren Sie den Haarbereich, den Sie ändern möchten.",
+            "title": "Ihren Augenbrauentönung-Stil wählen",
+            "description": "Wählen Sie aus einer breiten Auswahl an Augenbrauentönung-Stilen — getöntes Brauengel, Augenbrauen-Laminierung und Tönung, professionelle Augenbrauentönung, Brow Code Tint und viele weitere individuelle Optionen.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Auswählen"
+              "alt": "Choose Brow Tint Style"
             }
           },
           {
-            "title": "Generieren",
-            "description": "Wählen Sie Ihren gewünschten Stil und lassen Sie den KI-Frisuren-Wechsler die Magie wirken.",
+            "title": "Ihre Augenbrauentönung-Vorschau generieren",
+            "description": "Lassen Sie den KI-Augenbrauentönung-Generator eine realistische Vorschau Ihres neuen Brauenaussehens erstellen. Unsere GPT Image 2 Technologie erzeugt fotorealistische Brow-Tint-Vorher-Nachher-Bilder in Sekunden.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Generieren"
+              "alt": "Generate AI Brow Tint Preview"
             }
           },
           {
-            "title": "Herunterladen",
-            "description": "Speichern Sie Ihre neue virtuelle Frisur und teilen Sie sie mit Freunden.",
+            "title": "Herunterladen und teilen",
+            "description": "Speichern Sie Ihre Brow-Tint-Vorher-Nachher-Vergleichsfotos in hoher Auflösung. Teilen Sie sie mit Ihrem Stylisten, posten Sie sie in sozialen Medien oder bringen Sie sie zu Ihrem nächsten Augenbrauentöning-Termin.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Herunterladen"
+              "alt": "Download Brow Tint Before and After Results"
             }
           }
         ],
@@ -249,202 +225,188 @@
       },
       "features": {
         "id": "features",
-        "title": "Hauptfunktionen von AI Barber",
-        "description": "Alles, was Sie für ein virtuelles Makeover benötigen.",
+        "title": "Hauptfunktionen des Brow Tint Generators",
+        "description": "Alles, was Sie für die perfekte Augenbrauentönung-Vorschau benötigen — von der Simulation professioneller Augenbrauentönung bis zur Farbtonabstimmung für getöntes Brauengel.",
         "items": [
           {
-            "title": "KI-Haarschnitt-Wechsler",
-            "description": "Experimentieren Sie sofort mit verschiedenen Haarschnittlängen und -stilen.",
+            "title": "Professionelle Augenbrauentönung-Vorschau",
+            "description": "Sehen Sie salonqualitative professionelle Augenbrauentönung-Ergebnisse zu Hause in der Vorschau. Unsere KI repliziert das exakte Aussehen von Salon-Augenbrauentönung-Behandlungen, damit Sie wissen, was Sie erwartet, bevor Sie buchen.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "Virtuelle Frisur",
-            "description": "Visualisieren Sie, wie verschiedene Frisuren an Ihnen aussehen, bevor Sie schneiden.",
+            "title": "Getöntes Brauengel Farbtonabstimmung",
+            "description": "Probieren Sie verschiedene getönte Brauengel-Farbtöne aus und sehen Sie, wie jeder Ihren natürlichen Hautton, Ihre Haarfarbe und Ihre Gesichtsform ergänzt. Finden Sie das beste getönte Brauengel für Sie.",
             "icon": "RiWomenLine"
           },
           {
-            "title": "Farbexperimente",
-            "description": "Probieren Sie neue Haarfarben ohne chemische Schäden aus.",
+            "title": "Brow Code Tint Visualisierung",
+            "description": "Erkunden Sie Brow Code Tint Formeln und visualisieren Sie die exakte Farbtonübereinstimmung für Ihre Brauen. Vergleichen Sie mehrere Brow Code Tint Optionen nebeneinander, bevor Sie sich entscheiden.",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "Hohe Auflösung",
-            "description": "Laden Sie hochwertige Bilder Ihrer Transformationen herunter.",
+            "title": "Hochauflösende Downloads",
+            "description": "Laden Sie messerscharfe, hochauflösende Brow-Tint-Vorher-Nachher-Bilder herunter. Ideal, um Ihrem Stylisten zu zeigen, online zu teilen oder als persönliche Referenz zu behalten.",
             "icon": "RiHdLine"
           },
           {
-            "title": "Stilvergleich",
-            "description": "Vergleichen Sie Vorher- und Nachher-Looks nebeneinander.",
+            "title": "Vorher-Nachher-Vergleich",
+            "description": "Vergleichen Sie Ihre Brow-Tint-Vorher-Nachher-Looks mit einem intuitiven Nebeneinander-Schieberegler. Ein Klick, um die Verwandlung zu sehen, die Augenbrauentönung bewirkt.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Mobilfreundlich",
-            "description": "Verwenden Sie AI Barber auf jedem Gerät, überall.",
+            "title": "Mobilfreundliches Brow Tint Tool",
+            "description": "Verwenden Sie den Brow Tint Generator auf jedem Gerät — Smartphone, Tablet oder Desktop. Sehen Sie Augenbrauentönung-Ergebnisse unterwegs, überall und jederzeit in der Vorschau.",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "Menschen lieben AI Barber",
-        "description": "Schließen Sie sich Tausenden zufriedener Benutzer an, die ihre Looks verwandeln.",
+        "title": "Nutzer lieben Brow Tint",
+        "description": "Schließen Sie sich Tausenden zufriedener Nutzer an, die mit unserem kostenlosen KI-Augenbrauentönung-Generator ihren perfekten Brow Tint Look gefunden haben.",
         "items": [
           {
             "title": "50.000+",
-            "description": "Transformationen"
+            "description": "Brow Tint Looks generiert"
           },
           {
             "title": "10.000+",
-            "description": "Zufriedene Benutzer"
+            "description": "Zufriedene Nutzer weltweit"
           },
           {
-            "title": "500+",
-            "description": "Stile"
+            "title": "200+",
+            "description": "Brow Tint Stile verfügbar"
           }
         ],
         "className": "bg-muted"
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
-        "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Herrenfrisuren",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
-          },
-          {
-            "key": "women",
-            "title": "Damenfrisuren",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
-          },
-          {
-            "key": "boys",
-            "title": "Jungenfrisuren",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
-          },
-          {
-            "key": "girls",
-            "title": "Mädchenfrisuren",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
-          }
-        ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
-      },
       "testimonials": {
         "id": "testimonials",
-        "title": "Was Benutzer über AI Barber sagen",
-        "description": "Hören Sie von Benutzern, die ihren perfekten Stil gefunden haben.",
+        "title": "Was Nutzer über Brow Tint sagen",
+        "description": "Echtes Feedback von Menschen, die mit unserem kostenlosen KI-Augenbrauentönung-Generator ihren perfekten Brow Tint Look gefunden haben.",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "Mode-Bloggerin",
-            "quote": "AI Barber half mir, mich für einen Bob-Schnitt zu entscheiden, bevor ich ihn tatsächlich machte. Hat mich vor einem großen Fehler bewahrt!",
+            "role": "Beauty-Bloggerin",
+            "quote": "Brow Tint hat mir geholfen, den genauen Augenbrauentönung-Farbton vor meinem Salonbesuch in der Vorschau zu sehen. Ich habe meinem Stylisten das Brow-Tint-Vorher-Nachher-Foto gezeigt und genau den gewünschten Look erhalten!",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "sarah"
+              "alt": "Sarah - Brow Tint User Review"
             }
           },
           {
             "name": "Mike Ross",
-            "role": "Model",
-            "quote": "Ich verwende AI Barber, um verschiedene Looks für Fotoshootings zu testen. Es ist unglaublich realistisch.",
+            "role": "Fotograf",
+            "quote": "Ich verwende Brow Tint für redaktionelle Beauty-Shootings — die KI erzeugt unglaublich realistische Brow-Tint-Vorher-Nachher-Vorschauen, die meinen Kunden helfen, das Endergebnis zu visualisieren.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "mike"
+              "alt": "Mike - Professional Photographer Using Brow Tint"
             }
           },
           {
             "name": "Emily Chen",
             "role": "Studentin",
-            "quote": "Spaßig und einfach zu verwenden. Ich liebte es, verrückte Farben mit dem KI-Frisuren-Wechsler auszuprobieren.",
+            "quote": "Verschiedene getönte Brauengel-Looks auszuprobieren war noch nie so viel Spaß! Brow Tint ist das beste Augenbrauentönung-Tool, das ich online gefunden habe — und es ist komplett kostenlos nutzbar.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "emily"
+              "alt": "Emily - Brow Tint Free User"
             }
           },
           {
             "name": "David Smith",
-            "role": "Schauspieler",
-            "quote": "Großartig zum Visualisieren von Charakter-Looks. Das Detail ist erstaunlich.",
+            "role": "Make-up-Artist",
+            "quote": "Kunden professionelle Augenbrauentönung-Optionen vor der Behandlung zu zeigen ist unbezahlbar. Die Augenbrauen-Laminierung und Tönung Vorschauen von Brow Tint sind unglaublich präzise.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "david"
+              "alt": "David - Makeup Artist Using Brow Tint"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "Stylistin",
-            "quote": "Ich empfehle dies meinen Kunden, damit sie mir genau zeigen können, was sie wollen.",
+            "role": "Saloninhaberin",
+            "quote": "Ich empfehle Brow Tint jedem Kunden, der einen Augenbrauentöning-Termin bucht. Sie sehen ihre Wimpern- und Brauentönung-Ergebnisse, bevor wir anfangen — das schafft Vertrauen und spart Zeit.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "jessica"
+              "alt": "Jessica - Salon Owner Recommends Brow Tint"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "Benutzer",
-            "quote": "Die beste virtuelle Frisuren-App, die ich verwendet habe. Sehr empfehlenswert!",
+            "role": "Erstnutzer",
+            "quote": "Ich war nervös, meine Brauen zum ersten Mal tönen zu lassen. Brow Tint ließ mich die besten getönten Brauengel-Farbtöne in der Vorschau sehen, bevor ich mich festgelegt habe. Ich liebe es!",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "tom"
+              "alt": "Tom - First-Time Brow Tint User"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Häufig gestellte Fragen",
-        "description": "Haben Sie Fragen zu AI Barber? Wir haben Antworten.",
-        "tip": "Können Sie nicht finden, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Support-Team</a>",
+        "title": "Häufig gestellte Fragen zu Brow Tint",
+        "description": "Haben Sie Fragen zu unserem KI-Augenbrauentönung-Generator? Hier finden Sie Antworten auf die häufigsten Fragen zu Augenbrauentönung-Vorschauen.",
+        "tip": "Können Sie nicht finden, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
         "items": [
           {
-            "question": "Was ist AI Barber und wie funktioniert es?",
-            "answer": "AI Barber ist ein KI-gestütztes Tool, mit dem Sie verschiedene Frisuren virtuell anprobieren können. Laden Sie einfach Ihr Foto hoch, wählen Sie Ihr Haar aus und wählen Sie einen Stil, um einen neuen Look zu generieren."
+            "question": "Was ist Brow Tint und wie funktioniert der KI-Augenbrauentönung-Generator?",
+            "answer": "Brow Tint ist ein kostenloser Online-KI-Augenbrauentönung-Tool, das auf GPT Image 2 basiert. Laden Sie einfach Ihr Foto hoch, wählen Sie einen Augenbrauentönung-Stil — zum Beispiel getöntes Brauengel, Augenbrauen-Laminierung und Tönung oder professionelle Augenbrauentönung — und unsere KI erstellt in Sekunden eine fotorealistische Vorschau Ihres neuen Brow Tint Looks."
           },
           {
-            "question": "Wie genau ist die Frisuren-Transformation?",
-            "answer": "Unsere fortschrittlichen KI-Algorithmen sind darauf ausgelegt, hochrealistische und genaue Transformationen zu erzeugen, wobei Ihre Gesichtsform und Haartextur berücksichtigt werden."
+            "question": "Wie realistisch sind die Brow-Tint-Vorher-Nachher-Ergebnisse?",
+            "answer": "Unsere GPT Image 2 KI erzeugt hochrealistische Brow-Tint-Vorher-Nachher-Bilder. Die KI analysiert Ihre Gesichtsform, Ihren Hautton, Ihre natürliche Brauenstruktur und Ihre Haarfarbe, um genaue Augenbrauentönung-Vorschauen zu liefern, die echten Salon-Ergebnissen sehr nahekommen."
           },
           {
-            "question": "Kann ich AI Barber für jeden Haartyp oder jede Haarlänge verwenden?",
-            "answer": "Ja, AI Barber funktioniert mit verschiedenen Haartypen und -längen. Für beste Ergebnisse verwenden Sie jedoch ein klares Foto mit guter Beleuchtung."
+            "question": "Kann ich Wimpern- und Brauentönung-Stile gemeinsam in der Vorschau sehen?",
+            "answer": "Ja! Brow Tint unterstützt kombinierte Wimpern- und Brauentönung-Vorschauen, damit Sie Ihren vollständigen augenrahmenden Look in einem einzigen Bild sehen können. Das ist besonders hilfreich, wenn Sie bei Ihrem nächsten Salonbesuch sowohl Wimperntönung als auch Augenbrauentönung in Betracht ziehen."
           },
           {
-            "question": "Gibt es Kosten?",
-            "answer": "Wir bieten sowohl kostenlose als auch Premium-Pläne an. Der kostenlose Plan ermöglicht es Ihnen, grundlegende Funktionen auszuprobieren, während der Premium-Plan hochauflösende Downloads und mehr Stile freischaltet."
+            "question": "Welche Augenbrauentönung-Stile kann ich mit Brow Tint ausprobieren?",
+            "answer": "Sie können eine breite Palette von Augenbrauentönung-Stilen in der Vorschau sehen, darunter getöntes Brauengel in mehreren Farbtönen, Augenbrauen-Laminierung und Tönung Kombinationen, professionelle Augenbrauentönung-Behandlungen, Brow Code Tint Formeln, Wimpern- und Brauentönung-Pakete sowie viele weitere individuelle Looks, die auf Ihre Wünsche zugeschnitten sind."
           },
           {
-            "question": "Sind meine Daten sicher?",
-            "answer": "Ja, wir nehmen Ihre Privatsphäre ernst. Ihre Fotos werden sicher verarbeitet und nicht an Dritte weitergegeben."
+            "question": "Ist Brow Tint wirklich kostenlos nutzbar?",
+            "answer": "Ja, Brow Tint bietet einen kostenlosen Plan an, mit dem Sie den KI-Augenbrauentönung-Generator mit grundlegenden Augenbrauentönung-Vorschauen ohne Kosten nutzen können. Unser Premium-Plan schaltet zusätzliche Funktionen frei, darunter hochauflösende Downloads, mehr Augenbrauentönung-Stile und priorisierte KI-Verarbeitung."
           },
           {
-            "question": "Kann ich die generierten Frisuren speichern oder teilen?",
-            "answer": "Absolut! Sie können Ihre Transformationen herunterladen und direkt von der Plattform aus in sozialen Medien teilen."
+            "question": "Sind meine Fotodaten bei der Nutzung von Brow Tint sicher?",
+            "answer": "Absolut. Ihre Fotos werden sicher mit Verschlüsselung verarbeitet und niemals an Dritte weitergegeben. Alle hochgeladenen Bilder werden nach der Generierung Ihrer Augenbrauentönung-Vorschau automatisch gelöscht. Wir nehmen Ihre Privatsphäre sehr ernst."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Augenbrauentönung und getöntem Brauengel?",
+            "answer": "Augenbrauentönung ist ein halbpermanenter Farbstoff, der auf die Brauenhaare und manchmal die Haut aufgetragen wird, für einen volleren, definierten Look, der 4–6 Wochen hält. Getöntes Brauengel ist ein tägliches Kosmetikprodukt, das Farbe und Halt verleiht, ähnlich wie Mascara für Augenbrauen. Mit Brow Tint können Sie sowohl Augenbrauentönung als auch getönte Brauengel Optionen in der Vorschau sehen, bevor Sie sich entscheiden."
+          },
+          {
+            "question": "Kann ich mit Brow Tint Augenbrauen-Laminierung und Tönung in der Vorschau sehen?",
+            "answer": "Ja! Augenbrauen-Laminierung und Tönung ist einer unserer beliebtesten Vorschau-Stile. Unsere KI simuliert den nach oben gebürsteten, volleren Look der Augenbrauen-Laminierung kombiniert mit Tönung, damit Sie genau sehen können, wie diese Trendbehandlung an Ihnen aussehen würde, bevor Sie einen Termin buchen."
+          },
+          {
+            "question": "Wie finde ich den besten Augenbrauentönung-Farbton für meinen Hautton?",
+            "answer": "Die KI von Brow Tint analysiert Ihren Hautton, Ihre natürliche Haarfarbe und Ihre Gesichtsform, um die besten Augenbrauentönung-Farbtöne für Sie vorzuschlagen. Sie können auch manuell verschiedene professionelle Augenbrauentönung-Farbtöne und getönte Brauengel-Farben durchsuchen und unbegrenzt Vorschauen generieren, bis Sie Ihren perfekten Match gefunden haben."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Bereit für einen neuen Look?",
-        "description": "Starten Sie heute Ihre KI-Haarschnitt-Transformation.",
+        "title": "Bereit, Ihre perfekte Augenbrauentönung zu finden?",
+        "description": "Starten Sie noch heute Ihre kostenlose KI-Augenbrauentönung-Vorschau. Laden Sie ein Foto hoch und sehen Sie Ihre Brow-Tint-Vorher-Nachher-Ergebnisse in Sekunden — keine Anmeldung erforderlich.",
         "buttons": [
           {
-            "title": "Jetzt loslegen",
+            "title": "Brow Tint kostenlos testen",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
+      },
+      "subscribe": {
+        "id": "subscribe",
+        "title": "Mit Brow Tint immer auf dem Laufenden bleiben",
+        "description": "Erhalten Sie die neuesten Augenbrauentönung-Trends, neue KI-Funktionen und exklusive Brow Tint Tipps direkt in Ihr Postfach.",
+        "submit": {
+          "title": "Abonnieren",
+          "placeholder": "Ihre E-Mail-Adresse eingeben"
+        }
       }
     }
   }

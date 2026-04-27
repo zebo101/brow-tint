@@ -62,7 +62,8 @@ function NavigationMenuTrigger(
 ) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    setMounted(true);
+    const frame = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
   // Only render after client has mounted, to avoid SSR/client render id mismatch
   if (!mounted) return null;
@@ -72,26 +73,52 @@ function NavigationMenuTrigger(
 export function Header({ header }: { header: HeaderType }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
   const isScrolledRef = useRef(false);
+  const isHiddenRef = useRef(false);
+  const lastScrollYRef = useRef(0);
   const scrollRafRef = useRef<number | null>(null);
   const isLarge = useMedia('(min-width: 64rem)');
   const pathname = usePathname();
+  const isHeaderElevated = isScrolled && (!isHidden || isMobileMenuOpen);
+  const isHomePage = pathname === '/';
+  const useLightHeaderText = isHomePage && !isHeaderElevated && !isMobileMenuOpen;
 
   useEffect(() => {
-    // Listen to scroll event to enable header styles on scroll
     const handleScroll = () => {
-      // Coalesce high-frequency scroll events & only update state when value changes.
       if (scrollRafRef.current != null) return;
       scrollRafRef.current = window.requestAnimationFrame(() => {
         scrollRafRef.current = null;
-        const next = window.scrollY > 50;
-        if (next === isScrolledRef.current) return;
-        isScrolledRef.current = next;
-        setIsScrolled(next);
+        const currentY = window.scrollY;
+        const lastY = lastScrollYRef.current;
+
+        // Scrolled state (past threshold)
+        const nextScrolled = currentY > 50;
+        if (nextScrolled !== isScrolledRef.current) {
+          isScrolledRef.current = nextScrolled;
+          setIsScrolled(nextScrolled);
+        }
+
+        // Hide while scrolling down; show again when scrolling up.
+        if (currentY > 0) {
+          const nextHidden = currentY > lastY && currentY - lastY > 1;
+          const nextVisible = currentY < lastY && lastY - currentY > 1;
+          if (nextHidden && !isHiddenRef.current) {
+            isHiddenRef.current = true;
+            setIsHidden(true);
+          } else if (nextVisible && isHiddenRef.current) {
+            isHiddenRef.current = false;
+            setIsHidden(false);
+          }
+        } else if (isHiddenRef.current) {
+          isHiddenRef.current = false;
+          setIsHidden(false);
+        }
+
+        lastScrollYRef.current = currentY;
       });
     };
 
-    // Initialize once on mount.
     handleScroll();
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -112,7 +139,7 @@ export function Header({ header }: { header: HeaderType }) {
         viewport={false}
         className="**:data-[slot=navigation-menu-content]:top-10 max-lg:hidden"
       >
-        <NavigationMenuList className="gap-2">
+        <NavigationMenuList className="gap-4">
           {header.nav?.items?.map((item, idx) => {
             if (!item.children || item.children.length === 0) {
               return (
@@ -120,11 +147,21 @@ export function Header({ header }: { header: HeaderType }) {
                   <Link
                     href={item.url || ''}
                     target={item.target || '_self'}
-                  className={`flex flex-row items-center gap-2 px-4 py-1.5 text-sm ${
-                      item.is_active || pathname.endsWith(item.url as string)
-                        ? 'bg-muted/40 text-muted-foreground'
-                        : ''
-                    }`}
+                    className={cn(
+                      'flex flex-row items-center gap-2 px-5 py-1.5 text-sm',
+                      isHeaderElevated
+                        ? 'text-[#3F2A2A] hover:bg-rose-50 hover:text-[#3F2A2A]'
+                        : useLightHeaderText
+                          ? 'text-white/90 hover:bg-white/10 hover:text-white'
+                          : 'text-[#3F2A2A]/90 hover:bg-rose-50 hover:text-[#3F2A2A]',
+                      (item.is_active ||
+                        pathname.endsWith(item.url as string)) &&
+                        (isHeaderElevated
+                          ? 'bg-rose-50 text-[#3F2A2A]'
+                          : useLightHeaderText
+                            ? 'bg-white/10 text-white'
+                            : 'bg-rose-50 text-[#3F2A2A]')
+                    )}
                   >
                     {item.icon ? (
                       <SmartIcon
@@ -140,7 +177,16 @@ export function Header({ header }: { header: HeaderType }) {
 
             return (
               <NavigationMenuItem key={idx}>
-                <NavigationMenuTrigger className="flex flex-row items-center gap-2 text-sm">
+                <NavigationMenuTrigger
+                  className={cn(
+                    'flex flex-row items-center gap-2 px-5 text-sm',
+                    isHeaderElevated
+                      ? 'text-[#3F2A2A] hover:bg-rose-50 hover:text-[#3F2A2A] data-[state=open]:bg-rose-50 data-[state=open]:text-[#3F2A2A]'
+                      : useLightHeaderText
+                        ? 'text-white/90 hover:bg-white/10 hover:text-white data-[state=open]:bg-white/10 data-[state=open]:text-white'
+                        : 'text-[#3F2A2A]/90 hover:bg-rose-50 hover:text-[#3F2A2A] data-[state=open]:bg-rose-50 data-[state=open]:text-[#3F2A2A]'
+                  )}
+                >
                   {item.icon ? (
                     <SmartIcon
                       name={item.icon as string}
@@ -301,18 +347,24 @@ export function Header({ header }: { header: HeaderType }) {
     <>
       <header
         data-state={isMobileMenuOpen ? 'active' : 'inactive'}
-        {...(isScrolled && { 'data-scrolled': true })}
-        className="has-data-[state=open]:bg-background/50 fixed inset-x-0 top-0 z-50 has-data-[state=open]:h-screen has-data-[state=open]:backdrop-blur"
+        {...(isHeaderElevated && { 'data-elevated': true })}
+        className={cn(
+          'has-data-[state=open]:bg-background/50 fixed inset-x-0 top-0 z-50 has-data-[state=open]:h-screen has-data-[state=open]:backdrop-blur'
+        )}
       >
         <div
           className={cn(
             'absolute inset-x-0 top-0 z-50 h-18 border-transparent ring-1 ring-transparent transition-all duration-300',
-            'in-data-scrolled:border-foreground/5 in-data-scrolled:bg-background/75 in-data-scrolled:border-b in-data-scrolled:backdrop-blur',
-            'has-data-[state=open]:ring-foreground/5 has-data-[state=open]:bg-card/75 has-data-[state=open]:h-[calc(var(--navigation-menu-viewport-height)+3.4rem)] has-data-[state=open]:border-b has-data-[state=open]:shadow-lg has-data-[state=open]:shadow-black/10 has-data-[state=open]:backdrop-blur',
-            'max-lg:in-data-[state=active]:bg-background/75 max-lg:h-14 max-lg:overflow-hidden max-lg:border-b max-lg:in-data-[state=active]:h-screen max-lg:in-data-[state=active]:backdrop-blur'
+            useLightHeaderText ? 'text-white' : 'text-[#3F2A2A]',
+            'in-data-elevated:text-[#3F2A2A] in-data-elevated:border-rose-100 in-data-elevated:bg-white/95 in-data-elevated:border-b in-data-elevated:shadow-sm in-data-elevated:backdrop-blur-xl',
+            'has-data-[state=open]:ring-foreground/5 has-data-[state=open]:bg-white/95 has-data-[state=open]:text-[#3F2A2A] has-data-[state=open]:h-[calc(var(--navigation-menu-viewport-height)+3.4rem)] has-data-[state=open]:border-b has-data-[state=open]:shadow-lg has-data-[state=open]:shadow-black/10 has-data-[state=open]:backdrop-blur',
+            'max-lg:in-data-[state=active]:bg-white/95 max-lg:in-data-[state=active]:text-[#3F2A2A] max-lg:h-14 max-lg:overflow-hidden max-lg:border-b max-lg:in-data-[state=active]:h-screen max-lg:in-data-[state=active]:backdrop-blur',
+            isHidden &&
+              !isMobileMenuOpen &&
+              'pointer-events-none -translate-y-full opacity-0'
           )}
         >
-          <div className="container">
+          <div className="mx-auto w-full max-w-[1512px] px-4 md:px-8">
             <div className="relative flex flex-wrap items-center justify-between lg:py-5">
               <div className="flex justify-between gap-8 max-lg:h-14 max-lg:w-full max-lg:border-b">
                 {/* Brand Logo */}

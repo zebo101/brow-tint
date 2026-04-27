@@ -90,12 +90,12 @@ export async function HairstyleGallery({
         {(section.title || section.description) && (
           <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
             {section.title && (
-              <h2 className="text-3xl font-bold tracking-tight text-pretty md:text-4xl">
+              <h2 className="font-display text-3xl font-bold tracking-tight text-pretty md:text-4xl">
                 {section.title}
               </h2>
             )}
             {section.description && (
-              <p className="text-muted-foreground mt-4 text-base md:text-lg">
+              <p className="text-muted-foreground font-display mt-4 text-base md:text-lg">
                 {section.description}
               </p>
             )}

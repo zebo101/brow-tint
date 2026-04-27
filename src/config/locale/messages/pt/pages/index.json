@@ -8,74 +8,50 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
-      "cta"
+      "cta",
+      "subscribe"
     ],
     "sections": {
       "hero": {
+        "block": "hero-editorial",
         "id": "hero",
-        "title": "Seu Cabeleireiro Pessoal de IA",
-        "highlight_text": "AI Barber",
-        "description": "Abrace o futuro do penteado com AI Barber. Envie sua foto, destaque seu cabelo e testemunhe uma transformação impressionante usando nosso Mudador de Penteado IA.",
-        "tip": "🎁 Experimente o melhor Mudador de Corte de Cabelo IA agora",
+        "title": "#1 Gerador de Tintura de Sobrancelhas com IA Grátis",
+        "highlight_text": "Brow Tint",
+        "description": "Pré-visualize looks realistas de tintura de sobrancelhas com Brow Tint — uma ferramenta gratuita de IA para tintura profissional de sobrancelhas, gel tintado para sobrancelhas e pré-visualizações de laminação e tintura de sobrancelhas. Envie sua foto e veja os resultados de antes e depois da tintura de sobrancelhas em segundos, desenvolvido com GPT Image 2.",
         "buttons": [
           {
-            "title": "Experimentar grátis",
+            "title": "Experimente Brow Tint Grátis",
             "icon": "Zap",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "variant": "default"
           },
           {
-            "title": "Ver exemplos",
+            "title": "Ver Exemplos",
             "icon": "BookOpenText",
             "url": "/showcases",
             "target": "_blank",
             "variant": "outline"
           }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ usuários estão usando AI Barber",
-        "show_award": false,
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Barber Hero",
-          "width": 1200,
-          "height": 800
+          "src": "/imgs/bg/hero-2.png",
+          "alt": "Gerador de Brow Tint com IA - Pré-visualize Resultados de Tintura de Sobrancelhas Online",
+          "width": 800,
+          "height": 600
         },
-        "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Barber Hero",
-          "width": 1200,
-          "height": 800
-        },
-        "carousel_images": [
-          {
-            "light": "/imgs/features/ai-hairstyle-changer.png",
-            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
-            "alt": "AI Barber hairstyle changer"
-          },
-          {
-            "light": "/imgs/features/hairstyle-changer-ai-video.png",
-            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
-            "alt": "Configurações do AI Barber"
-          },
-          {
-            "light": "/imgs/features/chat.png",
-            "dark": "/imgs/features/chat-dark.png",
-            "alt": "AI Barber Chat"
-          }
-        ],
         "background_image": {
-          "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber Fundo"
-        }
+          "src": "/imgs/bg/hero-1.png",
+          "alt": "Brow Tint Background - Professional Brow Tinting Preview"
+        },
+        "powered_by": "Desenvolvido com GPT Image 2",
+        "editorial_labels": ["Pré-visualizar", "Transformar", "Definir"]
       },
       "logos": {
         "id": "logos",
-        "title": "Alimentado por Tecnologia IA Avançada",
+        "title": "Tecnologia de IA Confiável por Trás do Brow Tint",
         "items": [
           {
             "title": "Next.js",
@@ -117,48 +93,48 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "O que é AI Barber?",
+        "title": "O que é Brow Tint?",
         "label": "Introdução",
-        "description": "AI Barber é uma ferramenta virtual de penteados que usa IA avançada para ajudá-lo a encontrar seu visual perfeito.",
+        "description": "Brow Tint é um gerador gratuito de tintura de sobrancelhas com IA que permite pré-visualizar resultados profissionais de tintura de sobrancelhas antes de se comprometer. Seja para experimentar tons de gel tintado para sobrancelhas, explorar combinações de laminação e tintura de sobrancelhas ou comparar estilos de tintura de cílios e sobrancelhas, nossa IA GPT Image 2 cria pré-visualizações fotorrealistas adaptadas ao formato do seu rosto e tom de pele.",
         "image": {
           "src": "/imgs/features/landingpage.png",
-          "alt": "Introdução AI Barber"
+          "alt": "Gerador de IA Brow Tint - Pré-visualize Tintura de Sobrancelhas Online Grátis"
         },
         "items": [
           {
-            "title": "Penteado Virtual",
-            "description": "Experimente inúmeros penteados virtuais sem tocar em uma tesoura.",
+            "title": "Pré-visualização Virtual de Tintura de Sobrancelhas",
+            "description": "Pré-visualize inúmeros tons e estilos de tintura de sobrancelhas sem usar nenhum produto. Nosso gerador de brow tint com IA simula resultados de tintura profissional de sobrancelhas para que você encontre o tom ideal no conforto da sua casa.",
             "icon": "RiMagicLine",
             "image": {
               "src": "/imgs/features/1.png",
-              "alt": "Penteado Virtual"
+              "alt": "Pré-visualização Virtual de Tintura de Sobrancelhas - Gerador de Brow Tint com IA"
             }
           },
           {
-            "title": "Resultados Realistas",
-            "description": "Nosso Mudador de Corte de Cabelo IA gera resultados altamente realistas que parecem reais.",
+            "title": "Resultados Realistas de Brow Tint: Antes e Depois",
+            "description": "Veja resultados fotorrealistas de antes e depois da tintura de sobrancelhas desenvolvidos com GPT Image 2. Compare suas sobrancelhas naturais com os looks tintados lado a lado e compartilhe a comparação com seu especialista antes da consulta.",
             "icon": "RiCameraLensLine",
             "image": {
               "src": "/imgs/features/2.png",
-              "alt": "Resultados Realistas"
+              "alt": "Resultados de Tintura de Sobrancelhas: Antes e Depois"
             }
           },
           {
-            "title": "Gerador de Imagens IA",
-            "description": "Use nosso gerador de imagens IA avançado para criar conceitos únicos de penteados.",
+            "title": "Gerador de Imagens com IA Avançada",
+            "description": "Nosso gerador de imagens com IA usa GPT Image 2 para criar looks únicos de tintura de sobrancelhas e gel tintado para qualquer formato de rosto. Ele analisa suas características e recomenda os melhores tons de tintura de sobrancelhas que complementam seu tom de pele.",
             "icon": "RiImage2Line",
             "image": {
               "src": "/imgs/features/3.png",
-              "alt": "Gerador de Imagens IA"
+              "alt": "Gerador de Imagens com IA para Looks de Tintura de Sobrancelhas"
             }
           },
           {
-            "title": "Transferência de Estilo",
-            "description": "Transfira estilos de celebridades ou modelos diretamente para sua foto.",
+            "title": "Tintura de Cílios e Sobrancelhas Juntos",
+            "description": "Pré-visualize estilos combinados de tintura de cílios e sobrancelhas para encontrar o look perfeito que emoldura seus olhos. Veja como a tintura de cílios combina com diferentes tons de tintura de sobrancelhas em uma única pré-visualização fotorrealista.",
             "icon": "RiExchangeLine",
             "image": {
               "src": "/imgs/features/4.png",
-              "alt": "Transferência de Estilo"
+              "alt": "Pré-visualização Combinada de Tintura de Cílios e Sobrancelhas"
             }
           }
         ],
@@ -167,35 +143,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Por Que Escolher AI Barber",
+        "title": "Por que Escolher o Brow Tint para sua Pré-visualização de Tintura de Sobrancelhas",
         "label": "Benefícios",
-        "description": "Explore infinitas possibilidades com nossa ferramenta AI Barber segura e fácil de usar.",
+        "description": "A melhor experiência de tintura de sobrancelhas online — rápida, segura e projetada para todos, desde iniciantes em tintura de sobrancelhas até artistas profissionais e donos de salão.",
         "items": [
           {
-            "title": "Super Rápido",
-            "description": "Transforme seu cabelo em um piscar de olhos. Sem esperar dias por resultados.",
+            "title": "Geração Ultrarrápida de Brow Tint com IA",
+            "description": "Gere pré-visualizações profissionais de tintura de sobrancelhas em segundos, não horas. Nossa IA GPT Image 2 processa sua foto instantaneamente para que você veja os resultados da tintura de sobrancelhas sem precisar agendar uma visita ao salão.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Processamento Rápido"
+              "alt": "Geração Rápida de Brow Tint com IA"
             }
           },
           {
-            "title": "Seguro e Privado",
-            "description": "Suas fotos são suas. Nós as mantemos seguras e nunca as compartilhamos.",
+            "title": "Processamento de Fotos Seguro e Privado",
+            "description": "Suas fotos são processadas com segurança e nunca compartilhadas com terceiros. O Brow Tint respeita sua privacidade — todas as imagens enviadas são criptografadas durante o processamento e automaticamente excluídas após a geração da sua pré-visualização de tintura de sobrancelhas.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Seguro"
+              "alt": "Processamento Seguro de Fotos de Tintura de Sobrancelhas"
             }
           },
           {
-            "title": "Extremamente Fácil de Usar",
-            "description": "Libere o cabeleireiro dentro de você com apenas alguns cliques. Nenhuma habilidade técnica necessária.",
+            "title": "Incrivelmente Fácil de Usar",
+            "description": "Encontre o melhor tom de gel tintado para sobrancelhas com apenas alguns cliques — sem conhecimentos técnicos necessários. O Brow Tint foi desenvolvido para que qualquer pessoa possa pré-visualizar resultados profissionais de tintura de sobrancelhas, de adolescentes explorando sua primeira tintura até profissionais de salão que demonstram opções a clientes.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Fácil de Usar"
+              "alt": "Ferramenta de Tintura de Sobrancelhas Fácil de Usar"
             }
           }
         ]
@@ -203,45 +179,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "Como Usar AI Barber",
-        "description": "Obtenha seu novo visual em três passos simples:",
+        "title": "Como Usar o Gerador de Brow Tint com IA",
+        "description": "Obtenha o look perfeito de tintura de sobrancelhas em quatro passos simples. Sem cadastro necessário — comece a pré-visualizar resultados de tintura de sobrancelhas gratuitamente agora mesmo.",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "uso"
+          "alt": "Como Usar o Gerador de Brow Tint com IA"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Enviar Foto",
-            "description": "Envie uma foto clara de si mesmo para a plataforma AI Barber.",
+            "title": "Envie sua Foto",
+            "description": "Envie uma foto nítida de frente para a plataforma Brow Tint. Para os melhores resultados de tintura de sobrancelhas, use uma imagem bem iluminada onde suas sobrancelhas estejam claramente visíveis.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Enviar"
+              "alt": "Enviar Foto para Pré-visualização de Brow Tint com IA"
             }
           },
           {
-            "title": "Selecionar Área",
-            "description": "Destaque a área do cabelo que deseja mudar.",
+            "title": "Escolha seu Estilo de Brow Tint",
+            "description": "Selecione entre uma ampla variedade de estilos de tintura de sobrancelhas — gel tintado para sobrancelhas, laminação e tintura de sobrancelhas, tintura profissional de sobrancelhas, brow code tint e muitas outras opções personalizadas.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Selecionar"
+              "alt": "Escolher Estilo de Brow Tint"
             }
           },
           {
-            "title": "Gerar",
-            "description": "Escolha o estilo desejado e deixe o Mudador de Penteado IA fazer a mágica.",
+            "title": "Gere sua Pré-visualização de Brow Tint",
+            "description": "Deixe o gerador de brow tint com IA criar uma pré-visualização realista do seu novo look de sobrancelhas. Nossa tecnologia GPT Image 2 produz imagens fotorrealistas de antes e depois da tintura de sobrancelhas em segundos.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Gerar"
+              "alt": "Gerar Pré-visualização de Brow Tint com IA"
             }
           },
           {
-            "title": "Baixar",
-            "description": "Salve seu novo penteado virtual e compartilhe com amigos.",
+            "title": "Baixe e Compartilhe",
+            "description": "Salve suas fotos de comparação de antes e depois da tintura de sobrancelhas em alta resolução. Compartilhe com seu especialista, publique nas redes sociais ou leve na sua próxima consulta de tintura de sobrancelhas.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Baixar"
+              "alt": "Baixar Resultados de Brow Tint: Antes e Depois"
             }
           }
         ],
@@ -249,202 +225,188 @@
       },
       "features": {
         "id": "features",
-        "title": "Recursos Principais do AI Barber",
-        "description": "Tudo que você precisa para uma transformação virtual.",
+        "title": "Principais Funcionalidades do Gerador Brow Tint",
+        "description": "Tudo que você precisa para a pré-visualização perfeita de tintura de sobrancelhas — desde simulação de tintura profissional de sobrancelhas até combinação de tons de gel tintado.",
         "items": [
           {
-            "title": "Mudador de Corte de Cabelo IA",
-            "description": "Experimente diferentes comprimentos e estilos de corte instantaneamente.",
+            "title": "Pré-visualização de Tintura Profissional de Sobrancelhas",
+            "description": "Pré-visualize resultados de tintura profissional de sobrancelhas com qualidade de salão em casa. Nossa IA replica o look exato dos tratamentos de tintura de sobrancelhas realizados em salão para que você saiba o que esperar antes de agendar.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "Penteado Virtual",
-            "description": "Visualize como diferentes penteados ficam em você antes de cortar.",
+            "title": "Combinação de Tons de Gel Tintado para Sobrancelhas",
+            "description": "Experimente diferentes tons de gel tintado para sobrancelhas e veja como cada um complementa seu tom de pele natural, cor do cabelo e formato do rosto. Encontre o melhor gel tintado para sobrancelhas para você.",
             "icon": "RiWomenLine"
           },
           {
-            "title": "Experimentação de Cor",
-            "description": "Experimente novas cores de cabelo sem o dano químico.",
+            "title": "Visualização de Brow Code Tint",
+            "description": "Explore fórmulas de brow code tint e visualize a combinação exata de tom para suas sobrancelhas. Compare múltiplas opções de brow code tint lado a lado antes de se comprometer.",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "Alta Resolução",
-            "description": "Baixe imagens de alta qualidade de suas transformações.",
+            "title": "Downloads em Alta Resolução",
+            "description": "Baixe imagens nítidas e em alta resolução de antes e depois da tintura de sobrancelhas. Perfeitas para mostrar ao seu especialista, compartilhar online ou guardar como referência pessoal.",
             "icon": "RiHdLine"
           },
           {
-            "title": "Comparação de Estilo",
-            "description": "Compare looks antes e depois lado a lado.",
+            "title": "Comparação Antes e Depois",
+            "description": "Compare seus looks de tintura de sobrancelhas antes e depois com um slider intuitivo lado a lado. Um clique para ver a transformação que a tintura de sobrancelhas proporciona.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Compatível com Mobile",
-            "description": "Use AI Barber em qualquer dispositivo, em qualquer lugar.",
+            "title": "Ferramenta de Brow Tint Compatível com Celular",
+            "description": "Use o gerador Brow Tint em qualquer dispositivo — celular, tablet ou computador. Pré-visualize resultados de tintura de sobrancelhas onde estiver, a qualquer hora.",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "As Pessoas Amam AI Barber",
-        "description": "Junte-se a milhares de usuários satisfeitos transformando seus visuais.",
+        "title": "Os Usuários Amam o Brow Tint",
+        "description": "Junte-se a milhares de usuários satisfeitos que encontraram o look perfeito de tintura de sobrancelhas com nosso gerador gratuito de brow tint com IA.",
         "items": [
           {
             "title": "50.000+",
-            "description": "Transformações"
+            "description": "Looks de Brow Tint Gerados"
           },
           {
             "title": "10.000+",
-            "description": "Usuários Felizes"
+            "description": "Usuários Satisfeitos no Mundo Todo"
           },
           {
-            "title": "500+",
-            "description": "Estilos"
+            "title": "200+",
+            "description": "Estilos de Brow Tint Disponíveis"
           }
         ],
         "className": "bg-muted"
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
-        "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Penteados Masculinos",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
-          },
-          {
-            "key": "women",
-            "title": "Penteados Femininos",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
-          },
-          {
-            "key": "boys",
-            "title": "Penteados para Meninos",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
-          },
-          {
-            "key": "girls",
-            "title": "Penteados para Meninas",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
-          }
-        ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
-      },
       "testimonials": {
         "id": "testimonials",
-        "title": "O Que os Usuários Dizem Sobre AI Barber",
-        "description": "Ouça de usuários que encontraram seu estilo perfeito.",
+        "title": "O que os Usuários Dizem sobre o Brow Tint",
+        "description": "Feedback real de pessoas que encontraram o look perfeito de tintura de sobrancelhas usando nosso gerador gratuito de brow tint com IA.",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "Blogueira de Moda",
-            "quote": "AI Barber me ajudou a decidir sobre um corte bob antes de realmente fazê-lo. Me salvou de um grande erro!",
+            "role": "Blogueira de Beleza",
+            "quote": "O Brow Tint me ajudou a pré-visualizar o tom exato de tintura de sobrancelhas antes de ir ao salão. Mostrei ao meu especialista a foto de antes e depois e consegui exatamente o look que queria!",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "sarah"
+              "alt": "Sarah - Avaliação de Usuária do Brow Tint"
             }
           },
           {
             "name": "Mike Ross",
-            "role": "Modelo",
-            "quote": "Uso AI Barber para testar diferentes visuais para sessões de fotos. É incrivelmente realista.",
+            "role": "Fotógrafo",
+            "quote": "Uso o Brow Tint em ensaios editoriais de beleza — a IA gera pré-visualizações incrivelmente realistas de antes e depois da tintura de sobrancelhas que ajudam meus clientes a visualizar o resultado final.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "mike"
+              "alt": "Mike - Fotógrafo Profissional Usando Brow Tint"
             }
           },
           {
             "name": "Emily Chen",
             "role": "Estudante",
-            "quote": "Divertido e fácil de usar. Adorei experimentar cores malucas com o Mudador de Penteado IA.",
+            "quote": "Experimentar diferentes looks de gel tintado nunca foi tão divertido! O Brow Tint é a melhor ferramenta de tintura de sobrancelhas que encontrei online — e é completamente grátis para começar.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "emily"
+              "alt": "Emily - Usuária Gratuita do Brow Tint"
             }
           },
           {
             "name": "David Smith",
-            "role": "Ator",
-            "quote": "Ótimo para visualizar looks de personagens. O detalhe é incrível.",
+            "role": "Maquiador Profissional",
+            "quote": "Mostrar aos clientes as opções de tintura profissional de sobrancelhas antes do tratamento é inestimável. As pré-visualizações de laminação e tintura de sobrancelhas do Brow Tint são incrivelmente precisas.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "david"
+              "alt": "David - Maquiador Profissional Usando Brow Tint"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "Estilista",
-            "quote": "Recomendo isso aos meus clientes para que possam me mostrar exatamente o que querem.",
+            "role": "Proprietária de Salão",
+            "quote": "Recomendo o Brow Tint a cada cliente que agenda um serviço de tintura de sobrancelhas. Eles veem os resultados de tintura de cílios e sobrancelhas antes de começarmos — aumenta a confiança e economiza tempo.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "jessica"
+              "alt": "Jessica - Proprietária de Salão Recomenda Brow Tint"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "Usuário",
-            "quote": "O melhor aplicativo de penteados virtuais que já usei. Altamente recomendado!",
+            "role": "Usuário Iniciante",
+            "quote": "Eu estava nervoso para tintar minhas sobrancelhas pela primeira vez. O Brow Tint me permitiu pré-visualizar os melhores tons de gel tintado antes de me comprometer. Adorei demais!",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "tom"
+              "alt": "Tom - Usuário Iniciante do Brow Tint"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Perguntas Frequentes",
-        "description": "Tem perguntas sobre AI Barber? Temos respostas.",
-        "tip": "Não encontra o que procura? Entre em contato com nossa <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
+        "title": "Perguntas Frequentes sobre o Brow Tint",
+        "description": "Tem dúvidas sobre nosso gerador de brow tint com IA? Aqui estão as respostas para as perguntas mais comuns sobre pré-visualizações de tintura de sobrancelhas.",
+        "tip": "Não encontrou o que procura? Entre em contato com nossa <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
         "items": [
           {
-            "question": "O que é AI Barber e como funciona?",
-            "answer": "AI Barber é uma ferramenta movida por IA que permite experimentar virtualmente diferentes penteados. Simplesmente envie sua foto, selecione seu cabelo e escolha um estilo para gerar um novo visual."
+            "question": "O que é Brow Tint e como o gerador de brow tint com IA funciona?",
+            "answer": "Brow Tint é uma ferramenta gratuita de tintura de sobrancelhas com IA, desenvolvida com GPT Image 2. Basta enviar sua foto, escolher um estilo de brow tint — como gel tintado para sobrancelhas, laminação e tintura de sobrancelhas ou tintura profissional de sobrancelhas — e nossa IA gera uma pré-visualização fotorrealista de como você ficará com sua nova tintura de sobrancelhas em segundos."
           },
           {
-            "question": "Quão precisa é a transformação do penteado?",
-            "answer": "Nossos algoritmos de IA avançados são projetados para produzir transformações altamente realistas e precisas, levando em conta a forma do seu rosto e a textura do seu cabelo."
+            "question": "Quão realistas são os resultados de antes e depois da tintura de sobrancelhas?",
+            "answer": "Nossa IA GPT Image 2 produz imagens altamente realistas de antes e depois da tintura de sobrancelhas. A IA analisa o formato do seu rosto, tom de pele, estrutura natural das sobrancelhas e cor do cabelo para entregar pré-visualizações precisas de tintura de sobrancelhas que se aproximam muito dos resultados reais de salão."
           },
           {
-            "question": "Posso usar AI Barber para qualquer tipo ou comprimento de cabelo?",
-            "answer": "Sim, AI Barber funciona com vários tipos e comprimentos de cabelo. No entanto, para melhores resultados, use uma foto clara com boa iluminação."
+            "question": "Posso pré-visualizar estilos de tintura de cílios e sobrancelhas juntos?",
+            "answer": "Sim! O Brow Tint suporta pré-visualizações combinadas de tintura de cílios e sobrancelhas para que você possa ver seu look completo de emolduramento dos olhos em uma única imagem. Isso é especialmente útil se você está considerando tanto a tintura de cílios quanto a de sobrancelhas na sua próxima visita ao salão."
           },
           {
-            "question": "Há algum custo?",
-            "answer": "Oferecemos planos gratuitos e premium. O plano gratuito permite experimentar recursos básicos, enquanto o plano premium desbloqueia downloads de alta resolução e mais estilos."
+            "question": "Quais estilos de brow tint posso experimentar com o Brow Tint?",
+            "answer": "Você pode pré-visualizar uma ampla variedade de estilos de tintura de sobrancelhas, incluindo gel tintado para sobrancelhas em múltiplos tons, combinações de laminação e tintura de sobrancelhas, tratamentos de tintura profissional de sobrancelhas, fórmulas de brow code tint, pacotes de tintura de cílios e sobrancelhas e muitos outros looks personalizados adaptados às suas preferências."
           },
           {
-            "question": "Meus dados estão seguros?",
-            "answer": "Sim, levamos sua privacidade a sério. Suas fotos são processadas com segurança e não são compartilhadas com terceiros."
+            "question": "O Brow Tint é realmente gratuito?",
+            "answer": "Sim, o Brow Tint oferece um plano gratuito que permite usar o gerador de brow tint com IA com pré-visualizações básicas de tintura de sobrancelhas sem custo. Nosso plano premium desbloqueia recursos adicionais, incluindo downloads em alta resolução, mais estilos de brow tint e processamento de IA prioritário."
           },
           {
-            "question": "Posso salvar ou compartilhar os penteados gerados?",
-            "answer": "Absolutamente! Você pode baixar suas transformações e compartilhá-las nas redes sociais diretamente da plataforma."
+            "question": "Meus dados de foto estão seguros ao usar o Brow Tint?",
+            "answer": "Com certeza. Suas fotos são processadas com segurança e criptografia e nunca são compartilhadas com terceiros. Todas as imagens enviadas são automaticamente excluídas após a geração da sua pré-visualização de tintura de sobrancelhas. Levamos sua privacidade muito a sério."
+          },
+          {
+            "question": "Qual é a diferença entre tintura de sobrancelhas e gel tintado para sobrancelhas?",
+            "answer": "A tintura de sobrancelhas é um corante semipermanente aplicado nos fios das sobrancelhas e, às vezes, na pele, para um look mais cheio e definido que dura de 4 a 6 semanas. O gel tintado para sobrancelhas é um produto cosmético diário que adiciona cor e fixação, similar a uma máscara de cílios para sobrancelhas. Com o Brow Tint, você pode pré-visualizar tanto a tintura de sobrancelhas quanto as opções de gel tintado antes de decidir."
+          },
+          {
+            "question": "Posso usar o Brow Tint para pré-visualizar a laminação e tintura de sobrancelhas?",
+            "answer": "Sim! A laminação e tintura de sobrancelhas é um dos nossos estilos de pré-visualização mais populares. Nossa IA simula o look mais cheio e escovado para cima da laminação de sobrancelhas combinada com tintura para que você possa ver exatamente como esse tratamento tendência ficaria em você antes de agendar uma consulta."
+          },
+          {
+            "question": "Como encontro o melhor tom de tintura de sobrancelhas para meu tom de pele?",
+            "answer": "A IA do Brow Tint analisa seu tom de pele, cor natural do cabelo e formato do rosto para sugerir os melhores tons de tintura de sobrancelhas para você. Você também pode navegar manualmente por diferentes tons de tintura profissional de sobrancelhas e cores de gel tintado, gerando pré-visualizações ilimitadas até encontrar sua combinação perfeita."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Pronto para um novo visual?",
-        "description": "Comece sua transformação de corte de cabelo IA hoje.",
+        "title": "Pronta para Encontrar sua Tintura de Sobrancelhas Perfeita?",
+        "description": "Comece sua pré-visualização gratuita de tintura de sobrancelhas com IA hoje mesmo. Envie uma foto e veja os resultados de antes e depois do brow tint em segundos — sem cadastro necessário.",
         "buttons": [
           {
-            "title": "Começar Agora",
+            "title": "Experimente Brow Tint Grátis",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
+      },
+      "subscribe": {
+        "id": "subscribe",
+        "title": "Fique por Dentro das Novidades do Brow Tint",
+        "description": "Receba as últimas tendências de tintura de sobrancelhas, novos recursos de IA e dicas exclusivas de brow tint diretamente na sua caixa de entrada.",
+        "submit": {
+          "title": "Inscrever-se",
+          "placeholder": "Digite seu e-mail"
+        }
       }
     }
   }

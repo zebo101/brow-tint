@@ -8,74 +8,50 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
-      "cta"
+      "cta",
+      "subscribe"
     ],
     "sections": {
       "hero": {
+        "block": "hero-editorial",
         "id": "hero",
-        "title": "你专属的 AI 发型师",
-        "highlight_text": "AI 发型师",
-        "description": "拥抱发型设计的未来。上传您的照片，选择发型区域，见证我们 AI 发型转换器带来的惊艳转变。",
-        "tip": "🎁 立即试用最佳 AI 发型转换工具",
+        "title": "#1 免费在线 AI 眉色生成器",
+        "highlight_text": "Brow Tint",
+        "description": "使用 Brow Tint 预览真实感十足的眉部染色效果 —— 这是一款免费在线 AI 工具，支持专业眉部染色、染眉膏、眉部塑形与染色等多种效果预览。上传您的照片，即刻查看眉部染色前后对比结果，由 GPT Image 2 强力驱动。",
         "buttons": [
           {
-            "title": "免费试用",
+            "title": "免费试用 Brow Tint",
             "icon": "Zap",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "variant": "default"
           },
           {
-            "title": "查看案例",
+            "title": "查看案例展示",
             "icon": "BookOpenText",
             "url": "/showcases",
             "target": "_blank",
             "variant": "outline"
           }
         ],
-        "show_avatars": true,
-        "avatars_tip": "999+ 用户正在使用 AI Barber",
-        "show_award": false,
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Barber 主图",
-          "width": 1200,
-          "height": 800
+          "src": "/imgs/bg/hero-2.png",
+          "alt": "AI 眉色生成器 - 在线预览眉部染色效果",
+          "width": 800,
+          "height": 600
         },
-        "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Barber 主图",
-          "width": 1200,
-          "height": 800
-        },
-        "carousel_images": [
-          {
-            "light": "/imgs/features/ai-hairstyle-changer.png",
-            "dark": "/imgs/features/ai-hairstyle-changer-dark.png",
-            "alt": "AI 发型转换器"
-          },
-          {
-            "light": "/imgs/features/hairstyle-changer-ai-video.png",
-            "dark": "/imgs/features/hairstyle-changer-ai-video-dark.png",
-            "alt": "AI Barber 设置"
-          },
-          {
-            "light": "/imgs/features/chat.png",
-            "dark": "/imgs/features/chat-dark.png",
-            "alt": "AI Barber 对话"
-          }
-        ],
         "background_image": {
-          "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber 背景"
-        }
+          "src": "/imgs/bg/hero-1.png",
+          "alt": "Brow Tint 背景 - 专业眉部染色效果预览"
+        },
+        "powered_by": "由 GPT Image 2 驱动",
+        "editorial_labels": ["预览", "变换", "塑形"]
       },
       "logos": {
         "id": "logos",
-        "title": "由先进 AI 技术驱动",
+        "title": "Brow Tint 背后值得信赖的 AI 技术",
         "items": [
           {
             "title": "Next.js",
@@ -117,48 +93,48 @@
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "什么是 AI Barber？",
+        "title": "什么是 Brow Tint？",
         "label": "产品介绍",
-        "description": "AI Barber 是一款虚拟发型工具，使用先进的 AI 技术帮助您找到完美造型。",
+        "description": "Brow Tint 是一款免费在线 AI 眉色生成器，让您在正式染色前就能预览专业眉部染色效果。无论您想尝试染眉膏色号、探索眉部塑形与染色的组合效果，还是对比睫毛和眉部染色的搭配方案，我们的 GPT Image 2 AI 都能根据您的脸型和肤色生成照片级真实的预览图。",
         "image": {
           "src": "/imgs/features/landingpage.png",
-          "alt": "AI Barber 介绍"
+          "alt": "Brow Tint AI 眉色生成器 - 免费在线预览眉部染色效果"
         },
         "items": [
           {
-            "title": "虚拟发型试用",
-            "description": "无需动剪刀，试用无数种虚拟发型。",
+            "title": "虚拟眉部染色预览",
+            "description": "无需使用任何产品，即可预览无数种眉色深浅与风格。我们的 AI 眉色生成器模拟专业眉部染色效果，让您足不出户就能找到最理想的色号。",
             "icon": "RiMagicLine",
             "image": {
               "src": "/imgs/features/1.png",
-              "alt": "虚拟发型"
+              "alt": "虚拟眉部染色预览 - AI 眉色生成器"
             }
           },
           {
-            "title": "逼真效果",
-            "description": "我们的 AI 发型转换器生成高度逼真的效果，宛如真实剪发。",
+            "title": "逼真的眉部染色前后对比",
+            "description": "由 GPT Image 2 生成高度逼真的眉部染色前后对比效果。将天然眉形与染色后的造型并排对比，并在预约前将对比图分享给您的造型师。",
             "icon": "RiCameraLensLine",
             "image": {
               "src": "/imgs/features/2.png",
-              "alt": "逼真效果"
+              "alt": "眉部染色前后对比效果"
             }
           },
           {
-            "title": "AI 图像生成器",
-            "description": "使用我们先进的 AI 图像生成器创建独特的发型概念。",
+            "title": "先进 AI 图像生成器",
+            "description": "我们的 AI 图像生成器采用 GPT Image 2，为每种脸型生成独特的眉部染色与染眉膏效果图。它能分析您的面部特征，推荐最适合您肤色的眉色方案。",
             "icon": "RiImage2Line",
             "image": {
               "src": "/imgs/features/3.png",
-              "alt": "AI 图像生成器"
+              "alt": "AI 图像生成器 - 眉色效果预览"
             }
           },
           {
-            "title": "风格迁移",
-            "description": "将明星或模特的发型风格直接转移到您的照片上。",
+            "title": "睫毛和眉部染色一体预览",
+            "description": "预览睫毛和眉部染色的组合效果，找到您完美的一体眼部框架造型。在单张照片级预览中，看清睫毛染色与不同眉色的搭配效果。",
             "icon": "RiExchangeLine",
             "image": {
               "src": "/imgs/features/4.png",
-              "alt": "风格迁移"
+              "alt": "睫毛和眉部染色组合预览"
             }
           }
         ],
@@ -167,35 +143,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "为何选择 AI Barber",
+        "title": "为何选择 Brow Tint 进行眉部染色预览",
         "label": "产品优势",
-        "description": "探索无限可能，安全且用户友好的 AI Barber 工具。",
+        "description": "最出色的在线眉部染色体验 —— 快速、安全，无论是初次尝试眉部染色的新手、专业眉部美容师，还是沙龙店主，都能轻松上手。",
         "items": [
           {
-            "title": "闪电般快速",
-            "description": "眨眼间即可改变您的发型。无需等待数天。",
+            "title": "闪电级 AI 眉色生成速度",
+            "description": "几秒内即可生成专业眉部染色预览效果，无需等待数小时。我们的 GPT Image 2 AI 即时处理您的照片，让您无需预约沙龙就能看到眉部染色效果。",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "快速处理"
+              "alt": "快速 AI 眉色生成"
             }
           },
           {
-            "title": "安全私密",
-            "description": "您的照片属于您的隐私。我们确保它们安全，绝不分享。",
+            "title": "安全私密的照片处理",
+            "description": "您的照片经过安全处理，绝不与第三方共享。Brow Tint 尊重您的隐私 —— 所有上传的图片在处理过程中均已加密，并在眉部染色预览生成后自动删除。",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "安全"
+              "alt": "安全的眉色照片处理"
             }
           },
           {
-            "title": "超级易用",
-            "description": "只需几次点击，释放您内在的造型师。无需技术技能。",
+            "title": "极致简单易用",
+            "description": "只需几次点击即可找到最适合您的染眉膏色号，无需任何专业技能。Brow Tint 的设计让任何人都能轻松预览专业眉部染色效果，从尝试第一次眉色的青少年，到向客户演示方案的沙龙专业人士，皆可得心应手。",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "用户友好"
+              "alt": "易于使用的眉色工具"
             }
           }
         ]
@@ -203,45 +179,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "如何使用 AI Barber",
-        "description": "只需三个简单步骤即可获得新造型：",
+        "title": "如何使用 AI 眉色生成器",
+        "description": "四个简单步骤，打造您的完美眉色造型。无需注册账号 —— 现在就可以免费开始预览眉部染色效果。",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "usage"
+          "alt": "如何使用 AI 眉色生成器"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "上传照片",
-            "description": "上传一张清晰的个人照片到 AI Barber 平台。",
+            "title": "上传您的照片",
+            "description": "将清晰的正面照片上传至 Brow Tint 平台。为获得最佳眉色预览效果，请使用光线充足、眉毛清晰可见的图片。",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "上传"
+              "alt": "上传照片进行 AI 眉色预览"
             }
           },
           {
-            "title": "选择区域",
-            "description": "高亮标记您想要改变的头发区域。",
+            "title": "选择您的眉色风格",
+            "description": "从多种眉部染色风格中自由选择 —— 染眉膏、眉部塑形与染色、专业眉部染色、Brow Code 染眉，以及更多个性化定制选项。",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "选择"
+              "alt": "选择眉色风格"
             }
           },
           {
-            "title": "生成发型",
-            "description": "选择您想要的风格，让 AI 发型转换器施展魔法。",
+            "title": "生成眉色预览效果",
+            "description": "让 AI 眉色生成器为您创建真实感十足的新眉形预览图。我们的 GPT Image 2 技术可在几秒内生成照片级逼真的眉部染色前后对比图。",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "生成"
+              "alt": "生成 AI 眉色预览效果"
             }
           },
           {
-            "title": "下载保存",
-            "description": "保存您的新虚拟发型，与朋友分享。",
+            "title": "下载并分享",
+            "description": "以高分辨率保存您的眉部染色前后对比照片。将其分享给造型师、发布到社交媒体，或带去您的下一次眉部染色预约。",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "下载"
+              "alt": "下载眉部染色前后对比效果"
             }
           }
         ],
@@ -249,202 +225,188 @@
       },
       "features": {
         "id": "features",
-        "title": "AI Barber 核心功能",
-        "description": "虚拟造型所需的一切功能。",
+        "title": "Brow Tint 生成器核心功能",
+        "description": "打造完美眉部染色预览所需的一切 —— 从专业眉部染色模拟到染眉膏色号匹配，一应俱全。",
         "items": [
           {
-            "title": "AI 发型转换器",
-            "description": "即时体验不同发型长度和风格。",
+            "title": "专业眉部染色预览",
+            "description": "在家即可预览沙龙级专业眉部染色效果。我们的 AI 精准还原沙龙眉部染色处理的真实外观，让您在预约前就知道效果如何。",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "虚拟发型",
-            "description": "在真正剪发前，直观看到不同发型在您身上的效果。",
+            "title": "染眉膏色号匹配",
+            "description": "试用不同染眉膏色号，看看每种颜色与您的天然肤色、发色和脸型的搭配效果，找到最适合您的染眉膏。",
             "icon": "RiWomenLine"
           },
           {
-            "title": "发色实验",
-            "description": "尝试新发色，无需化学染发的伤害。",
+            "title": "Brow Code 染眉可视化",
+            "description": "探索 Brow Code 染眉配方，精准可视化最适合您眉毛的色号。在正式染色前并排对比多款 Brow Code 染眉方案。",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "高清分辨率",
-            "description": "下载高质量的转换效果图片。",
+            "title": "高清分辨率下载",
+            "description": "下载清晰细腻的高分辨率眉部染色前后对比图。非常适合展示给造型师、在线分享，或留作个人参考。",
             "icon": "RiHdLine"
           },
           {
-            "title": "风格对比",
-            "description": "并排比较前后造型效果。",
+            "title": "前后效果对比",
+            "description": "通过直观的并排滑动对比，查看眉部染色前后的效果差异。一键即可呈现眉部染色带来的蜕变。",
             "icon": "RiCompareLine"
           },
           {
-            "title": "移动友好",
-            "description": "在任何设备上随时随地使用 AI Barber。",
+            "title": "移动端友好的眉色工具",
+            "description": "在任何设备上使用 Brow Tint 生成器 —— 手机、平板或电脑。随时随地预览眉部染色效果。",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "用户喜爱 AI Barber",
-        "description": "加入数千名满意用户，改变您的造型。",
+        "title": "用户深爱 Brow Tint",
+        "description": "加入数千名满意用户的行列，用我们的免费 AI 眉色生成器找到属于您的完美眉色。",
         "items": [
           {
             "title": "50,000+",
-            "description": "发型转换"
+            "description": "已生成眉色效果图"
           },
           {
             "title": "10,000+",
-            "description": "满意用户"
+            "description": "全球满意用户"
           },
           {
-            "title": "500+",
-            "description": "发型风格"
+            "title": "200+",
+            "description": "可选眉色风格"
           }
         ],
         "className": "bg-muted"
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
-        "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
-        "categories": [
-          {
-            "key": "men",
-            "title": "男士发型",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
-          },
-          {
-            "key": "women",
-            "title": "女士发型",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
-          },
-          {
-            "key": "boys",
-            "title": "男童发型",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
-          },
-          {
-            "key": "girls",
-            "title": "女童发型",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
-          }
-        ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
-      },
       "testimonials": {
         "id": "testimonials",
-        "title": "用户评价",
-        "description": "听听找到完美造型的用户怎么说。",
+        "title": "用户对 Brow Tint 的真实评价",
+        "description": "听听那些用免费 AI 眉色生成器找到完美眉色的用户怎么说。",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "时尚博主",
-            "quote": "AI Barber 帮我在真正剪波波头之前做出决定。避免了一个巨大的错误！",
+            "role": "美妆博主",
+            "quote": "Brow Tint 让我在去沙龙前就能预览到准确的眉部染色色号。我把眉部染色前后对比图给造型师看，完美实现了想要的效果！",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "sarah"
+              "alt": "Sarah - Brow Tint 用户评价"
             }
           },
           {
             "name": "Mike Ross",
-            "role": "模特",
-            "quote": "我用 AI Barber 为拍摄测试不同造型。效果非常逼真。",
+            "role": "摄影师",
+            "quote": "我在商业美妆拍摄中使用 Brow Tint —— AI 生成的眉部染色前后对比预览效果极为逼真，帮助客户清晰想象最终造型。",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "mike"
+              "alt": "Mike - 使用 Brow Tint 的专业摄影师"
             }
           },
           {
             "name": "Emily Chen",
             "role": "学生",
-            "quote": "有趣且易用。我喜欢用 AI 发型转换器尝试疯狂的发色。",
+            "quote": "尝试各种染眉膏效果从未像现在这么有趣！Brow Tint 是我在网上找到的最棒的眉色工具，而且完全免费就能开始使用。",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "emily"
+              "alt": "Emily - Brow Tint 免费用户"
             }
           },
           {
             "name": "David Smith",
-            "role": "演员",
-            "quote": "非常适合可视化角色造型。细节令人惊叹。",
+            "role": "化妆师",
+            "quote": "在施术前向客户展示专业眉部染色方案是无价之宝。Brow Tint 生成的眉部塑形与染色预览效果相当精准。",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "david"
+              "alt": "David - 使用 Brow Tint 的化妆师"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "发型师",
-            "quote": "我向客户推荐这个工具，让他们准确展示想要的效果。",
+            "role": "沙龙店主",
+            "quote": "我向每一位预约眉部染色的客户推荐 Brow Tint。他们可以在开始前就看到睫毛和眉部染色的效果 —— 既增强了信心，又节省了时间。",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "jessica"
+              "alt": "Jessica - 推荐 Brow Tint 的沙龙店主"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "用户",
-            "quote": "我用过最好的虚拟发型应用。强烈推荐！",
+            "role": "初次体验用户",
+            "quote": "我对第一次染眉有些忐忑。Brow Tint 让我在正式染色前就能预览最适合的染眉膏色号。真心喜欢这款工具！",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "tom"
+              "alt": "Tom - 初次体验 Brow Tint 的用户"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "常见问题",
-        "description": "关于 AI Barber 的问题？我们来解答。",
-        "tip": "找不到您想要的答案？联系我们的<a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "title": "关于 Brow Tint 的常见问题",
+        "description": "对我们的 AI 眉色生成器有疑问？以下是关于眉部染色预览最常见问题的解答。",
+        "tip": "没找到您想要的答案？请联系我们的<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>支持团队</a>",
         "items": [
           {
-            "question": "什么是 AI Barber，它是如何工作的？",
-            "answer": "AI Barber 是一款 AI 驱动的工具，让您能够虚拟试用不同发型。只需上传照片，选择头发，然后选择一种风格即可生成新造型。"
+            "question": "Brow Tint 是什么，AI 眉色生成器是如何工作的？",
+            "answer": "Brow Tint 是一款基于 GPT Image 2 构建的免费在线 AI 眉部染色工具。只需上传您的照片，选择眉色风格 —— 如染眉膏、眉部塑形与染色或专业眉部染色 —— 我们的 AI 即可在几秒内生成照片级逼真的预览效果图，呈现您染色后的全新面貌。"
           },
           {
-            "question": "发型转换的准确度如何？",
-            "answer": "我们的先进 AI 算法设计用于生成高度逼真和准确的转换效果，会考虑您的脸型和发质。"
+            "question": "眉部染色前后对比效果有多逼真？",
+            "answer": "我们的 GPT Image 2 AI 能生成高度逼真的眉部染色前后对比图。AI 会分析您的脸型、肤色、天然眉形结构和发色，从而提供与真实沙龙效果高度吻合的眉部染色预览。"
           },
           {
-            "question": "AI Barber 适用于任何发质或长度吗？",
-            "answer": "是的，AI Barber 适用于各种发质和长度。不过，为了获得最佳效果，请使用光线充足的清晰照片。"
+            "question": "可以同时预览睫毛和眉部染色效果吗？",
+            "answer": "可以！Brow Tint 支持睫毛和眉部染色的组合预览，让您在一张图中看到完整的眼部框架造型。如果您正在考虑下次沙龙同时进行睫毛染色和眉部染色，这个功能尤为实用。"
           },
           {
-            "question": "需要付费吗？",
-            "answer": "我们提供免费和付费计划。免费计划可以试用基本功能，而付费计划解锁高分辨率下载和更多风格。"
+            "question": "使用 Brow Tint 可以尝试哪些眉色风格？",
+            "answer": "您可以预览多种眉部染色风格，包括多色号染眉膏、眉部塑形与染色组合方案、专业眉部染色处理、Brow Code 染眉配方、睫毛和眉部染色套餐，以及根据您的偏好量身定制的多款个性化造型。"
           },
           {
-            "question": "我的数据安全吗？",
-            "answer": "是的，我们非常重视您的隐私。您的照片会被安全处理，不会与第三方分享。"
+            "question": "Brow Tint 真的免费使用吗？",
+            "answer": "是的，Brow Tint 提供免费方案，让您无需支付任何费用即可使用 AI 眉色生成器进行基础眉部染色预览。我们的高级方案可解锁更多功能，包括高分辨率下载、更多眉色风格选择以及优先 AI 处理。"
           },
           {
-            "question": "我可以保存或分享生成的发型吗？",
-            "answer": "当然可以！您可以下载转换效果，并直接从平台分享到社交媒体。"
+            "question": "使用 Brow Tint 时，我的照片数据安全吗？",
+            "answer": "完全放心。您的照片经过加密安全处理，绝不与第三方共享。所有上传的图片在眉部染色预览生成后会自动删除。我们高度重视您的隐私安全。"
+          },
+          {
+            "question": "眉部染色与染眉膏有什么区别？",
+            "answer": "眉部染色是一种半永久性染料，涂抹于眉毛毛发甚至皮肤上，打造更丰盈、轮廓分明的效果，持续约 4 至 6 周。染眉膏是一种日常美妆产品，类似眉毛专用睫毛膏，可增添色彩并固定眉形。使用 Brow Tint，您可以在做决定前同时预览眉部染色和染眉膏两种效果。"
+          },
+          {
+            "question": "可以用 Brow Tint 预览眉部塑形与染色效果吗？",
+            "answer": "可以！眉部塑形与染色是我们最受欢迎的预览风格之一。我们的 AI 能模拟眉部塑形结合染色的向上梳理、丰盈效果，让您在预约之前就能清楚看到这一流行美容项目上身后的实际样子。"
+          },
+          {
+            "question": "如何找到最适合我肤色的眉色？",
+            "answer": "Brow Tint 的 AI 会分析您的肤色、天然发色和脸型，为您推荐最适合的眉色方案。您也可以手动浏览不同的专业眉部染色色号和染眉膏颜色，生成无限次预览，直到找到属于您的完美色号。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "准备好换个新造型了吗？",
-        "description": "今天就开始您的 AI 发型转换之旅。",
+        "title": "准备好找到您的完美眉色了吗？",
+        "description": "立即开始免费 AI 眉部染色预览。上传照片，几秒内查看眉部染色前后效果 —— 无需注册账号。",
         "buttons": [
           {
-            "title": "立即开始",
+            "title": "免费试用 Brow Tint",
             "url": "/ai-hairstyle-changer",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
+      },
+      "subscribe": {
+        "id": "subscribe",
+        "title": "订阅 Brow Tint 最新资讯",
+        "description": "获取最新眉部染色潮流、全新 AI 功能及独家眉色技巧，直接发送至您的邮箱。",
+        "submit": {
+          "title": "立即订阅",
+          "placeholder": "请输入您的邮箱"
+        }
       }
     }
   }

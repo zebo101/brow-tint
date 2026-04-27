@@ -17,10 +17,10 @@ export function Features({
       <div className={`container space-y-8 md:space-y-16`}>
         <ScrollAnimation>
           <div className="mx-auto max-w-4xl text-center text-balance">
-            <h2 className="text-foreground mb-4 text-3xl font-semibold tracking-tight md:text-4xl">
+            <h2 className="text-foreground font-display mb-4 text-3xl font-semibold tracking-tight md:text-4xl">
               {section.title}
             </h2>
-            <p className="text-muted-foreground mb-6 md:mb-12 lg:mb-16">
+            <p className="text-muted-foreground font-display mb-6 md:mb-12 lg:mb-16">
               {section.description}
             </p>
           </div>

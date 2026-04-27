@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "AI Barber",
+      "title": "Brow Tint",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - AI Brow Tinting Generator",
         "width": 100,
         "height": 100
       },
@@ -19,7 +19,7 @@
           "icon": "Sparkles"
         },
         {
-          "title": "Vetrina",
+          "title": "Esempi",
           "url": "/showcases",
           "icon": "Box"
         },
@@ -29,24 +29,24 @@
           "icon": "DollarSign"
         },
         {
-          "title": "IA",
+          "title": "AI",
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "Cambia acconciatura IA",
-              "description": "Usa l'IA per generare immagini",
+              "title": "Generatore AI Brow Tint",
+              "description": "Anteprima look con tinta per sopracciglia e gel colorato con l'AI",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Video cambia acconciatura IA",
-              "description": "Usa l'IA per generare video",
+              "title": "Video AI Brow Tint",
+              "description": "Crea video di trasformazione con tinta sopracciglia tramite AI",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Chat con barbiere",
-              "description": "Chatta con barbiere IA",
+              "title": "Consulente Brow Tint",
+              "description": "Ricevi consigli esperti di tinta sopracciglia dall'AI",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -80,11 +80,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "AI Barber",
-      "description": "AI Barber è uno strumento virtuale per acconciature che utilizza l'IA avanzata per aiutarti a trovare il tuo look perfetto.",
+      "title": "Brow Tint",
+      "description": "Brow Tint è un generatore AI gratuito di tinta per sopracciglia basato su GPT Image 2. Visualizza in anteprima look con tinta professionale per sopracciglia, gel colorato per sopracciglia, laminazione e tinta sopracciglia, e tinta ciglia e sopracciglia — prima ancora di andare dal parrucchiere.",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
         "width": 1024,
         "height": 1024
       },
@@ -93,23 +93,23 @@
     "nav": {
       "items": [
         {
-          "title": "Funzionalità",
+          "title": "Strumenti AI",
           "children": [
             {
-              "title": "Acconciatura IA",
-              "description": "genera immagini",
+              "title": "Generatore AI Brow Tint",
+              "description": "Genera look con tinta sopracciglia tramite AI",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Video IA",
-              "description": "genera video",
+              "title": "Video AI Brow Tint",
+              "description": "Crea video di trasformazione con tinta sopracciglia",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Chat con barbiere",
-              "description": "Chatta con barbiere IA",
+              "title": "Consulente Brow Tint",
+              "description": "Chatta con l'esperto AI di tinta sopracciglia",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -119,24 +119,29 @@
           "title": "Risorse",
           "children": [
             {
-              "title": "Documenti",
-              "url": "/docs",
-              "target": "_self"
-            },
-            {
               "title": "Blog",
               "url": "/blog",
               "target": "_self"
             },
             {
-              "title": "Chat",
-              "url": "/chat",
+              "title": "Documenti",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "Esempi",
+              "url": "/showcases",
+              "target": "_self"
+            },
+            {
+              "title": "Prezzi",
+              "url": "/pricing",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "Amici",
+          "title": "Partner",
           "children": [
             {
               "title": "MCPALL",
@@ -188,11 +193,11 @@
     "agreement": {
       "items": [
         {
-          "title": "Informativa sulla privacy",
+          "title": "Privacy Policy",
           "url": "/privacy-policy"
         },
         {
-          "title": "Termini di servizio",
+          "title": "Termini di Servizio",
           "url": "/terms-of-service"
         }
       ]

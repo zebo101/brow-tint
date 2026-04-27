@@ -102,10 +102,10 @@ export function Subscribe({
     >
       <div className="mx-auto max-w-5xl px-6">
         <div className="text-center">
-          <h2 className="text-4xl font-semibold text-balance lg:text-5xl">
+          <h2 className="font-display text-4xl font-semibold text-balance lg:text-5xl">
             {section.title}
           </h2>
-          <p className="mt-4">{section.description}</p>
+          <p className="font-display mt-4">{section.description}</p>
 
           <div className="mx-auto mt-10 max-w-xl overflow-hidden lg:mt-12">
             <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center overflow-hidden rounded-[calc(var(--radius)+0.75rem)] border pr-3 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">

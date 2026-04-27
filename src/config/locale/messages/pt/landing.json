@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "AI Barber",
+      "title": "Brow Tint",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - AI Brow Tinting Generator",
         "width": 100,
         "height": 100
       },
@@ -14,12 +14,12 @@
     "nav": {
       "items": [
         {
-          "title": "Recursos",
+          "title": "Funcionalidades",
           "url": "/#features",
           "icon": "Sparkles"
         },
         {
-          "title": "Vitrines",
+          "title": "Exemplos",
           "url": "/showcases",
           "icon": "Box"
         },
@@ -33,20 +33,20 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "Mudador de penteado IA",
-              "description": "Use IA para gerar imagens",
+              "title": "Gerador de Brow Tint com IA",
+              "description": "Pré-visualize looks de tintura de sobrancelhas e gel tintado com IA",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Vídeo mudador de penteado IA",
-              "description": "Use IA para gerar vídeos",
+              "title": "Vídeo de Brow Tint com IA",
+              "description": "Crie vídeos de transformação de tintura de sobrancelhas com IA",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Chat com barbeiro",
-              "description": "Converse com barbeiro IA",
+              "title": "Consultor Brow Tint",
+              "description": "Receba conselhos especializados de IA sobre tintura de sobrancelhas",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -80,11 +80,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "AI Barber",
-      "description": "AI Barber é uma ferramenta virtual de penteado que usa IA avançada para ajudá-lo a encontrar seu visual perfeito.",
+      "title": "Brow Tint",
+      "description": "Brow Tint é um gerador gratuito de tintura de sobrancelhas com IA, desenvolvido com GPT Image 2. Pré-visualize tintura profissional de sobrancelhas, gel tintado para sobrancelhas, laminação e tintura de sobrancelhas e estilos de tintura de cílios e sobrancelhas — tudo antes de ir ao salão.",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
         "width": 1024,
         "height": 1024
       },
@@ -93,23 +93,23 @@
     "nav": {
       "items": [
         {
-          "title": "Recursos",
+          "title": "Ferramentas IA",
           "children": [
             {
-              "title": "Penteado IA",
-              "description": "gerar imagens",
+              "title": "Gerador de Brow Tint com IA",
+              "description": "Gere looks de tintura de sobrancelhas com IA",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Vídeo IA",
-              "description": "gerar vídeos",
+              "title": "Vídeo de Brow Tint com IA",
+              "description": "Crie vídeos de transformação de tintura de sobrancelhas",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Chat com barbeiro",
-              "description": "Converse com barbeiro IA",
+              "title": "Consultor Brow Tint",
+              "description": "Converse com um especialista em tintura de sobrancelhas com IA",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -119,24 +119,29 @@
           "title": "Recursos",
           "children": [
             {
-              "title": "Documentos",
-              "url": "/docs",
-              "target": "_self"
-            },
-            {
               "title": "Blog",
               "url": "/blog",
               "target": "_self"
             },
             {
-              "title": "Chat",
-              "url": "/chat",
+              "title": "Documentos",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "Exemplos",
+              "url": "/showcases",
+              "target": "_self"
+            },
+            {
+              "title": "Preços",
+              "url": "/pricing",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "Amigos",
+          "title": "Parceiros",
           "children": [
             {
               "title": "MCPALL",
@@ -188,11 +193,11 @@
     "agreement": {
       "items": [
         {
-          "title": "Política de privacidade",
+          "title": "Política de Privacidade",
           "url": "/privacy-policy"
         },
         {
-          "title": "Termos de serviço",
+          "title": "Termos de Serviço",
           "url": "/terms-of-service"
         }
       ]

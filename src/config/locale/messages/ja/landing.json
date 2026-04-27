@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "AI Barber",
+      "title": "Brow Tint",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - AI Brow Tinting Generator",
         "width": 100,
         "height": 100
       },
@@ -19,7 +19,7 @@
           "icon": "Sparkles"
         },
         {
-          "title": "事例",
+          "title": "ショーケース",
           "url": "/showcases",
           "icon": "Box"
         },
@@ -33,20 +33,20 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "AIヘアスタイルチェンジャー",
-              "description": "AIで画像を生成",
+              "title": "AI眉ティントジェネレーター",
+              "description": "AIで眉ティントとティント眉ジェルのスタイルをプレビュー",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "ヘアチェンジャービデオ",
-              "description": "AIで動画を生成",
+              "title": "AI眉ティント動画",
+              "description": "AIで眉ティントのビフォーアフター動画を作成",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "AIバーバーチャット",
-              "description": "AI理容師とチャット",
+              "title": "眉ティントアドバイザー",
+              "description": "AI眉ティント専門家のアドバイスを受ける",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -80,11 +80,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "AI Barber",
-      "description": "AI Barberは、先進的なAIを使用して完璧なルックスを見つけるのを支援するバーチャルヘアスタイルツールです。",
+      "title": "Brow Tint",
+      "description": "Brow Tintは、GPT Image 2搭載の無料オンラインAI眉ティントジェネレーターです。プロ仕様の眉ティント、ティント眉ジェル、眉ラミネーション&ティント、ラッシュ&ブロウティントのスタイルをサロン予約前にプレビューできます。",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
         "width": 1024,
         "height": 1024
       },
@@ -93,23 +93,23 @@
     "nav": {
       "items": [
         {
-          "title": "機能",
+          "title": "AIツール",
           "children": [
             {
-              "title": "AIヘアスタイル",
-              "description": "画像を生成",
+              "title": "AI眉ティントジェネレーター",
+              "description": "AIで眉ティントのスタイルを生成",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "AI動画",
-              "description": "動画を生成",
+              "title": "AI眉ティント動画",
+              "description": "眉ティントのビフォーアフター動画を作成",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "バーバーチャット",
-              "description": "AI理容師とチャット",
+              "title": "眉ティントアドバイザー",
+              "description": "AI眉ティント専門家とチャット",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -119,24 +119,29 @@
           "title": "リソース",
           "children": [
             {
-              "title": "ドキュメント",
-              "url": "/docs",
-              "target": "_self"
-            },
-            {
               "title": "ブログ",
               "url": "/blog",
               "target": "_self"
             },
             {
-              "title": "チャット",
-              "url": "/chat",
+              "title": "ドキュメント",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "ショーケース",
+              "url": "/showcases",
+              "target": "_self"
+            },
+            {
+              "title": "料金",
+              "url": "/pricing",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "フレンド",
+          "title": "パートナー",
           "children": [
             {
               "title": "MCPALL",

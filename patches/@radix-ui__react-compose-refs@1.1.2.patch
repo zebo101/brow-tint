@@ -1,0 +1,46 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -7,8 +7,15 @@
+     ref.current = value;
+   }
+ }
++var _composeRefsCache = new WeakMap();
+ function composeRefs(...refs) {
+-  return (node) => {
++  if (refs.length === 2 && typeof refs[0] === "function" && typeof refs[1] === "function") {
++    var inner = _composeRefsCache.get(refs[0]);
++    if (inner && inner.has(refs[1])) {
++      return inner.get(refs[1]);
++    }
++  }
++  var composed = (node) => {
+     let hasCleanup = false;
+     const cleanups = refs.map((ref) => {
+       const cleanup = setRef(ref, node);
+@@ -30,9 +37,24 @@
+       };
+     }
+   };
++  if (refs.length === 2 && typeof refs[0] === "function" && typeof refs[1] === "function") {
++    if (!_composeRefsCache.has(refs[0])) {
++      _composeRefsCache.set(refs[0], new WeakMap());
++    }
++    _composeRefsCache.get(refs[0]).set(refs[1], composed);
++  }
++  return composed;
+ }
+ function useComposedRefs(...refs) {
+-  return React.useCallback(composeRefs(...refs), refs);
++  const currentRefs = React.useRef(refs);
++  currentRefs.current = refs;
++  return React.useCallback(
++    (node) => {
++      const composed = composeRefs(...currentRefs.current);
++      return composed(node);
++    },
++    []
++  );
+ }
+ export {
+   composeRefs,

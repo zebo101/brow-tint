@@ -338,10 +338,10 @@ export function Pricing({
         {section.sr_only_title && (
           <h1 className="sr-only">{section.sr_only_title}</h1>
         )}
-        <h2 className="mb-6 text-3xl font-bold text-pretty lg:text-4xl">
+        <h2 className="font-display mb-6 text-3xl font-bold text-pretty lg:text-4xl">
           {section.title}
         </h2>
-        <p className="text-muted-foreground mx-auto mb-4 max-w-xl lg:max-w-none lg:text-lg">
+        <p className="text-muted-foreground font-display mx-auto mb-4 max-w-xl lg:max-w-none lg:text-lg">
           {section.description}
         </p>
       </div>

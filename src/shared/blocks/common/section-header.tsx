@@ -16,10 +16,10 @@ export function SectionHeader({
         className
       )}
     >
-      <h2 className="text-center text-4xl font-semibold lg:text-5xl">
+      <h2 className="font-display text-center text-4xl font-semibold lg:text-5xl">
         {title}
       </h2>
-      <p>{description}</p>
+      <p className="font-display">{description}</p>
     </div>
   );
 }

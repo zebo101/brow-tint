@@ -15,14 +15,17 @@ export function Faq({
   section: Section;
   className?: string;
 }) {
+  const defaultValue =
+    section.items?.[1]?.question || section.items?.[1]?.title || undefined;
+
   return (
     <section id={section.id} className={`relative py-16 md:py-24 ${className}`}>
       <div className={`mx-auto max-w-full px-4 md:max-w-3xl md:px-8`}>
         <div className="mx-auto max-w-2xl text-center text-balance">
-          <h2 className="text-foreground mb-4 text-3xl font-semibold tracking-tight md:text-4xl">
+          <h2 className="text-foreground font-display mb-4 text-3xl font-semibold tracking-tight md:text-4xl">
             {section.title}
           </h2>
-          <p className="text-muted-foreground mb-6 md:mb-12 lg:mb-16">
+          <p className="text-muted-foreground font-display mb-6 md:mb-12 lg:mb-16">
             {section.description}
           </p>
         </div>
@@ -31,6 +34,7 @@ export function Faq({
           <Accordion
             type="single"
             collapsible
+            defaultValue={defaultValue}
             className="bg-muted dark:bg-muted/50 w-full rounded-2xl p-1"
           >
             {section.items?.map((item, idx) => (
@@ -39,7 +43,7 @@ export function Faq({
                   value={item.question || item.title || ''}
                   className="data-[state=open]:bg-card dark:data-[state=open]:bg-muted peer rounded-xl border-none px-7 py-1 data-[state=open]:border-none data-[state=open]:shadow-sm"
                 >
-                  <AccordionTrigger className="cursor-pointer text-base hover:no-underline">
+                  <AccordionTrigger className="font-display cursor-pointer text-base hover:no-underline">
                     {item.question || item.title || ''}
                   </AccordionTrigger>
                   <AccordionContent>

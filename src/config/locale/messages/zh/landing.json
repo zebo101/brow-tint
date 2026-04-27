@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "AI Barber",
+      "title": "Brow Tint",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - AI Brow Tinting Generator",
         "width": 100,
         "height": 100
       },
@@ -19,7 +19,7 @@
           "icon": "Sparkles"
         },
         {
-          "title": "案例",
+          "title": "案例展示",
           "url": "/showcases",
           "icon": "Box"
         },
@@ -29,24 +29,24 @@
           "icon": "DollarSign"
         },
         {
-          "title": "AI 功能",
+          "title": "AI",
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "AI 发型转换器",
-              "description": "使用 AI 生成图片",
+              "title": "AI 眉色生成器",
+              "description": "用 AI 预览眉部染色与染眉膏效果",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "发型视频转换",
-              "description": "使用 AI 生成视频",
+              "title": "AI 眉色视频",
+              "description": "用 AI 制作眉部染色变换视频",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "AI 发型顾问",
-              "description": "与 AI 发型师对话",
+              "title": "眉色顾问",
+              "description": "获取 AI 专业眉部染色建议",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -80,11 +80,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "AI Barber",
-      "description": "AI Barber 是您的专属虚拟发型师。借助先进的 AI 技术，帮助您找到最完美的造型。",
+      "title": "Brow Tint",
+      "description": "Brow Tint 是一款由 GPT Image 2 驱动的免费在线 AI 眉色生成器。在前往沙龙之前，预览专业眉部染色、染眉膏、眉部塑形与染色以及睫毛和眉部染色等多种效果。",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
         "width": 1024,
         "height": 1024
       },
@@ -93,23 +93,23 @@
     "nav": {
       "items": [
         {
-          "title": "功能",
+          "title": "AI 工具",
           "children": [
             {
-              "title": "AI 发型",
-              "description": "生成图片",
+              "title": "AI 眉色生成器",
+              "description": "用 AI 生成眉部染色效果",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "AI 视频",
-              "description": "生成视频",
+              "title": "AI 眉色视频",
+              "description": "制作眉部染色变换视频",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "AI 发型顾问",
-              "description": "与 AI 发型师对话",
+              "title": "眉色顾问",
+              "description": "与 AI 眉部染色专家对话",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -119,18 +119,23 @@
           "title": "资源",
           "children": [
             {
-              "title": "文档",
-              "url": "/docs",
-              "target": "_self"
-            },
-            {
               "title": "博客",
               "url": "/blog",
               "target": "_self"
             },
             {
-              "title": "聊天",
-              "url": "/chat",
+              "title": "文档",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "案例展示",
+              "url": "/showcases",
+              "target": "_self"
+            },
+            {
+              "title": "价格",
+              "url": "/pricing",
               "target": "_self"
             }
           ]

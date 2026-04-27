@@ -64,10 +64,10 @@ export function FeaturesMedia({ section }: { section: Section }) {
               ease: [0.22, 1, 0.36, 1] as const,
             }}
           >
-            <h2 className="text-xl font-medium md:text-lg lg:text-lg">
+            <h2 className="font-display text-xl font-medium md:text-lg lg:text-lg">
               {section.title}
             </h2>
-            <p className="text-muted-foreground text-md">
+            <p className="text-muted-foreground text-md font-display">
               {section.description}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">

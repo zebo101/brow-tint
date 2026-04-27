@@ -4,8 +4,6 @@ import { ReactNode, useEffect } from 'react';
 import { useLocale } from 'next-intl';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
-import { envConfigs } from '@/config';
-
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const locale = useLocale();
 
@@ -18,8 +16,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme={envConfigs.appearance}
-      enableSystem
+      defaultTheme="light"
+      forcedTheme="light"
+      enableSystem={false}
       disableTransitionOnChange
     >
       {children}

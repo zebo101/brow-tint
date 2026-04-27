@@ -11,10 +11,10 @@ export async function PageDetail({ post }: { post: PostType }) {
       <div className="py-24 md:py-32">
         <div className="mx-auto w-full max-w-4xl px-6 md:px-8">
           <div className="mt-16 text-center">
-            <h1 className="text-foreground mx-auto mb-4 w-full text-xl font-bold md:max-w-4xl md:text-4xl">
+            <h1 className="text-foreground font-display mx-auto mb-4 w-full text-xl font-bold md:max-w-4xl md:text-4xl">
               {post.title}
             </h1>
-            <div className="text-muted-foreground text-md mb-8 flex items-center justify-center gap-4">
+            <div className="text-muted-foreground text-md font-display mb-8 flex items-center justify-center gap-4">
               {post.description}
             </div>
             {post.created_at && (

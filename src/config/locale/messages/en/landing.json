@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "AI Barber",
+      "title": "Brow Tint",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - AI Brow Tinting Generator",
         "width": 100,
         "height": 100
       },
@@ -33,20 +33,20 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "AI Hairstyle Changer",
-              "description": "Use AI to generate images",
+              "title": "AI Brow Tint Generator",
+              "description": "Preview brow tint and tinted brow gel looks with AI",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "hairstyle changer ai video",
-              "description": "Use AI to generate videos",
+              "title": "AI Brow Tint Video",
+              "description": "Create brow tinting transformation videos with AI",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Barber Chat",
-              "description": "Chat with AI barber",
+              "title": "Brow Tint Advisor",
+              "description": "Get expert AI brow tinting advice",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -80,11 +80,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "AI Barber",
-      "description": "AI Barber is a virtual hairstyle tool that uses advanced AI to help you find your perfect look.",
+      "title": "Brow Tint",
+      "description": "Brow Tint is a free online AI brow tint generator powered by GPT Image 2. Preview professional brow tinting, tinted brow gel, brow lamination and tint, and lash and brow tint styles — all before your salon visit.",
       "logo": {
         "src": "/logo.png",
-        "alt": "AI Barber",
+        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
         "width": 1024,
         "height": 1024
       },
@@ -93,23 +93,23 @@
     "nav": {
       "items": [
         {
-          "title": "Features",
+          "title": "AI Tools",
           "children": [
             {
-              "title": "AI Hairstyle",
-              "description": "generate images",
+              "title": "AI Brow Tint Generator",
+              "description": "Generate brow tint looks with AI",
               "url": "/ai-hairstyle-changer",
               "icon": "RiImage2Line"
             },
             {
-              "title": "AI video",
-              "description": "generate videos",
+              "title": "AI Brow Tint Video",
+              "description": "Create brow tinting transformation videos",
               "url": "/hairstyle-changer-ai-video",
               "icon": "RiVideoLine"
             },
             {
-              "title": "Barber Chat",
-              "description": "Chat with AI barber",
+              "title": "Brow Tint Advisor",
+              "description": "Chat with AI brow tinting expert",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -119,18 +119,23 @@
           "title": "Resources",
           "children": [
             {
-              "title": "Documents",
-              "url": "/docs",
-              "target": "_self"
-            },
-            {
               "title": "Blog",
               "url": "/blog",
               "target": "_self"
             },
             {
-              "title": "Chat",
-              "url": "/chat",
+              "title": "Documents",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "Showcases",
+              "url": "/showcases",
+              "target": "_self"
+            },
+            {
+              "title": "Pricing",
+              "url": "/pricing",
               "target": "_self"
             }
           ]
