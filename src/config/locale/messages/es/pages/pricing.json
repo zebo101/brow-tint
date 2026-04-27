@@ -8,9 +8,9 @@
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Precios de AI Barber",
+        "sr_only_title": "Precios de Brow Tint",
         "title": "Precios",
-        "description": "Elige el plan perfecto para tus necesidades de transformación de peinado IA.",
+        "description": "Elige el plan perfecto para tus necesidades de generación de tinte de cejas IA.",
         "groups": [
           {
             "name": "one-time",

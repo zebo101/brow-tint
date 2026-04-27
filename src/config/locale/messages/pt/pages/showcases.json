@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Galeria - AI Barber",
-    "description": "Veja transformações incríveis de penteados criadas com AI Barber"
+    "title": "Galeria Brow Tint - Antes e Depois da Tintura de Sobrancelhas com IA",
+    "description": "Veja transformações incríveis de antes e depois da tintura de sobrancelhas criadas com o gerador de Brow Tint com IA"
   },
   "page": {
-    "title": "Galeria de Transformações",
+    "title": "Galeria Brow Tint",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Transformações Incríveis de Penteados",
-        "description": "Veja como nossos usuários transformaram seus visuais com AI Barber.",
+        "title": "Transformações Impressionantes de Tintura de Sobrancelhas",
+        "description": "Veja como os usuários transformaram suas sobrancelhas com Brow Tint.",
         "groups": [
           {
             "name": "all",
@@ -17,182 +17,182 @@
           },
           {
             "name": "short-hair",
-            "title": "Cabelo Curto"
+            "title": "Tinturas Naturais"
           },
           {
             "name": "long-hair",
-            "title": "Cabelo Longo"
+            "title": "Tinturas Marcantes"
           },
           {
             "name": "color-change",
-            "title": "Mudança de Cor"
+            "title": "Laminação de Sobrancelhas"
           },
           {
             "name": "men-styles",
-            "title": "Estilos Masculinos"
+            "title": "Gel de Sobrancelhas Colorido"
           },
           {
             "name": "women-styles",
-            "title": "Estilos Femininos"
+            "title": "Cílios e Sobrancelhas"
           },
           {
             "name": "trendy",
-            "title": "Visuais Modernos"
+            "title": "Antes e Depois"
           },
           {
             "name": "classic",
-            "title": "Estilos Clássicos"
+            "title": "Tinturas Profissionais"
           }
         ],
         "items": [
           {
-            "title": "Transformação Pixie Cut",
-            "description": "Penteado curto ousado para visual confiante",
+            "title": "Tintura de Sobrancelhas Taupe Suave",
+            "description": "Visual natural e sutil de tintura de sobrancelhas para uma aparência elegante sem esforço",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.png",
-              "alt": "Transformação pixie cut"
+              "alt": "Antes e depois da tintura taupe suave de sobrancelhas"
             },
             "group": "short-hair"
           },
           {
-            "title": "Ondas de Praia",
-            "description": "Estilo de cabelo longo ondulado natural",
+            "title": "Tintura de Sobrancelhas Espresso Escuro",
+            "description": "Tintura marrom escura e rica para sobrancelhas marcantes e definidas",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.png",
-              "alt": "Ondas de praia"
+              "alt": "Tintura de sobrancelhas espresso escuro"
             },
             "group": "long-hair"
           },
           {
-            "title": "Loiro Platina",
-            "description": "Transformação de cor loira impressionante",
+            "title": "Laminação e Tintura de Sobrancelhas",
+            "description": "Sobrancelhas laminadas escovadas para cima com tintura para um visual elegante e cheio",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.png",
-              "alt": "Loiro platina"
+              "alt": "Resultado de laminação e tintura de sobrancelhas"
             },
             "group": "color-change"
           },
           {
-            "title": "Pompadour Moderno",
-            "description": "Estilo clássico masculino com toque moderno",
+            "title": "Tintura Profissional de Sobrancelhas",
+            "description": "Tintura profissional de sobrancelhas com qualidade de salão com cobertura precisa e uniforme",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.png",
-              "alt": "Pompadour moderno"
-            },
-            "group": "men-styles"
-          },
-          {
-            "title": "Bob em Camadas",
-            "description": "Bob moderno com camadas texturizadas",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "Bob em camadas"
-            },
-            "group": "women-styles"
-          },
-          {
-            "title": "Coque Clássico",
-            "description": "Estilo de coque clássico elegante",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "Coque clássico"
+              "alt": "Transformação de tintura profissional de sobrancelhas"
             },
             "group": "classic"
           },
           {
-            "title": "Corte Fade",
-            "description": "Fade limpo com estilo moderno",
+            "title": "Visual com Gel de Sobrancelhas Colorido",
+            "description": "Acabamento diário com gel de sobrancelhas colorido para um realce rápido e natural",
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Corte fade"
+              "src": "/imgs/cases/5.png",
+              "alt": "Visual com gel de sobrancelhas colorido"
             },
             "group": "men-styles"
           },
           {
-            "title": "Mechas Balayage",
-            "description": "Técnica de cor balayage bonita",
+            "title": "Tintura de Cílios e Sobrancelhas",
+            "description": "Tintura combinada de cílios e sobrancelhas para um visual completo e de baixa manutenção",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "Resultado de tintura de cílios e sobrancelhas"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "Brow Code Tint",
+            "description": "Combinação precisa de fórmula brow code tint para sua cor de sobrancelha única",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "Combinação de brow code tint"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "Melhor Tom de Tintura de Sobrancelhas",
+            "description": "Tom perfeito de tintura de sobrancelhas combinado por IA e personalizado para seu tom de pele e cor de cabelo",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/9.png",
-              "alt": "Mechas balayage"
+              "alt": "Melhor combinação de tom de tintura de sobrancelhas"
             },
-            "group": "color-change"
+            "group": "short-hair"
           }
         ]
       },
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Browse the Full Hairstyle Library",
-        "description": "Scroll through our 500+ AI-ready cuts organized by gender and age. Click any look to preview it on your own photo.",
+        "title": "Navegue pela Biblioteca Completa de Estilos de Brow Tint",
+        "description": "Percorra nossos estilos de tintura de sobrancelhas com IA organizados por tipo. Clique em qualquer visual para visualizar na sua própria foto.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "Penteados Masculinos",
-            "description": "Hand-picked men's haircuts — fades, crops, quiffs, buzz cuts, and classic side parts. See real examples before your next barber visit.",
-            "cta_label": "Try now"
+            "title": "Tinturas Naturais de Sobrancelhas",
+            "description": "Tons suaves e do dia a dia que realçam sua cor natural de sobrancelha. Perfeito para um visual sutil e natural com tons de taupe, castanho claro e loiro.",
+            "cta_label": "Experimentar agora"
           },
           {
             "key": "women",
-            "title": "Penteados Femininos",
-            "description": "Trending women's cuts — bobs, pixies, long layers, beach waves, and bangs. Preview length, texture, and color before committing.",
-            "cta_label": "Try now"
+            "title": "Tinturas Marcantes de Sobrancelhas",
+            "description": "Tintura marcante de sobrancelhas em tons de espresso escuro, carvão e acobreado. Conquiste sobrancelhas dramáticas e esculpidas que emolduram e definem seu rosto.",
+            "cta_label": "Experimentar agora"
           },
           {
             "key": "boys",
-            "title": "Penteados para Meninos",
-            "description": "Curated boys' cuts for every age — tapered tops, short combs, and textured school-ready classics.",
-            "cta_label": "Try now"
+            "title": "Estilos de Laminação de Sobrancelhas",
+            "description": "Combinações de laminação e tintura de sobrancelhas para aquele visual escovado e emplumado. Visualize diferentes estilos de laminação antes da sua consulta no salão.",
+            "cta_label": "Experimentar agora"
           },
           {
             "key": "girls",
-            "title": "Penteados para Meninas",
-            "description": "Popular girls' hairstyles — long layers, braids, trendy bobs, and playful curls. Family-friendly previews for every age.",
-            "cta_label": "Try now"
+            "title": "Tintura de Cílios e Sobrancelhas",
+            "description": "Pacotes combinados de tintura de cílios e sobrancelhas para um realce completo e de baixa manutenção. Veja como tinturas coordenadas emolduram seus olhos.",
+            "cta_label": "Experimentar agora"
           }
         ],
-        "tip": "Every preview is free. New AI hairstyles are added regularly."
+        "tip": "Todas as pré-visualizações são gratuitas. Novos estilos de tintura de sobrancelhas adicionados regularmente."
       },
       "video_demo": {
         "block": "features-accordion",
         "id": "video_demo",
-        "label": "Video Demo",
-        "title": "See AI Barber in Action",
-        "description": "Watch real hairstyle transformations — from upload to download in seconds.",
+        "label": "Demonstração em Vídeo",
+        "title": "Veja o Brow Tint em Ação",
+        "description": "Assista transformações reais de antes e depois de tintura de sobrancelhas — do envio à pré-visualização em segundos.",
         "items": [
           {
-            "title": "Try Multiple Hairstyles in Seconds",
-            "description": "Upload one photo and watch it try on several distinct cuts and colors, side by side.",
+            "title": "Visualize Vários Tons de Tintura de Sobrancelhas Instantaneamente",
+            "description": "Envie uma foto e visualize vários tons e estilos de tintura de sobrancelhas lado a lado para encontrar sua combinação perfeita.",
             "icon": "RiPlayCircleLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "AI hairstyle transformation demo video"
+              "alt": "Vídeo de demonstração de pré-visualização de tintura de sobrancelhas com IA"
             }
           },
           {
-            "title": "Preview Hair Movement and Texture",
-            "description": "See how bangs, layers, curls, and volume flow with realistic motion — before you commit to the cut.",
+            "title": "Veja Textura e Cobertura Realistas de Tintura de Sobrancelhas",
+            "description": "Visualize como diferentes técnicas de tintura — de gel de sobrancelhas colorido a tintura profissional de sobrancelhas — ficam nas suas sobrancelhas reais antes de se comprometer.",
             "icon": "RiFilmLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Hair texture and movement preview video"
+              "alt": "Vídeo de pré-visualização de textura e cobertura de tintura de sobrancelhas"
             }
           }
         ]
@@ -200,77 +200,77 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "label": "How It Works",
-        "title": "From Photo to New Hairstyle in 4 Steps",
-        "description": "AI Barber is built for fast, realistic hairstyle previews. No install, no signup needed to try.",
+        "label": "Como Funciona",
+        "title": "De Foto à Tintura de Sobrancelhas Perfeita em 4 Passos",
+        "description": "Brow Tint foi criado para pré-visualizações rápidas e realistas de tintura de sobrancelhas. Sem instalação, sem cadastro necessário para experimentar.",
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Upload a Clear Front-Facing Photo",
-            "description": "Good lighting and a visible hairline give the AI the most accurate map of your face."
+            "title": "Envie uma Foto Frontal Nítida",
+            "description": "Boa iluminação e sobrancelhas visíveis dão à IA o mapeamento mais preciso do seu rosto e formato das sobrancelhas."
           },
           {
-            "title": "Pick a Hairstyle From the Gallery",
-            "description": "Browse 500+ AI hairstyles across men, women, boys, and girls — or describe a custom look."
+            "title": "Escolha um Estilo de Tintura de Sobrancelhas",
+            "description": "Navegue por tinturas naturais, tons marcantes, combinações de laminação e tintura de sobrancelhas ou acabamentos de gel de sobrancelhas colorido na galeria."
           },
           {
-            "title": "Fine-Tune Length, Texture, and Color",
-            "description": "Add an optional prompt to dial in bangs, layers, highlights, or a specific color."
+            "title": "Ajuste Tom, Formato e Intensidade",
+            "description": "Ajuste a cor da tintura, espessura da sobrancelha, formato do arco e intensidade de cobertura para combinar com o visual desejado."
           },
           {
-            "title": "Generate, Compare, and Download",
-            "description": "Generate multiple looks, compare side-by-side, and download your favorite to share with your stylist."
+            "title": "Gere, Compare e Baixe",
+            "description": "Gere várias pré-visualizações de tintura de sobrancelhas, compare antes e depois lado a lado e baixe sua favorita para compartilhar com seu especialista."
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Hairstyle Preview FAQ",
-        "description": "Common questions about AI hairstyle previews, photo tips, and how to get the best results.",
+        "title": "FAQ de Pré-visualização de Brow Tint",
+        "description": "Perguntas comuns sobre pré-visualizações de tintura de sobrancelhas com IA, dicas de fotos e como obter os melhores resultados.",
         "items": [
           {
-            "question": "Are the AI hairstyle previews in this gallery free?",
-            "answer": "Yes. You can browse every style for free and generate previews on your own photo with a free trial."
+            "question": "As pré-visualizações de tintura de sobrancelhas nesta galeria são gratuitas?",
+            "answer": "Sim. Você pode navegar por todos os estilos de tintura de sobrancelhas gratuitamente e gerar pré-visualizações na sua própria foto com uma avaliação gratuita."
           },
           {
-            "question": "Will the AI preview match my real haircut?",
-            "answer": "AI Barber renders realistic cuts, colors, and textures that blend with your hairline. Actual results still depend on your hair type and your stylist — we recommend downloading your preview and sharing it with your barber."
+            "question": "A pré-visualização de Brow Tint com IA vai corresponder aos meus resultados reais?",
+            "answer": "Brow Tint renderiza tons e coberturas realistas de tintura que se mesclam com os pelos naturais da sua sobrancelha. Os resultados reais ainda dependem do seu tipo de sobrancelha e do seu especialista — recomendamos baixar sua pré-visualização e compartilhá-la com seu profissional de tintura de sobrancelhas."
           },
           {
-            "question": "How many hairstyles can I try?",
-            "answer": "There are 500+ curated hairstyles in the gallery, covering men's, women's, boys', and girls' cuts. You can also describe custom styles with your own prompt."
+            "question": "Quantos estilos de tintura de sobrancelhas posso experimentar?",
+            "answer": "Há dezenas de estilos selecionados de tintura de sobrancelhas na galeria, cobrindo tinturas naturais, tinturas marcantes, combinações de laminação e tintura de sobrancelhas, visuais de gel de sobrancelhas colorido e pacotes de tintura de cílios e sobrancelhas. Você também pode descrever tons personalizados com seu próprio prompt."
           },
           {
-            "question": "Do I need to install an app?",
-            "answer": "No. AI Barber runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
+            "question": "Preciso instalar um aplicativo para usar o Brow Tint?",
+            "answer": "Não. Brow Tint funciona inteiramente no seu navegador — no celular ou desktop. Sem downloads ou plugins necessários."
           },
           {
-            "question": "What photo works best for a hairstyle preview?",
-            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible hairline gives the AI the most to work with."
+            "question": "Qual foto funciona melhor para uma pré-visualização de tintura de sobrancelhas?",
+            "answer": "Use uma foto nítida e frontal com iluminação uniforme. Evite óculos de sol, chapéus ou filtros pesados. Uma expressão neutra com sobrancelhas visíveis dá à IA o resultado de tintura mais preciso."
           },
           {
-            "question": "Is my photo kept private?",
-            "answer": "Your uploaded photos are processed securely for generation only. They are not stored permanently or shared with third parties."
+            "question": "Minha foto é mantida em privacidade?",
+            "answer": "Suas fotos enviadas são processadas com segurança apenas para a geração de tintura de sobrancelhas. Elas não são armazenadas permanentemente nem compartilhadas com terceiros."
           },
           {
-            "question": "Can boys and girls try these hairstyles safely?",
-            "answer": "Yes. The kids' sections are family-friendly and cover everyday cuts. Parents can preview any look before visiting the salon."
+            "question": "Qual a diferença entre tintura de sobrancelhas e laminação de sobrancelhas?",
+            "answer": "A tintura de sobrancelhas adiciona cor aos pelos da sobrancelha para um visual mais cheio e definido. A laminação e tintura de sobrancelhas combina um processo químico de alisamento com tintura para criar sobrancelhas escovadas para cima e emplumadas. Você pode visualizar ambos com Brow Tint."
           },
           {
-            "question": "Does AI Barber support color changes only?",
-            "answer": "Yes. You can preview a color change on your current cut — black, blonde, copper, silver, pink, blue, and more — or combine color with a new style."
+            "question": "O Brow Tint pode me ajudar a encontrar o tom certo de brow code?",
+            "answer": "Sim. Brow Tint usa IA para analisar seu tom de pele, cor de cabelo e traços para recomendar a melhor combinação de tom de tintura de sobrancelhas — similar a uma fórmula brow code tint. Experimente vários tons lado a lado para encontrar sua cor perfeita de tintura profissional de sobrancelhas."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Try a New Hairstyle?",
-        "description": "Upload your photo and preview every look in the gallery — completely free, no install required.",
+        "title": "Pronta Para Encontrar Sua Tintura de Sobrancelhas Perfeita?",
+        "description": "Envie sua foto e visualize todos os estilos de tintura de sobrancelhas na galeria — totalmente grátis, sem instalação necessária.",
         "buttons": [
           {
-            "title": "Try AI Barber now",
-            "url": "/ai-hairstyle-changer",
+            "title": "Experimentar Brow Tint Agora",
+            "url": "/ai-brow-tint-generator",
             "target": "_self",
             "icon": "Zap"
           }

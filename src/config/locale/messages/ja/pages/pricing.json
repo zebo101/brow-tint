@@ -8,9 +8,9 @@
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "AI Barber 料金",
+        "sr_only_title": "Brow Tint 料金",
         "title": "料金",
-        "description": "AIヘアスタイル変換のニーズに最適なプランをお選びください。",
+        "description": "AIブロウティント生成のニーズに最適なプランをお選びください。",
         "groups": [
           {
             "name": "one-time",

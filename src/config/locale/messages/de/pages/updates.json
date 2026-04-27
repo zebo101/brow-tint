@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "Updates - AI Barber",
-    "description": "Sehen Sie die neuesten AI Barber-Funktionen, Frisuren-Ergänzungen und Verbesserungen."
+    "title": "Updates - Brow Tint",
+    "description": "Sehen Sie die neuesten Brow Tint-Funktionen, Augenbrauentönung-Stil-Ergänzungen und Verbesserungen."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
         "title": "Was ist neu",
-        "description": "Neueste Funktionen, Frisuren-Ergänzungen und Verbesserungen an AI Barber."
+        "description": "Neueste Funktionen, Augenbrauentönung-Stil-Ergänzungen und Verbesserungen an Brow Tint."
       }
     }
   }

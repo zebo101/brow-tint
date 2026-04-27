@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "업데이트 로그 - AI Barber",
-    "description": "최신 AI Barber 기능, 헤어스타일 추가 및 개선 사항을 확인하세요."
+    "title": "업데이트 로그 - Brow Tint",
+    "description": "최신 Brow Tint 기능, 브로우 틴트 스타일 추가 및 개선 사항을 확인하세요."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
         "title": "새로운 기능",
-        "description": "AI Barber의 최신 기능, 헤어스타일 추가 및 개선 사항."
+        "description": "Brow Tint의 최신 기능, 브로우 틴트 스타일 추가 및 개선 사항."
       }
     }
   }

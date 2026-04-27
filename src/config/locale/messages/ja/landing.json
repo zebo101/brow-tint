@@ -35,7 +35,7 @@
             {
               "title": "AI眉ティントジェネレーター",
               "description": "AIで眉ティントとティント眉ジェルのスタイルをプレビュー",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {
@@ -98,7 +98,7 @@
             {
               "title": "AI眉ティントジェネレーター",
               "description": "AIで眉ティントのスタイルを生成",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {

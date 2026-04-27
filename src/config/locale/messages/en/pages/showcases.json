@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Gallery - AI Barber",
-    "description": "See amazing hairstyle transformations created with AI Barber"
+    "title": "Brow Tint Gallery - AI Brow Tinting Before and After",
+    "description": "See amazing brow tint before and after transformations created with Brow Tint AI generator"
   },
   "page": {
-    "title": "Transformation Gallery",
+    "title": "Brow Tint Gallery",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Amazing Hairstyle Transformations",
-        "description": "See how our users transformed their looks with AI Barber.",
+        "title": "Stunning Brow Tint Transformations",
+        "description": "See how users transformed their brows with Brow Tint.",
         "groups": [
           {
             "name": "all",
@@ -17,182 +17,182 @@
           },
           {
             "name": "short-hair",
-            "title": "Short Hair"
+            "title": "Natural Tints"
           },
           {
             "name": "long-hair",
-            "title": "Long Hair"
+            "title": "Bold Tints"
           },
           {
             "name": "color-change",
-            "title": "Color Change"
+            "title": "Brow Lamination"
           },
           {
             "name": "men-styles",
-            "title": "Men's Styles"
+            "title": "Tinted Brow Gel"
           },
           {
             "name": "women-styles",
-            "title": "Women's Styles"
+            "title": "Lash & Brow"
           },
           {
             "name": "trendy",
-            "title": "Trendy Looks"
+            "title": "Before & After"
           },
           {
             "name": "classic",
-            "title": "Classic Styles"
+            "title": "Professional Tints"
           }
         ],
         "items": [
           {
-            "title": "Pixie Cut Transformation",
-            "description": "Bold short hairstyle for confident look",
+            "title": "Soft Taupe Brow Tint",
+            "description": "Natural subtle brow tinting look for an effortlessly polished appearance",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.png",
-              "alt": "Pixie cut transformation"
+              "alt": "Soft taupe brow tint before and after"
             },
             "group": "short-hair"
           },
           {
-            "title": "Beach Waves",
-            "description": "Natural wavy long hair style",
+            "title": "Dark Espresso Brow Tint",
+            "description": "Rich deep brown brow tinting for bold, defined brows",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.png",
-              "alt": "Beach waves"
+              "alt": "Dark espresso brow tint"
             },
             "group": "long-hair"
           },
           {
-            "title": "Platinum Blonde",
-            "description": "Stunning blonde color transformation",
+            "title": "Brow Lamination & Tint",
+            "description": "Brushed-up laminated and tinted brows for a sleek, full look",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.png",
-              "alt": "Platinum blonde"
+              "alt": "Brow lamination and tint result"
             },
             "group": "color-change"
           },
           {
-            "title": "Modern Pompadour",
-            "description": "Classic men's style with modern twist",
+            "title": "Professional Brow Tint",
+            "description": "Salon-quality professional brow tinting with precise, even coverage",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.png",
-              "alt": "Modern pompadour"
-            },
-            "group": "men-styles"
-          },
-          {
-            "title": "Layered Bob",
-            "description": "Trendy bob with textured layers",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "Layered bob"
-            },
-            "group": "women-styles"
-          },
-          {
-            "title": "Classic Updo",
-            "description": "Elegant classic updo style",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "Classic updo"
+              "alt": "Professional brow tint transformation"
             },
             "group": "classic"
           },
           {
-            "title": "Fade Haircut",
-            "description": "Clean fade with modern styling",
+            "title": "Tinted Brow Gel Look",
+            "description": "Daily tinted brow gel finish for a quick, natural enhancement",
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Fade haircut"
+              "src": "/imgs/cases/5.png",
+              "alt": "Tinted brow gel look"
             },
             "group": "men-styles"
           },
           {
-            "title": "Balayage Highlights",
-            "description": "Beautiful balayage color technique",
+            "title": "Lash & Brow Tint",
+            "description": "Combined lash and brow tinting for a complete, low-maintenance look",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "Lash and brow tint result"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "Brow Code Tint",
+            "description": "Precise brow code formula match for your unique brow color",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "Brow code tint match"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "Best Brow Tint Shade Match",
+            "description": "AI-matched perfect brow tint shade tailored to your skin tone and hair color",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/9.png",
-              "alt": "Balayage highlights"
+              "alt": "Best brow tint shade match"
             },
-            "group": "color-change"
+            "group": "short-hair"
           }
         ]
       },
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Browse the Full Hairstyle Library",
-        "description": "Scroll through our 500+ AI-ready cuts organized by gender and age. Click any look to preview it on your own photo.",
+        "title": "Browse the Full Brow Tint Style Library",
+        "description": "Scroll through our AI-powered brow tint styles organized by type. Click any look to preview on your own photo.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "Men's Hairstyles",
-            "description": "Hand-picked men's haircuts — fades, crops, quiffs, buzz cuts, and classic side parts. See real examples before your next barber visit.",
+            "title": "Natural Brow Tints",
+            "description": "Soft, everyday brow tint shades that enhance your natural brow color. Perfect for a subtle, no-makeup look with taupe, light brown, and blonde tones.",
             "cta_label": "Try now"
           },
           {
             "key": "women",
-            "title": "Women's Hairstyles",
-            "description": "Trending women's cuts — bobs, pixies, long layers, beach waves, and bangs. Preview length, texture, and color before committing.",
+            "title": "Bold Brow Tints",
+            "description": "Statement brow tinting in deep espresso, charcoal, and auburn shades. Achieve dramatic, sculpted brows that frame and define your face.",
             "cta_label": "Try now"
           },
           {
             "key": "boys",
-            "title": "Boys' Hairstyles",
-            "description": "Curated boys' cuts for every age — tapered tops, short combs, and textured school-ready classics.",
+            "title": "Brow Lamination Styles",
+            "description": "Brow lamination and tint combos for that brushed-up, feathered look. Preview different lamination styles before your salon appointment.",
             "cta_label": "Try now"
           },
           {
             "key": "girls",
-            "title": "Girls' Hairstyles",
-            "description": "Popular girls' hairstyles — long layers, braids, trendy bobs, and playful curls. Family-friendly previews for every age.",
+            "title": "Lash & Brow Tint",
+            "description": "Combined lash and brow tinting packages for a complete, low-maintenance enhancement. See how coordinated tints frame your eyes.",
             "cta_label": "Try now"
           }
         ],
-        "tip": "Every preview is free. New AI hairstyles are added regularly."
+        "tip": "Every preview is free. New brow tint styles added regularly."
       },
       "video_demo": {
         "block": "features-accordion",
         "id": "video_demo",
         "label": "Video Demo",
-        "title": "See AI Barber in Action",
-        "description": "Watch real hairstyle transformations — from upload to download in seconds.",
+        "title": "See Brow Tint in Action",
+        "description": "Watch real brow tint before and after transformations — from upload to preview in seconds.",
         "items": [
           {
-            "title": "Try Multiple Hairstyles in Seconds",
-            "description": "Upload one photo and watch it try on several distinct cuts and colors, side by side.",
+            "title": "Preview Multiple Brow Tint Shades Instantly",
+            "description": "Upload one photo and preview several brow tint shades and styles side by side to find your perfect match.",
             "icon": "RiPlayCircleLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "AI hairstyle transformation demo video"
+              "alt": "AI brow tinting preview demo video"
             }
           },
           {
-            "title": "Preview Hair Movement and Texture",
-            "description": "See how bangs, layers, curls, and volume flow with realistic motion — before you commit to the cut.",
+            "title": "See Realistic Brow Tint Texture and Coverage",
+            "description": "Preview how different brow tinting techniques — from tinted brow gel to professional brow tint — look on your actual brows before committing.",
             "icon": "RiFilmLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Hair texture and movement preview video"
+              "alt": "Brow tint texture and coverage preview video"
             }
           }
         ]
@@ -201,76 +201,76 @@
         "block": "features-step",
         "id": "usage",
         "label": "How It Works",
-        "title": "From Photo to New Hairstyle in 4 Steps",
-        "description": "AI Barber is built for fast, realistic hairstyle previews. No install, no signup needed to try.",
+        "title": "From Photo to Perfect Brow Tint in 4 Steps",
+        "description": "Brow Tint is built for fast, realistic brow tinting previews. No install, no signup needed to try.",
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
             "title": "Upload a Clear Front-Facing Photo",
-            "description": "Good lighting and a visible hairline give the AI the most accurate map of your face."
+            "description": "Good lighting and visible brows give the AI the most accurate map of your face and brow shape."
           },
           {
-            "title": "Pick a Hairstyle From the Gallery",
-            "description": "Browse 500+ AI hairstyles across men, women, boys, and girls — or describe a custom look."
+            "title": "Choose a Brow Tint Style",
+            "description": "Browse natural tints, bold shades, brow lamination and tint combos, or tinted brow gel finishes from the gallery."
           },
           {
-            "title": "Fine-Tune Length, Texture, and Color",
-            "description": "Add an optional prompt to dial in bangs, layers, highlights, or a specific color."
+            "title": "Fine-Tune Shade, Shape, and Intensity",
+            "description": "Adjust tint color, brow thickness, arch shape, and coverage intensity to match your desired look."
           },
           {
             "title": "Generate, Compare, and Download",
-            "description": "Generate multiple looks, compare side-by-side, and download your favorite to share with your stylist."
+            "description": "Generate multiple brow tint previews, compare before and after side by side, and download your favorite to share with your brow artist."
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Hairstyle Preview FAQ",
-        "description": "Common questions about AI hairstyle previews, photo tips, and how to get the best results.",
+        "title": "Brow Tint Preview FAQ",
+        "description": "Common questions about AI brow tinting previews, photo tips, and how to get the best brow tint results.",
         "items": [
           {
-            "question": "Are the AI hairstyle previews in this gallery free?",
-            "answer": "Yes. You can browse every style for free and generate previews on your own photo with a free trial."
+            "question": "Are the brow tint previews in this gallery free?",
+            "answer": "Yes. You can browse every brow tint style for free and generate previews on your own photo with a free trial."
           },
           {
-            "question": "Will the AI preview match my real haircut?",
-            "answer": "AI Barber renders realistic cuts, colors, and textures that blend with your hairline. Actual results still depend on your hair type and your stylist — we recommend downloading your preview and sharing it with your barber."
+            "question": "Will the AI brow tint preview match my real results?",
+            "answer": "Brow Tint renders realistic tint shades and coverage that blend with your natural brow hair. Actual results still depend on your brow type and your brow artist — we recommend downloading your preview and sharing it with your professional brow tint specialist."
           },
           {
-            "question": "How many hairstyles can I try?",
-            "answer": "There are 500+ curated hairstyles in the gallery, covering men's, women's, boys', and girls' cuts. You can also describe custom styles with your own prompt."
+            "question": "How many brow tint styles can I try?",
+            "answer": "There are dozens of curated brow tint styles in the gallery, covering natural tints, bold tints, brow lamination and tint combos, tinted brow gel looks, and lash and brow tint packages. You can also describe custom shades with your own prompt."
           },
           {
-            "question": "Do I need to install an app?",
-            "answer": "No. AI Barber runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
+            "question": "Do I need to install an app to use Brow Tint?",
+            "answer": "No. Brow Tint runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
           },
           {
-            "question": "What photo works best for a hairstyle preview?",
-            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible hairline gives the AI the most to work with."
+            "question": "What photo works best for a brow tint preview?",
+            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible brows gives the AI the most accurate brow tinting result."
           },
           {
             "question": "Is my photo kept private?",
-            "answer": "Your uploaded photos are processed securely for generation only. They are not stored permanently or shared with third parties."
+            "answer": "Your uploaded photos are processed securely for brow tint generation only. They are not stored permanently or shared with third parties."
           },
           {
-            "question": "Can boys and girls try these hairstyles safely?",
-            "answer": "Yes. The kids' sections are family-friendly and cover everyday cuts. Parents can preview any look before visiting the salon."
+            "question": "What is the difference between brow tinting and brow lamination?",
+            "answer": "Brow tinting adds color to your brow hairs for a fuller, more defined look. Brow lamination and tint combines a chemical straightening process with tinting to create brushed-up, feathered brows. You can preview both with Brow Tint."
           },
           {
-            "question": "Does AI Barber support color changes only?",
-            "answer": "Yes. You can preview a color change on your current cut — black, blonde, copper, silver, pink, blue, and more — or combine color with a new style."
+            "question": "Can Brow Tint help me find the right brow code shade?",
+            "answer": "Yes. Brow Tint uses AI to analyze your skin tone, hair color, and features to recommend the best brow tint shade match — similar to a brow code tint formula. Try multiple shades side by side to find your perfect professional brow tint color."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Try a New Hairstyle?",
-        "description": "Upload your photo and preview every look in the gallery — completely free, no install required.",
+        "title": "Ready to Find Your Perfect Brow Tint?",
+        "description": "Upload your photo and preview every brow tint style in the gallery — completely free, no install required.",
         "buttons": [
           {
-            "title": "Try AI Barber now",
-            "url": "/ai-hairstyle-changer",
+            "title": "Try Brow Tint Now",
+            "url": "/ai-brow-tint-generator",
             "target": "_self",
             "icon": "Zap"
           }

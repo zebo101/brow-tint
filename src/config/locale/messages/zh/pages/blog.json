@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "博客 - AI Barber",
-    "description": "阅读最新发型趋势、AI 功能和造型技巧。"
+    "title": "博客 - Brow Tint",
+    "description": "阅读最新眉色趋势、AI 功能和眉色技巧。"
   },
   "page": {
-    "title": "AI Barber 博客",
+    "title": "Brow Tint 博客",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "博客",
-        "description": "阅读最新发型趋势、AI 功能和造型技巧。"
+        "description": "阅读最新眉色趋势、AI 功能和眉色技巧。"
       }
     }
   },

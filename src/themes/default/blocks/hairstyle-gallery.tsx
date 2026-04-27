@@ -67,7 +67,7 @@ export async function HairstyleGallery({
 
   const limit = Math.max(1, Math.min(section.limit ?? 8, 24));
   const categories = section.categories ?? [];
-  const ctaUrl = section.cta_url ?? '/ai-hairstyle-changer';
+  const ctaUrl = section.cta_url ?? '/ai-brow-tint-generator';
 
   const loaded = await Promise.all(
     categories.map(async (c) => ({

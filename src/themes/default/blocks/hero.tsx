@@ -149,7 +149,7 @@ export function Hero({
 
       {section.background_image?.src && (
         <div className="absolute inset-0 -z-10 hidden h-full w-full overflow-hidden md:block">
-          <div className="from-background/20 via-background/20 to-background absolute inset-0 z-10 bg-gradient-to-b" />
+          <div className="from-transparent via-transparent to-background absolute inset-0 z-10 bg-gradient-to-b" />
           <Image
             src={section.background_image.src}
             alt={section.background_image.alt || ''}

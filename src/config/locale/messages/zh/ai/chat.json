@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "AI Barber 顾问",
+        "title": "Brow Tint 顾问",
         "logo": {
           "src": "/logo.png",
-          "alt": "AI Barber 顾问"
+          "alt": "Brow Tint 顾问"
         },
         "url": "/chat"
       },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "有什么可以帮您的？",
-    "input_placeholder": "询问我关于发型、流行趋势或造型技巧..."
+    "input_placeholder": "询问我关于眉色、色彩搭配或眉部护理技巧..."
   },
   "history": {
     "title": "聊天历史",

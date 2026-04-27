@@ -35,7 +35,7 @@
             {
               "title": "AI 눈썹 틴트 생성기",
               "description": "AI로 눈썹 틴트 및 틴티드 브로우 젤 스타일 미리보기",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {
@@ -98,7 +98,7 @@
             {
               "title": "AI 눈썹 틴트 생성기",
               "description": "AI로 눈썹 틴트 스타일 생성",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {

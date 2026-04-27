@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "AI Barber チャット",
+        "title": "Brow Tint チャット",
         "logo": {
           "src": "/logo.png",
-          "alt": "AI Barber チャット"
+          "alt": "Brow Tint チャット"
         },
         "url": "/chat"
       },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "何かお手伝いしましょうか？",
-    "input_placeholder": "ヘアスタイル、トレンド、スタイリングのヒントについて聞いてください..."
+    "input_placeholder": "ブロウティンティング、カラーマッチング、眉ケアのヒントについて聞いてください..."
   },
   "history": {
     "title": "チャット履歴",

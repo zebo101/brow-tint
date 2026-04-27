@@ -35,7 +35,7 @@
             {
               "title": "Generatore AI Brow Tint",
               "description": "Anteprima look con tinta per sopracciglia e gel colorato con l'AI",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {
@@ -98,7 +98,7 @@
             {
               "title": "Generatore AI Brow Tint",
               "description": "Genera look con tinta sopracciglia tramite AI",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {

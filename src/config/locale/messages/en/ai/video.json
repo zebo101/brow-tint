@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "AI Hairstyle Video Generator | Photo to Hairstyle Video Online | AI Barber",
-    "description": "Create an AI hairstyle video from one photo. Preview haircuts, hair color changes, and before-and-after motion clips online, then download a shareable hairstyle transformation video for your barber or stylist.",
-    "keywords": "ai hairstyle video, ai hairstyle video generator, photo to hairstyle video, hairstyle changer video, hair transformation video, before and after hair video, ai haircut video, virtual hairstyle video, hairstyle motion preview, haircut preview video, hair color change video, hairstyle clip generator, hairstyle simulator video, hairstyle video online, barber hairstyle reference video"
+    "title": "AI Brow Tint Video Generator | Brow Tinting Transformation | Brow Tint",
+    "description": "Create an AI brow tint transformation video from one photo. Preview brow tinting results, before-and-after motion clips, and professional brow tint looks online, then download a shareable brow tint video for your brow artist or salon.",
+    "keywords": "ai brow tint video, brow tint transformation video, brow tinting before and after video, ai brow tint generator, photo to brow tint video, brow tint before and after, tinted brow gel video, brow lamination and tint video, professional brow tint preview, lash and brow tint video, brow tinting motion preview, brow treatment video, brow tint clip generator, brow tint video online, brow artist reference video"
   },
   "page": {
-    "title": "AI Hairstyle Video Generator - Create Hair Transformation Clips Online | AI Barber",
-    "description": "Turn one selfie into an AI hairstyle video online. Preview short, long, curly, fade, bangs, and hair color changes in motion, compare before and after, then download a hairstyle clip to share with your barber or salon.",
+    "title": "AI Brow Tint Video Generator - Create Brow Tinting Transformation Clips Online | Brow Tint",
+    "description": "Turn one selfie into an AI brow tint video online. Preview professional brow tint shades, brow lamination and tint results, and tinted brow gel looks in motion, compare before and after, then download a brow tint clip to share with your brow artist or salon.",
     "show_sections": [
       "hero",
       "introduce",
@@ -22,55 +22,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "AI Hairstyle Video Generator Online",
-        "highlight_text": "AI Hairstyle Video",
-        "description": "Turn a photo into an AI hairstyle video in minutes. Preview haircuts, color changes, and before-and-after motion clips before you book your next barber or salon appointment.",
+        "title": "AI Brow Tint Video Generator Online",
+        "highlight_text": "AI Brow Tint Video",
+        "description": "Turn a photo into an AI brow tint video in minutes. Preview professional brow tint shades, brow lamination and tint results, and before-and-after motion clips before you book your next brow artist or salon appointment.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-video.png",
-          "alt": "AI Hairstyle Video Generator Interface",
+          "alt": "AI Brow Tint Video Generator Interface",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-video-dark.png",
-          "alt": "AI Hairstyle Video Generator Interface Dark Mode",
+          "alt": "AI Brow Tint Video Generator Interface Dark Mode",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/video-bg.png",
-          "alt": "AI Barber Hairstyle Video Background"
+          "alt": "Brow Tint Video Background"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "What Is the AI Hairstyle Video Generator?",
+        "title": "What Is the AI Brow Tint Video Generator?",
         "label": "Introduction",
-        "description": "AI Barber turns a single photo into a hairstyle transformation video so you can preview cut, color, volume, and movement before making a real hair decision.",
+        "description": "Brow Tint turns a single photo into a brow tinting transformation video so you can preview tint shade, shape, fullness, and movement before committing to a real brow treatment.",
         "image": {
           "src": "/imgs/bg/video-bg3.png",
-          "alt": "AI Hairstyle Video Generator Overview"
+          "alt": "AI Brow Tint Video Generator Overview"
         },
         "items": [
           {
-            "title": "Photo to Hairstyle Video",
-            "description": "Upload one portrait and generate a short hairstyle clip that shows your new look from a natural motion angle.",
+            "title": "Photo to Brow Tint Video",
+            "description": "Upload one portrait and generate a short brow tint clip that shows your updated brow look with natural motion and realistic tinting results.",
             "icon": "RiVideoLine"
           },
           {
             "title": "Before & After Motion Preview",
-            "description": "See how a bob, fade, bangs, curls, or color change reads in motion instead of relying on a static mockup.",
+            "description": "See how a professional brow tint, tinted brow gel, or brow lamination and tint reads in motion instead of relying on a static mockup.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Barber & Stylist Reference Clip",
-            "description": "Download a clear hairstyle video you can send to your barber, salon, or colorist before your appointment.",
+            "title": "Brow Artist Reference Clip",
+            "description": "Download a clear brow tint video you can send to your brow artist, salon, or lash and brow tint specialist before your appointment.",
             "icon": "RiShareLine"
           },
           {
-            "title": "Custom Hair Transformation Control",
-            "description": "Describe length, texture, parting, layers, fringe, fades, and hair color to generate a more specific hair transformation clip.",
+            "title": "Custom Brow Tint Transformation Control",
+            "description": "Describe shade, arch shape, thickness, brow lamination style, and tinted brow gel finish to generate a more specific brow tint transformation clip.",
             "icon": "RiMagicLine"
           }
         ],
@@ -79,35 +79,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Why Choose Our AI Hairstyle Video Generator",
+        "title": "Why Choose Our AI Brow Tint Video Generator",
         "label": "Benefits",
-        "description": "Create faster haircut decisions with motion-based previews, shareable clips, and a simple online workflow.",
+        "description": "Make faster brow tinting decisions with motion-based previews, shareable clips, and a simple online workflow.",
         "items": [
           {
-            "title": "Preview Hair Movement Before You Cut",
-            "description": "Watch how layers, bangs, curls, volume, and face-framing pieces move so you can judge the style more confidently than with a still photo alone.",
+            "title": "Preview Brow Tint Results Before Your Appointment",
+            "description": "Watch how a professional brow tint, tinted brow gel, or brow lamination and tint frames your face in motion so you can choose the right shade and shape with confidence.",
             "icon": "RiFilmLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "AI hairstyle movement preview video"
+              "alt": "AI brow tint movement preview video"
             }
           },
           {
-            "title": "Share a Before-and-After Clip With Your Stylist",
-            "description": "Send a hairstyle transformation video instead of explaining the look from scratch. It helps barbers and salons understand your target shape and finish faster.",
+            "title": "Share a Before-and-After Clip With Your Brow Artist",
+            "description": "Send a brow tint transformation video instead of explaining the look from scratch. It helps brow artists and salons understand your target shade and arch shape faster.",
             "icon": "RiShareLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Shareable hairstyle transformation video"
+              "alt": "Shareable brow tint transformation video"
             }
           },
           {
-            "title": "Make Hair Decisions Online in Minutes",
-            "description": "Go from upload to downloadable hairstyle clip in one online session, whether you are testing a new haircut, color refresh, or dramatic hair makeover.",
+            "title": "Make Brow Tinting Decisions Online in Minutes",
+            "description": "Go from upload to downloadable brow tint clip in one online session, whether you are testing a new tinted brow gel shade, a lash and brow tint combo, or a dramatic brow transformation.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/bg/video-bg2.png",
-              "alt": "Fast online hairstyle video workflow"
+              "alt": "Fast online brow tint video workflow"
             }
           }
         ],
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "How to Create an AI Hairstyle Video",
-        "description": "Generate a photo to hairstyle video in four simple steps:",
+        "title": "How to Create an AI Brow Tint Video",
+        "description": "Generate a photo to brow tint video in four simple steps:",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "How to create an AI hairstyle video"
+          "alt": "How to create an AI brow tint video"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
             "title": "Upload a Clear Portrait Photo",
-            "description": "Use a front-facing photo with good lighting so the generator can read your face shape, hairline, and starting hairstyle accurately.",
+            "description": "Use a front-facing photo with good lighting so the generator can read your face shape, brow line, and current brow tint accurately.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Upload portrait photo for hairstyle video"
+              "alt": "Upload portrait photo for brow tint video"
             }
           },
           {
-            "title": "Choose the Hairstyle Direction",
-            "description": "Pick the haircut or hair color idea you want to test, such as curtain bangs, a textured crop, a short bob, long waves, or a fade.",
+            "title": "Choose the Brow Tint Direction",
+            "description": "Pick the brow tint style you want to test, such as a natural professional brow tint, bold tinted brow gel, soft brow lamination and tint, or a lash and brow tint combination.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Choose hairstyle direction"
+              "alt": "Choose brow tint direction"
             }
           },
           {
             "title": "Describe the Transformation",
-            "description": "Add details like length, texture, part, color, shine, volume, and motion so the before-and-after clip better matches the result you want.",
+            "description": "Add details like shade, arch height, thickness, brow lamination finish, and tinted brow gel tone so the before-and-after clip better matches the result you want.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Describe hairstyle video transformation"
+              "alt": "Describe brow tint video transformation"
             }
           },
           {
             "title": "Generate, Compare, and Download",
-            "description": "Create your hairstyle video, review the motion preview, then download the clip to save, share, or bring to your next salon visit.",
+            "description": "Create your brow tint video, review the motion preview of your brow tint before and after, then download the clip to save, share, or bring to your next salon visit.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Generate and download hairstyle video"
+              "alt": "Generate and download brow tint video"
             }
           }
         ],
@@ -162,50 +162,50 @@
       },
       "features": {
         "id": "features",
-        "title": "Key Features of the AI Hairstyle Video Generator",
-        "description": "A practical online workflow for hairstyle previews, before-and-after comparisons, and downloadable motion clips.",
+        "title": "Key Features of the AI Brow Tint Video Generator",
+        "description": "A practical online workflow for brow tint previews, before-and-after comparisons, and downloadable brow tinting motion clips.",
         "items": [
           {
-            "title": "Photo-to-Video Hairstyle Preview",
-            "description": "Start with one image and turn it into a hairstyle video that shows your updated look in motion.",
+            "title": "Photo-to-Video Brow Tint Preview",
+            "description": "Start with one image and turn it into a brow tint video that shows your updated brow look in motion.",
             "icon": "RiFilmLine"
           },
           {
-            "title": "Detailed Hair Prompt Control",
-            "description": "Describe length, layers, fringe, fade level, curl pattern, color, and styling direction to guide the final clip.",
+            "title": "Detailed Brow Tint Prompt Control",
+            "description": "Describe shade, arch shape, thickness, brow lamination style, tinted brow gel finish, and overall brow look to guide the final clip.",
             "icon": "RiEdit2Line"
           },
           {
-            "title": "Before & After Hair Comparison",
-            "description": "Use motion preview clips to compare your current hairstyle with a new haircut or color concept before committing.",
+            "title": "Before & After Brow Tint Comparison",
+            "description": "Use motion preview clips to compare your current brows with a new professional brow tint or tinted brow gel shade before committing.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Downloadable Stylist Reference Video",
-            "description": "Save a hairstyle transformation clip you can text, email, or show directly to your barber, salon, or colorist.",
+            "title": "Downloadable Brow Artist Reference Video",
+            "description": "Save a brow tint transformation clip you can text, email, or show directly to your brow artist, salon, or lash and brow tint specialist.",
             "icon": "RiDownload2Line"
           },
           {
             "title": "Fast Browser-Based Workflow",
-            "description": "Create haircut preview videos online without editing software, complicated timelines, or manual video production.",
+            "description": "Create brow tint preview videos online without editing software, complicated timelines, or manual video production.",
             "icon": "RiSpeedLine"
           },
           {
             "title": "Works on Mobile and Desktop",
-            "description": "Generate and review your hairstyle video on your phone or computer whenever you want a quick second opinion.",
+            "description": "Generate and review your brow tint video on your phone or computer whenever you want a quick second opinion on your brow tinting options.",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "What Users Say About AI Barber Hairstyle Videos",
-        "description": "Real people using hairstyle motion previews before salon visits, content shoots, and hair color changes.",
+        "title": "What Users Say About Brow Tint Videos",
+        "description": "Real people using brow tinting motion previews before salon visits, beauty shoots, and brow tint shade changes.",
         "items": [
           {
             "name": "Ava Peterson",
             "role": "Content Creator",
-            "quote": "A static preview was not enough for me. The hairstyle video showed how the layers moved around my face, and that is what convinced me to book the cut.",
+            "quote": "A static preview was not enough for me. The brow tint video showed how the tinted brow gel shade looked with my natural expressions, and that is what convinced me to book the brow treatment.",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Ava Peterson"
@@ -213,8 +213,8 @@
           },
           {
             "name": "Liam Torres",
-            "role": "Barber",
-            "quote": "Clients send me the transformation clip before they come in, and it makes the consultation much clearer than trying to describe a haircut over text.",
+            "role": "Brow Artist",
+            "quote": "Clients send me the brow tint transformation clip before they come in, and it makes the consultation much clearer than trying to describe a brow tint shade over text.",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Liam Torres"
@@ -223,7 +223,7 @@
           {
             "name": "Mia Chen",
             "role": "Student",
-            "quote": "I used it to compare blonde and copper in motion. Seeing the color shift in a short video made the choice much easier than looking at screenshots.",
+            "quote": "I used it to compare a warm brown professional brow tint and a cool-toned brow lamination and tint in motion. Seeing the shade difference in a short video made the choice much easier.",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Mia Chen"
@@ -232,7 +232,7 @@
           {
             "name": "Noah Kim",
             "role": "Photographer",
-            "quote": "The before-and-after hairstyle clip helps my clients understand what a new fringe or shorter cut will look like on camera before the shoot day.",
+            "quote": "The before-and-after brow tint clip helps my clients understand what a new brow shape and tint shade will look like on camera before the shoot day.",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "Noah Kim"
@@ -241,7 +241,7 @@
           {
             "name": "Sofia Alvarez",
             "role": "Makeup Artist",
-            "quote": "I like being able to send one motion preview to the hairstylist and the client. Everyone gets aligned on the overall beauty look much faster.",
+            "quote": "I like being able to send one motion preview to the brow artist and the client. Everyone gets aligned on the lash and brow tint look much faster.",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Sofia Alvarez"
@@ -250,7 +250,7 @@
           {
             "name": "Jordan Lee",
             "role": "Salon Client",
-            "quote": "I generated a hairstyle video from one selfie, downloaded it, and showed it at the salon. It reduced the back-and-forth and I got much closer to the result I wanted.",
+            "quote": "I generated a brow tint video from one selfie, downloaded it, and showed it at the salon. It reduced the back-and-forth and I got much closer to the brow tint result I wanted.",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Jordan Lee"
@@ -261,48 +261,48 @@
       "faq": {
         "id": "faq",
         "title": "Frequently Asked Questions",
-        "description": "FAQs about AI hairstyle videos, photo-to-video workflow, downloadable clips, and how to get the most realistic preview.",
-        "tip": "Can't find what you're looking for? Contact our <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>support team</a>",
+        "description": "FAQs about AI brow tint videos, photo-to-video workflow, downloadable clips, and how to get the most realistic brow tinting preview.",
+        "tip": "Can't find what you're looking for? Contact our <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>support team</a>",
         "items": [
           {
-            "question": "What is an AI hairstyle video generator?",
-            "answer": "It is an online tool that turns your photo and hairstyle description into a short motion preview, so you can see a haircut or hair color change before making it real."
+            "question": "What is an AI brow tint video generator?",
+            "answer": "It is an online tool that turns your photo and brow tint description into a short motion preview, so you can see a professional brow tint or tinted brow gel shade change before making it real."
           },
           {
-            "question": "Can I create a hairstyle video from just one photo?",
-            "answer": "Yes. Upload a clear portrait photo and the tool can generate a photo to hairstyle video without requiring video editing experience."
+            "question": "Can I create a brow tint video from just one photo?",
+            "answer": "Yes. Upload a clear portrait photo and the tool can generate a photo to brow tint video without requiring video editing experience."
           },
           {
-            "question": "What kind of hairstyles can I preview in video?",
-            "answer": "You can test short and long cuts, layers, fades, bangs, curly styles, sleek looks, and hair color changes such as blonde, brown, black, copper, or fashion shades."
+            "question": "What kind of brow tints can I preview in video?",
+            "answer": "You can test professional brow tint shades, tinted brow gel finishes, brow lamination and tint combos, lash and brow tint pairings, and various brow shapes from natural arches to bold structured brows."
           },
           {
-            "question": "Why use a hairstyle video instead of only a picture?",
-            "answer": "A video helps you judge movement, softness, volume, and how the hairstyle frames your face. That is especially useful for bangs, layers, curls, and before-and-after comparisons."
+            "question": "Why use a brow tint video instead of only a picture?",
+            "answer": "A video helps you judge how the brow tint looks with natural facial expressions and movement. That is especially useful for comparing brow tint before and after results and seeing how different shades complement your features."
           },
           {
-            "question": "Can I download the hairstyle transformation clip?",
-            "answer": "Yes. Once your result is ready, you can download the video clip and keep it as a haircut reference or share it with your barber, stylist, or friends."
+            "question": "Can I download the brow tint transformation clip?",
+            "answer": "Yes. Once your result is ready, you can download the video clip and keep it as a brow treatment reference or share it with your brow artist, salon, or friends."
           },
           {
-            "question": "Can I show the video to my barber or salon?",
-            "answer": "Yes. The downloadable clip is designed to be easy to share, making it much simpler to communicate the haircut shape, color direction, and overall vibe you want."
+            "question": "Can I show the video to my brow artist or salon?",
+            "answer": "Yes. The downloadable clip is designed to be easy to share, making it much simpler to communicate the brow tint shade, arch shape, and overall look you want."
           },
           {
-            "question": "What photos work best for a realistic hairstyle video?",
-            "answer": "Use a front-facing photo with good lighting, a visible hairline, and minimal face obstruction. Clear portraits usually produce better hairstyle motion previews than dark or angled photos."
+            "question": "What photos work best for a realistic brow tint video?",
+            "answer": "Use a front-facing photo with good lighting, visible brows, and minimal face obstruction. Clear portraits usually produce better brow tinting motion previews than dark or angled photos."
           },
           {
-            "question": "Can I preview hair color changes in motion?",
-            "answer": "Yes. You can describe color updates such as blonde, copper, black, red, silver, or highlight-inspired looks and review how the new shade reads in a moving clip."
+            "question": "Can I preview different brow tint shades in motion?",
+            "answer": "Yes. You can describe shade updates such as warm brown, cool taupe, soft black, auburn, or blonde-tinted brow gel and review how the new tint reads in a moving clip."
           },
           {
             "question": "Do I need editing skills or video software?",
-            "answer": "No. The workflow is fully online. You upload a photo, describe the style change, and generate the hairstyle video directly in your browser."
+            "answer": "No. The workflow is fully online. You upload a photo, describe the brow tint change, and generate the brow tint video directly in your browser."
           },
           {
-            "question": "How long does it take to generate a hairstyle video?",
-            "answer": "Most hairstyle videos are ready within a few minutes, depending on the selected model, your input, and current generation demand."
+            "question": "How long does it take to generate a brow tint video?",
+            "answer": "Most brow tint videos are ready within a few minutes, depending on the selected model, your input, and current generation demand."
           },
           {
             "question": "Is my uploaded photo handled securely?",
@@ -312,11 +312,11 @@
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Preview Your New Hair in Motion?",
-        "description": "Create an AI hairstyle video now, compare your before and after look, and download a clip you can share with your barber or salon.",
+        "title": "Ready to Preview Your New Brow Tint in Motion?",
+        "description": "Create an AI brow tint video now, compare your before and after look, and download a clip you can share with your brow artist or salon.",
         "buttons": [
           {
-            "title": "Create Hairstyle Video Now",
+            "title": "Create Brow Tint Video Now",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
@@ -327,8 +327,8 @@
     }
   },
   "generator": {
-    "title": "AI Hairstyle Video Generator",
-    "description": "Create a photo to hairstyle video, before-and-after hair transformation clip, or motion preview for your next haircut.",
+    "title": "AI Brow Tint Video Generator",
+    "description": "Create a photo to brow tint video, before-and-after brow tinting transformation clip, or motion preview for your next brow treatment.",
     "tabs": {
       "text-to-video": "Describe Style",
       "image-to-video": "Photo to Video",
@@ -339,27 +339,27 @@
       "model": "Video Model",
       "select_provider": "Select AI Provider",
       "select_model": "Select Video Model",
-      "prompt": "Hairstyle Video Prompt",
-      "prompt_placeholder": "Describe the hairstyle transformation: length, color, texture, movement (e.g., blunt bob, rich copper color).",
+      "prompt": "Brow Tint Video Prompt",
+      "prompt_placeholder": "Describe the brow tint transformation: shade, arch shape, thickness, finish (e.g., warm brown professional brow tint, soft laminated brows).",
       "reference_image": "Your Photo",
-      "reference_image_placeholder": "Upload a clear portrait photo to create a hairstyle video from your image.",
+      "reference_image_placeholder": "Upload a clear portrait photo to create a brow tint video from your image.",
       "reference_video": "Reference Video URL",
-      "reference_video_placeholder": "Paste a video URL if you want to restyle an existing hairstyle clip.",
+      "reference_video_placeholder": "Paste a video URL if you want to restyle an existing brow tint clip.",
       "some_images_failed_to_upload": "Some images failed to upload. Please remove them and upload again.",
       "prompt_too_long": "Description is too long, please shorten it"
     },
-    "generate": "Generate Hairstyle Video",
+    "generate": "Generate Brow Tint Video",
     "checking_account": "Checking Account...",
     "loading": "Loading...",
-    "generating": "Creating Your Hairstyle Video...",
-    "sign_in_to_generate": "Sign In to Create Hairstyle Videos",
+    "generating": "Creating Your Brow Tint Video...",
+    "sign_in_to_generate": "Sign In to Create Brow Tint Videos",
     "credits_cost": "Cost {credits} credits",
     "credits_remaining": "Remaining {credits} credits",
     "buy_credits": "Buy Credits",
     "progress": "Progress",
-    "generated_videos": "Your Hairstyle Videos",
-    "ready_to_generate": "Preparing your hairstyle motion preview...",
-    "ready_for_generating": "Ready to create your hairstyle video",
-    "no_videos_generated": "No hairstyle videos generated yet"
+    "generated_videos": "Your Brow Tint Videos",
+    "ready_to_generate": "Preparing your brow tint motion preview...",
+    "ready_for_generating": "Ready to create your brow tint video",
+    "no_videos_generated": "No brow tint videos generated yet"
   }
 }

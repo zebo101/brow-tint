@@ -66,7 +66,7 @@ When editing DB code, touch the matching schema file and run `pnpm db:generate` 
 ### Request pipeline
 
 - **Middleware**: `src/proxy.ts` (exported as `proxy`, not `middleware`). Chains `next-intl` middleware, enforces auth cookie presence for `/admin`, `/settings`, `/activity`, and strips `Set-Cookie` + sets public `Cache-Control` for cacheable routes. RBAC is only session-gated here; fine-grained permission checks happen in pages/API via `requirePermission()` from `core/rbac`.
-- **Routing**: all user-facing pages live under `src/app/[locale]/` with route groups `(landing)`, `(auth)`, `(chat)`, `(docs)`, `(admin)`. AI product pages are nested as `(landing)/(ai)/<tool>/` (currently `ai-hairstyle-changer`, `ai-music-generator`, `hairstyle-changer-ai-video`).
+- **Routing**: all user-facing pages live under `src/app/[locale]/` with route groups `(landing)`, `(auth)`, `(chat)`, `(docs)`, `(admin)`. AI product pages are nested as `(landing)/(ai)/<tool>/` (currently `ai-brow-tint-generator`, `ai-music-generator`, `hairstyle-changer-ai-video`).
 - **API routes**: `src/app/api/` with feature folders (`ai`, `auth/[...all]`, `chat`, `config`, `docs`, `email`, `hairstyle`, `payment` incl. `notify/[provider]`, `proxy/file`, `storage`, `user`).
 - **SEO**: `src/app/sitemap.ts` + `sitemap-routes.ts` (+ tests), `robots.ts`, `ads.txt`.
 

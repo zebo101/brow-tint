@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Blog - AI Barber",
-    "description": "Lee las últimas tendencias de peinados, funciones de IA y consejos de estilo."
+    "title": "Blog - Brow Tint",
+    "description": "Lee las últimas tendencias de tinte de cejas, funciones de IA y consejos de tinte de cejas."
   },
   "page": {
-    "title": "Blog AI Barber",
+    "title": "Blog Brow Tint",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "Blog",
-        "description": "Lee las últimas tendencias de peinados, funciones de IA y consejos de estilo."
+        "description": "Lee las últimas tendencias de tinte de cejas, funciones de IA y consejos de tinte de cejas."
       }
     }
   },

@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Blog - AI Barber",
-    "description": "Leggi le ultime tendenze di acconciature, funzionalità IA e consigli di styling."
+    "title": "Blog - Brow Tint",
+    "description": "Leggi le ultime tendenze di tinta sopracciglia, funzionalità IA e consigli di tinta sopracciglia."
   },
   "page": {
-    "title": "Blog AI Barber",
+    "title": "Blog Brow Tint",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "Blog",
-        "description": "Leggi le ultime tendenze di acconciature, funzionalità IA e consigli di styling."
+        "description": "Leggi le ultime tendenze di tinta sopracciglia, funzionalità IA e consigli di tinta sopracciglia."
       }
     }
   },

@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "KI-Frisuren-Wechsler online gratis | 500+ Haarschnitte testen | AI Barber",
-    "description": "KI-Frisuren-Wechsler online gratis testen. Foto hochladen, 500+ Haarschnitte und Haarfarben ansehen und die virtuelle Frisur in Sekunden herunterladen.",
-    "keywords": "ki frisuren wechsler, ki frisuren wechsler online, kostenloser ki frisuren wechsler, virtuelle frisur, frisuren simulator, frisur testen, virtueller haarschnitt, haarschnitt simulator, haarfarbe ändern, bob frisur, pixie cut, fade, buzz cut, locken frisuren, herrenfrisuren, damenfrisuren, kinderfrisuren"
+    "title": "KI Augenbrauen-Tint Generator Online | Augenbrauen-Tint Vorher Nachher | Brow Tint",
+    "description": "Testen Sie den KI Augenbrauen-Tint Generator online. Laden Sie ein Foto hoch, sehen Sie Augenbrauen-Tint Vorher-Nachher-Ergebnisse und laden Sie Ihr virtuelles Augenbrauen-Tint Ergebnis in Sekunden herunter.",
+    "keywords": "ki augenbrauen tint generator, augenbrauen tint generator, augenbrauen tint vorher nachher, augenbrauen färben generator, virtueller augenbrauen tint, augenbrauen tint ausprobieren, KI augenbrauen tint, augenbrauen tint vorschau, augenbrauenfarbe generator, getöntes brauengel vorschau, brow lamination und tint, professionelles augenbrauen tint, bestes augenbrauen tint, bestes getöntes brauengel, wimpern und augenbrauen tint, brow code tint"
   },
   "page": {
-    "title": "KI-Frisuren-Wechsler online gratis - 500+ Haarschnitte testen | AI Barber",
-    "description": "Mit dem KI-Frisuren-Wechsler online gratis 500+ Haarschnitte und Haarfarben in Sekunden testen. Herren 197, Damen 240, Jungen 56, Mädchen 85. Laden Sie Ihre virtuelle Frisur herunter und zeigen Sie sie Ihrem Friseur oder Salon.",
+    "title": "KI Augenbrauen-Tint Generator Online - Augenbrauen-Tint Vorher Nachher",
+    "description": "Nutzen Sie den KI Augenbrauen-Tint Generator online, um realistische Augenbrauen-Tint Vorher-Nachher-Ergebnisse in Sekunden zu sehen. Laden Sie Ihr Foto hoch, generieren Sie Augenbrauen-Tint Styles und laden Sie Ihr Ergebnis herunter.",
     "show_sections": [
       "hero",
       "introduce",
@@ -23,55 +23,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "KI-Frisuren-Wechsler online gratis",
-        "highlight_text": "AI Barber",
-        "description": "Sofort 500+ Haarschnitte und Haarfarben testen. Foto hochladen, Herren-, Damen-, Jungen- und Mädchen-Styles ansehen und den neuen Look herunterladen.",
+        "title": "KI Augenbrauen-Tint Generator Online",
+        "highlight_text": "KI Augenbrauen-Tint Generator",
+        "description": "Sehen Sie sofort realistische Augenbrauen-Tint Vorher-Nachher-Ergebnisse mit dem KI Augenbrauen-Tint Generator. Laden Sie ein Foto hoch, probieren Sie Augenbrauen-Tint Styles aus und laden Sie Ihren neuen Brauen-Look herunter.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Hairstyle Changer Interface",
+          "alt": "KI Augenbrauen-Tint Generator Oberfläche",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Hairstyle Changer Interface Dark Mode",
+          "alt": "KI Augenbrauen-Tint Generator Oberfläche Dunkelmodus",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber Hero Background"
+          "alt": "Brow Tint Hero-Hintergrund"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "Was ist die AI Barber KI-Frisuren-App?",
+        "title": "Was ist der KI Augenbrauen-Tint Generator?",
         "label": "Einführung",
-        "description": "AI Barber ist ein kostenloser KI-Frisuren-Wechsler und virtueller Haarschnitt-Simulator, mit dem Sie Schnitte, Längen und Farben an Ihrem Foto testen können, bevor Sie zum Friseur oder in den Salon gehen.",
+        "description": "Der KI Augenbrauen-Tint Generator ist ein virtuelles Augenbrauen-Tint Anprobe-Tool, mit dem Sie Augenbrauen-Tint Farbtöne und Vorher-Nachher-Ergebnisse an Ihrem eigenen Foto ansehen können, bevor Sie eine Brauen-Spezialistin oder einen Salon besuchen.",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "AI Barber Hairstyle Simulator"
+          "alt": "KI Augenbrauen-Tint Simulator"
         },
         "items": [
           {
-            "title": "Virtuelle Frisuren-Anprobe",
-            "description": "Teste kurze, mittlere und lange Styles wie Bob, Pixie, Fade, Buzz Cut und lange Stufen in Sekunden.",
+            "title": "Virtuelles Augenbrauen-Tint Ausprobieren",
+            "description": "Sehen Sie Augenbrauen-Tint Farbtöne, ohne Produkte zu verwenden. Unsere KI simuliert professionelle Augenbrauen-Tint Ergebnisse, damit Sie Ihren neuen Look sehen können, bevor Sie sich entscheiden.",
             "icon": "RiMagicLine"
           },
           {
-            "title": "Realistische AI-Ergebnisse",
-            "description": "Gesichtsbezogene KI passt Haarlinie und Beleuchtung für eine natürliche Vorschau an.",
+            "title": "Realistische KI Augenbrauen-Tint Ergebnisse",
+            "description": "Gesichtserkennende KI verbindet die Tint-Farbe mit Ihrer natürlichen Brauenform und Ihrem Hautton für fotorealistische Augenbrauen-Tint Vorschauen.",
             "icon": "RiCameraLensLine"
           },
           {
-            "title": "Haarfarben-Wechsler",
-            "description": "Schwarz, Braun, Blond, Kupfer, Silber, Pink oder Blau vor dem Färben testen.",
+            "title": "Augenbrauen-Tint Farbabstimmung",
+            "description": "Sehen Sie verschiedene getönte Brauengel-Farbtöne — von sanftem Taupe bis tiefem Espresso — bevor Sie sich entscheiden, um das beste Augenbrauen-Tint für Ihren Look zu finden.",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "Stil-Transfer",
-            "description": "Mit Prompts Celebrity-, K-Pop- oder Runway-Looks nachbilden.",
+            "title": "Wimpern und Augenbrauen Tint Vorschau",
+            "description": "Sehen Sie kombinierte Wimpern und Augenbrauen Tint Styles in einer Vorschau für einen vollständigen augenrahmenden Look, der Ihre natürlichen Merkmale betont.",
             "icon": "RiExchangeLine"
           }
         ],
@@ -80,35 +80,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Warum unseren AI Frisuren-Wechsler wählen",
+        "title": "Warum unseren KI Augenbrauen-Tint Generator wählen",
         "label": "Vorteile",
-        "description": "Schnell, privat und realistisch – für sichere Schnitt- und Farbentscheidungen.",
+        "description": "Schnelle, private und realistische Vorschauen für sichere Augenbrauen-Tint Entscheidungen.",
         "items": [
           {
             "title": "Blitzschnell & 100% Online",
-            "description": "Mehrere Looks aus einem Foto in Sekunden, 100% online.",
+            "description": "Generieren Sie mehrere Augenbrauen-Tint Looks aus einem Foto in Sekunden, 100% online. Keine Termine oder Produkte nötig, um Ihren perfekten Augenbrauen-Tint vorab zu sehen.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Processing"
+              "alt": "Schnelle KI Augenbrauen-Tint Verarbeitung"
             }
           },
           {
             "title": "Datenschutz an erster Stelle",
-            "description": "Fotos werden sicher verarbeitet und nicht dauerhaft gespeichert.",
+            "description": "Fotos werden sicher verarbeitet und niemals dauerhaft gespeichert. Ihre Augenbrauen-Tint Vorschauen werden privat generiert.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Secure and Private"
+              "alt": "Sicher und Privat"
             }
           },
           {
-            "title": "Professionelle Qualität",
-            "description": "Salon-taugliche Vorschau herunterladen und den gewünschten Schnitt und Farbton zeigen.",
+            "title": "Professionelle Salonqualität",
+            "description": "Laden Sie salon-taugliche Augenbrauen-Tint Vorschauen herunter, um Ihrer Brauen-Spezialistin genau den Farbton und Stil zu zeigen, den Sie möchten.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Professional Results"
+              "alt": "Professionelle Augenbrauen-Tint Ergebnisse"
             }
           }
         ]
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "Wie man den AI Frisuren-Wechsler verwendet",
-        "description": "So erhalten Sie eine realistische Frisuren-Vorschau in vier Schritten:",
+        "title": "So verwenden Sie den KI Augenbrauen-Tint Generator",
+        "description": "Erhalten Sie eine realistische Augenbrauen-Tint Vorschau in vier einfachen Schritten:",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "AI Hairstyle Usage Guide"
+          "alt": "KI Augenbrauen-Tint Anleitung"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
             "title": "Klares Foto hochladen",
-            "description": "Frontales Foto mit guter Beleuchtung hochladen.",
+            "description": "Verwenden Sie ein frontales Foto mit guter Beleuchtung und deutlich sichtbaren Augenbrauen, damit die KI Ihre Brauenform genau erfassen kann.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Upload Photo"
+              "alt": "Foto hochladen"
             }
           },
           {
-            "title": "Frisur auswählen",
-            "description": "Frisur oder Kategorie wählen und die gewünschte Länge entscheiden.",
+            "title": "Augenbrauen-Tint Stil wählen",
+            "description": "Wählen Sie aus getöntem Brauengel, Brow Lamination und Tint, professionellem Augenbrauen-Tint oder brow code tint Optionen.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Select Hairstyle"
+              "alt": "Augenbrauen-Tint Stil wählen"
             }
           },
           {
-            "title": "Details hinzufügen",
-            "description": "Länge, Struktur, Farbe, Pony oder Fade beschreiben.",
+            "title": "Augenbrauen-Tint Vorschau generieren",
+            "description": "Die KI erstellt realistische Augenbrauen-Tint Vorher-Nachher-Bilder in Sekunden und verbindet die Farbe mit Ihrer natürlichen Brauenform.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Describe Hairstyle"
+              "alt": "Augenbrauen-Tint Vorschau generieren"
             }
           },
           {
-            "title": "Generieren & vergleichen",
-            "description": "Generieren, herunterladen und Ergebnisse nebeneinander vergleichen.",
+            "title": "Herunterladen und teilen",
+            "description": "Speichern Sie hochauflösende Augenbrauen-Tint Vorher-Nachher-Fotos, um sie Ihrer Brauen-Spezialistin oder Stylistin bei Ihrem nächsten Termin zu zeigen.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Generate and Download"
+              "alt": "Augenbrauen-Tint Ergebnisse herunterladen"
             }
           }
         ],
@@ -162,37 +162,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Hauptfunktionen des KI-Frisuren-Wechslers",
-        "description": "Ein komplettes virtuelles Frisurenstudio für Schnitte, Farben und Vergleiche.",
+        "title": "Hauptfunktionen des KI Augenbrauen-Tint Generators",
+        "description": "Ein komplettes virtuelles Augenbrauen-Tint Studio für Farbtöne, Styles und Vorher-Nachher-Vergleiche.",
         "items": [
           {
-            "title": "500+ Haarschnitte und Frisuren für alle",
-            "description": "Herren 197, Damen 240, Jungen 56, Mädchen 85 Styles, von Buzz Cut und Fade bis Bob und Pixie.",
+            "title": "Professionelle Augenbrauen-Tint Vorschau",
+            "description": "Salonqualität professionelles Augenbrauen-Tint Simulation, die den Farbton an Ihre natürliche Brauenform und Ihren Hautton anpasst.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "Intelligente Gesichtserkennung",
-            "description": "Gesichtserkennung passt jeden Haarschnitt an Haarlinie und Proportionen an.",
+            "title": "Getöntes Brauengel Farbabstimmung",
+            "description": "Probieren Sie verschiedene getönte Brauengel-Farbtöne von dezentem Taupe bis kräftigem Espresso und finden Sie das beste getönte Brauengel für Sie.",
             "icon": "RiWomenLine"
           },
           {
-            "title": "Farb-Experimente",
-            "description": "Highlights, Balayage, Kupfer, Platin oder kräftige Farben vor dem Salonbesuch testen.",
+            "title": "Brow Lamination und Tint",
+            "description": "Sehen Sie Brow Lamination kombiniert mit Augenbrauen färben, um aufgebürstete, definierte Brauen mit kräftiger Farbe in einem Look zu sehen.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "Hochauflösende Downloads",
-            "description": "Hochauflösende Ergebnisse speichern und mit Friseur, Stylist oder Freunden teilen.",
+            "description": "Kristallklare Augenbrauen-Tint Vorher-Nachher-Bilder, bereit zum Speichern und Teilen mit Ihrer Brauen-Spezialistin.",
             "icon": "RiHdLine"
           },
           {
-            "title": "Stil-Vergleich",
-            "description": "Mehrere Frisuren nebeneinander vergleichen, um den besten Look zu wählen.",
+            "title": "Vorher-Nachher-Vergleich",
+            "description": "Seite-an-Seite Augenbrauen-Tint Vorher-Nachher-Schieberegler, damit Sie genau sehen können, wie das Tint Ihre Brauen verwandelt.",
             "icon": "RiCompareLine"
           },
           {
             "title": "Mobilfreundlich",
-            "description": "Funktioniert auf Mobilgeräten und Desktop, damit Sie überall Styles testen können.",
+            "description": "Funktioniert auf jedem Gerät — Handy, Tablet oder Desktop — damit Sie überall Augenbrauen-Tint Styles ausprobieren können.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -200,47 +200,47 @@
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
+        "title": "Augenbrauen-Tint Styles nach Kategorie entdecken",
+        "description": "Durchsuchen Sie KI-fähige Augenbrauen-Tint Styles und tippen Sie auf einen Look, um ihn an Ihrem eigenen Foto mit dem KI Augenbrauen-Tint Generator auszuprobieren.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "Herrenfrisuren",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
+            "title": "Natürliche Augenbrauen-Tints",
+            "description": "Natürliche und dezente Augenbrauen-Tint Farbtöne, die Ihre Brauen mit sanfter Definition betonen. Sehen Sie die besten Augenbrauen-Tint Farbtöne für einen mühelos gepflegten Look.",
+            "cta_label": "Natürliche Tints testen"
           },
           {
             "key": "women",
-            "title": "Damenfrisuren",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
+            "title": "Ausdrucksstarke Augenbrauen-Tints",
+            "description": "Dramatische und definierte Augenbrauen-Tint Looks für ein markantes Finish. Sehen Sie tiefes Espresso, sattes Schokobraun und kräftige professionelle Augenbrauen-Tint Farbtöne.",
+            "cta_label": "Kräftige Tints testen"
           },
           {
             "key": "boys",
-            "title": "Jungenfrisuren",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
+            "title": "Brow Lamination Styles",
+            "description": "Aufgebürstete laminierte Brauen-Looks kombiniert mit Augenbrauen färben. Sehen Sie Brow Lamination und Tint Styles für vollere, skulptierte Brauen.",
+            "cta_label": "Lamination-Styles testen"
           },
           {
             "key": "girls",
-            "title": "Mädchenfrisuren",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
+            "title": "Wimpern & Augenbrauen Tint",
+            "description": "Kombinierte Wimpern und Augenbrauen Tint Styles für eine vollständige augenrahmende Transformation. Sehen Sie abgestimmte Wimpern und Augenbrauen Tint Looks in Sekunden.",
+            "cta_label": "Wimpern & Brauen Tints testen"
           }
         ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
+        "tip": "Jede Vorschau ist kostenlos. Neue Augenbrauen-Tint Styles werden regelmäßig hinzugefügt."
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "Was Benutzer über AI Barber sagen",
-        "description": "Hören Sie von Benutzern, die ihren perfekten Stil gefunden haben.",
+        "title": "Was Nutzer über den KI Augenbrauen-Tint Generator sagen",
+        "description": "Echte Nutzer, die Augenbrauen-Tint Looks mit dem KI Augenbrauen-Tint Generator ausprobiert haben.",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "Mode-Bloggerin",
-            "quote": "Ich zögerte, meine langen Haare zu einem Bob zu schneiden. AI Barber zeigte mir genau, wie es aussehen würde, und ich liebte es! Beste Frisuren-App aller Zeiten.",
+            "role": "Beauty-Bloggerin",
+            "quote": "Ich war unsicher, ob mein Augenbrauen-Tint zu dunkel wird. Der KI Augenbrauen-Tint Generator zeigte mir ein realistisches Vorher-Nachher, sodass ich meinen Termin voller Zuversicht buchte.",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Sarah Jenkins"
@@ -249,7 +249,7 @@
           {
             "name": "Mike Ross",
             "role": "Model",
-            "quote": "Wesentliches Werkzeug für mein Portfolio. Ich kann verschiedene Looks für Fotoshootings testen, ohne meine Haare tatsächlich zu ändern. Der Realismus ist unübertroffen.",
+            "quote": "Ich habe verschiedene professionelle Augenbrauen-Tint Farbtöne für ein Fotoshooting getestet und meiner Brauen-Spezialistin genau den gewünschten Look gezeigt. Das hat viel Zeit gespart.",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Mike Ross"
@@ -258,7 +258,7 @@
           {
             "name": "Emily Chen",
             "role": "Studentin",
-            "quote": "So viel Spaß! Ich habe lila Haare und einen Pixie-Schnitt ausprobiert. Es sah so echt aus, dass meine Mutter dachte, ich hätte es wirklich getan.",
+            "quote": "Ich habe getönte Brauengel-Farbtöne von Taupe bis Espresso in der KI-Vorschau ausprobiert. Das half mir, den besten Augenbrauen-Tint für meinen Hautton zu finden, bevor ich etwas kaufte.",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Emily Chen"
@@ -267,7 +267,7 @@
           {
             "name": "David Smith",
             "role": "Software-Ingenieur",
-            "quote": "Ich habe AI Barber benutzt, um einen neuen Männerhaarschnitt zu finden. Die Fade- und Undercut-Optionen sahen unglaublich aus und halfen mir, meinem Friseur genau zu erklären, was ich wollte.",
+            "quote": "Die Brow Lamination und Tint Vorschau sah unglaublich realistisch aus. Ich zeigte das Bild meiner Brauen-Spezialistin und bekam genau das Ergebnis, das ich wollte.",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "David Smith"
@@ -276,7 +276,7 @@
           {
             "name": "Jessica Lee",
             "role": "Visagistin",
-            "quote": "Der Haarfarben-Wechsler ist unglaublich! Ich habe Blond, Kupfer und Silber ausprobiert, bevor ich meine Haare gefärbt habe. Dieses kostenlose Tool hat mich vor einer schlechten Entscheidung bewahrt.",
+            "quote": "Als Visagistin nutze ich den KI Augenbrauen-Tint Generator, um Kundinnen zu zeigen, wie ihre Wimpern und Augenbrauen Tint Kombination aussehen wird. Die Salon-Qualitätsvorschauen sind beeindruckend genau.",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Jessica Lee"
@@ -285,7 +285,7 @@
           {
             "name": "Tom Brown",
             "role": "Student",
-            "quote": "Dieser kostenlose AI Frisuren-Wechsler ist so einfach zu bedienen. Ich habe mein Foto hochgeladen und in Sekunden Ergebnisse erhalten. Sehr empfehlenswert für alle, die ein virtuelles Makeover suchen.",
+            "quote": "Schnell, kostenlos und einfach. Ich habe ein Foto hochgeladen und in Sekunden mehrere Augenbrauen-Tint Vorher-Nachher-Optionen erhalten. Keine App-Installation nötig.",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Tom Brown"
@@ -296,62 +296,62 @@
       "faq": {
         "id": "faq",
         "title": "Häufig gestellte Fragen",
-        "description": "FAQs zum KI-Frisuren-Wechsler, Fototipps und besten Ergebnissen.",
-        "tip": "Finden Sie nicht, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Support-Team</a>",
+        "description": "FAQs zum KI Augenbrauen-Tint Generator, Foto-Tipps und wie Sie die besten Augenbrauen-Tint Ergebnisse erzielen.",
+        "tip": "Finden Sie nicht, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
         "items": [
           {
-            "question": "Ist dieser AI Frisuren-Wechsler kostenlos?",
-            "answer": "Ja. Sie können den KI-Frisuren-Wechsler online gratis mit einer Testphase ausprobieren, um mehrere Styles zu sehen."
+            "question": "Ist dieser KI Augenbrauen-Tint Generator kostenlos?",
+            "answer": "Ja. Sie können den KI Augenbrauen-Tint Generator online mit einer kostenlosen Testversion ausprobieren, um mehrere Augenbrauen-Tint Styles und Farbtöne zu sehen."
           },
           {
-            "question": "Wie realistisch sind die Frisuren?",
-            "answer": "Die KI blendet jede Frisur realistisch in Ihr Foto ein und zeigt Schnitt, Länge und Farbe."
+            "question": "Wie realistisch sind die Augenbrauen-Tint Vorschauen?",
+            "answer": "Die KI verbindet jeden Augenbrauen-Tint Farbton mit Ihrem Foto für eine realistische Vorschau, die Ihre natürliche Brauenform, Ihren Hautton und die Beleuchtung berücksichtigt."
           },
           {
             "question": "Welche Art von Fotos funktioniert am besten?",
-            "answer": "Für die besten Ergebnisse laden Sie ein klares Frontalfoto mit guter Beleuchtung hoch. Vermeiden Sie Fotos, bei denen Ihr Gesicht durch Sonnenbrillen, Masken oder übermäßige Haare verdeckt ist. Ein neutraler Ausdruck funktioniert am besten."
+            "answer": "Für die besten Ergebnisse laden Sie ein klares, frontales Foto mit guter Beleuchtung und deutlich sichtbaren Augenbrauen hoch. Vermeiden Sie Fotos, bei denen Ihr Gesicht durch Sonnenbrillen, Masken oder Haare verdeckt ist. Ein neutraler Gesichtsausdruck funktioniert am besten."
           },
           {
-            "question": "Kann ich nur die Haarfarbe ändern?",
-            "answer": "Ja. Nur Farbe testen oder Schnitt und Farbe kombinieren und das Ergebnis dem Salon zeigen."
+            "question": "Kann ich verschiedene getönte Brauengel-Farbtöne ansehen?",
+            "answer": "Ja. Probieren Sie eine Reihe von getönten Brauengel-Farbtönen — von sanftem Taupe und warmem Braun bis zu tiefem Espresso — und vergleichen Sie sie Seite an Seite, um das beste getönte Brauengel für Ihren Look zu finden."
           },
           {
-            "question": "Funktioniert es für Männer und Frauen?",
-            "answer": "Ja. Über 500 Styles: Herren 197, Damen 240, Jungen 56, Mädchen 85."
+            "question": "Was ist der Unterschied zwischen Augenbrauen-Tint und getöntem Brauengel?",
+            "answer": "Ein professionelles Augenbrauen-Tint ist eine semipermanente Farbe, die im Salon aufgetragen wird und mehrere Wochen hält. Ein getöntes Brauengel ist ein tägliches Kosmetikprodukt, das Farbe und Halt verleiht. Der KI Augenbrauen-Tint Generator kann beide Styles vorab zeigen, damit Sie entscheiden können, was für Sie passt."
           },
           {
             "question": "Sind meine Fotodaten sicher?",
-            "answer": "Wir nehmen den Datenschutz ernst. Ihre hochgeladenen Fotos werden sicher für den Generierungszweck verarbeitet und nicht dauerhaft gespeichert oder an Dritte weitergegeben."
+            "answer": "Wir nehmen den Datenschutz ernst. Ihre hochgeladenen Fotos werden sicher für die Augenbrauen-Tint Generierung verarbeitet und nicht dauerhaft gespeichert oder an Dritte weitergegeben."
           },
           {
-            "question": "Kann ich meine KI-Frisur einem Friseur oder Salon in der Nähe zeigen?",
-            "answer": "Ja. Laden Sie die Vorschau herunter und zeigen Sie sie Ihrem Friseur oder Stylisten."
+            "question": "Kann ich Brow Lamination und Tint zusammen ansehen?",
+            "answer": "Ja. Wählen Sie den Brow Lamination und Tint Stil, um aufgebürstete, skulptierte Brauen kombiniert mit Ihrem gewählten Farbton in einer realistischen Vorschau zu sehen."
           },
           {
-            "question": "Wie lange dauert die Generierung einer Frisur?",
-            "answer": "Meist nur wenige Sekunden, abhängig von Bildgröße und Auslastung."
+            "question": "Wie finde ich das beste Augenbrauen-Tint für meinen Hautton?",
+            "answer": "Laden Sie Ihr Foto hoch und probieren Sie mehrere Farbtöne aus. Die KI berücksichtigt Ihren Hautton und Ihre natürliche Brauenfarbe, um realistische Vorschauen zu generieren, die Ihnen helfen, den besten Augenbrauen-Tint zu finden, bevor Sie eine Brauen-Spezialistin besuchen."
           },
           {
-            "question": "Kann ich kurze, mittlere oder lange Haarlängen testen?",
-            "answer": "Ja. Wählen Sie eine Vorlage oder geben Sie die Länge im Prompt an."
+            "question": "Kann ich meine KI Augenbrauen-Tint Vorschau meiner Brauen-Spezialistin zeigen?",
+            "answer": "Ja. Laden Sie Ihre Augenbrauen-Tint Vorher-Nachher-Vorschau herunter und zeigen Sie sie Ihrer Brauen-Spezialistin oder Ihrem Salon, um genau den Farbton und Stil zu kommunizieren, den Sie möchten."
           },
           {
-            "question": "Funktioniert es mit lockigem oder texturiertem Haar?",
-            "answer": "Ja. Probieren Sie Locken, Wellen oder Afro-Texturen; klare Fotos liefern bessere Ergebnisse."
+            "question": "Wie lange dauert es, eine Augenbrauen-Tint Vorschau zu generieren?",
+            "answer": "Die meisten Augenbrauen-Tint Vorschauen sind in Sekunden fertig, abhängig von Bildgröße und Auslastung."
           },
           {
             "question": "Muss ich etwas installieren?",
-            "answer": "Nein. Der KI-Frisuren-Wechsler läuft im Browser, ohne Download."
+            "answer": "Nein. Der KI Augenbrauen-Tint Generator läuft vollständig in Ihrem Browser — keine Downloads oder Installationen nötig."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Bereit für einen neuen Look?",
-        "description": "Raten Sie nicht. Visualisieren Sie Ihre perfekte Frisur mit der kostenlosen AI Barber App und zeigen Sie sie Ihrem Friseur oder Salon vor Ort.",
+        "title": "Bereit für Ihren perfekten Augenbrauen-Tint?",
+        "description": "Raten Sie nicht mehr bei Ihrem Augenbrauen-Tint Ergebnis. Testen Sie jetzt den KI Augenbrauen-Tint Generator und teilen Sie Ihre Vorschau mit einer Brauen-Spezialistin oder einem Salon.",
         "buttons": [
           {
-            "title": "Transformation jetzt starten",
+            "title": "Augenbrauen-Tint Vorschau jetzt starten",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
@@ -362,60 +362,60 @@
     }
   },
   "generator": {
-    "title": "KI-Frisuren-Wechsler online gratis",
-    "description": "Foto hochladen und 500+ Haarschnitte und Haarfarben mit dem kostenlosen KI-Frisuren-Wechsler testen.",
+    "title": "KI Augenbrauen-Tint Generator",
+    "description": "Laden Sie ein Foto hoch und sehen Sie realistische Augenbrauen-Tint Vorher-Nachher-Ergebnisse mit dem KI Augenbrauen-Tint Generator.",
     "tabs": {
       "text-to-image": "Stil-Beschreibung",
       "image-to-image": "Foto hochladen"
     },
     "categories": {
-      "title": "Frisur auswählen",
-      "men": "Herrenfrisuren",
-      "women": "Damenfrisuren",
-      "boys": "Jungenfrisuren",
-      "girls": "Mädchenfrisuren",
+      "title": "Augenbrauen-Tint Stil wählen",
+      "men": "Natürliche Augenbrauen-Tints",
+      "women": "Ausdrucksstarke Augenbrauen-Tints",
+      "boys": "Brow Lamination Styles",
+      "girls": "Wimpern & Augenbrauen Tint",
       "selected": "Ausgewählt",
       "styles": "Stile"
     },
     "sidebar": {
       "history": "Verlauf",
-      "discover": "Ergebnisse ansehen",
-      "history_sign_in": "Melden Sie sich an, um Ihren Bildverlauf anzusehen",
+      "discover": "Entdecken",
+      "history_sign_in": "Melden Sie sich an, um Ihren generierten Bildverlauf zu sehen",
       "history_empty": "Noch keine Verlaufbilder"
     },
     "form": {
-      "select_hairstyle_placeholder": "Klicken um Frisur auszuwählen",
+      "select_hairstyle_placeholder": "Klicken, um einen Augenbrauen-Tint Stil auszuwählen",
       "provider": "KI-Anbieter",
-      "model": "Frisuren-Modell",
+      "model": "Augenbrauen-Tint Modell",
       "select_provider": "KI-Anbieter auswählen",
-      "select_model": "Frisuren-Modell auswählen",
-      "prompt": "Frisuren-Beschreibung",
-      "prompt_placeholder": "Beschreiben Sie Ihre Frisur: Länge, Farbe, Struktur, Stil (z. B. kurzer Bob, langes blondes Wellenhaar, texturierter Crop, lockiger Afro)",
+      "select_model": "Augenbrauen-Tint Modell auswählen",
+      "prompt": "Augenbrauen-Tint Beschreibung",
+      "prompt_placeholder": "Beschreiben Sie Ihren Augenbrauen-Tint: Farbton, Intensität, Stil (z. B. sanftes Taupe-Tint, kräftiger Espresso-Augenbrauen-Tint, Brow Lamination und Tint, Wimpern und Augenbrauen Tint)",
       "reference_image": "Ihr Foto",
-      "reference_image_placeholder": "Laden Sie Ihr Foto für beste Ergebnisse hoch",
+      "reference_image_placeholder": "Laden Sie Ihr Foto für die besten Ergebnisse hoch",
       "some_images_failed_to_upload": "Einige Bilder konnten nicht hochgeladen werden, bitte löschen und erneut hochladen",
       "prompt_too_long": "Beschreibung ist zu lang, bitte kürzen",
       "upload": "Hochladen",
       "upload_hint": "Klicken oder ziehen zum Hochladen",
       "max_size": "Max"
     },
-    "generate": "Frisur generieren",
+    "generate": "Augenbrauen-Tint generieren",
     "checking_account": "Konto wird überprüft...",
     "loading": "Laden...",
-    "generating": "Ihr Look wird verwandelt...",
-    "sign_in_to_generate": "Anmelden, um neue Frisuren auszuprobieren",
-    "credits_cost": "{credits} Credits kosten",
+    "generating": "Ihr Augenbrauen-Tint wird generiert...",
+    "sign_in_to_generate": "Anmelden, um Augenbrauen-Tint Styles auszuprobieren",
+    "credits_cost": "Kostet {credits} Credits",
     "credits_remaining": "{credits} Credits verbleibend",
     "buy_credits": "Credits kaufen",
     "progress": "Fortschritt",
-    "generated_images": "Ihr neuer Look",
-    "preview_title": "KI-Frisur-Vorschau",
-    "ready_to_generate": "Bereit zum Verwandeln",
-    "ready_for_generating": "Bereit für Verwandlung",
-    "no_images_generated": "Noch keine Frisuren generiert",
+    "generated_images": "Ihr neuer Brauen-Look",
+    "preview_title": "KI Augenbrauen-Tint Vorschau",
+    "ready_to_generate": "Bereit zum Generieren",
+    "ready_for_generating": "Bereit für Augenbrauen-Tint Vorschau",
+    "no_images_generated": "Noch keine Augenbrauen-Tint Vorschauen generiert",
     "use_as_reference": "Als Referenz verwenden",
     "download_image": "Bild herunterladen",
-    "example_image_hint": "Dies ist ein Beispielergebnis. Ihr generierter Stil wird hier angezeigt.",
+    "example_image_hint": "Dies ist ein Beispielergebnis. Ihre generierte Augenbrauen-Tint Vorschau wird hier angezeigt.",
     "history_images": "Verlaufbilder",
     "history_load_more": "Mehr laden",
     "history_view_image": "Verlaufbild ansehen",
@@ -424,15 +424,15 @@
     "photoGuidelines": {
       "title": "Foto-Richtlinien für beste Ergebnisse",
       "suitableTitle": "Geeignete Fotos",
-      "suitableDescription": "Bitte laden Sie ein klares Frontalfoto Ihres Gesichts hoch. Für ein optimales Ergebnis ist es ideal, die Haare hochzustecken oder zurückzubinden und natürlich fallen zu lassen.",
+      "suitableDescription": "Bitte laden Sie ein klares, frontales Foto Ihres Gesichts hoch, auf dem Ihre Augenbrauen deutlich sichtbar sind. Vermeiden Sie es, Ihre Brauen mit Haaren oder Accessoires zu verdecken.",
       "unsuitableTitle": "Ungeeignete Fotos",
-      "unsuitableDescription": "Bitte laden Sie keine Fotos von der Seite, bei schlechtem Licht oder mit verdecktem Gesicht hoch. Vermeiden Sie auch Cartoon-Bilder.",
+      "unsuitableDescription": "Bitte laden Sie keine Fotos von der Seite, bei schlechtem Licht oder mit Augenbrauen hoch, die durch Haare, Sonnenbrillen oder andere Gegenstände verdeckt sind. Vermeiden Sie auch Cartoon-Bilder.",
       "dontShowAgain": "Nicht mehr anzeigen",
       "confirm": "OK, Verstanden"
     },
     "cropImage": {
       "title": "Bild zuschneiden",
-      "presetRatios": "Voreingenstellte Verhältnisse",
+      "presetRatios": "Voreingestellte Verhältnisse",
       "free": "Frei",
       "actions": "Aktionen",
       "resetCrop": "Zuschneiden zurücksetzen",

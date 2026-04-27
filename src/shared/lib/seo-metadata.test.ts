@@ -6,7 +6,7 @@ import { buildAlternates } from './seo-metadata';
 const baseOptions = {
   defaultLocale: 'en',
   locales: ['en', 'zh', 'ja'],
-  siteUrl: 'https://aibarber.net/',
+  siteUrl: 'https://tintbrow.com/',
 };
 
 test('buildAlternates omits language alternates for noindex pages', () => {
@@ -18,7 +18,7 @@ test('buildAlternates omits language alternates for noindex pages', () => {
       noIndex: true,
     }),
     {
-      canonical: 'https://aibarber.net/zh/sign-in',
+      canonical: 'https://tintbrow.com/zh/sign-in',
     }
   );
 });
@@ -31,10 +31,10 @@ test('buildAlternates limits hreflang locales to actual page availability', () =
       availableLocales: ['en', 'zh'],
     }),
     {
-      canonical: 'https://aibarber.net/zh/docs',
+      canonical: 'https://tintbrow.com/zh/docs',
       languages: {
-        en: 'https://aibarber.net/docs',
-        zh: 'https://aibarber.net/zh/docs',
+        en: 'https://tintbrow.com/docs',
+        zh: 'https://tintbrow.com/zh/docs',
       },
     }
   );

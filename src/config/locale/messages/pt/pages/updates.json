@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "Atualizações - AI Barber",
-    "description": "Veja os últimos recursos do AI Barber, adições de penteados e melhorias."
+    "title": "Atualizações - Brow Tint",
+    "description": "Veja os últimos recursos do Brow Tint, adições de estilos de tintura de sobrancelha e melhorias."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
         "title": "O que há de novo",
-        "description": "Últimos recursos, adições de penteados e melhorias no AI Barber."
+        "description": "Últimos recursos, adições de estilos de tintura de sobrancelha e melhorias no Brow Tint."
       }
     }
   }

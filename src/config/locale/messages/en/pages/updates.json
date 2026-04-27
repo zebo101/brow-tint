@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "Updates - AI Barber",
-    "description": "View the latest AI Barber features, hairstyle additions, and improvements."
+    "title": "Updates - Brow Tint",
+    "description": "View the latest Brow Tint features, brow tint style additions, and improvements."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
         "title": "What's New",
-        "description": "Latest features, hairstyle additions, and improvements to AI Barber."
+        "description": "Latest features, brow tint style additions, and improvements to Brow Tint."
       }
     }
   }

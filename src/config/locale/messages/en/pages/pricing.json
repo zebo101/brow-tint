@@ -8,9 +8,9 @@
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "AI Barber Pricing",
+        "sr_only_title": "Brow Tint Pricing",
         "title": "Pricing",
-        "description": "Choose the perfect plan for your AI hairstyle transformation needs.",
+        "description": "Choose the perfect plan for your AI brow tint generation needs.",
         "groups": [
           {
             "name": "one-time",

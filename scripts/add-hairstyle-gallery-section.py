@@ -84,7 +84,7 @@ def build_section(locale: str) -> dict:
         "title": "Explore Hairstyles by Category",
         "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
         "limit": 8,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
             {
                 "key": key,

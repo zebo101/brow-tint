@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "ブログ - AI Barber",
-    "description": "最新のヘアスタイルトレンド、AI機能、スタイリングのヒントをお読みください。"
+    "title": "ブログ - Brow Tint",
+    "description": "最新のブロウティンティングトレンド、AI機能、ブロウティントのヒントをお読みください。"
   },
   "page": {
-    "title": "AI Barber ブログ",
+    "title": "Brow Tint ブログ",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "ブログ",
-        "description": "最新のヘアスタイルトレンド、AI機能、スタイリングのヒントをお読みください。"
+        "description": "最新のブロウティンティングトレンド、AI機能、ブロウティントのヒントをお読みください。"
       }
     }
   },

@@ -8,9 +8,9 @@
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "AI Barber Preise",
+        "sr_only_title": "Brow Tint Preise",
         "title": "Preise",
-        "description": "Wählen Sie den perfekten Plan für Ihre KI-Frisuren-Transformation.",
+        "description": "Wählen Sie den perfekten Plan für Ihre KI-Augenbrauentönung-Generierung.",
         "groups": [
           {
             "name": "one-time",

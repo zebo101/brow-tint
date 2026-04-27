@@ -21,18 +21,18 @@ test('expandStaticRoutes only emits locales declared by each route', () => {
     {
       defaultLocale: 'en',
       locales: ['en', 'zh', 'ja'],
-      siteUrl: 'https://aibarber.net/',
+      siteUrl: 'https://tintbrow.com/',
     }
   );
 
   assert.deepEqual(
     entries.map((entry) => entry.url),
     [
-      'https://aibarber.net/pricing',
-      'https://aibarber.net/zh/pricing',
-      'https://aibarber.net/ja/pricing',
-      'https://aibarber.net/docs',
-      'https://aibarber.net/zh/docs',
+      'https://tintbrow.com/pricing',
+      'https://tintbrow.com/zh/pricing',
+      'https://tintbrow.com/ja/pricing',
+      'https://tintbrow.com/docs',
+      'https://tintbrow.com/zh/docs',
     ]
   );
 });

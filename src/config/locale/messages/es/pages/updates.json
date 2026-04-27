@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "Actualizaciones - AI Barber",
-    "description": "Ve las últimas funciones de AI Barber, adiciones de peinados y mejoras."
+    "title": "Actualizaciones - Brow Tint",
+    "description": "Ve las últimas funciones de Brow Tint, adiciones de estilos de tinte de cejas y mejoras."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
         "title": "Qué hay de nuevo",
-        "description": "Últimas funciones, adiciones de peinados y mejoras en AI Barber."
+        "description": "Últimas funciones, adiciones de estilos de tinte de cejas y mejoras en Brow Tint."
       }
     }
   }

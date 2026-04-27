@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "Cambia acconciatura IA gratis online | 500+ tagli | AI Barber",
-    "description": "Prova il cambia acconciatura IA gratis online. Carica una foto, visualizza 500+ tagli e colori e scarica la tua acconciatura virtuale in pochi secondi con AI Barber.",
-    "keywords": "cambia acconciatura ia, cambia acconciatura ia online, cambia acconciatura ia gratis, acconciatura virtuale, simulatore acconciature, provare acconciature, taglio virtuale, simulatore di tagli, cambio colore capelli, bob, pixie, fade, buzz cut, capelli ricci, acconciature uomo, acconciature donna, acconciature bambini"
+    "title": "Generatore Tinta Sopracciglia IA Online | Tinta Sopracciglia Prima e Dopo | Brow Tint",
+    "description": "Prova il generatore di tinta sopracciglia IA online. Carica una foto, visualizza l'anteprima tinta sopracciglia prima e dopo e scarica il tuo risultato virtuale in pochi secondi.",
+    "keywords": "generatore tinta sopracciglia ia, generatore tinta sopracciglia, tinta sopracciglia prima e dopo, generatore tinta sopracciglia virtuale, prova virtuale tinta sopracciglia, tinta sopracciglia IA, anteprima tinta sopracciglia, generatore colore sopracciglia, anteprima gel sopracciglia colorato, laminazione e tinta sopracciglia, tinta professionale sopracciglia, miglior tinta sopracciglia, miglior gel sopracciglia colorato, tinta ciglia e sopracciglia, brow code tint"
   },
   "page": {
-    "title": "Cambia acconciatura IA gratis online - 500+ tagli | AI Barber",
-    "description": "Usa il cambia acconciatura IA gratis online per provare 500+ tagli e colori in pochi secondi. Uomini 197, Donne 240, Bambini 56, Bambine 85. Scarica la tua acconciatura virtuale e condividila con barbiere o salone.",
+    "title": "Generatore Tinta Sopracciglia IA Online - Tinta Sopracciglia Prima e Dopo",
+    "description": "Usa il generatore di tinta sopracciglia IA online per visualizzare risultati realistici prima e dopo in pochi secondi. Carica la tua foto, genera stili di tinta sopracciglia e scarica il risultato.",
     "show_sections": [
       "hero",
       "introduce",
@@ -23,55 +23,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Cambia acconciatura IA gratis online",
-        "highlight_text": "AI Barber",
-        "description": "Prova subito 500+ tagli e colori con il cambia acconciatura IA gratis. Carica una foto, visualizza stili uomo, donna, bambini e scarica il tuo nuovo look.",
+        "title": "Generatore Tinta Sopracciglia IA Online",
+        "highlight_text": "Generatore Tinta Sopracciglia IA",
+        "description": "Visualizza istantaneamente risultati realistici di tinta sopracciglia prima e dopo con il generatore IA. Carica una foto, prova stili di tinta sopracciglia e scarica il tuo nuovo look.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Hairstyle Changer Interface",
+          "alt": "Interfaccia Generatore Tinta Sopracciglia IA",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Hairstyle Changer Interface Dark Mode",
+          "alt": "Interfaccia Generatore Tinta Sopracciglia IA Modalità Scura",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber Hero Background"
+          "alt": "Sfondo Hero Brow Tint"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "Cos'è l'app AI Barber per cambiare acconciatura IA?",
+        "title": "Cos'è il Generatore Tinta Sopracciglia IA?",
         "label": "Introduzione",
-        "description": "AI Barber è un cambia acconciatura IA gratuito e simulatore di tagli che ti permette di provare tagli, lunghezze e colori sulla tua foto prima di andare dal barbiere o in salone.",
+        "description": "Il Generatore Tinta Sopracciglia IA è uno strumento di prova virtuale che ti permette di visualizzare le tonalità della tinta sopracciglia e i risultati prima e dopo sulla tua foto, prima di andare da un professionista o in salone.",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "AI Barber Hairstyle Simulator"
+          "alt": "Simulatore Tinta Sopracciglia IA"
         },
         "items": [
           {
-            "title": "Prova Acconciatura Virtuale",
-            "description": "Prova stili corti, medi e lunghi come bob, pixie, fade, buzz cut e capelli lunghi a strati in pochi secondi.",
+            "title": "Prova Virtuale della Tinta Sopracciglia",
+            "description": "Visualizza le tonalità della tinta sopracciglia senza usare alcun prodotto. La nostra IA simula risultati professionali di tinta sopracciglia per vedere il tuo nuovo look prima di impegnarti.",
             "icon": "RiMagicLine"
           },
           {
-            "title": "Risultati IA Realistici",
-            "description": "L'IA considera viso e luce per una preview naturale.",
+            "title": "Risultati Realistici della Tinta Sopracciglia IA",
+            "description": "L'IA riconosce il viso e fonde il colore della tinta con la forma naturale delle sopracciglia e il tono della pelle per anteprime fotorealistiche.",
             "icon": "RiCameraLensLine"
           },
           {
-            "title": "Cambiador di Colore dei Capelli",
-            "description": "Prova nero, castano, biondo, rame, argento, rosa o blu prima di tingere.",
+            "title": "Abbinamento Colore Tinta Sopracciglia",
+            "description": "Visualizza diverse tonalità di gel sopracciglia colorato — dal tortora morbido all'espresso intenso — prima di scegliere la migliore tinta sopracciglia per il tuo look.",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "Trasferimento di Stile",
-            "description": "Usa prompt per ricreare look da celebrity, K-pop o passerella.",
+            "title": "Anteprima Tinta Ciglia e Sopracciglia",
+            "description": "Scopri stili combinati di tinta ciglia e sopracciglia in un'unica anteprima per un look completo che incornicia lo sguardo e valorizza i tuoi tratti naturali.",
             "icon": "RiExchangeLine"
           }
         ],
@@ -80,35 +80,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Perché Scegliere il Nostro Cambiador di Acconciature IA",
-        "label": "Benefici",
-        "description": "Anteprime rapide, private e realistiche per decidere taglio e colore con sicurezza.",
+        "title": "Perché Scegliere il Nostro Generatore Tinta Sopracciglia IA",
+        "label": "Vantaggi",
+        "description": "Anteprime rapide, private e realistiche per decisioni sicure sulla tinta sopracciglia.",
         "items": [
           {
-            "title": "Veloce come un Fulmine e 100% Online",
-            "description": "Genera più look da una sola foto in pochi secondi, 100% online.",
+            "title": "Velocissimo e 100% Online",
+            "description": "Genera più look di tinta sopracciglia da una sola foto in pochi secondi, 100% online. Nessun appuntamento o prodotto necessario per visualizzare la tinta sopracciglia perfetta.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Processing"
+              "alt": "Elaborazione Rapida Tinta Sopracciglia IA"
             }
           },
           {
             "title": "Privacy Prima di Tutto",
-            "description": "Le foto vengono elaborate in modo sicuro e non archiviate in modo permanente.",
+            "description": "Le foto vengono elaborate in modo sicuro e non archiviate permanentemente. Le anteprime della tinta sopracciglia vengono generate in modo privato.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Secure and Private"
+              "alt": "Sicuro e Privato"
             }
           },
           {
-            "title": "Qualità Professionale",
-            "description": "Scarica anteprime pronte per spiegare a barbiere o salone il taglio e colore desiderati.",
+            "title": "Qualità Professionale da Salone",
+            "description": "Scarica anteprime di tinta sopracciglia pronte per il salone e mostra al tuo professionista esattamente la tonalità e lo stile desiderati.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Professional Results"
+              "alt": "Risultati Professionali Tinta Sopracciglia"
             }
           }
         ]
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "Come Usare il Cambiador di Acconciature IA",
-        "description": "Ottieni una preview realistica in quattro passaggi:",
+        "title": "Come Usare il Generatore Tinta Sopracciglia IA",
+        "description": "Ottieni un'anteprima realistica della tinta sopracciglia in quattro semplici passaggi:",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "AI Hairstyle Usage Guide"
+          "alt": "Guida all'Uso della Tinta Sopracciglia IA"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Carica una foto chiara",
-            "description": "Foto frontale con buona illuminazione per risultati migliori.",
+            "title": "Carica una Foto Chiara",
+            "description": "Usa una foto frontale con buona illuminazione e le sopracciglia ben visibili, in modo che l'IA possa mappare accuratamente la forma delle tue sopracciglia.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Upload Photo"
+              "alt": "Carica Foto"
             }
           },
           {
-            "title": "Scegli un'acconciatura",
-            "description": "Seleziona uno stile o una categoria e decidi la lunghezza.",
+            "title": "Scegli il Tuo Stile di Tinta Sopracciglia",
+            "description": "Scegli tra gel sopracciglia colorato, laminazione e tinta sopracciglia, tinta professionale sopracciglia o opzioni brow code tint.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Select Hairstyle"
+              "alt": "Seleziona Stile Tinta Sopracciglia"
             }
           },
           {
-            "title": "Aggiungi dettagli",
-            "description": "Indica lunghezza, texture, colore, frangia o fade.",
+            "title": "Genera l'Anteprima della Tinta Sopracciglia",
+            "description": "L'IA crea immagini realistiche di tinta sopracciglia prima e dopo in pochi secondi, fondendo il colore con la forma naturale delle tue sopracciglia.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Describe Hairstyle"
+              "alt": "Genera Anteprima Tinta Sopracciglia"
             }
           },
           {
-            "title": "Genera e confronta",
-            "description": "Genera, scarica e confronta i risultati affiancati.",
+            "title": "Scarica e Condividi",
+            "description": "Salva foto ad alta risoluzione di tinta sopracciglia prima e dopo da mostrare al tuo professionista o estetista al prossimo appuntamento.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Generate and Download"
+              "alt": "Scarica Risultati Tinta Sopracciglia"
             }
           }
         ],
@@ -162,37 +162,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Funzionalità chiave del cambia acconciatura IA",
-        "description": "Uno studio virtuale completo per tagli, colori e confronti.",
+        "title": "Funzionalità Chiave del Generatore Tinta Sopracciglia IA",
+        "description": "Uno studio virtuale completo per tonalità, stili e confronti prima e dopo della tinta sopracciglia.",
         "items": [
           {
-            "title": "500+ tagli e acconciature per tutti",
-            "description": "Uomini 197, Donne 240, Bambini 56, Bambine 85: da buzz cut e fade a bob e pixie.",
+            "title": "Anteprima Tinta Professionale Sopracciglia",
+            "description": "Simulazione di tinta professionale sopracciglia di qualità salone che abbina il colore della tinta alla forma naturale delle sopracciglia e al tono della pelle.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "Rilevamento Facciale Intelligente",
-            "description": "Il rilevamento del viso adatta ogni taglio alla tua attaccatura e alle proporzioni.",
+            "title": "Abbinamento Tonalità Gel Sopracciglia Colorato",
+            "description": "Prova diverse tonalità di gel sopracciglia colorato, dal tortora sottile all'espresso intenso, e trova il miglior gel sopracciglia colorato per te.",
             "icon": "RiWomenLine"
           },
           {
-            "title": "Sperimentazione Colore",
-            "description": "Prova colpi di sole, balayage, rame, platino o colori vivaci prima del salone.",
+            "title": "Laminazione e Tinta Sopracciglia",
+            "description": "Visualizza la laminazione combinata con la tinta per sopracciglia sollevate, definite e con un colore intenso in un unico look.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "Download ad Alta Risoluzione",
-            "description": "Salva risultati ad alta risoluzione per condividerli con barbiere, stylist o amici.",
+            "description": "Immagini nitide di tinta sopracciglia prima e dopo pronte da salvare e condividere con il tuo professionista.",
             "icon": "RiHdLine"
           },
           {
-            "title": "Confronto Stili",
-            "description": "Confronta più acconciature affiancate per scegliere il look migliore.",
+            "title": "Confronto Prima e Dopo",
+            "description": "Slider affiancato tinta sopracciglia prima e dopo per vedere esattamente come la tinta trasforma le tue sopracciglia.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Mobile Friendly",
-            "description": "Funziona su mobile e desktop per provare stili ovunque.",
+            "title": "Ottimizzato per Mobile",
+            "description": "Funziona su qualsiasi dispositivo — telefono, tablet o desktop — per visualizzare stili di tinta sopracciglia ovunque.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -200,47 +200,47 @@
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
+        "title": "Esplora Stili di Tinta Sopracciglia per Categoria",
+        "description": "Sfoglia stili di tinta sopracciglia pronti per l'IA e tocca qualsiasi look per provarlo sulla tua foto con il generatore di tinta sopracciglia IA.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "Acconciature Uomo",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
+            "title": "Tinte Sopracciglia Naturali",
+            "description": "Tonalità naturali e sottili di tinta sopracciglia che valorizzano le tue sopracciglia con una definizione morbida. Visualizza le migliori tonalità per un look naturalmente curato.",
+            "cta_label": "Prova tinte naturali"
           },
           {
             "key": "women",
-            "title": "Acconciature Donna",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
+            "title": "Tinte Sopracciglia Intense",
+            "description": "Look drammatici e definiti di tinta sopracciglia per un finish d'impatto. Visualizza tonalità espresso intenso, cioccolato ricco e tinta professionale sopracciglia decisa.",
+            "cta_label": "Prova tinte intense"
           },
           {
             "key": "boys",
-            "title": "Acconciature Bambino",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
+            "title": "Stili Laminazione Sopracciglia",
+            "description": "Look di sopracciglia laminate e sollevate combinate con la tinta. Visualizza stili di laminazione e tinta sopracciglia per sopracciglia più piene e scolpite.",
+            "cta_label": "Prova stili laminazione"
           },
           {
             "key": "girls",
-            "title": "Acconciature Bambina",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
+            "title": "Tinta Ciglia e Sopracciglia",
+            "description": "Stili combinati di tinta ciglia e sopracciglia per una trasformazione completa che incornicia lo sguardo. Visualizza look coordinati di tinta ciglia e sopracciglia in pochi secondi.",
+            "cta_label": "Prova tinta ciglia e sopracciglia"
           }
         ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
+        "tip": "Ogni anteprima è gratuita. Nuovi stili di tinta sopracciglia aggiunti regolarmente."
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "Cosa Dicono gli Utenti su AI Barber",
-        "description": "Ascolta gli utenti che hanno trovato il loro stile perfetto.",
+        "title": "Cosa Dicono gli Utenti del Generatore Tinta Sopracciglia IA",
+        "description": "Utenti reali che hanno visualizzato look di tinta sopracciglia con il generatore di tinta sopracciglia IA.",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "Fashion Blogger",
-            "quote": "Ero titubante nel tagliare i miei lunghi capelli a caschetto. AI Barber mi ha mostrato esattamente come sarebbe sembrato, e l'ho adorato! La migliore app di acconciature di sempre.",
+            "role": "Beauty Blogger",
+            "quote": "Ero preoccupata di scegliere una tinta troppo scura per le sopracciglia. Il generatore di tinta sopracciglia IA mi ha mostrato un confronto realistico prima e dopo, così ho prenotato l'appuntamento con totale sicurezza.",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Sarah Jenkins"
@@ -249,7 +249,7 @@
           {
             "name": "Mike Ross",
             "role": "Modello",
-            "quote": "Strumento essenziale per il mio portfolio. Posso provare diversi look per servizi fotografici senza cambiare realmente i miei capelli. Il realismo è impareggiabile.",
+            "quote": "Ho visualizzato diverse tonalità di tinta professionale sopracciglia per un servizio fotografico e ho mostrato al mio professionista esattamente il look desiderato. Un enorme risparmio di tempo.",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Mike Ross"
@@ -257,8 +257,8 @@
           },
           {
             "name": "Emily Chen",
-            "role": "Studente",
-            "quote": "Molto divertente! Ho provato capelli viola e un taglio pixie. Sembrava così reale che mia mamma pensava l'avessi fatto davvero.",
+            "role": "Studentessa",
+            "quote": "Ho provato tonalità di gel sopracciglia colorato dal tortora all'espresso nell'anteprima IA. Mi ha aiutato a scegliere la migliore tinta sopracciglia per il mio tono di pelle prima di acquistare qualsiasi prodotto.",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Emily Chen"
@@ -267,7 +267,7 @@
           {
             "name": "David Smith",
             "role": "Ingegnere Software",
-            "quote": "Ho usato AI Barber per trovare un nuovo taglio di capelli da uomo. Le opzioni sfumatura e undercut sembravano incredibili e mi hanno aiutato a spiegare esattamente cosa volevo al mio barbiere.",
+            "quote": "L'anteprima di laminazione e tinta sopracciglia era incredibilmente realistica. Ho mostrato l'immagine alla mia estetista e ho ottenuto esattamente il risultato desiderato.",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "David Smith"
@@ -275,8 +275,8 @@
           },
           {
             "name": "Jessica Lee",
-            "role": "Makeup Artist",
-            "quote": "Il cambiador di colore dei capelli è incredibile! Ho provato biondo, rame e argento prima di tingere i miei capelli. Questo strumento gratuito mi ha salvato dal fare una cattiva scelta.",
+            "role": "Make-up Artist",
+            "quote": "Come make-up artist, uso il generatore di tinta sopracciglia IA per mostrare alle clienti come apparirà il loro abbinamento tinta ciglia e sopracciglia. Le anteprime di qualità salone sono incredibilmente accurate.",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Jessica Lee"
@@ -285,7 +285,7 @@
           {
             "name": "Tom Brown",
             "role": "Studente",
-            "quote": "Questo cambiador di acconciature IA gratuito è così facile da usare. Ho caricato la mia foto e ho ottenuto risultati in pochi secondi. Consigliatissimo per chiunque cerchi un restyling virtuale.",
+            "quote": "Veloce, gratuito e facile. Ho caricato una foto e ho ottenuto più opzioni di tinta sopracciglia prima e dopo in pochi secondi. Nessuna installazione necessaria.",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Tom Brown"
@@ -296,62 +296,62 @@
       "faq": {
         "id": "faq",
         "title": "Domande Frequenti",
-        "description": "FAQ sul cambia acconciatura IA, consigli foto e risultati migliori.",
-        "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>team di supporto</a>",
+        "description": "FAQ sul generatore di tinta sopracciglia IA, consigli per le foto e come ottenere i migliori risultati.",
+        "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
         "items": [
           {
-            "question": "È gratis usare questo Cambiador di Acconciature IA?",
-            "answer": "Sì. Puoi provare il cambia acconciatura IA gratis online con una prova per vedere più stili."
+            "question": "Questo Generatore Tinta Sopracciglia IA è gratuito?",
+            "answer": "Sì. Puoi provare il generatore di tinta sopracciglia IA online con una prova gratuita per visualizzare molteplici stili e tonalità di tinta sopracciglia."
           },
           {
-            "question": "Quanto sono realistiche le acconciature?",
-            "answer": "L'IA integra ogni acconciatura nella tua foto per una preview realistica di taglio, lunghezza e colore."
+            "question": "Quanto sono realistiche le anteprime della tinta sopracciglia?",
+            "answer": "L'IA fonde ogni tonalità di tinta sopracciglia con la tua foto per un'anteprima realistica che tiene conto della forma naturale delle sopracciglia, del tono della pelle e dell'illuminazione."
           },
           {
             "question": "Che tipo di foto funzionano meglio?",
-            "answer": "Per i migliori risultati, carica una foto chiara e frontale con una buona illuminazione. Evita foto in cui il viso è coperto da occhiali da sole, maschere o capelli eccessivi. Un'espressione neutra funziona meglio."
+            "answer": "Per i migliori risultati, carica una foto chiara e frontale con buona illuminazione e le sopracciglia ben visibili. Evita foto in cui il viso è coperto da occhiali da sole, mascherine o capelli. Un'espressione neutra funziona meglio."
           },
           {
-            "question": "Posso cambiare solo il colore dei capelli?",
-            "answer": "Sì. Puoi cambiare solo il colore o combinare taglio e colore e condividere il risultato con il salone."
+            "question": "Posso visualizzare diverse tonalità di gel sopracciglia colorato?",
+            "answer": "Sì. Prova una gamma di tonalità di gel sopracciglia colorato — dal tortora morbido e marrone caldo all'espresso intenso — e confrontale affiancate per trovare il miglior gel sopracciglia colorato per il tuo look."
           },
           {
-            "question": "Funziona per uomini e donne?",
-            "answer": "Sì. Ci sono 500+ stili: Uomini 197, Donne 240, Bambini 56, Bambine 85."
+            "question": "Qual è la differenza tra tinta sopracciglia e gel sopracciglia colorato?",
+            "answer": "La tinta professionale sopracciglia è una tintura semi-permanente applicata in salone che dura diverse settimane. Il gel sopracciglia colorato è un prodotto cosmetico quotidiano che aggiunge colore e tenuta. Il generatore di tinta sopracciglia IA può visualizzare entrambi gli stili così puoi decidere quale è giusto per te."
           },
           {
-            "question": "I miei dati fotografici sono sicuri?",
-            "answer": "Prendiamo sul serio la privacy. Le tue foto caricate vengono elaborate in modo sicuro per lo scopo di generazione e non vengono memorizzate permanentemente né condivise con terze parti."
+            "question": "I miei dati fotografici sono al sicuro?",
+            "answer": "Prendiamo la privacy molto seriamente. Le foto caricate vengono elaborate in modo sicuro per la generazione della tinta sopracciglia e non vengono archiviate permanentemente né condivise con terze parti."
           },
           {
-            "question": "Posso mostrare l'acconciatura IA al barbiere o al salone vicino a me?",
-            "answer": "Sì. Scarica la preview e mostrala al barbiere o allo stylist per ottenere il look esatto."
+            "question": "Posso visualizzare laminazione e tinta sopracciglia insieme?",
+            "answer": "Sì. Seleziona lo stile laminazione e tinta sopracciglia per vedere sopracciglia sollevate e scolpite combinate con la tonalità di tinta scelta in un'unica anteprima realistica."
           },
           {
-            "question": "Quanto tempo ci vuole per generare un'acconciatura?",
-            "answer": "Di solito bastano pochi secondi, in base a dimensione immagine e traffico."
+            "question": "Come trovo la migliore tinta sopracciglia per il mio tono di pelle?",
+            "answer": "Carica la tua foto e prova molteplici tonalità. L'IA considera il tuo tono di pelle e il colore naturale delle sopracciglia per generare anteprime realistiche, aiutandoti a trovare l'abbinamento perfetto prima di visitare un professionista."
           },
           {
-            "question": "Posso provare lunghezze corte, medie o lunghe?",
-            "answer": "Sì. Scegli un template o descrivi la lunghezza nel prompt."
+            "question": "Posso mostrare la mia anteprima tinta sopracciglia IA al mio professionista?",
+            "answer": "Sì. Scarica la tua anteprima tinta sopracciglia prima e dopo e mostrala al tuo professionista o estetista per comunicare esattamente la tonalità e lo stile desiderati."
           },
           {
-            "question": "Funziona con capelli ricci o texturizzati?",
-            "answer": "Sì. Prova ricci, onde o afro; foto più nitide danno risultati migliori."
+            "question": "Quanto tempo ci vuole per generare un'anteprima di tinta sopracciglia?",
+            "answer": "La maggior parte delle anteprime di tinta sopracciglia sono pronte in pochi secondi, a seconda della dimensione dell'immagine e del traffico."
           },
           {
             "question": "Devo installare qualcosa?",
-            "answer": "No. Funziona nel browser, senza download."
+            "answer": "No. Il generatore di tinta sopracciglia IA funziona interamente nel tuo browser — nessun download o installazione necessari."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Pronto per un Nuovo Look?",
-        "description": "Non indovinare con i capelli. Visualizza l'acconciatura perfetta con l'app gratuita AI Barber e mostrala al barbiere o salone locale.",
+        "title": "Pronta per la Tua Tinta Sopracciglia Perfetta?",
+        "description": "Smetti di tirare a indovinare il risultato della tinta sopracciglia. Prova il generatore di tinta sopracciglia IA ora e condividi la tua anteprima con un professionista o salone.",
         "buttons": [
           {
-            "title": "Inizia la Trasformazione Ora",
+            "title": "Inizia l'Anteprima Tinta Sopracciglia Ora",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
@@ -362,80 +362,80 @@
     }
   },
   "generator": {
-    "title": "Cambia acconciatura IA gratis online",
-    "description": "Carica una foto e prova 500+ tagli e colori con il cambia acconciatura IA gratis.",
+    "title": "Generatore Tinta Sopracciglia IA",
+    "description": "Carica una foto e visualizza risultati realistici di tinta sopracciglia prima e dopo con il generatore di tinta sopracciglia IA.",
     "tabs": {
       "text-to-image": "Descrizione Stile",
       "image-to-image": "Carica Foto"
     },
     "categories": {
-      "title": "Seleziona Acconciatura",
-      "men": "Acconciature Uomo",
-      "women": "Acconciature Donna",
-      "boys": "Acconciature Bambino",
-      "girls": "Acconciature Bambina",
+      "title": "Seleziona Stile Tinta Sopracciglia",
+      "men": "Tinte Sopracciglia Naturali",
+      "women": "Tinte Sopracciglia Intense",
+      "boys": "Stili Laminazione Sopracciglia",
+      "girls": "Tinta Ciglia e Sopracciglia",
       "selected": "Selezionato",
       "styles": "stili"
     },
     "sidebar": {
       "history": "Cronologia",
-      "discover": "Vedi risultati",
-      "history_sign_in": "Accedi per vedere la cronologia delle immagini generate",
+      "discover": "Scopri",
+      "history_sign_in": "Accedi per visualizzare la cronologia delle immagini generate",
       "history_empty": "Nessuna immagine nella cronologia"
     },
     "form": {
-      "select_hairstyle_placeholder": "Clicca per selezionare acconciatura",
+      "select_hairstyle_placeholder": "Clicca per selezionare uno stile di tinta sopracciglia",
       "provider": "Provider IA",
-      "model": "Modello Acconciatura",
+      "model": "Modello Tinta Sopracciglia",
       "select_provider": "Seleziona Provider IA",
-      "select_model": "Seleziona Modello Acconciatura",
-      "prompt": "Descrizione Acconciatura",
-      "prompt_placeholder": "Descrivi la tua acconciatura: lunghezza, colore, texture, stile (es. bob corto, biondo ondulato lungo, crop texturizzato, afro riccio)",
+      "select_model": "Seleziona Modello Tinta Sopracciglia",
+      "prompt": "Descrizione Tinta Sopracciglia",
+      "prompt_placeholder": "Descrivi la tua tinta sopracciglia: tonalità, intensità, stile (es. tinta tortora morbida, tinta sopracciglia espresso intensa, laminazione e tinta sopracciglia, tinta ciglia e sopracciglia)",
       "reference_image": "La Tua Foto",
       "reference_image_placeholder": "Carica la tua foto per i migliori risultati",
-      "some_images_failed_to_upload": "Alcune immagini non sono state caricate, eliminale e ricarica",
+      "some_images_failed_to_upload": "Alcune immagini non sono state caricate, eliminale e ricaricale",
       "prompt_too_long": "La descrizione è troppo lunga, accorciala",
       "upload": "Carica",
       "upload_hint": "Clicca o trascina per caricare foto",
       "max_size": "Max"
     },
-    "generate": "Genera Acconciatura",
+    "generate": "Genera Tinta Sopracciglia",
     "checking_account": "Verifica account...",
     "loading": "Caricamento...",
-    "generating": "Trasformando il tuo look...",
-    "sign_in_to_generate": "Accedi per provare nuove acconciature",
+    "generating": "Generazione della tua tinta sopracciglia...",
+    "sign_in_to_generate": "Accedi per Provare Stili di Tinta Sopracciglia",
     "credits_cost": "Costa {credits} crediti",
     "credits_remaining": "{credits} crediti rimanenti",
     "buy_credits": "Acquista Crediti",
     "progress": "Progresso",
-    "generated_images": "Il Tuo Nuovo Look",
-    "preview_title": "Anteprima Acconciatura IA",
-    "ready_to_generate": "Pronto per Trasformare",
-    "ready_for_generating": "Pronto per Trasformazione",
-    "no_images_generated": "Nessuna acconciatura ancora generata",
-    "use_as_reference": "Usa come riferimento",
-    "download_image": "Scarica immagine",
-    "example_image_hint": "Questo è un risultato di esempio. La tua acconciatura generata apparirà qui.",
-    "history_images": "Immagini cronologia",
+    "generated_images": "Il Tuo Nuovo Look Sopracciglia",
+    "preview_title": "Anteprima Tinta Sopracciglia IA",
+    "ready_to_generate": "Pronto per Generare",
+    "ready_for_generating": "Pronto per l'Anteprima Tinta Sopracciglia",
+    "no_images_generated": "Nessuna anteprima di tinta sopracciglia generata",
+    "use_as_reference": "Usa come Riferimento",
+    "download_image": "Scarica Immagine",
+    "example_image_hint": "Questo è un risultato di esempio. La tua anteprima di tinta sopracciglia generata apparirà qui.",
+    "history_images": "Immagini Cronologia",
     "history_load_more": "Carica altro",
     "history_view_image": "Visualizza immagine cronologia",
     "history_scroll_left": "Scorri a sinistra",
     "history_scroll_right": "Scorri a destra",
     "photoGuidelines": {
-      "title": "Linee guida foto per risultati ottimali",
-      "suitableTitle": "Foto adatte",
-      "suitableDescription": "Carica una foto chiara e frontale del tuo viso. Per un risultato migliore, è ideale raccogliere i capelli indietro. E lascia cadere i capelli naturalmente.",
-      "unsuitableTitle": "Foto non adatte",
-      "unsuitableDescription": "Non caricare foto di profilo, con scarsa illuminazione o con il viso coperto da capelli o oggetti. Evita anche immagini di cartoni animati.",
+      "title": "Linee Guida Foto per Risultati Ottimali",
+      "suitableTitle": "Foto Adatte",
+      "suitableDescription": "Carica una foto chiara e frontale del tuo viso con le sopracciglia ben visibili. Evita di coprire le sopracciglia con capelli o accessori.",
+      "unsuitableTitle": "Foto Non Adatte",
+      "unsuitableDescription": "Non caricare foto scattate di lato, con scarsa illuminazione o con le sopracciglia coperte da capelli, occhiali da sole o altri oggetti. Evita anche immagini di cartoni animati.",
       "dontShowAgain": "Non mostrare più",
       "confirm": "OK, Capito"
     },
     "cropImage": {
-      "title": "Ritaglia immagine",
-      "presetRatios": "Rapporti predefiniti",
+      "title": "Ritaglia Immagine",
+      "presetRatios": "Rapporti Predefiniti",
       "free": "Libero",
       "actions": "Azioni",
-      "resetCrop": "Reimposta ritaglio",
+      "resetCrop": "Reimposta Ritaglio",
       "rotate": "Ruota 90°",
       "cancel": "Annulla",
       "apply": "Applica"

@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "Cambiador de peinado IA gratis online | 500+ cortes | AI Barber",
-    "description": "Prueba el cambiador de peinado IA gratis online. Sube una foto, previsualiza 500+ cortes y colores, y descarga tu peinado virtual en segundos con AI Barber.",
-    "keywords": "cambiador de peinado ia, cambiador de peinado ia online, cambiador de peinado ia gratis, peinado virtual, simulador de peinados, probar peinados, corte virtual, simulador de cortes, cambio de color de pelo, corte bob, corte pixie, fade, buzz cut, peinados rizados, peinados de hombre, peinados de mujer, peinados infantiles"
+    "title": "Generador de Tinte de Cejas con IA Online | Tinte de Cejas Antes y Después | Brow Tint",
+    "description": "Prueba el generador de tinte de cejas con IA online. Sube una foto, previsualiza el tinte de cejas antes y después, y descarga tu resultado de tinte de cejas virtual en segundos.",
+    "keywords": "generador de tinte de cejas con ia, generador de tinte de cejas, tinte de cejas antes y después, generador de tinte de cejas, tinte de cejas virtual, prueba de tinte de cejas, tinte de cejas IA, vista previa de tinte de cejas, generador de color de cejas, vista previa de gel de cejas con color, laminado y tinte de cejas, tinte profesional de cejas, mejor tinte de cejas, mejor gel de cejas con color, tinte de pestañas y cejas, brow code tint"
   },
   "page": {
-    "title": "Cambiador de peinado IA gratis online - 500+ cortes | AI Barber",
-    "description": "Usa el cambiador de peinado IA gratis online para probar 500+ cortes y colores en segundos. Hombres 197, Mujeres 240, Niños 56, Niñas 85. Descarga tu peinado virtual y compártelo con tu barbero o salón.",
+    "title": "Generador de Tinte de Cejas con IA Online - Tinte de Cejas Antes y Después",
+    "description": "Usa el generador de tinte de cejas con IA online para previsualizar resultados realistas de tinte de cejas antes y después en segundos. Sube tu foto, genera estilos de tinte de cejas y descarga tu resultado.",
     "show_sections": [
       "hero",
       "introduce",
@@ -23,55 +23,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Cambiador de peinado IA gratis online",
-        "highlight_text": "AI Barber",
-        "description": "Prueba al instante 500+ cortes y colores con el cambiador de peinado IA gratis. Sube una foto, previsualiza estilos de hombres, mujeres, niños y niñas, y descarga tu nuevo look.",
+        "title": "Generador de Tinte de Cejas con IA Online",
+        "highlight_text": "Generador de Tinte de Cejas con IA",
+        "description": "Previsualiza al instante resultados realistas de tinte de cejas antes y después con el generador de tinte de cejas con IA. Sube una foto, prueba estilos de tinte de cejas y descarga tu nuevo look de cejas.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Hairstyle Changer Interface",
+          "alt": "Interfaz del Generador de Tinte de Cejas con IA",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Hairstyle Changer Interface Dark Mode",
+          "alt": "Interfaz del Generador de Tinte de Cejas con IA Modo Oscuro",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber Hero Background"
+          "alt": "Fondo Hero de Brow Tint"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "¿Qué es la app de cambio de peinado IA de AI Barber?",
+        "title": "¿Qué es el Generador de Tinte de Cejas con IA?",
         "label": "Introducción",
-        "description": "AI Barber es un cambiador de peinado IA gratis y simulador de cortes que te permite probar cortes, largos y colores en tu propia foto antes de ir a la barbería o salón.",
+        "description": "El Generador de Tinte de Cejas con IA es una herramienta de prueba virtual de tinte de cejas que te permite previsualizar tonos de tinte y resultados antes y después en tu propia foto antes de visitar a un especialista en cejas o salón.",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "AI Barber Hairstyle Simulator"
+          "alt": "Simulador de Tinte de Cejas con IA"
         },
         "items": [
           {
-            "title": "Prueba de Peinado Virtual",
-            "description": "Prueba estilos cortos, medios y largos como bob, pixie, degradados, buzz cut y capas largas en segundos.",
+            "title": "Prueba Virtual de Tinte de Cejas",
+            "description": "Previsualiza tonos de tinte de cejas sin usar ningún producto. Nuestra IA simula resultados profesionales de tinte de cejas para que veas tu nuevo look antes de comprometerte.",
             "icon": "RiMagicLine"
           },
           {
-            "title": "Resultados IA Realistas",
-            "description": "La IA tiene en cuenta el rostro y la luz para una vista previa natural.",
+            "title": "Resultados Realistas de Tinte de Cejas con IA",
+            "description": "La IA con reconocimiento facial mezcla el color del tinte con la forma natural de tus cejas y tu tono de piel para previsualizaciones fotorrealistas de tinte de cejas.",
             "icon": "RiCameraLensLine"
           },
           {
-            "title": "Cambiador de Color de Pelo",
-            "description": "Prueba negro, castaño, rubio, cobre, plata, rosa o azul antes de teñirte.",
+            "title": "Combinación de Color de Tinte de Cejas",
+            "description": "Previsualiza diferentes tonos de gel de cejas con color — desde taupe suave hasta espresso intenso — antes de comprometerte para encontrar el mejor tinte de cejas para tu look.",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "Transferencia de Estilo",
-            "description": "Usa prompts para recrear looks de celebridades, K-pop o pasarela.",
+            "title": "Vista Previa de Tinte de Pestañas y Cejas",
+            "description": "Ve estilos combinados de tinte de pestañas y cejas en una sola vista previa para un look completo que enmarca tus ojos y realza tus rasgos naturales.",
             "icon": "RiExchangeLine"
           }
         ],
@@ -80,35 +80,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Por qué elegir nuestro Cambiador de Peinados IA",
+        "title": "Por Qué Elegir Nuestro Generador de Tinte de Cejas con IA",
         "label": "Beneficios",
-        "description": "Vistas previas rápidas, privadas y realistas para decidir corte y color con confianza.",
+        "description": "Previsualizaciones rápidas, privadas y realistas para decisiones seguras sobre el tinte de cejas.",
         "items": [
           {
-            "title": "Rápido como el Rayo y 100% Online",
-            "description": "Genera varios looks desde una sola foto en segundos, 100% online.",
+            "title": "Ultra Rápido y 100% Online",
+            "description": "Genera múltiples looks de tinte de cejas desde una sola foto en segundos, 100% online. Sin citas ni productos necesarios para previsualizar tu tinte de cejas perfecto.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Processing"
+              "alt": "Procesamiento Rápido de Tinte de Cejas con IA"
             }
           },
           {
-            "title": "Privacidad Primero",
-            "description": "Las fotos se procesan de forma segura y no se almacenan permanentemente.",
+            "title": "Privacidad Ante Todo",
+            "description": "Las fotos se procesan de forma segura y nunca se almacenan permanentemente. Tus previsualizaciones de tinte de cejas se generan de forma privada.",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Secure and Private"
+              "alt": "Seguro y Privado"
             }
           },
           {
-            "title": "Calidad Profesional",
-            "description": "Descarga una vista previa lista para enseñar en la barbería o salón.",
+            "title": "Calidad Profesional de Salón",
+            "description": "Descarga previsualizaciones de tinte de cejas con calidad de salón para mostrar a tu especialista en cejas exactamente el tono y estilo que deseas.",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Professional Results"
+              "alt": "Resultados Profesionales de Tinte de Cejas"
             }
           }
         ]
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "Cómo usar el Cambiador de Peinados IA",
-        "description": "Obtén una vista previa realista en cuatro pasos:",
+        "title": "Cómo Usar el Generador de Tinte de Cejas con IA",
+        "description": "Obtén una vista previa realista de tinte de cejas en cuatro sencillos pasos:",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "AI Hairstyle Usage Guide"
+          "alt": "Guía de Uso del Tinte de Cejas con IA"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Sube una foto clara",
-            "description": "Foto frontal con buena iluminación para mejores resultados.",
+            "title": "Sube una Foto Clara",
+            "description": "Usa una foto frontal con buena iluminación y tus cejas claramente visibles para que la IA pueda mapear la forma de tus cejas con precisión.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Upload Photo"
+              "alt": "Subir Foto"
             }
           },
           {
-            "title": "Elige un peinado",
-            "description": "Selecciona un estilo o categoría y decide el largo.",
+            "title": "Elige Tu Estilo de Tinte de Cejas",
+            "description": "Escoge entre gel de cejas con color, laminado y tinte de cejas, tinte profesional de cejas u opciones de brow code tint.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Select Hairstyle"
+              "alt": "Seleccionar Estilo de Tinte de Cejas"
             }
           },
           {
-            "title": "Añade detalles",
-            "description": "Indica largo, textura, color, flequillo o degradado.",
+            "title": "Genera Tu Vista Previa de Tinte de Cejas",
+            "description": "La IA crea imágenes realistas de tinte de cejas antes y después en segundos, mezclando el color con la forma natural de tus cejas.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Describe Hairstyle"
+              "alt": "Generar Vista Previa de Tinte de Cejas"
             }
           },
           {
-            "title": "Genera y compara",
-            "description": "Genera, descarga y compara resultados lado a lado.",
+            "title": "Descarga y Comparte",
+            "description": "Guarda fotos de tinte de cejas antes y después en alta resolución para mostrar a tu especialista en cejas o estilista en tu próxima cita.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Generate and Download"
+              "alt": "Descargar Resultados de Tinte de Cejas"
             }
           }
         ],
@@ -162,37 +162,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Funciones clave del cambiador de peinado IA",
-        "description": "Un estudio virtual completo para cortes, colores y comparaciones.",
+        "title": "Características Clave del Generador de Tinte de Cejas con IA",
+        "description": "Un estudio virtual completo de tinte de cejas para tonos, estilos y comparaciones antes y después.",
         "items": [
           {
-            "title": "500+ cortes y peinados para todos",
-            "description": "Hombres 197, Mujeres 240, Niños 56, Niñas 85, desde buzz cut y degradado hasta bob y pixie.",
+            "title": "Vista Previa de Tinte Profesional de Cejas",
+            "description": "Simulación de tinte profesional de cejas con calidad de salón que combina el color del tinte con la forma natural de tus cejas y tu tono de piel.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "Detección Facial Inteligente",
-            "description": "La detección facial ajusta cada corte a tu línea de cabello y proporciones.",
+            "title": "Combinación de Tonos de Gel de Cejas con Color",
+            "description": "Prueba diferentes tonos de gel de cejas con color, desde taupe sutil hasta espresso intenso, y encuentra el mejor gel de cejas con color para ti.",
             "icon": "RiWomenLine"
           },
           {
-            "title": "Experimentación de Color",
-            "description": "Prueba mechas, balayage, cobre, platino o colores intensos antes de ir al salón.",
+            "title": "Laminado y Tinte de Cejas",
+            "description": "Previsualiza el laminado de cejas combinado con tinte para ver cejas peinadas hacia arriba y definidas con un color intenso en un solo look.",
             "icon": "RiPaletteLine"
           },
           {
             "title": "Descargas en Alta Resolución",
-            "description": "Guarda resultados en alta resolución para compartir con tu barbero, estilista o amigos.",
+            "description": "Imágenes nítidas de tinte de cejas antes y después listas para guardar y compartir con tu especialista en cejas.",
             "icon": "RiHdLine"
           },
           {
-            "title": "Comparación de Estilos",
-            "description": "Compara varios peinados lado a lado para elegir el mejor look.",
+            "title": "Comparación Antes y Después",
+            "description": "Deslizador lateral de tinte de cejas antes y después para que puedas ver exactamente cómo el tinte transforma tus cejas.",
             "icon": "RiCompareLine"
           },
           {
             "title": "Compatible con Móviles",
-            "description": "Funciona en móvil y escritorio para probar estilos en cualquier lugar.",
+            "description": "Funciona en cualquier dispositivo — teléfono, tablet o escritorio — para que puedas previsualizar estilos de tinte de cejas en cualquier lugar.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -200,47 +200,47 @@
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
+        "title": "Explora Estilos de Tinte de Cejas por Categoría",
+        "description": "Navega por estilos de tinte de cejas listos para IA y toca cualquier look para probarlo en tu propia foto con el generador de tinte de cejas con IA.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "Peinados para Hombres",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
+            "title": "Tintes de Cejas Naturales",
+            "description": "Tonos de tinte de cejas naturales y sutiles que realzan tus cejas con una definición suave. Previsualiza los mejores tonos de tinte de cejas para un look effortlessly pulido.",
+            "cta_label": "Probar tintes naturales"
           },
           {
             "key": "women",
-            "title": "Peinados para Mujeres",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
+            "title": "Tintes de Cejas Intensos",
+            "description": "Looks de tinte de cejas dramáticos y definidos para un acabado impactante. Previsualiza tonos de espresso intenso, chocolate oscuro y tinte profesional de cejas atrevido.",
+            "cta_label": "Probar tintes intensos"
           },
           {
             "key": "boys",
-            "title": "Peinados para Niños",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
+            "title": "Estilos de Laminado de Cejas",
+            "description": "Looks de cejas laminadas peinadas hacia arriba combinados con tinte. Previsualiza estilos de laminado y tinte de cejas para cejas más llenas y esculpidas.",
+            "cta_label": "Probar estilos de laminado"
           },
           {
             "key": "girls",
-            "title": "Peinados para Niñas",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
+            "title": "Tinte de Pestañas y Cejas",
+            "description": "Estilos combinados de tinte de pestañas y cejas para una transformación completa que enmarca los ojos. Previsualiza looks coordinados de tinte de pestañas y cejas en segundos.",
+            "cta_label": "Probar tintes de pestañas y cejas"
           }
         ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
+        "tip": "Cada vista previa es gratuita. Se añaden nuevos estilos de tinte de cejas regularmente."
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "Lo que Dicen los Usuarios sobre AI Barber",
-        "description": "Escucha a usuarios que encontraron su estilo perfecto.",
+        "title": "Lo Que Dicen los Usuarios Sobre el Generador de Tinte de Cejas con IA",
+        "description": "Usuarios reales que previsualizaron looks de tinte de cejas con el generador de tinte de cejas con IA.",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "Blogger de Moda",
-            "quote": "Dudaba en cortarme mi pelo largo a un bob. ¡AI Barber me mostró exactamente cómo se vería, y me encantó! La mejor app de peinados.",
+            "role": "Bloguera de Belleza",
+            "quote": "Estaba nerviosa por elegir un tono demasiado oscuro para mi tinte de cejas. El generador de tinte de cejas con IA me mostró un antes y después realista, así que reservé mi cita con total confianza.",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Sarah Jenkins"
@@ -249,7 +249,7 @@
           {
             "name": "Mike Ross",
             "role": "Modelo",
-            "quote": "Herramienta esencial para mi portafolio. Puedo probar diferentes looks para sesiones de fotos sin cambiar realmente mi pelo. El realismo es inigualable.",
+            "quote": "Previsualicé diferentes tonos de tinte profesional de cejas para una sesión de fotos y le mostré a mi especialista en cejas el look exacto que quería. Ahorré mucho tiempo.",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Mike Ross"
@@ -258,7 +258,7 @@
           {
             "name": "Emily Chen",
             "role": "Estudiante",
-            "quote": "¡Muy divertido! Probé pelo morado y un corte pixie. Se veía tan real que mi mamá pensó que realmente lo había hecho.",
+            "quote": "Probé tonos de gel de cejas con color desde taupe hasta espresso en la vista previa de IA. Me ayudó a elegir el mejor tinte de cejas para mi tono de piel antes de comprar nada.",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Emily Chen"
@@ -267,7 +267,7 @@
           {
             "name": "David Smith",
             "role": "Ingeniero de Software",
-            "quote": "Usé AI Barber para encontrar un nuevo corte de pelo de hombre. Las opciones de degradado y corte inferior se veían increíbles y me ayudaron a explicar exactamente lo que quería a mi barbiere.",
+            "quote": "La vista previa de laminado y tinte de cejas se veía increíblemente realista. Le mostré la imagen a mi especialista en cejas y obtuve exactamente el resultado que quería.",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "David Smith"
@@ -276,7 +276,7 @@
           {
             "name": "Jessica Lee",
             "role": "Maquilladora",
-            "quote": "¡El cambiador de color de pelo es increíble! Probé rubio, cobre y plata antes de teñirme el pelo. Esta herramienta gratis me salvó de tomar una mala decisión.",
+            "quote": "Como maquilladora, uso el generador de tinte de cejas con IA para mostrar a las clientas cómo se verá su combinación de tinte de pestañas y cejas. Las previsualizaciones con calidad de salón son impresionantemente precisas.",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Jessica Lee"
@@ -285,7 +285,7 @@
           {
             "name": "Tom Brown",
             "role": "Estudiante",
-            "quote": "Este cambiador de peinados IA gratis es muy fácil de usar. Subí mi foto y obtuve resultados en segundos. Altamente recomendado para cualquiera que busque un cambio de imagen virtual.",
+            "quote": "Rápido, gratuito y fácil. Subí una foto y obtuve múltiples opciones de tinte de cejas antes y después en segundos. No necesité instalar ninguna app.",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Tom Brown"
@@ -296,62 +296,62 @@
       "faq": {
         "id": "faq",
         "title": "Preguntas Frecuentes",
-        "description": "FAQs sobre el cambiador de peinado IA, consejos de foto y mejores resultados.",
-        "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
+        "description": "Preguntas frecuentes sobre el generador de tinte de cejas con IA, consejos de fotos y cómo obtener los mejores resultados de tinte de cejas.",
+        "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
         "items": [
           {
-            "question": "¿Es este Cambiador de Peinados IA gratis de usar?",
-            "answer": "Sí. Puedes probar el cambiador de peinado IA gratis online con una prueba para ver varios estilos."
+            "question": "¿Es gratuito este Generador de Tinte de Cejas con IA?",
+            "answer": "Sí. Puedes probar el generador de tinte de cejas con IA online con una prueba gratuita para previsualizar múltiples estilos y tonos de tinte de cejas."
           },
           {
-            "question": "¿Qué tan realistas son los peinados?",
-            "answer": "La IA integra cada peinado en tu foto para un resultado realista de corte, largo y color."
+            "question": "¿Qué tan realistas son las previsualizaciones de tinte de cejas?",
+            "answer": "La IA mezcla cada tono de tinte de cejas con tu foto para una vista previa realista que tiene en cuenta la forma natural de tus cejas, tu tono de piel y la iluminación."
           },
           {
             "question": "¿Qué tipo de fotos funcionan mejor?",
-            "answer": "Para los mejores resultados, sube una foto clara y frontal con buena iluminación. Evita fotos donde tu cara esté cubierta por gafas de sol, mascarillas o exceso de pelo. Una expresión neutral funciona mejor."
+            "answer": "Para mejores resultados, sube una foto clara y frontal con buena iluminación y tus cejas claramente visibles. Evita fotos donde tu cara esté cubierta por gafas de sol, mascarillas o cabello. Una expresión neutral funciona mejor."
           },
           {
-            "question": "¿Puedo cambiar solo el color de pelo?",
-            "answer": "Sí. Puedes cambiar solo el color o combinar corte y color y compartir el resultado con tu salón."
+            "question": "¿Puedo previsualizar diferentes tonos de gel de cejas con color?",
+            "answer": "Sí. Prueba una variedad de tonos de gel de cejas con color — desde taupe suave y marrón cálido hasta espresso intenso — y compáralos lado a lado para encontrar el mejor gel de cejas con color para tu look."
           },
           {
-            "question": "¿Funciona para hombres y mujeres?",
-            "answer": "Sí. Hay 500+ estilos: Hombres 197, Mujeres 240, Niños 56, Niñas 85."
+            "question": "¿Cuál es la diferencia entre tinte de cejas y gel de cejas con color?",
+            "answer": "Un tinte profesional de cejas es un tinte semipermanente aplicado en un salón que dura varias semanas. Un gel de cejas con color es un producto cosmético de uso diario que agrega color y fijación. El generador de tinte de cejas con IA puede previsualizar ambos estilos para que decidas cuál es el adecuado para ti."
           },
           {
             "question": "¿Están seguros mis datos de fotos?",
-            "answer": "Tomamos la privacidad en serio. Tus fotos subidas se procesan de forma segura para el propósito de generación y no se almacenan permanentemente ni se comparten con terceros."
+            "answer": "Nos tomamos la privacidad en serio. Tus fotos subidas se procesan de forma segura para la generación de tinte de cejas y no se almacenan permanentemente ni se comparten con terceros."
           },
           {
-            "question": "¿Puedo mostrar mi peinado IA a una barbería o salón cerca de mí?",
-            "answer": "Sí. Descarga la vista previa y muéstrala a tu barbero o estilista para lograr el look exacto."
+            "question": "¿Puedo previsualizar laminado y tinte de cejas juntos?",
+            "answer": "Sí. Selecciona el estilo de laminado y tinte de cejas para ver cejas peinadas hacia arriba y esculpidas combinadas con tu tono de tinte elegido en una vista previa realista."
           },
           {
-            "question": "¿Cuánto tarda en generar un peinado?",
-            "answer": "La mayoría de las vistas previas aparecen en segundos, según el tamaño de la imagen y la carga."
+            "question": "¿Cómo encuentro el mejor tinte de cejas para mi tono de piel?",
+            "answer": "Sube tu foto y prueba múltiples tonos. La IA considera tu tono de piel y el color natural de tus cejas para generar vistas previas realistas, ayudándote a encontrar la mejor combinación de tinte de cejas antes de visitar a un especialista."
           },
           {
-            "question": "¿Puedo probar largos corto, medio o largo?",
-            "answer": "Sí. Elige una plantilla o describe el largo en el texto."
+            "question": "¿Puedo mostrar mi vista previa de tinte de cejas con IA a mi especialista en cejas?",
+            "answer": "Sí. Descarga tu vista previa de tinte de cejas antes y después y muéstrala a tu especialista en cejas o salón para comunicar exactamente el tono y estilo que deseas."
           },
           {
-            "question": "¿Funciona con cabello rizado o texturizado?",
-            "answer": "Sí. Prueba rizos, ondas o afro; las fotos claras dan mejores resultados."
+            "question": "¿Cuánto tiempo tarda en generarse una vista previa de tinte de cejas?",
+            "answer": "La mayoría de las vistas previas de tinte de cejas están listas en segundos, dependiendo del tamaño de la imagen y el tráfico."
           },
           {
             "question": "¿Necesito instalar algo?",
-            "answer": "No. Funciona en el navegador, sin descargas."
+            "answer": "No. El generador de tinte de cejas con IA funciona completamente en tu navegador — sin descargas ni instalaciones necesarias."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "¿Listo para un Nuevo Look?",
-        "description": "No adivines con tu pelo. Visualiza tu peinado perfecto con la app gratis de AI Barber y muéstralo a tu barbería o salón local.",
+        "title": "¿Lista para Tu Tinte de Cejas Perfecto?",
+        "description": "Deja de adivinar tu resultado de tinte de cejas. Prueba el generador de tinte de cejas con IA ahora y comparte tu vista previa con un especialista en cejas o salón.",
         "buttons": [
           {
-            "title": "Empezar Transformación Ahora",
+            "title": "Comenzar Vista Previa de Tinte de Cejas Ahora",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
@@ -362,35 +362,35 @@
     }
   },
   "generator": {
-    "title": "Cambiador de peinado IA gratis online",
-    "description": "Sube una foto y prueba 500+ cortes y colores con el cambiador de peinado IA gratis.",
+    "title": "Generador de Tinte de Cejas con IA",
+    "description": "Sube una foto y previsualiza resultados realistas de tinte de cejas antes y después con el generador de tinte de cejas con IA.",
     "tabs": {
       "text-to-image": "Descripción del Estilo",
       "image-to-image": "Subir Foto"
     },
     "categories": {
-      "title": "Seleccionar Peinado",
-      "men": "Peinados para Hombres",
-      "women": "Peinados para Mujeres",
-      "boys": "Peinados para Niños",
-      "girls": "Peinados para Niñas",
+      "title": "Seleccionar Estilo de Tinte de Cejas",
+      "men": "Tintes de Cejas Naturales",
+      "women": "Tintes de Cejas Intensos",
+      "boys": "Estilos de Laminado de Cejas",
+      "girls": "Tinte de Pestañas y Cejas",
       "selected": "Seleccionado",
       "styles": "estilos"
     },
     "sidebar": {
       "history": "Historial",
-      "discover": "Ver resultados",
+      "discover": "Descubrir",
       "history_sign_in": "Inicia sesión para ver tu historial de imágenes generadas",
       "history_empty": "Aún no hay imágenes en el historial"
     },
     "form": {
-      "select_hairstyle_placeholder": "Haz clic para seleccionar peinado",
+      "select_hairstyle_placeholder": "Haz clic para seleccionar un estilo de tinte de cejas",
       "provider": "Proveedor de IA",
-      "model": "Modelo de Peinado",
+      "model": "Modelo de Tinte de Cejas",
       "select_provider": "Seleccionar Proveedor de IA",
-      "select_model": "Seleccionar Modelo de Peinado",
-      "prompt": "Descripción del Peinado",
-      "prompt_placeholder": "Describe tu peinado: largo, color, textura, estilo (p. ej., bob corto, rubio ondulado largo, crop texturizado, afro rizado)",
+      "select_model": "Seleccionar Modelo de Tinte de Cejas",
+      "prompt": "Descripción del Tinte de Cejas",
+      "prompt_placeholder": "Describe tu tinte de cejas: tono, intensidad, estilo (p. ej., tinte taupe suave, tinte de cejas espresso intenso, laminado y tinte de cejas, tinte de pestañas y cejas)",
       "reference_image": "Tu Foto",
       "reference_image_placeholder": "Sube tu foto para mejores resultados",
       "some_images_failed_to_upload": "Algunas imágenes no se pudieron subir, elimínalas y vuelve a subirlas",
@@ -399,43 +399,43 @@
       "upload_hint": "Haz clic o arrastra para subir fotos",
       "max_size": "Máx"
     },
-    "generate": "Generar Peinado",
+    "generate": "Generar Tinte de Cejas",
     "checking_account": "Verificando cuenta...",
     "loading": "Cargando...",
-    "generating": "Transformando tu look...",
-    "sign_in_to_generate": "Inicia sesión para probar nuevos peinados",
+    "generating": "Generando Tu Tinte de Cejas...",
+    "sign_in_to_generate": "Inicia Sesión para Probar Estilos de Tinte de Cejas",
     "credits_cost": "Cuesta {credits} créditos",
     "credits_remaining": "{credits} créditos restantes",
     "buy_credits": "Comprar Créditos",
     "progress": "Progreso",
-    "generated_images": "Tu Nuevo Look",
-    "preview_title": "Vista Previa de Peinado IA",
-    "ready_to_generate": "Listo para Transformar",
-    "ready_for_generating": "Listo para Transformación",
-    "no_images_generated": "Aún no se han generado peinados",
+    "generated_images": "Tu Nuevo Look de Cejas",
+    "preview_title": "Vista Previa de Tinte de Cejas con IA",
+    "ready_to_generate": "Listo para Generar",
+    "ready_for_generating": "Listo para Vista Previa de Tinte de Cejas",
+    "no_images_generated": "Aún no se han generado vistas previas de tinte de cejas",
     "use_as_reference": "Usar como referencia",
     "download_image": "Descargar imagen",
-    "example_image_hint": "Este es un resultado de ejemplo. Su peinado generado aparecerá aquí.",
+    "example_image_hint": "Este es un resultado de ejemplo. Tu vista previa de tinte de cejas generada aparecerá aquí.",
     "history_images": "Imágenes del historial",
     "history_load_more": "Cargar más",
     "history_view_image": "Ver imagen del historial",
     "history_scroll_left": "Desplazar a la izquierda",
     "history_scroll_right": "Desplazar a la derecha",
     "photoGuidelines": {
-      "title": "Guía de fotos para mejores resultados",
-      "suitableTitle": "Fotos adecuadas",
-      "suitableDescription": "Sube una foto clara y frontal de tu rostro. Para obtener un mejor resultado, es ideal recogerse el cabello hacia atrás. Y deja que tu cabello caiga naturalmente.",
-      "unsuitableTitle": "Fotos inadecuadas",
-      "unsuitableDescription": "No subas fotos de perfil, con poca luz o donde el rostro esté cubierto por cabello u objetos. Evita también imágenes de dibujos animados.",
+      "title": "Guía de Fotos para Mejores Resultados",
+      "suitableTitle": "Fotos Adecuadas",
+      "suitableDescription": "Sube una foto clara y frontal de tu rostro con tus cejas claramente visibles. Evita cubrir tus cejas con cabello o accesorios.",
+      "unsuitableTitle": "Fotos Inadecuadas",
+      "unsuitableDescription": "No subas fotos de perfil, con poca luz o donde tus cejas estén cubiertas por cabello, gafas de sol u otros objetos. También evita imágenes de dibujos animados.",
       "dontShowAgain": "No mostrar de nuevo",
       "confirm": "OK, Entendido"
     },
     "cropImage": {
-      "title": "Recortar imagen",
-      "presetRatios": "Proporciones preestablecidas",
+      "title": "Recortar Imagen",
+      "presetRatios": "Proporciones Preestablecidas",
       "free": "Libre",
       "actions": "Acciones",
-      "resetCrop": "Restablecer recorte",
+      "resetCrop": "Restablecer Recorte",
       "rotate": "Rotar 90°",
       "cancel": "Cancelar",
       "apply": "Aplicar"

@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "블로그 - AI Barber",
-    "description": "최신 헤어스타일 트렌드, AI 기능 및 스타일링 팁을 읽어보세요."
+    "title": "블로그 - Brow Tint",
+    "description": "최신 브로우 틴팅 트렌드, AI 기능 및 브로우 틴트 팁을 읽어보세요."
   },
   "page": {
-    "title": "AI Barber 블로그",
+    "title": "Brow Tint 블로그",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "블로그",
-        "description": "최신 헤어스타일 트렌드, AI 기능 및 스타일링 팁을 읽어보세요."
+        "description": "최신 브로우 틴팅 트렌드, AI 기능 및 브로우 틴트 팁을 읽어보세요."
       }
     }
   },

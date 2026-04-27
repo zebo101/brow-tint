@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "AI Barber 챗",
+        "title": "Brow Tint 챗",
         "logo": {
           "src": "/logo.png",
-          "alt": "AI Barber 챗"
+          "alt": "Brow Tint 챗"
         },
         "url": "/chat"
       },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "무엇을 도와드릴까요?",
-    "input_placeholder": "헤어스타일, 트렌드 또는 스타일링 팁에 대해 물어보세요..."
+    "input_placeholder": "브로우 틴팅, 색상 매칭 또는 눈썹 관리 팁에 대해 물어보세요..."
   },
   "history": {
     "title": "채팅 기록",

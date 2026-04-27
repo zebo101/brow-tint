@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "無料AIヘアスタイルチェンジャー（オンライン）｜500+ヘアカット｜AI Barber",
-    "description": "無料で使えるAIヘアスタイルチェンジャーをオンラインで試せます。写真をアップロードして500+のヘアカットとカラーをプレビューし、数秒でダウンロード。",
-    "keywords": "ai ヘアスタイルチェンジャー, ai ヘアスタイルチェンジャー オンライン, 無料 ai ヘアスタイルチェンジャー, バーチャルヘアスタイル, ヘアスタイルシミュレーター, ヘアスタイル 試着, バーチャルカット, ヘアカットシミュレーター, ヘアカラー 試着, ボブ, ピクシー, フェード, バズカット, カーリーヘア, メンズ ヘアスタイル, レディース ヘアスタイル, キッズ ヘアスタイル"
+    "title": "AI眉ティントジェネレーター（オンライン）| 眉ティント ビフォーアフター | Brow Tint",
+    "description": "AI眉ティントジェネレーターをオンラインでお試しください。写真をアップロードして眉ティントのビフォーアフターをプレビューし、数秒でバーチャル眉ティント結果をダウンロード。",
+    "keywords": "ai 眉ティント ジェネレーター, 眉ティント ジェネレーター, 眉ティント ビフォーアフター, アイブロウティント ジェネレーター, バーチャル眉ティント, 眉ティント 試着, AI 眉ティント, 眉ティント プレビュー, 眉カラー ジェネレーター, ティント眉ジェル プレビュー, 眉ラミネーション&ティント, プロ眉ティント, ベスト眉ティント, ベストティント眉ジェル, まつげ眉ティント, brow code tint"
   },
   "page": {
-    "title": "無料AIヘアスタイルチェンジャー（オンライン）- 500+ヘアカットを試す | AI Barber",
-    "description": "無料AIヘアスタイルチェンジャーで500+のヘアカットとカラーを数秒で試せます。メンズ197、レディース240、男の子56、女の子85。プレビューをダウンロードして理美容室に共有できます。",
+    "title": "AI眉ティントジェネレーター（オンライン）- 眉ティント ビフォーアフター",
+    "description": "AI眉ティントジェネレーターをオンラインで使って、リアルな眉ティントのビフォーアフターを数秒でプレビュー。写真をアップロードし、眉ティントスタイルを生成してダウンロード。",
     "show_sections": [
       "hero",
       "introduce",
@@ -23,55 +23,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "無料AIヘアスタイルチェンジャー（オンライン）",
-        "highlight_text": "AI Barber",
-        "description": "無料AIヘアスタイルチェンジャーで500+のヘアカットとカラーをすぐ試せます。写真をアップロードし、男女・キッズのスタイルをプレビューして新しいルックをダウンロード。",
+        "title": "AI眉ティントジェネレーター（オンライン）",
+        "highlight_text": "AI眉ティントジェネレーター",
+        "description": "AI眉ティントジェネレーターで、リアルな眉ティントのビフォーアフターを即座にプレビュー。写真をアップロードし、眉ティントスタイルを試して、新しい眉の仕上がりをダウンロード。",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Hairstyle Changer Interface",
+          "alt": "AI眉ティントジェネレーターインターフェース",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Hairstyle Changer Interface Dark Mode",
+          "alt": "AI眉ティントジェネレーターインターフェース ダークモード",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber Hero Background"
+          "alt": "Brow Tint ヒーロー背景"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "AI Barber AIヘアスタイルチェンジャーアプリとは？",
+        "title": "AI眉ティントジェネレーターとは？",
         "label": "紹介",
-        "description": "AI Barberは無料のAIヘアスタイルチェンジャー兼ヘアカットシミュレーターです。自分の写真でカット、長さ、カラーを試してから理美容室へ行けます。",
+        "description": "AI眉ティントジェネレーターは、バーチャル眉ティント試着ツールです。眉アーティストやサロンに行く前に、自分の写真で眉ティントの色やビフォーアフターの結果をプレビューできます。",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "AI Barber Hairstyle Simulator"
+          "alt": "AI眉ティントシミュレーター"
         },
         "items": [
           {
-            "title": "バーチャルヘアスタイル試着",
-            "description": "ボブ、ピクシー、フェード、バズカット、ロングレイヤーなど短・中・長のスタイルを数秒で試せます。",
+            "title": "バーチャル眉ティント試着",
+            "description": "製品を使わずに眉ティントの色をプレビュー。AIがプロ眉ティントの仕上がりをシミュレートし、施術前に新しい眉の見え方を確認できます。",
             "icon": "RiMagicLine"
           },
           {
-            "title": "リアルなAI結果",
-            "description": "顔認識AIがヘアラインと光を合わせ、自然な仕上がりを作ります。",
+            "title": "リアルなAI眉ティント結果",
+            "description": "顔認識AIがティントカラーをあなたの自然な眉の形や肌色にブレンドし、フォトリアルな眉ティントプレビューを生成します。",
             "icon": "RiCameraLensLine"
           },
           {
-            "title": "ヘアカラーチェンジャー",
-            "description": "黒・茶・ブロンド・銅・シルバー・ピンク・ブルーなどを事前にプレビュー。",
+            "title": "眉ティントカラーマッチング",
+            "description": "ソフトトープからディープエスプレッソまで、さまざまなティント眉ジェルの色をプレビューし、最適な眉ティントを見つけましょう。",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "スタイル転送",
-            "description": "プロンプトでセレブやK-pop、ランウェイ風のスタイルも再現可能。",
+            "title": "まつげ眉ティントプレビュー",
+            "description": "まつげ眉ティントを組み合わせたスタイルを一度にプレビューし、目元を引き立てるトータルな仕上がりを確認できます。",
             "icon": "RiExchangeLine"
           }
         ],
@@ -80,35 +80,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "当社のAIヘアスタイルチェンジャーを選ぶ理由",
+        "title": "AI眉ティントジェネレーターを選ぶ理由",
         "label": "メリット",
-        "description": "素早く、プライベートに、リアルなプレビューでカットとカラーを判断できます。",
+        "description": "高速・プライベート・リアルなプレビューで、眉ティントの判断に自信を。",
         "items": [
           {
             "title": "超高速＆100%オンライン",
-            "description": "1枚の写真から複数のスタイルを数秒で生成、100%オンライン。",
+            "description": "1枚の写真から複数の眉ティントルックを数秒で生成。100%オンラインで、予約も製品も不要で理想の眉ティントをプレビューできます。",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Processing"
+              "alt": "高速AI眉ティント処理"
             }
           },
           {
-            "title": "プライバシー第一",
-            "description": "写真は安全に処理され、永久保存されません。",
+            "title": "プライバシー最優先",
+            "description": "写真は安全に処理され、永久保存されません。眉ティントプレビューはプライベートに生成されます。",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Secure and Private"
+              "alt": "安全でプライベート"
             }
           },
           {
-            "title": "プロフェッショナル品質",
-            "description": "サロンで見せられるプレビューをダウンロードして希望を伝えやすくします。",
+            "title": "プロフェッショナルサロン品質",
+            "description": "サロンレベルの眉ティントプレビューをダウンロードして、眉アーティストに希望の色やスタイルを正確に伝えましょう。",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Professional Results"
+              "alt": "プロ眉ティントの仕上がり"
             }
           }
         ]
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "AIヘアスタイルチェンジャーの使い方",
-        "description": "4ステップでリアルなプレビューを作成：",
+        "title": "AI眉ティントジェネレーターの使い方",
+        "description": "4つの簡単なステップでリアルな眉ティントプレビューを取得：",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "AI Hairstyle Usage Guide"
+          "alt": "AI眉ティント使い方ガイド"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "クリアな写真をアップロード",
-            "description": "正面で明るい写真を使うと精度が上がります。",
+            "title": "鮮明な写真をアップロード",
+            "description": "正面からの明るい写真を使用し、眉がはっきり見えるようにしてください。AIが眉の形を正確にマッピングできます。",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Upload Photo"
+              "alt": "写真をアップロード"
             }
           },
           {
-            "title": "ヘアスタイルを選ぶ",
-            "description": "スタイルやカテゴリを選び、短・中・長を決めます。",
+            "title": "眉ティントスタイルを選択",
+            "description": "ティント眉ジェル、眉ラミネーション&ティント、プロ眉ティント、brow code tintオプションからお選びください。",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Select Hairstyle"
+              "alt": "眉ティントスタイルを選択"
             }
           },
           {
-            "title": "詳細を追加",
-            "description": "長さ、質感、色、前髪、フェードなどを指定。",
+            "title": "眉ティントプレビューを生成",
+            "description": "AIが数秒でリアルな眉ティントのビフォーアフター画像を作成し、あなたの自然な眉の形にカラーをブレンドします。",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Describe Hairstyle"
+              "alt": "眉ティントプレビューを生成"
             }
           },
           {
-            "title": "生成して比較",
-            "description": "生成・ダウンロードし、結果を並べて比較します。",
+            "title": "ダウンロードして共有",
+            "description": "高解像度の眉ティント ビフォーアフター写真を保存し、次回の予約時に眉アーティストやスタイリストに見せましょう。",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Generate and Download"
+              "alt": "眉ティント結果をダウンロード"
             }
           }
         ],
@@ -162,37 +162,37 @@
       },
       "features": {
         "id": "features",
-        "title": "AIヘアスタイルチェンジャーの主な機能",
-        "description": "カット、カラー、比較までできるバーチャルスタジオ。",
+        "title": "AI眉ティントジェネレーターの主な機能",
+        "description": "色、スタイル、ビフォーアフター比較まで対応するバーチャル眉ティントスタジオ。",
         "items": [
           {
-            "title": "500+のヘアカット＆スタイル",
-            "description": "メンズ197、レディース240、男の子56、女の子85。坊主、フェード、ボブ、ピクシーまで。",
+            "title": "プロ眉ティントプレビュー",
+            "description": "サロン品質のプロ眉ティントシミュレーション。ティントカラーをあなたの自然な眉の形と肌色にマッチングします。",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "スマート顔検出",
-            "description": "顔認識でヘアラインと比率に合わせて自然にフィット。",
+            "title": "ティント眉ジェル シェードマッチング",
+            "description": "微妙なトープから大胆なエスプレッソまで、さまざまなティント眉ジェルの色を試して、あなたに最適なティント眉ジェルを見つけましょう。",
             "icon": "RiWomenLine"
           },
           {
-            "title": "カラー実験",
-            "description": "ハイライト、バレイヤージュ、銅色、プラチナ、ビビッドカラーを事前に試せます。",
+            "title": "眉ラミネーション&ティント",
+            "description": "眉ラミネーションとティントを組み合わせたプレビューで、ブラッシュアップされた立体的な眉に豊かなカラーを加えた仕上がりを確認。",
             "icon": "RiPaletteLine"
           },
           {
             "title": "高解像度ダウンロード",
-            "description": "高解像度で保存し、理美容師や友人と共有可能。",
+            "description": "鮮明な眉ティントのビフォーアフター画像を保存して、眉アーティストと共有できます。",
             "icon": "RiHdLine"
           },
           {
-            "title": "スタイル比較",
-            "description": "複数のスタイルを並べて比較し、最適な髪型を選べます。",
+            "title": "ビフォーアフター比較",
+            "description": "サイドバイサイドの眉ティント ビフォーアフタースライダーで、ティントがあなたの眉をどう変えるか正確に確認。",
             "icon": "RiCompareLine"
           },
           {
             "title": "モバイル対応",
-            "description": "スマホとPCの両方に対応し、どこでも試せます。",
+            "description": "スマートフォン、タブレット、デスクトップなど、どのデバイスでも眉ティントスタイルをプレビューできます。",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -200,47 +200,47 @@
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
+        "title": "カテゴリ別に眉ティントスタイルを探す",
+        "description": "AI対応の眉ティントスタイルを閲覧し、気になるルックをタップしてAI眉ティントジェネレーターで自分の写真に試着。",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "メンズヘアスタイル",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
+            "title": "ナチュラル眉ティント",
+            "description": "自然で控えめな眉ティントの色合いで、ソフトな立体感を演出。さりげなく洗練された眉ティントシェードをプレビューできます。",
+            "cta_label": "ナチュラルティントを試す"
           },
           {
             "key": "women",
-            "title": "レディースヘアスタイル",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
+            "title": "ボールド眉ティント",
+            "description": "存在感のあるくっきりとした眉ティントルック。ディープエスプレッソ、リッチチョコレート、大胆なプロ眉ティントの色合いをプレビュー。",
+            "cta_label": "ボールドティントを試す"
           },
           {
             "key": "boys",
-            "title": "男の子ヘアスタイル",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
+            "title": "眉ラミネーションスタイル",
+            "description": "ブラッシュアップされたラミネーション眉とティントを組み合わせたルック。よりふっくらと整った眉ラミネーション&ティントスタイルをプレビュー。",
+            "cta_label": "ラミネーションスタイルを試す"
           },
           {
             "key": "girls",
-            "title": "女の子ヘアスタイル",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
+            "title": "まつげ眉ティント",
+            "description": "まつげ眉ティントを組み合わせたスタイルで、目元全体のトータル変身。コーディネートされたまつげ眉ティントルックを数秒でプレビュー。",
+            "cta_label": "まつげ眉ティントを試す"
           }
         ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
+        "tip": "すべてのプレビューは無料でお試しいただけます。新しい眉ティントスタイルは定期的に追加されます。"
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "AI Barberについてのユーザーの声",
-        "description": "完璧なスタイルを見つけたユーザーの声を聞いてみましょう。",
+        "title": "AI眉ティントジェネレーターへのユーザーの声",
+        "description": "AI眉ティントジェネレーターで眉ティントルックをプレビューした実際のユーザーの声。",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "ファッションブロガー",
-            "quote": "長い髪をボブにするのをためらっていました。AI Barberはそれがどのように見えるかを正確に示してくれ、とても気に入りました！最高のヘアスタイルアプリです。",
+            "role": "美容ブロガー",
+            "quote": "眉ティントが暗すぎるか心配でした。AI眉ティントジェネレーターがリアルなビフォーアフターを見せてくれたので、自信を持って予約できました。",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Sarah Jenkins"
@@ -249,7 +249,7 @@
           {
             "name": "Mike Ross",
             "role": "モデル",
-            "quote": "私のポートフォリオに欠かせないツールです。実際に髪を変えることなく、写真撮影のためにさまざまなルックスをテストできます。リアリズムは比類のないものです。",
+            "quote": "フォトシュートのためにさまざまなプロ眉ティントの色をプレビューし、眉アーティストに求める仕上がりを正確に見せることができました。時間が大幅に節約できました。",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Mike Ross"
@@ -258,7 +258,7 @@
           {
             "name": "Emily Chen",
             "role": "学生",
-            "quote": "とても楽しい！紫色の髪とピクシーカットを試してみました。とてもリアルだったので、母は私が実際にやったと思いました。",
+            "quote": "AIプレビューでトープからエスプレッソまでティント眉ジェルの色を試しました。何かを買う前に、自分の肌色に合った最適な眉ティントを選ぶのに役立ちました。",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Emily Chen"
@@ -267,7 +267,7 @@
           {
             "name": "David Smith",
             "role": "ソフトウェアエンジニア",
-            "quote": "新しいメンズヘアカットを見つけるためにAI Barberを使いました。フェードとアンダーカットのオプションは素晴らしく、理髪師に何をしてほしいかを正確に説明するのに役立ちました。",
+            "quote": "眉ラミネーション&ティントのプレビューが驚くほどリアルでした。画像を眉アーティストに見せたところ、まさに望んだ通りの仕上がりになりました。",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "David Smith"
@@ -276,7 +276,7 @@
           {
             "name": "Jessica Lee",
             "role": "メイクアップアーティスト",
-            "quote": "ヘアカラーチェンジャーはすごい！髪を染める前にブロンド、カッパー、シルバーを試しました。この無料ツールのおかげで、悪い選択をせずに済みました。",
+            "quote": "メイクアップアーティストとして、AI眉ティントジェネレーターを使ってクライアントにまつげ眉ティントの組み合わせがどう見えるか示しています。サロン品質のプレビューは驚くほど正確です。",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Jessica Lee"
@@ -285,7 +285,7 @@
           {
             "name": "Tom Brown",
             "role": "学生",
-            "quote": "この無料のAIヘアスタイルチェンジャーはとても使いやすいです。写真をアップロードして、数秒で結果が得られました。バーチャル変身を探している人には強くお勧めします。",
+            "quote": "高速、無料、簡単。1枚の写真をアップロードするだけで、数秒で複数の眉ティント ビフォーアフターオプションが得られました。アプリのインストールも不要です。",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Tom Brown"
@@ -296,62 +296,62 @@
       "faq": {
         "id": "faq",
         "title": "よくある質問",
-        "description": "AIヘアスタイルチェンジャーのFAQ、写真のコツ、最良の結果について。",
-        "tip": "探しているものが見つかりませんか？<a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>サポートチーム</a>にお問い合わせください",
+        "description": "AI眉ティントジェネレーター、写真のコツ、最適な眉ティント結果を得る方法についてのFAQ。",
+        "tip": "お探しのものが見つかりませんか？<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>サポートチーム</a>にお問い合わせください",
         "items": [
           {
-            "question": "このAIヘアスタイルチェンジャーは無料で使用できますか？",
-            "answer": "はい。無料トライアルで複数のスタイルを試せます。"
+            "question": "このAI眉ティントジェネレーターは無料で使用できますか？",
+            "answer": "はい。AI眉ティントジェネレーターの無料トライアルで、複数の眉ティントスタイルや色をオンラインでプレビューできます。"
           },
           {
-            "question": "ヘアスタイルはどれくらいリアルですか？",
-            "answer": "AIが写真に自然に合成し、カット・長さ・カラーをリアルにプレビューします。"
+            "question": "眉ティントプレビューはどれくらいリアルですか？",
+            "answer": "AIが各眉ティントの色をあなたの写真にブレンドし、自然な眉の形、肌色、照明を考慮したリアルなプレビューを生成します。"
           },
           {
             "question": "どのような写真が最適ですか？",
-            "answer": "最高の結果を得るには、照明の良い、顔がはっきりと見える正面からの写真をアップロードしてください。サングラス、マスク、または過度な髪で顔が隠れている写真は避けてください。無表情が最適です。"
+            "answer": "最良の結果を得るには、明るい場所で正面から撮影した鮮明な写真をアップロードしてください。眉がはっきり見えるようにし、サングラス、マスク、髪で顔が覆われている写真は避けてください。自然な表情が最適です。"
           },
           {
-            "question": "髪の色だけを変えることはできますか？",
-            "answer": "はい。カラーのみの変更や、カット＋カラーの組み合わせも可能です。"
+            "question": "異なるティント眉ジェルの色をプレビューできますか？",
+            "answer": "はい。ソフトトープやウォームブラウンからディープエスプレッソまで、さまざまなティント眉ジェルの色を試し、並べて比較して最適なティント眉ジェルを見つけられます。"
           },
           {
-            "question": "男性と女性の両方に対応していますか？",
-            "answer": "はい。500+のスタイル（メンズ197、レディース240、男の子56、女の子85）を用意しています。"
+            "question": "眉ティントとティント眉ジェルの違いは何ですか？",
+            "answer": "プロ眉ティントはサロンで施術される半永久的な染料で、数週間持続します。ティント眉ジェルは色とホールド感を加える日常的なコスメ製品です。AI眉ティントジェネレーターでは両方のスタイルをプレビューして、どちらが自分に合うか判断できます。"
           },
           {
             "question": "写真データは安全ですか？",
-            "answer": "私たちはプライバシーを真剣に受け止めています。アップロードされた写真は生成目的のために安全に処理され、永久に保存されたり、第三者と共有されたりすることはありません。"
+            "answer": "プライバシーを真剣に考えています。アップロードされた写真は眉ティント生成のために安全に処理され、永久保存や第三者への共有はされません。"
           },
           {
-            "question": "AIヘアスタイルを近くの理容室や美容室に見せられますか？",
-            "answer": "はい。プレビューをダウンロードして理美容師に見せれば、希望のスタイルを伝えやすくなります。"
+            "question": "眉ラミネーション&ティントを一緒にプレビューできますか？",
+            "answer": "はい。眉ラミネーション&ティントスタイルを選択すると、ブラッシュアップされた立体的な眉にお好みのティントカラーを組み合わせたリアルなプレビューが表示されます。"
           },
           {
-            "question": "ヘアスタイル生成にはどれくらい時間がかかりますか？",
-            "answer": "通常は数秒です。画像サイズや混雑状況で変わります。"
+            "question": "自分の肌色に合った最適な眉ティントの見つけ方は？",
+            "answer": "写真をアップロードして複数の色を試してみてください。AIがあなたの肌色と自然な眉の色を考慮してリアルなプレビューを生成し、眉アーティストを訪れる前に最適な眉ティントを見つける手助けをします。"
           },
           {
-            "question": "短髪・ミディアム・ロングなど長さを試せますか？",
-            "answer": "はい。テンプレートを選ぶか、プロンプトで長さを指定できます。"
+            "question": "AIの眉ティントプレビューを眉アーティストに見せられますか？",
+            "answer": "はい。眉ティントのビフォーアフタープレビューをダウンロードして、眉アーティストやサロンに見せれば、希望の色やスタイルを正確に伝えられます。"
           },
           {
-            "question": "くせ毛・巻き髪などの髪質でも使えますか？",
-            "answer": "はい。カールやウェーブ、アフロ系も試せます。鮮明な写真ほど精度が上がります。"
+            "question": "眉ティントプレビューの生成にはどれくらい時間がかかりますか？",
+            "answer": "ほとんどの眉ティントプレビューは数秒で完了します。画像サイズやアクセス状況により異なります。"
           },
           {
-            "question": "インストールは必要ですか？",
-            "answer": "不要です。ブラウザで使えます。"
+            "question": "何かインストールする必要がありますか？",
+            "answer": "いいえ。AI眉ティントジェネレーターはブラウザ上で完全に動作します。ダウンロードやインストールは不要です。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "新しいルックスの準備はできましたか？",
-        "description": "髪型で推測するのはやめましょう。無料AI Barberアプリで完璧なヘアスタイルを可視化し、近くの理容室・美容室に見せてください。",
+        "title": "理想の眉ティントの準備はできましたか？",
+        "description": "眉ティントの仕上がりを推測するのはやめましょう。今すぐAI眉ティントジェネレーターを試して、プレビューを眉アーティストやサロンに共有しましょう。",
         "buttons": [
           {
-            "title": "今すぐ変身を開始",
+            "title": "今すぐ眉ティントプレビューを開始",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
@@ -362,35 +362,35 @@
     }
   },
   "generator": {
-    "title": "無料AIヘアスタイルチェンジャー（オンライン）",
-    "description": "写真をアップロードして、無料AIヘアスタイルチェンジャーで500+のヘアカットとカラーを試しましょう。",
+    "title": "AI眉ティントジェネレーター",
+    "description": "写真をアップロードして、AI眉ティントジェネレーターでリアルな眉ティントのビフォーアフターをプレビュー。",
     "tabs": {
       "text-to-image": "スタイルの説明",
       "image-to-image": "写真アップロード"
     },
     "categories": {
-      "title": "ヘアスタイル選択",
-      "men": "メンズヘアスタイル",
-      "women": "レディースヘアスタイル",
-      "boys": "男の子ヘアスタイル",
-      "girls": "女の子ヘアスタイル",
+      "title": "眉ティントスタイルを選択",
+      "men": "ナチュラル眉ティント",
+      "women": "ボールド眉ティント",
+      "boys": "眉ラミネーションスタイル",
+      "girls": "まつげ眉ティント",
       "selected": "選択済み",
       "styles": "スタイル"
     },
     "sidebar": {
-      "history": "履歴画像",
-      "discover": "結果を見る",
-      "history_sign_in": "ログインして生成済み画像の履歴を表示",
+      "history": "履歴",
+      "discover": "発見",
+      "history_sign_in": "ログインして生成画像の履歴を表示",
       "history_empty": "履歴画像はまだありません"
     },
     "form": {
-      "select_hairstyle_placeholder": "クリックしてヘアスタイルを選択",
+      "select_hairstyle_placeholder": "クリックして眉ティントスタイルを選択",
       "provider": "AIプロバイダー",
-      "model": "ヘアスタイルモデル",
+      "model": "眉ティントモデル",
       "select_provider": "AIプロバイダーを選択",
-      "select_model": "ヘアスタイルモデルを選択",
-      "prompt": "ヘアスタイルの説明",
-      "prompt_placeholder": "ヘアスタイルを説明してください：長さ、色、質感、スタイル（例：短いボブ、長いブロンドのウェーブ、テクスチャードクロップ、カーリーアフロ）",
+      "select_model": "眉ティントモデルを選択",
+      "prompt": "眉ティントの説明",
+      "prompt_placeholder": "眉ティントを説明してください：色、濃さ、スタイル（例：ソフトトープティント、ボールドエスプレッソ眉ティント、眉ラミネーション&ティント、まつげ眉ティント）",
       "reference_image": "あなたの写真",
       "reference_image_placeholder": "最高の結果のために写真をアップロード",
       "some_images_failed_to_upload": "一部の画像のアップロードに失敗しました。削除して再アップロードしてください",
@@ -399,23 +399,23 @@
       "upload_hint": "クリックまたはドラッグで写真をアップロード",
       "max_size": "最大"
     },
-    "generate": "ヘアスタイル生成",
+    "generate": "眉ティントを生成",
     "checking_account": "アカウント確認中...",
     "loading": "読み込み中...",
-    "generating": "ルックスを変更中...",
-    "sign_in_to_generate": "新しいヘアスタイルを試すにはログイン",
+    "generating": "眉ティントを生成中...",
+    "sign_in_to_generate": "眉ティントスタイルを試すにはログイン",
     "credits_cost": "{credits}クレジット消費",
     "credits_remaining": "残り{credits}クレジット",
     "buy_credits": "クレジット購入",
     "progress": "進行状況",
-    "generated_images": "あなたの新しいルック",
-    "preview_title": "AIヘアスタイルプレビュー",
-    "ready_to_generate": "変更準備完了",
-    "ready_for_generating": "変更準備中",
-    "no_images_generated": "まだヘアスタイルが生成されていません",
+    "generated_images": "あなたの新しい眉ルック",
+    "preview_title": "AI眉ティントプレビュー",
+    "ready_to_generate": "生成準備完了",
+    "ready_for_generating": "眉ティントプレビューの準備中",
+    "no_images_generated": "眉ティントプレビューはまだ生成されていません",
     "use_as_reference": "参照として使用",
     "download_image": "画像をダウンロード",
-    "example_image_hint": "これはサンプル結果です。生成されたヘアスタイルはここに表示されます。",
+    "example_image_hint": "これはサンプル結果です。生成された眉ティントプレビューはここに表示されます。",
     "history_images": "履歴画像",
     "history_load_more": "もっと見る",
     "history_view_image": "履歴画像を見る",
@@ -424,11 +424,11 @@
     "photoGuidelines": {
       "title": "最適な結果のための写真ガイドライン",
       "suitableTitle": "適切な写真",
-      "suitableDescription": "顔がはっきりと見える正面からの写真をアップロードしてください。満足のいく結果を得るには、髪を後ろにまとめるのが理想的です。また、髪を自然に下ろしてください。",
+      "suitableDescription": "顔がはっきり見え、眉が見える正面からの鮮明な写真をアップロードしてください。眉が髪やアクセサリーで隠れないようにしてください。",
       "unsuitableTitle": "不適切な写真",
-      "unsuitableDescription": "横顔、暗い場所、髪や他の物で顔が隠れている写真は避けてください。アニメ画像なども使用しないでください。",
+      "unsuitableDescription": "横向き、暗い場所、眉が髪やサングラスなどで隠れている写真は避けてください。漫画やイラスト画像も使用しないでください。",
       "dontShowAgain": "今後表示しない",
-      "confirm": "OK, 理解しました"
+      "confirm": "OK、了解しました"
     },
     "cropImage": {
       "title": "画像をトリミング",

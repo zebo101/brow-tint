@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Blog - AI Barber",
-    "description": "Leia as últimas tendências de penteados, recursos de IA e dicas de estilo."
+    "title": "Blog - Brow Tint",
+    "description": "Leia as últimas tendências de tintura de sobrancelha, recursos de IA e dicas de tintura de sobrancelha."
   },
   "page": {
-    "title": "Blog AI Barber",
+    "title": "Blog Brow Tint",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "Blog",
-        "description": "Leia as últimas tendências de penteados, recursos de IA e dicas de estilo."
+        "description": "Leia as últimas tendências de tintura de sobrancelha, recursos de IA e dicas de tintura de sobrancelha."
       }
     }
   },

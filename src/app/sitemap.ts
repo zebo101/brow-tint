@@ -14,7 +14,7 @@ const staticRoutes: StaticSitemapRoute[] = [
   { path: '/', changeFrequency: 'daily', priority: 1 },
   { path: '/pricing', changeFrequency: 'weekly', priority: 0.9 },
   { path: '/showcases', changeFrequency: 'weekly', priority: 0.85 },
-  { path: '/ai-hairstyle-changer', changeFrequency: 'weekly', priority: 0.9 },
+  { path: '/ai-brow-tint-generator', changeFrequency: 'weekly', priority: 0.9 },
   { path: '/hairstyle-changer-ai-video', changeFrequency: 'weekly', priority: 0.85 },
   { path: '/ai-music-generator', changeFrequency: 'weekly', priority: 0.75 },
   { path: '/blog', changeFrequency: 'daily', priority: 0.8 },

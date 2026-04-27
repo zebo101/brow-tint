@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Galerie - AI Barber",
-    "description": "Sehen Sie erstaunliche Frisuren-Transformationen, die mit AI Barber erstellt wurden"
+    "title": "Brow Tint Galerie - KI Augenbrauen-Tint Vorher und Nachher",
+    "description": "Sehen Sie beeindruckende Augenbrauen-Tint Vorher-Nachher-Transformationen, erstellt mit dem Brow Tint KI-Generator"
   },
   "page": {
-    "title": "Transformations-Galerie",
+    "title": "Brow Tint Galerie",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Erstaunliche Frisuren-Transformationen",
-        "description": "Sehen Sie, wie unsere Benutzer ihre Looks mit AI Barber verwandelt haben.",
+        "title": "Beeindruckende Augenbrauen-Tint Transformationen",
+        "description": "Sehen Sie, wie Nutzer ihre Brauen mit Brow Tint verwandelt haben.",
         "groups": [
           {
             "name": "all",
@@ -17,182 +17,182 @@
           },
           {
             "name": "short-hair",
-            "title": "Kurze Haare"
+            "title": "Natürliche Tints"
           },
           {
             "name": "long-hair",
-            "title": "Lange Haare"
+            "title": "Kräftige Tints"
           },
           {
             "name": "color-change",
-            "title": "Farbwechsel"
+            "title": "Brow Lamination"
           },
           {
             "name": "men-styles",
-            "title": "Herren-Styles"
+            "title": "Getöntes Brauengel"
           },
           {
             "name": "women-styles",
-            "title": "Damen-Styles"
+            "title": "Wimpern & Brauen"
           },
           {
             "name": "trendy",
-            "title": "Trendige Looks"
+            "title": "Vorher & Nachher"
           },
           {
             "name": "classic",
-            "title": "Klassische Styles"
+            "title": "Professionelle Tints"
           }
         ],
         "items": [
           {
-            "title": "Pixie-Schnitt Transformation",
-            "description": "Mutiger kurzer Haarschnitt für selbstbewussten Look",
+            "title": "Sanftes Taupe Augenbrauen-Tint",
+            "description": "Natürlicher, dezenter Augenbrauen-Tint Look für ein mühelos gepflegtes Erscheinungsbild",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.png",
-              "alt": "Pixie-Schnitt Transformation"
+              "alt": "Sanftes Taupe Augenbrauen-Tint Vorher und Nachher"
             },
             "group": "short-hair"
           },
           {
-            "title": "Beach Waves",
-            "description": "Natürlicher welliger Langhaar-Style",
+            "title": "Dunkles Espresso Augenbrauen-Tint",
+            "description": "Sattes, tiefes Braun-Augenbrauen-Tint für kräftige, definierte Brauen",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.png",
-              "alt": "Beach Waves"
+              "alt": "Dunkles Espresso Augenbrauen-Tint"
             },
             "group": "long-hair"
           },
           {
-            "title": "Platinblond",
-            "description": "Atemberaubende blonde Farbtransformation",
+            "title": "Brow Lamination & Tint",
+            "description": "Aufgebürstete, laminierte und getönte Brauen für einen glatten, vollen Look",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.png",
-              "alt": "Platinblond"
+              "alt": "Brow Lamination und Tint Ergebnis"
             },
             "group": "color-change"
           },
           {
-            "title": "Moderner Pompadour",
-            "description": "Klassischer Herren-Style mit modernem Twist",
+            "title": "Professionelles Augenbrauen-Tint",
+            "description": "Salonqualität professionelles Augenbrauen färben mit präziser, gleichmäßiger Abdeckung",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.png",
-              "alt": "Moderner Pompadour"
-            },
-            "group": "men-styles"
-          },
-          {
-            "title": "Gestufter Bob",
-            "description": "Trendiger Bob mit texturierten Schichten",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "Gestufter Bob"
-            },
-            "group": "women-styles"
-          },
-          {
-            "title": "Klassischer Hochsteck",
-            "description": "Eleganter klassischer Hochsteck-Style",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "Klassischer Hochsteck"
+              "alt": "Professionelles Augenbrauen-Tint Transformation"
             },
             "group": "classic"
           },
           {
-            "title": "Fade Haarschnitt",
-            "description": "Sauberer Fade mit modernem Styling",
+            "title": "Getöntes Brauengel Look",
+            "description": "Tägliches getöntes Brauengel Finish für eine schnelle, natürliche Aufwertung",
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Fade Haarschnitt"
+              "src": "/imgs/cases/5.png",
+              "alt": "Getöntes Brauengel Look"
             },
             "group": "men-styles"
           },
           {
-            "title": "Balayage Highlights",
-            "description": "Schöne Balayage-Färbetechnik",
+            "title": "Wimpern & Augenbrauen Tint",
+            "description": "Kombiniertes Wimpern und Augenbrauen Tint für einen vollständigen, pflegeleichten Look",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "Wimpern und Augenbrauen Tint Ergebnis"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "brow code tint",
+            "description": "Präzise brow code tint Formel-Abstimmung für Ihre einzigartige Brauenfarbe",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "brow code tint Abstimmung"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "Beste Augenbrauen-Tint Farbtonabstimmung",
+            "description": "KI-abgestimmter perfekter Augenbrauen-Tint Farbton, maßgeschneidert auf Ihren Hautton und Ihre Haarfarbe",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/9.png",
-              "alt": "Balayage Highlights"
+              "alt": "Beste Augenbrauen-Tint Farbtonabstimmung"
             },
-            "group": "color-change"
+            "group": "short-hair"
           }
         ]
       },
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Browse the Full Hairstyle Library",
-        "description": "Scroll through our 500+ AI-ready cuts organized by gender and age. Click any look to preview it on your own photo.",
+        "title": "Die vollständige Augenbrauen-Tint Stil-Bibliothek durchsuchen",
+        "description": "Scrollen Sie durch unsere KI-gestützten Augenbrauen-Tint Styles, organisiert nach Typ. Klicken Sie auf einen Look, um ihn an Ihrem eigenen Foto zu sehen.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "Herrenfrisuren",
-            "description": "Hand-picked men's haircuts — fades, crops, quiffs, buzz cuts, and classic side parts. See real examples before your next barber visit.",
-            "cta_label": "Try now"
+            "title": "Natürliche Augenbrauen-Tints",
+            "description": "Sanfte, alltägliche Augenbrauen-Tint Farbtöne, die Ihre natürliche Brauenfarbe betonen. Perfekt für einen dezenten, ungeschminkten Look mit Taupe, Hellbraun und Blondtönen.",
+            "cta_label": "Jetzt testen"
           },
           {
             "key": "women",
-            "title": "Damenfrisuren",
-            "description": "Trending women's cuts — bobs, pixies, long layers, beach waves, and bangs. Preview length, texture, and color before committing.",
-            "cta_label": "Try now"
+            "title": "Kräftige Augenbrauen-Tints",
+            "description": "Markantes Augenbrauen färben in tiefem Espresso, Anthrazit und Rotbraun-Farbtönen. Erzielen Sie dramatische, skulptierte Brauen, die Ihr Gesicht rahmen und definieren.",
+            "cta_label": "Jetzt testen"
           },
           {
             "key": "boys",
-            "title": "Jungenfrisuren",
-            "description": "Curated boys' cuts for every age — tapered tops, short combs, and textured school-ready classics.",
-            "cta_label": "Try now"
+            "title": "Brow Lamination Styles",
+            "description": "Brow Lamination und Tint Kombis für den aufgebürsteten, fedrigen Look. Sehen Sie verschiedene Lamination-Styles, bevor Sie Ihren Salontermin buchen.",
+            "cta_label": "Jetzt testen"
           },
           {
             "key": "girls",
-            "title": "Mädchenfrisuren",
-            "description": "Popular girls' hairstyles — long layers, braids, trendy bobs, and playful curls. Family-friendly previews for every age.",
-            "cta_label": "Try now"
+            "title": "Wimpern & Augenbrauen Tint",
+            "description": "Kombinierte Wimpern und Augenbrauen Tint Pakete für eine vollständige, pflegeleichte Aufwertung. Sehen Sie, wie abgestimmte Tints Ihre Augen rahmen.",
+            "cta_label": "Jetzt testen"
           }
         ],
-        "tip": "Every preview is free. New AI hairstyles are added regularly."
+        "tip": "Jede Vorschau ist kostenlos. Neue Augenbrauen-Tint Styles werden regelmäßig hinzugefügt."
       },
       "video_demo": {
         "block": "features-accordion",
         "id": "video_demo",
-        "label": "Video Demo",
-        "title": "See AI Barber in Action",
-        "description": "Watch real hairstyle transformations — from upload to download in seconds.",
+        "label": "Video-Demo",
+        "title": "Brow Tint in Aktion sehen",
+        "description": "Sehen Sie echte Augenbrauen-Tint Vorher-Nachher-Transformationen — vom Upload zur Vorschau in Sekunden.",
         "items": [
           {
-            "title": "Try Multiple Hairstyles in Seconds",
-            "description": "Upload one photo and watch it try on several distinct cuts and colors, side by side.",
+            "title": "Mehrere Augenbrauen-Tint Farbtöne sofort ansehen",
+            "description": "Laden Sie ein Foto hoch und sehen Sie mehrere Augenbrauen-Tint Farbtöne und Styles nebeneinander, um Ihren perfekten Match zu finden.",
             "icon": "RiPlayCircleLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "AI hairstyle transformation demo video"
+              "alt": "KI Augenbrauen-Tint Vorschau Demo-Video"
             }
           },
           {
-            "title": "Preview Hair Movement and Texture",
-            "description": "See how bangs, layers, curls, and volume flow with realistic motion — before you commit to the cut.",
+            "title": "Realistische Augenbrauen-Tint Textur und Abdeckung sehen",
+            "description": "Sehen Sie, wie verschiedene Augenbrauen-Tint Techniken — von getöntem Brauengel bis professionellem Augenbrauen-Tint — auf Ihren echten Brauen aussehen, bevor Sie sich entscheiden.",
             "icon": "RiFilmLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Hair texture and movement preview video"
+              "alt": "Augenbrauen-Tint Textur und Abdeckung Vorschau-Video"
             }
           }
         ]
@@ -200,77 +200,77 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "label": "How It Works",
-        "title": "From Photo to New Hairstyle in 4 Steps",
-        "description": "AI Barber is built for fast, realistic hairstyle previews. No install, no signup needed to try.",
+        "label": "So funktioniert es",
+        "title": "Vom Foto zum perfekten Augenbrauen-Tint in 4 Schritten",
+        "description": "Brow Tint ist für schnelle, realistische Augenbrauen-Tint Vorschauen entwickelt. Keine Installation, keine Anmeldung zum Ausprobieren nötig.",
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Upload a Clear Front-Facing Photo",
-            "description": "Good lighting and a visible hairline give the AI the most accurate map of your face."
+            "title": "Klares, frontales Foto hochladen",
+            "description": "Gute Beleuchtung und sichtbare Brauen geben der KI die genaueste Karte Ihres Gesichts und Ihrer Brauenform."
           },
           {
-            "title": "Pick a Hairstyle From the Gallery",
-            "description": "Browse 500+ AI hairstyles across men, women, boys, and girls — or describe a custom look."
+            "title": "Augenbrauen-Tint Stil wählen",
+            "description": "Durchsuchen Sie natürliche Tints, kräftige Farbtöne, Brow Lamination und Tint Kombis oder getöntes Brauengel Finishes in der Galerie."
           },
           {
-            "title": "Fine-Tune Length, Texture, and Color",
-            "description": "Add an optional prompt to dial in bangs, layers, highlights, or a specific color."
+            "title": "Farbton, Form und Intensität anpassen",
+            "description": "Passen Sie Tint-Farbe, Brauendicke, Bogenform und Abdeckungsintensität an Ihren gewünschten Look an."
           },
           {
-            "title": "Generate, Compare, and Download",
-            "description": "Generate multiple looks, compare side-by-side, and download your favorite to share with your stylist."
+            "title": "Generieren, vergleichen und herunterladen",
+            "description": "Generieren Sie mehrere Augenbrauen-Tint Vorschauen, vergleichen Sie Vorher und Nachher Seite an Seite und laden Sie Ihren Favoriten herunter, um ihn mit Ihrer Brauen-Spezialistin zu teilen."
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Hairstyle Preview FAQ",
-        "description": "Common questions about AI hairstyle previews, photo tips, and how to get the best results.",
+        "title": "Augenbrauen-Tint Vorschau FAQ",
+        "description": "Häufige Fragen zu KI Augenbrauen-Tint Vorschauen, Foto-Tipps und wie Sie die besten Augenbrauen-Tint Ergebnisse erzielen.",
         "items": [
           {
-            "question": "Are the AI hairstyle previews in this gallery free?",
-            "answer": "Yes. You can browse every style for free and generate previews on your own photo with a free trial."
+            "question": "Sind die Augenbrauen-Tint Vorschauen in dieser Galerie kostenlos?",
+            "answer": "Ja. Sie können jeden Augenbrauen-Tint Stil kostenlos durchsuchen und Vorschauen an Ihrem eigenen Foto mit einer kostenlosen Testversion generieren."
           },
           {
-            "question": "Will the AI preview match my real haircut?",
-            "answer": "AI Barber renders realistic cuts, colors, and textures that blend with your hairline. Actual results still depend on your hair type and your stylist — we recommend downloading your preview and sharing it with your barber."
+            "question": "Entspricht die KI Augenbrauen-Tint Vorschau meinen realen Ergebnissen?",
+            "answer": "Brow Tint rendert realistische Tint-Farbtöne und Abdeckung, die sich mit Ihrem natürlichen Brauenhaar verbinden. Die tatsächlichen Ergebnisse hängen noch von Ihrem Brauentyp und Ihrer Brauen-Spezialistin ab — wir empfehlen, Ihre Vorschau herunterzuladen und mit Ihrer professionellen Augenbrauen-Tint Spezialistin zu teilen."
           },
           {
-            "question": "How many hairstyles can I try?",
-            "answer": "There are 500+ curated hairstyles in the gallery, covering men's, women's, boys', and girls' cuts. You can also describe custom styles with your own prompt."
+            "question": "Wie viele Augenbrauen-Tint Styles kann ich ausprobieren?",
+            "answer": "Es gibt Dutzende kuratierter Augenbrauen-Tint Styles in der Galerie, darunter natürliche Tints, kräftige Tints, Brow Lamination und Tint Kombis, getöntes Brauengel Looks und Wimpern und Augenbrauen Tint Pakete. Sie können auch individuelle Farbtöne mit Ihrem eigenen Prompt beschreiben."
           },
           {
-            "question": "Do I need to install an app?",
-            "answer": "No. AI Barber runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
+            "question": "Muss ich eine App installieren, um Brow Tint zu nutzen?",
+            "answer": "Nein. Brow Tint läuft vollständig in Ihrem Browser — auf Mobilgeräten oder Desktop. Keine Downloads oder Plugins nötig."
           },
           {
-            "question": "What photo works best for a hairstyle preview?",
-            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible hairline gives the AI the most to work with."
+            "question": "Welches Foto funktioniert am besten für eine Augenbrauen-Tint Vorschau?",
+            "answer": "Verwenden Sie ein klares, frontales Foto mit gleichmäßiger Beleuchtung. Vermeiden Sie Sonnenbrillen, Hüte oder starke Filter. Ein neutraler Gesichtsausdruck mit sichtbaren Brauen liefert der KI das genaueste Augenbrauen-Tint Ergebnis."
           },
           {
-            "question": "Is my photo kept private?",
-            "answer": "Your uploaded photos are processed securely for generation only. They are not stored permanently or shared with third parties."
+            "question": "Bleibt mein Foto privat?",
+            "answer": "Ihre hochgeladenen Fotos werden sicher nur für die Augenbrauen-Tint Generierung verarbeitet. Sie werden nicht dauerhaft gespeichert oder an Dritte weitergegeben."
           },
           {
-            "question": "Can boys and girls try these hairstyles safely?",
-            "answer": "Yes. The kids' sections are family-friendly and cover everyday cuts. Parents can preview any look before visiting the salon."
+            "question": "Was ist der Unterschied zwischen Augenbrauen färben und Brow Lamination?",
+            "answer": "Augenbrauen färben fügt Ihren Brauenhaaren Farbe für einen volleren, definierteren Look hinzu. Brow Lamination und Tint kombiniert einen chemischen Glättungsprozess mit Färben, um aufgebürstete, fedrige Brauen zu erzeugen. Sie können beides mit Brow Tint ansehen."
           },
           {
-            "question": "Does AI Barber support color changes only?",
-            "answer": "Yes. You can preview a color change on your current cut — black, blonde, copper, silver, pink, blue, and more — or combine color with a new style."
+            "question": "Kann Brow Tint mir helfen, den richtigen brow code tint Farbton zu finden?",
+            "answer": "Ja. Brow Tint nutzt KI, um Ihren Hautton, Ihre Haarfarbe und Ihre Gesichtszüge zu analysieren und den besten Augenbrauen-Tint Farbton zu empfehlen — ähnlich einer brow code tint Formel. Probieren Sie mehrere Farbtöne nebeneinander aus, um Ihre perfekte professionelle Augenbrauen-Tint Farbe zu finden."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Try a New Hairstyle?",
-        "description": "Upload your photo and preview every look in the gallery — completely free, no install required.",
+        "title": "Bereit, Ihren perfekten Augenbrauen-Tint zu finden?",
+        "description": "Laden Sie Ihr Foto hoch und sehen Sie jeden Augenbrauen-Tint Stil in der Galerie — komplett kostenlos, keine Installation nötig.",
         "buttons": [
           {
-            "title": "Try AI Barber now",
-            "url": "/ai-hairstyle-changer",
+            "title": "Brow Tint jetzt testen",
+            "url": "/ai-brow-tint-generator",
             "target": "_self",
             "icon": "Zap"
           }

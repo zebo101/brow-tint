@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Blog - AI Barber",
-    "description": "Lesen Sie die neuesten Frisurentrends, KI-Funktionen und Styling-Tipps."
+    "title": "Blog - Brow Tint",
+    "description": "Lesen Sie die neuesten Augenbrauentönungstrends, KI-Funktionen und Augenbrauentönung-Tipps."
   },
   "page": {
-    "title": "AI Barber Blog",
+    "title": "Brow Tint Blog",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "Blog",
-        "description": "Lesen Sie die neuesten Frisurentrends, KI-Funktionen und Styling-Tipps."
+        "description": "Lesen Sie die neuesten Augenbrauentönungstrends, KI-Funktionen und Augenbrauentönung-Tipps."
       }
     }
   },

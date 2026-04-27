@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Galleria - AI Barber",
-    "description": "Vedi incredibili trasformazioni di acconciature create con AI Barber"
+    "title": "Galleria Brow Tint - Tinta Sopracciglia IA Prima e Dopo",
+    "description": "Scopri incredibili trasformazioni tinta sopracciglia prima e dopo create con il generatore IA Brow Tint"
   },
   "page": {
-    "title": "Galleria di Trasformazioni",
+    "title": "Galleria Brow Tint",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Incredibili Trasformazioni di Acconciature",
-        "description": "Vedi come i nostri utenti hanno trasformato i loro look con AI Barber.",
+        "title": "Straordinarie Trasformazioni Tinta Sopracciglia",
+        "description": "Scopri come gli utenti hanno trasformato le loro sopracciglia con Brow Tint.",
         "groups": [
           {
             "name": "all",
@@ -17,182 +17,182 @@
           },
           {
             "name": "short-hair",
-            "title": "Capelli Corti"
+            "title": "Tinte Naturali"
           },
           {
             "name": "long-hair",
-            "title": "Capelli Lunghi"
+            "title": "Tinte Intense"
           },
           {
             "name": "color-change",
-            "title": "Cambio Colore"
+            "title": "Laminazione Sopracciglia"
           },
           {
             "name": "men-styles",
-            "title": "Stili Uomo"
+            "title": "Gel Sopracciglia Colorato"
           },
           {
             "name": "women-styles",
-            "title": "Stili Donna"
+            "title": "Ciglia e Sopracciglia"
           },
           {
             "name": "trendy",
-            "title": "Look di Tendenza"
+            "title": "Prima e Dopo"
           },
           {
             "name": "classic",
-            "title": "Stili Classici"
+            "title": "Tinte Professionali"
           }
         ],
         "items": [
           {
-            "title": "Trasformazione Pixie Cut",
-            "description": "Taglio corto audace per un look sicuro",
+            "title": "Tinta Sopracciglia Tortora Morbido",
+            "description": "Look naturale e sottile di tinta sopracciglia per un aspetto curato ed elegante senza sforzo",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.png",
-              "alt": "Trasformazione pixie cut"
+              "alt": "Tinta sopracciglia tortora morbido prima e dopo"
             },
             "group": "short-hair"
           },
           {
-            "title": "Onde da Spiaggia",
-            "description": "Stile capelli lunghi ondulati naturali",
+            "title": "Tinta Sopracciglia Espresso Scuro",
+            "description": "Tinta sopracciglia marrone intenso e ricco per sopracciglia definite e decise",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.png",
-              "alt": "Onde da spiaggia"
+              "alt": "Tinta sopracciglia espresso scuro"
             },
             "group": "long-hair"
           },
           {
-            "title": "Biondo Platino",
-            "description": "Trasformazione di colore biondo straordinaria",
+            "title": "Laminazione e Tinta Sopracciglia",
+            "description": "Sopracciglia laminate e sollevate con tinta per un look elegante e pieno",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.png",
-              "alt": "Biondo platino"
+              "alt": "Risultato laminazione e tinta sopracciglia"
             },
             "group": "color-change"
           },
           {
-            "title": "Pompadour Moderno",
-            "description": "Stile classico maschile con tocco moderno",
+            "title": "Tinta Professionale Sopracciglia",
+            "description": "Tinta professionale sopracciglia di qualità salone con copertura precisa e uniforme",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.png",
-              "alt": "Pompadour moderno"
-            },
-            "group": "men-styles"
-          },
-          {
-            "title": "Bob a Strati",
-            "description": "Bob di tendenza con strati texturizzati",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "Bob a strati"
-            },
-            "group": "women-styles"
-          },
-          {
-            "title": "Chignon Classico",
-            "description": "Stile chignon classico elegante",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "Chignon classico"
+              "alt": "Trasformazione tinta professionale sopracciglia"
             },
             "group": "classic"
           },
           {
-            "title": "Taglio Fade",
-            "description": "Fade pulito con styling moderno",
+            "title": "Look Gel Sopracciglia Colorato",
+            "description": "Finitura quotidiana con gel sopracciglia colorato per un miglioramento naturale e veloce",
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Taglio fade"
+              "src": "/imgs/cases/5.png",
+              "alt": "Look gel sopracciglia colorato"
             },
             "group": "men-styles"
           },
           {
-            "title": "Mechas Balayage",
-            "description": "Bella tecnica di colore balayage",
+            "title": "Tinta Ciglia e Sopracciglia",
+            "description": "Tinta combinata ciglia e sopracciglia per un look completo e a bassa manutenzione",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "Risultato tinta ciglia e sopracciglia"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "Brow Code Tint",
+            "description": "Formula brow code tint precisa per un abbinamento unico del colore delle tue sopracciglia",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "Abbinamento brow code tint"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "Migliore Tonalità Tinta Sopracciglia",
+            "description": "Tonalità perfetta di tinta sopracciglia abbinata dall'IA in base al tuo tono di pelle e colore dei capelli",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/9.png",
-              "alt": "Mechas balayage"
+              "alt": "Migliore abbinamento tonalità tinta sopracciglia"
             },
-            "group": "color-change"
+            "group": "short-hair"
           }
         ]
       },
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Browse the Full Hairstyle Library",
-        "description": "Scroll through our 500+ AI-ready cuts organized by gender and age. Click any look to preview it on your own photo.",
+        "title": "Sfoglia la Libreria Completa di Stili Tinta Sopracciglia",
+        "description": "Scorri i nostri stili di tinta sopracciglia IA organizzati per tipo. Clicca su qualsiasi look per visualizzarlo sulla tua foto.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "Acconciature Uomo",
-            "description": "Hand-picked men's haircuts — fades, crops, quiffs, buzz cuts, and classic side parts. See real examples before your next barber visit.",
-            "cta_label": "Try now"
+            "title": "Tinte Sopracciglia Naturali",
+            "description": "Tonalità morbide e quotidiane di tinta sopracciglia che valorizzano il colore naturale delle tue sopracciglia. Perfette per un look sottile e naturale con toni tortora, marrone chiaro e biondo.",
+            "cta_label": "Prova ora"
           },
           {
             "key": "women",
-            "title": "Acconciature Donna",
-            "description": "Trending women's cuts — bobs, pixies, long layers, beach waves, and bangs. Preview length, texture, and color before committing.",
-            "cta_label": "Try now"
+            "title": "Tinte Sopracciglia Intense",
+            "description": "Tinta sopracciglia d'impatto in tonalità espresso intenso, carbone e mogano. Ottieni sopracciglia drammatiche e scolpite che incorniciano e definiscono il tuo viso.",
+            "cta_label": "Prova ora"
           },
           {
             "key": "boys",
-            "title": "Acconciature Bambino",
-            "description": "Curated boys' cuts for every age — tapered tops, short combs, and textured school-ready classics.",
-            "cta_label": "Try now"
+            "title": "Stili Laminazione Sopracciglia",
+            "description": "Combinazioni di laminazione e tinta sopracciglia per quel look sollevato e pettinato. Visualizza diversi stili di laminazione prima del tuo appuntamento in salone.",
+            "cta_label": "Prova ora"
           },
           {
             "key": "girls",
-            "title": "Acconciature Bambina",
-            "description": "Popular girls' hairstyles — long layers, braids, trendy bobs, and playful curls. Family-friendly previews for every age.",
-            "cta_label": "Try now"
+            "title": "Tinta Ciglia e Sopracciglia",
+            "description": "Pacchetti combinati di tinta ciglia e sopracciglia per un miglioramento completo e a bassa manutenzione. Scopri come le tinte coordinate incorniciano il tuo sguardo.",
+            "cta_label": "Prova ora"
           }
         ],
-        "tip": "Every preview is free. New AI hairstyles are added regularly."
+        "tip": "Ogni anteprima è gratuita. Nuovi stili di tinta sopracciglia aggiunti regolarmente."
       },
       "video_demo": {
         "block": "features-accordion",
         "id": "video_demo",
-        "label": "Video Demo",
-        "title": "See AI Barber in Action",
-        "description": "Watch real hairstyle transformations — from upload to download in seconds.",
+        "label": "Demo Video",
+        "title": "Guarda Brow Tint in Azione",
+        "description": "Guarda vere trasformazioni tinta sopracciglia prima e dopo — dal caricamento all'anteprima in pochi secondi.",
         "items": [
           {
-            "title": "Try Multiple Hairstyles in Seconds",
-            "description": "Upload one photo and watch it try on several distinct cuts and colors, side by side.",
+            "title": "Visualizza Molteplici Tonalità di Tinta Sopracciglia Istantaneamente",
+            "description": "Carica una foto e visualizza diverse tonalità e stili di tinta sopracciglia affiancati per trovare l'abbinamento perfetto.",
             "icon": "RiPlayCircleLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "AI hairstyle transformation demo video"
+              "alt": "Video demo anteprima tinta sopracciglia IA"
             }
           },
           {
-            "title": "Preview Hair Movement and Texture",
-            "description": "See how bangs, layers, curls, and volume flow with realistic motion — before you commit to the cut.",
+            "title": "Guarda Texture e Copertura Realistiche della Tinta",
+            "description": "Visualizza come diverse tecniche di tinta sopracciglia — dal gel sopracciglia colorato alla tinta professionale sopracciglia — appaiono sulle tue sopracciglia reali prima di impegnarti.",
             "icon": "RiFilmLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Hair texture and movement preview video"
+              "alt": "Video anteprima texture e copertura tinta sopracciglia"
             }
           }
         ]
@@ -200,77 +200,77 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "label": "How It Works",
-        "title": "From Photo to New Hairstyle in 4 Steps",
-        "description": "AI Barber is built for fast, realistic hairstyle previews. No install, no signup needed to try.",
+        "label": "Come Funziona",
+        "title": "Da Foto a Tinta Sopracciglia Perfetta in 4 Passaggi",
+        "description": "Brow Tint è progettato per anteprime rapide e realistiche di tinta sopracciglia. Nessuna installazione, nessuna registrazione necessaria per provare.",
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Upload a Clear Front-Facing Photo",
-            "description": "Good lighting and a visible hairline give the AI the most accurate map of your face."
+            "title": "Carica una Foto Frontale Chiara",
+            "description": "Una buona illuminazione e sopracciglia visibili danno all'IA la mappa più accurata del tuo viso e della forma delle sopracciglia."
           },
           {
-            "title": "Pick a Hairstyle From the Gallery",
-            "description": "Browse 500+ AI hairstyles across men, women, boys, and girls — or describe a custom look."
+            "title": "Scegli uno Stile di Tinta Sopracciglia",
+            "description": "Sfoglia tinte naturali, tonalità intense, combinazioni di laminazione e tinta sopracciglia o finiture con gel sopracciglia colorato dalla galleria."
           },
           {
-            "title": "Fine-Tune Length, Texture, and Color",
-            "description": "Add an optional prompt to dial in bangs, layers, highlights, or a specific color."
+            "title": "Regola Tonalità, Forma e Intensità",
+            "description": "Regola colore della tinta, spessore delle sopracciglia, forma dell'arco e intensità della copertura per abbinare il look desiderato."
           },
           {
-            "title": "Generate, Compare, and Download",
-            "description": "Generate multiple looks, compare side-by-side, and download your favorite to share with your stylist."
+            "title": "Genera, Confronta e Scarica",
+            "description": "Genera molteplici anteprime di tinta sopracciglia, confronta prima e dopo affiancati e scarica la tua preferita da condividere con il tuo professionista."
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Hairstyle Preview FAQ",
-        "description": "Common questions about AI hairstyle previews, photo tips, and how to get the best results.",
+        "title": "FAQ Anteprima Tinta Sopracciglia",
+        "description": "Domande comuni sulle anteprime IA di tinta sopracciglia, consigli per le foto e come ottenere i migliori risultati.",
         "items": [
           {
-            "question": "Are the AI hairstyle previews in this gallery free?",
-            "answer": "Yes. You can browse every style for free and generate previews on your own photo with a free trial."
+            "question": "Le anteprime tinta sopracciglia in questa galleria sono gratuite?",
+            "answer": "Sì. Puoi sfogliare ogni stile di tinta sopracciglia gratuitamente e generare anteprime sulla tua foto con una prova gratuita."
           },
           {
-            "question": "Will the AI preview match my real haircut?",
-            "answer": "AI Barber renders realistic cuts, colors, and textures that blend with your hairline. Actual results still depend on your hair type and your stylist — we recommend downloading your preview and sharing it with your barber."
+            "question": "L'anteprima IA della tinta sopracciglia corrisponderà ai risultati reali?",
+            "answer": "Brow Tint genera tonalità e copertura realistiche della tinta che si fondono con i peli naturali delle sopracciglia. I risultati effettivi dipendono comunque dal tipo di sopracciglia e dal professionista — ti consigliamo di scaricare l'anteprima e condividerla con il tuo specialista in tinta professionale sopracciglia."
           },
           {
-            "question": "How many hairstyles can I try?",
-            "answer": "There are 500+ curated hairstyles in the gallery, covering men's, women's, boys', and girls' cuts. You can also describe custom styles with your own prompt."
+            "question": "Quanti stili di tinta sopracciglia posso provare?",
+            "answer": "Ci sono decine di stili curati di tinta sopracciglia nella galleria, che coprono tinte naturali, tinte intense, combinazioni di laminazione e tinta sopracciglia, look con gel sopracciglia colorato e pacchetti tinta ciglia e sopracciglia. Puoi anche descrivere tonalità personalizzate con il tuo prompt."
           },
           {
-            "question": "Do I need to install an app?",
-            "answer": "No. AI Barber runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
+            "question": "Devo installare un'app per usare Brow Tint?",
+            "answer": "No. Brow Tint funziona interamente nel tuo browser — su mobile o desktop. Nessun download o plugin necessario."
           },
           {
-            "question": "What photo works best for a hairstyle preview?",
-            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible hairline gives the AI the most to work with."
+            "question": "Quale foto funziona meglio per un'anteprima tinta sopracciglia?",
+            "answer": "Usa una foto chiara e frontale con illuminazione uniforme. Evita occhiali da sole, cappelli o filtri pesanti. Un'espressione neutra con sopracciglia visibili offre all'IA il risultato di tinta sopracciglia più accurato."
           },
           {
-            "question": "Is my photo kept private?",
-            "answer": "Your uploaded photos are processed securely for generation only. They are not stored permanently or shared with third parties."
+            "question": "La mia foto viene mantenuta privata?",
+            "answer": "Le foto caricate vengono elaborate in modo sicuro solo per la generazione della tinta sopracciglia. Non vengono archiviate permanentemente né condivise con terze parti."
           },
           {
-            "question": "Can boys and girls try these hairstyles safely?",
-            "answer": "Yes. The kids' sections are family-friendly and cover everyday cuts. Parents can preview any look before visiting the salon."
+            "question": "Qual è la differenza tra tinta sopracciglia e laminazione sopracciglia?",
+            "answer": "La tinta sopracciglia aggiunge colore ai peli delle sopracciglia per un look più pieno e definito. La laminazione e tinta sopracciglia combina un processo di stiratura chimica con la tinta per creare sopracciglia sollevate e pettinate. Puoi visualizzare entrambi con Brow Tint."
           },
           {
-            "question": "Does AI Barber support color changes only?",
-            "answer": "Yes. You can preview a color change on your current cut — black, blonde, copper, silver, pink, blue, and more — or combine color with a new style."
+            "question": "Brow Tint può aiutarmi a trovare la tonalità brow code giusta?",
+            "answer": "Sì. Brow Tint utilizza l'IA per analizzare il tuo tono di pelle, colore dei capelli e tratti per raccomandare la migliore tonalità di tinta sopracciglia — simile a una formula brow code tint. Prova molteplici tonalità affiancate per trovare il tuo colore perfetto di tinta professionale sopracciglia."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Try a New Hairstyle?",
-        "description": "Upload your photo and preview every look in the gallery — completely free, no install required.",
+        "title": "Pronta a Trovare la Tua Tinta Sopracciglia Perfetta?",
+        "description": "Carica la tua foto e visualizza ogni stile di tinta sopracciglia nella galleria — completamente gratuito, nessuna installazione necessaria.",
         "buttons": [
           {
-            "title": "Try AI Barber now",
-            "url": "/ai-hairstyle-changer",
+            "title": "Prova Brow Tint Ora",
+            "url": "/ai-brow-tint-generator",
             "target": "_self",
             "icon": "Zap"
           }

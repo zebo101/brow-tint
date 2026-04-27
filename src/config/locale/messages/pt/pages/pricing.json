@@ -8,9 +8,9 @@
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Preços AI Barber",
+        "sr_only_title": "Preços Brow Tint",
         "title": "Preços",
-        "description": "Escolha o plano perfeito para suas necessidades de transformação de penteado IA.",
+        "description": "Escolha o plano perfeito para suas necessidades de geração de tintura de sobrancelha IA.",
         "groups": [
           {
             "name": "one-time",

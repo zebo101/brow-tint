@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "作品展示 - AI Barber",
-    "description": "查看使用 AI Barber 创建的精彩发型转换效果"
+    "title": "眉部染色展示 - AI眉部染色前后对比",
+    "description": "查看使用 Brow Tint AI生成器创建的精彩眉部染色前后对比变换效果"
   },
   "page": {
-    "title": "转换作品展示",
+    "title": "眉部染色展示",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "精彩发型转换展示",
-        "description": "看看我们的用户如何使用 AI Barber 改变造型。",
+        "title": "精彩眉部染色变换展示",
+        "description": "看看用户如何使用 Brow Tint 改变眉妆造型。",
         "groups": [
           {
             "name": "all",
@@ -17,182 +17,182 @@
           },
           {
             "name": "short-hair",
-            "title": "短发"
+            "title": "自然眉色"
           },
           {
             "name": "long-hair",
-            "title": "长发"
+            "title": "浓郁眉色"
           },
           {
             "name": "color-change",
-            "title": "染发"
+            "title": "眉部塑形"
           },
           {
             "name": "men-styles",
-            "title": "男士风格"
+            "title": "染眉膏"
           },
           {
             "name": "women-styles",
-            "title": "女士风格"
+            "title": "睫眉染色"
           },
           {
             "name": "trendy",
-            "title": "潮流造型"
+            "title": "前后对比"
           },
           {
             "name": "classic",
-            "title": "经典风格"
+            "title": "专业染色"
           }
         ],
         "items": [
           {
-            "title": "精灵短发转换",
-            "description": "大胆自信的短发造型",
+            "title": "柔和灰褐眉色",
+            "description": "自然柔和的眉部染色造型，打造毫不费力的精致妆感",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.png",
-              "alt": "精灵短发转换"
+              "alt": "柔和灰褐眉色前后对比"
             },
             "group": "short-hair"
           },
           {
-            "title": "海滩波浪卷",
-            "description": "自然波浪长发风格",
+            "title": "深浓咖啡眉色",
+            "description": "浓郁深棕眉部染色，打造大胆有型的眉毛",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.png",
-              "alt": "海滩波浪卷"
+              "alt": "深浓咖啡眉色"
             },
             "group": "long-hair"
           },
           {
-            "title": "铂金色",
-            "description": "惊艳的金色发色转换",
+            "title": "眉部塑形与染色",
+            "description": "蓬松有型的塑形眉搭配染色，打造时尚丰盈的眉妆",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.png",
-              "alt": "铂金色"
+              "alt": "眉部塑形与染色效果"
             },
             "group": "color-change"
           },
           {
-            "title": "现代飞机头",
-            "description": "经典男士风格的现代演绎",
+            "title": "专业眉部染色",
+            "description": "沙龙级专业眉部染色，精准均匀的上色效果",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.png",
-              "alt": "现代飞机头"
-            },
-            "group": "men-styles"
-          },
-          {
-            "title": "层次波波头",
-            "description": "时尚层次感波波头",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "层次波波头"
-            },
-            "group": "women-styles"
-          },
-          {
-            "title": "经典盘发",
-            "description": "优雅的经典盘发风格",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "经典盘发"
+              "alt": "专业眉部染色变换"
             },
             "group": "classic"
           },
           {
-            "title": "渐变发型",
-            "description": "干净的渐变现代造型",
+            "title": "染眉膏造型",
+            "description": "日常染眉膏妆效，快速自然的眉部提升",
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "渐变发型"
+              "src": "/imgs/cases/5.png",
+              "alt": "染眉膏造型"
             },
             "group": "men-styles"
           },
           {
-            "title": "挑染",
-            "description": "美丽的挑染发色技术",
+            "title": "睫毛和眉部染色",
+            "description": "睫毛和眉部染色组合，打造完整且省心的妆容",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "睫毛和眉部染色效果"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "Brow Code Tint",
+            "description": "精准的 brow code tint 配方匹配，找到属于你的独特眉色",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "brow code tint 匹配"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "最佳眉色匹配",
+            "description": "AI智能匹配最佳眉色，根据你的肤色和发色量身定制",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/9.png",
-              "alt": "挑染"
+              "alt": "最佳眉色匹配"
             },
-            "group": "color-change"
+            "group": "short-hair"
           }
         ]
       },
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Browse the Full Hairstyle Library",
-        "description": "Scroll through our 500+ AI-ready cuts organized by gender and age. Click any look to preview it on your own photo.",
+        "title": "浏览完整眉部染色风格库",
+        "description": "滚动浏览按类型分类的AI眉部染色风格。点击任意造型即可在你的照片上预览效果。",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "男士发型",
-            "description": "Hand-picked men's haircuts — fades, crops, quiffs, buzz cuts, and classic side parts. See real examples before your next barber visit.",
-            "cta_label": "Try now"
+            "title": "自然眉色",
+            "description": "柔和日常的眉部染色色调，提升自然眉色。适合以灰褐、浅棕和金色调打造素颜感妆效。",
+            "cta_label": "立即试用"
           },
           {
             "key": "women",
-            "title": "女士发型",
-            "description": "Trending women's cuts — bobs, pixies, long layers, beach waves, and bangs. Preview length, texture, and color before committing.",
-            "cta_label": "Try now"
+            "title": "浓郁眉色",
+            "description": "深浓咖啡、炭灰和赤褐色调的大胆眉部染色。打造具有轮廓感和立体感的精致眉妆。",
+            "cta_label": "立即试用"
           },
           {
             "key": "boys",
-            "title": "男童发型",
-            "description": "Curated boys' cuts for every age — tapered tops, short combs, and textured school-ready classics.",
-            "cta_label": "Try now"
+            "title": "眉部塑形风格",
+            "description": "眉部塑形与染色的组合造型，打造蓬松有型的羽毛感眉妆。在沙龙预约前先预览不同的塑形风格。",
+            "cta_label": "立即试用"
           },
           {
             "key": "girls",
-            "title": "女童发型",
-            "description": "Popular girls' hairstyles — long layers, braids, trendy bobs, and playful curls. Family-friendly previews for every age.",
-            "cta_label": "Try now"
+            "title": "睫毛和眉部染色",
+            "description": "睫毛和眉部染色的完整组合套装，打造省心的全面提升。看看协调的染色如何修饰你的眼部妆容。",
+            "cta_label": "立即试用"
           }
         ],
-        "tip": "Every preview is free. New AI hairstyles are added regularly."
+        "tip": "所有预览均可免费试用。新眉部染色风格定期更新。"
       },
       "video_demo": {
         "block": "features-accordion",
         "id": "video_demo",
-        "label": "Video Demo",
-        "title": "See AI Barber in Action",
-        "description": "Watch real hairstyle transformations — from upload to download in seconds.",
+        "label": "视频演示",
+        "title": "查看 Brow Tint 实际效果",
+        "description": "观看真实的眉部染色前后对比变换——从上传到预览只需几秒。",
         "items": [
           {
-            "title": "Try Multiple Hairstyles in Seconds",
-            "description": "Upload one photo and watch it try on several distinct cuts and colors, side by side.",
+            "title": "即时预览多种眉色色调",
+            "description": "上传一张照片，并排预览多种眉部染色色调和风格，找到你的完美匹配。",
             "icon": "RiPlayCircleLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "AI hairstyle transformation demo video"
+              "alt": "AI眉部染色预览演示视频"
             }
           },
           {
-            "title": "Preview Hair Movement and Texture",
-            "description": "See how bangs, layers, curls, and volume flow with realistic motion — before you commit to the cut.",
+            "title": "查看逼真的眉部染色质感和覆盖效果",
+            "description": "预览不同的眉部染色技术——从染眉膏到专业眉部染色——在决定前查看实际眉毛上的呈现效果。",
             "icon": "RiFilmLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Hair texture and movement preview video"
+              "alt": "眉部染色质感和覆盖预览视频"
             }
           }
         ]
@@ -200,77 +200,77 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "label": "How It Works",
-        "title": "From Photo to New Hairstyle in 4 Steps",
-        "description": "AI Barber is built for fast, realistic hairstyle previews. No install, no signup needed to try.",
+        "label": "使用方法",
+        "title": "四步从照片到完美眉色",
+        "description": "Brow Tint 专为快速、逼真的眉部染色预览而设计。无需安装，无需注册即可试用。",
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Upload a Clear Front-Facing Photo",
-            "description": "Good lighting and a visible hairline give the AI the most accurate map of your face."
+            "title": "上传清晰的正面照片",
+            "description": "良好的光线和清晰可见的眉毛可以让AI更准确地识别你的面部和眉形。"
           },
           {
-            "title": "Pick a Hairstyle From the Gallery",
-            "description": "Browse 500+ AI hairstyles across men, women, boys, and girls — or describe a custom look."
+            "title": "选择眉部染色风格",
+            "description": "从展示库中浏览自然眉色、浓郁色调、眉部塑形与染色组合或染眉膏质感。"
           },
           {
-            "title": "Fine-Tune Length, Texture, and Color",
-            "description": "Add an optional prompt to dial in bangs, layers, highlights, or a specific color."
+            "title": "微调色调、形状和深浅度",
+            "description": "调整染色颜色、眉毛粗细、眉弓形状和覆盖深浅度，匹配你想要的造型。"
           },
           {
-            "title": "Generate, Compare, and Download",
-            "description": "Generate multiple looks, compare side-by-side, and download your favorite to share with your stylist."
+            "title": "生成、对比并下载",
+            "description": "生成多种眉部染色预览，并排对比前后效果，下载你最喜欢的展示给眉部美容师。"
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Hairstyle Preview FAQ",
-        "description": "Common questions about AI hairstyle previews, photo tips, and how to get the best results.",
+        "title": "眉部染色预览常见问题",
+        "description": "关于AI眉部染色预览、照片技巧以及如何获得最佳眉部染色效果的常见问题。",
         "items": [
           {
-            "question": "Are the AI hairstyle previews in this gallery free?",
-            "answer": "Yes. You can browse every style for free and generate previews on your own photo with a free trial."
+            "question": "展示库中的眉部染色预览免费吗？",
+            "answer": "是的。你可以免费浏览所有眉部染色风格，并通过免费试用在你的照片上生成预览。"
           },
           {
-            "question": "Will the AI preview match my real haircut?",
-            "answer": "AI Barber renders realistic cuts, colors, and textures that blend with your hairline. Actual results still depend on your hair type and your stylist — we recommend downloading your preview and sharing it with your barber."
+            "question": "AI眉部染色预览会和真实效果一致吗？",
+            "answer": "Brow Tint 渲染的染色色调和覆盖效果逼真地融合了你的自然眉毛。实际效果仍取决于你的眉型和你的眉部美容师——我们建议下载预览并分享给你的专业眉部染色师。"
           },
           {
-            "question": "How many hairstyles can I try?",
-            "answer": "There are 500+ curated hairstyles in the gallery, covering men's, women's, boys', and girls' cuts. You can also describe custom styles with your own prompt."
+            "question": "可以试用多少种眉部染色风格？",
+            "answer": "展示库中有数十种精选眉部染色风格，涵盖自然眉色、浓郁眉色、眉部塑形与染色组合、染眉膏造型和睫毛和眉部染色套装。你也可以用自定义提示词描述个性化色调。"
           },
           {
-            "question": "Do I need to install an app?",
-            "answer": "No. AI Barber runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
+            "question": "需要安装应用才能使用 Brow Tint 吗？",
+            "answer": "不需要。Brow Tint 完全在浏览器中运行——手机或电脑均可使用。无需下载或安装插件。"
           },
           {
-            "question": "What photo works best for a hairstyle preview?",
-            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible hairline gives the AI the most to work with."
+            "question": "什么样的照片最适合眉部染色预览？",
+            "answer": "使用清晰、正面的照片，光线均匀。避免佩戴太阳镜、帽子或使用重度滤镜。中性表情且眉毛可见时AI能获得最准确的眉部染色效果。"
           },
           {
-            "question": "Is my photo kept private?",
-            "answer": "Your uploaded photos are processed securely for generation only. They are not stored permanently or shared with third parties."
+            "question": "我的照片会被保密吗？",
+            "answer": "您上传的照片仅用于眉部染色生成的安全处理。不会永久存储或与第三方共享。"
           },
           {
-            "question": "Can boys and girls try these hairstyles safely?",
-            "answer": "Yes. The kids' sections are family-friendly and cover everyday cuts. Parents can preview any look before visiting the salon."
+            "question": "眉部染色和眉部塑形有什么区别？",
+            "answer": "眉部染色为眉毛添加颜色，使眉毛看起来更丰盈、更有轮廓。眉部塑形与染色将化学定型处理与染色结合，打造蓬松有型的羽毛感眉妆。你可以使用 Brow Tint 预览两种效果。"
           },
           {
-            "question": "Does AI Barber support color changes only?",
-            "answer": "Yes. You can preview a color change on your current cut — black, blonde, copper, silver, pink, blue, and more — or combine color with a new style."
+            "question": "Brow Tint 能帮我找到合适的 brow code 色号吗？",
+            "answer": "可以。Brow Tint 使用AI分析你的肤色、发色和面部特征，推荐最佳眉色匹配——类似于 brow code tint 配方。并排试用多种色调，找到你的完美专业眉部染色颜色。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Try a New Hairstyle?",
-        "description": "Upload your photo and preview every look in the gallery — completely free, no install required.",
+        "title": "准备好找到你的完美眉色了吗？",
+        "description": "上传你的照片，预览展示库中的每种眉部染色风格——完全免费，无需安装。",
         "buttons": [
           {
-            "title": "Try AI Barber now",
-            "url": "/ai-hairstyle-changer",
+            "title": "立即试用 Brow Tint",
+            "url": "/ai-brow-tint-generator",
             "target": "_self",
             "icon": "Zap"
           }

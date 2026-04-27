@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "免费AI发型转换器在线版 | 500+发型 | AI Barber",
-    "description": "免费在线试用AI发型转换器。上传照片，预览500+发型与发色，几秒内下载你的虚拟发型。",
-    "keywords": "AI发型转换器, 在线AI发型转换器, 免费AI发型转换器, 虚拟发型, 发型模拟器, 试发型, 虚拟剪发, 剪发模拟, 改变发色, 波波头, 精灵短发, 渐变, 寸头, 卷发, 男士发型, 女士发型, 儿童发型"
+    "title": "AI眉部染色生成器在线版 | 眉色前后对比 | Brow Tint",
+    "description": "在线试用AI眉部染色生成器。上传照片，预览眉色前后对比效果，几秒内下载你的虚拟眉部染色结果。",
+    "keywords": "AI眉部染色生成器, 眉部染色生成器, 眉色前后对比, 眉色生成器, 虚拟眉部染色, 眉色试用, AI眉部染色, 眉色预览, 眉色生成, 染眉膏预览, 眉部塑形与染色, 专业眉部染色, 最佳眉色, 最佳染眉膏, 睫毛和眉部染色, brow code tint"
   },
   "page": {
-    "title": "免费AI发型转换器在线版 - 试用500+发型 | AI Barber",
-    "description": "使用免费AI发型转换器在线试用500+发型与发色。男士197款、女士240款、男童56款、女童85款。下载你的虚拟发型并分享给理发店或沙龙。",
+    "title": "AI眉部染色生成器在线版 - 眉色前后对比",
+    "description": "使用AI眉部染色生成器在线预览逼真的眉色前后对比效果。上传照片，生成眉部染色风格，并下载你的结果。",
     "show_sections": [
       "hero",
       "introduce",
@@ -23,55 +23,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "免费AI发型转换器在线版",
-        "highlight_text": "AI理发师",
-        "description": "使用免费AI发型转换器即可瞬间试用500+发型与发色。上传照片，预览男士、女士、男童、女童风格，并下载你的新造型。",
+        "title": "AI眉部染色生成器在线版",
+        "highlight_text": "AI眉部染色生成器",
+        "description": "使用AI眉部染色生成器即时预览逼真的眉色前后对比效果。上传照片，试用眉部染色风格，然后下载你的新眉妆造型。",
         "image": {
           "src": "/imgs/features/ai-hairstyle-changer.png",
-          "alt": "AI Hairstyle Changer Interface",
+          "alt": "AI眉部染色生成器界面",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-changer-dark.png",
-          "alt": "AI Hairstyle Changer Interface Dark Mode",
+          "alt": "AI眉部染色生成器界面 深色模式",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "AI Barber Hero Background"
+          "alt": "Brow Tint 主视觉背景"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "什么是AI Barber AI发型转换器应用？",
+        "title": "什么是AI眉部染色生成器？",
         "label": "简介",
-        "description": "AI Barber 是免费的AI发型转换器与剪发模拟器，可在你的照片上试剪发型、长度与发色，先预览再去理发店或沙龙。",
+        "description": "AI眉部染色生成器是一款虚拟眉色试用工具，让你在去眉部美容师或沙龙之前，先在自己的照片上预览眉色效果和前后对比。",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "AI Barber Hairstyle Simulator"
+          "alt": "AI眉部染色模拟器"
         },
         "items": [
           {
-            "title": "虚拟试发型",
-            "description": "几秒内试短发/中长发/长发，比如波波头、精灵短发、渐变、寸头和长层次。",
+            "title": "虚拟眉色试用",
+            "description": "无需使用任何产品即可预览眉色效果。我们的AI模拟专业眉部染色效果，让你在正式染眉前先看到新造型。",
             "icon": "RiMagicLine"
           },
           {
-            "title": "逼真的AI效果",
-            "description": "人脸识别会结合发际线与光线，生成更自然的预览效果。",
+            "title": "逼真的AI眉部染色效果",
+            "description": "人脸识别AI将染色与你的自然眉形和肤色融合，呈现照片级逼真的眉部染色预览。",
             "icon": "RiCameraLensLine"
           },
           {
-            "title": "发色转换器",
-            "description": "可先试黑、棕、金、铜、银、粉、蓝等发色再决定。",
+            "title": "眉色匹配",
+            "description": "预览不同的染眉膏色调——从柔和灰褐到深浓咖啡——在决定前找到最适合你的眉色。",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "风格迁移",
-            "description": "用描述词复刻明星、K-pop 或秀场风格。",
+            "title": "睫毛和眉部染色预览",
+            "description": "在一次预览中查看睫毛和眉部染色的组合效果，打造完整的眼部妆容，提升你的自然特征。",
             "icon": "RiExchangeLine"
           }
         ],
@@ -80,35 +80,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "为什么选择我们的AI发型转换器",
+        "title": "为什么选择我们的AI眉部染色生成器",
         "label": "优势",
-        "description": "更快、更私密、更真实的预览，帮助你安心决定发型与发色。",
+        "description": "快速、私密且逼真的预览，帮助你自信地做出眉部染色决策。",
         "items": [
           {
             "title": "闪电般快速且100%在线",
-            "description": "一张照片即可生成多种造型，100%在线完成。",
+            "description": "一张照片即可在几秒内生成多种眉色造型，100%在线完成。无需预约或购买产品即可预览你的完美眉色。",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Processing"
+              "alt": "快速AI眉部染色处理"
             }
           },
           {
             "title": "隐私优先",
-            "description": "照片安全处理，不会被永久保存。",
+            "description": "照片经过安全处理，不会被永久保存。你的眉部染色预览以私密方式生成。",
             "icon": "RiLock2Line",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Secure and Private"
+              "alt": "安全私密"
             }
           },
           {
-            "title": "专业品质",
-            "description": "下载高清预览图，方便与理发师或沙龙沟通。",
+            "title": "专业沙龙品质",
+            "description": "下载沙龙级眉部染色预览图，向你的眉部美容师展示你想要的色调和风格。",
             "icon": "RiUserSmileLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Professional Results"
+              "alt": "专业眉部染色效果"
             }
           }
         ]
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "如何使用AI发型转换器",
-        "description": "四步获得真实发型预览：",
+        "title": "如何使用AI眉部染色生成器",
+        "description": "四步获得逼真的眉部染色预览：",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "AI Hairstyle Usage Guide"
+          "alt": "AI眉部染色使用指南"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
             "title": "上传清晰照片",
-            "description": "正面、光线充足的照片效果更好。",
+            "description": "使用正面照片，确保光线充足且眉毛清晰可见，以便AI准确识别你的眉形。",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Upload Photo"
+              "alt": "上传照片"
             }
           },
           {
-            "title": "选择发型",
-            "description": "选择款式或类别，并决定短/中/长长度。",
+            "title": "选择眉部染色风格",
+            "description": "从染眉膏、眉部塑形与染色、专业眉部染色或 brow code tint 选项中选择。",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Select Hairstyle"
+              "alt": "选择眉部染色风格"
             }
           },
           {
-            "title": "补充细节",
-            "description": "填写长度、质地、颜色、刘海或渐变等信息。",
+            "title": "生成眉部染色预览",
+            "description": "AI在几秒内创建逼真的眉色前后对比图，将颜色与你的自然眉形融合。",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Describe Hairstyle"
+              "alt": "生成眉部染色预览"
             }
           },
           {
-            "title": "生成并对比",
-            "description": "生成后下载，并将结果并排对比选择。",
+            "title": "下载并分享",
+            "description": "保存高清眉色前后对比照片，展示给你的眉部美容师或造型师，方便下次预约时沟通。",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Generate and Download"
+              "alt": "下载眉部染色结果"
             }
           }
         ],
@@ -162,37 +162,37 @@
       },
       "features": {
         "id": "features",
-        "title": "AI发型转换器核心功能",
-        "description": "用于剪发、染发与对比的完整虚拟发型工作室。",
+        "title": "AI眉部染色生成器核心功能",
+        "description": "完整的虚拟眉部染色工作室，提供色调、风格和前后对比功能。",
         "items": [
           {
-            "title": "适合所有人的500+发型",
-            "description": "男士197款、女士240款、男童56款、女童85款，包含寸头、渐变、波波头、精灵短发等。",
+            "title": "专业眉部染色预览",
+            "description": "沙龙级专业眉部染色模拟，根据你的自然眉形和肤色匹配染色颜色。",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "智能人脸检测",
-            "description": "智能人脸识别会根据发际线和脸部比例自动适配。",
+            "title": "染眉膏色调匹配",
+            "description": "试用从柔和灰褐到浓郁咖啡的不同染眉膏色调，找到最适合你的染眉膏。",
             "icon": "RiWomenLine"
           },
           {
-            "title": "发色实验",
-            "description": "在去沙龙前先试试挑染、渐变挑染、铜色、铂金或亮色系。",
+            "title": "眉部塑形与染色",
+            "description": "预览眉部塑形与染色的组合效果，一次呈现蓬松有型、色彩丰富的眉妆造型。",
             "icon": "RiPaletteLine"
           },
           {
             "title": "高清下载",
-            "description": "保存高清结果，便于分享给理发师、造型师或朋友。",
+            "description": "清晰的眉色前后对比图片，随时保存并分享给你的眉部美容师。",
             "icon": "RiHdLine"
           },
           {
-            "title": "风格对比",
-            "description": "多种发型并排对比，轻松选出最佳造型。",
+            "title": "前后对比",
+            "description": "并排眉色前后对比滑块，让你清楚看到染色如何改变你的眉毛。",
             "icon": "RiCompareLine"
           },
           {
-            "title": "移动友好",
-            "description": "支持手机与电脑，随时随地试发型。",
+            "title": "移动端友好",
+            "description": "手机、平板或电脑均可使用，随时随地预览眉部染色风格。",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -200,47 +200,47 @@
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Explore Hairstyles by Category",
-        "description": "Browse 500+ AI-ready haircuts grouped by Men, Women, Boys, and Girls. Tap any style to try it on your own photo with the free AI hairstyle changer.",
+        "title": "按分类浏览眉部染色风格",
+        "description": "浏览AI眉部染色风格，点击任意造型即可在你的照片上试用AI眉部染色生成器。",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "男士发型",
-            "description": "197 men's haircuts including fades, buzz cuts, crops, quiffs, undercuts, textured crops, and classic side parts. Preview every cut on your own photo before booking your barber.",
-            "cta_label": "Try men's styles"
+            "title": "自然眉色",
+            "description": "自然且柔和的眉部染色色调，为你的眉毛增添柔和的轮廓。预览最佳自然眉色，打造毫不费力的精致妆感。",
+            "cta_label": "试用自然眉色"
           },
           {
             "key": "women",
-            "title": "女士发型",
-            "description": "240 women's haircuts including bobs, pixies, long layers, beach waves, lobs, bangs, and curly styles. Test length, texture, and color before a salon appointment.",
-            "cta_label": "Try women's styles"
+            "title": "浓郁眉色",
+            "description": "大胆且有型的眉部染色造型。预览深浓咖啡、浓郁巧克力和大胆的专业眉部染色色调。",
+            "cta_label": "试用浓郁眉色"
           },
           {
             "key": "boys",
-            "title": "男童发型",
-            "description": "56 kid-friendly boys' haircuts — tapered cuts, short combs, textured tops, and school-ready classics. Parents can preview any cut in seconds.",
-            "cta_label": "Try boys' styles"
+            "title": "眉部塑形风格",
+            "description": "蓬松有型的眉部塑形造型搭配染色。预览眉部塑形与染色风格，打造更丰盈、更立体的眉妆。",
+            "cta_label": "试用塑形风格"
           },
           {
             "key": "girls",
-            "title": "女童发型",
-            "description": "85 girls' hairstyles — long layers, braids, bangs, trendy bobs, and playful curls. Safe, family-friendly previews for every age.",
-            "cta_label": "Try girls' styles"
+            "title": "睫毛和眉部染色",
+            "description": "睫毛和眉部染色的组合风格，打造完整的眼部妆容。几秒内预览协调的睫毛和眉部染色效果。",
+            "cta_label": "试用睫眉染色"
           }
         ],
-        "tip": "Every preview is free to try. New AI hairstyles are added regularly."
+        "tip": "所有预览均可免费试用。新眉部染色风格定期更新。"
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "用户对AI Barber的评价",
-        "description": "听听找到完美造型的用户怎么说。",
+        "title": "用户对AI眉部染色生成器的评价",
+        "description": "使用AI眉部染色生成器预览眉色造型的真实用户反馈。",
         "items": [
           {
             "name": "Sarah Jenkins",
-            "role": "时尚博主",
-            "quote": "我本来犹豫是否要把长发剪成波波头。AI Barber完美地展示了效果，我非常喜欢！最棒的发型应用。",
+            "role": "美妆博主",
+            "quote": "我一直担心眉色染得太深。AI眉部染色生成器展示了逼真的前后对比，让我充满信心地预约了美容师。",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Sarah Jenkins"
@@ -249,7 +249,7 @@
           {
             "name": "Mike Ross",
             "role": "模特",
-            "quote": "我作品集的必备工具。可以在不真正改变发型的情况下测试不同造型。逼真程度无与伦比。",
+            "quote": "我为拍摄预览了不同的专业眉部染色色调，并向我的眉部美容师展示了我想要的确切效果。节省了大量时间。",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Mike Ross"
@@ -258,7 +258,7 @@
           {
             "name": "Emily Chen",
             "role": "学生",
-            "quote": "太有趣了！我试了紫色头发和精灵短发。看起来太真实了，我妈以为我真的染了。",
+            "quote": "我在AI预览中试了从灰褐到咖啡色的各种染眉膏色调。它帮我在购买前找到了最适合我肤色的眉色。",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Emily Chen"
@@ -267,7 +267,7 @@
           {
             "name": "David Smith",
             "role": "软件工程师",
-            "quote": "我用AI Barber找新的男士发型。渐变色和底部雕刻的选项看起来难以置信，帮助我准确地向理发师表达我想要的效果。",
+            "quote": "眉部塑形与染色的预览看起来非常逼真。我把效果图展示给眉部美容师，得到了完全一致的结果。",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "David Smith"
@@ -276,7 +276,7 @@
           {
             "name": "Jessica Lee",
             "role": "化妆师",
-            "quote": "发色转换器真是太棒了！我在染发前试了金色、铜色和银色。这个免费工具让我避免了做错误决定。",
+            "quote": "作为化妆师，我使用AI眉部染色生成器向客户展示她们的睫毛和眉部染色组合效果。沙龙级预览的精准度令人印象深刻。",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Jessica Lee"
@@ -285,7 +285,7 @@
           {
             "name": "Tom Brown",
             "role": "学生",
-            "quote": "这个免费的AI发型转换器非常好用。我上传了照片，几秒钟就得到了结果。强烈推荐给任何想要虚拟改造的人。",
+            "quote": "快速、免费、简单。我上传了一张照片，几秒钟就得到了多种眉色前后对比选项。无需安装任何应用。",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Tom Brown"
@@ -296,62 +296,62 @@
       "faq": {
         "id": "faq",
         "title": "常见问题",
-        "description": "关于AI发型转换器的常见问题、照片技巧与最佳效果。",
-        "tip": "找不到您要找的内容？联系我们的<a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "description": "关于AI眉部染色生成器、照片技巧以及如何获得最佳眉部染色效果的常见问题。",
+        "tip": "找不到您要找的内容？联系我们的<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>支持团队</a>",
         "items": [
           {
-            "question": "这个AI发型转换器免费吗？",
-            "answer": "是的。你可以通过免费试用在线体验多种发型。"
+            "question": "这个AI眉部染色生成器免费吗？",
+            "answer": "是的。你可以通过免费试用在线体验AI眉部染色生成器，预览多种眉部染色风格和色调。"
           },
           {
-            "question": "发型看起来真实吗？",
-            "answer": "AI会将发型自然融合到你的照片中，真实呈现剪裁、长度与颜色。"
+            "question": "眉部染色预览有多逼真？",
+            "answer": "AI将每种眉色与你的照片融合，生成考虑了自然眉形、肤色和光线的逼真预览。"
           },
           {
             "question": "什么样的照片效果最好？",
-            "answer": "为获得最佳效果，请上传清晰、正面的照片，并有良好的光线。避免使用太阳镜、口罩或过多头发遮挡面部的照片。中性表情效果最佳。"
+            "answer": "为获得最佳效果，请上传清晰、正面的照片，确保光线充足且眉毛清晰可见。避免使用被太阳镜、口罩或头发遮挡面部的照片。中性表情效果最佳。"
           },
           {
-            "question": "可以只改变发色吗？",
-            "answer": "可以。可仅更换发色，或同时更换发型与发色并与沙龙分享结果。"
+            "question": "可以预览不同的染眉膏色调吗？",
+            "answer": "可以。试用从柔和灰褐、暖棕到深浓咖啡的各种染眉膏色调，并排比较以找到最适合你的染眉膏。"
           },
           {
-            "question": "适用于男性和女性吗？",
-            "answer": "当然。提供500+发型：男士197款、女士240款、男童56款、女童85款。"
+            "question": "眉部染色和染眉膏有什么区别？",
+            "answer": "专业眉部染色是在沙龙进行的半永久染色，可持续数周。染眉膏是日常化妆品，提供颜色和定型效果。AI眉部染色生成器可以预览两种风格，帮助你决定哪种更适合你。"
           },
           {
             "question": "我的照片数据安全吗？",
-            "answer": "我们非常重视隐私。您上传的照片会经过安全处理用于生成目的，不会永久存储或与第三方共享。"
+            "answer": "我们非常重视隐私。您上传的照片仅用于眉部染色生成的安全处理，不会永久存储或与第三方共享。"
           },
           {
-            "question": "可以把AI发型给附近理发店或沙龙看吗？",
-            "answer": "可以。下载预览图并展示给理发师或造型师，方便复刻想要的造型。"
+            "question": "可以同时预览眉部塑形与染色吗？",
+            "answer": "可以。选择眉部塑形与染色风格，即可在一次逼真预览中看到蓬松有型的眉毛搭配你选择的染色效果。"
           },
           {
-            "question": "生成发型需要多长时间？",
-            "answer": "通常几秒钟即可完成，取决于图片大小和当前负载。"
+            "question": "如何找到最适合我肤色的眉色？",
+            "answer": "上传你的照片并试用多种色调。AI会考虑你的肤色和自然眉色来生成逼真的预览，帮助你在去眉部美容师之前找到最佳眉色匹配。"
           },
           {
-            "question": "可以试短发/中长发/长发吗？",
-            "answer": "可以。选择模板或在描述里写明长度。"
+            "question": "可以把AI眉部染色预览展示给眉部美容师吗？",
+            "answer": "可以。下载你的眉色前后对比预览，展示给你的眉部美容师或沙龙，准确传达你想要的色调和风格。"
           },
           {
-            "question": "适合卷发或有纹理的头发吗？",
-            "answer": "可以。可尝试卷发、波浪、爆炸头等，照片越清晰效果越好。"
+            "question": "生成眉部染色预览需要多长时间？",
+            "answer": "大多数眉部染色预览在几秒内即可完成，具体取决于图片大小和当前流量。"
           },
           {
             "question": "需要安装软件吗？",
-            "answer": "不需要，直接在浏览器中使用。"
+            "answer": "不需要。AI眉部染色生成器完全在浏览器中运行，无需下载或安装。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "准备好换个新造型了吗？",
-        "description": "不要再猜测您的发型。今天就用AI Barber免费应用可视化您的完美发型，并展示给本地理发店或沙龙。",
+        "title": "准备好找到你的完美眉色了吗？",
+        "description": "不再猜测眉部染色的效果。立即试用AI眉部染色生成器，并将预览分享给你的眉部美容师或沙龙。",
         "buttons": [
           {
-            "title": "立即开始变换",
+            "title": "立即开始眉部染色预览",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
@@ -362,35 +362,35 @@
     }
   },
   "generator": {
-    "title": "免费AI发型转换器在线版",
-    "description": "上传照片，使用免费AI发型转换器试用500+发型与发色。",
+    "title": "AI眉部染色生成器",
+    "description": "上传照片，使用AI眉部染色生成器预览逼真的眉色前后对比效果。",
     "tabs": {
       "text-to-image": "风格描述",
       "image-to-image": "照片上传"
     },
     "categories": {
-      "title": "选择发型",
-      "men": "男士发型",
-      "women": "女士发型",
-      "boys": "男童发型",
-      "girls": "女童发型",
+      "title": "选择眉部染色风格",
+      "men": "自然眉色",
+      "women": "浓郁眉色",
+      "boys": "眉部塑形风格",
+      "girls": "睫毛和眉部染色",
       "selected": "已选择",
       "styles": "款"
     },
     "sidebar": {
-      "history": "历史图片",
-      "discover": "生成结果",
-      "history_sign_in": "登录后查看您生成过的历史图片",
+      "history": "历史记录",
+      "discover": "发现",
+      "history_sign_in": "登录后查看您生成的图片历史记录",
       "history_empty": "暂无历史图片"
     },
     "form": {
-      "select_hairstyle_placeholder": "点击选择发型款式",
+      "select_hairstyle_placeholder": "点击选择眉部染色风格",
       "provider": "AI 提供商",
-      "model": "发型模型",
+      "model": "眉部染色模型",
       "select_provider": "选择 AI 提供商",
-      "select_model": "选择发型模型",
-      "prompt": "发型描述",
-      "prompt_placeholder": "描述你的发型：长度、颜色、质地、风格（例如：短波波头、长卷金发、纹理短发、卷曲爆炸头）",
+      "select_model": "选择眉部染色模型",
+      "prompt": "眉部染色描述",
+      "prompt_placeholder": "描述你的眉部染色：色调、深浅、风格（例如：柔和灰褐眉色、浓郁咖啡眉色、眉部塑形与染色、睫毛和眉部染色）",
       "reference_image": "您的照片",
       "reference_image_placeholder": "上传您的照片以获得最佳效果",
       "some_images_failed_to_upload": "部分图片上传失败，请删除后重新上传",
@@ -399,34 +399,34 @@
       "upload_hint": "点击或拖拽上传照片",
       "max_size": "最大"
     },
-    "generate": "生成发型",
+    "generate": "生成眉部染色",
     "checking_account": "正在检查账户...",
     "loading": "加载中...",
-    "generating": "正在改变您的造型...",
-    "sign_in_to_generate": "登录以尝试新发型",
+    "generating": "正在生成你的眉部染色效果...",
+    "sign_in_to_generate": "登录以试用眉部染色风格",
     "credits_cost": "消耗 {credits} 积分",
     "credits_remaining": "剩余 {credits} 积分",
     "buy_credits": "购买积分",
     "progress": "进度",
-    "generated_images": "您的新造型",
-    "preview_title": "AI发型预览",
-    "ready_to_generate": "准备转换",
-    "ready_for_generating": "准备转换中",
-    "no_images_generated": "暂无生成的AI发型",
+    "generated_images": "你的新眉妆造型",
+    "preview_title": "AI眉部染色预览",
+    "ready_to_generate": "准备生成",
+    "ready_for_generating": "准备进行眉部染色预览",
+    "no_images_generated": "暂无眉部染色预览",
     "use_as_reference": "用作参考图",
     "download_image": "下载图片",
-    "example_image_hint": "这是一个示例效果，您生成的发型将显示在这里。",
+    "example_image_hint": "这是一个示例效果。您生成的眉部染色预览将显示在这里。",
     "history_images": "历史图片",
     "history_load_more": "加载更多",
     "history_view_image": "查看历史图片",
-    "history_scroll_left": "向左滚动历史图片",
-    "history_scroll_right": "向右滚动历史图片",
+    "history_scroll_left": "向左滚动",
+    "history_scroll_right": "向右滚动",
     "photoGuidelines": {
       "title": "照片上传指南",
       "suitableTitle": "合适的照片",
-      "suitableDescription": "请上传清晰的正脸照片。为了获得满意的效果，建议将头发向上或向后梳理，让头发自然垂落。",
+      "suitableDescription": "请上传清晰的正脸照片，确保眉毛清晰可见。避免用头发或饰品遮挡眉毛。",
       "unsuitableTitle": "不合适的照片",
-      "unsuitableDescription": "请不要上传侧脸照片、光线昏暗的照片、头发或其他物体遮挡面部的照片。另外，请避免使用卡通图片。",
+      "unsuitableDescription": "请不要上传侧脸照片、光线昏暗的照片，或眉毛被头发、太阳镜或其他物体遮挡的照片。另外，请避免使用卡通图片。",
       "dontShowAgain": "不再显示",
       "confirm": "好的，我知道了"
     },

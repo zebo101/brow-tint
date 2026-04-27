@@ -35,7 +35,7 @@
             {
               "title": "Gerador de Brow Tint com IA",
               "description": "Pré-visualize looks de tintura de sobrancelhas e gel tintado com IA",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {
@@ -98,7 +98,7 @@
             {
               "title": "Gerador de Brow Tint com IA",
               "description": "Gere looks de tintura de sobrancelhas com IA",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {

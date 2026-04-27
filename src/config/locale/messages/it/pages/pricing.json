@@ -8,9 +8,9 @@
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Prezzi AI Barber",
+        "sr_only_title": "Prezzi Brow Tint",
         "title": "Prezzi",
-        "description": "Scegli il piano perfetto per le tue esigenze di trasformazione acconciatura IA.",
+        "description": "Scegli il piano perfetto per le tue esigenze di generazione tinta sopracciglia IA.",
         "groups": [
           {
             "name": "one-time",

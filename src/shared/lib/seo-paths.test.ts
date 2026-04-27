@@ -9,7 +9,7 @@ import {
 } from './seo-paths';
 
 const defaultOptions = {
-  siteUrl: 'https://aibarber.net/',
+  siteUrl: 'https://tintbrow.com/',
   defaultLocale: 'en',
   locales: ['en', 'zh', 'ja'],
 };
@@ -17,35 +17,35 @@ const defaultOptions = {
 test('getSiteUrl strips trailing slashes', () => {
   assert.equal(
     getSiteUrl({
-      siteUrl: 'https://aibarber.net///',
+      siteUrl: 'https://tintbrow.com///',
     }),
-    'https://aibarber.net'
+    'https://tintbrow.com'
   );
 });
 
 test('buildCanonicalUrl keeps default locale unprefixed', () => {
   assert.equal(
     buildCanonicalUrl('/pricing', 'en', defaultOptions),
-    'https://aibarber.net/pricing'
+    'https://tintbrow.com/pricing'
   );
 });
 
 test('buildCanonicalUrl prefixes non-default locales once', () => {
   assert.equal(
-    buildCanonicalUrl('/ai-hairstyle-changer', 'zh', defaultOptions),
-    'https://aibarber.net/zh/ai-hairstyle-changer'
+    buildCanonicalUrl('/ai-brow-tint-generator', 'zh', defaultOptions),
+    'https://tintbrow.com/zh/ai-brow-tint-generator'
   );
 
   assert.equal(
-    buildCanonicalUrl('/zh/ai-hairstyle-changer', 'zh', defaultOptions),
-    'https://aibarber.net/zh/ai-hairstyle-changer'
+    buildCanonicalUrl('/zh/ai-brow-tint-generator', 'zh', defaultOptions),
+    'https://tintbrow.com/zh/ai-brow-tint-generator'
   );
 });
 
 test('buildCanonicalUrl removes query strings and duplicate slashes', () => {
   assert.equal(
     buildCanonicalUrl('//blog//what-is-xxx/?utm_source=google#top', 'en', defaultOptions),
-    'https://aibarber.net/blog/what-is-xxx'
+    'https://tintbrow.com/blog/what-is-xxx'
   );
 });
 
@@ -53,16 +53,16 @@ test('buildLanguageAlternates returns one canonical per locale', () => {
   assert.deepEqual(
     buildLanguageAlternates('/docs', defaultOptions),
     {
-      en: 'https://aibarber.net/docs',
-      zh: 'https://aibarber.net/zh/docs',
-      ja: 'https://aibarber.net/ja/docs',
+      en: 'https://tintbrow.com/docs',
+      zh: 'https://tintbrow.com/zh/docs',
+      ja: 'https://tintbrow.com/ja/docs',
     }
   );
 });
 
 test('isIndexablePath excludes private and low-value paths across locales', () => {
   assert.equal(isIndexablePath('/pricing', defaultOptions), true);
-  assert.equal(isIndexablePath('/zh/ai-hairstyle-changer', defaultOptions), true);
+  assert.equal(isIndexablePath('/zh/ai-brow-tint-generator', defaultOptions), true);
   assert.equal(isIndexablePath('/api/chat', defaultOptions), false);
   assert.equal(isIndexablePath('/ja/settings/profile', defaultOptions), false);
   assert.equal(isIndexablePath('/zh/activity/ai-tasks', defaultOptions), false);

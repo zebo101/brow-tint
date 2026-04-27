@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Galería - AI Barber",
-    "description": "Ve increíbles transformaciones de peinados creadas con AI Barber"
+    "title": "Galería de Brow Tint - Tinte de Cejas con IA Antes y Después",
+    "description": "Ve increíbles transformaciones de tinte de cejas antes y después creadas con el generador de IA de Brow Tint"
   },
   "page": {
-    "title": "Galería de Transformaciones",
+    "title": "Galería de Brow Tint",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Increíbles Transformaciones de Peinados",
-        "description": "Ve cómo nuestros usuarios transformaron sus looks con AI Barber.",
+        "title": "Impresionantes Transformaciones de Tinte de Cejas",
+        "description": "Ve cómo las usuarias transformaron sus cejas con Brow Tint.",
         "groups": [
           {
             "name": "all",
@@ -17,182 +17,182 @@
           },
           {
             "name": "short-hair",
-            "title": "Cabello Corto"
+            "title": "Tintes Naturales"
           },
           {
             "name": "long-hair",
-            "title": "Cabello Largo"
+            "title": "Tintes Intensos"
           },
           {
             "name": "color-change",
-            "title": "Cambio de Color"
+            "title": "Laminado de Cejas"
           },
           {
             "name": "men-styles",
-            "title": "Estilos para Hombres"
+            "title": "Gel de Cejas con Color"
           },
           {
             "name": "women-styles",
-            "title": "Estilos para Mujeres"
+            "title": "Pestañas y Cejas"
           },
           {
             "name": "trendy",
-            "title": "Looks Modernos"
+            "title": "Antes y Después"
           },
           {
             "name": "classic",
-            "title": "Estilos Clásicos"
+            "title": "Tintes Profesionales"
           }
         ],
         "items": [
           {
-            "title": "Transformación Pixie Cut",
-            "description": "Peinado corto audaz para un look confiado",
+            "title": "Tinte de Cejas Taupe Suave",
+            "description": "Look de tinte de cejas natural y sutil para una apariencia elegante sin esfuerzo",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.png",
-              "alt": "Transformación pixie cut"
+              "alt": "Tinte de cejas taupe suave antes y después"
             },
             "group": "short-hair"
           },
           {
-            "title": "Ondas de Playa",
-            "description": "Estilo de cabello largo ondulado natural",
+            "title": "Tinte de Cejas Espresso Oscuro",
+            "description": "Tinte de cejas marrón intenso y profundo para cejas definidas y atrevidas",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.png",
-              "alt": "Ondas de playa"
+              "alt": "Tinte de cejas espresso oscuro"
             },
             "group": "long-hair"
           },
           {
-            "title": "Rubio Platino",
-            "description": "Transformación de color rubio impresionante",
+            "title": "Laminado y Tinte de Cejas",
+            "description": "Cejas laminadas y teñidas peinadas hacia arriba para un look elegante y lleno",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.png",
-              "alt": "Rubio platino"
+              "alt": "Resultado de laminado y tinte de cejas"
             },
             "group": "color-change"
           },
           {
-            "title": "Pompadour Moderno",
-            "description": "Estilo clásico masculino con toque moderno",
+            "title": "Tinte Profesional de Cejas",
+            "description": "Tinte profesional de cejas con calidad de salón con cobertura precisa y uniforme",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.png",
-              "alt": "Pompadour moderno"
-            },
-            "group": "men-styles"
-          },
-          {
-            "title": "Bob en Capas",
-            "description": "Bob moderno con capas texturizadas",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "Bob en capas"
-            },
-            "group": "women-styles"
-          },
-          {
-            "title": "Recogido Clásico",
-            "description": "Estilo de recogido clásico elegante",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "Recogido clásico"
+              "alt": "Transformación de tinte profesional de cejas"
             },
             "group": "classic"
           },
           {
-            "title": "Corte Fade",
-            "description": "Fade limpio con estilo moderno",
+            "title": "Look de Gel de Cejas con Color",
+            "description": "Acabado diario de gel de cejas con color para un realce natural y rápido",
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Corte fade"
+              "src": "/imgs/cases/5.png",
+              "alt": "Look de gel de cejas con color"
             },
             "group": "men-styles"
           },
           {
-            "title": "Mechas Balayage",
-            "description": "Hermosa técnica de color balayage",
+            "title": "Tinte de Pestañas y Cejas",
+            "description": "Tinte combinado de pestañas y cejas para un look completo y de bajo mantenimiento",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "Resultado de tinte de pestañas y cejas"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "Brow Code Tint",
+            "description": "Fórmula precisa de brow code tint para tu color de cejas único",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "Combinación de brow code tint"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "Mejor Combinación de Tono de Tinte de Cejas",
+            "description": "Tono de tinte de cejas perfecto combinado con IA adaptado a tu tono de piel y color de cabello",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/9.png",
-              "alt": "Mechas balayage"
+              "alt": "Mejor combinación de tono de tinte de cejas"
             },
-            "group": "color-change"
+            "group": "short-hair"
           }
         ]
       },
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Browse the Full Hairstyle Library",
-        "description": "Scroll through our 500+ AI-ready cuts organized by gender and age. Click any look to preview it on your own photo.",
+        "title": "Explora la Biblioteca Completa de Estilos de Tinte de Cejas",
+        "description": "Navega por nuestros estilos de tinte de cejas con IA organizados por tipo. Haz clic en cualquier look para previsualizarlo en tu propia foto.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "Peinados para Hombres",
-            "description": "Hand-picked men's haircuts — fades, crops, quiffs, buzz cuts, and classic side parts. See real examples before your next barber visit.",
-            "cta_label": "Try now"
+            "title": "Tintes de Cejas Naturales",
+            "description": "Tonos de tinte de cejas suaves y cotidianos que realzan tu color natural de cejas. Perfectos para un look sutil y sin maquillaje con tonos taupe, marrón claro y rubio.",
+            "cta_label": "Probar ahora"
           },
           {
             "key": "women",
-            "title": "Peinados para Mujeres",
-            "description": "Trending women's cuts — bobs, pixies, long layers, beach waves, and bangs. Preview length, texture, and color before committing.",
-            "cta_label": "Try now"
+            "title": "Tintes de Cejas Intensos",
+            "description": "Tinte de cejas impactante en tonos espresso intenso, carbón y pelirrojo. Logra cejas dramáticas y esculpidas que enmarcan y definen tu rostro.",
+            "cta_label": "Probar ahora"
           },
           {
             "key": "boys",
-            "title": "Peinados para Niños",
-            "description": "Curated boys' cuts for every age — tapered tops, short combs, and textured school-ready classics.",
-            "cta_label": "Try now"
+            "title": "Estilos de Laminado de Cejas",
+            "description": "Combinaciones de laminado y tinte de cejas para ese look peinado hacia arriba y plumoso. Previsualiza diferentes estilos de laminado antes de tu cita en el salón.",
+            "cta_label": "Probar ahora"
           },
           {
             "key": "girls",
-            "title": "Peinados para Niñas",
-            "description": "Popular girls' hairstyles — long layers, braids, trendy bobs, and playful curls. Family-friendly previews for every age.",
-            "cta_label": "Try now"
+            "title": "Tinte de Pestañas y Cejas",
+            "description": "Paquetes combinados de tinte de pestañas y cejas para un realce completo y de bajo mantenimiento. Ve cómo los tintes coordinados enmarcan tus ojos.",
+            "cta_label": "Probar ahora"
           }
         ],
-        "tip": "Every preview is free. New AI hairstyles are added regularly."
+        "tip": "Cada vista previa es gratuita. Se añaden nuevos estilos de tinte de cejas regularmente."
       },
       "video_demo": {
         "block": "features-accordion",
         "id": "video_demo",
-        "label": "Video Demo",
-        "title": "See AI Barber in Action",
-        "description": "Watch real hairstyle transformations — from upload to download in seconds.",
+        "label": "Demo en Video",
+        "title": "Ve Brow Tint en Acción",
+        "description": "Mira transformaciones reales de tinte de cejas antes y después — desde la carga hasta la vista previa en segundos.",
         "items": [
           {
-            "title": "Try Multiple Hairstyles in Seconds",
-            "description": "Upload one photo and watch it try on several distinct cuts and colors, side by side.",
+            "title": "Previsualiza Múltiples Tonos de Tinte de Cejas al Instante",
+            "description": "Sube una foto y previsualiza varios tonos y estilos de tinte de cejas lado a lado para encontrar tu combinación perfecta.",
             "icon": "RiPlayCircleLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "AI hairstyle transformation demo video"
+              "alt": "Video demo de vista previa de tinte de cejas con IA"
             }
           },
           {
-            "title": "Preview Hair Movement and Texture",
-            "description": "See how bangs, layers, curls, and volume flow with realistic motion — before you commit to the cut.",
+            "title": "Ve Textura y Cobertura Realista del Tinte de Cejas",
+            "description": "Previsualiza cómo diferentes técnicas de tinte de cejas — desde gel de cejas con color hasta tinte profesional de cejas — se ven en tus cejas reales antes de comprometerte.",
             "icon": "RiFilmLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Hair texture and movement preview video"
+              "alt": "Video de vista previa de textura y cobertura de tinte de cejas"
             }
           }
         ]
@@ -200,77 +200,77 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "label": "How It Works",
-        "title": "From Photo to New Hairstyle in 4 Steps",
-        "description": "AI Barber is built for fast, realistic hairstyle previews. No install, no signup needed to try.",
+        "label": "Cómo Funciona",
+        "title": "De Foto a Tinte de Cejas Perfecto en 4 Pasos",
+        "description": "Brow Tint está diseñado para previsualizaciones rápidas y realistas de tinte de cejas. Sin instalación, sin registro necesario para probar.",
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Upload a Clear Front-Facing Photo",
-            "description": "Good lighting and a visible hairline give the AI the most accurate map of your face."
+            "title": "Sube una Foto Clara Frontal",
+            "description": "Buena iluminación y cejas visibles le dan a la IA el mapa más preciso de tu rostro y forma de cejas."
           },
           {
-            "title": "Pick a Hairstyle From the Gallery",
-            "description": "Browse 500+ AI hairstyles across men, women, boys, and girls — or describe a custom look."
+            "title": "Elige un Estilo de Tinte de Cejas",
+            "description": "Navega por tintes naturales, tonos intensos, combinaciones de laminado y tinte de cejas, o acabados de gel de cejas con color de la galería."
           },
           {
-            "title": "Fine-Tune Length, Texture, and Color",
-            "description": "Add an optional prompt to dial in bangs, layers, highlights, or a specific color."
+            "title": "Ajusta Tono, Forma e Intensidad",
+            "description": "Ajusta el color del tinte, el grosor de las cejas, la forma del arco y la intensidad de cobertura para que coincida con el look que deseas."
           },
           {
-            "title": "Generate, Compare, and Download",
-            "description": "Generate multiple looks, compare side-by-side, and download your favorite to share with your stylist."
+            "title": "Genera, Compara y Descarga",
+            "description": "Genera múltiples vistas previas de tinte de cejas, compara antes y después lado a lado, y descarga tu favorita para compartir con tu especialista en cejas."
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Hairstyle Preview FAQ",
-        "description": "Common questions about AI hairstyle previews, photo tips, and how to get the best results.",
+        "title": "Preguntas Frecuentes sobre Vista Previa de Tinte de Cejas",
+        "description": "Preguntas comunes sobre previsualizaciones de tinte de cejas con IA, consejos de fotos y cómo obtener los mejores resultados de tinte de cejas.",
         "items": [
           {
-            "question": "Are the AI hairstyle previews in this gallery free?",
-            "answer": "Yes. You can browse every style for free and generate previews on your own photo with a free trial."
+            "question": "¿Son gratuitas las vistas previas de tinte de cejas en esta galería?",
+            "answer": "Sí. Puedes navegar por todos los estilos de tinte de cejas gratis y generar vistas previas en tu propia foto con una prueba gratuita."
           },
           {
-            "question": "Will the AI preview match my real haircut?",
-            "answer": "AI Barber renders realistic cuts, colors, and textures that blend with your hairline. Actual results still depend on your hair type and your stylist — we recommend downloading your preview and sharing it with your barber."
+            "question": "¿La vista previa de tinte de cejas con IA coincidirá con mis resultados reales?",
+            "answer": "Brow Tint renderiza tonos y cobertura de tinte realistas que se mezclan con el vello natural de tus cejas. Los resultados reales aún dependen de tu tipo de cejas y tu especialista en cejas — recomendamos descargar tu vista previa y compartirla con tu profesional de tinte de cejas."
           },
           {
-            "question": "How many hairstyles can I try?",
-            "answer": "There are 500+ curated hairstyles in the gallery, covering men's, women's, boys', and girls' cuts. You can also describe custom styles with your own prompt."
+            "question": "¿Cuántos estilos de tinte de cejas puedo probar?",
+            "answer": "Hay docenas de estilos de tinte de cejas seleccionados en la galería, cubriendo tintes naturales, tintes intensos, combinaciones de laminado y tinte de cejas, looks de gel de cejas con color, y paquetes de tinte de pestañas y cejas. También puedes describir tonos personalizados con tu propio prompt."
           },
           {
-            "question": "Do I need to install an app?",
-            "answer": "No. AI Barber runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
+            "question": "¿Necesito instalar una app para usar Brow Tint?",
+            "answer": "No. Brow Tint funciona completamente en tu navegador — en móvil o escritorio. No se requieren descargas ni plugins."
           },
           {
-            "question": "What photo works best for a hairstyle preview?",
-            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible hairline gives the AI the most to work with."
+            "question": "¿Qué foto funciona mejor para una vista previa de tinte de cejas?",
+            "answer": "Usa una foto clara y frontal con iluminación uniforme. Evita gafas de sol, sombreros o filtros pesados. Una expresión neutral con cejas visibles le da a la IA el resultado de tinte de cejas más preciso."
           },
           {
-            "question": "Is my photo kept private?",
-            "answer": "Your uploaded photos are processed securely for generation only. They are not stored permanently or shared with third parties."
+            "question": "¿Se mantiene privada mi foto?",
+            "answer": "Tus fotos subidas se procesan de forma segura solo para la generación de tinte de cejas. No se almacenan permanentemente ni se comparten con terceros."
           },
           {
-            "question": "Can boys and girls try these hairstyles safely?",
-            "answer": "Yes. The kids' sections are family-friendly and cover everyday cuts. Parents can preview any look before visiting the salon."
+            "question": "¿Cuál es la diferencia entre tinte de cejas y laminado de cejas?",
+            "answer": "El tinte de cejas agrega color al vello de tus cejas para un look más lleno y definido. El laminado y tinte de cejas combina un proceso de alisado químico con el tinte para crear cejas peinadas hacia arriba y plumosas. Puedes previsualizar ambos con Brow Tint."
           },
           {
-            "question": "Does AI Barber support color changes only?",
-            "answer": "Yes. You can preview a color change on your current cut — black, blonde, copper, silver, pink, blue, and more — or combine color with a new style."
+            "question": "¿Puede Brow Tint ayudarme a encontrar el tono correcto de brow code?",
+            "answer": "Sí. Brow Tint usa IA para analizar tu tono de piel, color de cabello y rasgos para recomendar la mejor combinación de tono de tinte de cejas — similar a una fórmula de brow code tint. Prueba múltiples tonos lado a lado para encontrar tu color de tinte profesional de cejas perfecto."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Try a New Hairstyle?",
-        "description": "Upload your photo and preview every look in the gallery — completely free, no install required.",
+        "title": "¿Lista para Encontrar Tu Tinte de Cejas Perfecto?",
+        "description": "Sube tu foto y previsualiza cada estilo de tinte de cejas en la galería — completamente gratis, sin instalación requerida.",
         "buttons": [
           {
-            "title": "Try AI Barber now",
-            "url": "/ai-hairstyle-changer",
+            "title": "Probar Brow Tint Ahora",
+            "url": "/ai-brow-tint-generator",
             "target": "_self",
             "icon": "Zap"
           }

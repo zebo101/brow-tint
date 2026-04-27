@@ -8,9 +8,9 @@
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "AI Barber 价格",
+        "sr_only_title": "Brow Tint 价格",
         "title": "价格",
-        "description": "选择最适合您 AI 发型转换需求的完美方案。",
+        "description": "选择最适合您 AI 眉色生成需求的完美方案。",
         "groups": [
           {
             "name": "one-time",

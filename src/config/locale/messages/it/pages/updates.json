@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "Aggiornamenti - AI Barber",
-    "description": "Visualizza le ultime funzionalità di AI Barber, aggiunte di acconciature e miglioramenti."
+    "title": "Aggiornamenti - Brow Tint",
+    "description": "Visualizza le ultime funzionalità di Brow Tint, aggiunte di stili tinta sopracciglia e miglioramenti."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
         "title": "Novità",
-        "description": "Ultime funzionalità, aggiunte di acconciature e miglioramenti a AI Barber."
+        "description": "Ultime funzionalità, aggiunte di stili tinta sopracciglia e miglioramenti a Brow Tint."
       }
     }
   }

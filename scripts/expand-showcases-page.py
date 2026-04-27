@@ -81,7 +81,7 @@ def build_hairstyle_gallery(locale: str) -> dict:
         "title": "Browse the Full Hairstyle Library",
         "description": "Scroll through our 500+ AI-ready cuts organized by gender and age. Click any look to preview it on your own photo.",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
             {
                 "key": key,
@@ -205,7 +205,7 @@ def build_cta() -> dict:
         "buttons": [
             {
                 "title": "Try AI Barber now",
-                "url": "/ai-hairstyle-changer",
+                "url": "/ai-brow-tint-generator",
                 "target": "_self",
                 "icon": "Zap",
             }

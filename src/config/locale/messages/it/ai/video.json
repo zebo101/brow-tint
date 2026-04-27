@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "title": "Video acconciatura IA | AI Barber",
-    "description": "Crea video di trasformazione acconciatura con IA da una foto. Prova tagli e colori in movimento e scarica il clip.",
-    "keywords": "video acconciatura ia, video cambia acconciatura, video trasformazione capelli, taglio virtuale video, cambio colore capelli video, acconciatura animata, simulatore acconciature video, prima e dopo capelli, generatore video acconciatura ia"
+    "title": "Generatore Video Tinta Sopracciglia IA | Trasformazione Tinta Sopracciglia | Brow Tint",
+    "description": "Crea un video di trasformazione tinta sopracciglia IA da una sola foto. Visualizza risultati di tinta sopracciglia, clip prima e dopo in movimento e look professionali di tinta sopracciglia online, poi scarica un video condivisibile per il tuo professionista o salone.",
+    "keywords": "video tinta sopracciglia ia, video trasformazione tinta sopracciglia, video prima e dopo tinta sopracciglia, generatore tinta sopracciglia ia, foto a video tinta sopracciglia, tinta sopracciglia prima e dopo, video gel sopracciglia colorato, video laminazione e tinta sopracciglia, anteprima tinta professionale sopracciglia, video tinta ciglia e sopracciglia, anteprima movimento tinta sopracciglia, video trattamento sopracciglia, generatore clip tinta sopracciglia, video tinta sopracciglia online, video riferimento professionista sopracciglia"
   },
   "page": {
-    "title": "Video acconciatura IA",
-    "description": "Trasforma una foto in un video acconciatura IA. Anima tagli e colori, confronta prima/dopo e scarica il clip.",
+    "title": "Generatore Video Tinta Sopracciglia IA - Crea Clip di Trasformazione Online | Brow Tint",
+    "description": "Trasforma un selfie in un video tinta sopracciglia IA online. Visualizza tonalità di tinta professionale sopracciglia, risultati di laminazione e tinta sopracciglia e look con gel sopracciglia colorato in movimento, confronta prima e dopo, poi scarica un clip da condividere con il tuo professionista o salone.",
     "show_sections": [
       "hero",
       "introduce",
       "generator",
       "benefits",
       "usage",
-      "use_cases",
       "features",
+      "stats",
       "testimonials",
       "faq",
       "cta"
@@ -22,55 +22,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Video acconciatura IA",
-        "highlight_text": "Video acconciatura",
-        "description": "Crea un clip realistico di trasformazione da una sola foto.",
+        "title": "Generatore Video Tinta Sopracciglia IA Online",
+        "highlight_text": "Video Tinta Sopracciglia IA",
+        "description": "Trasforma una foto in un video tinta sopracciglia IA in pochi minuti. Visualizza tonalità di tinta professionale sopracciglia, risultati di laminazione e tinta sopracciglia e clip prima e dopo in movimento prima di prenotare il prossimo appuntamento.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-video.png",
-          "alt": "Anteprima video acconciatura IA",
+          "alt": "Interfaccia Generatore Video Tinta Sopracciglia IA",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-video-dark.png",
-          "alt": "Anteprima video acconciatura IA scuro",
+          "alt": "Interfaccia Generatore Video Tinta Sopracciglia IA Modalità Scura",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/video-bg.png",
-          "alt": "Sfondo video AI Barber"
+          "alt": "Sfondo Video Brow Tint"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "Cos'è il generatore di video acconciatura IA?",
+        "title": "Cos'è il Generatore Video Tinta Sopracciglia IA?",
         "label": "Introduzione",
-        "description": "Trasforma una foto in un video breve per vedere movimento, texture e colore.",
+        "description": "Brow Tint trasforma una singola foto in un video di trasformazione tinta sopracciglia per visualizzare tonalità, forma, pienezza e movimento prima di impegnarsi in un trattamento reale.",
         "image": {
           "src": "/imgs/bg/video-bg3.png",
-          "alt": "Introduzione video acconciatura IA"
+          "alt": "Panoramica Generatore Video Tinta Sopracciglia IA"
         },
         "items": [
           {
-            "title": "Foto in video",
-            "description": "Carica una foto e ottieni un clip in pochi secondi.",
+            "title": "Da Foto a Video Tinta Sopracciglia",
+            "description": "Carica un ritratto e genera un breve clip di tinta sopracciglia che mostra il tuo look aggiornato con movimento naturale e risultati di tinta realistici.",
             "icon": "RiVideoLine"
           },
           {
-            "title": "Prima e dopo",
-            "description": "Mostra look originale e nuovo nello stesso clip.",
+            "title": "Anteprima Prima e Dopo in Movimento",
+            "description": "Guarda come una tinta professionale sopracciglia, un gel sopracciglia colorato o una laminazione e tinta sopracciglia appare in movimento invece di affidarti a un mockup statico.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Colore in movimento",
-            "description": "Anteprima di biondo, rame o nero con movimento naturale.",
-            "icon": "RiPaletteLine"
+            "title": "Clip di Riferimento per il Professionista",
+            "description": "Scarica un video chiaro di tinta sopracciglia da inviare al tuo professionista, salone o specialista in tinta ciglia e sopracciglia prima dell'appuntamento.",
+            "icon": "RiShareLine"
           },
           {
-            "title": "Controllo prompt",
-            "description": "Descrivi lunghezza, texture e angoli per precisione.",
+            "title": "Controllo Personalizzato della Trasformazione",
+            "description": "Descrivi tonalità, forma dell'arco, spessore, stile di laminazione e finitura del gel sopracciglia colorato per generare un clip di trasformazione più specifico.",
             "icon": "RiMagicLine"
           }
         ],
@@ -79,35 +79,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Perché creare un video acconciatura",
+        "title": "Perché Scegliere il Nostro Generatore Video Tinta Sopracciglia IA",
         "label": "Vantaggi",
-        "description": "Un'anteprima in movimento facilita la decisione.",
+        "description": "Prendi decisioni più rapide sulla tinta sopracciglia con anteprime in movimento, clip condivisibili e un flusso di lavoro online semplice.",
         "items": [
           {
-            "title": "Vedi movimento",
-            "description": "Il video mostra strati e frangia in azione.",
-            "icon": "RiVideoLine",
+            "title": "Visualizza i Risultati della Tinta Prima dell'Appuntamento",
+            "description": "Guarda come una tinta professionale sopracciglia, un gel sopracciglia colorato o una laminazione e tinta sopracciglia incornicia il tuo viso in movimento, così puoi scegliere la tonalità e la forma giusta con sicurezza.",
+            "icon": "RiFilmLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "Movimento capelli"
+              "alt": "Video anteprima movimento tinta sopracciglia IA"
             }
           },
           {
-            "title": "Clip condivisibile",
-            "description": "Invia il clip a barbiere o stylist.",
+            "title": "Condividi un Clip Prima e Dopo con il Tuo Professionista",
+            "description": "Invia un video di trasformazione tinta sopracciglia invece di spiegare il look da zero. Aiuta professionisti e saloni a capire più rapidamente la tonalità e la forma dell'arco desiderati.",
             "icon": "RiShareLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Condividi clip"
+              "alt": "Video condivisibile trasformazione tinta sopracciglia"
             }
           },
           {
-            "title": "Veloce online",
-            "description": "Genera il clip in pochi minuti da una foto.",
+            "title": "Prendi Decisioni sulla Tinta Online in Pochi Minuti",
+            "description": "Dal caricamento al clip scaricabile in un'unica sessione online, che tu stia testando una nuova tonalità di gel sopracciglia colorato, un abbinamento tinta ciglia e sopracciglia o una trasformazione drammatica.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/bg/video-bg2.png",
-              "alt": "Generazione rapida"
+              "alt": "Flusso di lavoro rapido video tinta sopracciglia online"
             }
           }
         ],
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "Come creare un video acconciatura",
-        "description": "Crea il clip in quattro passaggi:",
+        "title": "Come Creare un Video Tinta Sopracciglia IA",
+        "description": "Genera un video da foto a tinta sopracciglia in quattro semplici passaggi:",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "Guida video acconciatura"
+          "alt": "Come creare un video tinta sopracciglia IA"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Carica una foto",
-            "description": "Usa una foto frontale e ben illuminata.",
+            "title": "Carica una Foto Ritratto Chiara",
+            "description": "Usa una foto frontale con buona illuminazione così il generatore può leggere la forma del viso, la linea delle sopracciglia e la tinta attuale con precisione.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Carica foto"
+              "alt": "Carica foto ritratto per video tinta sopracciglia"
             }
           },
           {
-            "title": "Scegli uno stile",
-            "description": "Seleziona un template o descrivi taglio e colore.",
+            "title": "Scegli la Direzione della Tinta Sopracciglia",
+            "description": "Seleziona lo stile di tinta sopracciglia che vuoi testare, come una tinta professionale sopracciglia naturale, un gel sopracciglia colorato intenso, una laminazione e tinta sopracciglia morbida o un abbinamento tinta ciglia e sopracciglia.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Scegli stile"
+              "alt": "Scegli direzione tinta sopracciglia"
             }
           },
           {
-            "title": "Genera il video",
-            "description": "L'IA anima la trasformazione.",
+            "title": "Descrivi la Trasformazione",
+            "description": "Aggiungi dettagli come tonalità, altezza dell'arco, spessore, finitura laminazione e tono del gel sopracciglia colorato così il clip prima e dopo corrisponderà meglio al risultato desiderato.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Genera video"
+              "alt": "Descrivi trasformazione video tinta sopracciglia"
             }
           },
           {
-            "title": "Scarica e condividi",
-            "description": "Salva il clip e mostrala in salone.",
+            "title": "Genera, Confronta e Scarica",
+            "description": "Crea il tuo video tinta sopracciglia, rivedi l'anteprima in movimento del prima e dopo, poi scarica il clip per salvarlo, condividerlo o portarlo alla prossima visita in salone.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Scarica video"
+              "alt": "Genera e scarica video tinta sopracciglia"
             }
           }
         ],
@@ -162,50 +162,50 @@
       },
       "features": {
         "id": "features",
-        "title": "Funzioni chiave",
-        "description": "Prompt, anteprima e download HD per video acconciatura.",
+        "title": "Funzionalità Chiave del Generatore Video Tinta Sopracciglia IA",
+        "description": "Un flusso di lavoro online pratico per anteprime di tinta sopracciglia, confronti prima e dopo e clip scaricabili di tinta sopracciglia in movimento.",
         "items": [
           {
-            "title": "Foto in video",
-            "description": "Trasforma un'immagine in un clip breve.",
+            "title": "Anteprima Tinta Sopracciglia da Foto a Video",
+            "description": "Parti da un'immagine e trasformala in un video tinta sopracciglia che mostra il tuo look aggiornato in movimento.",
             "icon": "RiFilmLine"
           },
           {
-            "title": "Prompt di stile",
-            "description": "Indica lunghezza, texture e colore.",
-            "icon": "RiText"
+            "title": "Controllo Dettagliato del Prompt Tinta",
+            "description": "Descrivi tonalità, forma dell'arco, spessore, stile di laminazione, finitura del gel sopracciglia colorato e look complessivo per guidare il clip finale.",
+            "icon": "RiEdit2Line"
           },
           {
-            "title": "Prima/Dopo",
-            "description": "Confronta look originale e nuovo in un clip.",
+            "title": "Confronto Tinta Sopracciglia Prima e Dopo",
+            "description": "Usa clip di anteprima in movimento per confrontare le tue sopracciglia attuali con una nuova tinta professionale sopracciglia o tonalità di gel sopracciglia colorato prima di impegnarti.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Download HD",
-            "description": "Salva il clip in buona qualità.",
-            "icon": "RiHdLine"
+            "title": "Video di Riferimento Scaricabile per il Professionista",
+            "description": "Salva un clip di trasformazione tinta sopracciglia da inviare via messaggio, email o mostrare direttamente al tuo professionista, salone o specialista in tinta ciglia e sopracciglia.",
+            "icon": "RiDownload2Line"
           },
           {
-            "title": "Rendering rapido",
-            "description": "Crea video velocemente online.",
+            "title": "Flusso di Lavoro Rapido nel Browser",
+            "description": "Crea video di anteprima tinta sopracciglia online senza software di editing, timeline complicate o produzione video manuale.",
             "icon": "RiSpeedLine"
           },
           {
-            "title": "Mobile friendly",
-            "description": "Funziona su mobile e desktop.",
+            "title": "Funziona su Mobile e Desktop",
+            "description": "Genera e rivedi il tuo video tinta sopracciglia sul telefono o computer ogni volta che vuoi un'opinione rapida sulle tue opzioni di tinta sopracciglia.",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "Cosa dicono gli utenti",
-        "description": "Clip brevi rendono più chiara la scelta in salone.",
+        "title": "Cosa Dicono gli Utenti dei Video Tinta Sopracciglia",
+        "description": "Persone reali che usano anteprime in movimento della tinta sopracciglia prima di visite in salone, servizi fotografici e cambi di tonalità.",
         "items": [
           {
             "name": "Ava Peterson",
             "role": "Content Creator",
-            "quote": "Il movimento ha reso la scelta facile. Ho visto come cadono gli strati.",
+            "quote": "Un'anteprima statica non era sufficiente per me. Il video tinta sopracciglia ha mostrato come la tonalità di gel sopracciglia colorato appariva con le mie espressioni naturali, e questo mi ha convinta a prenotare il trattamento.",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Ava Peterson"
@@ -213,8 +213,8 @@
           },
           {
             "name": "Liam Torres",
-            "role": "Barbiere",
-            "quote": "I clienti inviano il video e so subito il taglio desiderato.",
+            "role": "Professionista Sopracciglia",
+            "quote": "Le clienti mi inviano il clip di trasformazione tinta sopracciglia prima di venire, e rende la consulenza molto più chiara rispetto al cercare di descrivere una tonalità di tinta via messaggio.",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Liam Torres"
@@ -223,7 +223,7 @@
           {
             "name": "Mia Chen",
             "role": "Studentessa",
-            "quote": "Ho confrontato rame vs. biondo in movimento e ho deciso subito.",
+            "quote": "L'ho usato per confrontare una tinta professionale sopracciglia marrone caldo e una laminazione e tinta sopracciglia dai toni freddi in movimento. Vedere la differenza di tonalità in un breve video ha reso la scelta molto più facile.",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Mia Chen"
@@ -232,7 +232,7 @@
           {
             "name": "Noah Kim",
             "role": "Fotografo",
-            "quote": "Il clip aiuta a vedere il movimento dei capelli in camera.",
+            "quote": "Il clip tinta sopracciglia prima e dopo aiuta le mie clienti a capire come una nuova forma e tonalità di sopracciglia appariranno in camera prima del giorno dello shooting.",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "Noah Kim"
@@ -240,8 +240,8 @@
           },
           {
             "name": "Sofia Alvarez",
-            "role": "Make-up artist",
-            "quote": "Lo abbino ai moodboard per allineare il look finale.",
+            "role": "Make-up Artist",
+            "quote": "Mi piace poter inviare un'unica anteprima in movimento al professionista e alla cliente. Tutti si allineano sul look tinta ciglia e sopracciglia molto più velocemente.",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Sofia Alvarez"
@@ -249,8 +249,8 @@
           },
           {
             "name": "Jordan Lee",
-            "role": "Stylist",
-            "quote": "Fa risparmiare tempo in consulenza e riduce i passaggi.",
+            "role": "Cliente di Salone",
+            "quote": "Ho generato un video tinta sopracciglia da un selfie, l'ho scaricato e mostrato al salone. Ha ridotto le incomprensioni e ho ottenuto un risultato molto più vicino a quello che volevo.",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Jordan Lee"
@@ -260,114 +260,106 @@
       },
       "faq": {
         "id": "faq",
-        "title": "FAQ",
-        "description": "Risposte sui video acconciatura IA e foto consigliate.",
-        "tip": "Hai bisogno di aiuto? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Contatta il supporto</a>",
+        "title": "Domande Frequenti",
+        "description": "FAQ sui video tinta sopracciglia IA, il flusso di lavoro da foto a video, clip scaricabili e come ottenere l'anteprima di tinta sopracciglia più realistica.",
+        "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
         "items": [
           {
-            "question": "Cos'è un video acconciatura IA?",
-            "answer": "Un clip breve generato dalla tua foto che mostra un nuovo taglio o colore."
+            "question": "Cos'è un generatore video tinta sopracciglia IA?",
+            "answer": "È uno strumento online che trasforma la tua foto e la descrizione della tinta sopracciglia in una breve anteprima in movimento, così puoi vedere un cambio di tinta professionale sopracciglia o tonalità di gel sopracciglia colorato prima di realizzarlo."
           },
           {
-            "question": "Quanto dura il video?",
-            "answer": "Di solito pochi secondi ed è facile da condividere."
+            "question": "Posso creare un video tinta sopracciglia da una sola foto?",
+            "answer": "Sì. Carica una foto ritratto chiara e lo strumento può generare un video da foto a tinta sopracciglia senza richiedere esperienza di editing video."
           },
           {
-            "question": "Posso usare il mio prompt?",
-            "answer": "Sì. Descrivi taglio, lunghezza, texture e colore."
+            "question": "Che tipo di tinte sopracciglia posso visualizzare in video?",
+            "answer": "Puoi testare tonalità di tinta professionale sopracciglia, finiture di gel sopracciglia colorato, combinazioni di laminazione e tinta sopracciglia, abbinamenti tinta ciglia e sopracciglia e varie forme di sopracciglia da archi naturali a sopracciglia strutturate e definite."
           },
           {
-            "question": "Quali foto funzionano meglio?",
-            "answer": "Foto frontali, nitide e ben illuminate."
+            "question": "Perché usare un video tinta sopracciglia invece di una sola foto?",
+            "answer": "Un video aiuta a valutare come la tinta sopracciglia appare con le espressioni facciali naturali e il movimento. È particolarmente utile per confrontare i risultati tinta sopracciglia prima e dopo e vedere come le diverse tonalità si armonizzano con i tuoi tratti."
           },
           {
-            "question": "Il video è scaricabile?",
-            "answer": "Sì. Scarica il clip e condividilo con lo stylist."
+            "question": "Posso scaricare il clip di trasformazione tinta sopracciglia?",
+            "answer": "Sì. Una volta pronto il risultato, puoi scaricare il video clip e conservarlo come riferimento per il trattamento o condividerlo con il tuo professionista, salone o amici."
           },
           {
-            "question": "Servono competenze di editing?",
-            "answer": "No. Il clip viene generato automaticamente."
+            "question": "Posso mostrare il video al mio professionista o salone?",
+            "answer": "Sì. Il clip scaricabile è progettato per essere facilmente condivisibile, rendendo molto più semplice comunicare la tonalità di tinta sopracciglia, la forma dell'arco e il look complessivo desiderato."
+          },
+          {
+            "question": "Quali foto funzionano meglio per un video tinta sopracciglia realistico?",
+            "answer": "Usa una foto frontale con buona illuminazione, sopracciglia visibili e minima ostruzione del viso. Ritratti chiari producono generalmente anteprime in movimento di tinta sopracciglia migliori rispetto a foto scure o angolate."
+          },
+          {
+            "question": "Posso visualizzare diverse tonalità di tinta sopracciglia in movimento?",
+            "answer": "Sì. Puoi descrivere aggiornamenti di tonalità come marrone caldo, tortora freddo, nero morbido, mogano o gel sopracciglia colorato biondo e vedere come la nuova tinta appare in un clip in movimento."
+          },
+          {
+            "question": "Servono competenze di editing o software video?",
+            "answer": "No. Il flusso di lavoro è completamente online. Carichi una foto, descrivi il cambio di tinta sopracciglia e generi il video direttamente nel tuo browser."
+          },
+          {
+            "question": "Quanto tempo ci vuole per generare un video tinta sopracciglia?",
+            "answer": "La maggior parte dei video tinta sopracciglia sono pronti in pochi minuti, a seconda del modello selezionato, del tuo input e della domanda attuale di generazione."
+          },
+          {
+            "question": "La mia foto caricata è gestita in modo sicuro?",
+            "answer": "Prendiamo la privacy molto seriamente. I tuoi media caricati vengono elaborati per la generazione e gestiti in modo sicuro, e non vengono condivisi con terze parti."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Crea il tuo video acconciatura",
-        "description": "Genera un clip di trasformazione e condividilo con il tuo stylist.",
+        "title": "Pronta a Visualizzare la Tua Nuova Tinta Sopracciglia in Movimento?",
+        "description": "Crea un video tinta sopracciglia IA ora, confronta il tuo look prima e dopo e scarica un clip da condividere con il tuo professionista o salone.",
         "buttons": [
           {
-            "title": "Inizia video",
+            "title": "Crea Video Tinta Sopracciglia Ora",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
-      },
-      "use_cases": {
-        "id": "use_cases",
-        "title": "Risultati di alta qualità ovunque",
-        "description": "Per uso personale e professionale.",
-        "items": [
-          {
-            "title": "Try-on virtuali",
-            "description": "Ideale per foto profilo, prove o portfolio beauty.",
-            "icon": "RiUserLine"
-          },
-          {
-            "title": "Visual pro",
-            "description": "Crea headshot o visual fashion con acconciature personalizzate.",
-            "icon": "RiImageLine"
-          },
-          {
-            "title": "Concept art",
-            "description": "Progetta personaggi, look editoriali o modelli digitali.",
-            "icon": "RiBrushLine"
-          },
-          {
-            "title": "Per creator",
-            "description": "Perfetto per stylist, creator e chi esplora nuovi look.",
-            "icon": "RiSparkling2Line"
-          }
-        ]
       }
     }
   },
   "generator": {
-    "title": "Generatore video acconciatura IA",
-    "description": "Crea video animati di trasformazione acconciatura da foto o prompt.",
+    "title": "Generatore Video Tinta Sopracciglia IA",
+    "description": "Crea un video da foto a tinta sopracciglia, un clip di trasformazione prima e dopo o un'anteprima in movimento per il tuo prossimo trattamento sopracciglia.",
     "tabs": {
       "text-to-video": "Descrivi Stile",
-      "image-to-video": "Foto a Video",
-      "video-to-video": "Trasforma Video"
+      "image-to-video": "Da Foto a Video",
+      "video-to-video": "Restyling Video"
     },
     "form": {
       "provider": "Provider IA",
       "model": "Modello Video",
       "select_provider": "Seleziona Provider IA",
       "select_model": "Seleziona Modello Video",
-      "prompt": "Descrizione Acconciatura",
-      "prompt_placeholder": "Descrivi il cambiamento: taglio, lunghezza, colore, texture, movimento, angoli (es. da lungo a bob corto, da biondo a rame, onde morbide).",
+      "prompt": "Prompt Video Tinta Sopracciglia",
+      "prompt_placeholder": "Descrivi la trasformazione tinta sopracciglia: tonalità, forma dell'arco, spessore, finitura (es. tinta professionale sopracciglia marrone caldo, sopracciglia laminate morbide).",
       "reference_image": "La Tua Foto",
-      "reference_image_placeholder": "Carica una foto nitida per risultati migliori.",
+      "reference_image_placeholder": "Carica una foto ritratto chiara per creare un video tinta sopracciglia dalla tua immagine.",
       "reference_video": "URL Video di Riferimento",
-      "reference_video_placeholder": "Incolla l'URL di un video di acconciatura di riferimento.",
-      "some_images_failed_to_upload": "Impossibile caricare immagine, elimina e ricarica",
+      "reference_video_placeholder": "Incolla l'URL di un video se vuoi restilizzare un clip di tinta sopracciglia esistente.",
+      "some_images_failed_to_upload": "Alcune immagini non sono state caricate. Rimuovile e ricaricale.",
       "prompt_too_long": "La descrizione è troppo lunga, accorciala"
     },
-    "generate": "Genera video acconciatura",
+    "generate": "Genera Video Tinta Sopracciglia",
     "checking_account": "Verifica account...",
     "loading": "Caricamento...",
-    "generating": "Creazione del tuo video acconciatura...",
-    "sign_in_to_generate": "Accedi per creare video acconciatura",
+    "generating": "Creazione del tuo video tinta sopracciglia...",
+    "sign_in_to_generate": "Accedi per Creare Video Tinta Sopracciglia",
     "credits_cost": "Costa {credits} crediti",
     "credits_remaining": "{credits} crediti rimanenti",
     "buy_credits": "Acquista Crediti",
     "progress": "Progresso",
-    "generated_videos": "Il tuo video acconciatura",
-    "ready_to_generate": "Pronto per creare il video",
-    "ready_for_generating": "Pronto per la creazione del video",
-    "no_videos_generated": "Nessun video acconciatura ancora"
+    "generated_videos": "I Tuoi Video Tinta Sopracciglia",
+    "ready_to_generate": "Preparazione dell'anteprima in movimento...",
+    "ready_for_generating": "Pronto per creare il tuo video tinta sopracciglia",
+    "no_videos_generated": "Nessun video tinta sopracciglia generato"
   }
 }
-

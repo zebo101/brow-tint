@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "AI Barber Chat",
+        "title": "Brow Tint Chat",
         "logo": {
           "src": "/logo.png",
-          "alt": "AI Barber Chat"
+          "alt": "Brow Tint Chat"
         },
         "url": "/chat"
       },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "Wie kann ich helfen?",
-    "input_placeholder": "Fragen Sie mich zu Frisuren, Trends oder Styling-Tipps..."
+    "input_placeholder": "Fragen Sie mich zu Augenbrauentönung, Farbabstimmung oder Augenbrauenpflege-Tipps..."
   },
   "history": {
     "title": "Chat-Verlauf",

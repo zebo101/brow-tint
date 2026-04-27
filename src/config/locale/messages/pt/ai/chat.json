@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Chat AI Barber",
+        "title": "Chat Brow Tint",
         "logo": {
           "src": "/logo.png",
-          "alt": "Chat AI Barber"
+          "alt": "Chat Brow Tint"
         },
         "url": "/chat"
       },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "Como posso ajudar?",
-    "input_placeholder": "Pergunte-me sobre penteados, tendências ou dicas de estilo..."
+    "input_placeholder": "Pergunte-me sobre tintura de sobrancelha, combinação de cores ou dicas de cuidado de sobrancelhas..."
   },
   "history": {
     "title": "Histórico de chat",

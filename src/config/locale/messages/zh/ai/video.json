@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "title": "AI发型视频 | AI Barber",
-    "description": "用照片生成AI发型变换视频。动态预览发型与发色，生成前后对比短片并下载。",
-    "keywords": "AI发型视频, 发型转换视频, 发型变换视频, 虚拟剪发视频, 发色变化视频, 动态发型, 发型模拟视频, 发型前后对比, AI发型视频生成器"
+    "title": "AI眉部染色视频生成器 | 眉部染色变换 | Brow Tint",
+    "description": "从一张照片创建AI眉部染色变换视频。预览眉部染色效果、前后对比动态短片和专业眉部染色造型，然后下载可分享的眉部染色视频给你的眉部美容师或沙龙。",
+    "keywords": "AI眉部染色视频, 眉部染色变换视频, 眉部染色前后对比视频, AI眉部染色生成器, 照片转眉部染色视频, 眉色前后对比, 染眉膏视频, 眉部塑形与染色视频, 专业眉部染色预览, 睫毛和眉部染色视频, 眉部染色动态预览, 眉部护理视频, 眉部染色短片生成器, 眉部染色视频在线, 眉部美容师参考视频"
   },
   "page": {
-    "title": "AI发型视频",
-    "description": "将照片生成AI发型视频。动态展示新剪裁与发色，对比前后效果并下载短片。",
+    "title": "AI眉部染色视频生成器 - 在线创建眉部染色变换短片 | Brow Tint",
+    "description": "将一张自拍照转化为AI眉部染色视频。在线预览专业眉部染色色调、眉部塑形与染色效果以及染眉膏动态造型，对比前后效果，然后下载眉部染色短片分享给你的眉部美容师或沙龙。",
     "show_sections": [
       "hero",
       "introduce",
       "generator",
       "benefits",
       "usage",
-      "use_cases",
       "features",
+      "stats",
       "testimonials",
       "faq",
       "cta"
@@ -22,55 +22,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "AI发型视频",
-        "highlight_text": "发型视频",
-        "description": "一张照片生成逼真的发型变换短片，动态预览新剪裁、长度与发色。",
+        "title": "AI眉部染色视频生成器在线版",
+        "highlight_text": "AI眉部染色视频",
+        "description": "将照片转化为AI眉部染色视频，几分钟内完成。预览专业眉部染色色调、眉部塑形与染色效果和前后对比动态短片，在预约眉部美容师或沙龙前先看效果。",
         "image": {
           "src": "/imgs/features/ai-hairstyle-video.png",
-          "alt": "AI发型视频预览",
+          "alt": "AI眉部染色视频生成器界面",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-video-dark.png",
-          "alt": "AI发型视频预览 深色",
+          "alt": "AI眉部染色视频生成器界面 深色模式",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/video-bg.png",
-          "alt": "AI发型视频背景"
+          "alt": "眉部染色视频背景"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "什么是AI发型视频生成器？",
+        "title": "什么是AI眉部染色视频生成器？",
         "label": "简介",
-        "description": "AI Barber 可将照片生成发型变换短片，帮助你在决定剪发或染发前先看动态效果。",
+        "description": "Brow Tint 可将一张照片转化为眉部染色变换视频，让你在正式做眉部护理前预览染色色调、形状、丰盈度和动态效果。",
         "image": {
           "src": "/imgs/bg/video-bg3.png",
-          "alt": "AI发型视频简介"
+          "alt": "AI眉部染色视频生成器概览"
         },
         "items": [
           {
-            "title": "照片转视频",
-            "description": "上传一张照片，几秒生成发型视频。",
+            "title": "照片转眉部染色视频",
+            "description": "上传一张肖像照，生成一段展示更新后眉妆造型的短片，具有自然动态和逼真的染色效果。",
             "icon": "RiVideoLine"
           },
           {
-            "title": "前后对比",
-            "description": "同一短片中展示原始与新造型。",
+            "title": "前后对比动态预览",
+            "description": "看看专业眉部染色、染眉膏或眉部塑形与染色在动态中的呈现效果，而不是仅依赖静态效果图。",
             "icon": "RiCompareLine"
           },
           {
-            "title": "发色动态",
-            "description": "动态预览金色、铜色、黑色等发色变化。",
-            "icon": "RiPaletteLine"
+            "title": "眉部美容师参考短片",
+            "description": "下载清晰的眉部染色视频，可发送给你的眉部美容师、沙龙或睫毛和眉部染色专家，以便预约前沟通。",
+            "icon": "RiShareLine"
           },
           {
-            "title": "提示词控制",
-            "description": "描述长度、质感与角度，精确控制效果。",
+            "title": "自定义眉部染色变换控制",
+            "description": "描述色调、眉弓形状、粗细、眉部塑形风格和染眉膏质感，生成更精准的眉部染色变换短片。",
             "icon": "RiMagicLine"
           }
         ],
@@ -79,35 +79,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "为什么用发型视频",
+        "title": "为什么选择我们的AI眉部染色视频生成器",
         "label": "优势",
-        "description": "动态预览让剪发与染发决策更直观。",
+        "description": "通过动态预览、可分享短片和简便的在线流程，更快地做出眉部染色决策。",
         "items": [
           {
-            "title": "看动态与质感",
-            "description": "视频展示层次、卷度与刘海的动态效果。",
-            "icon": "RiVideoLine",
+            "title": "预约前预览眉部染色效果",
+            "description": "观看专业眉部染色、染眉膏或眉部塑形与染色在动态中如何修饰你的面部，自信地选择合适的色调和形状。",
+            "icon": "RiFilmLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "发型动态预览"
+              "alt": "AI眉部染色动态预览视频"
             }
           },
           {
-            "title": "便于分享",
-            "description": "把短片发给理发师或造型师，沟通更清楚。",
+            "title": "向眉部美容师分享前后对比短片",
+            "description": "发送一段眉部染色变换视频，而不是从头解释造型。这可以帮助眉部美容师和沙龙更快地理解你想要的色调和眉弓形状。",
             "icon": "RiShareLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "分享发型视频"
+              "alt": "可分享的眉部染色变换视频"
             }
           },
           {
-            "title": "在线快速生成",
-            "description": "无需剪辑基础，几分钟内从照片生成短片。",
+            "title": "几分钟内在线做出眉部染色决策",
+            "description": "从上传到下载眉部染色短片一次完成，无论你是在测试新的染眉膏色调、睫毛和眉部染色组合，还是大胆的眉部变换。",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/bg/video-bg2.png",
-              "alt": "快速生成"
+              "alt": "快速在线眉部染色视频流程"
             }
           }
         ],
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "如何制作发型视频",
-        "description": "四步生成发型变换短片：",
+        "title": "如何创建AI眉部染色视频",
+        "description": "四步生成照片转眉部染色视频：",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "发型视频教程"
+          "alt": "如何创建AI眉部染色视频"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "上传照片",
-            "description": "选择清晰正面照片并保持光线充足。",
+            "title": "上传清晰的肖像照片",
+            "description": "使用光线充足的正面照片，以便生成器准确识别你的面部轮廓、眉线和当前眉色。",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "上传照片"
+              "alt": "上传肖像照制作眉部染色视频"
             }
           },
           {
-            "title": "选择发型",
-            "description": "选择模板或描述想要的剪裁与发色。",
+            "title": "选择眉部染色方向",
+            "description": "选择你想测试的眉部染色风格，如自然的专业眉部染色、大胆的染眉膏、柔和的眉部塑形与染色，或睫毛和眉部染色组合。",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "选择发型"
+              "alt": "选择眉部染色方向"
             }
           },
           {
-            "title": "生成视频",
-            "description": "AI 自动生成具有自然动态的短片。",
+            "title": "描述变换效果",
+            "description": "添加色调、眉弓高度、粗细、眉部塑形质感和染眉膏色调等细节，使前后对比短片更贴近你想要的效果。",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "生成视频"
+              "alt": "描述眉部染色视频变换"
             }
           },
           {
-            "title": "下载分享",
-            "description": "保存短片并展示给理发店或沙龙。",
+            "title": "生成、对比并下载",
+            "description": "创建你的眉部染色视频，查看眉色前后对比的动态预览，然后下载短片保存、分享或带去下次沙龙预约。",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "下载分享"
+              "alt": "生成并下载眉部染色视频"
             }
           }
         ],
@@ -162,50 +162,50 @@
       },
       "features": {
         "id": "features",
-        "title": "核心功能",
-        "description": "从提示词到高清下载，发型视频所需功能一应俱全。",
+        "title": "AI眉部染色视频生成器核心功能",
+        "description": "实用的在线流程，提供眉部染色预览、前后对比和可下载的眉部染色动态短片。",
         "items": [
           {
-            "title": "照片转视频",
-            "description": "一张照片生成发型变换短片。",
+            "title": "照片转视频眉部染色预览",
+            "description": "从一张图片开始，将其转化为展示更新后眉妆造型动态效果的眉部染色视频。",
             "icon": "RiFilmLine"
           },
           {
-            "title": "剪裁与发色提示词",
-            "description": "描述长度、质感、刘海与颜色，效果更精准。",
-            "icon": "RiText"
+            "title": "精细眉部染色提示词控制",
+            "description": "描述色调、眉弓形状、粗细、眉部塑形风格、染眉膏质感和整体眉妆造型来引导最终短片。",
+            "icon": "RiEdit2Line"
           },
           {
-            "title": "前后对比",
-            "description": "在同一视频中对比原始与新造型。",
+            "title": "眉部染色前后对比",
+            "description": "使用动态预览短片，在决定前对比你当前的眉毛与新的专业眉部染色或染眉膏色调。",
             "icon": "RiCompareLine"
           },
           {
-            "title": "高清下载",
-            "description": "导出清晰短片并分享给造型师。",
-            "icon": "RiHdLine"
+            "title": "可下载的眉部美容师参考视频",
+            "description": "保存眉部染色变换短片，可以发短信、发邮件或直接展示给你的眉部美容师、沙龙或睫毛和眉部染色专家。",
+            "icon": "RiDownload2Line"
           },
           {
-            "title": "快速生成",
-            "description": "无需复杂剪辑，快速生成视频。",
+            "title": "快速浏览器端流程",
+            "description": "在线创建眉部染色预览视频，无需编辑软件、复杂时间线或手动视频制作。",
             "icon": "RiSpeedLine"
           },
           {
-            "title": "移动友好",
-            "description": "手机或电脑均可生成发型视频。",
+            "title": "移动端和桌面端均可使用",
+            "description": "随时在手机或电脑上生成和查看你的眉部染色视频，快速获得眉部染色选项的参考意见。",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "用户评价",
-        "description": "短片让沙龙选择更清晰。",
+        "title": "用户对眉部染色视频的评价",
+        "description": "真实用户在沙龙预约、美妆拍摄和眉色更换前使用眉部染色动态预览的反馈。",
         "items": [
           {
             "name": "Ava Peterson",
             "role": "内容创作者",
-            "quote": "看到动态后决定更容易，层次走向一目了然。",
+            "quote": "静态预览对我来说不够。眉部染色视频展示了染眉膏色调在自然表情下的效果，这正是让我决定预约眉部护理的原因。",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Ava Peterson"
@@ -213,8 +213,8 @@
           },
           {
             "name": "Liam Torres",
-            "role": "理发师",
-            "quote": "客户直接发视频，我能立刻知道他们要的剪法。",
+            "role": "眉部美容师",
+            "quote": "客户在来之前发给我眉部染色变换短片，比通过文字描述眉色清楚多了，让咨询更加高效。",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Liam Torres"
@@ -223,7 +223,7 @@
           {
             "name": "Mia Chen",
             "role": "学生",
-            "quote": "对比铜色和金色的动态效果后很快做了决定。",
+            "quote": "我用它对比了暖棕色专业眉部染色和冷色调眉部塑形与染色的动态效果。通过短视频看到色差让选择变得容易多了。",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Mia Chen"
@@ -232,7 +232,7 @@
           {
             "name": "Noah Kim",
             "role": "摄影师",
-            "quote": "动态短片让客户看到头发在镜头中的真实动感。",
+            "quote": "前后对比的眉部染色短片帮助我的客户了解新眉形和染色色调在镜头前的效果，方便在拍摄前做决定。",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "Noah Kim"
@@ -241,7 +241,7 @@
           {
             "name": "Sofia Alvarez",
             "role": "化妆师",
-            "quote": "搭配灵感板一起沟通，成片更一致。",
+            "quote": "我喜欢能够同时将一段动态预览发给眉部美容师和客户。大家对睫毛和眉部染色造型的理解更快达成一致。",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Sofia Alvarez"
@@ -249,8 +249,8 @@
           },
           {
             "name": "Jordan Lee",
-            "role": "造型师",
-            "quote": "减少沟通往返，咨询效率更高。",
+            "role": "沙龙客户",
+            "quote": "我用一张自拍生成了眉部染色视频，下载后在沙龙展示。减少了反复沟通，得到了更接近我想要的眉部染色效果。",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Jordan Lee"
@@ -261,81 +261,74 @@
       "faq": {
         "id": "faq",
         "title": "常见问题",
-        "description": "关于AI发型视频的常见解答与照片建议。",
-        "tip": "需要帮助？联系 <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "description": "关于AI眉部染色视频、照片转视频流程、可下载短片以及如何获得最逼真眉部染色预览的常见问题。",
+        "tip": "找不到您要找的内容？联系我们的<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>支持团队</a>",
         "items": [
           {
-            "question": "什么是AI发型视频？",
-            "answer": "它是基于你的照片生成的短视频，展示新发型或发色的动态效果。"
+            "question": "什么是AI眉部染色视频生成器？",
+            "answer": "它是一款在线工具，可将你的照片和眉部染色描述转化为短动态预览，让你在实际操作前看到专业眉部染色或染眉膏色调变化的效果。"
           },
           {
-            "question": "视频时长多长？",
-            "answer": "一般为几秒钟，方便快速预览与分享。"
+            "question": "只用一张照片就能创建眉部染色视频吗？",
+            "answer": "可以。上传一张清晰的肖像照片，工具即可生成照片转眉部染色视频，无需视频编辑经验。"
           },
           {
-            "question": "可以自定义提示词吗？",
-            "answer": "可以。描述剪裁、长度、质感与发色可获得更精准的效果。"
+            "question": "可以在视频中预览哪些类型的眉部染色？",
+            "answer": "你可以测试专业眉部染色色调、染眉膏质感、眉部塑形与染色组合、睫毛和眉部染色搭配，以及从自然弧线到大胆立体眉的各种眉形。"
           },
           {
-            "question": "什么样的照片效果最好？",
-            "answer": "使用清晰正面照片，光线充足且面部无遮挡。"
+            "question": "为什么用眉部染色视频而不仅是图片？",
+            "answer": "视频可以帮助你判断眉部染色在自然面部表情和动态中的呈现效果。这对于比较眉色前后对比结果和观察不同色调如何衬托你的面部特征特别有用。"
           },
           {
-            "question": "视频可以下载吗？",
-            "answer": "可以下载并分享给理发师或沙龙。"
+            "question": "可以下载眉部染色变换短片吗？",
+            "answer": "可以。结果生成后，你可以下载视频短片，保存作为眉部护理参考或分享给你的眉部美容师、沙龙或朋友。"
           },
           {
-            "question": "需要剪辑技能吗？",
-            "answer": "不需要，工具会自动生成短片。"
+            "question": "可以把视频展示给眉部美容师或沙龙吗？",
+            "answer": "可以。可下载的短片设计为易于分享，使你更简便地传达想要的眉部染色色调、眉弓形状和整体造型。"
+          },
+          {
+            "question": "什么样的照片最适合生成逼真的眉部染色视频？",
+            "answer": "使用正面照片，确保光线充足、眉毛可见且面部无明显遮挡。清晰的肖像照通常比暗光或侧面照片产生更好的眉部染色动态预览。"
+          },
+          {
+            "question": "可以在动态中预览不同的眉色色调吗？",
+            "answer": "可以。你可以描述色调更新，如暖棕、冷灰褐、柔黑、赤褐或金色染眉膏，并查看新染色在动态短片中的呈现效果。"
+          },
+          {
+            "question": "需要编辑技能或视频软件吗？",
+            "answer": "不需要。整个流程完全在线。你上传照片，描述眉部染色变化，然后直接在浏览器中生成眉部染色视频。"
+          },
+          {
+            "question": "生成眉部染色视频需要多长时间？",
+            "answer": "大多数眉部染色视频在几分钟内即可完成，具体取决于所选模型、你的输入和当前生成需求。"
+          },
+          {
+            "question": "我上传的照片会被安全处理吗？",
+            "answer": "我们非常重视隐私。您上传的媒体文件经过安全处理用于生成，不会与第三方共享。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "开始生成发型视频",
-        "description": "生成发型变换短片并分享给造型师。",
+        "title": "准备好动态预览你的新眉色了吗？",
+        "description": "立即创建AI眉部染色视频，对比前后效果，下载短片分享给你的眉部美容师或沙龙。",
         "buttons": [
           {
-            "title": "开始生成",
+            "title": "立即创建眉部染色视频",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
-      },
-      "use_cases": {
-        "id": "use_cases",
-        "title": "高质量效果，适用于多场景",
-        "description": "用于个人与专业场景的发型视频与图片。",
-        "items": [
-          {
-            "title": "虚拟试发",
-            "description": "适合头像、试发或美妆作品集预览。",
-            "icon": "RiUserLine"
-          },
-          {
-            "title": "专业视觉",
-            "description": "制作定制发型的证件照或时尚视觉。",
-            "icon": "RiImageLine"
-          },
-          {
-            "title": "概念创作",
-            "description": "角色设定、编辑风格或数字建模参考。",
-            "icon": "RiBrushLine"
-          },
-          {
-            "title": "创作者必备",
-            "description": "适合理发师、内容创作者与风格探索者。",
-            "icon": "RiSparkling2Line"
-          }
-        ]
       }
     }
   },
   "generator": {
-    "title": "AI发型视频生成器",
-    "description": "通过照片或描述生成发型变换视频。",
+    "title": "AI眉部染色视频生成器",
+    "description": "创建照片转眉部染色视频、前后对比眉部染色变换短片，或下次眉部护理的动态预览。",
     "tabs": {
       "text-to-video": "描述风格",
       "image-to-video": "照片转视频",
@@ -346,27 +339,27 @@
       "model": "视频模型",
       "select_provider": "选择 AI 提供商",
       "select_model": "选择视频模型",
-      "prompt": "发型视频提示词",
-      "prompt_placeholder": "描述发型变换：长度、颜色、质感、动态（例如：铜色短波波头，柔和波浪）。",
+      "prompt": "眉部染色视频提示词",
+      "prompt_placeholder": "描述眉部染色变换：色调、眉弓形状、粗细、质感（例如：暖棕色专业眉部染色、柔和塑形眉妆）。",
       "reference_image": "您的照片",
-      "reference_image_placeholder": "上传清晰照片以获得更佳效果。",
+      "reference_image_placeholder": "上传一张清晰的肖像照片以创建眉部染色视频。",
       "reference_video": "参考视频 URL",
-      "reference_video_placeholder": "粘贴参考发型视频的URL。",
-      "some_images_failed_to_upload": "图片上传失败，请删除后重新上传",
+      "reference_video_placeholder": "如需重新设计现有眉部染色短片，请粘贴视频URL。",
+      "some_images_failed_to_upload": "部分图片上传失败，请删除后重新上传。",
       "prompt_too_long": "描述过长，请缩短"
     },
-    "generate": "生成发型视频",
+    "generate": "生成眉部染色视频",
     "checking_account": "正在检查账户...",
     "loading": "加载中...",
-    "generating": "正在生成你的发型视频...",
-    "sign_in_to_generate": "登录以生成发型视频",
+    "generating": "正在创建你的眉部染色视频...",
+    "sign_in_to_generate": "登录以创建眉部染色视频",
     "credits_cost": "消耗 {credits} 积分",
     "credits_remaining": "剩余 {credits} 积分",
     "buy_credits": "购买积分",
     "progress": "进度",
-    "generated_videos": "你的发型视频",
-    "ready_to_generate": "准备生成视频",
-    "ready_for_generating": "准备开始生成",
-    "no_videos_generated": "暂无发型视频"
+    "generated_videos": "你的眉部染色视频",
+    "ready_to_generate": "正在准备你的眉部染色动态预览...",
+    "ready_for_generating": "准备创建你的眉部染色视频",
+    "no_videos_generated": "暂无眉部染色视频"
   }
 }

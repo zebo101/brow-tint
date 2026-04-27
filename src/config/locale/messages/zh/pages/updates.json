@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "更新日志 - AI Barber",
-    "description": "查看最新的 AI Barber 功能、发型添加和改进。"
+    "title": "更新日志 - Brow Tint",
+    "description": "查看最新的 Brow Tint 功能、眉色风格添加和改进。"
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
         "title": "最新动态",
-        "description": "最新功能、发型添加和 AI Barber 的改进。"
+        "description": "最新功能、眉色风格添加和 Brow Tint 的改进。"
       }
     }
   }

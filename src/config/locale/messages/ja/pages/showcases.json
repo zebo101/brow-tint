@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "ギャラリー - AI Barber",
-    "description": "AI Barberで作成された素晴らしいヘアスタイル変換作品をご覧ください"
+    "title": "Brow Tint ギャラリー - AI眉ティント ビフォーアフター",
+    "description": "Brow Tint AIジェネレーターで作成された素晴らしい眉ティント ビフォーアフター変身をご覧ください"
   },
   "page": {
-    "title": "変換ギャラリー",
+    "title": "Brow Tint ギャラリー",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "素晴らしいヘアスタイル変換",
-        "description": "ユーザーがAI Barberでルックスをどのように変えたかご覧ください。",
+        "title": "見事な眉ティント変身",
+        "description": "Brow Tintでユーザーがどのように眉を変身させたかご覧ください。",
         "groups": [
           {
             "name": "all",
@@ -17,182 +17,182 @@
           },
           {
             "name": "short-hair",
-            "title": "ショートヘア"
+            "title": "ナチュラルティント"
           },
           {
             "name": "long-hair",
-            "title": "ロングヘア"
+            "title": "ボールドティント"
           },
           {
             "name": "color-change",
-            "title": "カラー変更"
+            "title": "眉ラミネーション"
           },
           {
             "name": "men-styles",
-            "title": "メンズスタイル"
+            "title": "ティント眉ジェル"
           },
           {
             "name": "women-styles",
-            "title": "レディーススタイル"
+            "title": "まつげ＆眉"
           },
           {
             "name": "trendy",
-            "title": "トレンディなルックス"
+            "title": "ビフォー＆アフター"
           },
           {
             "name": "classic",
-            "title": "クラシックスタイル"
+            "title": "プロティント"
           }
         ],
         "items": [
           {
-            "title": "ピクシーカット変換",
-            "description": "自信に満ちた大胆なショートヘアスタイル",
+            "title": "ソフトトープ眉ティント",
+            "description": "さりげなく洗練された印象のナチュラルな眉ティントルック",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.png",
-              "alt": "ピクシーカット変換"
+              "alt": "ソフトトープ眉ティント ビフォーアフター"
             },
             "group": "short-hair"
           },
           {
-            "title": "ビーチウェーブ",
-            "description": "自然なウェーブのロングヘアスタイル",
+            "title": "ダークエスプレッソ眉ティント",
+            "description": "くっきりと際立つ眉のための濃いブラウン眉ティント",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.png",
-              "alt": "ビーチウェーブ"
+              "alt": "ダークエスプレッソ眉ティント"
             },
             "group": "long-hair"
           },
           {
-            "title": "プラチナブロンド",
-            "description": "見事なブロンドカラー変換",
+            "title": "眉ラミネーション&ティント",
+            "description": "ブラッシュアップされたラミネーションとティントで、なめらかでふっくらとした仕上がり",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.png",
-              "alt": "プラチナブロンド"
+              "alt": "眉ラミネーション&ティントの仕上がり"
             },
             "group": "color-change"
           },
           {
-            "title": "モダンポンパドール",
-            "description": "モダンなアレンジのクラシックメンズスタイル",
+            "title": "プロ眉ティント",
+            "description": "均一なカバー力を持つサロン品質のプロ眉ティント",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.png",
-              "alt": "モダンポンパドール"
-            },
-            "group": "men-styles"
-          },
-          {
-            "title": "レイヤードボブ",
-            "description": "テクスチャー層のあるトレンディなボブ",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "レイヤードボブ"
-            },
-            "group": "women-styles"
-          },
-          {
-            "title": "クラシックアップスタイル",
-            "description": "エレガントなクラシックアップスタイル",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "クラシックアップスタイル"
+              "alt": "プロ眉ティント変身"
             },
             "group": "classic"
           },
           {
-            "title": "フェードヘアカット",
-            "description": "モダンスタイリングのクリーンなフェード",
+            "title": "ティント眉ジェルルック",
+            "description": "手軽にナチュラルに仕上がるデイリーティント眉ジェル",
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "フェードヘアカット"
+              "src": "/imgs/cases/5.png",
+              "alt": "ティント眉ジェルルック"
             },
             "group": "men-styles"
           },
           {
-            "title": "バレイジハイライト",
-            "description": "美しいバレイジカラーテクニック",
+            "title": "まつげ眉ティント",
+            "description": "まつげと眉のティントを組み合わせた、手間のかからないトータルルック",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/7.png",
+              "alt": "まつげ眉ティントの仕上がり"
+            },
+            "group": "women-styles"
+          },
+          {
+            "title": "brow code tint",
+            "description": "あなただけの眉の色にぴったりのbrow code tintフォーミュラマッチ",
+            "url": "#",
+            "target": "_self",
+            "image": {
+              "src": "/imgs/cases/8.png",
+              "alt": "brow code tintマッチ"
+            },
+            "group": "trendy"
+          },
+          {
+            "title": "ベスト眉ティントシェードマッチ",
+            "description": "肌色と髪色に合わせたAIマッチングによる完璧な眉ティントシェード",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/9.png",
-              "alt": "バレイジハイライト"
+              "alt": "ベスト眉ティントシェードマッチ"
             },
-            "group": "color-change"
+            "group": "short-hair"
           }
         ]
       },
       "hairstyle_gallery": {
         "block": "hairstyle-gallery",
         "id": "hairstyle_gallery",
-        "title": "Browse the Full Hairstyle Library",
-        "description": "Scroll through our 500+ AI-ready cuts organized by gender and age. Click any look to preview it on your own photo.",
+        "title": "眉ティントスタイルライブラリを閲覧",
+        "description": "タイプ別に整理されたAI対応の眉ティントスタイルをスクロール。気になるルックをクリックして、自分の写真でプレビュー。",
         "limit": 12,
-        "cta_url": "/ai-hairstyle-changer",
+        "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
-            "title": "メンズヘアスタイル",
-            "description": "Hand-picked men's haircuts — fades, crops, quiffs, buzz cuts, and classic side parts. See real examples before your next barber visit.",
-            "cta_label": "Try now"
+            "title": "ナチュラル眉ティント",
+            "description": "自然な眉の色を引き立てる、やさしいデイリー眉ティントシェード。トープ、ライトブラウン、ブロンドトーンで、さりげないノーメイク風に最適。",
+            "cta_label": "今すぐ試す"
           },
           {
             "key": "women",
-            "title": "レディースヘアスタイル",
-            "description": "Trending women's cuts — bobs, pixies, long layers, beach waves, and bangs. Preview length, texture, and color before committing.",
-            "cta_label": "Try now"
+            "title": "ボールド眉ティント",
+            "description": "ディープエスプレッソ、チャコール、オーバーンでインパクトのある眉ティント。顔を引き締めるドラマチックで彫り深い眉に。",
+            "cta_label": "今すぐ試す"
           },
           {
             "key": "boys",
-            "title": "男の子ヘアスタイル",
-            "description": "Curated boys' cuts for every age — tapered tops, short combs, and textured school-ready classics.",
-            "cta_label": "Try now"
+            "title": "眉ラミネーションスタイル",
+            "description": "ブラッシュアップ・フェザード仕上がりの眉ラミネーション&ティントの組み合わせ。サロン予約前にさまざまなラミネーションスタイルをプレビュー。",
+            "cta_label": "今すぐ試す"
           },
           {
             "key": "girls",
-            "title": "女の子ヘアスタイル",
-            "description": "Popular girls' hairstyles — long layers, braids, trendy bobs, and playful curls. Family-friendly previews for every age.",
-            "cta_label": "Try now"
+            "title": "まつげ眉ティント",
+            "description": "手間のかからないトータルアイメイクのための、まつげ眉ティントのセットプラン。コーディネートされたティントが目元をどうフレームするか確認。",
+            "cta_label": "今すぐ試す"
           }
         ],
-        "tip": "Every preview is free. New AI hairstyles are added regularly."
+        "tip": "すべてのプレビューは無料です。新しい眉ティントスタイルは定期的に追加されます。"
       },
       "video_demo": {
         "block": "features-accordion",
         "id": "video_demo",
-        "label": "Video Demo",
-        "title": "See AI Barber in Action",
-        "description": "Watch real hairstyle transformations — from upload to download in seconds.",
+        "label": "動画デモ",
+        "title": "Brow Tintの実力を見る",
+        "description": "アップロードからプレビューまで、リアルな眉ティントのビフォーアフター変身を数秒でご覧ください。",
         "items": [
           {
-            "title": "Try Multiple Hairstyles in Seconds",
-            "description": "Upload one photo and watch it try on several distinct cuts and colors, side by side.",
+            "title": "複数の眉ティントシェードを即座にプレビュー",
+            "description": "1枚の写真をアップロードするだけで、さまざまな眉ティントの色合いやスタイルを並べてプレビューし、最適なマッチを見つけられます。",
             "icon": "RiPlayCircleLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "AI hairstyle transformation demo video"
+              "alt": "AI眉ティントプレビューデモ動画"
             }
           },
           {
-            "title": "Preview Hair Movement and Texture",
-            "description": "See how bangs, layers, curls, and volume flow with realistic motion — before you commit to the cut.",
+            "title": "リアルな眉ティントの質感とカバー力を確認",
+            "description": "ティント眉ジェルからプロ眉ティントまで、さまざまな眉ティント技法が実際の眉でどう見えるか、施術前にプレビュー。",
             "icon": "RiFilmLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Hair texture and movement preview video"
+              "alt": "眉ティントの質感とカバー力プレビュー動画"
             }
           }
         ]
@@ -200,77 +200,77 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "label": "How It Works",
-        "title": "From Photo to New Hairstyle in 4 Steps",
-        "description": "AI Barber is built for fast, realistic hairstyle previews. No install, no signup needed to try.",
+        "label": "使い方",
+        "title": "写真から理想の眉ティントまで4ステップ",
+        "description": "Brow Tintは高速でリアルな眉ティントプレビューのために作られています。インストール不要、登録不要でお試しいただけます。",
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Upload a Clear Front-Facing Photo",
-            "description": "Good lighting and a visible hairline give the AI the most accurate map of your face."
+            "title": "正面から鮮明な写真をアップロード",
+            "description": "良い照明と見える眉が、AIに最も正確な顔と眉の形のマッピングを提供します。"
           },
           {
-            "title": "Pick a Hairstyle From the Gallery",
-            "description": "Browse 500+ AI hairstyles across men, women, boys, and girls — or describe a custom look."
+            "title": "眉ティントスタイルを選択",
+            "description": "ナチュラルティント、ボールドシェード、眉ラミネーション&ティントの組み合わせ、ティント眉ジェルの仕上がりをギャラリーから閲覧。"
           },
           {
-            "title": "Fine-Tune Length, Texture, and Color",
-            "description": "Add an optional prompt to dial in bangs, layers, highlights, or a specific color."
+            "title": "色合い、形、濃さを調整",
+            "description": "ティントカラー、眉の太さ、アーチの形、カバーの濃さを調整して、理想のルックにマッチング。"
           },
           {
-            "title": "Generate, Compare, and Download",
-            "description": "Generate multiple looks, compare side-by-side, and download your favorite to share with your stylist."
+            "title": "生成、比較、ダウンロード",
+            "description": "複数の眉ティントプレビューを生成し、ビフォーアフターを並べて比較し、お気に入りをダウンロードして眉アーティストと共有。"
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Hairstyle Preview FAQ",
-        "description": "Common questions about AI hairstyle previews, photo tips, and how to get the best results.",
+        "title": "眉ティントプレビュー FAQ",
+        "description": "AI眉ティントプレビュー、写真のコツ、最適な眉ティント結果を得る方法についてのよくある質問。",
         "items": [
           {
-            "question": "Are the AI hairstyle previews in this gallery free?",
-            "answer": "Yes. You can browse every style for free and generate previews on your own photo with a free trial."
+            "question": "このギャラリーの眉ティントプレビューは無料ですか？",
+            "answer": "はい。すべての眉ティントスタイルを無料で閲覧でき、無料トライアルで自分の写真にプレビューを生成できます。"
           },
           {
-            "question": "Will the AI preview match my real haircut?",
-            "answer": "AI Barber renders realistic cuts, colors, and textures that blend with your hairline. Actual results still depend on your hair type and your stylist — we recommend downloading your preview and sharing it with your barber."
+            "question": "AI眉ティントプレビューは実際の仕上がりと一致しますか？",
+            "answer": "Brow Tintはリアルなティントの色合いとカバー力をあなたの自然な眉毛にブレンドして表現します。実際の仕上がりは眉のタイプや眉アーティストによって異なります。プレビューをダウンロードしてプロ眉ティント専門家と共有することをお勧めします。"
           },
           {
-            "question": "How many hairstyles can I try?",
-            "answer": "There are 500+ curated hairstyles in the gallery, covering men's, women's, boys', and girls' cuts. You can also describe custom styles with your own prompt."
+            "question": "何種類の眉ティントスタイルを試せますか？",
+            "answer": "ギャラリーには数十種類の厳選された眉ティントスタイルがあり、ナチュラルティント、ボールドティント、眉ラミネーション&ティントの組み合わせ、ティント眉ジェルルック、まつげ眉ティントパッケージをカバーしています。独自のプロンプトでカスタムシェードを指定することもできます。"
           },
           {
-            "question": "Do I need to install an app?",
-            "answer": "No. AI Barber runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
+            "question": "Brow Tintを使うのにアプリのインストールは必要ですか？",
+            "answer": "いいえ。Brow Tintはブラウザ上で完全に動作します。モバイルでもデスクトップでも使えます。ダウンロードやプラグインは不要です。"
           },
           {
-            "question": "What photo works best for a hairstyle preview?",
-            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible hairline gives the AI the most to work with."
+            "question": "眉ティントプレビューに最適な写真は？",
+            "answer": "均一な照明で正面からの鮮明な写真をお使いください。サングラス、帽子、過度なフィルターは避けてください。眉が見える自然な表情が最も正確な眉ティント結果を生成します。"
           },
           {
-            "question": "Is my photo kept private?",
-            "answer": "Your uploaded photos are processed securely for generation only. They are not stored permanently or shared with third parties."
+            "question": "写真はプライベートに保たれますか？",
+            "answer": "アップロードされた写真は眉ティント生成のためにのみ安全に処理されます。永久保存や第三者との共有はされません。"
           },
           {
-            "question": "Can boys and girls try these hairstyles safely?",
-            "answer": "Yes. The kids' sections are family-friendly and cover everyday cuts. Parents can preview any look before visiting the salon."
+            "question": "眉ティントと眉ラミネーションの違いは何ですか？",
+            "answer": "眉ティントは眉毛に色を加え、よりふっくらとした立体的な見た目にします。眉ラミネーション&ティントは化学的なストレートニング処理とティントを組み合わせて、ブラッシュアップされたフェザード眉を作ります。どちらもBrow Tintでプレビューできます。"
           },
           {
-            "question": "Does AI Barber support color changes only?",
-            "answer": "Yes. You can preview a color change on your current cut — black, blonde, copper, silver, pink, blue, and more — or combine color with a new style."
+            "question": "Brow Tintで適切なbrow codeシェードを見つけるのに役立ちますか？",
+            "answer": "はい。Brow TintはAIを使ってあなたの肌色、髪色、特徴を分析し、brow code tintフォーミュラに近い最適な眉ティントシェードマッチを提案します。複数のシェードを並べて試して、理想のプロ眉ティントカラーを見つけましょう。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Try a New Hairstyle?",
-        "description": "Upload your photo and preview every look in the gallery — completely free, no install required.",
+        "title": "理想の眉ティントを見つける準備はできましたか？",
+        "description": "写真をアップロードして、ギャラリーのすべての眉ティントスタイルをプレビュー。完全無料、インストール不要です。",
         "buttons": [
           {
-            "title": "Try AI Barber now",
-            "url": "/ai-hairstyle-changer",
+            "title": "今すぐBrow Tintを試す",
+            "url": "/ai-brow-tint-generator",
             "target": "_self",
             "icon": "Zap"
           }

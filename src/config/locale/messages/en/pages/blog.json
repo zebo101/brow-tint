@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "title": "Blog - AI Barber",
-    "description": "Read latest hairstyle trends, AI features, and styling tips."
+    "title": "Blog - Brow Tint",
+    "description": "Read latest brow tinting trends, AI features, and brow tint tips."
   },
   "page": {
-    "title": "AI Barber Blog",
+    "title": "Brow Tint Blog",
     "sections": {
       "blog": {
         "id": "blog",
         "title": "Blog",
-        "description": "Read latest hairstyle trends, AI features, and styling tips."
+        "description": "Read latest brow tinting trends, AI features, and brow tint tips."
       }
     }
   },

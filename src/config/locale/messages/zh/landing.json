@@ -35,7 +35,7 @@
             {
               "title": "AI 眉色生成器",
               "description": "用 AI 预览眉部染色与染眉膏效果",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {
@@ -98,7 +98,7 @@
             {
               "title": "AI 眉色生成器",
               "description": "用 AI 生成眉部染色效果",
-              "url": "/ai-hairstyle-changer",
+              "url": "/ai-brow-tint-generator",
               "icon": "RiImage2Line"
             },
             {

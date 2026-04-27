@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "title": "Video de peinado IA | AI Barber",
-    "description": "Crea videos de transformación de peinado con IA desde una foto. Prueba cortes y colores en movimiento y descarga el clip.",
-    "keywords": "video de peinado ia, video cambiador de peinado, video de transformación de cabello, corte virtual en video, cambio de color de pelo en video, peinado animado, simulador de peinados en video, antes y después cabello, generador de video de peinado ia"
+    "title": "Generador de Video de Tinte de Cejas con IA | Transformación de Tinte de Cejas | Brow Tint",
+    "description": "Crea un video de transformación de tinte de cejas con IA desde una foto. Previsualiza resultados de tinte de cejas, clips de antes y después en movimiento, y looks profesionales de tinte de cejas online, luego descarga un video compartible de tinte de cejas para tu especialista en cejas o salón.",
+    "keywords": "video de tinte de cejas con ia, video de transformación de tinte de cejas, video de antes y después de tinte de cejas, generador de tinte de cejas con ia, foto a video de tinte de cejas, tinte de cejas antes y después, video de gel de cejas con color, video de laminado y tinte de cejas, vista previa de tinte profesional de cejas, video de tinte de pestañas y cejas, vista previa en movimiento de tinte de cejas, video de tratamiento de cejas, generador de clips de tinte de cejas, video de tinte de cejas online, video de referencia para especialista en cejas"
   },
   "page": {
-    "title": "Video de peinado IA",
-    "description": "Convierte una foto en un video de peinado IA. Anima cortes y colores, compara antes y después y descarga el clip.",
+    "title": "Generador de Video de Tinte de Cejas con IA - Crea Clips de Transformación de Tinte de Cejas Online | Brow Tint",
+    "description": "Convierte un selfie en un video de tinte de cejas con IA online. Previsualiza tonos de tinte profesional de cejas, resultados de laminado y tinte de cejas, y looks de gel de cejas con color en movimiento, compara antes y después, luego descarga un clip de tinte de cejas para compartir con tu especialista en cejas o salón.",
     "show_sections": [
       "hero",
       "introduce",
       "generator",
       "benefits",
       "usage",
-      "use_cases",
       "features",
+      "stats",
       "testimonials",
       "faq",
       "cta"
@@ -22,55 +22,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Video de peinado IA",
-        "highlight_text": "Video de peinado",
-        "description": "Crea un clip realista de transformación capilar desde una sola foto.",
+        "title": "Generador de Video de Tinte de Cejas con IA Online",
+        "highlight_text": "Video de Tinte de Cejas con IA",
+        "description": "Convierte una foto en un video de tinte de cejas con IA en minutos. Previsualiza tonos de tinte profesional de cejas, resultados de laminado y tinte de cejas, y clips de antes y después en movimiento antes de reservar tu próxima cita con un especialista en cejas o salón.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-video.png",
-          "alt": "Vista previa de video de peinado IA",
+          "alt": "Interfaz del Generador de Video de Tinte de Cejas con IA",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-video-dark.png",
-          "alt": "Vista previa de video de peinado IA oscuro",
+          "alt": "Interfaz del Generador de Video de Tinte de Cejas con IA Modo Oscuro",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/video-bg.png",
-          "alt": "Fondo de video AI Barber"
+          "alt": "Fondo de Video de Brow Tint"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "¿Qué es el generador de video de peinado IA?",
+        "title": "¿Qué es el Generador de Video de Tinte de Cejas con IA?",
         "label": "Introducción",
-        "description": "Convierte una foto en un video corto para ver movimiento, textura y color.",
+        "description": "Brow Tint convierte una sola foto en un video de transformación de tinte de cejas para que puedas previsualizar el tono, la forma, la plenitud y el movimiento del tinte antes de comprometerte con un tratamiento de cejas real.",
         "image": {
           "src": "/imgs/bg/video-bg3.png",
-          "alt": "Introducción al video de peinado IA"
+          "alt": "Descripción General del Generador de Video de Tinte de Cejas con IA"
         },
         "items": [
           {
-            "title": "Foto a video",
-            "description": "Sube una foto y genera un clip en segundos.",
+            "title": "De Foto a Video de Tinte de Cejas",
+            "description": "Sube un retrato y genera un clip corto de tinte de cejas que muestra tu look de cejas actualizado con movimiento natural y resultados realistas de tinte.",
             "icon": "RiVideoLine"
           },
           {
-            "title": "Antes y después",
-            "description": "Muestra el look original y el nuevo en un solo clip.",
+            "title": "Vista Previa de Antes y Después en Movimiento",
+            "description": "Ve cómo se ve un tinte profesional de cejas, gel de cejas con color o laminado y tinte de cejas en movimiento en lugar de depender de una imagen estática.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Color en movimiento",
-            "description": "Previsualiza rubio, cobre o negro con movimiento natural.",
-            "icon": "RiPaletteLine"
+            "title": "Clip de Referencia para Especialista en Cejas",
+            "description": "Descarga un video claro de tinte de cejas que puedes enviar a tu especialista en cejas, salón o profesional de tinte de pestañas y cejas antes de tu cita.",
+            "icon": "RiShareLine"
           },
           {
-            "title": "Control por prompt",
-            "description": "Describe largo, textura y ángulos para precisión.",
+            "title": "Control Personalizado de Transformación de Tinte de Cejas",
+            "description": "Describe el tono, la forma del arco, el grosor, el estilo de laminado de cejas y el acabado del gel de cejas con color para generar un clip de transformación de tinte de cejas más específico.",
             "icon": "RiMagicLine"
           }
         ],
@@ -79,35 +79,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Por qué crear un video de peinado",
+        "title": "Por Qué Elegir Nuestro Generador de Video de Tinte de Cejas con IA",
         "label": "Beneficios",
-        "description": "Una vista en movimiento facilita la decisión.",
+        "description": "Toma decisiones de tinte de cejas más rápidas con previsualizaciones en movimiento, clips compartibles y un flujo de trabajo online sencillo.",
         "items": [
           {
-            "title": "Ver movimiento",
-            "description": "El video muestra capas y flequillo en acción.",
-            "icon": "RiVideoLine",
+            "title": "Previsualiza Resultados de Tinte de Cejas Antes de Tu Cita",
+            "description": "Observa cómo un tinte profesional de cejas, gel de cejas con color o laminado y tinte de cejas enmarca tu rostro en movimiento para que elijas el tono y la forma correctos con confianza.",
+            "icon": "RiFilmLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "Movimiento del cabello"
+              "alt": "Video de vista previa de tinte de cejas con IA en movimiento"
             }
           },
           {
-            "title": "Clip para compartir",
-            "description": "Envía el clip a tu barbero o estilista.",
+            "title": "Comparte un Clip de Antes y Después con Tu Especialista en Cejas",
+            "description": "Envía un video de transformación de tinte de cejas en lugar de explicar el look desde cero. Ayuda a los especialistas en cejas y salones a entender tu tono y forma de arco objetivo más rápido.",
             "icon": "RiShareLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Compartir clip"
+              "alt": "Video compartible de transformación de tinte de cejas"
             }
           },
           {
-            "title": "Rápido online",
-            "description": "Genera el clip en minutos desde una foto.",
+            "title": "Toma Decisiones de Tinte de Cejas Online en Minutos",
+            "description": "Desde la carga hasta el clip descargable de tinte de cejas en una sola sesión online, ya sea que estés probando un nuevo tono de gel de cejas con color, una combinación de tinte de pestañas y cejas o una transformación dramática de cejas.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/bg/video-bg2.png",
-              "alt": "Generación rápida"
+              "alt": "Flujo de trabajo rápido de video de tinte de cejas online"
             }
           }
         ],
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "Cómo crear un video de peinado",
-        "description": "Crea el clip en cuatro pasos:",
+        "title": "Cómo Crear un Video de Tinte de Cejas con IA",
+        "description": "Genera un video de foto a tinte de cejas en cuatro sencillos pasos:",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "Guía de video de peinado"
+          "alt": "Cómo crear un video de tinte de cejas con IA"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Sube una foto",
-            "description": "Usa una foto frontal con buena iluminación.",
+            "title": "Sube una Foto de Retrato Clara",
+            "description": "Usa una foto frontal con buena iluminación para que el generador pueda leer la forma de tu rostro, la línea de cejas y tu tinte de cejas actual con precisión.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Subir foto"
+              "alt": "Subir foto de retrato para video de tinte de cejas"
             }
           },
           {
-            "title": "Elige un estilo",
-            "description": "Selecciona una plantilla o describe el corte y color.",
+            "title": "Elige la Dirección del Tinte de Cejas",
+            "description": "Selecciona el estilo de tinte de cejas que quieres probar, como un tinte profesional de cejas natural, gel de cejas con color intenso, laminado y tinte de cejas suave, o una combinación de tinte de pestañas y cejas.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Elegir estilo"
+              "alt": "Elegir dirección del tinte de cejas"
             }
           },
           {
-            "title": "Genera el video",
-            "description": "La IA anima la transformación.",
+            "title": "Describe la Transformación",
+            "description": "Añade detalles como el tono, la altura del arco, el grosor, el acabado de laminado de cejas y el tono del gel de cejas con color para que el clip de antes y después se ajuste mejor al resultado que deseas.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Generar video"
+              "alt": "Describir transformación del video de tinte de cejas"
             }
           },
           {
-            "title": "Descarga y comparte",
-            "description": "Guarda el clip y muéstralo en el salón.",
+            "title": "Genera, Compara y Descarga",
+            "description": "Crea tu video de tinte de cejas, revisa la vista previa en movimiento de tu tinte de cejas antes y después, luego descarga el clip para guardar, compartir o llevar a tu próxima visita al salón.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Descargar video"
+              "alt": "Generar y descargar video de tinte de cejas"
             }
           }
         ],
@@ -162,50 +162,50 @@
       },
       "features": {
         "id": "features",
-        "title": "Funciones clave",
-        "description": "Prompts, vista previa y descarga HD para videos de peinado.",
+        "title": "Características Clave del Generador de Video de Tinte de Cejas con IA",
+        "description": "Un flujo de trabajo práctico online para previsualizaciones de tinte de cejas, comparaciones de antes y después, y clips de movimiento de tinte de cejas descargables.",
         "items": [
           {
-            "title": "Foto a video",
-            "description": "Convierte una imagen en un clip corto.",
+            "title": "Vista Previa de Tinte de Cejas de Foto a Video",
+            "description": "Comienza con una imagen y conviértela en un video de tinte de cejas que muestra tu look de cejas actualizado en movimiento.",
             "icon": "RiFilmLine"
           },
           {
-            "title": "Prompts de estilo",
-            "description": "Indica largo, textura y color.",
-            "icon": "RiText"
+            "title": "Control Detallado de Prompt de Tinte de Cejas",
+            "description": "Describe el tono, la forma del arco, el grosor, el estilo de laminado de cejas, el acabado del gel de cejas con color y el aspecto general de las cejas para guiar el clip final.",
+            "icon": "RiEdit2Line"
           },
           {
-            "title": "Antes/Después",
-            "description": "Compara el look original y el nuevo en un clip.",
+            "title": "Comparación de Tinte de Cejas Antes y Después",
+            "description": "Usa clips de vista previa en movimiento para comparar tus cejas actuales con un nuevo tinte profesional de cejas o tono de gel de cejas con color antes de comprometerte.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Descarga HD",
-            "description": "Guarda el clip con buena calidad.",
-            "icon": "RiHdLine"
+            "title": "Video de Referencia Descargable para Especialista en Cejas",
+            "description": "Guarda un clip de transformación de tinte de cejas que puedes enviar por mensaje, correo electrónico o mostrar directamente a tu especialista en cejas, salón o profesional de tinte de pestañas y cejas.",
+            "icon": "RiDownload2Line"
           },
           {
-            "title": "Render rápido",
-            "description": "Crea videos rápido en línea.",
+            "title": "Flujo de Trabajo Rápido en el Navegador",
+            "description": "Crea videos de vista previa de tinte de cejas online sin software de edición, líneas de tiempo complicadas o producción manual de video.",
             "icon": "RiSpeedLine"
           },
           {
-            "title": "Móvil amigable",
-            "description": "Funciona en móvil y escritorio.",
+            "title": "Funciona en Móvil y Escritorio",
+            "description": "Genera y revisa tu video de tinte de cejas en tu teléfono o computadora cuando quieras una segunda opinión rápida sobre tus opciones de tinte de cejas.",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "Opiniones",
-        "description": "Los clips cortos aclaran la decisión en el salón.",
+        "title": "Lo Que Dicen los Usuarios Sobre los Videos de Brow Tint",
+        "description": "Personas reales usando vistas previas en movimiento de tinte de cejas antes de visitas al salón, sesiones de belleza y cambios de tono de tinte de cejas.",
         "items": [
           {
             "name": "Ava Peterson",
-            "role": "Creadora de contenido",
-            "quote": "Ver el movimiento hizo la decisión fácil. Las capas se veían claras.",
+            "role": "Creadora de Contenido",
+            "quote": "Una vista previa estática no era suficiente para mí. El video de tinte de cejas me mostró cómo se veía el tono del gel de cejas con color con mis expresiones naturales, y eso fue lo que me convenció de reservar el tratamiento de cejas.",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Ava Peterson"
@@ -213,8 +213,8 @@
           },
           {
             "name": "Liam Torres",
-            "role": "Barbero",
-            "quote": "Los clientes envían el video y ya sé el corte que buscan.",
+            "role": "Especialista en Cejas",
+            "quote": "Las clientas me envían el clip de transformación de tinte de cejas antes de venir, y eso hace que la consulta sea mucho más clara que intentar describir un tono de tinte de cejas por texto.",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Liam Torres"
@@ -223,7 +223,7 @@
           {
             "name": "Mia Chen",
             "role": "Estudiante",
-            "quote": "Comparé cobre vs. rubio en movimiento y decidí rápido.",
+            "quote": "Lo usé para comparar un tinte profesional de cejas marrón cálido y un laminado y tinte de cejas de tono frío en movimiento. Ver la diferencia de tono en un video corto hizo la elección mucho más fácil.",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Mia Chen"
@@ -232,7 +232,7 @@
           {
             "name": "Noah Kim",
             "role": "Fotógrafo",
-            "quote": "El clip ayuda a visualizar el movimiento del cabello en cámara.",
+            "quote": "El clip de antes y después de tinte de cejas ayuda a mis clientes a entender cómo se verá una nueva forma y tono de cejas en cámara antes del día de la sesión.",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "Noah Kim"
@@ -241,7 +241,7 @@
           {
             "name": "Sofia Alvarez",
             "role": "Maquilladora",
-            "quote": "Lo combino con moodboards para alinear el look final.",
+            "quote": "Me gusta poder enviar una vista previa en movimiento al especialista en cejas y a la clienta. Todos se alinean en el look de tinte de pestañas y cejas mucho más rápido.",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Sofia Alvarez"
@@ -249,8 +249,8 @@
           },
           {
             "name": "Jordan Lee",
-            "role": "Estilista",
-            "quote": "Ahorra tiempo en consultas y reduce idas y vueltas.",
+            "role": "Cliente de Salón",
+            "quote": "Generé un video de tinte de cejas desde un selfie, lo descargué y lo mostré en el salón. Redujo las idas y vueltas y obtuve un resultado mucho más cercano al tinte de cejas que quería.",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Jordan Lee"
@@ -260,114 +260,106 @@
       },
       "faq": {
         "id": "faq",
-        "title": "Preguntas frecuentes",
-        "description": "Respuestas sobre videos de peinado IA y fotos recomendadas.",
-        "tip": "¿Necesitas ayuda? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Contacta soporte</a>",
+        "title": "Preguntas Frecuentes",
+        "description": "Preguntas frecuentes sobre videos de tinte de cejas con IA, flujo de trabajo de foto a video, clips descargables y cómo obtener la vista previa de tinte de cejas más realista.",
+        "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
         "items": [
           {
-            "question": "¿Qué es un video de peinado IA?",
-            "answer": "Un clip corto generado desde tu foto que muestra un nuevo corte o color."
+            "question": "¿Qué es un generador de video de tinte de cejas con IA?",
+            "answer": "Es una herramienta online que convierte tu foto y descripción de tinte de cejas en una vista previa corta en movimiento, para que puedas ver un tinte profesional de cejas o cambio de tono de gel de cejas con color antes de hacerlo realidad."
           },
           {
-            "question": "¿Cuánto dura el video?",
-            "answer": "Suele durar unos segundos y es fácil de compartir."
+            "question": "¿Puedo crear un video de tinte de cejas con solo una foto?",
+            "answer": "Sí. Sube una foto de retrato clara y la herramienta puede generar un video de foto a tinte de cejas sin necesidad de experiencia en edición de video."
           },
           {
-            "question": "¿Puedo usar mi propio prompt?",
-            "answer": "Sí. Describe el corte, largo, textura y color."
+            "question": "¿Qué tipos de tinte de cejas puedo previsualizar en video?",
+            "answer": "Puedes probar tonos de tinte profesional de cejas, acabados de gel de cejas con color, combinaciones de laminado y tinte de cejas, paquetes de tinte de pestañas y cejas, y varias formas de cejas desde arcos naturales hasta cejas estructuradas y atrevidas."
           },
           {
-            "question": "¿Qué fotos funcionan mejor?",
-            "answer": "Fotos frontales, claras y con buena iluminación."
+            "question": "¿Por qué usar un video de tinte de cejas en lugar de solo una imagen?",
+            "answer": "Un video te ayuda a juzgar cómo se ve el tinte de cejas con expresiones faciales naturales y movimiento. Eso es especialmente útil para comparar resultados de tinte de cejas antes y después y ver cómo diferentes tonos complementan tus rasgos."
           },
           {
-            "question": "¿Se puede descargar el video?",
-            "answer": "Sí. Descarga el clip y compártelo con tu estilista."
+            "question": "¿Puedo descargar el clip de transformación de tinte de cejas?",
+            "answer": "Sí. Una vez que tu resultado esté listo, puedes descargar el clip de video y guardarlo como referencia de tratamiento de cejas o compartirlo con tu especialista en cejas, salón o amigos."
           },
           {
-            "question": "¿Necesito saber editar?",
-            "answer": "No. El clip se genera automáticamente."
+            "question": "¿Puedo mostrar el video a mi especialista en cejas o salón?",
+            "answer": "Sí. El clip descargable está diseñado para ser fácil de compartir, haciendo mucho más sencillo comunicar el tono de tinte de cejas, la forma del arco y el look general que deseas."
+          },
+          {
+            "question": "¿Qué fotos funcionan mejor para un video realista de tinte de cejas?",
+            "answer": "Usa una foto frontal con buena iluminación, cejas visibles y mínima obstrucción facial. Los retratos claros suelen producir mejores vistas previas en movimiento de tinte de cejas que fotos oscuras o anguladas."
+          },
+          {
+            "question": "¿Puedo previsualizar diferentes tonos de tinte de cejas en movimiento?",
+            "answer": "Sí. Puedes describir actualizaciones de tono como marrón cálido, taupe frío, negro suave, pelirrojo o gel de cejas con color rubio y revisar cómo se ve el nuevo tinte en un clip en movimiento."
+          },
+          {
+            "question": "¿Necesito habilidades de edición o software de video?",
+            "answer": "No. El flujo de trabajo es completamente online. Subes una foto, describes el cambio de tinte de cejas y generas el video de tinte de cejas directamente en tu navegador."
+          },
+          {
+            "question": "¿Cuánto tiempo tarda en generarse un video de tinte de cejas?",
+            "answer": "La mayoría de los videos de tinte de cejas están listos en unos minutos, dependiendo del modelo seleccionado, tu entrada y la demanda actual de generación."
+          },
+          {
+            "question": "¿Se maneja mi foto subida de forma segura?",
+            "answer": "Nos tomamos la privacidad en serio. Tu contenido multimedia subido se procesa para la generación y se maneja de forma segura, y no se comparte con terceros."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Crea tu video de peinado",
-        "description": "Genera un clip de transformación y compártelo con tu estilista.",
+        "title": "¿Lista para Previsualizar Tu Nuevo Tinte de Cejas en Movimiento?",
+        "description": "Crea un video de tinte de cejas con IA ahora, compara tu look antes y después, y descarga un clip que puedes compartir con tu especialista en cejas o salón.",
         "buttons": [
           {
-            "title": "Empezar video",
+            "title": "Crear Video de Tinte de Cejas Ahora",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
-      },
-      "use_cases": {
-        "id": "use_cases",
-        "title": "Resultados de alta calidad en cualquier lugar",
-        "description": "Para usos personales y profesionales.",
-        "items": [
-          {
-            "title": "Pruebas virtuales",
-            "description": "Ideal para fotos de perfil, try-ons o portfolios de belleza.",
-            "icon": "RiUserLine"
-          },
-          {
-            "title": "Visuales pro",
-            "description": "Crea headshots o visuales de moda con peinados personalizados.",
-            "icon": "RiImageLine"
-          },
-          {
-            "title": "Arte conceptual",
-            "description": "Diseña personajes, looks editoriales o modelado digital.",
-            "icon": "RiBrushLine"
-          },
-          {
-            "title": "Para creadores",
-            "description": "Ideal para estilistas, creadores de contenido y exploradores de looks.",
-            "icon": "RiSparkling2Line"
-          }
-        ]
       }
     }
   },
   "generator": {
-    "title": "Generador de video de peinado IA",
-    "description": "Crea videos animados de transformación de peinado a partir de una foto o prompt.",
+    "title": "Generador de Video de Tinte de Cejas con IA",
+    "description": "Crea un video de foto a tinte de cejas, un clip de transformación de antes y después de tinte de cejas, o una vista previa en movimiento para tu próximo tratamiento de cejas.",
     "tabs": {
       "text-to-video": "Describir Estilo",
       "image-to-video": "Foto a Video",
-      "video-to-video": "Transformar Video"
+      "video-to-video": "Reestilizar Video"
     },
     "form": {
       "provider": "Proveedor de IA",
       "model": "Modelo de Video",
       "select_provider": "Seleccionar Proveedor de IA",
       "select_model": "Seleccionar Modelo de Video",
-      "prompt": "Descripción del Peinado",
-      "prompt_placeholder": "Describe el cambio: corte, largo, color, textura, movimiento, ángulos (p. ej., de largo a bob corto, de rubio a cobre, ondas suaves).",
+      "prompt": "Prompt de Video de Tinte de Cejas",
+      "prompt_placeholder": "Describe la transformación de tinte de cejas: tono, forma del arco, grosor, acabado (p. ej., tinte profesional de cejas marrón cálido, cejas laminadas suaves).",
       "reference_image": "Tu Foto",
-      "reference_image_placeholder": "Sube una foto clara para obtener mejores resultados.",
+      "reference_image_placeholder": "Sube una foto de retrato clara para crear un video de tinte de cejas desde tu imagen.",
       "reference_video": "URL de Video de Referencia",
-      "reference_video_placeholder": "Pega la URL de un video de peinado de referencia.",
-      "some_images_failed_to_upload": "Error al subir imagen, elimina y vuelve a subir",
-      "prompt_too_long": "La descripción es demasiado larga, acórtala"
+      "reference_video_placeholder": "Pega una URL de video si quieres reestilizar un clip de tinte de cejas existente.",
+      "some_images_failed_to_upload": "Algunas imágenes no se pudieron subir. Elimínalas y vuelve a subirlas.",
+      "prompt_too_long": "La descripción es demasiado larga, por favor acórtala"
     },
-    "generate": "Generar video de peinado",
+    "generate": "Generar Video de Tinte de Cejas",
     "checking_account": "Verificando cuenta...",
     "loading": "Cargando...",
-    "generating": "Creando tu video de peinado...",
-    "sign_in_to_generate": "Inicia sesión para crear videos de peinado",
+    "generating": "Creando Tu Video de Tinte de Cejas...",
+    "sign_in_to_generate": "Inicia Sesión para Crear Videos de Tinte de Cejas",
     "credits_cost": "Cuesta {credits} créditos",
     "credits_remaining": "{credits} créditos restantes",
     "buy_credits": "Comprar Créditos",
     "progress": "Progreso",
-    "generated_videos": "Tu video de peinado",
-    "ready_to_generate": "Listo para crear video",
-    "ready_for_generating": "Listo para la creación del video",
-    "no_videos_generated": "Aún no hay videos de peinado"
+    "generated_videos": "Tus Videos de Tinte de Cejas",
+    "ready_to_generate": "Preparando tu vista previa en movimiento de tinte de cejas...",
+    "ready_for_generating": "Listo para crear tu video de tinte de cejas",
+    "no_videos_generated": "Aún no se han generado videos de tinte de cejas"
   }
 }
-

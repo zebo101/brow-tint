@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "title": "KI-Frisuren-Video | AI Barber",
-    "description": "Erstellen Sie KI-Frisuren-Transformationsvideos aus einem Foto. Probieren Sie neue Schnitte und Farben in Bewegung und laden Sie den Clip herunter.",
-    "keywords": "ki frisur video, frisuren wechsler video, haartransformation video, virtueller haarschnitt video, haarfarben wechsel video, animierte frisur, frisuren simulator video, vorher nachher haare, ki haar video generator"
+    "title": "KI Augenbrauen-Tint Video Generator | Augenbrauen-Tint Transformation | Brow Tint",
+    "description": "Erstellen Sie ein KI Augenbrauen-Tint Transformationsvideo aus einem Foto. Sehen Sie Augenbrauen-Tint Ergebnisse, Vorher-Nachher-Bewegungsclips und professionelle Augenbrauen-Tint Looks online, dann laden Sie ein teilbares Augenbrauen-Tint Video für Ihre Brauen-Spezialistin oder Ihren Salon herunter.",
+    "keywords": "ki augenbrauen tint video, augenbrauen tint transformationsvideo, augenbrauen färben vorher nachher video, ki augenbrauen tint generator, foto zu augenbrauen tint video, augenbrauen tint vorher nachher, getöntes brauengel video, brow lamination und tint video, professionelles augenbrauen tint vorschau, wimpern und augenbrauen tint video, augenbrauen tint bewegungsvorschau, augenbrauenbehandlung video, augenbrauen tint clip generator, augenbrauen tint video online, brauen spezialistin referenzvideo"
   },
   "page": {
-    "title": "KI-Frisuren-Video",
-    "description": "Verwandeln Sie ein Foto in ein KI-Frisuren-Video. Animieren Sie Schnitte und Farben, vergleichen Sie Vorher/Nachher und laden Sie den Clip herunter.",
+    "title": "KI Augenbrauen-Tint Video Generator - Augenbrauen-Tint Transformationsclips online erstellen | Brow Tint",
+    "description": "Verwandeln Sie ein Selfie in ein KI Augenbrauen-Tint Video online. Sehen Sie professionelle Augenbrauen-Tint Farbtöne, Brow Lamination und Tint Ergebnisse und getöntes Brauengel Looks in Bewegung, vergleichen Sie Vorher und Nachher, dann laden Sie einen Augenbrauen-Tint Clip zum Teilen mit Ihrer Brauen-Spezialistin oder Ihrem Salon herunter.",
     "show_sections": [
       "hero",
       "introduce",
       "generator",
       "benefits",
       "usage",
-      "use_cases",
       "features",
+      "stats",
       "testimonials",
       "faq",
       "cta"
@@ -22,55 +22,55 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "KI-Frisuren-Video",
-        "highlight_text": "Frisuren-Video",
-        "description": "Erstellen Sie einen realistischen Transformations-Clip aus einem Foto.",
+        "title": "KI Augenbrauen-Tint Video Generator Online",
+        "highlight_text": "KI Augenbrauen-Tint Video",
+        "description": "Verwandeln Sie ein Foto in Minuten in ein KI Augenbrauen-Tint Video. Sehen Sie professionelle Augenbrauen-Tint Farbtöne, Brow Lamination und Tint Ergebnisse und Vorher-Nachher-Bewegungsclips, bevor Sie Ihren nächsten Termin bei der Brauen-Spezialistin oder im Salon buchen.",
         "image": {
           "src": "/imgs/features/ai-hairstyle-video.png",
-          "alt": "KI-Frisuren-Video Vorschau",
+          "alt": "KI Augenbrauen-Tint Video Generator Oberfläche",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/ai-hairstyle-video-dark.png",
-          "alt": "KI-Frisuren-Video Vorschau Dunkel",
+          "alt": "KI Augenbrauen-Tint Video Generator Oberfläche Dunkelmodus",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/video-bg.png",
-          "alt": "AI Barber Video Hintergrund"
+          "alt": "Augenbrauen-Tint Video Hintergrund"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "Was ist der Frisuren-Video-Generator?",
+        "title": "Was ist der KI Augenbrauen-Tint Video Generator?",
         "label": "Einführung",
-        "description": "Aus einem Foto wird ein kurzes Video für Bewegung, Struktur und Farbe.",
+        "description": "Brow Tint verwandelt ein einzelnes Foto in ein Augenbrauen-Tint Transformationsvideo, damit Sie Farbton, Form, Fülle und Bewegung vorab sehen können, bevor Sie sich für eine echte Augenbrauenbehandlung entscheiden.",
         "image": {
           "src": "/imgs/bg/video-bg3.png",
-          "alt": "Frisuren-Video Einführung"
+          "alt": "KI Augenbrauen-Tint Video Generator Übersicht"
         },
         "items": [
           {
-            "title": "Foto zu Video",
-            "description": "Ein Foto hochladen und Clip in Sekunden erhalten.",
+            "title": "Foto zu Augenbrauen-Tint Video",
+            "description": "Laden Sie ein Porträt hoch und generieren Sie einen kurzen Augenbrauen-Tint Clip, der Ihren aktualisierten Brauen-Look mit natürlicher Bewegung und realistischen Ergebnissen zeigt.",
             "icon": "RiVideoLine"
           },
           {
-            "title": "Vorher & Nachher",
-            "description": "Original und neuer Look in einem Clip.",
+            "title": "Vorher & Nachher Bewegungsvorschau",
+            "description": "Sehen Sie, wie ein professionelles Augenbrauen-Tint, getöntes Brauengel oder Brow Lamination und Tint in Bewegung aussieht, anstatt sich auf ein statisches Bild zu verlassen.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Farbe in Bewegung",
-            "description": "Blond, Kupfer oder Schwarz in Bewegung testen.",
-            "icon": "RiPaletteLine"
+            "title": "Referenzclip für die Brauen-Spezialistin",
+            "description": "Laden Sie einen klaren Augenbrauen-Tint Videoclip herunter, den Sie Ihrer Brauen-Spezialistin, Ihrem Salon oder Ihrer Wimpern und Augenbrauen Tint Spezialistin vor dem Termin senden können.",
+            "icon": "RiShareLine"
           },
           {
-            "title": "Prompt-Steuerung",
-            "description": "Länge, Struktur und Winkel für Präzision beschreiben.",
+            "title": "Individuelle Augenbrauen-Tint Transformationssteuerung",
+            "description": "Beschreiben Sie Farbton, Bogenform, Dicke, Brow Lamination Stil und getöntes Brauengel Finish, um einen spezifischeren Augenbrauen-Tint Transformationsclip zu generieren.",
             "icon": "RiMagicLine"
           }
         ],
@@ -79,35 +79,35 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Warum ein Frisuren-Video",
+        "title": "Warum unseren KI Augenbrauen-Tint Video Generator wählen",
         "label": "Vorteile",
-        "description": "Bewegte Vorschau erleichtert die Entscheidung.",
+        "description": "Treffen Sie schnellere Augenbrauen-Tint Entscheidungen mit bewegungsbasierten Vorschauen, teilbaren Clips und einem einfachen Online-Workflow.",
         "items": [
           {
-            "title": "Bewegung sehen",
-            "description": "Video zeigt, wie Stufen und Pony fallen.",
-            "icon": "RiVideoLine",
+            "title": "Augenbrauen-Tint Ergebnisse vor dem Termin ansehen",
+            "description": "Sehen Sie, wie ein professionelles Augenbrauen-Tint, getöntes Brauengel oder Brow Lamination und Tint Ihr Gesicht in Bewegung rahmt, damit Sie den richtigen Farbton und die richtige Form mit Zuversicht wählen können.",
+            "icon": "RiFilmLine",
             "image": {
               "src": "/video/v1.mp4",
-              "alt": "Bewegung Vorschau"
+              "alt": "KI Augenbrauen-Tint Bewegungsvorschau-Video"
             }
           },
           {
-            "title": "Clip teilen",
-            "description": "Clip an Friseur oder Stylist senden.",
+            "title": "Vorher-Nachher-Clip mit Ihrer Brauen-Spezialistin teilen",
+            "description": "Senden Sie ein Augenbrauen-Tint Transformationsvideo, anstatt den Look von Grund auf zu erklären. Es hilft Brauen-Spezialistinnen und Salons, Ihren Wunsch-Farbton und die Bogenform schneller zu verstehen.",
             "icon": "RiShareLine",
             "image": {
               "src": "/video/v2.mp4",
-              "alt": "Clip teilen"
+              "alt": "Teilbares Augenbrauen-Tint Transformationsvideo"
             }
           },
           {
-            "title": "Schnell online",
-            "description": "Clip in Minuten aus einem Foto generieren.",
+            "title": "Augenbrauen-Tint Entscheidungen online in Minuten treffen",
+            "description": "Vom Upload zum herunterladbaren Augenbrauen-Tint Clip in einer Online-Sitzung — egal ob Sie einen neuen getönten Brauengel-Farbton, eine Wimpern und Augenbrauen Tint Kombination oder eine dramatische Brauentransformation testen.",
             "icon": "RiSpeedLine",
             "image": {
               "src": "/imgs/bg/video-bg2.png",
-              "alt": "Schnelle Generierung"
+              "alt": "Schneller Online Augenbrauen-Tint Video Workflow"
             }
           }
         ],
@@ -116,45 +116,45 @@
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "So erstellen Sie ein Frisuren-Video",
-        "description": "Clip in vier Schritten erstellen:",
+        "title": "So erstellen Sie ein KI Augenbrauen-Tint Video",
+        "description": "Generieren Sie ein Foto-zu-Augenbrauen-Tint Video in vier einfachen Schritten:",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "Frisuren-Video Anleitung"
+          "alt": "So erstellen Sie ein KI Augenbrauen-Tint Video"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Foto hochladen",
-            "description": "Klares, frontales Foto verwenden.",
+            "title": "Klares Porträtfoto hochladen",
+            "description": "Verwenden Sie ein frontales Foto mit guter Beleuchtung, damit der Generator Ihre Gesichtsform, Brauenlinie und Ihren aktuellen Augenbrauen-Tint genau erfassen kann.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Foto hochladen"
+              "alt": "Porträtfoto für Augenbrauen-Tint Video hochladen"
             }
           },
           {
-            "title": "Stil wählen",
-            "description": "Vorlage wählen oder Schnitt und Farbe beschreiben.",
+            "title": "Augenbrauen-Tint Richtung wählen",
+            "description": "Wählen Sie den Augenbrauen-Tint Stil, den Sie testen möchten, z. B. ein natürliches professionelles Augenbrauen-Tint, kräftiges getöntes Brauengel, sanfte Brow Lamination und Tint oder eine Wimpern und Augenbrauen Tint Kombination.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Stil wählen"
+              "alt": "Augenbrauen-Tint Richtung wählen"
             }
           },
           {
-            "title": "Video generieren",
-            "description": "KI animiert die Transformation.",
+            "title": "Transformation beschreiben",
+            "description": "Fügen Sie Details wie Farbton, Bogenhöhe, Dicke, Brow Lamination Finish und getöntes Brauengel Ton hinzu, damit der Vorher-Nachher-Clip besser zu dem gewünschten Ergebnis passt.",
             "image": {
               "src": "/imgs/features/7.png",
-              "alt": "Video generieren"
+              "alt": "Augenbrauen-Tint Video Transformation beschreiben"
             }
           },
           {
-            "title": "Download & Teilen",
-            "description": "Clip speichern und im Salon zeigen.",
+            "title": "Generieren, vergleichen und herunterladen",
+            "description": "Erstellen Sie Ihr Augenbrauen-Tint Video, überprüfen Sie die Bewegungsvorschau Ihres Augenbrauen-Tint Vorher und Nachher, dann laden Sie den Clip herunter, um ihn zu speichern, zu teilen oder zum nächsten Salonbesuch mitzunehmen.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Clip herunterladen"
+              "alt": "Augenbrauen-Tint Video generieren und herunterladen"
             }
           }
         ],
@@ -162,50 +162,50 @@
       },
       "features": {
         "id": "features",
-        "title": "Hauptfunktionen",
-        "description": "Prompts, Vorschau und HD-Download für Frisuren-Videos.",
+        "title": "Hauptfunktionen des KI Augenbrauen-Tint Video Generators",
+        "description": "Ein praktischer Online-Workflow für Augenbrauen-Tint Vorschauen, Vorher-Nachher-Vergleiche und herunterladbare Augenbrauen-Tint Bewegungsclips.",
         "items": [
           {
-            "title": "Foto-zu-Video",
-            "description": "Ein Bild in einen kurzen Clip verwandeln.",
+            "title": "Foto-zu-Video Augenbrauen-Tint Vorschau",
+            "description": "Beginnen Sie mit einem Bild und verwandeln Sie es in ein Augenbrauen-Tint Video, das Ihren aktualisierten Brauen-Look in Bewegung zeigt.",
             "icon": "RiFilmLine"
           },
           {
-            "title": "Stil-Prompts",
-            "description": "Länge, Struktur und Farbe angeben.",
-            "icon": "RiText"
+            "title": "Detaillierte Augenbrauen-Tint Prompt-Steuerung",
+            "description": "Beschreiben Sie Farbton, Bogenform, Dicke, Brow Lamination Stil, getöntes Brauengel Finish und den gesamten Brauen-Look, um den finalen Clip zu steuern.",
+            "icon": "RiEdit2Line"
           },
           {
-            "title": "Vorher/Nachher",
-            "description": "Alt und neu im selben Clip vergleichen.",
+            "title": "Vorher & Nachher Augenbrauen-Tint Vergleich",
+            "description": "Nutzen Sie Bewegungsvorschau-Clips, um Ihre aktuellen Brauen mit einem neuen professionellen Augenbrauen-Tint oder getönten Brauengel-Farbton zu vergleichen, bevor Sie sich entscheiden.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "HD-Download",
-            "description": "Clip in guter Qualität speichern.",
-            "icon": "RiHdLine"
+            "title": "Herunterladbares Referenzvideo für die Brauen-Spezialistin",
+            "description": "Speichern Sie einen Augenbrauen-Tint Transformationsclip, den Sie per Nachricht, E-Mail oder direkt Ihrer Brauen-Spezialistin, Ihrem Salon oder Ihrer Wimpern und Augenbrauen Tint Spezialistin zeigen können.",
+            "icon": "RiDownload2Line"
           },
           {
-            "title": "Schnelles Rendering",
-            "description": "Videos schnell online erstellen.",
+            "title": "Schneller browserbasierter Workflow",
+            "description": "Erstellen Sie Augenbrauen-Tint Vorschauvideos online ohne Videobearbeitungssoftware, komplizierte Zeitleisten oder manuelle Videoproduktion.",
             "icon": "RiSpeedLine"
           },
           {
-            "title": "Mobilfreundlich",
-            "description": "Funktioniert auf Handy und Desktop.",
+            "title": "Funktioniert auf Mobilgeräten und Desktop",
+            "description": "Generieren und überprüfen Sie Ihr Augenbrauen-Tint Video auf dem Handy oder Computer, wann immer Sie eine schnelle zweite Meinung zu Ihren Augenbrauen-Tint Optionen möchten.",
             "icon": "RiSmartphoneLine"
           }
         ]
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "Stimmen der Nutzer",
-        "description": "Kurze Clips machen die Salonauswahl klarer.",
+        "title": "Was Nutzer über Augenbrauen-Tint Videos sagen",
+        "description": "Echte Menschen nutzen Augenbrauen-Tint Bewegungsvorschauen vor Salonbesuchen, Beauty-Shootings und Augenbrauen-Tint Farbtonwechseln.",
         "items": [
           {
             "name": "Ava Peterson",
             "role": "Content Creator",
-            "quote": "Mit Bewegung war die Entscheidung leicht. Ich sah, wie die Stufen fallen.",
+            "quote": "Eine statische Vorschau reichte mir nicht. Das Augenbrauen-Tint Video zeigte, wie der getönte Brauengel-Farbton mit meiner natürlichen Mimik aussah, und das überzeugte mich, die Augenbrauenbehandlung zu buchen.",
             "image": {
               "src": "/imgs/avatars/1.png",
               "alt": "Ava Peterson"
@@ -213,8 +213,8 @@
           },
           {
             "name": "Liam Torres",
-            "role": "Barber",
-            "quote": "Kunden schicken das Video und der Wunsch ist sofort klar.",
+            "role": "Brauen-Spezialist",
+            "quote": "Kundinnen senden mir den Augenbrauen-Tint Transformationsclip, bevor sie kommen, und das macht die Beratung viel klarer, als einen Augenbrauen-Tint Farbton per Text zu beschreiben.",
             "image": {
               "src": "/imgs/avatars/2.png",
               "alt": "Liam Torres"
@@ -223,7 +223,7 @@
           {
             "name": "Mia Chen",
             "role": "Studentin",
-            "quote": "Kupfer vs. Blond in Bewegung hat mir schnell geholfen.",
+            "quote": "Ich habe damit ein warmes braunes professionelles Augenbrauen-Tint und ein kühl-getöntes Brow Lamination und Tint in Bewegung verglichen. Den Farbunterschied in einem kurzen Video zu sehen, machte die Wahl viel einfacher.",
             "image": {
               "src": "/imgs/avatars/3.png",
               "alt": "Mia Chen"
@@ -232,7 +232,7 @@
           {
             "name": "Noah Kim",
             "role": "Fotograf",
-            "quote": "Der Clip zeigt Kunden, wie sich Haare in Bewegung verhalten.",
+            "quote": "Der Vorher-Nachher Augenbrauen-Tint Clip hilft meinen Kunden zu verstehen, wie eine neue Brauenform und ein neuer Farbton vor der Kamera aussehen werden, bevor der Shoottag kommt.",
             "image": {
               "src": "/imgs/avatars/4.png",
               "alt": "Noah Kim"
@@ -240,8 +240,8 @@
           },
           {
             "name": "Sofia Alvarez",
-            "role": "Make-up-Artist",
-            "quote": "Ich nutze das Video mit Moodboards für ein klares Zielbild.",
+            "role": "Visagistin",
+            "quote": "Ich finde es toll, eine Bewegungsvorschau an die Brauen-Spezialistin und die Kundin senden zu können. Alle sind viel schneller auf den gleichen Stand beim Wimpern und Augenbrauen Tint Look.",
             "image": {
               "src": "/imgs/avatars/5.png",
               "alt": "Sofia Alvarez"
@@ -249,8 +249,8 @@
           },
           {
             "name": "Jordan Lee",
-            "role": "Stylist",
-            "quote": "Spart Zeit im Beratungsgespräch und reduziert Rückfragen.",
+            "role": "Salon-Kundin",
+            "quote": "Ich habe aus einem Selfie ein Augenbrauen-Tint Video generiert, heruntergeladen und im Salon gezeigt. Das reduzierte das Hin und Her und ich kam dem gewünschten Augenbrauen-Tint Ergebnis viel näher.",
             "image": {
               "src": "/imgs/avatars/6.png",
               "alt": "Jordan Lee"
@@ -260,114 +260,106 @@
       },
       "faq": {
         "id": "faq",
-        "title": "FAQ",
-        "description": "Antworten zu KI-Frisuren-Videos und Fotos.",
-        "tip": "Hilfe? <a href='mailto:support@aibarber.net' class='text-primary font-medium hover:underline'>Support kontaktieren</a>",
+        "title": "Häufig gestellte Fragen",
+        "description": "FAQs zu KI Augenbrauen-Tint Videos, Foto-zu-Video Workflow, herunterladbaren Clips und wie Sie die realistischste Augenbrauen-Tint Vorschau erhalten.",
+        "tip": "Finden Sie nicht, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
         "items": [
           {
-            "question": "Was ist ein KI-Frisuren-Video?",
-            "answer": "Ein kurzer Clip aus Ihrem Foto, der einen neuen Schnitt oder Farbe zeigt."
+            "question": "Was ist ein KI Augenbrauen-Tint Video Generator?",
+            "answer": "Es ist ein Online-Tool, das Ihr Foto und Ihre Augenbrauen-Tint Beschreibung in eine kurze Bewegungsvorschau verwandelt, damit Sie ein professionelles Augenbrauen-Tint oder einen getönten Brauengel-Farbtonwechsel sehen können, bevor Sie es real umsetzen."
           },
           {
-            "question": "Wie lang ist das Video?",
-            "answer": "Meist nur ein paar Sekunden und leicht zu teilen."
+            "question": "Kann ich ein Augenbrauen-Tint Video aus nur einem Foto erstellen?",
+            "answer": "Ja. Laden Sie ein klares Porträtfoto hoch und das Tool kann ein Foto-zu-Augenbrauen-Tint Video generieren, ohne dass Videobearbeitungserfahrung nötig ist."
           },
           {
-            "question": "Kann ich eigene Prompts nutzen?",
-            "answer": "Ja. Beschreiben Sie Schnitt, Länge, Struktur und Farbe."
+            "question": "Welche Augenbrauen-Tints kann ich im Video ansehen?",
+            "answer": "Sie können professionelle Augenbrauen-Tint Farbtöne, getöntes Brauengel Finishes, Brow Lamination und Tint Kombis, Wimpern und Augenbrauen Tint Paarungen und verschiedene Brauenformen von natürlichen Bögen bis zu kräftig strukturierten Brauen testen."
           },
           {
-            "question": "Welche Fotos funktionieren am besten?",
-            "answer": "Klare, frontale Fotos mit guter Beleuchtung."
+            "question": "Warum ein Augenbrauen-Tint Video statt nur eines Bildes verwenden?",
+            "answer": "Ein Video hilft Ihnen zu beurteilen, wie das Augenbrauen-Tint mit natürlicher Mimik und Bewegung aussieht. Das ist besonders nützlich, um Augenbrauen-Tint Vorher-Nachher-Ergebnisse zu vergleichen und zu sehen, wie verschiedene Farbtöne Ihre Gesichtszüge ergänzen."
           },
           {
-            "question": "Ist das Video downloadbar?",
-            "answer": "Ja. Clip herunterladen und dem Stylisten zeigen."
+            "question": "Kann ich den Augenbrauen-Tint Transformationsclip herunterladen?",
+            "answer": "Ja. Sobald Ihr Ergebnis fertig ist, können Sie den Videoclip herunterladen und als Augenbrauenbehandlungs-Referenz speichern oder mit Ihrer Brauen-Spezialistin, Ihrem Salon oder Freunden teilen."
           },
           {
-            "question": "Brauche ich Editing-Skills?",
-            "answer": "Nein. Der Clip wird automatisch erstellt."
+            "question": "Kann ich das Video meiner Brauen-Spezialistin oder meinem Salon zeigen?",
+            "answer": "Ja. Der herunterladbare Clip ist zum einfachen Teilen konzipiert, damit es viel einfacher wird, den gewünschten Augenbrauen-Tint Farbton, die Bogenform und den Gesamtlook zu kommunizieren."
+          },
+          {
+            "question": "Welche Fotos funktionieren am besten für ein realistisches Augenbrauen-Tint Video?",
+            "answer": "Verwenden Sie ein frontales Foto mit guter Beleuchtung, sichtbaren Brauen und minimaler Gesichtsverdeckung. Klare Porträts liefern in der Regel bessere Augenbrauen-Tint Bewegungsvorschauen als dunkle oder schräge Fotos."
+          },
+          {
+            "question": "Kann ich verschiedene Augenbrauen-Tint Farbtöne in Bewegung ansehen?",
+            "answer": "Ja. Sie können Farbton-Updates wie Warmbraun, kühles Taupe, sanftes Schwarz, Rotbraun oder blond-getöntes Brauengel beschreiben und sehen, wie das neue Tint in einem bewegten Clip aussieht."
+          },
+          {
+            "question": "Brauche ich Bearbeitungskenntnisse oder Videosoftware?",
+            "answer": "Nein. Der Workflow ist vollständig online. Sie laden ein Foto hoch, beschreiben die Augenbrauen-Tint Änderung und generieren das Augenbrauen-Tint Video direkt in Ihrem Browser."
+          },
+          {
+            "question": "Wie lange dauert es, ein Augenbrauen-Tint Video zu generieren?",
+            "answer": "Die meisten Augenbrauen-Tint Videos sind innerhalb weniger Minuten fertig, abhängig vom gewählten Modell, Ihrer Eingabe und der aktuellen Generierungsnachfrage."
+          },
+          {
+            "question": "Wird mein hochgeladenes Foto sicher behandelt?",
+            "answer": "Wir nehmen den Datenschutz ernst. Ihre hochgeladenen Medien werden sicher für die Generierung verarbeitet und nicht an Dritte weitergegeben."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Frisuren-Video erstellen",
-        "description": "Kurzen Transformations-Clip erstellen und teilen.",
+        "title": "Bereit, Ihren neuen Augenbrauen-Tint in Bewegung zu sehen?",
+        "description": "Erstellen Sie jetzt ein KI Augenbrauen-Tint Video, vergleichen Sie Ihren Vorher-Nachher-Look und laden Sie einen Clip herunter, den Sie mit Ihrer Brauen-Spezialistin oder Ihrem Salon teilen können.",
         "buttons": [
           {
-            "title": "Video starten",
+            "title": "Augenbrauen-Tint Video jetzt erstellen",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
-      },
-      "use_cases": {
-        "id": "use_cases",
-        "title": "Hochwertige Ergebnisse überall",
-        "description": "Für private und professionelle Anwendungen.",
-        "items": [
-          {
-            "title": "Virtuelle Try-Ons",
-            "description": "Ideal für Profilbilder, Try-ons oder Beauty-Portfolios.",
-            "icon": "RiUserLine"
-          },
-          {
-            "title": "Pro Visuals",
-            "description": "Headshots oder Fashion-Visuals mit individuellen Frisuren.",
-            "icon": "RiImageLine"
-          },
-          {
-            "title": "Konzeptkunst",
-            "description": "Charakterdesigns, Editorial-Looks oder digitale Modelle.",
-            "icon": "RiBrushLine"
-          },
-          {
-            "title": "Für Creator",
-            "description": "Für Stylisten, Content Creator und Look-Experimente.",
-            "icon": "RiSparkling2Line"
-          }
-        ]
       }
     }
   },
   "generator": {
-    "title": "KI-Frisuren-Video-Generator",
-    "description": "Erstellen Sie animierte Frisuren-Transformationsvideos aus Foto oder Prompt.",
+    "title": "KI Augenbrauen-Tint Video Generator",
+    "description": "Erstellen Sie ein Foto-zu-Augenbrauen-Tint Video, einen Vorher-Nachher Augenbrauen-Tint Transformationsclip oder eine Bewegungsvorschau für Ihre nächste Augenbrauenbehandlung.",
     "tabs": {
       "text-to-video": "Stil beschreiben",
       "image-to-video": "Foto zu Video",
-      "video-to-video": "Video transformieren"
+      "video-to-video": "Video umgestalten"
     },
     "form": {
       "provider": "KI-Anbieter",
       "model": "Video-Modell",
       "select_provider": "KI-Anbieter auswählen",
       "select_model": "Video-Modell auswählen",
-      "prompt": "Frisuren-Beschreibung",
-      "prompt_placeholder": "Beschreiben Sie die Frisurenänderung: Schnitt, Länge, Farbe, Struktur, Bewegung, Winkel (z. B. lang zu kurzem Bob, Blond zu Kupfer, sanfte Wellen).",
+      "prompt": "Augenbrauen-Tint Video Prompt",
+      "prompt_placeholder": "Beschreiben Sie die Augenbrauen-Tint Transformation: Farbton, Bogenform, Dicke, Finish (z. B. warmes braunes professionelles Augenbrauen-Tint, sanft laminierte Brauen).",
       "reference_image": "Ihr Foto",
-      "reference_image_placeholder": "Laden Sie ein klares Foto für die besten Ergebnisse hoch.",
+      "reference_image_placeholder": "Laden Sie ein klares Porträtfoto hoch, um ein Augenbrauen-Tint Video aus Ihrem Bild zu erstellen.",
       "reference_video": "Referenz-Video-URL",
-      "reference_video_placeholder": "Fügen Sie die URL eines Referenz-Frisurenvideos ein.",
-      "some_images_failed_to_upload": "Bild konnte nicht hochgeladen werden, bitte löschen und erneut hochladen",
+      "reference_video_placeholder": "Fügen Sie eine Video-URL ein, wenn Sie einen bestehenden Augenbrauen-Tint Clip umgestalten möchten.",
+      "some_images_failed_to_upload": "Einige Bilder konnten nicht hochgeladen werden. Bitte entfernen und erneut hochladen.",
       "prompt_too_long": "Beschreibung ist zu lang, bitte kürzen"
     },
-    "generate": "Frisuren-Video generieren",
+    "generate": "Augenbrauen-Tint Video generieren",
     "checking_account": "Konto wird überprüft...",
     "loading": "Laden...",
-    "generating": "Ihr Frisuren-Video wird erstellt...",
-    "sign_in_to_generate": "Anmelden, um Frisuren-Videos zu erstellen",
+    "generating": "Ihr Augenbrauen-Tint Video wird erstellt...",
+    "sign_in_to_generate": "Anmelden, um Augenbrauen-Tint Videos zu erstellen",
     "credits_cost": "Kostet {credits} Credits",
     "credits_remaining": "{credits} Credits verbleibend",
     "buy_credits": "Credits kaufen",
     "progress": "Fortschritt",
-    "generated_videos": "Ihr Frisuren-Video",
-    "ready_to_generate": "Bereit zur Video-Erstellung",
-    "ready_for_generating": "Bereit für die Video-Erstellung",
-    "no_videos_generated": "Noch keine Frisuren-Videos"
+    "generated_videos": "Ihre Augenbrauen-Tint Videos",
+    "ready_to_generate": "Ihre Augenbrauen-Tint Bewegungsvorschau wird vorbereitet...",
+    "ready_for_generating": "Bereit, Ihr Augenbrauen-Tint Video zu erstellen",
+    "no_videos_generated": "Noch keine Augenbrauen-Tint Videos generiert"
   }
 }
-
