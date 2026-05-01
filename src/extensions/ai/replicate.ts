@@ -290,18 +290,18 @@ export class ReplicateProvider implements AIProvider {
       }
     }
 
-    // hairstyle_image: add hairstyle reference image to the input
-    if (options.hairstyle_image) {
-      // Add hairstyle image as additional reference for image-to-image generation
+    // brow_tint_image: add brow tint reference image to the input
+    if (options.brow_tint_image) {
+      // Add brow tint reference image as additional reference for image-to-image generation
       if (!input.input_images) {
         input.input_images = [];
       }
       if (Array.isArray(input.input_images)) {
-        input.input_images.push(options.hairstyle_image);
+        input.input_images.push(options.brow_tint_image);
       } else if (input.image_input && Array.isArray(input.image_input)) {
-        input.image_input.push(options.hairstyle_image);
+        input.image_input.push(options.brow_tint_image);
       }
-      delete input.hairstyle_image;
+      delete input.brow_tint_image;
     }
 
     // negative_prompt: pass as a dedicated API parameter (not mixed into prompt text)

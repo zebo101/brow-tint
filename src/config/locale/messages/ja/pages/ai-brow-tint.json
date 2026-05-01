@@ -1,0 +1,138 @@
+{
+  "header": {
+    "lookbook": "Lookbook",
+    "how_it_works": "使い方",
+    "credits": "{n} クレジット"
+  },
+  "stepper": {
+    "step1": "写真をアップロード",
+    "step2": "スタイルを選ぶ",
+    "step3": "プレビュー & 保存"
+  },
+  "step1": {
+    "eyebrow": "ステップ 1 · あなたの写真",
+    "title": "正面から撮った鮮明な写真から始めましょう。",
+    "subtitle": "やわらかい光、メガネなし、眉がしっかり見える状態で撮影してください。写真はプレビュー生成のためだけに使用され、その後すぐに自動削除されます。",
+    "tips": [
+      "カメラを正面から見つめ、自然な表情で",
+      "前髪を上げて眉のラインを見せる",
+      "JPG または PNG、最大 10 MB"
+    ],
+    "upload_btn": "写真をアップロード",
+    "or_sample": "またはサンプルを選ぶ",
+    "samples": {
+      "light": "サンプル · ライト",
+      "medium": "サンプル · ミディアム",
+      "deep": "サンプル · ディープ"
+    },
+    "drop_text": "ここに写真をドロップ",
+    "drop_sub": "またはクリックして参照",
+    "continue": "スタイルへ進む"
+  },
+  "step2": {
+    "title": "眉ルックを選ぶ",
+    "subtitle": "厳選 {total} スタイルのうち {shown} 件 · タップして写真でプレビュー",
+    "your_photo": "あなたの写真",
+    "search": "スタイルを検索…",
+    "filters": {
+      "shade": "カラー",
+      "shape": "形",
+      "intensity": "濃さ",
+      "sort": "並び替え"
+    },
+    "sort_options": {
+      "curated": "おすすめ",
+      "popular": "人気",
+      "trending": "トレンド"
+    },
+    "clear_all": "すべてクリア",
+    "empty": "条件に一致するスタイルがありません。",
+    "select": "このスタイルを選ぶ",
+    "premium": "Premium",
+    "credits_label": "{n} クレジット"
+  },
+  "step3": {
+    "eyebrow": "ステップ 3 · プレビュー",
+    "drag_hint": "仕切りをドラッグして Before と After を比較できます。",
+    "rendering": "新しいルックを生成中…",
+    "rendering_sub": "{style} をあなたの顔立ちに合わせています",
+    "before": "Before",
+    "after": "After",
+    "back": "別のスタイルを試す",
+    "regenerate": "再生成",
+    "download": "ダウンロード",
+    "details": {
+      "title": "ルック詳細",
+      "shade": "カラー",
+      "shape": "形",
+      "intensity": "濃さ",
+      "tags": "タグ"
+    },
+    "variation": {
+      "title": "バリエーションを試す",
+      "subtitle": "濃さを調整して仕上がりを微調整できます。"
+    },
+    "reference": {
+      "title": "実際の仕上がりを試したい方へ",
+      "body": "次回のサロンでこのルックをリファレンスとしてお使いいただけます。印刷用カードを作成します。"
+    }
+  },
+  "buttons": {
+    "generate": "生成する · {credits} クレジット",
+    "no_credits": "生成にはクレジットが必要です",
+    "signin": "サインインして生成"
+  },
+  "studio": {
+    "title": "AI Brow Tint Studio",
+    "subtitle": "写真をアップロードし、ルックを選び、結果を並べて確認しましょう。",
+    "checking": "アカウントを確認中...",
+    "left": {
+      "photo_title": "あなたの写真",
+      "photo_tips": "撮影のヒント",
+      "photo_drop": "ここに写真をドロップ",
+      "photo_drop_sub": "またはクリックして参照 — JPG または PNG、最大 10 MB",
+      "photo_sample_label": "またはサンプルを試す",
+      "photo_change": "写真を変更",
+      "photo_clear": "写真を削除",
+      "uploading": "アップロード中...",
+      "resizing": "画像を準備中...",
+      "uploading_size": "{kb} KBをアップロード中...",
+      "style_title": "ルックを選ぶ",
+      "style_all": "{count} スタイルすべて",
+      "style_selected": "選択中: {name}"
+    },
+    "right": {
+      "empty_title": "ルックを選んでプレビューを始めましょう",
+      "empty_subtitle": "下のスタイルをタップ — 写真をアップロードすればすぐ反映されます。",
+      "empty_browse_all": "すべてのブロウティントスタイルを見る",
+      "empty_style_picked_title": "{name} 準備完了 — 写真をアップロードしてください",
+      "empty_style_picked_subtitle": "左側に写真をドロップすると数秒でこのルックが生成されます。",
+      "empty_photo_only": "左から眉ルックを選んでください →",
+      "ready_title": "{name} のプレビュー準備完了",
+      "ready_subtitle": "「生成」をタップして新しいルックを作成します。",
+      "generating_title": "新しいルックを生成中...",
+      "generating_subtitle": "{style} をあなたの顔立ちに合わせています · 通常 8〜15 秒。",
+      "try_another": "別のものを試す",
+      "failed_title": "生成に失敗しました",
+      "failed_subtitle": "問題が発生しました。再試行するか、別の写真をお選びください。",
+      "failed_retry": "もう一度試す",
+      "success_orphan": "結果が完成しました — 写真を再アップロードして並べて比較してください。"
+    },
+    "cta": {
+      "need_photo": "写真を追加して開始",
+      "need_style": "眉ルックを選ぶ",
+      "generating": "生成中..."
+    },
+    "drawer": {
+      "title": "ブロウティントスタイル一覧",
+      "subtitle": "タップしてプレビューし、選択を適用してください。",
+      "search": "名前・カラー・形で検索…",
+      "all_shades": "すべてのカラー",
+      "empty": "条件に一致するスタイルがありません。",
+      "selected_label": "選択中:",
+      "select_hint": "タップしてルックをプレビュー",
+      "cancel": "キャンセル",
+      "apply": "このスタイルを使う"
+    }
+  }
+}

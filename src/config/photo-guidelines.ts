@@ -14,16 +14,16 @@ export interface PhotoGuidelinesConfig {
 
 export const photoGuidelinesConfig: PhotoGuidelinesConfig = {
   suitablePhotos: [
-    '/imgs/suitable/1.png',
-    '/imgs/suitable/2.png',
-    '/imgs/suitable/3.png',
-    '/imgs/suitable/4.png',
+    '/imgs/suitable/1.jpg',
+    '/imgs/suitable/2.jpg',
+    '/imgs/suitable/3.jpg',
+    '/imgs/suitable/4.jpg',
   ],
   unsuitablePhotos: [
-    '/imgs/unsuitable/1.png',
-    '/imgs/unsuitable/2.png',
-    '/imgs/unsuitable/3.png',
-    '/imgs/unsuitable/4.png',
+    '/imgs/unsuitable/1.jpg',
+    '/imgs/unsuitable/2.jpg',
+    '/imgs/unsuitable/3.jpg',
+    '/imgs/unsuitable/4.jpg',
   ],
   storageKey: 'hidePhotoGuidelines',
 };

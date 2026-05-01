@@ -1,0 +1,138 @@
+{
+  "header": {
+    "lookbook": "造型集",
+    "how_it_works": "使用指南",
+    "credits": "{n} 积分"
+  },
+  "stepper": {
+    "step1": "上传照片",
+    "step2": "选择风格",
+    "step3": "预览 & 保存"
+  },
+  "step1": {
+    "eyebrow": "第 1 步 · 您的照片",
+    "title": "上传一张清晰的正面照片。",
+    "subtitle": "柔光环境，不戴眼镜，眉毛完全可见。您的照片仅用于渲染本次预览，渲染完成后会很快自动删除。",
+    "tips": [
+      "面对镜头，保持自然表情",
+      "将头发拨到眉毛后方",
+      "JPG 或 PNG，最大 10 MB"
+    ],
+    "upload_btn": "上传照片",
+    "or_sample": "或选择示例",
+    "samples": {
+      "light": "示例 · 浅色",
+      "medium": "示例 · 中色",
+      "deep": "示例 · 深色"
+    },
+    "drop_text": "将照片拖放到这里",
+    "drop_sub": "或点击浏览",
+    "continue": "继续选择风格"
+  },
+  "step2": {
+    "title": "选择您的眉毛造型",
+    "subtitle": "{total} 种精选风格中的 {shown} 种 · 点击任意一款即可应用到您的照片",
+    "your_photo": "您的照片",
+    "search": "搜索风格…",
+    "filters": {
+      "shade": "色调",
+      "shape": "形状",
+      "intensity": "浓度",
+      "sort": "排序"
+    },
+    "sort_options": {
+      "curated": "精选",
+      "popular": "热门",
+      "trending": "流行"
+    },
+    "clear_all": "清除全部",
+    "empty": "没有匹配的风格。",
+    "select": "选择此风格",
+    "premium": "高级",
+    "credits_label": "{n} 积分"
+  },
+  "step3": {
+    "eyebrow": "第 3 步 · 预览效果",
+    "drag_hint": "拖动分隔线对比前后效果。",
+    "rendering": "正在生成您的新造型…",
+    "rendering_sub": "正在将 {style} 应用到您的特征",
+    "before": "之前",
+    "after": "之后",
+    "back": "尝试其他风格",
+    "regenerate": "重新生成",
+    "download": "下载",
+    "details": {
+      "title": "造型详情",
+      "shade": "色调",
+      "shape": "形状",
+      "intensity": "浓度",
+      "tags": "标签"
+    },
+    "variation": {
+      "title": "尝试变体",
+      "subtitle": "调整浓度以优化效果。"
+    },
+    "reference": {
+      "title": "想要真实效果？",
+      "body": "将此造型作为下次沙龙预约的参考。我们将生成一张可打印的参考卡片。"
+    }
+  },
+  "buttons": {
+    "generate": "生成 · {credits} 积分",
+    "no_credits": "获取积分以生成",
+    "signin": "登录以生成"
+  },
+  "studio": {
+    "title": "AI 染眉工作室",
+    "subtitle": "上传照片，挑选眉型，左右对比效果，一目了然。",
+    "checking": "正在检查账户…",
+    "left": {
+      "photo_title": "您的照片",
+      "photo_tips": "照片建议",
+      "photo_drop": "将照片拖到这里",
+      "photo_drop_sub": "或点击浏览 — JPG 或 PNG，最大 10 MB",
+      "photo_sample_label": "或试用示例照片",
+      "photo_change": "更换照片",
+      "photo_clear": "移除照片",
+      "uploading": "上传中…",
+      "resizing": "正在压缩图片…",
+      "uploading_size": "上传中 {kb} KB…",
+      "style_title": "选择眉型",
+      "style_all": "全部 {count} 款",
+      "style_selected": "已选：{name}"
+    },
+    "right": {
+      "empty_title": "选一款眉型开始预览",
+      "empty_subtitle": "点击下方任意眉型 — 上传照片后即可在您的脸上预览效果。",
+      "empty_browse_all": "浏览全部染眉眉型",
+      "empty_style_picked_title": "{name} 已就绪 — 上传您的照片",
+      "empty_style_picked_subtitle": "在左侧放一张照片，几秒就能渲染这款效果。",
+      "empty_photo_only": "现在从左侧选一款眉型 →",
+      "ready_title": "{name} 已就绪",
+      "ready_subtitle": "点击生成即可渲染您的新眉型。",
+      "generating_title": "正在渲染您的新眉型…",
+      "generating_subtitle": "将 {style} 应用到您的特征 · 通常 8 到 15 秒。",
+      "try_another": "换一款",
+      "failed_title": "生成失败",
+      "failed_subtitle": "出现了问题。请重试或换一张照片。",
+      "failed_retry": "重试",
+      "success_orphan": "结果已生成 — 重新上传照片即可左右对比。"
+    },
+    "cta": {
+      "need_photo": "上传照片开始",
+      "need_style": "选择一款眉型",
+      "generating": "生成中…"
+    },
+    "drawer": {
+      "title": "全部染眉眉型",
+      "subtitle": "点击任一眉型预览，再点击应用确认。",
+      "search": "按名称、色调或形状搜索…",
+      "all_shades": "全部色调",
+      "empty": "没有匹配的眉型。",
+      "selected_label": "已选：",
+      "select_hint": "点击任一眉型预览效果",
+      "cancel": "取消",
+      "apply": "使用该眉型"
+    }
+  }
+}

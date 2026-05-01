@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "Galería de Brow Tint - Tinte de Cejas con IA Antes y Después",
-    "description": "Ve increíbles transformaciones de tinte de cejas antes y después creadas con el generador de IA de Brow Tint"
+    "description": "Ve increíbles transformaciones de tinte de cejas antes y después creadas con el generador de IA de Brow Tint",
+    "keywords": "galería de tinte de cejas, tinte de cejas antes y después, ejemplos de tinte de cejas IA, vista previa tinte de cejas, tinte profesional de cejas, gel de cejas con color"
   },
   "page": {
     "title": "Galería de Brow Tint",
@@ -51,7 +52,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
+              "src": "/imgs/cases/1.jpg",
               "alt": "Tinte de cejas taupe suave antes y después"
             },
             "group": "short-hair"
@@ -62,7 +63,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
+              "src": "/imgs/cases/2.jpg",
               "alt": "Tinte de cejas espresso oscuro"
             },
             "group": "long-hair"
@@ -73,7 +74,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/3.png",
+              "src": "/imgs/cases/3.jpg",
               "alt": "Resultado de laminado y tinte de cejas"
             },
             "group": "color-change"
@@ -84,7 +85,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/4.png",
+              "src": "/imgs/cases/4.jpg",
               "alt": "Transformación de tinte profesional de cejas"
             },
             "group": "classic"
@@ -95,7 +96,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
+              "src": "/imgs/cases/5.jpg",
               "alt": "Look de gel de cejas con color"
             },
             "group": "men-styles"
@@ -106,38 +107,16 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
+              "src": "/imgs/cases/7.jpg",
               "alt": "Resultado de tinte de pestañas y cejas"
             },
             "group": "women-styles"
-          },
-          {
-            "title": "Brow Code Tint",
-            "description": "Fórmula precisa de brow code tint para tu color de cejas único",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Combinación de brow code tint"
-            },
-            "group": "trendy"
-          },
-          {
-            "title": "Mejor Combinación de Tono de Tinte de Cejas",
-            "description": "Tono de tinte de cejas perfecto combinado con IA adaptado a tu tono de piel y color de cabello",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "Mejor combinación de tono de tinte de cejas"
-            },
-            "group": "short-hair"
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Explora la Biblioteca Completa de Estilos de Tinte de Cejas",
         "description": "Navega por nuestros estilos de tinte de cejas con IA organizados por tipo. Haz clic en cualquier look para previsualizarlo en tu propia foto.",
         "limit": 12,
@@ -169,33 +148,6 @@
           }
         ],
         "tip": "Cada vista previa es gratuita. Se añaden nuevos estilos de tinte de cejas regularmente."
-      },
-      "video_demo": {
-        "block": "features-accordion",
-        "id": "video_demo",
-        "label": "Demo en Video",
-        "title": "Ve Brow Tint en Acción",
-        "description": "Mira transformaciones reales de tinte de cejas antes y después — desde la carga hasta la vista previa en segundos.",
-        "items": [
-          {
-            "title": "Previsualiza Múltiples Tonos de Tinte de Cejas al Instante",
-            "description": "Sube una foto y previsualiza varios tonos y estilos de tinte de cejas lado a lado para encontrar tu combinación perfecta.",
-            "icon": "RiPlayCircleLine",
-            "image": {
-              "src": "/video/v1.mp4",
-              "alt": "Video demo de vista previa de tinte de cejas con IA"
-            }
-          },
-          {
-            "title": "Ve Textura y Cobertura Realista del Tinte de Cejas",
-            "description": "Previsualiza cómo diferentes técnicas de tinte de cejas — desde gel de cejas con color hasta tinte profesional de cejas — se ven en tus cejas reales antes de comprometerte.",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "/video/v2.mp4",
-              "alt": "Video de vista previa de textura y cobertura de tinte de cejas"
-            }
-          }
-        ]
       },
       "usage": {
         "block": "features-step",
@@ -280,8 +232,6 @@
     },
     "show_sections": [
       "showcases",
-      "hairstyle_gallery",
-      "video_demo",
       "usage",
       "faq",
       "cta"

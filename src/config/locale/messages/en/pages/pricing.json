@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "Pricing",
-    "description": "Start with a plan"
+    "title": "Brow Tint Pricing — AI Brow Tint Credits & Plans",
+    "description": "Buy credits to generate AI brow tint previews. Compare plans, find the best brow tint package, and start trying tints in seconds.",
+    "keywords": "brow tint pricing, ai brow tint credits, brow tint plans, brow tint generator price, eyebrow tint cost, ai brow tint subscription"
   },
   "page": {
     "title": "Pricing",
@@ -9,112 +10,259 @@
       "pricing": {
         "id": "pricing",
         "sr_only_title": "Brow Tint Pricing",
-        "title": "Pricing",
-        "description": "Choose the perfect plan for your AI brow tint generation needs.",
+        "title": "Choose your perfect plan",
+        "description": "Each AI brow tint generation uses 1 credit.",
         "groups": [
-          {
-            "name": "one-time",
-            "title": "Pay as you go"
-          },
           {
             "name": "monthly",
             "title": "Monthly"
           },
           {
             "name": "yearly",
-            "title": "Annually",
-            "label": "save 23%"
+            "title": "Annual (Save)",
+            "label": "Save"
+          },
+          {
+            "name": "one-time",
+            "title": "Top-up"
           }
         ],
         "items": [
           {
-            "title": "Credits Package",
-            "description": "Start any time as you need. One-time payment",
+            "title": "Free",
+            "description": "Try Brow Tint at no cost.",
             "features_title": "Includes",
-            "features": [
-              "300 credits, valid for 1 year",
-              "Text-to-image and image-to-image generation",
-              "High-quality images with Nano Banana 2 AI model",
-              "Free download of generated images"
-            ],
-            "interval": "one-time",
-            "amount": 2990,
+            "features": ["Core generation features", "Standard queue"],
+            "interval": "month",
+            "amount": 0,
             "currency": "USD",
-            "price": "$29.9",
-            "original_price": "$39.9",
-            "unit": "/ 300 credits",
+            "price": "$0",
+            "unit": "",
             "is_featured": false,
-            "tip": "",
+            "tip": "Start free. Upgrade anytime.",
             "button": {
-              "title": "Buy Credits",
+              "title": "Current Plan",
               "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "icon": ""
             },
-            "product_id": "credits-package",
-            "product_name": "Credits Package",
-            "credits": 300,
-            "valid_days": 365,
-            "group": "one-time"
+            "product_id": "free-monthly",
+            "product_name": "Free",
+            "credits": 0,
+            "valid_days": 30,
+            "group": "monthly"
           },
           {
-            "title": "Starter Plan",
-            "description": "Auto renew monthly to get credits. Subscription can be canceled anytime!",
+            "title": "Basic",
+            "description": "For regular generation needs.",
+            "label": "Popular",
             "features_title": "Includes",
             "features": [
-              "300 credits, valid for 1 month",
-              "Text-to-image and image-to-image generation",
-              "High-quality images with Nano Banana 2 AI model",
-              "Free download of generated images"
+              "200 credits per month",
+              "Credits refresh monthly",
+              "Priority queue",
+              "Remove watermark"
             ],
             "interval": "month",
-            "amount": 2490,
+            "amount": 1990,
             "currency": "USD",
-            "price": "$24.9",
-            "original_price": "$36.9",
+            "price": "$19.9",
             "unit": "/ month",
-            "is_featured": false,
-            "tip": "",
+            "is_featured": true,
+            "tip": "Cancel anytime.",
             "button": {
-              "title": "Subscribe Plan",
+              "title": "Subscribe",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
-            "product_id": "starter-monthly",
-            "product_name": "Starter Plan",
+            "product_id": "basic-monthly",
+            "product_name": "Basic Monthly",
+            "credits": 200,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Premium",
+            "description": "For power users and high volume.",
+            "features_title": "Includes",
+            "features": [
+              "300 credits per month",
+              "Credits refresh monthly",
+              "Highest priority queue",
+              "Remove watermark"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/ month",
+            "is_featured": false,
+            "tip": "Cancel anytime.",
+            "button": {
+              "title": "Subscribe",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-monthly",
+            "product_name": "Premium Monthly",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "Starter"
+            "plan_name": "Premium"
           },
           {
-            "title": "Premium Plan",
-            "description": "Around $19.2 / month, save 23% compared to monthly plan. Subscription can be canceled anytime!",
+            "title": "Free",
+            "description": "Try Brow Tint at no cost.",
+            "features_title": "Includes",
+            "features": ["Core generation features", "Standard queue"],
+            "interval": "year",
+            "amount": 0,
+            "currency": "USD",
+            "price": "$0",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Start free. Upgrade anytime.",
+            "button": {
+              "title": "Current Plan",
+              "url": "/#pricing",
+              "icon": ""
+            },
+            "product_id": "free-yearly",
+            "product_name": "Free",
+            "credits": 0,
+            "valid_days": 365,
+            "group": "yearly"
+          },
+          {
+            "title": "Basic",
+            "description": "Save with annual billing. Credits are credited upfront.",
+            "label": "Save",
             "features_title": "Includes",
             "features": [
-              "4000 credits, valid for 1 year",
-              "Text-to-image and image-to-image generation",
-              "High-quality images with Nano Banana 2 AI model",
-              "Free download of generated images"
+              "2400 credits per year",
+              "Credited upfront",
+              "Priority queue",
+              "Remove watermark"
             ],
             "interval": "year",
-            "amount": 22990,
+            "amount": 19080,
             "currency": "USD",
-            "price": "$229.9",
-            "original_price": "$299.9",
-            "unit": "/ year",
-            "is_featured": true,
-            "tip": "",
+            "price": "$15.9",
+            "original_price": "$19.9",
+            "unit": "/ month",
+            "is_featured": false,
+            "tip": "Billed annually. Credits are credited upfront.",
             "button": {
-              "title": "Subscribe Plan",
+              "title": "Subscribe",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Basic Annual",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Basic Annual"
+          },
+          {
+            "title": "Premium",
+            "description": "Best annual value for high volume. Credits are credited upfront.",
+            "features_title": "Includes",
+            "features": [
+              "3600 credits per year",
+              "Credited upfront",
+              "Highest priority queue",
+              "Remove watermark"
+            ],
+            "interval": "year",
+            "amount": 31080,
+            "currency": "USD",
+            "price": "$25.9",
+            "original_price": "$29.9",
+            "unit": "/ month",
+            "is_featured": false,
+            "tip": "Billed annually. Credits are credited upfront.",
+            "button": {
+              "title": "Subscribe",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "Premium Plan",
-            "credits": 4000,
+            "product_name": "Premium Annual",
+            "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Premium"
+            "plan_name": "Premium Annual"
+          },
+          {
+            "title": "Top-up 100 credits",
+            "description": "Add credits anytime.",
+            "features_title": "Includes",
+            "features": ["100 credits", "Credits never expire"],
+            "interval": "one-time",
+            "amount": 1290,
+            "currency": "USD",
+            "price": "$12.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "One-time purchase. Credits never expire.",
+            "button": {
+              "title": "Top up",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-100",
+            "product_name": "Top-up 100",
+            "credits": 100,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "Top-up 200 credits",
+            "description": "Add more credits when you need them.",
+            "label": "Popular",
+            "features_title": "Includes",
+            "features": ["200 credits", "Credits never expire"],
+            "interval": "one-time",
+            "amount": 2590,
+            "currency": "USD",
+            "price": "$25.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "One-time purchase. Credits never expire.",
+            "button": {
+              "title": "Top up",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-200",
+            "product_name": "Top-up 200",
+            "credits": 200,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "Top-up 300 credits",
+            "description": "Good for higher-volume use.",
+            "features_title": "Includes",
+            "features": ["300 credits", "Credits never expire"],
+            "interval": "one-time",
+            "amount": 3890,
+            "currency": "USD",
+            "price": "$38.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "One-time purchase. Credits never expire.",
+            "button": {
+              "title": "Top up",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-300",
+            "product_name": "Top-up 300",
+            "credits": 300,
+            "valid_days": 0,
+            "group": "one-time"
           }
         ]
       }

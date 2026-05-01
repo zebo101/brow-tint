@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/shared/components/ui/accordion';
+import { JsonLd } from '@/shared/components/json-ld';
 import { Section } from '@/shared/types/blocks/landing';
 
 export function Faq({
@@ -18,8 +19,26 @@ export function Faq({
   const defaultValue =
     section.items?.[1]?.question || section.items?.[1]?.title || undefined;
 
+  const items = section.items ?? [];
+  const faqSchema =
+    items.length > 0
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: items.map((item) => ({
+            '@type': 'Question',
+            name: item.question || item.title || '',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: item.answer || item.description || '',
+            },
+          })),
+        }
+      : null;
+
   return (
     <section id={section.id} className={`relative py-16 md:py-24 ${className}`}>
+      {faqSchema && <JsonLd schema={faqSchema} />}
       <div className={`mx-auto max-w-full px-4 md:max-w-3xl md:px-8`}>
         <div className="mx-auto max-w-2xl text-center text-balance">
           <h2 className="text-foreground font-display mb-4 text-3xl font-semibold tracking-tight md:text-4xl">

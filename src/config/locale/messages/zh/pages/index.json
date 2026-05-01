@@ -1,8 +1,13 @@
 {
+  "metadata": {
+    "title": "Brow Tint — AI 眉部染色工作室 · 几秒预览新眉妆",
+    "description": "上传照片、选择眉色，几秒钟左右对比新眉妆。免费 AI 眉部染色生成器，精选风格、真实沙龙级效果预览。",
+    "keywords": "眉部染色, AI 眉部染色, 眉部染色生成器, 虚拟眉部染色, 眉部染色工作室, 眉染色预览, 染色眉胶, 眉部叠染"
+  },
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "cases",
       "introduce",
       "benefits",
       "usage",
@@ -10,8 +15,7 @@
       "stats",
       "testimonials",
       "faq",
-      "cta",
-      "subscribe"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -24,7 +28,7 @@
           {
             "title": "免费试用 Brow Tint",
             "icon": "Zap",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "variant": "default"
           },
@@ -43,11 +47,72 @@
           "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/hero-1.png",
+          "src": "/imgs/bg/hero-1.jpg",
           "alt": "Brow Tint 背景 - 专业眉部染色效果预览"
         },
         "powered_by": "由 GPT Image 2 驱动",
-        "editorial_labels": ["预览", "变换", "塑形"]
+        "editorial_labels": [
+          "预览",
+          "变换",
+          "塑形"
+        ]
+      },
+      "cases": {
+        "block": "cases-carousel",
+        "id": "cases",
+        "title": "真实染眉案例",
+        "description": "看看用户通过 Brow Tint 预览后的真实染眉前后对比效果。",
+        "items": [
+          {
+            "name": "柔棕海娜",
+            "image": {
+              "src": "/imgs/cases/1.jpg",
+              "alt": "柔棕海娜染眉案例"
+            }
+          },
+          {
+            "name": "浓郁深咖",
+            "image": {
+              "src": "/imgs/cases/2.jpg",
+              "alt": "浓郁深咖染眉案例"
+            }
+          },
+          {
+            "name": "雾眉定型",
+            "image": {
+              "src": "/imgs/cases/3.jpg",
+              "alt": "雾眉定型案例"
+            }
+          },
+          {
+            "name": "冷调灰棕",
+            "image": {
+              "src": "/imgs/cases/4.jpg",
+              "alt": "冷调灰棕染眉案例"
+            }
+          },
+          {
+            "name": "暖调赤褐",
+            "image": {
+              "src": "/imgs/cases/5.jpg",
+              "alt": "暖调赤褐染眉案例"
+            }
+          },
+          {
+            "name": "染眉膏",
+            "image": {
+              "src": "/imgs/cases/6.jpg",
+              "alt": "染眉膏案例"
+            }
+          },
+          {
+            "name": "睫毛与眉毛同染",
+            "image": {
+              "src": "/imgs/cases/7.jpg",
+              "alt": "睫毛与眉毛同染案例"
+            }
+          }
+        ]
       },
       "logos": {
         "id": "logos",
@@ -97,7 +162,7 @@
         "label": "产品介绍",
         "description": "Brow Tint 是一款免费在线 AI 眉色生成器，让您在正式染色前就能预览专业眉部染色效果。无论您想尝试染眉膏色号、探索眉部塑形与染色的组合效果，还是对比睫毛和眉部染色的搭配方案，我们的 GPT Image 2 AI 都能根据您的脸型和肤色生成照片级真实的预览图。",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Brow Tint AI 眉色生成器 - 免费在线预览眉部染色效果"
         },
         "items": [
@@ -345,7 +410,7 @@
         "id": "faq",
         "title": "关于 Brow Tint 的常见问题",
         "description": "对我们的 AI 眉色生成器有疑问？以下是关于眉部染色预览最常见问题的解答。",
-        "tip": "没找到您想要的答案？请联系我们的<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "tip": "没找到您想要的答案？请联系我们的<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>支持团队</a>",
         "items": [
           {
             "question": "Brow Tint 是什么，AI 眉色生成器是如何工作的？",
@@ -392,7 +457,7 @@
         "buttons": [
           {
             "title": "免费试用 Brow Tint",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "icon": "Zap"
           }

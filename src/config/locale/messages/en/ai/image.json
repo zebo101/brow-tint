@@ -15,7 +15,6 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -27,13 +26,13 @@
         "highlight_text": "AI Brow Tint Generator",
         "description": "Instantly preview realistic brow tint before and after looks with the AI brow tint generator. Upload a photo, try brow tint styles, then download your new brow look.",
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "AI Brow Tint Generator Interface",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "AI Brow Tint Generator Interface Dark Mode",
           "width": 1200,
           "height": 800
@@ -197,9 +196,9 @@
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Explore Brow Tint Styles by Category",
         "description": "Browse AI-ready brow tint styles and tap any look to try it on your own photo with the AI brow tint generator.",
         "limit": 12,
@@ -297,7 +296,7 @@
         "id": "faq",
         "title": "Frequently Asked Questions",
         "description": "FAQs about the AI brow tint generator, photo tips, and how to get the best brow tinting results.",
-        "tip": "Can't find what you're looking for? Contact our <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>support team</a>",
+        "tip": "Can't find what you're looking for? Contact our <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>support team</a>",
         "items": [
           {
             "question": "Is this AI Brow Tint Generator free to use?",
@@ -384,7 +383,7 @@
       "history_empty": "No history images yet"
     },
     "form": {
-      "select_hairstyle_placeholder": "Click to select a brow tint style",
+      "select_brow_tint_placeholder": "Click to select a brow tint style",
       "provider": "AI Provider",
       "model": "Brow Tint Model",
       "select_provider": "Select AI Provider",
@@ -399,14 +398,23 @@
       "upload_hint": "Click or drag to upload photos",
       "max_size": "Max"
     },
-    "generate": "Generate Brow Tint",
+    "steps": {
+      "upload": "Upload Photo",
+      "describe": "Describe Style",
+      "choose_style": "Choose Style",
+      "generate": "Generate"
+    },
+    "generate": "Generate ({credits} credits)",
+    "generate_no_credits": "Get Credits to Generate",
     "checking_account": "Checking Account...",
     "loading": "Loading...",
     "generating": "Generating Your Brow Tint...",
     "sign_in_to_generate": "Sign In to Try Brow Tint Styles",
     "credits_cost": "Cost {credits} credits",
-    "credits_remaining": "Remaining {credits} credits",
+    "credits_remaining": "{credits} credits",
+    "credits_insufficient": "Not enough credits",
     "buy_credits": "Buy Credits",
+    "try_another_style": "Try Another Style",
     "progress": "Progress",
     "generated_images": "Your New Brow Look",
     "preview_title": "AI Brow Tint Preview",

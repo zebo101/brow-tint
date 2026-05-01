@@ -1,144 +1,275 @@
 {
   "metadata": {
-    "title": "Precios",
-    "description": "Comienza con un plan"
+    "title": "Brow Tint Precios — Créditos y Planes de Tinte de Cejas IA",
+    "description": "Compra créditos para generar vistas previas de tinte de cejas con IA. Compara planes, encuentra el mejor paquete y empieza en segundos.",
+    "keywords": "precios tinte de cejas, créditos tinte de cejas IA, planes tinte de cejas, costo generador tinte cejas, suscripción tinte de cejas IA"
   },
   "page": {
     "title": "Precios",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Precios de Brow Tint",
-        "title": "Precios",
-        "description": "Elige el plan perfecto para tus necesidades de generación de tinte de cejas IA.",
+        "sr_only_title": "Brow Tint Precios",
+        "title": "Elige el plan perfecto",
+        "description": "Cada generación de Brow Tint con IA usa 1 crédito.",
         "groups": [
-          {
-            "name": "one-time",
-            "title": "Pago único"
-          },
           {
             "name": "monthly",
             "title": "Mensual"
           },
           {
             "name": "yearly",
-            "title": "Anual",
-            "label": "ahorra 23%"
+            "title": "Anual (Ahorra)",
+            "label": "Ahorra"
+          },
+          {
+            "name": "one-time",
+            "title": "Recargar"
           }
         ],
         "items": [
           {
-            "title": "Paquete de Créditos",
-            "description": "Comienza cuando lo necesites. Pago único",
+            "title": "Gratis",
+            "description": "Prueba Brow Tint sin costo.",
             "features_title": "Incluye",
-            "features": [
-              "300 créditos, válidos por 1 año",
-              "Generación de texto a imagen e imagen a imagen",
-              "Imágenes de alta calidad con modelo IA Nano Banana 2",
-              "Descarga gratuita de imágenes generadas"
-            ],
-            "interval": "one-time",
-            "amount": 2990,
+            "features": ["Funciones esenciales", "Cola estándar"],
+            "interval": "month",
+            "amount": 0,
             "currency": "USD",
-            "price": "$29.9",
-            "original_price": "$39.9",
-            "unit": "/ 300 créditos",
+            "price": "$0",
+            "unit": "",
             "is_featured": false,
-            "tip": "",
+            "tip": "Empieza gratis. Mejora cuando quieras.",
             "button": {
-              "title": "Comprar Créditos",
+              "title": "Plan actual",
               "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "icon": ""
             },
-            "product_id": "credits-package",
-            "product_name": "Paquete de Créditos",
-            "credits": 300,
-            "valid_days": 365,
-            "group": "one-time"
+            "product_id": "free-monthly",
+            "product_name": "Gratis",
+            "credits": 0,
+            "valid_days": 30,
+            "group": "monthly"
           },
           {
-            "title": "Plan Inicial",
-            "description": "Renovación automática mensual para obtener créditos. ¡Cancela en cualquier momento!",
+            "title": "Básico",
+            "description": "Para necesidades habituales.",
+            "label": "Popular",
             "features_title": "Incluye",
             "features": [
-              "300 créditos, válidos por 1 mes",
-              "Generación de texto a imagen e imagen a imagen",
-              "Imágenes de alta calidad con modelo IA Nano Banana 2",
-              "Descarga gratuita de imágenes generadas"
+              "200 créditos al mes",
+              "Créditos renovados mensualmente",
+              "Cola prioritaria",
+              "Quitar marca de agua"
             ],
             "interval": "month",
-            "amount": 2490,
+            "amount": 1990,
             "currency": "USD",
-            "price": "$24.9",
-            "original_price": "$36.9",
+            "price": "$19.9",
             "unit": "/ mes",
-            "is_featured": false,
-            "tip": "",
+            "is_featured": true,
+            "tip": "Cancela cuando quieras.",
             "button": {
-              "title": "Suscribirse al Plan",
+              "title": "Suscribirse",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
-            "product_id": "starter-monthly",
-            "product_name": "Plan Inicial",
+            "product_id": "basic-monthly",
+            "product_name": "Básico Mensual",
+            "credits": 200,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Básico"
+          },
+          {
+            "title": "Premium",
+            "description": "Para usuarios avanzados y alto volumen.",
+            "features_title": "Incluye",
+            "features": [
+              "300 créditos al mes",
+              "Créditos renovados mensualmente",
+              "Cola de máxima prioridad",
+              "Quitar marca de agua"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/ mes",
+            "is_featured": false,
+            "tip": "Cancela cuando quieras.",
+            "button": {
+              "title": "Suscribirse",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-monthly",
+            "product_name": "Premium Mensual",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "Inicial"
+            "plan_name": "Premium"
           },
           {
-            "title": "Plan Premium",
-            "description": "Aprox. $19.2 / mes, ahorra 23% vs plan mensual. ¡Cancela en cualquier momento!",
+            "title": "Gratis",
+            "description": "Prueba Brow Tint sin costo.",
+            "features_title": "Incluye",
+            "features": ["Funciones esenciales", "Cola estándar"],
+            "interval": "year",
+            "amount": 0,
+            "currency": "USD",
+            "price": "$0",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Empieza gratis. Mejora cuando quieras.",
+            "button": {
+              "title": "Plan actual",
+              "url": "/#pricing",
+              "icon": ""
+            },
+            "product_id": "free-yearly",
+            "product_name": "Gratis",
+            "credits": 0,
+            "valid_days": 365,
+            "group": "yearly"
+          },
+          {
+            "title": "Básico",
+            "description": "Ahorra con facturación anual. Los créditos anuales se acreditan por adelantado.",
+            "label": "Ahorra",
             "features_title": "Incluye",
             "features": [
-              "4000 créditos, válidos por 1 año",
-              "Generación de texto a imagen e imagen a imagen",
-              "Imágenes de alta calidad con modelo IA Nano Banana 2",
-              "Descarga gratuita de imágenes generadas"
+              "2400 créditos al año",
+              "Acreditados por adelantado",
+              "Cola prioritaria",
+              "Sin marca de agua"
             ],
             "interval": "year",
-            "amount": 22990,
+            "amount": 19080,
             "currency": "USD",
-            "price": "$229.9",
-            "original_price": "$299.9",
-            "unit": "/ año",
-            "is_featured": true,
-            "tip": "",
+            "price": "$15.9",
+            "original_price": "$19.9",
+            "unit": "/ mes",
+            "is_featured": false,
+            "tip": "Facturación anual. Créditos acreditados por adelantado.",
             "button": {
-              "title": "Suscribirse al Plan",
+              "title": "Suscribirse",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Básico Anual",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Básico Anual"
+          },
+          {
+            "title": "Premium",
+            "description": "El mejor valor anual para alto volumen. Los créditos anuales se acreditan por adelantado.",
+            "features_title": "Incluye",
+            "features": [
+              "3600 créditos al año",
+              "Acreditados por adelantado",
+              "Cola de máxima prioridad",
+              "Sin marca de agua"
+            ],
+            "interval": "year",
+            "amount": 31080,
+            "currency": "USD",
+            "price": "$25.9",
+            "original_price": "$29.9",
+            "unit": "/ mes",
+            "is_featured": false,
+            "tip": "Facturación anual. Créditos acreditados por adelantado.",
+            "button": {
+              "title": "Suscribirse",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "Plan Premium",
-            "credits": 4000,
+            "product_name": "Premium Anual",
+            "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Premium"
+            "plan_name": "Premium Anual"
+          },
+          {
+            "title": "Recarga de 100 créditos",
+            "description": "Recarga créditos cuando quieras.",
+            "features_title": "Incluye",
+            "features": ["100 créditos", "Los créditos nunca expiran"],
+            "interval": "one-time",
+            "amount": 1290,
+            "currency": "USD",
+            "price": "$12.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Compra única. Los créditos nunca expiran.",
+            "button": {
+              "title": "Recargar",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-100",
+            "product_name": "Recarga 100",
+            "credits": 100,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "Recarga de 200 créditos",
+            "description": "Añade más créditos cuando los necesites.",
+            "label": "Popular",
+            "features_title": "Incluye",
+            "features": ["200 créditos", "Los créditos nunca expiran"],
+            "interval": "one-time",
+            "amount": 2590,
+            "currency": "USD",
+            "price": "$25.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Compra única. Los créditos nunca expiran.",
+            "button": {
+              "title": "Recargar",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-200",
+            "product_name": "Recarga 200",
+            "credits": 200,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "Recarga de 300 créditos",
+            "description": "Ideal para mayor volumen.",
+            "features_title": "Incluye",
+            "features": ["300 créditos", "Los créditos nunca expiran"],
+            "interval": "one-time",
+            "amount": 3890,
+            "currency": "USD",
+            "price": "$38.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Compra única. Los créditos nunca expiran.",
+            "button": {
+              "title": "Recargar",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-300",
+            "product_name": "Recarga 300",
+            "credits": 300,
+            "valid_days": 0,
+            "group": "one-time"
           }
         ]
       }
     }
   },
   "messages": {
-    "current_plan": "Plan Actual",
+    "current_plan": "Plan actual",
     "processing": "Procesando"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

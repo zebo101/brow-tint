@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "Brow Tint Galerie - KI Augenbrauen-Tint Vorher und Nachher",
-    "description": "Sehen Sie beeindruckende Augenbrauen-Tint Vorher-Nachher-Transformationen, erstellt mit dem Brow Tint KI-Generator"
+    "description": "Sehen Sie beeindruckende Augenbrauen-Tint Vorher-Nachher-Transformationen, erstellt mit dem Brow Tint KI-Generator",
+    "keywords": "Brow-Tint Galerie, Brow-Tint Vorher Nachher, KI Brow-Tint Beispiele, Brow-Tint Vorschau, Augenbrauen Tönung, professionelles Brow-Tint, Brow-Tint Gel"
   },
   "page": {
     "title": "Brow Tint Galerie",
@@ -51,7 +52,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
+              "src": "/imgs/cases/1.jpg",
               "alt": "Sanftes Taupe Augenbrauen-Tint Vorher und Nachher"
             },
             "group": "short-hair"
@@ -62,7 +63,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
+              "src": "/imgs/cases/2.jpg",
               "alt": "Dunkles Espresso Augenbrauen-Tint"
             },
             "group": "long-hair"
@@ -73,7 +74,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/3.png",
+              "src": "/imgs/cases/3.jpg",
               "alt": "Brow Lamination und Tint Ergebnis"
             },
             "group": "color-change"
@@ -84,7 +85,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/4.png",
+              "src": "/imgs/cases/4.jpg",
               "alt": "Professionelles Augenbrauen-Tint Transformation"
             },
             "group": "classic"
@@ -95,7 +96,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
+              "src": "/imgs/cases/5.jpg",
               "alt": "Getöntes Brauengel Look"
             },
             "group": "men-styles"
@@ -106,38 +107,16 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
+              "src": "/imgs/cases/7.jpg",
               "alt": "Wimpern und Augenbrauen Tint Ergebnis"
             },
             "group": "women-styles"
-          },
-          {
-            "title": "brow code tint",
-            "description": "Präzise brow code tint Formel-Abstimmung für Ihre einzigartige Brauenfarbe",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "brow code tint Abstimmung"
-            },
-            "group": "trendy"
-          },
-          {
-            "title": "Beste Augenbrauen-Tint Farbtonabstimmung",
-            "description": "KI-abgestimmter perfekter Augenbrauen-Tint Farbton, maßgeschneidert auf Ihren Hautton und Ihre Haarfarbe",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "Beste Augenbrauen-Tint Farbtonabstimmung"
-            },
-            "group": "short-hair"
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Die vollständige Augenbrauen-Tint Stil-Bibliothek durchsuchen",
         "description": "Scrollen Sie durch unsere KI-gestützten Augenbrauen-Tint Styles, organisiert nach Typ. Klicken Sie auf einen Look, um ihn an Ihrem eigenen Foto zu sehen.",
         "limit": 12,
@@ -169,33 +148,6 @@
           }
         ],
         "tip": "Jede Vorschau ist kostenlos. Neue Augenbrauen-Tint Styles werden regelmäßig hinzugefügt."
-      },
-      "video_demo": {
-        "block": "features-accordion",
-        "id": "video_demo",
-        "label": "Video-Demo",
-        "title": "Brow Tint in Aktion sehen",
-        "description": "Sehen Sie echte Augenbrauen-Tint Vorher-Nachher-Transformationen — vom Upload zur Vorschau in Sekunden.",
-        "items": [
-          {
-            "title": "Mehrere Augenbrauen-Tint Farbtöne sofort ansehen",
-            "description": "Laden Sie ein Foto hoch und sehen Sie mehrere Augenbrauen-Tint Farbtöne und Styles nebeneinander, um Ihren perfekten Match zu finden.",
-            "icon": "RiPlayCircleLine",
-            "image": {
-              "src": "/video/v1.mp4",
-              "alt": "KI Augenbrauen-Tint Vorschau Demo-Video"
-            }
-          },
-          {
-            "title": "Realistische Augenbrauen-Tint Textur und Abdeckung sehen",
-            "description": "Sehen Sie, wie verschiedene Augenbrauen-Tint Techniken — von getöntem Brauengel bis professionellem Augenbrauen-Tint — auf Ihren echten Brauen aussehen, bevor Sie sich entscheiden.",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "/video/v2.mp4",
-              "alt": "Augenbrauen-Tint Textur und Abdeckung Vorschau-Video"
-            }
-          }
-        ]
       },
       "usage": {
         "block": "features-step",
@@ -280,8 +232,6 @@
     },
     "show_sections": [
       "showcases",
-      "hairstyle_gallery",
-      "video_demo",
       "usage",
       "faq",
       "cta"

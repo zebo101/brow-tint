@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "Galleria Brow Tint - Tinta Sopracciglia IA Prima e Dopo",
-    "description": "Scopri incredibili trasformazioni tinta sopracciglia prima e dopo create con il generatore IA Brow Tint"
+    "description": "Scopri incredibili trasformazioni tinta sopracciglia prima e dopo create con il generatore IA Brow Tint",
+    "keywords": "galleria tinta sopracciglia, tinta sopracciglia prima e dopo, esempi tinta sopracciglia IA, anteprima tinta sopracciglia, tinta professionale sopracciglia, gel sopracciglia colorato"
   },
   "page": {
     "title": "Galleria Brow Tint",
@@ -51,7 +52,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
+              "src": "/imgs/cases/1.jpg",
               "alt": "Tinta sopracciglia tortora morbido prima e dopo"
             },
             "group": "short-hair"
@@ -62,7 +63,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
+              "src": "/imgs/cases/2.jpg",
               "alt": "Tinta sopracciglia espresso scuro"
             },
             "group": "long-hair"
@@ -73,7 +74,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/3.png",
+              "src": "/imgs/cases/3.jpg",
               "alt": "Risultato laminazione e tinta sopracciglia"
             },
             "group": "color-change"
@@ -84,7 +85,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/4.png",
+              "src": "/imgs/cases/4.jpg",
               "alt": "Trasformazione tinta professionale sopracciglia"
             },
             "group": "classic"
@@ -95,7 +96,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
+              "src": "/imgs/cases/5.jpg",
               "alt": "Look gel sopracciglia colorato"
             },
             "group": "men-styles"
@@ -106,38 +107,16 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
+              "src": "/imgs/cases/7.jpg",
               "alt": "Risultato tinta ciglia e sopracciglia"
             },
             "group": "women-styles"
-          },
-          {
-            "title": "Brow Code Tint",
-            "description": "Formula brow code tint precisa per un abbinamento unico del colore delle tue sopracciglia",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Abbinamento brow code tint"
-            },
-            "group": "trendy"
-          },
-          {
-            "title": "Migliore Tonalità Tinta Sopracciglia",
-            "description": "Tonalità perfetta di tinta sopracciglia abbinata dall'IA in base al tuo tono di pelle e colore dei capelli",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "Migliore abbinamento tonalità tinta sopracciglia"
-            },
-            "group": "short-hair"
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Sfoglia la Libreria Completa di Stili Tinta Sopracciglia",
         "description": "Scorri i nostri stili di tinta sopracciglia IA organizzati per tipo. Clicca su qualsiasi look per visualizzarlo sulla tua foto.",
         "limit": 12,
@@ -169,33 +148,6 @@
           }
         ],
         "tip": "Ogni anteprima è gratuita. Nuovi stili di tinta sopracciglia aggiunti regolarmente."
-      },
-      "video_demo": {
-        "block": "features-accordion",
-        "id": "video_demo",
-        "label": "Demo Video",
-        "title": "Guarda Brow Tint in Azione",
-        "description": "Guarda vere trasformazioni tinta sopracciglia prima e dopo — dal caricamento all'anteprima in pochi secondi.",
-        "items": [
-          {
-            "title": "Visualizza Molteplici Tonalità di Tinta Sopracciglia Istantaneamente",
-            "description": "Carica una foto e visualizza diverse tonalità e stili di tinta sopracciglia affiancati per trovare l'abbinamento perfetto.",
-            "icon": "RiPlayCircleLine",
-            "image": {
-              "src": "/video/v1.mp4",
-              "alt": "Video demo anteprima tinta sopracciglia IA"
-            }
-          },
-          {
-            "title": "Guarda Texture e Copertura Realistiche della Tinta",
-            "description": "Visualizza come diverse tecniche di tinta sopracciglia — dal gel sopracciglia colorato alla tinta professionale sopracciglia — appaiono sulle tue sopracciglia reali prima di impegnarti.",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "/video/v2.mp4",
-              "alt": "Video anteprima texture e copertura tinta sopracciglia"
-            }
-          }
-        ]
       },
       "usage": {
         "block": "features-step",
@@ -280,8 +232,6 @@
     },
     "show_sections": [
       "showcases",
-      "hairstyle_gallery",
-      "video_demo",
       "usage",
       "faq",
       "cta"

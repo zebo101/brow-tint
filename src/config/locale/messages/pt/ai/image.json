@@ -15,7 +15,6 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -27,13 +26,13 @@
         "highlight_text": "Gerador de Brow Tint com IA",
         "description": "Visualize instantaneamente resultados realistas de antes e depois da tintura de sobrancelhas com o gerador de Brow Tint com IA. Envie uma foto, experimente estilos de tintura e baixe seu novo visual de sobrancelhas.",
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Interface do Gerador de Brow Tint com IA",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Interface do Gerador de Brow Tint com IA Modo Escuro",
           "width": 1200,
           "height": 800
@@ -197,9 +196,9 @@
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Explore Estilos de Tintura de Sobrancelhas por Categoria",
         "description": "Navegue pelos estilos de tintura de sobrancelhas prontos para IA e toque em qualquer visual para experimentar na sua própria foto com o gerador de Brow Tint com IA.",
         "limit": 12,
@@ -297,7 +296,7 @@
         "id": "faq",
         "title": "Perguntas Frequentes",
         "description": "Perguntas frequentes sobre o gerador de Brow Tint com IA, dicas de fotos e como obter os melhores resultados de tintura de sobrancelhas.",
-        "tip": "Não encontrou o que procura? Contate nossa <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
+        "tip": "Não encontrou o que procura? Contate nossa <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
         "items": [
           {
             "question": "Este Gerador de Brow Tint com IA é gratuito?",
@@ -384,7 +383,7 @@
       "history_empty": "Ainda não há imagens no histórico"
     },
     "form": {
-      "select_hairstyle_placeholder": "Clique para selecionar um estilo de tintura de sobrancelhas",
+      "select_brow_tint_placeholder": "Clique para selecionar um estilo de tintura de sobrancelhas",
       "provider": "Provedor de IA",
       "model": "Modelo de Brow Tint",
       "select_provider": "Selecionar Provedor de IA",
@@ -399,14 +398,23 @@
       "upload_hint": "Clique ou arraste para enviar fotos",
       "max_size": "Máx"
     },
-    "generate": "Gerar Tintura de Sobrancelhas",
+    "steps": {
+      "upload": "Enviar foto",
+      "describe": "Descrever estilo",
+      "choose_style": "Escolher estilo",
+      "generate": "Gerar"
+    },
+    "generate": "Gerar ({credits} creditos)",
+    "generate_no_credits": "Obter creditos para gerar",
     "checking_account": "Verificando conta...",
     "loading": "Carregando...",
-    "generating": "Gerando Sua Tintura de Sobrancelhas...",
-    "sign_in_to_generate": "Entre para Experimentar Estilos de Tintura de Sobrancelhas",
-    "credits_cost": "Custa {credits} créditos",
-    "credits_remaining": "{credits} créditos restantes",
-    "buy_credits": "Comprar Créditos",
+    "generating": "Gerando sua tinta de sobrancelha...",
+    "sign_in_to_generate": "Entre para experimentar estilos de tinta de sobrancelha",
+    "credits_cost": "Custo {credits} creditos",
+    "credits_remaining": "{credits} creditos",
+    "credits_insufficient": "Creditos insuficientes",
+    "buy_credits": "Comprar creditos",
+    "try_another_style": "Experimentar outro estilo",
     "progress": "Progresso",
     "generated_images": "Seu Novo Visual de Sobrancelhas",
     "preview_title": "Pré-visualização de Brow Tint com IA",

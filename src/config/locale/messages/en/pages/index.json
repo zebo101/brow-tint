@@ -1,8 +1,13 @@
 {
+  "metadata": {
+    "title": "Brow Tint — AI Brow Tint Studio · Try Tints in Seconds",
+    "description": "Upload a photo, pick a tint shade, and see your new brows side by side. Free AI brow tint generator with curated styles and real salon-quality previews.",
+    "keywords": "brow tint, ai brow tint, brow tint generator, virtual brow tint, brow tint studio, eyebrow tint preview, tinted brow gel, brow lamination preview"
+  },
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "cases",
       "introduce",
       "benefits",
       "usage",
@@ -10,8 +15,7 @@
       "stats",
       "testimonials",
       "faq",
-      "cta",
-      "subscribe"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -24,7 +28,7 @@
           {
             "title": "Try Brow Tint Free",
             "icon": "Zap",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "variant": "default"
           },
@@ -43,11 +47,72 @@
           "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/hero-1.png",
+          "src": "/imgs/bg/hero-1.jpg",
           "alt": "Brow Tint Background - Professional Brow Tinting Preview"
         },
         "powered_by": "Powered by GPT Image 2",
-        "editorial_labels": ["Preview", "Transform", "Define"]
+        "editorial_labels": [
+          "Preview",
+          "Transform",
+          "Define"
+        ]
+      },
+      "cases": {
+        "block": "cases-carousel",
+        "id": "cases",
+        "title": "Real Brow Tint Cases",
+        "description": "See real brow tint before-and-after results from people who previewed their look with Brow Tint.",
+        "items": [
+          {
+            "name": "Soft Henna",
+            "image": {
+              "src": "/imgs/cases/1.jpg",
+              "alt": "Soft Henna brow tint case"
+            }
+          },
+          {
+            "name": "Bold Espresso",
+            "image": {
+              "src": "/imgs/cases/2.jpg",
+              "alt": "Bold Espresso brow tint case"
+            }
+          },
+          {
+            "name": "Brow Lamination",
+            "image": {
+              "src": "/imgs/cases/3.jpg",
+              "alt": "Brow Lamination case"
+            }
+          },
+          {
+            "name": "Cool Ash",
+            "image": {
+              "src": "/imgs/cases/4.jpg",
+              "alt": "Cool Ash brow tint case"
+            }
+          },
+          {
+            "name": "Warm Auburn",
+            "image": {
+              "src": "/imgs/cases/5.jpg",
+              "alt": "Warm Auburn brow tint case"
+            }
+          },
+          {
+            "name": "Tinted Gel",
+            "image": {
+              "src": "/imgs/cases/6.jpg",
+              "alt": "Tinted brow gel case"
+            }
+          },
+          {
+            "name": "Lash & Brow Tint",
+            "image": {
+              "src": "/imgs/cases/7.jpg",
+              "alt": "Lash and brow tint case"
+            }
+          }
+        ]
       },
       "logos": {
         "id": "logos",
@@ -97,7 +162,7 @@
         "label": "Introduction",
         "description": "Brow Tint is a free online AI brow tint generator that lets you preview professional brow tinting results before you commit. Whether you want to try tinted brow gel shades, explore brow lamination and tint combinations, or compare lash and brow tint styles, our GPT Image 2 AI creates photorealistic previews tailored to your face shape and skin tone.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Brow Tint AI Generator - Preview Brow Tinting Online Free"
         },
         "items": [
@@ -345,7 +410,7 @@
         "id": "faq",
         "title": "Frequently Asked Questions About Brow Tint",
         "description": "Got questions about our AI brow tint generator? Here are answers to the most common questions about brow tinting previews.",
-        "tip": "Can't find what you're looking for? Contact our <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>support team</a>",
+        "tip": "Can't find what you're looking for? Contact our <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>support team</a>",
         "items": [
           {
             "question": "What is Brow Tint and how does the AI brow tint generator work?",
@@ -392,7 +457,7 @@
         "buttons": [
           {
             "title": "Try Brow Tint Free",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "icon": "Zap"
           }

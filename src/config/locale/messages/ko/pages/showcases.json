@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "Brow Tint 갤러리 - AI 눈썹 틴트 비포 앤 애프터",
-    "description": "Brow Tint AI 생성기로 만든 놀라운 눈썹 틴트 비포 앤 애프터 변신을 확인하세요"
+    "description": "Brow Tint AI 생성기로 만든 놀라운 눈썹 틴트 비포 앤 애프터 변신을 확인하세요",
+    "keywords": "브로우 틴트 갤러리, 브로우 틴트 비포 애프터, AI 브로우 틴트 예시, 브로우 틴트 미리보기, 전문 브로우 틴트, 틴트 브로우 젤"
   },
   "page": {
     "title": "Brow Tint 갤러리",
@@ -51,7 +52,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
+              "src": "/imgs/cases/1.jpg",
               "alt": "Soft taupe brow tint before and after"
             },
             "group": "short-hair"
@@ -62,7 +63,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
+              "src": "/imgs/cases/2.jpg",
               "alt": "Dark espresso brow tint"
             },
             "group": "long-hair"
@@ -73,7 +74,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/3.png",
+              "src": "/imgs/cases/3.jpg",
               "alt": "Brow lamination and tint result"
             },
             "group": "color-change"
@@ -84,7 +85,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/4.png",
+              "src": "/imgs/cases/4.jpg",
               "alt": "Professional brow tint transformation"
             },
             "group": "classic"
@@ -95,7 +96,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
+              "src": "/imgs/cases/5.jpg",
               "alt": "Tinted brow gel look"
             },
             "group": "men-styles"
@@ -106,38 +107,16 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
+              "src": "/imgs/cases/7.jpg",
               "alt": "Lash and brow tint result"
             },
             "group": "women-styles"
-          },
-          {
-            "title": "brow code tint",
-            "description": "고유한 눈썹 색상에 맞는 정밀한 brow code tint 포뮬러 매칭",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Brow code tint match"
-            },
-            "group": "trendy"
-          },
-          {
-            "title": "베스트 눈썹 틴트 색상 매칭",
-            "description": "피부 톤과 모발 색상에 맞춰 AI가 매칭한 완벽한 눈썹 틴트 색상",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "Best brow tint shade match"
-            },
-            "group": "short-hair"
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "전체 눈썹 틴트 스타일 라이브러리 둘러보기",
         "description": "유형별로 정리된 AI 기반 눈썹 틴트 스타일을 스크롤하세요. 원하는 룩을 클릭하면 자신의 사진에 미리 적용해 볼 수 있습니다.",
         "limit": 12,
@@ -169,33 +148,6 @@
           }
         ],
         "tip": "모든 미리보기는 무료입니다. 새로운 눈썹 틴트 스타일이 정기적으로 추가됩니다."
-      },
-      "video_demo": {
-        "block": "features-accordion",
-        "id": "video_demo",
-        "label": "영상 데모",
-        "title": "Brow Tint 작동 모습 보기",
-        "description": "실제 눈썹 틴트 비포 앤 애프터 변신을 확인하세요 — 업로드부터 미리보기까지 몇 초 만에 완료.",
-        "items": [
-          {
-            "title": "여러 눈썹 틴트 색상 즉시 미리보기",
-            "description": "사진 한 장을 업로드하고 여러 눈썹 틴트 색상과 스타일을 나란히 비교하여 완벽한 매치를 찾으세요.",
-            "icon": "RiPlayCircleLine",
-            "image": {
-              "src": "/video/v1.mp4",
-              "alt": "AI brow tinting preview demo video"
-            }
-          },
-          {
-            "title": "사실적인 눈썹 틴트 텍스처와 커버리지 확인",
-            "description": "틴티드 브로우 젤부터 프로페셔널 눈썹 틴트까지 다양한 눈썹 틴트 기법이 실제 눈썹에 어떻게 보이는지 결정 전에 미리 확인하세요.",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "/video/v2.mp4",
-              "alt": "Brow tint texture and coverage preview video"
-            }
-          }
-        ]
       },
       "usage": {
         "block": "features-step",
@@ -280,8 +232,6 @@
     },
     "show_sections": [
       "showcases",
-      "hairstyle_gallery",
-      "video_demo",
       "usage",
       "faq",
       "cta"

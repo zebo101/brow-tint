@@ -193,3 +193,97 @@
 2026-04-27T10:53:52Z [ALLOW] cd ~/Documents/GitHub/tintbrow && grep -rl \
 2026-04-27T10:56:26Z [ALLOW] cd ~/Documents/GitHub/tintbrow && git diff --stat
 2026-04-27T10:56:45Z [ALLOW] cd ~/Documents/GitHub/tintbrow && git add -A && git commit -m \
+2026-04-27T12:02:36Z [ALLOW] rm -f src/shared/models/hairstyle.ts src/shared/services/hairstyle-storage.ts src/shared/services/hairstyle-analyzer.ts src/shared/hooks/use-hairstyles.ts src/shared/components/hairstyle-category-selector.tsx src/shared/components/hairstyle-dropdown.tsx src/themes/default/blocks/hairstyle-gallery.tsx
+2026-04-27T12:02:50Z [WARN:rm -rf] rm -rf src/app/api/hairstyle
+2026-04-27T12:06:38Z [ALLOW] for locale in en zh ko ja de es it pt; do sed -i 's/select_hairstyle_placeholder/select_brow_tint_placeholder/g' \
+2026-04-27T12:07:24Z [ALLOW] sed -i 's/hairstyle_image/brow_tint_image/g' src/extensions/ai/fal.ts src/extensions/ai/replicate.ts src/extensions/ai/kie.ts src/extensions/ai/gemini.ts
+2026-04-27T12:07:50Z [ALLOW] npx tsc --noEmit 2>&1 | head -60
+2026-04-27T12:12:32Z [ALLOW] ls -la \
+2026-04-27T12:13:07Z [ALLOW] grep -E 'DATABASE|TURSO|DB' .env.development 2>/dev/null | head -10
+2026-04-27T12:15:17Z [ALLOW] grep -E '\
+2026-04-27T12:15:29Z [ALLOW] cd \
+2026-04-27T12:16:17Z [ALLOW] cd \
+2026-04-27T12:16:32Z [ALLOW] cd \
+2026-04-27T12:16:47Z [ALLOW] cd \
+2026-04-27T12:17:02Z [ALLOW] cd \
+2026-04-27T12:17:25Z [ALLOW] cd \
+2026-04-27T12:17:50Z [ALLOW] cd \
+2026-04-27T12:18:25Z [ALLOW] cd \
+2026-04-27T12:19:09Z [ALLOW] cd \
+2026-04-27T12:26:09Z [ALLOW] cd \
+2026-04-27T12:26:30Z [ALLOW] cd \
+2026-04-27T12:30:39Z [ALLOW] cd \
+2026-04-27T12:31:20Z [ALLOW] cd \
+2026-04-27T12:31:59Z [ALLOW] cd \
+2026-04-27T12:33:21Z [ALLOW] cd \
+2026-04-27T12:33:32Z [ALLOW] cd \
+2026-04-27T12:34:37Z [ALLOW] cd \
+2026-04-27T12:35:05Z [ALLOW] cd \
+2026-04-27T12:35:17Z [ALLOW] cd \
+2026-04-27T12:38:13Z [ALLOW] cd \
+2026-04-27T12:40:12Z [ALLOW] cd \
+2026-04-27T12:44:06Z [ALLOW] cd \
+2026-04-27T12:44:33Z [ALLOW] cd \
+2026-04-27T12:44:48Z [ALLOW] cd \
+2026-04-27T12:47:23Z [ALLOW] ls -la \
+2026-04-27T13:41:16Z [ALLOW] cd \
+2026-04-27T13:42:12Z [ALLOW] cd \
+2026-04-27T13:42:27Z [ALLOW] cd \
+2026-04-27T13:42:41Z [ALLOW] cd \
+2026-04-27T14:04:34Z [ALLOW] wc -l \
+2026-04-27T14:14:04Z [ALLOW] npx tsc --noEmit 2>&1 | head -60
+2026-04-27T14:15:02Z [ALLOW] cd \
+2026-04-27T14:18:49Z [ALLOW] cd \
+2026-04-27T14:37:04Z [ALLOW] cd \
+2026-04-27T14:37:24Z [ALLOW] cd \
+2026-04-27T14:39:32Z [ALLOW] cd \
+2026-04-27T14:39:48Z [ALLOW] cd \
+2026-04-27T14:40:05Z [ALLOW] cd \
+2026-04-27T14:40:19Z [ALLOW] cd \
+2026-04-27T14:41:23Z [ALLOW] cd \
+2026-04-27T14:41:38Z [ALLOW] cd \
+2026-04-27T14:44:11Z [ALLOW] cd \
+2026-04-27T14:45:55Z [ALLOW] cd \
+2026-04-27T14:58:10Z [ALLOW] grep -n \
+2026-04-27T14:58:11Z [ALLOW] grep -n \
+2026-04-27T14:58:28Z [ALLOW] grep -n \
+2026-04-27T14:58:38Z [ALLOW] ls -la \
+2026-04-27T14:58:48Z [ALLOW] find /c/Users/陈序谦/Documents/GitHub/tintbrow/src/themes/default/blocks -name \
+2026-04-27T14:59:08Z [ALLOW] grep -r \
+2026-04-27T14:59:11Z [ALLOW] find /c/Users/陈序谦/Documents/GitHub/tintbrow/src/shared/models -name \
+2026-04-27T14:59:21Z [ALLOW] find /c/Users/陈序谦/Documents/GitHub/tintbrow/src/shared/models -type f -name \
+2026-04-27T14:59:30Z [ALLOW] find /c/Users/陈序谦/Documents/GitHub/tintbrow/src/shared/services -name \
+2026-04-27T14:59:40Z [ALLOW] find /c/Users/陈序谦/Documents/GitHub/tintbrow/src/config/locale/messages -name \
+2026-04-27T14:59:49Z [ALLOW] find /c/Users/陈序谦/Documents/GitHub/tintbrow/src/app/\\[locale\\]/\\(landing\\)/\\(ai\\) -type d
+2026-04-27T14:59:59Z [ALLOW] git status --short | grep -E \
+2026-04-27T15:16:54Z [ALLOW] cd \
+2026-04-27T15:18:07Z [ALLOW] cd \
+2026-04-27T15:27:18Z [ALLOW] cd \
+2026-04-27T15:27:44Z [ALLOW] cd \
+2026-04-27T15:28:00Z [ALLOW] cd \
+2026-04-27T15:28:17Z [ALLOW] cd \
+2026-04-27T15:28:37Z [ALLOW] cd \
+2026-04-27T15:29:21Z [ALLOW] cd \
+2026-04-27T15:36:01Z [ALLOW] cd \
+2026-04-27T15:36:16Z [ALLOW] cd \
+2026-04-27T15:36:31Z [ALLOW] cd \
+2026-04-27T15:37:17Z [ALLOW] cd \
+2026-04-27T15:39:04Z [ALLOW] cd \
+2026-04-27T15:41:41Z [ALLOW] cd \
+2026-04-27T15:42:23Z [ALLOW] cd \
+2026-04-30T13:53:02Z [ALLOW] git diff src/themes/default/blocks/brow-tint/studio.tsx | head -50
+2026-04-30T13:55:14Z [ALLOW] git log --oneline -5 src/themes/default/blocks/brow-tint/studio.tsx
+2026-04-30T13:55:21Z [ALLOW] git status --short src/themes/default/blocks/brow-tint/studio.tsx && git log -1 --format=\
+2026-04-30T14:15:20Z [ALLOW] git diff HEAD src/themes/default/blocks/brow-tint/studio.tsx 2>/dev/null | head -100 || echo \
+2026-04-30T14:15:26Z [ALLOW] git log --all --oneline -- src/themes/default/blocks/brow-tint/studio.tsx | head -10
+2026-04-30T14:27:48Z [ALLOW] grep -l '\
+2026-04-30T14:28:32Z [ALLOW] grep -rn '\
+2026-04-30T14:28:40Z [ALLOW] grep -n '\
+2026-05-01T12:34:51Z [ALLOW] pnpm add @fontsource/noto-sans-mono @fontsource/merriweather @fontsource/jetbrains-mono @fontsource/amita 2>&1 | tail -30
+2026-05-01T12:35:31Z [ALLOW] ls node_modules/@fontsource/noto-sans-mono/files/ | grep -E 'latin-(400|500|700)-normal' | grep -v subset
+2026-05-01T12:35:31Z [ALLOW] ls node_modules/@fontsource/merriweather/files/ | grep -E 'latin-(400|700)-normal' | grep -v subset
+2026-05-01T12:35:32Z [ALLOW] ls node_modules/@fontsource/jetbrains-mono/files/ | grep -E 'latin-(400|700)-normal' | grep -v subset
+2026-05-01T12:35:32Z [ALLOW] ls node_modules/@fontsource/amita/files/ | grep -E 'latin-(400|700)-normal' | grep -v subset
+2026-05-01T12:35:52Z [ALLOW] mkdir -p public/fonts/noto-sans-mono public/fonts/merriweather public/fonts/jetbrains-mono public/fonts/amita && cp node_modules/@fontsource/noto-sans-mono/files/noto-sans-mono-latin-400-normal.woff2 public/fonts/noto-sans-mono/NotoSansMono-Regular.woff2 && cp node_modules/@fontsource/noto-sans-mono/files/noto-sans-mono-latin-500-normal.woff2 public/fonts/noto-sans-mono/NotoSansMono-Medium.woff2 && cp node_modules/@fontsource/noto-sans-mono/files/noto-sans-mono-latin-700-normal.woff2 public/fonts/noto-sans-mono/NotoSansMono-Bold.woff2 && cp node_modules/@fontsource/merriweather/files/merriweather-latin-400-normal.woff2 public/fonts/merriweather/Merriweather-Regular.woff2 && cp node_modules/@fontsource/merriweather/files/merriweather-latin-700-normal.woff2 public/fonts/merriweather/Merriweather-Bold.woff2 && cp node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2 public/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2 && cp node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2 public/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2 && cp node_modules/@fontsource/amita/files/amita-latin-400-normal.woff2 public/fonts/amita/Amita-Regular.woff2 && cp node_modules/@fontsource/amita/files/amita-latin-700-normal.woff2 public/fonts/amita/Amita-Bold.woff2 && ls -la public/fonts/*/
+2026-05-01T12:38:09Z [ALLOW] git status --short public/fonts/ && echo \
+2026-05-01T12:38:16Z [ALLOW] git check-ignore -v public/fonts/amita/Amita-Regular.woff2 2>&1 || echo \

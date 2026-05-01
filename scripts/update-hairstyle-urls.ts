@@ -1,8 +1,8 @@
 /**
- * Update Hairstyle URLs Script
- * 
- * Updates all hairstyle image URLs in database to use the public R2 domain
- * 
+ * Update Brow Tint URLs Script
+ *
+ * Updates all brow tint image URLs in database to use the public R2 domain
+ *
  * Usage: pnpm tsx scripts/update-hairstyle-urls.ts
  */
 
@@ -27,7 +27,7 @@ const OLD_BASE_URL = 'https://34011fe3b0053446a4427aa4c6db2804.r2.cloudflarestor
 const NEW_BASE_URL = 'https://pub-6585cd1b94c64eda8c0f093d2f9c7c5f.r2.dev';
 
 async function main() {
-  console.log('=== Update Hairstyle URLs ===\n');
+  console.log('=== Update Brow Tint URLs ===\n');
 
   if (!DATABASE_URL) {
     console.error('DATABASE_URL is not set');
@@ -45,13 +45,13 @@ async function main() {
   console.log(`With: ${NEW_BASE_URL}\n`);
 
   // Check sample URLs first
-  const sample = await db.run(sql`SELECT image_url, thumbnail_url FROM hairstyle LIMIT 1`);
+  const sample = await db.run(sql`SELECT image_url, thumbnail_url FROM brow_tint LIMIT 1`);
   console.log('Sample current URL:', JSON.stringify(sample.rows[0], null, 2));
   console.log();
 
   // Update imageUrl
   const result1 = await db.run(sql`
-    UPDATE hairstyle 
+    UPDATE brow_tint
     SET image_url = REPLACE(image_url, ${OLD_BASE_URL}, ${NEW_BASE_URL})
     WHERE image_url LIKE ${OLD_BASE_URL + '%'}
   `);
@@ -59,7 +59,7 @@ async function main() {
 
   // Update thumbnailUrl
   const result2 = await db.run(sql`
-    UPDATE hairstyle 
+    UPDATE brow_tint
     SET thumbnail_url = REPLACE(thumbnail_url, ${OLD_BASE_URL}, ${NEW_BASE_URL})
     WHERE thumbnail_url LIKE ${OLD_BASE_URL + '%'}
   `);

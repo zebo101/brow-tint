@@ -76,6 +76,9 @@ const nextConfig = {
       '@/config/db/schema': schemaAliasTarget,
     },
   },
+  serverActions: {
+    bodySizeLimit: '10mb',
+  },
   experimental: {
     turbopackFileSystemCacheForDev: true,
     // Disable mdxRs for Vercel deployment compatibility with fumadocs-mdx

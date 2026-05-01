@@ -1,0 +1,138 @@
+{
+  "header": {
+    "lookbook": "Lookbook",
+    "how_it_works": "So funktioniert's",
+    "credits": "{n} Credits"
+  },
+  "stepper": {
+    "step1": "Foto hochladen",
+    "step2": "Style wählen",
+    "step3": "Vorschau & speichern"
+  },
+  "step1": {
+    "eyebrow": "Schritt 1 · Dein Foto",
+    "title": "Beginne mit einem klaren, frontalen Foto.",
+    "subtitle": "Weiches Licht, keine Brille, Augenbrauen vollständig sichtbar. Dein Foto wird nur zum Rendern deiner Vorschau verwendet und kurz danach automatisch gelöscht.",
+    "tips": [
+      "Blick zur Kamera, neutraler Gesichtsausdruck",
+      "Haare aus der Brauenpartie zurückstreichen",
+      "JPG oder PNG, bis zu 10 MB"
+    ],
+    "upload_btn": "Foto hochladen",
+    "or_sample": "oder ein Beispiel wählen",
+    "samples": {
+      "light": "Beispiel · Hell",
+      "medium": "Beispiel · Mittel",
+      "deep": "Beispiel · Dunkel"
+    },
+    "drop_text": "Foto hier ablegen",
+    "drop_sub": "oder klicken zum Durchsuchen",
+    "continue": "Weiter zu den Styles"
+  },
+  "step2": {
+    "title": "Wähle deinen Brow-Look",
+    "subtitle": "{shown} von {total} kuratierten Styles · tippe einen an, um ihn auf deinem Foto zu sehen",
+    "your_photo": "Dein Foto",
+    "search": "Styles suchen…",
+    "filters": {
+      "shade": "Farbe",
+      "shape": "Form",
+      "intensity": "Intensität",
+      "sort": "Sortieren"
+    },
+    "sort_options": {
+      "curated": "Kuratiert",
+      "popular": "Beliebt",
+      "trending": "Im Trend"
+    },
+    "clear_all": "Alle zurücksetzen",
+    "empty": "Keine Styles passen zu diesen Filtern.",
+    "select": "Diesen Style wählen",
+    "premium": "Premium",
+    "credits_label": "{n} Credits"
+  },
+  "step3": {
+    "eyebrow": "Schritt 3 · Deine Vorschau",
+    "drag_hint": "Ziehe den Trenner, um Vorher und Nachher zu vergleichen.",
+    "rendering": "Dein neuer Look wird gerendert…",
+    "rendering_sub": "{style} wird auf deine Züge übertragen",
+    "before": "Vorher",
+    "after": "Nachher",
+    "back": "Anderen Style ausprobieren",
+    "regenerate": "Neu generieren",
+    "download": "Herunterladen",
+    "details": {
+      "title": "Look-Details",
+      "shade": "Farbe",
+      "shape": "Form",
+      "intensity": "Intensität",
+      "tags": "Tags"
+    },
+    "variation": {
+      "title": "Variation ausprobieren",
+      "subtitle": "Passe die Intensität an, um das Ergebnis zu verfeinern."
+    },
+    "reference": {
+      "title": "Möchtest du ein echtes Ergebnis?",
+      "body": "Nutze diesen Look als Referenz beim nächsten Salonbesuch. Wir erstellen eine druckbare Karte."
+    }
+  },
+  "buttons": {
+    "generate": "Generieren · {credits} Credits",
+    "no_credits": "Credits aufladen, um zu generieren",
+    "signin": "Anmelden zum Generieren"
+  },
+  "studio": {
+    "title": "AI Brow Tint Studio",
+    "subtitle": "Lade ein Foto hoch, wähle einen Look und sieh dir das Ergebnis nebeneinander an.",
+    "checking": "Konto wird geprüft...",
+    "left": {
+      "photo_title": "Dein Foto",
+      "photo_tips": "Foto-Tipps",
+      "photo_drop": "Foto hier ablegen",
+      "photo_drop_sub": "oder klicken zum Durchsuchen — JPG oder PNG, bis zu 10 MB",
+      "photo_sample_label": "Oder ein Beispiel ausprobieren",
+      "photo_change": "Foto ändern",
+      "photo_clear": "Foto entfernen",
+      "uploading": "Wird hochgeladen...",
+      "resizing": "Bild wird vorbereitet...",
+      "uploading_size": "{kb} KB werden hochgeladen...",
+      "style_title": "Look auswählen",
+      "style_all": "Alle {count} Styles",
+      "style_selected": "Ausgewählt: {name}"
+    },
+    "right": {
+      "empty_title": "Wähle einen Look, um die Vorschau zu starten",
+      "empty_subtitle": "Tippe einen Style unten an — wir zeigen ihn auf deinem Foto, sobald du eines hochlädst.",
+      "empty_browse_all": "Alle Brow-Tint-Styles durchsuchen",
+      "empty_style_picked_title": "{name} bereit — jetzt dein Foto hochladen",
+      "empty_style_picked_subtitle": "Lege links ein Foto ab, um diesen Look in Sekunden zu rendern.",
+      "empty_photo_only": "Wähle nun links einen Brow-Look →",
+      "ready_title": "Bereit zur Vorschau von {name}",
+      "ready_subtitle": "Tippe auf Generieren, um deinen neuen Look zu rendern.",
+      "generating_title": "Dein neuer Look wird gerendert...",
+      "generating_subtitle": "{style} wird auf deine Züge übertragen · meist 8 bis 15 Sekunden.",
+      "try_another": "Anderen ausprobieren",
+      "failed_title": "Generierung fehlgeschlagen",
+      "failed_subtitle": "Etwas ist schiefgelaufen. Versuche es erneut oder wähle ein anderes Foto.",
+      "failed_retry": "Erneut versuchen",
+      "success_orphan": "Ergebnis bereit — lade dein Foto erneut hoch, um nebeneinander zu vergleichen."
+    },
+    "cta": {
+      "need_photo": "Foto hinzufügen, um zu starten",
+      "need_style": "Brow-Look auswählen",
+      "generating": "Wird generiert..."
+    },
+    "drawer": {
+      "title": "Alle Brow-Tint-Styles",
+      "subtitle": "Tippe auf eine Kachel zur Vorschau und übernimm dann deine Auswahl.",
+      "search": "Nach Name, Farbe oder Form suchen…",
+      "all_shades": "Alle Farben",
+      "empty": "Keine Styles passen zu diesen Filtern.",
+      "selected_label": "Ausgewählt:",
+      "select_hint": "Tippe auf eine Kachel, um deinen Look zu sehen.",
+      "cancel": "Abbrechen",
+      "apply": "Diesen Style verwenden"
+    }
+  }
+}

@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "Galeria Brow Tint - Antes e Depois da Tintura de Sobrancelhas com IA",
-    "description": "Veja transformações incríveis de antes e depois da tintura de sobrancelhas criadas com o gerador de Brow Tint com IA"
+    "description": "Veja transformações incríveis de antes e depois da tintura de sobrancelhas criadas com o gerador de Brow Tint com IA",
+    "keywords": "galeria de tinta para sobrancelhas, tinta sobrancelhas antes e depois, exemplos de tinta IA, prévia de tinta sobrancelhas, tinta profissional sobrancelhas, gel para sobrancelhas"
   },
   "page": {
     "title": "Galeria Brow Tint",
@@ -51,7 +52,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
+              "src": "/imgs/cases/1.jpg",
               "alt": "Antes e depois da tintura taupe suave de sobrancelhas"
             },
             "group": "short-hair"
@@ -62,7 +63,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
+              "src": "/imgs/cases/2.jpg",
               "alt": "Tintura de sobrancelhas espresso escuro"
             },
             "group": "long-hair"
@@ -73,7 +74,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/3.png",
+              "src": "/imgs/cases/3.jpg",
               "alt": "Resultado de laminação e tintura de sobrancelhas"
             },
             "group": "color-change"
@@ -84,7 +85,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/4.png",
+              "src": "/imgs/cases/4.jpg",
               "alt": "Transformação de tintura profissional de sobrancelhas"
             },
             "group": "classic"
@@ -95,7 +96,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
+              "src": "/imgs/cases/5.jpg",
               "alt": "Visual com gel de sobrancelhas colorido"
             },
             "group": "men-styles"
@@ -106,38 +107,16 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
+              "src": "/imgs/cases/7.jpg",
               "alt": "Resultado de tintura de cílios e sobrancelhas"
             },
             "group": "women-styles"
-          },
-          {
-            "title": "Brow Code Tint",
-            "description": "Combinação precisa de fórmula brow code tint para sua cor de sobrancelha única",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Combinação de brow code tint"
-            },
-            "group": "trendy"
-          },
-          {
-            "title": "Melhor Tom de Tintura de Sobrancelhas",
-            "description": "Tom perfeito de tintura de sobrancelhas combinado por IA e personalizado para seu tom de pele e cor de cabelo",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "Melhor combinação de tom de tintura de sobrancelhas"
-            },
-            "group": "short-hair"
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Navegue pela Biblioteca Completa de Estilos de Brow Tint",
         "description": "Percorra nossos estilos de tintura de sobrancelhas com IA organizados por tipo. Clique em qualquer visual para visualizar na sua própria foto.",
         "limit": 12,
@@ -169,33 +148,6 @@
           }
         ],
         "tip": "Todas as pré-visualizações são gratuitas. Novos estilos de tintura de sobrancelhas adicionados regularmente."
-      },
-      "video_demo": {
-        "block": "features-accordion",
-        "id": "video_demo",
-        "label": "Demonstração em Vídeo",
-        "title": "Veja o Brow Tint em Ação",
-        "description": "Assista transformações reais de antes e depois de tintura de sobrancelhas — do envio à pré-visualização em segundos.",
-        "items": [
-          {
-            "title": "Visualize Vários Tons de Tintura de Sobrancelhas Instantaneamente",
-            "description": "Envie uma foto e visualize vários tons e estilos de tintura de sobrancelhas lado a lado para encontrar sua combinação perfeita.",
-            "icon": "RiPlayCircleLine",
-            "image": {
-              "src": "/video/v1.mp4",
-              "alt": "Vídeo de demonstração de pré-visualização de tintura de sobrancelhas com IA"
-            }
-          },
-          {
-            "title": "Veja Textura e Cobertura Realistas de Tintura de Sobrancelhas",
-            "description": "Visualize como diferentes técnicas de tintura — de gel de sobrancelhas colorido a tintura profissional de sobrancelhas — ficam nas suas sobrancelhas reais antes de se comprometer.",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "/video/v2.mp4",
-              "alt": "Vídeo de pré-visualização de textura e cobertura de tintura de sobrancelhas"
-            }
-          }
-        ]
       },
       "usage": {
         "block": "features-step",
@@ -280,8 +232,6 @@
     },
     "show_sections": [
       "showcases",
-      "hairstyle_gallery",
-      "video_demo",
       "usage",
       "faq",
       "cta"

@@ -36,12 +36,15 @@ const defaultDbMigrationsOut = isSqliteLikeProvider
 
 export const envConfigs: ConfigMap = {
   app_url: process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
-  app_name: process.env.NEXT_PUBLIC_APP_NAME ?? 'ShipAny App',
+  app_name: process.env.NEXT_PUBLIC_APP_NAME ?? 'Brow Tint',
   app_description: process.env.NEXT_PUBLIC_APP_DESCRIPTION ?? '',
   app_logo: process.env.NEXT_PUBLIC_APP_LOGO ?? '/logo.png',
   app_favicon: process.env.NEXT_PUBLIC_APP_FAVICON ?? '/favicon.ico',
+  // TODO: replace with a properly designed 1200×630 OG image. Current default
+  // is the latest branded landing screenshot (≈ 2546×1439, 1.77:1). Social
+  // platforms will crop/letterbox slightly until the canonical OG asset ships.
   app_preview_image:
-    process.env.NEXT_PUBLIC_APP_PREVIEW_IMAGE ?? '/preview.png',
+    process.env.NEXT_PUBLIC_APP_PREVIEW_IMAGE ?? '/imgs/features/landingpage.jpg',
   theme: process.env.NEXT_PUBLIC_THEME ?? 'default',
   appearance: process.env.NEXT_PUBLIC_APPEARANCE ?? 'system',
   locale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE ?? 'en',

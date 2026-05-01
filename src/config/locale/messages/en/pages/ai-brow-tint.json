@@ -1,0 +1,138 @@
+{
+  "header": {
+    "lookbook": "Lookbook",
+    "how_it_works": "How it works",
+    "credits": "{n} credits"
+  },
+  "stepper": {
+    "step1": "Upload photo",
+    "step2": "Choose style",
+    "step3": "Preview & save"
+  },
+  "step1": {
+    "eyebrow": "Step 1 · Your photo",
+    "title": "Start with a clear, front-facing photo.",
+    "subtitle": "Soft lighting, no glasses, brows fully visible. Your photo is used only to render your preview and is auto-deleted shortly after.",
+    "tips": [
+      "Face camera, neutral expression",
+      "Pull hair back from the brow line",
+      "JPG or PNG, up to 10 MB"
+    ],
+    "upload_btn": "Upload photo",
+    "or_sample": "or pick a sample",
+    "samples": {
+      "light": "Sample · Light",
+      "medium": "Sample · Medium",
+      "deep": "Sample · Deep"
+    },
+    "drop_text": "Drop your photo here",
+    "drop_sub": "or click to browse",
+    "continue": "Continue to styles"
+  },
+  "step2": {
+    "title": "Choose your brow look",
+    "subtitle": "{shown} of {total} curated styles · tap one to preview on your photo",
+    "your_photo": "Your photo",
+    "search": "Search styles…",
+    "filters": {
+      "shade": "Shade",
+      "shape": "Shape",
+      "intensity": "Intensity",
+      "sort": "Sort"
+    },
+    "sort_options": {
+      "curated": "Curated",
+      "popular": "Popular",
+      "trending": "Trending"
+    },
+    "clear_all": "Clear all",
+    "empty": "No styles match these filters.",
+    "select": "Select this style",
+    "premium": "Premium",
+    "credits_label": "{n} credits"
+  },
+  "step3": {
+    "eyebrow": "Step 3 · Your preview",
+    "drag_hint": "Drag the divider to compare before & after.",
+    "rendering": "Rendering your new look…",
+    "rendering_sub": "Mapping {style} to your features",
+    "before": "Before",
+    "after": "After",
+    "back": "Try another style",
+    "regenerate": "Regenerate",
+    "download": "Download",
+    "details": {
+      "title": "Look details",
+      "shade": "Shade",
+      "shape": "Shape",
+      "intensity": "Intensity",
+      "tags": "Tags"
+    },
+    "variation": {
+      "title": "Try a variation",
+      "subtitle": "Adjust intensity to refine the result."
+    },
+    "reference": {
+      "title": "Want a real-world result?",
+      "body": "Use this look as a reference at your next salon visit. We'll generate a printable card."
+    }
+  },
+  "buttons": {
+    "generate": "Generate · {credits} credits",
+    "no_credits": "Get credits to generate",
+    "signin": "Sign in to generate"
+  },
+  "studio": {
+    "title": "AI Brow Tint Studio",
+    "subtitle": "Upload a photo, pick a look, and see the result side-by-side.",
+    "checking": "Checking account...",
+    "left": {
+      "photo_title": "Your photo",
+      "photo_tips": "Photo tips",
+      "photo_drop": "Drop your photo here",
+      "photo_drop_sub": "or click to browse — JPG or PNG, up to 10 MB",
+      "photo_sample_label": "Or try a sample",
+      "photo_change": "Change photo",
+      "photo_clear": "Remove photo",
+      "uploading": "Uploading...",
+      "resizing": "Preparing image...",
+      "uploading_size": "Uploading {kb} KB...",
+      "style_title": "Choose a look",
+      "style_all": "All {count} styles",
+      "style_selected": "Selected: {name}"
+    },
+    "right": {
+      "empty_title": "Pick a look to start your preview",
+      "empty_subtitle": "Tap any style below — we'll show it on your photo once you upload one.",
+      "empty_browse_all": "Browse all brow tint styles",
+      "empty_style_picked_title": "{name} ready — now upload your photo",
+      "empty_style_picked_subtitle": "Drop a photo on the left to render this look in seconds.",
+      "empty_photo_only": "Now choose a brow look from the left →",
+      "ready_title": "Ready to preview {name}",
+      "ready_subtitle": "Tap Generate to render your new look.",
+      "generating_title": "Rendering your new look...",
+      "generating_subtitle": "Mapping {style} to your features · usually 8 to 15 seconds.",
+      "try_another": "Try another",
+      "failed_title": "Generation failed",
+      "failed_subtitle": "Something went wrong. Try again or pick a different photo.",
+      "failed_retry": "Try again",
+      "success_orphan": "Result ready — re-upload your photo to compare side-by-side."
+    },
+    "cta": {
+      "need_photo": "Add your photo to start",
+      "need_style": "Choose a brow look",
+      "generating": "Generating..."
+    },
+    "drawer": {
+      "title": "All brow tint styles",
+      "subtitle": "Tap a tile to preview, then apply your pick.",
+      "search": "Search by name, shade, or shape...",
+      "all_shades": "All shades",
+      "empty": "No styles match these filters.",
+      "selected_label": "Selected:",
+      "select_hint": "Tap a tile to preview your look.",
+      "cancel": "Cancel",
+      "apply": "Use this style"
+    }
+  }
+}

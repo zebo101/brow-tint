@@ -1,8 +1,13 @@
 {
+  "metadata": {
+    "title": "Brow Tint — Estúdio de Tinta para Sobrancelhas IA · em Segundos",
+    "description": "Envie uma foto, escolha o tom e veja suas novas sobrancelhas lado a lado. Gerador gratuito de tinta com IA, estilos selecionados e prévia tipo salão.",
+    "keywords": "tinta sobrancelhas, IA tinta sobrancelhas, gerador tinta sobrancelhas, tinta virtual sobrancelhas, estúdio tinta sobrancelhas"
+  },
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "cases",
       "introduce",
       "benefits",
       "usage",
@@ -10,8 +15,7 @@
       "stats",
       "testimonials",
       "faq",
-      "cta",
-      "subscribe"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -24,7 +28,7 @@
           {
             "title": "Experimente Brow Tint Grátis",
             "icon": "Zap",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "variant": "default"
           },
@@ -43,11 +47,72 @@
           "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/hero-1.png",
+          "src": "/imgs/bg/hero-1.jpg",
           "alt": "Brow Tint Background - Professional Brow Tinting Preview"
         },
         "powered_by": "Desenvolvido com GPT Image 2",
-        "editorial_labels": ["Pré-visualizar", "Transformar", "Definir"]
+        "editorial_labels": [
+          "Pré-visualizar",
+          "Transformar",
+          "Definir"
+        ]
+      },
+      "cases": {
+        "block": "cases-carousel",
+        "id": "cases",
+        "title": "Casos reais de tintura de sobrancelhas",
+        "description": "Resultados reais de antes e depois de quem pré-visualizou o look com Brow Tint.",
+        "items": [
+          {
+            "name": "Henna Suave",
+            "image": {
+              "src": "/imgs/cases/1.jpg",
+              "alt": "Caso de tintura de sobrancelhas Henna Suave"
+            }
+          },
+          {
+            "name": "Espresso Intenso",
+            "image": {
+              "src": "/imgs/cases/2.jpg",
+              "alt": "Caso de tintura de sobrancelhas Espresso Intenso"
+            }
+          },
+          {
+            "name": "Laminação de Sobrancelhas",
+            "image": {
+              "src": "/imgs/cases/3.jpg",
+              "alt": "Caso de laminação de sobrancelhas"
+            }
+          },
+          {
+            "name": "Cinza Frio",
+            "image": {
+              "src": "/imgs/cases/4.jpg",
+              "alt": "Caso de tintura de sobrancelhas Cinza Frio"
+            }
+          },
+          {
+            "name": "Auburn Quente",
+            "image": {
+              "src": "/imgs/cases/5.jpg",
+              "alt": "Caso de tintura de sobrancelhas Auburn Quente"
+            }
+          },
+          {
+            "name": "Gel para Sobrancelhas",
+            "image": {
+              "src": "/imgs/cases/6.jpg",
+              "alt": "Caso de gel tintado para sobrancelhas"
+            }
+          },
+          {
+            "name": "Cílios e Sobrancelhas",
+            "image": {
+              "src": "/imgs/cases/7.jpg",
+              "alt": "Caso de tintura de cílios e sobrancelhas"
+            }
+          }
+        ]
       },
       "logos": {
         "id": "logos",
@@ -97,7 +162,7 @@
         "label": "Introdução",
         "description": "Brow Tint é um gerador gratuito de tintura de sobrancelhas com IA que permite pré-visualizar resultados profissionais de tintura de sobrancelhas antes de se comprometer. Seja para experimentar tons de gel tintado para sobrancelhas, explorar combinações de laminação e tintura de sobrancelhas ou comparar estilos de tintura de cílios e sobrancelhas, nossa IA GPT Image 2 cria pré-visualizações fotorrealistas adaptadas ao formato do seu rosto e tom de pele.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Gerador de IA Brow Tint - Pré-visualize Tintura de Sobrancelhas Online Grátis"
         },
         "items": [
@@ -345,7 +410,7 @@
         "id": "faq",
         "title": "Perguntas Frequentes sobre o Brow Tint",
         "description": "Tem dúvidas sobre nosso gerador de brow tint com IA? Aqui estão as respostas para as perguntas mais comuns sobre pré-visualizações de tintura de sobrancelhas.",
-        "tip": "Não encontrou o que procura? Entre em contato com nossa <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
+        "tip": "Não encontrou o que procura? Entre em contato com nossa <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
         "items": [
           {
             "question": "O que é Brow Tint e como o gerador de brow tint com IA funciona?",
@@ -392,7 +457,7 @@
         "buttons": [
           {
             "title": "Experimente Brow Tint Grátis",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "icon": "Zap"
           }

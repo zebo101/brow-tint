@@ -1,9 +1,26 @@
 @import 'tailwindcss';
 @import './theme.css';
+@import '@heroui/styles';
+@import '@heroui-pro/react/css';
 
 @custom-variant dark (&:is(.dark *));
 
 @plugin 'tailwindcss-animate';
+
+/* Brow Tint design tokens */
+:root {
+  --bt-ink: #2A1F1C;
+  --bt-ink-2: #58463F;
+  --bt-ink-3: #8B7770;
+  --bt-rose: #D89A93;
+  --bt-rose-deep: #B86F66;
+  --bt-gold: #B89868;
+  --bt-bg-tint: #F5E8E4;
+  --bt-surface: #FFFFFF;
+  --bt-line: rgba(58, 42, 38, 0.08);
+  --bt-line-strong: rgba(58, 42, 38, 0.16);
+  --bt-warm-gradient: radial-gradient(ellipse at 50% 0%, #F5E8E4 0%, #FDF8F6 50%, #FFFFFF 100%);
+}
 
 @layer base {
   * {
@@ -169,6 +186,16 @@ pre {
     100% {
       background-position: 200%;
     }
+  }
+}
+
+/* 彩虹流动指示器 — pricing toggle */
+@keyframes rainbow-flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-75%);
   }
 }
 

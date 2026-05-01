@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "价格",
-    "description": "选择适合您的方案"
+    "title": "Brow Tint 价格 — AI 眉部染色积分与套餐",
+    "description": "购买积分生成 AI 眉部染色预览。对比方案、找到最合适的眉部染色套餐，几秒钟开始尝试。",
+    "keywords": "眉部染色价格, AI 眉部染色积分, 眉部染色套餐, 眉部染色生成器价格, 眉染色费用, AI 眉部染色订阅"
   },
   "page": {
     "title": "价格",
@@ -9,112 +10,259 @@
       "pricing": {
         "id": "pricing",
         "sr_only_title": "Brow Tint 价格",
-        "title": "价格",
-        "description": "选择最适合您 AI 眉色生成需求的完美方案。",
+        "title": "选择最适合您的方案",
+        "description": "每次 AI 眉部染色生成消耗 1 个积分。",
         "groups": [
           {
-            "name": "one-time",
-            "title": "按需付费"
-          },
-          {
             "name": "monthly",
-            "title": "包月"
+            "title": "月付"
           },
           {
             "name": "yearly",
-            "title": "包年",
-            "label": "立省 23%"
+            "title": "年付（更省）",
+            "label": "优惠"
+          },
+          {
+            "name": "one-time",
+            "title": "积分充值"
           }
         ],
         "items": [
           {
-            "title": "积分套餐",
-            "description": "随时开始，按需使用。一次性付款",
+            "title": "免费版",
+            "description": "免费体验 Brow Tint。",
             "features_title": "包含",
-            "features": [
-              "300 积分，有效期 1 年",
-              "文本生成图像和图像生成图像",
-              "使用 Nano Banana 2 AI 模型生成高质量图像",
-              "免费下载生成的图像"
-            ],
-            "interval": "one-time",
-            "amount": 2990,
+            "features": ["核心生成功能", "标准队列"],
+            "interval": "month",
+            "amount": 0,
             "currency": "USD",
-            "price": "$29.9",
-            "original_price": "$39.9",
-            "unit": "/ 300 积分",
+            "price": "$0",
+            "unit": "",
             "is_featured": false,
-            "tip": "",
+            "tip": "免费开始，可随时升级。",
             "button": {
-              "title": "购买积分",
+              "title": "当前方案",
               "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "icon": ""
             },
-            "product_id": "credits-package",
-            "product_name": "积分套餐",
-            "credits": 300,
-            "valid_days": 365,
-            "group": "one-time"
+            "product_id": "free-monthly",
+            "product_name": "免费版",
+            "credits": 0,
+            "valid_days": 30,
+            "group": "monthly"
           },
           {
-            "title": "入门版",
-            "description": "每月自动续费获取积分。随时可取消订阅！",
+            "title": "基础版",
+            "description": "适合常规生成需求。",
+            "label": "热门",
             "features_title": "包含",
             "features": [
-              "300 积分，有效期 1 个月",
-              "文本生成图像和图像生成图像",
-              "使用 Nano Banana 2 AI 模型生成高质量图像",
-              "免费下载生成的图像"
+              "每月 200 积分",
+              "积分按月刷新",
+              "优先队列",
+              "去除水印"
             ],
             "interval": "month",
-            "amount": 2490,
+            "amount": 1990,
             "currency": "USD",
-            "price": "$24.9",
-            "original_price": "$36.9",
+            "price": "$19.9",
             "unit": "/ 月",
-            "is_featured": false,
-            "tip": "",
+            "is_featured": true,
+            "tip": "随时可取消。",
             "button": {
-              "title": "订阅套餐",
+              "title": "立即订阅",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
-            "product_id": "starter-monthly",
-            "product_name": "入门版",
-            "credits": 300,
+            "product_id": "basic-monthly",
+            "product_name": "基础月付",
+            "credits": 200,
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "入门版"
+            "plan_name": "基础版"
           },
           {
             "title": "高级版",
-            "description": "约 $19.2 / 月，相比月付节省 23%。随时可取消订阅！",
+            "description": "适合高强度使用与重度用户。",
             "features_title": "包含",
             "features": [
-              "4000 积分，有效期 1 年",
-              "文本生成图像和图像生成图像",
-              "使用 Nano Banana 2 AI 模型生成高质量图像",
-              "免费下载生成的图像"
+              "每月 300 积分",
+              "积分按月刷新",
+              "最高优先队列",
+              "去除水印"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/ 月",
+            "is_featured": false,
+            "tip": "随时可取消。",
+            "button": {
+              "title": "立即订阅",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-monthly",
+            "product_name": "高级月付",
+            "credits": 300,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "高级版"
+          },
+          {
+            "title": "免费版",
+            "description": "免费体验 Brow Tint。",
+            "features_title": "包含",
+            "features": ["核心生成功能", "标准队列"],
+            "interval": "year",
+            "amount": 0,
+            "currency": "USD",
+            "price": "$0",
+            "unit": "",
+            "is_featured": false,
+            "tip": "免费开始，可随时升级。",
+            "button": {
+              "title": "当前方案",
+              "url": "/#pricing",
+              "icon": ""
+            },
+            "product_id": "free-yearly",
+            "product_name": "免费版",
+            "credits": 0,
+            "valid_days": 365,
+            "group": "yearly"
+          },
+          {
+            "title": "基础版",
+            "description": "选择年付，全年积分一次性到账。",
+            "label": "优惠",
+            "features_title": "包含",
+            "features": [
+              "每年 2400 积分",
+              "订阅后一次性到账",
+              "优先队列",
+              "去除水印"
             ],
             "interval": "year",
-            "amount": 22990,
+            "amount": 19080,
             "currency": "USD",
-            "price": "$229.9",
-            "original_price": "$299.9",
-            "unit": "/ 年",
-            "is_featured": true,
-            "tip": "",
+            "price": "$15.9",
+            "original_price": "$19.9",
+            "unit": "/ 月",
+            "is_featured": false,
+            "tip": "按年计费，积分一次性到账。",
             "button": {
-              "title": "订阅套餐",
+              "title": "立即订阅",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "基础年付",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "基础年付"
+          },
+          {
+            "title": "高级版",
+            "description": "大量使用的最佳年付方案，全年积分一次性到账。",
+            "features_title": "包含",
+            "features": [
+              "每年 3600 积分",
+              "订阅后一次性到账",
+              "最高优先队列",
+              "去除水印"
+            ],
+            "interval": "year",
+            "amount": 31080,
+            "currency": "USD",
+            "price": "$25.9",
+            "original_price": "$29.9",
+            "unit": "/ 月",
+            "is_featured": false,
+            "tip": "按年计费，积分一次性到账。",
+            "button": {
+              "title": "立即订阅",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "高级版",
-            "credits": 4000,
+            "product_name": "高级年付",
+            "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "高级版"
+            "plan_name": "高级年付"
+          },
+          {
+            "title": "100 积分充值",
+            "description": "随时补充积分。",
+            "features_title": "包含",
+            "features": ["100 积分", "积分永不过期"],
+            "interval": "one-time",
+            "amount": 1290,
+            "currency": "USD",
+            "price": "$12.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "一次性购买，积分永不过期。",
+            "button": {
+              "title": "立即充值",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-100",
+            "product_name": "100 积分充值",
+            "credits": 100,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "200 积分充值",
+            "description": "需要更多积分时随时购买。",
+            "label": "热门",
+            "features_title": "包含",
+            "features": ["200 积分", "积分永不过期"],
+            "interval": "one-time",
+            "amount": 2590,
+            "currency": "USD",
+            "price": "$25.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "一次性购买，积分永不过期。",
+            "button": {
+              "title": "立即充值",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-200",
+            "product_name": "200 积分充值",
+            "credits": 200,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "300 积分充值",
+            "description": "适合更大用量。",
+            "features_title": "包含",
+            "features": ["300 积分", "积分永不过期"],
+            "interval": "one-time",
+            "amount": 3890,
+            "currency": "USD",
+            "price": "$38.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "一次性购买，积分永不过期。",
+            "button": {
+              "title": "立即充值",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-300",
+            "product_name": "300 积分充值",
+            "credits": 300,
+            "valid_days": 0,
+            "group": "one-time"
           }
         ]
       }

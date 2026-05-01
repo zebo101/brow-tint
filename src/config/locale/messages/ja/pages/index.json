@@ -1,8 +1,13 @@
 {
+  "metadata": {
+    "title": "Brow Tint — AI ブロウティント スタジオ · 数秒でプレビュー",
+    "description": "写真をアップロードし、ティント色を選び、新しい眉を左右で比較。無料の AI ブロウティント ジェネレーターで、サロン品質のプレビューを瞬時に。",
+    "keywords": "ブロウティント, AI ブロウティント, ブロウティント ジェネレーター, 仮想ブロウティント, ブロウティント スタジオ, 眉ティント プレビュー"
+  },
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "cases",
       "introduce",
       "benefits",
       "usage",
@@ -10,8 +15,7 @@
       "stats",
       "testimonials",
       "faq",
-      "cta",
-      "subscribe"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -24,7 +28,7 @@
           {
             "title": "Brow Tintを無料で試す",
             "icon": "Zap",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "variant": "default"
           },
@@ -43,11 +47,72 @@
           "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/hero-1.png",
+          "src": "/imgs/bg/hero-1.jpg",
           "alt": "Brow Tint背景 - プロ仕様眉ティントプレビュー"
         },
         "powered_by": "GPT Image 2 搭載",
-        "editorial_labels": ["プレビュー", "トランスフォーム", "ディファイン"]
+        "editorial_labels": [
+          "プレビュー",
+          "トランスフォーム",
+          "ディファイン"
+        ]
+      },
+      "cases": {
+        "block": "cases-carousel",
+        "id": "cases",
+        "title": "リアルなブロウティント事例",
+        "description": "Brow Tintでプレビューしたユーザーのリアルなブロウティント・ビフォーアフター結果をご覧ください。",
+        "items": [
+          {
+            "name": "ソフトヘナ",
+            "image": {
+              "src": "/imgs/cases/1.jpg",
+              "alt": "ソフトヘナのブロウティント事例"
+            }
+          },
+          {
+            "name": "ボールドエスプレッソ",
+            "image": {
+              "src": "/imgs/cases/2.jpg",
+              "alt": "ボールドエスプレッソのブロウティント事例"
+            }
+          },
+          {
+            "name": "ブロウラミネーション",
+            "image": {
+              "src": "/imgs/cases/3.jpg",
+              "alt": "ブロウラミネーション事例"
+            }
+          },
+          {
+            "name": "クールアッシュ",
+            "image": {
+              "src": "/imgs/cases/4.jpg",
+              "alt": "クールアッシュのブロウティント事例"
+            }
+          },
+          {
+            "name": "ウォームオーバーン",
+            "image": {
+              "src": "/imgs/cases/5.jpg",
+              "alt": "ウォームオーバーンのブロウティント事例"
+            }
+          },
+          {
+            "name": "ティンテッドジェル",
+            "image": {
+              "src": "/imgs/cases/6.jpg",
+              "alt": "ティンテッドブロウジェル事例"
+            }
+          },
+          {
+            "name": "ラッシュ＆ブロウ",
+            "image": {
+              "src": "/imgs/cases/7.jpg",
+              "alt": "ラッシュ＆ブロウティント事例"
+            }
+          }
+        ]
       },
       "logos": {
         "id": "logos",
@@ -97,7 +162,7 @@
         "label": "サービス紹介",
         "description": "Brow Tintは、施術前にプロ仕様の眉ティント結果をプレビューできる無料オンラインAI眉ティントジェネレーターです。ティント眉ジェルのカラーを試したり、眉ラミネーション&ティントの組み合わせを探したり、ラッシュ&ブロウティントのスタイルを比較したりできます。GPT Image 2 AIが、あなたの顔の形と肌のトーンに合わせたフォトリアリスティックなプレビューを生成します。",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Brow Tint AIジェネレーター - 眉ティントオンラインプレビュー無料"
         },
         "items": [
@@ -345,7 +410,7 @@
         "id": "faq",
         "title": "Brow Tintに関するよくある質問",
         "description": "AI眉ティントジェネレーターに関するご質問はございますか？眉ティントプレビューに関する最も一般的な質問への回答をご覧ください。",
-        "tip": "お探しの情報が見つかりませんでしたか？<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>サポートチーム</a>までお問い合わせください",
+        "tip": "お探しの情報が見つかりませんでしたか？<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>サポートチーム</a>までお問い合わせください",
         "items": [
           {
             "question": "Brow Tintとは何ですか？AI眉ティントジェネレーターはどのように機能しますか？",
@@ -392,7 +457,7 @@
         "buttons": [
           {
             "title": "Brow Tintを無料で試す",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "icon": "Zap"
           }

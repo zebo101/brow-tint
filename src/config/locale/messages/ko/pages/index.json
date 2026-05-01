@@ -1,8 +1,13 @@
 {
+  "metadata": {
+    "title": "Brow Tint — AI 브로우 틴트 스튜디오 · 몇 초 만에 미리보기",
+    "description": "사진을 올리고 틴트 컬러를 골라 새로운 눈썹을 나란히 비교하세요. 무료 AI 브로우 틴트 생성기로 살롱 품질의 미리보기를 바로 확인.",
+    "keywords": "브로우 틴트, AI 브로우 틴트, 브로우 틴트 생성기, 가상 브로우 틴트, 브로우 틴트 스튜디오, 눈썹 틴트 미리보기"
+  },
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "cases",
       "introduce",
       "benefits",
       "usage",
@@ -10,8 +15,7 @@
       "stats",
       "testimonials",
       "faq",
-      "cta",
-      "subscribe"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -24,7 +28,7 @@
           {
             "title": "Brow Tint 무료 체험",
             "icon": "Zap",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "variant": "default"
           },
@@ -43,11 +47,72 @@
           "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/hero-1.png",
+          "src": "/imgs/bg/hero-1.jpg",
           "alt": "Brow Tint 배경 - 프로페셔널 눈썹 틴팅 미리보기"
         },
         "powered_by": "GPT Image 2 기반",
-        "editorial_labels": ["미리보기", "변환", "정의"]
+        "editorial_labels": [
+          "미리보기",
+          "변환",
+          "정의"
+        ]
+      },
+      "cases": {
+        "block": "cases-carousel",
+        "id": "cases",
+        "title": "리얼 브로우 틴트 케이스",
+        "description": "Brow Tint로 미리 본 사용자들의 실제 브로우 틴트 비포-애프터 결과를 확인해 보세요.",
+        "items": [
+          {
+            "name": "소프트 헤나",
+            "image": {
+              "src": "/imgs/cases/1.jpg",
+              "alt": "소프트 헤나 브로우 틴트 케이스"
+            }
+          },
+          {
+            "name": "볼드 에스프레소",
+            "image": {
+              "src": "/imgs/cases/2.jpg",
+              "alt": "볼드 에스프레소 브로우 틴트 케이스"
+            }
+          },
+          {
+            "name": "브로우 라미네이션",
+            "image": {
+              "src": "/imgs/cases/3.jpg",
+              "alt": "브로우 라미네이션 케이스"
+            }
+          },
+          {
+            "name": "쿨 애쉬",
+            "image": {
+              "src": "/imgs/cases/4.jpg",
+              "alt": "쿨 애쉬 브로우 틴트 케이스"
+            }
+          },
+          {
+            "name": "웜 어번",
+            "image": {
+              "src": "/imgs/cases/5.jpg",
+              "alt": "웜 어번 브로우 틴트 케이스"
+            }
+          },
+          {
+            "name": "틴티드 젤",
+            "image": {
+              "src": "/imgs/cases/6.jpg",
+              "alt": "틴티드 브로우 젤 케이스"
+            }
+          },
+          {
+            "name": "래쉬 & 브로우",
+            "image": {
+              "src": "/imgs/cases/7.jpg",
+              "alt": "래쉬 앤 브로우 틴트 케이스"
+            }
+          }
+        ]
       },
       "logos": {
         "id": "logos",
@@ -97,7 +162,7 @@
         "label": "소개",
         "description": "Brow Tint는 결정하기 전에 프로페셔널 눈썹 틴팅 결과를 미리 확인할 수 있는 무료 온라인 AI 눈썹 틴트 생성기입니다. 틴티드 브로우 젤 색조를 시도하거나, 눈썹 라미네이션 앤 틴트 조합을 탐색하거나, 래시 앤 브로우 틴트 스타일을 비교하고 싶을 때, 저희 GPT Image 2 AI가 얼굴형과 피부 톤에 맞춘 실사 같은 미리보기를 생성해 드립니다.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Brow Tint AI 생성기 - 무료로 온라인 눈썹 틴팅 미리보기"
         },
         "items": [
@@ -345,7 +410,7 @@
         "id": "faq",
         "title": "Brow Tint에 대해 자주 묻는 질문",
         "description": "AI 눈썹 틴트 생성기에 대한 궁금증이 있으신가요? 눈썹 틴팅 미리보기에 관한 가장 일반적인 질문에 대한 답변입니다.",
-        "tip": "찾으시는 내용이 없으신가요? <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>고객 지원팀</a>에 문의하세요",
+        "tip": "찾으시는 내용이 없으신가요? <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>고객 지원팀</a>에 문의하세요",
         "items": [
           {
             "question": "Brow Tint란 무엇이며 AI 눈썹 틴트 생성기는 어떻게 작동하나요?",
@@ -392,7 +457,7 @@
         "buttons": [
           {
             "title": "Brow Tint 무료 체험",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "icon": "Zap"
           }

@@ -85,10 +85,10 @@ export class GeminiProvider implements AIProvider {
       }
     }
 
-    // Add hairstyle reference image if provided
-    if (options && options.hairstyle_image) {
+    // Add brow tint reference image if provided
+    if (options && options.brow_tint_image) {
       try {
-        const imageResp = await fetch(options.hairstyle_image);
+        const imageResp = await fetch(options.brow_tint_image);
         if (imageResp.ok) {
           const arrayBuffer = await imageResp.arrayBuffer();
           const buffer = Buffer.from(arrayBuffer);
@@ -104,11 +104,11 @@ export class GeminiProvider implements AIProvider {
           });
         }
       } catch (e) {
-        console.error('failed to fetch hairstyle image', options.hairstyle_image, e);
+        console.error('failed to fetch brow tint reference image', options.brow_tint_image, e);
       }
     }
 
-    const { image_input, hairstyle_image, ...generationConfig } = options || {};
+    const { image_input, brow_tint_image, ...generationConfig } = options || {};
 
     const payload = {
       contents: {

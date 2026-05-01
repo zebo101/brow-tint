@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "KI Augenbrauen-Tint Generator Online | Augenbrauen-Tint Vorher Nachher | Brow Tint",
+    "title": "KI Augenbrauen-Tint Generator Online | Vorher und Nachher | Brow Tint",
     "description": "Testen Sie den KI Augenbrauen-Tint Generator online. Laden Sie ein Foto hoch, sehen Sie Augenbrauen-Tint Vorher-Nachher-Ergebnisse und laden Sie Ihr virtuelles Augenbrauen-Tint Ergebnis in Sekunden herunter.",
     "keywords": "ki augenbrauen tint generator, augenbrauen tint generator, augenbrauen tint vorher nachher, augenbrauen färben generator, virtueller augenbrauen tint, augenbrauen tint ausprobieren, KI augenbrauen tint, augenbrauen tint vorschau, augenbrauenfarbe generator, getöntes brauengel vorschau, brow lamination und tint, professionelles augenbrauen tint, bestes augenbrauen tint, bestes getöntes brauengel, wimpern und augenbrauen tint, brow code tint"
   },
@@ -15,7 +15,6 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -27,13 +26,13 @@
         "highlight_text": "KI Augenbrauen-Tint Generator",
         "description": "Sehen Sie sofort realistische Augenbrauen-Tint Vorher-Nachher-Ergebnisse mit dem KI Augenbrauen-Tint Generator. Laden Sie ein Foto hoch, probieren Sie Augenbrauen-Tint Styles aus und laden Sie Ihren neuen Brauen-Look herunter.",
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "KI Augenbrauen-Tint Generator Oberfläche",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "KI Augenbrauen-Tint Generator Oberfläche Dunkelmodus",
           "width": 1200,
           "height": 800
@@ -197,9 +196,9 @@
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Augenbrauen-Tint Styles nach Kategorie entdecken",
         "description": "Durchsuchen Sie KI-fähige Augenbrauen-Tint Styles und tippen Sie auf einen Look, um ihn an Ihrem eigenen Foto mit dem KI Augenbrauen-Tint Generator auszuprobieren.",
         "limit": 12,
@@ -297,7 +296,7 @@
         "id": "faq",
         "title": "Häufig gestellte Fragen",
         "description": "FAQs zum KI Augenbrauen-Tint Generator, Foto-Tipps und wie Sie die besten Augenbrauen-Tint Ergebnisse erzielen.",
-        "tip": "Finden Sie nicht, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
+        "tip": "Finden Sie nicht, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
         "items": [
           {
             "question": "Ist dieser KI Augenbrauen-Tint Generator kostenlos?",
@@ -384,7 +383,7 @@
       "history_empty": "Noch keine Verlaufbilder"
     },
     "form": {
-      "select_hairstyle_placeholder": "Klicken, um einen Augenbrauen-Tint Stil auszuwählen",
+      "select_brow_tint_placeholder": "Klicken, um einen Augenbrauen-Tint Stil auszuwählen",
       "provider": "KI-Anbieter",
       "model": "Augenbrauen-Tint Modell",
       "select_provider": "KI-Anbieter auswählen",
@@ -399,14 +398,23 @@
       "upload_hint": "Klicken oder ziehen zum Hochladen",
       "max_size": "Max"
     },
-    "generate": "Augenbrauen-Tint generieren",
-    "checking_account": "Konto wird überprüft...",
+    "steps": {
+      "upload": "Foto hochladen",
+      "describe": "Stil beschreiben",
+      "choose_style": "Stil wahlen",
+      "generate": "Generieren"
+    },
+    "generate": "Generieren ({credits} Credits)",
+    "generate_no_credits": "Credits kaufen zum Generieren",
+    "checking_account": "Konto wird gepruft...",
     "loading": "Laden...",
     "generating": "Ihr Augenbrauen-Tint wird generiert...",
-    "sign_in_to_generate": "Anmelden, um Augenbrauen-Tint Styles auszuprobieren",
-    "credits_cost": "Kostet {credits} Credits",
-    "credits_remaining": "{credits} Credits verbleibend",
+    "sign_in_to_generate": "Anmelden, um Augenbrauen-Tint-Stile auszuprobieren",
+    "credits_cost": "{credits} Credits Kosten",
+    "credits_remaining": "{credits} Credits",
+    "credits_insufficient": "Nicht genug Credits",
     "buy_credits": "Credits kaufen",
+    "try_another_style": "Anderen Stil ausprobieren",
     "progress": "Fortschritt",
     "generated_images": "Ihr neuer Brauen-Look",
     "preview_title": "KI Augenbrauen-Tint Vorschau",

@@ -1,8 +1,13 @@
 {
+  "metadata": {
+    "title": "Brow Tint — Studio Tinta Sopracciglia IA · In Pochi Secondi",
+    "description": "Carica una foto, scegli il colore e vedi le nuove sopracciglia fianco a fianco. Generatore gratuito di tinta sopracciglia IA con stili curati e anteprima da salone.",
+    "keywords": "tinta sopracciglia, IA tinta sopracciglia, generatore tinta sopracciglia, tinta virtuale sopracciglia, studio tinta sopracciglia"
+  },
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "cases",
       "introduce",
       "benefits",
       "usage",
@@ -10,8 +15,7 @@
       "stats",
       "testimonials",
       "faq",
-      "cta",
-      "subscribe"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -24,7 +28,7 @@
           {
             "title": "Prova Brow Tint Gratis",
             "icon": "Zap",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "variant": "default"
           },
@@ -43,11 +47,72 @@
           "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/hero-1.png",
+          "src": "/imgs/bg/hero-1.jpg",
           "alt": "Brow Tint Background - Professional Brow Tinting Preview"
         },
         "powered_by": "Basato su GPT Image 2",
-        "editorial_labels": ["Anteprima", "Trasformazione", "Definizione"]
+        "editorial_labels": [
+          "Anteprima",
+          "Trasformazione",
+          "Definizione"
+        ]
+      },
+      "cases": {
+        "block": "cases-carousel",
+        "id": "cases",
+        "title": "Casi reali di tinta sopracciglia",
+        "description": "Risultati reali prima e dopo di utenti che hanno visualizzato in anteprima il loro look con Brow Tint.",
+        "items": [
+          {
+            "name": "Henné Soffice",
+            "image": {
+              "src": "/imgs/cases/1.jpg",
+              "alt": "Caso tinta sopracciglia Henné Soffice"
+            }
+          },
+          {
+            "name": "Espresso Deciso",
+            "image": {
+              "src": "/imgs/cases/2.jpg",
+              "alt": "Caso tinta sopracciglia Espresso Deciso"
+            }
+          },
+          {
+            "name": "Laminazione Sopracciglia",
+            "image": {
+              "src": "/imgs/cases/3.jpg",
+              "alt": "Caso laminazione sopracciglia"
+            }
+          },
+          {
+            "name": "Cenere Fredda",
+            "image": {
+              "src": "/imgs/cases/4.jpg",
+              "alt": "Caso tinta sopracciglia Cenere Fredda"
+            }
+          },
+          {
+            "name": "Auburn Caldo",
+            "image": {
+              "src": "/imgs/cases/5.jpg",
+              "alt": "Caso tinta sopracciglia Auburn Caldo"
+            }
+          },
+          {
+            "name": "Gel Sopracciglia",
+            "image": {
+              "src": "/imgs/cases/6.jpg",
+              "alt": "Caso gel colorato per sopracciglia"
+            }
+          },
+          {
+            "name": "Ciglia e Sopracciglia",
+            "image": {
+              "src": "/imgs/cases/7.jpg",
+              "alt": "Caso tinta ciglia e sopracciglia"
+            }
+          }
+        ]
       },
       "logos": {
         "id": "logos",
@@ -97,7 +162,7 @@
         "label": "Introduzione",
         "description": "Brow Tint è un generatore AI gratuito di tinta per sopracciglia che ti permette di visualizzare risultati professionali prima di impegnarti. Che tu voglia provare le sfumature del gel colorato per sopracciglia, esplorare combinazioni di laminazione e tinta sopracciglia, o confrontare stili di tinta ciglia e sopracciglia, la nostra AI GPT Image 2 crea anteprime fotorealistiche personalizzate per la tua forma del viso e il tuo tono di pelle.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Brow Tint AI Generator - Preview Brow Tinting Online Free"
         },
         "items": [
@@ -345,7 +410,7 @@
         "id": "faq",
         "title": "Domande Frequenti su Brow Tint",
         "description": "Hai domande sul nostro generatore AI di tinta sopracciglia? Ecco le risposte alle domande più comuni sulle anteprime di tinta sopracciglia.",
-        "tip": "Non riesci a trovare quello che cerchi? Contatta il nostro <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
+        "tip": "Non riesci a trovare quello che cerchi? Contatta il nostro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
         "items": [
           {
             "question": "Cos'è Brow Tint e come funziona il generatore AI di tinta sopracciglia?",
@@ -392,7 +457,7 @@
         "buttons": [
           {
             "title": "Prova Brow Tint Gratis",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "icon": "Zap"
           }

@@ -15,7 +15,6 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -27,13 +26,13 @@
         "highlight_text": "AI眉ティントジェネレーター",
         "description": "AI眉ティントジェネレーターで、リアルな眉ティントのビフォーアフターを即座にプレビュー。写真をアップロードし、眉ティントスタイルを試して、新しい眉の仕上がりをダウンロード。",
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "AI眉ティントジェネレーターインターフェース",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "AI眉ティントジェネレーターインターフェース ダークモード",
           "width": 1200,
           "height": 800
@@ -197,9 +196,9 @@
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "カテゴリ別に眉ティントスタイルを探す",
         "description": "AI対応の眉ティントスタイルを閲覧し、気になるルックをタップしてAI眉ティントジェネレーターで自分の写真に試着。",
         "limit": 12,
@@ -297,7 +296,7 @@
         "id": "faq",
         "title": "よくある質問",
         "description": "AI眉ティントジェネレーター、写真のコツ、最適な眉ティント結果を得る方法についてのFAQ。",
-        "tip": "お探しのものが見つかりませんか？<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>サポートチーム</a>にお問い合わせください",
+        "tip": "お探しのものが見つかりませんか？<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>サポートチーム</a>にお問い合わせください",
         "items": [
           {
             "question": "このAI眉ティントジェネレーターは無料で使用できますか？",
@@ -384,7 +383,7 @@
       "history_empty": "履歴画像はまだありません"
     },
     "form": {
-      "select_hairstyle_placeholder": "クリックして眉ティントスタイルを選択",
+      "select_brow_tint_placeholder": "クリックして眉ティントスタイルを選択",
       "provider": "AIプロバイダー",
       "model": "眉ティントモデル",
       "select_provider": "AIプロバイダーを選択",
@@ -399,14 +398,23 @@
       "upload_hint": "クリックまたはドラッグで写真をアップロード",
       "max_size": "最大"
     },
-    "generate": "眉ティントを生成",
-    "checking_account": "アカウント確認中...",
+    "steps": {
+      "upload": "写真をアップロード",
+      "describe": "スタイルを説明",
+      "choose_style": "スタイルを選択",
+      "generate": "生成"
+    },
+    "generate": "生成 ({credits} クレジット)",
+    "generate_no_credits": "クレジットを取得して生成",
+    "checking_account": "アカウントを確認中...",
     "loading": "読み込み中...",
     "generating": "眉ティントを生成中...",
-    "sign_in_to_generate": "眉ティントスタイルを試すにはログイン",
-    "credits_cost": "{credits}クレジット消費",
-    "credits_remaining": "残り{credits}クレジット",
-    "buy_credits": "クレジット購入",
+    "sign_in_to_generate": "眉ティントスタイルを試すにはサインイン",
+    "credits_cost": "{credits} クレジット消費",
+    "credits_remaining": "{credits} クレジット",
+    "credits_insufficient": "クレジットが不足しています",
+    "buy_credits": "クレジットを購入",
+    "try_another_style": "別のスタイルを試す",
     "progress": "進行状況",
     "generated_images": "あなたの新しい眉ルック",
     "preview_title": "AI眉ティントプレビュー",

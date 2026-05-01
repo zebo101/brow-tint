@@ -15,7 +15,7 @@ export interface Setting {
   value?: string | string[] | boolean | number;
   group?: string;
   tab?: string;
-  attributes?: Record<string, any>;
+  attributes?: Record<string, unknown>;
 }
 
 export interface SettingGroup {
@@ -529,8 +529,9 @@ export async function getSettings() {
         rows: 6,
       },
       placeholder: `{
-  "starter": "promo_xxx",
-  "standard-monthly": "promo_xxx",
+  "basic-monthly": "promo_xxx",
+  "premium-monthly": "promo_xxx",
+  "basic-yearly": "promo_xxx",
   "premium-yearly": "promo_xxx"
 }`,
       group: 'stripe',
@@ -591,9 +592,13 @@ export async function getSettings() {
         rows: 6,
       },
       placeholder: `{
-  "starter": "prod_xxx",
-  "standard-monthly": "prod_xxx",
-  "premium-yearly": "prod_xxx"
+  "basic-monthly": "prod_xxx",
+  "premium-monthly": "prod_xxx",
+  "basic-yearly": "prod_xxx",
+  "premium-yearly": "prod_xxx",
+  "topup-100": "prod_xxx",
+  "topup-200": "prod_xxx",
+  "topup-300": "prod_xxx"
 }`,
       group: 'creem',
       tab: 'payment',

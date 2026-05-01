@@ -45,19 +45,19 @@ export default async function AiTasksPage({
         title: t('fields.prompt'),
         type: 'copy',
         callback: (item: AITask) => {
-          // Hide system prompt and hairstyle suffix from display
+          // Hide system prompt and brow tint suffix from display
           let prompt = item.prompt || '';
-          
+
           // Remove system prompt (marked with SYSTEM_PROMPT_MARKER)
           const systemPromptIndex = prompt.indexOf(SYSTEM_PROMPT_MARKER);
           if (systemPromptIndex > 0) {
             prompt = prompt.substring(0, systemPromptIndex).trim();
           }
-          
-          // Remove hairstyle suffix
-          const hairstyleIndex = prompt.indexOf(' hairstyle:');
-          if (hairstyleIndex > 0) {
-            prompt = prompt.substring(0, hairstyleIndex).trim();
+
+          // Remove brow tint suffix
+          const browTintIndex = prompt.indexOf(' brow tint:');
+          if (browTintIndex > 0) {
+            prompt = prompt.substring(0, browTintIndex).trim();
           }
           
           return prompt || '-';

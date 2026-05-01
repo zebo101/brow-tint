@@ -168,7 +168,7 @@ export class KieProvider implements AIProvider {
 
     const options = params.options ?? {};
 
-    // Collect image inputs (user-uploaded subjects + optional hairstyle
+    // Collect image inputs (user-uploaded subjects + optional brow tint
     // reference) into a single array, shared by both schemas.
     const imageInputs: string[] = [];
     if (Array.isArray(options.input_urls) && options.input_urls.length > 0) {
@@ -180,8 +180,8 @@ export class KieProvider implements AIProvider {
     if (Array.isArray(options.image_urls) && options.image_urls.length > 0) {
       imageInputs.push(...options.image_urls);
     }
-    if (options.hairstyle_image) {
-      imageInputs.push(options.hairstyle_image);
+    if (options.brow_tint_image) {
+      imageInputs.push(options.brow_tint_image);
     }
 
     if (isGptImage2) {

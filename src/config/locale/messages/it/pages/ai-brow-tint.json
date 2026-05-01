@@ -1,0 +1,138 @@
+{
+  "header": {
+    "lookbook": "Lookbook",
+    "how_it_works": "Come funziona",
+    "credits": "{n} crediti"
+  },
+  "stepper": {
+    "step1": "Carica foto",
+    "step2": "Scegli stile",
+    "step3": "Anteprima e salva"
+  },
+  "step1": {
+    "eyebrow": "Passo 1 · La tua foto",
+    "title": "Inizia con una foto frontale e ben definita.",
+    "subtitle": "Luce morbida, senza occhiali, sopracciglia completamente visibili. La tua foto serve solo a generare l'anteprima e viene cancellata automaticamente subito dopo.",
+    "tips": [
+      "Sguardo verso la fotocamera, espressione neutra",
+      "Sposta i capelli per liberare la linea delle sopracciglia",
+      "JPG o PNG, fino a 10 MB"
+    ],
+    "upload_btn": "Carica foto",
+    "or_sample": "oppure scegli un esempio",
+    "samples": {
+      "light": "Esempio · Chiaro",
+      "medium": "Esempio · Medio",
+      "deep": "Esempio · Scuro"
+    },
+    "drop_text": "Trascina qui la tua foto",
+    "drop_sub": "oppure clicca per sfogliare",
+    "continue": "Vai agli stili"
+  },
+  "step2": {
+    "title": "Scegli il tuo look sopracciglia",
+    "subtitle": "{shown} di {total} stili selezionati · tocca uno per vederlo sulla tua foto",
+    "your_photo": "La tua foto",
+    "search": "Cerca stili…",
+    "filters": {
+      "shade": "Tonalità",
+      "shape": "Forma",
+      "intensity": "Intensità",
+      "sort": "Ordina"
+    },
+    "sort_options": {
+      "curated": "Selezionati",
+      "popular": "Popolari",
+      "trending": "Di tendenza"
+    },
+    "clear_all": "Cancella tutto",
+    "empty": "Nessuno stile corrisponde a questi filtri.",
+    "select": "Scegli questo stile",
+    "premium": "Premium",
+    "credits_label": "{n} crediti"
+  },
+  "step3": {
+    "eyebrow": "Passo 3 · La tua anteprima",
+    "drag_hint": "Trascina il divisore per confrontare prima e dopo.",
+    "rendering": "Sto creando il tuo nuovo look…",
+    "rendering_sub": "Sto adattando {style} ai tuoi tratti",
+    "before": "Prima",
+    "after": "Dopo",
+    "back": "Prova un altro stile",
+    "regenerate": "Rigenera",
+    "download": "Scarica",
+    "details": {
+      "title": "Dettagli del look",
+      "shade": "Tonalità",
+      "shape": "Forma",
+      "intensity": "Intensità",
+      "tags": "Tag"
+    },
+    "variation": {
+      "title": "Prova una variante",
+      "subtitle": "Regola l'intensità per affinare il risultato."
+    },
+    "reference": {
+      "title": "Vuoi un risultato dal vivo?",
+      "body": "Usa questo look come riferimento alla tua prossima visita in salone. Creeremo una scheda stampabile."
+    }
+  },
+  "buttons": {
+    "generate": "Genera · {credits} crediti",
+    "no_credits": "Ricarica i crediti per generare",
+    "signin": "Accedi per generare"
+  },
+  "studio": {
+    "title": "AI Brow Tint Studio",
+    "subtitle": "Carica una foto, scegli un look e vedi il risultato fianco a fianco.",
+    "checking": "Verifica account in corso...",
+    "left": {
+      "photo_title": "La tua foto",
+      "photo_tips": "Consigli per la foto",
+      "photo_drop": "Trascina qui la tua foto",
+      "photo_drop_sub": "oppure clicca per sfogliare — JPG o PNG, fino a 10 MB",
+      "photo_sample_label": "Oppure prova un esempio",
+      "photo_change": "Cambia foto",
+      "photo_clear": "Rimuovi foto",
+      "uploading": "Caricamento in corso...",
+      "resizing": "Preparazione immagine...",
+      "uploading_size": "Caricamento di {kb} KB...",
+      "style_title": "Scegli un look",
+      "style_all": "Tutti i {count} stili",
+      "style_selected": "Selezionato: {name}"
+    },
+    "right": {
+      "empty_title": "Scegli un look per iniziare la tua anteprima",
+      "empty_subtitle": "Tocca uno stile qui sotto — lo mostreremo sulla tua foto appena la caricherai.",
+      "empty_browse_all": "Sfoglia tutti gli stili di tinta sopracciglia",
+      "empty_style_picked_title": "{name} pronto — ora carica la tua foto",
+      "empty_style_picked_subtitle": "Trascina una foto a sinistra per vedere questo look in pochi secondi.",
+      "empty_photo_only": "Ora scegli un look sopracciglia da sinistra →",
+      "ready_title": "Pronto per l'anteprima di {name}",
+      "ready_subtitle": "Tocca Genera per creare il tuo nuovo look.",
+      "generating_title": "Sto creando il tuo nuovo look...",
+      "generating_subtitle": "Sto adattando {style} ai tuoi tratti · in genere 8-15 secondi.",
+      "try_another": "Prova un altro",
+      "failed_title": "Generazione non riuscita",
+      "failed_subtitle": "Qualcosa è andato storto. Riprova o scegli un'altra foto.",
+      "failed_retry": "Riprova",
+      "success_orphan": "Risultato pronto — ricarica la tua foto per confrontare fianco a fianco."
+    },
+    "cta": {
+      "need_photo": "Aggiungi la tua foto per iniziare",
+      "need_style": "Scegli un look sopracciglia",
+      "generating": "Generazione in corso..."
+    },
+    "drawer": {
+      "title": "Tutti gli stili di tinta sopracciglia",
+      "subtitle": "Tocca una tessera per l'anteprima, poi applica la tua scelta.",
+      "search": "Cerca per nome, tonalità o forma…",
+      "all_shades": "Tutte le tonalità",
+      "empty": "Nessuno stile corrisponde a questi filtri.",
+      "selected_label": "Selezionato:",
+      "select_hint": "Tocca una tessera per l'anteprima.",
+      "cancel": "Annulla",
+      "apply": "Usa questo stile"
+    }
+  }
+}

@@ -139,7 +139,7 @@ export function Showcases({
                       size="sm"
                       className="bg-primary hover:bg-primary/90 h-9 w-full border-0 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:scale-[1.02]"
                     >
-                      <Link href="/ai-brow-tint-generator">
+                      <Link href="http://localhost:3000/#ai-brow-tint-studio">
                         <WandIcon className="mr-1.5 size-4" />
                         Try This Style
                       </Link>

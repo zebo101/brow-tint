@@ -39,12 +39,6 @@
               "icon": "RiImage2Line"
             },
             {
-              "title": "AI 眉色视频",
-              "description": "用 AI 制作眉部染色变换视频",
-              "url": "/hairstyle-changer-ai-video",
-              "icon": "RiVideoLine"
-            },
-            {
               "title": "眉色顾问",
               "description": "获取 AI 专业眉部染色建议",
               "url": "/chat",
@@ -102,12 +96,6 @@
               "icon": "RiImage2Line"
             },
             {
-              "title": "AI 眉色视频",
-              "description": "制作眉部染色变换视频",
-              "url": "/hairstyle-changer-ai-video",
-              "icon": "RiVideoLine"
-            },
-            {
               "title": "眉色顾问",
               "description": "与 AI 眉部染色专家对话",
               "url": "/chat",
@@ -144,18 +132,18 @@
           "title": "友情链接",
           "children": [
             {
+              "title": "AI Barber",
+              "url": "https://aibarber.net/",
+              "target": "_blank"
+            },
+            {
+              "title": "Inpaint",
+              "url": "https://inpaint.dev/",
+              "target": "_blank"
+            },
+            {
               "title": "MCPALL",
-              "url": "https://mcpall.com",
-              "target": "_blank"
-            },
-            {
-              "title": "imgs.chat",
-              "url": "https://imgs.chat",
-              "target": "_blank"
-            },
-            {
-              "title": "101st.dev",
-              "url": "https://101st.dev",
+              "url": "https://mcpall.com/",
               "target": "_blank"
             }
           ]
@@ -185,7 +173,7 @@
         {
           "title": "邮箱",
           "icon": "Mail",
-          "url": "mailto:cy0410239@gmail.com",
+          "url": "mailto:privacy@tintbrow.com",
           "target": "_self"
         }
       ]

@@ -1,4 +1,9 @@
+import { and, eq } from 'drizzle-orm';
+
 import { envConfigs } from '@/config';
+import { browStyle } from '@/config/db/schema';
+import { buildBrowStylePrompt } from '@/config/img-prompt';
+import { db } from '@/core/db';
 import { AIMediaType } from '@/extensions/ai';
 import { getUuid } from '@/shared/lib/hash';
 import { respData, respErr } from '@/shared/lib/resp';
@@ -7,9 +12,19 @@ import { getRemainingCredits } from '@/shared/models/credit';
 import { getUserInfo } from '@/shared/models/user';
 import { getAIService } from '@/shared/services/ai';
 
+// Every brow tint generation costs exactly 2 credits. This constant is
+// authoritative — the per-row brow_style.credits column is ignored by the
+// server. See docs/superpowers/specs/2026-04-30-fix-brow-tint-credit-cost-design.md.
+const BROW_TINT_COST_CREDITS = 2;
+
+const BROW_STYLE_IMAGE_MODELS = [
+  'nano-banana-pro',
+  'gpt-image-2-image-to-image',
+];
+
 export async function POST(request: Request) {
   try {
-    let { provider, mediaType, model, prompt, options, scene } =
+    let { provider, mediaType, model, prompt, options, scene, styleId } =
       await request.json();
 
     if (!provider || !mediaType || !model) {
@@ -19,6 +34,11 @@ export async function POST(request: Request) {
     if (!prompt && !options) {
       throw new Error('prompt or options is required');
     }
+
+    const clientPrompt = typeof prompt === 'string' ? prompt : '';
+    let generationPrompt = clientPrompt;
+    let generationOptions =
+      options && typeof options === 'object' ? { ...options } : options;
 
     const aiService = await getAIService();
 
@@ -31,6 +51,16 @@ export async function POST(request: Request) {
     const aiProvider = aiService.getProvider(provider);
     if (!aiProvider) {
       throw new Error('invalid provider');
+    }
+
+    if (styleId) {
+      if (mediaType !== AIMediaType.IMAGE || scene !== 'image-to-image') {
+        throw new Error('styleId is only supported for image-to-image');
+      }
+
+      if (!BROW_STYLE_IMAGE_MODELS.includes(model)) {
+        throw new Error('invalid model for styleId');
+      }
     }
 
     // get current user
@@ -70,6 +100,37 @@ export async function POST(request: Request) {
       throw new Error('invalid mediaType');
     }
 
+    if (styleId) {
+      const [style] = await db()
+        .select()
+        .from(browStyle)
+        .where(and(eq(browStyle.id, styleId), eq(browStyle.status, 'active')))
+        .limit(1);
+
+      if (!style) {
+        throw new Error('invalid styleId');
+      }
+
+      const subjectImageCount = Array.isArray(generationOptions?.image_input)
+        ? generationOptions.image_input.length
+        : 0;
+
+      costCredits = BROW_TINT_COST_CREDITS;
+      generationPrompt = buildBrowStylePrompt({
+        name: style.name,
+        shade: style.shade,
+        shape: style.shape,
+        intensity: style.intensity,
+        styledPrompt: style.prompt,
+        userPrompt: clientPrompt,
+        subjectImageCount,
+      });
+      generationOptions = {
+        ...(generationOptions ?? {}),
+        negative_prompt: style.negative ?? generationOptions?.negative_prompt,
+      };
+    }
+
     // check credits
     const remainingCredits = await getRemainingCredits(user.id);
     if (remainingCredits < costCredits) {
@@ -81,9 +142,9 @@ export async function POST(request: Request) {
     const params: any = {
       mediaType,
       model,
-      prompt,
+      prompt: generationPrompt,
       callbackUrl,
-      options,
+      options: generationOptions,
     };
 
     // generate content
@@ -101,9 +162,9 @@ export async function POST(request: Request) {
       mediaType,
       provider,
       model,
-      prompt,
+      prompt: clientPrompt,
       scene,
-      options: options ? JSON.stringify(options) : null,
+      options: generationOptions ? JSON.stringify(generationOptions) : null,
       status: result.taskStatus,
       costCredits,
       taskId: result.taskId,

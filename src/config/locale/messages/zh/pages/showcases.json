@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "眉部染色展示 - AI眉部染色前后对比",
-    "description": "查看使用 Brow Tint AI生成器创建的精彩眉部染色前后对比变换效果"
+    "description": "查看使用 Brow Tint AI生成器创建的精彩眉部染色前后对比变换效果",
+    "keywords": "眉部染色展示, 眉部染色前后对比, AI 眉部染色案例, 眉部染色预览, 眉部染色效果, 专业眉部染色, 染色眉胶预览"
   },
   "page": {
     "title": "眉部染色展示",
@@ -51,7 +52,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
+              "src": "/imgs/cases/1.jpg",
               "alt": "柔和灰褐眉色前后对比"
             },
             "group": "short-hair"
@@ -62,7 +63,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
+              "src": "/imgs/cases/2.jpg",
               "alt": "深浓咖啡眉色"
             },
             "group": "long-hair"
@@ -73,7 +74,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/3.png",
+              "src": "/imgs/cases/3.jpg",
               "alt": "眉部塑形与染色效果"
             },
             "group": "color-change"
@@ -84,7 +85,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/4.png",
+              "src": "/imgs/cases/4.jpg",
               "alt": "专业眉部染色变换"
             },
             "group": "classic"
@@ -95,7 +96,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
+              "src": "/imgs/cases/5.jpg",
               "alt": "染眉膏造型"
             },
             "group": "men-styles"
@@ -106,38 +107,16 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
+              "src": "/imgs/cases/7.jpg",
               "alt": "睫毛和眉部染色效果"
             },
             "group": "women-styles"
-          },
-          {
-            "title": "Brow Code Tint",
-            "description": "精准的 brow code tint 配方匹配，找到属于你的独特眉色",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "brow code tint 匹配"
-            },
-            "group": "trendy"
-          },
-          {
-            "title": "最佳眉色匹配",
-            "description": "AI智能匹配最佳眉色，根据你的肤色和发色量身定制",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "最佳眉色匹配"
-            },
-            "group": "short-hair"
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "浏览完整眉部染色风格库",
         "description": "滚动浏览按类型分类的AI眉部染色风格。点击任意造型即可在你的照片上预览效果。",
         "limit": 12,
@@ -169,33 +148,6 @@
           }
         ],
         "tip": "所有预览均可免费试用。新眉部染色风格定期更新。"
-      },
-      "video_demo": {
-        "block": "features-accordion",
-        "id": "video_demo",
-        "label": "视频演示",
-        "title": "查看 Brow Tint 实际效果",
-        "description": "观看真实的眉部染色前后对比变换——从上传到预览只需几秒。",
-        "items": [
-          {
-            "title": "即时预览多种眉色色调",
-            "description": "上传一张照片，并排预览多种眉部染色色调和风格，找到你的完美匹配。",
-            "icon": "RiPlayCircleLine",
-            "image": {
-              "src": "/video/v1.mp4",
-              "alt": "AI眉部染色预览演示视频"
-            }
-          },
-          {
-            "title": "查看逼真的眉部染色质感和覆盖效果",
-            "description": "预览不同的眉部染色技术——从染眉膏到专业眉部染色——在决定前查看实际眉毛上的呈现效果。",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "/video/v2.mp4",
-              "alt": "眉部染色质感和覆盖预览视频"
-            }
-          }
-        ]
       },
       "usage": {
         "block": "features-step",
@@ -280,8 +232,6 @@
     },
     "show_sections": [
       "showcases",
-      "hairstyle_gallery",
-      "video_demo",
       "usage",
       "faq",
       "cta"

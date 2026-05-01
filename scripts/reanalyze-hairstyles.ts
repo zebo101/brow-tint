@@ -1,5 +1,5 @@
 /**
- * Backfill script: re-analyze existing hairstyles to populate `description` and
+ * Backfill script: re-analyze existing brow tints to populate `description` and
  * `prompt` columns using the z-ai/glm-5v-turbo vision model.
  *
  * Usage:
@@ -18,7 +18,7 @@ import * as dotenv from 'dotenv';
 import { eq } from 'drizzle-orm';
 import { drizzle } from 'drizzle-orm/libsql';
 
-import { hairstyle } from '../src/config/db/schema.sqlite';
+import { browTint } from '../src/config/db/schema.sqlite';
 
 const envFile = fs.existsSync('.env.development') ? '.env.development' : '.env';
 dotenv.config({ path: envFile });
@@ -30,14 +30,14 @@ const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 const VISION_MODEL = 'z-ai/glm-5v-turbo';
 
-const ANALYSIS_INSTRUCTION = `You are analyzing a reference PNG that shows ONLY a hairstyle (hair was manually cut out from a portrait; the background may be transparent, black, or have halos/stray pixels from the cutout). Treat those cutout artifacts as noise and describe ONLY the hairstyle itself.
+const ANALYSIS_INSTRUCTION = `You are analyzing a reference PNG that shows ONLY a brow tint style (the eyebrow area was manually cut out from a portrait; the background may be transparent, black, or have halos/stray pixels from the cutout). Treat those cutout artifacts as noise and describe ONLY the brow tint style itself.
 
 Return ONLY a JSON object with these four fields:
 {
-  "name": "Short Textured Fade",
-  "tags": ["short", "textured", "fade", "modern", "casual"],
-  "description": "One sentence, ~15-25 words, describing the hairstyle in plain English for humans (length, overall shape, vibe).",
-  "prompt": "A long-form engineered description optimized to be embedded in an image-generation prompt. Be specific about: approximate hair length (in cm where meaningful), overall silhouette, top texture and styling direction, side/temple/nape behavior (taper, fade, undercut, etc.), parting, fringe/bangs behavior, finish (matte/glossy), color (describe only what you see, do not add colors), and which face shapes the cut typically flatters. Use neutral descriptive language — do NOT reference the image, cutout, or background."
+  "name": "Soft Taupe Tint",
+  "tags": ["soft", "taupe", "natural", "subtle", "daily"],
+  "description": "One sentence, ~15-25 words, describing the brow tint in plain English for humans (shade, shape, intensity, vibe).",
+  "prompt": "A long-form engineered description optimized to be embedded in an image-generation prompt. Be specific about: shade name and tone, intensity level, brow shape (arched, straight, tapered), coverage style (ombre, solid, gradient), finish (matte/glossy), thickness, and which face shapes the tint typically flatters. Use neutral descriptive language — do NOT reference the image, cutout, or background."
 }
 
 Rules:
@@ -47,7 +47,7 @@ Rules:
 - "prompt" is 2-4 dense sentences of comma-separated descriptive phrases — written as if it were being inserted into an AI image-generation prompt.
 - Output JSON ONLY. No markdown, no code fences, no commentary.`;
 
-interface HairstyleAnalysis {
+interface BrowTintAnalysis {
   name: string;
   tags: string[];
   description: string;
@@ -99,16 +99,16 @@ function getDb() {
 }
 
 async function analyze(imageUrl: string): Promise<{
-  result: HairstyleAnalysis;
+  result: BrowTintAnalysis;
   usage?: {
     promptTokens?: number;
     completionTokens?: number;
     totalTokens?: number;
   };
 }> {
-  const fallback: HairstyleAnalysis = {
-    name: 'Hairstyle',
-    tags: ['hairstyle'],
+  const fallback: BrowTintAnalysis = {
+    name: 'Brow Tint',
+    tags: ['brow tint'],
     description: '',
     prompt: '',
   };
@@ -165,7 +165,7 @@ async function analyze(imageUrl: string): Promise<{
 }
 
 async function main() {
-  console.log('=== Hairstyle Re-analysis Script ===\n');
+  console.log('=== Brow Tint Re-analysis Script ===\n');
   const args = parseArgs();
   console.log('Args:', args);
 
@@ -174,7 +174,7 @@ async function main() {
 
   // Pull candidate rows. We do category filtering and the force-vs-backfill
   // decision in-memory since the set is small (~200) and it keeps the query simple.
-  const rows = (await db.select().from(hairstyle)) as Array<{
+  const rows = (await db.select().from(browTint)) as Array<{
     id: string;
     category: string;
     sequence: number;
@@ -223,12 +223,12 @@ async function main() {
       );
 
       await db
-        .update(hairstyle)
+        .update(browTint)
         .set({
           description: result.description || null,
           prompt: result.prompt || null,
         })
-        .where(eq(hairstyle.id, row.id));
+        .where(eq(browTint.id, row.id));
 
       processed++;
     } catch (e) {

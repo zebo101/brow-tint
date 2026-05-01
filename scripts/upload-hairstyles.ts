@@ -1,5 +1,5 @@
 /**
- * Batch Upload Hairstyles Script
+ * Batch Upload Brow Tints Script
  *
  * Usage: pnpm tsx scripts/upload-hairstyles.ts
  *
@@ -20,7 +20,7 @@ import * as dotenv from 'dotenv';
 import { drizzle } from 'drizzle-orm/libsql';
 import sharp from 'sharp';
 
-import { hairstyle } from '../src/config/db/schema.sqlite';
+import { browTint } from '../src/config/db/schema.sqlite';
 
 // Load environment variables from .env.development or .env
 const envFile = fs.existsSync('.env.development') ? '.env.development' : '.env';
@@ -28,7 +28,7 @@ dotenv.config({ path: envFile });
 console.log(`Loaded environment from: ${envFile}`);
 
 // Configuration
-const INPUT_DIR = process.env.HAIRSTYLE_INPUT_DIR || 'D:\\\\fx\\\\png';
+const INPUT_DIR = process.env.BROW_TINT_INPUT_DIR || 'D:\\\\fx\\\\png';
 const THUMBNAIL_SIZE = 150;
 const CATEGORIES = ['Men', 'Women', 'Boys', 'Girls'];
 
@@ -42,9 +42,9 @@ const R2_ACCOUNT_ID = R2_ENDPOINT
   : undefined;
 const R2_ACCESS_KEY = process.env.R2_ACCESS_KEY;
 const R2_SECRET_KEY = process.env.R2_SECRET_KEY;
-// Use dedicated hairstyles bucket
-const R2_HAIRSTYLES_BUCKET = process.env.R2_HAIRSTYLES_BUCKET || 'hairstyles';
-const R2_HAIRSTYLES_DOMAIN = process.env.R2_HAIRSTYLES_DOMAIN;
+// Use dedicated brow tints bucket
+const R2_BROW_TINT_BUCKET = process.env.R2_BROW_TINT_BUCKET || 'brow-tints';
+const R2_BROW_TINT_DOMAIN = process.env.R2_BROW_TINT_DOMAIN;
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 // Validate environment
@@ -101,7 +101,7 @@ async function uploadToR2(
     });
 
     const endpoint = `https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com`;
-    const url = `${endpoint}/${R2_HAIRSTYLES_BUCKET}/${key}`;
+    const url = `${endpoint}/${R2_BROW_TINT_BUCKET}/${key}`;
 
     const response = await client.fetch(
       new Request(url, {
@@ -120,8 +120,8 @@ async function uploadToR2(
     }
 
     // Return public URL
-    if (R2_HAIRSTYLES_DOMAIN) {
-      return `${R2_HAIRSTYLES_DOMAIN}/${key}`;
+    if (R2_BROW_TINT_DOMAIN) {
+      return `${R2_BROW_TINT_DOMAIN}/${key}`;
     }
     return url;
   } catch (error) {
@@ -130,8 +130,8 @@ async function uploadToR2(
   }
 }
 
-// Analyze hairstyle with AI
-interface HairstyleAnalysis {
+// Analyze brow tint with AI
+interface BrowTintAnalysis {
   name: string;
   tags: string[];
   description: string;
@@ -140,14 +140,14 @@ interface HairstyleAnalysis {
 
 const VISION_MODEL = 'z-ai/glm-5v-turbo';
 
-const ANALYSIS_INSTRUCTION = `You are analyzing a reference PNG that shows ONLY a hairstyle (hair was manually cut out from a portrait; the background may be transparent, black, or have halos/stray pixels from the cutout). Treat those cutout artifacts as noise and describe ONLY the hairstyle itself.
+const ANALYSIS_INSTRUCTION = `You are analyzing a reference PNG that shows ONLY a brow tint style (the eyebrow area was manually cut out from a portrait; the background may be transparent, black, or have halos/stray pixels from the cutout). Treat those cutout artifacts as noise and describe ONLY the brow tint style itself.
 
 Return ONLY a JSON object with these four fields:
 {
-  "name": "Short Textured Fade",
-  "tags": ["short", "textured", "fade", "modern", "casual"],
-  "description": "One sentence, ~15-25 words, describing the hairstyle in plain English for humans (length, overall shape, vibe).",
-  "prompt": "A long-form engineered description optimized to be embedded in an image-generation prompt. Be specific about: approximate hair length (in cm where meaningful), overall silhouette, top texture and styling direction, side/temple/nape behavior (taper, fade, undercut, etc.), parting, fringe/bangs behavior, finish (matte/glossy), color (describe only what you see, do not add colors), and which face shapes the cut typically flatters. Use neutral descriptive language — do NOT reference the image, cutout, or background."
+  "name": "Soft Taupe Tint",
+  "tags": ["soft", "taupe", "natural", "subtle", "daily"],
+  "description": "One sentence, ~15-25 words, describing the brow tint in plain English for humans (shade, shape, intensity, vibe).",
+  "prompt": "A long-form engineered description optimized to be embedded in an image-generation prompt. Be specific about: shade name and tone, intensity level, brow shape (arched, straight, tapered), coverage style (ombre, solid, gradient), finish (matte/glossy), thickness, and which face shapes the tint typically flatters. Use neutral descriptive language — do NOT reference the image, cutout, or background."
 }
 
 Rules:
@@ -157,12 +157,12 @@ Rules:
 - "prompt" is 2-4 dense sentences of comma-separated descriptive phrases — written as if it were being inserted into an AI image-generation prompt.
 - Output JSON ONLY. No markdown, no code fences, no commentary.`;
 
-async function analyzeHairstyle(
+async function analyzeBrowTint(
   imageBuffer: Buffer
-): Promise<HairstyleAnalysis> {
-  const fallback: HairstyleAnalysis = {
-    name: 'Hairstyle',
-    tags: ['hairstyle'],
+): Promise<BrowTintAnalysis> {
+  const fallback: BrowTintAnalysis = {
+    name: 'Brow Tint',
+    tags: ['brow tint'],
     description: '',
     prompt: '',
   };
@@ -230,7 +230,7 @@ function extractSequence(filename: string): number {
 async function loadExistingContentHashes(
   db: ReturnType<typeof getDb>
 ): Promise<Set<string>> {
-  const rows = await db.select().from(hairstyle);
+  const rows = await db.select().from(browTint);
   const active = rows.filter(
     (r: { status: string }) => r.status === 'active'
   ) as Array<{ imageUrl: string }>;
@@ -298,7 +298,7 @@ async function processImage(
       .toBuffer();
 
     // Upload original
-    const originalKey = `hairstyles/${category.toLowerCase()}/${generateUuid()}.png`;
+    const originalKey = `brow-tints/${category.toLowerCase()}/${generateUuid()}.png`;
     const originalUrl = await uploadToR2(imageBuffer, originalKey, 'image/png');
     if (!originalUrl) {
       console.error('    Failed to upload original');
@@ -306,7 +306,7 @@ async function processImage(
     }
 
     // Upload thumbnail
-    const thumbnailKey = `hairstyles/${category.toLowerCase()}/thumb_${generateUuid()}.png`;
+    const thumbnailKey = `brow-tints/${category.toLowerCase()}/thumb_${generateUuid()}.png`;
     const thumbnailUrl = await uploadToR2(
       thumbnailBuffer,
       thumbnailKey,
@@ -319,7 +319,7 @@ async function processImage(
 
     // Analyze with AI
     console.log('    Analyzing with AI...');
-    const aiResult = await analyzeHairstyle(imageBuffer);
+    const aiResult = await analyzeBrowTint(imageBuffer);
     console.log(
       `    AI Result: ${aiResult.name} [${aiResult.tags.join(', ')}]`
     );
@@ -327,7 +327,7 @@ async function processImage(
       console.log(`    Description: ${aiResult.description}`);
 
     // Insert into database
-    await db.insert(hairstyle).values({
+    await db.insert(browTint).values({
       id: generateUuid(),
       category: category.toLowerCase(),
       sequence,
@@ -352,7 +352,7 @@ async function processImage(
 
 // Main function
 async function main() {
-  console.log('=== Hairstyle Batch Upload Script ===\n');
+  console.log('=== Brow Tint Batch Upload Script ===\n');
 
   validateEnv();
 

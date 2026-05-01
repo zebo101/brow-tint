@@ -1,9 +1,16 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
+import { getMetadata } from '@/shared/lib/seo';
+import { getActiveBrowStyles } from '@/themes/default/blocks/brow-tint/styles-loader';
 import { DynamicPage } from '@/shared/types/blocks/landing';
 
 export const revalidate = 3600;
+
+export const generateMetadata = getMetadata({
+  metadataKey: 'pages.index.metadata',
+  canonicalUrl: '/',
+});
 
 export default async function LandingPage({
   params,
@@ -14,11 +21,50 @@ export default async function LandingPage({
   setRequestLocale(locale);
 
   const t = await getTranslations('pages.index');
+  const pageData = t.raw('page');
+  const styles = await getActiveBrowStyles();
 
-  // get page data
-  const page: DynamicPage = t.raw('page');
+  // Inject the BrowTintStudio as a section right after `hero`. We do this at
+  // runtime (not in JSON) because the studio needs server-fetched style data.
+  // Insertion-order of `sections` keys drives the render order in DynamicPage.
+  const originalSections = pageData.sections ?? {};
+  const originalShown: string[] = pageData.show_sections ?? Object.keys(originalSections);
 
-  // load page component
+  const studioSection = {
+    block: 'brow-tint-studio',
+    id: 'studio',
+    data: { styles },
+  };
+
+  const reorderedSections: Record<string, any> = {};
+  let inserted = false;
+  for (const key of Object.keys(originalSections)) {
+    reorderedSections[key] = originalSections[key];
+    if (key === 'hero' && !inserted) {
+      reorderedSections['studio'] = studioSection;
+      inserted = true;
+    }
+  }
+  if (!inserted) {
+    reorderedSections['studio'] = studioSection;
+  }
+
+  const heroIndex = originalShown.indexOf('hero');
+  const reorderedShown =
+    heroIndex >= 0
+      ? [
+          ...originalShown.slice(0, heroIndex + 1),
+          'studio',
+          ...originalShown.slice(heroIndex + 1),
+        ]
+      : ['studio', ...originalShown];
+
+  const page: DynamicPage = {
+    ...pageData,
+    sections: reorderedSections,
+    show_sections: reorderedShown,
+  };
+
   const Page = await getThemePage('dynamic-page');
 
   return <Page locale={locale} page={page} />;

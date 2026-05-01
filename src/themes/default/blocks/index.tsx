@@ -5,6 +5,9 @@ export * from './footer';
 export * from './hero';
 export * from './hero-editorial';
 
+export * from './cases-carousel';
+export * from './brow-tint-studio';
+
 export * from './features';
 export * from './features-list';
 export * from './features-accordion';
@@ -14,7 +17,7 @@ export * from './features-media';
 
 export * from './showcases';
 export * from './showcases-flow';
-export * from './hairstyle-gallery';
+export * from './brow-tint-gallery';
 
 export * from './logos';
 export * from './stats';

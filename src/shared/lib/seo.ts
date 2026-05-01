@@ -98,14 +98,28 @@ export function getMetadata(
         title,
         description,
         siteName: appName,
-        images: [imageUrl.toString()],
+        images: [
+          {
+            url: imageUrl.toString(),
+            width: 1200,
+            height: 630,
+            alt: title,
+          },
+        ],
       },
 
       twitter: {
         card: 'summary_large_image',
         title,
         description,
-        images: [imageUrl.toString()],
+        images: [
+          {
+            url: imageUrl.toString(),
+            width: 1200,
+            height: 630,
+            alt: title,
+          },
+        ],
         site: getSiteUrl(),
       },
 

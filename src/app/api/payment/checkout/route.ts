@@ -17,7 +17,11 @@ import {
 } from '@/shared/models/order';
 import { getUserInfo } from '@/shared/models/user';
 import { getPaymentService } from '@/shared/services/payment';
-import { PricingCurrency } from '@/shared/types/blocks/pricing';
+import { PricingCurrency, PricingItem } from '@/shared/types/blocks/pricing';
+
+function getErrorMessage(error: unknown) {
+  return error instanceof Error ? error.message : String(error);
+}
 
 export async function POST(req: Request) {
   try {
@@ -33,8 +37,8 @@ export async function POST(req: Request) {
     });
     const pricing = t.raw('page.sections.pricing');
 
-    const pricingItem = pricing.items.find(
-      (item: any) => item.product_id === product_id
+    const pricingItem = (pricing.items as PricingItem[]).find(
+      (item) => item.product_id === product_id
     );
 
     if (!pricingItem) {
@@ -129,9 +133,16 @@ export async function POST(req: Request) {
       // If no currencies list exists, fallback to default (already set above)
     }
 
+    if (checkoutAmount <= 0) {
+      return respErr('not a payable item');
+    }
+
     // get payment interval
-    const paymentInterval: PaymentInterval =
-      pricingItem.interval || PaymentInterval.ONE_TIME;
+    const paymentInterval =
+      (pricingItem.interval as PaymentInterval | undefined) ||
+      PaymentInterval.ONE_TIME;
+    const productName =
+      pricingItem.product_name || pricingItem.title || pricingItem.product_id;
 
     // get payment type
     const paymentType =
@@ -163,11 +174,12 @@ export async function POST(req: Request) {
 
     // If still not found, get from payment provider's config
     if (!paymentProductId) {
-      paymentProductId = await getPaymentProductId(
-        pricingItem.product_id,
-        paymentProviderName,
-        checkoutCurrency
-      );
+      paymentProductId =
+        (await getPaymentProductId(
+          pricingItem.product_id,
+          paymentProviderName,
+          checkoutCurrency
+        )) || '';
     }
 
     // get preset promotion code for product_id
@@ -204,7 +216,7 @@ export async function POST(req: Request) {
 
     // build checkout order
     const checkoutOrder: PaymentOrder = {
-      description: pricingItem.product_name,
+      description: productName,
       customer: {
         name: user.name,
         email: user.email,
@@ -231,7 +243,7 @@ export async function POST(req: Request) {
       // subscription mode
       checkoutOrder.plan = {
         interval: paymentInterval,
-        name: pricingItem.product_name,
+        name: productName,
       };
     } else {
       // one-time mode
@@ -260,7 +272,7 @@ export async function POST(req: Request) {
       paymentProvider: paymentProvider.name,
       checkoutInfo: JSON.stringify(checkoutOrder),
       createdAt: currentTime,
-      productName: pricingItem.product_name,
+      productName: productName,
       description: pricingItem.description,
       callbackUrl: callbackUrl,
       creditsAmount: pricingItem.credits,
@@ -290,18 +302,18 @@ export async function POST(req: Request) {
       });
 
       return respData(result.checkoutInfo);
-    } catch (e: any) {
+    } catch (e: unknown) {
       // update order status to completed, means checkout failed
       await updateOrderByOrderNo(orderNo, {
         status: OrderStatus.COMPLETED, // means checkout failed
         checkoutInfo: JSON.stringify(checkoutOrder),
       });
 
-      return respErr('checkout failed: ' + e.message);
+      return respErr('checkout failed: ' + getErrorMessage(e));
     }
-  } catch (e: any) {
+  } catch (e: unknown) {
     console.log('checkout failed:', e);
-    return respErr('checkout failed: ' + e.message);
+    return respErr('checkout failed: ' + getErrorMessage(e));
   }
 }
 
@@ -320,12 +332,12 @@ async function getPaymentProductId(
     const configs = await getAllConfigs();
     const creemProductIds = configs.creem_product_ids;
     if (creemProductIds) {
-      const productIds = JSON.parse(creemProductIds);
+      const productIds = JSON.parse(creemProductIds) as Record<string, string>;
       return (
         productIds[`${productId}_${checkoutCurrency}`] || productIds[productId]
       );
     }
-  } catch (e: any) {
+  } catch (e: unknown) {
     console.log('get payment product id failed:', e);
     return;
   }
@@ -346,13 +358,16 @@ async function getPromotionCode(
     const configs = await getAllConfigs();
     const stripePromotionCodes = configs.stripe_promotion_codes;
     if (stripePromotionCodes) {
-      const promotionCodes = JSON.parse(stripePromotionCodes);
+      const promotionCodes = JSON.parse(stripePromotionCodes) as Record<
+        string,
+        string
+      >;
       return (
         promotionCodes[`${productId}_${checkoutCurrency}`] ||
         promotionCodes[productId]
       );
     }
-  } catch (e: any) {
+  } catch (e: unknown) {
     console.log('get promotion code failed:', e);
     return;
   }

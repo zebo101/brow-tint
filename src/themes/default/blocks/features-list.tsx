@@ -98,17 +98,6 @@ export function FeaturesList({
         </ScrollAnimation>
       </div>
 
-      {/* 右下角装饰背景 */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-0 bottom-0 z-0 hidden h-[200px] w-[200px] -translate-x-40 -translate-y-[80px] opacity-60 md:block md:h-[280px] md:w-[280px] md:-translate-y-[100px] lg:h-[380px] lg:w-[380px] lg:-translate-y-[120px] lg:opacity-70"
-        style={{
-          backgroundImage: "url('/imgs/bg/features-list.png')",
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-        }}
-      />
     </section>
   );
 }

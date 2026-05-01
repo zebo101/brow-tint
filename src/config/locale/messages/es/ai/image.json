@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Generador de Tinte de Cejas con IA Online | Tinte de Cejas Antes y Después | Brow Tint",
+    "title": "Generador de Tinte de Cejas con IA | Antes y Después | Brow Tint",
     "description": "Prueba el generador de tinte de cejas con IA online. Sube una foto, previsualiza el tinte de cejas antes y después, y descarga tu resultado de tinte de cejas virtual en segundos.",
     "keywords": "generador de tinte de cejas con ia, generador de tinte de cejas, tinte de cejas antes y después, generador de tinte de cejas, tinte de cejas virtual, prueba de tinte de cejas, tinte de cejas IA, vista previa de tinte de cejas, generador de color de cejas, vista previa de gel de cejas con color, laminado y tinte de cejas, tinte profesional de cejas, mejor tinte de cejas, mejor gel de cejas con color, tinte de pestañas y cejas, brow code tint"
   },
@@ -15,7 +15,6 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -27,13 +26,13 @@
         "highlight_text": "Generador de Tinte de Cejas con IA",
         "description": "Previsualiza al instante resultados realistas de tinte de cejas antes y después con el generador de tinte de cejas con IA. Sube una foto, prueba estilos de tinte de cejas y descarga tu nuevo look de cejas.",
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Interfaz del Generador de Tinte de Cejas con IA",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Interfaz del Generador de Tinte de Cejas con IA Modo Oscuro",
           "width": 1200,
           "height": 800
@@ -197,9 +196,9 @@
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Explora Estilos de Tinte de Cejas por Categoría",
         "description": "Navega por estilos de tinte de cejas listos para IA y toca cualquier look para probarlo en tu propia foto con el generador de tinte de cejas con IA.",
         "limit": 12,
@@ -297,7 +296,7 @@
         "id": "faq",
         "title": "Preguntas Frecuentes",
         "description": "Preguntas frecuentes sobre el generador de tinte de cejas con IA, consejos de fotos y cómo obtener los mejores resultados de tinte de cejas.",
-        "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
+        "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
         "items": [
           {
             "question": "¿Es gratuito este Generador de Tinte de Cejas con IA?",
@@ -384,7 +383,7 @@
       "history_empty": "Aún no hay imágenes en el historial"
     },
     "form": {
-      "select_hairstyle_placeholder": "Haz clic para seleccionar un estilo de tinte de cejas",
+      "select_brow_tint_placeholder": "Haz clic para seleccionar un estilo de tinte de cejas",
       "provider": "Proveedor de IA",
       "model": "Modelo de Tinte de Cejas",
       "select_provider": "Seleccionar Proveedor de IA",
@@ -399,14 +398,23 @@
       "upload_hint": "Haz clic o arrastra para subir fotos",
       "max_size": "Máx"
     },
-    "generate": "Generar Tinte de Cejas",
+    "steps": {
+      "upload": "Subir foto",
+      "describe": "Describir estilo",
+      "choose_style": "Elegir estilo",
+      "generate": "Generar"
+    },
+    "generate": "Generar ({credits} creditos)",
+    "generate_no_credits": "Obtener creditos para generar",
     "checking_account": "Verificando cuenta...",
     "loading": "Cargando...",
-    "generating": "Generando Tu Tinte de Cejas...",
-    "sign_in_to_generate": "Inicia Sesión para Probar Estilos de Tinte de Cejas",
-    "credits_cost": "Cuesta {credits} créditos",
-    "credits_remaining": "{credits} créditos restantes",
-    "buy_credits": "Comprar Créditos",
+    "generating": "Generando tu tinte de cejas...",
+    "sign_in_to_generate": "Inicia sesion para probar estilos de tinte de cejas",
+    "credits_cost": "Costo {credits} creditos",
+    "credits_remaining": "{credits} creditos",
+    "credits_insufficient": "Creditos insuficientes",
+    "buy_credits": "Comprar creditos",
+    "try_another_style": "Probar otro estilo",
     "progress": "Progreso",
     "generated_images": "Tu Nuevo Look de Cejas",
     "preview_title": "Vista Previa de Tinte de Cejas con IA",

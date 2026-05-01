@@ -15,7 +15,6 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -27,13 +26,13 @@
         "highlight_text": "AI眉部染色生成器",
         "description": "使用AI眉部染色生成器即时预览逼真的眉色前后对比效果。上传照片，试用眉部染色风格，然后下载你的新眉妆造型。",
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "AI眉部染色生成器界面",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "AI眉部染色生成器界面 深色模式",
           "width": 1200,
           "height": 800
@@ -197,9 +196,9 @@
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "按分类浏览眉部染色风格",
         "description": "浏览AI眉部染色风格，点击任意造型即可在你的照片上试用AI眉部染色生成器。",
         "limit": 12,
@@ -297,7 +296,7 @@
         "id": "faq",
         "title": "常见问题",
         "description": "关于AI眉部染色生成器、照片技巧以及如何获得最佳眉部染色效果的常见问题。",
-        "tip": "找不到您要找的内容？联系我们的<a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "tip": "找不到您要找的内容？联系我们的<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>支持团队</a>",
         "items": [
           {
             "question": "这个AI眉部染色生成器免费吗？",
@@ -384,7 +383,7 @@
       "history_empty": "暂无历史图片"
     },
     "form": {
-      "select_hairstyle_placeholder": "点击选择眉部染色风格",
+      "select_brow_tint_placeholder": "点击选择眉部染色风格",
       "provider": "AI 提供商",
       "model": "眉部染色模型",
       "select_provider": "选择 AI 提供商",
@@ -399,14 +398,23 @@
       "upload_hint": "点击或拖拽上传照片",
       "max_size": "最大"
     },
-    "generate": "生成眉部染色",
+    "steps": {
+      "upload": "上传照片",
+      "describe": "描述风格",
+      "choose_style": "选择风格",
+      "generate": "生成"
+    },
+    "generate": "生成 ({credits} 积分)",
+    "generate_no_credits": "获取积分以生成",
     "checking_account": "正在检查账户...",
     "loading": "加载中...",
-    "generating": "正在生成你的眉部染色效果...",
+    "generating": "正在生成您的眉部染色...",
     "sign_in_to_generate": "登录以试用眉部染色风格",
     "credits_cost": "消耗 {credits} 积分",
-    "credits_remaining": "剩余 {credits} 积分",
+    "credits_remaining": "{credits} 积分",
+    "credits_insufficient": "积分不足",
     "buy_credits": "购买积分",
+    "try_another_style": "尝试其他风格",
     "progress": "进度",
     "generated_images": "你的新眉妆造型",
     "preview_title": "AI眉部染色预览",

@@ -344,10 +344,10 @@ export class FalProvider implements AIProvider {
       delete input.image_input;
     }
 
-    // hairstyle_image: add hairstyle reference for edit models
-    if (options.hairstyle_image) {
-      input.reference_image_url = options.hairstyle_image;
-      delete input.hairstyle_image;
+    // brow_tint_image: add brow tint reference for edit models
+    if (options.brow_tint_image) {
+      input.reference_image_url = options.brow_tint_image;
+      delete input.brow_tint_image;
     }
 
     // negative_prompt: pass as a dedicated API parameter (not mixed into prompt text)

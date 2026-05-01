@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Generatore Tinta Sopracciglia IA Online | Tinta Sopracciglia Prima e Dopo | Brow Tint",
+    "title": "Generatore Tinta Sopracciglia IA Online | Prima e Dopo | Brow Tint",
     "description": "Prova il generatore di tinta sopracciglia IA online. Carica una foto, visualizza l'anteprima tinta sopracciglia prima e dopo e scarica il tuo risultato virtuale in pochi secondi.",
     "keywords": "generatore tinta sopracciglia ia, generatore tinta sopracciglia, tinta sopracciglia prima e dopo, generatore tinta sopracciglia virtuale, prova virtuale tinta sopracciglia, tinta sopracciglia IA, anteprima tinta sopracciglia, generatore colore sopracciglia, anteprima gel sopracciglia colorato, laminazione e tinta sopracciglia, tinta professionale sopracciglia, miglior tinta sopracciglia, miglior gel sopracciglia colorato, tinta ciglia e sopracciglia, brow code tint"
   },
@@ -15,7 +15,6 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -27,13 +26,13 @@
         "highlight_text": "Generatore Tinta Sopracciglia IA",
         "description": "Visualizza istantaneamente risultati realistici di tinta sopracciglia prima e dopo con il generatore IA. Carica una foto, prova stili di tinta sopracciglia e scarica il tuo nuovo look.",
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Interfaccia Generatore Tinta Sopracciglia IA",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Interfaccia Generatore Tinta Sopracciglia IA Modalità Scura",
           "width": 1200,
           "height": 800
@@ -197,9 +196,9 @@
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Esplora Stili di Tinta Sopracciglia per Categoria",
         "description": "Sfoglia stili di tinta sopracciglia pronti per l'IA e tocca qualsiasi look per provarlo sulla tua foto con il generatore di tinta sopracciglia IA.",
         "limit": 12,
@@ -297,7 +296,7 @@
         "id": "faq",
         "title": "Domande Frequenti",
         "description": "FAQ sul generatore di tinta sopracciglia IA, consigli per le foto e come ottenere i migliori risultati.",
-        "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
+        "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
         "items": [
           {
             "question": "Questo Generatore Tinta Sopracciglia IA è gratuito?",
@@ -384,7 +383,7 @@
       "history_empty": "Nessuna immagine nella cronologia"
     },
     "form": {
-      "select_hairstyle_placeholder": "Clicca per selezionare uno stile di tinta sopracciglia",
+      "select_brow_tint_placeholder": "Clicca per selezionare uno stile di tinta sopracciglia",
       "provider": "Provider IA",
       "model": "Modello Tinta Sopracciglia",
       "select_provider": "Seleziona Provider IA",
@@ -399,14 +398,23 @@
       "upload_hint": "Clicca o trascina per caricare foto",
       "max_size": "Max"
     },
-    "generate": "Genera Tinta Sopracciglia",
-    "checking_account": "Verifica account...",
+    "steps": {
+      "upload": "Carica foto",
+      "describe": "Descrivi lo stile",
+      "choose_style": "Scegli lo stile",
+      "generate": "Genera"
+    },
+    "generate": "Genera ({credits} crediti)",
+    "generate_no_credits": "Ottieni crediti per generare",
+    "checking_account": "Verifica dell'account...",
     "loading": "Caricamento...",
-    "generating": "Generazione della tua tinta sopracciglia...",
-    "sign_in_to_generate": "Accedi per Provare Stili di Tinta Sopracciglia",
-    "credits_cost": "Costa {credits} crediti",
-    "credits_remaining": "{credits} crediti rimanenti",
-    "buy_credits": "Acquista Crediti",
+    "generating": "Generazione del tuo tinta per sopracciglia...",
+    "sign_in_to_generate": "Accedi per provare gli stili di tinta per sopracciglia",
+    "credits_cost": "Costo {credits} crediti",
+    "credits_remaining": "{credits} crediti",
+    "credits_insufficient": "Crediti insufficienti",
+    "buy_credits": "Acquista crediti",
+    "try_another_style": "Prova un altro stile",
     "progress": "Progresso",
     "generated_images": "Il Tuo Nuovo Look Sopracciglia",
     "preview_title": "Anteprima Tinta Sopracciglia IA",

@@ -15,7 +15,6 @@
       "usage",
       "features",
       "stats",
-      "hairstyle_gallery",
       "testimonials",
       "faq",
       "cta"
@@ -27,13 +26,13 @@
         "highlight_text": "AI 눈썹 틴트 생성기",
         "description": "AI 눈썹 틴트 생성기로 사실적인 눈썹 틴트 비포 앤 애프터를 즉시 미리 확인하세요. 사진을 업로드하고, 눈썹 틴트 스타일을 체험한 뒤, 새로운 눈썹 룩을 다운로드하세요.",
         "image": {
-          "src": "/imgs/features/ai-hairstyle-changer.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "AI Brow Tint Generator Interface",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
-          "src": "/imgs/features/ai-hairstyle-changer-dark.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "AI Brow Tint Generator Interface Dark Mode",
           "width": 1200,
           "height": 800
@@ -197,9 +196,9 @@
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "카테고리별 눈썹 틴트 스타일 탐색",
         "description": "AI 지원 눈썹 틴트 스타일을 둘러보고, 원하는 룩을 탭하여 AI 눈썹 틴트 생성기로 자신의 사진에 적용해 보세요.",
         "limit": 12,
@@ -297,7 +296,7 @@
         "id": "faq",
         "title": "자주 묻는 질문",
         "description": "AI 눈썹 틴트 생성기, 사진 팁, 최상의 눈썹 틴트 결과를 얻는 방법에 대한 FAQ.",
-        "tip": "찾는 내용이 없나요? <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>지원팀</a>에 문의하세요",
+        "tip": "찾는 내용이 없나요? <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>지원팀</a>에 문의하세요",
         "items": [
           {
             "question": "이 AI 눈썹 틴트 생성기는 무료로 사용할 수 있나요?",
@@ -384,7 +383,7 @@
       "history_empty": "아직 히스토리 이미지가 없습니다"
     },
     "form": {
-      "select_hairstyle_placeholder": "클릭하여 눈썹 틴트 스타일 선택",
+      "select_brow_tint_placeholder": "클릭하여 눈썹 틴트 스타일 선택",
       "provider": "AI 제공업체",
       "model": "눈썹 틴트 모델",
       "select_provider": "AI 제공업체 선택",
@@ -399,14 +398,23 @@
       "upload_hint": "클릭 또는 드래그하여 사진 업로드",
       "max_size": "최대"
     },
-    "generate": "눈썹 틴트 생성",
+    "steps": {
+      "upload": "사진 업로드",
+      "describe": "스타일 설명",
+      "choose_style": "스타일 선택",
+      "generate": "생성"
+    },
+    "generate": "생성 ({credits} 크레딧)",
+    "generate_no_credits": "크레딧을 충전하여 생성",
     "checking_account": "계정 확인 중...",
     "loading": "로딩 중...",
-    "generating": "눈썹 틴트 생성 중...",
-    "sign_in_to_generate": "눈썹 틴트 스타일을 체험하려면 로그인",
-    "credits_cost": "{credits} 크레딧 소비",
-    "credits_remaining": "남은 크레딧 {credits}",
+    "generating": "눈썹 틴트를 생성하는 중...",
+    "sign_in_to_generate": "눈썹 틴트 스타일을 사용하려면 로그인하세요",
+    "credits_cost": "{credits} 크레딧 소모",
+    "credits_remaining": "{credits} 크레딧",
+    "credits_insufficient": "크레딧이 부족합니다",
     "buy_credits": "크레딧 구매",
+    "try_another_style": "다른 스타일 시도",
     "progress": "진행률",
     "generated_images": "새로운 눈썹 룩",
     "preview_title": "AI 눈썹 틴트 미리보기",

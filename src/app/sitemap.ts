@@ -5,7 +5,11 @@ import { MetadataRoute } from 'next';
 import { defaultLocale, locales } from '@/config/locale';
 import { docsSource, i18n, pagesSource, postsSource } from '@/core/docs/source';
 import { PostStatus, PostType, getPosts } from '@/shared/models/post';
-import { buildCanonicalUrl, isIndexablePath } from '@/shared/lib/seo-paths';
+import {
+  buildCanonicalUrl,
+  buildLanguageAlternates,
+  isIndexablePath,
+} from '@/shared/lib/seo-paths';
 import { expandStaticRoutes, StaticSitemapRoute } from './sitemap-routes';
 
 type SitemapEntry = MetadataRoute.Sitemap[number];
@@ -15,8 +19,6 @@ const staticRoutes: StaticSitemapRoute[] = [
   { path: '/pricing', changeFrequency: 'weekly', priority: 0.9 },
   { path: '/showcases', changeFrequency: 'weekly', priority: 0.85 },
   { path: '/ai-brow-tint-generator', changeFrequency: 'weekly', priority: 0.9 },
-  { path: '/hairstyle-changer-ai-video', changeFrequency: 'weekly', priority: 0.85 },
-  { path: '/ai-music-generator', changeFrequency: 'weekly', priority: 0.75 },
   { path: '/blog', changeFrequency: 'daily', priority: 0.8 },
   { path: '/updates', changeFrequency: 'weekly', priority: 0.7 },
 ];
@@ -48,6 +50,9 @@ function createEntry(
     lastModified,
     changeFrequency,
     priority,
+    alternates: {
+      languages: buildLanguageAlternates(pathname),
+    },
   };
 }
 
@@ -121,13 +126,15 @@ async function buildRemotePostEntries() {
 
     return posts
       .filter((post) => post.slug)
-      .map((post) =>
-        createEntry(`/blog/${post.slug}`, {
-          locale: defaultLocale,
-          changeFrequency: 'weekly',
-          priority: 0.7,
-          lastModified: post.updatedAt ?? post.createdAt ?? undefined,
-        })
+      .flatMap((post) =>
+        locales.map((locale) =>
+          createEntry(`/blog/${post.slug}`, {
+            locale,
+            changeFrequency: 'weekly',
+            priority: 0.7,
+            lastModified: post.updatedAt ?? post.createdAt ?? undefined,
+          })
+        )
       );
   } catch (error) {
     console.log('building remote sitemap entries failed:', error);

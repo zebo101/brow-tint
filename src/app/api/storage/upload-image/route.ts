@@ -52,22 +52,6 @@ export async function POST(req: Request) {
       const ext = extFromMime(file.type) || file.name.split('.').pop() || 'bin';
       const key = `${digest}.${ext}`;
 
-      // If the same image already exists, reuse its URL to save storage space.
-      // (Still depends on provider supporting signed HEAD + public url generation.)
-      const exists = await storageService.exists({ key });
-      if (exists) {
-        const publicUrl = storageService.getPublicUrl({ key });
-        if (publicUrl) {
-          uploadResults.push({
-            url: publicUrl,
-            key,
-            filename: file.name,
-            deduped: true,
-          });
-          continue;
-        }
-      }
-
       // Upload to storage
       const result = await storageService.uploadFile({
         body,

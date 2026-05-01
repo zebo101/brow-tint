@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "料金",
-    "description": "プランを選択"
+    "title": "Brow Tint 料金 — AI ブロウティント クレジット＆プラン",
+    "description": "クレジットを購入して AI ブロウティント プレビューを生成。プランを比較し、最適なブロウティント パッケージを見つけて数秒で試せます。",
+    "keywords": "ブロウティント 料金, AI ブロウティント クレジット, ブロウティント プラン, ブロウティント ジェネレーター 価格, 眉ティント 費用"
   },
   "page": {
     "title": "料金",
@@ -9,112 +10,259 @@
       "pricing": {
         "id": "pricing",
         "sr_only_title": "Brow Tint 料金",
-        "title": "料金",
-        "description": "AIブロウティント生成のニーズに最適なプランをお選びください。",
+        "title": "最適なプランをお選びください",
+        "description": "AI ブロウティント生成 1 回につき 1 クレジットを使用します。",
         "groups": [
-          {
-            "name": "one-time",
-            "title": "都度払い"
-          },
           {
             "name": "monthly",
             "title": "月額"
           },
           {
             "name": "yearly",
-            "title": "年額",
-            "label": "23%お得"
+            "title": "年額（お得）",
+            "label": "お得"
+          },
+          {
+            "name": "one-time",
+            "title": "チャージ"
           }
         ],
         "items": [
           {
-            "title": "クレジットパッケージ",
-            "description": "必要なときにいつでも開始。1回限りのお支払い",
+            "title": "無料",
+            "description": "Brow Tint を無料でお試し。",
             "features_title": "含まれるもの",
-            "features": [
-              "300クレジット、1年間有効",
-              "テキストから画像、画像から画像の生成",
-              "Nano Banana 2 AIモデルによる高品質画像",
-              "生成画像の無料ダウンロード"
-            ],
-            "interval": "one-time",
-            "amount": 2990,
+            "features": ["コア生成機能", "通常キュー"],
+            "interval": "month",
+            "amount": 0,
             "currency": "USD",
-            "price": "$29.9",
-            "original_price": "$39.9",
-            "unit": "/ 300クレジット",
+            "price": "$0",
+            "unit": "",
             "is_featured": false,
-            "tip": "",
+            "tip": "無料で始めて、いつでもアップグレード。",
             "button": {
-              "title": "クレジット購入",
+              "title": "現在のプラン",
               "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "icon": ""
             },
-            "product_id": "credits-package",
-            "product_name": "クレジットパッケージ",
-            "credits": 300,
-            "valid_days": 365,
-            "group": "one-time"
+            "product_id": "free-monthly",
+            "product_name": "無料",
+            "credits": 0,
+            "valid_days": 30,
+            "group": "monthly"
           },
           {
-            "title": "スタータープラン",
-            "description": "毎月自動更新でクレジット取得。いつでもキャンセル可能！",
+            "title": "ベーシック",
+            "description": "通常の生成ニーズに最適。",
+            "label": "人気",
             "features_title": "含まれるもの",
             "features": [
-              "300クレジット、1ヶ月間有効",
-              "テキストから画像、画像から画像の生成",
-              "Nano Banana 2 AIモデルによる高品質画像",
-              "生成画像の無料ダウンロード"
+              "月 200 クレジット",
+              "クレジット毎月リフレッシュ",
+              "優先キュー",
+              "ウォーターマーク削除"
             ],
             "interval": "month",
-            "amount": 2490,
+            "amount": 1990,
             "currency": "USD",
-            "price": "$24.9",
-            "original_price": "$36.9",
+            "price": "$19.9",
             "unit": "/ 月",
-            "is_featured": false,
-            "tip": "",
+            "is_featured": true,
+            "tip": "いつでもキャンセル可能。",
             "button": {
-              "title": "プラン登録",
+              "title": "登録",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
-            "product_id": "starter-monthly",
-            "product_name": "スタータープラン",
+            "product_id": "basic-monthly",
+            "product_name": "ベーシック月額",
+            "credits": 200,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "ベーシック"
+          },
+          {
+            "title": "プレミアム",
+            "description": "ヘビーユーザーや大量利用に最適。",
+            "features_title": "含まれるもの",
+            "features": [
+              "月 300 クレジット",
+              "クレジット毎月リフレッシュ",
+              "最優先キュー",
+              "ウォーターマーク削除"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/ 月",
+            "is_featured": false,
+            "tip": "いつでもキャンセル可能。",
+            "button": {
+              "title": "登録",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-monthly",
+            "product_name": "プレミアム月額",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "スターター"
+            "plan_name": "プレミアム"
           },
           {
-            "title": "プレミアムプラン",
-            "description": "月額約$19.2、月額プランより23%お得。いつでもキャンセル可能！",
+            "title": "無料",
+            "description": "Brow Tint を無料でお試し。",
+            "features_title": "含まれるもの",
+            "features": ["コア生成機能", "通常キュー"],
+            "interval": "year",
+            "amount": 0,
+            "currency": "USD",
+            "price": "$0",
+            "unit": "",
+            "is_featured": false,
+            "tip": "無料で始めて、いつでもアップグレード。",
+            "button": {
+              "title": "現在のプラン",
+              "url": "/#pricing",
+              "icon": ""
+            },
+            "product_id": "free-yearly",
+            "product_name": "無料",
+            "credits": 0,
+            "valid_days": 365,
+            "group": "yearly"
+          },
+          {
+            "title": "ベーシック",
+            "description": "年額請求でお得に。年間分のクレジットは一括付与されます。",
+            "label": "お得",
             "features_title": "含まれるもの",
             "features": [
-              "4000クレジット、1年間有効",
-              "テキストから画像、画像から画像の生成",
-              "Nano Banana 2 AIモデルによる高品質画像",
-              "生成画像の無料ダウンロード"
+              "年 2400 クレジット",
+              "契約時に一括付与",
+              "優先キュー",
+              "ウォーターマーク削除"
             ],
             "interval": "year",
-            "amount": 22990,
+            "amount": 19080,
             "currency": "USD",
-            "price": "$229.9",
-            "original_price": "$299.9",
-            "unit": "/ 年",
-            "is_featured": true,
-            "tip": "",
+            "price": "$15.9",
+            "original_price": "$19.9",
+            "unit": "/ 月",
+            "is_featured": false,
+            "tip": "年額請求。クレジットは一括付与されます。",
             "button": {
-              "title": "プラン登録",
+              "title": "登録",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "ベーシック年額",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "ベーシック年額"
+          },
+          {
+            "title": "プレミアム",
+            "description": "大量利用に最適な年額プラン。年間分のクレジットは一括付与されます。",
+            "features_title": "含まれるもの",
+            "features": [
+              "年 3600 クレジット",
+              "契約時に一括付与",
+              "最優先キュー",
+              "ウォーターマーク削除"
+            ],
+            "interval": "year",
+            "amount": 31080,
+            "currency": "USD",
+            "price": "$25.9",
+            "original_price": "$29.9",
+            "unit": "/ 月",
+            "is_featured": false,
+            "tip": "年額請求。クレジットは一括付与されます。",
+            "button": {
+              "title": "登録",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "プレミアムプラン",
-            "credits": 4000,
+            "product_name": "プレミアム年額",
+            "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "プレミアム"
+            "plan_name": "プレミアム年額"
+          },
+          {
+            "title": "100 クレジットチャージ",
+            "description": "いつでもクレジットを追加。",
+            "features_title": "含まれるもの",
+            "features": ["100 クレジット", "クレジットは無期限"],
+            "interval": "one-time",
+            "amount": 1290,
+            "currency": "USD",
+            "price": "$12.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "1 回限りの購入。クレジットは無期限です。",
+            "button": {
+              "title": "チャージ",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-100",
+            "product_name": "100 クレジットチャージ",
+            "credits": 100,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "200 クレジットチャージ",
+            "description": "必要なときにさらにクレジットを追加。",
+            "label": "人気",
+            "features_title": "含まれるもの",
+            "features": ["200 クレジット", "クレジットは無期限"],
+            "interval": "one-time",
+            "amount": 2590,
+            "currency": "USD",
+            "price": "$25.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "1 回限りの購入。クレジットは無期限です。",
+            "button": {
+              "title": "チャージ",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-200",
+            "product_name": "200 クレジットチャージ",
+            "credits": 200,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "300 クレジットチャージ",
+            "description": "大量利用におすすめ。",
+            "features_title": "含まれるもの",
+            "features": ["300 クレジット", "クレジットは無期限"],
+            "interval": "one-time",
+            "amount": 3890,
+            "currency": "USD",
+            "price": "$38.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "1 回限りの購入。クレジットは無期限です。",
+            "button": {
+              "title": "チャージ",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-300",
+            "product_name": "300 クレジットチャージ",
+            "credits": 300,
+            "valid_days": 0,
+            "group": "one-time"
           }
         ]
       }
@@ -125,20 +273,3 @@
     "processing": "処理中"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

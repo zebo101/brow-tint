@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 import { Check, Loader2 } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
@@ -23,7 +24,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/shared/components/ui/select';
-import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { useAppContext } from '@/shared/contexts/app';
 import { getCookie } from '@/shared/lib/cookie';
 import { cn } from '@/shared/lib/utils';
@@ -88,13 +88,8 @@ export function Pricing({
   const locale = useLocale();
   const t = useTranslations('pages.pricing.messages');
 
-  const {
-    user,
-    isShowPaymentModal,
-    setIsShowSignModal,
-    setIsShowPaymentModal,
-    configs,
-  } = useAppContext();
+  const { user, setIsShowSignModal, setIsShowPaymentModal, configs } =
+    useAppContext();
 
   const [group, setGroup] = useState(() => {
     // find current pricing item
@@ -120,6 +115,42 @@ export function Pricing({
 
   const [isLoading, setIsLoading] = useState(false);
   const [productId, setProductId] = useState<string | null>(null);
+
+  // Rainbow indicator: measure the active group's inner content (text + badge)
+  // and animate the bar to match its width/position.
+  const groupContainerRef = useRef<HTMLDivElement | null>(null);
+  const groupContentRefs = useRef<Record<string, HTMLSpanElement | null>>({});
+  const [indicatorStyle, setIndicatorStyle] = useState<{
+    left: number;
+    width: number;
+  }>({ left: 0, width: 0 });
+
+  useEffect(() => {
+    const updateIndicator = () => {
+      const container = groupContainerRef.current;
+      const content = group ? groupContentRefs.current[group] : null;
+      if (!container || !content) return;
+
+      const containerRect = container.getBoundingClientRect();
+      const contentRect = content.getBoundingClientRect();
+      setIndicatorStyle({
+        left: contentRect.left - containerRect.left,
+        width: contentRect.width,
+      });
+    };
+
+    updateIndicator();
+    // Re-measure after fonts settle, in case web fonts shift text width.
+    const raf = requestAnimationFrame(updateIndicator);
+    if (typeof document !== 'undefined' && document.fonts?.ready) {
+      document.fonts.ready.then(updateIndicator);
+    }
+    window.addEventListener('resize', updateIndicator);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', updateIndicator);
+    };
+  }, [group, section.groups]);
 
   // Currency state management for each item
   // Store selected currency and displayed item for each product_id
@@ -246,10 +277,13 @@ export function Pricing({
       configs.promotekit_enabled === 'true' &&
       ['stripe'].includes(paymentProvider)
     ) {
-      const promotekitReferral =
-        typeof window !== 'undefined' && (window as any).promotekit_referral
-          ? (window as any).promotekit_referral
-          : getCookie('promotekit_referral') || '';
+      const promotekitWindow =
+        typeof window !== 'undefined'
+          ? (window as Window & { promotekit_referral?: string })
+          : undefined;
+      const promotekitReferral = promotekitWindow?.promotekit_referral
+        ? promotekitWindow.promotekit_referral
+        : getCookie('promotekit_referral') || '';
       affiliateMetadata.promotekit_referral = promotekitReferral;
     }
 
@@ -312,9 +346,10 @@ export function Pricing({
       }
 
       window.location.href = checkoutUrl;
-    } catch (e: any) {
+    } catch (e: unknown) {
       console.log('checkout failed: ', e);
-      toast.error('checkout failed: ' + e.message);
+      const message = e instanceof Error ? e.message : String(e);
+      toast.error('checkout failed: ' + message);
 
       setIsLoading(false);
       setProductId(null);
@@ -348,21 +383,59 @@ export function Pricing({
 
       <div className="container">
         {section.groups && section.groups.length > 0 && (
-          <div className="mx-auto mt-8 mb-16 flex w-full justify-center md:max-w-lg">
-            <Tabs value={group} onValueChange={setGroup} className="">
-              <TabsList>
-                {section.groups.map((item, i) => {
-                  return (
-                    <TabsTrigger key={i} value={item.name || ''}>
-                      {item.title}
+          <div className="mb-16 flex justify-center">
+            <div
+              ref={groupContainerRef}
+              className="backdrop-blur-0 relative flex border-0 bg-transparent p-1"
+            >
+              <motion.div
+                className="pointer-events-none absolute bottom-1 h-0.5 overflow-hidden rounded-full"
+                initial={false}
+                animate={{
+                  left: indicatorStyle.left,
+                  width: indicatorStyle.width,
+                  opacity: indicatorStyle.width > 0 ? 1 : 0,
+                }}
+                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              >
+                <div
+                  className="absolute inset-0 w-[400%]"
+                  style={{
+                    background:
+                      'linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(255, 128, 0, 0.7), rgba(255, 255, 0, 0.7), rgba(0, 255, 0, 0.7), rgba(0, 255, 255, 0.7), rgba(0, 0, 255, 0.7), rgba(128, 0, 255, 0.7), rgba(255, 0, 128, 0.7), rgba(255, 0, 0, 0.7))',
+                    animation: 'rainbow-flow 8s linear infinite',
+                  }}
+                />
+              </motion.div>
+              {section.groups.map((item, i) => {
+                const value = item.name || '';
+                const isActive = group === value;
+                return (
+                  <button
+                    key={i}
+                    onClick={() => setGroup(value)}
+                    className={cn(
+                      'relative z-10 flex items-center px-8 py-2 transition-colors duration-300 ease-in-out',
+                      isActive
+                        ? 'text-foreground'
+                        : 'text-muted-foreground hover:text-foreground/80'
+                    )}
+                  >
+                    <span
+                      ref={(el) => {
+                        groupContentRefs.current[value] = el;
+                      }}
+                      className="inline-flex items-center gap-2"
+                    >
+                      <span>{item.title}</span>
                       {item.label && (
-                        <Badge className="ml-2">{item.label}</Badge>
+                        <Badge className="ml-1">{item.label}</Badge>
                       )}
-                    </TabsTrigger>
-                  );
-                })}
-              </TabsList>
-            </Tabs>
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         )}
 
@@ -479,10 +552,20 @@ export function Pricing({
                       className="mt-4 h-9 w-full px-4 py-2"
                       disabled
                     >
-                      <span className="hidden text-sm md:block">
-                        {t('current_plan')}
+                      <span className="block text-sm">{t('current_plan')}</span>
+                    </Button>
+                  ) : item.amount === 0 && !currentSubscription ? (
+                    <Button
+                      variant="outline"
+                      className="mt-4 h-9 w-full px-4 py-2"
+                      disabled
+                    >
+                      <span className="block text-sm">
+                        {item.button?.title || t('current_plan')}
                       </span>
                     </Button>
+                  ) : item.amount === 0 ? (
+                    <div className="mt-4 h-9" aria-hidden />
                   ) : (
                     <Button
                       onClick={() => handlePayment(item)}

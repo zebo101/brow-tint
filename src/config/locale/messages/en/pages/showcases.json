@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "Brow Tint Gallery - AI Brow Tinting Before and After",
-    "description": "See amazing brow tint before and after transformations created with Brow Tint AI generator"
+    "description": "See amazing brow tint before and after transformations created with Brow Tint AI generator",
+    "keywords": "brow tint gallery, brow tint before and after, ai brow tint examples, brow tint preview, brow tint transformations, professional brow tint, tinted brow gel preview"
   },
   "page": {
     "title": "Brow Tint Gallery",
@@ -51,7 +52,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
+              "src": "/imgs/cases/1.jpg",
               "alt": "Soft taupe brow tint before and after"
             },
             "group": "short-hair"
@@ -62,7 +63,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
+              "src": "/imgs/cases/2.jpg",
               "alt": "Dark espresso brow tint"
             },
             "group": "long-hair"
@@ -73,7 +74,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/3.png",
+              "src": "/imgs/cases/3.jpg",
               "alt": "Brow lamination and tint result"
             },
             "group": "color-change"
@@ -84,7 +85,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/4.png",
+              "src": "/imgs/cases/4.jpg",
               "alt": "Professional brow tint transformation"
             },
             "group": "classic"
@@ -95,7 +96,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
+              "src": "/imgs/cases/5.jpg",
               "alt": "Tinted brow gel look"
             },
             "group": "men-styles"
@@ -106,38 +107,16 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
+              "src": "/imgs/cases/7.jpg",
               "alt": "Lash and brow tint result"
             },
             "group": "women-styles"
-          },
-          {
-            "title": "Brow Code Tint",
-            "description": "Precise brow code formula match for your unique brow color",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "Brow code tint match"
-            },
-            "group": "trendy"
-          },
-          {
-            "title": "Best Brow Tint Shade Match",
-            "description": "AI-matched perfect brow tint shade tailored to your skin tone and hair color",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "Best brow tint shade match"
-            },
-            "group": "short-hair"
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "Browse the Full Brow Tint Style Library",
         "description": "Scroll through our AI-powered brow tint styles organized by type. Click any look to preview on your own photo.",
         "limit": 12,
@@ -169,33 +148,6 @@
           }
         ],
         "tip": "Every preview is free. New brow tint styles added regularly."
-      },
-      "video_demo": {
-        "block": "features-accordion",
-        "id": "video_demo",
-        "label": "Video Demo",
-        "title": "See Brow Tint in Action",
-        "description": "Watch real brow tint before and after transformations — from upload to preview in seconds.",
-        "items": [
-          {
-            "title": "Preview Multiple Brow Tint Shades Instantly",
-            "description": "Upload one photo and preview several brow tint shades and styles side by side to find your perfect match.",
-            "icon": "RiPlayCircleLine",
-            "image": {
-              "src": "/video/v1.mp4",
-              "alt": "AI brow tinting preview demo video"
-            }
-          },
-          {
-            "title": "See Realistic Brow Tint Texture and Coverage",
-            "description": "Preview how different brow tinting techniques — from tinted brow gel to professional brow tint — look on your actual brows before committing.",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "/video/v2.mp4",
-              "alt": "Brow tint texture and coverage preview video"
-            }
-          }
-        ]
       },
       "usage": {
         "block": "features-step",
@@ -280,8 +232,6 @@
     },
     "show_sections": [
       "showcases",
-      "hairstyle_gallery",
-      "video_demo",
       "usage",
       "faq",
       "cta"

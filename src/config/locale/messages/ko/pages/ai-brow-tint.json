@@ -1,0 +1,138 @@
+{
+  "header": {
+    "lookbook": "룩북",
+    "how_it_works": "사용 방법",
+    "credits": "{n} 크레딧"
+  },
+  "stepper": {
+    "step1": "사진 업로드",
+    "step2": "스타일 선택",
+    "step3": "미리보기 & 저장"
+  },
+  "step1": {
+    "eyebrow": "1단계 · 내 사진",
+    "title": "선명한 정면 사진으로 시작하세요.",
+    "subtitle": "부드러운 조명에서 안경 없이 눈썹이 잘 보이는 사진을 사용하세요. 사진은 미리보기 생성에만 사용되며 곧 자동으로 삭제됩니다.",
+    "tips": [
+      "카메라를 정면으로 바라보고 자연스러운 표정 짓기",
+      "앞머리를 넘겨 눈썹 라인이 보이도록 하기",
+      "JPG 또는 PNG, 최대 10 MB"
+    ],
+    "upload_btn": "사진 업로드",
+    "or_sample": "또는 샘플 선택",
+    "samples": {
+      "light": "샘플 · 라이트",
+      "medium": "샘플 · 미디엄",
+      "deep": "샘플 · 딥"
+    },
+    "drop_text": "여기에 사진을 놓으세요",
+    "drop_sub": "또는 클릭하여 찾아보기",
+    "continue": "스타일로 이동"
+  },
+  "step2": {
+    "title": "눈썹 룩 선택",
+    "subtitle": "엄선된 {total}개 중 {shown}개 · 탭하면 내 사진에서 미리볼 수 있어요",
+    "your_photo": "내 사진",
+    "search": "스타일 검색…",
+    "filters": {
+      "shade": "컬러",
+      "shape": "모양",
+      "intensity": "강도",
+      "sort": "정렬"
+    },
+    "sort_options": {
+      "curated": "큐레이션",
+      "popular": "인기",
+      "trending": "트렌드"
+    },
+    "clear_all": "전체 해제",
+    "empty": "조건에 맞는 스타일이 없습니다.",
+    "select": "이 스타일 선택",
+    "premium": "Premium",
+    "credits_label": "{n} 크레딧"
+  },
+  "step3": {
+    "eyebrow": "3단계 · 미리보기",
+    "drag_hint": "구분선을 드래그하여 Before / After를 비교하세요.",
+    "rendering": "새 룩을 생성하는 중…",
+    "rendering_sub": "{style}을 얼굴에 맞추는 중",
+    "before": "Before",
+    "after": "After",
+    "back": "다른 스타일 시도",
+    "regenerate": "다시 생성",
+    "download": "다운로드",
+    "details": {
+      "title": "룩 상세",
+      "shade": "컬러",
+      "shape": "모양",
+      "intensity": "강도",
+      "tags": "태그"
+    },
+    "variation": {
+      "title": "변형 시도",
+      "subtitle": "강도를 조정해 결과를 다듬어 보세요."
+    },
+    "reference": {
+      "title": "실제 결과를 원하시나요?",
+      "body": "이 룩을 다음 살롱 방문 시 참고용으로 사용해 보세요. 인쇄용 카드를 만들어 드립니다."
+    }
+  },
+  "buttons": {
+    "generate": "생성 · {credits} 크레딧",
+    "no_credits": "생성을 위해 크레딧 충전",
+    "signin": "로그인하고 생성하기"
+  },
+  "studio": {
+    "title": "AI Brow Tint Studio",
+    "subtitle": "사진을 올리고 룩을 골라 결과를 나란히 확인해 보세요.",
+    "checking": "계정 확인 중...",
+    "left": {
+      "photo_title": "내 사진",
+      "photo_tips": "촬영 팁",
+      "photo_drop": "여기에 사진을 놓으세요",
+      "photo_drop_sub": "또는 클릭하여 찾아보기 — JPG 또는 PNG, 최대 10 MB",
+      "photo_sample_label": "또는 샘플 사용해 보기",
+      "photo_change": "사진 변경",
+      "photo_clear": "사진 제거",
+      "uploading": "업로드 중...",
+      "resizing": "이미지 준비 중...",
+      "uploading_size": "{kb} KB 업로드 중...",
+      "style_title": "룩 선택",
+      "style_all": "전체 {count}개 스타일",
+      "style_selected": "선택됨: {name}"
+    },
+    "right": {
+      "empty_title": "룩을 선택해 미리보기를 시작하세요",
+      "empty_subtitle": "아래 스타일을 탭하세요 — 사진을 올리면 바로 적용해 드립니다.",
+      "empty_browse_all": "모든 브로우 틴트 스타일 보기",
+      "empty_style_picked_title": "{name} 준비 완료 — 이제 사진을 올려주세요",
+      "empty_style_picked_subtitle": "왼쪽에 사진을 놓으면 몇 초 만에 이 룩을 만들어 드립니다.",
+      "empty_photo_only": "이제 왼쪽에서 눈썹 룩을 선택하세요 →",
+      "ready_title": "{name} 미리보기 준비 완료",
+      "ready_subtitle": "생성을 탭해서 새 룩을 만들어 보세요.",
+      "generating_title": "새 룩을 생성하는 중...",
+      "generating_subtitle": "{style}을 얼굴에 맞추는 중 · 보통 8~15초 소요됩니다.",
+      "try_another": "다른 룩 시도",
+      "failed_title": "생성 실패",
+      "failed_subtitle": "문제가 발생했습니다. 다시 시도하거나 다른 사진을 선택하세요.",
+      "failed_retry": "다시 시도",
+      "success_orphan": "결과가 준비되었습니다 — 사진을 다시 올려 나란히 비교해 보세요."
+    },
+    "cta": {
+      "need_photo": "사진을 추가해 시작하기",
+      "need_style": "눈썹 룩 선택",
+      "generating": "생성 중..."
+    },
+    "drawer": {
+      "title": "모든 브로우 틴트 스타일",
+      "subtitle": "타일을 눌러 미리 본 다음 선택을 적용하세요.",
+      "search": "이름, 컬러, 모양으로 검색…",
+      "all_shades": "전체 컬러",
+      "empty": "조건에 맞는 스타일이 없습니다.",
+      "selected_label": "선택됨:",
+      "select_hint": "타일을 눌러 룩을 미리 보세요.",
+      "cancel": "취소",
+      "apply": "이 스타일 사용"
+    }
+  }
+}

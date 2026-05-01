@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "Preise",
-    "description": "Wählen Sie einen Plan"
+    "title": "Brow Tint Preise — KI Brow-Tint Credits & Pläne",
+    "description": "Kaufe Credits für KI Brow-Tint Vorschauen. Pläne vergleichen, das beste Brow-Tint Paket finden und in Sekunden ausprobieren.",
+    "keywords": "Brow Tint Preise, KI Brow-Tint Credits, Brow-Tint Pläne, Augenbrauen Tönung Preis, Brow-Tint Generator Kosten, KI Augenbrauen-Tint Abo"
   },
   "page": {
     "title": "Preise",
@@ -9,112 +10,265 @@
       "pricing": {
         "id": "pricing",
         "sr_only_title": "Brow Tint Preise",
-        "title": "Preise",
-        "description": "Wählen Sie den perfekten Plan für Ihre KI-Augenbrauentönung-Generierung.",
+        "title": "Wählen Sie Ihren perfekten Plan",
+        "description": "Jede KI-Brow-Tint-Generierung verbraucht 1 Credit.",
         "groups": [
-          {
-            "name": "one-time",
-            "title": "Pay as you go"
-          },
           {
             "name": "monthly",
             "title": "Monatlich"
           },
           {
             "name": "yearly",
-            "title": "Jährlich",
-            "label": "23% sparen"
+            "title": "Jährlich (Sparen)",
+            "label": "Sparen"
+          },
+          {
+            "name": "one-time",
+            "title": "Aufladen"
           }
         ],
         "items": [
           {
-            "title": "Credits-Paket",
-            "description": "Starten Sie jederzeit nach Bedarf. Einmalige Zahlung",
+            "title": "Kostenlos",
+            "description": "Brow Tint kostenlos testen.",
             "features_title": "Beinhaltet",
             "features": [
-              "300 Credits, 1 Jahr gültig",
-              "Text-zu-Bild und Bild-zu-Bild Generierung",
-              "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
-              "Kostenloser Download generierter Bilder"
-            ],
-            "interval": "one-time",
-            "amount": 2990,
-            "currency": "USD",
-            "price": "$29.9",
-            "original_price": "$39.9",
-            "unit": "/ 300 Credits",
-            "is_featured": false,
-            "tip": "",
-            "button": {
-              "title": "Credits kaufen",
-              "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
-            },
-            "product_id": "credits-package",
-            "product_name": "Credits-Paket",
-            "credits": 300,
-            "valid_days": 365,
-            "group": "one-time"
-          },
-          {
-            "title": "Starter Plan",
-            "description": "Automatische monatliche Verlängerung für Credits. Jederzeit kündbar!",
-            "features_title": "Beinhaltet",
-            "features": [
-              "300 Credits, 1 Monat gültig",
-              "Text-zu-Bild und Bild-zu-Bild Generierung",
-              "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
-              "Kostenloser Download generierter Bilder"
+              "Kern-Generierungsfunktionen",
+              "Standard-Warteschlange"
             ],
             "interval": "month",
-            "amount": 2490,
+            "amount": 0,
             "currency": "USD",
-            "price": "$24.9",
-            "original_price": "$36.9",
-            "unit": "/ Monat",
+            "price": "$0",
+            "unit": "",
             "is_featured": false,
-            "tip": "",
+            "tip": "Kostenlos starten. Jederzeit upgraden.",
             "button": {
-              "title": "Plan abonnieren",
+              "title": "Aktueller Plan",
+              "url": "/#pricing",
+              "icon": ""
+            },
+            "product_id": "free-monthly",
+            "product_name": "Kostenlos",
+            "credits": 0,
+            "valid_days": 30,
+            "group": "monthly"
+          },
+          {
+            "title": "Basic",
+            "description": "Für regelmäßigen Bedarf.",
+            "label": "Beliebt",
+            "features_title": "Beinhaltet",
+            "features": [
+              "200 Credits pro Monat",
+              "Credits monatlich erneuert",
+              "Prioritäts-Warteschlange",
+              "Wasserzeichen entfernen"
+            ],
+            "interval": "month",
+            "amount": 1990,
+            "currency": "USD",
+            "price": "$19.9",
+            "unit": "/ Monat",
+            "is_featured": true,
+            "tip": "Jederzeit kündbar.",
+            "button": {
+              "title": "Abonnieren",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
-            "product_id": "starter-monthly",
-            "product_name": "Starter Plan",
+            "product_id": "basic-monthly",
+            "product_name": "Basic Monatlich",
+            "credits": 200,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Premium",
+            "description": "Für Power-Nutzer mit hohem Bedarf.",
+            "features_title": "Beinhaltet",
+            "features": [
+              "300 Credits pro Monat",
+              "Credits monatlich erneuert",
+              "Höchste Priorität",
+              "Wasserzeichen entfernen"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/ Monat",
+            "is_featured": false,
+            "tip": "Jederzeit kündbar.",
+            "button": {
+              "title": "Abonnieren",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-monthly",
+            "product_name": "Premium Monatlich",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "Starter"
+            "plan_name": "Premium"
           },
           {
-            "title": "Premium Plan",
-            "description": "Ca. $19.2 / Monat, 23% Ersparnis vs. Monatsplan. Jederzeit kündbar!",
+            "title": "Kostenlos",
+            "description": "Brow Tint kostenlos testen.",
             "features_title": "Beinhaltet",
             "features": [
-              "4000 Credits, 1 Jahr gültig",
-              "Text-zu-Bild und Bild-zu-Bild Generierung",
-              "Hochwertige Bilder mit Nano Banana 2 KI-Modell",
-              "Kostenloser Download generierter Bilder"
+              "Kern-Generierungsfunktionen",
+              "Standard-Warteschlange"
             ],
             "interval": "year",
-            "amount": 22990,
+            "amount": 0,
             "currency": "USD",
-            "price": "$229.9",
-            "original_price": "$299.9",
-            "unit": "/ Jahr",
-            "is_featured": true,
-            "tip": "",
+            "price": "$0",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Kostenlos starten. Jederzeit upgraden.",
             "button": {
-              "title": "Plan abonnieren",
+              "title": "Aktueller Plan",
+              "url": "/#pricing",
+              "icon": ""
+            },
+            "product_id": "free-yearly",
+            "product_name": "Kostenlos",
+            "credits": 0,
+            "valid_days": 365,
+            "group": "yearly"
+          },
+          {
+            "title": "Basic",
+            "description": "Mit Jahresabrechnung sparen. Jahres-Credits werden im Voraus gutgeschrieben.",
+            "label": "Sparen",
+            "features_title": "Beinhaltet",
+            "features": [
+              "2400 Credits pro Jahr",
+              "Im Voraus gutgeschrieben",
+              "Prioritäts-Warteschlange",
+              "Wasserzeichen entfernen"
+            ],
+            "interval": "year",
+            "amount": 19080,
+            "currency": "USD",
+            "price": "$15.9",
+            "original_price": "$19.9",
+            "unit": "/ Monat",
+            "is_featured": false,
+            "tip": "Jährliche Abrechnung. Credits werden im Voraus gutgeschrieben.",
+            "button": {
+              "title": "Abonnieren",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Basic Jährlich",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Basic Jährlich"
+          },
+          {
+            "title": "Premium",
+            "description": "Bester Jahreswert für hohen Bedarf. Jahres-Credits werden im Voraus gutgeschrieben.",
+            "features_title": "Beinhaltet",
+            "features": [
+              "3600 Credits pro Jahr",
+              "Im Voraus gutgeschrieben",
+              "Höchste Priorität",
+              "Wasserzeichen entfernen"
+            ],
+            "interval": "year",
+            "amount": 31080,
+            "currency": "USD",
+            "price": "$25.9",
+            "original_price": "$29.9",
+            "unit": "/ Monat",
+            "is_featured": false,
+            "tip": "Jährliche Abrechnung. Credits werden im Voraus gutgeschrieben.",
+            "button": {
+              "title": "Abonnieren",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "Premium Plan",
-            "credits": 4000,
+            "product_name": "Premium Jährlich",
+            "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Premium"
+            "plan_name": "Premium Jährlich"
+          },
+          {
+            "title": "100 Credits aufladen",
+            "description": "Credits jederzeit nachladen.",
+            "features_title": "Beinhaltet",
+            "features": ["100 Credits", "Credits verfallen nie"],
+            "interval": "one-time",
+            "amount": 1290,
+            "currency": "USD",
+            "price": "$12.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Einmalkauf. Credits verfallen nie.",
+            "button": {
+              "title": "Aufladen",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-100",
+            "product_name": "Aufladung 100",
+            "credits": 100,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "200 Credits aufladen",
+            "description": "Mehr Credits, wenn du sie brauchst.",
+            "label": "Beliebt",
+            "features_title": "Beinhaltet",
+            "features": ["200 Credits", "Credits verfallen nie"],
+            "interval": "one-time",
+            "amount": 2590,
+            "currency": "USD",
+            "price": "$25.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Einmalkauf. Credits verfallen nie.",
+            "button": {
+              "title": "Aufladen",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-200",
+            "product_name": "Aufladung 200",
+            "credits": 200,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "300 Credits aufladen",
+            "description": "Ideal für höheren Bedarf.",
+            "features_title": "Beinhaltet",
+            "features": ["300 Credits", "Credits verfallen nie"],
+            "interval": "one-time",
+            "amount": 3890,
+            "currency": "USD",
+            "price": "$38.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Einmalkauf. Credits verfallen nie.",
+            "button": {
+              "title": "Aufladen",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-300",
+            "product_name": "Aufladung 300",
+            "credits": 300,
+            "valid_days": 0,
+            "group": "one-time"
           }
         ]
       }
@@ -125,20 +279,3 @@
     "processing": "Wird verarbeitet"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

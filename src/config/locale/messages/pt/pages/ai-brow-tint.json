@@ -1,0 +1,138 @@
+{
+  "header": {
+    "lookbook": "Lookbook",
+    "how_it_works": "Como funciona",
+    "credits": "{n} créditos"
+  },
+  "stepper": {
+    "step1": "Enviar foto",
+    "step2": "Escolher estilo",
+    "step3": "Pré-visualizar e salvar"
+  },
+  "step1": {
+    "eyebrow": "Passo 1 · Sua foto",
+    "title": "Comece com uma foto frontal e bem definida.",
+    "subtitle": "Iluminação suave, sem óculos, sobrancelhas totalmente visíveis. Sua foto é usada apenas para gerar a pré-visualização e é apagada automaticamente logo depois.",
+    "tips": [
+      "Olhe para a câmera com expressão neutra",
+      "Prenda o cabelo para liberar a linha das sobrancelhas",
+      "JPG ou PNG, até 10 MB"
+    ],
+    "upload_btn": "Enviar foto",
+    "or_sample": "ou escolha um exemplo",
+    "samples": {
+      "light": "Exemplo · Claro",
+      "medium": "Exemplo · Médio",
+      "deep": "Exemplo · Escuro"
+    },
+    "drop_text": "Solte sua foto aqui",
+    "drop_sub": "ou clique para procurar",
+    "continue": "Avançar para os estilos"
+  },
+  "step2": {
+    "title": "Escolha seu look de sobrancelhas",
+    "subtitle": "{shown} de {total} estilos selecionados · toque em um para ver na sua foto",
+    "your_photo": "Sua foto",
+    "search": "Buscar estilos…",
+    "filters": {
+      "shade": "Tom",
+      "shape": "Formato",
+      "intensity": "Intensidade",
+      "sort": "Ordenar"
+    },
+    "sort_options": {
+      "curated": "Selecionados",
+      "popular": "Populares",
+      "trending": "Em alta"
+    },
+    "clear_all": "Limpar tudo",
+    "empty": "Nenhum estilo corresponde a estes filtros.",
+    "select": "Escolher este estilo",
+    "premium": "Premium",
+    "credits_label": "{n} créditos"
+  },
+  "step3": {
+    "eyebrow": "Passo 3 · Sua pré-visualização",
+    "drag_hint": "Arraste o divisor para comparar antes e depois.",
+    "rendering": "Gerando seu novo look…",
+    "rendering_sub": "Adaptando {style} aos seus traços",
+    "before": "Antes",
+    "after": "Depois",
+    "back": "Tentar outro estilo",
+    "regenerate": "Gerar novamente",
+    "download": "Baixar",
+    "details": {
+      "title": "Detalhes do look",
+      "shade": "Tom",
+      "shape": "Formato",
+      "intensity": "Intensidade",
+      "tags": "Tags"
+    },
+    "variation": {
+      "title": "Tentar uma variação",
+      "subtitle": "Ajuste a intensidade para refinar o resultado."
+    },
+    "reference": {
+      "title": "Quer um resultado real?",
+      "body": "Use este look como referência na sua próxima visita ao salão. Vamos gerar um cartão para imprimir."
+    }
+  },
+  "buttons": {
+    "generate": "Gerar · {credits} créditos",
+    "no_credits": "Adquira créditos para gerar",
+    "signin": "Entre para gerar"
+  },
+  "studio": {
+    "title": "AI Brow Tint Studio",
+    "subtitle": "Envie uma foto, escolha um look e veja o resultado lado a lado.",
+    "checking": "Verificando conta...",
+    "left": {
+      "photo_title": "Sua foto",
+      "photo_tips": "Dicas para a foto",
+      "photo_drop": "Solte sua foto aqui",
+      "photo_drop_sub": "ou clique para procurar — JPG ou PNG, até 10 MB",
+      "photo_sample_label": "Ou experimente um exemplo",
+      "photo_change": "Trocar foto",
+      "photo_clear": "Remover foto",
+      "uploading": "Enviando...",
+      "resizing": "Preparando imagem...",
+      "uploading_size": "Enviando {kb} KB...",
+      "style_title": "Escolher um look",
+      "style_all": "Todos os {count} estilos",
+      "style_selected": "Selecionado: {name}"
+    },
+    "right": {
+      "empty_title": "Escolha um look para começar sua pré-visualização",
+      "empty_subtitle": "Toque em qualquer estilo abaixo — vamos mostrá-lo na sua foto assim que você enviar uma.",
+      "empty_browse_all": "Ver todos os estilos de tinta para sobrancelhas",
+      "empty_style_picked_title": "{name} pronto — agora envie sua foto",
+      "empty_style_picked_subtitle": "Solte uma foto à esquerda para gerar este look em segundos.",
+      "empty_photo_only": "Agora escolha um look de sobrancelhas à esquerda →",
+      "ready_title": "Pronto para pré-visualizar {name}",
+      "ready_subtitle": "Toque em Gerar para criar seu novo look.",
+      "generating_title": "Gerando seu novo look...",
+      "generating_subtitle": "Adaptando {style} aos seus traços · normalmente de 8 a 15 segundos.",
+      "try_another": "Tentar outro",
+      "failed_title": "Falha na geração",
+      "failed_subtitle": "Algo deu errado. Tente de novo ou escolha outra foto.",
+      "failed_retry": "Tentar de novo",
+      "success_orphan": "Resultado pronto — reenvie sua foto para comparar lado a lado."
+    },
+    "cta": {
+      "need_photo": "Adicione sua foto para começar",
+      "need_style": "Escolha um look de sobrancelhas",
+      "generating": "Gerando..."
+    },
+    "drawer": {
+      "title": "Todos os estilos de tinta para sobrancelhas",
+      "subtitle": "Toque em uma imagem para pré-visualizar e aplique sua escolha.",
+      "search": "Pesquisar por nome, tom ou formato…",
+      "all_shades": "Todos os tons",
+      "empty": "Nenhum estilo corresponde a estes filtros.",
+      "selected_label": "Selecionado:",
+      "select_hint": "Toque em uma imagem para pré-visualizar.",
+      "cancel": "Cancelar",
+      "apply": "Usar este estilo"
+    }
+  }
+}

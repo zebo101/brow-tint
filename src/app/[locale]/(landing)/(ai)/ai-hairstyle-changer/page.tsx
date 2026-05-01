@@ -2,7 +2,7 @@ import { redirect } from 'next/navigation';
 
 import { defaultLocale } from '@/config/locale';
 
-export default async function AiHairstyleChangerRedirect({
+export default async function AiBrowTintChangerRedirect({
   params,
 }: {
   params: Promise<{ locale: string }>;

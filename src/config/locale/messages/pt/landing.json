@@ -39,12 +39,6 @@
               "icon": "RiImage2Line"
             },
             {
-              "title": "Vídeo de Brow Tint com IA",
-              "description": "Crie vídeos de transformação de tintura de sobrancelhas com IA",
-              "url": "/hairstyle-changer-ai-video",
-              "icon": "RiVideoLine"
-            },
-            {
               "title": "Consultor Brow Tint",
               "description": "Receba conselhos especializados de IA sobre tintura de sobrancelhas",
               "url": "/chat",
@@ -102,12 +96,6 @@
               "icon": "RiImage2Line"
             },
             {
-              "title": "Vídeo de Brow Tint com IA",
-              "description": "Crie vídeos de transformação de tintura de sobrancelhas",
-              "url": "/hairstyle-changer-ai-video",
-              "icon": "RiVideoLine"
-            },
-            {
               "title": "Consultor Brow Tint",
               "description": "Converse com um especialista em tintura de sobrancelhas com IA",
               "url": "/chat",
@@ -144,18 +132,18 @@
           "title": "Parceiros",
           "children": [
             {
+              "title": "AI Barber",
+              "url": "https://aibarber.net/",
+              "target": "_blank"
+            },
+            {
+              "title": "Inpaint",
+              "url": "https://inpaint.dev/",
+              "target": "_blank"
+            },
+            {
               "title": "MCPALL",
-              "url": "https://mcpall.com",
-              "target": "_blank"
-            },
-            {
-              "title": "imgs.chat",
-              "url": "https://imgs.chat",
-              "target": "_blank"
-            },
-            {
-              "title": "101st.dev",
-              "url": "https://101st.dev",
+              "url": "https://mcpall.com/",
               "target": "_blank"
             }
           ]
@@ -185,7 +173,7 @@
         {
           "title": "E-mail",
           "icon": "Mail",
-          "url": "mailto:cy0410239@gmail.com",
+          "url": "mailto:privacy@tintbrow.com",
           "target": "_self"
         }
       ]

@@ -108,12 +108,21 @@ export function buildLanguageAlternates(
   const resolvedOptions = getOptions(options);
   const normalizedPath = stripLocalePrefix(pathname, resolvedOptions.locales);
 
-  return Object.fromEntries(
-    resolvedOptions.locales.map((locale) => [
+  const entries: Array<[string, string]> = resolvedOptions.locales.map(
+    (locale) => [
       locale,
       buildCanonicalUrl(normalizedPath, locale, resolvedOptions),
-    ])
+    ]
   );
+
+  // x-default points at the default-locale URL so Google has an explicit
+  // fallback when none of the language variants matches the user.
+  entries.push([
+    'x-default',
+    buildCanonicalUrl(normalizedPath, resolvedOptions.defaultLocale, resolvedOptions),
+  ]);
+
+  return Object.fromEntries(entries);
 }
 
 export function isIndexablePath(

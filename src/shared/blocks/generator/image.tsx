@@ -2,7 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
+  Check,
   ChevronRight,
+  Coins,
   CreditCard,
   Download,
   ImageIcon,
@@ -19,8 +21,8 @@ import { toast } from 'sonner';
 
 import { Link } from '@/core/i18n/navigation';
 import {
-  buildHairstylePrompt,
-  HAIRSTYLE_NEGATIVE_PROMPT,
+  buildBrowTintPrompt,
+  BROW_TINT_NEGATIVE_PROMPT,
 } from '@/config/img-prompt';
 import { AIMediaType, AITaskStatus } from '@/extensions/ai/types';
 import {
@@ -29,8 +31,8 @@ import {
   ImageUploaderValue,
   LazyImage,
 } from '@/shared/blocks/common';
-import { HairstyleCategorySelector } from '@/shared/components/hairstyle-category-selector';
-import { StackedHairstyleCards } from '@/shared/components/stacked-hairstyle-cards';
+import { BeforeAfterSlider } from '@/shared/components/before-after-slider';
+import { BrowTintCategorySelector } from '@/shared/components/brow-tint-category-selector';
 import {
   Accordion,
   AccordionContent,
@@ -69,7 +71,7 @@ import {
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { Textarea } from '@/shared/components/ui/textarea';
 import { useAppContext } from '@/shared/contexts/app';
-import { useHairstyles } from '@/shared/hooks/use-hairstyles';
+import { useBrowTints } from '@/shared/hooks/use-brow-tints';
 import { cn } from '@/shared/lib/utils';
 import {
   getImageModelSelectValue,
@@ -114,20 +116,21 @@ const MAX_POLL_ERRORS = 3;
 const MAX_PROMPT_LENGTH = 2000;
 const MAX_HISTORY_IMAGES = 24;
 
-const EXAMPLE_STACK_ITEMS = [
-  { id: 'example-11', src: '/imgs/cases/11.png', alt: 'Example hairstyle' },
-];
-const EXAMPLE_MAIN_IMAGE = EXAMPLE_STACK_ITEMS[0];
+const EXAMPLE_IMAGE = {
+  id: 'example-14',
+  src: '/imgs/cases/14.png',
+  alt: 'Example brow tint',
+};
 
-type HairstyleCategoryKey = 'men' | 'women' | 'boys' | 'girls';
+type BrowTintCategoryKey = 'men' | 'women' | 'boys' | 'girls';
 
-type HairstyleCategory = {
-  key: HairstyleCategoryKey;
+type BrowTintCategory = {
+  key: BrowTintCategoryKey;
   count: number;
 };
 
-// Database hairstyle type
-interface Hairstyle {
+// Database brow tint type
+interface BrowTint {
   id: string;
   category: string;
   sequence: number;
@@ -140,7 +143,7 @@ interface Hairstyle {
 }
 
 // Fallback hardcoded categories (used when API fails or no data)
-const FALLBACK_CATEGORIES: HairstyleCategory[] = [
+const FALLBACK_CATEGORIES: BrowTintCategory[] = [
   { key: 'men', count: 12 },
   { key: 'women', count: 12 },
   { key: 'boys', count: 12 },
@@ -261,10 +264,10 @@ export function ImageGenerator({
   const [isRightPanelOpen, setIsRightPanelOpen] = useState(true);
   const [rightTab, setRightTab] = useState<'history' | 'discover'>('discover');
   const [isLeftSheetOpen, setIsLeftSheetOpen] = useState(false);
-  const [selectedHairstyleName, setSelectedHairstyleName] = useState<
+  const [selectedBrowTintName, setSelectedBrowTintName] = useState<
     string | null
   >(null);
-  const [selectedHairstyle, setSelectedHairstyle] = useState<Hairstyle | null>(
+  const [selectedBrowTint, setSelectedBrowTint] = useState<BrowTint | null>(
     null
   );
 
@@ -301,24 +304,24 @@ export function ImageGenerator({
   const [isMounted, setIsMounted] = useState(false);
   const [showExampleImage, setShowExampleImage] = useState(true);
 
-  // Dynamic hairstyles from cached hook
+  // Dynamic brow tints from cached hook
   const {
-    hairstyles,
+    browTints,
     categories: categoryData,
-    isLoading: isLoadingHairstyles,
-  } = useHairstyles();
+    isLoading: isLoadingBrowTints,
+  } = useBrowTints();
 
-  // Disambiguate the selected hairstyle's name when the same `name` appears
+  // Disambiguate the selected brow tint's name when the same `name` appears
   // on more than one row in its category (can happen because the AI analyzer
   // sometimes gives visually-similar cuts identical names).
   const selectedDisplayName = useMemo(() => {
-    if (!selectedHairstyle) return '';
-    const siblings = hairstyles[selectedHairstyle.category] ?? [];
-    const sameName = siblings.filter((h) => h.name === selectedHairstyle.name);
-    if (sameName.length <= 1) return selectedHairstyle.name;
-    const idx = sameName.findIndex((h) => h.id === selectedHairstyle.id) + 1;
-    return `${selectedHairstyle.name} #${idx}`;
-  }, [hairstyles, selectedHairstyle]);
+    if (!selectedBrowTint) return '';
+    const siblings = browTints[selectedBrowTint.category] ?? [];
+    const sameName = siblings.filter((h) => h.name === selectedBrowTint.name);
+    if (sameName.length <= 1) return selectedBrowTint.name;
+    const idx = sameName.findIndex((h) => h.id === selectedBrowTint.id) + 1;
+    return `${selectedBrowTint.name} #${idx}`;
+  }, [browTints, selectedBrowTint]);
 
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
@@ -619,24 +622,24 @@ export function ImageGenerator({
     const trimmedPrompt = prompt.trim();
     const subjectImageCount = isTextToImageMode ? 0 : referenceImageUrls.length;
 
-    // Construct the final prompt including hairstyle info if selected
+    // Construct the final prompt including brow tint info if selected
     let finalPrompt = trimmedPrompt;
-    if (selectedHairstyle) {
-      const tags = Array.isArray(selectedHairstyle.tags)
-        ? selectedHairstyle.tags
+    if (selectedBrowTint) {
+      const tags = Array.isArray(selectedBrowTint.tags)
+        ? selectedBrowTint.tags
         : [];
-      finalPrompt = buildHairstylePrompt(
-        selectedHairstyle.name,
+      finalPrompt = buildBrowTintPrompt(
+        selectedBrowTint.name,
         tags,
         trimmedPrompt,
         subjectImageCount,
-        selectedHairstyle.prompt || ''
+        selectedBrowTint.prompt || ''
       );
     }
 
     if (!finalPrompt) {
       toast.error(
-        'Please enter a prompt or select a hairstyle before generating.'
+        'Please enter a prompt or select a brow tint before generating.'
       );
       return;
     }
@@ -665,10 +668,10 @@ export function ImageGenerator({
         options.image_input = referenceImageUrls;
       }
 
-      // Only send hairstyle reference image when user photo exists (image-to-image)
-      if (selectedHairstyle && !isTextToImageMode) {
-        options.hairstyle_image = selectedHairstyle.imageUrl;
-        options.negative_prompt = HAIRSTYLE_NEGATIVE_PROMPT;
+      // Only send brow tint reference image when user photo exists (image-to-image)
+      if (selectedBrowTint && !isTextToImageMode) {
+        options.brow_tint_image = selectedBrowTint.imageUrl;
+        options.negative_prompt = BROW_TINT_NEGATIVE_PROMPT;
       }
 
       const resp = await fetch('/api/ai/generate', {
@@ -843,14 +846,14 @@ export function ImageGenerator({
                 </div>
               </div>
               <div className="p-4">
-                <HairstyleCategorySelector
-                  hairstyles={hairstyles}
+                <BrowTintCategorySelector
+                  browTints={browTints}
                   categories={categoryData}
-                  isLoading={isLoadingHairstyles}
-                  selectedHairstyle={selectedHairstyle}
-                  onSelect={(hairstyle: Hairstyle) => {
-                    setSelectedHairstyle(hairstyle);
-                    setSelectedHairstyleName(hairstyle.name);
+                  isLoading={isLoadingBrowTints}
+                  selectedBrowTint={selectedBrowTint}
+                  onSelect={(browTint: BrowTint) => {
+                    setSelectedBrowTint(browTint);
+                    setSelectedBrowTintName(browTint.name);
                   }}
                 />
               </div>
@@ -872,14 +875,14 @@ export function ImageGenerator({
                   <SheetTitle>{t('categories.title')}</SheetTitle>
                 </SheetHeader>
                 <div className="flex-1 overflow-auto p-4">
-                  <HairstyleCategorySelector
-                    hairstyles={hairstyles}
+                  <BrowTintCategorySelector
+                    browTints={browTints}
                     categories={categoryData}
-                    isLoading={isLoadingHairstyles}
-                    selectedHairstyle={selectedHairstyle}
-                    onSelect={(hairstyle: Hairstyle) => {
-                      setSelectedHairstyle(hairstyle);
-                      setSelectedHairstyleName(hairstyle.name);
+                    isLoading={isLoadingBrowTints}
+                    selectedBrowTint={selectedBrowTint}
+                    onSelect={(browTint: BrowTint) => {
+                      setSelectedBrowTint(browTint);
+                      setSelectedBrowTintName(browTint.name);
                       setIsLeftSheetOpen(false);
                     }}
                   />
@@ -892,38 +895,97 @@ export function ImageGenerator({
           <main className="flex h-full min-w-0 flex-1 flex-col space-y-4 md:space-y-6">
             <Card className="border-border/40 bg-card/40 flex h-full flex-1 flex-col rounded-3xl shadow-xl backdrop-blur-xl transition-all duration-300">
               <CardContent className="flex flex-1 flex-col space-y-4 p-4 md:space-y-6 md:p-6">
-                {/* 侧边栏展开按钮 - 桌面端 */}
-                <div className="-mt-2 mb-2 hidden items-center justify-between lg:flex">
-                  {!isLeftPanelOpen ? (
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => setIsLeftPanelOpen(true)}
-                      className="text-muted-foreground hover:text-foreground gap-1"
-                    >
-                      <PanelLeft className="h-4 w-4" />
-                      <span className="text-xs">{t('categories.title')}</span>
-                    </Button>
-                  ) : (
-                    <div />
-                  )}
-                  {!isRightPanelOpen ? (
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => setIsRightPanelOpen(true)}
-                      className="text-muted-foreground hover:text-foreground gap-1"
-                    >
-                      <span className="text-xs">
-                        {rightTab === 'history'
-                          ? t('sidebar.history')
-                          : t('sidebar.discover')}
-                      </span>
-                      <PanelRight className="h-4 w-4" />
-                    </Button>
-                  ) : (
-                    <div />
-                  )}
+                {/* Step Indicator + Credits Badge + Panel Toggles */}
+                <div className="-mt-1 mb-1 space-y-3">
+                  {/* Top row: panel toggles (desktop) + credits badge */}
+                  <div className="flex items-center justify-between">
+                    <div className="hidden lg:block">
+                      {!isLeftPanelOpen ? (
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => setIsLeftPanelOpen(true)}
+                          className="text-muted-foreground hover:text-foreground gap-1"
+                        >
+                          <PanelLeft className="h-4 w-4" />
+                          <span className="text-xs">{t('categories.title')}</span>
+                        </Button>
+                      ) : (
+                        <div />
+                      )}
+                    </div>
+                    {/* Credits Badge */}
+                    {isMounted && !isCheckSign && (
+                      <div className="ml-auto flex items-center gap-1.5">
+                        {user ? (
+                          <Link
+                            href={remainingCredits < costCredits ? '/pricing' : '/settings/credits'}
+                            className={cn(
+                              'inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors',
+                              remainingCredits < costCredits
+                                ? 'border-destructive/30 bg-destructive/5 text-destructive hover:bg-destructive/10'
+                                : 'border-primary/20 bg-primary/5 text-primary hover:bg-primary/10'
+                            )}
+                          >
+                            <Coins className="h-3.5 w-3.5" />
+                            <span>{t('credits_remaining', { credits: remainingCredits })}</span>
+                          </Link>
+                        ) : (
+                          <button
+                            onClick={() => setIsShowSignModal(true)}
+                            className="inline-flex items-center gap-1.5 rounded-full border border-border/60 bg-muted/50 px-3 py-1 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted"
+                          >
+                            <Coins className="h-3.5 w-3.5" />
+                            <span>{t('sign_in_to_generate')}</span>
+                          </button>
+                        )}
+                        {!isRightPanelOpen && (
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="hidden h-7 w-7 lg:inline-flex"
+                            onClick={() => setIsRightPanelOpen(true)}
+                          >
+                            <PanelRight className="h-4 w-4" />
+                          </Button>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                  {/* Step Indicator */}
+                  <div className="flex items-center gap-1 text-xs">
+                    {[
+                      {
+                        label: isTextToImageMode ? t('steps.describe') : t('steps.upload'),
+                        done: isTextToImageMode ? !!prompt.trim() : referenceImageUrls.length > 0,
+                      },
+                      {
+                        label: t('steps.choose_style'),
+                        done: !!selectedBrowTint,
+                      },
+                      {
+                        label: t('steps.generate'),
+                        done: generatedImages.length > 0,
+                      },
+                    ].map((step, i) => (
+                      <div key={i} className="flex items-center gap-1">
+                        {i > 0 && (
+                          <ChevronRight className="text-muted-foreground/40 h-3 w-3 flex-shrink-0" />
+                        )}
+                        <div
+                          className={cn(
+                            'flex items-center gap-1 rounded-full px-2 py-0.5 font-medium transition-colors',
+                            step.done
+                              ? 'bg-primary/10 text-primary'
+                              : 'text-muted-foreground'
+                          )}
+                        >
+                          {step.done && <Check className="h-3 w-3" />}
+                          <span>{step.label}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 {/* 发型选择入口 - 仅移动端显示 */}
                 <div className="lg:hidden">
@@ -932,14 +994,14 @@ export function ImageGenerator({
                     onClick={() => setIsLeftSheetOpen(true)}
                     className={cn(
                       'group border-border/70 bg-background/80 hover:border-primary/30 hover:bg-accent/50 flex w-full items-center gap-3 rounded-xl border px-3 py-2.5 text-left shadow-sm transition-all duration-200 hover:shadow-md',
-                      selectedHairstyle && 'border-primary/50 bg-primary/[0.04]'
+                      selectedBrowTint && 'border-primary/50 bg-primary/[0.04]'
                     )}
-                    aria-label={t('form.select_hairstyle_placeholder')}
+                    aria-label={t('form.select_brow_tint_placeholder')}
                   >
-                    {selectedHairstyle ? (
+                    {selectedBrowTint ? (
                       <img
-                        src={selectedHairstyle.thumbnailUrl || undefined}
-                        alt={selectedHairstyle.name}
+                        src={selectedBrowTint.thumbnailUrl || undefined}
+                        alt={selectedBrowTint.name}
                         className="border-border/60 bg-background h-11 w-11 flex-shrink-0 rounded-lg border object-cover shadow-sm dark:bg-gradient-to-b dark:from-white/45 dark:to-white/20"
                       />
                     ) : (
@@ -951,18 +1013,18 @@ export function ImageGenerator({
                       <p
                         className={cn(
                           'truncate text-sm font-medium',
-                          selectedHairstyle
+                          selectedBrowTint
                             ? 'text-foreground'
                             : 'text-muted-foreground'
                         )}
                       >
-                        {selectedHairstyle
+                        {selectedBrowTint
                           ? selectedDisplayName
-                          : t('form.select_hairstyle_placeholder')}
+                          : t('form.select_brow_tint_placeholder')}
                       </p>
                       <p className="text-muted-foreground/90 mt-0.5 truncate text-xs">
-                        {selectedHairstyle
-                          ? t(`categories.${selectedHairstyle.category}`)
+                        {selectedBrowTint
+                          ? t(`categories.${selectedBrowTint.category}`)
                           : t('categories.title')}
                       </p>
                     </div>
@@ -1092,7 +1154,7 @@ export function ImageGenerator({
                   </div>
                 </div>
 
-                {/* 生成按钮 */}
+                {/* 生成按钮 + 积分 */}
                 {!isMounted ? (
                   <Button
                     className="w-full text-xs sm:text-sm"
@@ -1112,30 +1174,43 @@ export function ImageGenerator({
                     {t('checking_account')}
                   </Button>
                 ) : user ? (
-                  <Button
-                    size="lg"
-                    className="w-full text-xs sm:text-sm"
-                    onClick={handleGenerate}
-                    disabled={
-                      isGenerating ||
-                      (!prompt.trim() && !selectedHairstyle) ||
-                      isPromptTooLong ||
-                      isReferenceUploading ||
-                      hasReferenceUploadError
-                    }
-                  >
-                    {isGenerating ? (
-                      <>
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        {t('generating')}
-                      </>
-                    ) : (
-                      <>
-                        <Sparkles className="mr-2 h-4 w-4" />
-                        {t('generate')}
-                      </>
-                    )}
-                  </Button>
+                  remainingCredits < costCredits ? (
+                    <Link href="/pricing" className="block w-full">
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="w-full border-destructive/30 text-destructive hover:bg-destructive/5 text-xs sm:text-sm"
+                      >
+                        <CreditCard className="mr-2 h-4 w-4" />
+                        {t('generate_no_credits')}
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button
+                      size="lg"
+                      className="w-full text-xs sm:text-sm"
+                      onClick={handleGenerate}
+                      disabled={
+                        isGenerating ||
+                        (!prompt.trim() && !selectedBrowTint) ||
+                        isPromptTooLong ||
+                        isReferenceUploading ||
+                        hasReferenceUploadError
+                      }
+                    >
+                      {isGenerating ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          {t('generating')}
+                        </>
+                      ) : (
+                        <>
+                          <Sparkles className="mr-2 h-4 w-4" />
+                          {t('generate', { credits: costCredits })}
+                        </>
+                      )}
+                    </Button>
+                  )
                 ) : (
                   <Button
                     size="lg"
@@ -1145,42 +1220,6 @@ export function ImageGenerator({
                     <User className="mr-2 h-4 w-4" />
                     {t('sign_in_to_generate')}
                   </Button>
-                )}
-
-                {/* 积分消耗显示 */}
-                {!isMounted ? (
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-primary">
-                      {t('credits_cost', { credits: costCredits })}
-                    </span>
-                    <span>{t('credits_remaining', { credits: 0 })}</span>
-                  </div>
-                ) : user && remainingCredits > 0 ? (
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-primary">
-                      {t('credits_cost', { credits: costCredits })}
-                    </span>
-                    <span>
-                      {t('credits_remaining', { credits: remainingCredits })}
-                    </span>
-                  </div>
-                ) : (
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-primary">
-                        {t('credits_cost', { credits: costCredits })}
-                      </span>
-                      <span>
-                        {t('credits_remaining', { credits: remainingCredits })}
-                      </span>
-                    </div>
-                    <Link href="/pricing">
-                      <Button variant="outline" className="w-full" size="lg">
-                        <CreditCard className="mr-2 h-4 w-4" />
-                        {t('buy_credits')}
-                      </Button>
-                    </Link>
-                  </div>
                 )}
 
                 {/* 生成进度 */}
@@ -1214,13 +1253,24 @@ export function ImageGenerator({
                   <div className="space-y-4">
                     {generatedImages.map((image) => (
                       <div key={image.id} className="space-y-3">
-                        <div className="overflow-hidden rounded-lg border">
-                          <LazyImage
-                            src={image.url}
-                            alt={image.prompt || 'Generated image'}
-                            className="h-auto w-full"
+                        {/* Before/After slider when reference image exists */}
+                        {referenceImageUrls.length > 0 ? (
+                          <BeforeAfterSlider
+                            beforeSrc={referenceImageUrls[0]}
+                            afterSrc={image.url}
+                            beforeAlt="Original photo"
+                            afterAlt={image.prompt || 'Generated result'}
+                            className="cursor-ew-resize border"
                           />
-                        </div>
+                        ) : (
+                          <div className="overflow-hidden rounded-lg border">
+                            <LazyImage
+                              src={image.url}
+                              alt={image.prompt || 'Generated image'}
+                              className="h-auto w-full"
+                            />
+                          </div>
+                        )}
                         {/* Action Buttons */}
                         <div className="grid grid-cols-2 gap-2">
                           <Button
@@ -1255,27 +1305,22 @@ export function ImageGenerator({
                     ))}
                   </div>
                 ) : showExampleImage ? (
-                  <div className="space-y-4">
-                    <div className="relative isolate overflow-visible px-4 pt-6 pb-6 sm:px-8">
-                      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-2xl">
-                        <div className="from-primary/30 via-primary/10 absolute inset-0 bg-gradient-to-br to-transparent" />
-                        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,_rgba(255,255,255,0.18)_0%,_transparent_70%)]" />
-                        <div className="from-background/60 absolute inset-0 bg-gradient-to-t via-transparent to-transparent" />
-                      </div>
+                  <div className="space-y-3">
+                    <div className="relative overflow-hidden rounded-2xl">
                       <Button
                         size="icon"
                         variant="ghost"
-                        className="absolute top-1 right-1 z-40 h-6 w-6 rounded-full bg-black/50 text-white hover:bg-black/70"
+                        className="absolute top-1.5 right-1.5 z-10 h-6 w-6 rounded-full bg-black/50 text-white hover:bg-black/70"
                         onClick={() => setShowExampleImage(false)}
                       >
                         <X className="h-4 w-4" />
                       </Button>
-                      <StackedHairstyleCards
-                        items={EXAMPLE_STACK_ITEMS}
-                        dialogTitle={t('preview_title')}
+                      <img
+                        src={EXAMPLE_IMAGE.src}
+                        alt={EXAMPLE_IMAGE.alt}
+                        className="w-full object-cover"
                       />
                     </div>
-                    {/* Action Buttons for Example */}
                     <div className="grid grid-cols-2 gap-2">
                       <Button
                         size="sm"
@@ -1283,9 +1328,9 @@ export function ImageGenerator({
                         className="w-full justify-center"
                         onClick={() =>
                           handleUseAsReference({
-                            id: EXAMPLE_MAIN_IMAGE.id,
-                            url: EXAMPLE_MAIN_IMAGE.src,
-                            prompt: EXAMPLE_MAIN_IMAGE.alt,
+                            id: EXAMPLE_IMAGE.id,
+                            url: EXAMPLE_IMAGE.src,
+                            prompt: EXAMPLE_IMAGE.alt,
                           })
                         }
                       >
@@ -1300,9 +1345,9 @@ export function ImageGenerator({
                         className="w-full justify-center"
                         onClick={() =>
                           handleDownloadImage({
-                            id: EXAMPLE_MAIN_IMAGE.id,
-                            url: EXAMPLE_MAIN_IMAGE.src,
-                            prompt: EXAMPLE_MAIN_IMAGE.alt,
+                            id: EXAMPLE_IMAGE.id,
+                            url: EXAMPLE_IMAGE.src,
+                            prompt: EXAMPLE_IMAGE.alt,
                           })
                         }
                       >
@@ -1515,18 +1560,29 @@ export function ImageGenerator({
                           <div className="space-y-4">
                             {generatedImages.map((image) => (
                               <div key={image.id} className="space-y-3">
-                                <button
-                                  type="button"
-                                  className="group hover:border-foreground/20 block w-full overflow-hidden rounded-lg border text-left transition-colors"
-                                  onClick={() => setSelectedPreviewImage(image)}
-                                  aria-label={t('history_view_image')}
-                                >
-                                  <LazyImage
-                                    src={image.url}
-                                    alt={image.prompt || 'Generated image'}
-                                    className="h-auto w-full transition-transform duration-300 group-hover:scale-[1.02]"
+                                {/* Before/After slider when reference image exists */}
+                                {referenceImageUrls.length > 0 ? (
+                                  <BeforeAfterSlider
+                                    beforeSrc={referenceImageUrls[0]}
+                                    afterSrc={image.url}
+                                    beforeAlt="Original photo"
+                                    afterAlt={image.prompt || 'Generated result'}
+                                    className="cursor-ew-resize border"
                                   />
-                                </button>
+                                ) : (
+                                  <button
+                                    type="button"
+                                    className="group hover:border-foreground/20 block w-full overflow-hidden rounded-lg border text-left transition-colors"
+                                    onClick={() => setSelectedPreviewImage(image)}
+                                    aria-label={t('history_view_image')}
+                                  >
+                                    <LazyImage
+                                      src={image.url}
+                                      alt={image.prompt || 'Generated image'}
+                                      className="h-auto w-full transition-transform duration-300 group-hover:scale-[1.02]"
+                                    />
+                                  </button>
+                                )}
                                 {/* Action Buttons */}
                                 <div className="grid grid-cols-2 gap-1.5">
                                   <Button
@@ -1561,27 +1617,22 @@ export function ImageGenerator({
                             ))}
                           </div>
                         ) : showExampleImage ? (
-                          <div className="space-y-4">
-                            <div className="relative isolate overflow-visible px-2 pt-5 pb-5">
-                              <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-2xl">
-                                <div className="from-primary/30 via-primary/10 absolute inset-0 bg-gradient-to-br to-transparent" />
-                                <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,_rgba(255,255,255,0.18)_0%,_transparent_70%)]" />
-                                <div className="from-background/60 absolute inset-0 bg-gradient-to-t via-transparent to-transparent" />
-                              </div>
+                          <div className="space-y-3">
+                            <div className="relative overflow-hidden rounded-2xl">
                               <Button
                                 size="icon"
                                 variant="ghost"
-                                className="absolute top-1 right-1 z-40 h-5 w-5 rounded-full bg-black/50 text-white hover:bg-black/70"
+                                className="absolute top-1.5 right-1.5 z-10 h-5 w-5 rounded-full bg-black/50 text-white hover:bg-black/70"
                                 onClick={() => setShowExampleImage(false)}
                               >
                                 <X className="h-3 w-3" />
                               </Button>
-                              <StackedHairstyleCards
-                                items={EXAMPLE_STACK_ITEMS}
-                                dialogTitle={t('preview_title')}
+                              <img
+                                src={EXAMPLE_IMAGE.src}
+                                alt={EXAMPLE_IMAGE.alt}
+                                className="w-full object-cover"
                               />
                             </div>
-                            {/* Action Buttons for Example */}
                             <div className="grid grid-cols-2 gap-1.5">
                               <Button
                                 size="sm"
@@ -1589,9 +1640,9 @@ export function ImageGenerator({
                                 className="w-full justify-center px-2 text-xs"
                                 onClick={() =>
                                   handleUseAsReference({
-                                    id: EXAMPLE_MAIN_IMAGE.id,
-                                    url: EXAMPLE_MAIN_IMAGE.src,
-                                    prompt: EXAMPLE_MAIN_IMAGE.alt,
+                                    id: EXAMPLE_IMAGE.id,
+                                    url: EXAMPLE_IMAGE.src,
+                                    prompt: EXAMPLE_IMAGE.alt,
                                   })
                                 }
                               >
@@ -1606,9 +1657,9 @@ export function ImageGenerator({
                                 className="w-full justify-center px-2 text-xs"
                                 onClick={() =>
                                   handleDownloadImage({
-                                    id: EXAMPLE_MAIN_IMAGE.id,
-                                    url: EXAMPLE_MAIN_IMAGE.src,
-                                    prompt: EXAMPLE_MAIN_IMAGE.alt,
+                                    id: EXAMPLE_IMAGE.id,
+                                    url: EXAMPLE_IMAGE.src,
+                                    prompt: EXAMPLE_IMAGE.alt,
                                   })
                                 }
                               >

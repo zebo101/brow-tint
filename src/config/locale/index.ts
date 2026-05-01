@@ -51,7 +51,6 @@ export const localeMessagesPaths = [
   'ai/music',
   'ai/chat',
   'ai/image',
-  'ai/video',
   'activity/sidebar',
   'activity/ai-tasks',
   'activity/chats',
@@ -60,4 +59,5 @@ export const localeMessagesPaths = [
   'pages/showcases',
   'pages/blog',
   'pages/updates',
+  'pages/ai-brow-tint',
 ];

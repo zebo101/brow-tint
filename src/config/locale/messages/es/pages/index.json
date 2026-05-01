@@ -1,8 +1,13 @@
 {
+  "metadata": {
+    "title": "Brow Tint — Estudio de Tinte de Cejas IA · Prueba en Segundos",
+    "description": "Sube una foto, elige el tono y mira tus nuevas cejas lado a lado. Generador gratuito de tinte de cejas con IA, estilos seleccionados y previews tipo salón.",
+    "keywords": "tinte de cejas, ia tinte de cejas, generador tinte de cejas, tinte virtual de cejas, estudio tinte cejas, prueba tinte de cejas"
+  },
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "cases",
       "introduce",
       "benefits",
       "usage",
@@ -10,8 +15,7 @@
       "stats",
       "testimonials",
       "faq",
-      "cta",
-      "subscribe"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -24,7 +28,7 @@
           {
             "title": "Probar Brow Tint Gratis",
             "icon": "Zap",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "variant": "default"
           },
@@ -43,11 +47,72 @@
           "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/hero-1.png",
+          "src": "/imgs/bg/hero-1.jpg",
           "alt": "Brow Tint Background - Professional Brow Tinting Preview"
         },
         "powered_by": "Impulsado por GPT Image 2",
-        "editorial_labels": ["Vista previa", "Transformar", "Definir"]
+        "editorial_labels": [
+          "Vista previa",
+          "Transformar",
+          "Definir"
+        ]
+      },
+      "cases": {
+        "block": "cases-carousel",
+        "id": "cases",
+        "title": "Casos reales de tinte de cejas",
+        "description": "Resultados reales de antes y después de usuarios que previsualizaron su look con Brow Tint.",
+        "items": [
+          {
+            "name": "Henna Suave",
+            "image": {
+              "src": "/imgs/cases/1.jpg",
+              "alt": "Caso de tinte de cejas Henna Suave"
+            }
+          },
+          {
+            "name": "Espresso Intenso",
+            "image": {
+              "src": "/imgs/cases/2.jpg",
+              "alt": "Caso de tinte de cejas Espresso Intenso"
+            }
+          },
+          {
+            "name": "Laminado de Cejas",
+            "image": {
+              "src": "/imgs/cases/3.jpg",
+              "alt": "Caso de laminado de cejas"
+            }
+          },
+          {
+            "name": "Ceniza Fría",
+            "image": {
+              "src": "/imgs/cases/4.jpg",
+              "alt": "Caso de tinte de cejas Ceniza Fría"
+            }
+          },
+          {
+            "name": "Caoba Cálido",
+            "image": {
+              "src": "/imgs/cases/5.jpg",
+              "alt": "Caso de tinte de cejas Caoba Cálido"
+            }
+          },
+          {
+            "name": "Gel de Cejas",
+            "image": {
+              "src": "/imgs/cases/6.jpg",
+              "alt": "Caso de gel de cejas con tinte"
+            }
+          },
+          {
+            "name": "Pestañas y Cejas",
+            "image": {
+              "src": "/imgs/cases/7.jpg",
+              "alt": "Caso de tinte de pestañas y cejas"
+            }
+          }
+        ]
       },
       "logos": {
         "id": "logos",
@@ -97,7 +162,7 @@
         "label": "Introducción",
         "description": "Brow Tint es un generador de tinte de cejas con IA gratuito que te permite previsualizar resultados profesionales de tinte de cejas antes de comprometerte. Ya sea que quieras probar tonos de gel de cejas con tinte, explorar combinaciones de laminado y tinte de cejas, o comparar estilos de tinte de pestañas y cejas, nuestra IA GPT Image 2 crea previsualizaciones fotorrealistas adaptadas a la forma de tu rostro y tono de piel.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Brow Tint AI Generator - Preview Brow Tinting Online Free"
         },
         "items": [
@@ -345,7 +410,7 @@
         "id": "faq",
         "title": "Preguntas Frecuentes Sobre Brow Tint",
         "description": "¿Tienes preguntas sobre nuestro generador de tinte de cejas con IA? Aquí tienes respuestas a las preguntas más comunes sobre las previsualizaciones de tinte de cejas.",
-        "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
+        "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
         "items": [
           {
             "question": "¿Qué es Brow Tint y cómo funciona el generador de tinte de cejas con IA?",
@@ -392,7 +457,7 @@
         "buttons": [
           {
             "title": "Probar Brow Tint Gratis",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "icon": "Zap"
           }

@@ -1,50 +1,43 @@
 ---
-title: 'ShipAny Two 发布'
-description: '我们发布了 ShipAny 的第二个大版本'
-date: '2025-11-11'
-tags: ['ShipAny Two', 'Next.js 16', 'AI SaaS', 'Boilerplate']
+title: 'Brow Tint Studio 更新'
+description: '全新的左右并排工作室、扩充的造型集、更快的预览。'
+date: '2026-05-01'
+tags: ['Brow Tint', 'Studio', '更新']
 version: '2.0.0'
 ---
 
-![ShipAny Two](/imgs/features/ai-hairstyle-changer.png)
+![Brow Tint Studio 更新](/imgs/features/landingpage.jpg)
 
-ShipAny Two 基于最新的 `Next.js 16`，在编译性能方面有很大提升，本地开发更快、内存占用更小。
+Brow Tint Studio 现在是试色的主入口——左边你的照片、右边精选造型，点选任意风格就立即生成 side-by-side 对比。
 
 <Accordion type="multiple" className="not-prose w-full">
     <AccordionItem value="features">
-        <AccordionTrigger>主要特性</AccordionTrigger>
+        <AccordionTrigger>2.0 改了什么</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
         <ul className="list-disc space-y-2 pl-4">
-            <li>核心系统：管理后台、用户控制台、着陆页</li>
-            <li>核心模块：数据库、内容管理、多语言、权限控制</li>
-            <li>扩展模块：登录、支付、存储、数据统计、广告、联盟营销、AI</li>
-            <li>主题系统：配色、字体、布局、组件</li>
-            <li>配置系统：可视化配置、代码配置、环境变量配置</li>
-            <li>内容管理：分类、文章、页面、日志</li>
+            <li>Studio 布局：照片和造型左右并排，不用再切 tab</li>
+            <li>造型集扩充：更多精选染色 / 叠染 / 睫毛+眉部组合</li>
+            <li>预览更快：单次渲染通常 8-15 秒</li>
+            <li>移动端体验：拖入上传 + 全屏造型抽屉</li>
+            <li>hreflang 修正：搜索引擎现在能正确把 8 个语言版本聚类</li>
+            <li>JSON-LD：每页注入 FAQ 与产品 rich snippet</li>
         </ul>
         </AccordionContent>
     </AccordionItem>
 
-    <AccordionItem value="performance">
-        <AccordionTrigger>相比于 ShipAny One 的改进</AccordionTrigger>
+    <AccordionItem value="under-the-hood">
+        <AccordionTrigger>底层改动</AccordionTrigger>
         <AccordionContent className="flex flex-col gap-4 text-balance">
         <ul className="list-disc space-y-2 pl-4">
-            <li>使用 Better-Auth 替换 Auth.js，支持更多认证方式</li>
-            <li>基于 Next.js 16，本地开发更快、内存占用更小</li>
-            <li>管理后台 UI 优化，更加美观、实用</li>
-            <li>支持可视化配置，更加灵活、方便</li>
-            <li>支持 RBAC 权限控制</li>
-            <li>集成更完善的内容管理功能</li>
+            <li>landing 重组：hero + studio + lookbook 三段式</li>
+            <li>更聪明的图像预处理，眉部渲染更干净</li>
+            <li>隐私表述收紧：政策里给出明确的保留时长</li>
         </ul>
         </AccordionContent>
     </AccordionItem>
 
 </Accordion>
 
-> 快速开始
+> 立即试试
 
-```bash
-git clone git@github.com:shipanyai/shipany-template-two.git
-```
-
-[ShipAny Two 文档](https://shipany.ai/zh/docs/quick-start)
+[打开 AI Brow Tint Studio →](/ai-brow-tint-generator)

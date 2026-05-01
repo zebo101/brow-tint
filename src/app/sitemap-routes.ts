@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-import { buildCanonicalUrl } from '@/shared/lib/seo-paths';
+import { buildCanonicalUrl, buildLanguageAlternates } from '@/shared/lib/seo-paths';
 
 export type StaticSitemapRoute = {
   path: string;
@@ -23,11 +23,13 @@ export function expandStaticRoutes(
 
   return routes.flatMap((route) => {
     const routeLocales = route.locales ?? localeList;
+    const languages = buildLanguageAlternates(route.path, options);
 
     return routeLocales.map((locale) => ({
       url: buildCanonicalUrl(route.path, locale, options),
       changeFrequency: route.changeFrequency,
       priority: route.priority,
+      alternates: { languages },
     }));
   });
 }

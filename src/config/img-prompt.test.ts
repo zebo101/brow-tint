@@ -1,12 +1,12 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { buildHairstylePrompt } from './img-prompt';
+import { buildBrowStylePrompt, buildBrowTintPrompt } from './img-prompt';
 
-test('buildHairstylePrompt makes the reference image primary for image-to-image when styledPrompt is provided', () => {
+test('buildBrowTintPrompt makes the reference image primary for image-to-image when styledPrompt is provided', () => {
   const styledPrompt =
     'Short textured crop, approximately 3 cm on top, messy finger-styled texture, tapered temples, matte finish.';
-  const out = buildHairstylePrompt(
+  const out = buildBrowTintPrompt(
     'Short Textured Crop',
     ['short', 'textured'],
     '',
@@ -23,8 +23,8 @@ test('buildHairstylePrompt makes the reference image primary for image-to-image 
     'should explicitly make the reference image primary'
   );
   assert.ok(
-    out.includes('Match the hairstyle in the reference image as closely as possible'),
-    'should strongly instruct the model to follow the reference hairstyle'
+    out.includes('Match the brow tint style in the reference image as closely as possible'),
+    'should strongly instruct the model to follow the reference brow tint style'
   );
   assert.ok(
     /Ignore any cutout edges, halos, transparent areas/.test(out),
@@ -32,7 +32,7 @@ test('buildHairstylePrompt makes the reference image primary for image-to-image 
   );
   assert.ok(
     out.includes('Image 1 is the person') &&
-      out.includes('Image 2 is a hairstyle reference'),
+      out.includes('Image 2 is a brow tint reference'),
     'should still assign image roles'
   );
   assert.ok(
@@ -41,24 +41,24 @@ test('buildHairstylePrompt makes the reference image primary for image-to-image 
   );
 });
 
-test('buildHairstylePrompt still prioritizes the reference image when no styledPrompt is given', () => {
-  const out = buildHairstylePrompt('Short Textured Crop', ['short'], '', 1);
+test('buildBrowTintPrompt still prioritizes the reference image when no styledPrompt is given', () => {
+  const out = buildBrowTintPrompt('Short Textured Crop', ['short'], '', 1);
 
   assert.ok(
-    out.includes('Use the hairstyle reference image as the primary source of truth'),
+    out.includes('Use the brow tint reference image as the primary source of truth'),
     'should make the reference image primary even without a styledPrompt'
   );
   assert.ok(
-    out.includes('Match the hairstyle in the reference image as closely as possible'),
+    out.includes('Match the brow tint style in the reference image as closely as possible'),
     'should still strongly instruct reference following'
   );
   assert.ok(!out.includes('authoritative description'));
 });
 
-test('buildHairstylePrompt in text-to-image mode uses styledPrompt when available', () => {
+test('buildBrowTintPrompt in text-to-image mode uses styledPrompt when available', () => {
   const styledPrompt =
     'Long wavy layered hair, ~30 cm, soft curtain bangs, natural brown, suitable for oval faces.';
-  const out = buildHairstylePrompt(
+  const out = buildBrowTintPrompt(
     'Long Wavy Layers',
     ['long', 'wavy'],
     '',
@@ -73,9 +73,60 @@ test('buildHairstylePrompt in text-to-image mode uses styledPrompt when availabl
   assert.ok(!out.includes('Ignore any cutout edges'));
 });
 
-test('buildHairstylePrompt in text-to-image mode without styledPrompt uses the legacy generator line', () => {
-  const out = buildHairstylePrompt('Long Wavy Layers', [], '', 0);
+test('buildBrowTintPrompt in text-to-image mode without styledPrompt uses the legacy generator line', () => {
+  const out = buildBrowTintPrompt('Long Wavy Layers', [], '', 0);
   assert.ok(
-    out.includes('Generate a person with a Long Wavy Layers hairstyle')
+    out.includes('Generate a person with a Long Wavy Layers brow tint style')
+  );
+});
+
+test('buildBrowStylePrompt includes shape shade and intensity', () => {
+  const out = buildBrowStylePrompt({
+    name: 'Soft Taupe Arch',
+    shade: 'taupe',
+    shape: 'soft arch',
+    intensity: 'medium',
+    styledPrompt: 'Softly tinted brows with balanced density.',
+    subjectImageCount: 1,
+  });
+
+  assert.ok(out.includes('taupe'));
+  assert.ok(out.includes('soft arch'));
+  assert.ok(out.includes('medium'));
+  assert.ok(out.includes("Image 1 is the user's portrait photo."));
+});
+
+test('buildBrowStylePrompt appends styledPrompt verbatim', () => {
+  const styledPrompt =
+    'Precisely feathered brows with a soft taupe tint and airy tail finish.';
+  const out = buildBrowStylePrompt({
+    name: 'Feathered Taupe',
+    shade: 'taupe',
+    shape: 'feathered',
+    intensity: 'sheer',
+    styledPrompt,
+    subjectImageCount: 1,
+  });
+
+  assert.ok(
+    out.includes(
+      `Supporting style description from the selected brow style: ${styledPrompt}`
+    )
+  );
+});
+
+test('buildBrowStylePrompt avoids forbidden head-hair vocabulary', () => {
+  const out = buildBrowStylePrompt({
+    name: 'Rich Espresso Brow',
+    shade: 'espresso',
+    shape: 'lifted',
+    intensity: 'rich',
+    styledPrompt: 'Defined brows with a rich espresso tint and clean arch.',
+    subjectImageCount: 1,
+  });
+
+  assert.equal(
+    /\b(hair|hairline|fringe|temples|sideburns|parting)\b/i.test(out),
+    false
   );
 });

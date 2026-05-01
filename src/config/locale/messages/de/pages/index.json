@@ -1,8 +1,13 @@
 {
+  "metadata": {
+    "title": "Brow Tint — KI Brow-Tint Studio · Tints in Sekunden testen",
+    "description": "Foto hochladen, Tint-Farbton wählen und neue Augenbrauen Seite an Seite sehen. Kostenloser KI Brow-Tint Generator mit kuratierten Styles und Salon-Vorschau.",
+    "keywords": "Brow-Tint, KI Brow-Tint, Brow-Tint Generator, virtueller Brow-Tint, Brow-Tint Studio, Augenbrauen Tint Vorschau, getöntes Brauengel"
+  },
   "page": {
     "show_sections": [
       "hero",
-      "logos",
+      "cases",
       "introduce",
       "benefits",
       "usage",
@@ -10,8 +15,7 @@
       "stats",
       "testimonials",
       "faq",
-      "cta",
-      "subscribe"
+      "cta"
     ],
     "sections": {
       "hero": {
@@ -24,7 +28,7 @@
           {
             "title": "Brow Tint kostenlos testen",
             "icon": "Zap",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "variant": "default"
           },
@@ -43,11 +47,72 @@
           "height": 600
         },
         "background_image": {
-          "src": "/imgs/bg/hero-1.png",
+          "src": "/imgs/bg/hero-1.jpg",
           "alt": "Brow Tint Background - Professional Brow Tinting Preview"
         },
         "powered_by": "Powered by GPT Image 2",
-        "editorial_labels": ["Vorschau", "Verwandlung", "Definition"]
+        "editorial_labels": [
+          "Vorschau",
+          "Verwandlung",
+          "Definition"
+        ]
+      },
+      "cases": {
+        "block": "cases-carousel",
+        "id": "cases",
+        "title": "Echte Brow-Tint-Cases",
+        "description": "Echte Vorher-Nachher-Ergebnisse von Nutzern, die ihren Look mit Brow Tint vorab gesehen haben.",
+        "items": [
+          {
+            "name": "Sanftes Henna",
+            "image": {
+              "src": "/imgs/cases/1.jpg",
+              "alt": "Sanftes Henna Brow-Tint-Case"
+            }
+          },
+          {
+            "name": "Kräftiges Espresso",
+            "image": {
+              "src": "/imgs/cases/2.jpg",
+              "alt": "Kräftiges Espresso Brow-Tint-Case"
+            }
+          },
+          {
+            "name": "Brow Lamination",
+            "image": {
+              "src": "/imgs/cases/3.jpg",
+              "alt": "Brow Lamination Case"
+            }
+          },
+          {
+            "name": "Kühles Aschbraun",
+            "image": {
+              "src": "/imgs/cases/4.jpg",
+              "alt": "Kühles Aschbraun Brow-Tint-Case"
+            }
+          },
+          {
+            "name": "Warmes Kastanienbraun",
+            "image": {
+              "src": "/imgs/cases/5.jpg",
+              "alt": "Warmes Kastanienbraun Brow-Tint-Case"
+            }
+          },
+          {
+            "name": "Brow-Gel",
+            "image": {
+              "src": "/imgs/cases/6.jpg",
+              "alt": "Getöntes Brow-Gel Case"
+            }
+          },
+          {
+            "name": "Lash & Brow Tint",
+            "image": {
+              "src": "/imgs/cases/7.jpg",
+              "alt": "Lash und Brow Tint Case"
+            }
+          }
+        ]
       },
       "logos": {
         "id": "logos",
@@ -97,7 +162,7 @@
         "label": "Einführung",
         "description": "Brow Tint ist ein kostenloser Online-KI-Augenbrauentönung-Generator, mit dem Sie professionelle Augenbrauentönung-Ergebnisse in der Vorschau sehen können, bevor Sie sich festlegen. Ob Sie getönte Brauengel-Farbtöne ausprobieren, Augenbrauen-Laminierung und Tönung erkunden oder Wimpern- und Brauentönung-Stile vergleichen möchten — unsere GPT Image 2 KI erstellt fotorealistische Vorschauen, die auf Ihre Gesichtsform und Ihren Hautton abgestimmt sind.",
         "image": {
-          "src": "/imgs/features/landingpage.png",
+          "src": "/imgs/features/landingpage.jpg",
           "alt": "Brow Tint AI Generator - Preview Brow Tinting Online Free"
         },
         "items": [
@@ -345,7 +410,7 @@
         "id": "faq",
         "title": "Häufig gestellte Fragen zu Brow Tint",
         "description": "Haben Sie Fragen zu unserem KI-Augenbrauentönung-Generator? Hier finden Sie Antworten auf die häufigsten Fragen zu Augenbrauentönung-Vorschauen.",
-        "tip": "Können Sie nicht finden, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:cy0410239@gmail.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
+        "tip": "Können Sie nicht finden, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
         "items": [
           {
             "question": "Was ist Brow Tint und wie funktioniert der KI-Augenbrauentönung-Generator?",
@@ -392,7 +457,7 @@
         "buttons": [
           {
             "title": "Brow Tint kostenlos testen",
-            "url": "/ai-brow-tint-generator",
+            "url": "/#ai-brow-tint-studio",
             "target": "_self",
             "icon": "Zap"
           }

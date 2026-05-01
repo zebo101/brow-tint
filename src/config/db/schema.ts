@@ -36,4 +36,7 @@ export const {
   aiTask,
   chat,
   chatMessage,
+  browStyle,
+  browJob,
+  browLookbook,
 } = schema;

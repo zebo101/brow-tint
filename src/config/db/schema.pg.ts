@@ -555,3 +555,73 @@ export const chatMessage = table(
     index('idx_chat_message_user_id').on(table.userId, table.status),
   ]
 );
+
+export const browStyle = table(
+  'brow_style',
+  {
+    id: text('id').primaryKey(),
+    slug: text('slug').notNull().unique(),
+    name: text('name').notNull(),
+    shade: text('shade').notNull(),
+    shape: text('shape').notNull(),
+    intensity: text('intensity').notNull(),
+    thumbnail: text('thumbnail'),
+    prompt: text('prompt').notNull(),
+    negative: text('negative'),
+    popular: boolean('popular').default(false),
+    trending: boolean('trending').default(false),
+    tier: text('tier').notNull().default('free'),
+    credits: integer('credits').notNull().default(2),
+    status: text('status').notNull().default('active'),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+  },
+  (table) => [
+    index('idx_brow_style_status').on(table.status),
+    index('idx_brow_style_shade').on(table.shade),
+  ]
+);
+
+export const browJob = table(
+  'brow_job',
+  {
+    id: text('id').primaryKey(),
+    userId: text('user_id')
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    styleId: text('style_id').references(() => browStyle.id),
+    sourceUrl: text('source_url').notNull(),
+    resultUrl: text('result_url'),
+    provider: text('provider'),
+    model: text('model'),
+    status: text('status').notNull().default('queued'),
+    creditsUsed: integer('credits_used').notNull().default(0),
+    errorCode: text('error_code'),
+    request: text('request'),
+    response: text('response'),
+    durationMs: integer('duration_ms'),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+    finishedAt: timestamp('finished_at'),
+  },
+  (table) => [
+    index('idx_brow_job_user_status').on(table.userId, table.status),
+  ]
+);
+
+export const browLookbook = table(
+  'brow_lookbook',
+  {
+    id: text('id').primaryKey(),
+    userId: text('user_id')
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    jobId: text('job_id')
+      .notNull()
+      .references(() => browJob.id, { onDelete: 'cascade' }),
+    pinned: boolean('pinned').default(false),
+    note: text('note'),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+  },
+  (table) => [
+    index('idx_brow_lookbook_user').on(table.userId),
+  ]
+);

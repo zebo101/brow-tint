@@ -39,12 +39,6 @@
               "icon": "RiImage2Line"
             },
             {
-              "title": "KI Brow Tint Video",
-              "description": "Augenbrauentönung-Verwandlungsvideos mit KI erstellen",
-              "url": "/hairstyle-changer-ai-video",
-              "icon": "RiVideoLine"
-            },
-            {
               "title": "Brow Tint Berater",
               "description": "Expertenberatung zur Augenbrauentönung mit KI erhalten",
               "url": "/chat",
@@ -102,12 +96,6 @@
               "icon": "RiImage2Line"
             },
             {
-              "title": "KI Brow Tint Video",
-              "description": "Augenbrauentönung-Verwandlungsvideos erstellen",
-              "url": "/hairstyle-changer-ai-video",
-              "icon": "RiVideoLine"
-            },
-            {
               "title": "Brow Tint Berater",
               "description": "Mit KI-Augenbrauentönung-Experten chatten",
               "url": "/chat",
@@ -144,18 +132,18 @@
           "title": "Partner",
           "children": [
             {
+              "title": "AI Barber",
+              "url": "https://aibarber.net/",
+              "target": "_blank"
+            },
+            {
+              "title": "Inpaint",
+              "url": "https://inpaint.dev/",
+              "target": "_blank"
+            },
+            {
               "title": "MCPALL",
-              "url": "https://mcpall.com",
-              "target": "_blank"
-            },
-            {
-              "title": "imgs.chat",
-              "url": "https://imgs.chat",
-              "target": "_blank"
-            },
-            {
-              "title": "101st.dev",
-              "url": "https://101st.dev",
+              "url": "https://mcpall.com/",
               "target": "_blank"
             }
           ]
@@ -185,7 +173,7 @@
         {
           "title": "E-Mail",
           "icon": "Mail",
-          "url": "mailto:cy0410239@gmail.com",
+          "url": "mailto:privacy@tintbrow.com",
           "target": "_self"
         }
       ]

@@ -1,7 +1,8 @@
 {
   "metadata": {
     "title": "Brow Tint ギャラリー - AI眉ティント ビフォーアフター",
-    "description": "Brow Tint AIジェネレーターで作成された素晴らしい眉ティント ビフォーアフター変身をご覧ください"
+    "description": "Brow Tint AIジェネレーターで作成された素晴らしい眉ティント ビフォーアフター変身をご覧ください",
+    "keywords": "ブロウティント ギャラリー, ブロウティント ビフォーアフター, AI ブロウティント サンプル, ブロウティント プレビュー, プロのブロウティント, ティント ブロウジェル"
   },
   "page": {
     "title": "Brow Tint ギャラリー",
@@ -51,7 +52,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/1.png",
+              "src": "/imgs/cases/1.jpg",
               "alt": "ソフトトープ眉ティント ビフォーアフター"
             },
             "group": "short-hair"
@@ -62,7 +63,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/2.png",
+              "src": "/imgs/cases/2.jpg",
               "alt": "ダークエスプレッソ眉ティント"
             },
             "group": "long-hair"
@@ -73,7 +74,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/3.png",
+              "src": "/imgs/cases/3.jpg",
               "alt": "眉ラミネーション&ティントの仕上がり"
             },
             "group": "color-change"
@@ -84,7 +85,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/4.png",
+              "src": "/imgs/cases/4.jpg",
               "alt": "プロ眉ティント変身"
             },
             "group": "classic"
@@ -95,7 +96,7 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/5.png",
+              "src": "/imgs/cases/5.jpg",
               "alt": "ティント眉ジェルルック"
             },
             "group": "men-styles"
@@ -106,38 +107,16 @@
             "url": "#",
             "target": "_self",
             "image": {
-              "src": "/imgs/cases/7.png",
+              "src": "/imgs/cases/7.jpg",
               "alt": "まつげ眉ティントの仕上がり"
             },
             "group": "women-styles"
-          },
-          {
-            "title": "brow code tint",
-            "description": "あなただけの眉の色にぴったりのbrow code tintフォーミュラマッチ",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "brow code tintマッチ"
-            },
-            "group": "trendy"
-          },
-          {
-            "title": "ベスト眉ティントシェードマッチ",
-            "description": "肌色と髪色に合わせたAIマッチングによる完璧な眉ティントシェード",
-            "url": "#",
-            "target": "_self",
-            "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "ベスト眉ティントシェードマッチ"
-            },
-            "group": "short-hair"
           }
         ]
       },
-      "hairstyle_gallery": {
-        "block": "hairstyle-gallery",
-        "id": "hairstyle_gallery",
+      "brow_tint_gallery": {
+        "block": "brow-tint-gallery",
+        "id": "brow_tint_gallery",
         "title": "眉ティントスタイルライブラリを閲覧",
         "description": "タイプ別に整理されたAI対応の眉ティントスタイルをスクロール。気になるルックをクリックして、自分の写真でプレビュー。",
         "limit": 12,
@@ -169,33 +148,6 @@
           }
         ],
         "tip": "すべてのプレビューは無料です。新しい眉ティントスタイルは定期的に追加されます。"
-      },
-      "video_demo": {
-        "block": "features-accordion",
-        "id": "video_demo",
-        "label": "動画デモ",
-        "title": "Brow Tintの実力を見る",
-        "description": "アップロードからプレビューまで、リアルな眉ティントのビフォーアフター変身を数秒でご覧ください。",
-        "items": [
-          {
-            "title": "複数の眉ティントシェードを即座にプレビュー",
-            "description": "1枚の写真をアップロードするだけで、さまざまな眉ティントの色合いやスタイルを並べてプレビューし、最適なマッチを見つけられます。",
-            "icon": "RiPlayCircleLine",
-            "image": {
-              "src": "/video/v1.mp4",
-              "alt": "AI眉ティントプレビューデモ動画"
-            }
-          },
-          {
-            "title": "リアルな眉ティントの質感とカバー力を確認",
-            "description": "ティント眉ジェルからプロ眉ティントまで、さまざまな眉ティント技法が実際の眉でどう見えるか、施術前にプレビュー。",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "/video/v2.mp4",
-              "alt": "眉ティントの質感とカバー力プレビュー動画"
-            }
-          }
-        ]
       },
       "usage": {
         "block": "features-step",
@@ -280,8 +232,6 @@
     },
     "show_sections": [
       "showcases",
-      "hairstyle_gallery",
-      "video_demo",
       "usage",
       "faq",
       "cta"

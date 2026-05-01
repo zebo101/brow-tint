@@ -1,9 +1,9 @@
 /**
- * Deduplicate the hairstyle library.
+ * Deduplicate the brow tint library.
  *
  * Runs in three phases:
  *  1. Collect ETag + Content-Length for every active row's image (via R2 HEAD).
- *     Caches to scripts/.hairstyle-etag-cache.json so re-runs are cheap.
+ *     Caches to scripts/.brow-tint-etag-cache.json so re-runs are cheap.
  *  2. Content dedupe: for each ETag group with >1 member, keep the row with
  *     the earliest `createdAt` as canonical; mark the rest `status='inactive'`.
  *     If the canonical row has NULL description/prompt but a duplicate has
@@ -30,7 +30,7 @@ console.log(`Loaded environment from: ${envFile}`);
 
 const DATABASE_URL = process.env.DATABASE_URL;
 const DATABASE_AUTH_TOKEN = process.env.DATABASE_AUTH_TOKEN;
-const CACHE_PATH = path.join('scripts', '.hairstyle-etag-cache.json');
+const CACHE_PATH = path.join('scripts', '.brow-tint-etag-cache.json');
 const HEAD_CONCURRENCY = 8;
 
 interface Args {
@@ -80,7 +80,7 @@ function getDb(): Client {
 
 async function fetchActiveRows(db: Client): Promise<DbRow[]> {
   const result = await db.execute(
-    "SELECT id, category, sequence, name, description, prompt, image_url, status, created_at FROM hairstyle WHERE status = 'active' ORDER BY category, sequence, created_at"
+    "SELECT id, category, sequence, name, description, prompt, image_url, status, created_at FROM brow_tint WHERE status = 'active' ORDER BY category, sequence, created_at"
   );
   return result.rows.map((r) => ({
     id: r.id as string,
@@ -303,7 +303,7 @@ async function applyPhase2(
       if (setParts.length > 0) {
         args.push(canonical.id);
         statements.push({
-          sql: `UPDATE hairstyle SET ${setParts.join(', ')} WHERE id = ?`,
+          sql: `UPDATE brow_tint SET ${setParts.join(', ')} WHERE id = ?`,
           args,
         });
         copyCount++;
@@ -312,7 +312,7 @@ async function applyPhase2(
 
     for (const r of toDeactivate) {
       statements.push({
-        sql: "UPDATE hairstyle SET status = 'inactive' WHERE id = ?",
+        sql: "UPDATE brow_tint SET status = 'inactive' WHERE id = ?",
         args: [r.id],
       });
       deactivateCount++;
@@ -339,7 +339,7 @@ async function applyPhase3(db: Client): Promise<void> {
 
   // Pull the current active set, ordered deterministically.
   const result = await db.execute(
-    "SELECT id, category, sequence, created_at FROM hairstyle WHERE status = 'active' ORDER BY category, sequence, created_at"
+    "SELECT id, category, sequence, created_at FROM brow_tint WHERE status = 'active' ORDER BY category, sequence, created_at"
   );
 
   const statements: { sql: string; args: any[] }[] = [];
@@ -353,7 +353,7 @@ async function applyPhase3(db: Client): Promise<void> {
     counter.set(category, next);
     if (next !== currentSeq) {
       statements.push({
-        sql: 'UPDATE hairstyle SET sequence = ? WHERE id = ?',
+        sql: 'UPDATE brow_tint SET sequence = ? WHERE id = ?',
         args: [next, id],
       });
     }
@@ -376,7 +376,7 @@ async function applyPhase3(db: Client): Promise<void> {
 }
 
 async function main() {
-  console.log('=== Hairstyle Dedup Script ===\n');
+  console.log('=== Brow Tint Dedup Script ===\n');
   const args = parseArgs();
   console.log('Args:', args);
 

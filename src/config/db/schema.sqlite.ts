@@ -601,13 +601,13 @@ export const chatMessage = table(
   ]
 );
 
-export const hairstyle = table(
-  'hairstyle',
+export const browTint = table(
+  'brow_tint',
   {
     id: text('id').primaryKey(),
     category: text('category').notNull(), // men, women, boys, girls
     sequence: integer('sequence').notNull(), // 序号 (1), (2), (3)...
-    name: text('name').notNull(), // AI生成的发型名称
+    name: text('name').notNull(), // AI生成的眉毛染色名称
     tags: text('tags'), // JSON数组，AI生成的标签
     description: text('description'), // human-readable 1-sentence summary (admin UI / tooltips)
     prompt: text('prompt'), // long-form engineered description used in image-gen prompts
@@ -624,8 +624,84 @@ export const hairstyle = table(
   },
   (table) => [
     // 按分类和序号查询
-    index('idx_hairstyle_category_sequence').on(table.category, table.sequence),
+    index('idx_brow_tint_category_sequence').on(table.category, table.sequence),
     // 按状态查询
-    index('idx_hairstyle_status').on(table.status),
+    index('idx_brow_tint_status').on(table.status),
+  ]
+);
+
+export const browStyle = table(
+  'brow_style',
+  {
+    id: text('id').primaryKey(),
+    slug: text('slug').notNull().unique(),
+    name: text('name').notNull(),
+    shade: text('shade').notNull(),
+    shape: text('shape').notNull(),
+    intensity: text('intensity').notNull(),
+    thumbnail: text('thumbnail'),
+    prompt: text('prompt').notNull(),
+    negative: text('negative'),
+    popular: integer('popular', { mode: 'boolean' }).default(false),
+    trending: integer('trending', { mode: 'boolean' }).default(false),
+    tier: text('tier').notNull().default('free'),
+    credits: integer('credits').notNull().default(2),
+    status: text('status').notNull().default('active'),
+    createdAt: integer('created_at', { mode: 'timestamp_ms' })
+      .default(sqliteNowMs)
+      .notNull(),
+  },
+  (table) => [
+    index('idx_brow_style_status').on(table.status),
+    index('idx_brow_style_shade').on(table.shade),
+  ]
+);
+
+export const browJob = table(
+  'brow_job',
+  {
+    id: text('id').primaryKey(),
+    userId: text('user_id')
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    styleId: text('style_id').references(() => browStyle.id),
+    sourceUrl: text('source_url').notNull(),
+    resultUrl: text('result_url'),
+    provider: text('provider'),
+    model: text('model'),
+    status: text('status').notNull().default('queued'),
+    creditsUsed: integer('credits_used').notNull().default(0),
+    errorCode: text('error_code'),
+    request: text('request'),
+    response: text('response'),
+    durationMs: integer('duration_ms'),
+    createdAt: integer('created_at', { mode: 'timestamp_ms' })
+      .default(sqliteNowMs)
+      .notNull(),
+    finishedAt: integer('finished_at', { mode: 'timestamp_ms' }),
+  },
+  (table) => [
+    index('idx_brow_job_user_status').on(table.userId, table.status),
+  ]
+);
+
+export const browLookbook = table(
+  'brow_lookbook',
+  {
+    id: text('id').primaryKey(),
+    userId: text('user_id')
+      .notNull()
+      .references(() => user.id, { onDelete: 'cascade' }),
+    jobId: text('job_id')
+      .notNull()
+      .references(() => browJob.id, { onDelete: 'cascade' }),
+    pinned: integer('pinned', { mode: 'boolean' }).default(false),
+    note: text('note'),
+    createdAt: integer('created_at', { mode: 'timestamp_ms' })
+      .default(sqliteNowMs)
+      .notNull(),
+  },
+  (table) => [
+    index('idx_brow_lookbook_user').on(table.userId),
   ]
 );

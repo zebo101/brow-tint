@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "가격",
-    "description": "플랜 선택하기"
+    "title": "Brow Tint 가격 — AI 브로우 틴트 크레딧 & 플랜",
+    "description": "크레딧을 구매해 AI 브로우 틴트 미리보기를 생성하세요. 플랜을 비교하고 최적의 브로우 틴트 패키지를 찾아 몇 초 만에 시작하세요.",
+    "keywords": "브로우 틴트 가격, AI 브로우 틴트 크레딧, 브로우 틴트 플랜, 브로우 틴트 생성기 가격, 눈썹 틴트 비용"
   },
   "page": {
     "title": "가격",
@@ -9,112 +10,259 @@
       "pricing": {
         "id": "pricing",
         "sr_only_title": "Brow Tint 가격",
-        "title": "가격",
-        "description": "AI 브로우 틴트 생성 요구에 완벽한 플랜을 선택하세요.",
+        "title": "완벽한 플랜을 선택하세요",
+        "description": "AI 브로우 틴트 생성마다 크레딧 1개를 사용합니다.",
         "groups": [
-          {
-            "name": "one-time",
-            "title": "필요할 때 결제"
-          },
           {
             "name": "monthly",
             "title": "월간"
           },
           {
             "name": "yearly",
-            "title": "연간",
-            "label": "23% 절약"
+            "title": "연간 (절약)",
+            "label": "절약"
+          },
+          {
+            "name": "one-time",
+            "title": "충전"
           }
         ],
         "items": [
           {
-            "title": "크레딧 패키지",
-            "description": "필요할 때 언제든지 시작하세요. 일회성 결제",
+            "title": "무료",
+            "description": "Brow Tint를 무료로 체험하세요.",
             "features_title": "포함 사항",
-            "features": [
-              "300 크레딧, 1년간 유효",
-              "텍스트-이미지 및 이미지-이미지 생성",
-              "Nano Banana 2 AI 모델로 고품질 이미지",
-              "생성된 이미지 무료 다운로드"
-            ],
-            "interval": "one-time",
-            "amount": 2990,
+            "features": ["핵심 생성 기능", "표준 큐"],
+            "interval": "month",
+            "amount": 0,
             "currency": "USD",
-            "price": "$29.9",
-            "original_price": "$39.9",
-            "unit": "/ 300 크레딧",
+            "price": "$0",
+            "unit": "",
             "is_featured": false,
-            "tip": "",
+            "tip": "무료로 시작하고 언제든지 업그레이드.",
             "button": {
-              "title": "크레딧 구매",
+              "title": "현재 플랜",
               "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "icon": ""
             },
-            "product_id": "credits-package",
-            "product_name": "크레딧 패키지",
-            "credits": 300,
-            "valid_days": 365,
-            "group": "one-time"
+            "product_id": "free-monthly",
+            "product_name": "무료",
+            "credits": 0,
+            "valid_days": 30,
+            "group": "monthly"
           },
           {
-            "title": "스타터 플랜",
-            "description": "매월 자동 갱신으로 크레딧을 받으세요. 언제든지 구독 취소 가능!",
+            "title": "베이직",
+            "description": "일반적인 생성 작업에 적합.",
+            "label": "인기",
             "features_title": "포함 사항",
             "features": [
-              "300 크레딧, 1개월간 유효",
-              "텍스트-이미지 및 이미지-이미지 생성",
-              "Nano Banana 2 AI 모델로 고품질 이미지",
-              "생성된 이미지 무료 다운로드"
+              "월 200 크레딧",
+              "크레딧 월간 갱신",
+              "우선 큐",
+              "워터마크 제거"
             ],
             "interval": "month",
-            "amount": 2490,
+            "amount": 1990,
             "currency": "USD",
-            "price": "$24.9",
-            "original_price": "$36.9",
+            "price": "$19.9",
             "unit": "/ 월",
-            "is_featured": false,
-            "tip": "",
+            "is_featured": true,
+            "tip": "언제든지 해지 가능.",
             "button": {
-              "title": "플랜 구독",
+              "title": "구독하기",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
-            "product_id": "starter-monthly",
-            "product_name": "스타터 플랜",
+            "product_id": "basic-monthly",
+            "product_name": "베이직 월간",
+            "credits": 200,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "베이직"
+          },
+          {
+            "title": "프리미엄",
+            "description": "전문 사용자와 대용량 작업에 적합.",
+            "features_title": "포함 사항",
+            "features": [
+              "월 300 크레딧",
+              "크레딧 월간 갱신",
+              "최우선 큐",
+              "워터마크 제거"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/ 월",
+            "is_featured": false,
+            "tip": "언제든지 해지 가능.",
+            "button": {
+              "title": "구독하기",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-monthly",
+            "product_name": "프리미엄 월간",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "스타터"
+            "plan_name": "프리미엄"
           },
           {
-            "title": "프리미엄 플랜",
-            "description": "월 약 $19.2, 월간 플랜 대비 23% 절약. 언제든지 구독 취소 가능!",
+            "title": "무료",
+            "description": "Brow Tint를 무료로 체험하세요.",
+            "features_title": "포함 사항",
+            "features": ["핵심 생성 기능", "표준 큐"],
+            "interval": "year",
+            "amount": 0,
+            "currency": "USD",
+            "price": "$0",
+            "unit": "",
+            "is_featured": false,
+            "tip": "무료로 시작하고 언제든지 업그레이드.",
+            "button": {
+              "title": "현재 플랜",
+              "url": "/#pricing",
+              "icon": ""
+            },
+            "product_id": "free-yearly",
+            "product_name": "무료",
+            "credits": 0,
+            "valid_days": 365,
+            "group": "yearly"
+          },
+          {
+            "title": "베이직",
+            "description": "연간 결제로 절약하세요. 연간 크레딧은 선지급됩니다.",
+            "label": "절약",
             "features_title": "포함 사항",
             "features": [
-              "4000 크레딧, 1년간 유효",
-              "텍스트-이미지 및 이미지-이미지 생성",
-              "Nano Banana 2 AI 모델로 고품질 이미지",
-              "생성된 이미지 무료 다운로드"
+              "연 2400 크레딧",
+              "구독 시 선지급",
+              "우선 대기열",
+              "워터마크 제거"
             ],
             "interval": "year",
-            "amount": 22990,
+            "amount": 19080,
             "currency": "USD",
-            "price": "$229.9",
-            "original_price": "$299.9",
-            "unit": "/ 년",
-            "is_featured": true,
-            "tip": "",
+            "price": "$15.9",
+            "original_price": "$19.9",
+            "unit": "/ 월",
+            "is_featured": false,
+            "tip": "연간 결제. 크레딧은 선지급됩니다.",
             "button": {
-              "title": "플랜 구독",
+              "title": "구독하기",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "베이직 연간",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "베이직 연간"
+          },
+          {
+            "title": "프리미엄",
+            "description": "대량 사용에 가장 좋은 연간 플랜입니다. 연간 크레딧은 선지급됩니다.",
+            "features_title": "포함 사항",
+            "features": [
+              "연 3600 크레딧",
+              "구독 시 선지급",
+              "최우선 대기열",
+              "워터마크 제거"
+            ],
+            "interval": "year",
+            "amount": 31080,
+            "currency": "USD",
+            "price": "$25.9",
+            "original_price": "$29.9",
+            "unit": "/ 월",
+            "is_featured": false,
+            "tip": "연간 결제. 크레딧은 선지급됩니다.",
+            "button": {
+              "title": "구독하기",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "프리미엄 플랜",
-            "credits": 4000,
+            "product_name": "프리미엄 연간",
+            "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "프리미엄"
+            "plan_name": "프리미엄 연간"
+          },
+          {
+            "title": "100 크레딧 충전",
+            "description": "언제든지 크레딧을 추가하세요.",
+            "features_title": "포함 사항",
+            "features": ["크레딧 100개", "크레딧은 만료되지 않음"],
+            "interval": "one-time",
+            "amount": 1290,
+            "currency": "USD",
+            "price": "$12.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "1회 구매. 크레딧은 만료되지 않습니다.",
+            "button": {
+              "title": "충전하기",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-100",
+            "product_name": "100 크레딧 충전",
+            "credits": 100,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "200 크레딧 충전",
+            "description": "필요할 때 더 많은 크레딧을 추가하세요.",
+            "label": "인기",
+            "features_title": "포함 사항",
+            "features": ["크레딧 200개", "크레딧은 만료되지 않음"],
+            "interval": "one-time",
+            "amount": 2590,
+            "currency": "USD",
+            "price": "$25.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "1회 구매. 크레딧은 만료되지 않습니다.",
+            "button": {
+              "title": "충전하기",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-200",
+            "product_name": "200 크레딧 충전",
+            "credits": 200,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "300 크레딧 충전",
+            "description": "더 많은 사용량에 적합.",
+            "features_title": "포함 사항",
+            "features": ["크레딧 300개", "크레딧은 만료되지 않음"],
+            "interval": "one-time",
+            "amount": 3890,
+            "currency": "USD",
+            "price": "$38.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "1회 구매. 크레딧은 만료되지 않습니다.",
+            "button": {
+              "title": "충전하기",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-300",
+            "product_name": "300 크레딧 충전",
+            "credits": 300,
+            "valid_days": 0,
+            "group": "one-time"
           }
         ]
       }
@@ -125,20 +273,3 @@
     "processing": "처리 중"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

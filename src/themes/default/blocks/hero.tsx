@@ -71,24 +71,28 @@ export function Hero({
       )}
 
       <div className="relative mx-auto max-w-full px-4 text-center md:max-w-5xl">
-        {texts && texts.length > 0 ? (
-          <h1 className="hero-gradient font-display py-2 text-center text-4xl leading-[1.1] font-bold sm:mt-12 md:text-[78.05px] md:leading-[1.1]">
-            {texts[0]}
-            <span className="hero-gradient">{highlightText}</span>
-            {texts[1]}
-          </h1>
-        ) : (
-          <h1 className="hero-gradient font-display py-2 text-center text-4xl leading-[1.1] font-bold sm:mt-12 md:text-[78.05px] md:leading-[1.1]">
-            {section.title}
-          </h1>
+        {section.title ? (
+          texts && texts.length > 0 ? (
+            <h1 className="hero-gradient font-display py-2 text-center text-4xl leading-[1.1] font-bold sm:mt-12 md:text-[78.05px] md:leading-[1.1]">
+              {texts[0]}
+              <span className="hero-gradient">{highlightText}</span>
+              {texts[1]}
+            </h1>
+          ) : (
+            <h1 className="hero-gradient font-display py-2 text-center text-4xl leading-[1.1] font-bold sm:mt-12 md:text-[78.05px] md:leading-[1.1]">
+              {section.title}
+            </h1>
+          )
+        ) : null}
+
+        {section.description && (
+          <p
+            className="hero-gradient font-display mt-8 mb-8 text-lg text-balance"
+            dangerouslySetInnerHTML={{ __html: section.description }}
+          />
         )}
 
-        <p
-          className="hero-gradient font-display mt-8 mb-8 text-lg text-balance"
-          dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
-        />
-
-        {section.buttons && (
+        {section.buttons && section.buttons.length > 0 && (
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             {section.buttons.map((button, idx) => {
               // 第一个按钮使用RainbowButton（不显示图标，保持简洁）

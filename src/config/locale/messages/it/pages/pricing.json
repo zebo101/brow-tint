@@ -1,144 +1,275 @@
 {
   "metadata": {
-    "title": "Prezzi",
-    "description": "Inizia con un piano"
+    "title": "Brow Tint Prezzi — Crediti e Piani Tinta Sopracciglia IA",
+    "description": "Acquista crediti per generare anteprime tinta sopracciglia con IA. Confronta i piani, trova il pacchetto migliore e inizia in pochi secondi.",
+    "keywords": "prezzi tinta sopracciglia, crediti tinta sopracciglia IA, piani tinta sopracciglia, costo generatore tinta sopracciglia, abbonamento tinta IA"
   },
   "page": {
     "title": "Prezzi",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Prezzi Brow Tint",
-        "title": "Prezzi",
-        "description": "Scegli il piano perfetto per le tue esigenze di generazione tinta sopracciglia IA.",
+        "sr_only_title": "Brow Tint Prezzi",
+        "title": "Scegli il tuo piano perfetto",
+        "description": "Ogni generazione di brow tint con IA utilizza 1 credito.",
         "groups": [
-          {
-            "name": "one-time",
-            "title": "Pagamento unico"
-          },
           {
             "name": "monthly",
             "title": "Mensile"
           },
           {
             "name": "yearly",
-            "title": "Annuale",
-            "label": "risparmia 23%"
+            "title": "Annuale (Risparmia)",
+            "label": "Risparmia"
+          },
+          {
+            "name": "one-time",
+            "title": "Ricarica"
           }
         ],
         "items": [
           {
-            "title": "Pacchetto Crediti",
-            "description": "Inizia quando ne hai bisogno. Pagamento unico",
+            "title": "Gratis",
+            "description": "Prova Brow Tint gratuitamente.",
             "features_title": "Include",
-            "features": [
-              "300 crediti, validi per 1 anno",
-              "Generazione da testo a immagine e da immagine a immagine",
-              "Immagini di alta qualità con modello IA Nano Banana 2",
-              "Download gratuito delle immagini generate"
-            ],
-            "interval": "one-time",
-            "amount": 2990,
+            "features": ["Funzionalità di base", "Coda standard"],
+            "interval": "month",
+            "amount": 0,
             "currency": "USD",
-            "price": "$29.9",
-            "original_price": "$39.9",
-            "unit": "/ 300 crediti",
+            "price": "$0",
+            "unit": "",
             "is_featured": false,
-            "tip": "",
+            "tip": "Inizia gratis. Aggiorna quando vuoi.",
             "button": {
-              "title": "Acquista Crediti",
+              "title": "Piano attuale",
               "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "icon": ""
             },
-            "product_id": "credits-package",
-            "product_name": "Pacchetto Crediti",
-            "credits": 300,
-            "valid_days": 365,
-            "group": "one-time"
+            "product_id": "free-monthly",
+            "product_name": "Gratis",
+            "credits": 0,
+            "valid_days": 30,
+            "group": "monthly"
           },
           {
-            "title": "Piano Starter",
-            "description": "Rinnovo automatico mensile per ottenere crediti. Annullabile in qualsiasi momento!",
+            "title": "Base",
+            "description": "Per esigenze regolari.",
+            "label": "Popolare",
             "features_title": "Include",
             "features": [
-              "300 crediti, validi per 1 mese",
-              "Generazione da testo a immagine e da immagine a immagine",
-              "Immagini di alta qualità con modello IA Nano Banana 2",
-              "Download gratuito delle immagini generate"
+              "200 crediti al mese",
+              "Crediti aggiornati ogni mese",
+              "Coda prioritaria",
+              "Rimuovi filigrana"
             ],
             "interval": "month",
-            "amount": 2490,
+            "amount": 1990,
             "currency": "USD",
-            "price": "$24.9",
-            "original_price": "$36.9",
+            "price": "$19.9",
             "unit": "/ mese",
-            "is_featured": false,
-            "tip": "",
+            "is_featured": true,
+            "tip": "Annulla quando vuoi.",
             "button": {
-              "title": "Iscriviti al Piano",
+              "title": "Iscriviti",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
-            "product_id": "starter-monthly",
-            "product_name": "Piano Starter",
+            "product_id": "basic-monthly",
+            "product_name": "Base Mensile",
+            "credits": 200,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Base"
+          },
+          {
+            "title": "Premium",
+            "description": "Per utenti avanzati e alto volume.",
+            "features_title": "Include",
+            "features": [
+              "300 crediti al mese",
+              "Crediti aggiornati ogni mese",
+              "Coda con priorità massima",
+              "Rimuovi filigrana"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/ mese",
+            "is_featured": false,
+            "tip": "Annulla quando vuoi.",
+            "button": {
+              "title": "Iscriviti",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-monthly",
+            "product_name": "Premium Mensile",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "Starter"
+            "plan_name": "Premium"
           },
           {
-            "title": "Piano Premium",
-            "description": "Circa $19.2 / mese, risparmia 23% vs piano mensile. Annullabile in qualsiasi momento!",
+            "title": "Gratis",
+            "description": "Prova Brow Tint gratuitamente.",
+            "features_title": "Include",
+            "features": ["Funzionalità di base", "Coda standard"],
+            "interval": "year",
+            "amount": 0,
+            "currency": "USD",
+            "price": "$0",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Inizia gratis. Aggiorna quando vuoi.",
+            "button": {
+              "title": "Piano attuale",
+              "url": "/#pricing",
+              "icon": ""
+            },
+            "product_id": "free-yearly",
+            "product_name": "Gratis",
+            "credits": 0,
+            "valid_days": 365,
+            "group": "yearly"
+          },
+          {
+            "title": "Base",
+            "description": "Risparmia con la fatturazione annuale. I crediti annuali vengono accreditati anticipatamente.",
+            "label": "Risparmia",
             "features_title": "Include",
             "features": [
-              "4000 crediti, validi per 1 anno",
-              "Generazione da testo a immagine e da immagine a immagine",
-              "Immagini di alta qualità con modello IA Nano Banana 2",
-              "Download gratuito delle immagini generate"
+              "2400 crediti all'anno",
+              "Accreditati anticipatamente",
+              "Coda prioritaria",
+              "Rimuovi filigrana"
             ],
             "interval": "year",
-            "amount": 22990,
+            "amount": 19080,
             "currency": "USD",
-            "price": "$229.9",
-            "original_price": "$299.9",
-            "unit": "/ anno",
-            "is_featured": true,
-            "tip": "",
+            "price": "$15.9",
+            "original_price": "$19.9",
+            "unit": "/ mese",
+            "is_featured": false,
+            "tip": "Fatturazione annuale. Crediti accreditati anticipatamente.",
             "button": {
-              "title": "Iscriviti al Piano",
+              "title": "Iscriviti",
+              "url": "/#pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Base Annuale",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Base Annuale"
+          },
+          {
+            "title": "Premium",
+            "description": "Il miglior valore annuale per volumi elevati. I crediti annuali vengono accreditati anticipatamente.",
+            "features_title": "Include",
+            "features": [
+              "3600 crediti all'anno",
+              "Accreditati anticipatamente",
+              "Priorità massima",
+              "Rimuovi filigrana"
+            ],
+            "interval": "year",
+            "amount": 31080,
+            "currency": "USD",
+            "price": "$25.9",
+            "original_price": "$29.9",
+            "unit": "/ mese",
+            "is_featured": false,
+            "tip": "Fatturazione annuale. Crediti accreditati anticipatamente.",
+            "button": {
+              "title": "Iscriviti",
               "url": "/#pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "Piano Premium",
-            "credits": 4000,
+            "product_name": "Premium Annuale",
+            "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Premium"
+            "plan_name": "Premium Annuale"
+          },
+          {
+            "title": "Ricarica 100 crediti",
+            "description": "Ricarica crediti quando vuoi.",
+            "features_title": "Include",
+            "features": ["100 crediti", "I crediti non scadono mai"],
+            "interval": "one-time",
+            "amount": 1290,
+            "currency": "USD",
+            "price": "$12.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Acquisto una tantum. I crediti non scadono mai.",
+            "button": {
+              "title": "Ricarica",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-100",
+            "product_name": "Ricarica 100",
+            "credits": 100,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "Ricarica 200 crediti",
+            "description": "Aggiungi più crediti quando ti servono.",
+            "label": "Popolare",
+            "features_title": "Include",
+            "features": ["200 crediti", "I crediti non scadono mai"],
+            "interval": "one-time",
+            "amount": 2590,
+            "currency": "USD",
+            "price": "$25.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Acquisto una tantum. I crediti non scadono mai.",
+            "button": {
+              "title": "Ricarica",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-200",
+            "product_name": "Ricarica 200",
+            "credits": 200,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "Ricarica 300 crediti",
+            "description": "Ideale per un uso maggiore.",
+            "features_title": "Include",
+            "features": ["300 crediti", "I crediti non scadono mai"],
+            "interval": "one-time",
+            "amount": 3890,
+            "currency": "USD",
+            "price": "$38.9",
+            "unit": "",
+            "is_featured": false,
+            "tip": "Acquisto una tantum. I crediti non scadono mai.",
+            "button": {
+              "title": "Ricarica",
+              "url": "/#pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-300",
+            "product_name": "Ricarica 300",
+            "credits": 300,
+            "valid_days": 0,
+            "group": "one-time"
           }
         ]
       }
     }
   },
   "messages": {
-    "current_plan": "Piano Attuale",
-    "processing": "In elaborazione"
+    "current_plan": "Piano attuale",
+    "processing": "Elaborazione"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

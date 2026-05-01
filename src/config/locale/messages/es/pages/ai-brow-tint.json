@@ -1,0 +1,138 @@
+{
+  "header": {
+    "lookbook": "Lookbook",
+    "how_it_works": "Cómo funciona",
+    "credits": "{n} créditos"
+  },
+  "stepper": {
+    "step1": "Subir foto",
+    "step2": "Elegir estilo",
+    "step3": "Vista previa y guardar"
+  },
+  "step1": {
+    "eyebrow": "Paso 1 · Tu foto",
+    "title": "Empieza con una foto frontal y bien definida.",
+    "subtitle": "Iluminación suave, sin gafas, con las cejas totalmente visibles. Tu foto solo se usa para generar tu vista previa y se elimina automáticamente poco después.",
+    "tips": [
+      "Mira a la cámara con expresión neutra",
+      "Recoge el cabello hacia atrás dejando libre la línea de las cejas",
+      "JPG o PNG, hasta 10 MB"
+    ],
+    "upload_btn": "Subir foto",
+    "or_sample": "o elige un ejemplo",
+    "samples": {
+      "light": "Ejemplo · Claro",
+      "medium": "Ejemplo · Medio",
+      "deep": "Ejemplo · Oscuro"
+    },
+    "drop_text": "Suelta tu foto aquí",
+    "drop_sub": "o haz clic para explorar",
+    "continue": "Continuar a los estilos"
+  },
+  "step2": {
+    "title": "Elige tu look de cejas",
+    "subtitle": "{shown} de {total} estilos seleccionados · toca uno para previsualizarlo en tu foto",
+    "your_photo": "Tu foto",
+    "search": "Buscar estilos…",
+    "filters": {
+      "shade": "Tono",
+      "shape": "Forma",
+      "intensity": "Intensidad",
+      "sort": "Ordenar"
+    },
+    "sort_options": {
+      "curated": "Seleccionados",
+      "popular": "Populares",
+      "trending": "En tendencia"
+    },
+    "clear_all": "Borrar todo",
+    "empty": "Ningún estilo coincide con estos filtros.",
+    "select": "Elegir este estilo",
+    "premium": "Premium",
+    "credits_label": "{n} créditos"
+  },
+  "step3": {
+    "eyebrow": "Paso 3 · Tu vista previa",
+    "drag_hint": "Arrastra el divisor para comparar antes y después.",
+    "rendering": "Generando tu nuevo look…",
+    "rendering_sub": "Adaptando {style} a tus rasgos",
+    "before": "Antes",
+    "after": "Después",
+    "back": "Probar otro estilo",
+    "regenerate": "Regenerar",
+    "download": "Descargar",
+    "details": {
+      "title": "Detalles del look",
+      "shade": "Tono",
+      "shape": "Forma",
+      "intensity": "Intensidad",
+      "tags": "Etiquetas"
+    },
+    "variation": {
+      "title": "Probar una variación",
+      "subtitle": "Ajusta la intensidad para refinar el resultado."
+    },
+    "reference": {
+      "title": "¿Quieres un resultado real?",
+      "body": "Usa este look como referencia en tu próxima visita al salón. Generaremos una tarjeta para imprimir."
+    }
+  },
+  "buttons": {
+    "generate": "Generar · {credits} créditos",
+    "no_credits": "Consigue créditos para generar",
+    "signin": "Inicia sesión para generar"
+  },
+  "studio": {
+    "title": "AI Brow Tint Studio",
+    "subtitle": "Sube una foto, elige un look y mira el resultado lado a lado.",
+    "checking": "Comprobando cuenta...",
+    "left": {
+      "photo_title": "Tu foto",
+      "photo_tips": "Consejos para la foto",
+      "photo_drop": "Suelta tu foto aquí",
+      "photo_drop_sub": "o haz clic para explorar — JPG o PNG, hasta 10 MB",
+      "photo_sample_label": "O prueba un ejemplo",
+      "photo_change": "Cambiar foto",
+      "photo_clear": "Quitar foto",
+      "uploading": "Subiendo...",
+      "resizing": "Preparando imagen...",
+      "uploading_size": "Subiendo {kb} KB...",
+      "style_title": "Elige un look",
+      "style_all": "Los {count} estilos",
+      "style_selected": "Seleccionado: {name}"
+    },
+    "right": {
+      "empty_title": "Elige un look para empezar tu vista previa",
+      "empty_subtitle": "Toca cualquier estilo abajo — te lo mostraremos en tu foto cuando subas una.",
+      "empty_browse_all": "Ver todos los estilos de tinte de cejas",
+      "empty_style_picked_title": "{name} listo — ahora sube tu foto",
+      "empty_style_picked_subtitle": "Suelta una foto a la izquierda para generar este look en segundos.",
+      "empty_photo_only": "Ahora elige un look de cejas a la izquierda →",
+      "ready_title": "Listo para previsualizar {name}",
+      "ready_subtitle": "Toca Generar para crear tu nuevo look.",
+      "generating_title": "Generando tu nuevo look...",
+      "generating_subtitle": "Adaptando {style} a tus rasgos · suele tardar entre 8 y 15 segundos.",
+      "try_another": "Probar otro",
+      "failed_title": "Generación fallida",
+      "failed_subtitle": "Algo salió mal. Inténtalo de nuevo o elige otra foto.",
+      "failed_retry": "Reintentar",
+      "success_orphan": "Resultado listo — vuelve a subir tu foto para compararlas lado a lado."
+    },
+    "cta": {
+      "need_photo": "Añade tu foto para empezar",
+      "need_style": "Elige un look de cejas",
+      "generating": "Generando..."
+    },
+    "drawer": {
+      "title": "Todos los estilos de tinte de cejas",
+      "subtitle": "Toca una imagen para previsualizar y luego aplica tu elección.",
+      "search": "Buscar por nombre, tono o forma…",
+      "all_shades": "Todos los tonos",
+      "empty": "Ningún estilo coincide con estos filtros.",
+      "selected_label": "Seleccionado:",
+      "select_hint": "Toca una imagen para previsualizar tu look.",
+      "cancel": "Cancelar",
+      "apply": "Usar este estilo"
+    }
+  }
+}
