@@ -1,5 +1,10 @@
 [phases.install]
-cmds = ["pnpm install --frozen-lockfile"]
+cmds = [
+  "test -n \"$HEROUI_KEY\" || (echo \"Missing HEROUI_KEY for HeroUI Pro install\" && exit 1)",
+  "pnpm install --frozen-lockfile --ignore-scripts",
+  "pnpm dlx hpsetup@latest",
+  "pnpm exec fumadocs-mdx"
+]
 
 [phases.build]
 cmds = ["pnpm run build"]
