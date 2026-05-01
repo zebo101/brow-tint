@@ -9,10 +9,18 @@
 import { db } from '@/core/db';
 import { browStyle } from '@/config/db/schema';
 
+type BrowStyleInspectionRow = {
+  slug: string;
+  name: string;
+  intensity: string;
+  credits: number;
+  status: string;
+};
+
 async function main() {
   console.log('=== Inspect brow_style.credits ===\n');
 
-  const rows = await db()
+  const rows = (await db()
     .select({
       slug: browStyle.slug,
       name: browStyle.name,
@@ -20,17 +28,17 @@ async function main() {
       credits: browStyle.credits,
       status: browStyle.status,
     })
-    .from(browStyle);
+    .from(browStyle)) as BrowStyleInspectionRow[];
 
   if (rows.length === 0) {
     console.log('No rows in brow_style. Did the seed/migrate script run?');
     return;
   }
 
-  const distribution = rows.reduce<Record<number, number>>((acc, row) => {
-    acc[row.credits] = (acc[row.credits] ?? 0) + 1;
-    return acc;
-  }, {});
+  const distribution: Record<number, number> = {};
+  for (const row of rows) {
+    distribution[row.credits] = (distribution[row.credits] ?? 0) + 1;
+  }
 
   console.log(`Total rows: ${rows.length}\n`);
   console.log('Credits distribution:');

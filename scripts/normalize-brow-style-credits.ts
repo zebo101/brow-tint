@@ -13,17 +13,21 @@ import { browStyle } from '@/config/db/schema';
 
 const TARGET_CREDITS = 2;
 
+type BrowStyleCreditsRow = {
+  credits: number;
+};
+
 async function main() {
   console.log('=== Normalize brow_style.credits ===\n');
 
-  const beforeRows = await db()
+  const beforeRows = (await db()
     .select({ credits: browStyle.credits })
-    .from(browStyle);
+    .from(browStyle)) as BrowStyleCreditsRow[];
 
-  const distribution = beforeRows.reduce<Record<number, number>>((acc, row) => {
-    acc[row.credits] = (acc[row.credits] ?? 0) + 1;
-    return acc;
-  }, {});
+  const distribution: Record<number, number> = {};
+  for (const row of beforeRows) {
+    distribution[row.credits] = (distribution[row.credits] ?? 0) + 1;
+  }
 
   console.log('Before — credits distribution:');
   for (const [credits, count] of Object.entries(distribution)) {

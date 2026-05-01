@@ -4,6 +4,8 @@ import { getAuth } from '@/core/auth';
 import { isCloudflareWorker } from '@/shared/lib/env';
 import { enforceMinIntervalRateLimit } from '@/shared/lib/rate-limit';
 
+export const dynamic = 'force-dynamic';
+
 function maybeRateLimitGetSession(request: Request): Response | null {
   const url = new URL(request.url);
   // better-auth session endpoint is served under this catch-all route.

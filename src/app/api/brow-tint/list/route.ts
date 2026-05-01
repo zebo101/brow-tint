@@ -4,6 +4,8 @@ import {
   getBrowTints,
 } from '@/shared/models/brow-tint';
 
+export const dynamic = 'force-dynamic';
+
 // Cache the response for 1 hour - brow tint data doesn't change frequently
 export const revalidate = 3600;
 
