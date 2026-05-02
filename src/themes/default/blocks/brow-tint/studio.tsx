@@ -979,12 +979,12 @@ function InputCard({
               }}
               aria-label={t('studio.left.photo_drop')}
               style={{ aspectRatio: 3 / 4 }}
-              className="bg-default-50 flex w-full cursor-pointer flex-col items-center justify-center gap-2 overflow-hidden text-center"
+              className="flex w-full cursor-pointer flex-col items-center justify-center gap-2 overflow-hidden bg-neutral-800 text-center"
             >
               {isUploading ? (
                 <>
                   <Spinner color="accent" size="lg" />
-                  <p className="font-display text-default-500 text-xs">
+                  <p className="font-display text-xs text-white/70">
                     {uploadPhase === 'resizing'
                       ? t('studio.left.resizing')
                       : uploadKB
@@ -994,11 +994,11 @@ function InputCard({
                 </>
               ) : (
                 <>
-                  <Upload className="text-default-400 h-5 w-5" />
-                  <p className="font-display text-foreground text-sm font-medium tracking-tight">
+                  <Upload className="h-5 w-5 text-white" />
+                  <p className="font-display text-sm font-medium tracking-tight text-white">
                     {t('studio.left.photo_drop')}
                   </p>
-                  <p className="font-display text-default-500 text-xs">
+                  <p className="font-display text-xs text-white/70">
                     {t('studio.left.photo_drop_sub')}
                   </p>
                 </>
