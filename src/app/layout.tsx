@@ -19,16 +19,17 @@ import { getCustomerService } from '@/shared/services/customer_service';
 // filenames and where to download them. Switching off next/font/google means
 // builds work behind the GFW and don't depend on fonts.gstatic.com being
 // reachable from the build machine.
+// Font slimming for Lighthouse: only Noto Sans Mono (body, --font-sans) and
+// Amita (display H1, --font-display) are referenced anywhere in the rendered
+// tree. Merriweather (--font-serif) and JetBrains Mono (--font-mono) had
+// `preload: true` and were being shipped on every page despite zero CSS
+// usage. They've been removed — re-add via localFont() if a future block
+// actually needs `font-serif` / `font-mono`.
 const notoSansMono = localFont({
   src: [
     {
       path: '../../public/fonts/noto-sans-mono/NotoSansMono-Regular.woff2',
       weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/noto-sans-mono/NotoSansMono-Medium.woff2',
-      weight: '500',
       style: 'normal',
     },
     {
@@ -39,42 +40,7 @@ const notoSansMono = localFont({
   ],
   variable: '--font-sans',
   display: 'swap',
-  preload: true,
-});
-
-const merriweather = localFont({
-  src: [
-    {
-      path: '../../public/fonts/merriweather/Merriweather-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/merriweather/Merriweather-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-serif',
-  display: 'swap',
-  preload: true,
-});
-
-const jetbrainsMono = localFont({
-  src: [
-    {
-      path: '../../public/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/jetbrains-mono/JetBrainsMono-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-mono',
-  display: 'swap',
+  // Body font; preload so first paint doesn't flash fallback.
   preload: true,
 });
 
@@ -93,6 +59,8 @@ const amita = localFont({
   ],
   variable: '--font-display',
   display: 'swap',
+  // Drives the LCP <h1 class="font-display"> on the landing hero — preload is
+  // load-bearing for LCP timing.
   preload: true,
 });
 
@@ -187,7 +155,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${notoSansMono.variable} ${merriweather.variable} ${jetbrainsMono.variable} ${amita.variable}`}
+      className={`${notoSansMono.variable} ${amita.variable}`}
       suppressHydrationWarning
     >
       <head>

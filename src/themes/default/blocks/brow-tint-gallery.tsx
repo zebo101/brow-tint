@@ -149,7 +149,12 @@ export async function BrowTintGallery({
                           <LazyImage
                             src={item.imageUrl || item.thumbnailUrl}
                             placeholderSrc={item.thumbnailUrl || undefined}
-                            alt={`${config.title} - ${label}`}
+                            // a11y: the visible <p>{label}</p> below the image
+                            // already names the card; reusing it as alt text
+                            // makes the link redundantly verbalised by screen
+                            // readers and triggered Lighthouse
+                            // `image-redundant-alt`. Decorative thumbnail.
+                            alt=""
                             className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.04]"
                           />
                         </div>

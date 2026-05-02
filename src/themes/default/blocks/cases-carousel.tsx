@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import {
@@ -133,16 +134,20 @@ export function CasesCarousel({
                 <CarouselItem key={index} className="my-10 md:basis-1/3">
                   <div
                     className={cn(
-                      'h-[420px] w-full transition-transform duration-500 ease-in-out',
+                      'relative h-[420px] w-full transition-transform duration-500 ease-in-out',
                       getRotation(index)
                     )}
                   >
                     {src && (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
+                      <Image
                         src={src}
                         alt={alt}
-                        className="h-full w-full object-cover"
+                        fill
+                        // basis-1/3 column on md+, full-width on mobile.
+                        // Capped at 600 to cover retina without overshooting.
+                        sizes="(min-width: 768px) 33vw, 100vw"
+                        className="object-cover"
+                        loading="lazy"
                       />
                     )}
                   </div>

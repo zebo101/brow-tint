@@ -1,5 +1,3 @@
-'use client';
-
 import type { ComponentProps, ReactNode } from 'react';
 
 import { Link } from '@/core/i18n/navigation';
@@ -67,7 +65,7 @@ export function Footer({ footer }: { footer: FooterType }) {
         <div
           className="border-border/40 bg-background/30 dark:bg-background/20 relative flex flex-col gap-8 rounded-3xl border-2 px-4 py-10 shadow-lg backdrop-blur-sm md:px-8 md:py-12"
           style={{
-            backgroundImage: 'url(/imgs/bg/footer.png)',
+            backgroundImage: 'url(/imgs/bg/footer.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -111,6 +109,11 @@ export function Footer({ footer }: { footer: FooterType }) {
                       key={index}
                       href={item.url || ''}
                       target={item.target || ''}
+                      // a11y: icon-only social links need an accessible name —
+                      // Lighthouse `link-name` was failing because the inner
+                      // SmartIcon SVG has no text label.
+                      aria-label={item.title || undefined}
+                      title={item.title || undefined}
                       className="border-border/50 text-muted-foreground dark:text-zinc-200 hover:bg-accent/10 hover:text-foreground dark:hover:text-white rounded-lg border p-2 transition-all duration-300"
                     >
                       {item.icon ? (
@@ -131,9 +134,14 @@ export function Footer({ footer }: { footer: FooterType }) {
               {footer.nav?.items.map((item, idx) => (
                 <AnimatedContainer key={idx} delay={0.1 + idx * 0.1}>
                   <div>
-                    <h4 className="text-muted-foreground/70 dark:text-zinc-400 mb-4 text-sm font-semibold uppercase">
+                    {/* a11y: was <h4>, but Lighthouse `heading-order` flagged
+                        the jump from <h2> (above the fold) to <h4> with no
+                        <h3> in between. These are visual category labels for
+                        link groups, not document outline headings, so a
+                        styled <p> with role-equivalent semantics is correct. */}
+                    <p className="text-muted-foreground/70 dark:text-zinc-400 mb-4 text-sm font-semibold uppercase">
                       {item.title}
-                    </h4>
+                    </p>
                     <ul className="flex flex-col gap-2 text-sm">
                       {item.children?.map((subItem, iidx) => (
                         <li key={iidx}>

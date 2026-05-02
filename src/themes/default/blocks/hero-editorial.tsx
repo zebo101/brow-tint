@@ -26,14 +26,21 @@ export function HeroEditorial({
         className
       )}
     >
-      {/* Background image (hero-1) — full screen base layer */}
+      {/* Background image (hero-1) — full screen base layer.
+          Codex review (2026-05-02): removed `priority` here. Lighthouse
+          measures the actual LCP element as the foreground model image
+          / H1, so racing the background pink bg with high-priority
+          fetch only steals bandwidth from the real LCP without helping
+          it. Marked eager + medium fetchPriority so it still paints
+          first viewport without competing with the foreground. */}
       {section.background_image?.src && (
         <Image
           src={section.background_image.src}
           alt={section.background_image.alt || ''}
           className="absolute inset-0 h-full w-full object-cover object-[70%_15%] md:object-center"
           fill
-          priority
+          loading="eager"
+          fetchPriority="auto"
           sizes="100vw"
         />
       )}
