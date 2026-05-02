@@ -11,6 +11,12 @@
         "id": "showcases",
         "title": "Impresionantes Transformaciones de Tinte de Cejas",
         "description": "Ve cómo las usuarias transformaron sus cejas con Brow Tint.",
+        "buttons": [
+          {
+            "title": "Prueba este estilo",
+            "url": "/#ai-brow-tint-studio"
+          }
+        ],
         "groups": [
           {
             "name": "all",

@@ -11,6 +11,12 @@
         "id": "showcases",
         "title": "Stunning Brow Tint Transformations",
         "description": "See how users transformed their brows with Brow Tint.",
+        "buttons": [
+          {
+            "title": "Try This Style",
+            "url": "/#ai-brow-tint-studio"
+          }
+        ],
         "groups": [
           {
             "name": "all",

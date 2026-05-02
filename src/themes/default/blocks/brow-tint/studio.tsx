@@ -851,7 +851,7 @@ function InputCard({
     !!user && !!selectedStyle && hasPhoto && remainingCredits >= credits;
 
   return (
-    <Card className="relative flex h-full min-h-[420px] flex-col bg-gray-100 md:min-h-[680px]">
+    <Card className="relative flex h-full flex-col bg-gray-100 lg:min-h-[680px]">
       {/* Photo tips — tucked into the top-right corner, kept small and soft
           so it doesn't compete with the polaroid. The polaroid caption
           ("your photo" / "before") replaces the redundant Card title. */}
@@ -1204,7 +1204,7 @@ function ResultPanel({
   }, [resultUrl, resultStyleSlug, selectedStyle?.slug]);
 
   return (
-    <Card className="flex h-full min-h-[420px] flex-col md:min-h-[680px]">
+    <Card className="flex h-full flex-col lg:min-h-[680px]">
       <Card.Content className="flex flex-1 flex-col p-4">
         {/* SUCCESS — defensive fallback when photo was cleared mid-gen */}
         {genStatus === 'success' && resultUrl && !photoPreview && (

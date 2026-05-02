@@ -11,6 +11,12 @@
         "id": "showcases",
         "title": "Beeindruckende Augenbrauen-Tint Transformationen",
         "description": "Sehen Sie, wie Nutzer ihre Brauen mit Brow Tint verwandelt haben.",
+        "buttons": [
+          {
+            "title": "Diesen Stil ausprobieren",
+            "url": "/#ai-brow-tint-studio"
+          }
+        ],
         "groups": [
           {
             "name": "all",

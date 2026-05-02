@@ -11,6 +11,12 @@
         "id": "showcases",
         "title": "Transformações Impressionantes de Tintura de Sobrancelhas",
         "description": "Veja como os usuários transformaram suas sobrancelhas com Brow Tint.",
+        "buttons": [
+          {
+            "title": "Experimentar este estilo",
+            "url": "/#ai-brow-tint-studio"
+          }
+        ],
         "groups": [
           {
             "name": "all",

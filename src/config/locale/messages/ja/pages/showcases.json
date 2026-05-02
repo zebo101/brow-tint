@@ -11,6 +11,12 @@
         "id": "showcases",
         "title": "見事な眉ティント変身",
         "description": "Brow Tintでユーザーがどのように眉を変身させたかご覧ください。",
+        "buttons": [
+          {
+            "title": "このスタイルを試す",
+            "url": "/#ai-brow-tint-studio"
+          }
+        ],
         "groups": [
           {
             "name": "all",

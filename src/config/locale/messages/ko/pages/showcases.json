@@ -11,6 +11,12 @@
         "id": "showcases",
         "title": "놀라운 눈썹 틴트 변신",
         "description": "사용자들이 Brow Tint로 눈썹을 어떻게 변화시켰는지 확인하세요.",
+        "buttons": [
+          {
+            "title": "이 스타일 시도하기",
+            "url": "/#ai-brow-tint-studio"
+          }
+        ],
         "groups": [
           {
             "name": "all",

@@ -11,6 +11,12 @@
         "id": "showcases",
         "title": "精彩眉部染色变换展示",
         "description": "看看用户如何使用 Brow Tint 改变眉妆造型。",
+        "buttons": [
+          {
+            "title": "试试这个风格",
+            "url": "/#ai-brow-tint-studio"
+          }
+        ],
         "groups": [
           {
             "name": "all",

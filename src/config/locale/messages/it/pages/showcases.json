@@ -11,6 +11,12 @@
         "id": "showcases",
         "title": "Straordinarie Trasformazioni Tinta Sopracciglia",
         "description": "Scopri come gli utenti hanno trasformato le loro sopracciglia con Brow Tint.",
+        "buttons": [
+          {
+            "title": "Prova questo stile",
+            "url": "/#ai-brow-tint-studio"
+          }
+        ],
         "groups": [
           {
             "name": "all",

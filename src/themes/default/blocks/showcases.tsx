@@ -134,16 +134,21 @@ export function Showcases({
                         {item.description}
                       </p>
                     )}
-                    <Button
-                      asChild
-                      size="sm"
-                      className="bg-primary hover:bg-primary/90 h-9 w-full border-0 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:scale-[1.02]"
-                    >
-                      <Link href="http://localhost:3000/#ai-brow-tint-studio">
-                        <WandIcon className="mr-1.5 size-4" />
-                        Try This Style
-                      </Link>
-                    </Button>
+                    {section.buttons?.[0] && (
+                      <Button
+                        asChild
+                        size="sm"
+                        className="bg-primary hover:bg-primary/90 h-9 w-full border-0 text-sm font-semibold text-white shadow-lg transition-all duration-200 hover:scale-[1.02]"
+                      >
+                        <Link
+                          href={section.buttons[0].url ?? '#'}
+                          target={section.buttons[0].target}
+                        >
+                          <WandIcon className="mr-1.5 size-4" />
+                          {section.buttons[0].title}
+                        </Link>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
