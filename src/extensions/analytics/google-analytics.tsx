@@ -30,12 +30,12 @@ export class GoogleAnalyticsProvider implements AnalyticsProvider {
         {/* Google tag (gtag.js) */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${this.configs.gaId}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           async
         />
         <Script
           id={this.name}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];

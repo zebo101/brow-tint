@@ -27,22 +27,27 @@ export function HeroEditorial({
       )}
     >
       {/* Background image (hero-1) — full screen base layer.
-          Codex review (2026-05-02): removed `priority` here. Lighthouse
-          measures the actual LCP element as the foreground model image
-          / H1, so racing the background pink bg with high-priority
-          fetch only steals bandwidth from the real LCP without helping
-          it. Marked eager + medium fetchPriority so it still paints
-          first viewport without competing with the foreground. */}
+          Codex review round 2 (2026-05-02): on mobile the foreground
+          model image (z-[2]) covers the background completely, so the
+          bg image is invisible bandwidth + decode + paint cost. Worse,
+          the two competing full-screen `fill` images created a
+          ~2.4 s render-delay window on Slow-4G traces.
+          Wrapping in `hidden md:block` (display:none on mobile) means
+          Next/Image with default lazy loading skips the fetch entirely
+          on small viewports. Desktop layout unchanged.
+          Note: kept `loading="lazy"` instead of eager — the foreground
+          image is the LCP candidate; the bg can lazy-resolve. */}
       {section.background_image?.src && (
-        <Image
-          src={section.background_image.src}
-          alt={section.background_image.alt || ''}
-          className="absolute inset-0 h-full w-full object-cover object-[70%_15%] md:object-center"
-          fill
-          loading="eager"
-          fetchPriority="auto"
-          sizes="100vw"
-        />
+        <div className="absolute inset-0 hidden md:block">
+          <Image
+            src={section.background_image.src}
+            alt={section.background_image.alt || ''}
+            className="h-full w-full object-cover object-[70%_15%] md:object-center"
+            fill
+            loading="lazy"
+            sizes="100vw"
+          />
+        </div>
       )}
 
       {/* Giant brand text
@@ -55,16 +60,36 @@ export function HeroEditorial({
         {displayText}
       </h1>
 
-      {/* Foreground image (hero-2) — model overlaps the text on desktop */}
+      {/* Mobile-only hero: single hand-cropped portrait (1000w WebP, ~28 KB).
+          Replaces the desktop bg+fg layered composition on small viewports
+          so there's no full-screen fill-image contention. This is the
+          real LCP candidate on mobile, hence priority + fetchPriority=high
+          + eager. Composited image already has the pink background baked
+          in, so it stands alone without the hero-1 layer. */}
+      <Image
+        src="/imgs/bg/hero-mobile.webp"
+        alt={section.image?.alt || section.title || ''}
+        className="absolute inset-0 z-[2] h-full w-full object-cover md:hidden"
+        fill
+        priority
+        fetchPriority="high"
+        sizes="100vw"
+      />
+
+      {/* Foreground image (hero-2) — desktop only; the model overlaps the
+          giant H1 text creating the editorial layered effect. Wrapped in
+          `hidden md:block` so mobile never fetches it. */}
       {section.image?.src && (
-        <Image
-          src={section.image.src}
-          alt={section.image.alt || ''}
-          className="absolute inset-0 z-[2] h-full w-full object-cover object-[70%_15%] md:object-center"
-          fill
-          priority
-          sizes="100vw"
-        />
+        <div className="absolute inset-0 z-[2] hidden md:block">
+          <Image
+            src={section.image.src}
+            alt={section.image.alt || ''}
+            className="h-full w-full object-cover object-center"
+            fill
+            priority
+            sizes="100vw"
+          />
+        </div>
       )}
 
       {/* Decorative polaroid stack — desktop-only, anchored to the left

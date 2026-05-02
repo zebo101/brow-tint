@@ -25,9 +25,34 @@ export function CasesCarousel({
 }) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
+  // Codex perf review (2026-05-02): the carousel sits below the fold but its
+  // 80 framer-motion bars + autoplay setInterval used to mount on hydration,
+  // burning ~100-200ms of mobile TBT before the user ever scrolled to it.
+  // Gate motion + autoplay on first viewport intersection. Section structure
+  // still renders so layout is stable (no CLS); only the animated bits
+  // light up on visibility.
   const isMobile = useIsMobile();
   const items = section.items ?? [];
   const stoppedByUserRef = useRef(false);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || isVisible) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          obs.disconnect();
+        }
+      },
+      // Pre-load slightly before fully in view so animation feels seamless.
+      { rootMargin: '200px 0px' }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [isVisible]);
 
   useEffect(() => {
     if (!api) return;
@@ -40,8 +65,9 @@ export function CasesCarousel({
 
   // Manual autoplay — embla-carousel-autoplay isn't a project dep, so we drive
   // the carousel via setInterval and stop on the first user pointer interaction.
+  // Gated on isVisible so the timer doesn't tick while the section is offscreen.
   useEffect(() => {
-    if (!api) return;
+    if (!api || !isVisible) return;
     const id = window.setInterval(() => {
       if (stoppedByUserRef.current) return;
       api.scrollNext();
@@ -56,7 +82,7 @@ export function CasesCarousel({
       window.clearInterval(id);
       api.off('pointerDown', onPointerDown);
     };
-  }, [api]);
+  }, [api, isVisible]);
 
   const getRotation = useCallback(
     (index: number) => {
@@ -70,29 +96,41 @@ export function CasesCarousel({
     [current]
   );
 
-  const scrollbarBars = useMemo(
-    () =>
-      Array.from({ length: 40 }).map((_, item) => (
-        <motion.div
+  // Skip the 80 framer-motion divs entirely until first viewport intersection.
+  // Static <div> placeholder keeps width/height the same so there's no layout
+  // shift when the motion versions take over.
+  const scrollbarBars = useMemo(() => {
+    if (!isVisible) {
+      return Array.from({ length: 40 }).map((_, item) => (
+        <div
           key={item}
-          initial={{ opacity: 0.2, filter: 'blur(1px)' }}
-          animate={{
-            opacity: item % 5 === 0 ? 1 : 0.2,
-            filter: 'blur(0px)',
-          }}
-          transition={{
-            duration: 0.2,
-            delay: item % 5 === 0 ? (item / 5) * 0.05 : 0,
-            ease: 'easeOut',
-          }}
           className={cn(
-            'bg-foreground w-[1px]',
+            'bg-foreground w-[1px] opacity-20',
             item % 5 === 0 ? 'h-[15px]' : 'h-[10px]'
           )}
         />
-      )),
-    []
-  );
+      ));
+    }
+    return Array.from({ length: 40 }).map((_, item) => (
+      <motion.div
+        key={item}
+        initial={{ opacity: 0.2, filter: 'blur(1px)' }}
+        animate={{
+          opacity: item % 5 === 0 ? 1 : 0.2,
+          filter: 'blur(0px)',
+        }}
+        transition={{
+          duration: 0.2,
+          delay: item % 5 === 0 ? (item / 5) * 0.05 : 0,
+          ease: 'easeOut',
+        }}
+        className={cn(
+          'bg-foreground w-[1px]',
+          item % 5 === 0 ? 'h-[15px]' : 'h-[10px]'
+        )}
+      />
+    ));
+  }, [isVisible]);
 
   if (!items.length) return null;
 
@@ -105,7 +143,16 @@ export function CasesCarousel({
   return (
     <section
       id={section.id || section.name}
-      className={cn('bg-background py-32', section.className, className)}
+      ref={sectionRef}
+      className={cn(
+        'bg-background py-32',
+        // CSS containment + intrinsic size hint: lets the browser skip
+        // layout/paint for the section until it scrolls into view, paired
+        // with the JS visibility gate above.
+        '[content-visibility:auto] [contain-intrinsic-size:1px_800px]',
+        section.className,
+        className
+      )}
     >
       <div className="container flex flex-col items-center justify-center gap-4 text-center">
         {section.title && (

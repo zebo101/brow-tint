@@ -35,7 +35,7 @@ export class AffonsoAffiliateProvider implements AffiliateProvider {
           src="https://affonso.io/js/pixel.min.js"
           data-affonso={this.configs.affonsoId}
           data-cookie_duration={this.configs.cookieDuration ?? 30}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </>
     );

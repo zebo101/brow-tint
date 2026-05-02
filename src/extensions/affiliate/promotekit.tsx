@@ -33,7 +33,7 @@ export class PromoteKitAffiliateProvider implements AffiliateProvider {
           defer
           src="https://cdn.promotekit.com/promotekit.js"
           data-promotekit={this.configs.promotekitId}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </>
     );

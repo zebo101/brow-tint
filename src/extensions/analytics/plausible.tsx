@@ -31,7 +31,7 @@ export class PlausibleAnalyticsProvider implements AnalyticsProvider {
         {/* Plausible Analytics */}
         <Script
           id={this.name}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
@@ -41,7 +41,7 @@ export class PlausibleAnalyticsProvider implements AnalyticsProvider {
         <Script
           data-domain={this.configs.domain}
           src={this.configs.src}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           defer
           async
         />

@@ -35,7 +35,7 @@ export class OpenPanelAnalyticsProvider implements AnalyticsProvider {
         {/* OpenPanel Analytics */}
         <Script
           id={this.name}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.op = window.op||function(...args){(window.op.q=window.op.q||[]).push(args);};
@@ -50,7 +50,7 @@ export class OpenPanelAnalyticsProvider implements AnalyticsProvider {
         />
         <Script
           src="https://openpanel.dev/op1.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           defer
           async
         />

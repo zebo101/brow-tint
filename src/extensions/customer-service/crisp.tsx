@@ -29,7 +29,7 @@ export class CrispCustomerServiceProvider implements CustomerServiceProvider {
       <>
         <Script
           id={`${this.name}-script`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
                 window.$crisp=[];

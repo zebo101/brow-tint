@@ -5,6 +5,7 @@ import { getLocale, getTranslations, setRequestLocale } from 'next-intl/server';
 import NextTopLoader from 'nextjs-toploader';
 
 import { envConfigs } from '@/config';
+import { DeferUntilIdle } from '@/shared/blocks/common/defer-until-idle';
 import { UtmCapture } from '@/shared/blocks/common/utm-capture';
 import { JsonLd } from '@/shared/components/json-ld';
 import { getSiteUrl } from '@/shared/lib/seo-paths';
@@ -187,17 +188,24 @@ export default async function RootLayout({
         <JsonLd id="site-schema" schema={siteSchemas} />
       </head>
       <body suppressHydrationWarning className="overflow-x-hidden">
-        <NextTopLoader
-          initialPosition={0.08}
-          crawlSpeed={200}
-          height={3}
-          crawl={true}
-          showSpinner={true}
-          easing="ease"
-          speed={200}
-        />
-
-        <UtmCapture />
+        {/* Codex perf review (2026-05-02): NextTopLoader + UtmCapture were
+            mounting on hydration and adding ~50-100 ms of mobile TBT for
+            something that doesn't need to run before paint. DeferUntilIdle
+            waits for `requestIdleCallback` (or a 1.5 s timeout) before
+            mounting them. The page-nav progress bar still appears on
+            navigation; UTM cookie still gets set within the same session. */}
+        <DeferUntilIdle>
+          <NextTopLoader
+            initialPosition={0.08}
+            crawlSpeed={200}
+            height={3}
+            crawl={true}
+            showSpinner={true}
+            easing="ease"
+            speed={200}
+          />
+          <UtmCapture />
+        </DeferUntilIdle>
 
         {children}
 

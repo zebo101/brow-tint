@@ -41,7 +41,7 @@
           }
         ],
         "image": {
-          "src": "/imgs/bg/hero-2.png",
+          "src": "/imgs/bg/hero-2.webp",
           "alt": "AI 眉色生成器 - 在线预览眉部染色效果",
           "width": 800,
           "height": 600
