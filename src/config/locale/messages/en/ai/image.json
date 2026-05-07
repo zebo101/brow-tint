@@ -448,5 +448,13 @@
       "cancel": "Cancel",
       "apply": "Apply"
     }
+  },
+  "product": {
+    "name": "AI Brow Tint Generator",
+    "description": "Free AI tool to preview brow tint, brow lamination, and tinted brow gel looks. Upload a photo and see realistic before-and-after results in seconds."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "AI Brow Tint Generator"
   }
 }

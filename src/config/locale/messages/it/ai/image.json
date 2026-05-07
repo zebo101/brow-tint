@@ -448,5 +448,13 @@
       "cancel": "Annulla",
       "apply": "Applica"
     }
+  },
+  "product": {
+    "name": "Generatore Tinta Sopracciglia IA",
+    "description": "Strumento IA gratuito per visualizzare tinta sopracciglia, laminazione e gel sopracciglia colorato. Carica una foto e vedi risultati realistici prima e dopo in pochi secondi."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Generatore Tinta Sopracciglia IA"
   }
 }

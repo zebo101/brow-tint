@@ -448,5 +448,13 @@
       "cancel": "Abbrechen",
       "apply": "Anwenden"
     }
+  },
+  "product": {
+    "name": "KI Augenbrauen-Tint Generator",
+    "description": "Kostenloses KI-Tool zur Vorschau von Augenbrauen-Tint, Brow Lamination und getöntem Brauengel. Foto hochladen und realistische Vorher-Nachher-Ergebnisse in Sekunden sehen."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "KI Augenbrauen-Tint Generator"
   }
 }

@@ -448,5 +448,13 @@
       "cancel": "取消",
       "apply": "应用"
     }
+  },
+  "product": {
+    "name": "AI 眉部染色生成器",
+    "description": "免费 AI 工具，预览眉部染色、眉部塑形和染眉膏效果。上传照片，几秒内查看真实的前后对比结果。"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "current": "AI 眉部染色生成器"
   }
 }

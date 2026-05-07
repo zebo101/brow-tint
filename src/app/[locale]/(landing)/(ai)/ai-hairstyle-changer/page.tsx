@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation';
+import { permanentRedirect } from 'next/navigation';
 
 import { defaultLocale } from '@/config/locale';
 
@@ -8,7 +8,7 @@ export default async function AiBrowTintChangerRedirect({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  redirect(
+  permanentRedirect(
     locale === defaultLocale
       ? '/ai-brow-tint-generator'
       : `/${locale}/ai-brow-tint-generator`

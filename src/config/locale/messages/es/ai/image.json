@@ -448,5 +448,13 @@
       "cancel": "Cancelar",
       "apply": "Aplicar"
     }
+  },
+  "product": {
+    "name": "Generador de Tinte de Cejas con IA",
+    "description": "Herramienta de IA gratuita para previsualizar tinte de cejas, laminado y gel de cejas con color. Sube una foto y ve resultados realistas antes y después en segundos."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Generador de Tinte de Cejas con IA"
   }
 }

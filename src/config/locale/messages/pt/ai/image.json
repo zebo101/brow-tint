@@ -448,5 +448,13 @@
       "cancel": "Cancelar",
       "apply": "Aplicar"
     }
+  },
+  "product": {
+    "name": "Gerador de Brow Tint com IA",
+    "description": "Ferramenta de IA gratuita para visualizar brow tint, laminação de sobrancelhas e gel de sobrancelhas colorido. Envie uma foto e veja resultados realistas antes e depois em segundos."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Gerador de Brow Tint com IA"
   }
 }
