@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "title": "Brow Tint — Estudio de Tinte de Cejas IA · Prueba en Segundos",
-    "description": "Sube una foto, elige el tono y mira tus nuevas cejas lado a lado. Generador gratuito de tinte de cejas con IA, estilos seleccionados y previews tipo salón.",
-    "keywords": "tinte de cejas, ia tinte de cejas, generador tinte cejas, tinte virtual cejas"
+    "title": "Brow Tint — Previsualiza tu Color de Cejas con IA Antes del Salón",
+    "description": "Brow Tint es el estudio de color de cejas con IA usado por más de 50.000 amantes de la belleza y estilistas de cejas. Previsualiza tinte de cejas, laminado de cejas y gel de cejas con color en tu foto antes de reservar una visita al salón.",
+    "keywords": "tinte de cejas, tintado de cejas, ia tinte de cejas, color de cejas con ia, estudio de tinte de cejas, tinte de cejas virtual, vista previa de tintado de cejas, tinte de cejas antes del salón"
   },
   "page": {
     "show_sections": [
       "hero",
       "cases",
-      "introduce",
-      "benefits",
-      "usage",
-      "features",
+      "why_brow_tint",
+      "community",
+      "learn",
       "stats",
       "testimonials",
       "faq",
-      "cta"
+      "cta",
+      "subscribe"
     ],
     "sections": {
       "hero": {
         "block": "hero-editorial",
         "id": "hero",
-        "title": "#1 Generador de Tinte de Cejas con IA Gratis",
+        "title": "Previsualiza tu Tinte de Cejas Antes de Reservar el Salón",
         "highlight_text": "Brow Tint",
-        "description": "Previsualiza looks realistas de tinte de cejas con Brow Tint — una herramienta de IA gratuita para tinte de cejas profesional, gel de cejas con tinte y previsualizaciones de laminado y tinte de cejas. Sube tu foto y ve los resultados de tinte de cejas antes y después en segundos, impulsado por GPT Image 2.",
+        "description": "Brow Tint es el estudio de color de cejas con IA usado por más de 50.000 amantes de la belleza y profesionales de salón. Sube una foto, ve tus nuevas cejas en cualquier tinte, laminado o estilo de gel con color — luego reserva tu visita al salón con confianza, o sáltatela por completo.",
         "buttons": [
           {
             "title": "Probar Brow Tint Gratis",
@@ -42,293 +42,192 @@
         ],
         "image": {
           "src": "/imgs/bg/hero-2.webp",
-          "alt": "AI Brow Tint Generator - Preview Brow Tinting Results Online",
+          "alt": "Estudio de IA Brow Tint - Previsualiza tu Color de Cejas",
           "width": 800,
           "height": 600
         },
         "background_image": {
           "src": "/imgs/bg/hero-1.jpg",
-          "alt": "Brow Tint Background - Professional Brow Tinting Preview"
+          "alt": "Fondo del Estudio Brow Tint"
         },
         "powered_by": "Impulsado por GPT Image 2",
         "editorial_labels": [
-          "Vista previa",
-          "Transformar",
-          "Definir"
+          "Previsualiza",
+          "Decide",
+          "Reserva"
         ]
       },
       "cases": {
         "block": "cases-carousel",
         "id": "cases",
-        "title": "Casos reales de tinte de cejas",
-        "description": "Resultados reales de antes y después de usuarios que previsualizaron su look con Brow Tint.",
+        "title": "Cejas Reales. Resultados Reales.",
+        "description": "Looks que nuestra comunidad generó con el estudio de tinte de cejas con IA y llevó al salón — exactamente como en la vista previa.",
         "items": [
           {
             "name": "Henna Suave",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Caso de tinte de cejas Henna Suave"
+              "alt": "Vista previa de tinte de cejas Henna Suave"
             }
           },
           {
             "name": "Espresso Intenso",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Caso de tinte de cejas Espresso Intenso"
+              "alt": "Vista previa de tinte de cejas Espresso Intenso"
             }
           },
           {
             "name": "Laminado de Cejas",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Caso de laminado de cejas"
+              "alt": "Vista previa de Laminado de Cejas"
             }
           },
           {
             "name": "Ceniza Fría",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Caso de tinte de cejas Ceniza Fría"
+              "alt": "Vista previa de tinte de cejas Ceniza Fría"
             }
           },
           {
             "name": "Caoba Cálido",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Caso de tinte de cejas Caoba Cálido"
+              "alt": "Vista previa de tinte de cejas Caoba Cálido"
             }
           },
           {
-            "name": "Gel de Cejas",
+            "name": "Gel con Color",
             "image": {
               "src": "/imgs/cases/6.jpg",
-              "alt": "Caso de gel de cejas con tinte"
+              "alt": "Vista previa de gel de cejas con color"
             }
           },
           {
-            "name": "Pestañas y Cejas",
+            "name": "Tinte de Pestañas y Cejas",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Caso de tinte de pestañas y cejas"
+              "alt": "Vista previa combinada de tinte de pestañas y cejas"
             }
           }
         ]
       },
-      "logos": {
-        "id": "logos",
-        "title": "Tecnología de IA de Confianza Detrás de Brow Tint",
-        "items": [
-          {
-            "title": "Next.js",
-            "image": {
-              "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
-            }
-          },
-          {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
-          },
-          {
-            "title": "TailwindCSS",
-            "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
-            }
-          },
-          {
-            "title": "Shadcn/UI",
-            "image": {
-              "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
-            }
-          },
-          {
-            "title": "Vercel",
-            "image": {
-              "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
-            }
-          }
-        ]
-      },
-      "introduce": {
+      "why_brow_tint": {
         "block": "features-list",
-        "id": "introduce",
-        "title": "¿Qué es Brow Tint?",
-        "label": "Introducción",
-        "description": "Brow Tint es un generador de tinte de cejas con IA gratuito que te permite previsualizar resultados profesionales de tinte de cejas antes de comprometerte. Ya sea que quieras probar tonos de gel de cejas con tinte, explorar combinaciones de laminado y tinte de cejas, o comparar estilos de tinte de pestañas y cejas, nuestra IA GPT Image 2 crea previsualizaciones fotorrealistas adaptadas a la forma de tu rostro y tono de piel.",
+        "id": "why-brow-tint",
+        "title": "Por Qué Existe Brow Tint",
+        "label": "Nuestra Historia",
+        "description": "El tintado de cejas está en su mejor momento — pero las visitas al salón cuestan dinero, los resultados son semipermanentes, y solo ves el look cuando ya está hecho. Creamos Brow Tint para que puedas experimentar con el color de cejas como experimentas con el color de cabello en tu cabeza: libremente, en privado, sin compromiso.",
         "image": {
           "src": "/imgs/features/landingpage.jpg",
-          "alt": "Brow Tint AI Generator - Preview Brow Tinting Online Free"
+          "alt": "Brow Tint - El Estudio de Color de Cejas con IA",
+          "width": 1200,
+          "height": 800
         },
         "items": [
           {
-            "title": "Previsualización Virtual de Tinte de Cejas",
-            "description": "Previsualiza incontables tonos y estilos de tinte de cejas sin tocar ningún producto. Nuestro generador de tinte de cejas con IA simula resultados profesionales de tinte de cejas para que puedas encontrar tu tono ideal desde la comodidad de tu hogar.",
-            "icon": "RiMagicLine",
-            "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "Virtual Brow Tinting Preview - AI Brow Tint Generator"
-            }
+            "title": "Para los Curiosos",
+            "description": "Prueba un tono de tinte de cejas que nunca te atreverías a pedir en el salón. Velo en tu propia cara. Luego decide."
           },
           {
-            "title": "Tinte de Cejas Antes y Después Realista",
-            "description": "Ve resultados realistas de tinte de cejas antes y después impulsados por GPT Image 2. Compara tus cejas naturales con looks teñidos en paralelo y comparte la comparación con tu estilista antes de tu cita.",
-            "icon": "RiCameraLensLine",
-            "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "Brow Tint Before and After Results"
-            }
+            "title": "Para los Cautelosos",
+            "description": "Lleva una vista previa descargada a tu estilista de cejas en lugar de describir con palabras lo que quieres."
           },
           {
-            "title": "Generador de Imágenes con IA Avanzado",
-            "description": "Nuestro generador de imágenes con IA utiliza GPT Image 2 para crear looks únicos de tinte de cejas y gel de cejas con tinte para cada forma de rostro. Analiza tus rasgos y recomienda los mejores tonos de tinte de cejas que complementen tu tono de piel.",
-            "icon": "RiImage2Line",
-            "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "AI Image Generator for Brow Tint Looks"
-            }
+            "title": "Para Profesionales",
+            "description": "Los estilistas de cejas y dueños de salón usan Brow Tint en la consulta para mostrar a los clientes exactamente a qué se están comprometiendo."
           },
           {
-            "title": "Tinte de Pestañas y Cejas Juntos",
-            "description": "Previsualiza estilos combinados de tinte de pestañas y cejas para encontrar tu look perfecto todo en uno para enmarcar los ojos. Ve cómo el tinte de pestañas combina con diferentes tonos de tinte de cejas en una sola previsualización fotorrealista.",
-            "icon": "RiExchangeLine",
-            "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "Lash and Brow Tint Combined Preview"
-            }
+            "title": "Para los Indecisos",
+            "description": "Compara 5, 10, 20 tonos lado a lado. Encuentra tu combinación perfecta sin gastar un centavo."
           }
-        ],
-        "className": "bg-muted"
+        ]
       },
-      "benefits": {
+      "community": {
         "block": "features-accordion",
-        "id": "benefits",
-        "title": "Por Qué Elegir Brow Tint para tu Previsualización de Tinte de Cejas",
-        "label": "Beneficios",
-        "description": "La mejor experiencia de tinte de cejas en línea — rápida, segura y diseñada para todos, desde principiantes en tinte de cejas hasta artistas profesionales de cejas y dueños de salones.",
+        "id": "community",
+        "title": "El Movimiento de los Curiosos de la Belleza",
+        "label": "Quién Usa Brow Tint",
+        "description": "Brow Tint se sitúa en la intersección entre la experimentación de belleza y la toma de decisiones asistida por IA. Esto es quién aparece.",
         "items": [
           {
-            "title": "Generación de Tinte de Cejas con IA Ultrarrápida",
-            "description": "Genera previsualizaciones profesionales de tinte de cejas en segundos, no en horas. Nuestra IA GPT Image 2 procesa tu foto al instante para que puedas ver tus resultados de tinte de cejas sin programar una visita al salón ni esperar una cita.",
-            "icon": "RiSpeedLine",
+            "title": "Blogueros de belleza y creadores de contenido",
+            "description": "Previsualiza un look de tinte de cejas antes de mostrarlo a tu audiencia o grabar un tutorial. Genera la referencia visual y luego crea contenido con confianza — sabiendo exactamente cómo se verá el resultado final.",
+            "icon": "RiCameraLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Brow Tint Generation"
+              "alt": "Creadores de contenido de belleza previsualizando tinte de cejas"
             }
           },
           {
-            "title": "Procesamiento de Fotos Seguro y Privado",
-            "description": "Tus fotos se procesan de forma segura y nunca se comparten con terceros. Brow Tint respeta tu privacidad — todas las imágenes subidas se cifran durante el procesamiento y se eliminan automáticamente después de que se genera tu previsualización de tinte de cejas.",
-            "icon": "RiLock2Line",
+            "title": "Personas que se tiñen las cejas por primera vez",
+            "description": "Ve el resultado antes de reservar tu primera cita en el salón. Sin más arrepentimientos por compromiso — previsualiza en privado y entra al salón sabiendo exactamente lo que quieres.",
+            "icon": "RiHeartLine",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Secure Brow Tint Photo Processing"
+              "alt": "Vista previa de tintado de cejas por primera vez"
             }
           },
           {
-            "title": "Increíblemente Fácil de Usar",
-            "description": "Encuentra el mejor tono de gel de cejas con tinte en solo unos clics — sin conocimientos técnicos. Brow Tint está diseñado para que cualquiera pueda previsualizar resultados profesionales de tinte de cejas, desde adolescentes explorando su primer tinte de cejas hasta profesionales de salón que muestran opciones a sus clientes.",
-            "icon": "RiUserSmileLine",
+            "title": "Estilistas de cejas y dueños de salón",
+            "description": "Muestra a los clientes exactamente a qué se están comprometiendo antes de empezar el tratamiento. Consultas más rápidas, menos disputas, clientes más felices — y una ventaja competitiva sobre los salones que aún describen looks con palabras.",
+            "icon": "RiScissorsCutLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Easy-to-Use Brow Tint Tool"
+              "alt": "Consulta de estilista de cejas con Brow Tint"
+            }
+          },
+          {
+            "title": "Organizadores de bodas y eventos",
+            "description": "Coordina looks de cejas para sesiones editoriales, novias, damas de honor y maquillaje de eventos. Referencias visuales con las que todo el equipo creativo puede alinearse, semanas antes del día.",
+            "icon": "RiCalendarEventLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Planificación de cejas para evento de boda"
             }
           }
         ]
       },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "Cómo Usar el Generador de Tinte de Cejas con IA",
-        "description": "Consigue tu look perfecto de tinte de cejas en cuatro sencillos pasos. Sin necesidad de cuenta — empieza a previsualizar resultados de tinte de cejas gratis ahora mismo.",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "How to Use the AI Brow Tint Generator"
-        },
-        "image_position": "left",
-        "text_align": "center",
+      "learn": {
+        "block": "cluster-posts",
+        "id": "learn",
+        "label": "Guías",
+        "title": "Aprende sobre el Tintado de Cejas",
+        "description": "Lee nuestra investigación sobre tintado de cejas antes de reservar. Comparaciones honestas, galerías de antes y después y guías de tratamiento — escritas para los curiosos de la belleza.",
         "items": [
           {
-            "title": "Sube tu Foto",
-            "description": "Sube una foto clara de frente a la plataforma Brow Tint. Para los mejores resultados de tinte de cejas, usa una imagen bien iluminada donde tus cejas sean claramente visibles.",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "Upload Photo for AI Brow Tint Preview"
-            }
+            "title": "Tinte de Cejas Antes y Después: Galería de Resultados Reales",
+            "description": "Mira resultados reales de tintado de cejas antes y después en distintos tonos de piel, formas de cejas y tonalidades de tinte. Aprende qué esperar realmente de un tratamiento profesional.",
+            "url": "/blog/brow-tint-before-and-after"
           },
           {
-            "title": "Elige tu Estilo de Tinte de Cejas",
-            "description": "Selecciona entre una amplia gama de estilos de tinte de cejas — gel de cejas con tinte, laminado y tinte de cejas, tinte profesional de cejas, tinte con código de cejas y muchas más opciones personalizadas.",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "Choose Brow Tint Style"
-            }
+            "title": "Mejor Tinte de Cejas 2026: Guía Comparativa Honesta",
+            "description": "Comparamos los principales productos de tinte de cejas y gel de cejas con color de 2026. Pros, contras, ingredientes, duración — y una vista previa de cada uno en rostros reales.",
+            "url": "/blog/best-brow-tint-2026"
           },
           {
-            "title": "Genera tu Previsualización de Tinte de Cejas",
-            "description": "Deja que el generador de tinte de cejas con IA cree una previsualización realista de tu nuevo look de cejas. Nuestra tecnología GPT Image 2 produce imágenes fotorrealistas de tinte de cejas antes y después en segundos.",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "Generate AI Brow Tint Preview"
-            }
+            "title": "Laminado y Tinte de Cejas: Guía Completa",
+            "description": "¿Qué es el laminado y tinte de cejas? ¿Cuánto dura? ¿En qué se diferencia del tinte de pestañas y cejas? Todo lo que necesitas saber antes de tu primera cita.",
+            "url": "/blog/brow-lamination-and-tint-guide"
           },
           {
-            "title": "Descarga y Comparte",
-            "description": "Guarda tus fotos de comparación de tinte de cejas antes y después en alta resolución. Compártelas con tu estilista, publícalas en redes sociales o llévalas a tu próxima cita de tinte de cejas.",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "Download Brow Tint Before and After Results"
-            }
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "features": {
-        "id": "features",
-        "title": "Características Principales del Generador de Tinte de Cejas",
-        "description": "Todo lo que necesitas para la previsualización perfecta de tinte de cejas — desde simulación de tinte de cejas profesional hasta combinación de tonos de gel de cejas con tinte.",
-        "items": [
-          {
-            "title": "Previsualización de Tinte de Cejas Profesional",
-            "description": "Previsualiza resultados de tinte profesional de cejas de calidad salón desde casa. Nuestra IA replica el aspecto exacto de los tratamientos de tinte de cejas en salón para que sepas qué esperar antes de reservar.",
-            "icon": "RiScissorsCutLine"
+            "title": "Tinte Profesional de Cejas vs DIY en Casa",
+            "description": "¿Es seguro el tintado de cejas en casa? ¿Qué incluye realmente un tinte profesional de cejas? Pros y contras honestos, con desglose de costes.",
+            "url": "/blog/professional-brow-tint-vs-diy"
           },
           {
-            "title": "Combinación de Tonos de Gel de Cejas con Tinte",
-            "description": "Prueba diferentes tonos de gel de cejas con tinte y ve cómo cada uno complementa tu tono de piel natural, color de cabello y forma de rostro. Encuentra el mejor gel de cejas con tinte para ti.",
-            "icon": "RiWomenLine"
-          },
-          {
-            "title": "Visualización de Tinte con Código de Cejas",
-            "description": "Explora fórmulas de tinte con código de cejas y visualiza la combinación de tono exacta para tus cejas. Compara múltiples opciones de tinte con código de cejas en paralelo antes de comprometerte.",
-            "icon": "RiPaletteLine"
-          },
-          {
-            "title": "Descargas en Alta Resolución",
-            "description": "Descarga imágenes de tinte de cejas antes y después nítidas y en alta resolución. Perfectas para mostrarle a tu estilista, compartir en línea o conservar como referencia personal.",
-            "icon": "RiHdLine"
-          },
-          {
-            "title": "Comparación Antes y Después",
-            "description": "Compara tus looks de tinte de cejas antes y después con un intuitivo deslizador en paralelo. Un clic para ver la transformación que hace el tinte de cejas.",
-            "icon": "RiCompareLine"
-          },
-          {
-            "title": "Herramienta de Tinte de Cejas Compatible con Móvil",
-            "description": "Usa el generador de Brow Tint en cualquier dispositivo — teléfono, tableta o escritorio. Previsualiza resultados de tinte de cejas en movimiento, en cualquier lugar y en cualquier momento.",
-            "icon": "RiSmartphoneLine"
+            "title": "Reseña del Tinte Brow Code: ¿A la Altura del Hype?",
+            "description": "Una reseña independiente del sistema de tinte Brow Code — popular entre los estilistas de cejas profesionales. Gama de colores, duración, aplicación y vistas previas con IA de cada tono.",
+            "url": "/blog/brow-code-tint-review"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "A los Usuarios les Encanta Brow Tint",
-        "description": "Únete a miles de usuarios satisfechos que encontraron su look perfecto de tinte de cejas con nuestro generador de tinte de cejas con IA gratuito.",
+        "title": "Los Amantes de la Belleza Confían en Brow Tint",
+        "description": "Desde quien se tiñe las cejas por primera vez hasta los estilistas profesionales que preparan los looks de sus clientes.",
         "items": [
           {
             "title": "50.000+",
@@ -336,7 +235,7 @@
           },
           {
             "title": "10.000+",
-            "description": "Usuarios Satisfechos en Todo el Mundo"
+            "description": "Amantes de la Belleza en Todo el Mundo"
           },
           {
             "title": "200+",
@@ -347,113 +246,109 @@
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "Lo Que Dicen los Usuarios Sobre Brow Tint",
-        "description": "Opiniones reales de personas que encontraron su look perfecto de tinte de cejas usando nuestro generador de tinte de cejas con IA gratuito.",
+        "title": "Lo Que la Gente Dice Sobre Brow Tint",
+        "description": "Reacciones reales de amantes de la belleza, estilistas profesionales de cejas y dueños de salón que usan Brow Tint para planificar, asesorar y decidir.",
         "items": [
           {
             "name": "Sarah Jenkins",
             "role": "Bloguera de Belleza",
-            "quote": "Brow Tint me ayudó a previsualizar el tono exacto de tinte de cejas antes de mi visita al salón. Le mostré a mi estilista la foto antes y después del tinte de cejas y obtuve exactamente el look que quería.",
+            "quote": "Brow Tint cambió mi forma de planificar contenido de belleza. Antes describía un look a mi estilista de cejas y esperaba lo mejor. Ahora le muestro la vista previa con IA y ambas sabemos exactamente qué buscamos.",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "Sarah - Brow Tint User Review"
+              "alt": "Sarah Jenkins - Bloguera de Belleza"
             }
           },
           {
             "name": "Mike Ross",
             "role": "Fotógrafo",
-            "quote": "Uso Brow Tint para sesiones de fotografía editorial de belleza — la IA genera previsualizaciones increíblemente realistas de tinte de cejas antes y después que ayudan a mis clientes a visualizar el resultado final.",
+            "quote": "Para sesiones editoriales, envío vistas previas de Brow Tint a la modelo y al estilista antes incluso de finalizar la hoja de llamado. Ahorra horas y elimina toda una categoría de sorpresas en el set.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "Mike - Professional Photographer Using Brow Tint"
+              "alt": "Mike Ross - Fotógrafo"
             }
           },
           {
             "name": "Emily Chen",
             "role": "Estudiante",
-            "quote": "¡Probar diferentes looks con gel de cejas con tinte nunca fue tan divertido! Brow Tint es la mejor herramienta de tinte de cejas que he encontrado en línea — y es completamente gratis para empezar.",
+            "quote": "Nunca habría entrado a un salón a pedir cejas espresso por capricho. Brow Tint me dejó verme con ellas primero — y ahora son mi look favorito.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "Emily - Brow Tint Free User"
+              "alt": "Emily Chen - Estudiante"
             }
           },
           {
             "name": "David Smith",
-            "role": "Maquillador Artístico",
-            "quote": "Mostrarles a los clientes sus opciones de tinte profesional de cejas antes del tratamiento es invaluable. Las previsualizaciones de laminado y tinte de cejas de Brow Tint son increíblemente precisas.",
+            "role": "Maquillador",
+            "quote": "Cada cliente recibe una consulta de cejas. Brow Tint es más rápido que probar muestras y más honesto que describir — los clientes se ven a sí mismos, no un mood board.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "David - Makeup Artist Using Brow Tint"
+              "alt": "David Smith - Maquillador"
             }
           },
           {
             "name": "Jessica Lee",
             "role": "Dueña de Salón",
-            "quote": "Recomiendo Brow Tint a cada cliente que reserva una cita de tinte de cejas. Ven sus resultados de tinte de pestañas y cejas antes de que empecemos — genera confianza y ahorra tiempo.",
+            "quote": "Usamos Brow Tint en el mostrador de consulta con cada cliente de tintado de cejas. Se comprometen más rápido, se van más felices y recomiendan a sus amigos. Se amortiza en la primera semana.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "Jessica - Salon Owner Recommends Brow Tint"
+              "alt": "Jessica Lee - Dueña de Salón"
             }
           },
           {
             "name": "Tom Brown",
             "role": "Usuario Nuevo",
-            "quote": "Estaba nervioso por teñirme las cejas por primera vez. Brow Tint me permitió previsualizar los mejores tonos de gel de cejas con tinte antes de comprometerme. ¡Me encanta absolutamente!",
+            "quote": "Soy un chico. No tenía ni idea de lo que era el tintado de cejas. Brow Tint me dejó jugar con la idea en privado antes de pedir consejo a nadie. Ahora me tiño las cejas cada seis semanas.",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "Tom - First-Time Brow Tint User"
+              "alt": "Tom Brown - Usuario Nuevo"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Preguntas Frecuentes Sobre Brow Tint",
-        "description": "¿Tienes preguntas sobre nuestro generador de tinte de cejas con IA? Aquí tienes respuestas a las preguntas más comunes sobre las previsualizaciones de tinte de cejas.",
+        "title": "Preguntas Frecuentes Sobre el Tintado de Cejas",
+        "description": "Preguntas comunes sobre el tintado de cejas, el laminado de cejas y cómo Brow Tint te ayuda a previsualizar antes de reservar.",
         "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
         "items": [
           {
-            "question": "¿Qué es Brow Tint y cómo funciona el generador de tinte de cejas con IA?",
-            "answer": "Brow Tint es una herramienta de tinte de cejas gratuita con IA construida sobre GPT Image 2. Simplemente sube tu foto, elige un estilo de tinte de cejas — como gel de cejas con tinte, laminado y tinte de cejas, o tinte profesional de cejas — y nuestra IA genera una previsualización fotorrealista de cómo lucirás con tu nuevo tinte de cejas en segundos."
+            "question": "¿Qué es el tintado de cejas?",
+            "answer": "El tintado de cejas es un tratamiento de tinte semipermanente que añade color, profundidad y definición de forma a tus cejas. Un tinte profesional de cejas estándar suele durar de 4 a 6 semanas antes de desvanecerse de forma natural. El gel de cejas con color y el laminado de cejas son tratamientos relacionados — explora las diferencias en nuestra guía de laminado y tinte de cejas."
           },
           {
-            "question": "¿Qué tan realistas son los resultados de tinte de cejas antes y después?",
-            "answer": "Nuestra IA GPT Image 2 produce imágenes muy realistas de tinte de cejas antes y después. La IA analiza la forma de tu rostro, tono de piel, estructura natural de las cejas y color de cabello para ofrecer previsualizaciones precisas de tinte de cejas que se acercan mucho a los resultados reales del salón."
+            "question": "¿Por qué previsualizar el tintado de cejas antes de ir al salón?",
+            "answer": "El tinte de cejas es semipermanente — una vez aplicado, vives con el resultado durante semanas. Previsualizar el look en tu propia foto antes de la cita te permite comprometerte solo con un tono que ya has visto en tu cara, y le da a tu estilista de cejas una referencia visual clara en lugar de una descripción verbal."
           },
           {
-            "question": "¿Puedo previsualizar estilos de tinte de pestañas y cejas juntos?",
-            "answer": "¡Sí! Brow Tint admite previsualizaciones combinadas de tinte de pestañas y cejas para que puedas ver tu look completo de enmarcado de ojos en una sola imagen. Esto es especialmente útil si estás pensando en hacer tinte de pestañas y tinte de cejas en tu próxima visita al salón."
+            "question": "¿Para quién es Brow Tint?",
+            "answer": "Para cualquiera que esté considerando tintado de cejas, laminado de cejas, gel de cejas con color o tinte de pestañas y cejas — desde quienes se tiñen por primera vez hasta estilistas de cejas experimentados que preparan consultas con clientes. Blogueros de belleza, fotógrafos y organizadores de eventos también usan Brow Tint para coordinar looks antes de sesiones y eventos."
           },
           {
-            "question": "¿Qué estilos de tinte de cejas puedo probar con Brow Tint?",
-            "answer": "Puedes previsualizar una amplia gama de estilos de tinte de cejas, incluyendo gel de cejas con tinte en múltiples tonos, combinaciones de laminado y tinte de cejas, tratamientos de tinte profesional de cejas, fórmulas de tinte con código de cejas, paquetes de tinte de pestañas y cejas, y muchos más looks personalizados según tus preferencias."
+            "question": "¿Brow Tint es un salón, un producto o una herramienta?",
+            "answer": "Brow Tint es un estudio gratuito de color de cejas con IA online. No vendemos tintes ni gestionamos salones — te ayudamos a decidir qué tinte elegir y dónde hacértelo. Lleva tu vista previa descargada a cualquier estilista de cejas o salón."
           },
           {
-            "question": "¿Es realmente gratis usar Brow Tint?",
-            "answer": "Sí, Brow Tint ofrece un plan gratuito que te permite usar el generador de tinte de cejas con IA con previsualizaciones básicas de tinte de cejas sin costo. Nuestro plan premium desbloquea funciones adicionales, incluyendo descargas en alta resolución, más estilos de tinte de cejas y procesamiento de IA prioritario."
+            "question": "¿Qué tan precisas son las vistas previas de Brow Tint?",
+            "answer": "Nuestro modelo GPT Image 2 produce vistas previas fotorrealistas que estilistas de cejas de todo el mundo usan como referencia de consulta. La precisión depende de la calidad de la foto — las fotos frontales con buena iluminación y cejas visibles producen los mejores resultados. Mira ejemplos reales en nuestra galería de tinte de cejas antes y después."
           },
           {
-            "question": "¿Están seguros mis datos fotográficos al usar Brow Tint?",
-            "answer": "Absolutamente. Tus fotos se procesan de forma segura con cifrado y nunca se comparten con terceros. Todas las imágenes subidas se eliminan automáticamente después de que se genera tu previsualización de tinte de cejas. Nos tomamos muy en serio tu privacidad."
+            "question": "¿Mi foto es privada?",
+            "answer": "Sí. Las fotos se procesan de forma segura y se eliminan automáticamente tras la generación. Nunca compartimos, vendemos ni entrenamos modelos de IA con las fotos subidas."
           },
           {
-            "question": "¿Cuál es la diferencia entre el tinte de cejas y el gel de cejas con tinte?",
-            "answer": "El tinte de cejas es un tinte semipermanente que se aplica a los pelos de las cejas y a veces a la piel para lograr un look más lleno y definido que dura de 4 a 6 semanas. El gel de cejas con tinte es un producto cosmético de uso diario que añade color y fijación, similar al rímel para cejas. Con Brow Tint, puedes previsualizar tanto el tinte de cejas como las opciones de gel de cejas con tinte antes de decidir."
+            "question": "¿Brow Tint es realmente gratis?",
+            "answer": "Sí. Prueba gratuita sin necesidad de registro. Los planes premium desbloquean más estilos, descargas en mayor resolución, generaciones ilimitadas y procesamiento prioritario de IA."
           },
           {
-            "question": "¿Puedo usar Brow Tint para previsualizar el laminado y tinte de cejas?",
-            "answer": "¡Sí! El laminado y tinte de cejas es uno de nuestros estilos de previsualización más populares. Nuestra IA simula el look más lleno y con efecto peinado hacia arriba del laminado de cejas combinado con el tinte para que puedas ver exactamente cómo luciría este tratamiento de tendencia en ti antes de reservar una cita."
-          },
-          {
-            "question": "¿Cómo encuentro el mejor tono de tinte de cejas para mi tono de piel?",
-            "answer": "La IA de Brow Tint analiza tu tono de piel, color de cabello natural y forma de rostro para sugerirte los mejores tonos de tinte de cejas. También puedes explorar manualmente diferentes tonos de tinte profesional de cejas y colores de gel de cejas con tinte, generando previsualizaciones ilimitadas hasta encontrar tu combinación perfecta."
+            "question": "¿Qué pasa después de generar una vista previa?",
+            "answer": "Descarga tu vista previa y llévala a cualquier estilista de cejas o salón — o explora nuestros looks destacados para inspirarte. La imagen habla más alto que cualquier descripción y ayuda a tu estilista a entregar exactamente el resultado que quieres."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "¿Lista para Encontrar tu Tinte de Cejas Perfecto?",
-        "description": "Comienza hoy tu previsualización gratuita de tinte de cejas con IA. Sube una foto y ve tus resultados de tinte de cejas antes y después en segundos — sin necesidad de registrarte.",
+        "title": "Encuentra tu Color de Cejas Hoy",
+        "description": "Vista previa gratuita. Sin registro. Mira tus nuevas cejas en segundos — luego decide si reservar el salón.",
         "buttons": [
           {
             "title": "Probar Brow Tint Gratis",
@@ -467,7 +362,7 @@
       "subscribe": {
         "id": "subscribe",
         "title": "Mantente al Día con Brow Tint",
-        "description": "Recibe las últimas tendencias de tinte de cejas, nuevas funciones de IA y consejos exclusivos de tinte de cejas directamente en tu bandeja de entrada.",
+        "description": "Recibe las últimas tendencias de tintado de cejas, nuevas funciones de IA e investigación de belleza directamente en tu bandeja de entrada.",
         "submit": {
           "title": "Suscribirse",
           "placeholder": "Introduce tu correo electrónico"

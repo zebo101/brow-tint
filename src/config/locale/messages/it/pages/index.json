@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "title": "Brow Tint — Studio Tinta Sopracciglia IA · In Pochi Secondi",
-    "description": "Carica una foto, scegli il colore e vedi le nuove sopracciglia fianco a fianco. Generatore gratuito di tinta sopracciglia IA con stili curati e anteprima da salone.",
-    "keywords": "tinta sopracciglia, IA tinta sopracciglia, generatore tinta sopracciglia"
+    "title": "Brow Tint — Visualizza il Colore Sopracciglia IA Prima del Salone",
+    "description": "Brow Tint è lo studio IA per il colore sopracciglia usato da oltre 50.000 appassionate di bellezza e brow artist. Visualizza in anteprima tinta sopracciglia, laminazione sopracciglia e gel sopracciglia colorato sulla tua foto prima di prenotare una visita in salone.",
+    "keywords": "tinta sopracciglia, tintura sopracciglia, IA tinta sopracciglia, colore sopracciglia IA, studio tinta sopracciglia, tinta sopracciglia virtuale, anteprima tintura sopracciglia, tintura sopracciglia prima del salone"
   },
   "page": {
     "show_sections": [
       "hero",
       "cases",
-      "introduce",
-      "benefits",
-      "usage",
-      "features",
+      "why_brow_tint",
+      "community",
+      "learn",
       "stats",
       "testimonials",
       "faq",
-      "cta"
+      "cta",
+      "subscribe"
     ],
     "sections": {
       "hero": {
         "block": "hero-editorial",
         "id": "hero",
-        "title": "#1 Generatore AI Gratuito di Tinta per Sopracciglia",
+        "title": "Visualizza la Tua Tinta Sopracciglia Prima di Prenotare il Salone",
         "highlight_text": "Brow Tint",
-        "description": "Visualizza in anteprima look realistici con la tinta per sopracciglia grazie a Brow Tint — uno strumento AI online gratuito per la tinta professionale per sopracciglia, il gel colorato per sopracciglia e l'anteprima di laminazione e tinta sopracciglia. Carica la tua foto e guarda i risultati prima e dopo la tinta sopracciglia in pochi secondi, grazie a GPT Image 2.",
+        "description": "Brow Tint è lo studio IA per il colore sopracciglia usato da oltre 50.000 appassionate di bellezza e professioniste del salone. Carica una foto, vedi le tue nuove sopracciglia con qualsiasi tinta, laminazione o stile di gel colorato — poi prenota la tua visita in salone con sicurezza, oppure saltala del tutto.",
         "buttons": [
           {
             "title": "Prova Brow Tint Gratis",
@@ -42,293 +42,192 @@
         ],
         "image": {
           "src": "/imgs/bg/hero-2.webp",
-          "alt": "AI Brow Tint Generator - Preview Brow Tinting Results Online",
+          "alt": "Brow Tint Studio IA - Visualizza il Tuo Colore Sopracciglia",
           "width": 800,
           "height": 600
         },
         "background_image": {
           "src": "/imgs/bg/hero-1.jpg",
-          "alt": "Brow Tint Background - Professional Brow Tinting Preview"
+          "alt": "Sfondo Brow Tint Studio"
         },
-        "powered_by": "Basato su GPT Image 2",
+        "powered_by": "Powered by GPT Image 2",
         "editorial_labels": [
           "Anteprima",
-          "Trasformazione",
-          "Definizione"
+          "Decidi",
+          "Prenota"
         ]
       },
       "cases": {
         "block": "cases-carousel",
         "id": "cases",
-        "title": "Casi reali di tinta sopracciglia",
-        "description": "Risultati reali prima e dopo di utenti che hanno visualizzato in anteprima il loro look con Brow Tint.",
+        "title": "Sopracciglia Vere. Risultati Veri.",
+        "description": "Look che la nostra community ha generato con lo studio IA di tinta sopracciglia e portato in salone — esattamente come visualizzato in anteprima.",
         "items": [
           {
             "name": "Henné Soffice",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Caso tinta sopracciglia Henné Soffice"
+              "alt": "Anteprima tinta sopracciglia Henné Soffice"
             }
           },
           {
             "name": "Espresso Deciso",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Caso tinta sopracciglia Espresso Deciso"
+              "alt": "Anteprima tinta sopracciglia Espresso Deciso"
             }
           },
           {
             "name": "Laminazione Sopracciglia",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Caso laminazione sopracciglia"
+              "alt": "Anteprima laminazione sopracciglia"
             }
           },
           {
             "name": "Cenere Fredda",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Caso tinta sopracciglia Cenere Fredda"
+              "alt": "Anteprima tinta sopracciglia Cenere Fredda"
             }
           },
           {
             "name": "Auburn Caldo",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Caso tinta sopracciglia Auburn Caldo"
+              "alt": "Anteprima tinta sopracciglia Auburn Caldo"
             }
           },
           {
-            "name": "Gel Sopracciglia",
+            "name": "Gel Colorato",
             "image": {
               "src": "/imgs/cases/6.jpg",
-              "alt": "Caso gel colorato per sopracciglia"
+              "alt": "Anteprima gel sopracciglia colorato"
             }
           },
           {
-            "name": "Ciglia e Sopracciglia",
+            "name": "Tinta Ciglia e Sopracciglia",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Caso tinta ciglia e sopracciglia"
+              "alt": "Anteprima combinata tinta ciglia e sopracciglia"
             }
           }
         ]
       },
-      "logos": {
-        "id": "logos",
-        "title": "La Tecnologia AI Affidabile Dietro Brow Tint",
-        "items": [
-          {
-            "title": "Next.js",
-            "image": {
-              "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
-            }
-          },
-          {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
-          },
-          {
-            "title": "TailwindCSS",
-            "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
-            }
-          },
-          {
-            "title": "Shadcn/UI",
-            "image": {
-              "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
-            }
-          },
-          {
-            "title": "Vercel",
-            "image": {
-              "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
-            }
-          }
-        ]
-      },
-      "introduce": {
+      "why_brow_tint": {
         "block": "features-list",
-        "id": "introduce",
-        "title": "Cos'è Brow Tint?",
-        "label": "Introduzione",
-        "description": "Brow Tint è un generatore AI gratuito di tinta per sopracciglia che ti permette di visualizzare risultati professionali prima di impegnarti. Che tu voglia provare le sfumature del gel colorato per sopracciglia, esplorare combinazioni di laminazione e tinta sopracciglia, o confrontare stili di tinta ciglia e sopracciglia, la nostra AI GPT Image 2 crea anteprime fotorealistiche personalizzate per la tua forma del viso e il tuo tono di pelle.",
+        "id": "why-brow-tint",
+        "title": "Perché Esiste Brow Tint",
+        "label": "La Nostra Storia",
+        "description": "La tinta sopracciglia sta vivendo il suo momento — ma le visite in salone costano, i risultati sono semi-permanenti e vedi il look solo dopo che è già stato fatto. Abbiamo creato Brow Tint perché tu possa sperimentare con il colore delle sopracciglia come sperimenti con il colore dei capelli nella tua testa: liberamente, in privato, senza impegno.",
         "image": {
           "src": "/imgs/features/landingpage.jpg",
-          "alt": "Brow Tint AI Generator - Preview Brow Tinting Online Free"
+          "alt": "Brow Tint - Lo Studio IA per il Colore Sopracciglia",
+          "width": 1200,
+          "height": 800
         },
         "items": [
           {
-            "title": "Anteprima Virtuale della Tinta Sopracciglia",
-            "description": "Visualizza in anteprima innumerevoli sfumature e stili di tinta per sopracciglia senza utilizzare alcun prodotto. Il nostro generatore AI di tinta sopracciglia simula risultati di tinta professionale così puoi trovare la sfumatura ideale dal comfort di casa tua.",
-            "icon": "RiMagicLine",
-            "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "Virtual Brow Tinting Preview - AI Brow Tint Generator"
-            }
+            "title": "Per le Curiose",
+            "description": "Prova una sfumatura di tinta sopracciglia che non oseresti mai chiedere in salone. Vedila sul tuo viso. Poi decidi."
           },
           {
-            "title": "Risultati Realistici Prima e Dopo la Tinta Sopracciglia",
-            "description": "Guarda risultati lifelike prima e dopo la tinta sopracciglia, realizzati da GPT Image 2. Confronta le tue sopracciglia naturali con look tinti fianco a fianco e condividi il confronto con la tua stilista prima dell'appuntamento.",
-            "icon": "RiCameraLensLine",
-            "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "Brow Tint Before and After Results"
-            }
+            "title": "Per le Caute",
+            "description": "Porta un'anteprima scaricata al tuo brow artist invece di descrivere a parole quello che vuoi."
           },
           {
-            "title": "Generatore di Immagini AI Avanzato",
-            "description": "Il nostro generatore di immagini AI utilizza GPT Image 2 per creare look unici con tinta sopracciglia e gel colorato per ogni forma del viso. Analizza i tuoi tratti e consiglia le migliori sfumature di tinta per sopracciglia che valorizzano il tuo tono di pelle.",
-            "icon": "RiImage2Line",
-            "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "AI Image Generator for Brow Tint Looks"
-            }
+            "title": "Per le Professioniste",
+            "description": "Brow artist e titolari di salone usano Brow Tint durante la consulenza per mostrare alle clienti esattamente a cosa stanno per impegnarsi."
           },
           {
-            "title": "Tinta Ciglia e Sopracciglia Insieme",
-            "description": "Visualizza in anteprima stili combinati di tinta ciglia e sopracciglia per trovare il tuo look perfetto tutto in uno per incorniciare gli occhi. Scopri come la tinta ciglia si abbina a diverse sfumature di tinta sopracciglia in un'unica anteprima fotorealistica.",
-            "icon": "RiExchangeLine",
-            "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "Lash and Brow Tint Combined Preview"
-            }
+            "title": "Per le Indecise",
+            "description": "Confronta 5, 10, 20 sfumature fianco a fianco. Trova la tua corrispondenza senza spendere un centesimo."
           }
-        ],
-        "className": "bg-muted"
+        ]
       },
-      "benefits": {
+      "community": {
         "block": "features-accordion",
-        "id": "benefits",
-        "title": "Perché Scegliere Brow Tint per l'Anteprima della Tinta Sopracciglia",
-        "label": "Vantaggi",
-        "description": "La migliore esperienza di tinta sopracciglia online — veloce, sicura e pensata per tutti, dalle principianti alle artiste professioniste del trucco e ai titolari di salone.",
+        "id": "community",
+        "title": "Il Movimento Beauty-Curious",
+        "label": "Chi Usa Brow Tint",
+        "description": "Brow Tint si trova all'incrocio tra sperimentazione di bellezza e processo decisionale assistito dall'IA. Ecco chi lo usa.",
         "items": [
           {
-            "title": "Generazione AI della Tinta Sopracciglia Velocissima",
-            "description": "Genera anteprime professionali di tinta sopracciglia in pochi secondi, non in ore. La nostra AI GPT Image 2 elabora la tua foto istantaneamente così puoi vedere i risultati della tinta sopracciglia senza prenotare una visita al salone o aspettare un appuntamento.",
-            "icon": "RiSpeedLine",
+            "title": "Beauty blogger e content creator",
+            "description": "Visualizza in anteprima un look con tinta sopracciglia prima di mostrarlo al tuo pubblico o di girare un tutorial. Genera il riferimento visivo, poi crea contenuti con sicurezza — sapendo esattamente come apparirà il risultato finale.",
+            "icon": "RiCameraLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Brow Tint Generation"
+              "alt": "Content creator beauty visualizzano la tinta sopracciglia"
             }
           },
           {
-            "title": "Elaborazione delle Foto Sicura e Privata",
-            "description": "Le tue foto vengono elaborate in modo sicuro e non vengono mai condivise con terze parti. Brow Tint rispetta la tua privacy — tutte le immagini caricate sono crittografate durante l'elaborazione e cancellate automaticamente dopo la generazione dell'anteprima della tinta sopracciglia.",
-            "icon": "RiLock2Line",
+            "title": "Chi prova la tinta sopracciglia per la prima volta",
+            "description": "Vedi il risultato prima di prenotare il tuo primo appuntamento in salone. Niente più rimpianti — visualizza in anteprima in privato, poi entra in salone sapendo esattamente cosa vuoi.",
+            "icon": "RiHeartLine",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Secure Brow Tint Photo Processing"
+              "alt": "Anteprima della prima tintura sopracciglia"
             }
           },
           {
-            "title": "Estremamente Facile da Usare",
-            "description": "Trova la migliore sfumatura di gel colorato per sopracciglia in pochi clic — nessuna competenza tecnica richiesta. Brow Tint è progettato affinché chiunque possa visualizzare risultati professionali di tinta sopracciglia, dai teenager che provano la loro prima tinta sopracciglia ai professionisti del salone che mostrano le opzioni ai clienti.",
-            "icon": "RiUserSmileLine",
+            "title": "Brow artist e titolari di salone",
+            "description": "Mostra alle clienti esattamente a cosa si stanno impegnando prima che inizi il trattamento. Consulenze più rapide, meno dispute, clienti più soddisfatti — e un vantaggio competitivo sui saloni che ancora descrivono i look a parole.",
+            "icon": "RiScissorsCutLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Easy-to-Use Brow Tint Tool"
+              "alt": "Consulenza brow artist con Brow Tint"
+            }
+          },
+          {
+            "title": "Wedding planner e organizzatori di eventi",
+            "description": "Coordina i look delle sopracciglia per servizi editoriali, spose, damigelle e make-up per eventi. Riferimenti visivi su cui l'intero team creativo può allinearsi, settimane prima del giorno.",
+            "icon": "RiCalendarEventLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Pianificazione sopracciglia per evento di matrimonio"
             }
           }
         ]
       },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "Come Usare il Generatore AI di Tinta Sopracciglia",
-        "description": "Ottieni il look perfetto con la tinta sopracciglia in quattro semplici passaggi. Nessun account richiesto — inizia subito a visualizzare i risultati della tinta sopracciglia gratuitamente.",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "How to Use the AI Brow Tint Generator"
-        },
-        "image_position": "left",
-        "text_align": "center",
+      "learn": {
+        "block": "cluster-posts",
+        "id": "learn",
+        "label": "Guide",
+        "title": "Scopri di Più sulla Tinta Sopracciglia",
+        "description": "Leggi le nostre ricerche sulla tinta sopracciglia prima di prenotare. Confronti onesti, gallerie prima e dopo, e guide ai trattamenti — scritte per le beauty-curious.",
         "items": [
           {
-            "title": "Carica la Tua Foto",
-            "description": "Carica una foto nitida e frontale sulla piattaforma Brow Tint. Per i migliori risultati di tinta sopracciglia, usa un'immagine ben illuminata in cui le sopracciglia siano chiaramente visibili.",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "Upload Photo for AI Brow Tint Preview"
-            }
+            "title": "Tinta Sopracciglia Prima e Dopo: Galleria di Risultati Reali",
+            "description": "Vedi risultati reali prima e dopo la tintura sopracciglia su diversi toni di pelle, forme di sopracciglia e sfumature. Scopri cosa aspettarti realisticamente da un trattamento professionale.",
+            "url": "/blog/brow-tint-before-and-after"
           },
           {
-            "title": "Scegli il Tuo Stile di Tinta Sopracciglia",
-            "description": "Seleziona tra una vasta gamma di stili di tinta sopracciglia — gel colorato per sopracciglia, laminazione e tinta sopracciglia, tinta professionale per sopracciglia, brow code tint e molte altre opzioni personalizzate.",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "Choose Brow Tint Style"
-            }
+            "title": "Migliore Tinta Sopracciglia 2026: Guida Comparativa Onesta",
+            "description": "Abbiamo confrontato i principali prodotti di tinta sopracciglia e gel sopracciglia colorato del 2026. Pro, contro, ingredienti, durata — e un'anteprima di ciascuno su volti reali.",
+            "url": "/blog/best-brow-tint-2026"
           },
           {
-            "title": "Genera la Tua Anteprima di Tinta Sopracciglia",
-            "description": "Lascia che il generatore AI di tinta sopracciglia crei un'anteprima realistica del tuo nuovo look per le sopracciglia. La nostra tecnologia GPT Image 2 produce immagini fotorealistiche prima e dopo la tinta sopracciglia in pochi secondi.",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "Generate AI Brow Tint Preview"
-            }
+            "title": "Laminazione e Tinta Sopracciglia: Guida Completa",
+            "description": "Cos'è la laminazione e tinta sopracciglia? Quanto dura? Come si differenzia dalla tinta ciglia e sopracciglia? Tutto ciò che devi sapere prima del tuo primo appuntamento.",
+            "url": "/blog/brow-lamination-and-tint-guide"
           },
           {
-            "title": "Scarica e Condividi",
-            "description": "Salva le tue foto prima e dopo la tinta sopracciglia in alta risoluzione. Condividile con la tua stilista, pubblicale sui social media o portale al tuo prossimo appuntamento di tinta sopracciglia.",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "Download Brow Tint Before and After Results"
-            }
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "features": {
-        "id": "features",
-        "title": "Funzionalità Principali del Generatore Brow Tint",
-        "description": "Tutto ciò di cui hai bisogno per la perfetta anteprima della tinta sopracciglia — dalla simulazione della tinta professionale per sopracciglia alla corrispondenza delle sfumature del gel colorato.",
-        "items": [
-          {
-            "title": "Anteprima Tinta Professionale per Sopracciglia",
-            "description": "Visualizza risultati di tinta professionale per sopracciglia di qualità salone direttamente da casa. La nostra AI replica l'aspetto esatto dei trattamenti di tinta sopracciglia in salone così sai cosa aspettarti prima di prenotare.",
-            "icon": "RiScissorsCutLine"
+            "title": "Tinta Sopracciglia Professionale vs Fai-da-te a Casa",
+            "description": "La tintura sopracciglia fai-da-te è sicura? Cosa include realmente una tinta sopracciglia professionale? Pro e contro onesti, con analisi dei costi.",
+            "url": "/blog/professional-brow-tint-vs-diy"
           },
           {
-            "title": "Corrispondenza Sfumature Gel Colorato per Sopracciglia",
-            "description": "Prova diverse sfumature di gel colorato per sopracciglia e scopri come ciascuna si abbina al tuo tono di pelle naturale, al colore dei capelli e alla forma del viso. Trova il miglior gel colorato per sopracciglia adatto a te.",
-            "icon": "RiWomenLine"
-          },
-          {
-            "title": "Visualizzazione Brow Code Tint",
-            "description": "Esplora le formule brow code tint e visualizza la corrispondenza esatta della sfumatura per le tue sopracciglia. Confronta più opzioni brow code tint fianco a fianco prima di decidere.",
-            "icon": "RiPaletteLine"
-          },
-          {
-            "title": "Download in Alta Risoluzione",
-            "description": "Scarica immagini nitidissime in alta risoluzione prima e dopo la tinta sopracciglia. Perfette per mostrarle alla tua stilista, condividerle online o tenerle come riferimento personale.",
-            "icon": "RiHdLine"
-          },
-          {
-            "title": "Confronto Prima e Dopo",
-            "description": "Confronta i look prima e dopo la tinta sopracciglia con uno slider intuitivo fianco a fianco. Un clic per vedere la trasformazione che fa la tinta sopracciglia.",
-            "icon": "RiCompareLine"
-          },
-          {
-            "title": "Strumento Brow Tint Ottimizzato per Mobile",
-            "description": "Usa il generatore Brow Tint su qualsiasi dispositivo — smartphone, tablet o desktop. Visualizza in anteprima i risultati della tinta sopracciglia ovunque tu sia, in qualsiasi momento.",
-            "icon": "RiSmartphoneLine"
+            "title": "Brow Code Tint Recensione: Vale l'Hype?",
+            "description": "Una recensione indipendente del sistema Brow Code tint — popolare tra i brow artist professionisti. Gamma colore, durata, applicazione e anteprime IA di ogni sfumatura.",
+            "url": "/blog/brow-code-tint-review"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "Gli Utenti Amano Brow Tint",
-        "description": "Unisciti a migliaia di utenti soddisfatti che hanno trovato il loro look perfetto con la tinta sopracciglia grazie al nostro generatore AI gratuito.",
+        "title": "Le Appassionate di Bellezza Si Fidano di Brow Tint",
+        "description": "Da chi prova la tinta sopracciglia per la prima volta ai brow artist professionisti che preparano i look per le clienti.",
         "items": [
           {
             "title": "50.000+",
@@ -336,7 +235,7 @@
           },
           {
             "title": "10.000+",
-            "description": "Utenti Soddisfatti in Tutto il Mondo"
+            "description": "Appassionate di Bellezza in Tutto il Mondo"
           },
           {
             "title": "200+",
@@ -347,113 +246,109 @@
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "Cosa Dicono gli Utenti di Brow Tint",
-        "description": "Feedback reali da persone che hanno trovato il loro look perfetto con la tinta sopracciglia usando il nostro generatore AI gratuito.",
+        "title": "Cosa Dicono le Persone di Brow Tint",
+        "description": "Reazioni reali da appassionate di bellezza, brow artist professioniste e titolari di salone che usano Brow Tint per pianificare, consultare e decidere.",
         "items": [
           {
             "name": "Sarah Jenkins",
             "role": "Beauty Blogger",
-            "quote": "Brow Tint mi ha aiutata a visualizzare in anteprima la sfumatura esatta della tinta sopracciglia prima della visita al salone. Ho mostrato alla mia stilista la foto prima e dopo e ho ottenuto esattamente il look che volevo!",
+            "quote": "Brow Tint ha cambiato il modo in cui pianifico i contenuti beauty. Prima descrivevo un look alla mia brow artist e speravo per il meglio. Ora le mostro l'anteprima IA e sappiamo entrambe esattamente cosa vogliamo ottenere.",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "Sarah - Brow Tint User Review"
+              "alt": "Sarah Jenkins - Beauty Blogger"
             }
           },
           {
             "name": "Mike Ross",
             "role": "Fotografo",
-            "quote": "Uso Brow Tint per i servizi fotografici beauty editoriali — l'AI genera anteprime prima e dopo la tinta sopracciglia incredibilmente realistiche che aiutano i miei clienti a visualizzare il look finale.",
+            "quote": "Per i servizi editoriali, invio le anteprime di Brow Tint alla modella e alla stilista prima ancora che il piano di lavoro sia finalizzato. Risparmia ore e rimuove un'intera categoria di sorprese sul set.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "Mike - Professional Photographer Using Brow Tint"
+              "alt": "Mike Ross - Fotografo"
             }
           },
           {
             "name": "Emily Chen",
             "role": "Studentessa",
-            "quote": "Non è mai stato così divertente provare diversi look con il gel colorato per sopracciglia! Brow Tint è il miglior strumento di tinta sopracciglia che abbia trovato online — ed è completamente gratuito per iniziare.",
+            "quote": "Non sarei mai entrata in un salone a chiedere sopracciglia espresso d'impulso. Brow Tint mi ha permesso di vedermi prima — e ora sono il mio look preferito.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "Emily - Brow Tint Free User"
+              "alt": "Emily Chen - Studentessa"
             }
           },
           {
             "name": "David Smith",
-            "role": "Truccatore Professionista",
-            "quote": "Mostrare ai clienti le opzioni di tinta professionale per sopracciglia prima del trattamento è preziosissimo. Le anteprime di laminazione e tinta sopracciglia di Brow Tint sono incredibilmente accurate.",
+            "role": "Truccatore",
+            "quote": "Ogni cliente riceve una consulenza per le sopracciglia. Brow Tint è più veloce di provare i campioni e più onesto di descrivere — le clienti vedono se stesse, non un mood board.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "David - Makeup Artist Using Brow Tint"
+              "alt": "David Smith - Truccatore"
             }
           },
           {
             "name": "Jessica Lee",
             "role": "Titolare di Salone",
-            "quote": "Consiglio Brow Tint a ogni cliente che prenota un appuntamento di tinta sopracciglia. Vedono i risultati della tinta ciglia e sopracciglia prima che iniziamo — questo aumenta la fiducia e fa risparmiare tempo.",
+            "quote": "Usiamo Brow Tint al banco di consulenza per ogni cliente di tintura sopracciglia. Si impegnano più velocemente, escono più contente e raccomandano le amiche. Si ripaga da solo nella prima settimana.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "Jessica - Salon Owner Recommends Brow Tint"
+              "alt": "Jessica Lee - Titolare di Salone"
             }
           },
           {
             "name": "Tom Brown",
             "role": "Primo Utilizzo",
-            "quote": "Ero nervoso all'idea di tingere le sopracciglia per la prima volta. Brow Tint mi ha permesso di visualizzare le migliori sfumature di gel colorato per sopracciglia prima di decidere. Lo adoro assolutamente!",
+            "quote": "Sono un uomo. Non avevo idea di cosa fosse la tintura sopracciglia. Brow Tint mi ha permesso di giocare con l'idea in privato prima di chiedere consigli a chiunque. Ora mi tingo le sopracciglia ogni sei settimane.",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "Tom - First-Time Brow Tint User"
+              "alt": "Tom Brown - Primo Utilizzo"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Domande Frequenti su Brow Tint",
-        "description": "Hai domande sul nostro generatore AI di tinta sopracciglia? Ecco le risposte alle domande più comuni sulle anteprime di tinta sopracciglia.",
+        "title": "Domande Frequenti sulla Tintura Sopracciglia",
+        "description": "Domande comuni sulla tintura sopracciglia, sulla laminazione sopracciglia e su come Brow Tint ti aiuta a visualizzare in anteprima prima di prenotare.",
         "tip": "Non riesci a trovare quello che cerchi? Contatta il nostro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
         "items": [
           {
-            "question": "Cos'è Brow Tint e come funziona il generatore AI di tinta sopracciglia?",
-            "answer": "Brow Tint è uno strumento gratuito online di tinta sopracciglia basato sull'AI e costruito su GPT Image 2. Basta caricare la tua foto, scegliere uno stile di tinta sopracciglia — come gel colorato per sopracciglia, laminazione e tinta sopracciglia, o tinta professionale per sopracciglia — e la nostra AI genera un'anteprima fotorealistica di come apparirai con la tua nuova tinta sopracciglia in pochi secondi."
+            "question": "Cos'è la tintura sopracciglia?",
+            "answer": "La tintura sopracciglia è un trattamento di colorazione semi-permanente che aggiunge colore, profondità e definizione alla forma delle tue sopracciglia. La tinta professionale standard per sopracciglia dura tipicamente 4–6 settimane prima di sbiadire naturalmente. Il gel sopracciglia colorato e la laminazione sopracciglia sono trattamenti correlati — esplora le differenze nella nostra guida alla laminazione e tinta sopracciglia."
           },
           {
-            "question": "Quanto sono realistici i risultati prima e dopo la tinta sopracciglia?",
-            "answer": "La nostra AI GPT Image 2 produce immagini prima e dopo la tinta sopracciglia altamente realistiche. L'AI analizza la forma del tuo viso, il tono della pelle, la struttura naturale delle sopracciglia e il colore dei capelli per fornire anteprime accurate della tinta sopracciglia che si avvicinano moltissimo ai risultati reali del salone."
+            "question": "Perché visualizzare in anteprima la tintura sopracciglia prima di andare in salone?",
+            "answer": "La tinta sopracciglia è semi-permanente — una volta applicata, convivi con il risultato per settimane. Visualizzare il look sulla tua foto prima dell'appuntamento ti permette di impegnarti solo con una sfumatura che hai effettivamente visto sul tuo viso, e dà al tuo brow artist un riferimento visivo chiaro invece di una descrizione verbale."
           },
           {
-            "question": "Posso visualizzare in anteprima stili di tinta ciglia e sopracciglia insieme?",
-            "answer": "Sì! Brow Tint supporta anteprime combinate di tinta ciglia e sopracciglia così puoi vedere il tuo look completo per incorniciare gli occhi in un'unica immagine. È particolarmente utile se stai considerando sia la tinta ciglia che la tinta sopracciglia alla prossima visita al salone."
+            "question": "Per chi è Brow Tint?",
+            "answer": "Per chiunque stia considerando tintura sopracciglia, laminazione sopracciglia, gel sopracciglia colorato o tinta ciglia e sopracciglia — dalle prime utenti alle brow artist esperte che preparano consulenze per le clienti. Anche beauty blogger, fotografi e organizzatori di eventi usano Brow Tint per coordinare i look prima di servizi ed eventi."
           },
           {
-            "question": "Quali stili di tinta sopracciglia posso provare con Brow Tint?",
-            "answer": "Puoi visualizzare in anteprima un'ampia gamma di stili di tinta sopracciglia, tra cui gel colorato per sopracciglia in molteplici sfumature, combinazioni di laminazione e tinta sopracciglia, trattamenti di tinta professionale per sopracciglia, formule brow code tint, pacchetti di tinta ciglia e sopracciglia e molti altri look personalizzati in base alle tue preferenze."
+            "question": "Brow Tint è un salone, un prodotto o uno strumento?",
+            "answer": "Brow Tint è uno studio IA gratuito online per il colore sopracciglia. Non vendiamo tinte e non gestiamo saloni — ti aiutiamo a decidere quale tinta scegliere e dove farla. Porta la tua anteprima scaricata da qualsiasi brow artist o salone."
+          },
+          {
+            "question": "Quanto sono accurate le anteprime di Brow Tint?",
+            "answer": "Il nostro modello GPT Image 2 produce anteprime fotorealistiche che le brow artist di tutto il mondo usano come riferimento per la consulenza. L'accuratezza dipende dalla qualità della foto — foto frontali con buona illuminazione e sopracciglia visibili producono i migliori risultati. Vedi esempi reali nella nostra galleria prima e dopo della tinta sopracciglia."
+          },
+          {
+            "question": "La mia foto è privata?",
+            "answer": "Sì. Le foto vengono elaborate in modo sicuro e cancellate automaticamente dopo la generazione. Non condividiamo, vendiamo o addestriamo mai modelli IA sulle foto caricate."
           },
           {
             "question": "Brow Tint è davvero gratuito?",
-            "answer": "Sì, Brow Tint offre un piano gratuito che ti consente di usare il generatore AI di tinta sopracciglia con anteprime base di tinta sopracciglia senza costi. Il nostro piano premium sblocca funzionalità aggiuntive tra cui download in alta risoluzione, più stili di tinta sopracciglia ed elaborazione AI prioritaria."
+            "answer": "Sì. Prova gratuita senza registrazione richiesta. I piani premium sbloccano più stili, download in alta risoluzione, generazioni illimitate ed elaborazione IA prioritaria."
           },
           {
-            "question": "I miei dati fotografici sono al sicuro usando Brow Tint?",
-            "answer": "Assolutamente sì. Le tue foto vengono elaborate in modo sicuro con crittografia e non vengono mai condivise con terze parti. Tutte le immagini caricate vengono cancellate automaticamente dopo la generazione dell'anteprima della tinta sopracciglia. Prendiamo molto sul serio la tua privacy."
-          },
-          {
-            "question": "Qual è la differenza tra tinta sopracciglia e gel colorato per sopracciglia?",
-            "answer": "La tinta sopracciglia è un colorante semi-permanente applicato ai peli delle sopracciglia e talvolta alla pelle per un look più pieno e definito che dura 4–6 settimane. Il gel colorato per sopracciglia è un prodotto cosmetico quotidiano che aggiunge colore e tenuta, simile al mascara per le sopracciglia. Con Brow Tint puoi visualizzare in anteprima sia le opzioni di tinta sopracciglia che quelle di gel colorato per sopracciglia prima di decidere."
-          },
-          {
-            "question": "Posso usare Brow Tint per visualizzare la laminazione e tinta sopracciglia?",
-            "answer": "Sì! La laminazione e tinta sopracciglia è uno dei nostri stili di anteprima più popolari. La nostra AI simula il look spazzolato verso l'alto e più pieno della laminazione sopracciglia combinata con la tinta, così puoi vedere esattamente come questo trattamento di tendenza starebbe su di te prima di prenotare un appuntamento."
-          },
-          {
-            "question": "Come trovo la migliore sfumatura di tinta sopracciglia per il mio tono di pelle?",
-            "answer": "L'AI di Brow Tint analizza il tuo tono di pelle, il colore naturale dei capelli e la forma del viso per suggerire le migliori sfumature di tinta sopracciglia per te. Puoi anche sfogliare manualmente le diverse sfumature di tinta professionale per sopracciglia e i colori del gel colorato per sopracciglia, generando anteprime illimitate finché non trovi la tua corrispondenza perfetta."
+            "question": "Cosa succede dopo aver generato un'anteprima?",
+            "answer": "Scarica la tua anteprima e portala da qualsiasi brow artist o salone — oppure sfoglia i nostri look in vetrina per ispirazione. L'immagine parla più forte di qualsiasi descrizione e aiuta la tua artist a fornire esattamente il risultato che vuoi."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Pronta a Trovare la Tua Tinta Sopracciglia Perfetta?",
-        "description": "Inizia oggi la tua anteprima gratuita AI di tinta sopracciglia. Carica una foto e guarda i tuoi risultati prima e dopo la tinta sopracciglia in pochi secondi — nessuna registrazione richiesta.",
+        "title": "Trova Oggi il Tuo Colore Sopracciglia",
+        "description": "Anteprima gratuita. Nessuna registrazione richiesta. Vedi le tue nuove sopracciglia in pochi secondi — poi decidi se prenotare il salone.",
         "buttons": [
           {
             "title": "Prova Brow Tint Gratis",
@@ -466,8 +361,8 @@
       },
       "subscribe": {
         "id": "subscribe",
-        "title": "Rimani Aggiornato con Brow Tint",
-        "description": "Ricevi le ultime tendenze di tinta sopracciglia, nuove funzionalità AI e consigli esclusivi di tinta sopracciglia direttamente nella tua casella di posta.",
+        "title": "Rimani Aggiornata con Brow Tint",
+        "description": "Ricevi le ultime tendenze di tintura sopracciglia, nuove funzionalità IA e ricerche di bellezza direttamente nella tua casella di posta.",
         "submit": {
           "title": "Iscriviti",
           "placeholder": "Inserisci la tua email"
