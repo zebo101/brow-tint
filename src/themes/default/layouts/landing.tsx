@@ -16,7 +16,7 @@ export default async function LandingLayout({
   footer: FooterType;
 }) {
   return (
-    <div className="min-h-screen w-full overflow-x-hidden">
+    <div className="min-h-screen w-full overflow-x-clip">
       <Header header={header} />
       {children}
       <Footer footer={footer} />

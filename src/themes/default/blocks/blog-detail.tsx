@@ -68,7 +68,7 @@ export function BlogDetail({ post }: { post: PostType }) {
               {showToc && (
                 <div className="lg:col-span-3">
                   <div className="sticky top-24 hidden md:block">
-                    <div className="bg-muted/30 rounded-lg p-4">
+                    <div className="bg-muted/30 max-h-[calc(100vh-7rem)] overflow-y-auto rounded-lg p-4 shadow-sm">
                       <h2 className="text-foreground mb-4 flex items-center gap-2 font-semibold">
                         <ListIcon className="size-4" /> {t('toc')}
                       </h2>

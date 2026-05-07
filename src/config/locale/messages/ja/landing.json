@@ -24,6 +24,11 @@
           "icon": "Box"
         },
         {
+          "title": "ブログ",
+          "url": "/blog",
+          "icon": "Newspaper"
+        },
+        {
           "title": "料金",
           "url": "/pricing",
           "icon": "DollarSign"

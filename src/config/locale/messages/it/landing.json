@@ -24,6 +24,11 @@
           "icon": "Box"
         },
         {
+          "title": "Blog",
+          "url": "/blog",
+          "icon": "Newspaper"
+        },
+        {
           "title": "Prezzi",
           "url": "/pricing",
           "icon": "DollarSign"

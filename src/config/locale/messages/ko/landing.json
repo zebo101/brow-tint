@@ -24,6 +24,11 @@
           "icon": "Box"
         },
         {
+          "title": "블로그",
+          "url": "/blog",
+          "icon": "Newspaper"
+        },
+        {
           "title": "요금제",
           "url": "/pricing",
           "icon": "DollarSign"

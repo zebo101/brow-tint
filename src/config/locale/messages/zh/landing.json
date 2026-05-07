@@ -24,6 +24,11 @@
           "icon": "Box"
         },
         {
+          "title": "博客",
+          "url": "/blog",
+          "icon": "Newspaper"
+        },
+        {
           "title": "价格",
           "url": "/pricing",
           "icon": "DollarSign"
