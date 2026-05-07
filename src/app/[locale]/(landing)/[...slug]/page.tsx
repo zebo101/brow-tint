@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
-import { defaultLocale } from '@/config/locale';
+import { defaultLocale, locales } from '@/config/locale';
 import { pagesSource } from '@/core/docs/source';
 import { buildAlternates } from '@/shared/lib/seo-metadata';
 import { buildCanonicalUrl } from '@/shared/lib/seo-paths';
@@ -40,7 +40,7 @@ export async function generateMetadata({
 
   // get static page content
   const staticPage = await getLocalPage({ slug: staticPageSlug, locale });
-  const staticPageLocales = [defaultLocale, 'zh'].filter((entryLocale) =>
+  const staticPageLocales = locales.filter((entryLocale) =>
     Boolean(pagesSource.getPage([staticPageSlug], entryLocale))
   );
 
