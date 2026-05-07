@@ -1,20 +1,21 @@
 {
   "metadata": {
-    "title": "Generador de Tinte de Cejas con IA | Antes y Después | Brow Tint",
-    "description": "Prueba el generador de tinte de cejas con IA online. Sube una foto, previsualiza el tinte de cejas antes y después, y descarga tu resultado de tinte de cejas virtual en segundos.",
-    "keywords": "generador de tinte de cejas con ia, generador de tinte de cejas, tinte de cejas antes y después, generador de tinte de cejas, tinte de cejas virtual, prueba de tinte de cejas, tinte de cejas IA, vista previa de tinte de cejas, generador de color de cejas, vista previa de gel de cejas con color, laminado y tinte de cejas, tinte profesional de cejas, mejor tinte de cejas, mejor gel de cejas con color, tinte de pestañas y cejas, brow code tint"
+    "title": "Generador Gratis de Tinte de Cejas con IA — Prueba Laminado, Gel con Color y Henna Online",
+    "description": "Generador online gratuito de tinte de cejas con IA. Sube tu foto y previsualiza al instante laminado de cejas y tinte, gel de cejas con color, color henna para cejas, tinte de pestañas y cejas, y más de 200 estilos profesionales de tinte de cejas. No requiere registro.",
+    "keywords": "generador gratis de tinte de cejas, generador de tinte de cejas online, generador de tinte de cejas con ia, prueba virtual de tinte de cejas, simulador de laminado de cejas, vista previa de gel de cejas con color, generador de tinte de pestañas y cejas, vista previa de henna para cejas, tinte profesional de cejas, visualizador Brow Code tint, tinte de cejas antes y después, generador de tinte para cejas"
   },
   "page": {
-    "title": "Generador de Tinte de Cejas con IA Online - Tinte de Cejas Antes y Después",
-    "description": "Usa el generador de tinte de cejas con IA online para previsualizar resultados realistas de tinte de cejas antes y después en segundos. Sube tu foto, genera estilos de tinte de cejas y descarga tu resultado.",
+    "title": "Generador Gratis de Tinte de Cejas con IA — Prueba Online en Segundos",
+    "description": "Sube tu foto y previsualiza al instante tinte de cejas, laminado de cejas, gel de cejas con color, color henna para cejas y estilos de tinte de pestañas y cejas. Impulsado por GPT Image 2. Empieza gratis — sin registro.",
     "show_sections": [
       "hero",
       "introduce",
       "generator",
-      "benefits",
+      "tools",
       "usage",
       "features",
-      "stats",
+      "brow_tint_gallery",
+      "benefits",
       "testimonials",
       "faq",
       "cta"
@@ -22,9 +23,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Generador de Tinte de Cejas con IA Online",
+        "title": "Generador Gratis de Tinte de Cejas con IA — Prueba Online en Segundos",
         "highlight_text": "Generador de Tinte de Cejas con IA",
-        "description": "Previsualiza al instante resultados realistas de tinte de cejas antes y después con el generador de tinte de cejas con IA. Sube una foto, prueba estilos de tinte de cejas y descarga tu nuevo look de cejas.",
+        "description": "Sube tu foto y previsualiza al instante tinte de cejas, laminado de cejas, gel de cejas con color, color henna para cejas y estilos de tinte de pestañas y cejas. Impulsado por GPT Image 2. Prueba gratuita — no requiere registro.",
         "image": {
           "src": "/imgs/features/landingpage.jpg",
           "alt": "Interfaz del Generador de Tinte de Cejas con IA",
@@ -39,76 +40,67 @@
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "Fondo Hero de Brow Tint"
+          "alt": "Fondo del Generador de Tinte de Cejas con IA"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "¿Qué es el Generador de Tinte de Cejas con IA?",
-        "label": "Introducción",
-        "description": "El Generador de Tinte de Cejas con IA es una herramienta de prueba virtual de tinte de cejas que te permite previsualizar tonos de tinte y resultados antes y después en tu propia foto antes de visitar a un especialista en cejas o salón.",
+        "title": "Qué Hace Este Generador de Tinte de Cejas con IA",
+        "label": "Cómo Funciona",
+        "description": "El Generador de Tinte de Cejas con IA es una herramienta gratuita de prueba virtual. Sube una foto y previsualiza tonos de tinte de cejas, estilos de laminado de cejas y colores de gel de cejas con color en tu propio rostro — antes de gastar un solo céntimo en el salón. La IA analiza la forma de tus cejas, tu tono de piel y tu color natural para entregar resultados fotorrealistas en menos de 15 segundos.",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "Simulador de Tinte de Cejas con IA"
+          "alt": "Cómo Funciona el Generador de Tinte de Cejas con IA"
         },
         "items": [
           {
-            "title": "Prueba Virtual de Tinte de Cejas",
-            "description": "Previsualiza tonos de tinte de cejas sin usar ningún producto. Nuestra IA simula resultados profesionales de tinte de cejas para que veas tu nuevo look antes de comprometerte.",
-            "icon": "RiMagicLine"
+            "title": "Sube Una Vez, Prueba Sin Límites",
+            "description": "Sube tu foto una sola vez y prueba tantos tonos de tinte de cejas, estilos de laminado o looks de gel con color como te permitan tus créditos. No es necesario volver a subirla."
           },
           {
-            "title": "Resultados Realistas de Tinte de Cejas con IA",
-            "description": "La IA con reconocimiento facial mezcla el color del tinte con la forma natural de tus cejas y tu tono de piel para previsualizaciones fotorrealistas de tinte de cejas.",
-            "icon": "RiCameraLensLine"
+            "title": "Resultados Fotorrealistas con IA",
+            "description": "GPT Image 2 mezcla cada tono de tinte de cejas con la forma natural de tus cejas, tu tono de piel y la iluminación para obtener resultados que las artistas de cejas de todo el mundo usan como referencia en consultas."
           },
           {
-            "title": "Combinación de Color de Tinte de Cejas",
-            "description": "Previsualiza diferentes tonos de gel de cejas con color — desde taupe suave hasta espresso intenso — antes de comprometerte para encontrar el mejor tinte de cejas para tu look.",
-            "icon": "RiPaletteLine"
+            "title": "Más de 200 Estilos Curados",
+            "description": "Explora estilos de tinte de cejas preconfigurados por categoría — naturales, intensos, laminado de cejas, tinte de pestañas y cejas — o describe tu propio tono personalizado en el cuadro de prompt."
+          },
+          {
+            "title": "Descarga en HD",
+            "description": "Exporta tu imagen de tinte de cejas antes y después en alta resolución. Llévasela a tu artista de cejas o salón para comunicar exactamente lo que quieres."
+          }
+        ]
+      },
+      "tools": {
+        "block": "features",
+        "id": "tools",
+        "title": "Un Solo Generador. Cada Estilo de Tinte de Cejas.",
+        "description": "Cada estilo a continuación utiliza el mismo generador de IA con parámetros ajustados para ese look específico. Explora la galería de abajo para probar cualquiera de ellos en tu propia foto.",
+        "items": [
+          {
+            "title": "Simulador de Laminado de Cejas",
+            "description": "Previsualiza el look de cejas laminadas, peinadas hacia arriba y esponjadas — con o sin tinte. Ideal para clientas que se hacen el laminado por primera vez y deciden la forma antes de comprometerse con el tratamiento de salón."
+          },
+          {
+            "title": "Prueba Virtual de Gel de Cejas con Color",
+            "description": "Mira cómo se ven más de 12 tonos de gel de cejas con color — desde taupe suave hasta espresso intenso — sobre tus cejas naturales. Encuentra el gel ideal antes de comprar un solo tubo."
+          },
+          {
+            "title": "Coincidencia de Color Henna para Cejas",
+            "description": "El tinte de henna para cejas es más cálido y duradero que el tinte tradicional. Previsualiza los tonos óxido, caoba y castaño que suelen usar las artistas de henna para cejas."
           },
           {
             "title": "Vista Previa de Tinte de Pestañas y Cejas",
-            "description": "Ve estilos combinados de tinte de pestañas y cejas en una sola vista previa para un look completo que enmarca tus ojos y realza tus rasgos naturales.",
-            "icon": "RiExchangeLine"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "Por Qué Elegir Nuestro Generador de Tinte de Cejas con IA",
-        "label": "Beneficios",
-        "description": "Previsualizaciones rápidas, privadas y realistas para decisiones seguras sobre el tinte de cejas.",
-        "items": [
-          {
-            "title": "Ultra Rápido y 100% Online",
-            "description": "Genera múltiples looks de tinte de cejas desde una sola foto en segundos, 100% online. Sin citas ni productos necesarios para previsualizar tu tinte de cejas perfecto.",
-            "icon": "RiSpeedLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "Procesamiento Rápido de Tinte de Cejas con IA"
-            }
+            "description": "Previsualiza estilos combinados de tinte de pestañas y cejas para un look completo que enmarca tus ojos. Mira cómo las pestañas oscuras equilibran tus cejas tintadas en una sola imagen."
           },
           {
-            "title": "Privacidad Ante Todo",
-            "description": "Las fotos se procesan de forma segura y nunca se almacenan permanentemente. Tus previsualizaciones de tinte de cejas se generan de forma privada.",
-            "icon": "RiLock2Line",
-            "image": {
-              "src": "/imgs/features/image2.png",
-              "alt": "Seguro y Privado"
-            }
+            "title": "Visualizador Brow Code Tint",
+            "description": "Explora la gama de tonos de Brow Code tint y visualiza cada fórmula sobre la forma de tu rostro y tu tono de piel. Compara fórmulas lado a lado antes de reservar."
           },
           {
-            "title": "Calidad Profesional de Salón",
-            "description": "Descarga previsualizaciones de tinte de cejas con calidad de salón para mostrar a tu especialista en cejas exactamente el tono y estilo que deseas.",
-            "icon": "RiUserSmileLine",
-            "image": {
-              "src": "/imgs/features/image3.png",
-              "alt": "Resultados Profesionales de Tinte de Cejas"
-            }
+            "title": "Vista Previa de Tinte Profesional de Cejas",
+            "description": "Generación de antes y después con calidad de salón, ideal para compartir con tu artista de cejas. La imagen de referencia habla más alto que cualquier descripción verbal."
           }
         ]
       },
@@ -116,33 +108,33 @@
         "block": "features-step",
         "id": "usage",
         "title": "Cómo Usar el Generador de Tinte de Cejas con IA",
-        "description": "Obtén una vista previa realista de tinte de cejas en cuatro sencillos pasos:",
+        "description": "Obtén una vista previa realista de tinte de cejas en cuatro sencillos pasos. No se requiere registro para la prueba gratuita.",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "Guía de Uso del Tinte de Cejas con IA"
+          "alt": "Pasos de Uso del Generador de Tinte de Cejas con IA"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Sube una Foto Clara",
-            "description": "Usa una foto frontal con buena iluminación y tus cejas claramente visibles para que la IA pueda mapear la forma de tus cejas con precisión.",
+            "title": "Sube una Foto Frontal Clara",
+            "description": "Usa una foto bien iluminada con tus cejas claramente visibles. Evita gafas de sol, sombreros, cabello que cubra tus cejas o ángulos laterales. La IA mapea la forma de tus cejas a partir de esta única imagen.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Subir Foto"
+              "alt": "Subir Foto para Vista Previa de Tinte de Cejas"
             }
           },
           {
             "title": "Elige Tu Estilo de Tinte de Cejas",
-            "description": "Escoge entre gel de cejas con color, laminado y tinte de cejas, tinte profesional de cejas u opciones de brow code tint.",
+            "description": "Escoge entre más de 200 estilos curados de tintes naturales, tintes intensos, laminado de cejas y combinaciones de tinte de pestañas y cejas — o describe tu propio tono en el cuadro de prompt.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Seleccionar Estilo de Tinte de Cejas"
+              "alt": "Elegir Estilo de Tinte de Cejas"
             }
           },
           {
-            "title": "Genera Tu Vista Previa de Tinte de Cejas",
-            "description": "La IA crea imágenes realistas de tinte de cejas antes y después en segundos, mezclando el color con la forma natural de tus cejas.",
+            "title": "Genera Tu Vista Previa",
+            "description": "La IA procesa tu foto en 8–15 segundos y devuelve una vista previa fotorrealista de tus cejas con el tinte, laminado o estilo de gel elegido.",
             "image": {
               "src": "/imgs/features/7.png",
               "alt": "Generar Vista Previa de Tinte de Cejas"
@@ -150,10 +142,10 @@
           },
           {
             "title": "Descarga y Comparte",
-            "description": "Guarda fotos de tinte de cejas antes y después en alta resolución para mostrar a tu especialista en cejas o estilista en tu próxima cita.",
+            "description": "Guarda la vista previa en alta resolución en tu dispositivo. Compártela con tu artista de cejas antes de la cita — o publícala en redes sociales para ver las reacciones de tus amigos antes de reservar.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Descargar Resultados de Tinte de Cejas"
+              "alt": "Descargar Vista Previa de Tinte de Cejas"
             }
           }
         ],
@@ -161,37 +153,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Características Clave del Generador de Tinte de Cejas con IA",
-        "description": "Un estudio virtual completo de tinte de cejas para tonos, estilos y comparaciones antes y después.",
+        "title": "Características del Generador",
+        "description": "Todo lo que hace el generador online gratuito de tinte de cejas — de un vistazo.",
         "items": [
           {
-            "title": "Vista Previa de Tinte Profesional de Cejas",
-            "description": "Simulación de tinte profesional de cejas con calidad de salón que combina el color del tinte con la forma natural de tus cejas y tu tono de piel.",
+            "title": "Resultados con Calidad de Salón",
+            "description": "GPT Image 2 produce vistas previas que las artistas de cejas de todo el mundo aceptan como referencia en consultas — no ilustraciones estilizadas.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "Combinación de Tonos de Gel de Cejas con Color",
-            "description": "Prueba diferentes tonos de gel de cejas con color, desde taupe sutil hasta espresso intenso, y encuentra el mejor gel de cejas con color para ti.",
-            "icon": "RiWomenLine"
-          },
-          {
-            "title": "Laminado y Tinte de Cejas",
-            "description": "Previsualiza el laminado de cejas combinado con tinte para ver cejas peinadas hacia arriba y definidas con un color intenso en un solo look.",
+            "title": "Biblioteca de Tonos de Gel de Cejas con Color",
+            "description": "Más de 12 tonos de gel de cejas con color que abarcan desde taupe suave hasta espresso intenso. Encuentra tu match perfecto antes de comprar cualquier producto.",
             "icon": "RiPaletteLine"
           },
           {
+            "title": "Vistas Previas de Tratamientos Combinados",
+            "description": "Previsualiza laminado de cejas + tinte, tinte de pestañas y cejas, o combinaciones de henna + tinte estándar en una sola generación.",
+            "icon": "RiLayoutGridLine"
+          },
+          {
             "title": "Descargas en Alta Resolución",
-            "description": "Imágenes nítidas de tinte de cejas antes y después listas para guardar y compartir con tu especialista en cejas.",
+            "description": "Prueba gratuita: resolución estándar. Planes de pago: descargas en HD ideales para consultas con clientas y redes sociales.",
             "icon": "RiHdLine"
           },
           {
-            "title": "Comparación Antes y Después",
-            "description": "Deslizador lateral de tinte de cejas antes y después para que puedas ver exactamente cómo el tinte transforma tus cejas.",
+            "title": "Comparación Lado a Lado",
+            "description": "Compara tus cejas naturales con cada vista previa de tinte generada usando un deslizador integrado de antes y después.",
             "icon": "RiCompareLine"
           },
           {
             "title": "Compatible con Móviles",
-            "description": "Funciona en cualquier dispositivo — teléfono, tablet o escritorio — para que puedas previsualizar estilos de tinte de cejas en cualquier lugar.",
+            "description": "Funciona en cualquier navegador — teléfono, tablet o escritorio. Sin app que instalar. Sin registro para empezar.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -199,158 +191,198 @@
       "brow_tint_gallery": {
         "block": "brow-tint-gallery",
         "id": "brow_tint_gallery",
-        "title": "Explora Estilos de Tinte de Cejas por Categoría",
-        "description": "Navega por estilos de tinte de cejas listos para IA y toca cualquier look para probarlo en tu propia foto con el generador de tinte de cejas con IA.",
+        "title": "Explora Más de 200 Estilos de Tinte de Cejas por Categoría",
+        "description": "Toca cualquier look para probarlo en tu propia foto con el generador de tinte de cejas con IA.",
         "limit": 12,
         "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
             "title": "Tintes de Cejas Naturales",
-            "description": "Tonos de tinte de cejas naturales y sutiles que realzan tus cejas con una definición suave. Previsualiza los mejores tonos de tinte de cejas para un look effortlessly pulido.",
+            "description": "Tonos sutiles de tinte de cejas que realzan tus cejas naturales con una definición suave. Ideales para looks diarios y para quienes se tintan por primera vez.",
             "cta_label": "Probar tintes naturales"
           },
           {
             "key": "women",
             "title": "Tintes de Cejas Intensos",
-            "description": "Looks de tinte de cejas dramáticos y definidos para un acabado impactante. Previsualiza tonos de espresso intenso, chocolate oscuro y tinte profesional de cejas atrevido.",
+            "description": "Looks dramáticos y definidos para un acabado impactante. Tonos espresso intenso, chocolate profundo y tintes profesionales de cejas atrevidos.",
             "cta_label": "Probar tintes intensos"
           },
           {
             "key": "boys",
             "title": "Estilos de Laminado de Cejas",
-            "description": "Looks de cejas laminadas peinadas hacia arriba combinados con tinte. Previsualiza estilos de laminado y tinte de cejas para cejas más llenas y esculpidas.",
+            "description": "Looks de cejas laminadas peinadas hacia arriba combinados con tinte. Previsualiza laminado de cejas y tinte para cejas más llenas y esculpidas.",
             "cta_label": "Probar estilos de laminado"
           },
           {
             "key": "girls",
             "title": "Tinte de Pestañas y Cejas",
-            "description": "Estilos combinados de tinte de pestañas y cejas para una transformación completa que enmarca los ojos. Previsualiza looks coordinados de tinte de pestañas y cejas en segundos.",
+            "description": "Tinte combinado de pestañas y cejas para una transformación completa que enmarca los ojos. Previsualiza looks coordinados de tinte de pestañas y cejas en segundos.",
             "cta_label": "Probar tintes de pestañas y cejas"
           }
         ],
         "tip": "Cada vista previa es gratuita. Se añaden nuevos estilos de tinte de cejas regularmente."
       },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Por Qué Usar Este Generador de Tinte de Cejas con IA",
+        "label": "Beneficios",
+        "description": "Vistas previas rápidas, privadas y con calidad de salón — para tomar decisiones seguras sobre tu tinte de cejas.",
+        "items": [
+          {
+            "title": "Ultra Rápido — Resultados en Segundos",
+            "description": "Genera múltiples looks de tinte de cejas a partir de una foto en menos de 15 segundos. Sin citas, sin productos que comprar, sin esperas entre vistas previas.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Generación Rápida de Tinte de Cejas con IA"
+            }
+          },
+          {
+            "title": "Privacidad Ante Todo — Fotos Eliminadas Automáticamente",
+            "description": "Las fotos se procesan de forma segura y se eliminan automáticamente tras la generación. Nunca compartimos, vendemos ni entrenamos modelos de IA con las fotos subidas.",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/image2.png",
+              "alt": "Procesamiento de Fotos con Privacidad Ante Todo"
+            }
+          },
+          {
+            "title": "Referencias con Calidad de Salón",
+            "description": "Artistas de cejas y dueñas de salones usan estas vistas previas en sus consultas. Lleva la imagen descargada a tu cita en lugar de describir con palabras lo que quieres.",
+            "icon": "RiUserStarLine",
+            "image": {
+              "src": "/imgs/features/image3.png",
+              "alt": "Referencia de Tinte de Cejas con Calidad de Salón"
+            }
+          }
+        ]
+      },
       "testimonials": {
         "id": "testimonials",
-        "title": "Lo Que Dicen los Usuarios Sobre el Generador de Tinte de Cejas con IA",
-        "description": "Usuarios reales que previsualizaron looks de tinte de cejas con el generador de tinte de cejas con IA.",
+        "title": "Lo Que Dicen los Usuarios sobre el Generador de Tinte de Cejas con IA",
+        "description": "Reacciones reales de personas que usaron el generador para planificar sus citas de tinte de cejas.",
         "items": [
           {
             "name": "Sarah Jenkins",
             "role": "Bloguera de Belleza",
-            "quote": "Estaba nerviosa por elegir un tono demasiado oscuro para mi tinte de cejas. El generador de tinte de cejas con IA me mostró un antes y después realista, así que reservé mi cita con total confianza.",
+            "quote": "Generé 12 tonos diferentes a partir de una foto en menos de dos minutos. Elegí espresso, llevé la captura de pantalla a mi artista de cejas y salí con exactamente eso.",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "Sarah Jenkins"
+              "alt": "Sarah Jenkins - Bloguera de Belleza"
             }
           },
           {
             "name": "Mike Ross",
             "role": "Modelo",
-            "quote": "Previsualicé diferentes tonos de tinte profesional de cejas para una sesión de fotos y le mostré a mi especialista en cejas el look exacto que quería. Ahorré mucho tiempo.",
+            "quote": "Para sesiones de fotos, genero 4–5 looks de cejas por outfit y envío la galería al equipo de maquillaje antes de la convocatoria. Me ahorra mucho trabajo.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "Mike Ross"
+              "alt": "Mike Ross - Modelo"
             }
           },
           {
             "name": "Emily Chen",
             "role": "Estudiante",
-            "quote": "Probé tonos de gel de cejas con color desde taupe hasta espresso en la vista previa de IA. Me ayudó a elegir el mejor tinte de cejas para mi tono de piel antes de comprar nada.",
+            "quote": "La prueba gratuita funcionó genial. Probé 3 tonos, descargué mi favorito y no pagué un céntimo. Mi artista de cejas usó la imagen como referencia en el salón.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "Emily Chen"
+              "alt": "Emily Chen - Estudiante"
             }
           },
           {
             "name": "David Smith",
-            "role": "Ingeniero de Software",
-            "quote": "La vista previa de laminado y tinte de cejas se veía increíblemente realista. Le mostré la imagen a mi especialista en cejas y obtuve exactamente el resultado que quería.",
+            "role": "Maquillador",
+            "quote": "El simulador de laminado de cejas es asombrosamente preciso. Les muestro a las clientas la vista previa de IA durante la consulta y se deciden el doble de rápido.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "David Smith"
+              "alt": "David Smith - Maquillador"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "Maquilladora",
-            "quote": "Como maquilladora, uso el generador de tinte de cejas con IA para mostrar a las clientas cómo se verá su combinación de tinte de pestañas y cejas. Las previsualizaciones con calidad de salón son impresionantemente precisas.",
+            "role": "Dueña de Salón",
+            "quote": "Pagamos el plan Pro. Generar vistas previas de consulta para más de 30 clientas a la semana se amortiza en el primer día de cada ciclo de facturación.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "Jessica Lee"
+              "alt": "Jessica Lee - Dueña de Salón"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "Estudiante",
-            "quote": "Rápido, gratuito y fácil. Subí una foto y obtuve múltiples opciones de tinte de cejas antes y después en segundos. No necesité instalar ninguna app.",
+            "role": "Ingeniero de Software",
+            "quote": "Subí una foto, elegí un estilo y obtuve un resultado en aproximadamente 10 segundos. La UX es limpia. La usé como referencia para mi primera visita al salón.",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "Tom Brown"
+              "alt": "Tom Brown - Ingeniero de Software"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Preguntas Frecuentes",
-        "description": "Preguntas frecuentes sobre el generador de tinte de cejas con IA, consejos de fotos y cómo obtener los mejores resultados de tinte de cejas.",
+        "title": "Preguntas Frecuentes del Generador de Tinte de Cejas con IA",
+        "description": "Preguntas técnicas sobre los requisitos de las fotos, los créditos, la precisión y las descargas.",
         "tip": "¿No encuentras lo que buscas? Contacta a nuestro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>equipo de soporte</a>",
         "items": [
           {
-            "question": "¿Es gratuito este Generador de Tinte de Cejas con IA?",
-            "answer": "Sí. Puedes probar el generador de tinte de cejas con IA online con una prueba gratuita para previsualizar múltiples estilos y tonos de tinte de cejas."
+            "question": "¿Cuánto tarda cada generación?",
+            "answer": "La mayoría de las vistas previas de tinte de cejas se completan en 8–15 segundos, según el tamaño de la imagen y la carga del servidor. Las generaciones del nivel Pro tienen prioridad y suelen completarse en menos de 10 segundos."
           },
           {
-            "question": "¿Qué tan realistas son las previsualizaciones de tinte de cejas?",
-            "answer": "La IA mezcla cada tono de tinte de cejas con tu foto para una vista previa realista que tiene en cuenta la forma natural de tus cejas, tu tono de piel y la iluminación."
+            "question": "¿Qué foto da el mejor resultado?",
+            "answer": "Una foto frontal y bien iluminada con las cejas claramente visibles. Evita gafas de sol, cabello sobre las cejas, ángulos laterales, poca luz e imágenes de dibujos animados. Una expresión neutral funciona mejor para mapear con precisión la forma de las cejas."
           },
           {
-            "question": "¿Qué tipo de fotos funcionan mejor?",
-            "answer": "Para mejores resultados, sube una foto clara y frontal con buena iluminación y tus cejas claramente visibles. Evita fotos donde tu cara esté cubierta por gafas de sol, mascarillas o cabello. Una expresión neutral funciona mejor."
+            "question": "¿Qué formatos de archivo puedo subir y descargar?",
+            "answer": "Sube JPG o PNG de hasta 10MB. Descarga como PNG (estándar) o PNG HD (planes de pago). Se conserva la relación de aspecto original de la foto a menos que la recortes con la herramienta integrada."
           },
           {
-            "question": "¿Puedo previsualizar diferentes tonos de gel de cejas con color?",
-            "answer": "Sí. Prueba una variedad de tonos de gel de cejas con color — desde taupe suave y marrón cálido hasta espresso intenso — y compáralos lado a lado para encontrar el mejor gel de cejas con color para tu look."
+            "question": "¿Cuántos créditos cuesta cada generación?",
+            "answer": "Las generaciones estándar cuestan 1 crédito cada una. Las generaciones HD cuestan 2 créditos. La prueba gratuita incluye una asignación inicial de créditos. Los planes de pago incluyen créditos mensuales con acumulación."
           },
           {
-            "question": "¿Cuál es la diferencia entre tinte de cejas y gel de cejas con color?",
-            "answer": "Un tinte profesional de cejas es un tinte semipermanente aplicado en un salón que dura varias semanas. Un gel de cejas con color es un producto cosmético de uso diario que agrega color y fijación. El generador de tinte de cejas con IA puede previsualizar ambos estilos para que decidas cuál es el adecuado para ti."
+            "question": "¿Puedo generar varios tonos a partir de una sola foto?",
+            "answer": "Sí. Sube una vez y luego genera tantos tonos o estilos como te permitan tus créditos sin volver a subir la foto. La IA reutiliza tu foto para cada vista previa de la sesión."
           },
           {
-            "question": "¿Están seguros mis datos de fotos?",
-            "answer": "Nos tomamos la privacidad en serio. Tus fotos subidas se procesan de forma segura para la generación de tinte de cejas y no se almacenan permanentemente ni se comparten con terceros."
+            "question": "¿Cuál es la resolución máxima?",
+            "answer": "Nivel gratuito: hasta 1024×1024. Starter: hasta 1536×1536. Pro: hasta 2048×2048 con descarga HD habilitada."
           },
           {
-            "question": "¿Puedo previsualizar laminado y tinte de cejas juntos?",
-            "answer": "Sí. Selecciona el estilo de laminado y tinte de cejas para ver cejas peinadas hacia arriba y esculpidas combinadas con tu tono de tinte elegido en una vista previa realista."
+            "question": "¿Las fotos subidas se almacenan o se usan para entrenamiento?",
+            "answer": "No. Las fotos se procesan de forma segura y se eliminan automáticamente tras la generación. Nunca compartimos, vendemos ni entrenamos modelos de IA con las fotos subidas."
           },
           {
-            "question": "¿Cómo encuentro el mejor tinte de cejas para mi tono de piel?",
-            "answer": "Sube tu foto y prueba múltiples tonos. La IA considera tu tono de piel y el color natural de tus cejas para generar vistas previas realistas, ayudándote a encontrar la mejor combinación de tinte de cejas antes de visitar a un especialista."
+            "question": "¿Cuál es la diferencia entre el simulador de laminado de cejas y el generador de tinte de cejas?",
+            "answer": "Mismo generador, diferentes preajustes de estilo. El simulador de laminado se centra en la forma de cejas peinadas hacia arriba; el generador de tinte se centra en el color. Ambos pueden combinarse en una sola generación seleccionando estilos de laminado de cejas + tinte."
           },
           {
-            "question": "¿Puedo mostrar mi vista previa de tinte de cejas con IA a mi especialista en cejas?",
-            "answer": "Sí. Descarga tu vista previa de tinte de cejas antes y después y muéstrala a tu especialista en cejas o salón para comunicar exactamente el tono y estilo que deseas."
+            "question": "¿Puedo previsualizar un tono personalizado que no esté en la galería?",
+            "answer": "El nivel Pro admite la entrada de tonos personalizados a través del cuadro de prompt (p. ej., describe un color Pantone específico o un nombre de tono). Los niveles Free y Starter usan la biblioteca curada de más de 200 tonos."
           },
           {
-            "question": "¿Cuánto tiempo tarda en generarse una vista previa de tinte de cejas?",
-            "answer": "La mayoría de las vistas previas de tinte de cejas están listas en segundos, dependiendo del tamaño de la imagen y el tráfico."
+            "question": "¿Funciona en móvil?",
+            "answer": "Sí. El generador de tinte de cejas con IA funciona enteramente en tu navegador — teléfono, tablet o escritorio. Sin app que instalar. No requiere registro para la prueba gratuita."
           },
           {
-            "question": "¿Necesito instalar algo?",
-            "answer": "No. El generador de tinte de cejas con IA funciona completamente en tu navegador — sin descargas ni instalaciones necesarias."
+            "question": "¿Qué pasa si mi vista previa generada se ve poco realista?",
+            "answer": "Primero, prueba con una foto de mayor calidad, mejor iluminación y una vista más clara de tus cejas. Si los resultados aún parecen extraños, cambia a un preajuste de estilo diferente — algunos tonos se renderizan con más precisión en ciertos tonos de piel. El soporte Pro puede investigar casos específicos."
+          },
+          {
+            "question": "¿Puedo usar la imagen generada con fines comerciales?",
+            "answer": "El uso personal no tiene restricciones. El uso comercial (marketing de salones, anuncios pagados en redes sociales, editorial de revista) requiere una licencia de plan Pro. El plan Pro otorga derechos comerciales para todas las generaciones durante el periodo de suscripción activa."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "¿Lista para Tu Tinte de Cejas Perfecto?",
-        "description": "Deja de adivinar tu resultado de tinte de cejas. Prueba el generador de tinte de cejas con IA ahora y comparte tu vista previa con un especialista en cejas o salón.",
+        "title": "Genera Tu Primera Vista Previa de Tinte de Cejas",
+        "description": "Prueba gratuita. Sin registro. ~10 segundos por generación.",
         "buttons": [
           {
-            "title": "Comenzar Vista Previa de Tinte de Cejas Ahora",
+            "title": "Generar Mi Vista Previa de Tinte de Cejas",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"

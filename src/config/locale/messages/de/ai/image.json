@@ -1,20 +1,21 @@
 {
   "metadata": {
-    "title": "KI Augenbrauen-Tint Generator Online | Vorher und Nachher | Brow Tint",
-    "description": "Testen Sie den KI Augenbrauen-Tint Generator online. Laden Sie ein Foto hoch, sehen Sie Augenbrauen-Tint Vorher-Nachher-Ergebnisse und laden Sie Ihr virtuelles Augenbrauen-Tint Ergebnis in Sekunden herunter.",
-    "keywords": "ki augenbrauen tint generator, augenbrauen tint generator, augenbrauen tint vorher nachher, augenbrauen färben generator, virtueller augenbrauen tint, augenbrauen tint ausprobieren, KI augenbrauen tint, augenbrauen tint vorschau, augenbrauenfarbe generator, getöntes brauengel vorschau, brow lamination und tint, professionelles augenbrauen tint, bestes augenbrauen tint, bestes getöntes brauengel, wimpern und augenbrauen tint, brow code tint"
+    "title": "Kostenloser KI Augenbrauen-Tint Generator — Brow Lamination, getöntes Gel & Henna online testen",
+    "description": "Kostenloser Online-KI-Augenbrauen-Tint-Generator. Laden Sie Ihr Foto hoch und sehen Sie sofort eine Vorschau von Brow Lamination und Tönung, getöntem Brauengel, Henna-Augenbrauen-Farbe, Wimpern- und Brauentönung sowie 200+ professionellen Augenbrauentönungs-Styles. Keine Anmeldung erforderlich.",
+    "keywords": "kostenloser augenbrauen tint generator, augenbrauen tint generator online, ki augenbrauen tint generator, virtuelle augenbrauen tint anprobe, brow lamination simulator, getöntes brauengel vorschau, wimpern und brauentönung generator, henna augenbrauen tint vorschau, professionelles augenbrauen tint, brow code tint visualizer, augenbrauen tint vorher nachher, eyebrow tint generator"
   },
   "page": {
-    "title": "KI Augenbrauen-Tint Generator Online - Augenbrauen-Tint Vorher Nachher",
-    "description": "Nutzen Sie den KI Augenbrauen-Tint Generator online, um realistische Augenbrauen-Tint Vorher-Nachher-Ergebnisse in Sekunden zu sehen. Laden Sie Ihr Foto hoch, generieren Sie Augenbrauen-Tint Styles und laden Sie Ihr Ergebnis herunter.",
+    "title": "Kostenloser KI Augenbrauen-Tint Generator — Online-Anprobe in Sekunden",
+    "description": "Laden Sie Ihr Foto hoch und sehen Sie sofort eine Vorschau von Augenbrauentönung, Brow Lamination, getöntem Brauengel, Henna-Augenbrauen-Farbe sowie Wimpern- und Brauentönungs-Styles. Powered by GPT Image 2. Kostenlos starten — keine Anmeldung.",
     "show_sections": [
       "hero",
       "introduce",
       "generator",
-      "benefits",
+      "tools",
       "usage",
       "features",
-      "stats",
+      "brow_tint_gallery",
+      "benefits",
       "testimonials",
       "faq",
       "cta"
@@ -22,9 +23,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "KI Augenbrauen-Tint Generator Online",
+        "title": "Kostenloser KI Augenbrauen-Tint Generator — Online-Anprobe in Sekunden",
         "highlight_text": "KI Augenbrauen-Tint Generator",
-        "description": "Sehen Sie sofort realistische Augenbrauen-Tint Vorher-Nachher-Ergebnisse mit dem KI Augenbrauen-Tint Generator. Laden Sie ein Foto hoch, probieren Sie Augenbrauen-Tint Styles aus und laden Sie Ihren neuen Brauen-Look herunter.",
+        "description": "Laden Sie Ihr Foto hoch und sehen Sie sofort eine Vorschau von Augenbrauentönung, Brow Lamination, getöntem Brauengel, Henna-Augenbrauen-Farbe sowie Wimpern- und Brauentönungs-Styles. Powered by GPT Image 2. Kostenlose Testversion — keine Anmeldung erforderlich.",
         "image": {
           "src": "/imgs/features/landingpage.jpg",
           "alt": "KI Augenbrauen-Tint Generator Oberfläche",
@@ -39,76 +40,67 @@
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "Brow Tint Hero-Hintergrund"
+          "alt": "KI Augenbrauen-Tint Generator Hintergrund"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "Was ist der KI Augenbrauen-Tint Generator?",
-        "label": "Einführung",
-        "description": "Der KI Augenbrauen-Tint Generator ist ein virtuelles Augenbrauen-Tint Anprobe-Tool, mit dem Sie Augenbrauen-Tint Farbtöne und Vorher-Nachher-Ergebnisse an Ihrem eigenen Foto ansehen können, bevor Sie eine Brauen-Spezialistin oder einen Salon besuchen.",
+        "title": "Was dieser KI Augenbrauen-Tint Generator leistet",
+        "label": "So funktioniert es",
+        "description": "Der KI Augenbrauen-Tint Generator ist ein kostenloses virtuelles Anprobe-Tool. Laden Sie ein Foto hoch und sehen Sie dann eine Vorschau von Augenbrauentönungs-Farbtönen, Brow Lamination Styles und getönten Brauengel-Farben an Ihrem eigenen Gesicht — bevor Sie einen Cent im Salon ausgeben. Die KI analysiert Ihre Brauenform, Ihren Hautton und Ihre natürliche Farbe und liefert in unter 15 Sekunden fotorealistische Ergebnisse.",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "KI Augenbrauen-Tint Simulator"
+          "alt": "KI Augenbrauen-Tint Generator So funktioniert es"
         },
         "items": [
           {
-            "title": "Virtuelles Augenbrauen-Tint Ausprobieren",
-            "description": "Sehen Sie Augenbrauen-Tint Farbtöne, ohne Produkte zu verwenden. Unsere KI simuliert professionelle Augenbrauen-Tint Ergebnisse, damit Sie Ihren neuen Look sehen können, bevor Sie sich entscheiden.",
-            "icon": "RiMagicLine"
+            "title": "Einmal hochladen, unbegrenzt ausprobieren",
+            "description": "Laden Sie Ihr Foto ein einziges Mal hoch und probieren Sie so viele Augenbrauentönungs-Farbtöne, Lamination-Styles oder getönte Gel-Looks aus, wie Ihre Credits erlauben. Kein erneutes Hochladen nötig."
           },
           {
-            "title": "Realistische KI Augenbrauen-Tint Ergebnisse",
-            "description": "Gesichtserkennende KI verbindet die Tint-Farbe mit Ihrer natürlichen Brauenform und Ihrem Hautton für fotorealistische Augenbrauen-Tint Vorschauen.",
-            "icon": "RiCameraLensLine"
+            "title": "Fotorealistische KI-Ergebnisse",
+            "description": "GPT Image 2 verbindet jeden Augenbrauentönungs-Farbton mit Ihrer natürlichen Brauenform, Ihrem Hautton und der Beleuchtung — für Ergebnisse, die Brauen-Spezialistinnen weltweit als Beratungsreferenz nutzen."
           },
           {
-            "title": "Augenbrauen-Tint Farbabstimmung",
-            "description": "Sehen Sie verschiedene getönte Brauengel-Farbtöne — von sanftem Taupe bis tiefem Espresso — bevor Sie sich entscheiden, um das beste Augenbrauen-Tint für Ihren Look zu finden.",
-            "icon": "RiPaletteLine"
+            "title": "200+ kuratierte Styles",
+            "description": "Stöbern Sie in vorab abgestimmten Augenbrauentönungs-Styles nach Kategorie — natürlich, ausdrucksstark, Brow Lamination, Wimpern- und Brauentönung — oder beschreiben Sie Ihren eigenen Wunschton im Eingabefeld."
           },
           {
-            "title": "Wimpern und Augenbrauen Tint Vorschau",
-            "description": "Sehen Sie kombinierte Wimpern und Augenbrauen Tint Styles in einer Vorschau für einen vollständigen augenrahmenden Look, der Ihre natürlichen Merkmale betont.",
-            "icon": "RiExchangeLine"
+            "title": "In HD herunterladen",
+            "description": "Exportieren Sie Ihr Augenbrauen-Tint-Vorher-Nachher-Bild in hoher Auflösung. Bringen Sie es zu Ihrer Brauen-Spezialistin oder in den Salon, um genau zu kommunizieren, was Sie möchten."
           }
-        ],
-        "className": "bg-muted"
+        ]
       },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "Warum unseren KI Augenbrauen-Tint Generator wählen",
-        "label": "Vorteile",
-        "description": "Schnelle, private und realistische Vorschauen für sichere Augenbrauen-Tint Entscheidungen.",
+      "tools": {
+        "block": "features",
+        "id": "tools",
+        "title": "Ein Generator. Jeder Augenbrauentönungs-Stil.",
+        "description": "Jeder Stil unten nutzt denselben KI-Generator mit Parametern, die für genau diesen Look abgestimmt sind. Stöbern Sie in der Galerie unten, um jeden davon an Ihrem eigenen Foto auszuprobieren.",
         "items": [
           {
-            "title": "Blitzschnell & 100% Online",
-            "description": "Generieren Sie mehrere Augenbrauen-Tint Looks aus einem Foto in Sekunden, 100% online. Keine Termine oder Produkte nötig, um Ihren perfekten Augenbrauen-Tint vorab zu sehen.",
-            "icon": "RiSpeedLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "Schnelle KI Augenbrauen-Tint Verarbeitung"
-            }
+            "title": "Brow Lamination Simulator",
+            "description": "Sehen Sie eine Vorschau des aufgebürsteten, fluffigen laminierten Brauen-Looks — mit oder ohne Tönung. Ideal für Erstkundinnen der Lamination, die ihre Form festlegen, bevor sie sich für die Salon-Behandlung entscheiden."
           },
           {
-            "title": "Datenschutz an erster Stelle",
-            "description": "Fotos werden sicher verarbeitet und niemals dauerhaft gespeichert. Ihre Augenbrauen-Tint Vorschauen werden privat generiert.",
-            "icon": "RiLock2Line",
-            "image": {
-              "src": "/imgs/features/image2.png",
-              "alt": "Sicher und Privat"
-            }
+            "title": "Getöntes Brauengel Anprobe",
+            "description": "Sehen Sie, wie 12+ getönte Brauengel-Farbtöne — von sanftem Taupe bis tiefem Espresso — auf Ihren natürlichen Brauen wirken. Finden Sie das passende Gel, bevor Sie eine einzige Tube kaufen."
           },
           {
-            "title": "Professionelle Salonqualität",
-            "description": "Laden Sie salon-taugliche Augenbrauen-Tint Vorschauen herunter, um Ihrer Brauen-Spezialistin genau den Farbton und Stil zu zeigen, den Sie möchten.",
-            "icon": "RiUserSmileLine",
-            "image": {
-              "src": "/imgs/features/image3.png",
-              "alt": "Professionelle Augenbrauen-Tint Ergebnisse"
-            }
+            "title": "Henna-Augenbrauen Farbabstimmung",
+            "description": "Henna-Augenbrauen-Tönung ist wärmer und langanhaltender als herkömmliche Farbe. Sehen Sie eine Vorschau der Rost-, Mahagoni- und Kastanientöne, die häufig von Henna-Brauen-Spezialistinnen verwendet werden."
+          },
+          {
+            "title": "Wimpern- und Brauentönung Vorschau",
+            "description": "Sehen Sie eine Vorschau kombinierter Wimpern- und Brauentönungs-Styles für einen vollständigen augenrahmenden Look. Sehen Sie in einem einzigen Bild, wie dunkle Wimpern Ihre getönten Brauen ausbalancieren."
+          },
+          {
+            "title": "Brow Code Tint Visualizer",
+            "description": "Stöbern Sie in der Brow Code Tint-Farbpalette und visualisieren Sie jede Formel auf Ihrer Gesichtsform und Ihrem Hautton. Vergleichen Sie Formeln nebeneinander, bevor Sie buchen."
+          },
+          {
+            "title": "Professionelle Augenbrauentönung Vorschau",
+            "description": "Vorher-Nachher-Generierung in Salonqualität, geeignet zum Teilen mit Ihrer Brauen-Spezialistin. Das Referenzbild sagt mehr als jede mündliche Beschreibung."
           }
         ]
       },
@@ -116,33 +108,33 @@
         "block": "features-step",
         "id": "usage",
         "title": "So verwenden Sie den KI Augenbrauen-Tint Generator",
-        "description": "Erhalten Sie eine realistische Augenbrauen-Tint Vorschau in vier einfachen Schritten:",
+        "description": "Erhalten Sie eine realistische Augenbrauentönungs-Vorschau in vier einfachen Schritten. Keine Anmeldung für die kostenlose Testversion erforderlich.",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "KI Augenbrauen-Tint Anleitung"
+          "alt": "KI Augenbrauen-Tint Generator Anleitungsschritte"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Klares Foto hochladen",
-            "description": "Verwenden Sie ein frontales Foto mit guter Beleuchtung und deutlich sichtbaren Augenbrauen, damit die KI Ihre Brauenform genau erfassen kann.",
+            "title": "Klares Foto von vorne hochladen",
+            "description": "Verwenden Sie ein gut beleuchtetes Foto, auf dem Ihre Augenbrauen deutlich sichtbar sind. Vermeiden Sie Sonnenbrillen, Hüte, Haare über den Brauen oder seitliche Aufnahmen. Die KI erfasst Ihre Brauenform aus diesem einzigen Bild.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Foto hochladen"
+              "alt": "Foto für Augenbrauen-Tint Vorschau hochladen"
             }
           },
           {
-            "title": "Augenbrauen-Tint Stil wählen",
-            "description": "Wählen Sie aus getöntem Brauengel, Brow Lamination und Tint, professionellem Augenbrauen-Tint oder brow code tint Optionen.",
+            "title": "Wählen Sie Ihren Augenbrauentönungs-Stil",
+            "description": "Wählen Sie aus 200+ kuratierten Styles über natürliche Tönungen, ausdrucksstarke Tönungen, Brow Lamination und Wimpern- und Brauentönungs-Kombinationen — oder beschreiben Sie Ihren eigenen Farbton im Eingabefeld.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Augenbrauen-Tint Stil wählen"
+              "alt": "Augenbrauentönungs-Stil wählen"
             }
           },
           {
-            "title": "Augenbrauen-Tint Vorschau generieren",
-            "description": "Die KI erstellt realistische Augenbrauen-Tint Vorher-Nachher-Bilder in Sekunden und verbindet die Farbe mit Ihrer natürlichen Brauenform.",
+            "title": "Vorschau generieren",
+            "description": "Die KI verarbeitet Ihr Foto in 8–15 Sekunden und liefert eine fotorealistische Vorschau Ihrer Brauen im gewählten Tönungs-, Lamination- oder Gel-Stil.",
             "image": {
               "src": "/imgs/features/7.png",
               "alt": "Augenbrauen-Tint Vorschau generieren"
@@ -150,10 +142,10 @@
           },
           {
             "title": "Herunterladen und teilen",
-            "description": "Speichern Sie hochauflösende Augenbrauen-Tint Vorher-Nachher-Fotos, um sie Ihrer Brauen-Spezialistin oder Stylistin bei Ihrem nächsten Termin zu zeigen.",
+            "description": "Speichern Sie die hochauflösende Vorschau auf Ihrem Gerät. Teilen Sie sie vor Ihrem Termin mit Ihrer Brauen-Spezialistin — oder posten Sie sie in sozialen Medien, um die Reaktionen Ihrer Freunde vor der Buchung einzuholen.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Augenbrauen-Tint Ergebnisse herunterladen"
+              "alt": "Augenbrauen-Tint Vorschau herunterladen"
             }
           }
         ],
@@ -161,37 +153,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Hauptfunktionen des KI Augenbrauen-Tint Generators",
-        "description": "Ein komplettes virtuelles Augenbrauen-Tint Studio für Farbtöne, Styles und Vorher-Nachher-Vergleiche.",
+        "title": "Generator-Funktionen",
+        "description": "Alles, was der kostenlose Online-Augenbrauen-Tint-Generator bietet — auf einen Blick.",
         "items": [
           {
-            "title": "Professionelle Augenbrauen-Tint Vorschau",
-            "description": "Salonqualität professionelles Augenbrauen-Tint Simulation, die den Farbton an Ihre natürliche Brauenform und Ihren Hautton anpasst.",
+            "title": "Salonqualität-Ergebnisse",
+            "description": "GPT Image 2 erzeugt Vorschauen, die Brauen-Spezialistinnen weltweit als Beratungsreferenz akzeptieren — keine stilisierten Illustrationen.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "Getöntes Brauengel Farbabstimmung",
-            "description": "Probieren Sie verschiedene getönte Brauengel-Farbtöne von dezentem Taupe bis kräftigem Espresso und finden Sie das beste getönte Brauengel für Sie.",
-            "icon": "RiWomenLine"
-          },
-          {
-            "title": "Brow Lamination und Tint",
-            "description": "Sehen Sie Brow Lamination kombiniert mit Augenbrauen färben, um aufgebürstete, definierte Brauen mit kräftiger Farbe in einem Look zu sehen.",
+            "title": "Bibliothek getönter Brauengel-Farbtöne",
+            "description": "12+ getönte Brauengel-Farbtöne von sanftem Taupe bis tiefem Espresso. Finden Sie Ihren Farbton, bevor Sie ein Produkt kaufen.",
             "icon": "RiPaletteLine"
           },
           {
+            "title": "Vorschauen kombinierter Behandlungen",
+            "description": "Sehen Sie in einer einzigen Generierung eine Vorschau von Brow Lamination + Tönung, Wimpern- und Brauentönung oder Henna- + Standard-Tönungs-Kombinationen.",
+            "icon": "RiLayoutGridLine"
+          },
+          {
             "title": "Hochauflösende Downloads",
-            "description": "Kristallklare Augenbrauen-Tint Vorher-Nachher-Bilder, bereit zum Speichern und Teilen mit Ihrer Brauen-Spezialistin.",
+            "description": "Kostenlose Testversion: Standardauflösung. Bezahlte Tarife: HD-Downloads, geeignet für Kundenberatungen und soziale Medien.",
             "icon": "RiHdLine"
           },
           {
             "title": "Vorher-Nachher-Vergleich",
-            "description": "Seite-an-Seite Augenbrauen-Tint Vorher-Nachher-Schieberegler, damit Sie genau sehen können, wie das Tint Ihre Brauen verwandelt.",
+            "description": "Vergleichen Sie Ihre natürlichen Brauen mit jeder generierten Tönungs-Vorschau über einen integrierten Vorher-Nachher-Schieberegler.",
             "icon": "RiCompareLine"
           },
           {
             "title": "Mobilfreundlich",
-            "description": "Funktioniert auf jedem Gerät — Handy, Tablet oder Desktop — damit Sie überall Augenbrauen-Tint Styles ausprobieren können.",
+            "description": "Läuft in jedem Browser — Handy, Tablet oder Desktop. Keine App-Installation. Keine Anmeldung zum Starten.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -199,158 +191,198 @@
       "brow_tint_gallery": {
         "block": "brow-tint-gallery",
         "id": "brow_tint_gallery",
-        "title": "Augenbrauen-Tint Styles nach Kategorie entdecken",
-        "description": "Durchsuchen Sie KI-fähige Augenbrauen-Tint Styles und tippen Sie auf einen Look, um ihn an Ihrem eigenen Foto mit dem KI Augenbrauen-Tint Generator auszuprobieren.",
+        "title": "Stöbern Sie in 200+ Augenbrauentönungs-Styles nach Kategorie",
+        "description": "Klicken Sie auf einen Look, um ihn mit dem KI Augenbrauen-Tint Generator an Ihrem eigenen Foto auszuprobieren.",
         "limit": 12,
         "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
             "title": "Natürliche Augenbrauen-Tints",
-            "description": "Natürliche und dezente Augenbrauen-Tint Farbtöne, die Ihre Brauen mit sanfter Definition betonen. Sehen Sie die besten Augenbrauen-Tint Farbtöne für einen mühelos gepflegten Look.",
+            "description": "Dezente Augenbrauentönungs-Farbtöne, die Ihre natürlichen Brauen mit sanfter Definition betonen. Am besten geeignet für Alltags-Looks und Erstanwenderinnen.",
             "cta_label": "Natürliche Tints testen"
           },
           {
             "key": "women",
             "title": "Ausdrucksstarke Augenbrauen-Tints",
-            "description": "Dramatische und definierte Augenbrauen-Tint Looks für ein markantes Finish. Sehen Sie tiefes Espresso, sattes Schokobraun und kräftige professionelle Augenbrauen-Tint Farbtöne.",
+            "description": "Dramatische und definierte Brauen-Looks für ein markantes Finish. Tiefes Espresso, sattes Schokobraun und kräftige professionelle Augenbrauentönungs-Farbtöne.",
             "cta_label": "Kräftige Tints testen"
           },
           {
             "key": "boys",
             "title": "Brow Lamination Styles",
-            "description": "Aufgebürstete laminierte Brauen-Looks kombiniert mit Augenbrauen färben. Sehen Sie Brow Lamination und Tint Styles für vollere, skulptierte Brauen.",
+            "description": "Aufgebürstete laminierte Brauen-Looks kombiniert mit Tönung. Sehen Sie eine Vorschau von Brow Lamination und Tönung für vollere, skulptierte Brauen.",
             "cta_label": "Lamination-Styles testen"
           },
           {
             "key": "girls",
             "title": "Wimpern & Augenbrauen Tint",
-            "description": "Kombinierte Wimpern und Augenbrauen Tint Styles für eine vollständige augenrahmende Transformation. Sehen Sie abgestimmte Wimpern und Augenbrauen Tint Looks in Sekunden.",
+            "description": "Kombinierte Wimpern- und Brauentönung für eine vollständige augenrahmende Transformation. Sehen Sie abgestimmte Wimpern- und Brauentönungs-Looks in Sekunden.",
             "cta_label": "Wimpern & Brauen Tints testen"
           }
         ],
-        "tip": "Jede Vorschau ist kostenlos. Neue Augenbrauen-Tint Styles werden regelmäßig hinzugefügt."
+        "tip": "Jede Vorschau ist kostenlos. Neue Augenbrauentönungs-Styles werden regelmäßig hinzugefügt."
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Warum diesen KI Augenbrauen-Tint Generator nutzen",
+        "label": "Vorteile",
+        "description": "Schnelle, private und salonqualitative Vorschauen — für selbstbewusste Augenbrauentönungs-Entscheidungen.",
+        "items": [
+          {
+            "title": "Blitzschnell — Ergebnisse in Sekunden",
+            "description": "Generieren Sie aus einem Foto in unter 15 Sekunden mehrere Augenbrauentönungs-Looks. Keine Termine, keine zu kaufenden Produkte, kein Warten zwischen Vorschauen.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Schnelle KI Augenbrauen-Tint Generierung"
+            }
+          },
+          {
+            "title": "Datenschutz zuerst — Fotos werden automatisch gelöscht",
+            "description": "Fotos werden sicher verarbeitet und nach der Generierung automatisch gelöscht. Wir teilen, verkaufen oder trainieren KI-Modelle niemals mit hochgeladenen Fotos.",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/image2.png",
+              "alt": "Datenschutzorientierte Foto-Verarbeitung"
+            }
+          },
+          {
+            "title": "Referenzen in Salonqualität",
+            "description": "Brauen-Spezialistinnen und Salon-Inhaberinnen nutzen diese Vorschauen bei der Beratung. Bringen Sie das heruntergeladene Bild zu Ihrem Termin, statt Ihren Wunsch in Worte zu fassen.",
+            "icon": "RiUserStarLine",
+            "image": {
+              "src": "/imgs/features/image3.png",
+              "alt": "Augenbrauen-Tint Referenz in Salonqualität"
+            }
+          }
+        ]
       },
       "testimonials": {
         "id": "testimonials",
         "title": "Was Nutzer über den KI Augenbrauen-Tint Generator sagen",
-        "description": "Echte Nutzer, die Augenbrauen-Tint Looks mit dem KI Augenbrauen-Tint Generator ausprobiert haben.",
+        "description": "Echte Reaktionen von Menschen, die den Generator zur Planung ihrer Augenbrauentönungs-Termine genutzt haben.",
         "items": [
           {
             "name": "Sarah Jenkins",
             "role": "Beauty-Bloggerin",
-            "quote": "Ich war unsicher, ob mein Augenbrauen-Tint zu dunkel wird. Der KI Augenbrauen-Tint Generator zeigte mir ein realistisches Vorher-Nachher, sodass ich meinen Termin voller Zuversicht buchte.",
+            "quote": "Aus einem Foto in unter zwei Minuten 12 verschiedene Farbtöne generiert. Espresso ausgewählt, den Screenshot zur Brauen-Spezialistin gebracht und genau damit den Salon verlassen.",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "Sarah Jenkins"
+              "alt": "Sarah Jenkins - Beauty-Bloggerin"
             }
           },
           {
             "name": "Mike Ross",
             "role": "Model",
-            "quote": "Ich habe verschiedene professionelle Augenbrauen-Tint Farbtöne für ein Fotoshooting getestet und meiner Brauen-Spezialistin genau den gewünschten Look gezeigt. Das hat viel Zeit gespart.",
+            "quote": "Für Shootings generiere ich pro Outfit 4–5 Brauen-Looks und schicke die Galerie vor dem Call ans Make-up-Team. Ein Workflow-Retter.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "Mike Ross"
+              "alt": "Mike Ross - Model"
             }
           },
           {
             "name": "Emily Chen",
             "role": "Studentin",
-            "quote": "Ich habe getönte Brauengel-Farbtöne von Taupe bis Espresso in der KI-Vorschau ausprobiert. Das half mir, den besten Augenbrauen-Tint für meinen Hautton zu finden, bevor ich etwas kaufte.",
+            "quote": "Die kostenlose Testversion hat super funktioniert. 3 Farbtöne ausprobiert, meinen Favoriten heruntergeladen, keinen Cent bezahlt. Die Brauen-Spezialistin nutzte das Bild im Salon als Referenz.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "Emily Chen"
+              "alt": "Emily Chen - Studentin"
             }
           },
           {
             "name": "David Smith",
-            "role": "Software-Ingenieur",
-            "quote": "Die Brow Lamination und Tint Vorschau sah unglaublich realistisch aus. Ich zeigte das Bild meiner Brauen-Spezialistin und bekam genau das Ergebnis, das ich wollte.",
+            "role": "Visagist",
+            "quote": "Der Brow Lamination Simulator ist erschreckend genau. Ich zeige Kundinnen die KI-Vorschau während der Beratung, und sie entscheiden sich doppelt so schnell.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "David Smith"
+              "alt": "David Smith - Visagist"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "Visagistin",
-            "quote": "Als Visagistin nutze ich den KI Augenbrauen-Tint Generator, um Kundinnen zu zeigen, wie ihre Wimpern und Augenbrauen Tint Kombination aussehen wird. Die Salon-Qualitätsvorschauen sind beeindruckend genau.",
+            "role": "Salon-Inhaberin",
+            "quote": "Wir zahlen für den Pro-Tarif. Beratungs-Vorschauen für 30+ Kundinnen pro Woche zu generieren amortisiert sich am ersten Tag jedes Abrechnungszyklus.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "Jessica Lee"
+              "alt": "Jessica Lee - Salon-Inhaberin"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "Student",
-            "quote": "Schnell, kostenlos und einfach. Ich habe ein Foto hochgeladen und in Sekunden mehrere Augenbrauen-Tint Vorher-Nachher-Optionen erhalten. Keine App-Installation nötig.",
+            "role": "Software-Ingenieur",
+            "quote": "Foto hochgeladen, Stil gewählt, Ergebnis in etwa 10 Sekunden bekommen. Die UX ist sauber. Habe es als Referenz für meinen allerersten Salon-Besuch genutzt.",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "Tom Brown"
+              "alt": "Tom Brown - Software-Ingenieur"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Häufig gestellte Fragen",
-        "description": "FAQs zum KI Augenbrauen-Tint Generator, Foto-Tipps und wie Sie die besten Augenbrauen-Tint Ergebnisse erzielen.",
+        "title": "FAQ zum KI Augenbrauen-Tint Generator",
+        "description": "Technische Fragen zu Foto-Anforderungen, Credits, Genauigkeit und Downloads.",
         "tip": "Finden Sie nicht, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
         "items": [
           {
-            "question": "Ist dieser KI Augenbrauen-Tint Generator kostenlos?",
-            "answer": "Ja. Sie können den KI Augenbrauen-Tint Generator online mit einer kostenlosen Testversion ausprobieren, um mehrere Augenbrauen-Tint Styles und Farbtöne zu sehen."
+            "question": "Wie lange dauert jede Generierung?",
+            "answer": "Die meisten Augenbrauentönungs-Vorschauen sind in 8–15 Sekunden fertig, abhängig von Bildgröße und Serverauslastung. Generierungen im Pro-Tarif werden priorisiert behandelt und sind in der Regel in unter 10 Sekunden abgeschlossen."
           },
           {
-            "question": "Wie realistisch sind die Augenbrauen-Tint Vorschauen?",
-            "answer": "Die KI verbindet jeden Augenbrauen-Tint Farbton mit Ihrem Foto für eine realistische Vorschau, die Ihre natürliche Brauenform, Ihren Hautton und die Beleuchtung berücksichtigt."
+            "question": "Welches Foto liefert das beste Ergebnis?",
+            "answer": "Ein gut beleuchtetes Foto von vorne mit deutlich sichtbaren Augenbrauen. Vermeiden Sie Sonnenbrillen, Haare über den Brauen, seitliche Aufnahmen, schwaches Licht und Cartoon-Bilder. Ein neutraler Gesichtsausdruck eignet sich am besten für eine genaue Erfassung der Brauenform."
           },
           {
-            "question": "Welche Art von Fotos funktioniert am besten?",
-            "answer": "Für die besten Ergebnisse laden Sie ein klares, frontales Foto mit guter Beleuchtung und deutlich sichtbaren Augenbrauen hoch. Vermeiden Sie Fotos, bei denen Ihr Gesicht durch Sonnenbrillen, Masken oder Haare verdeckt ist. Ein neutraler Gesichtsausdruck funktioniert am besten."
+            "question": "Welche Dateiformate kann ich hoch- und herunterladen?",
+            "answer": "Hochladen als JPG oder PNG bis zu 10 MB. Herunterladen als PNG (Standard) oder HD-PNG (bezahlte Tarife). Das ursprüngliche Seitenverhältnis des Fotos bleibt erhalten, sofern Sie es nicht mit dem integrierten Tool zuschneiden."
           },
           {
-            "question": "Kann ich verschiedene getönte Brauengel-Farbtöne ansehen?",
-            "answer": "Ja. Probieren Sie eine Reihe von getönten Brauengel-Farbtönen — von sanftem Taupe und warmem Braun bis zu tiefem Espresso — und vergleichen Sie sie Seite an Seite, um das beste getönte Brauengel für Ihren Look zu finden."
+            "question": "Wie viele Credits kostet jede Generierung?",
+            "answer": "Standard-Generierungen kosten 1 Credit pro Stück. HD-Generierungen kosten 2 Credits. Die kostenlose Testversion enthält ein Start-Credit-Kontingent. Bezahlte Tarife enthalten monatliche Credits plus Übertrag."
           },
           {
-            "question": "Was ist der Unterschied zwischen Augenbrauen-Tint und getöntem Brauengel?",
-            "answer": "Ein professionelles Augenbrauen-Tint ist eine semipermanente Farbe, die im Salon aufgetragen wird und mehrere Wochen hält. Ein getöntes Brauengel ist ein tägliches Kosmetikprodukt, das Farbe und Halt verleiht. Der KI Augenbrauen-Tint Generator kann beide Styles vorab zeigen, damit Sie entscheiden können, was für Sie passt."
+            "question": "Kann ich aus einem Foto mehrere Farbtöne generieren?",
+            "answer": "Ja. Einmal hochladen und dann so viele Farbtöne oder Styles generieren, wie Ihre Credits erlauben — ohne erneutes Hochladen. Die KI verwendet Ihr Foto für jede Vorschau in der Sitzung wieder."
           },
           {
-            "question": "Sind meine Fotodaten sicher?",
-            "answer": "Wir nehmen den Datenschutz ernst. Ihre hochgeladenen Fotos werden sicher für die Augenbrauen-Tint Generierung verarbeitet und nicht dauerhaft gespeichert oder an Dritte weitergegeben."
+            "question": "Wie hoch ist die maximale Auflösung?",
+            "answer": "Free-Tarif: bis zu 1024×1024. Starter: bis zu 1536×1536. Pro: bis zu 2048×2048 mit aktiviertem HD-Download."
           },
           {
-            "question": "Kann ich Brow Lamination und Tint zusammen ansehen?",
-            "answer": "Ja. Wählen Sie den Brow Lamination und Tint Stil, um aufgebürstete, skulptierte Brauen kombiniert mit Ihrem gewählten Farbton in einer realistischen Vorschau zu sehen."
+            "question": "Werden hochgeladene Fotos gespeichert oder fürs Training verwendet?",
+            "answer": "Nein. Fotos werden sicher verarbeitet und nach der Generierung automatisch gelöscht. Wir teilen, verkaufen oder trainieren KI-Modelle niemals mit hochgeladenen Fotos."
           },
           {
-            "question": "Wie finde ich das beste Augenbrauen-Tint für meinen Hautton?",
-            "answer": "Laden Sie Ihr Foto hoch und probieren Sie mehrere Farbtöne aus. Die KI berücksichtigt Ihren Hautton und Ihre natürliche Brauenfarbe, um realistische Vorschauen zu generieren, die Ihnen helfen, den besten Augenbrauen-Tint zu finden, bevor Sie eine Brauen-Spezialistin besuchen."
+            "question": "Was ist der Unterschied zwischen dem Brow Lamination Simulator und dem Augenbrauen-Tint Generator?",
+            "answer": "Derselbe Generator, andere Stil-Voreinstellungen. Der Lamination-Simulator konzentriert sich auf die aufgebürstete Brauenform; der Tint-Generator konzentriert sich auf die Farbe. Beides lässt sich in einer einzigen Generierung kombinieren, indem Sie Brow Lamination + Tint Styles auswählen."
           },
           {
-            "question": "Kann ich meine KI Augenbrauen-Tint Vorschau meiner Brauen-Spezialistin zeigen?",
-            "answer": "Ja. Laden Sie Ihre Augenbrauen-Tint Vorher-Nachher-Vorschau herunter und zeigen Sie sie Ihrer Brauen-Spezialistin oder Ihrem Salon, um genau den Farbton und Stil zu kommunizieren, den Sie möchten."
+            "question": "Kann ich einen individuellen Farbton vorab ansehen, der nicht in der Galerie ist?",
+            "answer": "Der Pro-Tarif unterstützt eigene Farbton-Eingaben über das Eingabefeld (z. B. eine bestimmte Pantone-Farbe oder einen Farbton-Namen). Free- und Starter-Tarife verwenden die kuratierte Bibliothek mit 200+ Farbtönen."
           },
           {
-            "question": "Wie lange dauert es, eine Augenbrauen-Tint Vorschau zu generieren?",
-            "answer": "Die meisten Augenbrauen-Tint Vorschauen sind in Sekunden fertig, abhängig von Bildgröße und Auslastung."
+            "question": "Funktioniert es auf dem Handy?",
+            "answer": "Ja. Der KI Augenbrauen-Tint Generator läuft vollständig in Ihrem Browser — Handy, Tablet oder Desktop. Keine App-Installation. Keine Anmeldung für die kostenlose Testversion erforderlich."
           },
           {
-            "question": "Muss ich etwas installieren?",
-            "answer": "Nein. Der KI Augenbrauen-Tint Generator läuft vollständig in Ihrem Browser — keine Downloads oder Installationen nötig."
+            "question": "Was, wenn meine generierte Vorschau unrealistisch aussieht?",
+            "answer": "Probieren Sie zunächst ein hochwertigeres Foto mit besserer Beleuchtung und einer klareren Sicht auf Ihre Augenbrauen. Falls die Ergebnisse weiterhin nicht stimmen, wechseln Sie zu einer anderen Stil-Voreinstellung — manche Farbtöne wirken auf bestimmten Hauttönen genauer. Der Pro-Support kann konkrete Fälle untersuchen."
+          },
+          {
+            "question": "Darf ich das generierte Bild kommerziell nutzen?",
+            "answer": "Die private Nutzung ist uneingeschränkt. Die kommerzielle Nutzung (Salon-Marketing, bezahlte Social-Media-Anzeigen, Magazin-Editorials) erfordert eine Pro-Tarif-Lizenz. Der Pro-Tarif gewährt während des aktiven Abonnementzeitraums kommerzielle Rechte für alle Generierungen."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Bereit für Ihren perfekten Augenbrauen-Tint?",
-        "description": "Raten Sie nicht mehr bei Ihrem Augenbrauen-Tint Ergebnis. Testen Sie jetzt den KI Augenbrauen-Tint Generator und teilen Sie Ihre Vorschau mit einer Brauen-Spezialistin oder einem Salon.",
+        "title": "Generieren Sie Ihre erste Augenbrauen-Tint Vorschau",
+        "description": "Kostenlose Testversion. Keine Anmeldung. ~10 Sekunden pro Generierung.",
         "buttons": [
           {
-            "title": "Augenbrauen-Tint Vorschau jetzt starten",
+            "title": "Meine Augenbrauen-Tint Vorschau generieren",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"

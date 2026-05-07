@@ -1,20 +1,21 @@
 {
   "metadata": {
-    "title": "Generatore Tinta Sopracciglia IA Online | Prima e Dopo | Brow Tint",
-    "description": "Prova il generatore di tinta sopracciglia IA online. Carica una foto, visualizza l'anteprima tinta sopracciglia prima e dopo e scarica il tuo risultato virtuale in pochi secondi.",
-    "keywords": "generatore tinta sopracciglia ia, generatore tinta sopracciglia, tinta sopracciglia prima e dopo, generatore tinta sopracciglia virtuale, prova virtuale tinta sopracciglia, tinta sopracciglia IA, anteprima tinta sopracciglia, generatore colore sopracciglia, anteprima gel sopracciglia colorato, laminazione e tinta sopracciglia, tinta professionale sopracciglia, miglior tinta sopracciglia, miglior gel sopracciglia colorato, tinta ciglia e sopracciglia, brow code tint"
+    "title": "Generatore Tinta Sopracciglia IA Gratuito — Prova Laminazione, Gel Colorato e Henné Online",
+    "description": "Generatore tinta sopracciglia IA online gratuito. Carica la tua foto e visualizza all'istante laminazione e tinta sopracciglia, gel sopracciglia colorato, colore henné per sopracciglia, tinta ciglia e sopracciglia e oltre 200 stili professionali di tinta sopracciglia. Nessuna registrazione richiesta.",
+    "keywords": "generatore tinta sopracciglia gratuito, generatore tinta sopracciglia online, generatore tinta sopracciglia ia, prova virtuale tinta sopracciglia, simulatore laminazione sopracciglia, anteprima gel sopracciglia colorato, generatore tinta ciglia e sopracciglia, anteprima tinta henné per sopracciglia, tinta professionale sopracciglia, visualizzatore tinta brow code, tinta sopracciglia prima e dopo, generatore tinta per sopracciglia"
   },
   "page": {
-    "title": "Generatore Tinta Sopracciglia IA Online - Tinta Sopracciglia Prima e Dopo",
-    "description": "Usa il generatore di tinta sopracciglia IA online per visualizzare risultati realistici prima e dopo in pochi secondi. Carica la tua foto, genera stili di tinta sopracciglia e scarica il risultato.",
+    "title": "Generatore Tinta Sopracciglia IA Gratuito — Prova Virtuale Online in Pochi Secondi",
+    "description": "Carica la tua foto e visualizza all'istante stili di tinta sopracciglia, laminazione sopracciglia, gel sopracciglia colorato, colore henné per sopracciglia e tinta ciglia e sopracciglia. Powered by GPT Image 2. Prova gratuita — nessuna registrazione.",
     "show_sections": [
       "hero",
       "introduce",
       "generator",
-      "benefits",
+      "tools",
       "usage",
       "features",
-      "stats",
+      "brow_tint_gallery",
+      "benefits",
       "testimonials",
       "faq",
       "cta"
@@ -22,9 +23,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Generatore Tinta Sopracciglia IA Online",
+        "title": "Generatore Tinta Sopracciglia IA Gratuito — Prova Virtuale Online in Pochi Secondi",
         "highlight_text": "Generatore Tinta Sopracciglia IA",
-        "description": "Visualizza istantaneamente risultati realistici di tinta sopracciglia prima e dopo con il generatore IA. Carica una foto, prova stili di tinta sopracciglia e scarica il tuo nuovo look.",
+        "description": "Carica la tua foto e visualizza all'istante stili di tinta sopracciglia, laminazione sopracciglia, gel sopracciglia colorato, colore henné per sopracciglia e tinta ciglia e sopracciglia. Powered by GPT Image 2. Prova gratuita — nessuna registrazione richiesta.",
         "image": {
           "src": "/imgs/features/landingpage.jpg",
           "alt": "Interfaccia Generatore Tinta Sopracciglia IA",
@@ -39,76 +40,67 @@
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "Sfondo Hero Brow Tint"
+          "alt": "Sfondo Generatore Tinta Sopracciglia IA"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "Cos'è il Generatore Tinta Sopracciglia IA?",
-        "label": "Introduzione",
-        "description": "Il Generatore Tinta Sopracciglia IA è uno strumento di prova virtuale che ti permette di visualizzare le tonalità della tinta sopracciglia e i risultati prima e dopo sulla tua foto, prima di andare da un professionista o in salone.",
+        "title": "Cosa Fa Questo Generatore Tinta Sopracciglia IA",
+        "label": "Come Funziona",
+        "description": "Il Generatore Tinta Sopracciglia IA è uno strumento gratuito di prova virtuale. Carica una foto e visualizza tonalità di tinta sopracciglia, stili di laminazione sopracciglia e colori di gel sopracciglia colorato sul tuo viso — prima di spendere un centesimo in salone. L'IA analizza la forma delle tue sopracciglia, il tono della pelle e il colore naturale per offrire risultati fotorealistici in meno di 15 secondi.",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "Simulatore Tinta Sopracciglia IA"
+          "alt": "Generatore Tinta Sopracciglia IA Come Funziona"
         },
         "items": [
           {
-            "title": "Prova Virtuale della Tinta Sopracciglia",
-            "description": "Visualizza le tonalità della tinta sopracciglia senza usare alcun prodotto. La nostra IA simula risultati professionali di tinta sopracciglia per vedere il tuo nuovo look prima di impegnarti.",
-            "icon": "RiMagicLine"
+            "title": "Carica una Volta, Prova Senza Limiti",
+            "description": "Carica la tua foto una sola volta e prova tutte le tonalità di tinta sopracciglia, stili di laminazione o look di gel colorato che i tuoi crediti permettono. Nessun ricaricamento necessario."
           },
           {
-            "title": "Risultati Realistici della Tinta Sopracciglia IA",
-            "description": "L'IA riconosce il viso e fonde il colore della tinta con la forma naturale delle sopracciglia e il tono della pelle per anteprime fotorealistiche.",
-            "icon": "RiCameraLensLine"
+            "title": "Risultati IA Fotorealistici",
+            "description": "GPT Image 2 fonde ogni tonalità di tinta sopracciglia con la forma naturale delle tue sopracciglia, il tono della pelle e l'illuminazione per risultati che artisti delle sopracciglia di tutto il mondo usano come riferimenti per le consulenze."
           },
           {
-            "title": "Abbinamento Colore Tinta Sopracciglia",
-            "description": "Visualizza diverse tonalità di gel sopracciglia colorato — dal tortora morbido all'espresso intenso — prima di scegliere la migliore tinta sopracciglia per il tuo look.",
-            "icon": "RiPaletteLine"
+            "title": "Oltre 200 Stili Selezionati",
+            "description": "Sfoglia stili di tinta sopracciglia preimpostati per categoria — naturali, intensi, laminazione sopracciglia, tinta ciglia e sopracciglia — oppure descrivi la tua tonalità personalizzata nel campo prompt."
+          },
+          {
+            "title": "Scarica in HD",
+            "description": "Esporta la tua immagine di tinta sopracciglia prima e dopo in alta risoluzione. Portala dal tuo artista delle sopracciglia o in salone per comunicare esattamente ciò che desideri."
+          }
+        ]
+      },
+      "tools": {
+        "block": "features",
+        "id": "tools",
+        "title": "Un Solo Generatore. Tutti gli Stili di Tinta Sopracciglia.",
+        "description": "Ogni stile qui sotto utilizza lo stesso generatore IA con parametri ottimizzati per quel look specifico. Sfoglia la galleria qui sotto per provarne uno qualsiasi sulla tua foto.",
+        "items": [
+          {
+            "title": "Simulatore Laminazione Sopracciglia",
+            "description": "Visualizza in anteprima il look delle sopracciglia laminate, sollevate e folte — con o senza tinta. Ideale per le clienti alle prime esperienze con la laminazione che vogliono decidere la forma prima di prenotare il trattamento in salone."
+          },
+          {
+            "title": "Prova Virtuale Gel Sopracciglia Colorato",
+            "description": "Scopri come oltre 12 tonalità di gel sopracciglia colorato — dal tortora morbido all'espresso intenso — si adattano alle tue sopracciglia naturali. Trova il gel giusto prima di acquistare un solo tubetto."
+          },
+          {
+            "title": "Abbinamento Colore Henné per Sopracciglia",
+            "description": "La tinta henné per sopracciglia è più calda e duratura della tintura tradizionale. Visualizza le tonalità ruggine, mogano e castagna comunemente usate dagli artisti dell'henné per sopracciglia."
           },
           {
             "title": "Anteprima Tinta Ciglia e Sopracciglia",
-            "description": "Scopri stili combinati di tinta ciglia e sopracciglia in un'unica anteprima per un look completo che incornicia lo sguardo e valorizza i tuoi tratti naturali.",
-            "icon": "RiExchangeLine"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "Perché Scegliere il Nostro Generatore Tinta Sopracciglia IA",
-        "label": "Vantaggi",
-        "description": "Anteprime rapide, private e realistiche per decisioni sicure sulla tinta sopracciglia.",
-        "items": [
-          {
-            "title": "Velocissimo e 100% Online",
-            "description": "Genera più look di tinta sopracciglia da una sola foto in pochi secondi, 100% online. Nessun appuntamento o prodotto necessario per visualizzare la tinta sopracciglia perfetta.",
-            "icon": "RiSpeedLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "Elaborazione Rapida Tinta Sopracciglia IA"
-            }
+            "description": "Visualizza in anteprima stili combinati di tinta ciglia + sopracciglia per un look completo che incornicia lo sguardo. Scopri come le ciglia scure bilanciano le sopracciglia tinte in un'unica immagine."
           },
           {
-            "title": "Privacy Prima di Tutto",
-            "description": "Le foto vengono elaborate in modo sicuro e non archiviate permanentemente. Le anteprime della tinta sopracciglia vengono generate in modo privato.",
-            "icon": "RiLock2Line",
-            "image": {
-              "src": "/imgs/features/image2.png",
-              "alt": "Sicuro e Privato"
-            }
+            "title": "Visualizzatore Tinta Brow Code",
+            "description": "Sfoglia la gamma di tonalità di tinta Brow Code e visualizza ogni formula sulla forma del tuo viso e sul tono della pelle. Confronta le formule fianco a fianco prima di prenotare."
           },
           {
-            "title": "Qualità Professionale da Salone",
-            "description": "Scarica anteprime di tinta sopracciglia pronte per il salone e mostra al tuo professionista esattamente la tonalità e lo stile desiderati.",
-            "icon": "RiUserSmileLine",
-            "image": {
-              "src": "/imgs/features/image3.png",
-              "alt": "Risultati Professionali Tinta Sopracciglia"
-            }
+            "title": "Anteprima Tinta Professionale Sopracciglia",
+            "description": "Generazione prima-dopo di qualità salone, adatta da condividere con il tuo artista delle sopracciglia. L'immagine di riferimento parla più di qualsiasi descrizione verbale."
           }
         ]
       },
@@ -116,33 +108,33 @@
         "block": "features-step",
         "id": "usage",
         "title": "Come Usare il Generatore Tinta Sopracciglia IA",
-        "description": "Ottieni un'anteprima realistica della tinta sopracciglia in quattro semplici passaggi:",
+        "description": "Ottieni un'anteprima realistica della tinta sopracciglia in quattro semplici passaggi. Nessuna registrazione richiesta per la prova gratuita.",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "Guida all'Uso della Tinta Sopracciglia IA"
+          "alt": "Passaggi d'Uso del Generatore Tinta Sopracciglia IA"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "Carica una Foto Chiara",
-            "description": "Usa una foto frontale con buona illuminazione e le sopracciglia ben visibili, in modo che l'IA possa mappare accuratamente la forma delle tue sopracciglia.",
+            "title": "Carica una Foto Frontale Chiara",
+            "description": "Usa una foto ben illuminata con le sopracciglia chiaramente visibili. Evita occhiali da sole, cappelli, capelli che coprono le sopracciglia o angolazioni laterali. L'IA mappa la forma delle tue sopracciglia da questa singola immagine.",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "Carica Foto"
+              "alt": "Carica Foto per Anteprima Tinta Sopracciglia"
             }
           },
           {
             "title": "Scegli il Tuo Stile di Tinta Sopracciglia",
-            "description": "Scegli tra gel sopracciglia colorato, laminazione e tinta sopracciglia, tinta professionale sopracciglia o opzioni brow code tint.",
+            "description": "Scegli tra oltre 200 stili selezionati tra tinte naturali, tinte intense, laminazione sopracciglia e combinazioni di tinta ciglia + sopracciglia — oppure descrivi la tua tonalità nel campo prompt.",
             "image": {
               "src": "/imgs/features/6.png",
-              "alt": "Seleziona Stile Tinta Sopracciglia"
+              "alt": "Scegli Stile Tinta Sopracciglia"
             }
           },
           {
-            "title": "Genera l'Anteprima della Tinta Sopracciglia",
-            "description": "L'IA crea immagini realistiche di tinta sopracciglia prima e dopo in pochi secondi, fondendo il colore con la forma naturale delle tue sopracciglia.",
+            "title": "Genera la Tua Anteprima",
+            "description": "L'IA elabora la tua foto in 8–15 secondi e restituisce un'anteprima fotorealistica delle tue sopracciglia nello stile di tinta, laminazione o gel scelto.",
             "image": {
               "src": "/imgs/features/7.png",
               "alt": "Genera Anteprima Tinta Sopracciglia"
@@ -150,10 +142,10 @@
           },
           {
             "title": "Scarica e Condividi",
-            "description": "Salva foto ad alta risoluzione di tinta sopracciglia prima e dopo da mostrare al tuo professionista o estetista al prossimo appuntamento.",
+            "description": "Salva l'anteprima ad alta risoluzione sul tuo dispositivo. Condividila con il tuo artista delle sopracciglia prima dell'appuntamento — oppure pubblicala sui social per le reazioni delle amiche prima di prenotare.",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "Scarica Risultati Tinta Sopracciglia"
+              "alt": "Scarica Anteprima Tinta Sopracciglia"
             }
           }
         ],
@@ -161,37 +153,37 @@
       },
       "features": {
         "id": "features",
-        "title": "Funzionalità Chiave del Generatore Tinta Sopracciglia IA",
-        "description": "Uno studio virtuale completo per tonalità, stili e confronti prima e dopo della tinta sopracciglia.",
+        "title": "Funzionalità del Generatore",
+        "description": "Tutto ciò che il generatore di tinta sopracciglia online gratuito sa fare — a colpo d'occhio.",
         "items": [
           {
-            "title": "Anteprima Tinta Professionale Sopracciglia",
-            "description": "Simulazione di tinta professionale sopracciglia di qualità salone che abbina il colore della tinta alla forma naturale delle sopracciglia e al tono della pelle.",
+            "title": "Output di Qualità Salone",
+            "description": "GPT Image 2 produce anteprime che artisti delle sopracciglia di tutto il mondo accettano come riferimenti per le consulenze — non illustrazioni stilizzate.",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "Abbinamento Tonalità Gel Sopracciglia Colorato",
-            "description": "Prova diverse tonalità di gel sopracciglia colorato, dal tortora sottile all'espresso intenso, e trova il miglior gel sopracciglia colorato per te.",
-            "icon": "RiWomenLine"
-          },
-          {
-            "title": "Laminazione e Tinta Sopracciglia",
-            "description": "Visualizza la laminazione combinata con la tinta per sopracciglia sollevate, definite e con un colore intenso in un unico look.",
+            "title": "Libreria Tonalità Gel Sopracciglia Colorato",
+            "description": "Oltre 12 tonalità di gel sopracciglia colorato, dal tortora morbido all'espresso intenso. Trova la tua nuance prima di acquistare qualsiasi prodotto.",
             "icon": "RiPaletteLine"
           },
           {
+            "title": "Anteprime di Trattamenti Combinati",
+            "description": "Visualizza in anteprima combinazioni di laminazione sopracciglia + tinta, tinta ciglia e sopracciglia, oppure henné + tinta tradizionale in un'unica generazione.",
+            "icon": "RiLayoutGridLine"
+          },
+          {
             "title": "Download ad Alta Risoluzione",
-            "description": "Immagini nitide di tinta sopracciglia prima e dopo pronte da salvare e condividere con il tuo professionista.",
+            "description": "Prova gratuita: risoluzione standard. Piani a pagamento: download HD adatti per consulenze con clienti e social media.",
             "icon": "RiHdLine"
           },
           {
-            "title": "Confronto Prima e Dopo",
-            "description": "Slider affiancato tinta sopracciglia prima e dopo per vedere esattamente come la tinta trasforma le tue sopracciglia.",
+            "title": "Confronto Affiancato",
+            "description": "Confronta le tue sopracciglia naturali con ogni anteprima di tinta generata utilizzando lo slider integrato prima e dopo.",
             "icon": "RiCompareLine"
           },
           {
-            "title": "Ottimizzato per Mobile",
-            "description": "Funziona su qualsiasi dispositivo — telefono, tablet o desktop — per visualizzare stili di tinta sopracciglia ovunque.",
+            "title": "Compatibile con Mobile",
+            "description": "Funziona in qualsiasi browser — telefono, tablet o desktop. Nessuna app da installare. Nessuna registrazione per iniziare.",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -199,158 +191,198 @@
       "brow_tint_gallery": {
         "block": "brow-tint-gallery",
         "id": "brow_tint_gallery",
-        "title": "Esplora Stili di Tinta Sopracciglia per Categoria",
-        "description": "Sfoglia stili di tinta sopracciglia pronti per l'IA e tocca qualsiasi look per provarlo sulla tua foto con il generatore di tinta sopracciglia IA.",
+        "title": "Sfoglia Oltre 200 Stili di Tinta Sopracciglia per Categoria",
+        "description": "Tocca qualsiasi look per provarlo sulla tua foto con il generatore di tinta sopracciglia IA.",
         "limit": 12,
         "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
             "title": "Tinte Sopracciglia Naturali",
-            "description": "Tonalità naturali e sottili di tinta sopracciglia che valorizzano le tue sopracciglia con una definizione morbida. Visualizza le migliori tonalità per un look naturalmente curato.",
+            "description": "Tonalità sottili di tinta sopracciglia che valorizzano le tue sopracciglia naturali con una definizione morbida. Ideali per look quotidiani e per chi prova la tinta per la prima volta.",
             "cta_label": "Prova tinte naturali"
           },
           {
             "key": "women",
             "title": "Tinte Sopracciglia Intense",
-            "description": "Look drammatici e definiti di tinta sopracciglia per un finish d'impatto. Visualizza tonalità espresso intenso, cioccolato ricco e tinta professionale sopracciglia decisa.",
+            "description": "Look drammatici e definiti per un finish d'impatto. Espresso intenso, cioccolato ricco e tonalità decise di tinta professionale sopracciglia.",
             "cta_label": "Prova tinte intense"
           },
           {
             "key": "boys",
             "title": "Stili Laminazione Sopracciglia",
-            "description": "Look di sopracciglia laminate e sollevate combinate con la tinta. Visualizza stili di laminazione e tinta sopracciglia per sopracciglia più piene e scolpite.",
+            "description": "Look di sopracciglia laminate e sollevate combinate con la tinta. Visualizza laminazione e tinta sopracciglia per sopracciglia più piene e scolpite.",
             "cta_label": "Prova stili laminazione"
           },
           {
             "key": "girls",
             "title": "Tinta Ciglia e Sopracciglia",
-            "description": "Stili combinati di tinta ciglia e sopracciglia per una trasformazione completa che incornicia lo sguardo. Visualizza look coordinati di tinta ciglia e sopracciglia in pochi secondi.",
+            "description": "Tinta combinata di ciglia e sopracciglia per una trasformazione completa che incornicia lo sguardo. Visualizza look coordinati di tinta ciglia e sopracciglia in pochi secondi.",
             "cta_label": "Prova tinta ciglia e sopracciglia"
           }
         ],
-        "tip": "Ogni anteprima è gratuita. Nuovi stili di tinta sopracciglia aggiunti regolarmente."
+        "tip": "Ogni anteprima è gratuita da provare. Nuovi stili di tinta sopracciglia aggiunti regolarmente."
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Perché Usare Questo Generatore Tinta Sopracciglia IA",
+        "label": "Vantaggi",
+        "description": "Anteprime veloci, private e di qualità salone — per decisioni sicure sulla tinta sopracciglia.",
+        "items": [
+          {
+            "title": "Velocissimo — Risultati in Pochi Secondi",
+            "description": "Genera più look di tinta sopracciglia da una sola foto in meno di 15 secondi. Nessun appuntamento, nessun prodotto da acquistare, nessuna attesa tra un'anteprima e l'altra.",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Generazione Tinta Sopracciglia IA Veloce"
+            }
+          },
+          {
+            "title": "Privacy al Primo Posto — Foto Eliminate Automaticamente",
+            "description": "Le foto vengono elaborate in modo sicuro ed eliminate automaticamente dopo la generazione. Non condividiamo, vendiamo né addestriamo modelli IA sulle foto caricate.",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/image2.png",
+              "alt": "Elaborazione Foto con Privacy al Primo Posto"
+            }
+          },
+          {
+            "title": "Riferimenti di Qualità Salone",
+            "description": "Artisti delle sopracciglia e proprietari di saloni usano queste anteprime durante le consulenze. Porta l'immagine scaricata al tuo appuntamento invece di descrivere a parole ciò che vuoi.",
+            "icon": "RiUserStarLine",
+            "image": {
+              "src": "/imgs/features/image3.png",
+              "alt": "Riferimento Tinta Sopracciglia di Qualità Salone"
+            }
+          }
+        ]
       },
       "testimonials": {
         "id": "testimonials",
         "title": "Cosa Dicono gli Utenti del Generatore Tinta Sopracciglia IA",
-        "description": "Utenti reali che hanno visualizzato look di tinta sopracciglia con il generatore di tinta sopracciglia IA.",
+        "description": "Reazioni reali di persone che hanno usato il generatore per pianificare i loro appuntamenti di tinta sopracciglia.",
         "items": [
           {
             "name": "Sarah Jenkins",
             "role": "Beauty Blogger",
-            "quote": "Ero preoccupata di scegliere una tinta troppo scura per le sopracciglia. Il generatore di tinta sopracciglia IA mi ha mostrato un confronto realistico prima e dopo, così ho prenotato l'appuntamento con totale sicurezza.",
+            "quote": "Ho generato 12 tonalità diverse da una sola foto in meno di due minuti. Ho scelto l'espresso, ho portato lo screenshot dalla mia artista delle sopracciglia e sono uscita con esattamente quel risultato.",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "Sarah Jenkins"
+              "alt": "Sarah Jenkins - Beauty Blogger"
             }
           },
           {
             "name": "Mike Ross",
             "role": "Modello",
-            "quote": "Ho visualizzato diverse tonalità di tinta professionale sopracciglia per un servizio fotografico e ho mostrato al mio professionista esattamente il look desiderato. Un enorme risparmio di tempo.",
+            "quote": "Per i servizi fotografici genero 4–5 look per le sopracciglia per ogni outfit e invio la galleria al team trucco prima dell'arrivo. Un risparmio enorme di tempo nel flusso di lavoro.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "Mike Ross"
+              "alt": "Mike Ross - Modello"
             }
           },
           {
             "name": "Emily Chen",
             "role": "Studentessa",
-            "quote": "Ho provato tonalità di gel sopracciglia colorato dal tortora all'espresso nell'anteprima IA. Mi ha aiutato a scegliere la migliore tinta sopracciglia per il mio tono di pelle prima di acquistare qualsiasi prodotto.",
+            "quote": "La prova gratuita ha funzionato benissimo. Ho provato 3 tonalità, ho scaricato la mia preferita e non ho speso un centesimo. La mia artista delle sopracciglia ha usato l'immagine come riferimento in salone.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "Emily Chen"
+              "alt": "Emily Chen - Studentessa"
             }
           },
           {
             "name": "David Smith",
-            "role": "Ingegnere Software",
-            "quote": "L'anteprima di laminazione e tinta sopracciglia era incredibilmente realistica. Ho mostrato l'immagine alla mia estetista e ho ottenuto esattamente il risultato desiderato.",
+            "role": "Make-up Artist",
+            "quote": "Il simulatore di laminazione sopracciglia è incredibilmente accurato. Mostro alle clienti l'anteprima IA durante la consulenza e si convincono il doppio più velocemente.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "David Smith"
+              "alt": "David Smith - Make-up Artist"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "Make-up Artist",
-            "quote": "Come make-up artist, uso il generatore di tinta sopracciglia IA per mostrare alle clienti come apparirà il loro abbinamento tinta ciglia e sopracciglia. Le anteprime di qualità salone sono incredibilmente accurate.",
+            "role": "Proprietaria di Salone",
+            "quote": "Paghiamo il piano Pro. Generare anteprime per consulenze per oltre 30 clienti a settimana ripaga la spesa nel primo giorno di ogni ciclo di fatturazione.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "Jessica Lee"
+              "alt": "Jessica Lee - Proprietaria di Salone"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "Studente",
-            "quote": "Veloce, gratuito e facile. Ho caricato una foto e ho ottenuto più opzioni di tinta sopracciglia prima e dopo in pochi secondi. Nessuna installazione necessaria.",
+            "role": "Ingegnere Software",
+            "quote": "Foto caricata, stile scelto, risultato ottenuto in circa 10 secondi. L'esperienza utente è pulita. L'ho usata come riferimento per la mia primissima visita in salone.",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "Tom Brown"
+              "alt": "Tom Brown - Ingegnere Software"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Domande Frequenti",
-        "description": "FAQ sul generatore di tinta sopracciglia IA, consigli per le foto e come ottenere i migliori risultati.",
+        "title": "FAQ Generatore Tinta Sopracciglia IA",
+        "description": "Domande tecniche su requisiti delle foto, crediti, accuratezza e download.",
         "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
         "items": [
           {
-            "question": "Questo Generatore Tinta Sopracciglia IA è gratuito?",
-            "answer": "Sì. Puoi provare il generatore di tinta sopracciglia IA online con una prova gratuita per visualizzare molteplici stili e tonalità di tinta sopracciglia."
+            "question": "Quanto tempo richiede ogni generazione?",
+            "answer": "La maggior parte delle anteprime di tinta sopracciglia si completa in 8–15 secondi a seconda della dimensione dell'immagine e del carico del server. Le generazioni del piano Pro hanno priorità e in genere si completano in meno di 10 secondi."
           },
           {
-            "question": "Quanto sono realistiche le anteprime della tinta sopracciglia?",
-            "answer": "L'IA fonde ogni tonalità di tinta sopracciglia con la tua foto per un'anteprima realistica che tiene conto della forma naturale delle sopracciglia, del tono della pelle e dell'illuminazione."
+            "question": "Quale foto offre il risultato migliore?",
+            "answer": "Una foto frontale, ben illuminata, con le sopracciglia chiaramente visibili. Evita occhiali da sole, capelli sulle sopracciglia, angolazioni laterali, scarsa luce e immagini di cartoni animati. Un'espressione neutra funziona meglio per una mappatura accurata della forma delle sopracciglia."
           },
           {
-            "question": "Che tipo di foto funzionano meglio?",
-            "answer": "Per i migliori risultati, carica una foto chiara e frontale con buona illuminazione e le sopracciglia ben visibili. Evita foto in cui il viso è coperto da occhiali da sole, mascherine o capelli. Un'espressione neutra funziona meglio."
+            "question": "Quali formati di file posso caricare e scaricare?",
+            "answer": "Carica JPG o PNG fino a 10MB. Scarica come PNG (standard) o PNG HD (piani a pagamento). Le proporzioni originali della foto vengono mantenute, a meno che tu non ritagli con lo strumento integrato."
           },
           {
-            "question": "Posso visualizzare diverse tonalità di gel sopracciglia colorato?",
-            "answer": "Sì. Prova una gamma di tonalità di gel sopracciglia colorato — dal tortora morbido e marrone caldo all'espresso intenso — e confrontale affiancate per trovare il miglior gel sopracciglia colorato per il tuo look."
+            "question": "Quanti crediti costa ogni generazione?",
+            "answer": "Le generazioni standard costano 1 credito ciascuna. Le generazioni HD costano 2 crediti. La prova gratuita include un'allocazione iniziale di crediti. I piani a pagamento includono crediti mensili più riporto."
           },
           {
-            "question": "Qual è la differenza tra tinta sopracciglia e gel sopracciglia colorato?",
-            "answer": "La tinta professionale sopracciglia è una tintura semi-permanente applicata in salone che dura diverse settimane. Il gel sopracciglia colorato è un prodotto cosmetico quotidiano che aggiunge colore e tenuta. Il generatore di tinta sopracciglia IA può visualizzare entrambi gli stili così puoi decidere quale è giusto per te."
+            "question": "Posso generare più tonalità da una sola foto?",
+            "answer": "Sì. Carica una volta, poi genera tutte le tonalità o gli stili che i tuoi crediti permettono senza ricaricare. L'IA riutilizza la tua foto per ogni anteprima nella sessione."
           },
           {
-            "question": "I miei dati fotografici sono al sicuro?",
-            "answer": "Prendiamo la privacy molto seriamente. Le foto caricate vengono elaborate in modo sicuro per la generazione della tinta sopracciglia e non vengono archiviate permanentemente né condivise con terze parti."
+            "question": "Qual è la risoluzione massima?",
+            "answer": "Piano gratuito: fino a 1024×1024. Starter: fino a 1536×1536. Pro: fino a 2048×2048 con download HD abilitato."
           },
           {
-            "question": "Posso visualizzare laminazione e tinta sopracciglia insieme?",
-            "answer": "Sì. Seleziona lo stile laminazione e tinta sopracciglia per vedere sopracciglia sollevate e scolpite combinate con la tonalità di tinta scelta in un'unica anteprima realistica."
+            "question": "Le foto caricate vengono archiviate o usate per l'addestramento?",
+            "answer": "No. Le foto vengono elaborate in modo sicuro ed eliminate automaticamente dopo la generazione. Non condividiamo, vendiamo né addestriamo modelli IA sulle foto caricate."
           },
           {
-            "question": "Come trovo la migliore tinta sopracciglia per il mio tono di pelle?",
-            "answer": "Carica la tua foto e prova molteplici tonalità. L'IA considera il tuo tono di pelle e il colore naturale delle sopracciglia per generare anteprime realistiche, aiutandoti a trovare l'abbinamento perfetto prima di visitare un professionista."
+            "question": "Qual è la differenza tra il simulatore di laminazione sopracciglia e il generatore di tinta sopracciglia?",
+            "answer": "Stesso generatore, preset di stile differenti. Il simulatore di laminazione si concentra sulla forma delle sopracciglia sollevate; il generatore di tinta si concentra sul colore. Entrambi possono essere combinati in un'unica generazione selezionando stili di laminazione sopracciglia + tinta."
           },
           {
-            "question": "Posso mostrare la mia anteprima tinta sopracciglia IA al mio professionista?",
-            "answer": "Sì. Scarica la tua anteprima tinta sopracciglia prima e dopo e mostrala al tuo professionista o estetista per comunicare esattamente la tonalità e lo stile desiderati."
+            "question": "Posso visualizzare in anteprima una tonalità personalizzata non presente in galleria?",
+            "answer": "Il piano Pro supporta l'inserimento di tonalità personalizzate tramite il campo prompt (es. descrivi un colore Pantone specifico o un nome di tonalità). I piani Free e Starter usano la libreria selezionata di oltre 200 tonalità."
           },
           {
-            "question": "Quanto tempo ci vuole per generare un'anteprima di tinta sopracciglia?",
-            "answer": "La maggior parte delle anteprime di tinta sopracciglia sono pronte in pochi secondi, a seconda della dimensione dell'immagine e del traffico."
+            "question": "Funziona su mobile?",
+            "answer": "Sì. Il generatore di tinta sopracciglia IA funziona interamente nel tuo browser — telefono, tablet o desktop. Nessuna app da installare. Nessuna registrazione richiesta per la prova gratuita."
           },
           {
-            "question": "Devo installare qualcosa?",
-            "answer": "No. Il generatore di tinta sopracciglia IA funziona interamente nel tuo browser — nessun download o installazione necessari."
+            "question": "Cosa faccio se la mia anteprima generata sembra poco realistica?",
+            "answer": "Per prima cosa, prova con una foto di qualità superiore, con illuminazione migliore e una vista più chiara delle sopracciglia. Se i risultati sembrano ancora sbagliati, passa a un preset di stile diverso — alcune tonalità rendono più accuratamente su determinati toni della pelle. Il supporto Pro può investigare casi specifici."
+          },
+          {
+            "question": "Posso usare l'immagine generata commercialmente?",
+            "answer": "L'uso personale è illimitato. L'uso commerciale (marketing per saloni, annunci sponsorizzati sui social, editoriali su riviste) richiede una licenza del piano Pro. Il piano Pro garantisce diritti commerciali per tutte le generazioni durante il periodo di abbonamento attivo."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Pronta per la Tua Tinta Sopracciglia Perfetta?",
-        "description": "Smetti di tirare a indovinare il risultato della tinta sopracciglia. Prova il generatore di tinta sopracciglia IA ora e condividi la tua anteprima con un professionista o salone.",
+        "title": "Genera la Tua Prima Anteprima di Tinta Sopracciglia",
+        "description": "Prova gratuita. Nessuna registrazione. ~10 secondi per generazione.",
         "buttons": [
           {
-            "title": "Inizia l'Anteprima Tinta Sopracciglia Ora",
+            "title": "Genera la Mia Anteprima Tinta Sopracciglia",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"

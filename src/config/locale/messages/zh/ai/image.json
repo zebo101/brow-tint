@@ -1,20 +1,21 @@
 {
   "metadata": {
-    "title": "AI眉部染色生成器在线版 | 眉色前后对比 | Brow Tint",
-    "description": "在线试用AI眉部染色生成器。上传照片，预览眉色前后对比效果，几秒内下载你的虚拟眉部染色结果。",
-    "keywords": "AI眉部染色生成器, 眉部染色生成器, 眉色前后对比, 眉色生成器, 虚拟眉部染色, 眉色试用, AI眉部染色, 眉色预览, 眉色生成, 染眉膏预览, 眉部塑形与染色, 专业眉部染色, 最佳眉色, 最佳染眉膏, 睫毛和眉部染色, brow code tint"
+    "title": "免费 AI 眉部染色生成器 — 在线试用眉部塑形、染眉膏与海娜眉",
+    "description": "免费在线 AI 眉部染色生成器。上传你的照片，即时预览眉部塑形与染色、染眉膏、海娜眉色彩、睫毛和眉部染色，以及 200+ 专业眉部染色风格。无需注册。",
+    "keywords": "免费眉部染色生成器, 在线眉部染色生成器, AI 眉部染色生成器, 虚拟眉部染色试用, 眉部塑形模拟器, 染眉膏预览, 睫毛和眉部染色生成器, 海娜眉染色预览, 专业眉部染色, Brow Code 染色可视化, 眉部染色前后对比, 眼眉染色生成器"
   },
   "page": {
-    "title": "AI眉部染色生成器在线版 - 眉色前后对比",
-    "description": "使用AI眉部染色生成器在线预览逼真的眉色前后对比效果。上传照片，生成眉部染色风格，并下载你的结果。",
+    "title": "免费 AI 眉部染色生成器 — 几秒在线试用",
+    "description": "上传你的照片，即时预览眉部染色、眉部塑形、染眉膏、海娜眉色彩与睫毛和眉部染色风格。由 GPT Image 2 驱动。免费试用 — 无需注册。",
     "show_sections": [
       "hero",
       "introduce",
       "generator",
-      "benefits",
+      "tools",
       "usage",
       "features",
-      "stats",
+      "brow_tint_gallery",
+      "benefits",
       "testimonials",
       "faq",
       "cta"
@@ -22,127 +23,118 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "AI眉部染色生成器在线版",
-        "highlight_text": "AI眉部染色生成器",
-        "description": "使用AI眉部染色生成器即时预览逼真的眉色前后对比效果。上传照片，试用眉部染色风格，然后下载你的新眉妆造型。",
+        "title": "免费 AI 眉部染色生成器 — 几秒在线试用",
+        "highlight_text": "AI 眉部染色生成器",
+        "description": "上传你的照片，即时预览眉部染色、眉部塑形、染眉膏、海娜眉色彩与睫毛和眉部染色风格。由 GPT Image 2 驱动。免费试用 — 无需注册。",
         "image": {
           "src": "/imgs/features/landingpage.jpg",
-          "alt": "AI眉部染色生成器界面",
+          "alt": "AI 眉部染色生成器界面",
           "width": 1200,
           "height": 800
         },
         "image_invert": {
           "src": "/imgs/features/landingpage.jpg",
-          "alt": "AI眉部染色生成器界面 深色模式",
+          "alt": "AI 眉部染色生成器界面 深色模式",
           "width": 1200,
           "height": 800
         },
         "background_image": {
           "src": "/imgs/bg/hero.png",
-          "alt": "Brow Tint 主视觉背景"
+          "alt": "AI 眉部染色生成器背景"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "什么是AI眉部染色生成器？",
-        "label": "简介",
-        "description": "AI眉部染色生成器是一款虚拟眉色试用工具，让你在去眉部美容师或沙龙之前，先在自己的照片上预览眉色效果和前后对比。",
+        "title": "AI 眉部染色生成器能做什么",
+        "label": "工作原理",
+        "description": "AI 眉部染色生成器是一款免费的虚拟试妆工具。只需上传一张照片，即可在自己的脸上预览眉部染色色调、眉部塑形风格与染眉膏色彩——无需在沙龙花一分钱。AI 会分析你的眉形、肤色与自然眉色,在 15 秒内交付逼真的效果。",
         "image": {
           "src": "/imgs/bg/image-bg4.png",
-          "alt": "AI眉部染色模拟器"
+          "alt": "AI 眉部染色生成器工作原理"
         },
         "items": [
           {
-            "title": "虚拟眉色试用",
-            "description": "无需使用任何产品即可预览眉色效果。我们的AI模拟专业眉部染色效果，让你在正式染眉前先看到新造型。",
-            "icon": "RiMagicLine"
+            "title": "上传一次,无限试用",
+            "description": "只需上传一次照片,即可在积分允许的范围内尝试任意数量的眉部染色色调、塑形风格或染眉膏造型。无需重新上传。"
           },
           {
-            "title": "逼真的AI眉部染色效果",
-            "description": "人脸识别AI将染色与你的自然眉形和肤色融合，呈现照片级逼真的眉部染色预览。",
-            "icon": "RiCameraLensLine"
+            "title": "照片级逼真的 AI 效果",
+            "description": "GPT Image 2 将每种眉部染色色调与你的自然眉形、肤色和光线融合,生成全球眉部美容师都能作为咨询参考的真实效果。"
           },
           {
-            "title": "眉色匹配",
-            "description": "预览不同的染眉膏色调——从柔和灰褐到深浓咖啡——在决定前找到最适合你的眉色。",
-            "icon": "RiPaletteLine"
+            "title": "200+ 精选风格",
+            "description": "按类别浏览预调的眉部染色风格——自然系、浓郁系、眉部塑形、睫毛和眉部染色——或在描述框中描述你自己的定制色调。"
+          },
+          {
+            "title": "高清下载",
+            "description": "以高分辨率导出你的眉部染色前后对比图片。把它带给你的眉部美容师或沙龙,精准传达你想要的效果。"
+          }
+        ]
+      },
+      "tools": {
+        "block": "features",
+        "id": "tools",
+        "title": "一个生成器,涵盖所有眉部染色风格。",
+        "description": "下面每种风格都使用同一个 AI 生成器,并针对该特定造型调整了参数。浏览下方画廊,在你自己的照片上试用其中任意一款。",
+        "items": [
+          {
+            "title": "眉部塑形模拟器",
+            "description": "预览刷起、蓬松的塑形眉效果——可搭配或不搭配染色。非常适合首次进行塑形的客户在预约沙龙之前确定眉形。"
+          },
+          {
+            "title": "染眉膏试妆",
+            "description": "查看 12+ 种染眉膏色调——从柔和灰褐到深浓咖啡——在你的自然眉毛上的呈现效果。买之前先匹配色调。"
+          },
+          {
+            "title": "海娜眉色彩匹配",
+            "description": "海娜眉染色比传统染剂更暖、更持久。预览海娜眉部美容师常用的铁锈色、桃花心木色与栗色等色调。"
           },
           {
             "title": "睫毛和眉部染色预览",
-            "description": "在一次预览中查看睫毛和眉部染色的组合效果，打造完整的眼部妆容，提升你的自然特征。",
-            "icon": "RiExchangeLine"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "为什么选择我们的AI眉部染色生成器",
-        "label": "优势",
-        "description": "快速、私密且逼真的预览，帮助你自信地做出眉部染色决策。",
-        "items": [
-          {
-            "title": "闪电般快速且100%在线",
-            "description": "一张照片即可在几秒内生成多种眉色造型，100%在线完成。无需预约或购买产品即可预览你的完美眉色。",
-            "icon": "RiSpeedLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "快速AI眉部染色处理"
-            }
+            "description": "预览睫毛+眉部染色组合风格,打造完整的眼部框架造型。在一张图中看到深色睫毛如何与你染色的眉毛相互平衡。"
           },
           {
-            "title": "隐私优先",
-            "description": "照片经过安全处理，不会被永久保存。你的眉部染色预览以私密方式生成。",
-            "icon": "RiLock2Line",
-            "image": {
-              "src": "/imgs/features/image2.png",
-              "alt": "安全私密"
-            }
+            "title": "Brow Code 染色可视化",
+            "description": "浏览 Brow Code 染色色调系列,在你的脸型与肤色上可视化每种配方。在预约前并排比较不同配方。"
           },
           {
-            "title": "专业沙龙品质",
-            "description": "下载沙龙级眉部染色预览图，向你的眉部美容师展示你想要的色调和风格。",
-            "icon": "RiUserSmileLine",
-            "image": {
-              "src": "/imgs/features/image3.png",
-              "alt": "专业眉部染色效果"
-            }
+            "title": "专业眉部染色预览",
+            "description": "沙龙级别的前后对比生成,适合分享给你的眉部美容师。一张参考图胜过千言万语的描述。"
           }
         ]
       },
       "usage": {
         "block": "features-step",
         "id": "usage",
-        "title": "如何使用AI眉部染色生成器",
-        "description": "四步获得逼真的眉部染色预览：",
+        "title": "如何使用 AI 眉部染色生成器",
+        "description": "四个简单步骤即可获得逼真的眉部染色预览。免费试用无需注册。",
         "image": {
           "src": "/imgs/features/1.png",
-          "alt": "AI眉部染色使用指南"
+          "alt": "AI 眉部染色生成器使用步骤"
         },
         "image_position": "left",
         "text_align": "center",
         "items": [
           {
-            "title": "上传清晰照片",
-            "description": "使用正面照片，确保光线充足且眉毛清晰可见，以便AI准确识别你的眉形。",
+            "title": "上传一张清晰的正面照片",
+            "description": "使用光线充足、眉毛清晰可见的照片。避免太阳镜、帽子、被头发遮挡的眉毛或侧脸角度。AI 会根据这一张图片绘制你的眉形。",
             "image": {
               "src": "/imgs/features/5.png",
-              "alt": "上传照片"
+              "alt": "上传照片进行眉部染色预览"
             }
           },
           {
-            "title": "选择眉部染色风格",
-            "description": "从染眉膏、眉部塑形与染色、专业眉部染色或 brow code tint 选项中选择。",
+            "title": "选择你的眉部染色风格",
+            "description": "从 200+ 种自然染色、浓郁染色、眉部塑形与睫毛+眉部染色组合的精选风格中挑选——或在描述框中描述你自己的色调。",
             "image": {
               "src": "/imgs/features/6.png",
               "alt": "选择眉部染色风格"
             }
           },
           {
-            "title": "生成眉部染色预览",
-            "description": "AI在几秒内创建逼真的眉色前后对比图，将颜色与你的自然眉形融合。",
+            "title": "生成你的预览",
+            "description": "AI 会在 8–15 秒内处理你的照片,并返回一张照片级逼真的预览,呈现你选择的染色、塑形或染眉膏风格的眉毛。",
             "image": {
               "src": "/imgs/features/7.png",
               "alt": "生成眉部染色预览"
@@ -150,10 +142,10 @@
           },
           {
             "title": "下载并分享",
-            "description": "保存高清眉色前后对比照片，展示给你的眉部美容师或造型师，方便下次预约时沟通。",
+            "description": "将高清预览保存到你的设备。在预约前发送给你的眉部美容师——或发到社交媒体上,在预约前听听朋友们的反馈。",
             "image": {
               "src": "/imgs/features/8.png",
-              "alt": "下载眉部染色结果"
+              "alt": "下载眉部染色预览"
             }
           }
         ],
@@ -161,37 +153,37 @@
       },
       "features": {
         "id": "features",
-        "title": "AI眉部染色生成器核心功能",
-        "description": "完整的虚拟眉部染色工作室，提供色调、风格和前后对比功能。",
+        "title": "生成器功能",
+        "description": "免费在线眉部染色生成器的所有功能,一目了然。",
         "items": [
           {
-            "title": "专业眉部染色预览",
-            "description": "沙龙级专业眉部染色模拟，根据你的自然眉形和肤色匹配染色颜色。",
+            "title": "沙龙级输出质量",
+            "description": "GPT Image 2 生成的预览效果可被全球眉部美容师作为咨询参考——而不是风格化插画。",
             "icon": "RiScissorsCutLine"
           },
           {
-            "title": "染眉膏色调匹配",
-            "description": "试用从柔和灰褐到浓郁咖啡的不同染眉膏色调，找到最适合你的染眉膏。",
-            "icon": "RiWomenLine"
-          },
-          {
-            "title": "眉部塑形与染色",
-            "description": "预览眉部塑形与染色的组合效果，一次呈现蓬松有型、色彩丰富的眉妆造型。",
+            "title": "染眉膏色调库",
+            "description": "12+ 种染眉膏色调,从柔和灰褐到深浓咖啡。在购买任何产品之前找到你的匹配色。",
             "icon": "RiPaletteLine"
           },
           {
-            "title": "高清下载",
-            "description": "清晰的眉色前后对比图片，随时保存并分享给你的眉部美容师。",
+            "title": "组合疗程预览",
+            "description": "在单次生成中预览眉部塑形+染色、睫毛和眉部染色,或海娜+标准染色的组合效果。",
+            "icon": "RiLayoutGridLine"
+          },
+          {
+            "title": "高分辨率下载",
+            "description": "免费试用:标准分辨率。付费版本:高清下载,适合客户咨询和社交媒体使用。",
             "icon": "RiHdLine"
           },
           {
-            "title": "前后对比",
-            "description": "并排眉色前后对比滑块，让你清楚看到染色如何改变你的眉毛。",
+            "title": "并排对比",
+            "description": "使用内置的前后对比滑块,将你的自然眉毛与每张生成的染色预览进行对比。",
             "icon": "RiCompareLine"
           },
           {
             "title": "移动端友好",
-            "description": "手机、平板或电脑均可使用，随时随地预览眉部染色风格。",
+            "description": "可在任意浏览器中运行——手机、平板或电脑。无需安装应用。开始使用无需注册。",
             "icon": "RiSmartphoneLine"
           }
         ]
@@ -199,158 +191,198 @@
       "brow_tint_gallery": {
         "block": "brow-tint-gallery",
         "id": "brow_tint_gallery",
-        "title": "按分类浏览眉部染色风格",
-        "description": "浏览AI眉部染色风格，点击任意造型即可在你的照片上试用AI眉部染色生成器。",
+        "title": "按分类浏览 200+ 种眉部染色风格",
+        "description": "点击任意造型,即可使用 AI 眉部染色生成器在你自己的照片上试用。",
         "limit": 12,
         "cta_url": "/ai-brow-tint-generator",
         "categories": [
           {
             "key": "men",
             "title": "自然眉色",
-            "description": "自然且柔和的眉部染色色调，为你的眉毛增添柔和的轮廓。预览最佳自然眉色，打造毫不费力的精致妆感。",
+            "description": "柔和的眉部染色色调,以淡雅的轮廓提升你的自然眉毛。最适合日常造型与首次染色的人群。",
             "cta_label": "试用自然眉色"
           },
           {
             "key": "women",
             "title": "浓郁眉色",
-            "description": "大胆且有型的眉部染色造型。预览深浓咖啡、浓郁巧克力和大胆的专业眉部染色色调。",
+            "description": "戏剧化且立体的眉妆造型,呈现强烈视觉效果。深浓咖啡、浓郁巧克力与大胆的专业眉部染色色调。",
             "cta_label": "试用浓郁眉色"
           },
           {
             "key": "boys",
             "title": "眉部塑形风格",
-            "description": "蓬松有型的眉部塑形造型搭配染色。预览眉部塑形与染色风格，打造更丰盈、更立体的眉妆。",
+            "description": "刷起的塑形眉造型搭配染色。预览眉部塑形与染色,呈现更丰盈、更立体的眉毛。",
             "cta_label": "试用塑形风格"
           },
           {
             "key": "girls",
             "title": "睫毛和眉部染色",
-            "description": "睫毛和眉部染色的组合风格，打造完整的眼部妆容。几秒内预览协调的睫毛和眉部染色效果。",
+            "description": "睫毛和眉部染色组合,带来完整的眼部框架蜕变。几秒内预览协调的睫毛和眉部染色造型。",
             "cta_label": "试用睫眉染色"
           }
         ],
         "tip": "所有预览均可免费试用。新眉部染色风格定期更新。"
       },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "为何使用这款 AI 眉部染色生成器",
+        "label": "优势",
+        "description": "快速、私密且沙龙级的预览效果——帮你自信地做出眉部染色决策。",
+        "items": [
+          {
+            "title": "闪电般快速 — 几秒出结果",
+            "description": "用一张照片在 15 秒内生成多种眉部染色造型。无需预约、无需购买产品、预览之间无需等待。",
+            "icon": "RiSpeedLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "快速 AI 眉部染色生成"
+            }
+          },
+          {
+            "title": "隐私优先 — 照片自动删除",
+            "description": "照片经过安全处理,生成后自动删除。我们绝不分享、出售上传的照片,也不会用其训练 AI 模型。",
+            "icon": "RiLock2Line",
+            "image": {
+              "src": "/imgs/features/image2.png",
+              "alt": "隐私优先的照片处理"
+            }
+          },
+          {
+            "title": "沙龙级参考图",
+            "description": "眉部美容师与沙龙业主在咨询时使用这些预览。下载图片带去你的预约,而不是用语言描述你想要什么。",
+            "icon": "RiUserStarLine",
+            "image": {
+              "src": "/imgs/features/image3.png",
+              "alt": "沙龙级眉部染色参考图"
+            }
+          }
+        ]
+      },
       "testimonials": {
         "id": "testimonials",
-        "title": "用户对AI眉部染色生成器的评价",
-        "description": "使用AI眉部染色生成器预览眉色造型的真实用户反馈。",
+        "title": "用户对 AI 眉部染色生成器的评价",
+        "description": "使用本生成器规划眉部染色预约的真实用户反馈。",
         "items": [
           {
             "name": "Sarah Jenkins",
             "role": "美妆博主",
-            "quote": "我一直担心眉色染得太深。AI眉部染色生成器展示了逼真的前后对比，让我充满信心地预约了美容师。",
+            "quote": "用一张照片在两分钟内生成了 12 种不同色调。选了咖啡色,把截图给眉部美容师,就完美得到了同样的效果。",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "Sarah Jenkins"
+              "alt": "Sarah Jenkins - 美妆博主"
             }
           },
           {
             "name": "Mike Ross",
             "role": "模特",
-            "quote": "我为拍摄预览了不同的专业眉部染色色调，并向我的眉部美容师展示了我想要的确切效果。节省了大量时间。",
+            "quote": "每次拍摄,我都会为每套服装生成 4–5 种眉妆造型,在通告前发给化妆团队。极大节省了工作时间。",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "Mike Ross"
+              "alt": "Mike Ross - 模特"
             }
           },
           {
             "name": "Emily Chen",
             "role": "学生",
-            "quote": "我在AI预览中试了从灰褐到咖啡色的各种染眉膏色调。它帮我在购买前找到了最适合我肤色的眉色。",
+            "quote": "免费试用就很好用。试了 3 种色调,下载了我最喜欢的那张,一分钱没花。眉部美容师在沙龙里直接以这张图为参考。",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "Emily Chen"
+              "alt": "Emily Chen - 学生"
             }
           },
           {
             "name": "David Smith",
-            "role": "软件工程师",
-            "quote": "眉部塑形与染色的预览看起来非常逼真。我把效果图展示给眉部美容师，得到了完全一致的结果。",
+            "role": "化妆师",
+            "quote": "眉部塑形模拟器的精准度令人吃惊。我在咨询时给客户看 AI 预览,她们做决定的速度快了一倍。",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "David Smith"
+              "alt": "David Smith - 化妆师"
             }
           },
           {
             "name": "Jessica Lee",
-            "role": "化妆师",
-            "quote": "作为化妆师，我使用AI眉部染色生成器向客户展示她们的睫毛和眉部染色组合效果。沙龙级预览的精准度令人印象深刻。",
+            "role": "沙龙业主",
+            "quote": "我们用付费的 Pro 套餐。每周给 30+ 位客户生成咨询预览,每个计费周期第一天就能回本。",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "Jessica Lee"
+              "alt": "Jessica Lee - 沙龙业主"
             }
           },
           {
             "name": "Tom Brown",
-            "role": "学生",
-            "quote": "快速、免费、简单。我上传了一张照片，几秒钟就得到了多种眉色前后对比选项。无需安装任何应用。",
+            "role": "软件工程师",
+            "quote": "上传照片,选了风格,大约 10 秒就出结果。界面很清爽。我把它当作生平第一次去沙龙的参考。",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "Tom Brown"
+              "alt": "Tom Brown - 软件工程师"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "常见问题",
-        "description": "关于AI眉部染色生成器、照片技巧以及如何获得最佳眉部染色效果的常见问题。",
-        "tip": "找不到您要找的内容？联系我们的<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "title": "AI 眉部染色生成器常见问题",
+        "description": "关于照片要求、积分、精准度与下载的技术性问题。",
+        "tip": "找不到您要找的内容?联系我们的<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>支持团队</a>",
         "items": [
           {
-            "question": "这个AI眉部染色生成器免费吗？",
-            "answer": "是的。你可以通过免费试用在线体验AI眉部染色生成器，预览多种眉部染色风格和色调。"
+            "question": "每次生成需要多长时间?",
+            "answer": "大多数眉部染色预览在 8–15 秒内完成,具体时长取决于图片大小与服务器负载。Pro 套餐的生成会被优先处理,通常在 10 秒内完成。"
           },
           {
-            "question": "眉部染色预览有多逼真？",
-            "answer": "AI将每种眉色与你的照片融合，生成考虑了自然眉形、肤色和光线的逼真预览。"
+            "question": "什么样的照片能获得最佳效果?",
+            "answer": "正面、光线充足、眉毛清晰可见的照片。避免太阳镜、被头发遮挡的眉毛、侧脸角度、低光环境与卡通图像。中性表情最有利于精确的眉形识别。"
           },
           {
-            "question": "什么样的照片效果最好？",
-            "answer": "为获得最佳效果，请上传清晰、正面的照片，确保光线充足且眉毛清晰可见。避免使用被太阳镜、口罩或头发遮挡面部的照片。中性表情效果最佳。"
+            "question": "可以上传与下载哪些文件格式?",
+            "answer": "上传 JPG 或 PNG,最大 10MB。下载为 PNG(标准)或高清 PNG(付费版)。除非使用内置工具裁剪,否则会保留原照片的纵横比。"
           },
           {
-            "question": "可以预览不同的染眉膏色调吗？",
-            "answer": "可以。试用从柔和灰褐、暖棕到深浓咖啡的各种染眉膏色调，并排比较以找到最适合你的染眉膏。"
+            "question": "每次生成消耗多少积分?",
+            "answer": "标准生成每次消耗 1 积分。高清生成每次消耗 2 积分。免费试用包含初始积分配额。付费方案包含每月积分,且支持结转。"
           },
           {
-            "question": "眉部染色和染眉膏有什么区别？",
-            "answer": "专业眉部染色是在沙龙进行的半永久染色，可持续数周。染眉膏是日常化妆品，提供颜色和定型效果。AI眉部染色生成器可以预览两种风格，帮助你决定哪种更适合你。"
+            "question": "可以用一张照片生成多种色调吗?",
+            "answer": "可以。上传一次后,在积分允许范围内可生成任意数量的色调或风格,无需重新上传。AI 会在整个会话中复用你的照片进行每次预览。"
           },
           {
-            "question": "我的照片数据安全吗？",
-            "answer": "我们非常重视隐私。您上传的照片仅用于眉部染色生成的安全处理，不会永久存储或与第三方共享。"
+            "question": "最大分辨率是多少?",
+            "answer": "免费版:最高 1024×1024。Starter 版:最高 1536×1536。Pro 版:最高 2048×2048,并支持高清下载。"
           },
           {
-            "question": "可以同时预览眉部塑形与染色吗？",
-            "answer": "可以。选择眉部塑形与染色风格，即可在一次逼真预览中看到蓬松有型的眉毛搭配你选择的染色效果。"
+            "question": "上传的照片是否会被存储或用于训练?",
+            "answer": "不会。照片经过安全处理,生成后自动删除。我们绝不分享、出售上传的照片,也不会用其训练 AI 模型。"
           },
           {
-            "question": "如何找到最适合我肤色的眉色？",
-            "answer": "上传你的照片并试用多种色调。AI会考虑你的肤色和自然眉色来生成逼真的预览，帮助你在去眉部美容师之前找到最佳眉色匹配。"
+            "question": "眉部塑形模拟器与眉部染色生成器有什么区别?",
+            "answer": "同一个生成器,不同的风格预设。塑形模拟器侧重刷起的眉形;染色生成器侧重颜色。两者可以通过选择眉部塑形+染色风格在单次生成中组合。"
           },
           {
-            "question": "可以把AI眉部染色预览展示给眉部美容师吗？",
-            "answer": "可以。下载你的眉色前后对比预览，展示给你的眉部美容师或沙龙，准确传达你想要的色调和风格。"
+            "question": "可以预览画廊之外的自定义色调吗?",
+            "answer": "Pro 版支持通过描述框输入自定义色调(例如描述特定的 Pantone 颜色或色调名称)。免费版与 Starter 版使用 200+ 精选色调库。"
           },
           {
-            "question": "生成眉部染色预览需要多长时间？",
-            "answer": "大多数眉部染色预览在几秒内即可完成，具体取决于图片大小和当前流量。"
+            "question": "在手机上能用吗?",
+            "answer": "可以。AI 眉部染色生成器完全在你的浏览器中运行——手机、平板或电脑均可。无需安装应用。免费试用无需注册。"
           },
           {
-            "question": "需要安装软件吗？",
-            "answer": "不需要。AI眉部染色生成器完全在浏览器中运行，无需下载或安装。"
+            "question": "如果生成的预览看起来不真实怎么办?",
+            "answer": "首先,尝试使用质量更高、光线更好、眉毛视图更清晰的照片。如果效果仍不理想,切换到不同的风格预设——某些色调在特定肤色上的呈现更准确。Pro 版客服可以调查具体案例。"
+          },
+          {
+            "question": "生成的图片可以用于商业用途吗?",
+            "answer": "个人使用不受限制。商业使用(沙龙营销、付费社交媒体广告、杂志编辑)需要 Pro 版授权。Pro 版在订阅有效期内对所有生成的图片授予商业使用权。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "准备好找到你的完美眉色了吗？",
-        "description": "不再猜测眉部染色的效果。立即试用AI眉部染色生成器，并将预览分享给你的眉部美容师或沙龙。",
+        "title": "生成你的第一张眉部染色预览",
+        "description": "免费试用。无需注册。每次生成约 10 秒。",
         "buttons": [
           {
-            "title": "立即开始眉部染色预览",
+            "title": "生成我的眉部染色预览",
             "url": "#generator",
             "target": "_self",
             "icon": "Zap"
