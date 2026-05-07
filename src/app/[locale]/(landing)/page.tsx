@@ -1,9 +1,10 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
+import { getHomepageShownSections } from '@/shared/lib/homepage-sections';
 import { getMetadata } from '@/shared/lib/seo';
+import type { DynamicPage, Section } from '@/shared/types/blocks/landing';
 import { getActiveBrowStyles } from '@/themes/default/blocks/brow-tint/styles-loader';
-import { DynamicPage } from '@/shared/types/blocks/landing';
 
 export const revalidate = 3600;
 
@@ -36,7 +37,7 @@ export default async function LandingPage({
     data: { styles },
   };
 
-  const reorderedSections: Record<string, any> = {};
+  const reorderedSections: Record<string, Section> = {};
   let inserted = false;
   for (const key of Object.keys(originalSections)) {
     reorderedSections[key] = originalSections[key];
@@ -62,7 +63,7 @@ export default async function LandingPage({
   const page: DynamicPage = {
     ...pageData,
     sections: reorderedSections,
-    show_sections: reorderedShown,
+    show_sections: getHomepageShownSections(reorderedShown),
   };
 
   const Page = await getThemePage('dynamic-page');
