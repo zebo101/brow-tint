@@ -144,7 +144,7 @@
             "description": "Compara 5, 10, 20 tonos lado a lado. Encuentra tu combinación perfecta sin gastar un centavo."
           }
         ],
-        "className": "bg-card"
+        "className": "bg-muted"
       },
       "community": {
         "block": "features-accordion",

@@ -144,7 +144,7 @@
             "description": "Compare 5, 10, 20 shades side by side. Find your match without spending a cent."
           }
         ],
-        "className": "bg-card"
+        "className": "bg-muted"
       },
       "community": {
         "block": "features-accordion",

@@ -142,7 +142,7 @@
             "description": "把 5 种、10 种、20 种色号并排比较。一分钱不花就能找到属于您的那一款。"
           }
         ],
-        "className": "bg-card"
+        "className": "bg-muted"
       },
       "community": {
         "block": "features-accordion",

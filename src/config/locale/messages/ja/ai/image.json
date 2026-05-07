@@ -71,7 +71,7 @@
             "description": "眉ティントのビフォーアフター画像を高解像度で書き出し。眉アーティストやサロンに持参して、希望をそのまま伝えられます。"
           }
         ],
-        "className": "bg-card"
+        "className": "bg-muted"
       },
       "tools": {
         "block": "features",

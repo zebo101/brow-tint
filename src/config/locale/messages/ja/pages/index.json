@@ -144,7 +144,7 @@
             "description": "5、10、20色を並べて比較しましょう。1円もかけずに、あなたにぴったりのシェードが見つかります。"
           }
         ],
-        "className": "bg-card"
+        "className": "bg-muted"
       },
       "community": {
         "block": "features-accordion",

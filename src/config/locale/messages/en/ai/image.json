@@ -71,7 +71,7 @@
             "description": "Export your brow tint before and after image in high resolution. Bring it to your brow artist or salon to communicate exactly what you want."
           }
         ],
-        "className": "bg-card"
+        "className": "bg-muted"
       },
       "tools": {
         "block": "features",

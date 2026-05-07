@@ -71,7 +71,7 @@
             "description": "Exporte sua imagem de brow tint antes e depois em alta resolução. Leve-a ao seu especialista em sobrancelhas ou salão para comunicar exatamente o que você deseja."
           }
         ],
-        "className": "bg-card"
+        "className": "bg-muted"
       },
       "tools": {
         "block": "features",

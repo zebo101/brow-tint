@@ -144,7 +144,7 @@
             "description": "Compare 5, 10, 20 tons lado a lado. Encontre sua combinação sem gastar um centavo."
           }
         ],
-        "className": "bg-card"
+        "className": "bg-muted"
       },
       "community": {
         "block": "features-accordion",
