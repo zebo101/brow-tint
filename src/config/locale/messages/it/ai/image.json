@@ -70,7 +70,8 @@
             "title": "Scarica in HD",
             "description": "Esporta la tua immagine di tinta sopracciglia prima e dopo in alta risoluzione. Portala dal tuo artista delle sopracciglia o in salone per comunicare esattamente ciò che desideri."
           }
-        ]
+        ],
+        "className": "bg-card"
       },
       "tools": {
         "block": "features",

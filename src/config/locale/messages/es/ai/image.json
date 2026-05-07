@@ -70,7 +70,8 @@
             "title": "Descarga en HD",
             "description": "Exporta tu imagen de tinte de cejas antes y después en alta resolución. Llévasela a tu artista de cejas o salón para comunicar exactamente lo que quieres."
           }
-        ]
+        ],
+        "className": "bg-card"
       },
       "tools": {
         "block": "features",

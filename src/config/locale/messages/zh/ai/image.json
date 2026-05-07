@@ -70,7 +70,8 @@
             "title": "高清下载",
             "description": "以高分辨率导出你的眉部染色前后对比图片。把它带给你的眉部美容师或沙龙,精准传达你想要的效果。"
           }
-        ]
+        ],
+        "className": "bg-card"
       },
       "tools": {
         "block": "features",

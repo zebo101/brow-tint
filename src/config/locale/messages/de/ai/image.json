@@ -70,7 +70,8 @@
             "title": "In HD herunterladen",
             "description": "Exportieren Sie Ihr Augenbrauen-Tint-Vorher-Nachher-Bild in hoher Auflösung. Bringen Sie es zu Ihrer Brauen-Spezialistin oder in den Salon, um genau zu kommunizieren, was Sie möchten."
           }
-        ]
+        ],
+        "className": "bg-card"
       },
       "tools": {
         "block": "features",
