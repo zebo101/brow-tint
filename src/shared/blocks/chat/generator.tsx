@@ -102,7 +102,7 @@ export function ChatGenerator() {
     <div
       className="relative flex h-screen flex-col overflow-hidden"
       style={{
-        backgroundImage: 'url(/imgs/bg/101.png)',
+        backgroundImage: 'url(/imgs/bg/101.webp)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
