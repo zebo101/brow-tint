@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "title": "Brow Tint — AI Brow Tint Studio · Try Tints in Seconds",
-    "description": "Upload a photo, pick a tint shade, and see your new brows side by side. Free AI brow tint generator with curated styles and real salon-quality previews.",
-    "keywords": "brow tint, ai brow tint, brow tint generator, eyebrow tint preview, tinted brow gel"
+    "title": "Brow Tint — Preview Your AI Eyebrow Color Before the Salon",
+    "description": "Brow Tint is the AI eyebrow color studio used by 50,000+ beauty enthusiasts and brow artists. Preview brow tinting, brow lamination, and tinted brow gel on your photo before booking a salon visit.",
+    "keywords": "brow tint, brow tinting, ai brow tint, ai eyebrow color, brow tint studio, virtual brow tint, brow tinting preview, brow tinting before salon"
   },
   "page": {
     "show_sections": [
       "hero",
       "cases",
-      "introduce",
-      "benefits",
-      "usage",
-      "features",
+      "why_brow_tint",
+      "community",
+      "learn",
       "stats",
       "testimonials",
       "faq",
-      "cta"
+      "cta",
+      "subscribe"
     ],
     "sections": {
       "hero": {
         "block": "hero-editorial",
         "id": "hero",
-        "title": "#1 AI Brow Tint Generator Online Free",
+        "title": "Preview Your Brow Tint Before You Book the Salon",
         "highlight_text": "Brow Tint",
-        "description": "Preview realistic brow tint looks with Brow Tint — a free online AI tool for professional brow tinting, tinted brow gel, and brow lamination and tint previews. Upload your photo and see brow tint before and after results in seconds, powered by GPT Image 2.",
+        "description": "Brow Tint is the AI eyebrow color studio used by 50,000+ beauty enthusiasts and salon professionals. Upload a photo, see your new brows in any tint, lamination, or tinted gel style — then book your salon visit with confidence, or skip it entirely.",
         "buttons": [
           {
             "title": "Try Brow Tint Free",
@@ -42,293 +42,192 @@
         ],
         "image": {
           "src": "/imgs/bg/hero-2.webp",
-          "alt": "AI Brow Tint Generator - Preview Brow Tinting Results Online",
+          "alt": "Brow Tint AI Studio - Preview Your Eyebrow Color",
           "width": 800,
           "height": 600
         },
         "background_image": {
           "src": "/imgs/bg/hero-1.jpg",
-          "alt": "Brow Tint Background - Professional Brow Tinting Preview"
+          "alt": "Brow Tint Studio Background"
         },
         "powered_by": "Powered by GPT Image 2",
         "editorial_labels": [
           "Preview",
-          "Transform",
-          "Define"
+          "Decide",
+          "Book"
         ]
       },
       "cases": {
         "block": "cases-carousel",
         "id": "cases",
-        "title": "Real Brow Tint Cases",
-        "description": "See real brow tint before-and-after results from people who previewed their look with Brow Tint.",
+        "title": "Real Brows. Real Results.",
+        "description": "Looks our community generated with the AI brow tint studio and took to their salon — exactly as previewed.",
         "items": [
           {
             "name": "Soft Henna",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Soft Henna brow tint case"
+              "alt": "Soft Henna brow tint preview"
             }
           },
           {
             "name": "Bold Espresso",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Bold Espresso brow tint case"
+              "alt": "Bold Espresso brow tint preview"
             }
           },
           {
             "name": "Brow Lamination",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Brow Lamination case"
+              "alt": "Brow Lamination preview"
             }
           },
           {
             "name": "Cool Ash",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Cool Ash brow tint case"
+              "alt": "Cool Ash brow tint preview"
             }
           },
           {
             "name": "Warm Auburn",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Warm Auburn brow tint case"
+              "alt": "Warm Auburn brow tint preview"
             }
           },
           {
             "name": "Tinted Gel",
             "image": {
               "src": "/imgs/cases/6.jpg",
-              "alt": "Tinted brow gel case"
+              "alt": "Tinted brow gel preview"
             }
           },
           {
             "name": "Lash & Brow Tint",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Lash and brow tint case"
+              "alt": "Lash and brow tint combined preview"
             }
           }
         ]
       },
-      "logos": {
-        "id": "logos",
-        "title": "Trusted AI Technology Behind Brow Tint",
-        "items": [
-          {
-            "title": "Next.js",
-            "image": {
-              "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
-            }
-          },
-          {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
-          },
-          {
-            "title": "TailwindCSS",
-            "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
-            }
-          },
-          {
-            "title": "Shadcn/UI",
-            "image": {
-              "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
-            }
-          },
-          {
-            "title": "Vercel",
-            "image": {
-              "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
-            }
-          }
-        ]
-      },
-      "introduce": {
+      "why_brow_tint": {
         "block": "features-list",
-        "id": "introduce",
-        "title": "What Is Brow Tint?",
-        "label": "Introduction",
-        "description": "Brow Tint is a free online AI brow tint generator that lets you preview professional brow tinting results before you commit. Whether you want to try tinted brow gel shades, explore brow lamination and tint combinations, or compare lash and brow tint styles, our GPT Image 2 AI creates photorealistic previews tailored to your face shape and skin tone.",
+        "id": "why-brow-tint",
+        "title": "Why Brow Tint Exists",
+        "label": "Our Story",
+        "description": "Brow tinting is having a moment — but salon visits cost money, results are semi-permanent, and you only see the look after it's already done. We built Brow Tint so you can experiment with eyebrow color the way you experiment with hair color in your head: freely, privately, without commitment.",
         "image": {
           "src": "/imgs/features/landingpage.jpg",
-          "alt": "Brow Tint AI Generator - Preview Brow Tinting Online Free"
+          "alt": "Brow Tint - The AI Eyebrow Color Studio",
+          "width": 1200,
+          "height": 800
         },
         "items": [
           {
-            "title": "Virtual Brow Tinting Preview",
-            "description": "Preview countless brow tint shades and styles without touching a single product. Our AI brow tint generator simulates professional brow tinting results so you can find your ideal shade from the comfort of home.",
-            "icon": "RiMagicLine",
-            "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "Virtual Brow Tinting Preview - AI Brow Tint Generator"
-            }
+            "title": "For the Curious",
+            "description": "Try a brow tint shade you'd never dare ask for at the salon. See it on your own face. Then decide."
           },
           {
-            "title": "Realistic Brow Tint Before and After",
-            "description": "See lifelike brow tint before and after results powered by GPT Image 2. Compare your natural brows with tinted looks side by side and share the comparison with your stylist before your appointment.",
-            "icon": "RiCameraLensLine",
-            "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "Brow Tint Before and After Results"
-            }
+            "title": "For the Cautious",
+            "description": "Take a downloaded preview to your brow artist instead of describing what you want in words."
           },
           {
-            "title": "Advanced AI Image Generator",
-            "description": "Our AI image generator uses GPT Image 2 to create unique brow tint and tinted brow gel looks for every face shape. It analyzes your features and recommends the best brow tint shades that complement your skin tone.",
-            "icon": "RiImage2Line",
-            "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "AI Image Generator for Brow Tint Looks"
-            }
+            "title": "For Professionals",
+            "description": "Brow artists and salon owners use Brow Tint at consultation to show clients exactly what they're committing to."
           },
           {
-            "title": "Lash and Brow Tint Together",
-            "description": "Preview combined lash and brow tint styles to find your perfect all-in-one eye-framing look. See how lash tinting pairs with different brow tint shades in a single photorealistic preview.",
-            "icon": "RiExchangeLine",
-            "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "Lash and Brow Tint Combined Preview"
-            }
+            "title": "For the Indecisive",
+            "description": "Compare 5, 10, 20 shades side by side. Find your match without spending a cent."
           }
-        ],
-        "className": "bg-muted"
+        ]
       },
-      "benefits": {
+      "community": {
         "block": "features-accordion",
-        "id": "benefits",
-        "title": "Why Choose Brow Tint for Your Brow Tinting Preview",
-        "label": "Benefits",
-        "description": "The best brow tint experience online — fast, secure, and designed for everyone from first-time brow tinting beginners to professional brow artists and salon owners.",
+        "id": "community",
+        "title": "The Beauty-Curious Movement",
+        "label": "Who Uses Brow Tint",
+        "description": "Brow Tint sits at the intersection of beauty experimentation and AI-assisted decision making. Here's who shows up.",
         "items": [
           {
-            "title": "Lightning-Fast AI Brow Tint Generation",
-            "description": "Generate professional brow tint previews in seconds, not hours. Our GPT Image 2 AI processes your photo instantly so you can see your brow tinting results without scheduling a salon visit or waiting for an appointment.",
-            "icon": "RiSpeedLine",
+            "title": "Beauty bloggers and content creators",
+            "description": "Preview a brow tint look before showing it to your audience or filming a tutorial. Generate the visual reference, then create content with confidence — knowing exactly what the final result will look like.",
+            "icon": "RiCameraLine",
             "image": {
               "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Brow Tint Generation"
+              "alt": "Beauty content creators previewing brow tint"
             }
           },
           {
-            "title": "Secure and Private Photo Processing",
-            "description": "Your photos are processed securely and never shared with third parties. Brow Tint respects your privacy — all uploaded images are encrypted during processing and automatically deleted after your brow tint preview is generated.",
-            "icon": "RiLock2Line",
+            "title": "First-time brow tinters",
+            "description": "See the result before booking your first salon appointment. No more commitment regret — preview privately, then walk into the salon knowing exactly what you want.",
+            "icon": "RiHeartLine",
             "image": {
               "src": "/imgs/features/image2.png",
-              "alt": "Secure Brow Tint Photo Processing"
+              "alt": "First-time brow tinting preview"
             }
           },
           {
-            "title": "Superbly Easy to Use",
-            "description": "Find the best tinted brow gel shade in just a few clicks — no technical skills required. Brow Tint is designed so anyone can preview professional brow tinting results, from teenagers exploring their first brow tint to salon professionals demonstrating options to clients.",
-            "icon": "RiUserSmileLine",
+            "title": "Brow artists and salon owners",
+            "description": "Show clients exactly what they're committing to before treatment starts. Faster consultations, fewer disputes, happier customers — and a competitive edge over salons still describing looks in words.",
+            "icon": "RiScissorsCutLine",
             "image": {
               "src": "/imgs/features/image3.png",
-              "alt": "Easy-to-Use Brow Tint Tool"
+              "alt": "Brow artist consultation with Brow Tint"
+            }
+          },
+          {
+            "title": "Wedding and event planners",
+            "description": "Coordinate brow looks for editorial shoots, brides, bridesmaids, and event makeup. Visual references the whole creative team can align on, weeks before the day.",
+            "icon": "RiCalendarEventLine",
+            "image": {
+              "src": "/imgs/features/image1.png",
+              "alt": "Wedding event brow planning"
             }
           }
         ]
       },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "How to Use the AI Brow Tint Generator",
-        "description": "Get your perfect brow tint look in four simple steps. No account required — start previewing brow tinting results for free right now.",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "How to Use the AI Brow Tint Generator"
-        },
-        "image_position": "left",
-        "text_align": "center",
+      "learn": {
+        "block": "cluster-posts",
+        "id": "learn",
+        "label": "Guides",
+        "title": "Learn About Brow Tinting",
+        "description": "Read our brow tinting research before booking. Honest comparisons, before-and-after galleries, and treatment guides — written for the beauty-curious.",
         "items": [
           {
-            "title": "Upload Your Photo",
-            "description": "Upload a clear, front-facing photo to the Brow Tint platform. For the best brow tint results, use a well-lit image where your eyebrows are clearly visible.",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "Upload Photo for AI Brow Tint Preview"
-            }
+            "title": "Brow Tint Before and After: Real Results Gallery",
+            "description": "See real brow tinting before-and-after results across skin tones, brow shapes, and tint shades. Learn what to realistically expect from professional treatment.",
+            "url": "/blog/brow-tint-before-and-after"
           },
           {
-            "title": "Choose Your Brow Tint Style",
-            "description": "Select from a wide range of brow tinting styles — tinted brow gel, brow lamination and tint, professional brow tint, brow code tint, and many more custom options.",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "Choose Brow Tint Style"
-            }
+            "title": "Best Brow Tint 2026: Honest Comparison Guide",
+            "description": "We compared the leading brow tint and tinted brow gel products of 2026. Pros, cons, ingredients, longevity — and a preview of each on real faces.",
+            "url": "/blog/best-brow-tint-2026"
           },
           {
-            "title": "Generate Your Brow Tint Preview",
-            "description": "Let the AI brow tint generator create a realistic preview of your new brow look. Our GPT Image 2 technology produces photorealistic brow tint before and after images in seconds.",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "Generate AI Brow Tint Preview"
-            }
+            "title": "Brow Lamination and Tint: Complete Guide",
+            "description": "What is brow lamination and tint? How long does it last? How is it different from lash and brow tint? Everything you need before your first appointment.",
+            "url": "/blog/brow-lamination-and-tint-guide"
           },
           {
-            "title": "Download and Share",
-            "description": "Save your brow tint before and after comparison photos in high resolution. Share them with your stylist, post on social media, or bring them to your next brow tinting appointment.",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "Download Brow Tint Before and After Results"
-            }
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "features": {
-        "id": "features",
-        "title": "Key Features of the Brow Tint Generator",
-        "description": "Everything you need for the perfect brow tint preview — from professional brow tinting simulation to tinted brow gel shade matching.",
-        "items": [
-          {
-            "title": "Professional Brow Tint Preview",
-            "description": "Preview salon-quality professional brow tint results at home. Our AI replicates the exact look of in-salon brow tinting treatments so you know what to expect before booking.",
-            "icon": "RiScissorsCutLine"
+            "title": "Professional Brow Tint vs DIY at Home",
+            "description": "Is at-home brow tinting safe? What does a professional brow tint actually include? Honest pros and cons, with cost breakdowns.",
+            "url": "/blog/professional-brow-tint-vs-diy"
           },
           {
-            "title": "Tinted Brow Gel Shade Matching",
-            "description": "Try different tinted brow gel shades and see how each one complements your natural skin tone, hair color, and face shape. Find the best tinted brow gel for you.",
-            "icon": "RiWomenLine"
-          },
-          {
-            "title": "Brow Code Tint Visualization",
-            "description": "Explore brow code tint formulas and visualize the exact shade match for your brows. Compare multiple brow code tint options side by side before committing.",
-            "icon": "RiPaletteLine"
-          },
-          {
-            "title": "High-Resolution Downloads",
-            "description": "Download crystal-clear, high-resolution brow tint before and after images. Perfect for showing your stylist, sharing online, or keeping as a personal reference.",
-            "icon": "RiHdLine"
-          },
-          {
-            "title": "Before and After Comparison",
-            "description": "Compare your brow tint before and after looks with an intuitive side-by-side slider. One click to see the transformation brow tinting makes.",
-            "icon": "RiCompareLine"
-          },
-          {
-            "title": "Mobile-Friendly Brow Tint Tool",
-            "description": "Use the Brow Tint generator on any device — phone, tablet, or desktop. Preview brow tinting results on the go, anywhere, anytime.",
-            "icon": "RiSmartphoneLine"
+            "title": "Brow Code Tint Review: Worth the Hype?",
+            "description": "An independent review of the Brow Code tint system — popular among professional brow artists. Color range, longevity, application, and AI previews of every shade.",
+            "url": "/blog/brow-code-tint-review"
           }
         ]
       },
       "stats": {
         "id": "stats",
-        "title": "Users Love Brow Tint",
-        "description": "Join thousands of satisfied users who found their perfect brow tint look with our free AI brow tint generator.",
+        "title": "Beauty Enthusiasts Trust Brow Tint",
+        "description": "From first-time brow tinting to professional brow artists prepping client looks.",
         "items": [
           {
             "title": "50,000+",
@@ -336,7 +235,7 @@
           },
           {
             "title": "10,000+",
-            "description": "Happy Users Worldwide"
+            "description": "Beauty Enthusiasts Worldwide"
           },
           {
             "title": "200+",
@@ -347,113 +246,109 @@
       },
       "testimonials": {
         "id": "testimonials",
-        "title": "What Users Say About Brow Tint",
-        "description": "Real feedback from people who found their perfect brow tint look using our free AI brow tint generator.",
+        "title": "What People Say About Brow Tint",
+        "description": "Real reactions from beauty enthusiasts, professional brow artists, and salon owners who use Brow Tint to plan, consult, and decide.",
         "items": [
           {
             "name": "Sarah Jenkins",
             "role": "Beauty Blogger",
-            "quote": "Brow Tint helped me preview the exact brow tinting shade before my salon visit. I showed my stylist the brow tint before and after photo and got exactly the look I wanted!",
+            "quote": "Brow Tint changed how I plan beauty content. Before, I'd describe a look to my brow artist and hope for the best. Now I show her the AI preview and we both know exactly what we're going for.",
             "image": {
               "src": "/imgs/avatars/1.png",
-              "alt": "Sarah - Brow Tint User Review"
+              "alt": "Sarah Jenkins - Beauty Blogger"
             }
           },
           {
             "name": "Mike Ross",
             "role": "Photographer",
-            "quote": "I use Brow Tint for editorial beauty shoots — the AI generates incredibly realistic brow tint before and after previews that help my clients visualize the final look.",
+            "quote": "For editorial shoots, I send Brow Tint previews to the model and stylist before the call sheet is even finalized. Saves hours and removes a whole category of on-set surprises.",
             "image": {
               "src": "/imgs/avatars/2.png",
-              "alt": "Mike - Professional Photographer Using Brow Tint"
+              "alt": "Mike Ross - Photographer"
             }
           },
           {
             "name": "Emily Chen",
             "role": "Student",
-            "quote": "Trying different tinted brow gel looks has never been this fun! Brow Tint is the best brow tint tool I've found online — and it's completely free to start.",
+            "quote": "I would never have walked into a salon and asked for espresso brows on a whim. Brow Tint let me see myself with them first — and now they're my favorite look.",
             "image": {
               "src": "/imgs/avatars/3.png",
-              "alt": "Emily - Brow Tint Free User"
+              "alt": "Emily Chen - Student"
             }
           },
           {
             "name": "David Smith",
             "role": "Makeup Artist",
-            "quote": "Showing clients their professional brow tint options before treatment is invaluable. The brow lamination and tint previews from Brow Tint are incredibly accurate.",
+            "quote": "Every client gets a brow consultation. Brow Tint is faster than swatching and more honest than describing — clients see themselves, not a mood board.",
             "image": {
               "src": "/imgs/avatars/4.png",
-              "alt": "David - Makeup Artist Using Brow Tint"
+              "alt": "David Smith - Makeup Artist"
             }
           },
           {
             "name": "Jessica Lee",
             "role": "Salon Owner",
-            "quote": "I recommend Brow Tint to every client who books a brow tinting appointment. They see their lash and brow tint results before we start — it builds confidence and saves time.",
+            "quote": "We use Brow Tint at the consultation desk for every brow tinting client. They commit faster, leave happier, and refer their friends. It pays for itself in the first week.",
             "image": {
               "src": "/imgs/avatars/5.png",
-              "alt": "Jessica - Salon Owner Recommends Brow Tint"
+              "alt": "Jessica Lee - Salon Owner"
             }
           },
           {
             "name": "Tom Brown",
             "role": "First-Time User",
-            "quote": "I was nervous about getting my brows tinted for the first time. Brow Tint let me preview the best tinted brow gel shades before committing. Absolutely love it!",
+            "quote": "I'm a guy. I had no idea what brow tinting even was. Brow Tint let me play with the idea privately before I asked anyone for advice. Now I get my brows tinted every six weeks.",
             "image": {
               "src": "/imgs/avatars/6.png",
-              "alt": "Tom - First-Time Brow Tint User"
+              "alt": "Tom Brown - First-Time User"
             }
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Frequently Asked Questions About Brow Tint",
-        "description": "Got questions about our AI brow tint generator? Here are answers to the most common questions about brow tinting previews.",
+        "title": "Frequently Asked Questions About Brow Tinting",
+        "description": "Common questions about brow tinting, brow lamination, and how Brow Tint helps you preview before you book.",
         "tip": "Can't find what you're looking for? Contact our <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>support team</a>",
         "items": [
           {
-            "question": "What is Brow Tint and how does the AI brow tint generator work?",
-            "answer": "Brow Tint is a free online AI-powered brow tinting tool built on GPT Image 2. Simply upload your photo, choose a brow tint style — such as tinted brow gel, brow lamination and tint, or professional brow tint — and our AI generates a photorealistic preview of how you'll look with your new brow tint in seconds."
+            "question": "What is brow tinting?",
+            "answer": "Brow tinting is a semi-permanent dye treatment that adds color, depth, and shape definition to your eyebrows. Standard professional brow tint typically lasts 4–6 weeks before fading naturally. Tinted brow gel and brow lamination are related treatments — explore the differences in our brow lamination and tint guide."
           },
           {
-            "question": "How realistic are the brow tint before and after results?",
-            "answer": "Our GPT Image 2 AI produces highly realistic brow tint before and after images. The AI analyzes your face shape, skin tone, natural brow structure, and hair color to deliver accurate brow tinting previews that closely match real salon results."
+            "question": "Why preview brow tinting before going to the salon?",
+            "answer": "Brow tint is semi-permanent — once it's applied, you live with the result for weeks. Previewing the look on your own photo before the appointment lets you commit only to a shade you've actually seen on your face, and gives your brow artist a clear visual reference instead of a verbal description."
           },
           {
-            "question": "Can I preview lash and brow tint styles together?",
-            "answer": "Yes! Brow Tint supports combined lash and brow tint previews so you can see your full eye-framing look in one image. This is especially helpful if you're considering both lash tinting and brow tinting at your next salon visit."
+            "question": "Who is Brow Tint for?",
+            "answer": "Anyone considering brow tinting, brow lamination, tinted brow gel, or lash and brow tint — from first-time tinters to experienced brow artists prepping client consultations. Beauty bloggers, photographers, and event planners also use Brow Tint to coordinate looks ahead of shoots and events."
           },
           {
-            "question": "What brow tint styles can I try with Brow Tint?",
-            "answer": "You can preview a wide range of brow tinting styles including tinted brow gel in multiple shades, brow lamination and tint combinations, professional brow tint treatments, brow code tint formulas, lash and brow tint packages, and many more custom looks tailored to your preferences."
+            "question": "Is Brow Tint a salon, a product, or a tool?",
+            "answer": "Brow Tint is a free online AI eyebrow color studio. We don't sell tints or run salons — we help you decide which tint to choose and where to get it done. Take your downloaded preview to any brow artist or salon."
           },
           {
-            "question": "Is Brow Tint really free to use?",
-            "answer": "Yes, Brow Tint offers a free plan that lets you use the AI brow tint generator with basic brow tinting previews at no cost. Our premium plan unlocks additional features including high-resolution downloads, more brow tint styles, and priority AI processing."
+            "question": "How accurate are Brow Tint previews?",
+            "answer": "Our GPT Image 2 model produces photorealistic previews that brow artists worldwide use as a consultation reference. Accuracy depends on photo quality — front-facing photos with good lighting and visible eyebrows produce the best results. See real examples in our brow tint before and after gallery."
           },
           {
-            "question": "Is my photo data secure when using Brow Tint?",
-            "answer": "Absolutely. Your photos are processed securely with encryption and are never shared with third parties. All uploaded images are automatically deleted after your brow tint preview is generated. We take your privacy seriously."
+            "question": "Is my photo private?",
+            "answer": "Yes. Photos are processed securely and deleted automatically after generation. We never share, sell, or train AI models on uploaded photos."
           },
           {
-            "question": "What is the difference between brow tint and tinted brow gel?",
-            "answer": "Brow tint is a semi-permanent dye applied to the brow hairs and sometimes the skin for a fuller, defined look lasting 4–6 weeks. Tinted brow gel is a daily cosmetic product that adds color and hold, similar to mascara for eyebrows. With Brow Tint, you can preview both brow tint and tinted brow gel options before deciding."
+            "question": "Is Brow Tint really free?",
+            "answer": "Yes. Free trial with no signup required. Premium plans unlock more styles, higher resolution downloads, unlimited generations, and priority AI processing."
           },
           {
-            "question": "Can I use Brow Tint to preview brow lamination and tint?",
-            "answer": "Yes! Brow lamination and tint is one of our most popular preview styles. Our AI simulates the brushed-up, fuller look of brow lamination combined with tinting so you can see exactly how this trending treatment would look on you before booking an appointment."
-          },
-          {
-            "question": "How do I find the best brow tint shade for my skin tone?",
-            "answer": "Brow Tint's AI analyzes your skin tone, natural hair color, and face shape to suggest the best brow tint shades for you. You can also manually browse different professional brow tint shades and tinted brow gel colors, generating unlimited previews until you find your perfect match."
+            "question": "What happens after I generate a preview?",
+            "answer": "Download your preview and take it to any brow artist or salon — or browse our showcased looks for inspiration. The image speaks louder than any description, and helps your artist deliver the exact result you want."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Find Your Perfect Brow Tint?",
-        "description": "Start your free AI brow tinting preview today. Upload a photo and see your brow tint before and after results in seconds — no signup required.",
+        "title": "Find Your Brow Color Today",
+        "description": "Free preview. No signup required. See your new brows in seconds — then decide whether to book the salon.",
         "buttons": [
           {
             "title": "Try Brow Tint Free",
@@ -467,7 +362,7 @@
       "subscribe": {
         "id": "subscribe",
         "title": "Stay Updated with Brow Tint",
-        "description": "Get the latest brow tinting trends, new AI features, and exclusive brow tint tips delivered to your inbox.",
+        "description": "Get the latest brow tinting trends, new AI features, and beauty research delivered to your inbox.",
         "submit": {
           "title": "Subscribe",
           "placeholder": "Enter your email"
