@@ -2,7 +2,7 @@
 cmds = [
   "test -n \"$HEROUI_KEY\" || (echo \"Missing HEROUI_KEY for HeroUI Pro install\" && exit 1)",
   "pnpm install --frozen-lockfile --ignore-scripts",
-  "pnpm dlx hpsetup@latest \"$HEROUI_KEY\" 1.0.0-beta.2",
+  "pnpm dlx hpsetup@latest",
   "pnpm exec fumadocs-mdx"
 ]
 
