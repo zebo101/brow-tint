@@ -134,5 +134,9 @@
       "cancel": "取消",
       "apply": "使用该眉型"
     }
+  },
+  "errors": {
+    "moderation_denied": "该眉型暂时无法为你的照片生成，请试试别的风格。",
+    "moderation_unavailable": "安全检查暂时不可用，请稍后再试。"
   }
 }

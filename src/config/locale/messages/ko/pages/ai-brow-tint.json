@@ -134,5 +134,9 @@
       "cancel": "취소",
       "apply": "이 스타일 사용"
     }
+  },
+  "errors": {
+    "moderation_denied": "이 룩은 현재 사진에 생성할 수 없습니다. 다른 스타일을 시도해 보세요.",
+    "moderation_unavailable": "안전 검사를 사용할 수 없습니다. 잠시 후 다시 시도해 주세요."
   }
 }

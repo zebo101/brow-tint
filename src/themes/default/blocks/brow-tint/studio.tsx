@@ -579,7 +579,13 @@ export function BrowTintStudio({ styles }: BrowTintStudioProps) {
 
       if (!resp.ok) {
         const err = await resp.json().catch(() => ({}));
-        throw new Error(err.message || 'Generation failed');
+        const code = err.message;
+        // Translate known moderation error codes from /api/ai/generate.
+        const translated =
+          code === 'moderation_denied' || code === 'moderation_unavailable'
+            ? t(`errors.${code}`)
+            : code || 'Generation failed';
+        throw new Error(translated);
       }
 
       const { data } = await resp.json();
