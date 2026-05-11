@@ -68,20 +68,29 @@ export async function generateMetadata({
     typeof slug === 'string' ? slug : (slug as string[]).join('.') || '';
 
   const messageKey = `pages.${dynamicPageSlug}`;
-  const t = await getTranslations({ locale, namespace: messageKey });
 
-  // return dynamic page metadata
-  if (t.has('metadata')) {
-    title = t.raw('metadata.title');
-    description = t.raw('metadata.description');
+  // next-intl throws MISSING_MESSAGE when the namespace doesn't exist
+  // for the requested locale. Swallow it and fall through to step 3 —
+  // the page component (line ~152) already does the same defensively
+  // with notFound(), but generateMetadata has no fallback otherwise.
+  try {
+    const t = await getTranslations({ locale, namespace: messageKey });
 
-    return {
-      title,
-      description,
-      alternates: buildAlternates(`/${staticPageSlug}`, {
-        locale,
-      }),
-    };
+    // return dynamic page metadata
+    if (t.has('metadata')) {
+      title = t.raw('metadata.title');
+      description = t.raw('metadata.description');
+
+      return {
+        title,
+        description,
+        alternates: buildAlternates(`/${staticPageSlug}`, {
+          locale,
+        }),
+      };
+    }
+  } catch {
+    // namespace missing — fall through to common metadata
   }
 
   // 3. return common metadata
