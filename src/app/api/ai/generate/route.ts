@@ -11,6 +11,7 @@ import { createAITask, NewAITask } from '@/shared/models/ai_task';
 import { getRemainingCredits } from '@/shared/models/credit';
 import { getUserInfo } from '@/shared/models/user';
 import { getAIService } from '@/shared/services/ai';
+import { moderatePrompt } from '@/shared/services/moderation';
 
 // Every brow tint generation costs exactly 2 credits. This constant is
 // authoritative — the per-row brow_style.credits column is ignored by the
@@ -129,6 +130,36 @@ export async function POST(request: Request) {
         ...(generationOptions ?? {}),
         negative_prompt: style.negative ?? generationOptions?.negative_prompt,
       };
+    }
+
+    // Creem compliance: every prompt routed to an image or video generation
+    // model must be screened through /v1/moderation/prompt first. Music is
+    // explicitly excluded per Creem's content-safety requirements docs.
+    if (
+      mediaType === AIMediaType.IMAGE ||
+      mediaType === AIMediaType.VIDEO
+    ) {
+      const externalId = `user_${user.id}:gen_${getUuid()}`;
+      let moderation;
+      try {
+        moderation = await moderatePrompt({
+          prompt: generationPrompt,
+          externalId,
+          userId: user.id,
+        });
+      } catch (err) {
+        console.error(
+          '[moderation] call failed, blocking generation',
+          err
+        );
+        throw new Error('moderation_unavailable');
+      }
+      if (
+        moderation.decision === 'deny' ||
+        moderation.decision === 'flag'
+      ) {
+        throw new Error('moderation_denied');
+      }
     }
 
     // check credits

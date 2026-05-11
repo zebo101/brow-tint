@@ -134,5 +134,9 @@
       "cancel": "Annulla",
       "apply": "Usa questo stile"
     }
+  },
+  "errors": {
+    "moderation_denied": "Questo look non può essere generato per la tua foto. Prova uno stile diverso.",
+    "moderation_unavailable": "Controllo di sicurezza non disponibile. Riprova tra un momento."
   }
 }
