@@ -325,7 +325,7 @@
         "id": "faq",
         "title": "AI 眉部染色生成器常见问题",
         "description": "关于照片要求、积分、精准度与下载的技术性问题。",
-        "tip": "找不到您要找的内容?联系我们的<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "tip": "找不到您要找的内容?联系我们的<a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>支持团队</a>",
         "items": [
           {
             "question": "每次生成需要多长时间?",

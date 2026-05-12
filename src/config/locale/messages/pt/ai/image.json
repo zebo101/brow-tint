@@ -325,7 +325,7 @@
         "id": "faq",
         "title": "Perguntas Frequentes do Gerador de Brow Tint com IA",
         "description": "Perguntas técnicas sobre requisitos de fotos, créditos, precisão e downloads.",
-        "tip": "Não encontrou o que procura? Contate nossa <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
+        "tip": "Não encontrou o que procura? Contate nossa <a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
         "items": [
           {
             "question": "Quanto tempo leva cada geração?",

@@ -325,7 +325,7 @@
         "id": "faq",
         "title": "AI Brow Tint Generator FAQ",
         "description": "Technical questions about photo requirements, credits, accuracy, and downloads.",
-        "tip": "Can't find what you're looking for? Contact our <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>support team</a>",
+        "tip": "Can't find what you're looking for? Contact our <a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>support team</a>",
         "items": [
           {
             "question": "How long does each generation take?",

@@ -325,7 +325,7 @@
         "id": "faq",
         "title": "FAQ zum KI Augenbrauen-Tint Generator",
         "description": "Technische Fragen zu Foto-Anforderungen, Credits, Genauigkeit und Downloads.",
-        "tip": "Finden Sie nicht, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
+        "tip": "Finden Sie nicht, wonach Sie suchen? Kontaktieren Sie unser <a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>Support-Team</a>",
         "items": [
           {
             "question": "Wie lange dauert jede Generierung?",

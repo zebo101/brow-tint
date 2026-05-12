@@ -325,7 +325,7 @@
         "id": "faq",
         "title": "AI眉ティントジェネレーター FAQ",
         "description": "写真の要件、クレジット、精度、ダウンロードに関する技術的な質問。",
-        "tip": "お探しのものが見つかりませんか？<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>サポートチーム</a>にお問い合わせください",
+        "tip": "お探しのものが見つかりませんか？<a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>サポートチーム</a>にお問い合わせください",
         "items": [
           {
             "question": "各生成にはどれくらい時間がかかりますか？",

@@ -310,7 +310,7 @@
         "id": "faq",
         "title": "眉ティントに関するよくある質問",
         "description": "眉ティント、眉ラミネーション、そしてBrow Tintが予約前のプレビューにどう役立つかについての、よくあるご質問。",
-        "tip": "お探しの情報が見つかりませんか？<a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>サポートチーム</a>までお問い合わせください",
+        "tip": "お探しの情報が見つかりませんか？<a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>サポートチーム</a>までお問い合わせください",
         "items": [
           {
             "question": "眉ティントとは何ですか？",

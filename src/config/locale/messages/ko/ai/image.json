@@ -325,7 +325,7 @@
         "id": "faq",
         "title": "AI 눈썹 틴트 생성기 FAQ",
         "description": "사진 요구 사항, 크레딧, 정확도 및 다운로드에 관한 기술적인 질문.",
-        "tip": "찾는 내용이 없나요? <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>지원팀</a>에 문의하세요",
+        "tip": "찾는 내용이 없나요? <a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>지원팀</a>에 문의하세요",
         "items": [
           {
             "question": "각 생성에 얼마나 걸리나요?",

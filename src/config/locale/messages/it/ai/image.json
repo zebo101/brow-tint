@@ -325,7 +325,7 @@
         "id": "faq",
         "title": "FAQ Generatore Tinta Sopracciglia IA",
         "description": "Domande tecniche su requisiti delle foto, crediti, accuratezza e download.",
-        "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:privacy@tintbrow.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
+        "tip": "Non trovi quello che cerchi? Contatta il nostro <a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>team di supporto</a>",
         "items": [
           {
             "question": "Quanto tempo richiede ogni generazione?",
