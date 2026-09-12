@@ -34,7 +34,7 @@
               "Mapeo de cejas ilimitado",
               "Edición manual de seis puntos ilimitada",
               "Informes de análisis ilimitados",
-              "Sin exportaciones",
+              "Vistas previas con marca de agua · Sin descargas",
               "Cola estándar"
             ],
             "interval": "month",
@@ -65,7 +65,7 @@
               "Mapeo de cejas ilimitado",
               "Edición manual de seis puntos ilimitada",
               "Informes de análisis ilimitados",
-              "Exportación de imágenes individuales en HD",
+              "Descarga individual en HD sin marca de agua",
               "Cola prioritaria"
             ],
             "interval": "month",
@@ -96,7 +96,7 @@
               "Mapeo de cejas ilimitado",
               "Edición manual de seis puntos ilimitada",
               "Informes de análisis ilimitados",
-              "Exportación de imágenes individuales en HD",
+              "Descarga individual en HD sin marca de agua",
               "Exportación comparativa de 2–4 resultados de la misma foto",
               "Máxima prioridad"
             ],
@@ -128,7 +128,7 @@
               "Mapeo de cejas ilimitado",
               "Edición manual de seis puntos ilimitada",
               "Informes de análisis ilimitados",
-              "Exportación de imágenes individuales en HD",
+              "Descarga individual en HD sin marca de agua",
               "Cola prioritaria"
             ],
             "interval": "year",
@@ -159,7 +159,7 @@
               "Mapeo de cejas ilimitado",
               "Edición manual de seis puntos ilimitada",
               "Informes de análisis ilimitados",
-              "Exportación de imágenes individuales en HD",
+              "Descarga individual en HD sin marca de agua",
               "Exportación comparativa de 2–4 resultados de la misma foto",
               "Máxima prioridad"
             ],
@@ -189,7 +189,7 @@
             "features": [
               "24 créditos · 12 generaciones con IA",
               "Los créditos no caducan",
-              "Exportación de imágenes individuales en HD",
+              "Descarga individual en HD sin marca de agua",
               "Cola estándar",
               "La exportación comparativa requiere una suscripción Premium"
             ],
@@ -218,7 +218,7 @@
             "features": [
               "60 créditos · 30 generaciones con IA",
               "Los créditos no caducan",
-              "Exportación de imágenes individuales en HD",
+              "Descarga individual en HD sin marca de agua",
               "Cola estándar",
               "La exportación comparativa requiere una suscripción Premium"
             ],
@@ -247,7 +247,7 @@
             "features": [
               "120 créditos · 60 generaciones con IA",
               "Los créditos no caducan",
-              "Exportación de imágenes individuales en HD",
+              "Descarga individual en HD sin marca de agua",
               "Cola estándar",
               "La exportación comparativa requiere una suscripción Premium"
             ],
@@ -270,7 +270,7 @@
             "group": "one-time"
           }
         ],
-        "note": "Todos los precios están en dólares estadounidenses. Cada generación con IA cuesta 2 créditos. Los impuestos aplicables se calculan al pagar.",
+        "note": "Todas las vistas previas incluyen una marca de agua. Basic, Premium y las recargas de créditos incluyen descargas individuales en HD sin marca de agua. Todos los precios están en dólares estadounidenses. Cada generación con IA cuesta 2 créditos. Los impuestos aplicables se calculan al pagar.",
         "comparison": {
           "title": "Compara las funciones",
           "description": "Basic y Premium ofrecen las mismas funciones con pago mensual o anual. Los créditos anuales se abonan al inicio. Las recargas incluyen exportación individual en HD; la exportación comparativa requiere una suscripción Premium activa.",
@@ -306,7 +306,7 @@
               ]
             },
             {
-              "title": "Exportación de imágenes individuales en HD",
+              "title": "Descarga individual en HD sin marca de agua",
               "values": ["No incluido", "Incluido", "Incluido"]
             },
             {

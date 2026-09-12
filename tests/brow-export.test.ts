@@ -9,6 +9,7 @@ import {
 import { createBrowExportHandlers } from '../src/shared/lib/brow-export-handlers';
 import {
   composeBrowComparison,
+  normalizeBrowExport,
   renderBrowPreview,
 } from '../src/shared/services/brow-export-image';
 
@@ -32,6 +33,51 @@ const task = (id = 'a', source = 'https://uploads.example/photo.png') => ({
   taskResult: JSON.stringify({ output: 'https://provider.example/secret.png' }),
   taskId: 'provider-secret',
   prompt: 'private',
+});
+
+test('watermark stays in the lower corner and clean downloads preserve the portrait', async () => {
+  const original = await sharp({
+    create: { width: 480, height: 640, channels: 3, background: '#ffffff' },
+  })
+    .png()
+    .toBuffer();
+  const preview = await renderBrowPreview(original);
+  const body = await sharp(preview)
+    .extract({ left: 0, top: 0, width: 480, height: 575 })
+    .raw()
+    .toBuffer();
+  assert.ok(
+    body.every((value) => value >= 250),
+    'Watermark must leave the face and brow region untouched'
+  );
+  const label = await sharp(preview)
+    .extract({ left: 316, top: 588, width: 148, height: 36 })
+    .removeAlpha()
+    .raw()
+    .toBuffer();
+  assert.ok(
+    label.filter((value) => value < 120).length > 200,
+    'Brand lettering must be visible, not blank'
+  );
+  const clean = await normalizeBrowExport(original);
+  assert.deepEqual(
+    await sharp(clean).raw().toBuffer(),
+    await sharp(original).raw().toBuffer()
+  );
+  for (const [width, height] of [
+    [120, 160],
+    [640, 160],
+    [1, 1],
+  ]) {
+    const tiny = await sharp({
+      create: { width, height, channels: 3, background: '#000000' },
+    })
+      .png()
+      .toBuffer();
+    const metadata = await sharp(await renderBrowPreview(tiny)).metadata();
+    assert.equal(metadata.width, width);
+    assert.equal(metadata.height, height);
+  }
 });
 
 test('export requires paid entitlement and owned successful eyebrow tasks', () => {

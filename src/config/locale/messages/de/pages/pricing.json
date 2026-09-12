@@ -34,7 +34,7 @@
               "Unbegrenztes Brauen-Mapping",
               "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
               "Unbegrenzte Analyseberichte",
-              "Keine Exporte",
+              "Vorschau mit Wasserzeichen · Keine Downloads",
               "Standard-Warteschlange"
             ],
             "interval": "month",
@@ -65,7 +65,7 @@
               "Unbegrenztes Brauen-Mapping",
               "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
               "Unbegrenzte Analyseberichte",
-              "HD-Export einzelner Bilder",
+              "HD-Einzelbild-Download ohne Wasserzeichen",
               "Priorisierte Warteschlange"
             ],
             "interval": "month",
@@ -96,7 +96,7 @@
               "Unbegrenztes Brauen-Mapping",
               "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
               "Unbegrenzte Analyseberichte",
-              "HD-Export einzelner Bilder",
+              "HD-Einzelbild-Download ohne Wasserzeichen",
               "Vergleichsexport von 2–4 Ergebnissen desselben Fotos",
               "Höchste Priorität"
             ],
@@ -128,7 +128,7 @@
               "Unbegrenztes Brauen-Mapping",
               "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
               "Unbegrenzte Analyseberichte",
-              "HD-Export einzelner Bilder",
+              "HD-Einzelbild-Download ohne Wasserzeichen",
               "Priorisierte Warteschlange"
             ],
             "interval": "year",
@@ -159,7 +159,7 @@
               "Unbegrenztes Brauen-Mapping",
               "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
               "Unbegrenzte Analyseberichte",
-              "HD-Export einzelner Bilder",
+              "HD-Einzelbild-Download ohne Wasserzeichen",
               "Vergleichsexport von 2–4 Ergebnissen desselben Fotos",
               "Höchste Priorität"
             ],
@@ -189,7 +189,7 @@
             "features": [
               "24 Credits · 12 KI-Generierungen",
               "Credits verfallen nicht",
-              "HD-Export einzelner Bilder",
+              "HD-Einzelbild-Download ohne Wasserzeichen",
               "Standard-Warteschlange",
               "Vergleichsexport erfordert ein Premium-Abo"
             ],
@@ -218,7 +218,7 @@
             "features": [
               "60 Credits · 30 KI-Generierungen",
               "Credits verfallen nicht",
-              "HD-Export einzelner Bilder",
+              "HD-Einzelbild-Download ohne Wasserzeichen",
               "Standard-Warteschlange",
               "Vergleichsexport erfordert ein Premium-Abo"
             ],
@@ -247,7 +247,7 @@
             "features": [
               "120 Credits · 60 KI-Generierungen",
               "Credits verfallen nicht",
-              "HD-Export einzelner Bilder",
+              "HD-Einzelbild-Download ohne Wasserzeichen",
               "Standard-Warteschlange",
               "Vergleichsexport erfordert ein Premium-Abo"
             ],
@@ -270,7 +270,7 @@
             "group": "one-time"
           }
         ],
-        "note": "Alle Preise in US-Dollar. Jede KI-Generierung kostet 2 Credits. Anfallende Steuern werden beim Checkout berechnet.",
+        "note": "Alle Vorschauen enthalten ein Wasserzeichen. Basic, Premium und Credit-Zusatzpakete enthalten HD-Einzelbild-Downloads ohne Wasserzeichen. Alle Preise in US-Dollar. Jede KI-Generierung kostet 2 Credits. Anfallende Steuern werden beim Checkout berechnet.",
         "comparison": {
           "title": "Tarife im Vergleich",
           "description": "Basic und Premium bieten bei monatlicher und jährlicher Zahlung dieselben Funktionen. Jahres-Credits werden sofort vollständig gutgeschrieben. Zusatzpakete enthalten HD-Einzelexporte; Vergleichsexporte erfordern ein aktives Premium-Abo.",
@@ -306,7 +306,7 @@
               ]
             },
             {
-              "title": "HD-Export einzelner Bilder",
+              "title": "HD-Einzelbild-Download ohne Wasserzeichen",
               "values": ["Nicht enthalten", "Enthalten", "Enthalten"]
             },
             {

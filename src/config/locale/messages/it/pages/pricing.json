@@ -34,7 +34,7 @@
               "Mappatura delle sopracciglia illimitata",
               "Modifica manuale a sei punti illimitata",
               "Report di analisi illimitati",
-              "Esportazione non inclusa",
+              "Anteprime con filigrana · Download non inclusi",
               "Coda standard"
             ],
             "interval": "month",
@@ -65,7 +65,7 @@
               "Mappatura delle sopracciglia illimitata",
               "Modifica manuale a sei punti illimitata",
               "Report di analisi illimitati",
-              "Esportazione di immagini singole in HD",
+              "Download di immagini singole in HD senza filigrana",
               "Coda prioritaria"
             ],
             "interval": "month",
@@ -96,7 +96,7 @@
               "Mappatura delle sopracciglia illimitata",
               "Modifica manuale a sei punti illimitata",
               "Report di analisi illimitati",
-              "Esportazione di immagini singole in HD",
+              "Download di immagini singole in HD senza filigrana",
               "Esportazione di 2–4 risultati della stessa foto a confronto",
               "Priorità massima"
             ],
@@ -128,7 +128,7 @@
               "Mappatura delle sopracciglia illimitata",
               "Modifica manuale a sei punti illimitata",
               "Report di analisi illimitati",
-              "Esportazione di immagini singole in HD",
+              "Download di immagini singole in HD senza filigrana",
               "Coda prioritaria"
             ],
             "interval": "year",
@@ -159,7 +159,7 @@
               "Mappatura delle sopracciglia illimitata",
               "Modifica manuale a sei punti illimitata",
               "Report di analisi illimitati",
-              "Esportazione di immagini singole in HD",
+              "Download di immagini singole in HD senza filigrana",
               "Esportazione di 2–4 risultati della stessa foto a confronto",
               "Priorità massima"
             ],
@@ -189,7 +189,7 @@
             "features": [
               "24 crediti · 12 generazioni IA",
               "I crediti non scadono",
-              "Esportazione di immagini singole in HD",
+              "Download di immagini singole in HD senza filigrana",
               "Coda standard",
               "Il confronto esportabile richiede un abbonamento Premium"
             ],
@@ -218,7 +218,7 @@
             "features": [
               "60 crediti · 30 generazioni IA",
               "I crediti non scadono",
-              "Esportazione di immagini singole in HD",
+              "Download di immagini singole in HD senza filigrana",
               "Coda standard",
               "Il confronto esportabile richiede un abbonamento Premium"
             ],
@@ -247,7 +247,7 @@
             "features": [
               "120 crediti · 60 generazioni IA",
               "I crediti non scadono",
-              "Esportazione di immagini singole in HD",
+              "Download di immagini singole in HD senza filigrana",
               "Coda standard",
               "Il confronto esportabile richiede un abbonamento Premium"
             ],
@@ -270,7 +270,7 @@
             "group": "one-time"
           }
         ],
-        "note": "Tutti i prezzi sono in dollari statunitensi. Ogni generazione IA costa 2 crediti. Le eventuali imposte vengono calcolate al pagamento.",
+        "note": "Tutte le anteprime includono una filigrana. Basic, Premium e le ricariche di crediti includono download di immagini singole in HD senza filigrana. Tutti i prezzi sono in dollari statunitensi. Ogni generazione IA costa 2 crediti. Le eventuali imposte vengono calcolate al pagamento.",
         "comparison": {
           "title": "Confronta le funzionalità",
           "description": "Basic e Premium includono le stesse funzionalità con pagamento mensile o annuale. I crediti annuali vengono assegnati subito. Le ricariche includono esportazioni singole in HD; le esportazioni di confronto richiedono un abbonamento Premium attivo.",
@@ -306,7 +306,7 @@
               ]
             },
             {
-              "title": "Esportazione di immagini singole in HD",
+              "title": "Download di immagini singole in HD senza filigrana",
               "values": ["Non incluso", "Incluso", "Incluso"]
             },
             {

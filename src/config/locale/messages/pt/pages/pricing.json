@@ -34,7 +34,7 @@
               "Mapeamento de sobrancelhas ilimitado",
               "Edição manual de seis pontos ilimitada",
               "Relatórios de análise ilimitados",
-              "Sem exportações",
+              "Prévias com marca-d’água · Sem downloads",
               "Fila padrão"
             ],
             "interval": "month",
@@ -65,7 +65,7 @@
               "Mapeamento de sobrancelhas ilimitado",
               "Edição manual de seis pontos ilimitada",
               "Relatórios de análise ilimitados",
-              "Exportação de imagens individuais em HD",
+              "Download individual em HD sem marca-d’água",
               "Fila prioritária"
             ],
             "interval": "month",
@@ -96,7 +96,7 @@
               "Mapeamento de sobrancelhas ilimitado",
               "Edição manual de seis pontos ilimitada",
               "Relatórios de análise ilimitados",
-              "Exportação de imagens individuais em HD",
+              "Download individual em HD sem marca-d’água",
               "Exportação comparativa de 2–4 resultados da mesma foto",
               "Prioridade máxima"
             ],
@@ -128,7 +128,7 @@
               "Mapeamento de sobrancelhas ilimitado",
               "Edição manual de seis pontos ilimitada",
               "Relatórios de análise ilimitados",
-              "Exportação de imagens individuais em HD",
+              "Download individual em HD sem marca-d’água",
               "Fila prioritária"
             ],
             "interval": "year",
@@ -159,7 +159,7 @@
               "Mapeamento de sobrancelhas ilimitado",
               "Edição manual de seis pontos ilimitada",
               "Relatórios de análise ilimitados",
-              "Exportação de imagens individuais em HD",
+              "Download individual em HD sem marca-d’água",
               "Exportação comparativa de 2–4 resultados da mesma foto",
               "Prioridade máxima"
             ],
@@ -189,7 +189,7 @@
             "features": [
               "24 créditos · 12 gerações com IA",
               "Os créditos não expiram",
-              "Exportação de imagens individuais em HD",
+              "Download individual em HD sem marca-d’água",
               "Fila padrão",
               "A exportação comparativa exige assinatura Premium"
             ],
@@ -218,7 +218,7 @@
             "features": [
               "60 créditos · 30 gerações com IA",
               "Os créditos não expiram",
-              "Exportação de imagens individuais em HD",
+              "Download individual em HD sem marca-d’água",
               "Fila padrão",
               "A exportação comparativa exige assinatura Premium"
             ],
@@ -247,7 +247,7 @@
             "features": [
               "120 créditos · 60 gerações com IA",
               "Os créditos não expiram",
-              "Exportação de imagens individuais em HD",
+              "Download individual em HD sem marca-d’água",
               "Fila padrão",
               "A exportação comparativa exige assinatura Premium"
             ],
@@ -270,7 +270,7 @@
             "group": "one-time"
           }
         ],
-        "note": "Todos os preços estão em dólares americanos. Cada geração com IA custa 2 créditos. Os impostos aplicáveis são calculados no checkout.",
+        "note": "Todas as prévias incluem marca-d’água. Basic, Premium e as recargas de créditos incluem downloads individuais em HD sem marca-d’água. Todos os preços estão em dólares americanos. Cada geração com IA custa 2 créditos. Os impostos aplicáveis são calculados no checkout.",
         "comparison": {
           "title": "Compare os recursos",
           "description": "Basic e Premium oferecem os mesmos recursos no plano mensal ou anual. Os créditos anuais são concedidos de uma vez. As recargas incluem exportação individual em HD; a exportação comparativa exige uma assinatura Premium ativa.",
@@ -306,7 +306,7 @@
               ]
             },
             {
-              "title": "Exportação de imagens individuais em HD",
+              "title": "Download individual em HD sem marca-d’água",
               "values": ["Não incluído", "Incluído", "Incluído"]
             },
             {

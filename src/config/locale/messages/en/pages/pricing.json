@@ -34,7 +34,7 @@
               "Unlimited brow mapping",
               "Unlimited manual six-point editing",
               "Unlimited analysis reports",
-              "No exports",
+              "Watermarked previews · No downloads",
               "Standard queue"
             ],
             "interval": "month",
@@ -65,7 +65,7 @@
               "Unlimited brow mapping",
               "Unlimited manual six-point editing",
               "Unlimited analysis reports",
-              "HD single-image export",
+              "Watermark-free HD single-image download",
               "Priority queue"
             ],
             "interval": "month",
@@ -96,7 +96,7 @@
               "Unlimited brow mapping",
               "Unlimited manual six-point editing",
               "Unlimited analysis reports",
-              "HD single-image export",
+              "Watermark-free HD single-image download",
               "Comparison export: 2–4 results from the same photo",
               "Highest priority queue"
             ],
@@ -128,7 +128,7 @@
               "Unlimited brow mapping",
               "Unlimited manual six-point editing",
               "Unlimited analysis reports",
-              "HD single-image export",
+              "Watermark-free HD single-image download",
               "Priority queue"
             ],
             "interval": "year",
@@ -159,7 +159,7 @@
               "Unlimited brow mapping",
               "Unlimited manual six-point editing",
               "Unlimited analysis reports",
-              "HD single-image export",
+              "Watermark-free HD single-image download",
               "Comparison export: 2–4 results from the same photo",
               "Highest priority queue"
             ],
@@ -189,7 +189,7 @@
             "features": [
               "24 credits · 12 AI generations",
               "Credits never expire",
-              "HD single-image export",
+              "Watermark-free HD single-image download",
               "Standard queue",
               "Comparison export requires a Premium subscription"
             ],
@@ -218,7 +218,7 @@
             "features": [
               "60 credits · 30 AI generations",
               "Credits never expire",
-              "HD single-image export",
+              "Watermark-free HD single-image download",
               "Standard queue",
               "Comparison export requires a Premium subscription"
             ],
@@ -247,7 +247,7 @@
             "features": [
               "120 credits · 60 AI generations",
               "Credits never expire",
-              "HD single-image export",
+              "Watermark-free HD single-image download",
               "Standard queue",
               "Comparison export requires a Premium subscription"
             ],
@@ -270,7 +270,7 @@
             "group": "one-time"
           }
         ],
-        "note": "All prices are in USD. Each AI generation costs 2 credits. Any applicable tax is calculated at checkout.",
+        "note": "All in-app previews include a watermark. Basic, Premium and credit top-ups include watermark-free HD single-image downloads. All prices are in USD. Each AI generation costs 2 credits. Any applicable tax is calculated at checkout.",
         "comparison": {
           "title": "Compare plan features",
           "description": "Basic and Premium have the same features on monthly and annual billing. Annual credits are granted upfront. Top-ups include HD single-image export; comparison export requires an active Premium subscription.",
@@ -306,7 +306,7 @@
               ]
             },
             {
-              "title": "HD single-image export",
+              "title": "Watermark-free HD single-image download",
               "values": ["Not included", "Included", "Included"]
             },
             {
