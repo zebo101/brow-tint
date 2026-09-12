@@ -267,6 +267,19 @@
     "saved_preview": "Prévia de IA salva",
     "previous": "Resultado anterior",
     "next": "Próximo resultado",
-    "image_failed": "Não foi possível carregar a imagem. Feche e abra novamente para tentar."
+    "image_failed": "Não foi possível carregar a imagem. Feche e abra novamente para tentar.",
+    "button": "Histórico de fotos",
+    "empty": "Ainda não há fotos salvas. Gere uma prévia para vê-la aqui.",
+    "all": "Todas as fotos"
+  },
+  "purchase": {
+    "title": "Escolha seu plano",
+    "description": "Downloads HD sem marca d’água. Sua foto e seus ajustes ficam aqui.",
+    "compare_description": "Premium inclui exportações comparativas de 2–4 resultados da mesma foto.",
+    "plans": "Planos",
+    "continue_checkout": "Continuar para pagamento →",
+    "return_note": "Conclua o pagamento na nova aba e volte aqui para continuar.",
+    "checkout_note": "O pagamento abre em uma nova aba. Preços em USD; impostos calculados no pagamento.",
+    "back": "Voltar à edição"
   }
 }

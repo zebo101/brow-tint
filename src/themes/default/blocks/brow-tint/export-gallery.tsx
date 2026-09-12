@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Button } from '@heroui/react';
 import { useTranslations } from 'next-intl';
 
-import { Link } from '@/core/i18n/navigation';
 import { useBrowExportAccess } from '@/shared/blocks/brow/export-access';
 import { useAppContext } from '@/shared/contexts/app';
 
@@ -145,12 +144,13 @@ function SavedBrowExportGallery({ refreshKey }: { refreshKey: string | null }) {
             {t('ui.export_compare', { n: selected.length })}
           </Button>
         ) : (
-          <Link
-            href="/pricing"
+          <button
+            type="button"
+            onClick={() => access.openPurchase('compare')}
             className="text-sm font-semibold underline underline-offset-4"
           >
             {t('ui.upgrade_compare')}
-          </Link>
+          </button>
         )}
         <span className="text-muted-foreground text-xs">
           {selected.length}/4

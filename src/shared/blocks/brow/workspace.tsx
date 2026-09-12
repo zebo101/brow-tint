@@ -415,6 +415,7 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
             </span>
             {props.file && (
               <div className="flex gap-1">
+                <BrowResultHistory refreshKey={props.resultUrl} />
                 <Button
                   variant="secondary"
                   size="sm"
@@ -562,7 +563,6 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
                     </span>
                   </div>
                 )}
-                <BrowResultHistory refreshKey={props.resultUrl} />
                 <div className="brow-floating-toolbar">
                   <ToolButton
                     label={browText(locale, 'Zoom out', '缩小')}

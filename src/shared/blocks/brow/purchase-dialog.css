@@ -1,0 +1,8 @@
+.brow-purchase-dialog {
+  width: min(960px, calc(100vw - 32px));
+  max-width: min(960px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+}
+.brow-purchase-dialog article {
+  color: var(--foreground);
+}

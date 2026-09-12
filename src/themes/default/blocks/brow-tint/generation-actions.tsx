@@ -176,12 +176,13 @@ export function BrowGenerationStatus({
             {t('ui.export_hd')}
           </Button>
         ) : (
-          <Link
-            href="/pricing"
+          <button
+            type="button"
+            onClick={() => access.openPurchase('export')}
             className="text-sm font-semibold underline underline-offset-4"
           >
             {t('ui.upgrade_export')}
-          </Link>
+          </button>
         )}
       </div>
     );

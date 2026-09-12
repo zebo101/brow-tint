@@ -267,6 +267,19 @@
     "saved_preview": "已保存的 AI 预览",
     "previous": "上一张结果",
     "next": "下一张结果",
-    "image_failed": "图片加载失败，请关闭后重新打开。"
+    "image_failed": "图片加载失败，请关闭后重新打开。",
+    "button": "历史照片",
+    "empty": "还没有历史照片，生成预览后会显示在这里。",
+    "all": "全部照片"
+  },
+  "purchase": {
+    "title": "选择适合你的方案",
+    "description": "解锁无水印高清下载，当前照片和调整会保留。",
+    "compare_description": "Premium 支持导出同一照片的 2–4 款眉形对比图。",
+    "plans": "价格方案",
+    "continue_checkout": "继续前往结账 →",
+    "return_note": "请在结账页完成付款，然后回到这里继续操作。",
+    "checkout_note": "结账将在新标签页打开。价格为美元，适用税费将在结账时计算。",
+    "back": "返回编辑"
   }
 }

@@ -267,6 +267,19 @@
     "saved_preview": "Gespeicherte KI-Vorschau",
     "previous": "Vorheriges Ergebnis",
     "next": "Nächstes Ergebnis",
-    "image_failed": "Die Vorschau konnte nicht geladen werden. Bitte schließen und erneut öffnen."
+    "image_failed": "Die Vorschau konnte nicht geladen werden. Bitte schließen und erneut öffnen.",
+    "button": "Fotoverlauf",
+    "empty": "Noch keine gespeicherten Fotos. Erstelle eine Vorschau, um sie hier zu sehen.",
+    "all": "Alle Fotos"
+  },
+  "purchase": {
+    "title": "Wähle deinen Tarif",
+    "description": "HD-Downloads ohne Wasserzeichen. Dein Foto und deine Änderungen bleiben erhalten.",
+    "compare_description": "Premium ermöglicht Vergleichsexporte von 2–4 Ergebnissen desselben Fotos.",
+    "plans": "Tarife",
+    "continue_checkout": "Weiter zur Zahlung →",
+    "return_note": "Schließe die Zahlung im neuen Tab ab und kehre dann hierher zurück.",
+    "checkout_note": "Die Zahlung öffnet sich in einem neuen Tab. Preise in USD; Steuern werden beim Bezahlen berechnet.",
+    "back": "Zurück zur Bearbeitung"
   }
 }

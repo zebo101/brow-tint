@@ -4,14 +4,15 @@ import { useEffect, useId, useRef, useState } from 'react';
 import { Modal } from '@heroui/react';
 import { useLocale, useTranslations } from 'next-intl';
 
-import { Link } from '@/core/i18n/navigation';
 import { BROW_GENERATION_CREDITS, getBrowOffer } from '@/config/brow-pricing';
 import { Button } from '@/shared/components/ui/button';
 import { useAppContext } from '@/shared/contexts/app';
+import { useBrowPurchase } from '@/shared/contexts/brow-purchase';
 import {
   requestBrowOfferCheckout,
   type BrowCreditOfferId,
 } from '@/shared/lib/brow-credit-offer';
+import { openBrowCheckout } from '@/shared/lib/brow-purchase';
 
 export function BrowCreditOfferModal({
   open,
@@ -21,6 +22,7 @@ export function BrowCreditOfferModal({
   onOpenChange: (open: boolean) => void;
 }) {
   const locale = useLocale();
+  const [checkoutUrl, setCheckoutUrl] = useState<string | null>(null);
   const { user, setIsShowSignModal, fetchUserCredits } = useAppContext();
   const userId = user?.id;
   const [trial, setTrial] = useState(false);
@@ -31,24 +33,37 @@ export function BrowCreditOfferModal({
   useEffect(() => {
     if (!open || !userId) return;
     const controller = new AbortController();
-    void fetch('/api/brow/credit-offer', {
-      signal: controller.signal,
-      cache: 'no-store',
-    })
-      .then(async (response) => {
-        if (!response.ok) return;
-        const status = await response.json();
-        if (controller.signal.aborted) return;
-        // Another tab may have spent or added credits. Refresh both cases so
-        // closing the offer never leaves the Generate action with a stale balance.
-        void fetchUserCredits();
-        if (status.remainingCredits >= BROW_GENERATION_CREDITS) {
-          onOpenChange(false);
-        } else setTrial(status.freeTrialExhausted === true);
+    const refresh = () => {
+      void fetch('/api/brow/credit-offer', {
+        signal: controller.signal,
+        cache: 'no-store',
       })
-      .catch(() => {});
-    return () => controller.abort();
-  }, [open, userId, onOpenChange, fetchUserCredits]);
+        .then(async (response) => {
+          if (!response.ok) return;
+          const status = await response.json();
+          if (controller.signal.aborted) return;
+          // Another tab may have spent or added credits. Refresh both cases so
+          // closing the offer never leaves the Generate action with a stale balance.
+          void fetchUserCredits();
+          if (status.remainingCredits >= BROW_GENERATION_CREDITS) {
+            onOpenChange(false);
+          } else setTrial(status.freeTrialExhausted === true);
+        })
+        .catch(() => {});
+    };
+    refresh();
+    window.addEventListener('focus', refresh);
+    return () => {
+      controller.abort();
+      window.removeEventListener('focus', refresh);
+    };
+  }, [
+    open,
+    userId,
+    user?.credits?.remainingCredits,
+    onOpenChange,
+    fetchUserCredits,
+  ]);
 
   async function checkout(id: BrowCreditOfferId) {
     if (busy.current) return;
@@ -60,9 +75,14 @@ export function BrowCreditOfferModal({
     busy.current = true;
     setPending(id);
     setError(false);
+    setCheckoutUrl(null);
     try {
-      const url = await requestBrowOfferCheckout(id, locale);
-      window.location.assign(url);
+      const fallback = await openBrowCheckout(() =>
+        requestBrowOfferCheckout(id, locale)
+      );
+      setCheckoutUrl(fallback);
+      busy.current = false;
+      setPending(null);
     } catch (reason) {
       if (reason instanceof Error && reason.message === 'sign_in_required') {
         onOpenChange(false);
@@ -75,6 +95,7 @@ export function BrowCreditOfferModal({
 
   return (
     <BrowCreditOfferDialog
+      checkoutUrl={checkoutUrl}
       open={open && !!user}
       trial={trial}
       pending={pending}
@@ -88,6 +109,7 @@ export function BrowCreditOfferModal({
 }
 
 export function BrowCreditOfferDialog({
+  checkoutUrl,
   open,
   trial,
   pending,
@@ -95,6 +117,7 @@ export function BrowCreditOfferDialog({
   onCheckout,
   onOpenChange,
 }: {
+  checkoutUrl?: string | null;
   open: boolean;
   trial: boolean;
   pending: BrowCreditOfferId | null;
@@ -105,6 +128,8 @@ export function BrowCreditOfferDialog({
   const t = useTranslations('pages.ai-brow-tint.credit_offer');
   const ui = useTranslations('pages.ai-brow-tint.ui');
   const descriptionId = useId();
+  const openPurchase = useBrowPurchase();
+  const purchaseText = useTranslations('pages.ai-brow-tint.purchase');
   const topup = getBrowOffer('topup-24')!;
   const basic = getBrowOffer('basic-monthly')!;
   return (
@@ -157,14 +182,30 @@ export function BrowCreditOfferDialog({
                 {t('pricing')}
               </span>
             ) : (
-              <Link
-                href="/pricing"
-                onClick={() => onOpenChange(false)}
+              <button
+                type="button"
+                onClick={() => {
+                  onOpenChange(false);
+                  openPurchase('credits');
+                }}
                 className="text-muted-foreground py-2 text-center text-sm underline underline-offset-4"
               >
                 {t('pricing')}
-              </Link>
+              </button>
             )}
+            {checkoutUrl && (
+              <a
+                href={checkoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center text-sm underline"
+              >
+                {purchaseText('continue_checkout')}
+              </a>
+            )}
+            <p className="text-muted-foreground text-xs">
+              {purchaseText('checkout_note')}
+            </p>
             {error && (
               <p role="alert" className="text-destructive text-sm">
                 {t('error')}

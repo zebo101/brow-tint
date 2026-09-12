@@ -267,6 +267,19 @@
     "saved_preview": "Anteprima AI salvata",
     "previous": "Risultato precedente",
     "next": "Risultato successivo",
-    "image_failed": "Impossibile caricare l’immagine. Chiudi e riapri per riprovare."
+    "image_failed": "Impossibile caricare l’immagine. Chiudi e riapri per riprovare.",
+    "button": "Cronologia foto",
+    "empty": "Nessuna foto salvata. Genera un’anteprima per vederla qui.",
+    "all": "Tutte le foto"
+  },
+  "purchase": {
+    "title": "Scegli il tuo piano",
+    "description": "Download HD senza filigrana. Foto e modifiche restano qui.",
+    "compare_description": "Premium include esportazioni di confronto di 2–4 risultati della stessa foto.",
+    "plans": "Piani",
+    "continue_checkout": "Continua al pagamento →",
+    "return_note": "Completa il pagamento nella nuova scheda, poi torna qui per continuare.",
+    "checkout_note": "Il pagamento si apre in una nuova scheda. Prezzi in USD; tasse calcolate al pagamento.",
+    "back": "Torna alla modifica"
   }
 }

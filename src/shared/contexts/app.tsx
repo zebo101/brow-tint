@@ -15,6 +15,8 @@ import { getAuthClient } from '@/core/auth/client';
 import { envConfigs } from '@/config';
 import { User } from '@/shared/models/user';
 
+import { BrowPurchaseProvider } from './brow-purchase';
+
 export interface ContextValue {
   user: User | null;
   setUser: (user: User | null) => void;
@@ -89,7 +91,9 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
         throw new Error(message);
       }
 
-      setUser((prev: User | null) => (prev ? { ...prev, credits: data } : prev));
+      setUser((prev: User | null) =>
+        prev ? { ...prev, credits: data } : prev
+      );
     } catch (e) {
       if (process.env.NODE_ENV !== 'production') {
         console.log('fetch user credits failed:', e);
@@ -147,6 +151,21 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
     userRef.current = user;
   }, [user]);
 
+  // Checkout uses a separate tab so returning must refresh the retained studio,
+  // even when its purchase dialog was already closed.
+  useEffect(() => {
+    if (!user?.id) return;
+    const refresh = () => {
+      if (document.visibilityState === 'visible') void fetchUserCredits();
+    };
+    window.addEventListener('focus', refresh);
+    document.addEventListener('visibilitychange', refresh);
+    return () => {
+      window.removeEventListener('focus', refresh);
+      document.removeEventListener('visibilitychange', refresh);
+    };
+  }, [user?.id, fetchUserCredits]);
+
   const value = useMemo(
     () => ({
       user,
@@ -176,5 +195,9 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
     ]
   );
 
-  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+  return (
+    <AppContext.Provider value={value}>
+      <BrowPurchaseProvider>{children}</BrowPurchaseProvider>
+    </AppContext.Provider>
+  );
 };

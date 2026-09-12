@@ -267,6 +267,19 @@
     "saved_preview": "Saved AI preview",
     "previous": "Previous result",
     "next": "Next result",
-    "image_failed": "This preview could not be loaded. Close and reopen it to retry."
+    "image_failed": "This preview could not be loaded. Close and reopen it to retry.",
+    "button": "History photos",
+    "empty": "No saved photos yet. Generate a preview to see it here.",
+    "all": "All photos"
+  },
+  "purchase": {
+    "title": "Choose your plan",
+    "description": "Unlock watermark-free HD downloads. Your photo and edits stay here.",
+    "compare_description": "Premium includes comparison exports of 2–4 results from the same photo.",
+    "plans": "Plans",
+    "continue_checkout": "Continue to checkout →",
+    "return_note": "Complete payment in the checkout tab, then return here to continue.",
+    "checkout_note": "Checkout opens in a new tab. Prices are in USD; any applicable tax is calculated at checkout.",
+    "back": "Back to editing"
   }
 }

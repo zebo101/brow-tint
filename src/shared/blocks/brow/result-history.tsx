@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Button, Modal, Spinner } from '@heroui/react';
-import { ChevronLeft, ChevronRight, RefreshCw } from 'lucide-react';
+import { ChevronLeft, ChevronRight, History, RefreshCw } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import { useAppContext } from '@/shared/contexts/app';
@@ -18,29 +18,15 @@ import './result-history.css';
 
 export function BrowResultHistory({
   refreshKey,
-  horizontal = false,
 }: {
   refreshKey: string | null;
-  horizontal?: boolean;
 }) {
   const { user } = useAppContext();
   if (!user) return null;
-  return (
-    <SavedHistory
-      key={user.id}
-      refreshKey={refreshKey}
-      horizontal={horizontal}
-    />
-  );
+  return <SavedHistory key={user.id} refreshKey={refreshKey} />;
 }
 
-function SavedHistory({
-  refreshKey,
-  horizontal,
-}: {
-  refreshKey: string | null;
-  horizontal: boolean;
-}) {
+function SavedHistory({ refreshKey }: { refreshKey: string | null }) {
   const [results, setResults] = useState<BrowHistoryResult[]>([]);
   const [attempt, setAttempt] = useState(0);
   const requestKey = `${refreshKey ?? ''}:${attempt}`;
@@ -71,7 +57,6 @@ function SavedHistory({
       results={results}
       loading={loading}
       failed={failed}
-      horizontal={horizontal}
       onRefresh={() => setAttempt((value) => value + 1)}
       canExport={!!access.canExport}
       downloading={access.downloading}
@@ -86,7 +71,6 @@ export function BrowResultHistoryView({
   results,
   loading,
   failed,
-  horizontal,
   onRefresh,
   canExport,
   downloading,
@@ -95,88 +79,112 @@ export function BrowResultHistoryView({
   results: BrowHistoryResult[];
   loading: boolean;
   failed: boolean;
-  horizontal: boolean;
   onRefresh: () => void;
   canExport: boolean;
   downloading: boolean;
   onDownload: (id: string) => void;
 }) {
   const t = useTranslations('pages.ai-brow-tint');
+  const [open, setOpen] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const index = results.findIndex((result) => result.id === selectedId);
   const selected = results[index];
-  if (!results.length && !loading && !failed) return null;
   return (
     <>
-      <section
-        className={`brow-history ${horizontal ? 'brow-history-horizontal' : 'brow-history-rail'}`}
-        aria-label={t('history.title')}
+      <Button
+        size="sm"
+        variant="ghost"
+        onPress={() => setOpen(true)}
+        aria-haspopup="dialog"
       >
-        <div className="brow-history-heading">
-          <h3>{t('history.title')}</h3>
-          <Button
-            isIconOnly
-            size="sm"
-            variant="ghost"
-            aria-label={t('ui.refresh_results')}
-            isDisabled={loading}
-            onPress={onRefresh}
-          >
-            <RefreshCw className="size-3" />
-          </Button>
-        </div>
-        {loading && !results.length && (
-          <div role="status" className="brow-history-notice">
-            <Spinner size="sm" />
-            <span>{t('history.loading')}</span>
-          </div>
-        )}
-        {failed && (
-          <p role="alert" className="brow-history-notice">
-            {t('history.failed')}
-          </p>
-        )}
-        <div className="brow-history-list">
-          {results.map((result, i) => (
-            <button
-              key={result.id}
-              type="button"
-              className="brow-history-thumbnail"
-              aria-label={t('history.open_result', {
-                n: i + 1,
-                style: result.styleName,
-              })}
-              aria-haspopup="dialog"
-              onClick={() => setSelectedId(result.id)}
-            >
-              <Image
-                src={result.previewUrl}
-                alt=""
-                width={84}
-                height={100}
-                unoptimized
-                loading="lazy"
-              />
-              <span title={result.styleName}>{result.styleName}</span>
-            </button>
-          ))}
-        </div>
-      </section>
+        <History className="size-4" aria-hidden="true" />
+        {t('history.button')}
+      </Button>
       <Modal.Backdrop
-        isOpen={!!selected}
+        isOpen={open}
         onOpenChange={(open) => {
-          if (!open) setSelectedId(null);
+          setOpen(open);
         }}
       >
         <Modal.Container size="lg" placement="center">
           <Modal.Dialog
-            className="brow-workspace brow-history-dialog"
+            className={`brow-workspace brow-history-dialog ${selected ? '' : 'brow-history-gallery-dialog'}`}
             aria-label={t('history.title')}
           >
             <Modal.CloseTrigger aria-label={t('history.close')} />
+            {!selected && (
+              <>
+                <Modal.Header className="pr-10">
+                  <Modal.Heading>{t('history.button')}</Modal.Heading>
+                  <p className="text-muted text-sm">
+                    {t('history.saved_preview')}
+                  </p>
+                </Modal.Header>
+                <Modal.Body className="min-h-0">
+                  <div className="mb-3 flex justify-end">
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      isDisabled={loading}
+                      onPress={onRefresh}
+                    >
+                      <RefreshCw className="size-4" />
+                      {t('ui.refresh_results')}
+                    </Button>
+                  </div>
+                  {loading && !results.length && (
+                    <div role="status" className="brow-history-notice">
+                      <Spinner size="sm" />
+                      {t('history.loading')}
+                    </div>
+                  )}
+                  {failed && (
+                    <p role="alert" className="brow-history-notice">
+                      {t('history.failed')}
+                    </p>
+                  )}
+                  {!results.length && !loading && !failed && (
+                    <p className="brow-history-notice">{t('history.empty')}</p>
+                  )}
+                  <div className="brow-history-grid">
+                    {results.map((result, i) => (
+                      <button
+                        key={result.id}
+                        type="button"
+                        className="brow-history-thumbnail"
+                        aria-label={t('history.open_result', {
+                          n: i + 1,
+                          style: result.styleName,
+                        })}
+                        onClick={() => setSelectedId(result.id)}
+                      >
+                        <Image
+                          src={result.previewUrl}
+                          alt=""
+                          width={240}
+                          height={240}
+                          unoptimized
+                          loading="lazy"
+                        />
+                        <span>{result.styleName}</span>
+                      </button>
+                    ))}
+                  </div>
+                </Modal.Body>
+              </>
+            )}
             {selected && (
               <>
                 <Modal.Header className="pr-10">
+                  <Button
+                    size="sm"
+                    variant="ghost"
+                    className="mb-1 self-start"
+                    onPress={() => setSelectedId(null)}
+                  >
+                    <ChevronLeft className="size-4" />
+                    {t('history.all')}
+                  </Button>
                   <Modal.Heading>{selected.styleName}</Modal.Heading>
                   <p className="text-muted text-xs">
                     {t('history.saved_preview')} · {index + 1}/{results.length}

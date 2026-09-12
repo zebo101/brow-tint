@@ -190,6 +190,7 @@ export function MobileBrowEditor(props: MobileBrowEditorProps) {
             : browText(locale, 'Brow canvas', '眉型画布')}
         </span>
         <div className="mb-top-actions">
+          <BrowResultHistory refreshKey={props.resultUrl} />
           <Button
             size="sm"
             variant="ghost"
@@ -494,10 +495,7 @@ export function MobileBrowEditor(props: MobileBrowEditorProps) {
             </div>
           )}
           {tool === 'catalog' && (
-            <div className="mb-scroll-content">
-              <BrowResultHistory refreshKey={props.resultUrl} horizontal />
-              {props.catalog}
-            </div>
+            <div className="mb-scroll-content">{props.catalog}</div>
           )}
         </div>
 

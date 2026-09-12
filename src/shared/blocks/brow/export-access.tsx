@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
-import { useRouter } from '@/core/i18n/navigation';
 import { useAppContext } from '@/shared/contexts/app';
+import { useBrowPurchase } from '@/shared/contexts/brow-purchase';
 import type { BrowExportEntitlements } from '@/shared/lib/brow-export';
 
 export async function saveBrowExport(response: Response, filename: string) {
@@ -26,7 +26,7 @@ export async function saveBrowExport(response: Response, filename: string) {
 export function useBrowExportAccess() {
   const { user, setIsShowSignModal } = useAppContext();
   const userId = user?.id;
-  const router = useRouter();
+  const openPurchase = useBrowPurchase();
   const t = useTranslations('pages.ai-brow-tint');
   const [access, setAccess] = useState<
     (BrowExportEntitlements & { userId: string }) | null
@@ -34,16 +34,26 @@ export function useBrowExportAccess() {
   const [downloading, setDownloading] = useState(false);
   useEffect(() => {
     let active = true;
-    if (userId)
-      void fetch('/api/brow/export', { cache: 'no-store' })
-        .then(async (response) => {
-          if (!response.ok) return;
-          const current = await response.json();
-          if (active) setAccess({ ...current, userId });
-        })
-        .catch(() => {});
+    const refresh = () => {
+      if (userId)
+        void fetch('/api/brow/export', { cache: 'no-store' })
+          .then(async (response) => {
+            if (!response.ok) return;
+            const current = await response.json();
+            if (active) setAccess({ ...current, userId });
+          })
+          .catch(() => {});
+    };
+    refresh();
+    window.addEventListener('focus', refresh);
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') refresh();
+    };
+    document.addEventListener('visibilitychange', onVisible);
     return () => {
       active = false;
+      window.removeEventListener('focus', refresh);
+      document.removeEventListener('visibilitychange', onVisible);
     };
   }, [userId]);
 
@@ -61,7 +71,7 @@ export function useBrowExportAccess() {
     const current: BrowExportEntitlements = await response.json();
     setAccess({ ...current, userId: user.id });
     if (!current.canExport || (compare && !current.canCompare)) {
-      router.push('/pricing');
+      openPurchase(compare ? 'compare' : 'export');
       return false;
     }
     return true;
@@ -86,7 +96,7 @@ export function useBrowExportAccess() {
     } catch (error) {
       const code = error instanceof Error ? error.message : '';
       if (code === 'paid_export_required' || code === 'premium_required')
-        router.push('/pricing');
+        openPurchase(code === 'premium_required' ? 'compare' : 'export');
       else if (code === 'sign_in_required') setIsShowSignModal(true);
       else toast.error(t('ui.download_failed_please_try_again'));
     } finally {
@@ -97,6 +107,7 @@ export function useBrowExportAccess() {
   return {
     ...(access?.userId === userId ? access : null),
     downloading,
+    openPurchase,
     downloadTasks: (taskIds: string[]) =>
       run(
         () =>

@@ -267,6 +267,19 @@
     "saved_preview": "저장된 AI 미리보기",
     "previous": "이전 결과",
     "next": "다음 결과",
-    "image_failed": "미리보기를 불러오지 못했습니다. 닫은 후 다시 열어 주세요."
+    "image_failed": "미리보기를 불러오지 못했습니다. 닫은 후 다시 열어 주세요.",
+    "button": "사진 기록",
+    "empty": "저장된 사진이 없습니다. 미리보기를 생성하면 여기에 표시됩니다.",
+    "all": "모든 사진"
+  },
+  "purchase": {
+    "title": "요금제 선택",
+    "description": "워터마크 없는 HD 다운로드. 사진과 수정 내용은 유지됩니다.",
+    "compare_description": "Premium은 같은 사진의 2–4개 결과 비교 내보내기를 지원합니다.",
+    "plans": "요금제",
+    "continue_checkout": "결제 계속하기 →",
+    "return_note": "결제 탭에서 결제한 후 여기로 돌아와 계속하세요.",
+    "checkout_note": "결제는 새 탭에서 열립니다. 가격은 USD이며 세금은 결제 시 계산됩니다.",
+    "back": "편집으로 돌아가기"
   }
 }
