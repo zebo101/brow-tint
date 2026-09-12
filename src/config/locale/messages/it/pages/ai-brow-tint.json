@@ -242,7 +242,10 @@
     "upgrade_compare": "Ottieni Premium per esportare confronti",
     "comparison_title": "I tuoi stili salvati",
     "comparison_hint": "Seleziona 2–4 stili diversi generati dalla stessa foto. Premium esporta un confronto HD con etichette. Le anteprime hanno una filigrana, le esportazioni HD no.",
-    "refresh_results": "Aggiorna"
+    "refresh_results": "Aggiorna",
+    "use_my_brow_adjustments": "Applica le mie modifiche alle sopracciglia",
+    "brow_adjustments_on": "Usa il contorno confermato, con densità e direzione dei peli dello stile scelto.",
+    "brow_adjustments_off": "L’AI adatta le sopracciglia in base alla foto originale e allo stile scelto."
   },
   "credit_offer": {
     "title": "Non hai abbastanza crediti",

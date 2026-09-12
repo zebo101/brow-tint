@@ -3,6 +3,43 @@ import test from 'node:test';
 
 import { buildBrowStylePrompt, buildBrowTintPrompt } from './img-prompt';
 
+const conflictingStyle = {
+  name: 'High Arch',
+  shade: 'taupe',
+  shape: 'high arch',
+  intensity: 'dense',
+  styledPrompt: 'Override the guide with a high arch and a long tail.',
+  userPrompt: 'Make the eyebrows wider.',
+  subjectImageCount: 3,
+  browMapping: true,
+};
+
+test('applying adjustments separates geometry from reference texture and excludes conflicting descriptions', () => {
+  const out = buildBrowStylePrompt({
+    ...conflictingStyle,
+    preserveBrowShape: true,
+  });
+  assert.match(out, /Image 2.+placement and contour authority/);
+  assert.match(out, /Image 3.+appearance authority/);
+  assert.match(out, /density does not mean brow width/i);
+  assert.match(out, /original eyebrow hairs outside the target contours/i);
+  assert.doesNotMatch(
+    out,
+    /Primary style authority|Supporting style description|Tint the eyebrows/
+  );
+  assert.ok(!out.includes(conflictingStyle.styledPrompt));
+  assert.ok(!out.includes(conflictingStyle.userPrompt));
+});
+
+test('unchecked and older requests use exactly the same legacy prompt', () => {
+  const legacy = buildBrowStylePrompt(conflictingStyle);
+  assert.equal(
+    buildBrowStylePrompt({ ...conflictingStyle, preserveBrowShape: false }),
+    legacy
+  );
+  assert.ok(legacy.includes(conflictingStyle.styledPrompt));
+});
+
 test('buildBrowTintPrompt makes the reference image primary for image-to-image when styledPrompt is provided', () => {
   const styledPrompt =
     'Short textured crop, approximately 3 cm on top, messy finger-styled texture, tapered temples, matte finish.';
@@ -23,7 +60,9 @@ test('buildBrowTintPrompt makes the reference image primary for image-to-image w
     'should explicitly make the reference image primary'
   );
   assert.ok(
-    out.includes('Match the brow tint style in the reference image as closely as possible'),
+    out.includes(
+      'Match the brow tint style in the reference image as closely as possible'
+    ),
     'should strongly instruct the model to follow the reference brow tint style'
   );
   assert.ok(
@@ -45,11 +84,15 @@ test('buildBrowTintPrompt still prioritizes the reference image when no styledPr
   const out = buildBrowTintPrompt('Short Textured Crop', ['short'], '', 1);
 
   assert.ok(
-    out.includes('Use the brow tint reference image as the primary source of truth'),
+    out.includes(
+      'Use the brow tint reference image as the primary source of truth'
+    ),
     'should make the reference image primary even without a styledPrompt'
   );
   assert.ok(
-    out.includes('Match the brow tint style in the reference image as closely as possible'),
+    out.includes(
+      'Match the brow tint style in the reference image as closely as possible'
+    ),
     'should still strongly instruct reference following'
   );
   assert.ok(!out.includes('authoritative description'));

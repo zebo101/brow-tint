@@ -38,8 +38,15 @@ export async function POST(request: Request) {
 
   try {
     const requestBody = await request.json();
-    const { provider, mediaType, prompt, options, styleId, browMapping } =
-      requestBody;
+    const {
+      provider,
+      mediaType,
+      prompt,
+      options,
+      styleId,
+      browMapping,
+      preserveBrowShape,
+    } = requestBody;
     let { scene, model } = requestBody;
 
     if (!provider || !mediaType || !model) {
@@ -88,6 +95,7 @@ export async function POST(request: Request) {
 
     validateBrowMappingRequest({
       browMapping,
+      preserveBrowShape,
       styleId,
       mediaType,
       scene,
@@ -191,6 +199,7 @@ export async function POST(request: Request) {
         userPrompt: clientPrompt,
         subjectImageCount,
         browMapping: browMapping === true,
+        preserveBrowShape: preserveBrowShape === true,
       });
       generationOptions = {
         ...(generationOptions ?? {}),

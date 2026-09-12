@@ -126,6 +126,7 @@ export function buildBrowStylePrompt({
   userPrompt = '',
   subjectImageCount,
   browMapping = false,
+  preserveBrowShape = false,
 }: {
   name: string;
   shade: string;
@@ -135,7 +136,24 @@ export function buildBrowStylePrompt({
   userPrompt?: string;
   subjectImageCount: number;
   browMapping?: boolean;
+  preserveBrowShape?: boolean;
 }): string {
+  // Opt-in request flag keeps older clients and the unchecked mode unchanged.
+  // Do not append catalog/user prose here: it may redefine the confirmed shape.
+  if (browMapping && preserveBrowShape) {
+    return [
+      "Image 1 is the user's original portrait and is the sole identity authority. Edit this photograph.",
+      'Image 2 is the confirmed brow mapping guide and is the placement and contour authority for both eyebrows. Its white closed outlines define the target shape on the same portrait.',
+      'Follow each outlined brow independently: head, arch, tail, width, length, height, spacing and angle. Preserve the confirmed left/right differences. Do not revert to the original brow silhouette or substitute the sample silhouette.',
+      'Image 3 is the selected brow style sample and is the appearance authority for hair density, individual hair strokes, hair flow, softness and root-to-tip gradient only.',
+      "Fit Image 3's hair appearance inside Image 2's target contours. Hair density does not mean brow width: dense or sparse hairs must still fit the confirmed outline. The sample must not move, widen, lengthen or reshape the target brows.",
+      'Edit the combined area of the original and target eyebrows. Remove original eyebrow hairs outside the target contours and restore natural skin there; render realistic brow hairs inside the target contours. Avoid double brows, leftover tails and pasted-on edges.',
+      "Preserve the person's face, identity, eyes, eyelashes, skin tone, expression, pose, makeup, hair, clothing, background, framing and lighting outside that edit area. Match the original photograph's sharpness and grain.",
+      'Do not reproduce white guide marks, control points, labels or the sample background. Return only the finished portrait.',
+      SYSTEM_PROMPT_MARKER,
+    ].join(' ');
+  }
+
   const parts: string[] = [];
 
   if (browMapping) {

@@ -1,5 +1,6 @@
 type BrowMappingRequest = {
   browMapping: unknown;
+  preserveBrowShape?: unknown;
   styleId: unknown;
   mediaType: unknown;
   scene: unknown;
@@ -17,6 +18,7 @@ export type GenerationErrorResponse = {
 
 const PUBLIC_PRE_SUBMISSION_ERRORS = new Set([
   'invalid params',
+  'preserveBrowShape must be a boolean and requires browMapping when enabled',
   'prompt or options is required',
   'invalid mediaType',
   'invalid provider',
@@ -59,12 +61,22 @@ export function createGenerationError(
 
 export function validateBrowMappingRequest({
   browMapping,
+  preserveBrowShape,
   styleId,
   mediaType,
   scene,
   model,
   supportedModels,
 }: BrowMappingRequest): void {
+  if (
+    (preserveBrowShape !== undefined &&
+      typeof preserveBrowShape !== 'boolean') ||
+    (preserveBrowShape === true && browMapping !== true)
+  ) {
+    throw new Error(
+      'preserveBrowShape must be a boolean and requires browMapping when enabled'
+    );
+  }
   if (browMapping !== true) {
     return;
   }

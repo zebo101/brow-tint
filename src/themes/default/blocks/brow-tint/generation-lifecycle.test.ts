@@ -24,6 +24,7 @@ test('mapping generation sends the normalized photo and confirmed guide in order
     scene: 'image-to-image',
     styleId: 'style-42',
     browMapping: true,
+    preserveBrowShape: true,
     options: {
       resolution: '1K',
       aspect_ratio: 'auto',
@@ -34,6 +35,18 @@ test('mapping generation sends the normalized photo and confirmed guide in order
       ],
     },
   });
+});
+
+test('unchecked shape preservation keeps the guide and explicitly sends false', () => {
+  const payload = buildBrowMappingPayload({
+    styleId: 'style-42',
+    originalUrl: 'https://cdn.example.com/original.jpg',
+    guideUrl: 'https://cdn.example.com/guide.png',
+    preserveBrowShape: false,
+  });
+  assert.equal(payload.preserveBrowShape, false);
+  assert.equal(payload.browMapping, true);
+  assert.equal(payload.options.image_input.length, 2);
 });
 
 test('mapping generation rejects a missing upload before a paid request can be built', () => {

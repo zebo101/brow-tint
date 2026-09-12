@@ -80,6 +80,7 @@ export function BrowTintStudio({
   } = session;
   const [showGuidelines, setShowGuidelines] = useState(false);
   const [showCreditOffer, setShowCreditOffer] = useState(false);
+  const [preserveBrowShape, setPreserveBrowShape] = useState(true);
   const offeredTask = useRef<string | null>(null);
   const [pendingPhoto, setPendingPhoto] = useState<PendingPhoto>(null);
   const [loadingSample, setLoadingSample] = useState(false);
@@ -227,6 +228,15 @@ export function BrowTintStudio({
     [isLocked, loadingSample, reset]
   );
 
+  const changeShapePreservation = useCallback(
+    (selected: boolean) => {
+      if (isLocked || loadingSample || selected === preserveBrowShape) return;
+      reset();
+      setPreserveBrowShape(selected);
+    },
+    [isLocked, loadingSample, preserveBrowShape, reset]
+  );
+
   const setEditorOpen = useCallback((open: boolean) => {
     dispatch({ type: 'set-open', open });
     if (!open)
@@ -264,6 +274,7 @@ export function BrowTintStudio({
       styleSlug: selectedStyle.slug,
       photo: confirmedAnalysis.photo.blob,
       guide: confirmedAnalysis.guide,
+      preserveBrowShape,
     });
   }, [
     isLocked,
@@ -271,6 +282,7 @@ export function BrowTintStudio({
     user,
     selectedStyle,
     confirmedAnalysis,
+    preserveBrowShape,
     remainingCredits,
     setIsShowSignModal,
     generation,
@@ -342,6 +354,8 @@ export function BrowTintStudio({
             action={
               <BrowGenerationActions
                 confirmationLabel={t('ui.choose_a_shape')}
+                preserveBrowShape={preserveBrowShape}
+                onPreserveBrowShapeChange={changeShapePreservation}
                 authenticated={!!user}
                 checkingAuth={!isMounted || isCheckSign}
                 remainingCredits={remainingCredits}
@@ -423,6 +437,8 @@ export function BrowTintStudio({
               }
               action={
                 <BrowGenerationActions
+                  preserveBrowShape={preserveBrowShape}
+                  onPreserveBrowShapeChange={changeShapePreservation}
                   authenticated={!!user}
                   checkingAuth={!isMounted || isCheckSign}
                   remainingCredits={remainingCredits}

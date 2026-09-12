@@ -163,12 +163,14 @@ interface BrowMappingPayloadInput {
   styleId: string;
   originalUrl: string;
   guideUrl: string;
+  preserveBrowShape?: boolean;
 }
 
 export function buildBrowMappingPayload({
   styleId,
   originalUrl,
   guideUrl,
+  preserveBrowShape = true,
 }: BrowMappingPayloadInput) {
   if (!styleId.trim()) {
     throw new Error('A selected brow style is required.');
@@ -184,6 +186,7 @@ export function buildBrowMappingPayload({
     scene: 'image-to-image',
     styleId,
     browMapping: true,
+    preserveBrowShape,
     options: { ...BROW_IMAGE_OPTIONS, image_input: [originalUrl, guideUrl] },
   } as const;
 }

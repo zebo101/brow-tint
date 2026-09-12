@@ -242,7 +242,10 @@
     "upgrade_compare": "Obtén Premium para exportar comparaciones",
     "comparison_title": "Tus estilos guardados",
     "comparison_hint": "Selecciona entre 2 y 4 estilos generados con la misma foto. Premium exporta una comparación HD con nombres. Las vistas previas tienen marca de agua; las exportaciones HD no.",
-    "refresh_results": "Actualizar"
+    "refresh_results": "Actualizar",
+    "use_my_brow_adjustments": "Aplicar mis ajustes de cejas",
+    "brow_adjustments_on": "Usar el contorno confirmado y la densidad y dirección del pelo del estilo elegido.",
+    "brow_adjustments_off": "La IA adapta mis cejas a partir de la foto original y del estilo elegido."
   },
   "credit_offer": {
     "title": "No tienes suficientes créditos",

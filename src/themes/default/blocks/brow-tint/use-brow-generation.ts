@@ -104,6 +104,7 @@ interface StartGenerationInput {
   styleSlug: string;
   photo: Blob;
   guide: Blob;
+  preserveBrowShape: boolean;
 }
 
 interface UseBrowGenerationOptions {
@@ -235,7 +236,13 @@ export function useBrowGeneration({
   );
 
   const start = useCallback(
-    async ({ styleId, styleSlug, photo, guide }: StartGenerationInput) => {
+    async ({
+      styleId,
+      styleSlug,
+      photo,
+      guide,
+      preserveBrowShape,
+    }: StartGenerationInput) => {
       if (inFlightRef.current || isDesignLocked(stateRef.current)) return;
       inFlightRef.current = true;
       setResultStyleSlug(null);
@@ -275,6 +282,7 @@ export function useBrowGeneration({
           styleId,
           originalUrl,
           guideUrl,
+          preserveBrowShape,
         });
       } catch (error) {
         inFlightRef.current = false;

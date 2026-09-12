@@ -204,11 +204,21 @@ test('new brow tasks from current and older browsers enqueue Flare 1K with the s
   });
   const { POST } = require('./route') as typeof import('./route');
 
-  for (const { model, browMapping } of [
+  for (const { model, browMapping, preserveBrowShape } of [
     { model: 'nano-banana-pro', browMapping: true },
     { model: 'gpt-image-2-image-to-image', browMapping: true },
     { model: 'gpt-image-2-5-flare-image-to-image', browMapping: true },
     { model: 'nano-banana-pro', browMapping: false },
+    {
+      model: 'gpt-image-2-5-flare-image-to-image',
+      browMapping: true,
+      preserveBrowShape: true,
+    },
+    {
+      model: 'gpt-image-2-5-flare-image-to-image',
+      browMapping: true,
+      preserveBrowShape: false,
+    },
   ]) {
     const response = await POST(
       new Request('http://localhost/api/ai/generate', {
@@ -221,6 +231,7 @@ test('new brow tasks from current and older browsers enqueue Flare 1K with the s
           model,
           styleId: style.id,
           browMapping,
+          preserveBrowShape,
           options: {
             image_input: browMapping ? [original, guide] : [original],
             resolution: '4K',
@@ -247,6 +258,16 @@ test('new brow tasks from current and older browsers enqueue Flare 1K with the s
     assert.equal(providerParams.options.background, 'opaque');
     assert.equal(providerParams.options.__browQueue, undefined);
     assert.equal(providerParams.options.__browExport, undefined);
+    assert.equal(providerParams.options.preserveBrowShape, undefined);
+    if (preserveBrowShape) {
+      assert.match(
+        providerParams.prompt,
+        /Hair density does not mean brow width/
+      );
+      assert.ok(!providerParams.prompt.includes(style.prompt));
+    } else {
+      assert.ok(providerParams.prompt.includes(style.prompt));
+    }
     assert.equal(
       JSON.parse(String(queuedTask.options)).__browExport.source,
       original
@@ -272,5 +293,37 @@ test('new brow tasks from current and older browsers enqueue Flare 1K with the s
     }
     assert.equal(body.data.costCredits, 2);
     assert.equal(body.data.options, null);
+  }
+
+  for (const invalid of [
+    { browMapping: true, preserveBrowShape: 'false' },
+    { browMapping: true, preserveBrowShape: null },
+    { browMapping: false, preserveBrowShape: true },
+  ]) {
+    const previousTask = queuedTask;
+    const response = await POST(
+      new Request('http://localhost/api/ai/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          provider: 'kie',
+          mediaType: 'image',
+          scene: 'image-to-image',
+          model: 'gpt-image-2-5-flare-image-to-image',
+          styleId: style.id,
+          options: { image_input: [original, guide] },
+          ...invalid,
+        }),
+      })
+    );
+    const body = await response.json();
+    assert.equal(body.code, -1);
+    assert.equal(body.submissionState, 'not-submitted');
+    assert.match(body.message, /preserveBrowShape must be a boolean/);
+    assert.equal(
+      queuedTask,
+      previousTask,
+      'invalid choice must not enqueue or charge'
+    );
   }
 });

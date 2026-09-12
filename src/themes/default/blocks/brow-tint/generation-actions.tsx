@@ -1,6 +1,7 @@
 'use client';
 
-import { Button, Spinner } from '@heroui/react';
+import { useId } from 'react';
+import { Button, Checkbox, Spinner } from '@heroui/react';
 import { useTranslations } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
@@ -20,6 +21,8 @@ interface BrowGenerationActionsProps {
   locked: boolean;
   state: GenerationState;
   confirmationLabel?: string;
+  preserveBrowShape: boolean;
+  onPreserveBrowShapeChange: (selected: boolean) => void;
   onGenerate: () => void;
   onSignIn: () => void;
 }
@@ -33,10 +36,13 @@ export function BrowGenerationActions({
   locked,
   state,
   confirmationLabel,
+  preserveBrowShape,
+  onPreserveBrowShapeChange,
   onGenerate,
   onSignIn,
 }: BrowGenerationActionsProps) {
   const t = useTranslations('pages.ai-brow-tint');
+  const shapeHelpId = useId();
   const active = ['uploading', 'submitting', 'querying'].includes(state.phase);
   const ready = confirmed && selected;
   const insufficient = authenticated && remainingCredits < BROW_MAPPING_CREDITS;
@@ -60,6 +66,31 @@ export function BrowGenerationActions({
 
   return (
     <div className="space-y-2.5">
+      <div className="space-y-1 pb-1">
+        <Checkbox
+          name="preserveBrowShape"
+          isSelected={preserveBrowShape}
+          onChange={onPreserveBrowShapeChange}
+          isDisabled={locked}
+          aria-describedby={shapeHelpId}
+          className="min-h-8 items-center gap-2 text-sm"
+        >
+          <Checkbox.Control>
+            <Checkbox.Indicator />
+          </Checkbox.Control>
+          <Checkbox.Content>{t('ui.use_my_brow_adjustments')}</Checkbox.Content>
+        </Checkbox>
+        <p
+          id={shapeHelpId}
+          className="text-muted-foreground text-xs leading-relaxed"
+        >
+          {t(
+            preserveBrowShape
+              ? 'ui.brow_adjustments_on'
+              : 'ui.brow_adjustments_off'
+          )}
+        </p>
+      </div>
       <Button
         fullWidth
         variant="primary"
