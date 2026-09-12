@@ -126,6 +126,8 @@ export function useBrowGeneration({
   const queryErrorsRef = useRef(0);
   const mountedRef = useRef(true);
   const inFlightRef = useRef(false);
+  // Keep the same source URL across styles so the server can verify one-photo comparisons.
+  const uploadedPhotos = useRef(new WeakMap<Blob, Promise<string>>());
 
   const send = useCallback((action: GenerationAction) => {
     stateRef.current = generationReducer(stateRef.current, action);
@@ -242,8 +244,14 @@ export function useBrowGeneration({
       let originalUrl: string;
       let guideUrl: string;
       try {
+        let uploadedPhoto = uploadedPhotos.current.get(photo);
+        if (!uploadedPhoto) {
+          uploadedPhoto = uploadImage(photo, 'brow-photo.png');
+          uploadedPhotos.current.set(photo, uploadedPhoto);
+          void uploadedPhoto.catch(() => uploadedPhotos.current.delete(photo));
+        }
         [originalUrl, guideUrl] = await Promise.all([
-          uploadImage(photo, 'brow-photo.png'),
+          uploadedPhoto,
           uploadImage(guide, 'brow-guide.png'),
         ]);
       } catch (error) {

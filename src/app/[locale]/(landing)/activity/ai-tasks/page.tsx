@@ -4,8 +4,13 @@ import { SYSTEM_PROMPT_MARKER } from '@/config/img-prompt';
 import { AITaskStatus } from '@/extensions/ai';
 import { AudioPlayer, Empty, LazyImage } from '@/shared/blocks/common';
 import { TableCard } from '@/shared/blocks/table';
+import {
+  isBrowTask,
+  serializeBrowTaskForClient,
+} from '@/shared/lib/brow-export';
 import { AITask, getAITasks, getAITasksCount } from '@/shared/models/ai_task';
 import { getUserInfo } from '@/shared/models/user';
+import { getBrowEntitlements } from '@/shared/services/brow-entitlements';
 import { Button, Tab } from '@/shared/types/blocks/common';
 import { type Table } from '@/shared/types/blocks/table';
 
@@ -36,6 +41,7 @@ export default async function AiTasksPage({
     userId: user.id,
     mediaType: type,
   });
+  const entitlements = await getBrowEntitlements(user.id);
 
   const table: Table = {
     title: t('list.title'),
@@ -59,7 +65,7 @@ export default async function AiTasksPage({
           if (browTintIndex > 0) {
             prompt = prompt.substring(0, browTintIndex).trim();
           }
-          
+
           return prompt || '-';
         },
       },
@@ -109,7 +115,7 @@ export default async function AiTasksPage({
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group relative inline-block cursor-pointer"
-                      download
+                      download={!isBrowTask(item) || undefined}
                     >
                       <LazyImage
                         src={image.imageUrl}
@@ -117,7 +123,9 @@ export default async function AiTasksPage({
                         className="h-20 w-20 rounded-lg object-cover transition-transform hover:scale-105"
                       />
                       <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black/50 opacity-0 transition-opacity group-hover:opacity-100">
-                        <span className="text-xs text-white">{t('fields.click_to_view')}</span>
+                        <span className="text-xs text-white">
+                          {t('fields.click_to_view')}
+                        </span>
                       </div>
                     </a>
                   ))}
@@ -154,7 +162,7 @@ export default async function AiTasksPage({
         },
       },
     ],
-    data: aiTasks,
+    data: aiTasks.map((task) => serializeBrowTaskForClient(task, entitlements)),
     emptyMessage: t('list.empty_message'),
     pagination: {
       total,

@@ -1,16 +1,15 @@
 {
   "metadata": {
     "title": "Preços Browlens — Créditos e planos de filtros de sobrancelhas",
-    "description": "Compare planos de créditos para gerar prévias com Browlens."
+    "description": "Mapeamento, edição manual de seis pontos e relatórios de análise são gratuitos e ilimitados. Cada geração com IA usa 2 créditos."
   },
   "page": {
     "title": "Preços",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Preços Browlens — Créditos e planos de filtros de sobrancelhas",
-        "title": "Escolha o plano perfeito",
-        "description": "A análise é grátis. Gerar imagens exige login e créditos; o custo aparece antes de gerar.",
+        "title": "Escolha o plano para suas sobrancelhas",
+        "description": "Mapeamento, edição manual de seis pontos e relatórios de análise são gratuitos e ilimitados. Cada geração com IA usa 2 créditos.",
         "groups": [
           {
             "name": "monthly",
@@ -18,252 +17,308 @@
           },
           {
             "name": "yearly",
-            "title": "Anual (Economize)",
-            "label": "Economize"
+            "title": "Anual"
           },
           {
             "name": "one-time",
-            "title": "Recarga"
+            "title": "Recargas"
           }
         ],
         "items": [
           {
             "title": "Grátis",
-            "description": "Experimente Browlens sem custo.",
-            "features_title": "Inclui",
-            "features": ["Funcionalidades essenciais", "Fila padrão"],
+            "description": "Explore o formato das suas sobrancelhas grátis.",
+            "features_title": "O que está incluído",
+            "features": [
+              "6 créditos no cadastro, uma única vez · 3 gerações com IA",
+              "Mapeamento de sobrancelhas ilimitado",
+              "Edição manual de seis pontos ilimitada",
+              "Relatórios de análise ilimitados",
+              "Sem exportações",
+              "Fila padrão"
+            ],
             "interval": "month",
             "amount": 0,
             "currency": "USD",
             "price": "$0",
             "unit": "",
             "is_featured": false,
-            "tip": "Comece grátis. Faça upgrade quando quiser.",
+            "tip": "Os créditos de cadastro não expiram. Não há concessão recorrente de créditos gratuitos.",
             "button": {
-              "title": "Plano atual",
-              "url": "/#pricing",
+              "title": "Comece grátis",
+              "url": "/#brow-app",
               "icon": ""
             },
             "product_id": "free-monthly",
-            "product_name": "Grátis",
-            "credits": 0,
-            "valid_days": 30,
+            "product_name": "Free",
+            "credits": 6,
+            "valid_days": 0,
             "group": "monthly"
           },
           {
-            "title": "Básico",
-            "description": "Para necessidades regulares.",
+            "title": "Basic",
+            "description": "Para experimentar estilos com frequência.",
             "label": "Popular",
-            "features_title": "Inclui",
+            "features_title": "O que está incluído",
             "features": [
-              "200 créditos por mês",
-              "Créditos renovados mensalmente",
-              "Fila prioritária",
-              "Remover marca d'água"
+              "100 créditos · 50 gerações com IA",
+              "Mapeamento de sobrancelhas ilimitado",
+              "Edição manual de seis pontos ilimitada",
+              "Relatórios de análise ilimitados",
+              "Exportação de imagens individuais em HD",
+              "Fila prioritária"
             ],
             "interval": "month",
-            "amount": 1990,
+            "amount": 1290,
             "currency": "USD",
-            "price": "$19.9",
+            "price": "$12.9",
             "unit": "/ mês",
             "is_featured": true,
-            "tip": "Cancele quando quiser.",
+            "tip": "Os créditos são concedidos a cada mês e valem durante o período mensal atual (até 30 dias).",
             "button": {
               "title": "Assinar",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "basic-monthly",
-            "product_name": "Básico Mensal",
-            "credits": 200,
+            "product_name": "Basic Monthly",
+            "credits": 100,
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "Básico"
+            "plan_name": "Basic"
           },
           {
             "title": "Premium",
-            "description": "Para usuários avançados e alto volume.",
-            "features_title": "Inclui",
+            "description": "Mais estilos e exportações de comparação.",
+            "features_title": "O que está incluído",
             "features": [
-              "300 créditos por mês",
-              "Créditos renovados mensalmente",
-              "Fila com a maior prioridade",
-              "Remover marca d'água"
+              "300 créditos · 150 gerações com IA",
+              "Mapeamento de sobrancelhas ilimitado",
+              "Edição manual de seis pontos ilimitada",
+              "Relatórios de análise ilimitados",
+              "Exportação de imagens individuais em HD",
+              "Exportação comparativa de 2–4 resultados da mesma foto",
+              "Prioridade máxima"
             ],
             "interval": "month",
-            "amount": 2990,
+            "amount": 2490,
             "currency": "USD",
-            "price": "$29.9",
+            "price": "$24.9",
             "unit": "/ mês",
             "is_featured": false,
-            "tip": "Cancele quando quiser.",
+            "tip": "Os créditos são concedidos a cada mês e valem durante o período mensal atual (até 30 dias).",
             "button": {
               "title": "Assinar",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-monthly",
-            "product_name": "Premium Mensal",
+            "product_name": "Premium Monthly",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "Premium"
           },
           {
-            "title": "Grátis",
-            "description": "Experimente Browlens sem custo.",
-            "features_title": "Inclui",
-            "features": ["Funcionalidades essenciais", "Fila padrão"],
-            "interval": "year",
-            "amount": 0,
-            "currency": "USD",
-            "price": "$0",
-            "unit": "",
-            "is_featured": false,
-            "tip": "Comece grátis. Faça upgrade quando quiser.",
-            "button": {
-              "title": "Plano atual",
-              "url": "/#pricing",
-              "icon": ""
-            },
-            "product_id": "free-yearly",
-            "product_name": "Grátis",
-            "credits": 0,
-            "valid_days": 365,
-            "group": "yearly"
-          },
-          {
-            "title": "Básico",
-            "description": "Economize com cobrança anual. Os créditos anuais são creditados antecipadamente.",
-            "label": "Economize",
-            "features_title": "Inclui",
+            "title": "Basic",
+            "description": "Todos os créditos do ano disponíveis de uma vez.",
+            "features_title": "O que está incluído",
             "features": [
-              "2400 créditos por ano",
-              "Creditados antecipadamente",
-              "Fila prioritária",
-              "Remover marca d'água"
+              "2400 créditos · 1200 gerações com IA",
+              "Mapeamento de sobrancelhas ilimitado",
+              "Edição manual de seis pontos ilimitada",
+              "Relatórios de análise ilimitados",
+              "Exportação de imagens individuais em HD",
+              "Fila prioritária"
             ],
             "interval": "year",
-            "amount": 19080,
+            "amount": 15900,
             "currency": "USD",
-            "price": "$15.9",
-            "original_price": "$19.9",
-            "unit": "/ mês",
+            "price": "$159",
+            "unit": "/ ano",
             "is_featured": false,
-            "tip": "Cobrança anual. Créditos creditados antecipadamente.",
+            "tip": "Equivale a $13,25/mês, com cobrança de $159/ano. Todos os créditos são concedidos de uma vez e valem durante o período anual atual (até 365 dias).",
             "button": {
               "title": "Assinar",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "basic-yearly",
-            "product_name": "Básico Anual",
+            "product_name": "Basic Annual",
             "credits": 2400,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Básico Anual"
+            "plan_name": "Basic"
           },
           {
             "title": "Premium",
-            "description": "Melhor valor anual para alto volume. Os créditos anuais são creditados antecipadamente.",
-            "features_title": "Inclui",
+            "description": "Um ano de Premium com créditos antecipados.",
+            "features_title": "O que está incluído",
             "features": [
-              "3600 créditos por ano",
-              "Creditados antecipadamente",
-              "Fila de máxima prioridade",
-              "Remover marca d'água"
+              "3600 créditos · 1800 gerações com IA",
+              "Mapeamento de sobrancelhas ilimitado",
+              "Edição manual de seis pontos ilimitada",
+              "Relatórios de análise ilimitados",
+              "Exportação de imagens individuais em HD",
+              "Exportação comparativa de 2–4 resultados da mesma foto",
+              "Prioridade máxima"
             ],
             "interval": "year",
-            "amount": 31080,
+            "amount": 23900,
             "currency": "USD",
-            "price": "$25.9",
-            "original_price": "$29.9",
-            "unit": "/ mês",
+            "price": "$239",
+            "unit": "/ ano",
             "is_featured": false,
-            "tip": "Cobrança anual. Créditos creditados antecipadamente.",
+            "tip": "Cerca de $19,92/mês, com cobrança de $239/ano. Economize $59,80 em relação a 12 pagamentos mensais. Todos os créditos são concedidos de uma vez e valem durante o período anual atual (até 365 dias).",
             "button": {
               "title": "Assinar",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "Premium Anual",
+            "product_name": "Premium Annual",
             "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Premium Anual"
+            "plan_name": "Premium"
           },
           {
-            "title": "Recarga de 100 créditos",
-            "description": "Adicione créditos a qualquer momento.",
-            "features_title": "Inclui",
-            "features": ["100 créditos", "Os créditos nunca expiram"],
+            "title": "24 créditos",
+            "description": "Gerações com IA extras quando precisar.",
+            "features_title": "O que está incluído",
+            "features": [
+              "24 créditos · 12 gerações com IA",
+              "Os créditos não expiram",
+              "Exportação de imagens individuais em HD",
+              "Fila padrão",
+              "A exportação comparativa exige assinatura Premium"
+            ],
             "interval": "one-time",
-            "amount": 1290,
+            "amount": 599,
             "currency": "USD",
-            "price": "$12.9",
-            "unit": "",
+            "price": "$5.99",
+            "unit": "pagamento único",
             "is_featured": false,
-            "tip": "Compra única. Os créditos nunca expiram.",
+            "tip": "Cerca de $0.50 por geração · Compra única com exportação individual em HD e fila padrão. Os benefícios da sua assinatura ativa continuam valendo.",
             "button": {
-              "title": "Recarregar",
-              "url": "/#pricing",
+              "title": "Comprar créditos",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-100",
-            "product_name": "Recarga 100",
-            "credits": 100,
+            "product_id": "topup-24",
+            "product_name": "Browlens 24 Credits",
+            "credits": 24,
             "valid_days": 0,
             "group": "one-time"
           },
           {
-            "title": "Recarga de 200 créditos",
-            "description": "Adicione mais créditos quando precisar.",
-            "label": "Popular",
-            "features_title": "Inclui",
-            "features": ["200 créditos", "Os créditos nunca expiram"],
+            "title": "60 créditos",
+            "description": "Gerações com IA extras quando precisar.",
+            "features_title": "O que está incluído",
+            "features": [
+              "60 créditos · 30 gerações com IA",
+              "Os créditos não expiram",
+              "Exportação de imagens individuais em HD",
+              "Fila padrão",
+              "A exportação comparativa exige assinatura Premium"
+            ],
             "interval": "one-time",
-            "amount": 2590,
+            "amount": 1199,
             "currency": "USD",
-            "price": "$25.9",
-            "unit": "",
+            "price": "$11.99",
+            "unit": "pagamento único",
             "is_featured": false,
-            "tip": "Compra única. Os créditos nunca expiram.",
+            "tip": "Cerca de $0.40 por geração · Compra única com exportação individual em HD e fila padrão. Os benefícios da sua assinatura ativa continuam valendo.",
             "button": {
-              "title": "Recarregar",
-              "url": "/#pricing",
+              "title": "Comprar créditos",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-200",
-            "product_name": "Recarga 200",
-            "credits": 200,
+            "product_id": "topup-60",
+            "product_name": "Browlens 60 Credits",
+            "credits": 60,
             "valid_days": 0,
             "group": "one-time"
           },
           {
-            "title": "Recarga de 300 créditos",
-            "description": "Ideal para uso de maior volume.",
-            "features_title": "Inclui",
-            "features": ["300 créditos", "Os créditos nunca expiram"],
+            "title": "120 créditos",
+            "description": "Gerações com IA extras quando precisar.",
+            "features_title": "O que está incluído",
+            "features": [
+              "120 créditos · 60 gerações com IA",
+              "Os créditos não expiram",
+              "Exportação de imagens individuais em HD",
+              "Fila padrão",
+              "A exportação comparativa exige assinatura Premium"
+            ],
             "interval": "one-time",
-            "amount": 3890,
+            "amount": 1999,
             "currency": "USD",
-            "price": "$38.9",
-            "unit": "",
+            "price": "$19.99",
+            "unit": "pagamento único",
             "is_featured": false,
-            "tip": "Compra única. Os créditos nunca expiram.",
+            "tip": "Cerca de $0.33 por geração · Compra única com exportação individual em HD e fila padrão. Os benefícios da sua assinatura ativa continuam valendo.",
             "button": {
-              "title": "Recarregar",
-              "url": "/#pricing",
+              "title": "Comprar créditos",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-300",
-            "product_name": "Recarga 300",
-            "credits": 300,
+            "product_id": "topup-120",
+            "product_name": "Browlens 120 Credits",
+            "credits": 120,
             "valid_days": 0,
             "group": "one-time"
           }
-        ]
+        ],
+        "note": "Todos os preços estão em dólares americanos. Cada geração com IA custa 2 créditos. Os impostos aplicáveis são calculados no checkout.",
+        "comparison": {
+          "title": "Compare os recursos",
+          "description": "Basic e Premium oferecem os mesmos recursos no plano mensal ou anual. Os créditos anuais são concedidos de uma vez. As recargas incluem exportação individual em HD; a exportação comparativa exige uma assinatura Premium ativa.",
+          "feature_label": "Recurso",
+          "plans": ["Grátis", "Basic", "Premium"],
+          "rows": [
+            {
+              "title": "Mapeamento de sobrancelhas ilimitado",
+              "values": ["Ilimitado", "Ilimitado", "Ilimitado"]
+            },
+            {
+              "title": "Edição manual de seis pontos ilimitada",
+              "values": ["Ilimitado", "Ilimitado", "Ilimitado"]
+            },
+            {
+              "title": "Relatórios de análise ilimitados",
+              "values": ["Ilimitado", "Ilimitado", "Ilimitado"]
+            },
+            {
+              "title": "Créditos do plano mensal",
+              "values": [
+                "6 no cadastro, uma única vez",
+                "100 créditos · 50 gerações com IA",
+                "300 créditos · 150 gerações com IA"
+              ]
+            },
+            {
+              "title": "Créditos do plano anual (antecipados)",
+              "values": [
+                "—",
+                "2400 créditos · 1200 gerações com IA",
+                "3600 créditos · 1800 gerações com IA"
+              ]
+            },
+            {
+              "title": "Exportação de imagens individuais em HD",
+              "values": ["Não incluído", "Incluído", "Incluído"]
+            },
+            {
+              "title": "Exportação de 2–4 resultados da mesma foto",
+              "values": ["Não incluído", "Não incluído", "Incluído"]
+            },
+            {
+              "title": "Fila de geração",
+              "values": ["Fila padrão", "Fila prioritária", "Prioridade máxima"]
+            }
+          ]
+        }
       }
     }
   },

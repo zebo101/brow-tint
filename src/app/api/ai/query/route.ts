@@ -1,3 +1,4 @@
+import { serializeBrowTaskForClient } from '@/shared/lib/brow-export';
 import { respData, respErr } from '@/shared/lib/resp';
 import {
   findAITaskById,
@@ -6,6 +7,11 @@ import {
 } from '@/shared/models/ai_task';
 import { getUserInfo } from '@/shared/models/user';
 import { getAIService } from '@/shared/services/ai';
+import { getBrowEntitlements } from '@/shared/services/brow-entitlements';
+import {
+  isBrowQueuedTask,
+  startBrowQueueWorker,
+} from '@/shared/services/brow-queue';
 
 export async function POST(req: Request) {
   try {
@@ -20,13 +26,25 @@ export async function POST(req: Request) {
     }
 
     const task = await findAITaskById(taskId);
-    if (!task || !task.taskId) {
+    if (!task) {
       return respErr('task not found');
     }
 
     if (task.userId !== user.id) {
       return respErr('no permission');
     }
+
+    const entitlements = await getBrowEntitlements(user.id);
+    // The server worker owns queued provider polling, including after refresh.
+    // A local task ID exists before a provider task ID has been assigned.
+    if (isBrowQueuedTask(task)) {
+      startBrowQueueWorker();
+      return respData(serializeBrowTaskForClient(task, entitlements));
+    }
+    if (['success', 'failed', 'canceled'].includes(task.status)) {
+      return respData(serializeBrowTaskForClient(task, entitlements));
+    }
+    if (!task.taskId) return respErr('task not found');
 
     const aiService = await getAIService();
     const aiProvider = aiService.getProvider(task.provider);
@@ -51,15 +69,8 @@ export async function POST(req: Request) {
       taskResult: result.taskResult ? JSON.stringify(result.taskResult) : null,
       creditId: task.creditId, // credit consumption record id
     };
-    if (updateAITask.taskInfo !== task.taskInfo) {
-      await updateAITaskById(task.id, updateAITask);
-    }
-
-    task.status = updateAITask.status || '';
-    task.taskInfo = updateAITask.taskInfo || null;
-    task.taskResult = updateAITask.taskResult || null;
-
-    return respData(task);
+    const updated = await updateAITaskById(task.id, updateAITask);
+    return respData(serializeBrowTaskForClient(updated || task, entitlements));
   } catch (e: any) {
     console.log('ai query failed', e);
     return respErr(e.message);

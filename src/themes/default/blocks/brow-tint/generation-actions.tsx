@@ -1,15 +1,15 @@
 'use client';
 
-import { useState } from 'react';
 import { Button, Spinner } from '@heroui/react';
 import { useTranslations } from 'next-intl';
-import { toast } from 'sonner';
 
 import { Link } from '@/core/i18n/navigation';
+import { BROW_GENERATION_CREDITS } from '@/config/brow-pricing';
+import { useBrowExportAccess } from '@/shared/blocks/brow/export-access';
 
 import type { GenerationState } from './generation-lifecycle';
 
-export const BROW_MAPPING_CREDITS = 2;
+export const BROW_MAPPING_CREDITS = BROW_GENERATION_CREDITS;
 
 interface BrowGenerationActionsProps {
   authenticated: boolean;
@@ -102,34 +102,9 @@ export function BrowGenerationStatus({
   loadingSample: boolean;
 }) {
   const t = useTranslations('pages.ai-brow-tint');
-  const [downloading, setDownloading] = useState(false);
+  const access = useBrowExportAccess();
   const { phase, message, resultUrl, taskId } = state;
   const active = ['uploading', 'submitting', 'querying'].includes(phase);
-
-  async function downloadResult() {
-    if (!resultUrl || downloading) return;
-    setDownloading(true);
-    try {
-      const response = await fetch(
-        resultUrl.startsWith('/')
-          ? resultUrl
-          : `/api/proxy/file?url=${encodeURIComponent(resultUrl)}`
-      );
-      if (!response.ok) throw new Error('Download failed');
-      const url = URL.createObjectURL(await response.blob());
-      const anchor = document.createElement('a');
-      anchor.href = url;
-      anchor.download = 'browlens-eyebrow-filter.png';
-      document.body.appendChild(anchor);
-      anchor.click();
-      anchor.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 200);
-    } catch {
-      toast.error(t('ui.download_failed_please_try_again'));
-    } finally {
-      setDownloading(false);
-    }
-  }
 
   if (loadingSample || active) {
     const text = loadingSample
@@ -155,14 +130,24 @@ export function BrowGenerationStatus({
         <p role="status" className="text-success text-xs">
           {t('ui.your_preview_is_ready')}
         </p>
-        <Button
-          size="sm"
-          variant="outline"
-          isPending={downloading}
-          onPress={downloadResult}
-        >
-          {t('ui.download_result')}
-        </Button>
+        {access.canExport ? (
+          <Button
+            size="sm"
+            variant="outline"
+            isPending={access.downloading}
+            isDisabled={!taskId}
+            onPress={() => taskId && void access.downloadTasks([taskId])}
+          >
+            {t('ui.export_hd')}
+          </Button>
+        ) : (
+          <Link
+            href="/pricing"
+            className="text-sm font-semibold underline underline-offset-4"
+          >
+            {t('ui.upgrade_export')}
+          </Link>
+        )}
       </div>
     );
   }

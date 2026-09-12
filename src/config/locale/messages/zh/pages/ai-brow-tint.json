@@ -188,7 +188,7 @@
     "download_failed_please_try_again": "下载失败，请重试。",
     "uploading_your_confirmed_photo_and_mapping": "正在上传确认后的照片与定位图…",
     "submitting_your_preview": "正在提交生成任务…",
-    "creating_your_preview_this_may_take_a_moment": "正在生成预览，请稍候…",
+    "creating_your_preview_this_may_take_a_moment": "预览正在排队或生成中。稍后再次查询状态不会重复扣除积分。",
     "your_preview_is_ready": "预览已就绪",
     "download_result": "下载效果图",
     "generation_failed_please_try_again": "生成失败，请重试。",
@@ -235,6 +235,13 @@
     "before_alt": "应用眉型滤镜前",
     "after_alt": "应用 {name} 滤镜后",
     "try_another": "试试其他眉型",
-    "preparing_preview": "正在准备眉型预览…"
+    "preparing_preview": "正在准备眉型预览…",
+    "export_hd": "下载高清图",
+    "upgrade_export": "升级后导出",
+    "export_compare": "下载对比图（{n} 款）",
+    "upgrade_compare": "开通 Premium 导出多款对比图",
+    "comparison_title": "已保存的眉形效果",
+    "comparison_hint": "选择同一张照片生成的 2–4 种不同眉形，Premium 可导出带款式名称的高清对比图。预览带水印，高清导出无水印。",
+    "refresh_results": "刷新"
   }
 }

@@ -188,7 +188,7 @@
     "download_failed_please_try_again": "Download failed. Please try again.",
     "uploading_your_confirmed_photo_and_mapping": "Uploading your confirmed photo and mapping…",
     "submitting_your_preview": "Submitting your preview…",
-    "creating_your_preview_this_may_take_a_moment": "Creating your preview. This may take a moment…",
+    "creating_your_preview_this_may_take_a_moment": "Your preview is queued or being generated. You can check its status again without using more credits.",
     "your_preview_is_ready": "Your preview is ready",
     "download_result": "Download result",
     "generation_failed_please_try_again": "Generation failed. Please try again.",
@@ -235,6 +235,13 @@
     "before_alt": "Before eyebrow filter",
     "after_alt": "After {name} filter",
     "try_another": "Try Another Shape",
-    "preparing_preview": "Preparing your shape preview…"
+    "preparing_preview": "Preparing your shape preview…",
+    "export_hd": "Download HD",
+    "upgrade_export": "Upgrade to export",
+    "export_compare": "Download comparison ({n})",
+    "upgrade_compare": "Get Premium for comparison export",
+    "comparison_title": "Your saved styles",
+    "comparison_hint": "Select 2–4 different generated styles from the same photo. Premium exports a labeled HD comparison. Previews are watermarked; HD exports are clean.",
+    "refresh_results": "Refresh"
   }
 }

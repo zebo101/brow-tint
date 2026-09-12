@@ -1,16 +1,15 @@
 {
   "metadata": {
     "title": "Browlens Preise – Credits und Tarife für Brauenfilter",
-    "description": "Vergleiche Credit-Tarife für Augenbrauenfilter-Vorschauen mit Browlens."
+    "description": "Brauen-Mapping, manuelle Bearbeitung mit sechs Punkten und Analyseberichte sind kostenlos und unbegrenzt. Jede KI-Generierung kostet 2 Credits."
   },
   "page": {
     "title": "Preise",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Browlens Preise – Credits und Tarife für Brauenfilter",
-        "title": "Wählen Sie Ihren perfekten Plan",
-        "description": "Die Brauenanalyse ist kostenlos. Filterbilder erfordern Anmeldung und Credits; die Kosten werden vorher angezeigt.",
+        "title": "Der passende Tarif für deine Brauen",
+        "description": "Brauen-Mapping, manuelle Bearbeitung mit sechs Punkten und Analyseberichte sind kostenlos und unbegrenzt. Jede KI-Generierung kostet 2 Credits.",
         "groups": [
           {
             "name": "monthly",
@@ -18,21 +17,24 @@
           },
           {
             "name": "yearly",
-            "title": "Jährlich (Sparen)",
-            "label": "Sparen"
+            "title": "Jährlich"
           },
           {
             "name": "one-time",
-            "title": "Aufladen"
+            "title": "Credits kaufen"
           }
         ],
         "items": [
           {
             "title": "Kostenlos",
-            "description": "Browlens kostenlos testen.",
-            "features_title": "Beinhaltet",
+            "description": "Entdecke deine Brauenform kostenlos.",
+            "features_title": "Enthalten",
             "features": [
-              "Kern-Generierungsfunktionen",
+              "Einmalig 6 Credits bei der Anmeldung · 3 KI-Generierungen",
+              "Unbegrenztes Brauen-Mapping",
+              "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
+              "Unbegrenzte Analyseberichte",
+              "Keine Exporte",
               "Standard-Warteschlange"
             ],
             "interval": "month",
@@ -41,235 +43,286 @@
             "price": "$0",
             "unit": "",
             "is_featured": false,
-            "tip": "Kostenlos starten. Jederzeit upgraden.",
+            "tip": "Anmelde-Credits verfallen nicht. Keine regelmäßige kostenlose Gutschrift.",
             "button": {
-              "title": "Aktueller Plan",
-              "url": "/#pricing",
+              "title": "Kostenlos starten",
+              "url": "/#brow-app",
               "icon": ""
             },
             "product_id": "free-monthly",
-            "product_name": "Kostenlos",
-            "credits": 0,
-            "valid_days": 30,
+            "product_name": "Free",
+            "credits": 6,
+            "valid_days": 0,
             "group": "monthly"
           },
           {
             "title": "Basic",
-            "description": "Für regelmäßigen Bedarf.",
+            "description": "Für regelmäßige Brauen-Vorschauen.",
             "label": "Beliebt",
-            "features_title": "Beinhaltet",
+            "features_title": "Enthalten",
             "features": [
-              "200 Credits pro Monat",
-              "Credits monatlich erneuert",
-              "Prioritäts-Warteschlange",
-              "Wasserzeichen entfernen"
+              "100 Credits · 50 KI-Generierungen",
+              "Unbegrenztes Brauen-Mapping",
+              "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
+              "Unbegrenzte Analyseberichte",
+              "HD-Export einzelner Bilder",
+              "Priorisierte Warteschlange"
             ],
             "interval": "month",
-            "amount": 1990,
+            "amount": 1290,
             "currency": "USD",
-            "price": "$19.9",
+            "price": "$12.9",
             "unit": "/ Monat",
             "is_featured": true,
-            "tip": "Jederzeit kündbar.",
+            "tip": "Credits werden monatlich gutgeschrieben und gelten für den aktuellen Monatszeitraum (bis zu 30 Tage).",
             "button": {
               "title": "Abonnieren",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "basic-monthly",
-            "product_name": "Basic Monatlich",
-            "credits": 200,
+            "product_name": "Basic Monthly",
+            "credits": 100,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "Basic"
           },
           {
             "title": "Premium",
-            "description": "Für Power-Nutzer mit hohem Bedarf.",
-            "features_title": "Beinhaltet",
+            "description": "Mehr Looks und Exporte zum Vergleichen.",
+            "features_title": "Enthalten",
             "features": [
-              "300 Credits pro Monat",
-              "Credits monatlich erneuert",
-              "Höchste Priorität",
-              "Wasserzeichen entfernen"
+              "300 Credits · 150 KI-Generierungen",
+              "Unbegrenztes Brauen-Mapping",
+              "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
+              "Unbegrenzte Analyseberichte",
+              "HD-Export einzelner Bilder",
+              "Vergleichsexport von 2–4 Ergebnissen desselben Fotos",
+              "Höchste Priorität"
             ],
             "interval": "month",
-            "amount": 2990,
+            "amount": 2490,
             "currency": "USD",
-            "price": "$29.9",
+            "price": "$24.9",
             "unit": "/ Monat",
             "is_featured": false,
-            "tip": "Jederzeit kündbar.",
+            "tip": "Credits werden monatlich gutgeschrieben und gelten für den aktuellen Monatszeitraum (bis zu 30 Tage).",
             "button": {
               "title": "Abonnieren",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-monthly",
-            "product_name": "Premium Monatlich",
+            "product_name": "Premium Monthly",
             "credits": 300,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "Premium"
           },
           {
-            "title": "Kostenlos",
-            "description": "Browlens kostenlos testen.",
-            "features_title": "Beinhaltet",
-            "features": [
-              "Kern-Generierungsfunktionen",
-              "Standard-Warteschlange"
-            ],
-            "interval": "year",
-            "amount": 0,
-            "currency": "USD",
-            "price": "$0",
-            "unit": "",
-            "is_featured": false,
-            "tip": "Kostenlos starten. Jederzeit upgraden.",
-            "button": {
-              "title": "Aktueller Plan",
-              "url": "/#pricing",
-              "icon": ""
-            },
-            "product_id": "free-yearly",
-            "product_name": "Kostenlos",
-            "credits": 0,
-            "valid_days": 365,
-            "group": "yearly"
-          },
-          {
             "title": "Basic",
-            "description": "Mit Jahresabrechnung sparen. Jahres-Credits werden im Voraus gutgeschrieben.",
-            "label": "Sparen",
-            "features_title": "Beinhaltet",
+            "description": "Credits für ein ganzes Jahr sofort nutzen.",
+            "features_title": "Enthalten",
             "features": [
-              "2400 Credits pro Jahr",
-              "Im Voraus gutgeschrieben",
-              "Prioritäts-Warteschlange",
-              "Wasserzeichen entfernen"
+              "2400 Credits · 1200 KI-Generierungen",
+              "Unbegrenztes Brauen-Mapping",
+              "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
+              "Unbegrenzte Analyseberichte",
+              "HD-Export einzelner Bilder",
+              "Priorisierte Warteschlange"
             ],
             "interval": "year",
-            "amount": 19080,
+            "amount": 15900,
             "currency": "USD",
-            "price": "$15.9",
-            "original_price": "$19.9",
-            "unit": "/ Monat",
+            "price": "$159",
+            "unit": "/ Jahr",
             "is_featured": false,
-            "tip": "Jährliche Abrechnung. Credits werden im Voraus gutgeschrieben.",
+            "tip": "Entspricht $13,25/Monat, jährlich $159. Alle Credits werden sofort gutgeschrieben und gelten für den aktuellen Jahreszeitraum (bis zu 365 Tage).",
             "button": {
               "title": "Abonnieren",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "basic-yearly",
-            "product_name": "Basic Jährlich",
+            "product_name": "Basic Annual",
             "credits": 2400,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Basic Jährlich"
+            "plan_name": "Basic"
           },
           {
             "title": "Premium",
-            "description": "Bester Jahreswert für hohen Bedarf. Jahres-Credits werden im Voraus gutgeschrieben.",
-            "features_title": "Beinhaltet",
+            "description": "Ein Jahr Premium mit allen Credits im Voraus.",
+            "features_title": "Enthalten",
             "features": [
-              "3600 Credits pro Jahr",
-              "Im Voraus gutgeschrieben",
-              "Höchste Priorität",
-              "Wasserzeichen entfernen"
+              "3600 Credits · 1800 KI-Generierungen",
+              "Unbegrenztes Brauen-Mapping",
+              "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
+              "Unbegrenzte Analyseberichte",
+              "HD-Export einzelner Bilder",
+              "Vergleichsexport von 2–4 Ergebnissen desselben Fotos",
+              "Höchste Priorität"
             ],
             "interval": "year",
-            "amount": 31080,
+            "amount": 23900,
             "currency": "USD",
-            "price": "$25.9",
-            "original_price": "$29.9",
-            "unit": "/ Monat",
+            "price": "$239",
+            "unit": "/ Jahr",
             "is_featured": false,
-            "tip": "Jährliche Abrechnung. Credits werden im Voraus gutgeschrieben.",
+            "tip": "Etwa $19,92/Monat, jährlich $239. $59,80 günstiger als 12 Monatszahlungen. Alle Credits werden sofort gutgeschrieben und gelten für den aktuellen Jahreszeitraum (bis zu 365 Tage).",
             "button": {
               "title": "Abonnieren",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
-            "product_name": "Premium Jährlich",
+            "product_name": "Premium Annual",
             "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Premium Jährlich"
+            "plan_name": "Premium"
           },
           {
-            "title": "100 Credits aufladen",
-            "description": "Credits jederzeit nachladen.",
-            "features_title": "Beinhaltet",
-            "features": ["100 Credits", "Credits verfallen nie"],
+            "title": "24 Credits",
+            "description": "Zusätzliche KI-Generierungen nach Bedarf.",
+            "features_title": "Enthalten",
+            "features": [
+              "24 Credits · 12 KI-Generierungen",
+              "Credits verfallen nicht",
+              "HD-Export einzelner Bilder",
+              "Standard-Warteschlange",
+              "Vergleichsexport erfordert ein Premium-Abo"
+            ],
             "interval": "one-time",
-            "amount": 1290,
+            "amount": 599,
             "currency": "USD",
-            "price": "$12.9",
-            "unit": "",
+            "price": "$5.99",
+            "unit": "einmalig",
             "is_featured": false,
-            "tip": "Einmalkauf. Credits verfallen nie.",
+            "tip": "Etwa $0.50 pro Generierung · Einmaliger Kauf mit HD-Einzelexport und Standard-Warteschlange. Die Vorteile deines aktiven Abos gelten weiterhin.",
             "button": {
-              "title": "Aufladen",
-              "url": "/#pricing",
+              "title": "Credits kaufen",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-100",
-            "product_name": "Aufladung 100",
-            "credits": 100,
+            "product_id": "topup-24",
+            "product_name": "Browlens 24 Credits",
+            "credits": 24,
             "valid_days": 0,
             "group": "one-time"
           },
           {
-            "title": "200 Credits aufladen",
-            "description": "Mehr Credits, wenn du sie brauchst.",
-            "label": "Beliebt",
-            "features_title": "Beinhaltet",
-            "features": ["200 Credits", "Credits verfallen nie"],
+            "title": "60 Credits",
+            "description": "Zusätzliche KI-Generierungen nach Bedarf.",
+            "features_title": "Enthalten",
+            "features": [
+              "60 Credits · 30 KI-Generierungen",
+              "Credits verfallen nicht",
+              "HD-Export einzelner Bilder",
+              "Standard-Warteschlange",
+              "Vergleichsexport erfordert ein Premium-Abo"
+            ],
             "interval": "one-time",
-            "amount": 2590,
+            "amount": 1199,
             "currency": "USD",
-            "price": "$25.9",
-            "unit": "",
+            "price": "$11.99",
+            "unit": "einmalig",
             "is_featured": false,
-            "tip": "Einmalkauf. Credits verfallen nie.",
+            "tip": "Etwa $0.40 pro Generierung · Einmaliger Kauf mit HD-Einzelexport und Standard-Warteschlange. Die Vorteile deines aktiven Abos gelten weiterhin.",
             "button": {
-              "title": "Aufladen",
-              "url": "/#pricing",
+              "title": "Credits kaufen",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-200",
-            "product_name": "Aufladung 200",
-            "credits": 200,
+            "product_id": "topup-60",
+            "product_name": "Browlens 60 Credits",
+            "credits": 60,
             "valid_days": 0,
             "group": "one-time"
           },
           {
-            "title": "300 Credits aufladen",
-            "description": "Ideal für höheren Bedarf.",
-            "features_title": "Beinhaltet",
-            "features": ["300 Credits", "Credits verfallen nie"],
+            "title": "120 Credits",
+            "description": "Zusätzliche KI-Generierungen nach Bedarf.",
+            "features_title": "Enthalten",
+            "features": [
+              "120 Credits · 60 KI-Generierungen",
+              "Credits verfallen nicht",
+              "HD-Export einzelner Bilder",
+              "Standard-Warteschlange",
+              "Vergleichsexport erfordert ein Premium-Abo"
+            ],
             "interval": "one-time",
-            "amount": 3890,
+            "amount": 1999,
             "currency": "USD",
-            "price": "$38.9",
-            "unit": "",
+            "price": "$19.99",
+            "unit": "einmalig",
             "is_featured": false,
-            "tip": "Einmalkauf. Credits verfallen nie.",
+            "tip": "Etwa $0.33 pro Generierung · Einmaliger Kauf mit HD-Einzelexport und Standard-Warteschlange. Die Vorteile deines aktiven Abos gelten weiterhin.",
             "button": {
-              "title": "Aufladen",
-              "url": "/#pricing",
+              "title": "Credits kaufen",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-300",
-            "product_name": "Aufladung 300",
-            "credits": 300,
+            "product_id": "topup-120",
+            "product_name": "Browlens 120 Credits",
+            "credits": 120,
             "valid_days": 0,
             "group": "one-time"
           }
-        ]
+        ],
+        "note": "Alle Preise in US-Dollar. Jede KI-Generierung kostet 2 Credits. Anfallende Steuern werden beim Checkout berechnet.",
+        "comparison": {
+          "title": "Tarife im Vergleich",
+          "description": "Basic und Premium bieten bei monatlicher und jährlicher Zahlung dieselben Funktionen. Jahres-Credits werden sofort vollständig gutgeschrieben. Zusatzpakete enthalten HD-Einzelexporte; Vergleichsexporte erfordern ein aktives Premium-Abo.",
+          "feature_label": "Funktion",
+          "plans": ["Kostenlos", "Basic", "Premium"],
+          "rows": [
+            {
+              "title": "Unbegrenztes Brauen-Mapping",
+              "values": ["Unbegrenzt", "Unbegrenzt", "Unbegrenzt"]
+            },
+            {
+              "title": "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
+              "values": ["Unbegrenzt", "Unbegrenzt", "Unbegrenzt"]
+            },
+            {
+              "title": "Unbegrenzte Analyseberichte",
+              "values": ["Unbegrenzt", "Unbegrenzt", "Unbegrenzt"]
+            },
+            {
+              "title": "Credits im Monatstarif",
+              "values": [
+                "Einmalig 6 bei der Anmeldung",
+                "100 Credits · 50 KI-Generierungen",
+                "300 Credits · 150 KI-Generierungen"
+              ]
+            },
+            {
+              "title": "Credits im Jahrestarif (sofort)",
+              "values": [
+                "—",
+                "2400 Credits · 1200 KI-Generierungen",
+                "3600 Credits · 1800 KI-Generierungen"
+              ]
+            },
+            {
+              "title": "HD-Export einzelner Bilder",
+              "values": ["Nicht enthalten", "Enthalten", "Enthalten"]
+            },
+            {
+              "title": "Vergleichsexport von 2–4 Ergebnissen desselben Fotos",
+              "values": ["Nicht enthalten", "Nicht enthalten", "Enthalten"]
+            },
+            {
+              "title": "Generierungs-Warteschlange",
+              "values": [
+                "Standard-Warteschlange",
+                "Priorisierte Warteschlange",
+                "Höchste Priorität"
+              ]
+            }
+          ]
+        }
       }
     }
   },

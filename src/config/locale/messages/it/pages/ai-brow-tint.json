@@ -188,7 +188,7 @@
     "download_failed_please_try_again": "Download non riuscito. Riprova.",
     "uploading_your_confirmed_photo_and_mapping": "Caricamento della foto e delle guide confermate…",
     "submitting_your_preview": "Invio della richiesta di anteprima…",
-    "creating_your_preview_this_may_take_a_moment": "Creazione dell’anteprima. Potrebbe volerci un momento…",
+    "creating_your_preview_this_may_take_a_moment": "La tua anteprima è in coda o in fase di generazione. Controllare di nuovo lo stato non consuma altri crediti.",
     "your_preview_is_ready": "La tua anteprima è pronta",
     "download_result": "Scarica il risultato",
     "generation_failed_please_try_again": "Generazione non riuscita. Riprova.",
@@ -235,6 +235,13 @@
     "before_alt": "Prima del filtro sopracciglia",
     "after_alt": "Dopo il filtro {name}",
     "try_another": "Prova un’altra forma",
-    "preparing_preview": "Preparazione dell’anteprima…"
+    "preparing_preview": "Preparazione dell’anteprima…",
+    "export_hd": "Scarica in HD",
+    "upgrade_export": "Passa a un piano per esportare",
+    "export_compare": "Scarica confronto ({n})",
+    "upgrade_compare": "Ottieni Premium per esportare confronti",
+    "comparison_title": "I tuoi stili salvati",
+    "comparison_hint": "Seleziona 2–4 stili diversi generati dalla stessa foto. Premium esporta un confronto HD con etichette. Le anteprime hanno una filigrana, le esportazioni HD no.",
+    "refresh_results": "Aggiorna"
   }
 }

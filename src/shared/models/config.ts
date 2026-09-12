@@ -49,25 +49,27 @@ export async function addConfig(newConfig: NewConfig) {
   return result;
 }
 
-export const getConfigs = unstable_cache(
-  async (): Promise<Configs> => {
-    const configs: Record<string, string> = {};
+async function readConfigsFromDatabase(database?: any): Promise<Configs> {
+  const configs: Record<string, string> = {};
 
-    if (!envConfigs.database_url) {
-      return configs;
-    }
-
-    const result = await db().select().from(config);
-    if (!result) {
-      return configs;
-    }
-
-    for (const config of result) {
-      configs[config.name] = config.value ?? '';
-    }
-
+  if (!envConfigs.database_url) {
     return configs;
-  },
+  }
+
+  const result = await (database || db()).select().from(config);
+  if (!result) {
+    return configs;
+  }
+
+  for (const config of result) {
+    configs[config.name] = config.value ?? '';
+  }
+
+  return configs;
+}
+
+export const getConfigs = unstable_cache(
+  () => readConfigsFromDatabase(),
   ['configs'],
   {
     revalidate: 3600,
@@ -75,16 +77,24 @@ export const getConfigs = unstable_cache(
   }
 );
 
-export async function getAllConfigs(): Promise<Configs> {
+export async function getAllConfigs({
+  useCache = true,
+  database,
+}: { useCache?: boolean; database?: any } = {}): Promise<Configs> {
   let dbConfigs: Configs = {};
 
   // only get configs from db in server side
   if (typeof window === 'undefined' && envConfigs.database_url) {
     try {
-      dbConfigs = await getConfigs();
+      dbConfigs = useCache
+        ? await getConfigs()
+        : await readConfigsFromDatabase(database);
     } catch (e) {
-      console.log(`get configs from db failed:`, e);
-      dbConfigs = {};
+      // Instrumentation and background provider storage work can execute before
+      // Next initializes its request cache. Preserve the database settings;
+      // an actual database outage must fail closed, not appear as empty config.
+      if (!useCache) throw e;
+      dbConfigs = await readConfigsFromDatabase(database);
     }
   }
 

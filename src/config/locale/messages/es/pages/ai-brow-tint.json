@@ -188,7 +188,7 @@
     "download_failed_please_try_again": "Error al descargar. Inténtalo de nuevo.",
     "uploading_your_confirmed_photo_and_mapping": "Subiendo tu foto y las guías confirmadas…",
     "submitting_your_preview": "Enviando tu solicitud de vista previa…",
-    "creating_your_preview_this_may_take_a_moment": "Creando tu vista previa. Puede tardar un momento…",
+    "creating_your_preview_this_may_take_a_moment": "Tu vista previa está en cola o se está generando. Consultar de nuevo el estado no consume más créditos.",
     "your_preview_is_ready": "Tu vista previa está lista",
     "download_result": "Descargar resultado",
     "generation_failed_please_try_again": "Error al generar. Inténtalo de nuevo.",
@@ -235,6 +235,13 @@
     "before_alt": "Antes del filtro de cejas",
     "after_alt": "Después del filtro {name}",
     "try_another": "Probar otra forma",
-    "preparing_preview": "Preparando vista previa de la forma…"
+    "preparing_preview": "Preparando vista previa de la forma…",
+    "export_hd": "Descargar en HD",
+    "upgrade_export": "Mejora el plan para exportar",
+    "export_compare": "Descargar comparación ({n})",
+    "upgrade_compare": "Obtén Premium para exportar comparaciones",
+    "comparison_title": "Tus estilos guardados",
+    "comparison_hint": "Selecciona entre 2 y 4 estilos generados con la misma foto. Premium exporta una comparación HD con nombres. Las vistas previas tienen marca de agua; las exportaciones HD no.",
+    "refresh_results": "Actualizar"
   }
 }

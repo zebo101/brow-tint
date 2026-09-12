@@ -13,8 +13,8 @@ export type AITask = typeof aiTask.$inferSelect & {
 export type NewAITask = typeof aiTask.$inferInsert;
 export type UpdateAITask = Partial<Omit<NewAITask, 'id' | 'createdAt'>>;
 
-export async function createAITask(newAITask: NewAITask) {
-  const result = await db().transaction(async (tx: any) => {
+export async function createAITask(newAITask: NewAITask, transaction?: any) {
+  const execute = async (tx: any) => {
     // 1. create task record
     const [taskResult] = await tx.insert(aiTask).values(newAITask).returning();
 
@@ -44,9 +44,9 @@ export async function createAITask(newAITask: NewAITask) {
     }
 
     return taskResult;
-  });
+  };
 
-  return result;
+  return transaction ? execute(transaction) : db().transaction(execute);
 }
 
 export async function findAITaskById(id: string) {
@@ -69,55 +69,70 @@ export async function findAITaskByProviderTaskId({
   return result;
 }
 
-export async function updateAITaskById(id: string, updateAITask: UpdateAITask) {
-  const result = await db().transaction(async (tx: any) => {
+export async function updateAITaskById(
+  id: string,
+  updateAITask: UpdateAITask,
+  transaction?: any
+) {
+  const execute = async (tx: any) => {
+    const taskQuery = tx.select().from(aiTask).where(eq(aiTask.id, id));
+    const [existingTask] = await (taskQuery.for
+      ? taskQuery.for('update')
+      : taskQuery);
+    if (!existingTask) return undefined;
+    // A slow poll or late callback must not overwrite a completed/refunded task.
+    if (['success', 'failed', 'canceled'].includes(existingTask.status))
+      return existingTask;
+
     // task failed, Revoke credit consumption record
-    if (updateAITask.status === AITaskStatus.FAILED && updateAITask.creditId) {
-      // get consumed credit record
+    if (
+      [AITaskStatus.FAILED, AITaskStatus.CANCELED].includes(
+        updateAITask.status as AITaskStatus
+      ) &&
+      existingTask.creditId
+    ) {
+      // Atomically take responsibility for this refund. Concurrent callbacks
+      // and worker recovery can refund the same consumption only once.
       const [consumedCredit] = await tx
-        .select()
-        .from(credit)
-        .where(eq(credit.id, updateAITask.creditId));
-      if (consumedCredit && consumedCredit.status === CreditStatus.ACTIVE) {
+        .update(credit)
+        .set({ status: CreditStatus.DELETED })
+        .where(
+          and(
+            eq(credit.id, existingTask.creditId),
+            eq(credit.status, CreditStatus.ACTIVE)
+          )
+        )
+        .returning();
+      if (consumedCredit) {
         const consumedItems = JSON.parse(consumedCredit.consumedDetail || '[]');
 
         // console.log('consumedItems', consumedItems);
 
         // add back consumed credits
-        await Promise.all(
-          consumedItems.map((item: any) => {
-            if (item && item.creditId && item.creditsConsumed > 0) {
-              return tx
-                .update(credit)
-                .set({
-                  remainingCredits: sql`${credit.remainingCredits} + ${item.creditsConsumed}`,
-                })
-                .where(eq(credit.id, item.creditId));
-            }
-          })
-        );
-
-        // delete consumed credit record
-        await tx
-          .update(credit)
-          .set({
-            status: CreditStatus.DELETED,
-          })
-          .where(eq(credit.id, updateAITask.creditId));
+        for (const item of consumedItems) {
+          if (item && item.creditId && item.creditsConsumed > 0) {
+            await tx
+              .update(credit)
+              .set({
+                remainingCredits: sql`${credit.remainingCredits} + ${item.creditsConsumed}`,
+              })
+              .where(eq(credit.id, item.creditId));
+          }
+        }
       }
     }
 
     // update task
     const [result] = await tx
       .update(aiTask)
-      .set(updateAITask)
+      .set({ ...updateAITask, creditId: existingTask.creditId })
       .where(eq(aiTask.id, id))
       .returning();
 
     return result;
-  });
+  };
 
-  return result;
+  return transaction ? execute(transaction) : db().transaction(execute);
 }
 
 export async function getAITasksCount({

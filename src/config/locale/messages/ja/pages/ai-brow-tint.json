@@ -188,7 +188,7 @@
     "download_failed_please_try_again": "ダウンロードに失敗しました。もう一度お試しください。",
     "uploading_your_confirmed_photo_and_mapping": "確認済みの写真とガイドをアップロード中…",
     "submitting_your_preview": "プレビューをリクエスト中…",
-    "creating_your_preview_this_may_take_a_moment": "プレビューを生成しています。しばらくお待ちください…",
+    "creating_your_preview_this_may_take_a_moment": "プレビューは順番待ち、または生成中です。再度状況を確認してもクレジットは消費されません。",
     "your_preview_is_ready": "プレビューができました",
     "download_result": "結果をダウンロード",
     "generation_failed_please_try_again": "生成に失敗しました。もう一度お試しください。",
@@ -235,6 +235,13 @@
     "before_alt": "眉フィルター適用前",
     "after_alt": "{name}フィルター適用後",
     "try_another": "別の形を試す",
-    "preparing_preview": "眉のプレビューを準備中…"
+    "preparing_preview": "眉のプレビューを準備中…",
+    "export_hd": "HD画像をダウンロード",
+    "upgrade_export": "アップグレードして書き出す",
+    "export_compare": "比較画像をダウンロード（{n}種類）",
+    "upgrade_compare": "Premiumで比較画像を書き出す",
+    "comparison_title": "保存した眉スタイル",
+    "comparison_hint": "同じ写真から生成した異なる眉形を2〜4種類選択。Premiumでは名前付きのHD比較画像を書き出せます。プレビューには透かしが入り、HD書き出しには入りません。",
+    "refresh_results": "更新"
   }
 }

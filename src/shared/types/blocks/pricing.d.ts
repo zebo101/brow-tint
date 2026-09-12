@@ -56,4 +56,12 @@ export interface Pricing {
   groups?: PricingGroup[];
   className?: string;
   sr_only_title?: string;
+  note?: string;
+  comparison?: {
+    title: string;
+    description: string;
+    feature_label: string;
+    plans: string[];
+    rows: { title: string; values: string[] }[];
+  };
 }

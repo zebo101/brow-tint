@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
+import { hydrateBrowPricing } from '@/config/brow-pricing';
 import { getMetadata } from '@/shared/lib/seo';
 import { getCurrentSubscription } from '@/shared/models/subscription';
 import { getUserInfo } from '@/shared/models/user';
@@ -37,10 +38,9 @@ export default async function PricingPage({
 
   // build page sections
   const page: DynamicPage = {
-    title: t.raw('page.title'),
     sections: {
       pricing: {
-        ...t.raw('page.sections.pricing'),
+        ...hydrateBrowPricing(t.raw('page.sections.pricing')),
         data: {
           currentSubscription,
         },

@@ -1,3 +1,4 @@
+import { assertCreemProductMatchesOrder } from './creem-price';
 import {
   CheckoutSession,
   PaymentBilling,
@@ -53,6 +54,14 @@ export class CreemProvider implements PaymentProvider {
       if (!order.productId) {
         throw new Error('productId is required');
       }
+
+      // Creem charges its stored product price, not order.price. Fail closed
+      // during a catalog/configuration mismatch instead of charging a stale price.
+      const product = await this.makeRequest(
+        `/v1/products?product_id=${encodeURIComponent(order.productId)}`,
+        'GET'
+      );
+      assertCreemProductMatchesOrder(product, order);
 
       // build payment payload
       const payload: any = {

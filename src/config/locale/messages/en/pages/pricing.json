@@ -1,16 +1,15 @@
 {
   "metadata": {
     "title": "Browlens Pricing — Eyebrow Filter Credits & Plans",
-    "description": "Compare credit plans for generating eyebrow filter previews with Browlens."
+    "description": "Unlimited brow mapping, six-point editing and analysis reports are free. Each AI generation uses 2 credits."
   },
   "page": {
     "title": "Pricing",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Browlens Pricing",
-        "title": "Choose your perfect plan",
-        "description": "Brow shape analysis is free. The tool shows the credit cost before you generate an eyebrow filter preview.",
+        "title": "Find the right plan for your brows",
+        "description": "Unlimited brow mapping, six-point editing and analysis reports are free. Each AI generation uses 2 credits.",
         "groups": [
           {
             "name": "monthly",
@@ -18,8 +17,7 @@
           },
           {
             "name": "yearly",
-            "title": "Annual (Save)",
-            "label": "Save"
+            "title": "Annual"
           },
           {
             "name": "one-time",
@@ -29,77 +27,89 @@
         "items": [
           {
             "title": "Free",
-            "description": "Try Browlens at no cost.",
-            "features_title": "Includes",
-            "features": ["Core generation features", "Standard queue"],
+            "description": "Explore your brow shape for free.",
+            "features_title": "What you get",
+            "features": [
+              "6 signup credits, once only · 3 AI generations",
+              "Unlimited brow mapping",
+              "Unlimited manual six-point editing",
+              "Unlimited analysis reports",
+              "No exports",
+              "Standard queue"
+            ],
             "interval": "month",
             "amount": 0,
             "currency": "USD",
             "price": "$0",
             "unit": "",
             "is_featured": false,
-            "tip": "Start free. Upgrade anytime.",
+            "tip": "Signup credits never expire. No recurring free credits.",
             "button": {
-              "title": "Current Plan",
-              "url": "/#pricing",
+              "title": "Start free",
+              "url": "/#brow-app",
               "icon": ""
             },
             "product_id": "free-monthly",
             "product_name": "Free",
-            "credits": 0,
-            "valid_days": 30,
+            "credits": 6,
+            "valid_days": 0,
             "group": "monthly"
           },
           {
             "title": "Basic",
-            "description": "For regular generation needs.",
+            "description": "For regular brow try-ons.",
             "label": "Popular",
-            "features_title": "Includes",
+            "features_title": "What you get",
             "features": [
-              "200 credits per month",
-              "Credits refresh monthly",
-              "Priority queue",
-              "Remove watermark"
+              "100 credits · 50 AI generations",
+              "Unlimited brow mapping",
+              "Unlimited manual six-point editing",
+              "Unlimited analysis reports",
+              "HD single-image export",
+              "Priority queue"
             ],
             "interval": "month",
-            "amount": 1990,
+            "amount": 1290,
             "currency": "USD",
-            "price": "$19.9",
+            "price": "$12.9",
             "unit": "/ month",
             "is_featured": true,
-            "tip": "Cancel anytime.",
+            "tip": "Credits renew each month and are valid for the current monthly period (up to 30 days).",
             "button": {
               "title": "Subscribe",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "basic-monthly",
             "product_name": "Basic Monthly",
-            "credits": 200,
+            "credits": 100,
             "valid_days": 30,
             "group": "monthly",
             "plan_name": "Basic"
           },
           {
             "title": "Premium",
-            "description": "For power users and high volume.",
-            "features_title": "Includes",
+            "description": "More looks, with comparison exports.",
+            "features_title": "What you get",
             "features": [
-              "300 credits per month",
-              "Credits refresh monthly",
-              "Highest priority queue",
-              "Remove watermark"
+              "300 credits · 150 AI generations",
+              "Unlimited brow mapping",
+              "Unlimited manual six-point editing",
+              "Unlimited analysis reports",
+              "HD single-image export",
+              "Comparison export: 2–4 results from the same photo",
+              "Highest priority queue"
             ],
             "interval": "month",
-            "amount": 2990,
+            "amount": 2490,
             "currency": "USD",
-            "price": "$29.9",
+            "price": "$24.9",
             "unit": "/ month",
             "is_featured": false,
-            "tip": "Cancel anytime.",
+            "tip": "Credits renew each month and are valid for the current monthly period (up to 30 days).",
             "button": {
               "title": "Subscribe",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-monthly",
@@ -110,50 +120,27 @@
             "plan_name": "Premium"
           },
           {
-            "title": "Free",
-            "description": "Try Browlens at no cost.",
-            "features_title": "Includes",
-            "features": ["Core generation features", "Standard queue"],
-            "interval": "year",
-            "amount": 0,
-            "currency": "USD",
-            "price": "$0",
-            "unit": "",
-            "is_featured": false,
-            "tip": "Start free. Upgrade anytime.",
-            "button": {
-              "title": "Current Plan",
-              "url": "/#pricing",
-              "icon": ""
-            },
-            "product_id": "free-yearly",
-            "product_name": "Free",
-            "credits": 0,
-            "valid_days": 365,
-            "group": "yearly"
-          },
-          {
             "title": "Basic",
-            "description": "Save with annual billing. Credits are credited upfront.",
-            "label": "Save",
-            "features_title": "Includes",
+            "description": "A full year of credits, ready to use.",
+            "features_title": "What you get",
             "features": [
-              "2400 credits per year",
-              "Credited upfront",
-              "Priority queue",
-              "Remove watermark"
+              "2400 credits · 1200 AI generations",
+              "Unlimited brow mapping",
+              "Unlimited manual six-point editing",
+              "Unlimited analysis reports",
+              "HD single-image export",
+              "Priority queue"
             ],
             "interval": "year",
-            "amount": 19080,
+            "amount": 15900,
             "currency": "USD",
-            "price": "$15.9",
-            "original_price": "$19.9",
-            "unit": "/ month",
+            "price": "$159",
+            "unit": "/ year",
             "is_featured": false,
-            "tip": "Billed annually. Credits are credited upfront.",
+            "tip": "Equivalent to $13.25/month, billed $159/year. All credits arrive upfront and are valid for the current annual period (up to 365 days).",
             "button": {
               "title": "Subscribe",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "basic-yearly",
@@ -161,29 +148,31 @@
             "credits": 2400,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Basic Annual"
+            "plan_name": "Basic"
           },
           {
             "title": "Premium",
-            "description": "Best annual value for high volume. Credits are credited upfront.",
-            "features_title": "Includes",
+            "description": "A year of Premium, with credits upfront.",
+            "features_title": "What you get",
             "features": [
-              "3600 credits per year",
-              "Credited upfront",
-              "Highest priority queue",
-              "Remove watermark"
+              "3600 credits · 1800 AI generations",
+              "Unlimited brow mapping",
+              "Unlimited manual six-point editing",
+              "Unlimited analysis reports",
+              "HD single-image export",
+              "Comparison export: 2–4 results from the same photo",
+              "Highest priority queue"
             ],
             "interval": "year",
-            "amount": 31080,
+            "amount": 23900,
             "currency": "USD",
-            "price": "$25.9",
-            "original_price": "$29.9",
-            "unit": "/ month",
+            "price": "$239",
+            "unit": "/ year",
             "is_featured": false,
-            "tip": "Billed annually. Credits are credited upfront.",
+            "tip": "About $19.92/month, billed $239/year. Save $59.80 versus 12 monthly payments. All credits arrive upfront and are valid for the current annual period (up to 365 days).",
             "button": {
               "title": "Subscribe",
-              "url": "/#pricing",
+              "url": "/pricing",
               "icon": "RiVipCrownLine"
             },
             "product_id": "premium-yearly",
@@ -191,79 +180,149 @@
             "credits": 3600,
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Premium Annual"
+            "plan_name": "Premium"
           },
           {
-            "title": "Top-up 100 credits",
-            "description": "Add credits anytime.",
-            "features_title": "Includes",
-            "features": ["100 credits", "Credits never expire"],
+            "title": "24 credits",
+            "description": "Extra AI generations whenever you need them.",
+            "features_title": "What you get",
+            "features": [
+              "24 credits · 12 AI generations",
+              "Credits never expire",
+              "HD single-image export",
+              "Standard queue",
+              "Comparison export requires a Premium subscription"
+            ],
             "interval": "one-time",
-            "amount": 1290,
+            "amount": 599,
             "currency": "USD",
-            "price": "$12.9",
-            "unit": "",
+            "price": "$5.99",
+            "unit": "one-time",
             "is_featured": false,
-            "tip": "One-time purchase. Credits never expire.",
+            "tip": "About $0.50 per generation · One-time purchase. Includes HD single-image export and the standard queue; your active subscription benefits still apply.",
             "button": {
-              "title": "Top up",
-              "url": "/#pricing",
+              "title": "Buy credits",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-100",
-            "product_name": "Top-up 100",
-            "credits": 100,
+            "product_id": "topup-24",
+            "product_name": "Browlens 24 Credits",
+            "credits": 24,
             "valid_days": 0,
             "group": "one-time"
           },
           {
-            "title": "Top-up 200 credits",
-            "description": "Add more credits when you need them.",
-            "label": "Popular",
-            "features_title": "Includes",
-            "features": ["200 credits", "Credits never expire"],
+            "title": "60 credits",
+            "description": "Extra AI generations whenever you need them.",
+            "features_title": "What you get",
+            "features": [
+              "60 credits · 30 AI generations",
+              "Credits never expire",
+              "HD single-image export",
+              "Standard queue",
+              "Comparison export requires a Premium subscription"
+            ],
             "interval": "one-time",
-            "amount": 2590,
+            "amount": 1199,
             "currency": "USD",
-            "price": "$25.9",
-            "unit": "",
+            "price": "$11.99",
+            "unit": "one-time",
             "is_featured": false,
-            "tip": "One-time purchase. Credits never expire.",
+            "tip": "About $0.40 per generation · One-time purchase. Includes HD single-image export and the standard queue; your active subscription benefits still apply.",
             "button": {
-              "title": "Top up",
-              "url": "/#pricing",
+              "title": "Buy credits",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-200",
-            "product_name": "Top-up 200",
-            "credits": 200,
+            "product_id": "topup-60",
+            "product_name": "Browlens 60 Credits",
+            "credits": 60,
             "valid_days": 0,
             "group": "one-time"
           },
           {
-            "title": "Top-up 300 credits",
-            "description": "Good for higher-volume use.",
-            "features_title": "Includes",
-            "features": ["300 credits", "Credits never expire"],
+            "title": "120 credits",
+            "description": "Extra AI generations whenever you need them.",
+            "features_title": "What you get",
+            "features": [
+              "120 credits · 60 AI generations",
+              "Credits never expire",
+              "HD single-image export",
+              "Standard queue",
+              "Comparison export requires a Premium subscription"
+            ],
             "interval": "one-time",
-            "amount": 3890,
+            "amount": 1999,
             "currency": "USD",
-            "price": "$38.9",
-            "unit": "",
+            "price": "$19.99",
+            "unit": "one-time",
             "is_featured": false,
-            "tip": "One-time purchase. Credits never expire.",
+            "tip": "About $0.33 per generation · One-time purchase. Includes HD single-image export and the standard queue; your active subscription benefits still apply.",
             "button": {
-              "title": "Top up",
-              "url": "/#pricing",
+              "title": "Buy credits",
+              "url": "/pricing",
               "icon": "RiShoppingCartLine"
             },
-            "product_id": "topup-300",
-            "product_name": "Top-up 300",
-            "credits": 300,
+            "product_id": "topup-120",
+            "product_name": "Browlens 120 Credits",
+            "credits": 120,
             "valid_days": 0,
             "group": "one-time"
           }
-        ]
+        ],
+        "note": "All prices are in USD. Each AI generation costs 2 credits. Any applicable tax is calculated at checkout.",
+        "comparison": {
+          "title": "Compare plan features",
+          "description": "Basic and Premium have the same features on monthly and annual billing. Annual credits are granted upfront. Top-ups include HD single-image export; comparison export requires an active Premium subscription.",
+          "feature_label": "Feature",
+          "plans": ["Free", "Basic", "Premium"],
+          "rows": [
+            {
+              "title": "Unlimited brow mapping",
+              "values": ["Unlimited", "Unlimited", "Unlimited"]
+            },
+            {
+              "title": "Unlimited manual six-point editing",
+              "values": ["Unlimited", "Unlimited", "Unlimited"]
+            },
+            {
+              "title": "Unlimited analysis reports",
+              "values": ["Unlimited", "Unlimited", "Unlimited"]
+            },
+            {
+              "title": "Monthly plan credits",
+              "values": [
+                "6 once at signup",
+                "100 credits · 50 AI generations",
+                "300 credits · 150 AI generations"
+              ]
+            },
+            {
+              "title": "Annual plan credits (upfront)",
+              "values": [
+                "—",
+                "2400 credits · 1200 AI generations",
+                "3600 credits · 1800 AI generations"
+              ]
+            },
+            {
+              "title": "HD single-image export",
+              "values": ["Not included", "Included", "Included"]
+            },
+            {
+              "title": "Export 2–4 results from the same photo",
+              "values": ["Not included", "Not included", "Included"]
+            },
+            {
+              "title": "Generation queue",
+              "values": [
+                "Standard queue",
+                "Priority queue",
+                "Highest priority queue"
+              ]
+            }
+          ]
+        }
       }
     }
   },

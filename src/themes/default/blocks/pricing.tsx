@@ -6,6 +6,7 @@ import { Check, Loader2 } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
+import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
 import { PaymentModal } from '@/shared/blocks/payment/payment-modal';
 import { Badge } from '@/shared/components/ui/badge';
@@ -364,18 +365,18 @@ export function Pricing({
     }
   }, [section.items]);
 
+  const visibleItems =
+    section.items?.filter((item) => !item.group || item.group === group) || [];
+
   return (
     <section
       id={section.id}
       className={cn('py-24 md:py-36', section.className, className)}
     >
       <div className="mx-auto mb-12 px-4 text-center md:px-8">
-        {section.sr_only_title && (
-          <h1 className="sr-only">{section.sr_only_title}</h1>
-        )}
-        <h2 className="font-display mb-6 text-3xl font-bold text-pretty lg:text-4xl">
+        <h1 className="font-display mb-6 text-3xl font-bold text-pretty lg:text-4xl">
           {section.title}
-        </h2>
+        </h1>
         <p className="text-muted-foreground font-display mx-auto mb-4 max-w-xl lg:max-w-none lg:text-lg">
           {section.description}
         </p>
@@ -415,7 +416,7 @@ export function Pricing({
                     key={i}
                     onClick={() => setGroup(value)}
                     className={cn(
-                      'relative z-10 flex items-center px-8 py-2 transition-colors duration-300 ease-in-out',
+                      'relative z-10 flex items-center px-3 py-2 text-sm transition-colors duration-300 ease-in-out sm:px-8 sm:text-base',
                       isActive
                         ? 'text-foreground'
                         : 'text-muted-foreground hover:text-foreground/80'
@@ -440,10 +441,12 @@ export function Pricing({
         )}
 
         <div
-          className={`mx-auto mt-0 grid w-full gap-6 md:grid-cols-${
-            section.items?.filter((item) => !item.group || item.group === group)
-              ?.length
-          }`}
+          className={cn(
+            'mx-auto grid w-full grid-cols-1 gap-6',
+            visibleItems.length === 2 && 'max-w-4xl md:grid-cols-2',
+            visibleItems.length >= 3 && 'md:grid-cols-3',
+            group === 'one-time' && 'max-w-5xl'
+          )}
         >
           {section.items?.map((item: PricingItem, idx) => {
             if (item.group && item.group !== group) {
@@ -554,18 +557,16 @@ export function Pricing({
                     >
                       <span className="block text-sm">{t('current_plan')}</span>
                     </Button>
-                  ) : item.amount === 0 && !currentSubscription ? (
+                  ) : item.amount === 0 ? (
                     <Button
                       variant="outline"
                       className="mt-4 h-9 w-full px-4 py-2"
-                      disabled
+                      asChild
                     >
-                      <span className="block text-sm">
-                        {item.button?.title || t('current_plan')}
-                      </span>
+                      <Link href={item.button?.url || '/#brow-app'}>
+                        {item.button?.title}
+                      </Link>
                     </Button>
-                  ) : item.amount === 0 ? (
-                    <div className="mt-4 h-9" aria-hidden />
                   ) : (
                     <Button
                       onClick={() => handlePayment(item)}
@@ -604,8 +605,8 @@ export function Pricing({
                   )}
                   <ul className="list-outside space-y-3 text-sm">
                     {item.features?.map((item, index) => (
-                      <li key={index} className="flex items-center gap-2">
-                        <Check className="size-3" />
+                      <li key={index} className="flex items-start gap-2">
+                        <Check className="mt-1 size-3 shrink-0" aria-hidden />
                         {item}
                       </li>
                     ))}
@@ -615,6 +616,51 @@ export function Pricing({
             );
           })}
         </div>
+        {section.note && (
+          <p className="text-muted-foreground mx-auto mt-6 max-w-3xl text-center text-sm">
+            {section.note}
+          </p>
+        )}
+        {section.comparison && (
+          <div className="mx-auto mt-16 max-w-5xl">
+            <h2 className="mb-3 text-center text-2xl font-semibold">
+              {section.comparison.title}
+            </h2>
+            <div className="overflow-x-auto rounded-xl border">
+              <table className="w-full min-w-[640px] text-left text-sm">
+                <caption className="text-muted-foreground p-4 text-left">
+                  {section.comparison.description}
+                </caption>
+                <thead className="bg-muted/50">
+                  <tr>
+                    <th scope="col" className="p-4 font-medium">
+                      {section.comparison.feature_label}
+                    </th>
+                    {section.comparison.plans.map((plan) => (
+                      <th key={plan} scope="col" className="p-4 font-medium">
+                        {plan}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {section.comparison.rows.map((row) => (
+                    <tr key={row.title} className="border-t">
+                      <th scope="row" className="p-4 font-medium">
+                        {row.title}
+                      </th>
+                      {row.values.map((value, index) => (
+                        <td key={index} className="p-4 align-top">
+                          {value}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
       </div>
 
       <PaymentModal

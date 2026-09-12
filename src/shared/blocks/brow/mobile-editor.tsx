@@ -50,6 +50,7 @@ export interface MobileBrowEditorProps {
   onPickFile: () => void;
   onResetAdjustments?: () => void;
   onDownload?: () => void | Promise<void>;
+  downloadLabel?: string;
   catalog: ReactNode;
   action: ReactNode;
   statusContent: ReactNode;
@@ -513,7 +514,7 @@ export function MobileBrowEditor(props: MobileBrowEditorProps) {
                   isDisabled={locked || !analysis}
                   onPress={props.onDownload}
                 >
-                  {browText(locale, 'Export', '导出')}
+                  {props.downloadLabel ?? browText(locale, 'Export', '导出')}
                 </Button>
               )}
               {tool === 'adjust' && props.onResetAdjustments && (

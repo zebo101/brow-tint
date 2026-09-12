@@ -188,7 +188,7 @@
     "download_failed_please_try_again": "Download fehlgeschlagen. Bitte erneut versuchen.",
     "uploading_your_confirmed_photo_and_mapping": "Bestätigtes Foto und Brauenlinien werden hochgeladen…",
     "submitting_your_preview": "Vorschau wird angefordert…",
-    "creating_your_preview_this_may_take_a_moment": "Deine Vorschau wird erstellt. Das kann einen Moment dauern…",
+    "creating_your_preview_this_may_take_a_moment": "Deine Vorschau wartet oder wird generiert. Eine erneute Statusabfrage verbraucht keine weiteren Credits.",
     "your_preview_is_ready": "Deine Vorschau ist fertig",
     "download_result": "Ergebnis herunterladen",
     "generation_failed_please_try_again": "Generierung fehlgeschlagen. Bitte erneut versuchen.",
@@ -235,6 +235,13 @@
     "before_alt": "Vor dem Augenbrauenfilter",
     "after_alt": "Nach dem Filter {name}",
     "try_another": "Andere Form ausprobieren",
-    "preparing_preview": "Formvorschau wird vorbereitet…"
+    "preparing_preview": "Formvorschau wird vorbereitet…",
+    "export_hd": "HD herunterladen",
+    "upgrade_export": "Upgrade zum Exportieren",
+    "export_compare": "Vergleich herunterladen ({n})",
+    "upgrade_compare": "Premium für Vergleichsexporte",
+    "comparison_title": "Deine gespeicherten Looks",
+    "comparison_hint": "Wähle 2–4 verschiedene generierte Stile desselben Fotos. Premium exportiert einen beschrifteten HD-Vergleich. Vorschauen haben Wasserzeichen, HD-Exporte nicht.",
+    "refresh_results": "Aktualisieren"
   }
 }

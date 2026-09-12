@@ -2,9 +2,11 @@ import { and, eq } from 'drizzle-orm';
 
 import { db } from '@/core/db';
 import { envConfigs } from '@/config';
+import { BROW_GENERATION_CREDITS } from '@/config/brow-pricing';
 import { browStyle } from '@/config/db/schema';
 import { buildBrowStylePrompt } from '@/config/img-prompt';
 import { AIMediaType } from '@/extensions/ai';
+import { serializeBrowTaskForClient } from '@/shared/lib/brow-export';
 import {
   appendBrowMappingStyleReference,
   createGenerationError,
@@ -16,12 +18,15 @@ import { createAITask, NewAITask } from '@/shared/models/ai_task';
 import { getRemainingCredits } from '@/shared/models/credit';
 import { getUserInfo } from '@/shared/models/user';
 import { getAIService } from '@/shared/services/ai';
+import { getBrowEntitlements } from '@/shared/services/brow-entitlements';
+import { enqueueBrowGeneration } from '@/shared/services/brow-queue';
 import { moderatePrompt } from '@/shared/services/moderation';
+import { browShapeLabel } from '@/themes/default/blocks/brow-tint/shape-label';
 
 // Every brow tint generation costs exactly 2 credits. This constant is
 // authoritative — the per-row brow_style.credits column is ignored by the
 // server. See docs/superpowers/specs/2026-04-30-fix-brow-tint-credit-cost-design.md.
-const BROW_TINT_COST_CREDITS = 2;
+const BROW_TINT_COST_CREDITS = BROW_GENERATION_CREDITS;
 
 const BROW_STYLE_IMAGE_MODELS = [
   'nano-banana-pro',
@@ -52,10 +57,28 @@ export async function POST(request: Request) {
       throw new Error('prompt or options is required');
     }
 
+    // Browlens exposes image generation only through validated brow styles.
+    // Enforce the boundary by media type rather than attempting to enumerate
+    // every provider's image-input fields. Video/music retain their APIs.
+    const requiresBrowStyle =
+      mediaType === AIMediaType.IMAGE ||
+      BROW_STYLE_IMAGE_MODELS.includes(model);
+    if (requiresBrowStyle && (typeof styleId !== 'string' || !styleId.trim())) {
+      throw new Error('invalid styleId');
+    }
+
     const clientPrompt = typeof prompt === 'string' ? prompt : '';
     let generationPrompt = clientPrompt;
     let generationOptions =
       options && typeof options === 'object' ? { ...options } : options;
+    // Internal task metadata is always server-owned, including on non-brow requests.
+    if (generationOptions && typeof generationOptions === 'object') {
+      delete generationOptions.__browQueue;
+      delete generationOptions.__browExport;
+    }
+    let browExportMetadata:
+      | { styleId: string; styleName: string; source: string }
+      | undefined;
 
     const aiService = await getAIService();
 
@@ -137,6 +160,15 @@ export async function POST(request: Request) {
         throw new Error('invalid styleId');
       }
 
+      browExportMetadata = {
+        styleId: style.id,
+        styleName: browShapeLabel({ shape: style.shape }, 'en'),
+        source:
+          typeof generationOptions?.image_input?.[0] === 'string'
+            ? generationOptions.image_input[0]
+            : '',
+      };
+
       if (browMapping === true) {
         generationOptions = appendBrowMappingStyleReference(
           generationOptions,
@@ -202,6 +234,30 @@ export async function POST(request: Request) {
       options: generationOptions,
     };
 
+    if (styleId) {
+      const entitlements = await getBrowEntitlements(user.id);
+      const queued = await enqueueBrowGeneration(
+        {
+          id: getUuid(),
+          userId: user.id,
+          mediaType,
+          provider,
+          model,
+          prompt: clientPrompt,
+          scene,
+          status: 'pending',
+          costCredits,
+          options: JSON.stringify({
+            ...generationOptions,
+            __browExport: browExportMetadata,
+          }),
+        },
+        params,
+        entitlements.queuePriority
+      );
+      return respData(serializeBrowTaskForClient(queued, entitlements));
+    }
+
     // generate content
     providerSubmissionStarted = true;
     const result = await aiProvider.generate({ params });
@@ -229,7 +285,9 @@ export async function POST(request: Request) {
     };
     await createAITask(newAITask);
 
-    return respData(newAITask);
+    return respData(
+      serializeBrowTaskForClient(newAITask, await getBrowEntitlements(user.id))
+    );
   } catch (e) {
     const errorResponse = createGenerationError(e, providerSubmissionStarted);
     console.log('generate failed', errorResponse);

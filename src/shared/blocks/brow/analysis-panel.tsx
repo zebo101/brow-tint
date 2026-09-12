@@ -3,7 +3,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { Check, Download, Loader2, Pause, Play, RotateCcw } from 'lucide-react';
 import { useReducedMotion } from 'motion/react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import {
   analyzeFace,
@@ -19,6 +19,7 @@ import {
 import type { BrowAnalysis, BrowStyle } from '@/shared/lib/brow-mapping/types';
 
 import { getBrowCopy } from './copy';
+import { useBrowExportAccess } from './export-access';
 import { BrowOverlay } from './overlay';
 
 export type ConfirmedBrowAnalysis = { photo: BrowPhoto; guide: Blob };
@@ -39,6 +40,8 @@ export function BrowAnalysisPanel({
   onInvalidate: () => void;
 }) {
   const c = getBrowCopy(useLocale());
+  const t = useTranslations('pages.ai-brow-tint');
+  const exportAccess = useBrowExportAccess();
   const id = useId();
   const reduced = useReducedMotion();
   const callbacks = useRef({ onConfirm, onInvalidate });
@@ -143,24 +146,31 @@ export function BrowAnalysisPanel({
   }
 
   async function exportPhoto(confirm: boolean) {
-    if (!photo || !analysis || !candidate || exporting || disabled) return;
+    if (
+      !photo ||
+      !analysis ||
+      !candidate ||
+      exporting ||
+      exportAccess.downloading ||
+      disabled
+    )
+      return;
+    if (!confirm) {
+      const current = revision.current;
+      await exportAccess.downloadLocal(async () => {
+        const blob = await exportBrowPhoto(photo, analysis, candidate, true);
+        return revision.current === current ? blob : null;
+      });
+      return;
+    }
     const current = revision.current;
     setExporting(true);
     setError(null);
     try {
-      const blob = await exportBrowPhoto(photo, analysis, candidate, !confirm);
+      const blob = await exportBrowPhoto(photo, analysis, candidate, false);
       if (revision.current !== current) return;
-      if (confirm) {
-        setConfirmed(true);
-        callbacks.current.onConfirm({ photo, guide: blob });
-      } else {
-        const url = URL.createObjectURL(blob);
-        const anchor = document.createElement('a');
-        anchor.href = url;
-        anchor.download = 'brow-analysis.png';
-        anchor.click();
-        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
-      }
+      setConfirmed(true);
+      callbacks.current.onConfirm({ photo, guide: blob });
     } catch {
       if (revision.current === current) setError('export');
     } finally {
@@ -298,7 +308,7 @@ export function BrowAnalysisPanel({
             </div>
           </div>
           <fieldset
-            disabled={disabled || exporting}
+            disabled={disabled || exporting || exportAccess.downloading}
             className="space-y-4 disabled:opacity-60"
           >
             <legend className="text-sm font-semibold">{c.direction}</legend>
@@ -385,7 +395,9 @@ export function BrowAnalysisPanel({
                 onClick={() => void exportPhoto(false)}
               >
                 <Download aria-hidden className="size-4" />
-                {c.download}
+                {exportAccess.canExport
+                  ? t('ui.export_hd')
+                  : t('ui.upgrade_export')}
               </button>
               <button
                 type="button"

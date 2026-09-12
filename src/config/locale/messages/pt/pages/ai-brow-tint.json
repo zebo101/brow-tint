@@ -188,7 +188,7 @@
     "download_failed_please_try_again": "Falha no download. Tente novamente.",
     "uploading_your_confirmed_photo_and_mapping": "Enviando sua foto e as guias confirmadas…",
     "submitting_your_preview": "Enviando sua solicitação de prévia…",
-    "creating_your_preview_this_may_take_a_moment": "Criando sua prévia. Isso pode levar um momento…",
+    "creating_your_preview_this_may_take_a_moment": "Sua prévia está na fila ou sendo gerada. Consultar o status novamente não consome mais créditos.",
     "your_preview_is_ready": "Sua prévia está pronta",
     "download_result": "Baixar resultado",
     "generation_failed_please_try_again": "Falha na geração. Tente novamente.",
@@ -235,6 +235,13 @@
     "before_alt": "Antes do filtro de sobrancelhas",
     "after_alt": "Após o filtro {name}",
     "try_another": "Experimentar outro formato",
-    "preparing_preview": "Preparando prévia do formato…"
+    "preparing_preview": "Preparando prévia do formato…",
+    "export_hd": "Baixar em HD",
+    "upgrade_export": "Faça upgrade para exportar",
+    "export_compare": "Baixar comparação ({n})",
+    "upgrade_compare": "Obtenha Premium para exportar comparações",
+    "comparison_title": "Seus estilos salvos",
+    "comparison_hint": "Selecione de 2 a 4 estilos diferentes gerados com a mesma foto. Premium exporta uma comparação HD com nomes. Prévias têm marca-d’água; exportações HD não.",
+    "refresh_results": "Atualizar"
   }
 }

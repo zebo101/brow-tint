@@ -33,7 +33,7 @@ import {
   SlidersHorizontal,
   Upload,
 } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { measureBrows } from '@/shared/lib/brow-mapping/report';
 import type {
@@ -45,6 +45,7 @@ import type {
 import type { ConfirmedBrowAnalysis } from './analysis-panel';
 import { AnchorEditor, type AnchorEditing } from './anchor-editor';
 import { browText, getBrowCopy } from './copy';
+import { useBrowExportAccess } from './export-access';
 import { MobileBrowEditor } from './mobile-editor';
 import { PortraitCanvas, type PortraitView } from './portrait-canvas';
 import type { BrowPreviewState } from './portrait-preview';
@@ -98,6 +99,8 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
   const locale = useLocale();
   const zh = locale.startsWith('zh');
   const c = getBrowCopy(locale);
+  const t = useTranslations('pages.ai-brow-tint');
+  const exportAccess = useBrowExportAccess();
   const local = useBrowAnalysis(props.file, props.onInvalidate);
   const [panel, setPanel] = useState<Panel>('adjust');
   const [view, setView] = useState<PortraitView>('mapping');
@@ -133,7 +136,7 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
     if (rawPhotoUrl)
       onPreviewChange(rawPhotoUrl, { photo, analysis, candidate });
   }, [photo, analysis, candidate, rawPhotoUrl, onPreviewChange]);
-  const locked = props.disabled || local.exporting;
+  const locked = props.disabled || local.exporting || exportAccess.downloading;
   function changeOpen(open: boolean) {
     if (!open) setZoom(1);
     props.onOpenChange(open);
@@ -341,14 +344,9 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
   }
   async function download(withReferences = view === 'mapping') {
     if (locked) return;
-    const value = await local.exportImage(withReferences);
-    if (!value) return;
-    const url = URL.createObjectURL(value.guide);
-    const anchor = document.createElement('a');
-    anchor.href = url;
-    anchor.download = 'brow-design.png';
-    anchor.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    await exportAccess.downloadLocal(
+      async () => (await local.exportImage(withReferences))?.guide ?? null
+    );
   }
   const error =
     local.error === 'export'
@@ -398,6 +396,9 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
         setView('mapping');
       }}
       onDownload={() => download(true)}
+      downloadLabel={
+        exportAccess.canExport ? t('ui.export_hd') : t('ui.upgrade_export')
+      }
     />
   ) : (
     <Card
@@ -592,11 +593,11 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
                     <Scan />
                   </ToolButton>
                   <ToolButton
-                    label={browText(
-                      locale,
-                      'Download design',
-                      '下载当前设计图'
-                    )}
+                    label={
+                      exportAccess.canExport
+                        ? t('ui.export_hd')
+                        : t('ui.upgrade_export')
+                    }
                     disabled={locked}
                     onPress={() => void download()}
                   >
@@ -1199,7 +1200,9 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
                           isDisabled={locked}
                         >
                           <Download className="size-4" />
-                          {c.download}
+                          {exportAccess.canExport
+                            ? t('ui.export_hd')
+                            : t('ui.upgrade_export')}
                         </Button>
                       </div>
                     )}

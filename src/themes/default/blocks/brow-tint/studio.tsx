@@ -23,6 +23,7 @@ import { PhotoGuidelinesModal } from '@/shared/blocks/common/photo-guidelines-mo
 import { useAppContext } from '@/shared/contexts/app';
 
 import { BrowCatalogPanel } from './catalog-panel';
+import { BrowExportGallery } from './export-gallery';
 import { BrowFilterEditor } from './filter-editor';
 import {
   BROW_MAPPING_CREDITS,
@@ -422,6 +423,13 @@ export function BrowTintStudio({
             />
           </>
         )}
+        <BrowExportGallery
+          refreshKey={
+            generation.state.phase === 'success'
+              ? generation.state.taskId
+              : null
+          }
+        />
         {mode === 'home' && (
           <ul
             id="features"

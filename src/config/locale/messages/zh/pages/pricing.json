@@ -1,16 +1,15 @@
 {
   "metadata": {
     "title": "Browlens 价格 — 眉型滤镜积分与套餐",
-    "description": "比较 Browlens 眉型滤镜图片生成的积分套餐。"
+    "description": "眉形定位、六点手动调整和分析报告永久免费、不限次数。每次 AI 生成消耗 2 积分。"
   },
   "page": {
     "title": "价格",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Browlens 价格 — 眉型滤镜积分与套餐",
-        "title": "选择最适合您的方案",
-        "description": "眉型分析免费。生成眉型滤镜图片需登录并消耗积分，生成前会显示所需积分。",
+        "title": "选择适合你的眉形方案",
+        "description": "眉形定位、六点手动调整和分析报告永久免费、不限次数。每次 AI 生成消耗 2 积分。",
         "groups": [
           {
             "name": "monthly",
@@ -18,252 +17,308 @@
           },
           {
             "name": "yearly",
-            "title": "年付（更省）",
-            "label": "优惠"
+            "title": "年付"
           },
           {
             "name": "one-time",
-            "title": "积分充值"
+            "title": "积分加油包"
           }
         ],
         "items": [
           {
             "title": "免费版",
-            "description": "免费体验 Browlens。",
-            "features_title": "包含",
-            "features": ["核心生成功能", "标准队列"],
+            "description": "免费了解自己的眉形。",
+            "features_title": "包含权益",
+            "features": [
+              "注册赠送 6 积分，仅一次 · 可生成 3 次",
+              "不限次眉形定位",
+              "不限次六点手动调整",
+              "不限次分析报告",
+              "不支持导出",
+              "标准队列"
+            ],
             "interval": "month",
             "amount": 0,
             "currency": "USD",
             "price": "$0",
             "unit": "",
             "is_featured": false,
-            "tip": "免费开始，可随时升级。",
+            "tip": "注册赠送积分永久有效，不会按月重复赠送。",
             "button": {
-              "title": "当前方案",
-              "url": "/#pricing",
+              "title": "免费开始",
+              "url": "/#brow-app",
               "icon": ""
             },
             "product_id": "free-monthly",
-            "product_name": "免费版",
-            "credits": 0,
-            "valid_days": 30,
+            "product_name": "Free",
+            "credits": 6,
+            "valid_days": 0,
             "group": "monthly"
           },
           {
-            "title": "基础版",
-            "description": "适合常规生成需求。",
+            "title": "Basic",
+            "description": "适合日常尝试不同眉形。",
             "label": "热门",
-            "features_title": "包含",
+            "features_title": "包含权益",
             "features": [
-              "每月 200 积分",
-              "积分按月刷新",
-              "优先队列",
-              "去除水印"
+              "100 积分 · 50 次 AI 生成",
+              "不限次眉形定位",
+              "不限次六点手动调整",
+              "不限次分析报告",
+              "高清单图导出",
+              "优先队列"
             ],
             "interval": "month",
-            "amount": 1990,
-            "currency": "USD",
-            "price": "$19.9",
-            "unit": "/ 月",
-            "is_featured": true,
-            "tip": "随时可取消。",
-            "button": {
-              "title": "立即订阅",
-              "url": "/#pricing",
-              "icon": "RiVipCrownLine"
-            },
-            "product_id": "basic-monthly",
-            "product_name": "基础月付",
-            "credits": 200,
-            "valid_days": 30,
-            "group": "monthly",
-            "plan_name": "基础版"
-          },
-          {
-            "title": "高级版",
-            "description": "适合高强度使用与重度用户。",
-            "features_title": "包含",
-            "features": [
-              "每月 300 积分",
-              "积分按月刷新",
-              "最高优先队列",
-              "去除水印"
-            ],
-            "interval": "month",
-            "amount": 2990,
-            "currency": "USD",
-            "price": "$29.9",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "随时可取消。",
-            "button": {
-              "title": "立即订阅",
-              "url": "/#pricing",
-              "icon": "RiVipCrownLine"
-            },
-            "product_id": "premium-monthly",
-            "product_name": "高级月付",
-            "credits": 300,
-            "valid_days": 30,
-            "group": "monthly",
-            "plan_name": "高级版"
-          },
-          {
-            "title": "免费版",
-            "description": "免费体验 Browlens。",
-            "features_title": "包含",
-            "features": ["核心生成功能", "标准队列"],
-            "interval": "year",
-            "amount": 0,
-            "currency": "USD",
-            "price": "$0",
-            "unit": "",
-            "is_featured": false,
-            "tip": "免费开始，可随时升级。",
-            "button": {
-              "title": "当前方案",
-              "url": "/#pricing",
-              "icon": ""
-            },
-            "product_id": "free-yearly",
-            "product_name": "免费版",
-            "credits": 0,
-            "valid_days": 365,
-            "group": "yearly"
-          },
-          {
-            "title": "基础版",
-            "description": "选择年付，全年积分一次性到账。",
-            "label": "优惠",
-            "features_title": "包含",
-            "features": [
-              "每年 2400 积分",
-              "订阅后一次性到账",
-              "优先队列",
-              "去除水印"
-            ],
-            "interval": "year",
-            "amount": 19080,
-            "currency": "USD",
-            "price": "$15.9",
-            "original_price": "$19.9",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "按年计费，积分一次性到账。",
-            "button": {
-              "title": "立即订阅",
-              "url": "/#pricing",
-              "icon": "RiVipCrownLine"
-            },
-            "product_id": "basic-yearly",
-            "product_name": "基础年付",
-            "credits": 2400,
-            "valid_days": 365,
-            "group": "yearly",
-            "plan_name": "基础年付"
-          },
-          {
-            "title": "高级版",
-            "description": "大量使用的最佳年付方案，全年积分一次性到账。",
-            "features_title": "包含",
-            "features": [
-              "每年 3600 积分",
-              "订阅后一次性到账",
-              "最高优先队列",
-              "去除水印"
-            ],
-            "interval": "year",
-            "amount": 31080,
-            "currency": "USD",
-            "price": "$25.9",
-            "original_price": "$29.9",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "按年计费，积分一次性到账。",
-            "button": {
-              "title": "立即订阅",
-              "url": "/#pricing",
-              "icon": "RiVipCrownLine"
-            },
-            "product_id": "premium-yearly",
-            "product_name": "高级年付",
-            "credits": 3600,
-            "valid_days": 365,
-            "group": "yearly",
-            "plan_name": "高级年付"
-          },
-          {
-            "title": "100 积分充值",
-            "description": "随时补充积分。",
-            "features_title": "包含",
-            "features": ["100 积分", "积分永不过期"],
-            "interval": "one-time",
             "amount": 1290,
             "currency": "USD",
             "price": "$12.9",
-            "unit": "",
-            "is_featured": false,
-            "tip": "一次性购买，积分永不过期。",
+            "unit": "/ 月",
+            "is_featured": true,
+            "tip": "积分每月发放，在当前月度周期内有效，最长 30 天。",
             "button": {
-              "title": "立即充值",
-              "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "title": "订阅",
+              "url": "/pricing",
+              "icon": "RiVipCrownLine"
             },
-            "product_id": "topup-100",
-            "product_name": "100 积分充值",
+            "product_id": "basic-monthly",
+            "product_name": "Basic Monthly",
             "credits": 100,
-            "valid_days": 0,
-            "group": "one-time"
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Basic"
           },
           {
-            "title": "200 积分充值",
-            "description": "需要更多积分时随时购买。",
-            "label": "热门",
-            "features_title": "包含",
-            "features": ["200 积分", "积分永不过期"],
-            "interval": "one-time",
-            "amount": 2590,
+            "title": "Premium",
+            "description": "更多生成次数，支持多图对比导出。",
+            "features_title": "包含权益",
+            "features": [
+              "300 积分 · 150 次 AI 生成",
+              "不限次眉形定位",
+              "不限次六点手动调整",
+              "不限次分析报告",
+              "高清单图导出",
+              "同一照片 2–4 个结果对比导出",
+              "最高优先级队列"
+            ],
+            "interval": "month",
+            "amount": 2490,
             "currency": "USD",
-            "price": "$25.9",
-            "unit": "",
+            "price": "$24.9",
+            "unit": "/ 月",
             "is_featured": false,
-            "tip": "一次性购买，积分永不过期。",
+            "tip": "积分每月发放，在当前月度周期内有效，最长 30 天。",
             "button": {
-              "title": "立即充值",
-              "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "title": "订阅",
+              "url": "/pricing",
+              "icon": "RiVipCrownLine"
             },
-            "product_id": "topup-200",
-            "product_name": "200 积分充值",
-            "credits": 200,
-            "valid_days": 0,
-            "group": "one-time"
-          },
-          {
-            "title": "300 积分充值",
-            "description": "适合更大用量。",
-            "features_title": "包含",
-            "features": ["300 积分", "积分永不过期"],
-            "interval": "one-time",
-            "amount": 3890,
-            "currency": "USD",
-            "price": "$38.9",
-            "unit": "",
-            "is_featured": false,
-            "tip": "一次性购买，积分永不过期。",
-            "button": {
-              "title": "立即充值",
-              "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
-            },
-            "product_id": "topup-300",
-            "product_name": "300 积分充值",
+            "product_id": "premium-monthly",
+            "product_name": "Premium Monthly",
             "credits": 300,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Premium"
+          },
+          {
+            "title": "Basic",
+            "description": "全年积分一次到账，自由安排使用。",
+            "features_title": "包含权益",
+            "features": [
+              "2400 积分 · 1200 次 AI 生成",
+              "不限次眉形定位",
+              "不限次六点手动调整",
+              "不限次分析报告",
+              "高清单图导出",
+              "优先队列"
+            ],
+            "interval": "year",
+            "amount": 15900,
+            "currency": "USD",
+            "price": "$159",
+            "unit": "/ 年",
+            "is_featured": false,
+            "tip": "折合 $13.25/月，按年支付 $159。 全年积分一次到账，在当前年度周期内有效，最长 365 天。",
+            "button": {
+              "title": "订阅",
+              "url": "/pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Basic Annual",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Premium",
+            "description": "全年高级权益，积分一次到账。",
+            "features_title": "包含权益",
+            "features": [
+              "3600 积分 · 1800 次 AI 生成",
+              "不限次眉形定位",
+              "不限次六点手动调整",
+              "不限次分析报告",
+              "高清单图导出",
+              "同一照片 2–4 个结果对比导出",
+              "最高优先级队列"
+            ],
+            "interval": "year",
+            "amount": 23900,
+            "currency": "USD",
+            "price": "$239",
+            "unit": "/ 年",
+            "is_featured": false,
+            "tip": "约合 $19.92/月，按年支付 $239，比连续月付 12 次节省 $59.80。 全年积分一次到账，在当前年度周期内有效，最长 365 天。",
+            "button": {
+              "title": "订阅",
+              "url": "/pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-yearly",
+            "product_name": "Premium Annual",
+            "credits": 3600,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Premium"
+          },
+          {
+            "title": "24 积分",
+            "description": "按需补充 AI 生成次数。",
+            "features_title": "包含权益",
+            "features": [
+              "24 积分 · 12 次 AI 生成",
+              "积分永久有效",
+              "高清单图导出",
+              "标准队列",
+              "多图对比导出需 Premium 订阅"
+            ],
+            "interval": "one-time",
+            "amount": 599,
+            "currency": "USD",
+            "price": "$5.99",
+            "unit": "一次性付款",
+            "is_featured": false,
+            "tip": "每次生成约 $0.50 · 一次性购买，包含高清单图导出和标准队列；已有订阅权益继续生效。",
+            "button": {
+              "title": "购买积分",
+              "url": "/pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-24",
+            "product_name": "Browlens 24 Credits",
+            "credits": 24,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "60 积分",
+            "description": "按需补充 AI 生成次数。",
+            "features_title": "包含权益",
+            "features": [
+              "60 积分 · 30 次 AI 生成",
+              "积分永久有效",
+              "高清单图导出",
+              "标准队列",
+              "多图对比导出需 Premium 订阅"
+            ],
+            "interval": "one-time",
+            "amount": 1199,
+            "currency": "USD",
+            "price": "$11.99",
+            "unit": "一次性付款",
+            "is_featured": false,
+            "tip": "每次生成约 $0.40 · 一次性购买，包含高清单图导出和标准队列；已有订阅权益继续生效。",
+            "button": {
+              "title": "购买积分",
+              "url": "/pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-60",
+            "product_name": "Browlens 60 Credits",
+            "credits": 60,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "120 积分",
+            "description": "按需补充 AI 生成次数。",
+            "features_title": "包含权益",
+            "features": [
+              "120 积分 · 60 次 AI 生成",
+              "积分永久有效",
+              "高清单图导出",
+              "标准队列",
+              "多图对比导出需 Premium 订阅"
+            ],
+            "interval": "one-time",
+            "amount": 1999,
+            "currency": "USD",
+            "price": "$19.99",
+            "unit": "一次性付款",
+            "is_featured": false,
+            "tip": "每次生成约 $0.33 · 一次性购买，包含高清单图导出和标准队列；已有订阅权益继续生效。",
+            "button": {
+              "title": "购买积分",
+              "url": "/pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-120",
+            "product_name": "Browlens 120 Credits",
+            "credits": 120,
             "valid_days": 0,
             "group": "one-time"
           }
-        ]
+        ],
+        "note": "所有价格均为美元，每次 AI 生成消耗 2 积分。适用税费在结账时计算。",
+        "comparison": {
+          "title": "套餐权益对比",
+          "description": "Basic 和 Premium 的月付、年付功能权益相同，年付积分一次到账。加油包包含高清单图导出；多图对比导出需有效的 Premium 订阅。",
+          "feature_label": "功能",
+          "plans": ["免费版", "Basic", "Premium"],
+          "rows": [
+            {
+              "title": "不限次眉形定位",
+              "values": ["不限次数", "不限次数", "不限次数"]
+            },
+            {
+              "title": "不限次六点手动调整",
+              "values": ["不限次数", "不限次数", "不限次数"]
+            },
+            {
+              "title": "不限次分析报告",
+              "values": ["不限次数", "不限次数", "不限次数"]
+            },
+            {
+              "title": "月付方案积分",
+              "values": [
+                "注册一次赠送 6 积分",
+                "100 积分 · 50 次 AI 生成",
+                "300 积分 · 150 次 AI 生成"
+              ]
+            },
+            {
+              "title": "年付方案积分（一次到账）",
+              "values": [
+                "—",
+                "2400 积分 · 1200 次 AI 生成",
+                "3600 积分 · 1800 次 AI 生成"
+              ]
+            },
+            {
+              "title": "高清单图导出",
+              "values": ["不支持", "支持", "支持"]
+            },
+            {
+              "title": "同一照片 2–4 个结果对比导出",
+              "values": ["不支持", "不支持", "支持"]
+            },
+            {
+              "title": "生成队列",
+              "values": ["标准队列", "优先队列", "最高优先级队列"]
+            }
+          ]
+        }
       }
     }
   },

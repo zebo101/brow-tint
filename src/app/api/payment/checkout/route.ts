@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
+import { applyBrowOffer, getBrowOffer } from '@/config/brow-pricing';
 import {
   PaymentInterval,
   PaymentOrder,
@@ -37,13 +38,15 @@ export async function POST(req: Request) {
     });
     const pricing = t.raw('page.sections.pricing');
 
-    const pricingItem = (pricing.items as PricingItem[]).find(
+    const pricingCopy = (pricing.items as PricingItem[]).find(
       (item) => item.product_id === product_id
     );
 
-    if (!pricingItem) {
+    if (!pricingCopy || !getBrowOffer(product_id)) {
       return respErr('pricing item not found');
     }
+
+    const pricingItem = applyBrowOffer(pricingCopy);
 
     if (!pricingItem.product_id && !pricingItem.amount) {
       return respErr('invalid pricing item');
@@ -223,10 +226,10 @@ export async function POST(req: Request) {
       },
       type: paymentType,
       metadata: {
+        ...(metadata || {}),
         app_name: configs.app_name,
         order_no: orderNo,
         user_id: user.id,
-        ...(metadata || {}),
       },
       successUrl: `${configs.app_url}/api/payment/callback?order_no=${orderNo}`,
       cancelUrl: `${callbackBaseUrl}/pricing`,

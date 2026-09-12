@@ -1,269 +1,324 @@
 {
   "metadata": {
     "title": "Browlens 料金 — 眉フィルターのクレジットとプラン",
-    "description": "Browlensで眉フィルター画像を生成するためのクレジットプランを比較。"
+    "description": "眉マッピング、6点の手動調整、分析レポートは無料・回数無制限。AI生成1回につき2クレジットを使用します。"
   },
   "page": {
     "title": "料金",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Browlens 料金 — 眉フィルターのクレジットとプラン",
-        "title": "最適なプランをお選びください",
-        "description": "眉の形の分析は無料です。フィルター画像の生成にはログインとクレジットが必要で、生成前に必要数が表示されます。",
+        "title": "あなたに合った眉プランを選ぶ",
+        "description": "眉マッピング、6点の手動調整、分析レポートは無料・回数無制限。AI生成1回につき2クレジットを使用します。",
         "groups": [
           {
             "name": "monthly",
-            "title": "月額"
+            "title": "月払い"
           },
           {
             "name": "yearly",
-            "title": "年額（お得）",
-            "label": "お得"
+            "title": "年払い"
           },
           {
             "name": "one-time",
-            "title": "チャージ"
+            "title": "クレジット追加"
           }
         ],
         "items": [
           {
             "title": "無料",
-            "description": "Browlens を無料でお試し。",
-            "features_title": "含まれるもの",
-            "features": ["コア生成機能", "通常キュー"],
+            "description": "自分の眉の形を無料でチェック。",
+            "features_title": "含まれる機能",
+            "features": [
+              "新規登録時に6クレジットを1回付与 · AI生成3回",
+              "眉マッピング無制限",
+              "6点の手動調整が無制限",
+              "分析レポート無制限",
+              "書き出し不可",
+              "通常キュー"
+            ],
             "interval": "month",
             "amount": 0,
             "currency": "USD",
             "price": "$0",
             "unit": "",
             "is_featured": false,
-            "tip": "無料で始めて、いつでもアップグレード。",
+            "tip": "登録特典クレジットは無期限です。毎月の無料付与はありません。",
             "button": {
-              "title": "現在のプラン",
-              "url": "/#pricing",
+              "title": "無料で始める",
+              "url": "/#brow-app",
               "icon": ""
             },
             "product_id": "free-monthly",
-            "product_name": "無料",
-            "credits": 0,
-            "valid_days": 30,
+            "product_name": "Free",
+            "credits": 6,
+            "valid_days": 0,
             "group": "monthly"
           },
           {
-            "title": "ベーシック",
-            "description": "通常の生成ニーズに最適。",
+            "title": "Basic",
+            "description": "日常的に眉のスタイルを試す方に。",
             "label": "人気",
-            "features_title": "含まれるもの",
+            "features_title": "含まれる機能",
             "features": [
-              "月 200 クレジット",
-              "クレジット毎月リフレッシュ",
-              "優先キュー",
-              "ウォーターマーク削除"
+              "100クレジット · AI生成50回",
+              "眉マッピング無制限",
+              "6点の手動調整が無制限",
+              "分析レポート無制限",
+              "HD画像の個別書き出し",
+              "優先キュー"
             ],
             "interval": "month",
-            "amount": 1990,
-            "currency": "USD",
-            "price": "$19.9",
-            "unit": "/ 月",
-            "is_featured": true,
-            "tip": "いつでもキャンセル可能。",
-            "button": {
-              "title": "登録",
-              "url": "/#pricing",
-              "icon": "RiVipCrownLine"
-            },
-            "product_id": "basic-monthly",
-            "product_name": "ベーシック月額",
-            "credits": 200,
-            "valid_days": 30,
-            "group": "monthly",
-            "plan_name": "ベーシック"
-          },
-          {
-            "title": "プレミアム",
-            "description": "ヘビーユーザーや大量利用に最適。",
-            "features_title": "含まれるもの",
-            "features": [
-              "月 300 クレジット",
-              "クレジット毎月リフレッシュ",
-              "最優先キュー",
-              "ウォーターマーク削除"
-            ],
-            "interval": "month",
-            "amount": 2990,
-            "currency": "USD",
-            "price": "$29.9",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "いつでもキャンセル可能。",
-            "button": {
-              "title": "登録",
-              "url": "/#pricing",
-              "icon": "RiVipCrownLine"
-            },
-            "product_id": "premium-monthly",
-            "product_name": "プレミアム月額",
-            "credits": 300,
-            "valid_days": 30,
-            "group": "monthly",
-            "plan_name": "プレミアム"
-          },
-          {
-            "title": "無料",
-            "description": "Browlens を無料でお試し。",
-            "features_title": "含まれるもの",
-            "features": ["コア生成機能", "通常キュー"],
-            "interval": "year",
-            "amount": 0,
-            "currency": "USD",
-            "price": "$0",
-            "unit": "",
-            "is_featured": false,
-            "tip": "無料で始めて、いつでもアップグレード。",
-            "button": {
-              "title": "現在のプラン",
-              "url": "/#pricing",
-              "icon": ""
-            },
-            "product_id": "free-yearly",
-            "product_name": "無料",
-            "credits": 0,
-            "valid_days": 365,
-            "group": "yearly"
-          },
-          {
-            "title": "ベーシック",
-            "description": "年額請求でお得に。年間分のクレジットは一括付与されます。",
-            "label": "お得",
-            "features_title": "含まれるもの",
-            "features": [
-              "年 2400 クレジット",
-              "契約時に一括付与",
-              "優先キュー",
-              "ウォーターマーク削除"
-            ],
-            "interval": "year",
-            "amount": 19080,
-            "currency": "USD",
-            "price": "$15.9",
-            "original_price": "$19.9",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "年額請求。クレジットは一括付与されます。",
-            "button": {
-              "title": "登録",
-              "url": "/#pricing",
-              "icon": "RiVipCrownLine"
-            },
-            "product_id": "basic-yearly",
-            "product_name": "ベーシック年額",
-            "credits": 2400,
-            "valid_days": 365,
-            "group": "yearly",
-            "plan_name": "ベーシック年額"
-          },
-          {
-            "title": "プレミアム",
-            "description": "大量利用に最適な年額プラン。年間分のクレジットは一括付与されます。",
-            "features_title": "含まれるもの",
-            "features": [
-              "年 3600 クレジット",
-              "契約時に一括付与",
-              "最優先キュー",
-              "ウォーターマーク削除"
-            ],
-            "interval": "year",
-            "amount": 31080,
-            "currency": "USD",
-            "price": "$25.9",
-            "original_price": "$29.9",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "年額請求。クレジットは一括付与されます。",
-            "button": {
-              "title": "登録",
-              "url": "/#pricing",
-              "icon": "RiVipCrownLine"
-            },
-            "product_id": "premium-yearly",
-            "product_name": "プレミアム年額",
-            "credits": 3600,
-            "valid_days": 365,
-            "group": "yearly",
-            "plan_name": "プレミアム年額"
-          },
-          {
-            "title": "100 クレジットチャージ",
-            "description": "いつでもクレジットを追加。",
-            "features_title": "含まれるもの",
-            "features": ["100 クレジット", "クレジットは無期限"],
-            "interval": "one-time",
             "amount": 1290,
             "currency": "USD",
             "price": "$12.9",
-            "unit": "",
-            "is_featured": false,
-            "tip": "1 回限りの購入。クレジットは無期限です。",
+            "unit": "/ 月",
+            "is_featured": true,
+            "tip": "毎月クレジットを付与。現在の月間契約期間内で有効です（最大30日）。",
             "button": {
-              "title": "チャージ",
-              "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "title": "登録する",
+              "url": "/pricing",
+              "icon": "RiVipCrownLine"
             },
-            "product_id": "topup-100",
-            "product_name": "100 クレジットチャージ",
+            "product_id": "basic-monthly",
+            "product_name": "Basic Monthly",
             "credits": 100,
-            "valid_days": 0,
-            "group": "one-time"
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Basic"
           },
           {
-            "title": "200 クレジットチャージ",
-            "description": "必要なときにさらにクレジットを追加。",
-            "label": "人気",
-            "features_title": "含まれるもの",
-            "features": ["200 クレジット", "クレジットは無期限"],
-            "interval": "one-time",
-            "amount": 2590,
+            "title": "Premium",
+            "description": "より多くの生成と比較画像の書き出し。",
+            "features_title": "含まれる機能",
+            "features": [
+              "300クレジット · AI生成150回",
+              "眉マッピング無制限",
+              "6点の手動調整が無制限",
+              "分析レポート無制限",
+              "HD画像の個別書き出し",
+              "同じ写真の結果2〜4枚を比較画像として書き出し",
+              "最優先キュー"
+            ],
+            "interval": "month",
+            "amount": 2490,
             "currency": "USD",
-            "price": "$25.9",
-            "unit": "",
+            "price": "$24.9",
+            "unit": "/ 月",
             "is_featured": false,
-            "tip": "1 回限りの購入。クレジットは無期限です。",
+            "tip": "毎月クレジットを付与。現在の月間契約期間内で有効です（最大30日）。",
             "button": {
-              "title": "チャージ",
-              "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
+              "title": "登録する",
+              "url": "/pricing",
+              "icon": "RiVipCrownLine"
             },
-            "product_id": "topup-200",
-            "product_name": "200 クレジットチャージ",
-            "credits": 200,
-            "valid_days": 0,
-            "group": "one-time"
-          },
-          {
-            "title": "300 クレジットチャージ",
-            "description": "大量利用におすすめ。",
-            "features_title": "含まれるもの",
-            "features": ["300 クレジット", "クレジットは無期限"],
-            "interval": "one-time",
-            "amount": 3890,
-            "currency": "USD",
-            "price": "$38.9",
-            "unit": "",
-            "is_featured": false,
-            "tip": "1 回限りの購入。クレジットは無期限です。",
-            "button": {
-              "title": "チャージ",
-              "url": "/#pricing",
-              "icon": "RiShoppingCartLine"
-            },
-            "product_id": "topup-300",
-            "product_name": "300 クレジットチャージ",
+            "product_id": "premium-monthly",
+            "product_name": "Premium Monthly",
             "credits": 300,
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Premium"
+          },
+          {
+            "title": "Basic",
+            "description": "1年分のクレジットをまとめて受け取り。",
+            "features_title": "含まれる機能",
+            "features": [
+              "2400クレジット · AI生成1200回",
+              "眉マッピング無制限",
+              "6点の手動調整が無制限",
+              "分析レポート無制限",
+              "HD画像の個別書き出し",
+              "優先キュー"
+            ],
+            "interval": "year",
+            "amount": 15900,
+            "currency": "USD",
+            "price": "$159",
+            "unit": "/ 年",
+            "is_featured": false,
+            "tip": "月額換算$13.25、年額$159を一括請求。 クレジットを一括付与。現在の年間契約期間内で有効です（最大365日）。",
+            "button": {
+              "title": "登録する",
+              "url": "/pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Basic Annual",
+            "credits": 2400,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Premium",
+            "description": "1年間のPremium機能とクレジット一括付与。",
+            "features_title": "含まれる機能",
+            "features": [
+              "3600クレジット · AI生成1800回",
+              "眉マッピング無制限",
+              "6点の手動調整が無制限",
+              "分析レポート無制限",
+              "HD画像の個別書き出し",
+              "同じ写真の結果2〜4枚を比較画像として書き出し",
+              "最優先キュー"
+            ],
+            "interval": "year",
+            "amount": 23900,
+            "currency": "USD",
+            "price": "$239",
+            "unit": "/ 年",
+            "is_featured": false,
+            "tip": "月額換算約$19.92、年額$239を一括請求。月払い12回より$59.80お得。 クレジットを一括付与。現在の年間契約期間内で有効です（最大365日）。",
+            "button": {
+              "title": "登録する",
+              "url": "/pricing",
+              "icon": "RiVipCrownLine"
+            },
+            "product_id": "premium-yearly",
+            "product_name": "Premium Annual",
+            "credits": 3600,
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Premium"
+          },
+          {
+            "title": "24クレジット",
+            "description": "必要なときにAI生成回数を追加。",
+            "features_title": "含まれる機能",
+            "features": [
+              "24クレジット · AI生成12回",
+              "クレジットは無期限",
+              "HD画像の個別書き出し",
+              "通常キュー",
+              "比較画像の書き出しにはPremium契約が必要"
+            ],
+            "interval": "one-time",
+            "amount": 599,
+            "currency": "USD",
+            "price": "$5.99",
+            "unit": "買い切り",
+            "is_featured": false,
+            "tip": "生成1回あたり約$0.50 · 1回の購入でHD画像の個別書き出しと通常キューを利用できます。有効な契約の特典はそのまま適用されます。",
+            "button": {
+              "title": "クレジットを購入",
+              "url": "/pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-24",
+            "product_name": "Browlens 24 Credits",
+            "credits": 24,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "60クレジット",
+            "description": "必要なときにAI生成回数を追加。",
+            "features_title": "含まれる機能",
+            "features": [
+              "60クレジット · AI生成30回",
+              "クレジットは無期限",
+              "HD画像の個別書き出し",
+              "通常キュー",
+              "比較画像の書き出しにはPremium契約が必要"
+            ],
+            "interval": "one-time",
+            "amount": 1199,
+            "currency": "USD",
+            "price": "$11.99",
+            "unit": "買い切り",
+            "is_featured": false,
+            "tip": "生成1回あたり約$0.40 · 1回の購入でHD画像の個別書き出しと通常キューを利用できます。有効な契約の特典はそのまま適用されます。",
+            "button": {
+              "title": "クレジットを購入",
+              "url": "/pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-60",
+            "product_name": "Browlens 60 Credits",
+            "credits": 60,
+            "valid_days": 0,
+            "group": "one-time"
+          },
+          {
+            "title": "120クレジット",
+            "description": "必要なときにAI生成回数を追加。",
+            "features_title": "含まれる機能",
+            "features": [
+              "120クレジット · AI生成60回",
+              "クレジットは無期限",
+              "HD画像の個別書き出し",
+              "通常キュー",
+              "比較画像の書き出しにはPremium契約が必要"
+            ],
+            "interval": "one-time",
+            "amount": 1999,
+            "currency": "USD",
+            "price": "$19.99",
+            "unit": "買い切り",
+            "is_featured": false,
+            "tip": "生成1回あたり約$0.33 · 1回の購入でHD画像の個別書き出しと通常キューを利用できます。有効な契約の特典はそのまま適用されます。",
+            "button": {
+              "title": "クレジットを購入",
+              "url": "/pricing",
+              "icon": "RiShoppingCartLine"
+            },
+            "product_id": "topup-120",
+            "product_name": "Browlens 120 Credits",
+            "credits": 120,
             "valid_days": 0,
             "group": "one-time"
           }
-        ]
+        ],
+        "note": "価格はすべて米ドルです。AI生成1回につき2クレジットを使用します。適用される税金は決済時に計算されます。",
+        "comparison": {
+          "title": "プランの機能を比較",
+          "description": "BasicとPremiumの機能は月払い・年払い共通です。年払いのクレジットは一括付与。追加購入にはHD画像の個別書き出しが含まれます。比較画像の書き出しには有効なPremium契約が必要です。",
+          "feature_label": "機能",
+          "plans": ["無料", "Basic", "Premium"],
+          "rows": [
+            {
+              "title": "眉マッピング無制限",
+              "values": ["無制限", "無制限", "無制限"]
+            },
+            {
+              "title": "6点の手動調整が無制限",
+              "values": ["無制限", "無制限", "無制限"]
+            },
+            {
+              "title": "分析レポート無制限",
+              "values": ["無制限", "無制限", "無制限"]
+            },
+            {
+              "title": "月払いのクレジット",
+              "values": [
+                "登録時に6クレジットを1回付与",
+                "100クレジット · AI生成50回",
+                "300クレジット · AI生成150回"
+              ]
+            },
+            {
+              "title": "年払いのクレジット（一括付与）",
+              "values": [
+                "—",
+                "2400クレジット · AI生成1200回",
+                "3600クレジット · AI生成1800回"
+              ]
+            },
+            {
+              "title": "HD画像の個別書き出し",
+              "values": ["利用不可", "利用可能", "利用可能"]
+            },
+            {
+              "title": "同じ写真の結果2〜4枚を比較画像として書き出し",
+              "values": ["利用不可", "利用不可", "利用可能"]
+            },
+            {
+              "title": "生成キュー",
+              "values": ["通常キュー", "優先キュー", "最優先キュー"]
+            }
+          ]
+        }
       }
     }
   },

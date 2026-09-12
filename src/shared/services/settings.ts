@@ -596,9 +596,9 @@ export async function getSettings() {
   "premium-monthly": "prod_xxx",
   "basic-yearly": "prod_xxx",
   "premium-yearly": "prod_xxx",
-  "topup-100": "prod_xxx",
-  "topup-200": "prod_xxx",
-  "topup-300": "prod_xxx"
+  "topup-24": "prod_xxx",
+  "topup-60": "prod_xxx",
+  "topup-120": "prod_xxx"
 }`,
       group: 'creem',
       tab: 'payment',
