@@ -52,16 +52,18 @@ export function BrowGenerationActions({
             ? t('ui.choose_a_shape')
             : !authenticated
               ? t('ui.sign_in_to_generate')
-              : state.phase === 'success'
-                ? t('ui.generate_again')
-                : t('ui.generate_ai_preview');
+              : insufficient
+                ? t('ui.get_credits')
+                : state.phase === 'success'
+                  ? t('ui.generate_again')
+                  : t('ui.generate_ai_preview');
 
   return (
     <div className="space-y-2.5">
       <Button
         fullWidth
         variant="primary"
-        isDisabled={checkingAuth || locked || !ready || insufficient}
+        isDisabled={checkingAuth || locked || !ready}
         isPending={active}
         onPress={authenticated ? onGenerate : onSignIn}
       >
@@ -79,12 +81,14 @@ export function BrowGenerationActions({
       {insufficient && ready && (
         <p className="text-muted-foreground text-xs">
           {t('ui.not_enough_credits')}
-          <Link
-            href="/pricing"
+          <button
+            type="button"
+            onClick={onGenerate}
+            disabled={locked || checkingAuth}
             className="text-foreground underline underline-offset-4"
           >
             {t('ui.get_credits')}
-          </Link>
+          </button>
         </p>
       )}
     </div>

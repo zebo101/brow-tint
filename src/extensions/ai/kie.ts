@@ -157,14 +157,14 @@ export class KieProvider implements AIProvider {
       },
     };
 
-    // gpt-image-2-{text,image}-to-image use a different input schema than
-    // legacy kie image models (nano-banana-pro / seedream etc.):
-    //   - field name is `input_urls`
-    //   - supports `aspect_ratio` and `nsfw_checker`
-    //   - does NOT use legacy `image_input` / `resolution` / `output_format`
+    // GPT Image 2.5 has its own schema. In particular, 2.0's nsfw_checker
+    // must not replace 2.5's resolution/background settings.
+    // https://docs.kie.ai/market/gpt/gpt-image-2-5-flare-image-to-image
+    const isGptImage25Flare =
+      params.model === 'gpt-image-2-5-flare-image-to-image';
     const isGptImage2 =
-      typeof params.model === 'string' &&
-      params.model.startsWith('gpt-image-2');
+      params.model === 'gpt-image-2-image-to-image' ||
+      params.model === 'gpt-image-2-text-to-image';
 
     const options = params.options ?? {};
 
@@ -184,7 +184,14 @@ export class KieProvider implements AIProvider {
       imageInputs.push(options.brow_tint_image);
     }
 
-    if (isGptImage2) {
+    if (isGptImage25Flare) {
+      if (imageInputs.length > 0) {
+        payload.input.input_urls = imageInputs;
+      }
+      payload.input.aspect_ratio = options.aspect_ratio || 'auto';
+      payload.input.resolution = options.resolution || '1K';
+      payload.input.background = options.background || 'auto';
+    } else if (isGptImage2) {
       // GPT Image 2 schema
       if (imageInputs.length > 0) {
         payload.input.input_urls = imageInputs;

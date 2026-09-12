@@ -243,5 +243,16 @@
     "comparison_title": "Tus estilos guardados",
     "comparison_hint": "Selecciona entre 2 y 4 estilos generados con la misma foto. Premium exporta una comparación HD con nombres. Las vistas previas tienen marca de agua; las exportaciones HD no.",
     "refresh_results": "Actualizar"
+  },
+  "credit_offer": {
+    "title": "No tienes suficientes créditos",
+    "trial_title": "Has usado tus 3 generaciones gratuitas",
+    "description": "Recarga unos créditos y sigue probando formas de cejas.",
+    "topup": "Comprar {count} generaciones — {price}",
+    "topup_note": "Compra única. Los créditos no caducan.",
+    "basic": "Suscribirse a Basic — {price}/mes",
+    "pricing": "Ver precios",
+    "processing": "Abriendo la página de pago…",
+    "error": "No se pudo abrir la página de pago. Inténtalo de nuevo."
   }
 }

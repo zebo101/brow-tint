@@ -243,5 +243,16 @@
     "comparison_title": "已保存的眉形效果",
     "comparison_hint": "选择同一张照片生成的 2–4 种不同眉形，Premium 可导出带款式名称的高清对比图。预览带水印，高清导出无水印。",
     "refresh_results": "刷新"
+  },
+  "credit_offer": {
+    "title": "你的生成积分已不足",
+    "trial_title": "你已用完 3 次免费生成",
+    "description": "充值少量积分，继续尝试喜欢的眉形。",
+    "topup": "买 {count} 次 — {price}",
+    "topup_note": "一次购买，积分永不过期。",
+    "basic": "订阅 Basic — {price}/月",
+    "pricing": "看定价页",
+    "processing": "正在打开收款页面…",
+    "error": "暂时无法打开收款页面，请重试。"
   }
 }

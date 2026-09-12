@@ -93,21 +93,12 @@ export function Pricing({
     useAppContext();
 
   const [group, setGroup] = useState(() => {
-    // find current pricing item
-    const currentItem = section.items?.find(
-      (i) => i.product_id === currentSubscription?.productId
-    );
-
-    // First look for a group with is_featured set to true
+    // The pricing landing page leads with annual plans; in-tool credit offers
+    // choose their checkout product directly and do not change this default.
     const featuredGroup = section.groups?.find((g) => g.is_featured);
-    // Prefer monthly by default when nothing else dictates the choice
-    const monthlyGroup = section.groups?.find((g) => g.name === 'monthly');
-    // Fall back to the first group if neither monthly nor featured exists
+    const annualGroup = section.groups?.find((g) => g.name === 'yearly');
     return (
-      currentItem?.group ||
-      featuredGroup?.name ||
-      monthlyGroup?.name ||
-      section.groups?.[0]?.name
+      annualGroup?.name || featuredGroup?.name || section.groups?.[0]?.name
     );
   });
 

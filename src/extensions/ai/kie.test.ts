@@ -2,7 +2,125 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 import { KieProvider } from './kie';
-import { AIMediaType, AITaskStatus } from './types';
+import { AIMediaType, AIProvider, AITaskStatus } from './types';
+
+test('historical Kie image tasks still query their existing task IDs after the model upgrade', async (t) => {
+  const provider: AIProvider = new KieProvider({ apiKey: 'test-key' });
+  for (const model of [
+    'nano-banana-pro',
+    'gpt-image-2-image-to-image',
+    'gpt-image-2-5-flare-image-to-image',
+  ]) {
+    const taskId = `existing-${model}`;
+    t.mock.method(
+      globalThis,
+      'fetch',
+      async (url: string, init: RequestInit) => {
+        assert.equal(
+          url,
+          `https://api.kie.ai/api/v1/jobs/recordInfo?taskId=${taskId}`
+        );
+        assert.equal(init.method, 'GET');
+        return Response.json({
+          code: 200,
+          data: {
+            state: 'success',
+            createTime: 1789192800000,
+            resultJson: JSON.stringify({
+              resultUrls: ['https://example.com/result.webp'],
+            }),
+          },
+        });
+      }
+    );
+    const result = await provider.query!({
+      taskId,
+      model,
+      mediaType: AIMediaType.IMAGE,
+    });
+    assert.equal(result.taskStatus, AITaskStatus.SUCCESS);
+    assert.equal(result.taskId, taskId);
+    assert.equal(
+      result.taskInfo?.images?.[0].imageUrl,
+      'https://example.com/result.webp'
+    );
+    t.mock.restoreAll();
+  }
+});
+
+test('KieProvider sends Flare 2.5 with 1K and the original, guide, and style in exact order', async (t) => {
+  let requestBody: unknown;
+  t.mock.method(globalThis, 'fetch', async (url: string, init: RequestInit) => {
+    assert.equal(url, 'https://api.kie.ai/api/v1/jobs/createTask');
+    requestBody = JSON.parse(String(init.body));
+    return Response.json({ code: 200, data: { taskId: 'flare-task' } });
+  });
+
+  const result = await new KieProvider({ apiKey: 'test-key' }).generate({
+    params: {
+      mediaType: AIMediaType.IMAGE,
+      model: 'gpt-image-2-5-flare-image-to-image',
+      prompt: 'Preserve identity and apply the confirmed brow mapping.',
+      callbackUrl: 'https://browlens.com/api/ai/notify/kie',
+      options: {
+        image_input: [
+          'https://example.com/original.webp',
+          'https://example.com/guide.png',
+          'https://example.com/style.webp',
+        ],
+        resolution: '1K',
+        aspect_ratio: 'auto',
+        background: 'opaque',
+        nsfw_checker: true,
+        output_format: 'png',
+      },
+    },
+  });
+
+  assert.equal(result.taskId, 'flare-task');
+  assert.deepEqual(requestBody, {
+    model: 'gpt-image-2-5-flare-image-to-image',
+    callBackUrl: 'https://browlens.com/api/ai/notify/kie',
+    input: {
+      prompt: 'Preserve identity and apply the confirmed brow mapping.',
+      input_urls: [
+        'https://example.com/original.webp',
+        'https://example.com/guide.png',
+        'https://example.com/style.webp',
+      ],
+      resolution: '1K',
+      aspect_ratio: 'auto',
+      background: 'opaque',
+    },
+  });
+});
+
+test('Flare accepts native input_urls and defaults to 1K without legacy nsfw_checker', async (t) => {
+  let input: unknown;
+  t.mock.method(
+    globalThis,
+    'fetch',
+    async (_url: string, init: RequestInit) => {
+      input = JSON.parse(String(init.body)).input;
+      return Response.json({ code: 200, data: { taskId: 'flare-default' } });
+    }
+  );
+  await new KieProvider({ apiKey: 'test-key' }).generateImage({
+    params: {
+      mediaType: AIMediaType.IMAGE,
+      model: 'gpt-image-2-5-flare-image-to-image',
+      prompt: 'Edit the brows.',
+      options: { input_urls: ['https://example.com/original.webp'] },
+    },
+  });
+  assert.deepEqual(input, {
+    prompt: 'Edit the brows.',
+    input_urls: ['https://example.com/original.webp'],
+    aspect_ratio: 'auto',
+    resolution: '1K',
+    background: 'auto',
+  });
+});
 
 test('KieProvider sends GPT Image 2 image-to-image requests using the input_urls schema', async () => {
   const provider = new KieProvider({

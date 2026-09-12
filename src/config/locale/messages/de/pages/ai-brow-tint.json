@@ -243,5 +243,16 @@
     "comparison_title": "Deine gespeicherten Looks",
     "comparison_hint": "Wähle 2–4 verschiedene generierte Stile desselben Fotos. Premium exportiert einen beschrifteten HD-Vergleich. Vorschauen haben Wasserzeichen, HD-Exporte nicht.",
     "refresh_results": "Aktualisieren"
+  },
+  "credit_offer": {
+    "title": "Deine Credits reichen nicht mehr aus",
+    "trial_title": "Du hast deine 3 kostenlosen Generierungen verbraucht",
+    "description": "Lade ein kleines Credit-Paket auf und probiere weitere Augenbrauenformen aus.",
+    "topup": "{count} Generierungen kaufen — {price}",
+    "topup_note": "Einmaliger Kauf. Credits verfallen nicht.",
+    "basic": "Basic abonnieren — {price}/Monat",
+    "pricing": "Preise ansehen",
+    "processing": "Zahlungsseite wird geöffnet…",
+    "error": "Die Zahlungsseite konnte nicht geöffnet werden. Bitte versuche es erneut."
   }
 }

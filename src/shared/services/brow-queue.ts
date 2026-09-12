@@ -1,15 +1,16 @@
-import { dbPg } from '@/core/db';
+import { db } from '@/core/db';
 import { envConfigs } from '@/config';
 import type { AIGenerateParams } from '@/extensions/ai/types';
 import type { NewAITask } from '@/shared/models/ai_task';
 import { getAllConfigs } from '@/shared/models/config';
 
 import { getAIService } from './ai';
+import { browQueueErrorDetails } from './brow-queue-diagnostics';
 import { readBrowQueueMetadata, runBrowQueueAction } from './brow-queue-engine';
 import { createBrowQueueStore } from './brow-queue-store';
 
 type WorkerState = {
-  database?: ReturnType<typeof dbPg>;
+  database?: ReturnType<typeof db>;
   store?: ReturnType<typeof createBrowQueueStore>;
   timer?: ReturnType<typeof setInterval>;
   running?: boolean;
@@ -21,7 +22,7 @@ const globalQueue = globalThis as typeof globalThis & {
 const state = (globalQueue.__browQueueWorker ||= {});
 
 function getStore() {
-  return (state.store ||= createBrowQueueStore((state.database ||= dbPg())));
+  return (state.store ||= createBrowQueueStore((state.database ||= db())));
 }
 
 export function isBrowQueuedTask(task: {
@@ -49,10 +50,12 @@ export async function enqueueBrowGeneration(
 async function tick() {
   if (state.running) return;
   state.running = true;
+  let stage = 'claim';
   try {
     const store = getStore();
     const action = await store.claim();
     if (!action) return;
+    stage = 'configuration';
     // Recovery failures need no provider config or network access.
     const provider = action.kind.startsWith('fail-')
       ? undefined
@@ -61,14 +64,17 @@ async function tick() {
             await getAllConfigs({ useCache: false, database: state.database })
           )
         ).getProvider(action.provider);
+    stage = `provider-${action.kind}`;
     const outcome = await runBrowQueueAction(action, provider, action.now);
+    stage = 'complete';
     await store.complete(action, outcome);
-  } catch {
+  } catch (error) {
     // The durable lease lets another tick/process recover after any crash.
     // Avoid logging prompts, photos, provider credentials, or DB connection data.
     if (!state.lastErrorAt || Date.now() - state.lastErrorAt >= 60_000) {
       console.error(
-        '[brow-queue] Worker tick failed; durable tasks will be recovered.'
+        '[brow-queue] Worker tick failed; durable tasks will be recovered.',
+        { stage, ...browQueueErrorDetails(error) }
       );
       state.lastErrorAt = Date.now();
     }
@@ -85,13 +91,18 @@ export function startBrowQueueWorker() {
     process.env.NEXT_PHASE === 'phase-production-build'
   )
     return;
-  if (envConfigs.database_provider !== 'postgresql') {
+  if (
+    !['postgresql', 'sqlite', 'turso'].includes(envConfigs.database_provider)
+  ) {
     if (!state.lastErrorAt)
-      console.warn('[brow-queue] Priority queue requires PostgreSQL.');
+      console.warn('[brow-queue] Unsupported database dialect.');
     state.lastErrorAt = Date.now();
     return;
   }
   state.timer = setInterval(() => void tick(), 2_000);
   state.timer.unref?.();
+  console.info(
+    `[brow-queue] Worker started (${envConfigs.database_provider}).`
+  );
   void tick();
 }

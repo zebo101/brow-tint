@@ -9,7 +9,7 @@ export const BROW_QUEUE_MAX_RUN_MS = 30 * 60_000;
 export type BrowQueueMetadata = {
   version: 1;
   priority: 0 | 1 | 2;
-  /** Database admission time with microseconds, assigned under the claim lock. */
+  /** Database admission order, assigned under the database's queue/write lock. */
   order: string;
   phase: 'waiting' | 'submitting' | 'submitted';
   params: AIGenerateParams;
@@ -95,9 +95,7 @@ export function chooseBrowQueueAction(
 }
 
 type QueueProvider = {
-  generate: (args: {
-    params: AIGenerateParams;
-  }) => Promise<{
+  generate: (args: { params: AIGenerateParams }) => Promise<{
     taskId: string;
     taskStatus: string;
     taskInfo?: any;

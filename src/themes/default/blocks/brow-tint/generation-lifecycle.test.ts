@@ -20,11 +20,14 @@ test('mapping generation sends the normalized photo and confirmed guide in order
   assert.deepEqual(payload, {
     provider: 'kie',
     mediaType: 'image',
-    model: 'nano-banana-pro',
+    model: 'gpt-image-2-5-flare-image-to-image',
     scene: 'image-to-image',
     styleId: 'style-42',
     browMapping: true,
     options: {
+      resolution: '1K',
+      aspect_ratio: 'auto',
+      background: 'opaque',
       image_input: [
         'https://cdn.example.com/original.jpg',
         'https://cdn.example.com/guide.png',

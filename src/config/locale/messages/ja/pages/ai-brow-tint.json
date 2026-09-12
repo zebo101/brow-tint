@@ -243,5 +243,16 @@
     "comparison_title": "保存した眉スタイル",
     "comparison_hint": "同じ写真から生成した異なる眉形を2〜4種類選択。Premiumでは名前付きのHD比較画像を書き出せます。プレビューには透かしが入り、HD書き出しには入りません。",
     "refresh_results": "更新"
+  },
+  "credit_offer": {
+    "title": "生成クレジットが不足しています",
+    "trial_title": "無料生成3回を使い切りました",
+    "description": "少量のクレジットを追加して、眉の形をもっと試しましょう。",
+    "topup": "{count}回分を購入 — {price}",
+    "topup_note": "買い切り。クレジットの有効期限はありません。",
+    "basic": "Basicを購読 — 月額{price}",
+    "pricing": "料金を見る",
+    "processing": "決済ページを開いています…",
+    "error": "決済ページを開けませんでした。もう一度お試しください。"
   }
 }

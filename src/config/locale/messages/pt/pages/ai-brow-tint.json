@@ -243,5 +243,16 @@
     "comparison_title": "Seus estilos salvos",
     "comparison_hint": "Selecione de 2 a 4 estilos diferentes gerados com a mesma foto. Premium exporta uma comparação HD com nomes. Prévias têm marca-d’água; exportações HD não.",
     "refresh_results": "Atualizar"
+  },
+  "credit_offer": {
+    "title": "Você não tem créditos suficientes",
+    "trial_title": "Você usou suas 3 gerações gratuitas",
+    "description": "Recarregue alguns créditos e continue experimentando formatos de sobrancelhas.",
+    "topup": "Comprar {count} gerações — {price}",
+    "topup_note": "Compra única. Os créditos não expiram.",
+    "basic": "Assinar Basic — {price}/mês",
+    "pricing": "Ver preços",
+    "processing": "Abrindo a página de pagamento…",
+    "error": "Não foi possível abrir a página de pagamento. Tente novamente."
   }
 }

@@ -1,5 +1,6 @@
 import { and, eq, inArray, isNull, sql } from 'drizzle-orm';
 
+import { envConfigs } from '@/config';
 import { aiTask } from '@/config/db/schema';
 import type { AIGenerateParams } from '@/extensions/ai/types';
 import { getUuid } from '@/shared/lib/hash';
@@ -21,15 +22,31 @@ import {
   type BrowQueueOutcome,
 } from './brow-queue-engine';
 
-// PostgreSQL advisory transaction locks coordinate all Node processes. Network
-// calls happen after commit: no database connection is held during AI work.
-async function lockQueue(tx: any) {
+// Avoid local libsql connection contention between HTTP and worker operations.
+// Cross-process exclusion still comes from the database write transaction.
+const sqliteTransactions = new WeakMap<object, Promise<void>>();
+
+// PostgreSQL needs a queue-wide advisory lock. Turso/libsql's write transaction
+// already admits one writer, including transactions from other server processes.
+async function lockQueue(tx: any, isSqlite: boolean) {
+  if (isSqlite) return;
   await tx.execute(
     sql`select pg_advisory_xact_lock(hashtext('browlens:queue:v1'))`
   );
 }
 
-async function databaseTime(tx: any): Promise<{ now: number; order: string }> {
+async function databaseTime(
+  tx: any,
+  isSqlite: boolean
+): Promise<{ now: number; order: string }> {
+  if (isSqlite) {
+    const [row] = await tx.all(sql`select
+      cast((julianday('now') - 2440587.5) * 86400000 as integer) as now,
+      printf('%020d', coalesce(max(rowid), 0) + 1) as "order" from ${aiTask}`);
+    // SQLite rowids advance under the same write lock as admission. Unlike its
+    // millisecond clock, they keep FIFO even for simultaneous admission times.
+    return { now: Number(row.now), order: row.order };
+  }
   const result = await tx.execute(sql`select
     floor(extract(epoch from clock_timestamp()) * 1000)::double precision as now,
     to_char(clock_timestamp() at time zone 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS.US') as "order"`);
@@ -37,16 +54,38 @@ async function databaseTime(tx: any): Promise<{ now: number; order: string }> {
   return { now: Number(row.now), order: row.order };
 }
 
-export function createBrowQueueStore(database: any) {
+export function createBrowQueueStore(
+  database: any,
+  dialect = envConfigs.database_provider
+) {
+  const isSqlite = ['sqlite', 'turso'].includes(dialect);
+  function transaction<T>(execute: (tx: any) => Promise<T>): Promise<T> {
+    if (!isSqlite) return database.transaction(execute);
+    const previous = sqliteTransactions.get(database) || Promise.resolve();
+    // Drizzle's libsql adapter uses client.transaction(), whose default mode is
+    // "write" (BEGIN IMMEDIATE), before invoking our callback. Never retry a
+    // failed/ambiguous transaction here: a successful commit may be unknown.
+    const operation = previous.then(() =>
+      database.transaction(execute, { behavior: 'immediate' })
+    );
+    sqliteTransactions.set(
+      database,
+      operation.then(
+        () => undefined,
+        () => undefined
+      )
+    );
+    return operation;
+  }
   return {
     async enqueue(
       task: NewAITask,
       params: AIGenerateParams,
       priority: 0 | 1 | 2
     ) {
-      return database.transaction(async (tx: any) => {
-        await lockQueue(tx);
-        const { order } = await databaseTime(tx);
+      return transaction(async (tx: any) => {
+        await lockQueue(tx, isSqlite);
+        const { order } = await databaseTime(tx, isSqlite);
         const metadata: BrowQueueMetadata = {
           version: 1,
           priority,
@@ -73,10 +112,10 @@ export function createBrowQueueStore(database: any) {
     async claim(): Promise<
       (BrowQueueAction & { now: number; provider: string }) | undefined
     > {
-      return database.transaction(async (tx: any) => {
-        await lockQueue(tx);
-        const { now } = await databaseTime(tx);
-        const rows = await tx
+      return transaction(async (tx: any) => {
+        await lockQueue(tx, isSqlite);
+        const { now } = await databaseTime(tx, isSqlite);
+        const rowsQuery = tx
           .select()
           .from(aiTask)
           .where(
@@ -86,8 +125,8 @@ export function createBrowQueueStore(database: any) {
               inArray(aiTask.status, ['pending', 'processing']),
               isNull(aiTask.deletedAt)
             )
-          )
-          .for('update');
+          );
+        const rows = await (isSqlite ? rowsQuery : rowsQuery.for('update'));
         const tasks = rows.flatMap((row: any) => {
           const metadata = readBrowQueueMetadata(row.options);
           return metadata
@@ -130,12 +169,12 @@ export function createBrowQueueStore(database: any) {
     },
 
     async complete(action: BrowQueueAction, outcome: BrowQueueOutcome) {
-      return database.transaction(async (tx: any) => {
-        const [row] = await tx
+      return transaction(async (tx: any) => {
+        const rowQuery = tx
           .select()
           .from(aiTask)
-          .where(eq(aiTask.id, action.task.id))
-          .for('update');
+          .where(eq(aiTask.id, action.task.id));
+        const [row] = await (isSqlite ? rowQuery : rowQuery.for('update'));
         if (!row || isTerminalBrowTask(row.status)) return row;
         const metadata = readBrowQueueMetadata(row.options);
         // An expired worker must never overwrite a recovery worker's result.
@@ -144,7 +183,7 @@ export function createBrowQueueStore(database: any) {
           metadata.claimToken !== action.task.metadata.claimToken
         )
           return row;
-        const { now } = await databaseTime(tx);
+        const { now } = await databaseTime(tx, isSqlite);
         return updateAITaskById(
           row.id,
           {

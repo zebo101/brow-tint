@@ -1,5 +1,9 @@
 import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
 import test from 'node:test';
+
+import type { AIGenerateParams } from '@/extensions/ai/types';
+import type { NewAITask } from '@/shared/models/ai_task';
 
 // Exercise the real public POST handler without auth, DB, or provider access.
 // A nonexistent provider would fail its validation if an unsafe request reached
@@ -109,5 +113,164 @@ test('video and music APIs retain their existing validation path', async () => {
       (await generate({ ...request, options: {} })).message,
       'invalid provider'
     );
+  }
+});
+
+test('new brow tasks from current and older browsers enqueue Flare 1K with the same image roles and two-credit cost', async (t) => {
+  // Replace only the external auth/DB/billing/queue dependencies. Exercise the
+  // real route, prompt builder, image validation, and client serialization.
+  const require = createRequire(import.meta.url);
+  const savedModules = new Map<string, NodeModule | undefined>();
+  const original = 'https://uploads.example.com/original.webp';
+  const guide = 'https://uploads.example.com/guide.png';
+  const thumbnail = 'https://cdn.example.com/style.webp';
+  let queuedTask!: NewAITask;
+  let providerParams!: AIGenerateParams;
+  let priority: unknown;
+  let moderatedPrompt = '';
+  const style = {
+    id: 'active-style',
+    name: 'Soft Taupe',
+    shape: 'soft arch',
+    shade: 'taupe',
+    intensity: 'medium',
+    prompt: 'Softly tinted brows.',
+    negative: '',
+    thumbnail,
+  };
+  const query = {
+    select: () => query,
+    from: () => query,
+    where: () => query,
+    limit: async () => [style],
+  };
+  const replacements: Record<string, unknown> = {
+    '@/core/db': { db: () => query },
+    '@/shared/models/user': { getUserInfo: async () => ({ id: 'test-user' }) },
+    '@/shared/models/credit': { getRemainingCredits: async () => 2 },
+    '@/shared/services/ai': {
+      getAIService: async () => ({
+        getMediaTypes: () => ['image', 'video', 'music'],
+        getProvider: (name: string) =>
+          name === 'kie'
+            ? { generate: () => assert.fail('brows must use the queue') }
+            : undefined,
+      }),
+    },
+    '@/shared/services/brow-entitlements': {
+      getBrowEntitlements: async () => ({
+        canExport: false,
+        canCompare: false,
+        queuePriority: 0,
+      }),
+    },
+    '@/shared/services/moderation': {
+      moderatePrompt: async ({ prompt }: { prompt: string }) => {
+        moderatedPrompt = prompt;
+        return { decision: 'allow' };
+      },
+    },
+    '@/shared/services/brow-queue': {
+      enqueueBrowGeneration: async (
+        task: NewAITask,
+        params: AIGenerateParams,
+        queuePriority: 0 | 1 | 2
+      ) => {
+        queuedTask = task;
+        providerParams = params;
+        priority = queuePriority;
+        return task;
+      },
+    },
+  };
+  const routePath = require.resolve('./route');
+  savedModules.set(routePath, require.cache[routePath]);
+  for (const [specifier, exports] of Object.entries(replacements)) {
+    const path = require.resolve(specifier);
+    savedModules.set(path, require.cache[path]);
+    require.cache[path] = {
+      id: path,
+      filename: path,
+      loaded: true,
+      exports,
+    } as NodeModule;
+  }
+  delete require.cache[routePath];
+  t.after(() => {
+    for (const [path, cached] of savedModules) {
+      if (cached) require.cache[path] = cached;
+      else delete require.cache[path];
+    }
+  });
+  const { POST } = require('./route') as typeof import('./route');
+
+  for (const { model, browMapping } of [
+    { model: 'nano-banana-pro', browMapping: true },
+    { model: 'gpt-image-2-image-to-image', browMapping: true },
+    { model: 'gpt-image-2-5-flare-image-to-image', browMapping: true },
+    { model: 'nano-banana-pro', browMapping: false },
+  ]) {
+    const response = await POST(
+      new Request('http://localhost/api/ai/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          provider: 'kie',
+          mediaType: 'image',
+          scene: 'image-to-image',
+          model,
+          styleId: style.id,
+          browMapping,
+          options: {
+            image_input: browMapping ? [original, guide] : [original],
+            resolution: '4K',
+            background: 'transparent',
+            __browQueue: { spoofed: true },
+            __browExport: { source: 'untrusted' },
+          },
+        }),
+      })
+    );
+    const body = await response.json();
+    assert.equal(body.code, 0, JSON.stringify(body));
+    assert.equal(queuedTask.model, 'gpt-image-2-5-flare-image-to-image');
+    assert.equal(providerParams.model, 'gpt-image-2-5-flare-image-to-image');
+    assert.equal(queuedTask.provider, 'kie');
+    assert.equal(queuedTask.costCredits, 2);
+    assert.equal(priority, 0);
+    assert.deepEqual(
+      providerParams.options.image_input,
+      browMapping ? [original, guide, thumbnail] : [original]
+    );
+    assert.equal(providerParams.options.resolution, '1K');
+    assert.equal(providerParams.options.aspect_ratio, 'auto');
+    assert.equal(providerParams.options.background, 'opaque');
+    assert.equal(providerParams.options.__browQueue, undefined);
+    assert.equal(providerParams.options.__browExport, undefined);
+    assert.equal(
+      JSON.parse(String(queuedTask.options)).__browExport.source,
+      original
+    );
+    assert.equal(JSON.parse(String(queuedTask.options)).resolution, '1K');
+    assert.equal(moderatedPrompt, providerParams.prompt);
+    if (browMapping) {
+      assert.match(providerParams.prompt, /Image 1.+identity authority/i);
+      assert.match(
+        providerParams.prompt,
+        /Image 2.+placement and contour authority/i
+      );
+      assert.match(providerParams.prompt, /Image 3.+appearance authority/i);
+    } else {
+      assert.match(
+        providerParams.prompt,
+        /Image 1 is the user's portrait photo\./
+      );
+      assert.doesNotMatch(
+        providerParams.prompt,
+        /confirmed brow mapping guide/i
+      );
+    }
+    assert.equal(body.data.costCredits, 2);
+    assert.equal(body.data.options, null);
   }
 });

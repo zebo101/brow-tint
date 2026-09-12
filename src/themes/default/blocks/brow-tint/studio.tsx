@@ -21,8 +21,10 @@ import {
 import { BrowWorkspace } from '@/shared/blocks/brow/workspace';
 import { PhotoGuidelinesModal } from '@/shared/blocks/common/photo-guidelines-modal';
 import { useAppContext } from '@/shared/contexts/app';
+import { shouldShowBrowCreditOffer } from '@/shared/lib/brow-credit-offer';
 
 import { BrowCatalogPanel } from './catalog-panel';
+import { BrowCreditOfferModal } from './credit-offer-modal';
 import { BrowExportGallery } from './export-gallery';
 import { BrowFilterEditor } from './filter-editor';
 import {
@@ -65,6 +67,7 @@ export function BrowTintStudio({
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
   const remainingCredits = user?.credits?.remainingCredits ?? 0;
+  const userId = user?.id;
   const [session, dispatch] = useReducer(
     studioSessionReducer,
     emptyStudioSession
@@ -76,6 +79,8 @@ export function BrowTintStudio({
     selectedStyleId,
   } = session;
   const [showGuidelines, setShowGuidelines] = useState(false);
+  const [showCreditOffer, setShowCreditOffer] = useState(false);
+  const offeredTask = useRef<string | null>(null);
   const [pendingPhoto, setPendingPhoto] = useState<PendingPhoto>(null);
   const [loadingSample, setLoadingSample] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -97,6 +102,24 @@ export function BrowTintStudio({
     translateServerError,
   });
   const { isLocked, reset } = generation;
+
+  useEffect(() => {
+    const state = generation.state;
+    if (state.phase === 'uploading') offeredTask.current = null;
+    if (
+      !shouldShowBrowCreditOffer({
+        authenticated: !!userId,
+        remainingCredits: user?.credits?.remainingCredits,
+        phase: state.phase,
+        message: state.message,
+      })
+    )
+      return;
+    const key = `${userId}:${state.taskId || state.message}`;
+    if (offeredTask.current === key) return;
+    offeredTask.current = key;
+    setShowCreditOffer(true);
+  }, [generation.state, userId, user?.credits?.remainingCredits]);
 
   // Studio owns the raw preview; Workspace keeps the normalized URL alive
   // across confirmation and generation. Neither photo is uploaded here.
@@ -233,7 +256,7 @@ export function BrowTintStudio({
     }
     if (!selectedStyle || !confirmedAnalysis) return;
     if (remainingCredits < BROW_MAPPING_CREDITS) {
-      toast.error(t('ui.insufficient_credits'));
+      setShowCreditOffer(true);
       return;
     }
     await generation.start({
@@ -249,7 +272,6 @@ export function BrowTintStudio({
     selectedStyle,
     confirmedAnalysis,
     remainingCredits,
-    t,
     setIsShowSignModal,
     generation,
   ]);
@@ -477,6 +499,13 @@ export function BrowTintStudio({
         onClose={closeGuidelines}
         onConfirm={confirmGuidelines}
       />
+      {showCreditOffer && user && (
+        <BrowCreditOfferModal
+          key={user.id}
+          open={showCreditOffer}
+          onOpenChange={setShowCreditOffer}
+        />
+      )}
     </section>
   );
 }

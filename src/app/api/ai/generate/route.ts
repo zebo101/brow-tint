@@ -2,6 +2,11 @@ import { and, eq } from 'drizzle-orm';
 
 import { db } from '@/core/db';
 import { envConfigs } from '@/config';
+import {
+  BROW_IMAGE_MODEL,
+  BROW_IMAGE_OPTIONS,
+  BROW_STYLE_IMAGE_MODELS,
+} from '@/config/brow-model';
 import { BROW_GENERATION_CREDITS } from '@/config/brow-pricing';
 import { browStyle } from '@/config/db/schema';
 import { buildBrowStylePrompt } from '@/config/img-prompt';
@@ -28,26 +33,14 @@ import { browShapeLabel } from '@/themes/default/blocks/brow-tint/shape-label';
 // server. See docs/superpowers/specs/2026-04-30-fix-brow-tint-credit-cost-design.md.
 const BROW_TINT_COST_CREDITS = BROW_GENERATION_CREDITS;
 
-const BROW_STYLE_IMAGE_MODELS = [
-  'nano-banana-pro',
-  'gpt-image-2-image-to-image',
-];
-
 export async function POST(request: Request) {
   let providerSubmissionStarted = false;
 
   try {
     const requestBody = await request.json();
-    const {
-      provider,
-      mediaType,
-      model,
-      prompt,
-      options,
-      styleId,
-      browMapping,
-    } = requestBody;
-    let { scene } = requestBody;
+    const { provider, mediaType, prompt, options, styleId, browMapping } =
+      requestBody;
+    let { scene, model } = requestBody;
 
     if (!provider || !mediaType || !model) {
       throw new Error('invalid params');
@@ -110,6 +103,14 @@ export async function POST(request: Request) {
       if (!BROW_STYLE_IMAGE_MODELS.includes(model)) {
         throw new Error('invalid model for styleId');
       }
+
+      // New brow tasks always use the current model, even when an already-open
+      // browser submits the legacy model. Stored tasks keep their own model.
+      model = BROW_IMAGE_MODEL;
+      generationOptions = {
+        ...(generationOptions ?? {}),
+        ...BROW_IMAGE_OPTIONS,
+      };
     }
 
     // get current user

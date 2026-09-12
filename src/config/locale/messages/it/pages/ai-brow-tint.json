@@ -243,5 +243,16 @@
     "comparison_title": "I tuoi stili salvati",
     "comparison_hint": "Seleziona 2–4 stili diversi generati dalla stessa foto. Premium esporta un confronto HD con etichette. Le anteprime hanno una filigrana, le esportazioni HD no.",
     "refresh_results": "Aggiorna"
+  },
+  "credit_offer": {
+    "title": "Non hai abbastanza crediti",
+    "trial_title": "Hai usato le tue 3 generazioni gratuite",
+    "description": "Acquista un piccolo pacchetto di crediti e prova altre forme di sopracciglia.",
+    "topup": "Acquista {count} generazioni — {price}",
+    "topup_note": "Acquisto singolo. I crediti non scadono.",
+    "basic": "Abbonati a Basic — {price}/mese",
+    "pricing": "Vedi i prezzi",
+    "processing": "Apertura del pagamento…",
+    "error": "Impossibile aprire la pagina di pagamento. Riprova."
   }
 }

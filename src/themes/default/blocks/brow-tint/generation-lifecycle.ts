@@ -1,3 +1,5 @@
+import { BROW_IMAGE_MODEL, BROW_IMAGE_OPTIONS } from '@/config/brow-model';
+
 export type GenerationPhase =
   | 'idle'
   | 'uploading'
@@ -178,10 +180,10 @@ export function buildBrowMappingPayload({
   return {
     provider: 'kie',
     mediaType: 'image',
-    model: 'nano-banana-pro',
+    model: BROW_IMAGE_MODEL,
     scene: 'image-to-image',
     styleId,
     browMapping: true,
-    options: { image_input: [originalUrl, guideUrl] },
+    options: { ...BROW_IMAGE_OPTIONS, image_input: [originalUrl, guideUrl] },
   } as const;
 }

@@ -243,5 +243,16 @@
     "comparison_title": "Your saved styles",
     "comparison_hint": "Select 2–4 different generated styles from the same photo. Premium exports a labeled HD comparison. Previews are watermarked; HD exports are clean.",
     "refresh_results": "Refresh"
+  },
+  "credit_offer": {
+    "title": "You’re out of generations",
+    "trial_title": "You’ve used your 3 free generations",
+    "description": "Keep trying brow shapes with a small credit top-up.",
+    "topup": "Buy {count} generations — {price}",
+    "topup_note": "One-time purchase. Credits never expire.",
+    "basic": "Subscribe to Basic — {price}/month",
+    "pricing": "See pricing",
+    "processing": "Opening checkout…",
+    "error": "Checkout could not be opened. Please try again."
   }
 }
