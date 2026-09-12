@@ -30,7 +30,7 @@
             "description": "免费了解自己的眉形。",
             "features_title": "包含权益",
             "features": [
-              "注册赠送 6 积分，仅一次 · 可生成 3 次",
+              "注册赠送 4 积分，仅一次 · 可生成 2 次",
               "不限次眉形定位",
               "不限次六点手动调整",
               "不限次分析报告",
@@ -46,12 +46,12 @@
             "tip": "注册赠送积分永久有效，不会按月重复赠送。",
             "button": {
               "title": "免费开始",
-              "url": "/#brow-app",
+              "url": "/filter",
               "icon": ""
             },
             "product_id": "free-monthly",
             "product_name": "Free",
-            "credits": 6,
+            "credits": 4,
             "valid_days": 0,
             "group": "monthly"
           },
@@ -292,7 +292,7 @@
             {
               "title": "月付方案积分",
               "values": [
-                "注册一次赠送 6 积分",
+                "注册一次赠送 4 积分",
                 "100 积分 · 50 次 AI 生成",
                 "300 积分 · 150 次 AI 生成"
               ]

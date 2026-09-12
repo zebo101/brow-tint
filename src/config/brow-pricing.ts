@@ -1,7 +1,7 @@
 import type { Pricing, PricingItem } from '@/shared/types/blocks/pricing';
 
 export const BROW_GENERATION_CREDITS = 2;
-export const BROW_FREE_TRIAL_CREDITS = 6;
+export const BROW_FREE_TRIAL_CREDITS = 4;
 
 // Billing amounts are cents. Localized copy must never determine what is charged
 // or how many credits a payment grants. Existing orders retain their snapshots.
@@ -10,7 +10,7 @@ export const BROW_OFFERS = [
     product_id: 'free-monthly',
     product_name: 'Free',
     amount: 0,
-    credits: 6,
+    credits: BROW_FREE_TRIAL_CREDITS,
     interval: 'month',
     valid_days: 0,
     group: 'monthly',

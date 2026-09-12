@@ -246,7 +246,7 @@
   },
   "credit_offer": {
     "title": "Deine Credits reichen nicht mehr aus",
-    "trial_title": "Du hast deine 3 kostenlosen Generierungen verbraucht",
+    "trial_title": "Du hast deine 2 kostenlosen Generierungen verbraucht",
     "description": "Lade ein kleines Credit-Paket auf und probiere weitere Augenbrauenformen aus.",
     "topup": "{count} Generierungen kaufen — {price}",
     "topup_note": "Einmaliger Kauf. Credits verfallen nicht.",

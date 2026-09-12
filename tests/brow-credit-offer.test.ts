@@ -10,10 +10,10 @@ import {
 const trial = {
   remainingCredits: 0,
   paidOrders: 0,
-  successfulGenerations: 3,
+  successfulGenerations: 2,
   grants: [
     {
-      credits: 6,
+      credits: 4,
       remainingCredits: 0,
       transactionScene: 'gift',
       status: 'active',
@@ -21,13 +21,15 @@ const trial = {
     },
   ],
 };
-test('only a fully used three-generation gift is described as the free trial', () => {
+test('only a fully used two-generation gift is described as the current free trial', () => {
   assert.equal(isFreeTrialExhausted(trial), true);
   for (const changed of [
     { paidOrders: 1 },
-    { successfulGenerations: 2 },
+    { successfulGenerations: 1 },
     { remainingCredits: 2 },
     { grants: [] },
+    // Previously issued gifts are not relabeled as the new two-generation trial.
+    { grants: [{ ...trial.grants[0], credits: 6 }] },
     { grants: [...trial.grants, ...trial.grants] },
     { grants: [{ ...trial.grants[0], expiresAt: new Date() }] },
   ])

@@ -246,7 +246,7 @@
   },
   "credit_offer": {
     "title": "Non hai abbastanza crediti",
-    "trial_title": "Hai usato le tue 3 generazioni gratuite",
+    "trial_title": "Hai usato le tue 2 generazioni gratuite",
     "description": "Acquista un piccolo pacchetto di crediti e prova altre forme di sopracciglia.",
     "topup": "Acquista {count} generazioni — {price}",
     "topup_note": "Acquisto singolo. I crediti non scadono.",

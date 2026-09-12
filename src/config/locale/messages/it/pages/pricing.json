@@ -30,7 +30,7 @@
             "description": "Scopri la forma delle tue sopracciglia gratis.",
             "features_title": "Cosa include",
             "features": [
-              "6 crediti alla registrazione, una sola volta · 3 generazioni IA",
+              "4 crediti alla registrazione, una sola volta · 2 generazioni IA",
               "Mappatura delle sopracciglia illimitata",
               "Modifica manuale a sei punti illimitata",
               "Report di analisi illimitati",
@@ -46,12 +46,12 @@
             "tip": "I crediti di registrazione non scadono. Non vengono assegnati crediti gratuiti ricorrenti.",
             "button": {
               "title": "Inizia gratis",
-              "url": "/#brow-app",
+              "url": "/filter",
               "icon": ""
             },
             "product_id": "free-monthly",
             "product_name": "Free",
-            "credits": 6,
+            "credits": 4,
             "valid_days": 0,
             "group": "monthly"
           },
@@ -292,7 +292,7 @@
             {
               "title": "Crediti del piano mensile",
               "values": [
-                "6 alla registrazione, una sola volta",
+                "4 alla registrazione, una sola volta",
                 "100 crediti · 50 generazioni IA",
                 "300 crediti · 150 generazioni IA"
               ]

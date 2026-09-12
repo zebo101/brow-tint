@@ -246,7 +246,7 @@
   },
   "credit_offer": {
     "title": "You’re out of generations",
-    "trial_title": "You’ve used your 3 free generations",
+    "trial_title": "You’ve used your 2 free generations",
     "description": "Keep trying brow shapes with a small credit top-up.",
     "topup": "Buy {count} generations — {price}",
     "topup_note": "One-time purchase. Credits never expire.",

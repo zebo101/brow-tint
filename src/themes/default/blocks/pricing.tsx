@@ -356,8 +356,11 @@ export function Pricing({
     }
   }, [section.items]);
 
-  const visibleItems =
-    section.items?.filter((item) => !item.group || item.group === group) || [];
+  const isItemVisible = (item: PricingItem) =>
+    !item.group ||
+    item.group === group ||
+    (item.product_id === 'free-monthly' && group === 'yearly');
+  const visibleItems = section.items?.filter(isItemVisible) || [];
 
   return (
     <section
@@ -405,6 +408,8 @@ export function Pricing({
                 return (
                   <button
                     key={i}
+                    type="button"
+                    aria-pressed={isActive}
                     onClick={() => setGroup(value)}
                     className={cn(
                       'relative z-10 flex items-center px-3 py-2 text-sm transition-colors duration-300 ease-in-out sm:px-8 sm:text-base',
@@ -440,9 +445,9 @@ export function Pricing({
           )}
         >
           {section.items?.map((item: PricingItem, idx) => {
-            if (item.group && item.group !== group) {
-              return null;
-            }
+            // Render every offer in the initial HTML. Tab changes only control
+            // visibility; the same Free card is available monthly and annually.
+            const visible = isItemVisible(item);
 
             let isCurrentPlan = false;
             if (
@@ -460,13 +465,14 @@ export function Pricing({
             const currencies = getCurrenciesFromItem(item);
 
             // Calculate filtered items count for this group
-            const filteredItemsCount =
-              section.items?.filter((i) => !i.group || i.group === group)
-                ?.length || 1;
+            const filteredItemsCount = visibleItems.length || 1;
 
             return (
               <Card
                 key={idx}
+                data-pricing-product={item.product_id}
+                hidden={!visible}
+                style={!visible ? { display: 'none' } : undefined}
                 className={cn(
                   'relative',
                   filteredItemsCount === 1 && 'mx-auto max-w-md'

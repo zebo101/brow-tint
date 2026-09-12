@@ -246,7 +246,7 @@
   },
   "credit_offer": {
     "title": "No tienes suficientes créditos",
-    "trial_title": "Has usado tus 3 generaciones gratuitas",
+    "trial_title": "Has usado tus 2 generaciones gratuitas",
     "description": "Recarga unos créditos y sigue probando formas de cejas.",
     "topup": "Comprar {count} generaciones — {price}",
     "topup_note": "Compra única. Los créditos no caducan.",

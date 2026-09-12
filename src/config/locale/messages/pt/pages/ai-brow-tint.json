@@ -246,7 +246,7 @@
   },
   "credit_offer": {
     "title": "Você não tem créditos suficientes",
-    "trial_title": "Você usou suas 3 gerações gratuitas",
+    "trial_title": "Você usou suas 2 gerações gratuitas",
     "description": "Recarregue alguns créditos e continue experimentando formatos de sobrancelhas.",
     "topup": "Comprar {count} gerações — {price}",
     "topup_note": "Compra única. Os créditos não expiram.",

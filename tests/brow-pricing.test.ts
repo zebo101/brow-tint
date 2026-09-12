@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 
 const expected = [
-  ['free-monthly', 0, 6, 'month', 0],
+  ['free-monthly', 0, 4, 'month', 0],
   ['basic-monthly', 1290, 100, 'month', 30],
   ['premium-monthly', 2490, 300, 'month', 30],
   ['basic-yearly', 15900, 2400, 'year', 365],

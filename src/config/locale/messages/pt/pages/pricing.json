@@ -30,7 +30,7 @@
             "description": "Explore o formato das suas sobrancelhas grátis.",
             "features_title": "O que está incluído",
             "features": [
-              "6 créditos no cadastro, uma única vez · 3 gerações com IA",
+              "4 créditos no cadastro, uma única vez · 2 gerações com IA",
               "Mapeamento de sobrancelhas ilimitado",
               "Edição manual de seis pontos ilimitada",
               "Relatórios de análise ilimitados",
@@ -46,12 +46,12 @@
             "tip": "Os créditos de cadastro não expiram. Não há concessão recorrente de créditos gratuitos.",
             "button": {
               "title": "Comece grátis",
-              "url": "/#brow-app",
+              "url": "/filter",
               "icon": ""
             },
             "product_id": "free-monthly",
             "product_name": "Free",
-            "credits": 6,
+            "credits": 4,
             "valid_days": 0,
             "group": "monthly"
           },
@@ -292,7 +292,7 @@
             {
               "title": "Créditos do plano mensal",
               "values": [
-                "6 no cadastro, uma única vez",
+                "4 no cadastro, uma única vez",
                 "100 créditos · 50 gerações com IA",
                 "300 créditos · 150 gerações com IA"
               ]

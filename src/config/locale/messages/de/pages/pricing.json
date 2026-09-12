@@ -30,7 +30,7 @@
             "description": "Entdecke deine Brauenform kostenlos.",
             "features_title": "Enthalten",
             "features": [
-              "Einmalig 6 Credits bei der Anmeldung · 3 KI-Generierungen",
+              "Einmalig 4 Credits bei der Anmeldung · 2 KI-Generierungen",
               "Unbegrenztes Brauen-Mapping",
               "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
               "Unbegrenzte Analyseberichte",
@@ -46,12 +46,12 @@
             "tip": "Anmelde-Credits verfallen nicht. Keine regelmäßige kostenlose Gutschrift.",
             "button": {
               "title": "Kostenlos starten",
-              "url": "/#brow-app",
+              "url": "/filter",
               "icon": ""
             },
             "product_id": "free-monthly",
             "product_name": "Free",
-            "credits": 6,
+            "credits": 4,
             "valid_days": 0,
             "group": "monthly"
           },
@@ -292,7 +292,7 @@
             {
               "title": "Credits im Monatstarif",
               "values": [
-                "Einmalig 6 bei der Anmeldung",
+                "Einmalig 4 bei der Anmeldung",
                 "100 Credits · 50 KI-Generierungen",
                 "300 Credits · 150 KI-Generierungen"
               ]

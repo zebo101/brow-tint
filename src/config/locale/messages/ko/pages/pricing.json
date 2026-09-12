@@ -30,7 +30,7 @@
             "description": "내 눈썹 모양을 무료로 살펴보세요.",
             "features_title": "포함 혜택",
             "features": [
-              "가입 시 6크레딧 1회 지급 · AI 생성 3회",
+              "가입 시 4크레딧 1회 지급 · AI 생성 2회",
               "눈썹 매핑 무제한",
               "6개 포인트 수동 편집 무제한",
               "분석 리포트 무제한",
@@ -46,12 +46,12 @@
             "tip": "가입 크레딧은 만료되지 않으며, 매월 다시 지급되지 않습니다.",
             "button": {
               "title": "무료로 시작",
-              "url": "/#brow-app",
+              "url": "/filter",
               "icon": ""
             },
             "product_id": "free-monthly",
             "product_name": "Free",
-            "credits": 6,
+            "credits": 4,
             "valid_days": 0,
             "group": "monthly"
           },
@@ -292,7 +292,7 @@
             {
               "title": "월간 플랜 크레딧",
               "values": [
-                "가입 시 6크레딧 1회",
+                "가입 시 4크레딧 1회",
                 "100크레딧 · AI 생성 50회",
                 "300크레딧 · AI 생성 150회"
               ]

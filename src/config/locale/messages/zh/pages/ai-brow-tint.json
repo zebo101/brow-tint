@@ -246,7 +246,7 @@
   },
   "credit_offer": {
     "title": "你的生成积分已不足",
-    "trial_title": "你已用完 3 次免费生成",
+    "trial_title": "你已用完 2 次免费生成",
     "description": "充值少量积分，继续尝试喜欢的眉形。",
     "topup": "买 {count} 次 — {price}",
     "topup_note": "一次购买，积分永不过期。",

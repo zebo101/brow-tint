@@ -30,7 +30,7 @@
             "description": "Explora la forma de tus cejas gratis.",
             "features_title": "Incluye",
             "features": [
-              "6 créditos al registrarte, una sola vez · 3 generaciones con IA",
+              "4 créditos al registrarte, una sola vez · 2 generaciones con IA",
               "Mapeo de cejas ilimitado",
               "Edición manual de seis puntos ilimitada",
               "Informes de análisis ilimitados",
@@ -46,12 +46,12 @@
             "tip": "Los créditos de registro no caducan. No se regalan créditos de forma recurrente.",
             "button": {
               "title": "Empieza gratis",
-              "url": "/#brow-app",
+              "url": "/filter",
               "icon": ""
             },
             "product_id": "free-monthly",
             "product_name": "Free",
-            "credits": 6,
+            "credits": 4,
             "valid_days": 0,
             "group": "monthly"
           },
@@ -292,7 +292,7 @@
             {
               "title": "Créditos del plan mensual",
               "values": [
-                "6 al registrarte, una sola vez",
+                "4 al registrarte, una sola vez",
                 "100 créditos · 50 generaciones con IA",
                 "300 créditos · 150 generaciones con IA"
               ]
