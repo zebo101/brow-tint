@@ -257,5 +257,16 @@
     "pricing": "Ver precios",
     "processing": "Abriendo la página de pago…",
     "error": "No se pudo abrir la página de pago. Inténtalo de nuevo."
+  },
+  "history": {
+    "title": "Resultados recientes",
+    "loading": "Cargando…",
+    "failed": "No se pudo cargar. Actualiza para reintentar.",
+    "open_result": "Ver resultado {n}: {style}",
+    "close": "Volver a editar",
+    "saved_preview": "Vista previa de IA guardada",
+    "previous": "Resultado anterior",
+    "next": "Resultado siguiente",
+    "image_failed": "No se pudo cargar la imagen. Cierra y vuelve a abrir para reintentar."
   }
 }

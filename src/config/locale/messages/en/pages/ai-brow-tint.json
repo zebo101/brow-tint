@@ -257,5 +257,16 @@
     "pricing": "See pricing",
     "processing": "Opening checkout…",
     "error": "Checkout could not be opened. Please try again."
+  },
+  "history": {
+    "title": "Recent results",
+    "loading": "Loading…",
+    "failed": "Could not load. Refresh to retry.",
+    "open_result": "View result {n}: {style}",
+    "close": "Back to editing",
+    "saved_preview": "Saved AI preview",
+    "previous": "Previous result",
+    "next": "Next result",
+    "image_failed": "This preview could not be loaded. Close and reopen it to retry."
   }
 }

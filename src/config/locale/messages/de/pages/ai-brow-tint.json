@@ -257,5 +257,16 @@
     "pricing": "Preise ansehen",
     "processing": "Zahlungsseite wird geöffnet…",
     "error": "Die Zahlungsseite konnte nicht geöffnet werden. Bitte versuche es erneut."
+  },
+  "history": {
+    "title": "Letzte Ergebnisse",
+    "loading": "Lädt…",
+    "failed": "Laden fehlgeschlagen. Bitte aktualisieren.",
+    "open_result": "Ergebnis {n} ansehen: {style}",
+    "close": "Zurück zur Bearbeitung",
+    "saved_preview": "Gespeicherte KI-Vorschau",
+    "previous": "Vorheriges Ergebnis",
+    "next": "Nächstes Ergebnis",
+    "image_failed": "Die Vorschau konnte nicht geladen werden. Bitte schließen und erneut öffnen."
   }
 }

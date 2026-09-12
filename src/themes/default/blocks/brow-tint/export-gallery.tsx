@@ -58,7 +58,7 @@ function SavedBrowExportGallery({ refreshKey }: { refreshKey: string | null }) {
   const first = results.find((item) => item.id === selected[0]);
   return (
     <section
-      className="border-border mt-8 space-y-4 rounded-2xl border p-4 sm:p-6"
+      className="border-border/40 mt-8 space-y-4 rounded-2xl border p-4 sm:p-6"
       aria-label={t('ui.comparison_title')}
     >
       <div className="flex items-center justify-between gap-4">
@@ -77,7 +77,7 @@ function SavedBrowExportGallery({ refreshKey }: { refreshKey: string | null }) {
           {t('ui.download_failed_please_try_again')}
         </p>
       )}
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+      <div className="grid grid-cols-2 items-start gap-3 md:grid-cols-4">
         {results.map((result) => {
           const checked = selected.includes(result.id);
           const unavailable =
@@ -93,7 +93,7 @@ function SavedBrowExportGallery({ refreshKey }: { refreshKey: string | null }) {
           return (
             <article
               key={result.id}
-              className="border-border space-y-2 rounded-xl border p-2"
+              className="border-border/40 space-y-2 rounded-2xl border p-2"
             >
               <label
                 className={`block space-y-2 ${unavailable ? 'opacity-40' : ''}`}
@@ -104,7 +104,7 @@ function SavedBrowExportGallery({ refreshKey }: { refreshKey: string | null }) {
                   width={480}
                   height={640}
                   unoptimized
-                  className="bg-muted aspect-[3/4] w-full rounded-lg object-contain"
+                  className="block h-auto w-full rounded-lg"
                 />
                 <span className="flex items-center gap-2 text-sm">
                   <input

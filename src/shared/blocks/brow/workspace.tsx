@@ -49,6 +49,7 @@ import { useBrowExportAccess } from './export-access';
 import { MobileBrowEditor } from './mobile-editor';
 import { PortraitCanvas, type PortraitView } from './portrait-canvas';
 import type { BrowPreviewState } from './portrait-preview';
+import { BrowResultHistory } from './result-history';
 import { useBrowAnalysis } from './use-brow-analysis';
 
 import './workspace.css';
@@ -561,6 +562,7 @@ function BrowWorkspaceContent(props: BrowWorkspaceProps) {
                     </span>
                   </div>
                 )}
+                <BrowResultHistory refreshKey={props.resultUrl} />
                 <div className="brow-floating-toolbar">
                   <ToolButton
                     label={browText(locale, 'Zoom out', '缩小')}

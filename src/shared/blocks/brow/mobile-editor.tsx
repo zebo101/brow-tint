@@ -20,6 +20,7 @@ import { browFocusRegion } from '@/shared/lib/brow-mapping/viewport';
 import { AnchorEditor, type AnchorEditing } from './anchor-editor';
 import { browText } from './copy';
 import { PortraitCanvas, type PortraitView } from './portrait-canvas';
+import { BrowResultHistory } from './result-history';
 
 import './mobile-editor.css';
 
@@ -493,7 +494,10 @@ export function MobileBrowEditor(props: MobileBrowEditorProps) {
             </div>
           )}
           {tool === 'catalog' && (
-            <div className="mb-scroll-content">{props.catalog}</div>
+            <div className="mb-scroll-content">
+              <BrowResultHistory refreshKey={props.resultUrl} horizontal />
+              {props.catalog}
+            </div>
           )}
         </div>
 
