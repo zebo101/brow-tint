@@ -6,7 +6,7 @@ import { buildAlternates } from './seo-metadata';
 const baseOptions = {
   defaultLocale: 'en',
   locales: ['en', 'zh', 'ja'],
-  siteUrl: 'https://tintbrow.com/',
+  siteUrl: 'https://browlens.com/',
 };
 
 test('buildAlternates omits language alternates for noindex pages', () => {
@@ -18,7 +18,7 @@ test('buildAlternates omits language alternates for noindex pages', () => {
       noIndex: true,
     }),
     {
-      canonical: 'https://tintbrow.com/zh/sign-in',
+      canonical: 'https://browlens.com/zh/sign-in',
     }
   );
 });
@@ -31,10 +31,11 @@ test('buildAlternates limits hreflang locales to actual page availability', () =
       availableLocales: ['en', 'zh'],
     }),
     {
-      canonical: 'https://tintbrow.com/zh/docs',
+      canonical: 'https://browlens.com/zh/docs',
       languages: {
-        en: 'https://tintbrow.com/docs',
-        zh: 'https://tintbrow.com/zh/docs',
+        en: 'https://browlens.com/docs',
+        zh: 'https://browlens.com/zh/docs',
+        'x-default': 'https://browlens.com/docs',
       },
     }
   );

@@ -1,371 +1,171 @@
 {
   "metadata": {
-    "title": "Brow Tint —— 进沙龙之前先 AI 预览您的眉色",
-    "description": "Brow Tint 是 50,000+ 美妆爱好者和眉部美容师都在使用的 AI 眉色工作室。在预约沙龙之前，先在自己的照片上预览眉部染色、眉部塑形与染色和染眉膏等效果。",
-    "keywords": "眉部染色, 眉色染色, AI 眉部染色, AI 眉色, 眉部染色工作室, 虚拟眉部染色, 眉部染色预览, 沙龙前眉部染色预览"
+    "title": "眉型应用 — AI 眉型分析与滤镜 · Browlens",
+    "description": "Browlens 集 AI 分析、六点眉型编辑、眉毛平衡报告与照片眉型滤镜预览于一体。",
+    "keywords": "眉型应用, 眉型分析, AI 眉毛分析, 眉型滤镜, 眉毛编辑器, Browlens"
   },
   "page": {
-    "show_sections": [
-      "hero",
-      "cases",
-      "why_brow_tint",
-      "community",
-      "learn",
-      "stats",
-      "testimonials",
-      "faq",
-      "cta",
-      "subscribe"
-    ],
+    "show_sections": ["cases", "precision", "workflow", "faq", "cta"],
     "sections": {
-      "hero": {
-        "block": "hero-editorial",
-        "id": "hero",
-        "title": "在预约沙龙之前，先预览您的眉部染色效果",
-        "highlight_text": "Brow Tint",
-        "description": "Brow Tint 是 50,000+ 美妆爱好者和沙龙专业人士都在使用的 AI 眉色工作室。上传一张照片，即刻看到您的眉毛在任意眉色、眉部塑形或染眉膏风格下的效果 —— 然后自信地预约沙龙，或者干脆省下这一步。",
-        "buttons": [
-          {
-            "title": "免费试用 Brow Tint",
-            "icon": "Zap",
-            "url": "/#ai-brow-tint-studio",
-            "target": "_self",
-            "variant": "default"
-          },
-          {
-            "title": "查看案例展示",
-            "icon": "BookOpenText",
-            "url": "/showcases",
-            "target": "_blank",
-            "variant": "outline"
-          }
-        ],
-        "image": {
-          "src": "/imgs/bg/hero-2.webp",
-          "alt": "Brow Tint AI 工作室 —— 预览您的眉色",
-          "width": 800,
-          "height": 600
-        },
-        "background_image": {
-          "src": "/imgs/bg/hero-1.jpg",
-          "alt": "Brow Tint 工作室背景"
-        },
-        "powered_by": "由 GPT Image 2 驱动",
-        "editorial_labels": [
-          "预览",
-          "决定",
-          "预约"
-        ]
-      },
       "cases": {
         "block": "cases-carousel",
         "id": "cases",
-        "title": "真实眉毛，真实效果。",
-        "description": "用户用 AI 眉色工作室生成、再带去沙龙的真实造型 —— 与预览效果分毫不差。",
+        "title": "探索你的下一款眉型",
+        "description": "探索眉型与滤镜灵感，再用自己的照片试试看。",
         "items": [
           {
-            "name": "Soft Henna",
+            "name": "柔和拱眉",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "柔棕海娜眉部染色预览"
+              "alt": "在自己的照片上试用「柔和拱眉」眉型滤镜。"
             }
           },
           {
-            "name": "Bold Espresso",
+            "name": "立体拱眉",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "浓郁深咖眉部染色预览"
+              "alt": "在自己的照片上试用「立体拱眉」眉型滤镜。"
             }
           },
           {
-            "name": "Brow Lamination",
+            "name": "上扬眉",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "眉部塑形预览"
+              "alt": "在自己的照片上试用「上扬眉」眉型滤镜。"
             }
           },
           {
-            "name": "Cool Ash",
+            "name": "平直眉",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "冷调灰棕眉部染色预览"
+              "alt": "在自己的照片上试用「平直眉」眉型滤镜。"
             }
           },
           {
-            "name": "Warm Auburn",
+            "name": "圆弧眉",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "暖调赤褐眉部染色预览"
+              "alt": "在自己的照片上试用「圆弧眉」眉型滤镜。"
             }
           },
           {
-            "name": "Tinted Gel",
+            "name": "羽毛眉",
             "image": {
               "src": "/imgs/cases/6.jpg",
-              "alt": "染眉膏预览"
+              "alt": "在自己的照片上试用「羽毛眉」眉型滤镜。"
             }
           },
           {
-            "name": "Lash & Brow Tint",
+            "name": "平衡眉型",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "睫毛和眉部染色组合预览"
+              "alt": "在自己的照片上试用「平衡眉型」眉型滤镜。"
             }
           }
         ]
       },
-      "why_brow_tint": {
-        "block": "features-list",
-        "id": "why-brow-tint",
-        "title": "为什么会有 Brow Tint",
-        "label": "我们的故事",
-        "description": "眉部染色正在风靡 —— 但去一趟沙龙要花钱，效果还是半永久的，而且只有做完才能看到结果。我们做出 Brow Tint，是为了让您可以像在脑海里随便想象发色那样，自由、私密、零负担地试遍各种眉色。",
-        "image": {
-          "src": "/imgs/features/landingpage.jpg",
-          "alt": "Brow Tint —— AI 眉色工作室"
-        },
+      "precision": {
+        "block": "features",
+        "id": "eyebrow-editor",
+        "title": "可以精细调整的眉型应用",
+        "description": "从自动识别人脸与眉毛关键点开始，再打造自己的眉型。Browlens 将眉毛编辑器、平衡报告与 AI 照片预览整合在一起。",
         "items": [
           {
-            "title": "给好奇的你",
-            "description": "尝试一种您绝不敢在沙龙开口要的眉色。看看它在自己脸上的样子。然后再决定。"
+            "title": "六个点，由你决定",
+            "description": "沿眉头、眉峰、眉尾参考线，拖动全部六个控制点，校正它们在照片中的位置。"
           },
           {
-            "title": "给谨慎的你",
-            "description": "把下载下来的预览图带给您的眉部美容师，省去用语言描述自己想要什么的麻烦。"
+            "title": "微调在意的细节",
+            "description": "微调眉毛粗细、长度、角度、间距、整体高度与眉峰高度。可同时调整双眉，也可分别修改。"
           },
           {
-            "title": "给专业人士",
-            "description": "眉部美容师和沙龙店主在咨询环节使用 Brow Tint，向客户清晰展示她们将要承诺的造型。"
+            "title": "了解双眉平衡",
+            "description": "查看左右眉毛的眉峰高度与长度差异报告。对比实际测量差异，不给美貌打分。"
           },
           {
-            "title": "给纠结的你",
-            "description": "把 5 种、10 种、20 种色号并排比较。一分钱不花就能找到属于您的那一款。"
+            "title": "在脸上看看新眉型",
+            "description": "选择眉型，按确认后的眉毛定位生成 AI 照片预览，与原图对比并下载效果图。"
           }
         ],
-        "className": "bg-muted"
+        "className": "overflow-hidden"
       },
-      "community": {
-        "block": "features-accordion",
-        "id": "community",
-        "title": "热衷美妆探索的潮流人群",
-        "label": "谁在使用 Brow Tint",
-        "description": "Brow Tint 处于美妆尝鲜与 AI 辅助决策的交汇点。看看都是谁在用。",
+      "workflow": {
+        "block": "features-step",
+        "id": "how-it-works",
+        "title": "从你的照片到你的眉型",
+        "description": "想了解并调整细节时，使用完整眉型应用。",
         "items": [
           {
-            "title": "美妆博主和内容创作者",
-            "description": "在向粉丝展示或拍摄教程之前先预览眉色造型。先生成视觉参考图，再放心创作内容 —— 因为最终效果一目了然。",
-            "icon": "RiCameraLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "美妆内容创作者预览眉部染色效果"
-            }
+            "title": "上传与识别",
+            "description": "上传清晰人像，AI 识别人脸与眉毛关键点，并叠加眉头、眉峰和眉尾参考线。"
           },
           {
-            "title": "首次尝试眉部染色的人",
-            "description": "在预约第一次沙龙之前先看到效果。不再担心做完后悔 —— 私下预览，再走进沙龙，清楚地告诉对方您想要什么。",
-            "icon": "RiHeartLine",
-            "image": {
-              "src": "/imgs/features/image2.png",
-              "alt": "首次眉部染色预览"
-            }
+            "title": "精细调整眉型",
+            "description": "拖动六个控制点，调整眉型参数，查看左右差异报告。"
           },
           {
-            "title": "眉部美容师和沙龙店主",
-            "description": "在治疗开始前向客户清晰展示她们即将承诺的效果。咨询更高效、争议更少、客户更满意 —— 比那些还在用语言描述造型的同行更有竞争力。",
-            "icon": "RiScissorsCutLine",
-            "image": {
-              "src": "/imgs/features/image3.png",
-              "alt": "眉部美容师使用 Brow Tint 进行咨询"
-            }
+            "title": "选择风格",
+            "description": "确认眉毛定位，选择想在脸上预览的眉型。"
           },
           {
-            "title": "婚礼与活动策划师",
-            "description": "为时尚大片、新娘、伴娘和活动妆容协调眉部造型。视觉参考让整个创意团队提前几周达成一致。",
-            "icon": "RiCalendarEventLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "婚礼活动眉部造型规划"
-            }
-          }
-        ]
-      },
-      "learn": {
-        "block": "cluster-posts",
-        "id": "learn",
-        "label": "指南",
-        "title": "了解眉部染色",
-        "description": "在预约之前先读读我们的眉部染色研究。诚实的对比、染前染后效果图集和处理指南 —— 写给热衷美妆探索的你。",
-        "items": [
-          {
-            "title": "眉部染色前后对比：真实效果图集",
-            "description": "查看不同肤色、眉形和色号下的真实眉部染色前后效果。了解专业治疗能带来的合理预期。",
-            "url": "/blog/brow-tint-before-and-after"
-          },
-          {
-            "title": "2026 年最佳眉部染色：诚实对比指南",
-            "description": "我们对比了 2026 年主流的眉部染色和染眉膏产品。优缺点、成分、持久度 —— 以及每款在真实面部上的预览效果。",
-            "url": "/blog/best-brow-tint-2026"
-          },
-          {
-            "title": "眉部塑形与染色：完整指南",
-            "description": "什么是眉部塑形与染色？能持续多久？它和睫毛和眉部染色有什么区别？第一次预约前需要知道的一切。",
-            "url": "/blog/brow-lamination-and-tint-guide"
-          },
-          {
-            "title": "专业眉部染色 vs 在家 DIY",
-            "description": "在家染眉安全吗？专业眉部染色到底包含哪些步骤？诚实的优缺点分析，附费用拆解。",
-            "url": "/blog/professional-brow-tint-vs-diy"
-          },
-          {
-            "title": "Brow Code 染眉评测：值得追捧吗？",
-            "description": "对深受专业眉部美容师欢迎的 Brow Code 染色系统做出独立评测。色彩范围、持久度、上色方式，以及每个色号的 AI 预览。",
-            "url": "/blog/brow-code-tint-review"
-          }
-        ]
-      },
-      "stats": {
-        "id": "stats",
-        "title": "美妆爱好者信赖 Brow Tint",
-        "description": "从首次尝试眉部染色的新手，到为客户造型做准备的专业眉部美容师。",
-        "items": [
-          {
-            "title": "50,000+",
-            "description": "已生成的眉部染色造型"
-          },
-          {
-            "title": "10,000+",
-            "description": "全球美妆爱好者"
-          },
-          {
-            "title": "200+",
-            "description": "可选眉部染色风格"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "用户对 Brow Tint 的真实评价",
-        "description": "来自美妆爱好者、专业眉部美容师和沙龙店主的真实反馈 —— 他们都用 Brow Tint 来规划、咨询和决策。",
-        "items": [
-          {
-            "name": "Sarah Jenkins",
-            "role": "美妆博主",
-            "quote": "Brow Tint 改变了我策划美妆内容的方式。以前我会跟眉部美容师描述想要的效果，然后听天由命。现在我直接把 AI 预览给她看，我们对最终效果一拍即合。",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "Sarah Jenkins —— 美妆博主"
-            }
-          },
-          {
-            "name": "Mike Ross",
-            "role": "摄影师",
-            "quote": "做时尚大片时，我会在通告单还没敲定之前就把 Brow Tint 预览图发给模特和造型师。省下数小时，也避免了一整类拍摄现场的意外。",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "Mike Ross —— 摄影师"
-            }
-          },
-          {
-            "name": "Emily Chen",
-            "role": "学生",
-            "quote": "我绝不会一时兴起就走进沙龙说要做深咖眉。Brow Tint 让我先看到自己换上之后的样子 —— 现在这成了我最喜欢的造型。",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "Emily Chen —— 学生"
-            }
-          },
-          {
-            "name": "David Smith",
-            "role": "化妆师",
-            "quote": "每位客户都有眉部咨询环节。Brow Tint 比试色更快，也比口头描述更诚实 —— 客户看到的是自己，而不是一张情绪板。",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "David Smith —— 化妆师"
-            }
-          },
-          {
-            "name": "Jessica Lee",
-            "role": "沙龙店主",
-            "quote": "我们在咨询台为每一位预约眉部染色的客户使用 Brow Tint。她们决策更快、离店时更开心，还会推荐朋友过来。第一周就回本了。",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "Jessica Lee —— 沙龙店主"
-            }
-          },
-          {
-            "name": "Tom Brown",
-            "role": "首次体验用户",
-            "quote": "我是个男生。我以前根本不知道眉部染色是什么。Brow Tint 让我先私下琢磨这个想法，再去问别人的意见。现在我每六周就染一次眉。",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "Tom Brown —— 首次体验用户"
-            }
+            "title": "生成与对比",
+            "description": "生成 AI 图片，对比造型，下载喜欢的效果图。"
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "关于眉部染色的常见问题",
-        "description": "关于眉部染色、眉部塑形以及 Brow Tint 如何帮您在预约前先预览效果的常见问题。",
-        "tip": "没找到您想要的答案？请联系我们的<a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>支持团队</a>",
+        "title": "眉型应用常见问题",
+        "description": "如何用 Browlens 分析眉型、试用新的眉型滤镜。",
         "items": [
           {
-            "question": "什么是眉部染色？",
-            "answer": "眉部染色是一种半永久染色处理，可为您的眉毛增添色彩、深度和轮廓感。标准的专业眉部染色通常可保持 4 至 6 周，然后自然褪色。染眉膏与眉部塑形是相关的处理方式 —— 详细区别请参阅我们的眉部塑形与染色指南。"
+            "question": "Browlens 是什么？",
+            "answer": "Browlens 是用 AI 探索眉型的应用。上传照片，检查眉毛定位，再选择风格进行预览。"
           },
           {
-            "question": "为什么要在去沙龙之前预览眉部染色效果？",
-            "answer": "眉部染色是半永久的 —— 一旦上色，您要带着这个效果生活好几周。在预约前先在自己的照片上预览效果，意味着您只承诺一种自己亲眼看过上脸效果的色号，也能为眉部美容师提供清晰的视觉参考，而不是模糊的口头描述。"
+            "question": "不注册也能免费分析眉毛吗？",
+            "answer": "可以。无需账户即可上传照片，使用眉毛定位与眉型分析。生成新的试用图片需要登录并消耗积分，工具会在生成前显示所需积分。"
           },
           {
-            "question": "Brow Tint 适合谁使用？",
-            "answer": "适合任何在考虑眉部染色、眉部塑形、染眉膏或睫毛和眉部染色的人 —— 从首次染眉的新手，到为客户咨询做准备的资深眉部美容师。美妆博主、摄影师和活动策划师也用 Brow Tint 来提前协调拍摄和活动的造型。"
+            "question": "应该上传什么照片？",
+            "answer": "请用光线均匀、双眉清晰可见的正面照片。支持 JPG、PNG 或 WebP，最大 15 MB。"
           },
           {
-            "question": "Brow Tint 是沙龙、产品还是工具？",
-            "answer": "Brow Tint 是一款免费在线 AI 眉色工作室。我们既不卖染色产品，也不开沙龙 —— 我们帮您决定选哪种眉色、去哪里做。把下载好的预览图带去任何眉部美容师或沙龙即可。"
+            "question": "眉型滤镜如何使用？",
+            "answer": "选择眉型，检查照片中的眉毛定位，再生成预览，看看在你脸上的效果。"
           },
           {
-            "question": "Brow Tint 的预览有多准？",
-            "answer": "我们的 GPT Image 2 模型生成的是照片级真实预览，全球眉部美容师都把它当作咨询参考。准确度取决于照片质量 —— 光线良好、眉毛清晰可见的正面照效果最佳。在我们的眉部染色前后对比图集中可以看到真实示例。"
+            "question": "可以对比不同眉型吗？",
+            "answer": "可以。在照片上试用眉型滤镜，对比前后效果，再试另一款，找到喜欢的造型。"
           },
           {
-            "question": "我的照片是私密的吗？",
-            "answer": "是的。照片经过安全处理，并在生成后自动删除。我们绝不分享、出售上传的照片，也不会用它训练 AI 模型。"
+            "question": "预览会与实际造型完全一致吗？",
+            "answer": "预览是视觉参考。照片质量、天然眉毛与造型手法都会影响最终效果。"
           },
           {
-            "question": "Brow Tint 真的免费吗？",
-            "answer": "是的。免费试用，无需注册。高级方案可解锁更多风格、更高分辨率下载、不限次数的生成以及优先 AI 处理。"
+            "question": "可以手动编辑眉毛吗？",
+            "answer": "可以。首页眉毛编辑器支持拖动六个控制点，调整粗细、长度、角度、间距、高度和眉峰高度。确认后的参考图会用于现有 AI 预览流程。"
           },
           {
-            "question": "生成预览之后会怎样？",
-            "answer": "下载预览图，带去任何眉部美容师或沙龙 —— 或者浏览我们精选的造型寻找灵感。一张图胜过千言万语，能帮您的美容师精准呈现您想要的效果。"
+            "question": "眉毛分析报告测量什么？",
+            "answer": "对比照片中双眉的眉峰高度与眉毛长度。测量单位为照片像素，拍摄角度与图片质量可能影响结果。"
           }
-        ]
+        ],
+        "tip": "想更快试用？打开 <a href=\"/zh/filter\" class=\"underline\">眉型滤镜</a>. 了解基础知识： <a href=\"/zh/blog/eyebrow-mapping-guide\" class=\"underline\">眉毛定位指南</a>, <a href=\"/zh/blog/eyebrow-shapes-guide\" class=\"underline\">眉型指南</a>, <a href=\"/zh/blog/how-to-shape-eyebrows\" class=\"underline\">新手修眉指南</a>."
       },
       "cta": {
         "id": "cta",
-        "title": "今天就找到您的眉色",
-        "description": "免费预览，无需注册。几秒钟就能看到您的新眉妆 —— 然后再决定是否预约沙龙。",
+        "title": "找到你的眉型",
+        "description": "透过 AI，重新认识你的眉毛。",
         "buttons": [
           {
-            "title": "免费试用 Brow Tint",
-            "url": "/#ai-brow-tint-studio",
+            "title": "上传照片",
+            "url": "/#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
-      },
-      "subscribe": {
-        "id": "subscribe",
-        "title": "订阅 Brow Tint 最新资讯",
-        "description": "获取最新的眉部染色潮流、全新 AI 功能与美妆研究，直接送到您的邮箱。",
-        "submit": {
-          "title": "订阅",
-          "placeholder": "请输入您的邮箱"
-        }
       }
     }
   }

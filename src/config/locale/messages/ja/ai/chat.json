@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Brow Tint チャット",
+        "title": "Browlens",
         "logo": {
           "src": "/logo.png",
-          "alt": "Brow Tint チャット"
+          "alt": "Browlens"
         },
         "url": "/chat"
       },
@@ -61,7 +61,7 @@
         ]
       },
       "show_theme": true,
-      "show_locale": false
+      "show_locale": true
     },
     "variant": "sidebar"
   },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "何かお手伝いしましょうか？",
-    "input_placeholder": "ブロウティンティング、カラーマッチング、眉ケアのヒントについて聞いてください..."
+    "input_placeholder": "AIに眉の形やスタイリングを相談"
   },
   "history": {
     "title": "チャット履歴",
@@ -95,20 +95,3 @@
     "untitled": "タイトルなしの会話"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

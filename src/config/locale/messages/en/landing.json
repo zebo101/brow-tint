@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "Brow Tint",
+      "title": "Browlens",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - AI Brow Tinting Generator",
+        "alt": "Browlens",
         "width": 100,
         "height": 100
       },
@@ -38,14 +38,14 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "AI Brow Tint Generator",
-              "description": "Preview brow tint and tinted brow gel looks with AI",
-              "url": "/ai-brow-tint-generator",
+              "title": "Eyebrow Filter",
+              "description": "Preview brow shape and brow filter looks with AI",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Brow Tint Advisor",
-              "description": "Get expert AI brow tinting advice",
+              "title": "Brow Shape Advisor",
+              "description": "Get expert AI brow shaping advice",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -78,11 +78,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "Brow Tint",
-      "description": "Brow Tint is a free online AI brow tint generator powered by GPT Image 2. Preview professional brow tinting, tinted brow gel, brow lamination and tint, and lash and brow tint styles — all before your salon visit.",
+      "title": "Browlens",
+      "description": "Browlens — See your brows through the lens of AI.",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
+        "alt": "Browlens",
         "width": 1024,
         "height": 1024
       },
@@ -94,14 +94,14 @@
           "title": "AI Tools",
           "children": [
             {
-              "title": "AI Brow Tint Generator",
-              "description": "Generate brow tint looks with AI",
-              "url": "/ai-brow-tint-generator",
+              "title": "Eyebrow Filter",
+              "description": "Generate brow shape looks with AI",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Brow Tint Advisor",
-              "description": "Chat with AI brow tinting expert",
+              "title": "Brow Shape Advisor",
+              "description": "Chat with AI brow shaping expert",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }

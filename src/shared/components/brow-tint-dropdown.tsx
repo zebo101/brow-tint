@@ -106,7 +106,7 @@ export function BrowTintDropdown({
                   <span className="text-muted-foreground text-xs">?</span>
                 </div>
                 <span className="text-muted-foreground text-sm">
-                  {t('selectBrowTint') || 'Select a brow tint'}
+                  {t('selectBrowTint') || 'Select a brow shape'}
                 </span>
               </>
             )}

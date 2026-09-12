@@ -29,6 +29,7 @@ const schemaAliasTarget = getSchemaAliasTarget();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: process.env.NEXT_DIST_DIR || '.next',
   output: process.env.VERCEL ? undefined : 'standalone',
   reactStrictMode: false,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
@@ -83,6 +84,7 @@ const nextConfig = {
     ];
   },
   turbopack: {
+    root: __dirname,
     resolveAlias: {
       // fs: {
       //   browser: './empty.ts', // We recommend to fix code imports before using this method
@@ -90,10 +92,10 @@ const nextConfig = {
       '@/config/db/schema': schemaAliasTarget,
     },
   },
-  serverActions: {
-    bodySizeLimit: '10mb',
-  },
   experimental: {
+    serverActions: {
+      bodySizeLimit: '10mb',
+    },
     turbopackFileSystemCacheForDev: true,
     // Disable mdxRs for Vercel deployment compatibility with fumadocs-mdx
     ...(process.env.VERCEL ? {} : { mdxRs: true }),

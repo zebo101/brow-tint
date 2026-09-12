@@ -9,11 +9,14 @@ export const pages = defineDocs({
 });
 
 export const posts = defineDocs({
+  // Public guide collection: three current guides, each translated into eight languages.
+  // Unmodified originals are backed up in docs/archives/tintbrow-articles-2026-09-12.
   dir: 'content/posts',
 });
 
 export const logs = defineDocs({
-  dir: 'content/logs',
+  // Previous release notes stay archived in content/logs.
+  dir: 'content/browlens-logs',
 });
 
 export default defineConfig({

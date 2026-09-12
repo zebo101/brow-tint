@@ -1,11 +1,11 @@
+import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-import { getThemePage } from '@/core/theme';
-import { Empty } from '@/shared/blocks/common';
-import { defaultLocale } from '@/config/locale';
 import { postsSource } from '@/core/docs/source';
+import { getThemePage } from '@/core/theme';
+import { locales } from '@/config/locale';
 import { buildAlternates } from '@/shared/lib/seo-metadata';
-import { getPost } from '@/shared/models/post';
+import { getLocalPost } from '@/shared/models/post';
 import { DynamicPage } from '@/shared/types/blocks/landing';
 
 export const revalidate = 3600;
@@ -18,30 +18,30 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const t = await getTranslations('pages.blog.metadata');
   const canonicalPath = `/blog/${slug}`;
-  const availableLocales = ['en', 'zh'].filter((entryLocale) =>
-    Boolean(postsSource.getPage([slug], entryLocale))
+  const availableLocales = locales.filter((language) =>
+    Boolean(postsSource.getPage([slug], language))
   );
 
-  const post = await getPost({ slug, locale });
+  const post = await getLocalPost({ slug, locale });
   if (!post) {
     return {
       title: `${slug} | ${t('title')}`,
       description: t('description'),
       alternates: buildAlternates(canonicalPath, {
         locale,
-        availableLocales:
-          availableLocales.length > 0 ? availableLocales : [defaultLocale],
+        availableLocales: [],
+        noIndex: true,
       }),
     };
   }
 
   return {
-    title: `${post.title} | ${t('title')}`,
+    title: `${post.title} | Browlens`,
     description: post.description,
     alternates: buildAlternates(canonicalPath, {
       locale,
-      availableLocales:
-        availableLocales.length > 0 ? availableLocales : [defaultLocale],
+      // Every published guide has the complete translated collection.
+      availableLocales: availableLocales,
     }),
   };
 }
@@ -54,10 +54,10 @@ export default async function BlogDetailPage({
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const post = await getPost({ slug, locale });
+  const post = await getLocalPost({ slug, locale });
 
   if (!post) {
-    return <Empty message={`Post not found`} />;
+    notFound();
   }
 
   // build page sections

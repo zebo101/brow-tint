@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "Updates - Brow Tint",
-    "description": "View the latest Brow Tint features, brow tint style additions, and improvements."
+    "title": "Updates - Browlens",
+    "description": "View the latest Browlens features, brow shape style additions, and improvements."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
         "title": "What's New",
-        "description": "Latest features, brow tint style additions, and improvements to Brow Tint."
+        "description": "Latest features, brow shape style additions, and improvements to Browlens."
       }
     }
   }

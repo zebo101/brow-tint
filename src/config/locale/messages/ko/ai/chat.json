@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Brow Tint 챗",
+        "title": "Browlens",
         "logo": {
           "src": "/logo.png",
-          "alt": "Brow Tint 챗"
+          "alt": "Browlens"
         },
         "url": "/chat"
       },
@@ -61,7 +61,7 @@
         ]
       },
       "show_theme": true,
-      "show_locale": false
+      "show_locale": true
     },
     "variant": "sidebar"
   },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "무엇을 도와드릴까요?",
-    "input_placeholder": "브로우 틴팅, 색상 매칭 또는 눈썹 관리 팁에 대해 물어보세요..."
+    "input_placeholder": "AI와 눈썹 모양 및 스타일링 상담"
   },
   "history": {
     "title": "채팅 기록",
@@ -95,20 +95,3 @@
     "untitled": "제목 없는 대화"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

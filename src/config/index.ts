@@ -35,19 +35,18 @@ const defaultDbMigrationsOut = isSqliteLikeProvider
   : './src/config/db/migrations/pg';
 
 export const envConfigs: ConfigMap = {
-  app_url: process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
-  app_name: process.env.NEXT_PUBLIC_APP_NAME ?? 'Brow Tint',
+  // Public SEO identity is independent of the runtime/auth callback origin.
+  site_url: 'https://browlens.com',
+  app_url: process.env.NEXT_PUBLIC_APP_URL ?? 'https://browlens.com',
+  app_name: 'Browlens',
   app_description: process.env.NEXT_PUBLIC_APP_DESCRIPTION ?? '',
   app_logo: process.env.NEXT_PUBLIC_APP_LOGO ?? '/logo.png',
   app_favicon: process.env.NEXT_PUBLIC_APP_FAVICON ?? '/favicon.ico',
-  // TODO: replace with a properly designed 1200×630 OG image. Current default
-  // is the latest branded landing screenshot (≈ 2546×1439, 1.77:1). Social
-  // platforms will crop/letterbox slightly until the canonical OG asset ships.
-  app_preview_image:
-    process.env.NEXT_PUBLIC_APP_PREVIEW_IMAGE ?? '/imgs/features/landingpage.jpg',
+  // Use the brand mark instead of a screenshot carrying the retired brand.
+  app_preview_image: process.env.NEXT_PUBLIC_APP_PREVIEW_IMAGE ?? '/logo.png',
   theme: process.env.NEXT_PUBLIC_THEME ?? 'default',
   appearance: process.env.NEXT_PUBLIC_APPEARANCE ?? 'system',
-  locale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE ?? 'en',
+  locale: 'en',
   database_url: process.env.DATABASE_URL ?? '',
   database_auth_token: process.env.DATABASE_AUTH_TOKEN ?? '',
   database_provider: databaseProvider,
@@ -61,13 +60,11 @@ export const envConfigs: ConfigMap = {
   // We keep 'public' as template default for stability on fresh Supabase DBs.
   db_migrations_schema: process.env.DB_MIGRATIONS_SCHEMA ?? 'drizzle',
   // Output folder for drizzle-kit generated migrations
-  db_migrations_out:
-    process.env.DB_MIGRATIONS_OUT ?? defaultDbMigrationsOut,
+  db_migrations_out: process.env.DB_MIGRATIONS_OUT ?? defaultDbMigrationsOut,
   db_singleton_enabled: process.env.DB_SINGLETON_ENABLED || 'false',
   db_max_connections: process.env.DB_MAX_CONNECTIONS || '1',
   auth_url: process.env.AUTH_URL || process.env.NEXT_PUBLIC_APP_URL || '',
   auth_secret: process.env.AUTH_SECRET ?? '', // openssl rand -base64 32
   version: packageJson.version,
-  locale_detect_enabled:
-    process.env.NEXT_PUBLIC_LOCALE_DETECT_ENABLED ?? 'false',
+  locale_detect_enabled: 'false',
 };

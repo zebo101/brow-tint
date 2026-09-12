@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Brow Tint 顾问",
+        "title": "Browlens",
         "logo": {
           "src": "/logo.png",
-          "alt": "Brow Tint 顾问"
+          "alt": "Browlens"
         },
         "url": "/chat"
       },
@@ -61,7 +61,7 @@
         ]
       },
       "show_theme": true,
-      "show_locale": false
+      "show_locale": true
     },
     "variant": "sidebar"
   },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "有什么可以帮您的？",
-    "input_placeholder": "询问我关于眉色、色彩搭配或眉部护理技巧..."
+    "input_placeholder": "与 AI 聊聊眉型与日常造型"
   },
   "history": {
     "title": "聊天历史",

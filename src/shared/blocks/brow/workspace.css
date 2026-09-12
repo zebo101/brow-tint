@@ -1,0 +1,1062 @@
+.brow-workspace {
+  --brow-canvas-height: clamp(360px, calc(100svh - 320px), 600px);
+  --accent: oklch(0.55 0.095 24);
+  --accent-foreground: white;
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-hover: oklch(0.49 0.095 24);
+  --accent-hover: oklch(0.49 0.095 24);
+  --color-accent-soft-foreground: oklch(0.43 0.08 24);
+  --muted: oklch(0.54 0.015 35);
+  --surface: white;
+  --surface-secondary: oklch(0.965 0.006 35);
+  --surface-tertiary: oklch(0.945 0.008 35);
+  --border: oklch(0.91 0.008 35);
+  --separator: oklch(0.91 0.008 35);
+  --foreground: oklch(0.27 0.018 35);
+  --color-muted: var(--muted);
+  font-family: var(--font-sans), 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: var(--foreground);
+}
+.brow-workspace-card {
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.brow-workspace-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+}
+.brow-canvas-column {
+  min-width: 0;
+  background: var(--surface-secondary);
+}
+.brow-canvas-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding: 8px 20px;
+  background: var(--surface);
+}
+.brow-canvas {
+  position: relative;
+  height: var(--brow-canvas-height);
+  overflow: hidden;
+  background: oklch(0.93 0.008 35);
+}
+.brow-portrait {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.brow-empty-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center 35%;
+}
+.brow-empty-caption {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 64px 32px 28px;
+  background: linear-gradient(transparent, rgba(31, 24, 22, 0.58));
+  color: white;
+}
+.brow-empty-caption p {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.brow-canvas-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.88);
+  backdrop-filter: blur(12px);
+  font-size: 11px;
+}
+.brow-sample-reference {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 84px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgb(255 255 255 / 0.92);
+}
+.brow-sample-reference img {
+  width: 100%;
+  height: 48px;
+  object-fit: cover;
+}
+.brow-sample-reference span {
+  display: block;
+  padding: 5px 4px;
+  font-size: 10px;
+  text-align: center;
+}
+.brow-floating-toolbar {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 6px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.94);
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.08);
+  backdrop-filter: blur(12px);
+}
+.brow-floating-toolbar svg {
+  width: 16px;
+  height: 16px;
+}
+.brow-viewbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  padding: 10px 16px;
+  background: var(--surface);
+}
+.brow-controls-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--surface);
+  border-left: 1px solid var(--separator);
+}
+.brow-panel-tabs {
+  padding: 16px 20px 12px;
+}
+.brow-panel-tabs .segment__item {
+  flex: 1;
+}
+.brow-panel-body {
+  height: calc(var(--brow-canvas-height) - 66px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 12px 24px 24px;
+  scrollbar-width: thin;
+}
+.brow-panel-footer {
+  margin-top: auto;
+  padding: 18px 24px 22px;
+  border-top: 1px solid var(--separator);
+}
+.brow-panel-placeholder,
+.brow-catalog-locked {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 56px;
+}
+.brow-panel-placeholder h2,
+.brow-catalog-locked h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.brow-adjustment {
+  gap: 12px;
+}
+.brow-adjust-note {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.brow-adjust-note button {
+  margin-top: 8px;
+}
+.brow-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.brow-metrics > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+}
+.brow-metrics strong {
+  font-size: 23px;
+  font-weight: 500;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.brow-metrics small {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+}
+.brow-process {
+  background: var(--surface-secondary);
+  border-radius: 14px;
+  padding: 16px;
+}
+.brow-process > p + p {
+  margin-top: 8px;
+}
+.brow-anchor-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.brow-anchor-selectors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+.brow-anchor-nudge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+.brow-anchor-editor p {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.brow-anchor-handle {
+  cursor: crosshair;
+  outline: none;
+}
+.brow-anchor-handle:focus-visible .brow-anchor-dot {
+  stroke: #6d28d9;
+  stroke-width: 3;
+}
+.brow-guide-drawing {
+  stroke-dasharray: 1;
+  animation: brow-guide-draw 650ms ease-out both;
+}
+@keyframes brow-guide-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brow-guide-drawing {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+.brow-welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 44px 28px 24px;
+}
+.brow-welcome h2 {
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+.brow-welcome > button:first-of-type {
+  margin-top: 12px;
+}
+.brow-example-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.brow-example {
+  width: 48px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: var(--cursor-interactive, pointer);
+}
+.brow-example img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.brow-example:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.brow-welcome-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 12px;
+}
+.brow-welcome-steps > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+}
+.brow-welcome-steps span {
+  color: var(--muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.brow-workspace-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 13px 18px;
+  font-size: 11px;
+  background: var(--surface-secondary);
+  color: var(--muted);
+}
+.brow-analysis-loading,
+.brow-analysis-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: calc(100% - 32px);
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: rgb(255 255 255 / 0.95);
+  backdrop-filter: blur(12px);
+  font-size: 13px;
+}
+.brow-analysis-error {
+  display: block;
+  width: 320px;
+  text-align: center;
+  line-height: 1.6;
+}
+.brow-drop-label {
+  position: absolute;
+  inset: 12px;
+  display: grid;
+  place-content: center;
+  border: 2px dashed var(--accent);
+  border-radius: 18px;
+  background: rgb(255 255 255 / 0.85);
+  font-size: 18px;
+}
+@media (max-width: 900px) {
+  .brow-workspace-grid {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+  .brow-panel-body,
+  .brow-panel-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .brow-workspace-card {
+    overflow: visible;
+    border-radius: 20px;
+  }
+  .brow-workspace-grid {
+    display: block;
+  }
+  .brow-canvas-column {
+    position: sticky;
+    top: 56px;
+    z-index: 20;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+  }
+  .brow-canvas {
+    height: clamp(250px, 42svh, 370px);
+  }
+  .brow-canvas-topbar {
+    min-height: 44px;
+    padding: 4px 12px;
+  }
+  .brow-canvas-topbar > span {
+    font-size: 12px;
+  }
+  .brow-viewbar {
+    min-height: 48px;
+    padding: 8px;
+  }
+  .brow-floating-toolbar {
+    bottom: 10px;
+  }
+  .brow-canvas-label {
+    top: 12px;
+    left: 12px;
+    font-size: 10px;
+    padding: 6px 9px;
+  }
+  .brow-controls-column {
+    border-left: 0;
+  }
+  .brow-panel-tabs {
+    padding: 16px 20px 10px;
+  }
+  .brow-panel-body {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    padding: 16px 20px 24px;
+  }
+  .brow-panel-footer {
+    padding: 16px 20px 20px;
+  }
+  .brow-workspace-bottom {
+    font-size: 10px;
+    border-radius: 0 0 20px 20px;
+  }
+  .brow-welcome {
+    padding: 28px 24px;
+  }
+  .brow-welcome h2 {
+    font-size: 26px;
+  }
+  .brow-welcome-steps {
+    display: none;
+  }
+  .brow-empty-caption {
+    padding: 40px 20px 20px;
+  }
+  .brow-empty-caption p {
+    font-size: 23px;
+  }
+  .brow-panel-placeholder,
+  .brow-catalog-locked {
+    padding: 16px 0;
+  }
+}
+
+/* The editor is one canvas with floating tools, not a second page column. */
+.brow-tools-handle {
+  display: none;
+}
+.brow-editor {
+  --brow-tool-width: 320px;
+  --brow-editor-height: max(560px, calc(100svh - 215px));
+  background: var(--surface-secondary);
+}
+.brow-editor .brow-workspace-grid {
+  display: block;
+  position: relative;
+  height: var(--brow-editor-height);
+  overflow: hidden;
+  background-color: var(--surface-secondary);
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+.brow-editor .brow-canvas-column {
+  display: contents;
+}
+.brow-editor .brow-canvas-topbar {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  left: 16px;
+  right: 16px;
+  min-height: 40px;
+  padding: 0;
+  background: transparent;
+}
+.brow-editor .brow-canvas-topbar > span {
+  font-size: 13px;
+}
+.brow-editor .brow-canvas-topbar .button {
+  background: var(--surface);
+}
+.brow-editor .brow-canvas {
+  position: absolute;
+  top: 66px;
+  right: calc(var(--brow-tool-width) + 40px);
+  bottom: 68px;
+  left: 16px;
+  height: auto;
+  border-radius: 16px;
+  background: transparent;
+}
+.brow-editor .brow-floating-toolbar {
+  bottom: 12px;
+}
+.brow-editor .brow-viewbar {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  right: calc(var(--brow-tool-width) + 40px);
+  min-height: 44px;
+  padding: 0;
+  background: transparent;
+}
+.brow-editor .brow-controls-column {
+  position: absolute;
+  top: 66px;
+  right: 16px;
+  width: var(--brow-tool-width);
+  max-height: calc(100% - 82px);
+  border: 0;
+  border-radius: 18px;
+  box-shadow:
+    0 4px 24px rgb(32 24 22 / 0.07),
+    0 0 0 1px rgb(32 24 22 / 0.04);
+  overflow: hidden;
+}
+.brow-editor .brow-panel-tabs {
+  padding: 12px 12px 8px;
+  flex: none;
+}
+.brow-editor .brow-panel-body {
+  height: auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 12px 20px 20px;
+  flex: 1;
+}
+.brow-editor .brow-panel-footer {
+  flex: none;
+  padding: 14px 16px;
+}
+
+@media (min-width: 761px) {
+  .brow-editor:has(.brow-controls-column[data-panel='catalog']) {
+    --brow-tool-width: clamp(400px, 42vw, 560px);
+  }
+  .brow-editor .brow-controls-column[data-panel='catalog'] {
+    height: calc(100% - 82px);
+  }
+  .brow-editor .brow-controls-column[data-panel='catalog'] .brow-catalog__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .brow-editor .brow-controls-column[data-panel='catalog'] .brow-panel-body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 12px;
+  }
+}
+.brow-editor .brow-adjust-heading h2 {
+  font-size: 16px;
+}
+.brow-editor .brow-adjust-content {
+  --space-y-reverse: 0;
+}
+.brow-editor .brow-workspace-bottom {
+  background: transparent;
+  padding: 8px 12px;
+}
+.brow-editor .brow-sample-reference {
+  pointer-events: none;
+}
+.brow-editor-modal-container {
+  padding: 0;
+}
+.brow-editor-modal {
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: 100dvh;
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  border-radius: 0;
+}
+.brow-editor-focused {
+  border-radius: 0;
+  height: 100dvh;
+  box-shadow: none;
+}
+.brow-editor-focused .brow-workspace-grid {
+  height: 100dvh;
+}
+.brow-editor-focused .brow-workspace-bottom {
+  display: none;
+}
+.brow-editor .brow-result-comparison {
+  position: absolute;
+  left: 24px;
+  right: calc(var(--brow-tool-width) + 48px);
+  bottom: 62px;
+  z-index: 4;
+}
+@media (max-width: 760px) {
+  .brow-editor {
+    --brow-editor-height: max(620px, calc(100svh - 165px));
+    --brow-bottom-height: 290px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .brow-editor.brow-tools-expanded {
+    --brow-bottom-height: min(410px, 55%);
+  }
+  .brow-editor .brow-canvas-topbar {
+    top: 8px;
+    left: 10px;
+    right: 10px;
+  }
+  .brow-editor .brow-canvas-topbar > span {
+    display: none;
+  }
+  .brow-editor .brow-canvas-topbar > div {
+    width: 100%;
+  }
+  .brow-editor .brow-canvas-topbar > div > button:first-child {
+    margin-right: auto;
+  }
+  .brow-editor .brow-canvas-topbar .button {
+    min-height: 40px;
+  }
+  .brow-editor .brow-canvas {
+    top: 56px;
+    left: 8px;
+    right: 8px;
+    bottom: calc(var(--brow-bottom-height) + 66px);
+    border-radius: 12px;
+  }
+  .brow-editor .brow-canvas-label {
+    top: 8px;
+    left: 8px;
+  }
+  .brow-editor .brow-sample-reference {
+    width: 60px;
+    top: 8px;
+    right: 8px;
+  }
+  .brow-editor .brow-sample-reference img {
+    height: 36px;
+  }
+  .brow-editor .brow-floating-toolbar {
+    bottom: 8px;
+    padding: 2px 6px;
+  }
+  .brow-editor .brow-floating-toolbar .button {
+    width: 40px;
+    height: 40px;
+  }
+  .brow-editor .brow-viewbar {
+    left: 8px;
+    right: 8px;
+    bottom: calc(var(--brow-bottom-height) + 16px);
+    min-height: 44px;
+  }
+  .brow-editor .brow-controls-column {
+    top: auto;
+    right: 8px;
+    left: 8px;
+    bottom: 8px;
+    width: auto;
+    height: var(--brow-bottom-height);
+    max-height: none;
+    border-radius: 18px;
+  }
+  .brow-editor .brow-tools-handle {
+    display: flex;
+    min-height: 24px;
+    height: 24px;
+    font-size: 10px;
+    align-self: center;
+    flex: none;
+    color: var(--muted);
+  }
+  .brow-editor .brow-panel-tabs {
+    padding: 0 12px 8px;
+  }
+  .brow-editor .brow-panel-body {
+    padding: 8px 16px 16px;
+    overscroll-behavior: contain;
+  }
+  .brow-editor .brow-adjust-heading {
+    display: none;
+  }
+  .brow-editor .brow-adjust-content > * + * {
+    margin-top: 14px;
+  }
+  .brow-editor .brow-adjust-content > .segment {
+    margin-top: 0;
+  }
+  .brow-editor .brow-panel-footer {
+    padding: 10px 12px max(10px, env(safe-area-inset-bottom));
+  }
+  .brow-editor .brow-panel-footer > .button {
+    min-height: 44px;
+  }
+  .brow-editor .brow-workspace-bottom {
+    font-size: 10px;
+  }
+  .brow-editor .brow-result-comparison {
+    left: 16px;
+    right: 16px;
+    bottom: calc(var(--brow-bottom-height) + 63px);
+  }
+  .brow-editor-focused {
+    border-radius: 0;
+  }
+}
+.brow-mobile-adjustment {
+  display: none;
+}
+@media (max-width: 760px) {
+  .brow-editor {
+    --brow-bottom-height: 330px;
+  }
+  .brow-editor .brow-mobile-adjustment {
+    display: block;
+  }
+  .brow-editor .brow-desktop-adjustment,
+  .brow-editor .brow-desktop-fine,
+  .brow-editor .brow-adjust-note > p {
+    display: none;
+  }
+  .brow-control-picker {
+    display: flex;
+    overflow-x: auto;
+    gap: 2px;
+    margin-bottom: 12px;
+  }
+  .brow-control-picker .button {
+    flex: 1 0 auto;
+    min-width: 40px;
+    padding-inline: 8px;
+    min-height: 36px;
+  }
+  .brow-editor .brow-adjustment .slider__track {
+    min-height: 20px;
+  }
+  .brow-editor .brow-adjustment .slider__thumb {
+    width: 24px;
+    height: 24px;
+  }
+  .brow-editor .brow-adjust-note {
+    margin-top: 4px;
+  }
+}
+@media (max-width: 760px) and (max-height: 520px) and (orientation: landscape) {
+  .brow-editor-focused .brow-canvas {
+    top: 56px;
+    left: 8px;
+    right: 300px;
+    bottom: 54px;
+  }
+  .brow-editor-focused .brow-viewbar {
+    left: 8px;
+    right: 300px;
+    bottom: 8px;
+  }
+  .brow-editor-focused .brow-controls-column {
+    top: 56px;
+    right: 8px;
+    left: auto;
+    bottom: 8px;
+    width: 284px;
+    height: auto;
+  }
+  .brow-editor-focused .brow-tools-handle {
+    display: none;
+  }
+  .brow-editor-focused .brow-panel-tabs {
+    padding-top: 8px;
+  }
+}
+@media (max-width: 480px) and (max-height: 560px) {
+  .brow-editor-focused {
+    --brow-bottom-height: 48%;
+  }
+  .brow-editor-focused.brow-tools-expanded {
+    --brow-bottom-height: 55%;
+  }
+}
+/* Photo and overlays share the entire stage; panels never clip the world. */
+.brow-editor .brow-canvas,
+.brow-editor-focused .brow-canvas {
+  inset: 0;
+  height: auto;
+  border-radius: 0;
+}
+.brow-editor .brow-floating-toolbar {
+  z-index: 4;
+  left: 16px;
+  bottom: 14px;
+  transform: none;
+}
+.brow-editor .brow-canvas-label {
+  top: 68px;
+  left: 20px;
+  pointer-events: none;
+}
+.brow-editor .brow-sample-reference {
+  right: calc(var(--brow-tool-width) + 40px);
+  top: 68px;
+}
+.brow-editor .brow-viewbar {
+  pointer-events: none;
+}
+.brow-editor .brow-viewbar > * {
+  pointer-events: auto;
+}
+@media (max-width: 760px) {
+  .brow-editor .brow-floating-toolbar {
+    left: 12px;
+    bottom: calc(var(--brow-bottom-height) + 66px);
+  }
+  .brow-editor .brow-canvas-label {
+    top: 58px;
+    left: 12px;
+  }
+  .brow-editor .brow-sample-reference {
+    right: 12px;
+    top: 58px;
+  }
+}
+@media (max-width: 760px) and (max-height: 520px) and (orientation: landscape) {
+  .brow-editor-focused .brow-floating-toolbar {
+    left: 12px;
+    bottom: 54px;
+  }
+  .brow-editor-focused .brow-sample-reference {
+    right: 304px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .brow-editor .brow-floating-toolbar {
+    bottom: 64px;
+  }
+}
+@media (max-width: 760px) {
+  .brow-editor {
+    --brow-bottom-height: 360px;
+  }
+  .brow-editor .brow-panel-footer > div.mb-3 {
+    display: none;
+  }
+  .brow-editor .brow-adjust-content > * + * {
+    margin-top: 10px;
+  }
+  .brow-editor .brow-control-picker {
+    margin-bottom: 8px;
+  }
+}
+.brow-mobile-dock {
+  display: none;
+}
+.brow-editor .brow-workspace-grid {
+  background-color: oklch(0.982 0.003 35);
+  background-size: 24px 24px;
+}
+.brow-editor .brow-controls-column {
+  border-radius: 16px;
+}
+.brow-editor .brow-adjust-heading p {
+  line-height: 1.5;
+}
+@media (max-width: 760px) {
+  .brow-editor {
+    --brow-bottom-height: 64px;
+  }
+  .brow-editor .brow-controls-column {
+    display: none;
+  }
+  .brow-editor.brow-tools-expanded {
+    --brow-bottom-height: min(430px, 58%);
+  }
+  .brow-editor.brow-tools-expanded .brow-controls-column {
+    display: flex;
+    bottom: 76px;
+    height: calc(var(--brow-bottom-height) - 76px);
+    top: auto;
+    left: 8px;
+    right: 8px;
+    width: auto;
+  }
+  .brow-editor .brow-tools-handle {
+    display: flex;
+  }
+  .brow-mobile-dock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 6;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    min-height: 56px;
+    padding: 6px;
+    border-radius: 16px;
+    background: var(--surface);
+    box-shadow: 0 2px 12px rgb(32 24 22 / 0.07);
+  }
+  .brow-mobile-dock .button {
+    min-height: 44px;
+    flex: 1;
+    border-radius: 10px;
+  }
+  .brow-editor .brow-panel-tabs {
+    display: none;
+  }
+  .brow-editor .brow-panel-body {
+    padding-top: 8px;
+  }
+  .brow-editor .brow-canvas-label {
+    font-size: 10px;
+  }
+  .brow-editor .brow-floating-toolbar {
+    background: var(--surface);
+    border-radius: 12px;
+  }
+}
+@media (max-width: 760px) and (max-height: 520px) and (orientation: landscape) {
+  .brow-editor-focused.brow-tools-expanded .brow-controls-column {
+    top: 56px;
+    bottom: 76px;
+    right: 8px;
+    left: auto;
+    width: 284px;
+    height: auto;
+  }
+  .brow-editor-focused:not(.brow-tools-expanded) .brow-viewbar {
+    right: 8px;
+  }
+}
+/* Compact mobile density requested by the user. */
+@media (max-width: 760px) {
+  .brow-editor {
+    --brow-bottom-height: 50px;
+  }
+  .brow-editor .brow-canvas-topbar {
+    top: 8px;
+    min-height: 30px;
+  }
+  .brow-editor .brow-canvas-topbar .button {
+    min-height: 30px;
+    height: 30px;
+    padding-inline: 10px;
+    gap: 5px;
+    font-size: 11px;
+  }
+  .brow-editor .brow-canvas-topbar svg {
+    width: 13px;
+    height: 13px;
+  }
+  .brow-editor .brow-canvas-label {
+    top: 46px;
+    padding: 4px 8px;
+    font-size: 9px;
+  }
+  .brow-editor .brow-floating-toolbar {
+    padding: 2px 4px;
+    gap: 0;
+    border-radius: 10px;
+    bottom: calc(var(--brow-bottom-height) + 46px);
+  }
+  .brow-editor .brow-floating-toolbar .button {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+  }
+  .brow-editor .brow-floating-toolbar svg {
+    width: 14px;
+    height: 14px;
+  }
+  .brow-editor .brow-floating-toolbar > span {
+    min-width: 34px;
+    font-size: 10px;
+  }
+  .brow-editor .brow-viewbar {
+    min-height: 30px;
+    bottom: calc(var(--brow-bottom-height) + 8px);
+  }
+  .brow-editor .segment {
+    padding: 3px;
+  }
+  .brow-editor .segment__item {
+    min-height: 26px;
+    height: 26px;
+    padding: 4px 10px;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .brow-mobile-dock {
+    min-height: 42px;
+    padding: 4px;
+    border-radius: 12px;
+  }
+  .brow-mobile-dock .button {
+    min-height: 32px;
+    height: 32px;
+    font-size: 11px;
+    gap: 6px;
+    border-radius: 8px;
+  }
+  .brow-mobile-dock svg {
+    width: 14px;
+    height: 14px;
+  }
+  .brow-editor.brow-tools-expanded {
+    --brow-bottom-height: min(370px, 57%);
+  }
+  .brow-editor.brow-tools-expanded .brow-controls-column {
+    bottom: 60px;
+    height: calc(var(--brow-bottom-height) - 60px);
+  }
+  .brow-editor .brow-panel-body {
+    padding: 8px 12px 12px;
+  }
+  .brow-editor .brow-panel-body .text-sm {
+    font-size: 12px;
+  }
+  .brow-editor .brow-panel-body .text-xs {
+    font-size: 10px;
+  }
+  .brow-editor .brow-panel-body .text-lg {
+    font-size: 14px;
+  }
+  .brow-editor .brow-panel-body .button {
+    font-size: 11px;
+    min-height: 30px;
+  }
+  .brow-editor .brow-control-picker .button {
+    min-width: 34px;
+    padding-inline: 7px;
+    height: 30px;
+  }
+  .brow-editor .brow-adjustment .slider__track {
+    min-height: 12px;
+  }
+  .brow-editor .brow-adjustment .slider__thumb {
+    width: 20px;
+    height: 20px;
+  }
+  .brow-editor .brow-panel-footer {
+    padding: 8px 10px max(8px, env(safe-area-inset-bottom));
+  }
+  .brow-editor .brow-panel-footer .button {
+    min-height: 34px;
+    height: 34px;
+    font-size: 11px;
+  }
+  .brow-editor .brow-panel-footer .text-xs {
+    font-size: 10px;
+  }
+  .brow-editor .brow-workspace-bottom {
+    font-size: 9px;
+    padding: 7px 10px;
+  }
+  .brow-start {
+    padding: 18px;
+  }
+  .brow-start .button:not(.brow-start-sample) {
+    min-height: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+}

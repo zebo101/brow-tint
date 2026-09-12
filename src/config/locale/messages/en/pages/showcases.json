@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "title": "Brow Tint Gallery - AI Brow Tinting Before and After",
-    "description": "See amazing brow tint before and after transformations created with Brow Tint AI generator",
-    "keywords": "brow tint gallery, brow tint before and after, ai brow tint examples, brow tint preview, brow tint transformations, professional brow tint, tinted brow gel preview"
+    "title": "Eyebrow Shape & Brow Filter Gallery | Browlens",
+    "description": "Explore eyebrow shapes and brow filter previews with Browlens.",
+    "keywords": "brow shape gallery, brow shape before and after, ai brow shape examples, brow shape preview, brow shape transformations, eyebrow shape, brow filter preview"
   },
   "page": {
-    "title": "Brow Tint Gallery",
+    "title": "Browlens Gallery",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Stunning Brow Tint Transformations",
-        "description": "See how users transformed their brows with Brow Tint.",
+        "title": "Explore Eyebrow Shapes",
+        "description": "Find inspiration for your next brow shape, then try a look on your photo.",
         "buttons": [
           {
             "title": "Try This Style",
-            "url": "/#ai-brow-tint-studio"
+            "url": "/#brow-app"
           }
         ],
         "groups": [
@@ -24,23 +24,23 @@
           },
           {
             "name": "short-hair",
-            "title": "Natural Tints"
+            "title": "Natural Brows"
           },
           {
             "name": "long-hair",
-            "title": "Bold Tints"
+            "title": "Defined Brows"
           },
           {
             "name": "color-change",
-            "title": "Brow Lamination"
+            "title": "Lifted Brows"
           },
           {
             "name": "men-styles",
-            "title": "Tinted Brow Gel"
+            "title": "Feathered Brows"
           },
           {
             "name": "women-styles",
-            "title": "Lash & Brow"
+            "title": "Soft Arches"
           },
           {
             "name": "trendy",
@@ -48,187 +48,117 @@
           },
           {
             "name": "classic",
-            "title": "Professional Tints"
+            "title": "Straight Brows"
           }
         ],
         "items": [
           {
-            "title": "Soft Taupe Brow Tint",
-            "description": "Natural subtle brow tinting look for an effortlessly polished appearance",
+            "title": "Soft Arch",
+            "description": "Explore the soft arch eyebrow filter on your own photo.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Soft taupe brow tint before and after"
+              "alt": "Soft Arch brow filter preview"
             },
             "group": "short-hair"
           },
           {
-            "title": "Dark Espresso Brow Tint",
-            "description": "Rich deep brown brow tinting for bold, defined brows",
+            "title": "Defined Arch",
+            "description": "Explore the defined arch eyebrow filter on your own photo.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Dark espresso brow tint"
+              "alt": "Defined Arch brow filter preview"
             },
             "group": "long-hair"
           },
           {
-            "title": "Brow Lamination & Tint",
-            "description": "Brushed-up laminated and tinted brows for a sleek, full look",
+            "title": "Lifted Brows",
+            "description": "Explore the lifted brows eyebrow filter on your own photo.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Brow lamination and tint result"
+              "alt": "Lifted Brows brow filter preview"
             },
             "group": "color-change"
           },
           {
-            "title": "Professional Brow Tint",
-            "description": "Salon-quality professional brow tinting with precise, even coverage",
+            "title": "Straight Brows",
+            "description": "Explore the straight brows eyebrow filter on your own photo.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Professional brow tint transformation"
+              "alt": "Straight Brows brow filter preview"
             },
             "group": "classic"
           },
           {
-            "title": "Tinted Brow Gel Look",
-            "description": "Daily tinted brow gel finish for a quick, natural enhancement",
+            "title": "Feathered Brows",
+            "description": "Explore the feathered brows eyebrow filter on your own photo.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Tinted brow gel look"
+              "alt": "Feathered Brows brow filter preview"
             },
             "group": "men-styles"
           },
           {
-            "title": "Lash & Brow Tint",
-            "description": "Combined lash and brow tinting for a complete, low-maintenance look",
+            "title": "Rounded Brows",
+            "description": "Explore the rounded brows eyebrow filter on your own photo.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Lash and brow tint result"
+              "alt": "Rounded Brows brow filter preview"
             },
             "group": "women-styles"
           }
         ]
       },
-      "brow_tint_gallery": {
-        "block": "brow-tint-gallery",
-        "id": "brow_tint_gallery",
-        "title": "Browse the Full Brow Tint Style Library",
-        "description": "Scroll through our AI-powered brow tint styles organized by type. Click any look to preview on your own photo.",
-        "limit": 12,
-        "cta_url": "/ai-brow-tint-generator",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Natural Brow Tints",
-            "description": "Soft, everyday brow tint shades that enhance your natural brow color. Perfect for a subtle, no-makeup look with taupe, light brown, and blonde tones.",
-            "cta_label": "Try now"
-          },
-          {
-            "key": "women",
-            "title": "Bold Brow Tints",
-            "description": "Statement brow tinting in deep espresso, charcoal, and auburn shades. Achieve dramatic, sculpted brows that frame and define your face.",
-            "cta_label": "Try now"
-          },
-          {
-            "key": "boys",
-            "title": "Brow Lamination Styles",
-            "description": "Brow lamination and tint combos for that brushed-up, feathered look. Preview different lamination styles before your salon appointment.",
-            "cta_label": "Try now"
-          },
-          {
-            "key": "girls",
-            "title": "Lash & Brow Tint",
-            "description": "Combined lash and brow tinting packages for a complete, low-maintenance enhancement. See how coordinated tints frame your eyes.",
-            "cta_label": "Try now"
-          }
-        ],
-        "tip": "Every preview is free. New brow tint styles added regularly."
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "label": "How It Works",
-        "title": "From Photo to Perfect Brow Tint in 4 Steps",
-        "description": "Brow Tint is built for fast, realistic brow tinting previews. No install, no signup needed to try.",
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "Upload a Clear Front-Facing Photo",
-            "description": "Good lighting and visible brows give the AI the most accurate map of your face and brow shape."
-          },
-          {
-            "title": "Choose a Brow Tint Style",
-            "description": "Browse natural tints, bold shades, brow lamination and tint combos, or tinted brow gel finishes from the gallery."
-          },
-          {
-            "title": "Fine-Tune Shade, Shape, and Intensity",
-            "description": "Adjust tint color, brow thickness, arch shape, and coverage intensity to match your desired look."
-          },
-          {
-            "title": "Generate, Compare, and Download",
-            "description": "Generate multiple brow tint previews, compare before and after side by side, and download your favorite to share with your brow artist."
-          }
-        ]
-      },
       "faq": {
         "id": "faq",
-        "title": "Brow Tint Preview FAQ",
-        "description": "Common questions about AI brow tinting previews, photo tips, and how to get the best brow tint results.",
+        "title": "Your Brow App Questions, Answered",
+        "description": "How to analyze your eyebrow shape and try a new brow filter with Browlens.",
         "items": [
           {
-            "question": "Are the brow tint previews in this gallery free?",
-            "answer": "Yes. You can browse every brow tint style for free and generate previews on your own photo with a free trial."
+            "question": "What is Browlens?",
+            "answer": "Browlens is the brow app for exploring your eyebrow shape with AI. Upload a photo, review your brow mapping, and choose a style to preview."
           },
           {
-            "question": "Will the AI brow tint preview match my real results?",
-            "answer": "Brow Tint renders realistic tint shades and coverage that blend with your natural brow hair. Actual results still depend on your brow type and your brow artist — we recommend downloading your preview and sharing it with your professional brow tint specialist."
+            "question": "Can I analyze my brows for free without signing up?",
+            "answer": "Yes. You can upload a photo and use the brow mapping and shape analysis tools without an account. Generating a new try-on image requires sign-in and credits; the tool shows the credit cost before you generate."
           },
           {
-            "question": "How many brow tint styles can I try?",
-            "answer": "There are dozens of curated brow tint styles in the gallery, covering natural tints, bold tints, brow lamination and tint combos, tinted brow gel looks, and lash and brow tint packages. You can also describe custom shades with your own prompt."
+            "question": "What photo should I upload?",
+            "answer": "Use a clear, front-facing photo with even lighting and both eyebrows visible. Choose a JPG, PNG, or WebP file up to 15 MB."
           },
           {
-            "question": "Do I need to install an app to use Brow Tint?",
-            "answer": "No. Brow Tint runs entirely in your browser — on mobile or desktop. No downloads or plugins required."
+            "question": "How do eyebrow filters work?",
+            "answer": "Choose a brow style, check the brow mapping on your photo, then generate a preview to compare the look on your face."
           },
           {
-            "question": "What photo works best for a brow tint preview?",
-            "answer": "Use a clear, front-facing photo with even lighting. Avoid sunglasses, hats, or heavy filters. A neutral expression with visible brows gives the AI the most accurate brow tinting result."
+            "question": "Can I compare different eyebrow shapes?",
+            "answer": "Yes. Try an eyebrow filter on your photo, compare the before and after, then explore another shape to find a look you like."
           },
           {
-            "question": "Is my photo kept private?",
-            "answer": "Your uploaded photos are processed securely for brow tint generation only. They are not stored permanently or shared with third parties."
-          },
-          {
-            "question": "What is the difference between brow tinting and brow lamination?",
-            "answer": "Brow tinting adds color to your brow hairs for a fuller, more defined look. Brow lamination and tint combines a chemical straightening process with tinting to create brushed-up, feathered brows. You can preview both with Brow Tint."
-          },
-          {
-            "question": "Can Brow Tint help me find the right brow code shade?",
-            "answer": "Yes. Brow Tint uses AI to analyze your skin tone, hair color, and features to recommend the best brow tint shade match — similar to a brow code tint formula. Try multiple shades side by side to find your perfect professional brow tint color."
+            "question": "Will a preview match my final look exactly?",
+            "answer": "A preview is a visual reference. Photo quality, your natural brows, and styling technique can affect the final result."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Ready to Find Your Perfect Brow Tint?",
-        "description": "Upload your photo and preview every brow tint style in the gallery — completely free, no install required.",
+        "title": "Find Your Brow Shape",
+        "description": "See your brows through the lens of AI.",
         "buttons": [
           {
-            "title": "Try Brow Tint Now",
-            "url": "/ai-brow-tint-generator",
+            "title": "Upload a photo",
+            "url": "/#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
@@ -236,11 +166,6 @@
         "className": "bg-muted"
       }
     },
-    "show_sections": [
-      "showcases",
-      "usage",
-      "faq",
-      "cta"
-    ]
+    "show_sections": ["showcases", "usage", "faq", "cta"]
   }
 }

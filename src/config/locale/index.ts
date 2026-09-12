@@ -1,6 +1,5 @@
-import { envConfigs } from '..';
-
-export const localeNames: any = {
+// Restored public languages; English keeps the unprefixed canonical URL.
+export const localeNames: Record<string, string> = {
   en: 'English',
   zh: '中文',
   ko: '한국어',
@@ -10,13 +9,9 @@ export const localeNames: any = {
   it: 'Italiano',
   pt: 'Português',
 };
-
 export const locales = ['en', 'zh', 'ko', 'ja', 'de', 'es', 'it', 'pt'];
-
-export const defaultLocale = envConfigs.locale;
-
+export const defaultLocale = 'en';
 export const localePrefix = 'as-needed';
-
 export const localeDetection = false;
 
 export const localeMessagesRootPath = '@/config/locale/messages';

@@ -125,6 +125,7 @@ export function buildBrowStylePrompt({
   styledPrompt,
   userPrompt = '',
   subjectImageCount,
+  browMapping = false,
 }: {
   name: string;
   shade: string;
@@ -133,10 +134,18 @@ export function buildBrowStylePrompt({
   styledPrompt: string;
   userPrompt?: string;
   subjectImageCount: number;
+  browMapping?: boolean;
 }): string {
   const parts: string[] = [];
 
-  if (subjectImageCount >= 1) {
+  if (browMapping) {
+    parts.push(
+      "Image 1 is the user's original portrait and is the sole identity authority.",
+      'Image 2 is the confirmed brow mapping guide and is the placement and contour authority for both eyebrows; it is an annotation guide, not a user portrait.',
+      'Image 3 is the selected brow style sample and is the appearance authority for shade, fill density, stroke texture, intensity, and gradient; it is a style reference, not a user portrait.',
+      "Apply Image 3's brow appearance within the confirmed placement and contours from Image 2. Do not reproduce the white guide marks in the result."
+    );
+  } else if (subjectImageCount >= 1) {
     if (subjectImageCount === 1) {
       parts.push("Image 1 is the user's portrait photo.");
     } else {
@@ -150,8 +159,20 @@ export function buildBrowStylePrompt({
     `Selected brow style: ${name}.`,
     `Primary style authority: shade ${shade}, shape ${shape}, intensity ${intensity}.`,
     'Tint the eyebrows in-place using brow shape, arch, tail, fill density, individual-stroke versus solid texture, tint color, intensity, and root-to-tip gradient as the only style dimensions.',
-    "Preserve the person's face, identity, skin tone, expression, pose, makeup, clothing, background, and lighting.",
-    "Only the eyebrow region should change. Keep brow position and the user's natural brow shape unless the selected shape clearly calls for a different brow shape.",
+    "Preserve the person's face, identity, skin tone, expression, pose, makeup, clothing, background, and lighting."
+  );
+
+  if (browMapping) {
+    parts.push(
+      'Only the eyebrow region should change. Keep the eyebrow placement and closed contours defined by the confirmed mapping guide.'
+    );
+  } else {
+    parts.push(
+      "Only the eyebrow region should change. Keep brow position and the user's natural brow shape unless the selected shape clearly calls for a different brow shape."
+    );
+  }
+
+  parts.push(
     `Supporting style description from the selected brow style: ${styledPrompt}`
   );
 

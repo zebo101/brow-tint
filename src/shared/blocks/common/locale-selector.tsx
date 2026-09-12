@@ -1,9 +1,9 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Check, Globe, Languages } from 'lucide-react';
 import { useLocale } from 'next-intl';
-import { useSearchParams } from 'next/navigation';
 
 import { usePathname, useRouter } from '@/core/i18n/navigation';
 import { localeNames } from '@/config/locale';
@@ -35,7 +35,14 @@ export function LocaleSelector({
     if (value !== currentLocale) {
       cacheSet('locale', value);
       const query = searchParams?.toString?.() ?? '';
-      const href = query ? `${pathname}?${query}` : pathname;
+      // An article may only exist in some languages. Offer the target language's
+      // article list rather than navigating to a missing translation.
+      const isArticle = /^\/blog\/[^/]+$/.test(pathname);
+      const translated = document.querySelector(
+        `link[rel="alternate"][hreflang="${value}"]`
+      );
+      const destination = isArticle && !translated ? '/blog' : pathname;
+      const href = `${destination}${query ? `?${query}` : ''}${window.location.hash}`;
       router.push(href, {
         locale: value,
       });
@@ -51,6 +58,7 @@ export function LocaleSelector({
           type === 'icon' ? 'h-auto w-auto p-0' : 'hover:bg-primary/10'
         }
         disabled
+        aria-label={`Language: ${localeNames[currentLocale]}`}
       >
         {type === 'icon' ? (
           <Languages size={18} />
@@ -68,11 +76,21 @@ export function LocaleSelector({
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         {type === 'icon' ? (
-          <Button variant="ghost" size="icon" className="h-auto w-auto p-0">
+          <Button
+            variant="ghost"
+            size="icon"
+            aria-label={`Language: ${localeNames[currentLocale]}`}
+            className="size-9"
+          >
             <Languages size={18} />
           </Button>
         ) : (
-          <Button variant="outline" size="sm" className="hover:bg-primary/10">
+          <Button
+            variant="outline"
+            size="sm"
+            aria-label={`Language: ${localeNames[currentLocale]}`}
+            className="hover:bg-primary/10"
+          >
             <Globe size={16} />
             {localeNames[currentLocale]}
           </Button>

@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "title": "Brow Tint Pricing — AI Brow Tint Credits & Plans",
-    "description": "Buy credits to generate AI brow tint previews. Compare plans, find the best brow tint package, and start trying tints in seconds.",
-    "keywords": "brow tint pricing, ai brow tint credits, brow tint plans, brow tint generator price, eyebrow tint cost, ai brow tint subscription"
+    "title": "Browlens Pricing — Eyebrow Filter Credits & Plans",
+    "description": "Compare credit plans for generating eyebrow filter previews with Browlens.",
+    "keywords": "brow shape pricing, ai brow shape credits, brow shape plans, brow shape generator price, eyebrow shape cost, ai brow shape subscription"
   },
   "page": {
     "title": "Pricing",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Brow Tint Pricing",
+        "sr_only_title": "Browlens Pricing",
         "title": "Choose your perfect plan",
-        "description": "Each AI brow tint generation uses 1 credit.",
+        "description": "Brow shape analysis is free. The tool shows the credit cost before you generate an eyebrow filter preview.",
         "groups": [
           {
             "name": "monthly",
@@ -30,7 +30,7 @@
         "items": [
           {
             "title": "Free",
-            "description": "Try Brow Tint at no cost.",
+            "description": "Try Browlens at no cost.",
             "features_title": "Includes",
             "features": ["Core generation features", "Standard queue"],
             "interval": "month",
@@ -112,7 +112,7 @@
           },
           {
             "title": "Free",
-            "description": "Try Brow Tint at no cost.",
+            "description": "Try Browlens at no cost.",
             "features_title": "Includes",
             "features": ["Core generation features", "Standard queue"],
             "interval": "year",

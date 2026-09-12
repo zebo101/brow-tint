@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "title": "Brow Tint Prezzi — Crediti e Piani Tinta Sopracciglia IA",
-    "description": "Acquista crediti per generare anteprime tinta sopracciglia con IA. Confronta i piani, trova il pacchetto migliore e inizia in pochi secondi.",
-    "keywords": "prezzi tinta sopracciglia, crediti tinta sopracciglia IA, piani tinta sopracciglia, costo generatore tinta sopracciglia, abbonamento tinta IA"
+    "title": "Prezzi Browlens — Crediti e piani per filtri sopracciglia",
+    "description": "Confronta i piani di crediti per generare anteprime con Browlens.",
+    "keywords": "app sopracciglia, analisi sopracciglia, IA sopracciglia, filtro sopracciglia, editor sopracciglia, Browlens"
   },
   "page": {
     "title": "Prezzi",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Brow Tint Prezzi",
+        "sr_only_title": "Prezzi Browlens — Crediti e piani per filtri sopracciglia",
         "title": "Scegli il tuo piano perfetto",
-        "description": "Ogni generazione di brow tint con IA utilizza 1 credito.",
+        "description": "L’analisi è gratuita. La generazione richiede accesso e crediti; il costo viene mostrato prima di generare.",
         "groups": [
           {
             "name": "monthly",
@@ -30,7 +30,7 @@
         "items": [
           {
             "title": "Gratis",
-            "description": "Prova Brow Tint gratuitamente.",
+            "description": "Prova Browlens gratuitamente.",
             "features_title": "Include",
             "features": ["Funzionalità di base", "Coda standard"],
             "interval": "month",
@@ -112,7 +112,7 @@
           },
           {
             "title": "Gratis",
-            "description": "Prova Brow Tint gratuitamente.",
+            "description": "Prova Browlens gratuitamente.",
             "features_title": "Include",
             "features": ["Funzionalità di base", "Coda standard"],
             "interval": "year",

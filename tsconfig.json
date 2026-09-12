@@ -2,7 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,8 +25,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/.source": ["./.source/index.ts"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@/.source": [
+        "./.source/index.ts"
+      ]
     }
   },
   "include": [
@@ -31,7 +39,24 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "next.config.mjs",
-    ".next/dev/types/**/*.ts"
+    ".next/dev/types/**/*.ts",
+    ".next-brow/types/**/*.ts",
+    ".next-brow/dev/types/**/*.ts",
+    ".next-brow-build/types/**/*.ts",
+    ".next-brow-build/dev/types/**/*.ts",
+    ".next-brow-showcase/types/**/*.ts",
+    ".next-brow-showcase/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules", ".next", "out", "dist"]
+  "exclude": [
+    "node_modules",
+    ".next",
+    ".next-brow",
+    ".next-brow-build",
+    ".next-brow-showcase",
+    ".claude",
+    ".superpowers",
+    "out",
+    "dist",
+    ".next-browlens-*/**"
+  ]
 }

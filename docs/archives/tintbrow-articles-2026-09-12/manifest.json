@@ -1,0 +1,380 @@
+{
+  "snapshot_date": "2026-09-12",
+  "git_commit": "0c9439a778786ed8b47298283463b1ae7f8f4a98",
+  "article_files": [
+    {
+      "path": "content/posts/best-brow-tint-2026.de.mdx",
+      "title": "Bester Augenbrauen-Tint 2026 — Ehrlicher Vergleichsleitfaden",
+      "locale": "de",
+      "bytes": 9901,
+      "sha256": "db05335d3e89f6f369d9a96ea544db2d49c67eded30607454cf9e5c4c4af99b1",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/best-brow-tint-2026.es.mdx",
+      "title": "Mejor Tinte de Cejas 2026 — Guía Comparativa Honesta",
+      "locale": "es",
+      "bytes": 9794,
+      "sha256": "82fda7b721137dba29b40d6977b6ac6ab62a68b5c6ba5652caf6366299cf4287",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/best-brow-tint-2026.it.mdx",
+      "title": "Migliore Tinta Sopracciglia 2026 — Guida Comparativa Onesta",
+      "locale": "it",
+      "bytes": 10061,
+      "sha256": "84b192c99f57dd8050922506f2bd34057922040477d8c8b2b04e2464a7592d6d",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/best-brow-tint-2026.ja.mdx",
+      "title": "2026年ベスト眉ティント — 正直な比較ガイド",
+      "locale": "ja",
+      "bytes": 11261,
+      "sha256": "da0e825ed6ada3c1ebf0901c8522b8df6def38b5b41e2e68bdcdcbd46d4f9d6e",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/best-brow-tint-2026.ko.mdx",
+      "title": "2026 베스트 눈썹 틴트 — 솔직한 비교 가이드",
+      "locale": "ko",
+      "bytes": 10231,
+      "sha256": "320506e48a6e5c709fb806dad50a3a36ebb11014a31e6a010cbff99382eeeab4",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/best-brow-tint-2026.mdx",
+      "title": "Best Brow Tint 2026 — Honest Comparison Guide",
+      "locale": "en",
+      "bytes": 8400,
+      "sha256": "4c2dd903a22c4f4847accbb878709528131926a6a117911d9656c291bc8d7b61",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/best-brow-tint-2026.pt.mdx",
+      "title": "Melhor Brow Tint 2026 — Guia Comparativo Honesto",
+      "locale": "pt",
+      "bytes": 9779,
+      "sha256": "dd629bd2499d08d92d23a60625c718040cf99093b26638cd787e5cd51f8c6c5f",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/best-brow-tint-2026.zh.mdx",
+      "title": "2026 最佳 Brow Tint —— 一份诚实的对比指南",
+      "locale": "zh",
+      "bytes": 7929,
+      "sha256": "2a5da69b3e4eaf6c78b42c49fa69a07471d96d1ec89ee8dd7933376d95f5ae78",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-code-tint-review.de.mdx",
+      "title": "Brow Code Tint Test — Den Hype wert?",
+      "locale": "de",
+      "bytes": 10018,
+      "sha256": "9b0e08a0fb50dd1dfe2bb523594cf3a61a29f52c71d8d975a0d252e903df637c",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-code-tint-review.es.mdx",
+      "title": "Reseña de Brow Code Tint — ¿Vale la pena el hype?",
+      "locale": "es",
+      "bytes": 10277,
+      "sha256": "0e2b6f9d60a0ac4257c809f25f8a27bf667d91b8de3bbf8ebf70484e10276cfb",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-code-tint-review.it.mdx",
+      "title": "Recensione Brow Code Tint — Vale l'hype?",
+      "locale": "it",
+      "bytes": 10412,
+      "sha256": "3918fd2fcbece236dcc23827b908d970a0697b17dcf5de9c102e84507acd6a3c",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-code-tint-review.ja.mdx",
+      "title": "Brow Code ティントレビュー — 評判通りの実力か？",
+      "locale": "ja",
+      "bytes": 12031,
+      "sha256": "c637a471ff4aa6e9caf7c53e6763203aecdb4928c919e50b57cfe0f86884c943",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-code-tint-review.ko.mdx",
+      "title": "Brow Code 틴트 리뷰 — 명성에 걸맞을까?",
+      "locale": "ko",
+      "bytes": 10679,
+      "sha256": "9ccc472ced24185a966dcb06bf9b6f727dd44497fa14a068879682db66124341",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-code-tint-review.mdx",
+      "title": "Brow Code Tint Review — Worth the Hype?",
+      "locale": "en",
+      "bytes": 9028,
+      "sha256": "86f303b8bbf45159a0478a67c79d36365beeab43dd46ba73a745bba07c5bcfe1",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-code-tint-review.pt.mdx",
+      "title": "Análise do Brow Code Tint — Vale o hype?",
+      "locale": "pt",
+      "bytes": 10278,
+      "sha256": "a816db0e5c113e4afe6fa6d73fe3ff30398ae8a51f871db4c8505e5ee50a2acf",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-code-tint-review.zh.mdx",
+      "title": "Brow Code 染眉系统测评 — 值不值得追？",
+      "locale": "zh",
+      "bytes": 8219,
+      "sha256": "c06c80eb3a5a77776aaf4c8febc46f7910c7d089f51fea696c029a8b2e9f8bab",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-lamination-and-tint-guide.de.mdx",
+      "title": "Brow Lamination und Tint — Der komplette Leitfaden",
+      "locale": "de",
+      "bytes": 10975,
+      "sha256": "c3c977150048bdc5498f4614fe47c0b625a6ec2627fc1a09923afb4996604a8a",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-lamination-and-tint-guide.es.mdx",
+      "title": "Laminado y Tinte de Cejas — Guía Completa",
+      "locale": "es",
+      "bytes": 10943,
+      "sha256": "7720bdb217ec47cee8ab68758fab3a161021c090dbab26e564e18d5cbe417735",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-lamination-and-tint-guide.it.mdx",
+      "title": "Laminazione e Tinta delle Sopracciglia — Guida Completa",
+      "locale": "it",
+      "bytes": 11598,
+      "sha256": "71b8b9b7baa4c82e62e2d58d9075edf5fdc73cdb943ff2b5f46eda18e8224d8e",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-lamination-and-tint-guide.ja.mdx",
+      "title": "眉ラミネーション & ティント — 完全ガイド",
+      "locale": "ja",
+      "bytes": 12805,
+      "sha256": "93fc745657b5d579c045f77a4ac61d02eb9018a87901576df80e25139b05d6d9",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-lamination-and-tint-guide.ko.mdx",
+      "title": "눈썹 라미네이션 & 틴트 — 완벽 가이드",
+      "locale": "ko",
+      "bytes": 11841,
+      "sha256": "5ff8f62a0135196bc0b2fb663e85740042a965e9599c41a2e0c8d2c492e7f0f2",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-lamination-and-tint-guide.mdx",
+      "title": "Brow Lamination and Tint — Complete Guide",
+      "locale": "en",
+      "bytes": 9671,
+      "sha256": "68b3add08efb9d51a1cf245bb4990a08064c70e4e5feac70759f3c0601c3d9b4",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-lamination-and-tint-guide.pt.mdx",
+      "title": "Laminação e Tintura de Sobrancelhas — Guia Completo",
+      "locale": "pt",
+      "bytes": 11262,
+      "sha256": "959f6097dde33820699a51f7a8288d2d04a3b005b2bfcb37d65bb395c35663ba",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-lamination-and-tint-guide.zh.mdx",
+      "title": "眉部塑形与染色 — 完整指南",
+      "locale": "zh",
+      "bytes": 8827,
+      "sha256": "5fe007d593a3fd900180131295200a7f9826363b6f25369d36a4743f53559ea9",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-tint-before-and-after.de.mdx",
+      "title": "Augenbrauentönung Vorher Nachher — Was Sie wirklich erwarten können",
+      "locale": "de",
+      "bytes": 8526,
+      "sha256": "a7fe8c1267393456fd827737909eaa88293ab17cce793b8fb260c5584afec6a1",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-tint-before-and-after.es.mdx",
+      "title": "Tinte de Cejas Antes y Después — Lo que Realmente Puedes Esperar",
+      "locale": "es",
+      "bytes": 8284,
+      "sha256": "2c474d0e5a3c75a7febc5277c3b6604fca7c2c67a7dae312172286c17ace82bb",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-tint-before-and-after.it.mdx",
+      "title": "Tinta Sopracciglia Prima e Dopo — Cosa Aspettarsi Davvero",
+      "locale": "it",
+      "bytes": 8447,
+      "sha256": "121efed7cf879ec19f9fa63052e8efaca3bcb0756e02512eadba5ce320b104f6",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-tint-before-and-after.ja.mdx",
+      "title": "眉ティントのビフォーアフター — 実際に期待できること",
+      "locale": "ja",
+      "bytes": 9668,
+      "sha256": "15d9ad520cbc035394b03a87f6967d92dc1d4902ed03c3e9ef56b2d7eda0f29c",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-tint-before-and-after.ko.mdx",
+      "title": "눈썹 틴트 비포 앤 애프터 — 실제로 기대해야 할 것",
+      "locale": "ko",
+      "bytes": 8962,
+      "sha256": "99c8503f01253974e6b3ccf570ad681c205aa7e1d93bdd35bc4eaa5400d58128",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-tint-before-and-after.mdx",
+      "title": "Brow Tint Before and After — What to Actually Expect",
+      "locale": "en",
+      "bytes": 7184,
+      "sha256": "1c22797f175cacddeff40d55304b30b56a666db4bd79ad257583cf2b6fffa682",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-tint-before-and-after.pt.mdx",
+      "title": "Brow Tint Antes e Depois — O Que Realmente Esperar",
+      "locale": "pt",
+      "bytes": 8419,
+      "sha256": "476417abb118ba09136232c6e58dd03ed73c8d8855f784dec9192861df14d49f",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/brow-tint-before-and-after.zh.mdx",
+      "title": "眉部染色前后对比 — 你真正应该期待的效果",
+      "locale": "zh",
+      "bytes": 6901,
+      "sha256": "2e63ccc5046a4900edefe7dcb2807fcda1e2ad8629f0473631cf7553935b7d4d",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/professional-brow-tint-vs-diy.de.mdx",
+      "title": "Professionelle Augenbrauentönung vs. DIY zu Hause — Ehrlicher Vergleich",
+      "locale": "de",
+      "bytes": 10163,
+      "sha256": "a66f3ff1eea070af91b915349d6fe03cca283ac30c76841ffbad7b1265df0f45",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/professional-brow-tint-vs-diy.es.mdx",
+      "title": "Tinte de cejas profesional vs DIY en casa — Comparación honesta",
+      "locale": "es",
+      "bytes": 10059,
+      "sha256": "c71dc4d81df0e944519e5e762066c73775c42a5bfa91f9ac5d93acb7db9235d6",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/professional-brow-tint-vs-diy.it.mdx",
+      "title": "Tinta sopracciglia professionale vs DIY a casa — Confronto onesto",
+      "locale": "it",
+      "bytes": 10414,
+      "sha256": "1a2a2b2ffe70abf6c1d0bd8f71b73d87c45eeaad0aac901bfebda6369edc5e75",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/professional-brow-tint-vs-diy.ja.mdx",
+      "title": "プロの眉ティント vs 自宅DIY — 正直な比較",
+      "locale": "ja",
+      "bytes": 11157,
+      "sha256": "5e307e6e2ff0a98aada13921f376d2b8b577498752a5dba0ea88546e51bb7a07",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/professional-brow-tint-vs-diy.ko.mdx",
+      "title": "전문 눈썹 틴트 vs 셀프 DIY — 솔직한 비교",
+      "locale": "ko",
+      "bytes": 10395,
+      "sha256": "5a0680970a6190ff5312048d1b9603acc3429e54a0949313d3864400b409b498",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/professional-brow-tint-vs-diy.mdx",
+      "title": "Professional Brow Tint vs DIY at Home — Honest Comparison",
+      "locale": "en",
+      "bytes": 8814,
+      "sha256": "102221b941250a7ebb434302e22a9794961fe84fe2411f3e53d524c514238e25",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/professional-brow-tint-vs-diy.pt.mdx",
+      "title": "Brow Tint profissional vs DIY em casa — Comparação honesta",
+      "locale": "pt",
+      "bytes": 10199,
+      "sha256": "74c7a636281c182b0d5b1536060456c7468c86023bd8eb320c4103a50ee8aa13",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/professional-brow-tint-vs-diy.zh.mdx",
+      "title": "专业眉部染色 vs 在家 DIY — 真实对比",
+      "locale": "zh",
+      "bytes": 8237,
+      "sha256": "9050d5c9d9f332e32f1f7992cbdea230e299c971f6c2f5ab30d8ce7500c15c2e",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/what-is-xxx.mdx",
+      "title": "What is Brow Tint?",
+      "locale": "en",
+      "bytes": 1845,
+      "sha256": "f5f2bed8a92401efefe17d0f881afb5b62d2a7acc4d201d862f7d86e5a91cbd6",
+      "matches_git_head_ignoring_line_endings": true
+    },
+    {
+      "path": "content/posts/what-is-xxx.zh.mdx",
+      "title": "什么是 Brow Tint？",
+      "locale": "zh",
+      "bytes": 1642,
+      "sha256": "f8d18094f593628ae7c272bc5d12bd924d8242cb8ae52c5c770e7341eaec90c3",
+      "matches_git_head_ignoring_line_endings": true
+    }
+  ],
+  "cover_and_author_assets": [
+    {
+      "path": "public/imgs/cases/2.jpg",
+      "source": "git HEAD",
+      "sha256": "25ed6fe32874cce9dea43bfb6c9bf6c99dd8dd822ca1f3f9827c5fa787dcc30a"
+    },
+    {
+      "path": "public/imgs/cases/3.jpg",
+      "source": "git HEAD",
+      "sha256": "8f36709264b539aa5a5d16eb30e84a7e7985dc441a6d77372b0c323dcfa8664f"
+    },
+    {
+      "path": "public/imgs/cases/4.jpg",
+      "source": "git HEAD",
+      "sha256": "680bfe9c416de41f5dfb8c15d9ece23f55fe713a192777ba66bfbff9056f7112"
+    },
+    {
+      "path": "public/imgs/cases/5.jpg",
+      "source": "git HEAD",
+      "sha256": "ff419150cabb1fc8b00cea1789486e47272b61887c27a4555b0ecf3d9f50dcce"
+    },
+    {
+      "path": "public/imgs/cases/6.jpg",
+      "source": "git HEAD",
+      "sha256": "2468e170ec1ec3823ac6a759161eebe1dca8e1aeff483e05a68668f753a00eb1"
+    },
+    {
+      "path": "public/imgs/features/landingpage.jpg",
+      "source": "git HEAD",
+      "sha256": "785d1090b395cac4bf288ed579351d931ec8f295c071325344790a9f58ecc583"
+    },
+    {
+      "path": "public/logo.png",
+      "source": "git HEAD",
+      "sha256": "362805eb62253d5e615a23fcabc621adfa433df41f42d38721cc067259ed8c1f"
+    }
+  ],
+  "archive_sha256": "2460b5669ec697aee05596023f0a2432f83153dd92b39ca8038fffbf5e2ef4de"
+}

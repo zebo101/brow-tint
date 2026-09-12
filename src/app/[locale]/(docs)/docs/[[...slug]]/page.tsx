@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { getMDXComponents } from '@/mdx-components';
 import { createRelativeLink } from 'fumadocs-ui/mdx';
 import {
@@ -12,7 +12,8 @@ import { i18n, source } from '@/core/docs/source';
 import { buildAlternates } from '@/shared/lib/seo-metadata';
 
 export const revalidate = 86400;
-export const dynamic = 'force-static';
+// Keep request locale headers available to the shared root layout. Forcing
+// static rendering here makes <html lang> fall back to English for every locale.
 export const dynamicParams = true;
 
 export default async function DocsContentPage(props: {
@@ -21,7 +22,11 @@ export default async function DocsContentPage(props: {
   const params = await props.params;
   const page = source.getPage(params.slug, params.locale);
 
-  if (!page) notFound();
+  if (!page) {
+    const fallback = source.getPage(params.slug, i18n.defaultLanguage);
+    if (fallback) redirect(fallback.url);
+    notFound();
+  }
 
   const MDXContent = page.data.body;
 
@@ -56,7 +61,11 @@ export async function generateMetadata(props: {
 }) {
   const params = await props.params;
   const page = source.getPage(params.slug, params.locale);
-  if (!page) notFound();
+  if (!page) {
+    const fallback = source.getPage(params.slug, i18n.defaultLanguage);
+    if (fallback) redirect(fallback.url);
+    notFound();
+  }
 
   const canonicalPath = page.url;
   const availableLocales = i18n.languages.filter((locale) =>

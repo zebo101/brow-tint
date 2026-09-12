@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "Brow Tint",
+      "title": "Browlens",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - AI Brow Tinting Generator",
+        "alt": "Browlens",
         "width": 100,
         "height": 100
       },
@@ -38,14 +38,14 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "AI 眉色生成器",
-              "description": "用 AI 预览眉部染色与染眉膏效果",
-              "url": "/ai-brow-tint-generator",
+              "title": "眉型滤镜",
+              "description": "用 AI 在你的照片上预览不同眉型",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "眉色顾问",
-              "description": "获取 AI 专业眉部染色建议",
+              "title": "眉型顾问",
+              "description": "与 AI 聊聊眉型与日常造型",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -78,11 +78,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "Brow Tint",
-      "description": "Brow Tint 是一款由 GPT Image 2 驱动的免费在线 AI 眉色生成器。在前往沙龙之前，预览专业眉部染色、染眉膏、眉部塑形与染色以及睫毛和眉部染色等多种效果。",
+      "title": "Browlens",
+      "description": "Browlens — 透过 AI，重新认识你的眉毛。",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
+        "alt": "Browlens",
         "width": 1024,
         "height": 1024
       },
@@ -94,14 +94,14 @@
           "title": "AI 工具",
           "children": [
             {
-              "title": "AI 眉色生成器",
-              "description": "用 AI 生成眉部染色效果",
-              "url": "/ai-brow-tint-generator",
+              "title": "眉型滤镜",
+              "description": "用 AI 在你的照片上预览不同眉型",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "眉色顾问",
-              "description": "与 AI 眉部染色专家对话",
+              "title": "眉型顾问",
+              "description": "与 AI 聊聊眉型与日常造型",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }

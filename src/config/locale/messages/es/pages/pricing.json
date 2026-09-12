@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "title": "Brow Tint Precios — Créditos y Planes de Tinte de Cejas IA",
-    "description": "Compra créditos para generar vistas previas de tinte de cejas con IA. Compara planes, encuentra el mejor paquete y empieza en segundos.",
-    "keywords": "precios tinte de cejas, créditos tinte de cejas IA, planes tinte de cejas, costo generador tinte cejas, suscripción tinte de cejas IA"
+    "title": "Precios de Browlens — Créditos y planes de filtros de cejas",
+    "description": "Compara planes de créditos para generar vistas previas con Browlens.",
+    "keywords": "app de cejas, análisis de cejas, IA para cejas, filtro de cejas, editor de cejas, Browlens"
   },
   "page": {
     "title": "Precios",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Brow Tint Precios",
+        "sr_only_title": "Precios de Browlens — Créditos y planes de filtros de cejas",
         "title": "Elige el plan perfecto",
-        "description": "Cada generación de Brow Tint con IA usa 1 crédito.",
+        "description": "El análisis es gratis. Generar imágenes requiere iniciar sesión y créditos; el coste se muestra antes de generar.",
         "groups": [
           {
             "name": "monthly",
@@ -30,7 +30,7 @@
         "items": [
           {
             "title": "Gratis",
-            "description": "Prueba Brow Tint sin costo.",
+            "description": "Prueba Browlens sin costo.",
             "features_title": "Incluye",
             "features": ["Funciones esenciales", "Cola estándar"],
             "interval": "month",
@@ -112,7 +112,7 @@
           },
           {
             "title": "Gratis",
-            "description": "Prueba Brow Tint sin costo.",
+            "description": "Prueba Browlens sin costo.",
             "features_title": "Incluye",
             "features": ["Funciones esenciales", "Cola estándar"],
             "interval": "year",

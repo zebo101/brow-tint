@@ -1,373 +1,171 @@
 {
   "metadata": {
-    "title": "Brow Tint — Pré-visualize a Cor das Suas Sobrancelhas com IA Antes do Salão",
-    "description": "Brow Tint é o estúdio de cor de sobrancelhas com IA usado por mais de 50.000 entusiastas de beleza e designers de sobrancelhas. Pré-visualize tintura de sobrancelhas, laminação de sobrancelhas e gel de sobrancelhas colorido na sua foto antes de agendar uma visita ao salão.",
-    "keywords": "tintura de sobrancelhas, brow tint, ia tintura sobrancelhas, cor de sobrancelhas com ia, estúdio de brow tint, brow tint virtual, pré-visualização de tintura de sobrancelhas, tintura de sobrancelhas antes do salão"
+    "title": "App de sobrancelhas — Análise com IA e filtros · Browlens",
+    "description": "Browlens reúne análise com IA, edição com seis pontos, relatórios de equilíbrio e filtros de sobrancelhas na sua foto.",
+    "keywords": "app de sobrancelhas, análise de sobrancelhas, IA para sobrancelhas, filtro de sobrancelhas, editor de sobrancelhas, Browlens"
   },
   "page": {
-    "show_sections": [
-      "hero",
-      "cases",
-      "why_brow_tint",
-      "community",
-      "learn",
-      "stats",
-      "testimonials",
-      "faq",
-      "cta",
-      "subscribe"
-    ],
+    "show_sections": ["cases", "precision", "workflow", "faq", "cta"],
     "sections": {
-      "hero": {
-        "block": "hero-editorial",
-        "id": "hero",
-        "title": "Pré-visualize sua Tintura de Sobrancelhas Antes de Agendar o Salão",
-        "highlight_text": "Brow Tint",
-        "description": "Brow Tint é o estúdio de cor de sobrancelhas com IA usado por mais de 50.000 entusiastas de beleza e profissionais de salão. Envie uma foto, veja suas novas sobrancelhas em qualquer tom, laminação ou estilo de gel colorido — depois agende sua visita ao salão com confiança, ou dispense-a totalmente.",
-        "buttons": [
-          {
-            "title": "Experimente Brow Tint Grátis",
-            "icon": "Zap",
-            "url": "/#ai-brow-tint-studio",
-            "target": "_self",
-            "variant": "default"
-          },
-          {
-            "title": "Ver Exemplos",
-            "icon": "BookOpenText",
-            "url": "/showcases",
-            "target": "_blank",
-            "variant": "outline"
-          }
-        ],
-        "image": {
-          "src": "/imgs/bg/hero-2.webp",
-          "alt": "Estúdio Brow Tint com IA - Pré-visualize a Cor das Suas Sobrancelhas",
-          "width": 800,
-          "height": 600
-        },
-        "background_image": {
-          "src": "/imgs/bg/hero-1.jpg",
-          "alt": "Fundo do Estúdio Brow Tint"
-        },
-        "powered_by": "Powered by GPT Image 2",
-        "editorial_labels": [
-          "Pré-visualizar",
-          "Decida",
-          "Agende"
-        ]
-      },
       "cases": {
         "block": "cases-carousel",
         "id": "cases",
-        "title": "Sobrancelhas Reais. Resultados Reais.",
-        "description": "Looks que nossa comunidade gerou com o estúdio de brow tint com IA e levou ao salão — exatamente como pré-visualizado.",
+        "title": "Explore seu próximo formato de sobrancelhas",
+        "description": "Descubra formatos e filtros antes de experimentar na sua foto.",
         "items": [
           {
-            "name": "Henna Suave",
+            "name": "Arco suave",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Pré-visualização de tintura de sobrancelhas Henna Suave"
+              "alt": "Experimente o filtro de sobrancelhas Arco suave na sua foto."
             }
           },
           {
-            "name": "Espresso Intenso",
+            "name": "Arco definido",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Pré-visualização de tintura de sobrancelhas Espresso Intenso"
+              "alt": "Experimente o filtro de sobrancelhas Arco definido na sua foto."
             }
           },
           {
-            "name": "Laminação de Sobrancelhas",
+            "name": "Sobrancelhas elevadas",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Pré-visualização de Laminação de Sobrancelhas"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas elevadas na sua foto."
             }
           },
           {
-            "name": "Cinza Frio",
+            "name": "Sobrancelhas retas",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Pré-visualização de tintura de sobrancelhas Cinza Frio"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas retas na sua foto."
             }
           },
           {
-            "name": "Auburn Quente",
+            "name": "Sobrancelhas arredondadas",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Pré-visualização de tintura de sobrancelhas Auburn Quente"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas arredondadas na sua foto."
             }
           },
           {
-            "name": "Gel Colorido",
+            "name": "Sobrancelhas efeito pluma",
             "image": {
               "src": "/imgs/cases/6.jpg",
-              "alt": "Pré-visualização de gel de sobrancelhas colorido"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas efeito pluma na sua foto."
             }
           },
           {
-            "name": "Tintura de Cílios e Sobrancelhas",
+            "name": "Sobrancelhas equilibradas",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Pré-visualização combinada de tintura de cílios e sobrancelhas"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas equilibradas na sua foto."
             }
           }
         ]
       },
-      "why_brow_tint": {
-        "block": "features-list",
-        "id": "why-brow-tint",
-        "title": "Por que o Brow Tint Existe",
-        "label": "Nossa História",
-        "description": "A tintura de sobrancelhas está em alta — mas as visitas ao salão custam dinheiro, os resultados são semipermanentes e você só vê o look depois que já está pronto. Criamos o Brow Tint para que você possa experimentar a cor das suas sobrancelhas do mesmo jeito que experimenta a cor do cabelo na cabeça: livremente, em privado, sem compromisso.",
-        "image": {
-          "src": "/imgs/features/landingpage.jpg",
-          "alt": "Brow Tint - O Estúdio de Cor de Sobrancelhas com IA",
-          "width": 1200,
-          "height": 800
-        },
+      "precision": {
+        "block": "features",
+        "id": "eyebrow-editor",
+        "title": "Um app de sobrancelhas que você pode ajustar",
+        "description": "Comece pela detecção automática dos pontos do rosto e das sobrancelhas e personalize o formato. Browlens reúne editor, relatório de equilíbrio e prévias com IA.",
         "items": [
           {
-            "title": "Para os Curiosos",
-            "description": "Experimente um tom de tintura de sobrancelhas que você nunca ousaria pedir no salão. Veja-o no seu próprio rosto. Depois decida."
+            "title": "Seis pontos. Você escolhe.",
+            "description": "Use as guias do início, arco e cauda e arraste os seis pontos para corrigir a posição na foto."
           },
           {
-            "title": "Para os Cautelosos",
-            "description": "Leve uma pré-visualização baixada para o seu designer de sobrancelhas em vez de descrever o que quer com palavras."
+            "title": "Ajuste os detalhes importantes",
+            "description": "Ajuste espessura, comprimento, ângulo, distância, altura geral e altura do arco. Edite as duas sobrancelhas juntas ou cada lado separadamente."
           },
           {
-            "title": "Para Profissionais",
-            "description": "Designers de sobrancelhas e donos de salão usam o Brow Tint na consulta para mostrar aos clientes exatamente com o que estão se comprometendo."
+            "title": "Entenda o equilíbrio das sobrancelhas",
+            "description": "Veja as diferenças de altura do arco e comprimento entre os dois lados. Compare medidas sem uma nota de beleza."
           },
           {
-            "title": "Para os Indecisos",
-            "description": "Compare 5, 10, 20 tons lado a lado. Encontre sua combinação sem gastar um centavo."
+            "title": "Veja o novo formato no seu rosto",
+            "description": "Escolha um estilo e gere uma prévia com IA usando as guias confirmadas. Compare com o original e baixe o resultado."
           }
         ],
-        "className": "bg-muted"
+        "className": "overflow-hidden"
       },
-      "community": {
-        "block": "features-accordion",
-        "id": "community",
-        "title": "O Movimento Beauty-Curious",
-        "label": "Quem Usa o Brow Tint",
-        "description": "O Brow Tint está na intersecção entre experimentação de beleza e tomada de decisão assistida por IA. Veja quem aparece.",
+      "workflow": {
+        "block": "features-step",
+        "id": "how-it-works",
+        "title": "Da sua foto ao seu formato de sobrancelhas",
+        "description": "Use o app completo para entender e ajustar os detalhes.",
         "items": [
           {
-            "title": "Blogueiras de beleza e criadores de conteúdo",
-            "description": "Pré-visualize um look de tintura de sobrancelhas antes de mostrar ao seu público ou gravar um tutorial. Gere a referência visual e crie conteúdo com confiança — sabendo exatamente como será o resultado final.",
-            "icon": "RiCameraLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "Criadores de conteúdo de beleza pré-visualizando tintura de sobrancelhas"
-            }
+            "title": "Envie e detecte",
+            "description": "Adicione um retrato nítido. A IA detecta os pontos do rosto e das sobrancelhas e mostra guias do início, arco e cauda."
           },
           {
-            "title": "Iniciantes em tintura de sobrancelhas",
-            "description": "Veja o resultado antes de marcar sua primeira consulta no salão. Sem mais arrependimento de compromisso — pré-visualize em privado e entre no salão sabendo exatamente o que quer.",
-            "icon": "RiHeartLine",
-            "image": {
-              "src": "/imgs/features/image2.png",
-              "alt": "Pré-visualização de tintura de sobrancelhas para iniciantes"
-            }
+            "title": "Ajuste suas sobrancelhas",
+            "description": "Arraste os seis pontos, ajuste o formato e confira o relatório de diferenças entre os lados."
           },
           {
-            "title": "Designers de sobrancelhas e donos de salão",
-            "description": "Mostre aos clientes exatamente com o que estão se comprometendo antes de iniciar o tratamento. Consultas mais rápidas, menos disputas, clientes mais satisfeitos — e uma vantagem competitiva sobre salões que ainda descrevem looks com palavras.",
-            "icon": "RiScissorsCutLine",
-            "image": {
-              "src": "/imgs/features/image3.png",
-              "alt": "Consulta de designer de sobrancelhas com Brow Tint"
-            }
+            "title": "Escolha um estilo",
+            "description": "Confirme as guias e escolha um estilo para ver no seu rosto."
           },
           {
-            "title": "Planejadores de casamentos e eventos",
-            "description": "Coordene looks de sobrancelhas para ensaios editoriais, noivas, madrinhas e maquiagem de eventos. Referências visuais com as quais toda a equipe criativa pode se alinhar, semanas antes do dia.",
-            "icon": "RiCalendarEventLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "Planejamento de sobrancelhas para evento de casamento"
-            }
-          }
-        ]
-      },
-      "learn": {
-        "block": "cluster-posts",
-        "id": "learn",
-        "label": "Guias",
-        "title": "Aprenda Sobre Tintura de Sobrancelhas",
-        "description": "Leia nossas pesquisas sobre tintura de sobrancelhas antes de agendar. Comparações honestas, galerias de antes e depois e guias de tratamento — escritos para os beauty-curious.",
-        "items": [
-          {
-            "title": "Tintura de Sobrancelhas Antes e Depois: Galeria de Resultados Reais",
-            "description": "Veja resultados reais de antes e depois de tintura de sobrancelhas em diferentes tons de pele, formatos de sobrancelhas e tons de tintura. Aprenda o que esperar de forma realista do tratamento profissional.",
-            "url": "/blog/brow-tint-before-and-after"
-          },
-          {
-            "title": "Melhor Brow Tint 2026: Guia de Comparação Honesto",
-            "description": "Comparamos os principais produtos de tintura de sobrancelhas e gel de sobrancelhas colorido de 2026. Prós, contras, ingredientes, durabilidade — e uma pré-visualização de cada um em rostos reais.",
-            "url": "/blog/best-brow-tint-2026"
-          },
-          {
-            "title": "Laminação e Tintura de Sobrancelhas: Guia Completo",
-            "description": "O que é laminação e tintura de sobrancelhas? Quanto tempo dura? Como é diferente da tintura de cílios e sobrancelhas? Tudo o que você precisa antes da sua primeira consulta.",
-            "url": "/blog/brow-lamination-and-tint-guide"
-          },
-          {
-            "title": "Tintura Profissional de Sobrancelhas vs DIY em Casa",
-            "description": "A tintura de sobrancelhas em casa é segura? O que realmente inclui uma tintura profissional de sobrancelhas? Prós e contras honestos, com detalhamento de custos.",
-            "url": "/blog/professional-brow-tint-vs-diy"
-          },
-          {
-            "title": "Avaliação do Brow Code Tint: Vale a Pena?",
-            "description": "Uma avaliação independente do sistema Brow Code tint — popular entre designers de sobrancelhas profissionais. Variedade de cores, durabilidade, aplicação e pré-visualizações com IA de cada tom.",
-            "url": "/blog/brow-code-tint-review"
-          }
-        ]
-      },
-      "stats": {
-        "id": "stats",
-        "title": "Entusiastas de Beleza Confiam no Brow Tint",
-        "description": "De iniciantes em tintura de sobrancelhas a designers de sobrancelhas profissionais preparando looks para clientes.",
-        "items": [
-          {
-            "title": "50.000+",
-            "description": "Looks de Brow Tint Gerados"
-          },
-          {
-            "title": "10.000+",
-            "description": "Entusiastas de Beleza no Mundo Todo"
-          },
-          {
-            "title": "200+",
-            "description": "Estilos de Brow Tint Disponíveis"
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "O que Dizem Sobre o Brow Tint",
-        "description": "Reações reais de entusiastas de beleza, designers de sobrancelhas profissionais e donos de salão que usam o Brow Tint para planejar, consultar e decidir.",
-        "items": [
-          {
-            "name": "Sarah Jenkins",
-            "role": "Blogueira de Beleza",
-            "quote": "O Brow Tint mudou a forma como planejo conteúdo de beleza. Antes, eu descrevia um look para minha designer de sobrancelhas e torcia pelo melhor. Agora mostro a ela a pré-visualização com IA e nós duas sabemos exatamente onde queremos chegar.",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "Sarah Jenkins - Blogueira de Beleza"
-            }
-          },
-          {
-            "name": "Mike Ross",
-            "role": "Fotógrafo",
-            "quote": "Para ensaios editoriais, envio pré-visualizações do Brow Tint para a modelo e o stylist antes mesmo de a planilha de chamada estar finalizada. Economiza horas e elimina toda uma categoria de surpresas no set.",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "Mike Ross - Fotógrafo"
-            }
-          },
-          {
-            "name": "Emily Chen",
-            "role": "Estudante",
-            "quote": "Eu nunca teria entrado em um salão e pedido sobrancelhas espresso por impulso. O Brow Tint me deixou me ver com elas primeiro — e agora são meu look favorito.",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "Emily Chen - Estudante"
-            }
-          },
-          {
-            "name": "David Smith",
-            "role": "Maquiador",
-            "quote": "Toda cliente recebe uma consulta de sobrancelhas. O Brow Tint é mais rápido que testar amostras e mais honesto que descrever — as clientes se veem, não um mood board.",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "David Smith - Maquiador"
-            }
-          },
-          {
-            "name": "Jessica Lee",
-            "role": "Proprietária de Salão",
-            "quote": "Usamos o Brow Tint na mesa de consulta para cada cliente de tintura de sobrancelhas. Elas se comprometem mais rápido, saem mais felizes e indicam suas amigas. Se paga na primeira semana.",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "Jessica Lee - Proprietária de Salão"
-            }
-          },
-          {
-            "name": "Tom Brown",
-            "role": "Usuário Iniciante",
-            "quote": "Sou homem. Não tinha ideia do que era tintura de sobrancelhas. O Brow Tint me deixou brincar com a ideia em privado antes de pedir conselhos a alguém. Agora tinto minhas sobrancelhas a cada seis semanas.",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "Tom Brown - Usuário Iniciante"
-            }
+            "title": "Gere e compare",
+            "description": "Gere uma imagem com IA, compare o estilo e baixe seu resultado favorito."
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Perguntas Frequentes Sobre Tintura de Sobrancelhas",
-        "description": "Perguntas comuns sobre tintura de sobrancelhas, laminação de sobrancelhas e como o Brow Tint ajuda você a pré-visualizar antes de agendar.",
-        "tip": "Não encontrou o que procura? Entre em contato com nossa <a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
+        "title": "Perguntas sobre o app de sobrancelhas",
+        "description": "Como analisar suas sobrancelhas e experimentar novos filtros com Browlens.",
         "items": [
           {
-            "question": "O que é tintura de sobrancelhas?",
-            "answer": "A tintura de sobrancelhas é um tratamento de coloração semipermanente que adiciona cor, profundidade e definição de formato às suas sobrancelhas. A tintura profissional de sobrancelhas padrão geralmente dura de 4 a 6 semanas antes de desbotar naturalmente. O gel de sobrancelhas colorido e a laminação de sobrancelhas são tratamentos relacionados — explore as diferenças no nosso guia de laminação e tintura de sobrancelhas."
+            "question": "O que é Browlens?",
+            "answer": "Browlens é um app para explorar formatos de sobrancelhas com IA. Envie uma foto, confira as guias e escolha um estilo para visualizar."
           },
           {
-            "question": "Por que pré-visualizar a tintura de sobrancelhas antes de ir ao salão?",
-            "answer": "A tintura de sobrancelhas é semipermanente — uma vez aplicada, você convive com o resultado por semanas. Pré-visualizar o look na sua própria foto antes da consulta permite que você se comprometa apenas com um tom que já viu no seu rosto, e dá ao seu designer de sobrancelhas uma referência visual clara em vez de uma descrição verbal."
+            "question": "Posso analisar minhas sobrancelhas grátis sem me cadastrar?",
+            "answer": "Sim. Você pode enviar uma foto e usar as guias e a análise sem conta. Gerar uma nova imagem exige login e créditos; o custo aparece antes de gerar."
           },
           {
-            "question": "Para quem é o Brow Tint?",
-            "answer": "Para qualquer pessoa que esteja considerando tintura de sobrancelhas, laminação de sobrancelhas, gel de sobrancelhas colorido ou tintura de cílios e sobrancelhas — desde iniciantes até designers de sobrancelhas experientes preparando consultas com clientes. Blogueiras de beleza, fotógrafos e planejadores de eventos também usam o Brow Tint para coordenar looks antes de ensaios e eventos."
+            "question": "Que foto devo enviar?",
+            "answer": "Use uma foto frontal nítida, com luz uniforme e as duas sobrancelhas visíveis. São aceitos JPG, PNG ou WebP de até 15 MB."
           },
           {
-            "question": "O Brow Tint é um salão, um produto ou uma ferramenta?",
-            "answer": "Brow Tint é um estúdio gratuito de cor de sobrancelhas com IA online. Não vendemos tinturas nem administramos salões — ajudamos você a decidir qual tintura escolher e onde fazê-la. Leve sua pré-visualização baixada a qualquer designer de sobrancelhas ou salão."
+            "question": "Como funcionam os filtros de sobrancelhas?",
+            "answer": "Escolha um estilo, confira as guias na foto e gere uma prévia para comparar o resultado no seu rosto."
           },
           {
-            "question": "Quão precisas são as pré-visualizações do Brow Tint?",
-            "answer": "Nosso modelo GPT Image 2 produz pré-visualizações fotorrealistas que designers de sobrancelhas no mundo todo usam como referência de consulta. A precisão depende da qualidade da foto — fotos frontais com boa iluminação e sobrancelhas visíveis produzem os melhores resultados. Veja exemplos reais na nossa galeria de antes e depois de tintura de sobrancelhas."
+            "question": "Posso comparar formatos diferentes?",
+            "answer": "Sim. Experimente um filtro na foto, compare antes e depois e teste outros formatos até encontrar um de que goste."
           },
           {
-            "question": "Minha foto é privada?",
-            "answer": "Sim. As fotos são processadas com segurança e excluídas automaticamente após a geração. Nunca compartilhamos, vendemos ou treinamos modelos de IA com fotos enviadas."
+            "question": "A prévia será idêntica ao resultado real?",
+            "answer": "A prévia é uma referência visual. A qualidade da foto, suas sobrancelhas naturais e a técnica podem afetar o resultado."
           },
           {
-            "question": "O Brow Tint é realmente gratuito?",
-            "answer": "Sim. Avaliação gratuita sem necessidade de cadastro. Os planos premium desbloqueiam mais estilos, downloads em maior resolução, gerações ilimitadas e processamento de IA prioritário."
+            "question": "Posso editar minhas sobrancelhas manualmente?",
+            "answer": "Sim. O editor da página inicial permite arrastar seis pontos e ajustar espessura, comprimento, ângulo, distância, altura e altura do arco. A guia confirmada é usada na prévia com IA."
           },
           {
-            "question": "O que acontece depois que eu gero uma pré-visualização?",
-            "answer": "Baixe sua pré-visualização e leve a qualquer designer de sobrancelhas ou salão — ou navegue pelos nossos looks em destaque para se inspirar. A imagem fala mais alto que qualquer descrição e ajuda seu designer a entregar exatamente o resultado que você quer."
+            "question": "O que mede o relatório de análise?",
+            "answer": "Compara a altura do arco e o comprimento dos dois lados na foto. As medidas usam pixels; o ângulo da câmera e a qualidade podem afetar os valores."
           }
-        ]
+        ],
+        "tip": "Para experimentar mais rápido, abra o <a href=\"/pt/filter\" class=\"underline\">Filtro de sobrancelhas</a>. Guias básicos: <a href=\"/pt/blog/eyebrow-mapping-guide\" class=\"underline\">Guia de marcação das sobrancelhas</a>, <a href=\"/pt/blog/eyebrow-shapes-guide\" class=\"underline\">Guia de formatos de sobrancelhas</a>, <a href=\"/pt/blog/how-to-shape-eyebrows\" class=\"underline\">Guia de modelagem para iniciantes</a>."
       },
       "cta": {
         "id": "cta",
-        "title": "Encontre a Cor das Suas Sobrancelhas Hoje",
-        "description": "Pré-visualização gratuita. Sem cadastro necessário. Veja suas novas sobrancelhas em segundos — depois decida se vai agendar o salão.",
+        "title": "Encontre seu formato de sobrancelhas",
+        "description": "Veja suas sobrancelhas pelas lentes da IA.",
         "buttons": [
           {
-            "title": "Experimente Brow Tint Grátis",
-            "url": "/#ai-brow-tint-studio",
+            "title": "Enviar uma foto",
+            "url": "/#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
         ],
         "className": "bg-muted"
-      },
-      "subscribe": {
-        "id": "subscribe",
-        "title": "Fique por Dentro das Novidades do Brow Tint",
-        "description": "Receba as últimas tendências de tintura de sobrancelhas, novos recursos de IA e pesquisas de beleza diretamente na sua caixa de entrada.",
-        "submit": {
-          "title": "Inscrever-se",
-          "placeholder": "Digite seu e-mail"
-        }
       }
     }
   }

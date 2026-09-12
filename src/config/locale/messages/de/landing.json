@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "Brow Tint",
+      "title": "Browlens",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - AI Brow Tinting Generator",
+        "alt": "Browlens",
         "width": 100,
         "height": 100
       },
@@ -38,14 +38,14 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "KI Brow Tint Generator",
-              "description": "Augenbrauentönung und getönte Brauengel-Looks mit KI in der Vorschau",
-              "url": "/ai-brow-tint-generator",
+              "title": "Augenbrauenfilter",
+              "description": "Teste mit AI verschiedene Brauenformen auf deinem Foto",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Brow Tint Berater",
-              "description": "Expertenberatung zur Augenbrauentönung mit KI erhalten",
+              "title": "Brauenform-Berater",
+              "description": "Sprich mit AI über Brauenformen und Styling",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -78,11 +78,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "Brow Tint",
-      "description": "Brow Tint ist ein kostenloser Online-KI-Augenbrauentönung-Generator, der von GPT Image 2 betrieben wird. Sehen Sie professionelle Augenbrauentönung, getöntes Brauengel, Augenbrauen-Laminierung und Tönung sowie Wimpern- und Brauentönung in der Vorschau – alles vor Ihrem Salonbesuch.",
+      "title": "Browlens",
+      "description": "Browlens — Entdecke deine Brauen durch die Linse der AI.",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
+        "alt": "Browlens",
         "width": 1024,
         "height": 1024
       },
@@ -94,14 +94,14 @@
           "title": "KI-Tools",
           "children": [
             {
-              "title": "KI Brow Tint Generator",
-              "description": "Augenbrauentönung-Looks mit KI generieren",
-              "url": "/ai-brow-tint-generator",
+              "title": "Augenbrauenfilter",
+              "description": "Teste mit AI verschiedene Brauenformen auf deinem Foto",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Brow Tint Berater",
-              "description": "Mit KI-Augenbrauentönung-Experten chatten",
+              "title": "Brauenform-Berater",
+              "description": "Sprich mit AI über Brauenformen und Styling",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }

@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Chat Brow Tint",
+        "title": "Browlens",
         "logo": {
           "src": "/logo.png",
-          "alt": "Chat Brow Tint"
+          "alt": "Browlens"
         },
         "url": "/chat"
       },
@@ -61,7 +61,7 @@
         ]
       },
       "show_theme": true,
-      "show_locale": false
+      "show_locale": true
     },
     "variant": "sidebar"
   },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "Come posso aiutarti?",
-    "input_placeholder": "Chiedimi di tinta sopracciglia, abbinamento colori o consigli per la cura delle sopracciglia..."
+    "input_placeholder": "Parla con l’IA di forme e stile delle sopracciglia"
   },
   "history": {
     "title": "Cronologia chat",
@@ -95,20 +95,3 @@
     "untitled": "Conversazione senza titolo"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

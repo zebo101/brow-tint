@@ -15,6 +15,9 @@
 
 # next.js
 /.next/
+/.next-brow/
+/.next-brow-build/
+/.next-brow-showcase/
 /out/
 
 # production
@@ -66,3 +69,11 @@ src/config/db/migrations*
 
 # One-off diagnostic / dedup caches
 scripts/.hairstyle-etag-cache.json
+
+# Reproducible local face-model runtime (restored by predev/prebuild)
+/public/models/brow/*/vision_bundle.js
+/public/models/brow/*/wasm/
+/public/models/brow/*/face_landmarker.task
+
+# Isolated Browlens verification output
+/.next-browlens-*/

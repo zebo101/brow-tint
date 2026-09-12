@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "title": "Brow Tint 가격 — AI 브로우 틴트 크레딧 & 플랜",
-    "description": "크레딧을 구매해 AI 브로우 틴트 미리보기를 생성하세요. 플랜을 비교하고 최적의 브로우 틴트 패키지를 찾아 몇 초 만에 시작하세요.",
-    "keywords": "브로우 틴트 가격, AI 브로우 틴트 크레딧, 브로우 틴트 플랜, 브로우 틴트 생성기 가격, 눈썹 틴트 비용"
+    "title": "Browlens 요금 — 눈썹 필터 크레딧 및 플랜",
+    "description": "Browlens 눈썹 필터 이미지 생성을 위한 크레딧 플랜을 비교하세요.",
+    "keywords": "눈썹 앱, 눈썹 모양 분석, AI 눈썹 분석, 눈썹 필터, 눈썹 편집, Browlens"
   },
   "page": {
     "title": "가격",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Brow Tint 가격",
+        "sr_only_title": "Browlens 요금 — 눈썹 필터 크레딧 및 플랜",
         "title": "완벽한 플랜을 선택하세요",
-        "description": "AI 브로우 틴트 생성마다 크레딧 1개를 사용합니다.",
+        "description": "눈썹 모양 분석은 무료입니다. 필터 이미지 생성에는 로그인과 크레딧이 필요하며 생성 전에 비용이 표시됩니다.",
         "groups": [
           {
             "name": "monthly",
@@ -30,7 +30,7 @@
         "items": [
           {
             "title": "무료",
-            "description": "Brow Tint를 무료로 체험하세요.",
+            "description": "Browlens를 무료로 체험하세요.",
             "features_title": "포함 사항",
             "features": ["핵심 생성 기능", "표준 큐"],
             "interval": "month",
@@ -112,7 +112,7 @@
           },
           {
             "title": "무료",
-            "description": "Brow Tint를 무료로 체험하세요.",
+            "description": "Browlens를 무료로 체험하세요.",
             "features_title": "포함 사항",
             "features": ["핵심 생성 기능", "표준 큐"],
             "interval": "year",

@@ -1,0 +1,104 @@
+.brow-catalog {
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  min-width: 0;
+  height: 100%;
+}
+.brow-catalog > :not(.brow-catalog__results) {
+  flex-shrink: 0;
+}
+.brow-catalog .brow-catalog__search .search-field__group {
+  height: 38px;
+  min-height: 38px;
+  border: 1px solid var(--separator);
+  border-radius: 10px;
+  background: var(--surface-secondary);
+  box-shadow: none;
+}
+.brow-catalog .brow-catalog__search .search-field__group:focus-within {
+  border-color: var(--accent);
+  outline: 2px solid color-mix(in oklch, var(--accent) 20%, transparent);
+  outline-offset: 1px;
+}
+.brow-catalog .brow-catalog__search .search-field__input {
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+  font-size: 13px;
+}
+.brow-catalog .search-field__search-icon {
+  margin-left: 12px;
+  width: 16px;
+  height: 16px;
+  color: var(--muted);
+}
+.brow-catalog .search-field__clear-button {
+  flex-shrink: 0;
+  margin-right: 6px;
+  color: var(--muted);
+  background: transparent;
+}
+.brow-catalog__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.brow-catalog .brow-catalog__filters .button {
+  color: var(--foreground);
+}
+.brow-catalog__results {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  padding: 4px;
+}
+.brow-catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 8px;
+}
+.brow-catalog .brow-catalog__tile {
+  width: 100%;
+  max-width: 100%;
+}
+.brow-catalog__tile > span {
+  min-width: 0;
+  max-width: 100%;
+}
+@container (min-width: 400px) {
+  .brow-catalog__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@container (min-width: 680px) {
+  .brow-catalog__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px 12px;
+  }
+}
+.mb-tool-catalog .brow-catalog {
+  height: auto;
+}
+.mb-tool-catalog .brow-catalog__results {
+  flex: none;
+  overflow: visible;
+}
+.mb-tool-catalog .brow-catalog .search-field__group {
+  height: 32px;
+  min-height: 32px;
+}
+.mb-tool-catalog .brow-catalog .search-field__input {
+  font-size: 12px;
+}

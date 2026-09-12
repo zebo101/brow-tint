@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import { Link } from '@/core/i18n/navigation';
 import { BorderBeam } from '@/shared/components/magicui/border-beam';
-import { Button } from '@/shared/components/ui/button';
 import { PolaroidFrame } from '@/shared/components/ui/polaroid-frame';
 import { RainbowButton } from '@/shared/components/ui/rainbow-button';
 import { cn } from '@/shared/lib/utils';
@@ -21,28 +20,23 @@ export function HeroEditorial({
     <section
       id={section.id}
       className={cn(
-        'relative min-h-[100svh] overflow-hidden',
+        'relative isolate min-h-[100svh] overflow-hidden bg-[#EFB3B6] text-[#42282D]',
         section.className,
         className
       )}
     >
-      {/* Background image (hero-1) — full screen base layer.
-          Codex review round 2 (2026-05-02): on mobile the foreground
-          model image (z-[2]) covers the background completely, so the
-          bg image is invisible bandwidth + decode + paint cost. Worse,
-          the two competing full-screen `fill` images created a
-          ~2.4 s render-delay window on Slow-4G traces.
-          Wrapping in `hidden md:block` (display:none on mobile) means
-          Next/Image with default lazy loading skips the fetch entirely
-          on small viewports. Desktop layout unchanged.
-          Note: kept `loading="lazy"` instead of eager — the foreground
-          image is the LCP candidate; the bg can lazy-resolve. */}
+      {/* Keep the palette visible before the portrait loads, too. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_16%_40%,#F4C5C4_0%,#EFB3B6_48%,#EFAAB0_100%)]"
+      />
       {section.background_image?.src && (
-        <div className="absolute inset-0 hidden md:block">
+        // Show only the empty left third; the source also contains a portrait.
+        <div className="absolute inset-y-0 left-0 hidden w-[300%] md:block">
           <Image
             src={section.background_image.src}
             alt={section.background_image.alt || ''}
-            className="h-full w-full object-cover object-[70%_15%] md:object-center"
+            className="h-full w-full object-cover object-center"
             fill
             loading="lazy"
             sizes="100vw"
@@ -51,21 +45,16 @@ export function HeroEditorial({
       )}
 
       {/* Giant brand text
-          Mobile: z-[3] ABOVE model so it's always visible, with subtle shadow
+          Mobile: z-[3] ABOVE model so it's always visible
           Desktop: z-[1] BEHIND model for editorial layering effect */}
       <h1
-        className="font-display pointer-events-none absolute inset-x-0 top-[5%] z-[3] text-center leading-[0.85] font-black text-white drop-shadow-[0_2px_16px_rgba(0,0,0,0.1)] select-none md:top-[10%] md:z-[1] md:drop-shadow-none"
+        className="font-display pointer-events-none absolute inset-x-0 top-[12%] z-[3] text-center leading-[0.85] font-black text-[#713C49] select-none md:top-[10%] md:z-[1]"
         style={{ fontSize: 'clamp(56px, 16vw, 300px)' }}
       >
         {displayText}
       </h1>
 
-      {/* Mobile-only hero: single hand-cropped portrait (1000w WebP, ~28 KB).
-          Replaces the desktop bg+fg layered composition on small viewports
-          so there's no full-screen fill-image contention. This is the
-          real LCP candidate on mobile, hence priority + fetchPriority=high
-          + eager. Composited image already has the pink background baked
-          in, so it stands alone without the hero-1 layer. */}
+      {/* Mobile uses a single cropped portrait with a baked-in pink backdrop. */}
       <Image
         src="/imgs/bg/hero-mobile.webp"
         alt={section.image?.alt || section.title || ''}
@@ -74,6 +63,10 @@ export function HeroEditorial({
         priority
         fetchPriority="high"
         sizes="100vw"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 z-[2] h-[28%] bg-linear-to-b from-[#EFB3B6] via-[#EFB3B6]/80 to-transparent md:hidden"
       />
 
       {/* Foreground image (hero-2) — desktop only; the model overlaps the
@@ -101,8 +94,11 @@ export function HeroEditorial({
           clicks pass through to layers behind. */}
       <div className="pointer-events-none absolute top-[58%] left-12 z-[3] hidden h-[360px] w-[340px] -translate-y-1/2 lg:block xl:left-20">
         {/* Back card — "before", angled left */}
-        <div className="pointer-events-auto absolute top-6 left-0 w-[210px] -rotate-[8deg] transition-transform duration-300 hover:-rotate-[6deg] hover:scale-[1.03]">
-          <PolaroidFrame caption="before">
+        <div className="pointer-events-auto absolute top-6 left-0 w-[210px] -rotate-[8deg] transition-transform duration-300 hover:scale-[1.03] hover:-rotate-[6deg]">
+          <PolaroidFrame
+            caption="before"
+            className="bg-[#FFF4E9] text-[#713C49] ring-[#713C49]/10"
+          >
             <div className="bg-default-50 relative aspect-[3/4] w-full overflow-hidden">
               <Image
                 src="/imgs/cases/1.jpg"
@@ -115,8 +111,11 @@ export function HeroEditorial({
           </PolaroidFrame>
         </div>
         {/* Front card — "after", angled right, sits above the back */}
-        <div className="pointer-events-auto absolute top-0 right-0 z-10 w-[210px] rotate-[10deg] transition-transform duration-300 hover:rotate-[12deg] hover:scale-[1.03]">
-          <PolaroidFrame caption="after">
+        <div className="pointer-events-auto absolute top-0 right-0 z-10 w-[210px] rotate-[10deg] transition-transform duration-300 hover:scale-[1.03] hover:rotate-[12deg]">
+          <PolaroidFrame
+            caption="after"
+            className="bg-[#FFF4E9] text-[#713C49] ring-[#713C49]/10"
+          >
             <div className="bg-default-50 relative aspect-[3/4] w-full overflow-hidden">
               <Image
                 src="/imgs/cases/2.jpg"
@@ -130,11 +129,11 @@ export function HeroEditorial({
         </div>
       </div>
 
-      {/* ── Mobile bottom: glass card ── */}
+      {/* Mobile copy sits on a tinted surface for consistent contrast. */}
       <div className="absolute inset-x-0 bottom-0 z-[4] p-5 md:hidden">
         <div className="mx-auto max-w-sm">
           <div className="relative overflow-hidden rounded-2xl">
-            <div className="font-display bg-white/[0.08] px-5 py-4 text-sm leading-relaxed text-white/90 shadow-[0_8px_32px_rgba(0,0,0,0.12)] ring-1 ring-white/[0.15] backdrop-blur-xl">
+            <div className="bg-[#F1D3CB]/95 px-5 py-4 text-sm leading-relaxed text-[#42282D] shadow-[0_8px_32px_rgba(66,40,45,0.16)] ring-1 ring-[#713C49]/15 backdrop-blur-xl">
               {section.description && (
                 <span
                   dangerouslySetInnerHTML={{ __html: section.description }}
@@ -144,7 +143,7 @@ export function HeroEditorial({
                 <Link
                   href={section.buttons[0].url ?? ''}
                   target={section.buttons[0].target ?? '_self'}
-                  className="inline-flex items-center gap-1 rounded-full bg-white px-4 py-1 text-sm font-semibold text-black transition-colors hover:bg-white/90"
+                  className="mt-3 flex min-h-11 w-fit items-center gap-2 rounded-full bg-[#713C49] px-5 py-2 text-sm font-semibold text-[#FFF4E9] transition-colors hover:bg-[#572B38] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713C49]"
                 >
                   {section.buttons[0].title} →
                 </Link>
@@ -154,15 +153,15 @@ export function HeroEditorial({
               size={120}
               duration={7}
               borderWidth={1}
-              colorFrom="#ff69b4"
-              colorTo="#ffc0cb"
+              colorFrom="#B87879"
+              colorTo="#E3BCA5"
             />
             <BorderBeam
               size={120}
               duration={7}
               borderWidth={1}
-              colorFrom="#ffc0cb"
-              colorTo="#ff85c2"
+              colorFrom="#E3BCA5"
+              colorTo="#B87879"
               initialOffset={50}
             />
           </div>
@@ -173,15 +172,15 @@ export function HeroEditorial({
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[4] hidden md:block md:px-12 md:pb-12 lg:px-16">
         <div className="flex items-end justify-between">
           {/* Left column: label + description + CTA */}
-          <div className="pointer-events-auto max-w-md">
+          <div className="pointer-events-auto max-w-md md:max-xl:max-w-sm md:max-xl:rounded-2xl md:max-xl:bg-[#F1D3CB]/95 md:max-xl:p-5 md:max-xl:shadow-lg">
             {section.title && (
-              <p className="mb-3 text-[11px] font-medium tracking-[0.25em] text-white/50 uppercase">
+              <p className="mb-3 text-[11px] font-semibold tracking-[0.25em] text-[#713C49] uppercase">
                 {section.title}
               </p>
             )}
             {section.description && (
               <p
-                className="font-display text-[15px] leading-relaxed text-white/80"
+                className="text-[15px] leading-relaxed text-[#42282D]"
                 dangerouslySetInnerHTML={{ __html: section.description }}
               />
             )}
@@ -193,7 +192,7 @@ export function HeroEditorial({
                       <RainbowButton
                         asChild
                         key={idx}
-                        className="!bg-white !text-black hover:!bg-white/90"
+                        className="border-[#713C49]/20 bg-[#713C49] text-[#FFF4E9] hover:bg-[#572B38] focus-visible:ring-[#713C49] dark:bg-[#713C49] dark:text-[#FFF4E9] dark:hover:bg-[#572B38]"
                       >
                         <Link
                           href={button.url ?? ''}
@@ -211,10 +210,10 @@ export function HeroEditorial({
                       href={button.url ?? ''}
                       target={button.target ?? '_self'}
                       key={idx}
-                      className="group flex items-center gap-2 text-sm text-white/70 transition-colors hover:text-white"
+                      className="group flex items-center gap-2 rounded-md text-sm font-medium text-[#572B38] transition-colors hover:text-[#42282D] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713C49]"
                     >
                       {button.title}
-                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-white/10 transition-colors group-hover:bg-white/20">
+                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[#713C49]/10 transition-colors group-hover:bg-[#713C49]/20">
                         ↗
                       </span>
                     </Link>
@@ -224,7 +223,7 @@ export function HeroEditorial({
             )}
           </div>
 
-          {/* Right column: decorative editorial elements */}
+          {/* Editorial attribution sits directly on the photograph. */}
           <div className="pointer-events-auto text-right">
             {section.powered_by && (
               <p className="text-[11px] font-medium tracking-[0.25em] text-white/40 uppercase">

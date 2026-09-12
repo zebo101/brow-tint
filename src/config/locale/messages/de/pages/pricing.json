@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "title": "Brow Tint Preise — KI Brow-Tint Credits & Pläne",
-    "description": "Kaufe Credits für KI Brow-Tint Vorschauen. Pläne vergleichen, das beste Brow-Tint Paket finden und in Sekunden ausprobieren.",
-    "keywords": "Brow Tint Preise, KI Brow-Tint Credits, Brow-Tint Pläne, Augenbrauen Tönung Preis, Brow-Tint Generator Kosten, KI Augenbrauen-Tint Abo"
+    "title": "Browlens Preise – Credits und Tarife für Brauenfilter",
+    "description": "Vergleiche Credit-Tarife für Augenbrauenfilter-Vorschauen mit Browlens.",
+    "keywords": "Augenbrauen-App, Augenbrauenanalyse, AI-Brauenanalyse, Augenbrauenfilter, Brauen-Editor, Browlens"
   },
   "page": {
     "title": "Preise",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Brow Tint Preise",
+        "sr_only_title": "Browlens Preise – Credits und Tarife für Brauenfilter",
         "title": "Wählen Sie Ihren perfekten Plan",
-        "description": "Jede KI-Brow-Tint-Generierung verbraucht 1 Credit.",
+        "description": "Die Brauenanalyse ist kostenlos. Filterbilder erfordern Anmeldung und Credits; die Kosten werden vorher angezeigt.",
         "groups": [
           {
             "name": "monthly",
@@ -30,7 +30,7 @@
         "items": [
           {
             "title": "Kostenlos",
-            "description": "Brow Tint kostenlos testen.",
+            "description": "Browlens kostenlos testen.",
             "features_title": "Beinhaltet",
             "features": [
               "Kern-Generierungsfunktionen",
@@ -115,7 +115,7 @@
           },
           {
             "title": "Kostenlos",
-            "description": "Brow Tint kostenlos testen.",
+            "description": "Browlens kostenlos testen.",
             "features_title": "Beinhaltet",
             "features": [
               "Kern-Generierungsfunktionen",

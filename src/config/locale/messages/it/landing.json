@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "Brow Tint",
+      "title": "Browlens",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - AI Brow Tinting Generator",
+        "alt": "Browlens",
         "width": 100,
         "height": 100
       },
@@ -38,14 +38,14 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "Generatore AI Brow Tint",
-              "description": "Anteprima look con tinta per sopracciglia e gel colorato con l'AI",
-              "url": "/ai-brow-tint-generator",
+              "title": "Filtro sopracciglia",
+              "description": "Prova forme diverse con l’IA sulla tua foto",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Consulente Brow Tint",
-              "description": "Ricevi consigli esperti di tinta sopracciglia dall'AI",
+              "title": "Consulente per la forma delle sopracciglia",
+              "description": "Parla con l’IA di forme e stile delle sopracciglia",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -78,11 +78,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "Brow Tint",
-      "description": "Brow Tint è un generatore AI gratuito di tinta per sopracciglia basato su GPT Image 2. Visualizza in anteprima look con tinta professionale per sopracciglia, gel colorato per sopracciglia, laminazione e tinta sopracciglia, e tinta ciglia e sopracciglia — prima ancora di andare dal parrucchiere.",
+      "title": "Browlens",
+      "description": "Browlens — Guarda le tue sopracciglia attraverso la lente dell’IA.",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
+        "alt": "Browlens",
         "width": 1024,
         "height": 1024
       },
@@ -94,14 +94,14 @@
           "title": "Strumenti AI",
           "children": [
             {
-              "title": "Generatore AI Brow Tint",
-              "description": "Genera look con tinta sopracciglia tramite AI",
-              "url": "/ai-brow-tint-generator",
+              "title": "Filtro sopracciglia",
+              "description": "Prova forme diverse con l’IA sulla tua foto",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Consulente Brow Tint",
-              "description": "Chatta con l'esperto AI di tinta sopracciglia",
+              "title": "Consulente per la forma delle sopracciglia",
+              "description": "Parla con l’IA di forme e stile delle sopracciglia",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }

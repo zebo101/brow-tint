@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Blog - Brow Tint",
-    "description": "Leia as últimas tendências de tintura de sobrancelha, recursos de IA e dicas de tintura de sobrancelha.",
-    "keywords": "blog tinta para sobrancelhas, dicas de tinta sobrancelhas, tutoriais tinta IA, tendências tinta sobrancelhas, guia de tinta sobrancelhas, gel para sobrancelhas"
+    "title": "Guias Browlens — Marcação, formatos e modelagem",
+    "description": "Conheça guias de marcação, formatos de sobrancelhas e modelagem para iniciantes e experimente um estilo na sua foto.",
+    "keywords": "app de sobrancelhas, análise de sobrancelhas, IA para sobrancelhas, filtro de sobrancelhas, editor de sobrancelhas, Browlens"
   },
   "page": {
-    "title": "Blog Brow Tint",
+    "title": "Guias Browlens — Marcação, formatos e modelagem",
     "sections": {
       "blog": {
         "id": "blog",
-        "title": "Blog",
-        "description": "Leia as últimas tendências de tintura de sobrancelha, recursos de IA e dicas de tintura de sobrancelha."
+        "title": "Guias Browlens — Marcação, formatos e modelagem",
+        "description": "Conheça guias de marcação, formatos de sobrancelhas e modelagem para iniciantes e experimente um estilo na sua foto."
       }
     }
   },

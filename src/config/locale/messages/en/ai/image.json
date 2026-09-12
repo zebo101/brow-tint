@@ -1,390 +1,85 @@
 {
   "metadata": {
-    "title": "Free AI Brow Tint Generator — Try Brow Lamination, Tinted Gel & Henna Online",
-    "description": "Free online AI brow tint generator. Upload your photo and instantly preview brow lamination and tint, tinted brow gel, henna brow color, lash and brow tint, and 200+ professional brow tinting styles. No signup required.",
-    "keywords": "free brow tint generator, brow tint generator online, ai brow tint generator, virtual brow tint try on, brow lamination simulator, tinted brow gel preview, lash and brow tint generator, henna brow tint preview, professional brow tint, brow code tint visualizer, brow tint before and after, eyebrow tint generator"
+    "title": "Eyebrow Filter — Try Different Brow Shapes on Your Face | Browlens",
+    "description": "Try the Browlens brow filter and eyebrow simulator on your photo. Choose a shape, preview your look, compare before and after, and download your result.",
+    "keywords": "brow filter, eyebrow filter, eyebrow simulator, eyebrow shapes, Browlens"
   },
   "page": {
-    "title": "Free AI Brow Tint Generator — Online Try-On in Seconds",
-    "description": "Upload your photo and instantly preview brow tinting, brow lamination, tinted brow gel, henna brow color, and lash and brow tint styles. Powered by GPT Image 2. Free to start — no signup.",
-    "show_sections": [
-      "hero",
-      "introduce",
-      "generator",
-      "tools",
-      "usage",
-      "features",
-      "brow_tint_gallery",
-      "benefits",
-      "testimonials",
-      "faq",
-      "cta"
-    ],
+    "show_sections": ["filter_benefits", "faq", "cta"],
     "sections": {
-      "hero": {
-        "id": "hero",
-        "title": "Free AI Brow Tint Generator — Online Try-On in Seconds",
-        "highlight_text": "AI Brow Tint Generator",
-        "description": "Upload your photo and instantly preview brow tinting, brow lamination, tinted brow gel, henna brow color, and lash and brow tint styles. Powered by GPT Image 2. Free trial — no signup required.",
-        "image": {
-          "src": "/imgs/features/landingpage.jpg",
-          "alt": "AI Brow Tint Generator Interface",
-          "width": 1200,
-          "height": 800
-        },
-        "image_invert": {
-          "src": "/imgs/features/landingpage.jpg",
-          "alt": "AI Brow Tint Generator Interface Dark Mode",
-          "width": 1200,
-          "height": 800
-        },
-        "background_image": {
-          "src": "/imgs/bg/hero.png",
-          "alt": "AI Brow Tint Generator Background"
-        }
-      },
-      "introduce": {
-        "block": "features-list",
-        "id": "introduce",
-        "title": "What This AI Brow Tint Generator Does",
-        "label": "How It Works",
-        "description": "The AI Brow Tint Generator is a free virtual try-on tool. Upload one photo, then preview brow tint shades, brow lamination styles, and tinted brow gel colors on your own face — before you spend a cent at the salon. The AI analyzes your brow shape, skin tone, and natural color to deliver photorealistic results in under 15 seconds.",
-        "image": {
-          "src": "/imgs/bg/image-bg4.png",
-          "alt": "AI Brow Tint Generator How It Works"
-        },
-        "items": [
-          {
-            "title": "Upload Once, Try Unlimited",
-            "description": "Upload your photo a single time and try as many brow tint shades, lamination styles, or tinted gel looks as your credits allow. No re-uploading needed."
-          },
-          {
-            "title": "Photorealistic AI Results",
-            "description": "GPT Image 2 blends each brow tint shade with your natural brow shape, skin tone, and lighting for results brow artists worldwide use as consultation references."
-          },
-          {
-            "title": "200+ Curated Styles",
-            "description": "Browse pre-tuned brow tint styles by category — natural, bold, brow lamination, lash and brow tint — or describe your own custom shade in the prompt box."
-          },
-          {
-            "title": "Download in HD",
-            "description": "Export your brow tint before and after image in high resolution. Bring it to your brow artist or salon to communicate exactly what you want."
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "tools": {
+      "filter_benefits": {
         "block": "features",
-        "id": "tools",
-        "title": "One Generator. Every Brow Tinting Style.",
-        "description": "Each style below uses the same AI generator with parameters tuned for that specific look. Browse the gallery below to try any of them on your own photo.",
+        "id": "brow-filter-preview",
+        "title": "Your Brow Filter. Your Face. Your Choice.",
+        "description": "Use this eyebrow simulator for a quick try-on. Browlens detects your brow placement automatically, so you can go straight to choosing a shape.",
         "items": [
           {
-            "title": "Brow Lamination Simulator",
-            "description": "Preview the brushed-up, fluffy laminated brow look — with or without tint. Ideal for first-time lamination clients deciding on shape before committing to the salon treatment."
+            "title": "Automatic brow placement",
+            "description": "Upload a clear photo. Face and eyebrow landmarks are detected in the background; no manual mapping step is required here."
           },
           {
-            "title": "Tinted Brow Gel Try-On",
-            "description": "See how 12+ tinted brow gel shades — from soft taupe to deep espresso — sit on your natural brows. Match the gel before you buy a single tube."
+            "title": "Instant shape outlines",
+            "description": "Compare Natural, Arched, Straight, and Soft Angled outlines on your face. Your selected contour updates as you switch shapes."
           },
           {
-            "title": "Henna Brow Color Match",
-            "description": "Henna brow tint is warmer and longer-lasting than traditional dye. Preview the rust, mahogany, and chestnut shades commonly used by henna brow artists."
+            "title": "AI photo previews",
+            "description": "Generate an image of your new brow look with the existing AI engine. Photo generation takes a moment and requires sign-in and credits."
           },
           {
-            "title": "Lash and Brow Tint Preview",
-            "description": "Preview combined lash + brow tint styles for a complete eye-framing look. See how dark lashes balance your tinted brows in a single image."
-          },
-          {
-            "title": "Brow Code Tint Visualizer",
-            "description": "Browse the Brow Code tint shade range and visualize each formula on your face shape and skin tone. Compare formulas side by side before booking."
-          },
-          {
-            "title": "Professional Brow Tint Preview",
-            "description": "Salon-quality before-and-after generation suitable for sharing with your brow artist. The reference image speaks louder than any verbal description."
-          }
-        ]
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "How to Use the AI Brow Tint Generator",
-        "description": "Get a realistic brow tint preview in four simple steps. No signup required for the free trial.",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "AI Brow Tint Generator Usage Steps"
-        },
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "Upload a Clear Front-Facing Photo",
-            "description": "Use a well-lit photo with your eyebrows clearly visible. Avoid sunglasses, hats, hair covering your brows, or side angles. The AI maps your brow shape from this single image.",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "Upload Photo for Brow Tint Preview"
-            }
-          },
-          {
-            "title": "Choose Your Brow Tint Style",
-            "description": "Pick from 200+ curated styles across natural tints, bold tints, brow lamination, and lash + brow tint combinations — or describe your own shade in the prompt box.",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "Choose Brow Tint Style"
-            }
-          },
-          {
-            "title": "Generate Your Preview",
-            "description": "The AI processes your photo in 8–15 seconds and returns a photorealistic preview of your brows in the chosen tint, lamination, or gel style.",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "Generate Brow Tint Preview"
-            }
-          },
-          {
-            "title": "Download and Share",
-            "description": "Save the high-res preview to your device. Share it with your brow artist before your appointment — or post it on social media for friends' reactions before booking.",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "Download Brow Tint Preview"
-            }
+            "title": "Before, after, and another shape",
+            "description": "See your original on the left and the generated result on the right. Download the result or choose Try Another Shape to keep exploring."
           }
         ],
-        "className": "bg-muted"
-      },
-      "features": {
-        "id": "features",
-        "title": "Generator Features",
-        "description": "Everything the free online brow tint generator does — at a glance.",
-        "items": [
-          {
-            "title": "Salon-Quality Output",
-            "description": "GPT Image 2 produces previews that brow artists worldwide accept as consultation references — not stylized illustrations.",
-            "icon": "RiScissorsCutLine"
-          },
-          {
-            "title": "Tinted Brow Gel Shade Library",
-            "description": "12+ tinted brow gel shades spanning soft taupe to deep espresso. Find your match before buying any product.",
-            "icon": "RiPaletteLine"
-          },
-          {
-            "title": "Combined Treatment Previews",
-            "description": "Preview brow lamination + tint, lash and brow tint, or henna + standard tint combinations in a single generation.",
-            "icon": "RiLayoutGridLine"
-          },
-          {
-            "title": "High-Resolution Downloads",
-            "description": "Free trial: standard resolution. Paid tiers: HD downloads suitable for client consultations and social media.",
-            "icon": "RiHdLine"
-          },
-          {
-            "title": "Side-by-Side Comparison",
-            "description": "Compare your natural brows with each generated tint preview using a built-in before-and-after slider.",
-            "icon": "RiCompareLine"
-          },
-          {
-            "title": "Mobile Friendly",
-            "description": "Runs in any browser — phone, tablet, or desktop. No app to install. No signup to start.",
-            "icon": "RiSmartphoneLine"
-          }
-        ]
-      },
-      "brow_tint_gallery": {
-        "block": "brow-tint-gallery",
-        "id": "brow_tint_gallery",
-        "title": "Browse 200+ Brow Tint Styles by Category",
-        "description": "Click any look to try it on your own photo with the AI brow tint generator.",
-        "limit": 12,
-        "cta_url": "/ai-brow-tint-generator",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Natural Brow Tints",
-            "description": "Subtle brow tinting shades that enhance your natural brows with soft definition. Best for everyday looks and first-time tinters.",
-            "cta_label": "Try natural tints"
-          },
-          {
-            "key": "women",
-            "title": "Bold Brow Tints",
-            "description": "Dramatic and defined brow looks for a statement finish. Deep espresso, rich chocolate, and bold professional brow tint shades.",
-            "cta_label": "Try bold tints"
-          },
-          {
-            "key": "boys",
-            "title": "Brow Lamination Styles",
-            "description": "Brushed-up laminated brow looks combined with tinting. Preview brow lamination and tint for fuller, sculpted brows.",
-            "cta_label": "Try lamination styles"
-          },
-          {
-            "key": "girls",
-            "title": "Lash & Brow Tint",
-            "description": "Combined lash and brow tinting for a complete eye-framing transformation. Preview coordinated lash and brow tint looks in seconds.",
-            "cta_label": "Try lash & brow tints"
-          }
-        ],
-        "tip": "Every preview is free to try. New brow tint styles added regularly."
-      },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "Why Use This AI Brow Tint Generator",
-        "label": "Benefits",
-        "description": "Fast, private, and salon-quality previews — for confident brow tinting decisions.",
-        "items": [
-          {
-            "title": "Lightning Fast — Results in Seconds",
-            "description": "Generate multiple brow tint looks from one photo in under 15 seconds. No appointments, no products to buy, no waiting between previews.",
-            "icon": "RiSpeedLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "Fast AI Brow Tint Generation"
-            }
-          },
-          {
-            "title": "Privacy First — Photos Auto-Deleted",
-            "description": "Photos are processed securely and deleted automatically after generation. We never share, sell, or train AI models on uploaded photos.",
-            "icon": "RiLock2Line",
-            "image": {
-              "src": "/imgs/features/image2.png",
-              "alt": "Privacy-First Photo Processing"
-            }
-          },
-          {
-            "title": "Salon-Quality References",
-            "description": "Brow artists and salon owners use these previews at consultation. Bring the downloaded image to your appointment instead of describing what you want in words.",
-            "icon": "RiUserStarLine",
-            "image": {
-              "src": "/imgs/features/image3.png",
-              "alt": "Salon Quality Brow Tint Reference"
-            }
-          }
-        ]
-      },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "What Users Say About the AI Brow Tint Generator",
-        "description": "Real reactions from people who used the generator to plan their brow tinting appointments.",
-        "items": [
-          {
-            "name": "Sarah Jenkins",
-            "role": "Beauty Blogger",
-            "quote": "Generated 12 different shades from one photo in under two minutes. Picked espresso, took the screenshot to my brow artist, walked out with exactly that.",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "Sarah Jenkins - Beauty Blogger"
-            }
-          },
-          {
-            "name": "Mike Ross",
-            "role": "Model",
-            "quote": "For shoots, I generate 4–5 brow looks per outfit and send the gallery to the makeup team before call. Workflow saver.",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "Mike Ross - Model"
-            }
-          },
-          {
-            "name": "Emily Chen",
-            "role": "Student",
-            "quote": "Free trial worked great. Tried 3 shades, downloaded my favorite, didn't pay a cent. Brow artist used the image as reference at the salon.",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "Emily Chen - Student"
-            }
-          },
-          {
-            "name": "David Smith",
-            "role": "Makeup Artist",
-            "quote": "The brow lamination simulator is scarily accurate. I show clients the AI preview during consultation and they commit twice as fast.",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "David Smith - Makeup Artist"
-            }
-          },
-          {
-            "name": "Jessica Lee",
-            "role": "Salon Owner",
-            "quote": "We pay for the Pro plan. Generating consultation previews for 30+ clients per week pays for itself in the first day of every billing cycle.",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "Jessica Lee - Salon Owner"
-            }
-          },
-          {
-            "name": "Tom Brown",
-            "role": "Software Engineer",
-            "quote": "Uploaded photo, picked a style, got a result in roughly 10 seconds. UX is clean. Used it as reference for my first salon visit ever.",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "Tom Brown - Software Engineer"
-            }
-          }
-        ]
+        "className": "overflow-hidden"
       },
       "faq": {
         "id": "faq",
-        "title": "AI Brow Tint Generator FAQ",
-        "description": "Technical questions about photo requirements, credits, accuracy, and downloads.",
-        "tip": "Can't find what you're looking for? Contact our <a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>support team</a>",
+        "title": "Brow Filter & Eyebrow Simulator Questions",
+        "description": "How to analyze your eyebrow shape and try a new brow filter with Browlens.",
         "items": [
           {
-            "question": "How long does each generation take?",
-            "answer": "Most brow tint previews finish in 8–15 seconds depending on image size and server load. Pro tier generations are prioritized and typically complete in under 10 seconds."
+            "question": "What is Browlens?",
+            "answer": "Browlens is the brow app for exploring your eyebrow shape with AI. Upload a photo, review your brow mapping, and choose a style to preview."
           },
           {
-            "question": "What photo gives the best result?",
-            "answer": "A front-facing, well-lit photo with eyebrows clearly visible. Avoid sunglasses, hair over brows, side angles, low light, and cartoon images. A neutral expression works best for accurate brow shape mapping."
+            "question": "Can I analyze my brows for free without signing up?",
+            "answer": "Yes. You can upload a photo and use the brow mapping and shape analysis tools without an account. Generating a new try-on image requires sign-in and credits; the tool shows the credit cost before you generate."
           },
           {
-            "question": "What file formats can I upload and download?",
-            "answer": "Upload JPG or PNG up to 10MB. Download as PNG (standard) or HD PNG (paid tiers). Original photo aspect ratio is preserved unless you crop with the built-in tool."
+            "question": "What photo should I upload?",
+            "answer": "Use a clear, front-facing photo with even lighting and both eyebrows visible. Choose a JPG, PNG, or WebP file up to 15 MB."
           },
           {
-            "question": "How many credits does each generation cost?",
-            "answer": "Standard generations cost 1 credit each. HD generations cost 2 credits. Free trial includes a starter credit allocation. Paid plans include monthly credits plus rollover."
+            "question": "How do eyebrow filters work?",
+            "answer": "Upload a photo, let Browlens find your brow placement automatically, and choose a shape. Check the instant outline, then generate an AI photo preview and compare it with your original."
           },
           {
-            "question": "Can I generate multiple shades from one photo?",
-            "answer": "Yes. Upload once, then generate as many shades or styles as your credits allow without re-uploading. The AI re-uses your photo for every preview in the session."
+            "question": "Can I compare different eyebrow shapes?",
+            "answer": "Yes. Try an eyebrow filter on your photo, compare the before and after, then explore another shape to find a look you like."
           },
           {
-            "question": "What is the maximum resolution?",
-            "answer": "Free tier: up to 1024×1024. Starter: up to 1536×1536. Pro: up to 2048×2048 with HD download enabled."
+            "question": "Will a preview match my final look exactly?",
+            "answer": "A preview is a visual reference. Photo quality, your natural brows, and styling technique can affect the final result."
           },
           {
-            "question": "Are uploaded photos stored or used for training?",
-            "answer": "No. Photos are processed securely and deleted automatically after generation. We never share, sell, or train AI models on uploaded photos."
+            "question": "Where can I adjust individual brow points and read my report?",
+            "answer": "Open the full brow app on the homepage. It includes six draggable control points, thickness, length, angle, spacing and height adjustments, plus a report of arch-height and brow-length differences."
           },
           {
-            "question": "What's the difference between the brow lamination simulator and the brow tint generator?",
-            "answer": "Same generator, different style presets. The lamination simulator focuses on brushed-up brow shape; the tint generator focuses on color. Both can be combined in a single generation by selecting brow lamination + tint styles."
-          },
-          {
-            "question": "Can I preview a custom shade not in the gallery?",
-            "answer": "Pro tier supports custom shade input via the prompt box (e.g., describe a specific Pantone color or shade name). Free and Starter tiers use the curated 200+ shade library."
-          },
-          {
-            "question": "Does it work on mobile?",
-            "answer": "Yes. The AI brow tint generator runs entirely in your browser — phone, tablet, or desktop. No app to install. No signup required for the free trial."
-          },
-          {
-            "question": "What if my generated preview looks unrealistic?",
-            "answer": "First, try a higher-quality photo with better lighting and a clearer view of your eyebrows. If results still seem off, switch to a different style preset — some shades render more accurately on certain skin tones. Pro support can investigate specific cases."
-          },
-          {
-            "question": "Can I use the generated image commercially?",
-            "answer": "Personal use is unrestricted. Commercial use (salon marketing, paid social media ads, magazine editorial) requires a Pro plan license. The Pro plan grants commercial rights for all generations during the active subscription period."
+            "question": "Is the eyebrow simulator instant?",
+            "answer": "The local shape outline updates instantly after detection. Creating a new AI photo is a separate step and takes time; it is not a live camera filter."
           }
-        ]
+        ],
+        "tip": "For six-point editing and your brow balance report, use the <a href=\"/#brow-app\" class=\"underline\">full brow app</a>. Explore our <a href=\"/blog/eyebrow-shapes-guide\" class=\"underline\">eyebrow shapes guide</a> before choosing a look."
       },
       "cta": {
         "id": "cta",
-        "title": "Generate Your First Brow Tint Preview",
-        "description": "Free trial. No signup. ~10 seconds per generation.",
+        "title": "Find Your Brow Shape",
+        "description": "See your brows through the lens of AI.",
         "buttons": [
           {
-            "title": "Generate My Brow Tint Preview",
-            "url": "#generator",
+            "title": "Upload a photo",
+            "url": "#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
@@ -394,18 +89,18 @@
     }
   },
   "generator": {
-    "title": "AI Brow Tint Generator",
-    "description": "Upload a photo and preview realistic brow tint before and after looks with the AI brow tint generator.",
+    "title": "AI Eyebrow Shape Analyzer",
+    "description": "Upload a photo and preview realistic brow shape before and after looks with the AI brow shape generator.",
     "tabs": {
       "text-to-image": "Style Description",
       "image-to-image": "Photo Upload"
     },
     "categories": {
-      "title": "Select Brow Tint Style",
-      "men": "Natural Brow Tints",
-      "women": "Bold Brow Tints",
-      "boys": "Brow Lamination Styles",
-      "girls": "Lash & Brow Tint",
+      "title": "Choose a Brow Shape",
+      "men": "Natural Brows",
+      "women": "Defined Brows",
+      "boys": "Lifted Brows",
+      "girls": "Soft Arches",
       "selected": "Selected",
       "styles": "styles"
     },
@@ -416,13 +111,13 @@
       "history_empty": "No history images yet"
     },
     "form": {
-      "select_brow_tint_placeholder": "Click to select a brow tint style",
+      "select_brow_tint_placeholder": "Click to select a brow shape style",
       "provider": "AI Provider",
-      "model": "Brow Tint Model",
+      "model": "Browlens Model",
       "select_provider": "Select AI Provider",
-      "select_model": "Select Brow Tint Model",
-      "prompt": "Brow Tint Description",
-      "prompt_placeholder": "Describe your brow tint: shade, intensity, style (e.g., soft taupe tint, bold espresso brow tint, brow lamination and tint, lash and brow tint)",
+      "select_model": "Select Browlens Model",
+      "prompt": "Brow Shape Description",
+      "prompt_placeholder": "Describe your eyebrow shape, arch, thickness, and style (e.g., soft arch, straight brows, or a feathered brow filter)",
       "reference_image": "Your Photo",
       "reference_image_placeholder": "Upload your photo for the best results",
       "some_images_failed_to_upload": "Some images failed to upload, please delete them and re-upload",
@@ -441,8 +136,8 @@
     "generate_no_credits": "Get Credits to Generate",
     "checking_account": "Checking Account...",
     "loading": "Loading...",
-    "generating": "Generating Your Brow Tint...",
-    "sign_in_to_generate": "Sign In to Try Brow Tint Styles",
+    "generating": "Generating Your Brow Preview...",
+    "sign_in_to_generate": "Sign In to Try Browlens Styles",
     "credits_cost": "Cost {credits} credits",
     "credits_remaining": "{credits} credits",
     "credits_insufficient": "Not enough credits",
@@ -450,13 +145,13 @@
     "try_another_style": "Try Another Style",
     "progress": "Progress",
     "generated_images": "Your New Brow Look",
-    "preview_title": "AI Brow Tint Preview",
+    "preview_title": "AI Eyebrow Filter Preview",
     "ready_to_generate": "Ready to Generate",
-    "ready_for_generating": "Ready for Brow Tint Preview",
-    "no_images_generated": "No brow tint previews generated yet",
+    "ready_for_generating": "Ready for Your Brow Preview",
+    "no_images_generated": "No brow shape previews generated yet",
     "use_as_reference": "Use as Reference",
     "download_image": "Download Image",
-    "example_image_hint": "This is an example result. Your generated brow tint preview will appear here.",
+    "example_image_hint": "This is an example result. Your generated brow shape preview will appear here.",
     "history_images": "History Images",
     "history_load_more": "Load more",
     "history_view_image": "View history image",
@@ -483,11 +178,11 @@
     }
   },
   "product": {
-    "name": "AI Brow Tint Generator",
-    "description": "Free AI tool to preview brow tint, brow lamination, and tinted brow gel looks. Upload a photo and see realistic before-and-after results in seconds."
+    "name": "Browlens Eyebrow Filter",
+    "description": "Try the Browlens brow filter and eyebrow simulator on your photo. Choose a shape, preview your look, compare before and after, and download your result."
   },
   "breadcrumb": {
     "home": "Home",
-    "current": "AI Brow Tint Generator"
+    "current": "Eyebrow Filter"
   }
 }

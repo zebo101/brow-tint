@@ -1,0 +1,979 @@
+{
+  "AI result · slide to compare": [
+    "AI 결과 — 밀어서 비교",
+    "AIの結果 — スライドして比較",
+    "AI-Ergebnis – zum Vergleich schieben",
+    "Resultado de IA: desliza para comparar",
+    "Risultato IA: scorri per confrontare",
+    "Resultado da IA — deslize para comparar"
+  ],
+  "Add photo": [
+    "사진 추가",
+    "写真を追加",
+    "Foto hinzufügen",
+    "Añadir foto",
+    "Aggiungi foto",
+    "Adicionar foto"
+  ],
+  "Adjust": ["조정", "調整", "Anpassen", "Ajustar", "Regola", "Ajustar"],
+  "Adjustment parameter": [
+    "조정 항목",
+    "調整項目",
+    "Einstellparameter",
+    "Parámetro de ajuste",
+    "Parametro di regolazione",
+    "Parâmetro de ajuste"
+  ],
+  "Adjustment side": [
+    "조정할 쪽",
+    "調整する側",
+    "Seite anpassen",
+    "Lado del ajuste",
+    "Lato da regolare",
+    "Lado do ajuste"
+  ],
+  "All": ["전체", "すべて", "Alle", "Todos", "Tutti", "Todos"],
+  "Analysis": ["분석", "分析", "Analyse", "Análisis", "Analisi", "Análise"],
+  "Analysis stays on your device. Photos upload only when you generate.": [
+    "분석은 기기에서 진행됩니다. 생성할 때만 사진이 업로드됩니다.",
+    "分析は端末内で行われます。写真は生成時にのみアップロードされます。",
+    "Die Analyse bleibt auf deinem Gerät. Fotos werden nur zur Generierung hochgeladen.",
+    "El análisis se realiza en tu dispositivo. Las fotos se suben solo al generar.",
+    "L’analisi resta sul dispositivo. Le foto vengono caricate solo per generare.",
+    "A análise fica no dispositivo. As fotos são enviadas apenas ao gerar."
+  ],
+  "Analyze your brows": [
+    "눈썹 분석",
+    "眉を分析",
+    "Brauen analysieren",
+    "Analiza tus cejas",
+    "Analizza le sopracciglia",
+    "Analise suas sobrancelhas"
+  ],
+  "Analyzing…": [
+    "분석 중…",
+    "分析中…",
+    "Analyse läuft…",
+    "Analizando…",
+    "Analisi in corso…",
+    "Analisando…"
+  ],
+  "Anchor to correct": [
+    "보정할 기준점",
+    "補正する基準点",
+    "Zu korrigierender Punkt",
+    "Punto que corregir",
+    "Punto da correggere",
+    "Ponto a corrigir"
+  ],
+  "Angle": ["각도", "角度", "Winkel", "Ángulo", "Angolo", "Ângulo"],
+  "Apply to": [
+    "적용 범위",
+    "適用先",
+    "Anwenden auf",
+    "Aplicar a",
+    "Applica a",
+    "Aplicar a"
+  ],
+  "Arch": ["눈썹산", "眉山", "Bogen", "Arco", "Arco", "Arco"],
+  "Arch height difference": [
+    "눈썹산 높이 차이",
+    "眉山の高さの差",
+    "Bogenhöhenunterschied",
+    "Diferencia de altura del arco",
+    "Differenza di altezza dell’arco",
+    "Diferença de altura do arco"
+  ],
+  "Arch rise": [
+    "눈썹산 높이",
+    "眉山の高さ",
+    "Bogenanstieg",
+    "Elevación del arco",
+    "Altezza dell’arco",
+    "Elevação do arco"
+  ],
+  "Back to adjustments": [
+    "조정으로 돌아가기",
+    "調整に戻る",
+    "Zurück zu den Einstellungen",
+    "Volver a los ajustes",
+    "Torna alle regolazioni",
+    "Voltar aos ajustes"
+  ],
+  "Back to studio": [
+    "스튜디오로 돌아가기",
+    "スタジオに戻る",
+    "Zurück zum Studio",
+    "Volver al estudio",
+    "Torna allo studio",
+    "Voltar ao estúdio"
+  ],
+  "Before and after": [
+    "전후 비교",
+    "変更前後",
+    "Vorher und nachher",
+    "Antes y después",
+    "Prima e dopo",
+    "Antes e depois"
+  ],
+  "Before and after comparison": [
+    "전후 비교",
+    "変更前後の比較",
+    "Vorher-Nachher-Vergleich",
+    "Comparación antes y después",
+    "Confronto prima e dopo",
+    "Comparação antes e depois"
+  ],
+  "Both": ["양쪽", "両側", "Beide", "Ambas", "Entrambe", "Ambas"],
+  "Brow analysis stays on your device until you generate a preview.": [
+    "미리보기를 생성하기 전까지 눈썹 분석은 기기에만 저장됩니다.",
+    "プレビュー生成までは、眉の分析は端末内で行われます。",
+    "Die Brauenanalyse bleibt bis zur Generierung auf deinem Gerät.",
+    "El análisis permanece en tu dispositivo hasta generar una vista previa.",
+    "L’analisi resta sul dispositivo fino alla generazione dell’anteprima.",
+    "A análise permanece no dispositivo até gerar uma prévia."
+  ],
+  "Brow canvas": [
+    "눈썹 캔버스",
+    "眉キャンバス",
+    "Brauen-Leinwand",
+    "Lienzo de cejas",
+    "Tela delle sopracciglia",
+    "Tela de sobrancelhas"
+  ],
+  "Brow design preview": [
+    "눈썹 디자인 미리보기",
+    "眉デザインのプレビュー",
+    "Vorschau des Brauendesigns",
+    "Vista previa del diseño",
+    "Anteprima del disegno",
+    "Prévia do desenho"
+  ],
+  "Brow direction": [
+    "눈썹 방향",
+    "眉の方向",
+    "Brauenrichtung",
+    "Dirección de las cejas",
+    "Direzione delle sopracciglia",
+    "Direção das sobrancelhas"
+  ],
+  "Brow editing canvas": [
+    "눈썹 편집 캔버스",
+    "眉編集キャンバス",
+    "Leinwand zur Brauenbearbeitung",
+    "Lienzo de edición de cejas",
+    "Tela di modifica delle sopracciglia",
+    "Tela de edição de sobrancelhas"
+  ],
+  "Brow editor": [
+    "눈썹 편집기",
+    "眉エディター",
+    "Brauen-Editor",
+    "Editor de cejas",
+    "Editor sopracciglia",
+    "Editor de sobrancelhas"
+  ],
+  "Brow gap {n} px · Original brow measurements": [
+    "눈썹 간격 {n} px · 원래 눈썹 측정값",
+    "眉間隔 {n} px · 元の眉の測定値",
+    "Brauenabstand {n} px · Ursprüngliche Brauenmaße",
+    "Separación {n} px · Medidas de las cejas originales",
+    "Distanza {n} px · Misure delle sopracciglia originali",
+    "Distância {n} px · Medidas das sobrancelhas originais"
+  ],
+  "Brow length": [
+    "눈썹 길이",
+    "眉の長さ",
+    "Brauenlänge",
+    "Longitud de cejas",
+    "Lunghezza delle sopracciglia",
+    "Comprimento das sobrancelhas"
+  ],
+  "Brow length difference": [
+    "눈썹 길이 차이",
+    "眉の長さの差",
+    "Brauenlängenunterschied",
+    "Diferencia de longitud de cejas",
+    "Differenza di lunghezza",
+    "Diferença de comprimento"
+  ],
+  "Brow mapping portrait": [
+    "눈썹 가이드 사진",
+    "眉ガイド付きの顔写真",
+    "Porträt mit Brauenlinien",
+    "Retrato con trazado de cejas",
+    "Ritratto con guide delle sopracciglia",
+    "Retrato com marcação das sobrancelhas"
+  ],
+  "Brow placement confirmed": [
+    "눈썹 위치 확인됨",
+    "眉の位置を確認済み",
+    "Brauenposition bestätigt",
+    "Posición de cejas confirmada",
+    "Posizione confermata",
+    "Posição confirmada"
+  ],
+  "Brow preview steps": [
+    "눈썹 미리보기 단계",
+    "眉プレビューの手順",
+    "Schritte zur Brauenvorschau",
+    "Pasos de vista previa",
+    "Passaggi dell’anteprima",
+    "Etapas da prévia"
+  ],
+  "Brow spacing": [
+    "눈썹 간격",
+    "眉の間隔",
+    "Brauenabstand",
+    "Separación entre cejas",
+    "Distanza tra le sopracciglia",
+    "Distância entre sobrancelhas"
+  ],
+  "Brow to correct": [
+    "보정할 눈썹",
+    "補正する眉",
+    "Zu korrigierende Braue",
+    "Ceja que corregir",
+    "Sopracciglio da correggere",
+    "Sobrancelha a corrigir"
+  ],
+  "Brows that feel like you.": [
+    "나에게 어울리는 눈썹.",
+    "自分らしい眉に。",
+    "Brauen, die zu dir passen.",
+    "Cejas que van contigo.",
+    "Sopracciglia che ti rappresentano.",
+    "Sobrancelhas que combinam com você."
+  ],
+  "Canvas tools": [
+    "캔버스 도구",
+    "キャンバスツール",
+    "Leinwandwerkzeuge",
+    "Herramientas del lienzo",
+    "Strumenti della tela",
+    "Ferramentas da tela"
+  ],
+  "Choose a style": [
+    "스타일 선택",
+    "スタイルを選択",
+    "Stil auswählen",
+    "Elige un estilo",
+    "Scegli uno stile",
+    "Escolha um estilo"
+  ],
+  "Choose a style and generate": [
+    "스타일 선택 및 생성",
+    "スタイルを選んで生成",
+    "Stil wählen und generieren",
+    "Elige un estilo y genera",
+    "Scegli uno stile e genera",
+    "Escolha um estilo e gere"
+  ],
+  "Choose photo": [
+    "사진 선택",
+    "写真を選択",
+    "Foto wählen",
+    "Elegir foto",
+    "Scegli foto",
+    "Escolher foto"
+  ],
+  "Collapse tools": [
+    "도구 접기",
+    "ツールを折りたたむ",
+    "Werkzeuge einklappen",
+    "Contraer herramientas",
+    "Comprimi strumenti",
+    "Recolher ferramentas"
+  ],
+  "Confirm brows & choose a style": [
+    "눈썹 확인 및 스타일 선택",
+    "眉を確認してスタイルを選ぶ",
+    "Brauen bestätigen und Stil wählen",
+    "Confirma las cejas y elige un estilo",
+    "Conferma e scegli uno stile",
+    "Confirme e escolha um estilo"
+  ],
+  "Confirm mapping": [
+    "가이드 확인",
+    "ガイドを確認",
+    "Hilfslinien bestätigen",
+    "Confirmar trazado",
+    "Conferma le guide",
+    "Confirmar marcação"
+  ],
+  "Confirm the fit, then choose a style": [
+    "위치를 확인한 후 스타일 선택",
+    "位置を確認してからスタイルを選ぶ",
+    "Position bestätigen, dann Stil wählen",
+    "Confirma la posición y elige un estilo",
+    "Conferma la posizione, poi scegli uno stile",
+    "Confirme a posição e escolha um estilo"
+  ],
+  "Confirm your contour to explore the sample collection.": [
+    "윤곽을 확인하면 샘플을 선택할 수 있습니다.",
+    "輪郭を確認してサンプルを選びましょう。",
+    "Bestätige die Kontur, um die Sammlung zu erkunden.",
+    "Confirma el contorno para explorar la colección.",
+    "Conferma il contorno per esplorare la raccolta.",
+    "Confirme o contorno para explorar a coleção."
+  ],
+  "Confirming…": [
+    "확인 중…",
+    "確認中…",
+    "Wird bestätigt…",
+    "Confirmando…",
+    "Conferma in corso…",
+    "Confirmando…"
+  ],
+  "Contour": ["윤곽", "輪郭", "Kontur", "Contorno", "Contorno", "Contorno"],
+  "Contour preview": [
+    "윤곽 미리보기",
+    "輪郭プレビュー",
+    "Konturvorschau",
+    "Vista previa del contorno",
+    "Anteprima del contorno",
+    "Prévia do contorno"
+  ],
+  "Correct anchor points": [
+    "기준점 보정",
+    "基準点を補正",
+    "Ankerpunkte korrigieren",
+    "Corregir puntos de referencia",
+    "Correggi i punti di riferimento",
+    "Corrigir pontos de referência"
+  ],
+  "Design tools": [
+    "디자인 도구",
+    "デザインツール",
+    "Designwerkzeuge",
+    "Herramientas de diseño",
+    "Strumenti di disegno",
+    "Ferramentas de desenho"
+  ],
+  "Distance between brow heads": [
+    "눈썹 앞머리 간격",
+    "眉頭の間隔",
+    "Abstand der Brauenanfänge",
+    "Distancia entre los inicios",
+    "Distanza tra gli inizi",
+    "Distância entre os inícios"
+  ],
+  "Done": ["완료", "完了", "Fertig", "Listo", "Fatto", "Concluir"],
+  "Done correcting": [
+    "보정 완료",
+    "補正を完了",
+    "Korrektur fertig",
+    "Terminar corrección",
+    "Termina correzione",
+    "Concluir correção"
+  ],
+  "Download design": [
+    "디자인 다운로드",
+    "デザインをダウンロード",
+    "Entwurf herunterladen",
+    "Descargar diseño",
+    "Scarica il disegno",
+    "Baixar desenho"
+  ],
+  "Drag a point or nudge by 1 px. Confirm the mapping again after correcting.": [
+    "점을 드래그하거나 1 px씩 이동하세요. 보정 후 가이드를 다시 확인하세요.",
+    "点をドラッグするか1 pxずつ移動し、補正後にガイドを再確認してください。",
+    "Ziehe einen Punkt oder verschiebe ihn um 1 px. Bestätige die Hilfslinien nach der Korrektur erneut.",
+    "Arrastra un punto o muévelo 1 px. Confirma de nuevo el trazado tras corregir.",
+    "Trascina un punto o spostalo di 1 px. Conferma di nuovo le guide dopo la correzione.",
+    "Arraste um ponto ou mova 1 px por vez. Confirme a marcação novamente após corrigir."
+  ],
+  "Drop to analyze photo": [
+    "놓아서 사진 분석",
+    "ドロップして写真を分析",
+    "Zum Analysieren ablegen",
+    "Suelta para analizar la foto",
+    "Rilascia per analizzare la foto",
+    "Solte para analisar a foto"
+  ],
+  "Drop to use this photo": [
+    "놓아서 이 사진 사용",
+    "ドロップしてこの写真を使用",
+    "Zum Verwenden ablegen",
+    "Suelta para usar esta foto",
+    "Rilascia per usare la foto",
+    "Solte para usar esta foto"
+  ],
+  "Editing tools": [
+    "편집 도구",
+    "編集ツール",
+    "Bearbeitungswerkzeuge",
+    "Herramientas de edición",
+    "Strumenti di modifica",
+    "Ferramentas de edição"
+  ],
+  "Every guide has a purpose": [
+    "각 가이드에는 이유가 있습니다",
+    "どのガイドにも根拠があります",
+    "Jede Hilfslinie hat einen Zweck",
+    "Cada guía tiene un propósito",
+    "Ogni guida ha uno scopo",
+    "Cada guia tem um propósito"
+  ],
+  "Example portrait": [
+    "예시 인물 사진",
+    "サンプルの顔写真",
+    "Beispielporträt",
+    "Retrato de ejemplo",
+    "Ritratto di esempio",
+    "Retrato de exemplo"
+  ],
+  "Expand tools": [
+    "도구 펼치기",
+    "ツールを展開",
+    "Werkzeuge ausklappen",
+    "Expandir herramientas",
+    "Espandi strumenti",
+    "Expandir ferramentas"
+  ],
+  "Explore the mapping": [
+    "가이드 살펴보기",
+    "ガイドを確認",
+    "Hilfslinien erkunden",
+    "Explora el trazado",
+    "Esplora le guide",
+    "Explore a marcação"
+  ],
+  "Export": [
+    "내보내기",
+    "書き出す",
+    "Exportieren",
+    "Exportar",
+    "Esporta",
+    "Exportar"
+  ],
+  "Face the camera in even light, with your brows visible.": [
+    "균일한 조명 아래 정면을 보고 눈썹을 드러내세요.",
+    "均一な明るさで正面を向き、眉を見せてください。",
+    "Blicke bei gleichmäßigem Licht in die Kamera, mit sichtbaren Brauen.",
+    "Mira a la cámara con luz uniforme y las cejas visibles.",
+    "Guarda la fotocamera con luce uniforme e sopracciglia visibili.",
+    "Olhe para a câmera com luz uniforme e sobrancelhas visíveis."
+  ],
+  "Find your balance": [
+    "나만의 균형 찾기",
+    "自分のバランスを見つける",
+    "Finde deine Balance",
+    "Encuentra tu equilibrio",
+    "Trova il tuo equilibrio",
+    "Encontre seu equilíbrio"
+  ],
+  "Finding your natural brows": [
+    "자연 눈썹을 찾는 중",
+    "自然な眉を検出中",
+    "Deine natürlichen Brauen werden erkannt",
+    "Detectando tus cejas naturales",
+    "Rilevamento delle sopracciglia naturali",
+    "Detectando suas sobrancelhas naturais"
+  ],
+  "Fine-tune placement": [
+    "위치 세밀하게 조정",
+    "位置を微調整",
+    "Position fein abstimmen",
+    "Ajustar la posición",
+    "Regola finemente la posizione",
+    "Ajustar a posição"
+  ],
+  "Fit portrait": [
+    "사진에 맞추기",
+    "写真を全体表示",
+    "Porträt einpassen",
+    "Ajustar retrato",
+    "Adatta ritratto",
+    "Ajustar retrato"
+  ],
+  "Front-facing · eyes open · brows visible": [
+    "정면 · 눈 뜨기 · 눈썹 보이기",
+    "正面向き · 両目を開く · 眉を見せる",
+    "Frontal · Augen offen · Brauen sichtbar",
+    "De frente · ojos abiertos · cejas visibles",
+    "Frontale · occhi aperti · sopracciglia visibili",
+    "De frente · olhos abertos · sobrancelhas visíveis"
+  ],
+  "Fullscreen": [
+    "전체 화면",
+    "全画面",
+    "Vollbild",
+    "Pantalla completa",
+    "Schermo intero",
+    "Tela cheia"
+  ],
+  "Head": ["앞머리", "眉頭", "Anfang", "Inicio", "Inizio", "Início"],
+  "Height": ["높이", "高さ", "Höhe", "Altura", "Altezza", "Altura"],
+  "Left": ["왼쪽", "左", "Links", "Izquierda", "Sinistra", "Esquerda"],
+  "Length": ["길이", "長さ", "Länge", "Longitud", "Lunghezza", "Comprimento"],
+  "Less adjustment": [
+    "조정 줄이기",
+    "調整を減らす",
+    "Weniger anpassen",
+    "Menos ajustes",
+    "Meno regolazioni",
+    "Menos ajustes"
+  ],
+  "Lifted": [
+    "상향형",
+    "リフトアップ",
+    "Angehoben",
+    "Elevado",
+    "Sollevato",
+    "Elevado"
+  ],
+  "Mapping": [
+    "가이드",
+    "ガイド",
+    "Hilfslinien",
+    "Trazado",
+    "Guide",
+    "Marcação"
+  ],
+  "Mapping guides": [
+    "눈썹 가이드",
+    "眉のガイド",
+    "Hilfslinien",
+    "Guías de trazado",
+    "Guide di disegno",
+    "Guias de marcação"
+  ],
+  "Measured from your original brows, preserving natural differences.": [
+    "원래 눈썹에서 측정하여 자연스러운 차이를 유지합니다.",
+    "元の眉を測定し、自然な違いをそのまま示します。",
+    "Gemessen an deinen ursprünglichen Brauen, mit ihren natürlichen Unterschieden.",
+    "Medidas de tus cejas originales que conservan sus diferencias naturales.",
+    "Misure delle sopracciglia originali che ne conservano le differenze naturali.",
+    "Medidas das sobrancelhas originais que preservam as diferenças naturais."
+  ],
+  "Measurements appear after analysis.": [
+    "분석 후 측정값이 표시됩니다.",
+    "分析後に測定値が表示されます。",
+    "Messwerte erscheinen nach der Analyse.",
+    "Las medidas aparecen tras el análisis.",
+    "Le misure appaiono dopo l’analisi.",
+    "As medidas aparecem após a análise."
+  ],
+  "Move one image pixel": [
+    "이미지 1픽셀 이동",
+    "画像上で1ピクセル移動",
+    "Ein Bildpixel verschieben",
+    "Mover un píxel",
+    "Sposta di un pixel",
+    "Mover um pixel"
+  ],
+  "Natural": [
+    "자연형",
+    "ナチュラル",
+    "Natürlich",
+    "Natural",
+    "Naturale",
+    "Natural"
+  ],
+  "Nudge down": [
+    "아래로 미세 이동",
+    "下に微調整",
+    "Nach unten verschieben",
+    "Mover abajo",
+    "Sposta in basso",
+    "Mover para baixo"
+  ],
+  "Nudge left": [
+    "왼쪽으로 미세 이동",
+    "左に微調整",
+    "Nach links verschieben",
+    "Mover a la izquierda",
+    "Sposta a sinistra",
+    "Mover à esquerda"
+  ],
+  "Nudge right": [
+    "오른쪽으로 미세 이동",
+    "右に微調整",
+    "Nach rechts verschieben",
+    "Mover a la derecha",
+    "Sposta a destra",
+    "Mover à direita"
+  ],
+  "Nudge up": [
+    "위로 미세 이동",
+    "上に微調整",
+    "Nach oben verschieben",
+    "Mover arriba",
+    "Sposta in alto",
+    "Mover para cima"
+  ],
+  "Or drop it here · JPG / PNG / WebP · Up to 15 MB": [
+    "또는 여기에 놓으세요 · JPG / PNG / WebP · 최대 15 MB",
+    "ここにドロップ · JPG / PNG / WebP · 最大15 MB",
+    "Oder hier ablegen · JPG / PNG / WebP · Bis 15 MB",
+    "O arrástrala aquí · JPG / PNG / WebP · Hasta 15 MB",
+    "Oppure trascinala qui · JPG / PNG / WebP · Fino a 15 MB",
+    "Ou arraste aqui · JPG / PNG / WebP · Até 15 MB"
+  ],
+  "Or try a sample": [
+    "또는 샘플로 체험하기",
+    "サンプルで試す",
+    "Oder ein Beispiel ausprobieren",
+    "O prueba un ejemplo",
+    "Oppure prova un esempio",
+    "Ou experimente um exemplo"
+  ],
+  "Or try an example": [
+    "또는 예시로 체험",
+    "サンプルで試す",
+    "Oder ein Beispiel testen",
+    "O prueba un ejemplo",
+    "Oppure prova un esempio",
+    "Ou experimente um exemplo"
+  ],
+  "Original": [
+    "원본",
+    "元の写真",
+    "Original",
+    "Original",
+    "Originale",
+    "Original"
+  ],
+  "Original photo": [
+    "원본 사진",
+    "元の写真",
+    "Originalfoto",
+    "Foto original",
+    "Foto originale",
+    "Foto original"
+  ],
+  "Original portrait": [
+    "원본 인물 사진",
+    "元の顔写真",
+    "Originalporträt",
+    "Retrato original",
+    "Ritratto originale",
+    "Retrato original"
+  ],
+  "Photo": ["사진", "写真", "Foto", "Foto", "Foto", "Foto"],
+  "Photo display mode": [
+    "사진 표시 모드",
+    "写真の表示モード",
+    "Fotoanzeigemodus",
+    "Modo de visualización",
+    "Modalità di visualizzazione",
+    "Modo de exibição da foto"
+  ],
+  "Photo measurements": [
+    "사진 측정값",
+    "写真の測定値",
+    "Fotomesswerte",
+    "Medidas de la foto",
+    "Misure della foto",
+    "Medidas da foto"
+  ],
+  "Photo tips": [
+    "사진 촬영 팁",
+    "写真のヒント",
+    "Fototipps",
+    "Consejos para la foto",
+    "Consigli per la foto",
+    "Dicas para a foto"
+  ],
+  "Photo to analyze": [
+    "분석할 사진",
+    "分析する写真",
+    "Foto zur Analyse",
+    "Foto para analizar",
+    "Foto da analizzare",
+    "Foto para analisar"
+  ],
+  "Play mapping walkthrough": [
+    "가이드 과정 재생",
+    "ガイドの手順を再生",
+    "Anleitung abspielen",
+    "Reproducir el trazado paso a paso",
+    "Riproduci la guida passo passo",
+    "Reproduzir a marcação passo a passo"
+  ],
+  "Position and spacing are relative to the photo. Left and right refer to the image.": [
+    "위치와 간격은 사진 기준입니다. 왼쪽과 오른쪽은 화면 기준입니다.",
+    "位置と間隔は写真を基準にしています。左右は画像上の向きです。",
+    "Position und Abstand beziehen sich auf das Foto. Links und rechts gelten für die Bildansicht.",
+    "La posición y la separación son relativas a la foto. Izquierda y derecha se refieren a la imagen.",
+    "Posizione e distanza sono relative alla foto. Sinistra e destra si riferiscono all’immagine.",
+    "A posição e a distância são relativas à foto. Esquerda e direita referem-se à imagem."
+  ],
+  "Preparing your photo…": [
+    "사진 준비 중…",
+    "写真を準備中…",
+    "Dein Foto wird vorbereitet…",
+    "Preparando tu foto…",
+    "Preparazione della foto…",
+    "Preparando sua foto…"
+  ],
+  "Preparing…": [
+    "준비 중…",
+    "準備中…",
+    "Wird vorbereitet…",
+    "Preparando…",
+    "Preparazione…",
+    "Preparando…"
+  ],
+  "Preview mode": [
+    "미리보기 모드",
+    "プレビューモード",
+    "Vorschaumodus",
+    "Modo de vista previa",
+    "Modalità anteprima",
+    "Modo de prévia"
+  ],
+  "Refine and confirm": [
+    "조정 및 확인",
+    "調整して確認",
+    "Anpassen und bestätigen",
+    "Ajusta y confirma",
+    "Regola e conferma",
+    "Ajuste e confirme"
+  ],
+  "Refine brows": [
+    "눈썹 조정",
+    "眉を調整",
+    "Brauen verfeinern",
+    "Ajustar cejas",
+    "Rifinisci le sopracciglia",
+    "Ajustar sobrancelhas"
+  ],
+  "Remove": ["삭제", "削除", "Entfernen", "Eliminar", "Rimuovi", "Remover"],
+  "Replace": ["바꾸기", "変更", "Ersetzen", "Cambiar", "Sostituisci", "Trocar"],
+  "Replay": [
+    "다시 재생",
+    "再生し直す",
+    "Erneut abspielen",
+    "Repetir",
+    "Riproduci di nuovo",
+    "Repetir"
+  ],
+  "Reset": [
+    "초기화",
+    "リセット",
+    "Zurücksetzen",
+    "Restablecer",
+    "Ripristina",
+    "Restaurar"
+  ],
+  "Reset all anchor corrections": [
+    "모든 기준점 보정 초기화",
+    "すべての点の補正をリセット",
+    "Alle Punktkorrekturen zurücksetzen",
+    "Restablecer todas las correcciones",
+    "Ripristina tutte le correzioni",
+    "Restaurar todas as correções"
+  ],
+  "Reset point": [
+    "점 초기화",
+    "点をリセット",
+    "Punkt zurücksetzen",
+    "Restablecer punto",
+    "Ripristina punto",
+    "Restaurar ponto"
+  ],
+  "Reset to natural": [
+    "자연 눈썹으로 초기화",
+    "自然な眉に戻す",
+    "Auf natürlich zurücksetzen",
+    "Restablecer a natural",
+    "Ripristina naturale",
+    "Restaurar natural"
+  ],
+  "Reset view": [
+    "보기 초기화",
+    "表示をリセット",
+    "Ansicht zurücksetzen",
+    "Restablecer vista",
+    "Ripristina vista",
+    "Restaurar visualização"
+  ],
+  "Result": ["결과", "結果", "Ergebnis", "Resultado", "Risultato", "Resultado"],
+  "Retry analysis": [
+    "다시 분석",
+    "再分析",
+    "Analyse wiederholen",
+    "Reintentar análisis",
+    "Riprova l’analisi",
+    "Repetir análise"
+  ],
+  "Right": ["오른쪽", "右", "Rechts", "Derecha", "Destra", "Direita"],
+  "See it. Then decide.": [
+    "보고 나서 결정하세요.",
+    "見てから、決めよう。",
+    "Erst sehen. Dann entscheiden.",
+    "Míralo. Luego decide.",
+    "Prima guarda. Poi decidi.",
+    "Veja. Depois decida."
+  ],
+  "Select image side": [
+    "이미지 방향 선택",
+    "画像の左右を選択",
+    "Bildseite auswählen",
+    "Selecciona el lado de la imagen",
+    "Seleziona il lato dell’immagine",
+    "Selecione o lado da imagem"
+  ],
+  "Selected sample": [
+    "선택한 샘플",
+    "選択したサンプル",
+    "Ausgewähltes Beispiel",
+    "Ejemplo seleccionado",
+    "Esempio selezionato",
+    "Exemplo selecionado"
+  ],
+  "Shape": ["모양", "形", "Form", "Forma", "Forma", "Formato"],
+  "Side": ["범위", "対象", "Seite", "Lado", "Lato", "Lado"],
+  "Soft": ["부드러운형", "ソフト", "Sanft", "Suave", "Morbido", "Suave"],
+  "Spacing": ["간격", "間隔", "Abstand", "Separación", "Distanza", "Distância"],
+  "Start with your own brows and refine the fit.": [
+    "내 눈썹을 바탕으로 모양을 조정하세요.",
+    "自分の眉をもとに、形を調整しましょう。",
+    "Beginne mit deinen eigenen Brauen und passe die Form an.",
+    "Empieza con tus propias cejas y ajusta la forma.",
+    "Parti dalle tue sopracciglia e regola la forma.",
+    "Comece pelas suas sobrancelhas e ajuste o formato."
+  ],
+  "Start with your photo": [
+    "내 사진으로 시작하기",
+    "自分の写真から始める",
+    "Beginne mit deinem Foto",
+    "Empieza con tu foto",
+    "Inizia dalla tua foto",
+    "Comece pela sua foto"
+  ],
+  "Styles": ["스타일", "スタイル", "Stile", "Estilos", "Stili", "Estilos"],
+  "Tail": ["꼬리", "眉尻", "Ende", "Cola", "Coda", "Cauda"],
+  "Tail angle": [
+    "눈썹 꼬리 각도",
+    "眉尻の角度",
+    "Endwinkel",
+    "Ángulo de la cola",
+    "Angolo della coda",
+    "Ângulo da cauda"
+  ],
+  "Thickness": ["두께", "太さ", "Dicke", "Grosor", "Spessore", "Espessura"],
+  "Try a look": [
+    "스타일 체험",
+    "スタイルを試す",
+    "Look ausprobieren",
+    "Probar un estilo",
+    "Prova uno stile",
+    "Experimentar um estilo"
+  ],
+  "Try example {n}": [
+    "예시 {n} 체험",
+    "サンプル{n}を試す",
+    "Beispiel {n} testen",
+    "Prueba el ejemplo {n}",
+    "Prova l’esempio {n}",
+    "Experimente o exemplo {n}"
+  ],
+  "Understand your brows": [
+    "내 눈썹 이해하기",
+    "自分の眉を知る",
+    "Verstehe deine Brauen",
+    "Comprende tus cejas",
+    "Comprendi le tue sopracciglia",
+    "Entenda suas sobrancelhas"
+  ],
+  "Understand your natural brows, refine the placement, then choose a style from the collection.": [
+    "자연 눈썹을 이해하고 위치를 조정한 뒤 원하는 스타일을 선택하세요.",
+    "自分の眉を知り、位置を調整してからスタイルを選びましょう。",
+    "Verstehe deine natürlichen Brauen, passe die Position an und wähle einen Stil aus der Sammlung.",
+    "Comprende tus cejas naturales, ajusta la posición y elige un estilo de la colección.",
+    "Conosci le tue sopracciglia naturali, regola la posizione e scegli uno stile dalla raccolta.",
+    "Conheça suas sobrancelhas naturais, ajuste a posição e escolha um estilo da coleção."
+  ],
+  "Use sample photo {n}": [
+    "샘플 사진 {n} 사용",
+    "サンプル写真{n}を使う",
+    "Beispielfoto {n} verwenden",
+    "Usar foto de ejemplo {n}",
+    "Usa la foto di esempio {n}",
+    "Usar foto de exemplo {n}"
+  ],
+  "Values are image pixels, not millimeters or a beauty score. Pose, expression and lighting affect measurement.": [
+    "값의 단위는 이미지 픽셀이며 밀리미터나 외모 점수가 아닙니다. 자세, 표정과 조명이 측정에 영향을 줍니다.",
+    "数値は画像のピクセルで、ミリメートルや美しさの点数ではありません。姿勢、表情、照明が測定に影響します。",
+    "Die Werte sind Bildpixel, keine Millimeter oder Schönheitspunkte. Haltung, Ausdruck und Licht beeinflussen die Messung.",
+    "Los valores son píxeles, no milímetros ni puntuaciones de belleza. La postura, expresión e iluminación afectan las medidas.",
+    "I valori sono pixel, non millimetri o punteggi di bellezza. Posa, espressione e luce influiscono sulle misure.",
+    "Os valores são pixels, não milímetros nem notas de beleza. Pose, expressão e iluminação afetam as medidas."
+  ],
+  "Vertical position": [
+    "세로 위치",
+    "上下の位置",
+    "Vertikale Position",
+    "Posición vertical",
+    "Posizione verticale",
+    "Posição vertical"
+  ],
+  "What makes a good photo?": [
+    "어떤 사진이 좋을까요?",
+    "どんな写真が適していますか？",
+    "Was macht ein gutes Foto aus?",
+    "¿Cómo debe ser una buena foto?",
+    "Come scegliere una buona foto?",
+    "Como escolher uma boa foto?"
+  ],
+  "Width": ["두께", "太さ", "Breite", "Grosor", "Spessore", "Espessura"],
+  "Your brow canvas": [
+    "나의 눈썹 캔버스",
+    "あなたの眉キャンバス",
+    "Deine Brauen-Leinwand",
+    "Tu lienzo de cejas",
+    "La tua tela per le sopracciglia",
+    "Sua tela de sobrancelhas"
+  ],
+  "Your brow preview": [
+    "내 눈썹 미리보기",
+    "あなたの眉プレビュー",
+    "Deine Brauenvorschau",
+    "Tu vista previa de cejas",
+    "La tua anteprima",
+    "Sua prévia de sobrancelhas"
+  ],
+  "Your controls will appear once analysis is ready.": [
+    "분석이 완료되면 조정 도구가 표시됩니다.",
+    "分析が完了すると調整ツールが表示されます。",
+    "Die Regler erscheinen, sobald die Analyse fertig ist.",
+    "Los controles aparecerán cuando termine el análisis.",
+    "I controlli appariranno al termine dell’analisi.",
+    "Os controles aparecerão quando a análise terminar."
+  ],
+  "Your personal brow design": [
+    "나만의 눈썹 디자인",
+    "自分だけの眉デザイン",
+    "Dein persönliches Brauendesign",
+    "Tu diseño personal de cejas",
+    "Il tuo disegno personale",
+    "Seu desenho pessoal de sobrancelhas"
+  ],
+  "Zoom in": [
+    "확대",
+    "拡大",
+    "Vergrößern",
+    "Acercar",
+    "Ingrandisci",
+    "Aumentar zoom"
+  ],
+  "Zoom into brows": [
+    "눈썹 확대",
+    "眉を拡大",
+    "Brauen vergrößern",
+    "Acercar las cejas",
+    "Ingrandisci le sopracciglia",
+    "Ampliar sobrancelhas"
+  ],
+  "Zoom out": [
+    "축소",
+    "縮小",
+    "Verkleinern",
+    "Alejar",
+    "Riduci",
+    "Diminuir zoom"
+  ]
+}

@@ -39,7 +39,11 @@ export function getMetadata(
     );
 
     // translated metadata
-    let translatedMetadata: any = {};
+    let translatedMetadata: {
+      title?: string;
+      description?: string;
+      keywords?: string;
+    } = {};
     if (options.metadataKey) {
       translatedMetadata = await getTranslatedMetadata(
         options.metadataKey,
@@ -101,8 +105,6 @@ export function getMetadata(
         images: [
           {
             url: imageUrl.toString(),
-            width: 1200,
-            height: 630,
             alt: title,
           },
         ],
@@ -115,8 +117,6 @@ export function getMetadata(
         images: [
           {
             url: imageUrl.toString(),
-            width: 1200,
-            height: 630,
             alt: title,
           },
         ],

@@ -16,10 +16,8 @@ interface BrowTintStudioBlockProps {
  * available styles via `section.data.styles` so the studio gets its options
  * from the server query without needing a separate fetch.
  */
-export function BrowTintStudio({ styles }: BrowTintStudioBlockProps) {
-  if (!styles || styles.length === 0) {
-    return null;
-  }
+export function BrowTintStudio({ styles = [] }: BrowTintStudioBlockProps) {
+  // Upload and local shape analysis remain available if the style list is empty.
   return (
     <Suspense>
       <BrowTintStudioImpl styles={styles} />

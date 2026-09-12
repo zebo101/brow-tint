@@ -9,7 +9,7 @@ import {
 } from './seo-paths';
 
 const defaultOptions = {
-  siteUrl: 'https://tintbrow.com/',
+  siteUrl: 'https://browlens.com/',
   defaultLocale: 'en',
   locales: ['en', 'zh', 'ja'],
 };
@@ -17,52 +17,62 @@ const defaultOptions = {
 test('getSiteUrl strips trailing slashes', () => {
   assert.equal(
     getSiteUrl({
-      siteUrl: 'https://tintbrow.com///',
+      siteUrl: 'https://browlens.com///',
     }),
-    'https://tintbrow.com'
+    'https://browlens.com'
   );
 });
 
 test('buildCanonicalUrl keeps default locale unprefixed', () => {
   assert.equal(
     buildCanonicalUrl('/pricing', 'en', defaultOptions),
-    'https://tintbrow.com/pricing'
+    'https://browlens.com/pricing'
   );
 });
 
 test('buildCanonicalUrl prefixes non-default locales once', () => {
   assert.equal(
     buildCanonicalUrl('/ai-brow-tint-generator', 'zh', defaultOptions),
-    'https://tintbrow.com/zh/ai-brow-tint-generator'
+    'https://browlens.com/zh/ai-brow-tint-generator'
   );
 
   assert.equal(
     buildCanonicalUrl('/zh/ai-brow-tint-generator', 'zh', defaultOptions),
-    'https://tintbrow.com/zh/ai-brow-tint-generator'
+    'https://browlens.com/zh/ai-brow-tint-generator'
   );
 });
 
 test('buildCanonicalUrl removes query strings and duplicate slashes', () => {
   assert.equal(
-    buildCanonicalUrl('//blog//what-is-xxx/?utm_source=google#top', 'en', defaultOptions),
-    'https://tintbrow.com/blog/what-is-xxx'
+    buildCanonicalUrl(
+      '//blog//what-is-xxx/?utm_source=google#top',
+      'en',
+      defaultOptions
+    ),
+    'https://browlens.com/blog/what-is-xxx'
   );
 });
 
 test('buildLanguageAlternates returns one canonical per locale', () => {
-  assert.deepEqual(
-    buildLanguageAlternates('/docs', defaultOptions),
-    {
-      en: 'https://tintbrow.com/docs',
-      zh: 'https://tintbrow.com/zh/docs',
-      ja: 'https://tintbrow.com/ja/docs',
-    }
-  );
+  assert.deepEqual(buildLanguageAlternates('/docs', defaultOptions), {
+    en: 'https://browlens.com/docs',
+    zh: 'https://browlens.com/zh/docs',
+    ja: 'https://browlens.com/ja/docs',
+    'x-default': 'https://browlens.com/docs',
+  });
 });
 
 test('isIndexablePath excludes private and low-value paths across locales', () => {
   assert.equal(isIndexablePath('/pricing', defaultOptions), true);
-  assert.equal(isIndexablePath('/zh/ai-brow-tint-generator', defaultOptions), true);
+  assert.equal(isIndexablePath('/zh/filter', defaultOptions), true);
+  assert.equal(
+    isIndexablePath('/zh/ai-brow-tint-generator', defaultOptions),
+    false
+  );
+  assert.equal(
+    isIndexablePath('/blog/best-brow-tint-2026', defaultOptions),
+    true
+  );
   assert.equal(isIndexablePath('/api/chat', defaultOptions), false);
   assert.equal(isIndexablePath('/ja/settings/profile', defaultOptions), false);
   assert.equal(isIndexablePath('/zh/activity/ai-tasks', defaultOptions), false);

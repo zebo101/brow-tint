@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
 import { getMetadata } from '@/shared/lib/seo';
-import { getPostsAndCategories } from '@/shared/models/post';
+import { getLocalPostsAndCategories } from '@/shared/models/post';
 import {
   Category as CategoryType,
   Post as PostType,
@@ -18,7 +18,6 @@ export const generateMetadata = getMetadata({
 
 export default async function BlogPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ locale: string }>;
   searchParams: Promise<{ page?: number; pageSize?: number }>;
@@ -41,15 +40,9 @@ export default async function BlogPage({
   };
 
   try {
-    const { page: pageNum, pageSize } = await searchParams;
-    const page = pageNum || 1;
-    const limit = pageSize || 30;
-
     const { posts: allPosts, categories: allCategories } =
-      await getPostsAndCategories({
+      await getLocalPostsAndCategories({
         locale,
-        page,
-        limit,
       });
 
     posts = allPosts;

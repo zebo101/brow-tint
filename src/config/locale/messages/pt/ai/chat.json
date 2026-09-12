@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Chat Brow Tint",
+        "title": "Browlens",
         "logo": {
           "src": "/logo.png",
-          "alt": "Chat Brow Tint"
+          "alt": "Browlens"
         },
         "url": "/chat"
       },
@@ -61,7 +61,7 @@
         ]
       },
       "show_theme": true,
-      "show_locale": false
+      "show_locale": true
     },
     "variant": "sidebar"
   },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "Como posso ajudar?",
-    "input_placeholder": "Pergunte-me sobre tintura de sobrancelha, combinação de cores ou dicas de cuidado de sobrancelhas..."
+    "input_placeholder": "Converse com a IA sobre formatos e estilo das sobrancelhas"
   },
   "history": {
     "title": "Histórico de chat",
@@ -95,20 +95,3 @@
     "untitled": "Conversa sem título"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

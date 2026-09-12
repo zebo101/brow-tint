@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "Brow Tint",
+      "title": "Browlens",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - AI Brow Tinting Generator",
+        "alt": "Browlens",
         "width": 100,
         "height": 100
       },
@@ -38,14 +38,14 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "AI眉ティントジェネレーター",
-              "description": "AIで眉ティントとティント眉ジェルのスタイルをプレビュー",
-              "url": "/ai-brow-tint-generator",
+              "title": "眉フィルター",
+              "description": "AIで自分の写真にさまざまな眉をプレビュー",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "眉ティントアドバイザー",
-              "description": "AI眉ティント専門家のアドバイスを受ける",
+              "title": "眉の形アドバイザー",
+              "description": "AIに眉の形やスタイリングを相談",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -78,11 +78,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "Brow Tint",
-      "description": "Brow Tintは、GPT Image 2搭載の無料オンラインAI眉ティントジェネレーターです。プロ仕様の眉ティント、ティント眉ジェル、眉ラミネーション&ティント、ラッシュ&ブロウティントのスタイルをサロン予約前にプレビューできます。",
+      "title": "Browlens",
+      "description": "Browlens — AIを通して、自分の眉を見つめよう。",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
+        "alt": "Browlens",
         "width": 1024,
         "height": 1024
       },
@@ -94,14 +94,14 @@
           "title": "AIツール",
           "children": [
             {
-              "title": "AI眉ティントジェネレーター",
-              "description": "AIで眉ティントのスタイルを生成",
-              "url": "/ai-brow-tint-generator",
+              "title": "眉フィルター",
+              "description": "AIで自分の写真にさまざまな眉をプレビュー",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "眉ティントアドバイザー",
-              "description": "AI眉ティント専門家とチャット",
+              "title": "眉の形アドバイザー",
+              "description": "AIに眉の形やスタイリングを相談",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }

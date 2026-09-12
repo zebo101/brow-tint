@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "title": "Brow Tint Preços — Créditos e Planos de Tinta de Sobrancelhas IA",
-    "description": "Compre créditos para gerar prévias de tinta para sobrancelhas com IA. Compare planos, encontre o melhor pacote e comece em segundos.",
-    "keywords": "preços tinta para sobrancelhas, créditos tinta IA, planos tinta sobrancelhas, custo gerador tinta sobrancelhas, assinatura tinta IA"
+    "title": "Preços Browlens — Créditos e planos de filtros de sobrancelhas",
+    "description": "Compare planos de créditos para gerar prévias com Browlens.",
+    "keywords": "app de sobrancelhas, análise de sobrancelhas, IA para sobrancelhas, filtro de sobrancelhas, editor de sobrancelhas, Browlens"
   },
   "page": {
     "title": "Preços",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Brow Tint Preços",
+        "sr_only_title": "Preços Browlens — Créditos e planos de filtros de sobrancelhas",
         "title": "Escolha o plano perfeito",
-        "description": "Cada geração de Brow Tint com IA usa 1 crédito.",
+        "description": "A análise é grátis. Gerar imagens exige login e créditos; o custo aparece antes de gerar.",
         "groups": [
           {
             "name": "monthly",
@@ -30,7 +30,7 @@
         "items": [
           {
             "title": "Grátis",
-            "description": "Experimente Brow Tint sem custo.",
+            "description": "Experimente Browlens sem custo.",
             "features_title": "Inclui",
             "features": ["Funcionalidades essenciais", "Fila padrão"],
             "interval": "month",
@@ -112,7 +112,7 @@
           },
           {
             "title": "Grátis",
-            "description": "Experimente Brow Tint sem custo.",
+            "description": "Experimente Browlens sem custo.",
             "features_title": "Inclui",
             "features": ["Funcionalidades essenciais", "Fila padrão"],
             "interval": "year",

@@ -1,234 +1,164 @@
 {
   "metadata": {
-    "title": "Galeria Brow Tint - Antes e Depois da Tintura de Sobrancelhas com IA",
-    "description": "Veja transformações incríveis de antes e depois da tintura de sobrancelhas criadas com o gerador de Brow Tint com IA",
-    "keywords": "galeria de tinta para sobrancelhas, tinta sobrancelhas antes e depois, exemplos de tinta IA, prévia de tinta sobrancelhas, tinta profissional sobrancelhas, gel para sobrancelhas"
+    "title": "Browlens — Galeria de filtros de sobrancelhas",
+    "description": "Descubra formatos e filtros antes de experimentar na sua foto.",
+    "keywords": "app de sobrancelhas, análise de sobrancelhas, IA para sobrancelhas, filtro de sobrancelhas, editor de sobrancelhas, Browlens"
   },
   "page": {
-    "title": "Galeria Brow Tint",
+    "title": "Browlens — Galeria de filtros de sobrancelhas",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Transformações Impressionantes de Tintura de Sobrancelhas",
-        "description": "Veja como os usuários transformaram suas sobrancelhas com Brow Tint.",
+        "title": "Explore seu próximo formato de sobrancelhas",
+        "description": "Descubra formatos e filtros antes de experimentar na sua foto.",
         "buttons": [
           {
-            "title": "Experimentar este estilo",
-            "url": "/#ai-brow-tint-studio"
+            "title": "Experimentar outro formato",
+            "url": "/#brow-app"
           }
         ],
         "groups": [
           {
             "name": "all",
-            "title": "Todos os Estilos"
+            "title": "Todos"
           },
           {
             "name": "short-hair",
-            "title": "Tinturas Naturais"
+            "title": "Sobrancelhas naturais"
           },
           {
             "name": "long-hair",
-            "title": "Tinturas Marcantes"
+            "title": "Sobrancelhas definidas"
           },
           {
             "name": "color-change",
-            "title": "Laminação de Sobrancelhas"
+            "title": "Sobrancelhas elevadas"
           },
           {
             "name": "men-styles",
-            "title": "Gel de Sobrancelhas Colorido"
+            "title": "Sobrancelhas efeito pluma"
           },
           {
             "name": "women-styles",
-            "title": "Cílios e Sobrancelhas"
+            "title": "Arco suave"
           },
           {
             "name": "trendy",
-            "title": "Antes e Depois"
+            "title": "Comparar antes e depois"
           },
           {
             "name": "classic",
-            "title": "Tinturas Profissionais"
+            "title": "Sobrancelhas retas"
           }
         ],
         "items": [
           {
-            "title": "Tintura de Sobrancelhas Taupe Suave",
-            "description": "Visual natural e sutil de tintura de sobrancelhas para uma aparência elegante sem esforço",
+            "title": "Arco suave",
+            "description": "Experimente o filtro de sobrancelhas Arco suave na sua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Antes e depois da tintura taupe suave de sobrancelhas"
+              "alt": "Experimente o filtro de sobrancelhas Arco suave na sua foto."
             },
             "group": "short-hair"
           },
           {
-            "title": "Tintura de Sobrancelhas Espresso Escuro",
-            "description": "Tintura marrom escura e rica para sobrancelhas marcantes e definidas",
+            "title": "Arco definido",
+            "description": "Experimente o filtro de sobrancelhas Arco definido na sua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Tintura de sobrancelhas espresso escuro"
+              "alt": "Experimente o filtro de sobrancelhas Arco definido na sua foto."
             },
             "group": "long-hair"
           },
           {
-            "title": "Laminação e Tintura de Sobrancelhas",
-            "description": "Sobrancelhas laminadas escovadas para cima com tintura para um visual elegante e cheio",
+            "title": "Sobrancelhas elevadas",
+            "description": "Experimente o filtro de sobrancelhas Sobrancelhas elevadas na sua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Resultado de laminação e tintura de sobrancelhas"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas elevadas na sua foto."
             },
             "group": "color-change"
           },
           {
-            "title": "Tintura Profissional de Sobrancelhas",
-            "description": "Tintura profissional de sobrancelhas com qualidade de salão com cobertura precisa e uniforme",
+            "title": "Sobrancelhas retas",
+            "description": "Experimente o filtro de sobrancelhas Sobrancelhas retas na sua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Transformação de tintura profissional de sobrancelhas"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas retas na sua foto."
             },
             "group": "classic"
           },
           {
-            "title": "Visual com Gel de Sobrancelhas Colorido",
-            "description": "Acabamento diário com gel de sobrancelhas colorido para um realce rápido e natural",
+            "title": "Sobrancelhas efeito pluma",
+            "description": "Experimente o filtro de sobrancelhas Sobrancelhas efeito pluma na sua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Visual com gel de sobrancelhas colorido"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas efeito pluma na sua foto."
             },
             "group": "men-styles"
           },
           {
-            "title": "Tintura de Cílios e Sobrancelhas",
-            "description": "Tintura combinada de cílios e sobrancelhas para um visual completo e de baixa manutenção",
+            "title": "Sobrancelhas arredondadas",
+            "description": "Experimente o filtro de sobrancelhas Sobrancelhas arredondadas na sua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Resultado de tintura de cílios e sobrancelhas"
+              "alt": "Experimente o filtro de sobrancelhas Sobrancelhas arredondadas na sua foto."
             },
             "group": "women-styles"
           }
         ]
       },
-      "brow_tint_gallery": {
-        "block": "brow-tint-gallery",
-        "id": "brow_tint_gallery",
-        "title": "Navegue pela Biblioteca Completa de Estilos de Brow Tint",
-        "description": "Percorra nossos estilos de tintura de sobrancelhas com IA organizados por tipo. Clique em qualquer visual para visualizar na sua própria foto.",
-        "limit": 12,
-        "cta_url": "/ai-brow-tint-generator",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Tinturas Naturais de Sobrancelhas",
-            "description": "Tons suaves e do dia a dia que realçam sua cor natural de sobrancelha. Perfeito para um visual sutil e natural com tons de taupe, castanho claro e loiro.",
-            "cta_label": "Experimentar agora"
-          },
-          {
-            "key": "women",
-            "title": "Tinturas Marcantes de Sobrancelhas",
-            "description": "Tintura marcante de sobrancelhas em tons de espresso escuro, carvão e acobreado. Conquiste sobrancelhas dramáticas e esculpidas que emolduram e definem seu rosto.",
-            "cta_label": "Experimentar agora"
-          },
-          {
-            "key": "boys",
-            "title": "Estilos de Laminação de Sobrancelhas",
-            "description": "Combinações de laminação e tintura de sobrancelhas para aquele visual escovado e emplumado. Visualize diferentes estilos de laminação antes da sua consulta no salão.",
-            "cta_label": "Experimentar agora"
-          },
-          {
-            "key": "girls",
-            "title": "Tintura de Cílios e Sobrancelhas",
-            "description": "Pacotes combinados de tintura de cílios e sobrancelhas para um realce completo e de baixa manutenção. Veja como tinturas coordenadas emolduram seus olhos.",
-            "cta_label": "Experimentar agora"
-          }
-        ],
-        "tip": "Todas as pré-visualizações são gratuitas. Novos estilos de tintura de sobrancelhas adicionados regularmente."
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "label": "Como Funciona",
-        "title": "De Foto à Tintura de Sobrancelhas Perfeita em 4 Passos",
-        "description": "Brow Tint foi criado para pré-visualizações rápidas e realistas de tintura de sobrancelhas. Sem instalação, sem cadastro necessário para experimentar.",
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "Envie uma Foto Frontal Nítida",
-            "description": "Boa iluminação e sobrancelhas visíveis dão à IA o mapeamento mais preciso do seu rosto e formato das sobrancelhas."
-          },
-          {
-            "title": "Escolha um Estilo de Tintura de Sobrancelhas",
-            "description": "Navegue por tinturas naturais, tons marcantes, combinações de laminação e tintura de sobrancelhas ou acabamentos de gel de sobrancelhas colorido na galeria."
-          },
-          {
-            "title": "Ajuste Tom, Formato e Intensidade",
-            "description": "Ajuste a cor da tintura, espessura da sobrancelha, formato do arco e intensidade de cobertura para combinar com o visual desejado."
-          },
-          {
-            "title": "Gere, Compare e Baixe",
-            "description": "Gere várias pré-visualizações de tintura de sobrancelhas, compare antes e depois lado a lado e baixe sua favorita para compartilhar com seu especialista."
-          }
-        ]
-      },
       "faq": {
         "id": "faq",
-        "title": "FAQ de Pré-visualização de Brow Tint",
-        "description": "Perguntas comuns sobre pré-visualizações de tintura de sobrancelhas com IA, dicas de fotos e como obter os melhores resultados.",
+        "title": "Perguntas sobre o app de sobrancelhas",
+        "description": "Como analisar suas sobrancelhas e experimentar novos filtros com Browlens.",
         "items": [
           {
-            "question": "As pré-visualizações de tintura de sobrancelhas nesta galeria são gratuitas?",
-            "answer": "Sim. Você pode navegar por todos os estilos de tintura de sobrancelhas gratuitamente e gerar pré-visualizações na sua própria foto com uma avaliação gratuita."
+            "question": "O que é Browlens?",
+            "answer": "Browlens é um app para explorar formatos de sobrancelhas com IA. Envie uma foto, confira as guias e escolha um estilo para visualizar."
           },
           {
-            "question": "A pré-visualização de Brow Tint com IA vai corresponder aos meus resultados reais?",
-            "answer": "Brow Tint renderiza tons e coberturas realistas de tintura que se mesclam com os pelos naturais da sua sobrancelha. Os resultados reais ainda dependem do seu tipo de sobrancelha e do seu especialista — recomendamos baixar sua pré-visualização e compartilhá-la com seu profissional de tintura de sobrancelhas."
+            "question": "Posso analisar minhas sobrancelhas grátis sem me cadastrar?",
+            "answer": "Sim. Você pode enviar uma foto e usar as guias e a análise sem conta. Gerar uma nova imagem exige login e créditos; o custo aparece antes de gerar."
           },
           {
-            "question": "Quantos estilos de tintura de sobrancelhas posso experimentar?",
-            "answer": "Há dezenas de estilos selecionados de tintura de sobrancelhas na galeria, cobrindo tinturas naturais, tinturas marcantes, combinações de laminação e tintura de sobrancelhas, visuais de gel de sobrancelhas colorido e pacotes de tintura de cílios e sobrancelhas. Você também pode descrever tons personalizados com seu próprio prompt."
+            "question": "Que foto devo enviar?",
+            "answer": "Use uma foto frontal nítida, com luz uniforme e as duas sobrancelhas visíveis. São aceitos JPG, PNG ou WebP de até 15 MB."
           },
           {
-            "question": "Preciso instalar um aplicativo para usar o Brow Tint?",
-            "answer": "Não. Brow Tint funciona inteiramente no seu navegador — no celular ou desktop. Sem downloads ou plugins necessários."
+            "question": "Como funcionam os filtros de sobrancelhas?",
+            "answer": "Escolha um estilo, confira as guias na foto e gere uma prévia para comparar o resultado no seu rosto."
           },
           {
-            "question": "Qual foto funciona melhor para uma pré-visualização de tintura de sobrancelhas?",
-            "answer": "Use uma foto nítida e frontal com iluminação uniforme. Evite óculos de sol, chapéus ou filtros pesados. Uma expressão neutra com sobrancelhas visíveis dá à IA o resultado de tintura mais preciso."
+            "question": "Posso comparar formatos diferentes?",
+            "answer": "Sim. Experimente um filtro na foto, compare antes e depois e teste outros formatos até encontrar um de que goste."
           },
           {
-            "question": "Minha foto é mantida em privacidade?",
-            "answer": "Suas fotos enviadas são processadas com segurança apenas para a geração de tintura de sobrancelhas. Elas não são armazenadas permanentemente nem compartilhadas com terceiros."
-          },
-          {
-            "question": "Qual a diferença entre tintura de sobrancelhas e laminação de sobrancelhas?",
-            "answer": "A tintura de sobrancelhas adiciona cor aos pelos da sobrancelha para um visual mais cheio e definido. A laminação e tintura de sobrancelhas combina um processo químico de alisamento com tintura para criar sobrancelhas escovadas para cima e emplumadas. Você pode visualizar ambos com Brow Tint."
-          },
-          {
-            "question": "O Brow Tint pode me ajudar a encontrar o tom certo de brow code?",
-            "answer": "Sim. Brow Tint usa IA para analisar seu tom de pele, cor de cabelo e traços para recomendar a melhor combinação de tom de tintura de sobrancelhas — similar a uma fórmula brow code tint. Experimente vários tons lado a lado para encontrar sua cor perfeita de tintura profissional de sobrancelhas."
+            "question": "A prévia será idêntica ao resultado real?",
+            "answer": "A prévia é uma referência visual. A qualidade da foto, suas sobrancelhas naturais e a técnica podem afetar o resultado."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Pronta Para Encontrar Sua Tintura de Sobrancelhas Perfeita?",
-        "description": "Envie sua foto e visualize todos os estilos de tintura de sobrancelhas na galeria — totalmente grátis, sem instalação necessária.",
+        "title": "Encontre seu formato de sobrancelhas",
+        "description": "Veja suas sobrancelhas pelas lentes da IA.",
         "buttons": [
           {
-            "title": "Experimentar Brow Tint Agora",
-            "url": "/ai-brow-tint-generator",
+            "title": "Enviar uma foto",
+            "url": "/#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
@@ -236,11 +166,6 @@
         "className": "bg-muted"
       }
     },
-    "show_sections": [
-      "showcases",
-      "usage",
-      "faq",
-      "cta"
-    ]
+    "show_sections": ["showcases", "usage", "faq", "cta"]
   }
 }

@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "Blog - Brow Tint",
-    "description": "Read latest brow tinting trends, AI features, and brow tint tips.",
-    "keywords": "brow tinting blog, brow tint tips, ai brow tint tutorials, eyebrow tint trends, brow tint guide, tinted brow gel, professional brow tinting"
+    "title": "Browlens Guides — Eyebrow Mapping, Shapes & Shaping",
+    "description": "Explore eyebrow mapping, eyebrow shapes, and beginner shaping guides, then try a look on your own photo.",
+    "keywords": "brow shaping blog, brow shape tips, ai brow shape tutorials, eyebrow shape trends, brow shape guide, brow filter, eyebrow shaping"
   },
   "page": {
-    "title": "Brow Tint Blog",
+    "title": "Browlens Guides — Eyebrow Mapping, Shapes & Shaping",
     "sections": {
       "blog": {
         "id": "blog",
-        "title": "Blog",
-        "description": "Read latest brow tinting trends, AI features, and brow tint tips."
+        "title": "Browlens Guides — Eyebrow Mapping, Shapes & Shaping",
+        "description": "Explore eyebrow mapping, eyebrow shapes, and beginner shaping guides, then try a look on your own photo."
       }
     }
   },

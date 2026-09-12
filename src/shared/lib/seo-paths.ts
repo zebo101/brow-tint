@@ -1,4 +1,5 @@
 import { envConfigs } from '@/config';
+import { browlensRedirects } from '@/config/browlens-redirects';
 import { defaultLocale, locales } from '@/config/locale';
 
 type SeoPathOptions = {
@@ -23,7 +24,7 @@ const LOW_VALUE_PATHS = new Set(['/privacy-policy', '/terms-of-service']);
 
 function getOptions(options: SeoPathOptions = {}) {
   return {
-    siteUrl: options.siteUrl ?? envConfigs.app_url,
+    siteUrl: options.siteUrl ?? envConfigs.site_url,
     defaultLocale: options.defaultLocale ?? defaultLocale,
     locales: options.locales ?? locales,
   };
@@ -86,16 +87,20 @@ export function buildCanonicalUrl(
   locale?: string,
   options: SeoPathOptions = {}
 ) {
-  if (/^https?:\/\//i.test(pathname)) {
-    const url = new URL(pathname);
-    return `${getSiteUrl(options)}${normalizePathname(url.pathname)}`;
-  }
-
   const resolvedOptions = getOptions(options);
-  const normalizedPath = stripLocalePrefix(pathname, resolvedOptions.locales);
+  const inputPath = normalizePathname(pathname);
+  const pathLocale = resolvedOptions.locales.find(
+    (value) => inputPath === `/${value}` || inputPath.startsWith(`/${value}/`)
+  );
+  const targetLocale = locale ?? pathLocale ?? resolvedOptions.defaultLocale;
+  const normalizedPath = stripLocalePrefix(inputPath, [
+    ...resolvedOptions.locales,
+    'zh-CN',
+  ]);
   const localizedPath =
-    locale && locale !== resolvedOptions.defaultLocale
-      ? normalizePathname(`/${locale}${normalizedPath}`)
+    resolvedOptions.locales.includes(targetLocale) &&
+    targetLocale !== resolvedOptions.defaultLocale
+      ? normalizePathname(`/${targetLocale}${normalizedPath}`)
       : normalizedPath;
 
   return `${getSiteUrl(resolvedOptions)}${localizedPath}`;
@@ -117,10 +122,15 @@ export function buildLanguageAlternates(
 
   // x-default points at the default-locale URL so Google has an explicit
   // fallback when none of the language variants matches the user.
-  entries.push([
-    'x-default',
-    buildCanonicalUrl(normalizedPath, resolvedOptions.defaultLocale, resolvedOptions),
-  ]);
+  if (resolvedOptions.locales.includes(resolvedOptions.defaultLocale))
+    entries.push([
+      'x-default',
+      buildCanonicalUrl(
+        normalizedPath,
+        resolvedOptions.defaultLocale,
+        resolvedOptions
+      ),
+    ]);
 
   return Object.fromEntries(entries);
 }
@@ -132,7 +142,10 @@ export function isIndexablePath(
   const resolvedOptions = getOptions(options);
   const normalizedPath = stripLocalePrefix(pathname, resolvedOptions.locales);
 
-  if (LOW_VALUE_PATHS.has(normalizedPath)) {
+  if (
+    LOW_VALUE_PATHS.has(normalizedPath) ||
+    browlensRedirects[normalizedPath]
+  ) {
     return false;
   }
 

@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Brow Tint Chat",
+        "title": "Browlens",
         "logo": {
           "src": "/logo.png",
-          "alt": "Brow Tint Chat"
+          "alt": "Browlens"
         },
         "url": "/chat"
       },
@@ -61,7 +61,7 @@
         ]
       },
       "show_theme": true,
-      "show_locale": false
+      "show_locale": true
     },
     "variant": "sidebar"
   },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "Wie kann ich helfen?",
-    "input_placeholder": "Fragen Sie mich zu Augenbrauentönung, Farbabstimmung oder Augenbrauenpflege-Tipps..."
+    "input_placeholder": "Sprich mit AI über Brauenformen und Styling"
   },
   "history": {
     "title": "Chat-Verlauf",
@@ -95,20 +95,3 @@
     "untitled": "Unbenanntes Gespräch"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

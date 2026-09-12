@@ -1,234 +1,164 @@
 {
   "metadata": {
-    "title": "Galería de Brow Tint - Tinte de Cejas con IA Antes y Después",
-    "description": "Ve increíbles transformaciones de tinte de cejas antes y después creadas con el generador de IA de Brow Tint",
-    "keywords": "galería de tinte de cejas, tinte de cejas antes y después, ejemplos de tinte de cejas IA, vista previa tinte de cejas, tinte profesional de cejas, gel de cejas con color"
+    "title": "Browlens — Galería de filtros de cejas",
+    "description": "Descubre formas y filtros de cejas antes de probarlos en tu foto.",
+    "keywords": "app de cejas, análisis de cejas, IA para cejas, filtro de cejas, editor de cejas, Browlens"
   },
   "page": {
-    "title": "Galería de Brow Tint",
+    "title": "Browlens — Galería de filtros de cejas",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Impresionantes Transformaciones de Tinte de Cejas",
-        "description": "Ve cómo las usuarias transformaron sus cejas con Brow Tint.",
+        "title": "Explora tu próxima forma de cejas",
+        "description": "Descubre formas y filtros de cejas antes de probarlos en tu foto.",
         "buttons": [
           {
-            "title": "Prueba este estilo",
-            "url": "/#ai-brow-tint-studio"
+            "title": "Probar otra forma",
+            "url": "/#brow-app"
           }
         ],
         "groups": [
           {
             "name": "all",
-            "title": "Todos los Estilos"
+            "title": "Todos"
           },
           {
             "name": "short-hair",
-            "title": "Tintes Naturales"
+            "title": "Cejas naturales"
           },
           {
             "name": "long-hair",
-            "title": "Tintes Intensos"
+            "title": "Cejas definidas"
           },
           {
             "name": "color-change",
-            "title": "Laminado de Cejas"
+            "title": "Cejas elevadas"
           },
           {
             "name": "men-styles",
-            "title": "Gel de Cejas con Color"
+            "title": "Cejas efecto pluma"
           },
           {
             "name": "women-styles",
-            "title": "Pestañas y Cejas"
+            "title": "Arco suave"
           },
           {
             "name": "trendy",
-            "title": "Antes y Después"
+            "title": "Comparar antes y después"
           },
           {
             "name": "classic",
-            "title": "Tintes Profesionales"
+            "title": "Cejas rectas"
           }
         ],
         "items": [
           {
-            "title": "Tinte de Cejas Taupe Suave",
-            "description": "Look de tinte de cejas natural y sutil para una apariencia elegante sin esfuerzo",
+            "title": "Arco suave",
+            "description": "Prueba el filtro de cejas Arco suave en tu foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Tinte de cejas taupe suave antes y después"
+              "alt": "Prueba el filtro de cejas Arco suave en tu foto."
             },
             "group": "short-hair"
           },
           {
-            "title": "Tinte de Cejas Espresso Oscuro",
-            "description": "Tinte de cejas marrón intenso y profundo para cejas definidas y atrevidas",
+            "title": "Arco definido",
+            "description": "Prueba el filtro de cejas Arco definido en tu foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Tinte de cejas espresso oscuro"
+              "alt": "Prueba el filtro de cejas Arco definido en tu foto."
             },
             "group": "long-hair"
           },
           {
-            "title": "Laminado y Tinte de Cejas",
-            "description": "Cejas laminadas y teñidas peinadas hacia arriba para un look elegante y lleno",
+            "title": "Cejas elevadas",
+            "description": "Prueba el filtro de cejas Cejas elevadas en tu foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Resultado de laminado y tinte de cejas"
+              "alt": "Prueba el filtro de cejas Cejas elevadas en tu foto."
             },
             "group": "color-change"
           },
           {
-            "title": "Tinte Profesional de Cejas",
-            "description": "Tinte profesional de cejas con calidad de salón con cobertura precisa y uniforme",
+            "title": "Cejas rectas",
+            "description": "Prueba el filtro de cejas Cejas rectas en tu foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Transformación de tinte profesional de cejas"
+              "alt": "Prueba el filtro de cejas Cejas rectas en tu foto."
             },
             "group": "classic"
           },
           {
-            "title": "Look de Gel de Cejas con Color",
-            "description": "Acabado diario de gel de cejas con color para un realce natural y rápido",
+            "title": "Cejas efecto pluma",
+            "description": "Prueba el filtro de cejas Cejas efecto pluma en tu foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Look de gel de cejas con color"
+              "alt": "Prueba el filtro de cejas Cejas efecto pluma en tu foto."
             },
             "group": "men-styles"
           },
           {
-            "title": "Tinte de Pestañas y Cejas",
-            "description": "Tinte combinado de pestañas y cejas para un look completo y de bajo mantenimiento",
+            "title": "Cejas redondeadas",
+            "description": "Prueba el filtro de cejas Cejas redondeadas en tu foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Resultado de tinte de pestañas y cejas"
+              "alt": "Prueba el filtro de cejas Cejas redondeadas en tu foto."
             },
             "group": "women-styles"
           }
         ]
       },
-      "brow_tint_gallery": {
-        "block": "brow-tint-gallery",
-        "id": "brow_tint_gallery",
-        "title": "Explora la Biblioteca Completa de Estilos de Tinte de Cejas",
-        "description": "Navega por nuestros estilos de tinte de cejas con IA organizados por tipo. Haz clic en cualquier look para previsualizarlo en tu propia foto.",
-        "limit": 12,
-        "cta_url": "/ai-brow-tint-generator",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Tintes de Cejas Naturales",
-            "description": "Tonos de tinte de cejas suaves y cotidianos que realzan tu color natural de cejas. Perfectos para un look sutil y sin maquillaje con tonos taupe, marrón claro y rubio.",
-            "cta_label": "Probar ahora"
-          },
-          {
-            "key": "women",
-            "title": "Tintes de Cejas Intensos",
-            "description": "Tinte de cejas impactante en tonos espresso intenso, carbón y pelirrojo. Logra cejas dramáticas y esculpidas que enmarcan y definen tu rostro.",
-            "cta_label": "Probar ahora"
-          },
-          {
-            "key": "boys",
-            "title": "Estilos de Laminado de Cejas",
-            "description": "Combinaciones de laminado y tinte de cejas para ese look peinado hacia arriba y plumoso. Previsualiza diferentes estilos de laminado antes de tu cita en el salón.",
-            "cta_label": "Probar ahora"
-          },
-          {
-            "key": "girls",
-            "title": "Tinte de Pestañas y Cejas",
-            "description": "Paquetes combinados de tinte de pestañas y cejas para un realce completo y de bajo mantenimiento. Ve cómo los tintes coordinados enmarcan tus ojos.",
-            "cta_label": "Probar ahora"
-          }
-        ],
-        "tip": "Cada vista previa es gratuita. Se añaden nuevos estilos de tinte de cejas regularmente."
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "label": "Cómo Funciona",
-        "title": "De Foto a Tinte de Cejas Perfecto en 4 Pasos",
-        "description": "Brow Tint está diseñado para previsualizaciones rápidas y realistas de tinte de cejas. Sin instalación, sin registro necesario para probar.",
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "Sube una Foto Clara Frontal",
-            "description": "Buena iluminación y cejas visibles le dan a la IA el mapa más preciso de tu rostro y forma de cejas."
-          },
-          {
-            "title": "Elige un Estilo de Tinte de Cejas",
-            "description": "Navega por tintes naturales, tonos intensos, combinaciones de laminado y tinte de cejas, o acabados de gel de cejas con color de la galería."
-          },
-          {
-            "title": "Ajusta Tono, Forma e Intensidad",
-            "description": "Ajusta el color del tinte, el grosor de las cejas, la forma del arco y la intensidad de cobertura para que coincida con el look que deseas."
-          },
-          {
-            "title": "Genera, Compara y Descarga",
-            "description": "Genera múltiples vistas previas de tinte de cejas, compara antes y después lado a lado, y descarga tu favorita para compartir con tu especialista en cejas."
-          }
-        ]
-      },
       "faq": {
         "id": "faq",
-        "title": "Preguntas Frecuentes sobre Vista Previa de Tinte de Cejas",
-        "description": "Preguntas comunes sobre previsualizaciones de tinte de cejas con IA, consejos de fotos y cómo obtener los mejores resultados de tinte de cejas.",
+        "title": "Preguntas sobre la app de cejas",
+        "description": "Cómo analizar tus cejas y probar nuevos filtros con Browlens.",
         "items": [
           {
-            "question": "¿Son gratuitas las vistas previas de tinte de cejas en esta galería?",
-            "answer": "Sí. Puedes navegar por todos los estilos de tinte de cejas gratis y generar vistas previas en tu propia foto con una prueba gratuita."
+            "question": "¿Qué es Browlens?",
+            "answer": "Browlens es una app para explorar formas de cejas con IA. Sube una foto, revisa las guías y elige un estilo para previsualizar."
           },
           {
-            "question": "¿La vista previa de tinte de cejas con IA coincidirá con mis resultados reales?",
-            "answer": "Brow Tint renderiza tonos y cobertura de tinte realistas que se mezclan con el vello natural de tus cejas. Los resultados reales aún dependen de tu tipo de cejas y tu especialista en cejas — recomendamos descargar tu vista previa y compartirla con tu profesional de tinte de cejas."
+            "question": "¿Puedo analizar mis cejas gratis sin registrarme?",
+            "answer": "Sí. Puedes subir una foto y usar las guías y el análisis sin cuenta. Generar una nueva imagen requiere iniciar sesión y créditos; el coste se muestra antes de generar."
           },
           {
-            "question": "¿Cuántos estilos de tinte de cejas puedo probar?",
-            "answer": "Hay docenas de estilos de tinte de cejas seleccionados en la galería, cubriendo tintes naturales, tintes intensos, combinaciones de laminado y tinte de cejas, looks de gel de cejas con color, y paquetes de tinte de pestañas y cejas. También puedes describir tonos personalizados con tu propio prompt."
+            "question": "¿Qué foto debo subir?",
+            "answer": "Usa una foto frontal nítida, con luz uniforme y ambas cejas visibles. Se admiten JPG, PNG o WebP de hasta 15 MB."
           },
           {
-            "question": "¿Necesito instalar una app para usar Brow Tint?",
-            "answer": "No. Brow Tint funciona completamente en tu navegador — en móvil o escritorio. No se requieren descargas ni plugins."
+            "question": "¿Cómo funcionan los filtros de cejas?",
+            "answer": "Elige un estilo, revisa las guías en tu foto y genera una vista previa para comparar el resultado en tu rostro."
           },
           {
-            "question": "¿Qué foto funciona mejor para una vista previa de tinte de cejas?",
-            "answer": "Usa una foto clara y frontal con iluminación uniforme. Evita gafas de sol, sombreros o filtros pesados. Una expresión neutral con cejas visibles le da a la IA el resultado de tinte de cejas más preciso."
+            "question": "¿Puedo comparar diferentes formas de cejas?",
+            "answer": "Sí. Prueba un filtro en tu foto, compara el antes y el después y explora otra forma hasta encontrar una que te guste."
           },
           {
-            "question": "¿Se mantiene privada mi foto?",
-            "answer": "Tus fotos subidas se procesan de forma segura solo para la generación de tinte de cejas. No se almacenan permanentemente ni se comparten con terceros."
-          },
-          {
-            "question": "¿Cuál es la diferencia entre tinte de cejas y laminado de cejas?",
-            "answer": "El tinte de cejas agrega color al vello de tus cejas para un look más lleno y definido. El laminado y tinte de cejas combina un proceso de alisado químico con el tinte para crear cejas peinadas hacia arriba y plumosas. Puedes previsualizar ambos con Brow Tint."
-          },
-          {
-            "question": "¿Puede Brow Tint ayudarme a encontrar el tono correcto de brow code?",
-            "answer": "Sí. Brow Tint usa IA para analizar tu tono de piel, color de cabello y rasgos para recomendar la mejor combinación de tono de tinte de cejas — similar a una fórmula de brow code tint. Prueba múltiples tonos lado a lado para encontrar tu color de tinte profesional de cejas perfecto."
+            "question": "¿La vista previa será idéntica al resultado real?",
+            "answer": "La vista previa es una referencia visual. La calidad de la foto, tus cejas naturales y la técnica pueden influir en el resultado."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "¿Lista para Encontrar Tu Tinte de Cejas Perfecto?",
-        "description": "Sube tu foto y previsualiza cada estilo de tinte de cejas en la galería — completamente gratis, sin instalación requerida.",
+        "title": "Encuentra tu forma de cejas",
+        "description": "Mira tus cejas a través de la lente de la IA.",
         "buttons": [
           {
-            "title": "Probar Brow Tint Ahora",
-            "url": "/ai-brow-tint-generator",
+            "title": "Subir una foto",
+            "url": "/#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
@@ -236,11 +166,6 @@
         "className": "bg-muted"
       }
     },
-    "show_sections": [
-      "showcases",
-      "usage",
-      "faq",
-      "cta"
-    ]
+    "show_sections": ["showcases", "usage", "faq", "cta"]
   }
 }

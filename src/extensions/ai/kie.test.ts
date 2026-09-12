@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { AIMediaType, AITaskStatus } from './types';
 import { KieProvider } from './kie';
+import { AIMediaType, AITaskStatus } from './types';
 
 test('KieProvider sends GPT Image 2 image-to-image requests using the input_urls schema', async () => {
   const provider = new KieProvider({
@@ -45,7 +45,7 @@ test('KieProvider sends GPT Image 2 image-to-image requests using the input_urls
         callbackUrl: 'https://your-domain.com/api/callback',
         options: {
           image_input: ['https://example.com/source.png'],
-          hairstyle_image: 'https://example.com/hairstyle.png',
+          brow_tint_image: 'https://example.com/eyebrow-reference.png',
           aspect_ratio: 'auto',
           nsfw_checker: true,
         },
@@ -54,26 +54,20 @@ test('KieProvider sends GPT Image 2 image-to-image requests using the input_urls
 
     assert.equal(result.taskStatus, AITaskStatus.PENDING);
     assert.equal(result.taskId, 'task-123');
-    assert.equal(
-      capturedUrl,
-      'https://api.kie.ai/api/v1/jobs/createTask'
-    );
+    assert.equal(capturedUrl, 'https://api.kie.ai/api/v1/jobs/createTask');
     assert.equal(capturedInit?.method, 'POST');
 
     const body = JSON.parse(String(capturedInit?.body));
 
     assert.equal(body.model, 'gpt-image-2-image-to-image');
-    assert.equal(
-      body.callBackUrl,
-      'https://your-domain.com/api/callback'
-    );
+    assert.equal(body.callBackUrl, 'https://your-domain.com/api/callback');
     assert.equal(
       body.input.prompt,
       'take a photo with Sam Altman in the conference room'
     );
     assert.deepEqual(body.input.input_urls, [
       'https://example.com/source.png',
-      'https://example.com/hairstyle.png',
+      'https://example.com/eyebrow-reference.png',
     ]);
     assert.equal(body.input.aspect_ratio, 'auto');
     assert.equal(body.input.nsfw_checker, true);
@@ -93,7 +87,10 @@ test('KieProvider defaults GPT Image 2 requests to auto aspect ratio and nsfw ch
   const originalFetch = global.fetch;
   let capturedInit: RequestInit | undefined;
 
-  global.fetch = (async (_input: string | URL | Request, init?: RequestInit) => {
+  global.fetch = (async (
+    _input: string | URL | Request,
+    init?: RequestInit
+  ) => {
     capturedInit = init;
 
     return new Response(

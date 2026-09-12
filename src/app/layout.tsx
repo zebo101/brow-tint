@@ -77,7 +77,7 @@ export default async function RootLayout({
   // description so each language's pages advertise the right copy.
   const tMeta = await getTranslations('common.metadata');
   const siteUrl = getSiteUrl();
-  const siteName = envConfigs.app_name || 'Brow Tint';
+  const siteName = envConfigs.app_name || 'Browlens';
   const siteDescription = tMeta.has('description') ? tMeta('description') : '';
 
   const siteSchemas: Record<string, unknown>[] = [

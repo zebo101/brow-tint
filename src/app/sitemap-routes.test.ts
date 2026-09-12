@@ -21,18 +21,18 @@ test('expandStaticRoutes only emits locales declared by each route', () => {
     {
       defaultLocale: 'en',
       locales: ['en', 'zh', 'ja'],
-      siteUrl: 'https://tintbrow.com/',
+      siteUrl: 'https://browlens.com/',
     }
   );
 
   assert.deepEqual(
     entries.map((entry) => entry.url),
     [
-      'https://tintbrow.com/pricing',
-      'https://tintbrow.com/zh/pricing',
-      'https://tintbrow.com/ja/pricing',
-      'https://tintbrow.com/docs',
-      'https://tintbrow.com/zh/docs',
+      'https://browlens.com/pricing',
+      'https://browlens.com/zh/pricing',
+      'https://browlens.com/ja/pricing',
+      'https://browlens.com/docs',
+      'https://browlens.com/zh/docs',
     ]
   );
 });

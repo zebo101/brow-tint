@@ -12,4 +12,7 @@ export const routing = defineRouting({
   defaultLocale,
   localePrefix,
   localeDetection,
+  // Page metadata emits content-aware hreflang; middleware must not advertise missing translations.
+  alternateLinks: false,
+  localeCookie: false,
 });

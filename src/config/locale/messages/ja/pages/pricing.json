@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "title": "Brow Tint 料金 — AI ブロウティント クレジット＆プラン",
-    "description": "クレジットを購入して AI ブロウティント プレビューを生成。プランを比較し、最適なブロウティント パッケージを見つけて数秒で試せます。",
-    "keywords": "ブロウティント 料金, AI ブロウティント クレジット, ブロウティント プラン, ブロウティント ジェネレーター 価格, 眉ティント 費用"
+    "title": "Browlens 料金 — 眉フィルターのクレジットとプラン",
+    "description": "Browlensで眉フィルター画像を生成するためのクレジットプランを比較。",
+    "keywords": "眉アプリ, 眉の形分析, AI眉分析, 眉フィルター, 眉エディター, Browlens"
   },
   "page": {
     "title": "料金",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Brow Tint 料金",
+        "sr_only_title": "Browlens 料金 — 眉フィルターのクレジットとプラン",
         "title": "最適なプランをお選びください",
-        "description": "AI ブロウティント生成 1 回につき 1 クレジットを使用します。",
+        "description": "眉の形の分析は無料です。フィルター画像の生成にはログインとクレジットが必要で、生成前に必要数が表示されます。",
         "groups": [
           {
             "name": "monthly",
@@ -30,7 +30,7 @@
         "items": [
           {
             "title": "無料",
-            "description": "Brow Tint を無料でお試し。",
+            "description": "Browlens を無料でお試し。",
             "features_title": "含まれるもの",
             "features": ["コア生成機能", "通常キュー"],
             "interval": "month",
@@ -112,7 +112,7 @@
           },
           {
             "title": "無料",
-            "description": "Brow Tint を無料でお試し。",
+            "description": "Browlens を無料でお試し。",
             "features_title": "含まれるもの",
             "features": ["コア生成機能", "通常キュー"],
             "interval": "year",

@@ -1,0 +1,412 @@
+.brow-showcase {
+  min-width: 0;
+  --muted: oklch(0.52 0.018 35);
+  --color-muted: var(--muted);
+  --accent: var(--primary);
+  --accent-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+}
+
+.brow-showcase .brow-showcase__layout {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 24px;
+}
+
+.brow-showcase .brow-showcase__photo-card,
+.brow-showcase .brow-showcase__gallery-card {
+  min-width: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.brow-showcase .brow-showcase__photo-header {
+  align-items: flex-end;
+  padding: 8px 12px 0;
+}
+
+.brow-showcase .brow-showcase__photo-header .button {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.brow-showcase .brow-showcase__photo-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px 16px;
+  gap: 12px;
+}
+
+.brow-showcase .brow-showcase__polaroid {
+  width: 100%;
+  margin: 0;
+  padding: 12px 12px 22px;
+  border-radius: 3px;
+  background: white;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+}
+
+.brow-showcase .brow-showcase__photo-trigger {
+  position: relative;
+  cursor: var(--cursor-interactive, pointer);
+}
+
+.brow-showcase .brow-showcase__photo-trigger:focus-visible,
+.brow-showcase .brow-showcase__photo-trigger[data-dragging] {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.brow-showcase .brow-showcase__photo-trigger[aria-disabled='true'] {
+  cursor: wait;
+}
+
+.brow-showcase .brow-showcase__example-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.brow-showcase .brow-showcase__example-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.brow-showcase .brow-showcase__example-mapping {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.brow-showcase .brow-showcase__example-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgb(255 255 255 / 88%);
+  color: #343030;
+  backdrop-filter: blur(6px);
+}
+
+.brow-showcase .brow-showcase__existing-photo {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.brow-showcase .brow-showcase__caption {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 13px;
+  font-style: italic;
+  color: #686064;
+}
+
+.brow-showcase .brow-showcase__samples {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.brow-showcase .brow-showcase__samples > span {
+  margin-right: 4px;
+}
+
+.brow-showcase .brow-showcase__sample {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.brow-showcase .brow-showcase__sample img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.brow-showcase .brow-showcase__photo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  padding: 0 24px 20px;
+}
+
+.brow-showcase .brow-showcase__specs {
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.brow-showcase .brow-showcase__photo-actions {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.brow-showcase .brow-showcase__gallery-header {
+  gap: 6px;
+  padding: 28px 28px 20px;
+}
+
+.brow-showcase .brow-showcase__gallery-title {
+  font-size: 23px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.brow-showcase .brow-showcase__gallery-content {
+  padding: 0 28px;
+}
+
+.brow-showcase .brow-showcase__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px 12px;
+}
+
+.brow-showcase .brow-showcase__grid--mobile {
+  display: none;
+}
+
+.brow-showcase .brow-showcase__style {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-width: 0;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  padding: 3px;
+  border-radius: 10px;
+  white-space: normal;
+  text-align: left;
+  transition: none;
+}
+
+.brow-showcase .brow-showcase__style[aria-pressed='true'] {
+  background: var(--surface-secondary);
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.brow-showcase .brow-showcase__style-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 7px;
+  background: var(--surface-secondary);
+}
+
+.brow-showcase .brow-showcase__style-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brow-showcase .brow-showcase__missing-image {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.brow-showcase .brow-showcase__selected-badge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 2px 6px;
+  border-radius: 20px;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  font-size: 10px;
+}
+
+.brow-showcase .brow-showcase__style-name {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.brow-showcase .brow-showcase__style-shade {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+.brow-showcase .brow-showcase__gallery-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 4px;
+  padding: 16px 24px 20px;
+}
+
+.brow-showcase .brow-showcase__selection-hint {
+  margin: 0;
+  min-height: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.brow-showcase .brow-showcase__selection-hint:empty {
+  display: none;
+}
+
+.brow-showcase .brow-showcase__browse-button {
+  gap: 6px;
+  overflow: visible;
+}
+
+.brow-showcase.brow-showcase__catalog {
+  width: min(920px, calc(100vw - 32px));
+  max-width: 920px;
+  height: min(800px, calc(100dvh - 48px));
+  max-height: calc(100dvh - 48px);
+}
+
+.brow-showcase__catalog .modal__body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.brow-showcase__catalog .brow-catalog {
+  flex: 1;
+  height: auto;
+}
+
+@media (min-width: 761px) and (max-width: 1023px) {
+  .brow-showcase .brow-showcase__layout {
+    grid-template-columns: 310px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .brow-showcase .brow-showcase__gallery-header {
+    padding: 24px 16px 16px;
+  }
+
+  .brow-showcase .brow-showcase__gallery-content {
+    padding: 0 16px;
+  }
+
+  .brow-showcase .brow-showcase__grid {
+    gap: 12px 8px;
+  }
+}
+
+@media (max-width: 760px) {
+  .brow-showcase .button {
+    font-size: 12px;
+  }
+
+  .brow-showcase .brow-showcase__photo-footer > .button {
+    min-height: 36px;
+    height: 36px;
+  }
+
+  .brow-showcase .card__description {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .brow-showcase .brow-showcase__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .brow-showcase .brow-showcase__photo-header {
+    padding-top: 4px;
+  }
+
+  .brow-showcase .brow-showcase__photo-content {
+    padding: 0 20px 12px;
+    gap: 8px;
+  }
+
+  .brow-showcase .brow-showcase__samples {
+    flex-wrap: wrap;
+    max-width: 240px;
+  }
+
+  .brow-showcase .brow-showcase__samples > span {
+    flex-basis: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .brow-showcase .brow-showcase__polaroid {
+    max-width: 232px;
+    padding: 8px 8px 14px;
+  }
+
+  .brow-showcase .brow-showcase__caption {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .brow-showcase .brow-showcase__photo-footer {
+    width: 100%;
+    max-width: 360px;
+    margin-inline: auto;
+    padding: 0 20px 16px;
+  }
+
+  .brow-showcase .brow-showcase__gallery-header {
+    gap: 4px;
+    padding: 20px 20px 16px;
+  }
+
+  .brow-showcase .brow-showcase__gallery-title {
+    font-size: 18px;
+  }
+
+  .brow-showcase .brow-showcase__gallery-content {
+    padding: 0 20px;
+  }
+
+  .brow-showcase .brow-showcase__grid--desktop {
+    display: none;
+  }
+
+  .brow-showcase .brow-showcase__grid--mobile {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px 8px;
+  }
+
+  .brow-showcase .brow-showcase__gallery-footer {
+    padding: 12px 16px 16px;
+  }
+}

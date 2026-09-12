@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "title": "Brow Tint 价格 — AI 眉部染色积分与套餐",
-    "description": "购买积分生成 AI 眉部染色预览。对比方案、找到最合适的眉部染色套餐，几秒钟开始尝试。",
-    "keywords": "眉部染色价格, AI 眉部染色积分, 眉部染色套餐, 眉部染色生成器价格, 眉染色费用, AI 眉部染色订阅"
+    "title": "Browlens 价格 — 眉型滤镜积分与套餐",
+    "description": "比较 Browlens 眉型滤镜图片生成的积分套餐。",
+    "keywords": "眉型应用, 眉型分析, AI 眉毛分析, 眉型滤镜, 眉毛编辑器, Browlens"
   },
   "page": {
     "title": "价格",
     "sections": {
       "pricing": {
         "id": "pricing",
-        "sr_only_title": "Brow Tint 价格",
+        "sr_only_title": "Browlens 价格 — 眉型滤镜积分与套餐",
         "title": "选择最适合您的方案",
-        "description": "每次 AI 眉部染色生成消耗 1 个积分。",
+        "description": "眉型分析免费。生成眉型滤镜图片需登录并消耗积分，生成前会显示所需积分。",
         "groups": [
           {
             "name": "monthly",
@@ -30,7 +30,7 @@
         "items": [
           {
             "title": "免费版",
-            "description": "免费体验 Brow Tint。",
+            "description": "免费体验 Browlens。",
             "features_title": "包含",
             "features": ["核心生成功能", "标准队列"],
             "interval": "month",
@@ -112,7 +112,7 @@
           },
           {
             "title": "免费版",
-            "description": "免费体验 Brow Tint。",
+            "description": "免费体验 Browlens。",
             "features_title": "包含",
             "features": ["核心生成功能", "标准队列"],
             "interval": "year",

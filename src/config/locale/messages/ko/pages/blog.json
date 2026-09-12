@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "title": "블로그 - Brow Tint",
-    "description": "최신 브로우 틴팅 트렌드, AI 기능 및 브로우 틴트 팁을 읽어보세요.",
-    "keywords": "브로우 틴트 블로그, 브로우 틴트 팁, AI 브로우 틴트 튜토리얼, 눈썹 틴트 트렌드, 브로우 틴트 가이드, 틴트 브로우 젤"
+    "title": "Browlens 가이드 — 눈썹 위치, 모양 및 정리",
+    "description": "눈썹 위치 가이드, 다양한 모양과 초보자 정리 방법을 알아보고 내 사진으로 스타일을 체험하세요.",
+    "keywords": "눈썹 앱, 눈썹 모양 분석, AI 눈썹 분석, 눈썹 필터, 눈썹 편집, Browlens"
   },
   "page": {
-    "title": "Brow Tint 블로그",
+    "title": "Browlens 가이드 — 눈썹 위치, 모양 및 정리",
     "sections": {
       "blog": {
         "id": "blog",
-        "title": "블로그",
-        "description": "최신 브로우 틴팅 트렌드, AI 기능 및 브로우 틴트 팁을 읽어보세요."
+        "title": "Browlens 가이드 — 눈썹 위치, 모양 및 정리",
+        "description": "눈썹 위치 가이드, 다양한 모양과 초보자 정리 방법을 알아보고 내 사진으로 스타일을 체험하세요."
       }
     }
   },

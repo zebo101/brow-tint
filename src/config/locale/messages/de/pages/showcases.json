@@ -1,234 +1,164 @@
 {
   "metadata": {
-    "title": "Brow Tint Galerie - KI Augenbrauen-Tint Vorher und Nachher",
-    "description": "Sehen Sie beeindruckende Augenbrauen-Tint Vorher-Nachher-Transformationen, erstellt mit dem Brow Tint KI-Generator",
-    "keywords": "Brow-Tint Galerie, Brow-Tint Vorher Nachher, KI Brow-Tint Beispiele, Brow-Tint Vorschau, Augenbrauen Tönung, professionelles Brow-Tint, Brow-Tint Gel"
+    "title": "Browlens – Augenbrauenfilter-Galerie",
+    "description": "Entdecke Brauenformen und Filterideen, bevor du sie auf deinem Foto ausprobierst.",
+    "keywords": "Augenbrauen-App, Augenbrauenanalyse, AI-Brauenanalyse, Augenbrauenfilter, Brauen-Editor, Browlens"
   },
   "page": {
-    "title": "Brow Tint Galerie",
+    "title": "Browlens – Augenbrauenfilter-Galerie",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Beeindruckende Augenbrauen-Tint Transformationen",
-        "description": "Sehen Sie, wie Nutzer ihre Brauen mit Brow Tint verwandelt haben.",
+        "title": "Entdecke deine nächste Brauenform",
+        "description": "Entdecke Brauenformen und Filterideen, bevor du sie auf deinem Foto ausprobierst.",
         "buttons": [
           {
-            "title": "Diesen Stil ausprobieren",
-            "url": "/#ai-brow-tint-studio"
+            "title": "Andere Form ausprobieren",
+            "url": "/#brow-app"
           }
         ],
         "groups": [
           {
             "name": "all",
-            "title": "Alle Styles"
+            "title": "Alle"
           },
           {
             "name": "short-hair",
-            "title": "Natürliche Tints"
+            "title": "Natürliche Brauen"
           },
           {
             "name": "long-hair",
-            "title": "Kräftige Tints"
+            "title": "Definierte Brauen"
           },
           {
             "name": "color-change",
-            "title": "Brow Lamination"
+            "title": "Angehobene Brauen"
           },
           {
             "name": "men-styles",
-            "title": "Getöntes Brauengel"
+            "title": "Fedrige Brauen"
           },
           {
             "name": "women-styles",
-            "title": "Wimpern & Brauen"
+            "title": "Sanfter Bogen"
           },
           {
             "name": "trendy",
-            "title": "Vorher & Nachher"
+            "title": "Vorher und nachher vergleichen"
           },
           {
             "name": "classic",
-            "title": "Professionelle Tints"
+            "title": "Gerade Brauen"
           }
         ],
         "items": [
           {
-            "title": "Sanftes Taupe Augenbrauen-Tint",
-            "description": "Natürlicher, dezenter Augenbrauen-Tint Look für ein mühelos gepflegtes Erscheinungsbild",
+            "title": "Sanfter Bogen",
+            "description": "Probiere den Brauenfilter Sanfter Bogen auf deinem Foto aus.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Sanftes Taupe Augenbrauen-Tint Vorher und Nachher"
+              "alt": "Probiere den Brauenfilter Sanfter Bogen auf deinem Foto aus."
             },
             "group": "short-hair"
           },
           {
-            "title": "Dunkles Espresso Augenbrauen-Tint",
-            "description": "Sattes, tiefes Braun-Augenbrauen-Tint für kräftige, definierte Brauen",
+            "title": "Definierter Bogen",
+            "description": "Probiere den Brauenfilter Definierter Bogen auf deinem Foto aus.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Dunkles Espresso Augenbrauen-Tint"
+              "alt": "Probiere den Brauenfilter Definierter Bogen auf deinem Foto aus."
             },
             "group": "long-hair"
           },
           {
-            "title": "Brow Lamination & Tint",
-            "description": "Aufgebürstete, laminierte und getönte Brauen für einen glatten, vollen Look",
+            "title": "Angehobene Brauen",
+            "description": "Probiere den Brauenfilter Angehobene Brauen auf deinem Foto aus.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Brow Lamination und Tint Ergebnis"
+              "alt": "Probiere den Brauenfilter Angehobene Brauen auf deinem Foto aus."
             },
             "group": "color-change"
           },
           {
-            "title": "Professionelles Augenbrauen-Tint",
-            "description": "Salonqualität professionelles Augenbrauen färben mit präziser, gleichmäßiger Abdeckung",
+            "title": "Gerade Brauen",
+            "description": "Probiere den Brauenfilter Gerade Brauen auf deinem Foto aus.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Professionelles Augenbrauen-Tint Transformation"
+              "alt": "Probiere den Brauenfilter Gerade Brauen auf deinem Foto aus."
             },
             "group": "classic"
           },
           {
-            "title": "Getöntes Brauengel Look",
-            "description": "Tägliches getöntes Brauengel Finish für eine schnelle, natürliche Aufwertung",
+            "title": "Fedrige Brauen",
+            "description": "Probiere den Brauenfilter Fedrige Brauen auf deinem Foto aus.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Getöntes Brauengel Look"
+              "alt": "Probiere den Brauenfilter Fedrige Brauen auf deinem Foto aus."
             },
             "group": "men-styles"
           },
           {
-            "title": "Wimpern & Augenbrauen Tint",
-            "description": "Kombiniertes Wimpern und Augenbrauen Tint für einen vollständigen, pflegeleichten Look",
+            "title": "Runde Brauen",
+            "description": "Probiere den Brauenfilter Runde Brauen auf deinem Foto aus.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Wimpern und Augenbrauen Tint Ergebnis"
+              "alt": "Probiere den Brauenfilter Runde Brauen auf deinem Foto aus."
             },
             "group": "women-styles"
           }
         ]
       },
-      "brow_tint_gallery": {
-        "block": "brow-tint-gallery",
-        "id": "brow_tint_gallery",
-        "title": "Die vollständige Augenbrauen-Tint Stil-Bibliothek durchsuchen",
-        "description": "Scrollen Sie durch unsere KI-gestützten Augenbrauen-Tint Styles, organisiert nach Typ. Klicken Sie auf einen Look, um ihn an Ihrem eigenen Foto zu sehen.",
-        "limit": 12,
-        "cta_url": "/ai-brow-tint-generator",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Natürliche Augenbrauen-Tints",
-            "description": "Sanfte, alltägliche Augenbrauen-Tint Farbtöne, die Ihre natürliche Brauenfarbe betonen. Perfekt für einen dezenten, ungeschminkten Look mit Taupe, Hellbraun und Blondtönen.",
-            "cta_label": "Jetzt testen"
-          },
-          {
-            "key": "women",
-            "title": "Kräftige Augenbrauen-Tints",
-            "description": "Markantes Augenbrauen färben in tiefem Espresso, Anthrazit und Rotbraun-Farbtönen. Erzielen Sie dramatische, skulptierte Brauen, die Ihr Gesicht rahmen und definieren.",
-            "cta_label": "Jetzt testen"
-          },
-          {
-            "key": "boys",
-            "title": "Brow Lamination Styles",
-            "description": "Brow Lamination und Tint Kombis für den aufgebürsteten, fedrigen Look. Sehen Sie verschiedene Lamination-Styles, bevor Sie Ihren Salontermin buchen.",
-            "cta_label": "Jetzt testen"
-          },
-          {
-            "key": "girls",
-            "title": "Wimpern & Augenbrauen Tint",
-            "description": "Kombinierte Wimpern und Augenbrauen Tint Pakete für eine vollständige, pflegeleichte Aufwertung. Sehen Sie, wie abgestimmte Tints Ihre Augen rahmen.",
-            "cta_label": "Jetzt testen"
-          }
-        ],
-        "tip": "Jede Vorschau ist kostenlos. Neue Augenbrauen-Tint Styles werden regelmäßig hinzugefügt."
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "label": "So funktioniert es",
-        "title": "Vom Foto zum perfekten Augenbrauen-Tint in 4 Schritten",
-        "description": "Brow Tint ist für schnelle, realistische Augenbrauen-Tint Vorschauen entwickelt. Keine Installation, keine Anmeldung zum Ausprobieren nötig.",
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "Klares, frontales Foto hochladen",
-            "description": "Gute Beleuchtung und sichtbare Brauen geben der KI die genaueste Karte Ihres Gesichts und Ihrer Brauenform."
-          },
-          {
-            "title": "Augenbrauen-Tint Stil wählen",
-            "description": "Durchsuchen Sie natürliche Tints, kräftige Farbtöne, Brow Lamination und Tint Kombis oder getöntes Brauengel Finishes in der Galerie."
-          },
-          {
-            "title": "Farbton, Form und Intensität anpassen",
-            "description": "Passen Sie Tint-Farbe, Brauendicke, Bogenform und Abdeckungsintensität an Ihren gewünschten Look an."
-          },
-          {
-            "title": "Generieren, vergleichen und herunterladen",
-            "description": "Generieren Sie mehrere Augenbrauen-Tint Vorschauen, vergleichen Sie Vorher und Nachher Seite an Seite und laden Sie Ihren Favoriten herunter, um ihn mit Ihrer Brauen-Spezialistin zu teilen."
-          }
-        ]
-      },
       "faq": {
         "id": "faq",
-        "title": "Augenbrauen-Tint Vorschau FAQ",
-        "description": "Häufige Fragen zu KI Augenbrauen-Tint Vorschauen, Foto-Tipps und wie Sie die besten Augenbrauen-Tint Ergebnisse erzielen.",
+        "title": "Fragen zur Brauen-App",
+        "description": "So analysierst du deine Brauenform und probierst mit Browlens neue Filter aus.",
         "items": [
           {
-            "question": "Sind die Augenbrauen-Tint Vorschauen in dieser Galerie kostenlos?",
-            "answer": "Ja. Sie können jeden Augenbrauen-Tint Stil kostenlos durchsuchen und Vorschauen an Ihrem eigenen Foto mit einer kostenlosen Testversion generieren."
+            "question": "Was ist Browlens?",
+            "answer": "Browlens ist eine App, mit der du Brauenformen per AI entdeckst. Lade ein Foto hoch, prüfe die Brauenlinien und wähle einen Stil für die Vorschau."
           },
           {
-            "question": "Entspricht die KI Augenbrauen-Tint Vorschau meinen realen Ergebnissen?",
-            "answer": "Brow Tint rendert realistische Tint-Farbtöne und Abdeckung, die sich mit Ihrem natürlichen Brauenhaar verbinden. Die tatsächlichen Ergebnisse hängen noch von Ihrem Brauentyp und Ihrer Brauen-Spezialistin ab — wir empfehlen, Ihre Vorschau herunterzuladen und mit Ihrer professionellen Augenbrauen-Tint Spezialistin zu teilen."
+            "question": "Kann ich meine Brauen kostenlos ohne Anmeldung analysieren?",
+            "answer": "Ja. Du kannst ohne Konto Fotos hochladen und Brauenlinien sowie Formanalyse nutzen. Neue Vorschaubilder erfordern Anmeldung und Credits. Die Kosten werden vor der Generierung angezeigt."
           },
           {
-            "question": "Wie viele Augenbrauen-Tint Styles kann ich ausprobieren?",
-            "answer": "Es gibt Dutzende kuratierter Augenbrauen-Tint Styles in der Galerie, darunter natürliche Tints, kräftige Tints, Brow Lamination und Tint Kombis, getöntes Brauengel Looks und Wimpern und Augenbrauen Tint Pakete. Sie können auch individuelle Farbtöne mit Ihrem eigenen Prompt beschreiben."
+            "question": "Welches Foto sollte ich hochladen?",
+            "answer": "Nutze ein klares Frontalfoto mit gleichmäßiger Beleuchtung und sichtbaren Brauen. JPG, PNG oder WebP bis 15 MB werden unterstützt."
           },
           {
-            "question": "Muss ich eine App installieren, um Brow Tint zu nutzen?",
-            "answer": "Nein. Brow Tint läuft vollständig in Ihrem Browser — auf Mobilgeräten oder Desktop. Keine Downloads oder Plugins nötig."
+            "question": "Wie funktionieren Augenbrauenfilter?",
+            "answer": "Wähle einen Brauenstil, prüfe die Linien auf deinem Foto und generiere eine Vorschau, um den Look auf deinem Gesicht zu vergleichen."
           },
           {
-            "question": "Welches Foto funktioniert am besten für eine Augenbrauen-Tint Vorschau?",
-            "answer": "Verwenden Sie ein klares, frontales Foto mit gleichmäßiger Beleuchtung. Vermeiden Sie Sonnenbrillen, Hüte oder starke Filter. Ein neutraler Gesichtsausdruck mit sichtbaren Brauen liefert der KI das genaueste Augenbrauen-Tint Ergebnis."
+            "question": "Kann ich verschiedene Brauenformen vergleichen?",
+            "answer": "Ja. Probiere einen Filter auf deinem Foto aus, vergleiche vorher und nachher und teste weitere Formen für deinen Lieblingslook."
           },
           {
-            "question": "Bleibt mein Foto privat?",
-            "answer": "Ihre hochgeladenen Fotos werden sicher nur für die Augenbrauen-Tint Generierung verarbeitet. Sie werden nicht dauerhaft gespeichert oder an Dritte weitergegeben."
-          },
-          {
-            "question": "Was ist der Unterschied zwischen Augenbrauen färben und Brow Lamination?",
-            "answer": "Augenbrauen färben fügt Ihren Brauenhaaren Farbe für einen volleren, definierteren Look hinzu. Brow Lamination und Tint kombiniert einen chemischen Glättungsprozess mit Färben, um aufgebürstete, fedrige Brauen zu erzeugen. Sie können beides mit Brow Tint ansehen."
-          },
-          {
-            "question": "Kann Brow Tint mir helfen, den richtigen brow code tint Farbton zu finden?",
-            "answer": "Ja. Brow Tint nutzt KI, um Ihren Hautton, Ihre Haarfarbe und Ihre Gesichtszüge zu analysieren und den besten Augenbrauen-Tint Farbton zu empfehlen — ähnlich einer brow code tint Formel. Probieren Sie mehrere Farbtöne nebeneinander aus, um Ihre perfekte professionelle Augenbrauen-Tint Farbe zu finden."
+            "question": "Entspricht die Vorschau genau meinem späteren Look?",
+            "answer": "Die Vorschau dient als visuelle Orientierung. Fotoqualität, natürliche Brauen und Stylingtechnik beeinflussen das Ergebnis."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Bereit, Ihren perfekten Augenbrauen-Tint zu finden?",
-        "description": "Laden Sie Ihr Foto hoch und sehen Sie jeden Augenbrauen-Tint Stil in der Galerie — komplett kostenlos, keine Installation nötig.",
+        "title": "Finde deine Brauenform",
+        "description": "Entdecke deine Brauen durch die Linse der AI.",
         "buttons": [
           {
-            "title": "Brow Tint jetzt testen",
-            "url": "/ai-brow-tint-generator",
+            "title": "Foto hochladen",
+            "url": "/#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
@@ -236,11 +166,6 @@
         "className": "bg-muted"
       }
     },
-    "show_sections": [
-      "showcases",
-      "usage",
-      "faq",
-      "cta"
-    ]
+    "show_sections": ["showcases", "usage", "faq", "cta"]
   }
 }

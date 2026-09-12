@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Brow Tint Chat",
+        "title": "Browlens Chat",
         "logo": {
           "src": "/logo.png",
-          "alt": "Brow Tint Chat"
+          "alt": "Browlens Chat"
         },
         "url": "/chat"
       },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "How can I help you?",
-    "input_placeholder": "Ask me about brow tinting, color matching, or brow care tips..."
+    "input_placeholder": "Ask me about brow shaping, color matching, or brow care tips..."
   },
   "history": {
     "title": "Chat history",

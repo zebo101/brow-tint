@@ -1,390 +1,85 @@
 {
   "metadata": {
-    "title": "Gerador de Brow Tint com IA Gratuito — Experimente Laminação de Sobrancelhas, Gel Colorido e Henna Online",
-    "description": "Gerador de Brow Tint com IA online e gratuito. Envie sua foto e visualize instantaneamente laminação e tintura de sobrancelhas, gel de sobrancelhas colorido, henna para sobrancelhas, tintura de cílios e sobrancelhas e mais de 200 estilos profissionais de tintura. Sem necessidade de cadastro.",
-    "keywords": "gerador de brow tint gratuito, gerador de brow tint online, gerador de brow tint com ia, experimentação virtual de brow tint, simulador de laminação de sobrancelhas, pré-visualização de gel de sobrancelhas colorido, gerador de tintura de cílios e sobrancelhas, pré-visualização de henna para sobrancelhas, tintura profissional de sobrancelhas, visualizador de brow code tint, brow tint antes e depois, gerador de tintura de sobrancelha"
+    "title": "Filtro de sobrancelhas — Experimente formatos no seu rosto · Browlens",
+    "description": "Experimente Browlens na sua foto: escolha um formato, veja a prévia, compare antes e depois e baixe o resultado.",
+    "keywords": "app de sobrancelhas, análise de sobrancelhas, IA para sobrancelhas, filtro de sobrancelhas, editor de sobrancelhas, Browlens"
   },
   "page": {
-    "title": "Gerador de Brow Tint com IA Gratuito — Experimentação Online em Segundos",
-    "description": "Envie sua foto e visualize instantaneamente tintura de sobrancelhas, laminação de sobrancelhas, gel de sobrancelhas colorido, henna para sobrancelhas e estilos de tintura de cílios e sobrancelhas. Desenvolvido com GPT Image 2. Comece grátis — sem cadastro.",
-    "show_sections": [
-      "hero",
-      "introduce",
-      "generator",
-      "tools",
-      "usage",
-      "features",
-      "brow_tint_gallery",
-      "benefits",
-      "testimonials",
-      "faq",
-      "cta"
-    ],
+    "show_sections": ["filter_benefits", "faq", "cta"],
     "sections": {
-      "hero": {
-        "id": "hero",
-        "title": "Gerador de Brow Tint com IA Gratuito — Experimentação Online em Segundos",
-        "highlight_text": "Gerador de Brow Tint com IA",
-        "description": "Envie sua foto e visualize instantaneamente tintura de sobrancelhas, laminação de sobrancelhas, gel de sobrancelhas colorido, henna para sobrancelhas e estilos de tintura de cílios e sobrancelhas. Desenvolvido com GPT Image 2. Avaliação gratuita — sem necessidade de cadastro.",
-        "image": {
-          "src": "/imgs/features/landingpage.jpg",
-          "alt": "Interface do Gerador de Brow Tint com IA",
-          "width": 1200,
-          "height": 800
-        },
-        "image_invert": {
-          "src": "/imgs/features/landingpage.jpg",
-          "alt": "Interface do Gerador de Brow Tint com IA Modo Escuro",
-          "width": 1200,
-          "height": 800
-        },
-        "background_image": {
-          "src": "/imgs/bg/hero.png",
-          "alt": "Fundo do Gerador de Brow Tint com IA"
-        }
-      },
-      "introduce": {
-        "block": "features-list",
-        "id": "introduce",
-        "title": "O Que Este Gerador de Brow Tint com IA Faz",
-        "label": "Como Funciona",
-        "description": "O Gerador de Brow Tint com IA é uma ferramenta gratuita de experimentação virtual. Envie uma foto e visualize tons de brow tint, estilos de laminação de sobrancelhas e cores de gel de sobrancelhas colorido no seu próprio rosto — antes de gastar um centavo no salão. A IA analisa o formato das suas sobrancelhas, tom de pele e cor natural para entregar resultados fotorrealistas em menos de 15 segundos.",
-        "image": {
-          "src": "/imgs/bg/image-bg4.png",
-          "alt": "Como Funciona o Gerador de Brow Tint com IA"
-        },
-        "items": [
-          {
-            "title": "Envie Uma Vez, Experimente Sem Limite",
-            "description": "Envie sua foto uma única vez e experimente quantos tons de brow tint, estilos de laminação ou visuais de gel colorido seus créditos permitirem. Sem necessidade de reenviar."
-          },
-          {
-            "title": "Resultados Fotorrealistas com IA",
-            "description": "O GPT Image 2 mescla cada tom de brow tint com o formato natural das suas sobrancelhas, tom de pele e iluminação para resultados que especialistas em sobrancelhas no mundo todo usam como referência em consultas."
-          },
-          {
-            "title": "Mais de 200 Estilos Selecionados",
-            "description": "Navegue por estilos de brow tint pré-ajustados por categoria — natural, marcante, laminação de sobrancelhas, tintura de cílios e sobrancelhas — ou descreva seu próprio tom personalizado na caixa de prompt."
-          },
-          {
-            "title": "Baixe em HD",
-            "description": "Exporte sua imagem de brow tint antes e depois em alta resolução. Leve-a ao seu especialista em sobrancelhas ou salão para comunicar exatamente o que você deseja."
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "tools": {
+      "filter_benefits": {
         "block": "features",
-        "id": "tools",
-        "title": "Um Gerador. Todos os Estilos de Tintura de Sobrancelhas.",
-        "description": "Cada estilo abaixo usa o mesmo gerador de IA com parâmetros ajustados para aquele visual específico. Navegue pela galeria abaixo para experimentar qualquer um deles na sua própria foto.",
+        "id": "brow-filter-preview",
+        "title": "Seu filtro. Seu rosto. Sua escolha.",
+        "description": "Experimente rapidamente um novo estilo. Browlens detecta a posição das sobrancelhas automaticamente para você escolher um formato direto.",
         "items": [
           {
-            "title": "Simulador de Laminação de Sobrancelhas",
-            "description": "Visualize o visual escovado e volumoso da sobrancelha laminada — com ou sem tintura. Ideal para clientes de primeira viagem na laminação que querem decidir o formato antes de se comprometer com o tratamento no salão."
+            "title": "Posição automática das sobrancelhas",
+            "description": "Envie uma foto nítida. Os pontos do rosto e das sobrancelhas são detectados automaticamente, sem marcação manual."
           },
           {
-            "title": "Experimentação Virtual de Gel de Sobrancelhas Colorido",
-            "description": "Veja como mais de 12 tons de gel de sobrancelhas colorido — de taupe suave a espresso escuro — ficam nas suas sobrancelhas naturais. Combine o gel antes de comprar um único tubo."
+            "title": "Contornos instantâneos",
+            "description": "Compare sobrancelhas naturais, arqueadas, retas e de ângulo suave no seu rosto. O contorno muda ao trocar de formato."
           },
           {
-            "title": "Correspondência de Cor de Henna para Sobrancelhas",
-            "description": "A henna para sobrancelhas é mais quente e dura mais que a tintura tradicional. Visualize os tons de ferrugem, mogno e castanho comumente usados por artistas de henna para sobrancelhas."
+            "title": "Prévias de fotos com IA",
+            "description": "Gere uma imagem do novo estilo com IA. A geração leva um pouco de tempo e exige login e créditos."
           },
           {
-            "title": "Pré-visualização de Tintura de Cílios e Sobrancelhas",
-            "description": "Visualize estilos combinados de tintura de cílios + sobrancelhas para um visual completo que emoldura os olhos. Veja como cílios escuros equilibram suas sobrancelhas tingidas em uma única imagem."
-          },
-          {
-            "title": "Visualizador de Brow Code Tint",
-            "description": "Navegue pela gama de tons de tintura Brow Code e visualize cada fórmula no formato do seu rosto e tom de pele. Compare fórmulas lado a lado antes de agendar."
-          },
-          {
-            "title": "Pré-visualização de Tintura Profissional de Sobrancelhas",
-            "description": "Geração de antes e depois com qualidade de salão, adequada para compartilhar com seu especialista em sobrancelhas. A imagem de referência fala mais alto que qualquer descrição verbal."
-          }
-        ]
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "Como Usar o Gerador de Brow Tint com IA",
-        "description": "Obtenha uma pré-visualização realista de tintura de sobrancelhas em quatro passos simples. Sem necessidade de cadastro para a avaliação gratuita.",
-        "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "Passos de Uso do Gerador de Brow Tint com IA"
-        },
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "Envie uma Foto Frontal Nítida",
-            "description": "Use uma foto bem iluminada com suas sobrancelhas claramente visíveis. Evite óculos de sol, chapéus, cabelo cobrindo as sobrancelhas ou ângulos laterais. A IA mapeia o formato das suas sobrancelhas a partir desta única imagem.",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "Enviar Foto para Pré-visualização de Brow Tint"
-            }
-          },
-          {
-            "title": "Escolha Seu Estilo de Brow Tint",
-            "description": "Escolha entre mais de 200 estilos selecionados em tinturas naturais, tinturas marcantes, laminação de sobrancelhas e combinações de tintura de cílios + sobrancelhas — ou descreva seu próprio tom na caixa de prompt.",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "Escolher Estilo de Brow Tint"
-            }
-          },
-          {
-            "title": "Gere Sua Pré-visualização",
-            "description": "A IA processa sua foto em 8 a 15 segundos e retorna uma pré-visualização fotorrealista das suas sobrancelhas no estilo de tintura, laminação ou gel escolhido.",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "Gerar Pré-visualização de Brow Tint"
-            }
-          },
-          {
-            "title": "Baixe e Compartilhe",
-            "description": "Salve a pré-visualização em alta resolução no seu dispositivo. Compartilhe-a com seu especialista em sobrancelhas antes da consulta — ou publique nas redes sociais para ver as reações dos amigos antes de agendar.",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "Baixar Pré-visualização de Brow Tint"
-            }
+            "title": "Antes, depois e outro formato",
+            "description": "Veja o original à esquerda e o resultado à direita. Baixe a imagem ou escolha outro formato para continuar."
           }
         ],
-        "className": "bg-muted"
-      },
-      "features": {
-        "id": "features",
-        "title": "Recursos do Gerador",
-        "description": "Tudo o que o gerador de brow tint online gratuito faz — em um relance.",
-        "items": [
-          {
-            "title": "Resultados com Qualidade de Salão",
-            "description": "O GPT Image 2 produz pré-visualizações que especialistas em sobrancelhas no mundo todo aceitam como referência em consultas — não ilustrações estilizadas.",
-            "icon": "RiScissorsCutLine"
-          },
-          {
-            "title": "Biblioteca de Tons de Gel de Sobrancelhas Colorido",
-            "description": "Mais de 12 tons de gel de sobrancelhas colorido, abrangendo de taupe suave a espresso escuro. Encontre sua combinação antes de comprar qualquer produto.",
-            "icon": "RiPaletteLine"
-          },
-          {
-            "title": "Pré-visualizações de Tratamentos Combinados",
-            "description": "Visualize laminação de sobrancelhas + tintura, tintura de cílios e sobrancelhas ou combinações de henna + tintura padrão em uma única geração.",
-            "icon": "RiLayoutGridLine"
-          },
-          {
-            "title": "Downloads em Alta Resolução",
-            "description": "Avaliação gratuita: resolução padrão. Planos pagos: downloads em HD adequados para consultas com clientes e redes sociais.",
-            "icon": "RiHdLine"
-          },
-          {
-            "title": "Comparação Lado a Lado",
-            "description": "Compare suas sobrancelhas naturais com cada pré-visualização de tintura gerada usando um controle deslizante embutido de antes e depois.",
-            "icon": "RiCompareLine"
-          },
-          {
-            "title": "Compatível com Dispositivos Móveis",
-            "description": "Funciona em qualquer navegador — celular, tablet ou desktop. Sem aplicativo para instalar. Sem cadastro para começar.",
-            "icon": "RiSmartphoneLine"
-          }
-        ]
-      },
-      "brow_tint_gallery": {
-        "block": "brow-tint-gallery",
-        "id": "brow_tint_gallery",
-        "title": "Explore Mais de 200 Estilos de Brow Tint por Categoria",
-        "description": "Clique em qualquer visual para experimentá-lo na sua própria foto com o gerador de brow tint com IA.",
-        "limit": 12,
-        "cta_url": "/ai-brow-tint-generator",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Tinturas Naturais de Sobrancelhas",
-            "description": "Tons sutis de tintura de sobrancelhas que realçam suas sobrancelhas naturais com definição suave. Ideais para visuais do dia a dia e para quem está fazendo a tintura pela primeira vez.",
-            "cta_label": "Experimentar tinturas naturais"
-          },
-          {
-            "key": "women",
-            "title": "Tinturas Marcantes de Sobrancelhas",
-            "description": "Visuais dramáticos e definidos para um acabamento impactante. Tons de espresso escuro, chocolate rico e tintura profissional marcante de sobrancelhas.",
-            "cta_label": "Experimentar tinturas marcantes"
-          },
-          {
-            "key": "boys",
-            "title": "Estilos de Laminação de Sobrancelhas",
-            "description": "Visuais de sobrancelhas laminadas escovadas para cima combinadas com tintura. Visualize laminação de sobrancelhas e tintura para sobrancelhas mais cheias e esculpidas.",
-            "cta_label": "Experimentar estilos de laminação"
-          },
-          {
-            "key": "girls",
-            "title": "Tintura de Cílios e Sobrancelhas",
-            "description": "Tintura combinada de cílios e sobrancelhas para uma transformação completa que emoldura os olhos. Visualize visuais coordenados de tintura de cílios e sobrancelhas em segundos.",
-            "cta_label": "Experimentar tintura de cílios e sobrancelhas"
-          }
-        ],
-        "tip": "Toda pré-visualização é gratuita para experimentar. Novos estilos de brow tint adicionados regularmente."
-      },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "Por Que Usar Este Gerador de Brow Tint com IA",
-        "label": "Benefícios",
-        "description": "Pré-visualizações rápidas, privadas e com qualidade de salão — para decisões confiantes sobre tintura de sobrancelhas.",
-        "items": [
-          {
-            "title": "Ultrarrápido — Resultados em Segundos",
-            "description": "Gere vários visuais de brow tint a partir de uma foto em menos de 15 segundos. Sem agendamentos, sem produtos para comprar, sem espera entre as pré-visualizações.",
-            "icon": "RiSpeedLine",
-            "image": {
-              "src": "/imgs/features/image1.png",
-              "alt": "Geração Rápida de Brow Tint com IA"
-            }
-          },
-          {
-            "title": "Privacidade em Primeiro Lugar — Fotos Excluídas Automaticamente",
-            "description": "As fotos são processadas com segurança e excluídas automaticamente após a geração. Nunca compartilhamos, vendemos nem treinamos modelos de IA com fotos enviadas.",
-            "icon": "RiLock2Line",
-            "image": {
-              "src": "/imgs/features/image2.png",
-              "alt": "Processamento de Fotos com Privacidade em Primeiro Lugar"
-            }
-          },
-          {
-            "title": "Referências com Qualidade de Salão",
-            "description": "Especialistas em sobrancelhas e proprietários de salões usam essas pré-visualizações na consulta. Leve a imagem baixada à sua consulta em vez de descrever o que você quer com palavras.",
-            "icon": "RiUserStarLine",
-            "image": {
-              "src": "/imgs/features/image3.png",
-              "alt": "Referência de Brow Tint com Qualidade de Salão"
-            }
-          }
-        ]
-      },
-      "testimonials": {
-        "id": "testimonials",
-        "title": "O Que os Usuários Dizem Sobre o Gerador de Brow Tint com IA",
-        "description": "Reações reais de pessoas que usaram o gerador para planejar suas consultas de tintura de sobrancelhas.",
-        "items": [
-          {
-            "name": "Sarah Jenkins",
-            "role": "Blogueira de Beleza",
-            "quote": "Gerei 12 tons diferentes a partir de uma foto em menos de dois minutos. Escolhi o espresso, levei a captura de tela ao meu especialista em sobrancelhas e saí com exatamente aquilo.",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "Sarah Jenkins - Blogueira de Beleza"
-            }
-          },
-          {
-            "name": "Mike Ross",
-            "role": "Modelo",
-            "quote": "Para sessões de fotos, gero de 4 a 5 visuais de sobrancelhas por look e envio a galeria à equipe de maquiagem antes da chamada. Salvador do fluxo de trabalho.",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "Mike Ross - Modelo"
-            }
-          },
-          {
-            "name": "Emily Chen",
-            "role": "Estudante",
-            "quote": "A avaliação gratuita funcionou ótimo. Experimentei 3 tons, baixei meu favorito e não paguei um centavo. A especialista usou a imagem como referência no salão.",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "Emily Chen - Estudante"
-            }
-          },
-          {
-            "name": "David Smith",
-            "role": "Maquiador",
-            "quote": "O simulador de laminação de sobrancelhas é assustadoramente preciso. Mostro a pré-visualização da IA às clientes durante a consulta e elas se decidem duas vezes mais rápido.",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "David Smith - Maquiador"
-            }
-          },
-          {
-            "name": "Jessica Lee",
-            "role": "Proprietária de Salão",
-            "quote": "Pagamos pelo plano Pro. Gerar pré-visualizações de consulta para mais de 30 clientes por semana se paga no primeiro dia de cada ciclo de cobrança.",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "Jessica Lee - Proprietária de Salão"
-            }
-          },
-          {
-            "name": "Tom Brown",
-            "role": "Engenheiro de Software",
-            "quote": "Enviei a foto, escolhi um estilo, obtive um resultado em cerca de 10 segundos. UX limpa. Usei como referência na minha primeira visita ao salão.",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "Tom Brown - Engenheiro de Software"
-            }
-          }
-        ]
+        "className": "overflow-hidden"
       },
       "faq": {
         "id": "faq",
-        "title": "Perguntas Frequentes do Gerador de Brow Tint com IA",
-        "description": "Perguntas técnicas sobre requisitos de fotos, créditos, precisão e downloads.",
-        "tip": "Não encontrou o que procura? Contate nossa <a href='mailto:support@mail.tintbrow.com' class='text-primary font-medium hover:underline'>equipe de suporte</a>",
+        "title": "Perguntas sobre filtros e simulador de sobrancelhas",
+        "description": "Como analisar suas sobrancelhas e experimentar novos filtros com Browlens.",
         "items": [
           {
-            "question": "Quanto tempo leva cada geração?",
-            "answer": "A maioria das pré-visualizações de brow tint termina em 8 a 15 segundos, dependendo do tamanho da imagem e da carga do servidor. As gerações no plano Pro são priorizadas e normalmente concluem em menos de 10 segundos."
+            "question": "O que é Browlens?",
+            "answer": "Browlens é um app para explorar formatos de sobrancelhas com IA. Envie uma foto, confira as guias e escolha um estilo para visualizar."
           },
           {
-            "question": "Que foto dá o melhor resultado?",
-            "answer": "Uma foto frontal e bem iluminada com as sobrancelhas claramente visíveis. Evite óculos de sol, cabelo sobre as sobrancelhas, ângulos laterais, pouca luz e imagens de desenho. Uma expressão neutra funciona melhor para um mapeamento preciso do formato das sobrancelhas."
+            "question": "Posso analisar minhas sobrancelhas grátis sem me cadastrar?",
+            "answer": "Sim. Você pode enviar uma foto e usar as guias e a análise sem conta. Gerar uma nova imagem exige login e créditos; o custo aparece antes de gerar."
           },
           {
-            "question": "Quais formatos de arquivo posso enviar e baixar?",
-            "answer": "Envie JPG ou PNG de até 10MB. Baixe como PNG (padrão) ou PNG HD (planos pagos). A proporção original da foto é preservada, a menos que você corte com a ferramenta integrada."
+            "question": "Que foto devo enviar?",
+            "answer": "Use uma foto frontal nítida, com luz uniforme e as duas sobrancelhas visíveis. São aceitos JPG, PNG ou WebP de até 15 MB."
           },
           {
-            "question": "Quantos créditos cada geração custa?",
-            "answer": "As gerações padrão custam 1 crédito cada. As gerações em HD custam 2 créditos. A avaliação gratuita inclui uma alocação inicial de créditos. Os planos pagos incluem créditos mensais mais acúmulo."
+            "question": "Como funcionam os filtros de sobrancelhas?",
+            "answer": "Envie uma foto, deixe Browlens detectar suas sobrancelhas e escolha um formato. Confira o contorno, gere uma prévia com IA e compare com o original."
           },
           {
-            "question": "Posso gerar vários tons a partir de uma foto?",
-            "answer": "Sim. Envie uma vez e gere quantos tons ou estilos seus créditos permitirem sem reenviar. A IA reutiliza sua foto para cada pré-visualização na sessão."
+            "question": "Posso comparar formatos diferentes?",
+            "answer": "Sim. Experimente um filtro na foto, compare antes e depois e teste outros formatos até encontrar um de que goste."
           },
           {
-            "question": "Qual é a resolução máxima?",
-            "answer": "Plano gratuito: até 1024×1024. Starter: até 1536×1536. Pro: até 2048×2048 com download em HD habilitado."
+            "question": "A prévia será idêntica ao resultado real?",
+            "answer": "A prévia é uma referência visual. A qualidade da foto, suas sobrancelhas naturais e a técnica podem afetar o resultado."
           },
           {
-            "question": "As fotos enviadas são armazenadas ou usadas para treinamento?",
-            "answer": "Não. As fotos são processadas com segurança e excluídas automaticamente após a geração. Nunca compartilhamos, vendemos nem treinamos modelos de IA com fotos enviadas."
+            "question": "Onde posso ajustar pontos individuais e ler meu relatório?",
+            "answer": "Abra o app completo na página inicial. Ele inclui seis pontos arrastáveis, ajustes de espessura, comprimento, ângulo, distância e altura, além do relatório de diferenças de arco e comprimento."
           },
           {
-            "question": "Qual é a diferença entre o simulador de laminação de sobrancelhas e o gerador de brow tint?",
-            "answer": "Mesmo gerador, predefinições de estilo diferentes. O simulador de laminação foca no formato escovado das sobrancelhas; o gerador de tintura foca na cor. Ambos podem ser combinados em uma única geração ao selecionar estilos de laminação de sobrancelhas + tintura."
-          },
-          {
-            "question": "Posso pré-visualizar um tom personalizado que não está na galeria?",
-            "answer": "O plano Pro suporta entrada de tom personalizado pela caixa de prompt (por exemplo, descreva uma cor Pantone específica ou nome do tom). Os planos Free e Starter usam a biblioteca selecionada de mais de 200 tons."
-          },
-          {
-            "question": "Funciona no celular?",
-            "answer": "Sim. O gerador de brow tint com IA funciona inteiramente no seu navegador — celular, tablet ou desktop. Sem aplicativo para instalar. Sem necessidade de cadastro para a avaliação gratuita."
-          },
-          {
-            "question": "E se minha pré-visualização gerada parecer irrealista?",
-            "answer": "Primeiro, tente uma foto de melhor qualidade com melhor iluminação e uma visão mais clara das suas sobrancelhas. Se os resultados ainda parecerem estranhos, mude para uma predefinição de estilo diferente — alguns tons renderizam com mais precisão em determinados tons de pele. O suporte Pro pode investigar casos específicos."
-          },
-          {
-            "question": "Posso usar a imagem gerada comercialmente?",
-            "answer": "O uso pessoal é irrestrito. O uso comercial (marketing de salão, anúncios pagos em redes sociais, editorial de revista) requer uma licença do plano Pro. O plano Pro concede direitos comerciais para todas as gerações durante o período ativo da assinatura."
+            "question": "O simulador é instantâneo?",
+            "answer": "O contorno local é atualizado na hora após a detecção. Criar uma foto com IA é uma etapa separada e leva tempo; não é um filtro de câmera ao vivo."
           }
-        ]
+        ],
+        "tip": "Guias básicos: <a href=\"/pt/#brow-app\" class=\"underline\">Um app de sobrancelhas que você pode ajustar</a>, <a href=\"/pt/blog/eyebrow-shapes-guide\" class=\"underline\">Guia de formatos de sobrancelhas</a>."
       },
       "cta": {
         "id": "cta",
-        "title": "Gere Sua Primeira Pré-visualização de Brow Tint",
-        "description": "Avaliação gratuita. Sem cadastro. Cerca de 10 segundos por geração.",
+        "title": "Encontre seu formato de sobrancelhas",
+        "description": "Veja suas sobrancelhas pelas lentes da IA.",
         "buttons": [
           {
-            "title": "Gerar Minha Pré-visualização de Brow Tint",
-            "url": "#generator",
+            "title": "Enviar uma foto",
+            "url": "#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
@@ -394,18 +89,18 @@
     }
   },
   "generator": {
-    "title": "Gerador de Brow Tint com IA",
-    "description": "Envie uma foto e visualize resultados realistas de antes e depois da tintura de sobrancelhas com o gerador de Brow Tint com IA.",
+    "title": "Análise de formato com IA",
+    "description": "Envie uma foto, escolha um formato e encontre um estilo que combine com você.",
     "tabs": {
       "text-to-image": "Descrição do Estilo",
       "image-to-image": "Enviar Foto"
     },
     "categories": {
-      "title": "Selecionar Estilo de Tintura de Sobrancelhas",
-      "men": "Tinturas Naturais de Sobrancelhas",
-      "women": "Tinturas Marcantes de Sobrancelhas",
-      "boys": "Estilos de Laminação de Sobrancelhas",
-      "girls": "Tintura de Cílios e Sobrancelhas",
+      "title": "Escolha o formato das sobrancelhas",
+      "men": "Sobrancelhas naturais",
+      "women": "Sobrancelhas definidas",
+      "boys": "Sobrancelhas elevadas",
+      "girls": "Arco suave",
       "selected": "Selecionado",
       "styles": "estilos"
     },
@@ -416,13 +111,13 @@
       "history_empty": "Ainda não há imagens no histórico"
     },
     "form": {
-      "select_brow_tint_placeholder": "Clique para selecionar um estilo de tintura de sobrancelhas",
+      "select_brow_tint_placeholder": "Escolha o formato das sobrancelhas",
       "provider": "Provedor de IA",
-      "model": "Modelo de Brow Tint",
+      "model": "Browlens AI",
       "select_provider": "Selecionar Provedor de IA",
-      "select_model": "Selecionar Modelo de Brow Tint",
-      "prompt": "Descrição da Tintura de Sobrancelhas",
-      "prompt_placeholder": "Descreva sua tintura de sobrancelhas: tom, intensidade, estilo (ex.: tintura taupe suave, tintura espresso marcante, laminação e tintura de sobrancelhas, tintura de cílios e sobrancelhas)",
+      "select_model": "Browlens AI",
+      "prompt": "Formatos de sobrancelhas",
+      "prompt_placeholder": "Experimente diferentes formatos com IA na sua foto",
       "reference_image": "Sua Foto",
       "reference_image_placeholder": "Envie sua foto para melhores resultados",
       "some_images_failed_to_upload": "Algumas imagens falharam ao enviar, exclua-as e reenvie",
@@ -441,22 +136,22 @@
     "generate_no_credits": "Obter creditos para gerar",
     "checking_account": "Verificando conta...",
     "loading": "Carregando...",
-    "generating": "Gerando sua tinta de sobrancelha...",
-    "sign_in_to_generate": "Entre para experimentar estilos de tinta de sobrancelha",
+    "generating": "Gerando",
+    "sign_in_to_generate": "Entre para gerar",
     "credits_cost": "Custo {credits} creditos",
     "credits_remaining": "{credits} creditos",
     "credits_insufficient": "Creditos insuficientes",
     "buy_credits": "Comprar creditos",
     "try_another_style": "Experimentar outro estilo",
     "progress": "Progresso",
-    "generated_images": "Seu Novo Visual de Sobrancelhas",
-    "preview_title": "Pré-visualização de Brow Tint com IA",
+    "generated_images": "Sua prévia está pronta",
+    "preview_title": "Prévia ao vivo do formato",
     "ready_to_generate": "Pronto para Gerar",
-    "ready_for_generating": "Pronto para Pré-visualização de Brow Tint",
-    "no_images_generated": "Nenhuma pré-visualização de tintura de sobrancelhas gerada ainda",
+    "ready_for_generating": "Ver seu estilo",
+    "no_images_generated": "Envie sua foto para detectar as sobrancelhas e experimentar um formato.",
     "use_as_reference": "Usar como referência",
     "download_image": "Baixar imagem",
-    "example_image_hint": "Este é um resultado de exemplo. Sua pré-visualização de tintura de sobrancelhas gerada aparecerá aqui.",
+    "example_image_hint": "Exemplo de guias",
     "history_images": "Imagens do histórico",
     "history_load_more": "Carregar mais",
     "history_view_image": "Ver imagem do histórico",
@@ -483,11 +178,11 @@
     }
   },
   "product": {
-    "name": "Gerador de Brow Tint com IA",
-    "description": "Ferramenta de IA gratuita para visualizar brow tint, laminação de sobrancelhas e gel de sobrancelhas colorido. Envie uma foto e veja resultados realistas antes e depois em segundos."
+    "name": "Filtro de sobrancelhas",
+    "description": "Experimente Browlens na sua foto: escolha um formato, veja a prévia, compare antes e depois e baixe o resultado."
   },
   "breadcrumb": {
     "home": "Início",
-    "current": "Gerador de Brow Tint com IA"
+    "current": "Filtro de sobrancelhas"
   }
 }

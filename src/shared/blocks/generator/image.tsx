@@ -119,7 +119,7 @@ const MAX_HISTORY_IMAGES = 24;
 const EXAMPLE_IMAGE = {
   id: 'example-14',
   src: '/imgs/cases/14.png',
-  alt: 'Example brow tint',
+  alt: 'Example eyebrow filter',
 };
 
 type BrowTintCategoryKey = 'men' | 'women' | 'boys' | 'girls';
@@ -639,7 +639,7 @@ export function ImageGenerator({
 
     if (!finalPrompt) {
       toast.error(
-        'Please enter a prompt or select a brow tint before generating.'
+        'Please enter a prompt or select a brow shape before generating.'
       );
       return;
     }

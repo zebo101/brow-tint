@@ -1,4 +1,7 @@
-import { buildCanonicalUrl, buildLanguageAlternates } from '@/shared/lib/seo-paths';
+import {
+  buildCanonicalUrl,
+  buildLanguageAlternates,
+} from '@/shared/lib/seo-paths';
 
 type BuildAlternatesOptions = {
   locale?: string;
@@ -15,7 +18,7 @@ export function buildAlternates(
 ) {
   const canonical = buildCanonicalUrl(pathname, options.locale, options);
 
-  if (options.noIndex) {
+  if (options.noIndex || options.availableLocales?.length === 0) {
     return { canonical };
   }
 

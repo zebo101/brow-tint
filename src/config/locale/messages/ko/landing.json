@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "Brow Tint",
+      "title": "Browlens",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - AI Brow Tinting Generator",
+        "alt": "Browlens",
         "width": 100,
         "height": 100
       },
@@ -38,14 +38,14 @@
           "icon": "RiRobot2Line",
           "children": [
             {
-              "title": "AI 눈썹 틴트 생성기",
-              "description": "AI로 눈썹 틴트 및 틴티드 브로우 젤 스타일 미리보기",
-              "url": "/ai-brow-tint-generator",
+              "title": "눈썹 필터",
+              "description": "AI로 내 사진에 다양한 눈썹 모양 미리보기",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Brow Tint 어드바이저",
-              "description": "전문 AI 눈썹 틴팅 조언 받기",
+              "title": "눈썹 모양 상담",
+              "description": "AI와 눈썹 모양 및 스타일링 상담",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }
@@ -78,11 +78,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "Brow Tint",
-      "description": "Brow Tint는 GPT Image 2로 구동되는 무료 온라인 AI 눈썹 틴트 생성기입니다. 살롱 방문 전에 프로페셔널 눈썹 틴팅, 틴티드 브로우 젤, 눈썹 라미네이션 앤 틴트, 래시 앤 브로우 틴트 스타일을 미리 확인해 보세요.",
+      "title": "Browlens",
+      "description": "Browlens — AI의 시선으로 내 눈썹을 만나보세요.",
       "logo": {
         "src": "/logo.png",
-        "alt": "Brow Tint - Free AI Brow Tinting Tool Online",
+        "alt": "Browlens",
         "width": 1024,
         "height": 1024
       },
@@ -94,14 +94,14 @@
           "title": "AI 도구",
           "children": [
             {
-              "title": "AI 눈썹 틴트 생성기",
-              "description": "AI로 눈썹 틴트 스타일 생성",
-              "url": "/ai-brow-tint-generator",
+              "title": "눈썹 필터",
+              "description": "AI로 내 사진에 다양한 눈썹 모양 미리보기",
+              "url": "/filter",
               "icon": "RiImage2Line"
             },
             {
-              "title": "Brow Tint 어드바이저",
-              "description": "AI 눈썹 틴팅 전문가와 대화",
+              "title": "눈썹 모양 상담",
+              "description": "AI와 눈썹 모양 및 스타일링 상담",
               "url": "/chat",
               "icon": "RiMessage2Line"
             }

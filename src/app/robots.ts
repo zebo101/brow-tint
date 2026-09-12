@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-import { locales } from '@/config/locale';
+import { defaultLocale, locales } from '@/config/locale';
 import { getSiteUrl } from '@/shared/lib/seo-paths';
 
 const blockedRoots = [
@@ -19,7 +19,9 @@ function buildDisallowRules() {
   return blockedRoots.flatMap((root) => [
     root,
     `${root}/*`,
-    ...locales.flatMap((locale) => [`/${locale}${root}`, `/${locale}${root}/*`]),
+    ...locales
+      .filter((locale) => locale !== defaultLocale)
+      .flatMap((locale) => [`/${locale}${root}`, `/${locale}${root}/*`]),
   ]);
 }
 

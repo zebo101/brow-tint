@@ -3,21 +3,31 @@ import { getSessionCookie } from 'better-auth/cookies';
 import createIntlMiddleware from 'next-intl/middleware';
 
 import { routing } from '@/core/i18n/config';
+import { browlensRedirects } from '@/config/browlens-redirects';
 
 const intlMiddleware = createIntlMiddleware(routing);
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Handle internationalization first
-  const intlResponse = intlMiddleware(request);
-
-  // Extract locale from pathname
-  const locale = pathname.split('/')[1];
-  const isValidLocale = routing.locales.includes(locale as any);
-  const pathWithoutLocale = isValidLocale
-    ? pathname.slice(locale.length + 1)
+  // Keep legacy Chinese links, normalized to the supported locale code.
+  if (pathname === '/zh-CN' || pathname.startsWith('/zh-CN/')) {
+    const destination = request.nextUrl.clone();
+    destination.pathname = pathname.replace(/^\/zh-CN/, '/zh');
+    return NextResponse.redirect(destination, 308);
+  }
+  const prefix = pathname.split('/')[1];
+  const hasLocale = routing.locales.includes(prefix);
+  const locale = hasLocale ? prefix : routing.defaultLocale;
+  const pathWithoutLocale = hasLocale
+    ? pathname.slice(prefix.length + 1) || '/'
     : pathname;
+  if (browlensRedirects[pathWithoutLocale]) {
+    const destination = request.nextUrl.clone();
+    destination.pathname = `${locale === routing.defaultLocale ? '' : `/${locale}`}${browlensRedirects[pathWithoutLocale]}`;
+    return NextResponse.redirect(destination, 308);
+  }
+  const response = intlMiddleware(request);
 
   // Only check authentication for admin routes
   if (
@@ -31,11 +41,11 @@ export async function proxy(request: NextRequest) {
     // If no session token found, redirect to sign-in
     if (!sessionCookie) {
       const signInUrl = new URL(
-        isValidLocale ? `/${locale}/sign-in` : '/sign-in',
+        locale === routing.defaultLocale ? '/sign-in' : `/${locale}/sign-in`,
         request.url
       );
-      // Add the current path (including search params) as callback - use relative path for multi-language support
-      const callbackPath = pathWithoutLocale + request.nextUrl.search;
+      // Preserve the requested language as well as the query after signing in.
+      const callbackPath = pathname + request.nextUrl.search;
       signInUrl.searchParams.set('callbackUrl', callbackPath);
       return NextResponse.redirect(signInUrl);
     }
@@ -47,8 +57,8 @@ export async function proxy(request: NextRequest) {
     // will be done in the layout or individual pages using requirePermission()
   }
 
-  intlResponse.headers.set('x-pathname', request.nextUrl.pathname);
-  intlResponse.headers.set('x-url', request.url);
+  response.headers.set('x-pathname', request.nextUrl.pathname);
+  response.headers.set('x-url', request.url);
 
   // Remove Set-Cookie from public pages to allow caching
   // We exclude admin, settings, activity, and auth pages from this behavior
@@ -59,18 +69,18 @@ export async function proxy(request: NextRequest) {
     !pathWithoutLocale.startsWith('/sign-') &&
     !pathWithoutLocale.startsWith('/auth')
   ) {
-    intlResponse.headers.delete('Set-Cookie');
+    response.headers.delete('Set-Cookie');
 
     // Cache-Control header for public pages
     const cacheControl = 'public, s-maxage=3600, stale-while-revalidate=14400';
 
-    intlResponse.headers.set('Cache-Control', cacheControl);
-    intlResponse.headers.set('CDN-Cache-Control', cacheControl);
-    intlResponse.headers.set('Cloudflare-CDN-Cache-Control', cacheControl);
+    response.headers.set('Cache-Control', cacheControl);
+    response.headers.set('CDN-Cache-Control', cacheControl);
+    response.headers.set('Cloudflare-CDN-Cache-Control', cacheControl);
   }
 
-  // For all other routes (including /, /sign-in, /sign-up, /sign-out), just return the intl response
-  return intlResponse;
+  // Return the localized page response for all other public routes.
+  return response;
 }
 
 export const config = {

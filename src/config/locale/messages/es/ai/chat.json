@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "Chat Brow Tint",
+        "title": "Browlens",
         "logo": {
           "src": "/logo.png",
-          "alt": "Chat Brow Tint"
+          "alt": "Browlens"
         },
         "url": "/chat"
       },
@@ -61,7 +61,7 @@
         ]
       },
       "show_theme": true,
-      "show_locale": false
+      "show_locale": true
     },
     "variant": "sidebar"
   },
@@ -78,7 +78,7 @@
   },
   "generator": {
     "title": "¿Cómo puedo ayudarte?",
-    "input_placeholder": "Pregúntame sobre tinte de cejas, combinación de colores o consejos de cuidado de cejas..."
+    "input_placeholder": "Habla con IA sobre formas de cejas y estilo"
   },
   "history": {
     "title": "Historial de chat",
@@ -95,20 +95,3 @@
     "untitled": "Conversación sin título"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

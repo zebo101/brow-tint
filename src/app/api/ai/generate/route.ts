@@ -1,12 +1,17 @@
 import { and, eq } from 'drizzle-orm';
 
+import { db } from '@/core/db';
 import { envConfigs } from '@/config';
 import { browStyle } from '@/config/db/schema';
 import { buildBrowStylePrompt } from '@/config/img-prompt';
-import { db } from '@/core/db';
 import { AIMediaType } from '@/extensions/ai';
+import {
+  appendBrowMappingStyleReference,
+  createGenerationError,
+  validateBrowMappingRequest,
+} from '@/shared/lib/brow-mapping/generation-contract';
 import { getUuid } from '@/shared/lib/hash';
-import { respData, respErr } from '@/shared/lib/resp';
+import { respData } from '@/shared/lib/resp';
 import { createAITask, NewAITask } from '@/shared/models/ai_task';
 import { getRemainingCredits } from '@/shared/models/credit';
 import { getUserInfo } from '@/shared/models/user';
@@ -24,9 +29,20 @@ const BROW_STYLE_IMAGE_MODELS = [
 ];
 
 export async function POST(request: Request) {
+  let providerSubmissionStarted = false;
+
   try {
-    let { provider, mediaType, model, prompt, options, scene, styleId } =
-      await request.json();
+    const requestBody = await request.json();
+    const {
+      provider,
+      mediaType,
+      model,
+      prompt,
+      options,
+      styleId,
+      browMapping,
+    } = requestBody;
+    let { scene } = requestBody;
 
     if (!provider || !mediaType || !model) {
       throw new Error('invalid params');
@@ -53,6 +69,15 @@ export async function POST(request: Request) {
     if (!aiProvider) {
       throw new Error('invalid provider');
     }
+
+    validateBrowMappingRequest({
+      browMapping,
+      styleId,
+      mediaType,
+      scene,
+      model,
+      supportedModels: BROW_STYLE_IMAGE_MODELS,
+    });
 
     if (styleId) {
       if (mediaType !== AIMediaType.IMAGE || scene !== 'image-to-image') {
@@ -112,6 +137,13 @@ export async function POST(request: Request) {
         throw new Error('invalid styleId');
       }
 
+      if (browMapping === true) {
+        generationOptions = appendBrowMappingStyleReference(
+          generationOptions,
+          style.thumbnail
+        );
+      }
+
       const subjectImageCount = Array.isArray(generationOptions?.image_input)
         ? generationOptions.image_input.length
         : 0;
@@ -125,6 +157,7 @@ export async function POST(request: Request) {
         styledPrompt: style.prompt,
         userPrompt: clientPrompt,
         subjectImageCount,
+        browMapping: browMapping === true,
       });
       generationOptions = {
         ...(generationOptions ?? {}),
@@ -135,10 +168,7 @@ export async function POST(request: Request) {
     // Creem compliance: every prompt routed to an image or video generation
     // model must be screened through /v1/moderation/prompt first. Music is
     // explicitly excluded per Creem's content-safety requirements docs.
-    if (
-      mediaType === AIMediaType.IMAGE ||
-      mediaType === AIMediaType.VIDEO
-    ) {
+    if (mediaType === AIMediaType.IMAGE || mediaType === AIMediaType.VIDEO) {
       const externalId = `user_${user.id}:gen_${getUuid()}`;
       let moderation;
       try {
@@ -148,16 +178,10 @@ export async function POST(request: Request) {
           userId: user.id,
         });
       } catch (err) {
-        console.error(
-          '[moderation] call failed, blocking generation',
-          err
-        );
+        console.error('[moderation] call failed, blocking generation', err);
         throw new Error('moderation_unavailable');
       }
-      if (
-        moderation.decision === 'deny' ||
-        moderation.decision === 'flag'
-      ) {
+      if (moderation.decision === 'deny' || moderation.decision === 'flag') {
         throw new Error('moderation_denied');
       }
     }
@@ -170,7 +194,7 @@ export async function POST(request: Request) {
 
     const callbackUrl = `${envConfigs.app_url}/api/ai/notify/${provider}`;
 
-    const params: any = {
+    const params = {
       mediaType,
       model,
       prompt: generationPrompt,
@@ -179,6 +203,7 @@ export async function POST(request: Request) {
     };
 
     // generate content
+    providerSubmissionStarted = true;
     const result = await aiProvider.generate({ params });
     if (!result?.taskId) {
       throw new Error(
@@ -205,8 +230,9 @@ export async function POST(request: Request) {
     await createAITask(newAITask);
 
     return respData(newAITask);
-  } catch (e: any) {
-    console.log('generate failed', e);
-    return respErr(e.message);
+  } catch (e) {
+    const errorResponse = createGenerationError(e, providerSubmissionStarted);
+    console.log('generate failed', errorResponse);
+    return Response.json(errorResponse);
   }
 }

@@ -1,234 +1,164 @@
 {
   "metadata": {
-    "title": "Galleria Brow Tint - Tinta Sopracciglia IA Prima e Dopo",
-    "description": "Scopri incredibili trasformazioni tinta sopracciglia prima e dopo create con il generatore IA Brow Tint",
-    "keywords": "galleria tinta sopracciglia, tinta sopracciglia prima e dopo, esempi tinta sopracciglia IA, anteprima tinta sopracciglia, tinta professionale sopracciglia, gel sopracciglia colorato"
+    "title": "Browlens — Galleria filtri sopracciglia",
+    "description": "Scopri forme e filtri prima di provarli sulla tua foto.",
+    "keywords": "app sopracciglia, analisi sopracciglia, IA sopracciglia, filtro sopracciglia, editor sopracciglia, Browlens"
   },
   "page": {
-    "title": "Galleria Brow Tint",
+    "title": "Browlens — Galleria filtri sopracciglia",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "Straordinarie Trasformazioni Tinta Sopracciglia",
-        "description": "Scopri come gli utenti hanno trasformato le loro sopracciglia con Brow Tint.",
+        "title": "Esplora la tua prossima forma di sopracciglia",
+        "description": "Scopri forme e filtri prima di provarli sulla tua foto.",
         "buttons": [
           {
-            "title": "Prova questo stile",
-            "url": "/#ai-brow-tint-studio"
+            "title": "Prova un’altra forma",
+            "url": "/#brow-app"
           }
         ],
         "groups": [
           {
             "name": "all",
-            "title": "Tutti gli Stili"
+            "title": "Tutti"
           },
           {
             "name": "short-hair",
-            "title": "Tinte Naturali"
+            "title": "Sopracciglia naturali"
           },
           {
             "name": "long-hair",
-            "title": "Tinte Intense"
+            "title": "Sopracciglia definite"
           },
           {
             "name": "color-change",
-            "title": "Laminazione Sopracciglia"
+            "title": "Sopracciglia sollevate"
           },
           {
             "name": "men-styles",
-            "title": "Gel Sopracciglia Colorato"
+            "title": "Sopracciglia effetto piuma"
           },
           {
             "name": "women-styles",
-            "title": "Ciglia e Sopracciglia"
+            "title": "Arco morbido"
           },
           {
             "name": "trendy",
-            "title": "Prima e Dopo"
+            "title": "Confronta prima e dopo"
           },
           {
             "name": "classic",
-            "title": "Tinte Professionali"
+            "title": "Sopracciglia dritte"
           }
         ],
         "items": [
           {
-            "title": "Tinta Sopracciglia Tortora Morbido",
-            "description": "Look naturale e sottile di tinta sopracciglia per un aspetto curato ed elegante senza sforzo",
+            "title": "Arco morbido",
+            "description": "Prova il filtro sopracciglia Arco morbido sulla tua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "Tinta sopracciglia tortora morbido prima e dopo"
+              "alt": "Prova il filtro sopracciglia Arco morbido sulla tua foto."
             },
             "group": "short-hair"
           },
           {
-            "title": "Tinta Sopracciglia Espresso Scuro",
-            "description": "Tinta sopracciglia marrone intenso e ricco per sopracciglia definite e decise",
+            "title": "Arco definito",
+            "description": "Prova il filtro sopracciglia Arco definito sulla tua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "Tinta sopracciglia espresso scuro"
+              "alt": "Prova il filtro sopracciglia Arco definito sulla tua foto."
             },
             "group": "long-hair"
           },
           {
-            "title": "Laminazione e Tinta Sopracciglia",
-            "description": "Sopracciglia laminate e sollevate con tinta per un look elegante e pieno",
+            "title": "Sopracciglia sollevate",
+            "description": "Prova il filtro sopracciglia Sopracciglia sollevate sulla tua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "Risultato laminazione e tinta sopracciglia"
+              "alt": "Prova il filtro sopracciglia Sopracciglia sollevate sulla tua foto."
             },
             "group": "color-change"
           },
           {
-            "title": "Tinta Professionale Sopracciglia",
-            "description": "Tinta professionale sopracciglia di qualità salone con copertura precisa e uniforme",
+            "title": "Sopracciglia dritte",
+            "description": "Prova il filtro sopracciglia Sopracciglia dritte sulla tua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "Trasformazione tinta professionale sopracciglia"
+              "alt": "Prova il filtro sopracciglia Sopracciglia dritte sulla tua foto."
             },
             "group": "classic"
           },
           {
-            "title": "Look Gel Sopracciglia Colorato",
-            "description": "Finitura quotidiana con gel sopracciglia colorato per un miglioramento naturale e veloce",
+            "title": "Sopracciglia effetto piuma",
+            "description": "Prova il filtro sopracciglia Sopracciglia effetto piuma sulla tua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "Look gel sopracciglia colorato"
+              "alt": "Prova il filtro sopracciglia Sopracciglia effetto piuma sulla tua foto."
             },
             "group": "men-styles"
           },
           {
-            "title": "Tinta Ciglia e Sopracciglia",
-            "description": "Tinta combinata ciglia e sopracciglia per un look completo e a bassa manutenzione",
+            "title": "Sopracciglia arrotondate",
+            "description": "Prova il filtro sopracciglia Sopracciglia arrotondate sulla tua foto.",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "Risultato tinta ciglia e sopracciglia"
+              "alt": "Prova il filtro sopracciglia Sopracciglia arrotondate sulla tua foto."
             },
             "group": "women-styles"
           }
         ]
       },
-      "brow_tint_gallery": {
-        "block": "brow-tint-gallery",
-        "id": "brow_tint_gallery",
-        "title": "Sfoglia la Libreria Completa di Stili Tinta Sopracciglia",
-        "description": "Scorri i nostri stili di tinta sopracciglia IA organizzati per tipo. Clicca su qualsiasi look per visualizzarlo sulla tua foto.",
-        "limit": 12,
-        "cta_url": "/ai-brow-tint-generator",
-        "categories": [
-          {
-            "key": "men",
-            "title": "Tinte Sopracciglia Naturali",
-            "description": "Tonalità morbide e quotidiane di tinta sopracciglia che valorizzano il colore naturale delle tue sopracciglia. Perfette per un look sottile e naturale con toni tortora, marrone chiaro e biondo.",
-            "cta_label": "Prova ora"
-          },
-          {
-            "key": "women",
-            "title": "Tinte Sopracciglia Intense",
-            "description": "Tinta sopracciglia d'impatto in tonalità espresso intenso, carbone e mogano. Ottieni sopracciglia drammatiche e scolpite che incorniciano e definiscono il tuo viso.",
-            "cta_label": "Prova ora"
-          },
-          {
-            "key": "boys",
-            "title": "Stili Laminazione Sopracciglia",
-            "description": "Combinazioni di laminazione e tinta sopracciglia per quel look sollevato e pettinato. Visualizza diversi stili di laminazione prima del tuo appuntamento in salone.",
-            "cta_label": "Prova ora"
-          },
-          {
-            "key": "girls",
-            "title": "Tinta Ciglia e Sopracciglia",
-            "description": "Pacchetti combinati di tinta ciglia e sopracciglia per un miglioramento completo e a bassa manutenzione. Scopri come le tinte coordinate incorniciano il tuo sguardo.",
-            "cta_label": "Prova ora"
-          }
-        ],
-        "tip": "Ogni anteprima è gratuita. Nuovi stili di tinta sopracciglia aggiunti regolarmente."
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "label": "Come Funziona",
-        "title": "Da Foto a Tinta Sopracciglia Perfetta in 4 Passaggi",
-        "description": "Brow Tint è progettato per anteprime rapide e realistiche di tinta sopracciglia. Nessuna installazione, nessuna registrazione necessaria per provare.",
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "Carica una Foto Frontale Chiara",
-            "description": "Una buona illuminazione e sopracciglia visibili danno all'IA la mappa più accurata del tuo viso e della forma delle sopracciglia."
-          },
-          {
-            "title": "Scegli uno Stile di Tinta Sopracciglia",
-            "description": "Sfoglia tinte naturali, tonalità intense, combinazioni di laminazione e tinta sopracciglia o finiture con gel sopracciglia colorato dalla galleria."
-          },
-          {
-            "title": "Regola Tonalità, Forma e Intensità",
-            "description": "Regola colore della tinta, spessore delle sopracciglia, forma dell'arco e intensità della copertura per abbinare il look desiderato."
-          },
-          {
-            "title": "Genera, Confronta e Scarica",
-            "description": "Genera molteplici anteprime di tinta sopracciglia, confronta prima e dopo affiancati e scarica la tua preferita da condividere con il tuo professionista."
-          }
-        ]
-      },
       "faq": {
         "id": "faq",
-        "title": "FAQ Anteprima Tinta Sopracciglia",
-        "description": "Domande comuni sulle anteprime IA di tinta sopracciglia, consigli per le foto e come ottenere i migliori risultati.",
+        "title": "Domande sull’app sopracciglia",
+        "description": "Come analizzare le sopracciglia e provare nuovi filtri con Browlens.",
         "items": [
           {
-            "question": "Le anteprime tinta sopracciglia in questa galleria sono gratuite?",
-            "answer": "Sì. Puoi sfogliare ogni stile di tinta sopracciglia gratuitamente e generare anteprime sulla tua foto con una prova gratuita."
+            "question": "Che cos’è Browlens?",
+            "answer": "Browlens è un’app per esplorare le forme delle sopracciglia con l’IA. Carica una foto, controlla le guide e scegli uno stile da visualizzare."
           },
           {
-            "question": "L'anteprima IA della tinta sopracciglia corrisponderà ai risultati reali?",
-            "answer": "Brow Tint genera tonalità e copertura realistiche della tinta che si fondono con i peli naturali delle sopracciglia. I risultati effettivi dipendono comunque dal tipo di sopracciglia e dal professionista — ti consigliamo di scaricare l'anteprima e condividerla con il tuo specialista in tinta professionale sopracciglia."
+            "question": "Posso analizzare le sopracciglia gratis senza registrarmi?",
+            "answer": "Sì. Puoi caricare una foto e usare guide e analisi senza account. Generare una nuova immagine richiede l’accesso e crediti; il costo viene mostrato prima della generazione."
           },
           {
-            "question": "Quanti stili di tinta sopracciglia posso provare?",
-            "answer": "Ci sono decine di stili curati di tinta sopracciglia nella galleria, che coprono tinte naturali, tinte intense, combinazioni di laminazione e tinta sopracciglia, look con gel sopracciglia colorato e pacchetti tinta ciglia e sopracciglia. Puoi anche descrivere tonalità personalizzate con il tuo prompt."
+            "question": "Quale foto devo caricare?",
+            "answer": "Usa una foto frontale nitida, con luce uniforme ed entrambe le sopracciglia visibili. Sono supportati JPG, PNG o WebP fino a 15 MB."
           },
           {
-            "question": "Devo installare un'app per usare Brow Tint?",
-            "answer": "No. Brow Tint funziona interamente nel tuo browser — su mobile o desktop. Nessun download o plugin necessario."
+            "question": "Come funzionano i filtri sopracciglia?",
+            "answer": "Scegli uno stile, controlla le guide sulla foto e genera un’anteprima per confrontare il risultato sul tuo viso."
           },
           {
-            "question": "Quale foto funziona meglio per un'anteprima tinta sopracciglia?",
-            "answer": "Usa una foto chiara e frontale con illuminazione uniforme. Evita occhiali da sole, cappelli o filtri pesanti. Un'espressione neutra con sopracciglia visibili offre all'IA il risultato di tinta sopracciglia più accurato."
+            "question": "Posso confrontare forme diverse?",
+            "answer": "Sì. Prova un filtro sulla foto, confronta prima e dopo e sperimenta altre forme per trovare quella che ti piace."
           },
           {
-            "question": "La mia foto viene mantenuta privata?",
-            "answer": "Le foto caricate vengono elaborate in modo sicuro solo per la generazione della tinta sopracciglia. Non vengono archiviate permanentemente né condivise con terze parti."
-          },
-          {
-            "question": "Qual è la differenza tra tinta sopracciglia e laminazione sopracciglia?",
-            "answer": "La tinta sopracciglia aggiunge colore ai peli delle sopracciglia per un look più pieno e definito. La laminazione e tinta sopracciglia combina un processo di stiratura chimica con la tinta per creare sopracciglia sollevate e pettinate. Puoi visualizzare entrambi con Brow Tint."
-          },
-          {
-            "question": "Brow Tint può aiutarmi a trovare la tonalità brow code giusta?",
-            "answer": "Sì. Brow Tint utilizza l'IA per analizzare il tuo tono di pelle, colore dei capelli e tratti per raccomandare la migliore tonalità di tinta sopracciglia — simile a una formula brow code tint. Prova molteplici tonalità affiancate per trovare il tuo colore perfetto di tinta professionale sopracciglia."
+            "question": "L’anteprima corrisponderà esattamente al risultato reale?",
+            "answer": "L’anteprima è un riferimento visivo. Qualità della foto, sopracciglia naturali e tecnica possono influire sul risultato."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Pronta a Trovare la Tua Tinta Sopracciglia Perfetta?",
-        "description": "Carica la tua foto e visualizza ogni stile di tinta sopracciglia nella galleria — completamente gratuito, nessuna installazione necessaria.",
+        "title": "Trova la tua forma di sopracciglia",
+        "description": "Guarda le tue sopracciglia attraverso la lente dell’IA.",
         "buttons": [
           {
-            "title": "Prova Brow Tint Ora",
-            "url": "/ai-brow-tint-generator",
+            "title": "Carica una foto",
+            "url": "/#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
@@ -236,11 +166,6 @@
         "className": "bg-muted"
       }
     },
-    "show_sections": [
-      "showcases",
-      "usage",
-      "faq",
-      "cta"
-    ]
+    "show_sections": ["showcases", "usage", "faq", "cta"]
   }
 }

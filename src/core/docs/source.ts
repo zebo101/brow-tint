@@ -5,9 +5,14 @@ import type { I18nConfig } from 'fumadocs-core/i18n';
 import { loader } from 'fumadocs-core/source';
 import { icons } from 'lucide-react';
 
+import { locales } from '@/config/locale';
+
 export const i18n: I18nConfig = {
   defaultLanguage: 'en',
-  languages: ['en', 'zh'],
+  languages: locales,
+  hideLocale: 'default-locale',
+  // Missing translations must not silently become English pages with foreign URLs.
+  fallbackLanguage: null,
 };
 
 const iconHelper = (icon: string | undefined) => {

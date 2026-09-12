@@ -27,6 +27,7 @@ import { cn } from '@/shared/lib/utils';
 import { NavItem } from '@/shared/types/blocks/common';
 import { Header as HeaderType } from '@/shared/types/blocks/landing';
 
+
 const MenuIcon = ({ className }: { className?: string }) => (
   <svg
     viewBox="0 0 24 24"
@@ -82,7 +83,7 @@ export function Header({ header }: { header: HeaderType }) {
   const pathname = usePathname();
   const isHeaderElevated = isScrolled && (!isHidden || isMobileMenuOpen);
   const isHomePage = pathname === '/';
-  const useLightHeaderText = isHomePage && !isHeaderElevated && !isMobileMenuOpen;
+  const useHeroHeaderPalette = isHomePage && !isHeaderElevated && !isMobileMenuOpen;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -151,15 +152,15 @@ export function Header({ header }: { header: HeaderType }) {
                       'flex flex-row items-center gap-2 px-5 py-1.5 text-sm',
                       isHeaderElevated
                         ? 'text-[#3F2A2A] hover:bg-rose-50 hover:text-[#3F2A2A]'
-                        : useLightHeaderText
-                          ? 'text-white/90 hover:bg-white/10 hover:text-white'
+                        : useHeroHeaderPalette
+                          ? 'text-[#42282D] hover:bg-[#713C49]/10 hover:text-[#572B38]'
                           : 'text-[#3F2A2A]/90 hover:bg-rose-50 hover:text-[#3F2A2A]',
                       (item.is_active ||
                         pathname.endsWith(item.url as string)) &&
                         (isHeaderElevated
                           ? 'bg-rose-50 text-[#3F2A2A]'
-                          : useLightHeaderText
-                            ? 'bg-white/10 text-white'
+                          : useHeroHeaderPalette
+                            ? 'bg-[#713C49]/10 text-[#572B38]'
                             : 'bg-rose-50 text-[#3F2A2A]')
                     )}
                   >
@@ -182,8 +183,8 @@ export function Header({ header }: { header: HeaderType }) {
                     'flex flex-row items-center gap-2 px-5 text-sm',
                     isHeaderElevated
                       ? 'text-[#3F2A2A] hover:bg-rose-50 hover:text-[#3F2A2A] data-[state=open]:bg-rose-50 data-[state=open]:text-[#3F2A2A]'
-                      : useLightHeaderText
-                        ? 'text-white/90 hover:bg-white/10 hover:text-white data-[state=open]:bg-white/10 data-[state=open]:text-white'
+                      : useHeroHeaderPalette
+                        ? 'text-[#42282D] hover:bg-[#713C49]/10 hover:text-[#572B38] data-[state=open]:bg-[#713C49]/10 data-[state=open]:text-[#572B38]'
                         : 'text-[#3F2A2A]/90 hover:bg-rose-50 hover:text-[#3F2A2A] data-[state=open]:bg-rose-50 data-[state=open]:text-[#3F2A2A]'
                   )}
                 >
@@ -355,7 +356,7 @@ export function Header({ header }: { header: HeaderType }) {
         <div
           className={cn(
             'absolute inset-x-0 top-0 z-50 h-18 border-transparent ring-1 ring-transparent transition-all duration-300',
-            useLightHeaderText ? 'text-white' : 'text-[#3F2A2A]',
+            useHeroHeaderPalette ? 'text-[#42282D]' : 'text-[#3F2A2A]',
             'in-data-elevated:text-[#3F2A2A] in-data-elevated:border-rose-100 in-data-elevated:bg-white/95 in-data-elevated:border-b in-data-elevated:shadow-sm in-data-elevated:backdrop-blur-xl',
             'has-data-[state=open]:ring-foreground/5 has-data-[state=open]:bg-white/95 has-data-[state=open]:text-[#3F2A2A] has-data-[state=open]:h-[calc(var(--navigation-menu-viewport-height)+3.4rem)] has-data-[state=open]:border-b has-data-[state=open]:shadow-lg has-data-[state=open]:shadow-black/10 has-data-[state=open]:backdrop-blur',
             'max-lg:in-data-[state=active]:bg-white/95 max-lg:in-data-[state=active]:text-[#3F2A2A] max-lg:h-14 max-lg:overflow-hidden max-lg:border-b max-lg:in-data-[state=active]:h-screen max-lg:in-data-[state=active]:backdrop-blur',

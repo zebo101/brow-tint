@@ -1,12 +1,12 @@
+import type { AbstractIntlMessages } from 'next-intl';
 import { getRequestConfig } from 'next-intl/server';
 
 import {
   defaultLocale,
   localeMessagesPaths,
   localeMessagesRootPath,
+  locales,
 } from '@/config/locale';
-
-import { routing } from './config';
 
 export async function loadMessages(
   path: string,
@@ -18,29 +18,25 @@ export async function loadMessages(
       `@/config/locale/messages/${locale}/${path}.json`
     );
     return messages.default;
-  } catch (e) {
+  } catch {
     try {
       // try to load default locale messages
       const messages = await import(
         `@/config/locale/messages/${defaultLocale}/${path}.json`
       );
       return messages.default;
-    } catch (err) {
+    } catch {
       // if default locale is not found, return empty object
       return {};
     }
   }
 }
 
+// Resolve messages from the requested public language route.
 export default getRequestConfig(async ({ requestLocale }) => {
-  let locale = await requestLocale;
-  if (!locale || !routing.locales.includes(locale as string)) {
-    locale = routing.defaultLocale;
-  }
-
-  if (['zh-CN'].includes(locale)) {
-    locale = 'zh';
-  }
+  const requested = await requestLocale;
+  const locale =
+    requested && locales.includes(requested) ? requested : defaultLocale;
 
   try {
     // load all local messages
@@ -49,7 +45,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     );
 
     // merge all local messages
-    const messages: any = {};
+    const messages: AbstractIntlMessages = {};
 
     localeMessagesPaths.forEach((path, index) => {
       const localMessages = allMessages[index];
@@ -61,7 +57,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
         if (!current[keys[i]]) {
           current[keys[i]] = {};
         }
-        current = current[keys[i]];
+        current = current[keys[i]] as AbstractIntlMessages;
       }
 
       current[keys[keys.length - 1]] = localMessages;
@@ -71,7 +67,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       locale,
       messages,
     };
-  } catch (e) {
+  } catch {
     return {
       locale: defaultLocale,
       messages: await loadMessages(localeMessagesRootPath, defaultLocale),

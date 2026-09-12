@@ -1,234 +1,164 @@
 {
   "metadata": {
-    "title": "眉部染色展示 - AI眉部染色前后对比",
-    "description": "查看使用 Brow Tint AI生成器创建的精彩眉部染色前后对比变换效果",
-    "keywords": "眉部染色展示, 眉部染色前后对比, AI 眉部染色案例, 眉部染色预览, 眉部染色效果, 专业眉部染色, 染色眉胶预览"
+    "title": "Browlens 眉型滤镜图库",
+    "description": "探索眉型与滤镜灵感，再用自己的照片试试看。",
+    "keywords": "眉型应用, 眉型分析, AI 眉毛分析, 眉型滤镜, 眉毛编辑器, Browlens"
   },
   "page": {
-    "title": "眉部染色展示",
+    "title": "Browlens 眉型滤镜图库",
     "sections": {
       "showcases": {
         "id": "showcases",
-        "title": "精彩眉部染色变换展示",
-        "description": "看看用户如何使用 Brow Tint 改变眉妆造型。",
+        "title": "探索你的下一款眉型",
+        "description": "探索眉型与滤镜灵感，再用自己的照片试试看。",
         "buttons": [
           {
-            "title": "试试这个风格",
-            "url": "/#ai-brow-tint-studio"
+            "title": "试试其他眉型",
+            "url": "/#brow-app"
           }
         ],
         "groups": [
           {
             "name": "all",
-            "title": "全部风格"
+            "title": "全部"
           },
           {
             "name": "short-hair",
-            "title": "自然眉色"
+            "title": "自然眉"
           },
           {
             "name": "long-hair",
-            "title": "浓郁眉色"
+            "title": "立体眉"
           },
           {
             "name": "color-change",
-            "title": "眉部塑形"
+            "title": "上扬眉"
           },
           {
             "name": "men-styles",
-            "title": "染眉膏"
+            "title": "羽毛眉"
           },
           {
             "name": "women-styles",
-            "title": "睫眉染色"
+            "title": "柔和拱眉"
           },
           {
             "name": "trendy",
-            "title": "前后对比"
+            "title": "对比前后效果"
           },
           {
             "name": "classic",
-            "title": "专业染色"
+            "title": "平直眉"
           }
         ],
         "items": [
           {
-            "title": "柔和灰褐眉色",
-            "description": "自然柔和的眉部染色造型，打造毫不费力的精致妆感",
+            "title": "柔和拱眉",
+            "description": "在自己的照片上试用「柔和拱眉」眉型滤镜。",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/1.jpg",
-              "alt": "柔和灰褐眉色前后对比"
+              "alt": "在自己的照片上试用「柔和拱眉」眉型滤镜。"
             },
             "group": "short-hair"
           },
           {
-            "title": "深浓咖啡眉色",
-            "description": "浓郁深棕眉部染色，打造大胆有型的眉毛",
+            "title": "立体拱眉",
+            "description": "在自己的照片上试用「立体拱眉」眉型滤镜。",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/2.jpg",
-              "alt": "深浓咖啡眉色"
+              "alt": "在自己的照片上试用「立体拱眉」眉型滤镜。"
             },
             "group": "long-hair"
           },
           {
-            "title": "眉部塑形与染色",
-            "description": "蓬松有型的塑形眉搭配染色，打造时尚丰盈的眉妆",
+            "title": "上扬眉",
+            "description": "在自己的照片上试用「上扬眉」眉型滤镜。",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/3.jpg",
-              "alt": "眉部塑形与染色效果"
+              "alt": "在自己的照片上试用「上扬眉」眉型滤镜。"
             },
             "group": "color-change"
           },
           {
-            "title": "专业眉部染色",
-            "description": "沙龙级专业眉部染色，精准均匀的上色效果",
+            "title": "平直眉",
+            "description": "在自己的照片上试用「平直眉」眉型滤镜。",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/4.jpg",
-              "alt": "专业眉部染色变换"
+              "alt": "在自己的照片上试用「平直眉」眉型滤镜。"
             },
             "group": "classic"
           },
           {
-            "title": "染眉膏造型",
-            "description": "日常染眉膏妆效，快速自然的眉部提升",
+            "title": "羽毛眉",
+            "description": "在自己的照片上试用「羽毛眉」眉型滤镜。",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/5.jpg",
-              "alt": "染眉膏造型"
+              "alt": "在自己的照片上试用「羽毛眉」眉型滤镜。"
             },
             "group": "men-styles"
           },
           {
-            "title": "睫毛和眉部染色",
-            "description": "睫毛和眉部染色组合，打造完整且省心的妆容",
+            "title": "圆弧眉",
+            "description": "在自己的照片上试用「圆弧眉」眉型滤镜。",
             "url": "#",
             "target": "_self",
             "image": {
               "src": "/imgs/cases/7.jpg",
-              "alt": "睫毛和眉部染色效果"
+              "alt": "在自己的照片上试用「圆弧眉」眉型滤镜。"
             },
             "group": "women-styles"
           }
         ]
       },
-      "brow_tint_gallery": {
-        "block": "brow-tint-gallery",
-        "id": "brow_tint_gallery",
-        "title": "浏览完整眉部染色风格库",
-        "description": "滚动浏览按类型分类的AI眉部染色风格。点击任意造型即可在你的照片上预览效果。",
-        "limit": 12,
-        "cta_url": "/ai-brow-tint-generator",
-        "categories": [
-          {
-            "key": "men",
-            "title": "自然眉色",
-            "description": "柔和日常的眉部染色色调，提升自然眉色。适合以灰褐、浅棕和金色调打造素颜感妆效。",
-            "cta_label": "立即试用"
-          },
-          {
-            "key": "women",
-            "title": "浓郁眉色",
-            "description": "深浓咖啡、炭灰和赤褐色调的大胆眉部染色。打造具有轮廓感和立体感的精致眉妆。",
-            "cta_label": "立即试用"
-          },
-          {
-            "key": "boys",
-            "title": "眉部塑形风格",
-            "description": "眉部塑形与染色的组合造型，打造蓬松有型的羽毛感眉妆。在沙龙预约前先预览不同的塑形风格。",
-            "cta_label": "立即试用"
-          },
-          {
-            "key": "girls",
-            "title": "睫毛和眉部染色",
-            "description": "睫毛和眉部染色的完整组合套装，打造省心的全面提升。看看协调的染色如何修饰你的眼部妆容。",
-            "cta_label": "立即试用"
-          }
-        ],
-        "tip": "所有预览均可免费试用。新眉部染色风格定期更新。"
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "label": "使用方法",
-        "title": "四步从照片到完美眉色",
-        "description": "Brow Tint 专为快速、逼真的眉部染色预览而设计。无需安装，无需注册即可试用。",
-        "image_position": "left",
-        "text_align": "center",
-        "items": [
-          {
-            "title": "上传清晰的正面照片",
-            "description": "良好的光线和清晰可见的眉毛可以让AI更准确地识别你的面部和眉形。"
-          },
-          {
-            "title": "选择眉部染色风格",
-            "description": "从展示库中浏览自然眉色、浓郁色调、眉部塑形与染色组合或染眉膏质感。"
-          },
-          {
-            "title": "微调色调、形状和深浅度",
-            "description": "调整染色颜色、眉毛粗细、眉弓形状和覆盖深浅度，匹配你想要的造型。"
-          },
-          {
-            "title": "生成、对比并下载",
-            "description": "生成多种眉部染色预览，并排对比前后效果，下载你最喜欢的展示给眉部美容师。"
-          }
-        ]
-      },
       "faq": {
         "id": "faq",
-        "title": "眉部染色预览常见问题",
-        "description": "关于AI眉部染色预览、照片技巧以及如何获得最佳眉部染色效果的常见问题。",
+        "title": "眉型应用常见问题",
+        "description": "如何用 Browlens 分析眉型、试用新的眉型滤镜。",
         "items": [
           {
-            "question": "展示库中的眉部染色预览免费吗？",
-            "answer": "是的。你可以免费浏览所有眉部染色风格，并通过免费试用在你的照片上生成预览。"
+            "question": "Browlens 是什么？",
+            "answer": "Browlens 是用 AI 探索眉型的应用。上传照片，检查眉毛定位，再选择风格进行预览。"
           },
           {
-            "question": "AI眉部染色预览会和真实效果一致吗？",
-            "answer": "Brow Tint 渲染的染色色调和覆盖效果逼真地融合了你的自然眉毛。实际效果仍取决于你的眉型和你的眉部美容师——我们建议下载预览并分享给你的专业眉部染色师。"
+            "question": "不注册也能免费分析眉毛吗？",
+            "answer": "可以。无需账户即可上传照片，使用眉毛定位与眉型分析。生成新的试用图片需要登录并消耗积分，工具会在生成前显示所需积分。"
           },
           {
-            "question": "可以试用多少种眉部染色风格？",
-            "answer": "展示库中有数十种精选眉部染色风格，涵盖自然眉色、浓郁眉色、眉部塑形与染色组合、染眉膏造型和睫毛和眉部染色套装。你也可以用自定义提示词描述个性化色调。"
+            "question": "应该上传什么照片？",
+            "answer": "请用光线均匀、双眉清晰可见的正面照片。支持 JPG、PNG 或 WebP，最大 15 MB。"
           },
           {
-            "question": "需要安装应用才能使用 Brow Tint 吗？",
-            "answer": "不需要。Brow Tint 完全在浏览器中运行——手机或电脑均可使用。无需下载或安装插件。"
+            "question": "眉型滤镜如何使用？",
+            "answer": "选择眉型，检查照片中的眉毛定位，再生成预览，看看在你脸上的效果。"
           },
           {
-            "question": "什么样的照片最适合眉部染色预览？",
-            "answer": "使用清晰、正面的照片，光线均匀。避免佩戴太阳镜、帽子或使用重度滤镜。中性表情且眉毛可见时AI能获得最准确的眉部染色效果。"
+            "question": "可以对比不同眉型吗？",
+            "answer": "可以。在照片上试用眉型滤镜，对比前后效果，再试另一款，找到喜欢的造型。"
           },
           {
-            "question": "我的照片会被保密吗？",
-            "answer": "您上传的照片仅用于眉部染色生成的安全处理。不会永久存储或与第三方共享。"
-          },
-          {
-            "question": "眉部染色和眉部塑形有什么区别？",
-            "answer": "眉部染色为眉毛添加颜色，使眉毛看起来更丰盈、更有轮廓。眉部塑形与染色将化学定型处理与染色结合，打造蓬松有型的羽毛感眉妆。你可以使用 Brow Tint 预览两种效果。"
-          },
-          {
-            "question": "Brow Tint 能帮我找到合适的 brow code 色号吗？",
-            "answer": "可以。Brow Tint 使用AI分析你的肤色、发色和面部特征，推荐最佳眉色匹配——类似于 brow code tint 配方。并排试用多种色调，找到你的完美专业眉部染色颜色。"
+            "question": "预览会与实际造型完全一致吗？",
+            "answer": "预览是视觉参考。照片质量、天然眉毛与造型手法都会影响最终效果。"
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "准备好找到你的完美眉色了吗？",
-        "description": "上传你的照片，预览展示库中的每种眉部染色风格——完全免费，无需安装。",
+        "title": "找到你的眉型",
+        "description": "透过 AI，重新认识你的眉毛。",
         "buttons": [
           {
-            "title": "立即试用 Brow Tint",
-            "url": "/ai-brow-tint-generator",
+            "title": "上传照片",
+            "url": "/#brow-app",
             "target": "_self",
             "icon": "Zap"
           }
@@ -236,11 +166,6 @@
         "className": "bg-muted"
       }
     },
-    "show_sections": [
-      "showcases",
-      "usage",
-      "faq",
-      "cta"
-    ]
+    "show_sections": ["showcases", "usage", "faq", "cta"]
   }
 }

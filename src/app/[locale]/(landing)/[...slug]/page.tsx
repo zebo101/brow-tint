@@ -1,9 +1,9 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
+import { pagesSource } from '@/core/docs/source';
 import { getThemePage } from '@/core/theme';
 import { defaultLocale, locales } from '@/config/locale';
-import { pagesSource } from '@/core/docs/source';
 import { buildAlternates } from '@/shared/lib/seo-metadata';
 import { buildCanonicalUrl } from '@/shared/lib/seo-paths';
 import { getLocalPage } from '@/shared/models/post';
@@ -40,6 +40,13 @@ export async function generateMetadata({
 
   // get static page content
   const staticPage = await getLocalPage({ slug: staticPageSlug, locale });
+  if (
+    !staticPage &&
+    locale !== defaultLocale &&
+    pagesSource.getPage([staticPageSlug], defaultLocale)
+  ) {
+    redirect(`/${staticPageSlug}`);
+  }
   const staticPageLocales = locales.filter((entryLocale) =>
     Boolean(pagesSource.getPage([staticPageSlug], entryLocale))
   );
@@ -130,6 +137,13 @@ export default async function DynamicPage({
 
   // get static page content
   const staticPage = await getLocalPage({ slug: staticPageSlug, locale });
+  if (
+    !staticPage &&
+    locale !== defaultLocale &&
+    pagesSource.getPage([staticPageSlug], defaultLocale)
+  ) {
+    redirect(`/${staticPageSlug}`);
+  }
 
   // return static page
   if (staticPage) {
