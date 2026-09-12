@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "眉アプリ — AI眉分析＆フィルター · Browlens",
-    "description": "BrowlensならAI分析、6点での眉編集、左右バランスのレポート、写真での眉フィルタープレビューをまとめて使えます。",
-    "keywords": "眉アプリ, 眉の形分析, AI眉分析, 眉フィルター, 眉エディター, Browlens"
+    "description": "BrowlensならAI分析、6点での眉編集、左右バランスのレポート、写真での眉フィルタープレビューをまとめて使えます。"
   },
   "sign": {
     "sign_in_title": "ログイン",

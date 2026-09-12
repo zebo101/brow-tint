@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
@@ -101,9 +100,8 @@ export default async function EyebrowFilterPage({
     <>
       <JsonLd id="product-schema" schema={productSchema} />
       <JsonLd id="breadcrumb-schema" schema={breadcrumbSchema} />
-      <Suspense>
-        <BrowTintStudio styles={styles} mode="filter" />
-      </Suspense>
+      {/* Render the public hero in the initial HTML, including its upload CTA. */}
+      <BrowTintStudio styles={styles} mode="filter" />
       <Page locale={locale} page={page} />
     </>
   );

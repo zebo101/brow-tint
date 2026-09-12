@@ -55,11 +55,11 @@ export default async function BlogPage({
 
   // build page sections
   const page: DynamicPage = {
-    title: t('page.title'),
     sections: {
       blog: {
         ...t.raw('page.sections.blog'),
         data: {
+          headingLevel: 'h1',
           categories,
           currentCategory,
           posts,

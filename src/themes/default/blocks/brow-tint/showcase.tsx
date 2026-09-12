@@ -295,6 +295,7 @@ export function BrowShowcase({
             <Button
               fullWidth
               variant="primary"
+              data-brow-upload={!hasPhoto || undefined}
               data-brow-continue={hasPhoto || undefined}
               isDisabled={cannotOpenPhoto}
               onPress={hasPhoto ? onContinue : onPickFile}

@@ -274,23 +274,21 @@ export function BrowTintStudio({
             </p>
           </div>
         </header>
-        {mode === 'filter' && (
-          <div className="mb-6 flex flex-col items-center gap-2">
-            <button
-              type="button"
-              data-brow-upload
-              disabled={isLocked || loadingSample}
-              onClick={() => requestPhoto({ kind: 'picker' })}
-              className="bg-primary text-primary-foreground focus-visible:outline-primary inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-semibold shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 disabled:opacity-50"
-            >
-              <Upload aria-hidden="true" className="size-4" />
-              {t('ui.upload')}
-            </button>
-            <p className="text-muted-foreground text-xs">
-              JPG · PNG · WebP · {t('ui.up_to_15_mb')}
-            </p>
-          </div>
-        )}
+        <div className="mb-6 flex flex-col items-center gap-2">
+          <button
+            type="button"
+            data-brow-upload
+            disabled={isLocked || loadingSample}
+            onClick={() => requestPhoto({ kind: 'picker' })}
+            className="bg-primary text-primary-foreground focus-visible:outline-primary inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-7 py-3 text-sm font-semibold shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 disabled:opacity-50"
+          >
+            <Upload aria-hidden="true" className="size-4" />
+            {t('ui.upload')}
+          </button>
+          <p className="text-muted-foreground text-xs">
+            JPG · PNG · WebP · {t('ui.up_to_15_mb')}
+          </p>
+        </div>
         <input
           ref={inputRef}
           id="brow-photo-input"

@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "眉フィルター — 自分の顔でいろいろな眉を試す · Browlens",
-    "description": "Browlensで写真上の眉をシミュレーション。形を選び、プレビューして変更前後を比較し、結果をダウンロードできます。",
-    "keywords": "眉アプリ, 眉の形分析, AI眉分析, 眉フィルター, 眉エディター, Browlens"
+    "description": "Browlensで写真上の眉をシミュレーション。形を選び、プレビューして変更前後を比較し、結果をダウンロードできます。"
   },
   "page": {
     "show_sections": ["filter_benefits", "faq", "cta"],

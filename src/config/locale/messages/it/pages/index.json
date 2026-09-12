@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "App sopracciglia — Analisi con IA e filtri · Browlens",
-    "description": "Browlens unisce analisi con IA, modifica con sei punti, rapporti di equilibrio e filtri sopracciglia sulla tua foto.",
-    "keywords": "app sopracciglia, analisi sopracciglia, IA sopracciglia, filtro sopracciglia, editor sopracciglia, Browlens"
+    "description": "Browlens unisce analisi con IA, modifica con sei punti, rapporti di equilibrio e filtri sopracciglia sulla tua foto."
   },
   "page": {
     "show_sections": ["cases", "precision", "workflow", "faq", "cta"],

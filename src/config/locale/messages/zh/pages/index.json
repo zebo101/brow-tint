@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "眉型应用 — AI 眉型分析与滤镜 · Browlens",
-    "description": "Browlens 集 AI 分析、六点眉型编辑、眉毛平衡报告与照片眉型滤镜预览于一体。",
-    "keywords": "眉型应用, 眉型分析, AI 眉毛分析, 眉型滤镜, 眉毛编辑器, Browlens"
+    "description": "Browlens 集 AI 分析、六点眉型编辑、眉毛平衡报告与照片眉型滤镜预览于一体。"
   },
   "page": {
     "show_sections": ["cases", "precision", "workflow", "faq", "cta"],

@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "App de cejas — Análisis con IA y filtros · Browlens",
-    "description": "Browlens reúne análisis con IA, edición de cejas con seis puntos, informes de equilibrio y filtros sobre tu foto.",
-    "keywords": "app de cejas, análisis de cejas, IA para cejas, filtro de cejas, editor de cejas, Browlens"
+    "description": "Browlens reúne análisis con IA, edición de cejas con seis puntos, informes de equilibrio y filtros sobre tu foto."
   },
   "page": {
     "show_sections": ["cases", "precision", "workflow", "faq", "cta"],

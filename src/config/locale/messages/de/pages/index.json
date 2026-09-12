@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "Augenbrauen-App — AI-Analyse und Filter · Browlens",
-    "description": "Browlens vereint AI-Analyse, Brauenbearbeitung mit sechs Punkten, Balanceberichte und Augenbrauenfilter auf deinem Foto.",
-    "keywords": "Augenbrauen-App, Augenbrauenanalyse, AI-Brauenanalyse, Augenbrauenfilter, Brauen-Editor, Browlens"
+    "description": "Browlens vereint AI-Analyse, Brauenbearbeitung mit sechs Punkten, Balanceberichte und Augenbrauenfilter auf deinem Foto."
   },
   "page": {
     "show_sections": ["cases", "precision", "workflow", "faq", "cta"],

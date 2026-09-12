@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-
 import { Section } from '@/shared/types/blocks/landing';
 
 import { BrowTintStudio as BrowTintStudioImpl } from './brow-tint/studio';
@@ -18,9 +16,7 @@ interface BrowTintStudioBlockProps {
  */
 export function BrowTintStudio({ styles = [] }: BrowTintStudioBlockProps) {
   // Upload and local shape analysis remain available if the style list is empty.
-  return (
-    <Suspense>
-      <BrowTintStudioImpl styles={styles} />
-    </Suspense>
-  );
+  // Keep the H1, subtitle and upload control in the initial server HTML.
+  // An empty Suspense fallback previously streamed the entire hero hidden.
+  return <BrowTintStudioImpl styles={styles} />;
 }

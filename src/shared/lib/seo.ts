@@ -1,15 +1,14 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { envConfigs } from '@/config';
-import { getSiteUrl } from '@/shared/lib/seo-paths';
 import { buildAlternates } from '@/shared/lib/seo-metadata';
+import { getSiteUrl } from '@/shared/lib/seo-paths';
 
 // get metadata for page component
 export function getMetadata(
   options: {
     title?: string;
     description?: string;
-    keywords?: string;
     metadataKey?: string;
     canonicalUrl?: string; // relative path or full url
     imageUrl?: string;
@@ -29,7 +28,6 @@ export function getMetadata(
     const passedMetadata = {
       title: options.title,
       description: options.description,
-      keywords: options.keywords,
     };
 
     // default metadata
@@ -42,7 +40,6 @@ export function getMetadata(
     let translatedMetadata: {
       title?: string;
       description?: string;
-      keywords?: string;
     } = {};
     if (options.metadataKey) {
       translatedMetadata = await getTranslatedMetadata(
@@ -89,10 +86,6 @@ export function getMetadata(
         passedMetadata.description ||
         translatedMetadata.description ||
         defaultMetadata.description,
-      keywords:
-        passedMetadata.keywords ||
-        translatedMetadata.keywords ||
-        defaultMetadata.keywords,
       alternates,
 
       openGraph: {
@@ -140,6 +133,5 @@ async function getTranslatedMetadata(metadataKey: string, locale: string) {
   return {
     title: t.has('title') ? t('title') : '',
     description: t.has('description') ? t('description') : '',
-    keywords: t.has('keywords') ? t('keywords') : '',
   };
 }

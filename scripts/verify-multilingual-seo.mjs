@@ -34,6 +34,35 @@ async function checkPage(pathname, locale) {
   });
   assert.equal(response.status, 200, `${localized}: HTTP status`);
   const html = await response.text();
+  // Check the HTML shell, before React's hidden streamed Suspense content.
+  // Merely finding an H1 anywhere in the response missed an empty hero shell.
+  const shell = html.split(/<div\b[^>]*\bhidden\b[^>]*\bid="S:/i)[0];
+  if (pathname === '/' || pathname === '/filter') {
+    assert.match(
+      shell,
+      /<h1\b[^>]*>[^<]+<\/h1>/,
+      `${localized}: H1 in initial HTML`
+    );
+    assert.match(
+      shell,
+      /<button\b[^>]*\bdata-brow-upload\b/,
+      `${localized}: upload in initial HTML`
+    );
+  }
+  if (pathname === '/blog') {
+    const headings = [...html.matchAll(/<h1\b[^>]*>[\s\S]*?<\/h1>/g)];
+    assert.equal(headings.length, 1, `${localized}: one blog H1`);
+    assert.doesNotMatch(
+      headings[0][0],
+      /sr-only/,
+      `${localized}: visible blog H1`
+    );
+  }
+  assert.doesNotMatch(
+    html,
+    /<meta\b[^>]*\bname="keywords"/i,
+    `${localized}: no keywords meta`
+  );
   const links = [...html.matchAll(/<link\b[^>]*>/gi)].map(([tag]) =>
     Object.fromEntries(
       [...tag.matchAll(/([\w-]+)="([^"]*)"/g)].map(([, key, value]) => [
@@ -135,6 +164,17 @@ try {
     xml,
     /best-brow-tint|brow-code-tint|professional-brow-tint|what-is-xxx/
   );
+  const sitemapLocations = entries.map(
+    (entry) => entry.match(/<loc>(.*?)<\/loc>/)?.[1]
+  );
+  for (const locale of locales) {
+    assert.ok(
+      sitemapLocations.includes(
+        `${canonicalOrigin}${localize('/filter', locale)}`
+      ),
+      `sitemap: ${locale} filter URL`
+    );
+  }
   for (const entry of entries) {
     const loc = entry.match(/<loc>(.*?)<\/loc>/)?.[1];
     assert.ok(loc?.startsWith(canonicalOrigin));

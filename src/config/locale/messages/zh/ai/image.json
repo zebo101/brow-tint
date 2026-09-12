@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "眉型滤镜 — 在你的脸上试用不同眉型 · Browlens",
-    "description": "用 Browlens 在照片上模拟不同眉型：选择形状、预览造型、对比前后效果并下载图片。",
-    "keywords": "眉型应用, 眉型分析, AI 眉毛分析, 眉型滤镜, 眉毛编辑器, Browlens"
+    "description": "用 Browlens 在照片上模拟不同眉型：选择形状、预览造型、对比前后效果并下载图片。"
   },
   "page": {
     "show_sections": ["filter_benefits", "faq", "cta"],

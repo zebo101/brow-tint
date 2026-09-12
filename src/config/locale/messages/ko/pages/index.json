@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "눈썹 앱 — AI 눈썹 모양 분석 및 필터 · Browlens",
-    "description": "Browlens에서 AI 분석, 6개 포인트 눈썹 편집, 좌우 균형 보고서와 내 사진에 적용하는 눈썹 필터를 만나보세요.",
-    "keywords": "눈썹 앱, 눈썹 모양 분석, AI 눈썹 분석, 눈썹 필터, 눈썹 편집, Browlens"
+    "description": "Browlens에서 AI 분석, 6개 포인트 눈썹 편집, 좌우 균형 보고서와 내 사진에 적용하는 눈썹 필터를 만나보세요."
   },
   "page": {
     "show_sections": ["cases", "precision", "workflow", "faq", "cta"],

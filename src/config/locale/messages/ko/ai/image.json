@@ -1,8 +1,7 @@
 {
   "metadata": {
     "title": "눈썹 필터 — 내 얼굴에서 다양한 모양 체험 · Browlens",
-    "description": "Browlens로 사진에서 눈썹을 시뮬레이션하세요. 모양을 선택하고 미리 본 뒤 전후를 비교하고 결과를 다운로드하세요.",
-    "keywords": "눈썹 앱, 눈썹 모양 분석, AI 눈썹 분석, 눈썹 필터, 눈썹 편집, Browlens"
+    "description": "Browlens로 사진에서 눈썹을 시뮬레이션하세요. 모양을 선택하고 미리 본 뒤 전후를 비교하고 결과를 다운로드하세요."
   },
   "page": {
     "show_sections": ["filter_benefits", "faq", "cta"],
