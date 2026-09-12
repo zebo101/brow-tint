@@ -1,8 +1,7 @@
 [phases.install]
 cmds = [
-  "test -n \"$HEROUI_KEY\" || (echo \"Missing HEROUI_KEY for HeroUI Pro install\" && exit 1)",
   "pnpm install --frozen-lockfile --ignore-scripts",
-  "pnpm dlx hpsetup@latest",
+  "node scripts/setup-heroui-pro.mjs",
   "pnpm exec fumadocs-mdx"
 ]
 
