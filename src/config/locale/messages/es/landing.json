@@ -129,6 +129,11 @@
               "title": "Precios",
               "url": "/pricing",
               "target": "_self"
+            },
+            {
+              "title": "Acerca de",
+              "url": "/about",
+              "target": "_self"
             }
           ]
         },

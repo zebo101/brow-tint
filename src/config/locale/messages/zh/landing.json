@@ -129,6 +129,11 @@
               "title": "价格",
               "url": "/pricing",
               "target": "_self"
+            },
+            {
+              "title": "关于我们",
+              "url": "/about",
+              "target": "_self"
             }
           ]
         },

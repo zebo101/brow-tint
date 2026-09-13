@@ -129,6 +129,11 @@
               "title": "요금제",
               "url": "/pricing",
               "target": "_self"
+            },
+            {
+              "title": "소개",
+              "url": "/about",
+              "target": "_self"
             }
           ]
         },

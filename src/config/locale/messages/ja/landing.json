@@ -129,6 +129,11 @@
               "title": "料金",
               "url": "/pricing",
               "target": "_self"
+            },
+            {
+              "title": "Browlens について",
+              "url": "/about",
+              "target": "_self"
             }
           ]
         },
