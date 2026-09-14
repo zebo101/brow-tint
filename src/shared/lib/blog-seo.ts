@@ -81,6 +81,7 @@ export function buildBlogSeo(input: BlogSeoInput) {
       author,
       publisher: {
         '@type': 'Organization',
+        '@id': `${siteUrl}/#organization`,
         name: 'Browlens',
         url: siteUrl,
         logo: { '@type': 'ImageObject', url: `${siteUrl}/logo.png` },

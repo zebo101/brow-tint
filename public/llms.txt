@@ -1,0 +1,30 @@
+# Browlens
+
+> Browlens is a brow app for eyebrow mapping, shape editing, balance analysis, and virtual eyebrow filter previews on a photo.
+
+Brow mapping, local analysis, and outline editing are free without sign-up. AI-generated photo previews are a separate step that requires an account and credits. Current generation costs and download options are shown in the product and pricing page.
+
+The editor has six adjustable control points: the head, arch, and tail of each eyebrow. Balance reports describe differences in image pixels, not physical millimeters or a beauty score. Generated previews are visual references and do not guarantee a particular styling result.
+
+## Eyebrow guides
+
+- [Eyebrow mapping guide](https://browlens.com/blog/eyebrow-mapping-guide): Explains the head, arch, and tail reference points, six-point editing, and how to interpret a brow balance report.
+- [Eyebrow shapes guide](https://browlens.com/blog/eyebrow-shapes-guide): Introduces brow shape terminology and ways to compare styles.
+- [How to shape eyebrows](https://browlens.com/blog/how-to-shape-eyebrows): A beginner's workflow for planning a shape before changing the actual brows.
+
+## Product
+
+- [Brow app](https://browlens.com/): Upload a photo, inspect brow mapping, adjust the shape, and explore a photo preview.
+- [Eyebrow filter](https://browlens.com/filter): A shorter try-on workflow with automatic placement and preset shapes.
+- [Pricing](https://browlens.com/pricing): Current plans, credits, and export options.
+
+## About and policies
+
+- [About Browlens](https://browlens.com/about): Product background and contact information.
+- [Privacy policy](https://browlens.com/privacy-policy): How the service handles information.
+- [Terms of service](https://browlens.com/terms-of-service): Terms for using the service.
+
+## Optional
+
+- [Blog](https://browlens.com/blog): Browse eyebrow guides.
+- [Sitemap](https://browlens.com/sitemap.xml): Canonical pages and available language versions. English uses unprefixed URLs; other supported languages use /zh, /ko, /ja, /de, /es, /it, and /pt.

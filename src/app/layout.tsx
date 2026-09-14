@@ -84,17 +84,21 @@ export default async function RootLayout({
     {
       '@context': 'https://schema.org',
       '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
       name: siteName,
       url: siteUrl,
+      logo: `${siteUrl}/logo.png`,
     },
     {
       '@context': 'https://schema.org',
       '@type': 'WebApplication',
+      '@id': `${siteUrl}/#application`,
       name: siteName,
       url: siteUrl,
       applicationCategory: 'DesignApplication',
       operatingSystem: 'Web',
       description: siteDescription,
+      publisher: { '@id': `${siteUrl}/#organization` },
     },
   ];
 
