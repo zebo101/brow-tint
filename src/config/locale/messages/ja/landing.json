@@ -29,6 +29,11 @@
           "icon": "Newspaper"
         },
         {
+          "title": "試着 / フィルター",
+          "url": "/filter",
+          "icon": "RiImage2Line"
+        },
+        {
           "title": "料金",
           "url": "/pricing",
           "icon": "DollarSign"

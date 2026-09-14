@@ -29,6 +29,11 @@
           "icon": "Newspaper"
         },
         {
+          "title": "가상 체험 / 필터",
+          "url": "/filter",
+          "icon": "RiImage2Line"
+        },
+        {
           "title": "요금제",
           "url": "/pricing",
           "icon": "DollarSign"

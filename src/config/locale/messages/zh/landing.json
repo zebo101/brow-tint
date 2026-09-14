@@ -29,6 +29,11 @@
           "icon": "Newspaper"
         },
         {
+          "title": "试戴 / 滤镜",
+          "url": "/filter",
+          "icon": "RiImage2Line"
+        },
+        {
           "title": "价格",
           "url": "/pricing",
           "icon": "DollarSign"

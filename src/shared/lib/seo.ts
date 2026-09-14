@@ -12,6 +12,8 @@ export function getMetadata(
     metadataKey?: string;
     canonicalUrl?: string; // relative path or full url
     imageUrl?: string;
+    imageWidth?: number;
+    imageHeight?: number;
     appName?: string;
     noIndex?: boolean;
   } = {}
@@ -99,6 +101,8 @@ export function getMetadata(
           {
             url: imageUrl.toString(),
             alt: title,
+            width: options.imageWidth,
+            height: options.imageHeight,
           },
         ],
       },
@@ -113,7 +117,6 @@ export function getMetadata(
             alt: title,
           },
         ],
-        site: getSiteUrl(),
       },
 
       robots: {

@@ -29,6 +29,11 @@
           "icon": "Newspaper"
         },
         {
+          "title": "Probar / Filtro",
+          "url": "/filter",
+          "icon": "RiImage2Line"
+        },
+        {
           "title": "Precios",
           "url": "/pricing",
           "icon": "DollarSign"

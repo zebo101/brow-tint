@@ -11,6 +11,9 @@ export const revalidate = 3600;
 export const generateMetadata = getMetadata({
   metadataKey: 'pages.index.metadata',
   canonicalUrl: '/',
+  imageUrl: '/imgs/og/browlens-home-20260914.jpg',
+  imageWidth: 1200,
+  imageHeight: 630,
 });
 
 export default async function LandingPage({
