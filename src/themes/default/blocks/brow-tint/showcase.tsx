@@ -8,6 +8,7 @@ import {
   useState,
   type ReactNode,
 } from 'react';
+import Image from 'next/image';
 import { Button, Card, Chip, Modal, Tooltip } from '@heroui/react';
 import { ArrowRight } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
@@ -172,11 +173,13 @@ export function BrowShowcase({
       >
         <span className="brow-showcase__style-image">
           {style.thumbnail ? (
-            <img
+            <Image
               src={style.thumbnail}
               alt=""
               width={300}
               height={200}
+              sizes="(max-width: 760px) 28vw, (max-width: 1023px) 15vw, 150px"
+              quality={75}
               loading="lazy"
               decoding="async"
             />
@@ -250,11 +253,15 @@ export function BrowShowcase({
                   <div className="brow-showcase__existing-photo">{preview}</div>
                 ) : (
                   <div className="brow-showcase__example-photo">
-                    <img
+                    <Image
                       className="brow-showcase__example-image"
                       src="/imgs/cases/2.jpg"
                       width={706}
                       height={941}
+                      sizes="(max-width: 760px) 216px, 288px"
+                      quality={75}
+                      loading="eager"
+                      fetchPriority="high"
                       alt={t('ui.example_photo_with_brow_mapping')}
                     />
                     <img
@@ -292,7 +299,14 @@ export function BrowShowcase({
                       isDisabled={unavailable}
                       onPress={() => onSelectSample(src)}
                     >
-                      <img src={src} alt="" width={600} height={600} />
+                      <Image
+                        src={src}
+                        alt=""
+                        width={600}
+                        height={600}
+                        sizes="32px"
+                        quality={75}
+                      />
                     </Button>
                     <Tooltip.Content>
                       {t('ui.use_sample', { n: index + 1 })}

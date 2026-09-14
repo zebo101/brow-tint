@@ -1,0 +1,438 @@
+PageSpeed Insights
+Copy Link
+Docs
+Report from Sep 14, 2026, 1:25:35 PM
+
+Enter a valid URL
+
+Analyze
+smartphone
+Mobile
+computer
+Desktop
+Discover what your real users are experiencing
+No Data
+Diagnose performance issues
+68
+Performance
+95
+Accessibility
+96
+Best Practices
+100
+SEO
+2/2
+Agentic Browsing
+68
+FCP
++8
+LCP
++1
+TBT
++28
+CLS
++25
+SI
++7
+Performance
+Values are estimated and may vary. The performance score is calculated directly from these metrics.See calculator.
+0–49
+50–89
+90–100
+METRICS
+Expand view
+First Contentful Paint
+2.3 s
+Largest Contentful Paint
+7.3 s
+Total Blocking Time
+170 ms
+Cumulative Layout Shift
+0
+Speed Index
+4.8 s
+Captured at Sep 14, 2026, 1:25 PM EDT
+Emulated Moto G Power with Lighthouse 13.4.1
+Single page session
+Initial page load
+Slow 4G throttling
+Using HeadlessChromium 151.0.7922.173 with lr
+View Treemap
+Show audits relevant to:
+All
+FCP
+LCP
+TBT
+CLS
+INSIGHTS
+Render-blocking requests Est savings of 870 ms
+Requests are blocking the page's initial render, which may delay LCP. Deferring or inlining can move these network requests out of the critical path.LCPFCPUnscored
+URL
+	
+Transfer Size
+	
+Duration
+
+
+browlens.com 1st Party
+148.6 KiB	5,370 ms
+
+…css/dd62e4feb0394791.css(browlens.com)
+	
+5.6 KiB
+	
+560 ms
+
+
+…css/683066dd42e0c224.css(browlens.com)
+	
+4.7 KiB
+	
+560 ms
+
+
+…css/cecdbce2880c059c.css(browlens.com)
+	
+1.0 KiB
+	
+560 ms
+
+
+…css/1fb74dd9cebdfeb9.css(browlens.com)
+	
+4.0 KiB
+	
+200 ms
+
+
+…css/1d3998c8fa8d7ac0.css(browlens.com)
+	
+101.0 KiB
+	
+1,640 ms
+
+
+…css/4e4335108e92acc4.css(browlens.com)
+	
+31.1 KiB
+	
+1,280 ms
+
+
+…css/c3a8df08f39db2dc.css(browlens.com)
+	
+1.3 KiB
+	
+560 ms
+Legacy JavaScript Est savings of 23 KiB
+Forced reflow
+LCP request discovery
+Optimize LCP by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loadingLCPUnscored
+LCP resources should not use loading=lazy
+fetchpriority=high should be applied to the image preload request
+Request is discoverable in initial document
+Example photo with brow mapping
+<img class="brow-showcase__example-image" src="/imgs/cases/2.jpg" width="706" height="941" alt="Example photo with brow mapping">
+Network dependency tree
+Avoid chaining critical requests by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.LCPUnscored
+Maximum critical path latency: 1,668 ms
+Initial Navigation
+https://browlens.com - 803 ms, 56.00 KiB
+…cloudflare-static/email-decode.min.js(browlens.com) - 855 ms, 1.21 KiB
+/beacon.min.js/v31edd6d…(static.cloudflareinsights.com) - 838 ms, 10.23 KiB
+/cdn-cgi/rum(browlens.com) - 1,668 ms, 0.64 KiB
+Preconnected origins
+preconnect hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.
+no origins were preconnected
+Preconnect candidates
+Add preconnect hints to your most important origins, but try to use no more than 4.
+No additional origins are good candidates for preconnecting
+Use efficient cache lifetimes Est savings of 265 KiB
+Improve image delivery Est savings of 525 KiB
+Reducing the download time of images can improve the perceived load time of the page and LCP. Learn more about optimizing image sizeLCPFCPUnscored
+	
+URL
+	
+Resource Size
+	
+Est Savings
+
+
+browlens.com 1st Party
+	539.0 KiB	525.1 KiB
+
+div.brow-showcase__grid > button#react-aria-_R_1d9c9inuiumiulb_ > span.brow-showcase__style-image > img
+<img src="https://r2.browlens.com/brow-tints/women/6e6cd705-8427-4e44-b9c0-bb330ec31…" alt="" width="300" height="200" loading="lazy" decoding="async">
+	
+…women/6e6cd705-8427-4e44-b9c0-bb330ec31ca6.png(r2.browlens.com)
+	
+117.2 KiB
+	
+115.7 KiB
+
+
+Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.
+		
+53.2 KiB
+
+
+This image file is larger than it needs to be (768x512) for its displayed dimensions (136x68). Use responsive images to reduce the image download size.
+		
+114.4 KiB
+
+
+div.brow-showcase__grid > button#react-aria-_R_1l9c9inuiumiulb_ > span.brow-showcase__style-image > img
+<img src="https://r2.browlens.com/brow-tints/women/a47b4310-a59e-48e7-89d6-c79fe5ed0…" alt="" width="300" height="200" loading="lazy" decoding="async">
+	
+…women/a47b4310-a59e-48e7-89d6-c79fe5ed0ed6.png(r2.browlens.com)
+	
+70.0 KiB
+	
+68.5 KiB
+
+
+Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.
+		
+6.0 KiB
+
+
+This image file is larger than it needs to be (768x512) for its displayed dimensions (136x68). Use responsive images to reduce the image download size.
+		
+68.3 KiB
+
+
+div.brow-showcase__grid > button#react-aria-_R_d9c9inuiumiulb_ > span.brow-showcase__style-image > img
+<img src="https://r2.browlens.com/brow-tints/women/8516fa13-73cf-4612-81ed-a8314fce3…" alt="" width="300" height="200" loading="lazy" decoding="async">
+	
+…women/8516fa13-73cf-4612-81ed-a8314fce3b47.png(r2.browlens.com)
+	
+64.7 KiB
+	
+63.2 KiB
+
+
+This image file is larger than it needs to be (768x512) for its displayed dimensions (136x68). Use responsive images to reduce the image download size.
+		
+63.2 KiB
+
+
+Example photo with brow mapping
+<img class="brow-showcase__example-image" src="/imgs/cases/2.jpg" width="706" height="941" alt="Example photo with brow mapping">
+	
+…cases/2.jpg(browlens.com)
+	
+65.5 KiB
+	
+59.4 KiB
+
+
+This image file is larger than it needs to be (706x941) for its displayed dimensions (216x288). Use responsive images to reduce the image download size.
+		
+59.4 KiB
+
+
+div.brow-showcase__grid > button#react-aria-_R_t9c9inuiumiulb_ > span.brow-showcase__style-image > img
+<img src="https://r2.browlens.com/brow-tints/women/991f0ebc-5c8f-4f30-82d4-d3ee312e3…" alt="" width="300" height="200" loading="lazy" decoding="async">
+	
+…women/991f0ebc-5c8f-4f30-82d4-d3ee312e3639.png(r2.browlens.com)
+	
+50.6 KiB
+	
+49.4 KiB
+
+
+This image file is larger than it needs to be (768x512) for its displayed dimensions (136x68). Use responsive images to reduce the image download size.
+		
+49.4 KiB
+
+
+div.brow-showcase__grid > button#react-aria-_R_159c9inuiumiulb_ > span.brow-showcase__style-image > img
+<img src="https://r2.browlens.com/brow-tints/women/4988d3e3-13bf-4b36-a3ea-4053de992…" alt="" width="300" height="200" loading="lazy" decoding="async">
+	
+…women/4988d3e3-13bf-4b36-a3ea-4053de992a5d.png(r2.browlens.com)
+	
+46.6 KiB
+	
+45.6 KiB
+
+
+This image file is larger than it needs to be (768x512) for its displayed dimensions (136x68). Use responsive images to reduce the image download size.
+		
+45.6 KiB
+
+
+div.brow-showcase__grid > button#react-aria-_R_l9c9inuiumiulb_ > span.brow-showcase__style-image > img
+<img src="https://r2.browlens.com/brow-tints/women/a1ced67c-c8fc-49c8-ab76-61be0e8ee…" alt="" width="300" height="200" loading="lazy" decoding="async">
+	
+…women/a1ced67c-c8fc-49c8-ab76-61be0e8ee2c5.png(r2.browlens.com)
+	
+30.0 KiB
+	
+29.3 KiB
+
+
+This image file is larger than it needs to be (768x512) for its displayed dimensions (136x68). Use responsive images to reduce the image download size.
+		
+29.3 KiB
+
+
+div.card__content > div.brow-showcase__samples > button#react-aria-_R_pl5c9inuiumiulb_ > img
+<img src="/imgs/suitable/1.webp" alt="" width="600" height="600">
+	
+…suitable/1.webp(browlens.com)
+	
+25.1 KiB
+	
+25.1 KiB
+
+
+This image file is larger than it needs to be (600x600) for its displayed dimensions (30x30). Use responsive images to reduce the image download size.
+		
+25.1 KiB
+
+
+div.card__content > div.brow-showcase__samples > button#react-aria-_R_ql5c9inuiumiulb_ > img
+<img src="/imgs/suitable/2.webp" alt="" width="600" height="600">
+	
+…suitable/2.webp(browlens.com)
+	
+24.8 KiB
+	
+24.7 KiB
+
+
+This image file is larger than it needs to be (600x600) for its displayed dimensions (30x30). Use responsive images to reduce the image download size.
+		
+24.7 KiB
+
+
+div.card__content > div.brow-showcase__samples > button#react-aria-_R_rl5c9inuiumiulb_ > img
+<img src="/imgs/suitable/3.webp" alt="" width="600" height="600">
+	
+…suitable/3.webp(browlens.com)
+	
+22.5 KiB
+	
+22.5 KiB
+
+
+This image file is larger than it needs to be (600x600) for its displayed dimensions (30x30). Use responsive images to reduce the image download size.
+		
+22.5 KiB
+
+
+div.card__content > div.brow-showcase__samples > button#react-aria-_R_sl5c9inuiumiulb_ > img
+<img src="/imgs/suitable/4.webp" alt="" width="600" height="600">
+	
+…suitable/4.webp(browlens.com)
+	
+21.9 KiB
+	
+21.9 KiB
+
+
+This image file is larger than it needs to be (600x600) for its displayed dimensions (30x30). Use responsive images to reduce the image download size.
+		
+21.9 KiB
+Layout shift culprits
+LCP breakdown
+Each subpart has specific improvement strategies. Ideally, most of the LCP time should be spent on loading the resources, not within delays.LCPUnscored
+Subpart
+	
+Duration
+
+
+Time to first byte
+	
+50 ms
+
+
+Resource load delay
+	
+740 ms
+
+
+Resource load duration
+	
+140 ms
+
+
+Element render delay
+	
+280 ms
+Example photo with brow mapping
+<img class="brow-showcase__example-image" src="/imgs/cases/2.jpg" width="706" height="941" alt="Example photo with brow mapping">
+3rd parties
+These insights are also available in the Chrome DevTools Performance Panel - record a trace to view more detailed information.
+DIAGNOSTICS
+Reduce unused JavaScript Est savings of 478 KiB
+Avoid long main-thread tasks 5 long tasks found
+Avoid non-composited animations 9 animated elements found
+More information about the performance of your application. These numbers don't directly affect the Performance score.
+PASSED AUDITS (14)
+Show
+95
+Accessibility
+These checks highlight opportunities to improve the accessibility of your web app. Automatic detection can only detect a subset of issues and does not guarantee the accessibility of your web app, so manual testing is also encouraged.
+CONTRAST
+Background and foreground colors do not have a sufficient contrast ratio.
+These are opportunities to improve the legibility of your content.
+BEST PRACTICES
+Document does not have a main landmark.
+These items highlight common accessibility best practices.
+ADDITIONAL ITEMS TO MANUALLY CHECK (10)
+Show
+These items address areas which an automated testing tool cannot cover. Learn more in our guide on conducting an accessibility review.
+PASSED AUDITS (25)
+Show
+NOT APPLICABLE (36)
+Show
+96
+Best Practices
+GENERAL
+Browser errors were logged to the console
+TRUST AND SAFETY
+Ensure CSP is effective against XSS attacks
+Ensure proper origin isolation with COOP
+Mitigate DOM-based XSS with Trusted Types
+BROWSER COMPATIBILITY
+Baseline Features
+PASSED AUDITS (12)
+Show
+NOT APPLICABLE (4)
+Show
+100
+SEO
+These checks ensure that your page is following basic search engine optimization advice. There are many additional factors Lighthouse does not score here that may affect your search ranking, including performance on Core Web Vitals. Learn more about Google Search Essentials.
+ADDITIONAL ITEMS TO MANUALLY CHECK (1)
+Hide
+Structured data is valid
+Run these additional validators on your site to check additional SEO best practices.
+PASSED AUDITS (10)
+Show
+2/2
+Agentic Browsing
+These checks ensure high-quality, browsable websites for AI agents and validate the correctness of WebMCP integrations. This category is still under development and subject to change.
+PASSED AUDITS (2)
+Show
+NOT APPLICABLE (4)
+Show
+More on PageSpeed Insights
+What's new
+Documentation
+Learn about Web Performance
+Ask questions on Stack Overflow
+Mailing list
+Related Content
+Updates
+Web Fundamentals
+Case Studies
+Podcasts
+Connect
+Twitter
+Youtube
+Chrome
+Firebase
+All products
+Terms and Privacy Policy
+For details, see the Google Developers Site Policies.
