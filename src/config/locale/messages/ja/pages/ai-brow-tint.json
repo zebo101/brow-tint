@@ -244,6 +244,7 @@
     "comparison_hint": "同じ写真から生成した異なる眉形を2〜4種類選択。Premiumでは名前付きのHD比較画像を書き出せます。プレビューには透かしが入り、HD書き出しには入りません。",
     "refresh_results": "更新",
     "use_my_brow_adjustments": "調整した眉の形を使う",
+    "brow_adjustments_help": "眉の調整について",
     "brow_adjustments_on": "確定した輪郭を優先し、選んだスタイルの密度と毛流れを参考にします。",
     "brow_adjustments_off": "元の写真と選んだスタイルを参考に、AIが眉の形を調整します。"
   },

@@ -244,6 +244,7 @@
     "comparison_hint": "Select 2–4 different generated styles from the same photo. Premium exports a labeled HD comparison. Previews are watermarked; HD exports are clean.",
     "refresh_results": "Refresh",
     "use_my_brow_adjustments": "Use my brow adjustments",
+    "brow_adjustments_help": "About brow adjustments",
     "brow_adjustments_on": "Use my confirmed outline, with density and hair flow from the selected style.",
     "brow_adjustments_off": "Let AI adapt my brows using the original photo and selected style."
   },

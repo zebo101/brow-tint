@@ -244,6 +244,7 @@
     "comparison_hint": "选择同一张照片生成的 2–4 种不同眉形，Premium 可导出带款式名称的高清对比图。预览带水印，高清导出无水印。",
     "refresh_results": "刷新",
     "use_my_brow_adjustments": "应用我的眉形调整",
+    "brow_adjustments_help": "眉形调整说明",
     "brow_adjustments_on": "以已确认的轮廓为准，参考所选款式的浓密度与毛流。",
     "brow_adjustments_off": "由 AI 结合原照片和所选款式，灵活调整眉形。"
   },

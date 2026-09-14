@@ -244,6 +244,7 @@
     "comparison_hint": "Selecione de 2 a 4 estilos diferentes gerados com a mesma foto. Premium exporta uma comparação HD com nomes. Prévias têm marca-d’água; exportações HD não.",
     "refresh_results": "Atualizar",
     "use_my_brow_adjustments": "Aplicar meus ajustes de sobrancelhas",
+    "brow_adjustments_help": "Sobre os ajustes de sobrancelhas",
     "brow_adjustments_on": "Usar o contorno confirmado, com a densidade e a direção dos fios do estilo escolhido.",
     "brow_adjustments_off": "A IA adapta minhas sobrancelhas com base na foto original e no estilo escolhido."
   },

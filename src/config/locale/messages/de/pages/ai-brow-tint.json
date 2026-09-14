@@ -244,6 +244,7 @@
     "comparison_hint": "Wähle 2–4 verschiedene generierte Stile desselben Fotos. Premium exportiert einen beschrifteten HD-Vergleich. Vorschauen haben Wasserzeichen, HD-Exporte nicht.",
     "refresh_results": "Aktualisieren",
     "use_my_brow_adjustments": "Meine Brauenanpassungen anwenden",
+    "brow_adjustments_help": "Informationen zu Brauenanpassungen",
     "brow_adjustments_on": "Meine bestätigte Kontur verwenden; Dichte und Haarwuchsrichtung stammen aus dem gewählten Stil.",
     "brow_adjustments_off": "Die KI passt meine Brauen anhand des Originalfotos und des gewählten Stils an."
   },
