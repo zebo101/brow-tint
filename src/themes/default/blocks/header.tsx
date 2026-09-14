@@ -149,7 +149,7 @@ export function Header({ header }: { header: HeaderType }) {
         viewport={false}
         className="**:data-[slot=navigation-menu-content]:top-10 max-lg:hidden"
       >
-        <NavigationMenuList className="gap-4">
+        <NavigationMenuList className="gap-1 xl:gap-4">
           {header.nav?.items?.map((item, idx) => {
             if (!item.children || item.children.length === 0) {
               return (
@@ -163,7 +163,7 @@ export function Header({ header }: { header: HeaderType }) {
                         : undefined
                     }
                     className={cn(
-                      'flex flex-row items-center gap-2 px-5 py-1.5 text-sm',
+                      'flex flex-row items-center gap-1.5 px-2 py-1.5 text-sm xl:gap-2 xl:px-5',
                       isHeaderElevated
                         ? 'text-[#3F2A2A] hover:bg-rose-50 hover:text-[#3F2A2A]'
                         : useHeroHeaderPalette
@@ -181,7 +181,7 @@ export function Header({ header }: { header: HeaderType }) {
                     {item.icon ? (
                       <SmartIcon
                         name={item.icon as string}
-                        className="size-4"
+                        className="hidden size-4 xl:block"
                       />
                     ) : null}
                     {item.title}
@@ -194,7 +194,7 @@ export function Header({ header }: { header: HeaderType }) {
               <NavigationMenuItem key={idx}>
                 <NavigationMenuTrigger
                   className={cn(
-                    'flex flex-row items-center gap-2 px-5 text-sm',
+                    'flex flex-row items-center gap-1.5 px-2 text-sm xl:gap-2 xl:px-5',
                     isHeaderElevated
                       ? 'text-[#3F2A2A] hover:bg-rose-50 hover:text-[#3F2A2A] data-[state=open]:bg-rose-50 data-[state=open]:text-[#3F2A2A]'
                       : useHeroHeaderPalette
@@ -203,7 +203,10 @@ export function Header({ header }: { header: HeaderType }) {
                   )}
                 >
                   {item.icon ? (
-                    <SmartIcon name={item.icon as string} className="size-4" />
+                    <SmartIcon
+                      name={item.icon as string}
+                      className="hidden size-4 xl:block"
+                    />
                   ) : null}
                   {item.title}
                 </NavigationMenuTrigger>
@@ -383,8 +386,8 @@ export function Header({ header }: { header: HeaderType }) {
           )}
         >
           <div className="mx-auto w-full max-w-[1512px] px-4 md:px-8">
-            <div className="relative flex flex-wrap items-center justify-between lg:py-5">
-              <div className="flex justify-between gap-8 max-lg:h-14 max-lg:w-full max-lg:border-b">
+            <div className="relative flex flex-wrap items-center justify-between lg:flex-nowrap lg:gap-4 lg:py-5">
+              <div className="flex justify-between gap-4 max-lg:h-14 max-lg:w-full max-lg:border-b xl:gap-8">
                 {/* Brand Logo */}
                 {header.brand && <BrandLogo brand={header.brand} />}
 
