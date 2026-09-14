@@ -4,7 +4,7 @@
     "description": "Meet Browlens, the brow app with AI analysis, six-point eyebrow editing, brow balance reports, and eyebrow filter previews on your photo."
   },
   "page": {
-    "show_sections": ["cases", "precision", "workflow", "faq", "cta"],
+    "show_sections": ["cases", "precision", "workflow", "guide", "faq", "cta"],
     "sections": {
       "cases": {
         "block": "cases-carousel",
@@ -109,6 +109,74 @@
           {
             "title": "Generate and compare",
             "description": "Generate an AI image, compare your look, and download your preferred result."
+          }
+        ]
+      },
+      "guide": {
+        "block": "brow-guide",
+        "id": "brow-app-guide",
+        "title": "How to Use a Brow App to Make a Better Shape Decision",
+        "description": "A useful eyebrow preview starts with understanding what you already have. Use the tool above to inspect your natural brows, make a small adjustment, and compare the result in the context of your whole face. The guide below explains what each stage can tell you.",
+        "items": [
+          {
+            "title": "Start with eyebrow mapping",
+            "paragraphs": [
+              "Eyebrow mapping identifies the beginning, arch, and tail of each brow. These reference points help you describe a shape instead of guessing what looks different. In Browlens, automatic landmark detection gives you a starting position, and six draggable control points let you correct the map against your photograph. Check the actual brow hairs before accepting a detected point, especially when a fringe or shadow covers an edge.",
+              "The map is a guide for exploring a look, not a requirement to make both eyebrows identical. Natural brows differ, and a camera can exaggerate that difference. Look at where each brow starts relative to your eyes, how the arch rises, and where the tail ends. If one point seems wrong, correct its placement before comparing the two sides."
+            ],
+            "link": {
+              "prefix": "For a step-by-step explanation of the head, arch, and tail, read our ",
+              "title": "eyebrow mapping",
+              "url": "/blog/eyebrow-mapping-guide",
+              "suffix": " guide, then return to the editor to check those points on your own photo."
+            }
+          },
+          {
+            "title": "Choose a photo you can compare fairly",
+            "paragraphs": [
+              "Use an evenly lit, front-facing portrait with a relaxed expression and both eyebrows visible. Pull hair away from the brow line and avoid a strong shadow across one eye. Keep enough of your face in the frame to judge the brows together. A very tight crop may show individual hairs well while making the overall balance harder to assess.",
+              "For a useful comparison, keep the same original photo while trying different settings. Switching between a close selfie and a portrait taken farther away changes perspective as well as eyebrow shape. If you are unsure whether a difference is real, try another straight-on photograph before making a decision. Browlens accepts JPG, PNG, and WebP images up to 15 MB."
+            ]
+          },
+          {
+            "title": "Change one detail at a time",
+            "paragraphs": [
+              "After correcting the six points, begin with one shape setting. Thickness changes how substantial the brow outline appears; length changes its reach; angle changes its direction. Spacing moves attention to the gap between the brow heads, while overall height and arch height let you explore placement and lift. A small change is easier to evaluate when the other settings stay still.",
+              "Start by adjusting both brows together if you want an overall style change. Refine each side when a specific point or contour needs attention. Compare the whole face after each adjustment, then zoom in to inspect placement. This makes it easier to decide whether you prefer a different shape or simply need to correct the initial detection."
+            ]
+          },
+          {
+            "title": "Read the balance report in context",
+            "paragraphs": [
+              "The report compares arch height and brow length between the left and right sides of the photograph. Its measurements use image pixels, so they describe this image rather than physical millimeters on your face. A different crop, camera angle, expression, or image size can change the numbers. Use the report to locate a difference you want to inspect, then judge it visually.",
+              "There is no beauty score to chase. A lower difference does not automatically produce your preferred look, and perfectly matching two outlines may not suit the natural movement of your face. Decide what you want to explore first: a softer arch, a shorter tail, or more similar placement. The report supports that decision without making it for you."
+            ]
+          },
+          {
+            "title": "Move from an outline to a photo preview",
+            "paragraphs": [
+              "A mapped outline shows position and geometry. An AI photo preview adds an impression of brow hairs and styling on your portrait. Confirm your guide, select a style, and review the generation controls before creating an image. The preview is a separate step from local analysis and requires an account and credits; the current cost is shown before you generate.",
+              "Compare the result with the original, looking at the brow heads, arches, and tails as well as the overall expression. Generated images can vary, so an appealing preview is a reference for a conversation or a styling experiment, not a prediction of an exact salon result. Keep the original nearby when explaining what you like about a new shape."
+            ],
+            "link": {
+              "prefix": "If you want to compare preset contours without manually adjusting individual points, try the ",
+              "title": "eyebrow filter",
+              "url": "/filter",
+              "suffix": " for the shorter workflow."
+            }
+          },
+          {
+            "title": "Choose your next step",
+            "paragraphs": [
+              "Brow mapping, editing, and analysis are free to use without signing up. You can explore the controls with an example photo before adding your own. When you are ready for AI photo previews, check the account and credit requirements in the tool. Download availability follows the plan shown in your account; you can review the available options before purchasing.",
+              "Once you have a direction you like, write down the specific change: keep the natural head, soften the arch, or shorten the outer tail. A precise description is more useful than asking for perfect eyebrows. Use your preview alongside your natural brow shape to decide what to discuss with a brow artist or what to try with everyday styling."
+            ],
+            "link": {
+              "prefix": "To compare the vocabulary behind different looks, explore the ",
+              "title": "eyebrow shapes guide",
+              "url": "/blog/eyebrow-shapes-guide",
+              "suffix": "."
+            }
           }
         ]
       },

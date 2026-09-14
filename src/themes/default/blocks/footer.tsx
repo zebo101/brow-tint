@@ -97,7 +97,7 @@ export function Footer({ footer }: { footer: FooterType }) {
 
               {footer.brand?.description ? (
                 <p
-                  className="text-muted-foreground dark:text-zinc-200 text-sm text-balance"
+                  className="text-muted-foreground text-sm text-balance dark:text-zinc-200"
                   dangerouslySetInnerHTML={{ __html: footer.brand.description }}
                 />
               ) : null}
@@ -109,15 +109,23 @@ export function Footer({ footer }: { footer: FooterType }) {
                       key={index}
                       href={item.url || ''}
                       target={item.target || ''}
+                      rel={
+                        item.target === '_blank'
+                          ? 'noopener noreferrer'
+                          : undefined
+                      }
                       // a11y: icon-only social links need an accessible name —
                       // Lighthouse `link-name` was failing because the inner
                       // SmartIcon SVG has no text label.
                       aria-label={item.title || undefined}
                       title={item.title || undefined}
-                      className="border-border/50 text-muted-foreground dark:text-zinc-200 hover:bg-accent/10 hover:text-foreground dark:hover:text-white rounded-lg border p-2 transition-all duration-300"
+                      className="border-border/50 text-muted-foreground hover:bg-accent/10 hover:text-foreground rounded-lg border p-2 transition-all duration-300 dark:text-zinc-200 dark:hover:text-white"
                     >
                       {item.icon ? (
-                        <SmartIcon name={item.icon as string} className="size-4" />
+                        <SmartIcon
+                          name={item.icon as string}
+                          className="size-4"
+                        />
                       ) : (
                         <span className="text-xs font-medium">
                           {item.title || ''}
@@ -139,7 +147,7 @@ export function Footer({ footer }: { footer: FooterType }) {
                         <h3> in between. These are visual category labels for
                         link groups, not document outline headings, so a
                         styled <p> with role-equivalent semantics is correct. */}
-                    <p className="text-muted-foreground/70 dark:text-zinc-400 mb-4 text-sm font-semibold uppercase">
+                    <p className="text-muted-foreground/70 mb-4 text-sm font-semibold uppercase dark:text-zinc-400">
                       {item.title}
                     </p>
                     <ul className="flex flex-col gap-2 text-sm">
@@ -148,7 +156,12 @@ export function Footer({ footer }: { footer: FooterType }) {
                           <Link
                             href={subItem.url || ''}
                             target={subItem.target || ''}
-                            className="text-muted-foreground dark:text-zinc-200 hover:text-foreground dark:hover:text-white font-medium whitespace-nowrap transition-all duration-300 hover:underline"
+                            rel={
+                              subItem.target === '_blank'
+                                ? 'noopener noreferrer'
+                                : undefined
+                            }
+                            className="text-muted-foreground hover:text-foreground font-medium whitespace-nowrap transition-all duration-300 hover:underline dark:text-zinc-200 dark:hover:text-white"
                           >
                             {subItem.title || ''}
                           </Link>
@@ -166,7 +179,7 @@ export function Footer({ footer }: { footer: FooterType }) {
         <AnimatedContainer delay={0.3} className="mt-4 px-2 md:px-8">
           <div className="flex flex-col items-start justify-between gap-4 text-sm sm:flex-row sm:items-center">
             <div className="flex w-full flex-col items-start gap-3 sm:w-auto">
-              <div className="text-muted-foreground dark:text-zinc-400 text-xs sm:text-sm">
+              <div className="text-muted-foreground text-xs sm:text-sm dark:text-zinc-400">
                 {footer.copyright ? (
                   <span
                     dangerouslySetInnerHTML={{ __html: footer.copyright }}
@@ -184,7 +197,12 @@ export function Footer({ footer }: { footer: FooterType }) {
                         key={index}
                         href={item.url || ''}
                         target={item.target || ''}
-                        className="text-muted-foreground dark:text-zinc-400 hover:text-foreground dark:hover:text-zinc-100 whitespace-nowrap transition-colors duration-150 hover:underline"
+                        rel={
+                          item.target === '_blank'
+                            ? 'noopener noreferrer'
+                            : undefined
+                        }
+                        className="text-muted-foreground hover:text-foreground whitespace-nowrap transition-colors duration-150 hover:underline dark:text-zinc-400 dark:hover:text-zinc-100"
                       >
                         {item.title || ''}
                       </Link>

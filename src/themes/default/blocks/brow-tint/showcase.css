@@ -410,3 +410,10 @@
     padding: 12px 16px 16px;
   }
 }
+
+/* Reserve room for the upload CTA on short phones without cropping the map. */
+@media (max-width: 760px) and (max-height: 700px) {
+  .brow-showcase .brow-showcase__polaroid {
+    max-width: 200px;
+  }
+}

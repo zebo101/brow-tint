@@ -118,6 +118,8 @@ export function BrowCatalogPanel({
                     {style.thumbnail ? (
                       <img
                         src={style.thumbnail}
+                        width={300}
+                        height={150}
                         alt={browShapeLabel(style, locale)}
                         className="h-full w-full object-cover"
                         loading="lazy"

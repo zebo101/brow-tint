@@ -8,6 +8,7 @@ export function BrandLogo({ brand }: { brand: BrandType }) {
     <Link
       href={brand.url || ''}
       target={brand.target || '_self'}
+      rel={brand.target === '_blank' ? 'noopener noreferrer' : undefined}
       className={`flex items-center space-x-3 ${brand.className}`}
     >
       {brand.logo && (

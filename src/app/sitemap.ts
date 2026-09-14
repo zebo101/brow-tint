@@ -15,10 +15,27 @@ import { expandStaticRoutes, StaticSitemapRoute } from './sitemap-routes';
 type SitemapEntry = MetadataRoute.Sitemap[number];
 
 const staticRoutes: StaticSitemapRoute[] = [
-  { path: '/', changeFrequency: 'daily', priority: 1 },
-  { path: '/pricing', changeFrequency: 'weekly', priority: 0.9 },
+  // Recorded substantive content/template updates, not build or request dates.
+  // Update these when the corresponding page changes meaningfully.
+  {
+    path: '/',
+    changeFrequency: 'daily',
+    priority: 1,
+    lastModified: '2026-09-14',
+  },
+  {
+    path: '/pricing',
+    changeFrequency: 'weekly',
+    priority: 0.9,
+    lastModified: '2026-09-12',
+  },
   { path: '/showcases', changeFrequency: 'weekly', priority: 0.85 },
-  { path: '/filter', changeFrequency: 'weekly', priority: 0.9 },
+  {
+    path: '/filter',
+    changeFrequency: 'weekly',
+    priority: 0.9,
+    lastModified: '2026-09-14',
+  },
   { path: '/blog', changeFrequency: 'daily', priority: 0.8 },
   { path: '/updates', changeFrequency: 'weekly', priority: 0.7 },
 ];

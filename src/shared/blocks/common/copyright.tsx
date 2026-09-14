@@ -18,6 +18,7 @@ export function Copyright({ brand }: { brand: BrandType }) {
       <a
         href={brand?.url || envConfigs.app_url}
         target={brand?.target || ''}
+        rel={brand?.target === '_blank' ? 'noopener noreferrer' : undefined}
         className="text-primary hover:text-primary/80 cursor-pointer"
       >
         {brand?.title || envConfigs.app_name}

@@ -105,6 +105,8 @@ export function BlogDetail({ post }: { post: PostType }) {
                           <div className="ring-foreground/10 mx-auto mb-4 aspect-square size-20 overflow-hidden rounded-xl border border-transparent shadow-md ring-1 shadow-black/15">
                             <img
                               src={post.author_image}
+                              width={80}
+                              height={80}
                               alt={post.author_name}
                               className="h-full w-full object-cover"
                             />

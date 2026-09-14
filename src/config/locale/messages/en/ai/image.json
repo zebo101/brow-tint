@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Eyebrow Filter — Try Different Brow Shapes on Your Face | Browlens",
+    "title": "Eyebrow Filter — Virtual Brow Try-On | Browlens",
     "description": "Try the Browlens brow filter and eyebrow simulator on your photo. Choose a shape, preview your look, compare before and after, and download your result."
   },
   "page": {
-    "show_sections": ["filter_benefits", "faq", "cta"],
+    "show_sections": ["filter_benefits", "guide", "faq", "cta"],
     "sections": {
       "filter_benefits": {
         "block": "features",
@@ -30,6 +30,82 @@
           }
         ],
         "className": "overflow-hidden"
+      },
+      "guide": {
+        "block": "brow-guide",
+        "id": "eyebrow-filter-guide",
+        "title": "Find Your Look with an Eyebrow Filter",
+        "description": "An eyebrow filter lets you compare possible brow shapes on a photograph before changing your actual eyebrows. Browlens combines an adjustable visual outline with a separate AI photo preview, so you can explore the shape first and decide whether to generate a styled image afterward.",
+        "items": [
+          {
+            "title": "What an eyebrow filter shows you",
+            "paragraphs": [
+              "The filter starts with your uploaded portrait and detects facial and eyebrow landmarks to position a contour. Switching a supported shape changes that outline on the same face. This is useful when you want to compare the direction of a brow, the curve of an arch, or the impression of a straighter shape without relying on photos of other people.",
+              "An outline is not the same as a finished photograph. It explains geometry, while AI generation creates a visual interpretation with brow texture and styling. The local outline updates after detection; the generated photo takes a separate processing step. Browlens works with an uploaded image rather than a live camera feed, so use a still portrait you can inspect carefully."
+            ]
+          },
+          {
+            "title": "How to prepare your portrait",
+            "paragraphs": [
+              "Choose a clear, straight-on photograph with a neutral expression. Keep both eyebrows visible and use even lighting across your face. Move hair away from the brows and avoid glasses or shadows that hide their edges. Include the full brow area and enough surrounding face to judge how the two sides work together. Supported uploads are JPG, PNG, or WebP files up to 15 MB.",
+              "Try to avoid a very close wide-angle selfie, a tilted head, or a heavy beauty filter when you want a fair comparison. These can change the apparent relationship between the brows and eyes. If the initial outline appears misplaced, first check the source photo. A clearer image is often a better starting point than trying to compensate for an awkward angle with a more dramatic shape."
+            ]
+          },
+          {
+            "title": "Compare the four available shape outlines",
+            "paragraphs": [
+              "Natural is a useful first comparison when you want to explore a restrained change. Look at how its overall contour relates to your existing brows before trying a more noticeable style. It gives you a reference point for deciding whether the other outlines feel too lifted, too straight, or simply different from what you are used to seeing.",
+              "Arched emphasizes a clearer rise and peak. Try it when you want to investigate a more defined curve, and pay attention to both the arch position and the tail direction. Straight reduces the impression of a pronounced peak. Compare it when you want a flatter brow line, checking the whole face rather than judging only a close-up of one brow.",
+              "Soft Angled offers a gentler change of direction around the arch. It can be worth comparing if you like some definition but find a sharper peak too strong. These are visual options to explore, not rules for particular face shapes or genders. The useful question is which contour you prefer on your own photo. Only the four supported outlines are offered as available choices here."
+            ],
+            "link": {
+              "prefix": "For more detail on shape names and what to compare, read our ",
+              "title": "eyebrow shapes guide",
+              "url": "/blog/eyebrow-shapes-guide",
+              "suffix": "."
+            }
+          },
+          {
+            "title": "Check placement before judging the style",
+            "paragraphs": [
+              "A shape can look wrong because its position is wrong. Inspect the head, arch, and tail of each brow before deciding that a style does not suit you. If the camera tilts or hair covers part of the brow, automatic detection may not line up with the natural edges. Compare the guide against the visible hairs and the eyes on both sides.",
+              "The quick filter handles placement automatically. When you need to correct individual points, use the full brow app on the homepage. It provides six draggable controls, shape adjustments, and a report comparing brow length and arch height. Those measurements describe differences in the photograph, in pixels; they do not provide physical measurements or a score for attractiveness."
+            ],
+            "link": {
+              "prefix": "Learn how the reference points work in our ",
+              "title": "eyebrow mapping",
+              "url": "/blog/eyebrow-mapping-guide",
+              "suffix": " guide before moving to manual editing."
+            }
+          },
+          {
+            "title": "Generate a preview and compare before and after",
+            "paragraphs": [
+              "Once you have chosen a direction, review your selected style and create an AI photo preview. Sign in and check the credit cost shown by the generation button first. When the result appears, compare the original on the left with the generated image on the right. Look at the inner heads, arch placement, thickness, and outer tails, then step back to assess the whole expression.",
+              "Keep the original image consistent when comparing multiple looks. A softer arch and a shorter tail are easier to distinguish when lighting and pose are unchanged. If you generate another version, remember that AI may vary details beyond the contour you were focused on. Prefer the result for a specific reason, such as a gentler curve, rather than assuming every difference came from the chosen eyebrow shape."
+            ]
+          },
+          {
+            "title": "Understand free previews, credits, and downloads",
+            "paragraphs": [
+              "Uploading a photo, exploring the local outline, and using the homepage mapping tools do not require a paid plan or an account. Generating a new AI photo uses credits and requires sign-in. These are separate stages: moving between outline options does not itself mean you have generated another photo. The tool displays the current generation cost so you can decide before spending credits.",
+              "Download options depend on the account plan and the export controls shown with your result. Review those options before purchasing if saving a particular format is important to you. You can use the sample photos to learn the interface first, then return with your own portrait. Choose the full editor when you need detailed control, or stay with the filter for a quicker style comparison."
+            ],
+            "link": {
+              "prefix": "See the current account options on the ",
+              "title": "pricing page",
+              "url": "/pricing",
+              "suffix": "."
+            }
+          },
+          {
+            "title": "Use your favorite result as a visual reference",
+            "paragraphs": [
+              "A generated preview helps communicate a preference; it cannot guarantee the same result from grooming, makeup, or a salon service. Your existing hair growth and the styling method affect what can be achieved. Save a preferred result when your plan allows, keep the original alongside it, and identify the specific elements you want to discuss: head placement, arch softness, tail length, or overall thickness.",
+              "If none of the first options feels right, return to a subtle change and compare again. You do not need to choose the most dramatic transformation. The purpose of the eyebrow simulator is to make your options easier to see and explain. A small adjustment that still feels like you can be a more useful outcome than a completely different look."
+            ]
+          }
+        ]
       },
       "faq": {
         "id": "faq",

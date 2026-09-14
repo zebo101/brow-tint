@@ -1,12 +1,12 @@
 'use client';
 
+import { JsonLd } from '@/shared/components/json-ld';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/shared/components/ui/accordion';
-import { JsonLd } from '@/shared/components/json-ld';
 import { Section } from '@/shared/types/blocks/landing';
 
 export function Faq({
@@ -65,7 +65,10 @@ export function Faq({
                   <AccordionTrigger className="font-display cursor-pointer text-base hover:no-underline">
                     {item.question || item.title || ''}
                   </AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionContent
+                    forceMount
+                    className="[[data-state=closed]>&]:hidden"
+                  >
                     <p className="text-base">
                       {item.answer || item.description || ''}
                     </p>

@@ -13,6 +13,7 @@ const paths = [
   '/showcases',
   '/updates',
   '/docs',
+  '/about',
   '/blog/eyebrow-mapping-guide',
   '/blog/eyebrow-shapes-guide',
   '/blog/how-to-shape-eyebrows',
@@ -157,8 +158,8 @@ try {
   sitemapCount = entries.length;
   assert.equal(
     sitemapCount,
-    88,
-    'sitemap: 11 indexed page families × 8 languages'
+    96,
+    'sitemap: 12 indexed page families (including About) × 8 languages'
   );
   assert.doesNotMatch(
     xml,
@@ -168,6 +169,12 @@ try {
     (entry) => entry.match(/<loc>(.*?)<\/loc>/)?.[1]
   );
   for (const locale of locales) {
+    assert.ok(
+      sitemapLocations.includes(
+        `${canonicalOrigin}${localize('/about', locale)}`
+      ),
+      `sitemap: ${locale} About URL`
+    );
     assert.ok(
       sitemapLocations.includes(
         `${canonicalOrigin}${localize('/filter', locale)}`

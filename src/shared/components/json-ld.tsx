@@ -9,7 +9,7 @@ export function JsonLd({ schema, id }: JsonLdProps) {
       type="application/ld+json"
       id={id}
       // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }}
     />
   );
 }

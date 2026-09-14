@@ -172,7 +172,14 @@ export function BrowShowcase({
       >
         <span className="brow-showcase__style-image">
           {style.thumbnail ? (
-            <img src={style.thumbnail} alt="" loading="lazy" decoding="async" />
+            <img
+              src={style.thumbnail}
+              alt=""
+              width={300}
+              height={200}
+              loading="lazy"
+              decoding="async"
+            />
           ) : (
             <span className="brow-showcase__missing-image">
               {t('ui.no_sample_image')}
@@ -246,11 +253,15 @@ export function BrowShowcase({
                     <img
                       className="brow-showcase__example-image"
                       src="/imgs/cases/2.jpg"
+                      width={706}
+                      height={941}
                       alt={t('ui.example_photo_with_brow_mapping')}
                     />
                     <img
                       className="brow-showcase__example-mapping"
                       src="/imgs/cases/2-mapping.svg"
+                      width={706}
+                      height={941}
                       alt=""
                       aria-hidden="true"
                     />
@@ -281,7 +292,7 @@ export function BrowShowcase({
                       isDisabled={unavailable}
                       onPress={() => onSelectSample(src)}
                     >
-                      <img src={src} alt="" />
+                      <img src={src} alt="" width={600} height={600} />
                     </Button>
                     <Tooltip.Content>
                       {t('ui.use_sample', { n: index + 1 })}
@@ -335,9 +346,9 @@ export function BrowShowcase({
 
         <Card className="brow-showcase__gallery-card">
           <Card.Header className="brow-showcase__gallery-header">
-            <Card.Title className="font-display brow-showcase__gallery-title">
+            <h2 className="card__title font-display brow-showcase__gallery-title">
               {t('ui.find_your_brow_style')}
-            </Card.Title>
+            </h2>
             <Card.Description>
               {t('ui.choose_a_look_then_try_it_on_your_photo')}
             </Card.Description>

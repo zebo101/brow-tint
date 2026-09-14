@@ -4,6 +4,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { postsSource } from '@/core/docs/source';
 import { getThemePage } from '@/core/theme';
 import { locales } from '@/config/locale';
+import { JsonLd } from '@/shared/components/json-ld';
+import { buildBlogSeo } from '@/shared/lib/blog-seo';
 import { buildAlternates } from '@/shared/lib/seo-metadata';
 import { getLocalPost } from '@/shared/models/post';
 import { DynamicPage } from '@/shared/types/blocks/landing';
@@ -35,15 +37,16 @@ export async function generateMetadata({
     };
   }
 
-  return {
-    title: `${post.title} | Browlens`,
+  return buildBlogSeo({
+    slug,
+    locale,
+    title: post.title || '',
     description: post.description,
-    alternates: buildAlternates(canonicalPath, {
-      locale,
-      // Every published guide has the complete translated collection.
-      availableLocales: availableLocales,
-    }),
-  };
+    image: post.image,
+    author: post.author_name,
+    published: post.published_at,
+    availableLocales,
+  }).metadata;
 }
 
 export default async function BlogDetailPage({
@@ -74,5 +77,20 @@ export default async function BlogDetailPage({
 
   const Page = await getThemePage('dynamic-page');
 
-  return <Page locale={locale} page={page} />;
+  const { schema } = buildBlogSeo({
+    slug,
+    locale,
+    title: post.title || '',
+    description: post.description,
+    image: post.image,
+    author: post.author_name,
+    published: post.published_at,
+  });
+
+  return (
+    <>
+      <JsonLd id="article-schema" schema={schema} />
+      <Page locale={locale} page={page} />
+    </>
+  );
 }

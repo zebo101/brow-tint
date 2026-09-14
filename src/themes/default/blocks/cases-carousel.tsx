@@ -6,9 +6,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import {
   Carousel,
-  type CarouselApi,
   CarouselContent,
   CarouselItem,
+  type CarouselApi,
 } from '@/shared/components/ui/carousel';
 import { useIsMobile } from '@/shared/hooks/use-mobile';
 import { cn } from '@/shared/lib/utils';
@@ -149,7 +149,7 @@ export function CasesCarousel({
         // CSS containment + intrinsic size hint: lets the browser skip
         // layout/paint for the section until it scrolls into view, paired
         // with the JS visibility gate above.
-        '[content-visibility:auto] [contain-intrinsic-size:1px_800px]',
+        '[contain-intrinsic-size:1px_800px] [content-visibility:auto]',
         section.className,
         className
       )}
@@ -189,11 +189,12 @@ export function CasesCarousel({
                       <Image
                         src={src}
                         alt={alt}
-                        fill
+                        width={600}
+                        height={800}
                         // basis-1/3 column on md+, full-width on mobile.
                         // Capped at 600 to cover retina without overshooting.
                         sizes="(min-width: 768px) 33vw, 100vw"
-                        className="object-cover"
+                        className="absolute inset-0 h-full w-full object-cover"
                         loading="lazy"
                       />
                     )}

@@ -27,7 +27,6 @@ import { cn } from '@/shared/lib/utils';
 import { NavItem } from '@/shared/types/blocks/common';
 import { Header as HeaderType } from '@/shared/types/blocks/landing';
 
-
 const MenuIcon = ({ className }: { className?: string }) => (
   <svg
     viewBox="0 0 24 24"
@@ -37,11 +36,13 @@ const MenuIcon = ({ className }: { className?: string }) => (
     className={className}
     aria-hidden
   >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M4 6h16M4 12h16M4 18h16"
+    />
   </svg>
 );
-
-
 
 const CloseIcon = ({ className }: { className?: string }) => (
   <svg
@@ -52,10 +53,17 @@ const CloseIcon = ({ className }: { className?: string }) => (
     className={className}
     aria-hidden
   >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M6 18L18 6" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M6 6l12 12M6 18L18 6"
+    />
   </svg>
 );
-const SignUser = dynamic(() => import('@/shared/blocks/sign/sign-user').then((mod) => mod.SignUser), { ssr: false });
+const SignUser = dynamic(
+  () => import('@/shared/blocks/sign/sign-user').then((mod) => mod.SignUser),
+  { ssr: false }
+);
 
 // For Next.js hydration mismatch warning, conditionally render NavigationMenuTrigger only after mount to avoid inconsistency between server/client render
 function NavigationMenuTrigger(
@@ -83,7 +91,8 @@ export function Header({ header }: { header: HeaderType }) {
   const pathname = usePathname();
   const isHeaderElevated = isScrolled && (!isHidden || isMobileMenuOpen);
   const isHomePage = pathname === '/';
-  const useHeroHeaderPalette = isHomePage && !isHeaderElevated && !isMobileMenuOpen;
+  const useHeroHeaderPalette =
+    isHomePage && !isHeaderElevated && !isMobileMenuOpen;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -148,6 +157,11 @@ export function Header({ header }: { header: HeaderType }) {
                   <Link
                     href={item.url || ''}
                     target={item.target || '_self'}
+                    rel={
+                      item.target === '_blank'
+                        ? 'noopener noreferrer'
+                        : undefined
+                    }
                     className={cn(
                       'flex flex-row items-center gap-2 px-5 py-1.5 text-sm',
                       isHeaderElevated
@@ -189,10 +203,7 @@ export function Header({ header }: { header: HeaderType }) {
                   )}
                 >
                   {item.icon ? (
-                    <SmartIcon
-                      name={item.icon as string}
-                      className="size-4"
-                    />
+                    <SmartIcon name={item.icon as string} className="size-4" />
                   ) : null}
                   {item.title}
                 </NavigationMenuTrigger>
@@ -204,6 +215,11 @@ export function Header({ header }: { header: HeaderType }) {
                           key={index}
                           href={subItem.url || ''}
                           target={subItem.target || '_self'}
+                          rel={
+                            subItem.target === '_blank'
+                              ? 'noopener noreferrer'
+                              : undefined
+                          }
                           title={subItem.title || ''}
                           description={subItem.description || ''}
                         >
@@ -327,6 +343,7 @@ export function Header({ header }: { header: HeaderType }) {
           <Link
             href={href}
             target={target || '_self'}
+            rel={target === '_blank' ? 'noopener noreferrer' : undefined}
             className="grid grid-cols-[auto_1fr] gap-3.5"
           >
             <div className="bg-background ring-foreground/10 relative flex size-9 items-center justify-center rounded border border-transparent shadow-sm ring-1">
@@ -357,9 +374,9 @@ export function Header({ header }: { header: HeaderType }) {
           className={cn(
             'absolute inset-x-0 top-0 z-50 h-18 border-transparent ring-1 ring-transparent transition-all duration-300',
             useHeroHeaderPalette ? 'text-[#42282D]' : 'text-[#3F2A2A]',
-            'in-data-elevated:text-[#3F2A2A] in-data-elevated:border-rose-100 in-data-elevated:bg-white/95 in-data-elevated:border-b in-data-elevated:shadow-sm in-data-elevated:backdrop-blur-xl',
-            'has-data-[state=open]:ring-foreground/5 has-data-[state=open]:bg-white/95 has-data-[state=open]:text-[#3F2A2A] has-data-[state=open]:h-[calc(var(--navigation-menu-viewport-height)+3.4rem)] has-data-[state=open]:border-b has-data-[state=open]:shadow-lg has-data-[state=open]:shadow-black/10 has-data-[state=open]:backdrop-blur',
-            'max-lg:in-data-[state=active]:bg-white/95 max-lg:in-data-[state=active]:text-[#3F2A2A] max-lg:h-14 max-lg:overflow-hidden max-lg:border-b max-lg:in-data-[state=active]:h-screen max-lg:in-data-[state=active]:backdrop-blur',
+            'in-data-elevated:border-b in-data-elevated:border-rose-100 in-data-elevated:bg-white/95 in-data-elevated:text-[#3F2A2A] in-data-elevated:shadow-sm in-data-elevated:backdrop-blur-xl',
+            'has-data-[state=open]:ring-foreground/5 has-data-[state=open]:h-[calc(var(--navigation-menu-viewport-height)+3.4rem)] has-data-[state=open]:border-b has-data-[state=open]:bg-white/95 has-data-[state=open]:text-[#3F2A2A] has-data-[state=open]:shadow-lg has-data-[state=open]:shadow-black/10 has-data-[state=open]:backdrop-blur',
+            'max-lg:h-14 max-lg:overflow-hidden max-lg:border-b max-lg:in-data-[state=active]:h-screen max-lg:in-data-[state=active]:bg-white/95 max-lg:in-data-[state=active]:text-[#3F2A2A] max-lg:in-data-[state=active]:backdrop-blur',
             isHidden &&
               !isMobileMenuOpen &&
               'pointer-events-none -translate-y-full opacity-0'
@@ -400,6 +417,11 @@ export function Header({ header }: { header: HeaderType }) {
                         key={idx}
                         href={button.url || ''}
                         target={button.target || '_self'}
+                        rel={
+                          button.target === '_blank'
+                            ? 'noopener noreferrer'
+                            : undefined
+                        }
                         className={cn(
                           'focus-visible:ring-ring inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
                           'h-7 px-3 ring-0',
@@ -431,5 +453,3 @@ export function Header({ header }: { header: HeaderType }) {
     </>
   );
 }
-
-

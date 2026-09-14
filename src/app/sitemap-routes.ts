@@ -11,6 +11,7 @@ export type StaticSitemapRoute = {
     MetadataRoute.Sitemap[number]['changeFrequency']
   >;
   priority: number;
+  lastModified?: string;
   locales?: string[];
 };
 
@@ -37,6 +38,7 @@ export function expandStaticRoutes(
       url: buildCanonicalUrl(route.path, locale, options),
       changeFrequency: route.changeFrequency,
       priority: route.priority,
+      lastModified: route.lastModified,
       alternates: { languages },
     }));
   });

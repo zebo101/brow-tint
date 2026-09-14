@@ -1,0 +1,146 @@
+{
+  "origin": "http://localhost:3120",
+  "checkedAt": "2026-09-14T16:43:07.249Z",
+  "pages": 26,
+  "sitemapDatedRoutes": 24,
+  "results": [
+    {
+      "path": "/",
+      "words": 1601,
+      "images": 17,
+      "imagesWithDimensions": 17,
+      "titleLength": 56,
+      "mappingLinks": 1,
+      "faqAnswers": 8
+    },
+    {
+      "path": "/filter",
+      "words": 1671,
+      "images": 2,
+      "imagesWithDimensions": 2,
+      "titleLength": 47,
+      "mappingLinks": 1,
+      "faqAnswers": 8
+    },
+    {
+      "path": "/blog/eyebrow-mapping-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/blog/eyebrow-shapes-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/blog/how-to-shape-eyebrows",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/zh/blog/eyebrow-mapping-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/zh/blog/eyebrow-shapes-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/zh/blog/how-to-shape-eyebrows",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/ko/blog/eyebrow-mapping-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/ko/blog/eyebrow-shapes-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/ko/blog/how-to-shape-eyebrows",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/ja/blog/eyebrow-mapping-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/ja/blog/eyebrow-shapes-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/ja/blog/how-to-shape-eyebrows",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/de/blog/eyebrow-mapping-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/de/blog/eyebrow-shapes-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/de/blog/how-to-shape-eyebrows",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/es/blog/eyebrow-mapping-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/es/blog/eyebrow-shapes-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/es/blog/how-to-shape-eyebrows",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/it/blog/eyebrow-mapping-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/it/blog/eyebrow-shapes-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/it/blog/how-to-shape-eyebrows",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/pt/blog/eyebrow-mapping-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/pt/blog/eyebrow-shapes-guide",
+      "article": true,
+      "ownShareMetadata": true
+    },
+    {
+      "path": "/pt/blog/how-to-shape-eyebrows",
+      "article": true,
+      "ownShareMetadata": true
+    }
+  ]
+}

@@ -226,6 +226,8 @@ export async function getLocalPost({
   const post: BlogPostType = {
     id: localPost.path,
     slug: slug,
+    image: frontmatter.image || '',
+    published_at: frontmatter.created_at,
     title: localPost.data.title || '',
     description: localPost.data.description || '',
     content: '',
