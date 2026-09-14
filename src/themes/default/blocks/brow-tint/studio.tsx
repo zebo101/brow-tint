@@ -9,24 +9,21 @@ import {
   useState,
   useSyncExternalStore,
 } from 'react';
+import dynamic from 'next/dynamic';
 import { ScanFace, Sparkles, Upload, Users } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
+import { photoGuidelinesConfig } from '@/config/photo-guidelines';
 import type { ConfirmedBrowAnalysis } from '@/shared/blocks/brow/analysis-panel';
 import {
   BrowPortraitPreview,
   type BrowPreviewState,
 } from '@/shared/blocks/brow/portrait-preview';
-import { BrowWorkspace } from '@/shared/blocks/brow/workspace';
-import { PhotoGuidelinesModal } from '@/shared/blocks/common/photo-guidelines-modal';
 import { useAppContext } from '@/shared/contexts/app';
 import { shouldShowBrowCreditOffer } from '@/shared/lib/brow-credit-offer';
 
 import { BrowCatalogPanel } from './catalog-panel';
-import { BrowCreditOfferModal } from './credit-offer-modal';
-import { BrowExportGallery } from './export-gallery';
-import { BrowFilterEditor } from './filter-editor';
 import {
   BROW_MAPPING_CREDITS,
   BrowGenerationActions,
@@ -38,6 +35,26 @@ import { BrowShowcase } from './showcase';
 import { emptyStudioSession, studioSessionReducer } from './studio-session';
 import type { BrowStyleItem } from './types';
 import { useBrowGeneration } from './use-brow-generation';
+
+// Photo analysis and export tools are only needed after a visitor chooses a
+// photo or signs in. Keep them out of the homepage's initial download.
+const BrowWorkspace = dynamic(() =>
+  import('@/shared/blocks/brow/workspace').then((mod) => mod.BrowWorkspace)
+);
+const PhotoGuidelinesModal = dynamic(() =>
+  import('@/shared/blocks/common/photo-guidelines-modal').then(
+    (mod) => mod.PhotoGuidelinesModal
+  )
+);
+const BrowCreditOfferModal = dynamic(() =>
+  import('./credit-offer-modal').then((mod) => mod.BrowCreditOfferModal)
+);
+const BrowExportGallery = dynamic(() =>
+  import('./export-gallery').then((mod) => mod.BrowExportGallery)
+);
+const BrowFilterEditor = dynamic(() =>
+  import('./filter-editor').then((mod) => mod.BrowFilterEditor)
+);
 
 const subscribeToMountedState = () => () => {};
 const getClientMountedState = () => true;
@@ -185,10 +202,25 @@ export function BrowTintStudio({
           return;
         }
       }
+      // Preserve the click's user activation when a returning visitor has
+      // disabled the tips; opening the file picker must not await a chunk.
+      let skipTips = false;
+      try {
+        skipTips =
+          localStorage.getItem(photoGuidelinesConfig.storageKey) === 'true';
+      } catch {
+        // Storage can be unavailable; the normal tips flow still works.
+      }
+      if (skipTips && next) {
+        if (next.kind === 'picker') inputRef.current?.click();
+        if (next.kind === 'file') selectLocalFile(next.file);
+        if (next.kind === 'sample') void loadSample(next.src);
+        return;
+      }
       setPendingPhoto(next);
       setShowGuidelines(true);
     },
-    [isLocked, loadingSample]
+    [isLocked, loadingSample, selectLocalFile, loadSample]
   );
 
   const closeGuidelines = useCallback(() => {
@@ -402,72 +434,76 @@ export function BrowTintStudio({
               onClear={clearPhoto}
               onSelectStyle={selectStyle}
             />
-            <BrowWorkspace
-              open={session.editorOpen}
-              onOpenChange={setEditorOpen}
-              onPreviewChange={updatePreview}
-              file={photoFile}
-              rawPhotoUrl={photoPreview}
-              confirmed={!!confirmedAnalysis}
-              disabled={isLocked || loadingSample}
-              onConfirm={confirmAnalysis}
-              onInvalidate={invalidateAnalysis}
-              onPickFile={() => requestPhoto({ kind: 'picker' })}
-              onDropFile={(file) => requestPhoto({ kind: 'file', file })}
-              onSelectSample={(src) => requestPhoto({ kind: 'sample', src })}
-              onClear={clearPhoto}
-              onOpenGuidelines={() => requestPhoto(null)}
-              selectedStyle={
-                selectedStyle
-                  ? {
-                      name: browShapeLabel(selectedStyle, locale),
-                      thumbnail: selectedStyle.thumbnail,
-                    }
-                  : null
-              }
-              resultUrl={generation.state.resultUrl}
-              catalog={
-                <BrowCatalogPanel
-                  styles={styles}
-                  selectedStyleId={selectedStyleId}
-                  confirmed={!!confirmedAnalysis}
-                  disabled={isLocked || loadingSample}
-                  onSelect={selectStyle}
-                />
-              }
-              action={
-                <BrowGenerationActions
-                  preserveBrowShape={preserveBrowShape}
-                  onPreserveBrowShapeChange={changeShapePreservation}
-                  authenticated={!!user}
-                  checkingAuth={!isMounted || isCheckSign}
-                  remainingCredits={remainingCredits}
-                  confirmed={!!confirmedAnalysis}
-                  selected={!!selectedStyle}
-                  locked={isLocked || loadingSample}
-                  state={generation.state}
-                  onGenerate={generate}
-                  onSignIn={() => setIsShowSignModal(true)}
-                />
-              }
-              status={
-                <BrowGenerationStatus
-                  state={generation.state}
-                  styleSlug={generation.resultStyleSlug}
-                  onRetryQuery={generation.retryQuery}
-                  loadingSample={loadingSample}
-                />
-              }
-            />
+            {photoFile && (
+              <BrowWorkspace
+                open={session.editorOpen}
+                onOpenChange={setEditorOpen}
+                onPreviewChange={updatePreview}
+                file={photoFile}
+                rawPhotoUrl={photoPreview}
+                confirmed={!!confirmedAnalysis}
+                disabled={isLocked || loadingSample}
+                onConfirm={confirmAnalysis}
+                onInvalidate={invalidateAnalysis}
+                onPickFile={() => requestPhoto({ kind: 'picker' })}
+                onDropFile={(file) => requestPhoto({ kind: 'file', file })}
+                onSelectSample={(src) => requestPhoto({ kind: 'sample', src })}
+                onClear={clearPhoto}
+                onOpenGuidelines={() => requestPhoto(null)}
+                selectedStyle={
+                  selectedStyle
+                    ? {
+                        name: browShapeLabel(selectedStyle, locale),
+                        thumbnail: selectedStyle.thumbnail,
+                      }
+                    : null
+                }
+                resultUrl={generation.state.resultUrl}
+                catalog={
+                  <BrowCatalogPanel
+                    styles={styles}
+                    selectedStyleId={selectedStyleId}
+                    confirmed={!!confirmedAnalysis}
+                    disabled={isLocked || loadingSample}
+                    onSelect={selectStyle}
+                  />
+                }
+                action={
+                  <BrowGenerationActions
+                    preserveBrowShape={preserveBrowShape}
+                    onPreserveBrowShapeChange={changeShapePreservation}
+                    authenticated={!!user}
+                    checkingAuth={!isMounted || isCheckSign}
+                    remainingCredits={remainingCredits}
+                    confirmed={!!confirmedAnalysis}
+                    selected={!!selectedStyle}
+                    locked={isLocked || loadingSample}
+                    state={generation.state}
+                    onGenerate={generate}
+                    onSignIn={() => setIsShowSignModal(true)}
+                  />
+                }
+                status={
+                  <BrowGenerationStatus
+                    state={generation.state}
+                    styleSlug={generation.resultStyleSlug}
+                    onRetryQuery={generation.retryQuery}
+                    loadingSample={loadingSample}
+                  />
+                }
+              />
+            )}
           </>
         )}
-        <BrowExportGallery
-          refreshKey={
-            generation.state.phase === 'success'
-              ? generation.state.taskId
-              : null
-          }
-        />
+        {user && (
+          <BrowExportGallery
+            refreshKey={
+              generation.state.phase === 'success'
+                ? generation.state.taskId
+                : null
+            }
+          />
+        )}
         {mode === 'home' && (
           <ul
             id="features"
@@ -510,11 +546,13 @@ export function BrowTintStudio({
           </ul>
         )}
       </div>
-      <PhotoGuidelinesModal
-        open={showGuidelines}
-        onClose={closeGuidelines}
-        onConfirm={confirmGuidelines}
-      />
+      {showGuidelines && (
+        <PhotoGuidelinesModal
+          open={showGuidelines}
+          onClose={closeGuidelines}
+          onConfirm={confirmGuidelines}
+        />
+      )}
       {showCreditOffer && user && (
         <BrowCreditOfferModal
           key={user.id}

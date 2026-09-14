@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 @import './theme.css';
-@import '@heroui/styles';
+@import './heroui.css';
 /* Only these Pro components are used. The complete bundle also includes
    chart, data-grid and chat styles that block the first paint on mobile. */
 @import '@heroui-pro/react/css/components/sheet.css' layer(components);

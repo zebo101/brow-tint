@@ -4,7 +4,8 @@ import {
   Footer as FooterType,
   Header as HeaderType,
 } from '@/shared/types/blocks/landing';
-import { Footer, Header } from '@/themes/default/blocks';
+import { Footer } from '@/themes/default/blocks/footer';
+import { Header } from '@/themes/default/blocks/header';
 
 export default async function LandingLayout({
   children,

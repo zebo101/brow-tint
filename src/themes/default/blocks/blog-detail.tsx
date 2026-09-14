@@ -4,12 +4,10 @@ import { TOCItems, TOCProvider } from 'fumadocs-ui/components/layout/toc';
 import { CalendarIcon, ListIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-import { MarkdownPreview } from '@/shared/blocks/common';
 import { Crumb } from '@/shared/blocks/common/crumb';
+import { MarkdownPreview } from '@/shared/blocks/common/markdown-preview';
 import { type Post as PostType } from '@/shared/types/blocks/blog';
 import { NavItem } from '@/shared/types/blocks/common';
-
-import '@/config/style/docs.css';
 
 export function BlogDetail({ post }: { post: PostType }) {
   const t = useTranslations('pages.blog.messages');

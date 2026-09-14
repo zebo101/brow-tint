@@ -1,3 +1,5 @@
+import '@/config/style/docs.css';
+
 import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 

@@ -1,3 +1,5 @@
+import '@/config/style/docs.css';
+
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';

@@ -1,9 +1,7 @@
 import { CalendarIcon, TimerIcon } from 'lucide-react';
 
-import { MarkdownPreview } from '@/shared/blocks/common';
+import { MarkdownPreview } from '@/shared/blocks/common/markdown-preview';
 import { type Post as PostType } from '@/shared/types/blocks/blog';
-
-import '@/config/style/docs.css';
 
 export async function PageDetail({ post }: { post: PostType }) {
   return (
