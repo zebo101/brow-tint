@@ -42,8 +42,22 @@ export async function normalizePhoto(file: File): Promise<BrowPhoto> {
   }
 }
 
-// Each analysis owns its worker. Aborting genuinely cancels work and frees WASM memory.
 export async function detectPhoto(
+  photo: BrowPhoto,
+  signal: AbortSignal,
+  onStage: (stage: DetectionStage) => void
+): Promise<Landmark[][]> {
+  try {
+    return await detectInWorker(photo, signal, onStage);
+  } catch (error) {
+    if (!(error instanceof Error) || error.message !== 'worker-unsupported')
+      throw error;
+    return detectOnPage(photo, signal, onStage);
+  }
+}
+
+// Each worker analysis owns its WASM memory, released immediately on abort.
+async function detectInWorker(
   photo: BrowPhoto,
   signal: AbortSignal,
   onStage: (stage: DetectionStage) => void
@@ -86,6 +100,70 @@ export async function detectPhoto(
       else if (event.data.faces) finish(undefined, event.data.faces);
     };
     worker.postMessage({ id: 1, bitmap }, [bitmap]);
+  });
+}
+
+// Some WebKit versions cannot render WebGL in a worker. Keep processing local
+// and use an explicit DOM canvas, rather than the SDK's user-agent heuristic.
+function detectOnPage(
+  photo: BrowPhoto,
+  signal: AbortSignal,
+  onStage: (stage: DetectionStage) => void
+): Promise<Landmark[][]> {
+  if (signal.aborted)
+    return Promise.reject(new DOMException('Aborted', 'AbortError'));
+  return new Promise((resolve, reject) => {
+    let settled = false;
+    const finish = (error?: Error, faces?: Landmark[][]) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      signal.removeEventListener('abort', abort);
+      if (error) reject(error);
+      else resolve(faces ?? []);
+    };
+    const abort = () => finish(new DOMException('Aborted', 'AbortError'));
+    const timer = setTimeout(() => finish(new Error('model-timeout')), 90000);
+    signal.addEventListener('abort', abort, { once: true });
+    void (async () => {
+      let detector:
+        | import('@mediapipe/tasks-vision').FaceLandmarker
+        | undefined;
+      let bitmap: ImageBitmap | undefined;
+      try {
+        onStage('loading-model');
+        const { FaceLandmarker, FilesetResolver } = await import(
+          '@mediapipe/tasks-vision'
+        );
+        if (settled) return;
+        const base = '/models/brow/1.0.1';
+        const files = await FilesetResolver.forVisionTasks(`${base}/wasm`);
+        if (settled) return;
+        detector = await FaceLandmarker.createFromOptions(files, {
+          canvas: document.createElement('canvas'),
+          baseOptions: {
+            modelAssetPath: `${base}/face_landmarker.task`,
+            delegate: 'CPU',
+          },
+          runningMode: 'IMAGE',
+          numFaces: 2,
+          minFaceDetectionConfidence: 0.6,
+          minFacePresenceConfidence: 0.6,
+          outputFaceBlendshapes: false,
+          outputFacialTransformationMatrixes: false,
+        });
+        if (settled) return;
+        bitmap = await createImageBitmap(photo.blob);
+        if (settled) return;
+        onStage('detecting');
+        finish(undefined, detector.detect(bitmap).faceLandmarks);
+      } catch {
+        finish(new Error('model-error'));
+      } finally {
+        bitmap?.close();
+        detector?.close();
+      }
+    })();
   });
 }
 

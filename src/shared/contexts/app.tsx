@@ -11,7 +11,7 @@ import {
   useState,
 } from 'react';
 
-import { getAuthClient } from '@/core/auth/client';
+import { getAuthClient, GOOGLE_ONE_TAP_CONTAINER_ID } from '@/core/auth/client';
 import { envConfigs } from '@/config';
 import { User } from '@/shared/models/user';
 
@@ -123,11 +123,22 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   const showOneTap = useCallback(async (configs: Record<string, string>) => {
+    // Mobile GIS ignores prompt_parent_id, so its automatic iframe cannot join
+    // our modal stack. Keep Google sign-in user-initiated on touch devices.
+    // Check here (before the asynchronous SDK load) for every caller.
+    if (
+      navigator.maxTouchPoints > 0 ||
+      window.matchMedia('(any-pointer: coarse)').matches
+    ) {
+      return;
+    }
     try {
       const authClient = getAuthClient(configs);
       await authClient.oneTap({
         callbackURL: '/',
-        onPromptNotification: (notification: any) => {
+        autoSelect: false,
+        cancelOnTapOutside: true,
+        onPromptNotification: (notification) => {
           // Handle prompt dismissal silently
           // This callback is triggered when the prompt is dismissed or skipped
           if (process.env.NODE_ENV !== 'production') {
@@ -140,7 +151,7 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
         //   },
         // },
       });
-    } catch (error) {
+    } catch {
       // Silently handle One Tap cancellation errors
       // These errors occur when users close the prompt or decline to sign in
       // Common errors: FedCM NetworkError, AbortError, etc.
@@ -197,6 +208,14 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
 
   return (
     <AppContext.Provider value={value}>
+      {/* Google injects its iframe asynchronously, sometimes after the editor
+          opens. Keep this external overlay in React Aria's focus/interaction
+          layer so the editor cannot mark the prompt inert. */}
+      <div
+        id={GOOGLE_ONE_TAP_CONTAINER_ID}
+        data-react-aria-top-layer=""
+        className="pointer-events-auto relative z-[100]"
+      />
       <BrowPurchaseProvider>{children}</BrowPurchaseProvider>
     </AppContext.Provider>
   );

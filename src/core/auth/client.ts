@@ -3,6 +3,8 @@ import { createAuthClient } from 'better-auth/react';
 
 import { envConfigs } from '@/config';
 
+export const GOOGLE_ONE_TAP_CONTAINER_ID = 'google-one-tap-container';
+
 function createGetSessionThrottledFetch({
   minIntervalMs,
 }: {
@@ -126,15 +128,15 @@ function getAuthPlugins(configs: Record<string, string>) {
         clientId: configs.google_client_id,
         // Optional client configuration:
         autoSelect: false,
-        cancelOnTapOutside: false,
+        cancelOnTapOutside: true,
         context: 'signin',
         additionalOptions: {
-          // Any extra options for the Google initialize method
+          prompt_parent_id: GOOGLE_ONE_TAP_CONTAINER_ID,
         },
         // Configure prompt behavior and exponential backoff:
         promptOptions: {
           baseDelay: 1000, // Base delay in ms (default: 1000)
-          maxAttempts: 1, // Only attempt once to avoid multiple error logs (default: 5)
+          maxAttempts: 0, // Do not re-open after the user dismisses the prompt.
         },
       })
     );

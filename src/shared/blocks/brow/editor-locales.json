@@ -1,4 +1,20 @@
 {
+  "Reload analysis": [
+    "분석 다시 불러오기",
+    "分析を再読み込み",
+    "Analyse neu laden",
+    "Volver a cargar el análisis",
+    "Ricarica l’analisi",
+    "Recarregar análise"
+  ],
+  "Your photo is kept. Reload analysis to try again.": [
+    "사진은 유지됩니다. 분석을 다시 불러와 재시도하세요.",
+    "写真は保持されています。分析を再読み込みして再試行してください。",
+    "Dein Foto bleibt erhalten. Lade die Analyse erneut, um es noch einmal zu versuchen.",
+    "Tu foto se conserva. Vuelve a cargar el análisis para intentarlo de nuevo.",
+    "La foto viene mantenuta. Ricarica l’analisi per riprovare.",
+    "Sua foto é mantida. Recarregue a análise para tentar novamente."
+  ],
   "AI result · slide to compare": [
     "AI 결과 — 밀어서 비교",
     "AIの結果 — スライドして比較",

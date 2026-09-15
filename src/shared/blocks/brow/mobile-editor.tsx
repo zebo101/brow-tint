@@ -2,7 +2,7 @@
 
 import { useMemo, useState, type ReactNode } from 'react';
 import { Segment } from '@heroui-pro/react';
-import { Button, Slider, Tooltip } from '@heroui/react';
+import { Button, Slider, Spinner, Tooltip } from '@heroui/react';
 import { Minus, Plus, RotateCcw } from 'lucide-react';
 import { useLocale } from 'next-intl';
 
@@ -235,6 +235,12 @@ export function MobileBrowEditor(props: MobileBrowEditorProps) {
               {props.error ||
                 browText(locale, 'Preparing your photo…', '正在准备照片…')}
             </p>
+          )}
+          {photo && props.status && (
+            <div className="mb-analysis-progress" role="status">
+              <Spinner size="sm" />
+              <span>{props.status}</span>
+            </div>
           )}
         </div>
         <div className="mb-viewbar">
@@ -500,12 +506,45 @@ export function MobileBrowEditor(props: MobileBrowEditorProps) {
         </div>
 
         <footer className="mb-footer">
-          {props.error && (
+          {props.error && analysis && (
             <p className="mb-error" role="alert">
               {props.error}
             </p>
           )}
-          {tool === 'catalog' && confirmed ? (
+          {props.error && !analysis && props.onRetry ? (
+            <div className="mb-analysis-recovery">
+              <p className="mb-error" role="alert">
+                {props.error}
+              </p>
+              <p className="text-muted text-xs">
+                {browText(
+                  locale,
+                  'Your photo is kept. Reload analysis to try again.',
+                  '照片已保留，点击重新加载分析即可重试。'
+                )}
+              </p>
+              <div className="mb-confirm-row">
+                <Button
+                  fullWidth
+                  size="sm"
+                  variant="primary"
+                  isDisabled={locked}
+                  onPress={props.onRetry}
+                >
+                  <RotateCcw aria-hidden="true" className="size-4" />
+                  {browText(locale, 'Reload analysis', '重新加载分析')}
+                </Button>
+                <Button
+                  size="sm"
+                  variant="secondary"
+                  isDisabled={locked}
+                  onPress={props.onPickFile}
+                >
+                  {browText(locale, 'Replace', '换照片')}
+                </Button>
+              </div>
+            </div>
+          ) : tool === 'catalog' && confirmed ? (
             props.action
           ) : (
             <div className="mb-confirm-row">
@@ -529,32 +568,20 @@ export function MobileBrowEditor(props: MobileBrowEditorProps) {
                   {browText(locale, 'Reset', '重置')}
                 </Button>
               )}
-              {props.error && props.onRetry && !analysis ? (
-                <Button
-                  fullWidth
-                  size="sm"
-                  variant="primary"
-                  isDisabled={locked}
-                  onPress={props.onRetry}
-                >
-                  {browText(locale, 'Retry analysis', '重新分析')}
-                </Button>
-              ) : (
-                <Button
-                  fullWidth
-                  size="sm"
-                  variant="primary"
-                  isDisabled={!canAdjust}
-                  isPending={props.exporting}
-                  onPress={confirmMapping}
-                >
-                  {props.exporting
-                    ? browText(locale, 'Confirming…', '正在确认…')
-                    : confirmed
-                      ? browText(locale, 'Choose a style', '继续选样本')
-                      : browText(locale, 'Confirm mapping', '确认定位，选样本')}
-                </Button>
-              )}
+              <Button
+                fullWidth
+                size="sm"
+                variant="primary"
+                isDisabled={!canAdjust}
+                isPending={props.exporting}
+                onPress={confirmMapping}
+              >
+                {props.exporting
+                  ? browText(locale, 'Confirming…', '正在确认…')
+                  : confirmed
+                    ? browText(locale, 'Choose a style', '继续选样本')
+                    : browText(locale, 'Confirm mapping', '确认定位，选样本')}
+              </Button>
             </div>
           )}
           {tool === 'catalog' && props.statusContent && (
