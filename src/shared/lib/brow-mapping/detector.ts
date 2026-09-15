@@ -71,7 +71,9 @@ async function detectInWorker(
   return new Promise((resolve, reject) => {
     let worker: Worker;
     try {
-      worker = new Worker('/workers/brow-detector.js');
+      // The CDN caches this public script for hours. Use a new URL for this
+      // compatibility fix so returning visitors do not reuse the broken worker.
+      worker = new Worker('/workers/brow-detector.js?v=20260915-canvas');
     } catch {
       bitmap.close();
       reject(new Error('browser'));

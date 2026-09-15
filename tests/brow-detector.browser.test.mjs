@@ -100,13 +100,22 @@ for (const scenario of [
       });
       try {
         const page = await browser.newPage({ userAgent: scenario.userAgent });
+        // Simulate the broken worker still cached at the previous release URL.
+        await page.route(/\/workers\/brow-detector\.js$/, (route) =>
+          route.fulfill({
+            contentType: 'application/javascript',
+            body: "self.onmessage = () => self.postMessage({error:'model-error'});",
+          })
+        );
         if (scenario.noOffscreen || scenario.noWebgl) {
           await page.addInitScript(
             (flag) => {
               const NativeWorker = Worker;
               window.Worker = class extends NativeWorker {
                 constructor(url, options) {
-                  super(`${url}?${flag}`, options);
+                  const target = new URL(url, location.href);
+                  target.searchParams.set(flag, '1');
+                  super(target, options);
                 }
               };
             },
@@ -150,7 +159,9 @@ test(
         const NativeWorker = Worker;
         window.Worker = class extends NativeWorker {
           constructor(url, options) {
-            super(`${url}?no-offscreen`, options);
+            const target = new URL(url, location.href);
+            target.searchParams.set('no-offscreen', '1');
+            super(target, options);
           }
         };
       });
