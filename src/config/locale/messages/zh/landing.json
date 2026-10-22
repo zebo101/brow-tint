@@ -47,12 +47,6 @@
               "description": "用 AI 在你的照片上预览不同眉型",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "眉型顾问",
-              "description": "与 AI 聊聊眉型与日常造型",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         }
@@ -103,12 +97,6 @@
               "description": "用 AI 在你的照片上预览不同眉型",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "眉型顾问",
-              "description": "与 AI 聊聊眉型与日常造型",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         },
@@ -146,13 +134,13 @@
           "title": "友情链接",
           "children": [
             {
-              "title": "AI Barber",
-              "url": "https://aibarber.net/",
+              "title": "SwapHairstyle",
+              "url": "https://swaphairstyle.com/",
               "target": "_blank"
             },
             {
-              "title": "Inpaint",
-              "url": "https://inpaint.dev/",
+              "title": "Verie",
+              "url": "https://verie.app/",
               "target": "_blank"
             },
             {

@@ -47,12 +47,6 @@
               "description": "AIで自分の写真にさまざまな眉をプレビュー",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "眉の形アドバイザー",
-              "description": "AIに眉の形やスタイリングを相談",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         }
@@ -103,12 +97,6 @@
               "description": "AIで自分の写真にさまざまな眉をプレビュー",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "眉の形アドバイザー",
-              "description": "AIに眉の形やスタイリングを相談",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         },
@@ -146,13 +134,13 @@
           "title": "パートナー",
           "children": [
             {
-              "title": "AI Barber",
-              "url": "https://aibarber.net/",
+              "title": "SwapHairstyle",
+              "url": "https://swaphairstyle.com/",
               "target": "_blank"
             },
             {
-              "title": "Inpaint",
-              "url": "https://inpaint.dev/",
+              "title": "Verie",
+              "url": "https://verie.app/",
               "target": "_blank"
             },
             {

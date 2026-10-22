@@ -47,12 +47,6 @@
               "description": "AI로 내 사진에 다양한 눈썹 모양 미리보기",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "눈썹 모양 상담",
-              "description": "AI와 눈썹 모양 및 스타일링 상담",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         }
@@ -103,12 +97,6 @@
               "description": "AI로 내 사진에 다양한 눈썹 모양 미리보기",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "눈썹 모양 상담",
-              "description": "AI와 눈썹 모양 및 스타일링 상담",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         },
@@ -146,13 +134,13 @@
           "title": "파트너",
           "children": [
             {
-              "title": "AI Barber",
-              "url": "https://aibarber.net/",
+              "title": "SwapHairstyle",
+              "url": "https://swaphairstyle.com/",
               "target": "_blank"
             },
             {
-              "title": "Inpaint",
-              "url": "https://inpaint.dev/",
+              "title": "Verie",
+              "url": "https://verie.app/",
               "target": "_blank"
             },
             {

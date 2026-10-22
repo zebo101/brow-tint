@@ -47,12 +47,6 @@
               "description": "Prueba diferentes formas de cejas con IA en tu foto",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "Asesor de formas de cejas",
-              "description": "Habla con IA sobre formas de cejas y estilo",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         }
@@ -103,12 +97,6 @@
               "description": "Prueba diferentes formas de cejas con IA en tu foto",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "Asesor de formas de cejas",
-              "description": "Habla con IA sobre formas de cejas y estilo",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         },
@@ -146,13 +134,13 @@
           "title": "Amigos",
           "children": [
             {
-              "title": "AI Barber",
-              "url": "https://aibarber.net/",
+              "title": "SwapHairstyle",
+              "url": "https://swaphairstyle.com/",
               "target": "_blank"
             },
             {
-              "title": "Inpaint",
-              "url": "https://inpaint.dev/",
+              "title": "Verie",
+              "url": "https://verie.app/",
               "target": "_blank"
             },
             {

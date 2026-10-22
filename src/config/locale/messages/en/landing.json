@@ -47,12 +47,6 @@
               "description": "Preview brow shape and brow filter looks with AI",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "Brow Shape Advisor",
-              "description": "Get expert AI brow shaping advice",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         }
@@ -103,12 +97,6 @@
               "description": "Generate brow shape looks with AI",
               "url": "/filter",
               "icon": "RiImage2Line"
-            },
-            {
-              "title": "Brow Shape Advisor",
-              "description": "Chat with AI brow shaping expert",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
             }
           ]
         },
@@ -146,13 +134,13 @@
           "title": "Friends",
           "children": [
             {
-              "title": "AI Barber",
-              "url": "https://aibarber.net/",
+              "title": "SwapHairstyle",
+              "url": "https://swaphairstyle.com/",
               "target": "_blank"
             },
             {
-              "title": "Inpaint",
-              "url": "https://inpaint.dev/",
+              "title": "Verie",
+              "url": "https://verie.app/",
               "target": "_blank"
             },
             {
