@@ -30,7 +30,6 @@
             "description": "Explore your brow shape for free.",
             "features_title": "What you get",
             "features": [
-              "4 signup credits, once only · 2 AI generations",
               "Unlimited brow mapping",
               "Unlimited manual six-point editing",
               "Unlimited analysis reports",
@@ -43,7 +42,6 @@
             "price": "$0",
             "unit": "",
             "is_featured": false,
-            "tip": "Signup credits never expire. No recurring free credits.",
             "button": {
               "title": "Start free",
               "url": "/filter",
@@ -292,7 +290,7 @@
             {
               "title": "Monthly plan credits",
               "values": [
-                "4 once at signup",
+                "—",
                 "100 credits · 50 AI generations",
                 "300 credits · 150 AI generations"
               ]

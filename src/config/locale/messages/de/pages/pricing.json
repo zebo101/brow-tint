@@ -30,7 +30,6 @@
             "description": "Entdecke deine Brauenform kostenlos.",
             "features_title": "Enthalten",
             "features": [
-              "Einmalig 4 Credits bei der Anmeldung · 2 KI-Generierungen",
               "Unbegrenztes Brauen-Mapping",
               "Unbegrenzte manuelle Sechs-Punkt-Bearbeitung",
               "Unbegrenzte Analyseberichte",
@@ -43,7 +42,6 @@
             "price": "$0",
             "unit": "",
             "is_featured": false,
-            "tip": "Anmelde-Credits verfallen nicht. Keine regelmäßige kostenlose Gutschrift.",
             "button": {
               "title": "Kostenlos starten",
               "url": "/filter",
@@ -292,7 +290,7 @@
             {
               "title": "Credits im Monatstarif",
               "values": [
-                "Einmalig 4 bei der Anmeldung",
+                "—",
                 "100 Credits · 50 KI-Generierungen",
                 "300 Credits · 150 KI-Generierungen"
               ]
