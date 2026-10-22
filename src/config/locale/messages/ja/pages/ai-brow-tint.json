@@ -137,7 +137,8 @@
   },
   "errors": {
     "moderation_denied": "このルックはこの写真には生成できません。別のスタイルをお試しください。",
-    "moderation_unavailable": "安全チェックを利用できません。少し時間をおいて再試行してください。"
+    "moderation_unavailable": "安全チェックを利用できません。少し時間をおいて再試行してください。",
+    "result_expired": "この画像の有効期限が切れました。同じ写真でもう一度スタイルを生成してください。"
   },
   "ui": {
     "could_not_load_this_sample_please_try_again": "サンプルを読み込めませんでした。もう一度お試しください。",
@@ -243,6 +244,16 @@
     "comparison_title": "保存した眉スタイル",
     "comparison_hint": "同じ写真から生成した異なる眉形を2〜4種類選択。Premiumでは名前付きのHD比較画像を書き出せます。プレビューには透かしが入り、HD書き出しには入りません。",
     "refresh_results": "更新",
+    "remove_result": "削除",
+    "remove_result_failed": "結果を削除できませんでした。もう一度お試しください。",
+    "result_expired": "画像の有効期限が切れました",
+    "result_expired_hint": "生成から14日を過ぎた結果は削除されます。同じ写真で新しいスタイルを生成してください。",
+    "expired_results_title": "有効期限切れの結果が{n}件",
+    "clear_expired": "期限切れの結果を削除",
+    "show_expired": "表示",
+    "hide_expired": "非表示",
+    "no_active_results": "利用できる結果はまだありません。新しい眉スタイルを生成すると、ここに表示されます。",
+    "results_load_failed": "保存した結果を読み込めませんでした。もう一度お試しください。",
     "use_my_brow_adjustments": "調整した眉の形を使う",
     "brow_adjustments_help": "眉の調整について",
     "brow_adjustments_on": "確定した輪郭を優先し、選んだスタイルの密度と毛流れを参考にします。",

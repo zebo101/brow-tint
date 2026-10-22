@@ -137,7 +137,8 @@
   },
   "errors": {
     "moderation_denied": "Questo look non può essere generato per la tua foto. Prova uno stile diverso.",
-    "moderation_unavailable": "Controllo di sicurezza non disponibile. Riprova tra un momento."
+    "moderation_unavailable": "Controllo di sicurezza non disponibile. Riprova tra un momento.",
+    "result_expired": "Questa immagine è scaduta. Genera di nuovo il look con la stessa foto."
   },
   "ui": {
     "could_not_load_this_sample_please_try_again": "Impossibile caricare l’esempio. Riprova.",
@@ -243,6 +244,16 @@
     "comparison_title": "I tuoi stili salvati",
     "comparison_hint": "Seleziona 2–4 stili diversi generati dalla stessa foto. Premium esporta un confronto HD con etichette. Le anteprime hanno una filigrana, le esportazioni HD no.",
     "refresh_results": "Aggiorna",
+    "remove_result": "Rimuovi",
+    "remove_result_failed": "Impossibile rimuovere il risultato. Riprova.",
+    "result_expired": "Immagine scaduta",
+    "result_expired_hint": "I risultati più vecchi vengono eliminati dopo 14 giorni. Genera un nuovo look con la stessa foto.",
+    "expired_results_title": "{n} risultati scaduti",
+    "clear_expired": "Elimina scaduti",
+    "show_expired": "Mostra",
+    "hide_expired": "Nascondi",
+    "no_active_results": "Non ci sono ancora risultati disponibili. I nuovi look delle sopracciglia appariranno qui dopo averli generati.",
+    "results_load_failed": "Impossibile caricare i risultati salvati. Riprova.",
     "use_my_brow_adjustments": "Applica le mie modifiche alle sopracciglia",
     "brow_adjustments_help": "Informazioni sulle modifiche alle sopracciglia",
     "brow_adjustments_on": "Usa il contorno confermato, con densità e direzione dei peli dello stile scelto.",

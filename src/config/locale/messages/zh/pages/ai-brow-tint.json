@@ -137,7 +137,8 @@
   },
   "errors": {
     "moderation_denied": "该眉型暂时无法为你的照片生成，请试试别的风格。",
-    "moderation_unavailable": "安全检查暂时不可用，请稍后再试。"
+    "moderation_unavailable": "安全检查暂时不可用，请稍后再试。",
+    "result_expired": "该图片已过期，请用同一张照片重新生成。"
   },
   "ui": {
     "could_not_load_this_sample_please_try_again": "样例加载失败，请重试。",
@@ -243,6 +244,16 @@
     "comparison_title": "已保存的眉形效果",
     "comparison_hint": "选择同一张照片生成的 2–4 种不同眉形，Premium 可导出带款式名称的高清对比图。预览带水印，高清导出无水印。",
     "refresh_results": "刷新",
+    "remove_result": "移除",
+    "remove_result_failed": "移除失败，请重试。",
+    "result_expired": "图片已过期",
+    "result_expired_hint": "超过 14 天的旧结果已被清理，可用同一张照片重新生成。",
+    "expired_results_title": "{n} 个结果已过期",
+    "clear_expired": "清除已过期",
+    "show_expired": "查看",
+    "hide_expired": "收起",
+    "no_active_results": "暂无可用的结果，生成新的眉形后会显示在这里。",
+    "results_load_failed": "加载已保存结果失败，请重试。",
     "use_my_brow_adjustments": "应用我的眉形调整",
     "brow_adjustments_help": "眉形调整说明",
     "brow_adjustments_on": "以已确认的轮廓为准，参考所选款式的浓密度与毛流。",

@@ -59,6 +59,12 @@ export interface StorageProvider {
   // get public url for key (optional)
   getPublicUrl?: (options: { key: string; bucket?: string }) => string;
 
+  // Read a private object with provider authentication (optional).
+  downloadFile?: (options: {
+    key: string;
+    bucket?: string;
+  }) => Promise<Buffer | null>;
+
   // upload file
   uploadFile(options: StorageUploadOptions): Promise<StorageUploadResult>;
 

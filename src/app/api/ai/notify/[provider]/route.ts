@@ -3,6 +3,7 @@ import {
   updateAITaskById,
 } from '@/shared/models/ai_task';
 import { getAIService } from '@/shared/services/ai';
+import { persistBrowResultById } from '@/shared/services/brow-result-storage';
 
 import { handleAINotify } from '../handler';
 
@@ -22,17 +23,18 @@ export async function POST(
         findAITaskByProviderTaskId,
         getAIService,
         updateAITaskById,
+        persistBrowResult: persistBrowResultById,
       },
     });
 
     return Response.json(result.body, {
       status: result.status,
     });
-  } catch (err: any) {
+  } catch (err) {
     console.log('handle ai notify failed', err);
     return Response.json(
       {
-        message: `handle ai notify failed: ${err.message}`,
+        message: `handle ai notify failed: ${err instanceof Error ? err.message : 'unknown error'}`,
       },
       {
         status: 500,
@@ -55,17 +57,18 @@ export async function GET(
         findAITaskByProviderTaskId,
         getAIService,
         updateAITaskById,
+        persistBrowResult: persistBrowResultById,
       },
     });
 
     return Response.json(result.body, {
       status: result.status,
     });
-  } catch (err: any) {
+  } catch (err) {
     console.log('handle ai notify failed', err);
     return Response.json(
       {
-        message: `handle ai notify failed: ${err.message}`,
+        message: `handle ai notify failed: ${err instanceof Error ? err.message : 'unknown error'}`,
       },
       {
         status: 500,

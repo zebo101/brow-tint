@@ -137,7 +137,8 @@
   },
   "errors": {
     "moderation_denied": "Este look não pode ser gerado para a sua foto. Tente um estilo diferente.",
-    "moderation_unavailable": "Verificação de segurança indisponível. Tente novamente em um momento."
+    "moderation_unavailable": "Verificação de segurança indisponível. Tente novamente em um momento.",
+    "result_expired": "Esta imagem expirou. Gere o look novamente com a mesma foto."
   },
   "ui": {
     "could_not_load_this_sample_please_try_again": "Não foi possível carregar o exemplo. Tente novamente.",
@@ -243,6 +244,16 @@
     "comparison_title": "Seus estilos salvos",
     "comparison_hint": "Selecione de 2 a 4 estilos diferentes gerados com a mesma foto. Premium exporta uma comparação HD com nomes. Prévias têm marca-d’água; exportações HD não.",
     "refresh_results": "Atualizar",
+    "remove_result": "Remover",
+    "remove_result_failed": "Não foi possível remover o resultado. Tente novamente.",
+    "result_expired": "Imagem expirada",
+    "result_expired_hint": "Os resultados antigos são excluídos após 14 dias. Gere um novo look com a mesma foto.",
+    "expired_results_title": "{n} resultados expirados",
+    "clear_expired": "Excluir expirados",
+    "show_expired": "Mostrar",
+    "hide_expired": "Ocultar",
+    "no_active_results": "Ainda não há resultados disponíveis. Novos estilos de sobrancelhas aparecerão aqui depois de serem gerados.",
+    "results_load_failed": "Não foi possível carregar os resultados salvos. Tente novamente.",
     "use_my_brow_adjustments": "Aplicar meus ajustes de sobrancelhas",
     "brow_adjustments_help": "Sobre os ajustes de sobrancelhas",
     "brow_adjustments_on": "Usar o contorno confirmado, com a densidade e a direção dos fios do estilo escolhido.",

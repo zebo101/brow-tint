@@ -98,6 +98,8 @@ export function useBrowExportAccess() {
       if (code === 'paid_export_required' || code === 'premium_required')
         openPurchase(code === 'premium_required' ? 'compare' : 'export');
       else if (code === 'sign_in_required') setIsShowSignModal(true);
+      else if (code === 'result_expired')
+        toast.error(t('errors.result_expired'));
       else toast.error(t('ui.download_failed_please_try_again'));
     } finally {
       setDownloading(false);

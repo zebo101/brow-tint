@@ -14,7 +14,17 @@ export interface BrowExportTask {
   taskInfo?: string | null;
   taskResult?: string | null;
   taskId?: string | null;
-  createdAt?: Date;
+  createdAt?: Date | string;
+  deletedAt?: Date | null;
+}
+
+export const BROW_PROVIDER_RETENTION_MS = 14 * 24 * 60 * 60 * 1000;
+
+export interface BrowStoredCopy {
+  provider: 'r2';
+  bucket: string;
+  key: string;
+  storedAt: string;
 }
 
 export class BrowExportError extends Error {
@@ -27,7 +37,7 @@ export class BrowExportError extends Error {
 }
 
 function record(value: unknown): Record<string, unknown> {
-  return value && typeof value === 'object'
+  return value && typeof value === 'object' && !Array.isArray(value)
     ? (value as Record<string, unknown>)
     : {};
 }
@@ -37,6 +47,52 @@ function parse(raw: string | null | undefined): Record<string, unknown> {
   } catch {
     return {};
   }
+}
+
+/** Only accept a storage pointer scoped to this exact owner and task. */
+export function browStoredCopy(task: BrowExportTask): BrowStoredCopy | null {
+  const value = record(parse(task.taskInfo).browStorage);
+  if (
+    value.provider !== 'r2' ||
+    typeof value.bucket !== 'string' ||
+    !value.bucket.trim() ||
+    value.key !== `brow-results/${task.userId}/${task.id}.png` ||
+    typeof value.storedAt !== 'string' ||
+    !Number.isFinite(Date.parse(value.storedAt))
+  )
+    return null;
+  return {
+    provider: 'r2',
+    bucket: value.bucket,
+    key: value.key,
+    storedAt: value.storedAt,
+  };
+}
+
+export function browStoredKey(task: BrowExportTask): string | null {
+  return browStoredCopy(task)?.key ?? null;
+}
+
+export function hasBrowStoredCopy(task: BrowExportTask): boolean {
+  return browStoredKey(task) !== null;
+}
+
+export function isBrowResultExpired(
+  task: BrowExportTask,
+  now = Date.now()
+): boolean {
+  if (hasBrowStoredCopy(task) || !task.createdAt) return false;
+  const createdAt = new Date(task.createdAt).getTime();
+  return (
+    Number.isFinite(createdAt) && now - createdAt > BROW_PROVIDER_RETENTION_MS
+  );
+}
+
+export function withBrowStoredCopy(
+  task: BrowExportTask,
+  copy: BrowStoredCopy
+): string {
+  return JSON.stringify({ ...parse(task.taskInfo), browStorage: copy });
 }
 
 export function browExportMetadata(
@@ -110,7 +166,7 @@ export function assertBrowExportAccess(
   if (tasks.length > 1 && !entitlements.canCompare)
     throw new BrowExportError('premium_required', 403);
   for (const task of tasks) {
-    if (task.userId !== userId)
+    if (task.userId !== userId || task.deletedAt)
       throw new BrowExportError('result_not_found', 404);
     if (
       !isBrowTask(task) ||

@@ -8,6 +8,7 @@ import { getAIService } from './ai';
 import { browQueueErrorDetails } from './brow-queue-diagnostics';
 import { readBrowQueueMetadata, runBrowQueueAction } from './brow-queue-engine';
 import { createBrowQueueStore } from './brow-queue-store';
+import { persistBrowResultById } from './brow-result-storage';
 
 type WorkerState = {
   database?: ReturnType<typeof db>;
@@ -68,6 +69,7 @@ async function tick() {
     const outcome = await runBrowQueueAction(action, provider, action.now);
     stage = 'complete';
     await store.complete(action, outcome);
+    if (outcome.status === 'success') void persistBrowResultById(action.task.id);
   } catch (error) {
     // The durable lease lets another tick/process recover after any crash.
     // Avoid logging prompts, photos, provider credentials, or DB connection data.

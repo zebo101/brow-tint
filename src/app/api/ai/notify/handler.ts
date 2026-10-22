@@ -27,9 +27,7 @@ type AINotifyDeps = {
     taskId: string;
   }) => Promise<ProviderTask | undefined>;
   getAIService: () => Promise<{
-    getProvider: (
-      provider: string
-    ) =>
+    getProvider: (provider: string) =>
       | {
           query?: ({
             taskId,
@@ -43,24 +41,27 @@ type AINotifyDeps = {
         }
       | undefined;
   }>;
+  persistBrowResult?: (id: string) => Promise<void>;
   updateAITaskById: (
     id: string,
     updateAITask: UpdateAITask
   ) => Promise<unknown>;
 };
 
-export function extractAITaskId(payload: any): string | undefined {
-  if (!payload || typeof payload !== 'object') {
-    return undefined;
-  }
-
-  return (
-    payload.taskId ||
-    payload.recordId ||
-    payload.id ||
-    payload?.data?.taskId ||
-    payload?.data?.recordId
-  );
+export function extractAITaskId(payload: unknown): string | undefined {
+  if (!payload || typeof payload !== 'object') return undefined;
+  const value = payload as Record<string, unknown>;
+  const data =
+    value.data && typeof value.data === 'object'
+      ? (value.data as Record<string, unknown>)
+      : {};
+  return [
+    value.taskId,
+    value.recordId,
+    value.id,
+    data.taskId,
+    data.recordId,
+  ].find((id): id is string => typeof id === 'string' && id.length > 0);
 }
 
 export async function handleAINotify({
@@ -70,7 +71,7 @@ export async function handleAINotify({
   deps,
 }: {
   provider: string;
-  payload?: any;
+  payload?: unknown;
   url?: string;
   deps: AINotifyDeps;
 }) {
@@ -141,6 +142,16 @@ export async function handleAINotify({
     updateAITask.taskResult !== task.taskResult
   ) {
     await deps.updateAITaskById(task.id, updateAITask);
+  }
+
+  if (result.taskStatus === 'success' || task.status === 'success') {
+    // The hook reloads the row and checks brow/success/storage state itself.
+    // Neither slow storage nor a failed copy may delay or fail the callback.
+    void Promise.resolve()
+      .then(() => deps.persistBrowResult?.(task.id))
+      .catch(() =>
+        console.warn('[brow-results] Completion storage hook failed.')
+      );
   }
 
   return {

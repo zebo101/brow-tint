@@ -24,7 +24,7 @@ const privateHeaders = {
   'Cache-Control': 'private, no-store, max-age=0',
   'X-Content-Type-Options': 'nosniff',
 };
-async function readLimitedBody(request: Request, limit: number) {
+export async function readLimitedBody(request: Request, limit: number) {
   if (Number(request.headers.get('content-length')) > limit)
     throw new BrowExportError('image_too_large', 413);
   const reader = request.body?.getReader();
@@ -132,7 +132,7 @@ export function createBrowExportHandlers(deps: BrowExportDependencies) {
         if (!id || id.length > 128)
           throw new BrowExportError('result_not_found', 404);
         const task = await deps.task(id);
-        if (!task || task.userId !== current.id)
+        if (!task || task.userId !== current.id || task.deletedAt)
           throw new BrowExportError('result_not_found', 404);
         if (!isBrowTask(task) || task.status !== 'success')
           throw new BrowExportError('result_not_ready', 409);

@@ -1,4 +1,4 @@
-import { and, count, desc, eq, sql } from 'drizzle-orm';
+import { and, count, desc, eq, isNull, sql } from 'drizzle-orm';
 
 import { db } from '@/core/db';
 import { aiTask, credit } from '@/config/db/schema';
@@ -13,8 +13,11 @@ export type AITask = typeof aiTask.$inferSelect & {
 export type NewAITask = typeof aiTask.$inferInsert;
 export type UpdateAITask = Partial<Omit<NewAITask, 'id' | 'createdAt'>>;
 
-export async function createAITask(newAITask: NewAITask, transaction?: any) {
-  const execute = async (tx: any) => {
+export async function createAITask(
+  newAITask: NewAITask,
+  transaction?: ReturnType<typeof db>
+) {
+  const execute = async (tx: ReturnType<typeof db>) => {
     // 1. create task record
     const [taskResult] = await tx.insert(aiTask).values(newAITask).returning();
 
@@ -72,9 +75,9 @@ export async function findAITaskByProviderTaskId({
 export async function updateAITaskById(
   id: string,
   updateAITask: UpdateAITask,
-  transaction?: any
+  transaction?: ReturnType<typeof db>
 ) {
-  const execute = async (tx: any) => {
+  const execute = async (tx: ReturnType<typeof db>) => {
     const taskQuery = tx.select().from(aiTask).where(eq(aiTask.id, id));
     const [existingTask] = await (taskQuery.for
       ? taskQuery.for('update')
@@ -135,6 +138,44 @@ export async function updateAITaskById(
   return transaction ? execute(transaction) : db().transaction(execute);
 }
 
+/** Completed tasks are immutable except for durable output metadata. */
+export async function setAITaskInfoForCompletedTask(
+  id: string,
+  taskInfo: string
+) {
+  const database = db();
+  // Raw SQL deliberately bypasses the ORM's updatedAt hook: task_info is the
+  // only column changed. Status, result payload and credit accounting stay intact.
+  const query = sql`update ${aiTask} set task_info = ${taskInfo}
+    where ${aiTask.id} = ${id} and ${aiTask.status} = 'success'`;
+  await (database.run ? database.run(query) : database.execute(query));
+}
+
+/** Owner-scoped, idempotent soft deletion; bulk cleanup can guard against a rescue. */
+export async function softDeleteAITaskForUser(
+  id: string,
+  userId: string,
+  expectedTaskInfo?: string | null
+): Promise<number> {
+  const rows = await db()
+    .update(aiTask)
+    .set({ deletedAt: new Date() })
+    .where(
+      and(
+        eq(aiTask.id, id),
+        eq(aiTask.userId, userId),
+        isNull(aiTask.deletedAt),
+        expectedTaskInfo === undefined
+          ? undefined
+          : expectedTaskInfo === null
+            ? isNull(aiTask.taskInfo)
+            : eq(aiTask.taskInfo, expectedTaskInfo)
+      )
+    )
+    .returning({ id: aiTask.id });
+  return rows.length;
+}
+
 export async function getAITasksCount({
   userId,
   status,
@@ -169,6 +210,7 @@ export async function getAITasks({
   page = 1,
   limit = 30,
   getUser = false,
+  excludeDeleted = false,
 }: {
   userId?: string;
   status?: string;
@@ -177,6 +219,7 @@ export async function getAITasks({
   page?: number;
   limit?: number;
   getUser?: boolean;
+  excludeDeleted?: boolean;
 }): Promise<AITask[]> {
   const result = await db()
     .select()
@@ -186,10 +229,11 @@ export async function getAITasks({
         userId ? eq(aiTask.userId, userId) : undefined,
         mediaType ? eq(aiTask.mediaType, mediaType) : undefined,
         provider ? eq(aiTask.provider, provider) : undefined,
-        status ? eq(aiTask.status, status) : undefined
+        status ? eq(aiTask.status, status) : undefined,
+        excludeDeleted ? isNull(aiTask.deletedAt) : undefined
       )
     )
-    .orderBy(desc(aiTask.createdAt))
+    .orderBy(desc(aiTask.createdAt), desc(aiTask.id))
     .limit(limit)
     .offset((page - 1) * limit);
 

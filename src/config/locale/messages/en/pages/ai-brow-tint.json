@@ -137,7 +137,8 @@
   },
   "errors": {
     "moderation_denied": "This look can't be generated for your photo. Please try a different style.",
-    "moderation_unavailable": "Safety check unavailable. Please try again in a moment."
+    "moderation_unavailable": "Safety check unavailable. Please try again in a moment.",
+    "result_expired": "This image has expired. Generate the look again with the same photo."
   },
   "ui": {
     "could_not_load_this_sample_please_try_again": "Could not load this sample. Please try again.",
@@ -243,6 +244,16 @@
     "comparison_title": "Your saved styles",
     "comparison_hint": "Select 2–4 different generated styles from the same photo. Premium exports a labeled HD comparison. Previews are watermarked; HD exports are clean.",
     "refresh_results": "Refresh",
+    "remove_result": "Remove",
+    "remove_result_failed": "Could not remove the result. Please try again.",
+    "result_expired": "Image expired",
+    "result_expired_hint": "Older results are cleared after 14 days. Generate a new look with the same photo.",
+    "expired_results_title": "{n} expired results",
+    "clear_expired": "Clear expired",
+    "show_expired": "Show",
+    "hide_expired": "Hide",
+    "no_active_results": "No available results yet. New brow looks will appear here after you generate them.",
+    "results_load_failed": "Could not load saved results. Please try again.",
     "use_my_brow_adjustments": "Use my brow adjustments",
     "brow_adjustments_help": "About brow adjustments",
     "brow_adjustments_on": "Use my confirmed outline, with density and hair flow from the selected style.",

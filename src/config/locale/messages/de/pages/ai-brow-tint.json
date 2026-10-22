@@ -137,7 +137,8 @@
   },
   "errors": {
     "moderation_denied": "Dieser Look kann für dein Foto nicht erzeugt werden. Bitte wähle einen anderen Style.",
-    "moderation_unavailable": "Sicherheitsprüfung nicht verfügbar. Bitte versuche es in einem Moment erneut."
+    "moderation_unavailable": "Sicherheitsprüfung nicht verfügbar. Bitte versuche es in einem Moment erneut.",
+    "result_expired": "Dieses Bild ist abgelaufen. Erstelle den Look mit demselben Foto erneut."
   },
   "ui": {
     "could_not_load_this_sample_please_try_again": "Das Beispiel konnte nicht geladen werden. Bitte erneut versuchen.",
@@ -243,6 +244,16 @@
     "comparison_title": "Deine gespeicherten Looks",
     "comparison_hint": "Wähle 2–4 verschiedene generierte Stile desselben Fotos. Premium exportiert einen beschrifteten HD-Vergleich. Vorschauen haben Wasserzeichen, HD-Exporte nicht.",
     "refresh_results": "Aktualisieren",
+    "remove_result": "Entfernen",
+    "remove_result_failed": "Das Ergebnis konnte nicht entfernt werden. Bitte versuche es erneut.",
+    "result_expired": "Bild ist abgelaufen",
+    "result_expired_hint": "Ältere Ergebnisse werden nach 14 Tagen gelöscht. Erstelle mit demselben Foto einen neuen Look.",
+    "expired_results_title": "{n} abgelaufene Ergebnisse",
+    "clear_expired": "Abgelaufene löschen",
+    "show_expired": "Anzeigen",
+    "hide_expired": "Ausblenden",
+    "no_active_results": "Noch keine verfügbaren Ergebnisse. Neue Brauen-Looks erscheinen hier, sobald du sie generierst.",
+    "results_load_failed": "Gespeicherte Ergebnisse konnten nicht geladen werden. Bitte versuche es erneut.",
     "use_my_brow_adjustments": "Meine Brauenanpassungen anwenden",
     "brow_adjustments_help": "Informationen zu Brauenanpassungen",
     "brow_adjustments_on": "Meine bestätigte Kontur verwenden; Dichte und Haarwuchsrichtung stammen aus dem gewählten Stil.",

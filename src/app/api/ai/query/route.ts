@@ -1,4 +1,8 @@
-import { serializeBrowTaskForClient } from '@/shared/lib/brow-export';
+import {
+  hasBrowStoredCopy,
+  isBrowTask,
+  serializeBrowTaskForClient,
+} from '@/shared/lib/brow-export';
 import { respData, respErr } from '@/shared/lib/resp';
 import {
   findAITaskById,
@@ -12,6 +16,7 @@ import {
   isBrowQueuedTask,
   startBrowQueueWorker,
 } from '@/shared/services/brow-queue';
+import { persistBrowResult } from '@/shared/services/brow-result-storage';
 
 export async function POST(req: Request) {
   try {
@@ -35,6 +40,12 @@ export async function POST(req: Request) {
     }
 
     const entitlements = await getBrowEntitlements(user.id);
+    if (
+      task.status === 'success' &&
+      isBrowTask(task) &&
+      !hasBrowStoredCopy(task)
+    )
+      void persistBrowResult(task);
     // The server worker owns queued provider polling, including after refresh.
     // A local task ID exists before a provider task ID has been assigned.
     if (isBrowQueuedTask(task)) {
@@ -70,9 +81,16 @@ export async function POST(req: Request) {
       creditId: task.creditId, // credit consumption record id
     };
     const updated = await updateAITaskById(task.id, updateAITask);
-    return respData(serializeBrowTaskForClient(updated || task, entitlements));
-  } catch (e: any) {
+    const current = updated || task;
+    if (
+      current.status === 'success' &&
+      isBrowTask(current) &&
+      !hasBrowStoredCopy(current)
+    )
+      void persistBrowResult(current);
+    return respData(serializeBrowTaskForClient(current, entitlements));
+  } catch (e) {
     console.log('ai query failed', e);
-    return respErr(e.message);
+    return respErr(e instanceof Error ? e.message : 'ai query failed');
   }
 }

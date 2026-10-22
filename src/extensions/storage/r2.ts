@@ -163,6 +163,32 @@ export class R2Provider implements StorageProvider {
     }
   }
 
+  async downloadFile(options: {
+    key: string;
+    bucket?: string;
+  }): Promise<Buffer | null> {
+    const bucket = options.bucket || this.configs.bucket;
+    if (!bucket) throw new Error('Bucket is required');
+    const url = `${this.getEndpoint()}/${bucket}/${this.getUploadPath()}/${options.key}`;
+    const { AwsClient } = await import('aws4fetch');
+    const client = new AwsClient({
+      accessKeyId: this.configs.accessKeyId,
+      secretAccessKey: this.configs.secretAccessKey,
+      region: this.configs.region || 'auto',
+    });
+    const response = await client.fetch(
+      new Request(url, {
+        method: 'GET',
+        redirect: 'error',
+        cache: 'no-store',
+        signal: AbortSignal.timeout(20_000),
+      })
+    );
+    if (response.status === 404) return null;
+    if (!response.ok) throw new Error(`R2 download failed (${response.status})`);
+    return Buffer.from(await response.arrayBuffer());
+  }
+
   async downloadAndUpload(
     options: StorageDownloadUploadOptions
   ): Promise<StorageUploadResult> {
