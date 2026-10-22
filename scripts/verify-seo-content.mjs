@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 
 const origin = process.argv[2] || 'http://localhost:3120';
 const locales = ['en', 'zh', 'ko', 'ja', 'de', 'es', 'it', 'pt'];
+const faceShapePath = '/eyebrow-shape-for-face-shape';
 const slugs = [
   'eyebrow-mapping-guide',
   'eyebrow-shapes-guide',
@@ -35,6 +36,7 @@ async function read(path) {
 for (const path of [
   '/',
   '/filter',
+  faceShapePath,
   ...locales.flatMap((locale) =>
     slugs.map((slug) => `${locale === 'en' ? '' : `/${locale}`}/blog/${slug}`)
   ),
@@ -59,11 +61,29 @@ for (const path of [
   });
   assert.equal(unsafe.length, 0, `${path}: blank-target links need noopener`);
   assert.equal([...html.matchAll(/<h1\b/g)].length, 1, `${path}: single H1`);
-  assert.equal(
-    [...html.matchAll(/<link[^>]*hrefLang=/g)].length,
-    9,
+  const alternates = [...html.matchAll(/<link\b[^>]*>/gi)]
+    .map(([tag]) => attrs(tag))
+    .filter((link) => link.rel === 'alternate' && link.hreflang);
+  assert.deepEqual(
+    alternates.map((link) => link.hreflang).sort(),
+    [...(path === faceShapePath ? ['en'] : locales), 'x-default'].sort(),
     `${path}: hreflang`
   );
+  if (path === faceShapePath) {
+    for (const alternate of alternates)
+      assert.equal(alternate.href, `https://browlens.com${faceShapePath}`);
+    assert.equal(meta['og:url'], `https://browlens.com${faceShapePath}`);
+    assert.equal(
+      schemas.filter((s) => s['@type'] === 'BreadcrumbList').length,
+      1
+    );
+    assert.ok(!schemas.some((s) => ['Product', 'Offer'].includes(s['@type'])));
+    assert.match(html, /<table\b/);
+    assert.match(
+      html,
+      /<h2\b[^>]*>Try your face-shape brow match on your photo<\/h2>/
+    );
+  }
   if (path.includes('/blog/')) {
     assert.equal(meta['og:title'], title, `${path}: OG title`);
     assert.equal(meta['twitter:title'], title, `${path}: Twitter title`);
@@ -97,7 +117,12 @@ for (const path of [
   } else {
     const shell = html.split(/<div\b[^>]*\bhidden\b[^>]*\bid="S:/i)[0];
     assert.match(shell, /<button\b[^>]*\bdata-brow-upload\b/);
-    const guideId = path === '/' ? 'brow-app-guide' : 'eyebrow-filter-guide';
+    const guideId =
+      path === faceShapePath
+        ? 'face-shape-quick-answer'
+        : path === '/'
+          ? 'brow-app-guide'
+          : 'eyebrow-filter-guide';
     assert.match(
       shell,
       new RegExp(`id="${guideId}"`),
@@ -135,8 +160,12 @@ for (const path of [
         decode(body).includes(question.acceptedAnswer.text),
         `${path}: FAQ answer in HTML`
       );
-    if (path === '/filter')
+    if (path === '/filter' || path === faceShapePath)
       assert.ok(title.length <= 60, `${path}: title length`);
+    if (path === faceShapePath) {
+      assert.ok(words >= 1400, `${path}: face-shape guide word count`);
+      assert.equal(faq.mainEntity.length, 8, `${path}: FAQ count`);
+    }
     results.push({
       path,
       words,
@@ -162,13 +191,35 @@ for (const locale of locales)
       `sitemap ${path} lastmod`
     );
   }
+const faceShapeEntries = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)]
+  .map(([, entry]) => entry)
+  .filter((entry) =>
+    entry.match(/<loc>(.*?)<\/loc>/)?.[1].endsWith(faceShapePath)
+  );
+assert.equal(
+  faceShapeEntries.length,
+  1,
+  'sitemap: only the English face-shape URL'
+);
+assert.ok(
+  faceShapeEntries[0].includes(
+    `<loc>https://browlens.com${faceShapePath}</loc>`
+  )
+);
+assert.match(faceShapeEntries[0], /<lastmod>2026-10-22<\/lastmod>/);
+assert.deepEqual(
+  [...faceShapeEntries[0].matchAll(/hreflang="([^"]+)"/g)]
+    .map(([, locale]) => locale)
+    .sort(),
+  ['en', 'x-default']
+);
 console.log(
   JSON.stringify(
     {
       origin,
       checkedAt: new Date().toISOString(),
       pages: results.length,
-      sitemapDatedRoutes: 24,
+      sitemapDatedRoutes: 25,
       results,
     },
     null,

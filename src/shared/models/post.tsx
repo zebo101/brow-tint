@@ -7,6 +7,7 @@ import { db } from '@/core/db';
 import { logsSource, pagesSource, postsSource } from '@/core/docs/source';
 import { generateTOC } from '@/core/docs/toc';
 import { post } from '@/config/db/schema';
+import { TryOnCta } from '@/shared/blocks/blog/try-on-cta';
 import { MarkdownContent } from '@/shared/blocks/common/markdown-content';
 import {
   Category as BlogCategoryType,
@@ -216,18 +217,23 @@ export async function getLocalPost({
     <MDXContent
       components={getMDXComponents({
         // this allows you to link to other pages with relative file paths
-        a: createRelativeLink(postsSource, localPost) as any,
+        a: createRelativeLink(postsSource, localPost),
+        TryOnCta,
       })}
     />
   );
 
-  const frontmatter = localPost.data as any;
+  const frontmatter = localPost.data as Omit<BlogPostType, 'body'>;
 
   const post: BlogPostType = {
     id: localPost.path,
     slug: slug,
     image: frontmatter.image || '',
+    image_alt: localPost.data.image_alt,
     published_at: frontmatter.created_at,
+    updated_at: localPost.data.updated_at,
+    faq: localPost.data.faq,
+    faq_title: localPost.data.faq_title,
     title: localPost.data.title || '',
     description: localPost.data.description || '',
     content: '',
@@ -266,12 +272,12 @@ export async function getLocalPage({
     <MDXContent
       components={getMDXComponents({
         // this allows you to link to other pages with relative file paths
-        a: createRelativeLink(pagesSource, localPage) as any,
+        a: createRelativeLink(pagesSource, localPage),
       })}
     />
   );
 
-  const frontmatter = localPage.data as any;
+  const frontmatter = localPage.data as Omit<BlogPostType, 'body'>;
 
   const post: BlogPostType = {
     id: localPage.path,
@@ -311,7 +317,7 @@ export async function getPostsAndCategories({
   categoryPrefix?: string;
 }) {
   let posts: BlogPostType[] = [];
-  let categories: BlogCategoryType[] = [];
+  const categories: BlogCategoryType[] = [];
 
   // merge posts from both locale and remote, remove duplicates by slug
   // remote posts have higher priority
@@ -484,7 +490,7 @@ export async function getLocalPostsAndCategories({
   // Build posts data from local content
   localPostsList.push(
     ...localPosts.map((post) => {
-      const frontmatter = post.data as any;
+      const frontmatter = post.data as Omit<BlogPostType, 'body'>;
       const slug = getPostSlug({
         url: post.url,
         locale,
@@ -514,6 +520,7 @@ export async function getLocalPostsAndCategories({
         created_at: createdAt,
         date: frontmatter.date || createdAt,
         image: frontmatter.image || '',
+        image_alt: frontmatter.image_alt,
         url: `${postPrefix}${slug}`,
         version: frontmatter.version || '',
         tags: frontmatter.tags || [],

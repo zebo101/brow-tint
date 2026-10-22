@@ -1,4 +1,10 @@
-import { defineConfig, defineDocs } from 'fumadocs-mdx/config';
+import {
+  defineConfig,
+  defineDocs,
+  frontmatterSchema,
+} from 'fumadocs-mdx/config';
+
+import { blogFrontmatterFields } from './src/config/blog';
 
 export const docs = defineDocs({
   dir: 'content/docs',
@@ -12,6 +18,9 @@ export const posts = defineDocs({
   // Public guide collection: three current guides, each translated into eight languages.
   // Unmodified originals are backed up in docs/archives/tintbrow-articles-2026-09-12.
   dir: 'content/posts',
+  docs: {
+    schema: frontmatterSchema.extend(blogFrontmatterFields),
+  },
 });
 
 export const logs = defineDocs({

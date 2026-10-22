@@ -25,6 +25,37 @@ test('sitemap uses recorded content dates and never invents a crawl-time date', 
   assert.equal(entries[2].lastModified, undefined);
 });
 
+test('the face-shape sitemap entry has only English URLs and alternates', () => {
+  const url = 'https://browlens.com/eyebrow-shape-for-face-shape';
+  assert.deepEqual(
+    expandStaticRoutes(
+      [
+        {
+          path: '/eyebrow-shape-for-face-shape',
+          locales: ['en'],
+          changeFrequency: 'weekly',
+          priority: 0.9,
+          lastModified: '2026-10-22',
+        },
+      ],
+      {
+        defaultLocale: 'en',
+        locales: ['en', 'zh', 'ko', 'ja', 'de', 'es', 'it', 'pt'],
+        siteUrl: 'https://browlens.com/',
+      }
+    ),
+    [
+      {
+        url,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+        lastModified: '2026-10-22',
+        alternates: { languages: { en: url, 'x-default': url } },
+      },
+    ]
+  );
+});
+
 test('expandStaticRoutes only emits locales declared by each route', () => {
   const entries = expandStaticRoutes(
     [

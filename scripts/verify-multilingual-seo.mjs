@@ -5,9 +5,12 @@ import assert from 'node:assert/strict';
 const origin = process.argv[2] || 'http://localhost:3012';
 const canonicalOrigin = 'https://browlens.com';
 const locales = ['en', 'zh', 'ko', 'ja', 'de', 'es', 'it', 'pt'];
+const faceShapePath = '/eyebrow-shape-for-face-shape';
+const englishOnlyPaths = new Set([faceShapePath]);
 const paths = [
   '/',
   '/filter',
+  faceShapePath,
   '/blog',
   '/pricing',
   '/showcases',
@@ -25,6 +28,7 @@ const localize = (pathname, locale) =>
   locale === 'en' ? pathname : `/${locale}${pathname === '/' ? '' : pathname}`;
 const failures = [];
 let verified = 0;
+let verifiedRedirects = 0;
 
 async function checkPage(pathname, locale) {
   const localized = localize(pathname, locale);
@@ -33,12 +37,30 @@ async function checkPage(pathname, locale) {
     signal: AbortSignal.timeout(90000),
     headers: { 'user-agent': 'Googlebot' },
   });
+  if (englishOnlyPaths.has(pathname) && locale !== 'en') {
+    assert.equal(
+      response.status,
+      308,
+      `${localized}: permanent English redirect`
+    );
+    assert.equal(
+      new URL(response.headers.get('location'), origin).href,
+      new URL(pathname, origin).href,
+      `${localized}: unprefixed English destination`
+    );
+    verifiedRedirects++;
+    return;
+  }
   assert.equal(response.status, 200, `${localized}: HTTP status`);
   const html = await response.text();
   // Check the HTML shell, before React's hidden streamed Suspense content.
   // Merely finding an H1 anywhere in the response missed an empty hero shell.
   const shell = html.split(/<div\b[^>]*\bhidden\b[^>]*\bid="S:/i)[0];
-  if (pathname === '/' || pathname === '/filter') {
+  if (
+    pathname === '/' ||
+    pathname === '/filter' ||
+    englishOnlyPaths.has(pathname)
+  ) {
     assert.match(
       shell,
       /<h1\b[^>]*>[^<]+<\/h1>/,
@@ -82,8 +104,13 @@ async function checkPage(pathname, locale) {
   const alternates = links.filter(
     (link) => link.rel === 'alternate' && link.hreflang
   );
-  assert.equal(alternates.length, 9, `${localized}: hreflang count`);
-  for (const target of [...locales, 'x-default']) {
+  const availableLocales = englishOnlyPaths.has(pathname) ? ['en'] : locales;
+  assert.equal(
+    alternates.length,
+    availableLocales.length + 1,
+    `${localized}: hreflang count`
+  );
+  for (const target of [...availableLocales, 'x-default']) {
     const matches = alternates.filter((link) => link.hreflang === target);
     assert.equal(matches.length, 1, `${localized}: unique ${target}`);
     assert.equal(
@@ -100,7 +127,7 @@ async function checkPage(pathname, locale) {
   verified++;
   if (verified % 8 === 0) {
     console.error(
-      `Verified ${verified}/${paths.length * locales.length} pages`
+      `Verified ${verified + verifiedRedirects}/${paths.length * locales.length} pages and redirects`
     );
   }
 }
@@ -158,8 +185,8 @@ try {
   sitemapCount = entries.length;
   assert.equal(
     sitemapCount,
-    96,
-    'sitemap: 12 indexed page families (including About) × 8 languages'
+    96 + englishOnlyPaths.size,
+    'sitemap: 12 multilingual page families × 8 languages + English-only guides'
   );
   assert.doesNotMatch(
     xml,
@@ -182,17 +209,33 @@ try {
       `sitemap: ${locale} filter URL`
     );
   }
+  for (const pathname of englishOnlyPaths) {
+    assert.deepEqual(
+      sitemapLocations.filter((url) => url?.endsWith(pathname)),
+      [`${canonicalOrigin}${pathname}`],
+      `sitemap: ${pathname} only in English`
+    );
+  }
   for (const entry of entries) {
     const loc = entry.match(/<loc>(.*?)<\/loc>/)?.[1];
     assert.ok(loc?.startsWith(canonicalOrigin));
     const alternates = [
       ...entry.matchAll(/hreflang="([^"]+)"\s+href="([^"]+)"/g),
     ];
-    assert.equal(alternates.length, 9, `sitemap ${loc}: alternate count`);
+    const availableLocales = englishOnlyPaths.has(new URL(loc).pathname)
+      ? ['en']
+      : locales;
+    assert.equal(
+      alternates.length,
+      availableLocales.length + 1,
+      `sitemap ${loc}: alternate count`
+    );
     assert.deepEqual(
       alternates.map((match) => match[1]).sort(),
-      [...locales, 'x-default'].sort()
+      [...availableLocales, 'x-default'].sort()
     );
+    if (availableLocales.length === 1)
+      assert.ok(alternates.every((match) => match[2] === loc));
     assert.ok(
       alternates.some((match) => match[2] === loc),
       `sitemap ${loc}: self alternate`
@@ -207,7 +250,11 @@ console.log(
     {
       origin,
       verifiedPages: verified,
-      expectedPages: paths.length * locales.length,
+      expectedPages:
+        paths.length * locales.length -
+        englishOnlyPaths.size * (locales.length - 1),
+      verifiedRedirects,
+      expectedRedirects: englishOnlyPaths.size * (locales.length - 1),
       sitemapUrls: sitemapCount,
       failures,
     },

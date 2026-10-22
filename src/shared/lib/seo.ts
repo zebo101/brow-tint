@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { envConfigs } from '@/config';
@@ -16,6 +17,7 @@ export function getMetadata(
     imageHeight?: number;
     appName?: string;
     noIndex?: boolean;
+    availableLocales?: string[];
   } = {}
 ) {
   return async function generateMetadata({
@@ -55,6 +57,7 @@ export function getMetadata(
     const alternates = buildAlternates(canonicalPath, {
       locale,
       noIndex: options.noIndex,
+      availableLocales: options.availableLocales,
     });
     const canonicalUrl = alternates.canonical;
 
@@ -123,7 +126,7 @@ export function getMetadata(
         index: options.noIndex ? false : true,
         follow: options.noIndex ? false : true,
       },
-    };
+    } satisfies Metadata;
   };
 }
 

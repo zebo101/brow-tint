@@ -23,6 +23,21 @@ test('buildAlternates omits language alternates for noindex pages', () => {
   );
 });
 
+test('buildAlternates keeps the face-shape guide canonical and alternates English-only', () => {
+  const url = 'https://browlens.com/eyebrow-shape-for-face-shape';
+  assert.deepEqual(
+    buildAlternates('/eyebrow-shape-for-face-shape', {
+      ...baseOptions,
+      locale: 'en',
+      availableLocales: ['en'],
+    }),
+    {
+      canonical: url,
+      languages: { en: url, 'x-default': url },
+    }
+  );
+});
+
 test('buildAlternates limits hreflang locales to actual page availability', () => {
   assert.deepEqual(
     buildAlternates('/docs', {

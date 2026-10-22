@@ -1,5 +1,6 @@
 'use client';
 
+import { Link } from '@/core/i18n/navigation';
 import { JsonLd } from '@/shared/components/json-ld';
 import {
   Accordion,
@@ -71,6 +72,17 @@ export function Faq({
                   >
                     <p className="text-base">
                       {item.answer || item.description || ''}
+                      {item.link && (
+                        <>
+                          {' '}
+                          <Link
+                            href={item.link.url}
+                            className="underline underline-offset-4"
+                          >
+                            {item.link.title}
+                          </Link>
+                        </>
+                      )}
                     </p>
                   </AccordionContent>
                 </AccordionItem>

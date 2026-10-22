@@ -56,12 +56,24 @@
             "paragraphs": [
               "Natural is a useful first comparison when you want to explore a restrained change. Look at how its overall contour relates to your existing brows before trying a more noticeable style. It gives you a reference point for deciding whether the other outlines feel too lifted, too straight, or simply different from what you are used to seeing.",
               "Arched emphasizes a clearer rise and peak. Try it when you want to investigate a more defined curve, and pay attention to both the arch position and the tail direction. Straight reduces the impression of a pronounced peak. Compare it when you want a flatter brow line, checking the whole face rather than judging only a close-up of one brow.",
-              "Soft Angled offers a gentler change of direction around the arch. It can be worth comparing if you like some definition but find a sharper peak too strong. These are visual options to explore, not rules for particular face shapes or genders. The useful question is which contour you prefer on your own photo. Only the four supported outlines are offered as available choices here."
+              "Soft Angled offers a gentler change of direction around the arch. It can be worth comparing if you like some definition but find a sharper peak too strong. Face-shape guidelines are a starting point, not a rule. Try the suggested shape and one alternative on your own photo and compare. The useful question is which contour you prefer on your own photo. Only the four supported outlines are offered as available choices here."
             ],
             "link": {
               "prefix": "For more detail on shape names and what to compare, read our ",
               "title": "eyebrow shapes guide",
               "url": "/blog/eyebrow-shapes-guide",
+              "suffix": "."
+            }
+          },
+          {
+            "title": "Which outline to try first for your face shape",
+            "paragraphs": [
+              "Use classic face-shape guidance as a starting point: round—Soft Angled or Arched for lift; oval—Natural or Soft Angled; square—soft Arched or Natural; heart—Natural or Soft Angled with a lower arch; long—Straight; diamond—Soft Angled. Browlens does not detect your face shape; choose a starting outline from the guide, then compare it with an alternative on your own photo."
+            ],
+            "link": {
+              "prefix": "Find your starting point in the ",
+              "title": "eyebrow shape for face shape guide",
+              "url": "/eyebrow-shape-for-face-shape",
               "suffix": "."
             }
           },
@@ -131,6 +143,10 @@
           {
             "question": "Can I compare different eyebrow shapes?",
             "answer": "Yes. Try an eyebrow filter on your photo, compare the before and after, then explore another shape to find a look you like."
+          },
+          {
+            "question": "Which eyebrow filter shape should I try for my face shape?",
+            "answer": "Try Soft Angled or Arched for lift on round faces; Natural or Soft Angled for oval; soft Arched or Natural for square; Natural or Soft Angled with a lower arch for heart; Straight for long; and Soft Angled for diamond. These are starting points, not rules. Browlens doesn't detect your face shape; choose from the guide and compare two outlines on your own photo."
           },
           {
             "question": "Will a preview match my final look exactly?",

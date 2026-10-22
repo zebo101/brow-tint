@@ -116,7 +116,7 @@
         "block": "brow-guide",
         "id": "brow-app-guide",
         "title": "How to Use a Brow App to Make a Better Shape Decision",
-        "description": "A useful eyebrow preview starts with understanding what you already have. Use the tool above to inspect your natural brows, make a small adjustment, and compare the result in the context of your whole face. The guide below explains what each stage can tell you.",
+        "description": "A useful eyebrow preview starts with understanding what you already have. Use the tool above to inspect your natural brows, make a small adjustment, and compare the result in the context of your whole face. The guide below explains what each stage can tell you. The eyebrow shape analyzer helps you compare brow placement and balance.",
         "items": [
           {
             "title": "Start with eyebrow mapping",
@@ -129,6 +129,19 @@
               "title": "eyebrow mapping",
               "url": "/blog/eyebrow-mapping-guide",
               "suffix": " guide, then return to the editor to check those points on your own photo."
+            }
+          },
+          {
+            "title": "Eyebrow shapes for your face shape",
+            "paragraphs": [
+              "Classic guidelines are a starting point for choosing eyebrow shapes for your face shape, not a rule. Browlens does not label your face shape; you choose your shape from the guide and compare outlines on your own photo.",
+              "For round faces, try Soft Angled or Arched for lift; oval, Natural or Soft Angled; square, soft Arched or Natural; heart, Natural or Soft Angled with a lower arch; long, Straight; diamond, Soft Angled."
+            ],
+            "link": {
+              "prefix": "Choose a starting outline with our ",
+              "title": "eyebrow shape for face shape guide",
+              "url": "/eyebrow-shape-for-face-shape",
+              "suffix": "."
             }
           },
           {
@@ -204,6 +217,10 @@
           {
             "question": "Can I compare different eyebrow shapes?",
             "answer": "Yes. Try an eyebrow filter on your photo, compare the before and after, then explore another shape to find a look you like."
+          },
+          {
+            "question": "What eyebrow shape suits my face shape?",
+            "answer": "Classic starting points: round—Soft Angled or Arched; oval—Natural or Soft Angled; square—soft Arched or Natural; heart—Natural or Soft Angled with a lower arch; long—Straight; diamond—Soft Angled. These are guidelines, not rules. Browlens doesn't detect your face shape. See the Eyebrow Shape for Face Shape Guide and compare outlines on your own photo."
           },
           {
             "question": "Will a preview match my final look exactly?",

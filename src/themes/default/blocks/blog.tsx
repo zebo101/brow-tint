@@ -80,7 +80,7 @@ export function Blog({
                     <div>
                       <img
                         src={item.image}
-                        alt={item.title || ''}
+                        alt={item.image_alt ?? item.title ?? ''}
                         className="aspect-16/9 h-full w-full object-cover object-center"
                       />
                     </div>

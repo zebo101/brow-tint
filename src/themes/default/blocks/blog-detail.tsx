@@ -1,5 +1,6 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import { TOCItems, TOCProvider } from 'fumadocs-ui/components/layout/toc';
 import { CalendarIcon, ListIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -9,7 +10,13 @@ import { MarkdownPreview } from '@/shared/blocks/common/markdown-preview';
 import { type Post as PostType } from '@/shared/types/blocks/blog';
 import { NavItem } from '@/shared/types/blocks/common';
 
-export function BlogDetail({ post }: { post: PostType }) {
+export function BlogDetail({
+  post,
+  articleFooter,
+}: {
+  post: PostType;
+  articleFooter?: ReactNode;
+}) {
   const t = useTranslations('pages.blog.messages');
 
   const crumbItems: NavItem[] = [
@@ -90,6 +97,7 @@ export function BlogDetail({ post }: { post: PostType }) {
                       </div>
                     )
                   )}
+                  {articleFooter}
                 </article>
               </div>
 

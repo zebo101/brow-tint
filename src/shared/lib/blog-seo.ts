@@ -1,5 +1,6 @@
 import { buildAlternates } from '@/shared/lib/seo-metadata';
 import { getSiteUrl } from '@/shared/lib/seo-paths';
+import type { BlogFaqItem } from '@/shared/types/blocks/blog';
 
 type BlogSeoInput = {
   slug: string;
@@ -7,12 +8,30 @@ type BlogSeoInput = {
   title: string;
   description?: string;
   image?: string;
+  imageAlt?: string;
   author?: string;
   published?: string | Date;
   modified?: string | Date;
   availableLocales?: string[];
   siteUrl?: string;
 };
+
+export function buildBlogFaqSchema(faq?: readonly BlogFaqItem[]) {
+  if (!faq?.length) return undefined;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map(({ question, answer }) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: answer,
+      },
+    })),
+  };
+}
 
 function isoDate(value?: string | Date) {
   if (!value) return undefined;
@@ -54,7 +73,7 @@ export function buildBlogSeo(input: BlogSeoInput) {
         description: input.description,
         siteName: 'Browlens',
         locale: input.locale,
-        images: [{ url: image, alt: input.title }],
+        images: [{ url: image, alt: input.imageAlt ?? input.title }],
         publishedTime,
         modifiedTime,
         ...(input.author ? { authors: [input.author] } : {}),

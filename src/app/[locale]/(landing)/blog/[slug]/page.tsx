@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { postsSource } from '@/core/docs/source';
 import { getThemePage } from '@/core/theme';
 import { locales } from '@/config/locale';
+import { BlogFaq } from '@/shared/blocks/blog/blog-faq';
 import { JsonLd } from '@/shared/components/json-ld';
 import { buildBlogSeo } from '@/shared/lib/blog-seo';
 import { buildAlternates } from '@/shared/lib/seo-metadata';
@@ -47,6 +48,8 @@ export async function generateMetadata({
     image: post.image,
     author: post.author_name,
     published: post.published_at,
+    modified: post.updated_at,
+    imageAlt: post.image_alt,
     availableLocales,
   }).metadata;
 }
@@ -72,6 +75,9 @@ export default async function BlogDetailPage({
         block: 'blog-detail',
         data: {
           post,
+          articleFooter: post.faq?.length ? (
+            <BlogFaq faq={post.faq} title={post.faq_title} />
+          ) : undefined,
         },
       },
     },
@@ -87,6 +93,8 @@ export default async function BlogDetailPage({
     image: post.image,
     author: post.author_name,
     published: post.published_at,
+    modified: post.updated_at,
+    imageAlt: post.image_alt,
   });
 
   return (

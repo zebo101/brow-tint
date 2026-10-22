@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import robots from '@/app/robots';
 
 import {
   buildCanonicalUrl,
@@ -60,6 +61,18 @@ test('buildLanguageAlternates returns one canonical per locale', () => {
     ja: 'https://browlens.com/ja/docs',
     'x-default': 'https://browlens.com/docs',
   });
+});
+
+test('the English face-shape guide is indexable and not blocked by robots', () => {
+  const pathname = '/eyebrow-shape-for-face-shape';
+  assert.equal(isIndexablePath(pathname, defaultOptions), true);
+  const rules = robots().rules;
+  assert.ok(!Array.isArray(rules));
+  assert.equal(rules.allow, '/');
+  const blocked = Array.isArray(rules.disallow)
+    ? rules.disallow
+    : [rules.disallow];
+  assert.ok(blocked.every((rule) => !rule || !pathname.startsWith(rule)));
 });
 
 test('isIndexablePath excludes private and low-value paths across locales', () => {

@@ -69,9 +69,15 @@ type PendingPhoto =
 export function BrowTintStudio({
   styles,
   mode = 'home',
+  titleAs: Title = 'h1',
+  title,
+  subtitle,
 }: {
   styles: BrowStyleItem[];
   mode?: 'home' | 'filter';
+  titleAs?: 'h1' | 'h2';
+  title?: string;
+  subtitle?: string;
 }) {
   const t = useTranslations('pages.ai-brow-tint');
   const locale = useLocale();
@@ -331,13 +337,15 @@ export function BrowTintStudio({
       >
         <header className="mb-5 text-center md:mb-8">
           <div>
-            <h1 className="font-display text-foreground mx-auto max-w-4xl text-2xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[44px]">
-              {mode === 'filter' ? t('ui.filter_title') : t('studio.title')}
-            </h1>
+            <Title className="font-display text-foreground mx-auto max-w-4xl text-2xl leading-tight font-semibold tracking-tight md:text-4xl lg:text-[44px]">
+              {title ??
+                (mode === 'filter' ? t('ui.filter_title') : t('studio.title'))}
+            </Title>
             <p className="text-foreground/75 mx-auto mt-3 max-w-xl text-xs leading-relaxed md:text-base">
-              {mode === 'filter'
-                ? t('ui.filter_subtitle')
-                : t('studio.subtitle')}
+              {subtitle ??
+                (mode === 'filter'
+                  ? t('ui.filter_subtitle')
+                  : t('studio.subtitle'))}
             </p>
           </div>
         </header>

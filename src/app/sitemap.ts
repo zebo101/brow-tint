@@ -36,6 +36,13 @@ const staticRoutes: StaticSitemapRoute[] = [
     priority: 0.9,
     lastModified: '2026-09-14',
   },
+  {
+    path: '/eyebrow-shape-for-face-shape',
+    locales: ['en'],
+    changeFrequency: 'weekly',
+    priority: 0.9,
+    lastModified: '2026-10-22',
+  },
   { path: '/blog', changeFrequency: 'daily', priority: 0.8 },
   { path: '/updates', changeFrequency: 'weekly', priority: 0.7 },
 ];

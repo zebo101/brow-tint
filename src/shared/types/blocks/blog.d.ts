@@ -13,15 +13,24 @@ export interface Blog {
   className?: string;
 }
 
+export interface BlogFaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface Post {
   id?: string;
   slug?: string;
   title?: string;
   description?: string;
   image?: string;
+  image_alt?: string;
   content?: string;
   created_at?: string;
   published_at?: string;
+  updated_at?: string;
+  faq?: BlogFaqItem[];
+  faq_title?: string;
   author_name?: string;
   author_role?: string;
   author_image?: string;

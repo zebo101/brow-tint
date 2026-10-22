@@ -1,0 +1,321 @@
+{
+  "metadata": {
+    "title": "Eyebrow Shape for Face Shape: Free Guide & Try-On | Browlens",
+    "description": "Find an eyebrow shape for your face shape with classic guidelines, then try on your photo. Free brow mapping and outline editing; AI previews need credits."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Eyebrow Shape for Face Shape"
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "studio",
+      "quick_answer",
+      "find_face_shape",
+      "comparison",
+      "shape_guides",
+      "guidelines",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero",
+        "id": "face-shape-guide",
+        "title": "Eyebrow Shape for Your Face Shape",
+        "description": "Use classic face-shape brow guidance to pick a starting shape, then try it on your own photo with Browlens. Browlens does not detect or classify your face shape: you choose the closest match from this guide and compare brow outlines. These guidelines are a starting point, not a rule; your natural brows and personal style matter too.",
+        "buttons": [
+          {
+            "title": "Try eyebrow shapes on your photo",
+            "url": "#try-on"
+          },
+          {
+            "title": "Explore the eyebrow filter",
+            "url": "/filter",
+            "variant": "outline"
+          }
+        ]
+      },
+      "studio": {
+        "id": "try-on",
+        "title": "Try your face-shape brow match on your photo",
+        "description": "Upload a still JPG, PNG, or WebP photo up to 15 MB. Compare Natural, Arched, Straight, and Soft Angled outlines with free mapping and editing, without signing up. AI photo previews require sign-in and 2 credits per generation; free accounts include no AI generation credits."
+      },
+      "quick_answer": {
+        "block": "brow-guide",
+        "id": "face-shape-quick-answer",
+        "title": "What eyebrow shape suits my face?",
+        "description": "Start with a soft natural arch for oval faces, lifted angles for round faces, softer arches for square or heart faces, straighter brows for long faces, and gentle curves for diamond faces. Choose your closest face shape yourself, then compare the suggested outline and an alternative on your own photo."
+      },
+      "find_face_shape": {
+        "block": "brow-guide",
+        "id": "find-your-face-shape",
+        "title": "How to find your face shape from a photo",
+        "description": "Look for overall proportions rather than a perfect category. Many faces are a mix, so two nearby shapes can both be useful starting points.",
+        "items": [
+          {
+            "title": "1. Take a front-facing photo",
+            "paragraphs": [
+              "Keep your head level and face the camera directly in even light. Avoid tilted selfies or extreme close-ups that can make proportions harder to judge."
+            ]
+          },
+          {
+            "title": "2. Pull your hair back",
+            "paragraphs": [
+              "Expose your forehead, cheekbones, and jawline. A relaxed expression makes it easier to compare the outline without a smile changing the appearance of your cheeks."
+            ]
+          },
+          {
+            "title": "3. Compare widths and length",
+            "paragraphs": [
+              "Compare forehead, cheekbone, and jaw width, then face length from hairline to chin. Notice whether the jaw is rounded, angular, or pointed. Use the table below to choose a likely match, not a definitive label."
+            ]
+          }
+        ]
+      },
+      "comparison": {
+        "block": "brow-guide",
+        "id": "face-shape-comparison",
+        "title": "Eyebrow shape for face shape: comparison table",
+        "description": "These classic recommendations describe visual balance, not fixed beauty rules. Browlens has four outlines to compare; adjust them to your natural growth rather than treating a preset as a final answer.",
+        "table": {
+          "columns": [
+            "Face shape",
+            "How to recognize it",
+            "Recommended brow shapes",
+            "Browlens outlines to compare",
+            "Use with care"
+          ],
+          "rows": [
+            {
+              "title": "Oval",
+              "values": [
+                "Length a little greater than width; forehead slightly wider than a softly rounded jaw.",
+                "Natural soft arch; most shapes can work.",
+                "Natural, Soft Angled",
+                "Very high or heavy arches that exaggerate length."
+              ]
+            },
+            {
+              "title": "Round",
+              "values": [
+                "Width close to length; full cheeks and a soft, rounded jaw without strong angles.",
+                "Lifted, angled, or higher arch for vertical lift.",
+                "Soft Angled, Arched",
+                "Very rounded curves or completely flat brows."
+              ]
+            },
+            {
+              "title": "Square",
+              "values": [
+                "Strong angular jaw; forehead, cheekbones, and jaw are similar in width.",
+                "Soft rounded arch with medium-full thickness.",
+                "Arched (soft), Natural",
+                "Very thin, sharply angled brows."
+              ]
+            },
+            {
+              "title": "Heart",
+              "values": [
+                "Wider forehead and cheekbones with a narrower, pointed chin.",
+                "Soft rounded or low arch; balanced rather than high.",
+                "Natural, Soft Angled",
+                "Very high, sharp arches or very short, heavy brows."
+              ]
+            },
+            {
+              "title": "Long / oblong",
+              "values": [
+                "Length clearly greater than width with a straighter cheek line.",
+                "Flatter, horizontal brows with a slightly longer tail.",
+                "Straight, Natural",
+                "High arches that add apparent length."
+              ]
+            },
+            {
+              "title": "Diamond",
+              "values": [
+                "Narrow forehead and jaw; cheekbones are the widest point.",
+                "Curved or soft angled brows to add forehead width.",
+                "Soft Angled, Arched",
+                "Straight, flat brows."
+              ]
+            }
+          ]
+        }
+      },
+      "shape_guides": {
+        "block": "brow-guide",
+        "id": "best-brows-by-face-shape",
+        "title": "Best eyebrow shapes by face shape",
+        "description": "Use the same photo for each comparison so you are judging the brow shape, not a different camera angle or expression.",
+        "items": [
+          {
+            "title": "Round face: compare lift and gentle angles",
+            "paragraphs": [
+              "The best eyebrow shape for a round face is often a lifted, softly angled arch that adds a little vertical emphasis. Full cheeks and a rounded jaw already create curves, so a modest angle can provide contrast without making the brow look severe.",
+              "Compare Soft Angled and Arched in Browlens. Start with a gentle lift, then adjust the arch height and thickness to suit your natural hair. Use very rounded or completely flat brows with care, but do not force a dramatic peak just because your face looks round. Look at the whole face before choosing."
+            ],
+            "link": {
+              "prefix": "Explore ",
+              "title": "eyebrow shapes for round face",
+              "url": "/blog/eyebrow-shapes-for-round-face",
+              "suffix": " in the dedicated guide."
+            }
+          },
+          {
+            "title": "Oval face: keep a soft, natural arch",
+            "paragraphs": [
+              "The best eyebrow shape for a oval face is usually a natural soft arch, though many shapes can work with these balanced proportions. An oval face is a little longer than it is wide, with a forehead slightly wider than the softly rounded jaw.",
+              "Compare Natural and Soft Angled in Browlens, keeping the arch subtle at first. Try changing thickness before adding height; a heavier or very high arch may emphasize length more than you want. Your existing growth can guide the tail and brow front. Choose the outline that feels like you, rather than chasing perfect symmetry."
+            ],
+            "link": {
+              "prefix": "Read the guide to ",
+              "title": "eyebrow shapes for oval faces",
+              "url": "/blog/eyebrow-shapes-for-oval-face",
+              "suffix": "."
+            }
+          },
+          {
+            "title": "Square face: soften the arch, keep some fullness",
+            "paragraphs": [
+              "The best eyebrow shape for a square face is commonly a soft rounded arch with medium-full thickness. When the forehead, cheekbones, and angular jaw have similar widths, a gentler brow curve can balance the stronger lines rather than repeat every angle.",
+              "Compare Arched and Natural in Browlens, softening the Arched outline instead of pushing it into a sharp peak. Keep enough thickness to complement your natural growth. Very thin, sharply angled brows deserve extra care because they can make the contrast feel harsher. Check the brow at normal viewing size, not only in a close-up."
+            ],
+            "link": {
+              "prefix": "See more on ",
+              "title": "eyebrow shapes for square faces",
+              "url": "/blog/eyebrow-shapes-for-square-face",
+              "suffix": "."
+            }
+          },
+          {
+            "title": "Heart face: favor a low, balanced arch",
+            "paragraphs": [
+              "The best eyebrow shape for a heart face is often a soft rounded or low arch. A wider forehead and cheekbones tapering toward a pointed chin already create contrast, so a balanced brow can be a calmer starting point than a high, sharp peak.",
+              "Compare Natural and Soft Angled in Browlens with a restrained arch height. Keep the tail and front in proportion instead of making the brow very short and heavy. Use dramatic height with care, then compare it with a lower alternative on the same photo. The goal is a shape you enjoy, not hiding your forehead."
+            ],
+            "link": {
+              "prefix": "Explore ",
+              "title": "eyebrow shapes for heart-shaped faces",
+              "url": "/blog/eyebrow-shapes-for-heart-shaped-face",
+              "suffix": "."
+            }
+          },
+          {
+            "title": "Long or oblong face: explore a horizontal shape",
+            "paragraphs": [
+              "The best eyebrow shape for a long face is often flatter and straighter, with a slightly longer tail. When face length clearly exceeds width, a horizontal brow can emphasize width instead of adding more vertical movement through a high arch.",
+              "Compare Straight and Natural in Browlens. Lower the arch gradually and test a modest tail extension without stretching it far beyond your natural growth. Straight does not have to mean rigid: a small curve may feel more comfortable. Use high arches with care, and compare the full portrait rather than deciding from the brows alone."
+            ],
+            "link": {
+              "prefix": "Read about ",
+              "title": "eyebrow shapes for long faces",
+              "url": "/blog/eyebrow-shapes-for-long-face",
+              "suffix": "."
+            }
+          },
+          {
+            "title": "Diamond face: try curves or soft angles",
+            "paragraphs": [
+              "The best eyebrow shape for a diamond face is often curved or softly angled. With cheekbones wider than both the forehead and jaw, these shapes can bring a little visual width to the upper face without copying the angles below.",
+              "Compare Soft Angled and Arched in Browlens, keeping the curve gentle. Test thickness and tail length alongside the arch so the brow does not feel pinched or overly dramatic. Straight, flat brows are worth using with care for this classic guideline, but personal preference still matters. Compare a softer option before ruling any shape out."
+            ],
+            "link": {
+              "prefix": "Compare the outlines in the ",
+              "title": "Browlens eyebrow filter",
+              "url": "/filter",
+              "suffix": "."
+            }
+          }
+        ]
+      },
+      "guidelines": {
+        "block": "brow-guide",
+        "id": "face-shape-guidelines",
+        "title": "Guidelines are a starting point, not a rule",
+        "description": "Face shape is only one part of choosing brows. Thickness, natural brow growth, eye spacing, and personal style can change what feels balanced. Keep realistic expectations about where your own hair grows; a digital outline is a comparison, not a promise of a grooming result.",
+        "items": [
+          {
+            "title": "Test one suggestion and one alternative",
+            "paragraphs": [
+              "Compare the recommended outline with a softer, straighter, or more lifted alternative. Change one feature at a time, then look at the whole photo. If you are asking, “Which eyebrow shapes for my face feel right?”, your preference is part of the answer, not a mistake in the guide."
+            ],
+            "link": {
+              "prefix": "For point placement, start with our ",
+              "title": "eyebrow mapping",
+              "url": "/blog/eyebrow-mapping-guide",
+              "suffix": " guide."
+            }
+          }
+        ]
+      },
+      "faq": {
+        "block": "faq",
+        "id": "face-shape-faq",
+        "title": "Face-shape eyebrow questions",
+        "description": "Practical answers before you compare your brows.",
+        "items": [
+          {
+            "question": "What eyebrow shape suits my face shape?",
+            "answer": "Use your face shape as a starting point: lift for round faces, softness for square and heart faces, a natural arch for oval faces, flatter brows for long faces, and gentle curves for diamond faces. Compare two options on your photo rather than treating the recommendation as a rule."
+          },
+          {
+            "question": "How do I find my face shape?",
+            "answer": "Take a front-facing photo with your hair back. Compare forehead, cheekbone, and jaw width with face length, and notice the jawline. Many faces combine categories; choose the closest one or compare advice for two shapes. Browlens does not classify your face shape."
+          },
+          {
+            "question": "Does Browlens detect my face shape?",
+            "answer": "No. Browlens automatically maps your brows and lets you compare shapes; it does not detect or classify your face shape. You pick a likely face shape from this guide, then test its suggested brow outlines on your own still photo."
+          },
+          {
+            "question": "Is Browlens free?",
+            "answer": "Unlimited automatic brow mapping, manual six-point editing, and left/right analysis reports are free without sign-up. AI photo previews require sign-in and 2 credits per generation; free accounts have no AI generation credits. Basic is $12.90/month for 100 credits (50 generations); Premium is $24.90/month for 300 credits (150 generations). Annual Basic is $159; annual Premium is $239. One-off top-ups cost $5.99 for 24 credits, $11.99 for 60, or $19.99 for 120; top-up credits never expire.",
+            "link": {
+              "title": "See pricing.",
+              "url": "/pricing"
+            }
+          },
+          {
+            "question": "Is my photo private?",
+            "answer": "Brow detection, mapping, editing, and the report run on your device in the browser without uploading your photo. A photo is uploaded only when you generate an AI preview. According to our privacy policy, uploaded source photos are deleted from active processing systems within 24 hours of generation, generated previews stay in your account history until you delete them, and photos are not used to train models.",
+            "link": {
+              "title": "Read the privacy policy.",
+              "url": "/privacy-policy"
+            }
+          },
+          {
+            "question": "What is Browlens?",
+            "answer": "Browlens is a web-based AI eyebrow shape analyzer, eyebrow mapping tool, and virtual eyebrow filter for mobile and desktop browsers; no app download is needed. It works on a still photo, not a live camera. You can edit six points across both brows and compare arch-height and brow-length differences."
+          },
+          {
+            "question": "Can men use these face-shape guidelines?",
+            "answer": "Yes. These guidelines compare proportions, not gender. Men can use the same starting shapes while keeping the thickness, fullness, and natural growth they prefer. A subtle change may suit your personal style better than a more defined arch."
+          },
+          {
+            "question": "Which eyebrow shape is the most universal?",
+            "answer": "A natural soft arch is a flexible starting point for many faces, but no shape suits everyone equally. Begin with Natural, then compare another outline. Adjust thickness, length, angle, spacing, and height to your own brows instead of aiming for a universal template."
+          }
+        ]
+      },
+      "cta": {
+        "block": "cta",
+        "id": "face-shape-next-step",
+        "title": "Choose a starting shape. Make it yours.",
+        "description": "Compare outlines in the filter or return to the home studio. For more context, explore the <a class=\"underline underline-offset-4\" href=\"/blog/eyebrow-shapes-guide\">eyebrow shapes guide</a>, learn <a class=\"underline underline-offset-4\" href=\"/blog/eyebrow-mapping-guide\">eyebrow mapping</a>, or read <a class=\"underline underline-offset-4\" href=\"/blog/how-to-shape-eyebrows\">how to shape eyebrows</a> before changing your natural brows.",
+        "buttons": [
+          {
+            "title": "Open the eyebrow filter",
+            "url": "/filter"
+          },
+          {
+            "title": "Go to the home studio",
+            "url": "/",
+            "variant": "outline"
+          }
+        ]
+      }
+    }
+  }
+}
