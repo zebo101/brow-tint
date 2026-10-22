@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { getShowcaseStyles } from './showcase-styles';
-import type { BrowStyleItem } from './types';
+import { getShowcaseStyles } from '@/themes/default/blocks/brow-tint/showcase-styles';
+import type { BrowStyleItem } from '@/themes/default/blocks/brow-tint/types';
 
 function style(id: string, popular = false, trending = false): BrowStyleItem {
   return {

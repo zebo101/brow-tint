@@ -4,7 +4,7 @@ import test from 'node:test';
 import {
   emptyStudioSession,
   studioSessionReducer as reduce,
-} from './studio-session';
+} from '@/themes/default/blocks/brow-tint/studio-session';
 
 const file = new File(['photo'], 'portrait.jpg', { type: 'image/jpeg' });
 const normalized = {

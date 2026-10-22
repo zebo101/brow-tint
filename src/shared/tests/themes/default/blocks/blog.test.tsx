@@ -5,8 +5,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 
 import blogMessages from '@/config/locale/messages/en/pages/blog.json';
 import type { Post } from '@/shared/types/blocks/blog';
-
-import { Blog } from './blog';
+import { Blog } from '@/themes/default/blocks/blog';
 
 function renderPostCard(post: Post) {
   return renderToStaticMarkup(

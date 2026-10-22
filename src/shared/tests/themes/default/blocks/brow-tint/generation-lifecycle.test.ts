@@ -8,7 +8,7 @@ import {
   initialGenerationState,
   isDesignLocked,
   validateBrowPhotoFile,
-} from './generation-lifecycle';
+} from '@/themes/default/blocks/brow-tint/generation-lifecycle';
 
 test('mapping generation sends the normalized photo and confirmed guide in order', () => {
   const payload = buildBrowMappingPayload({
