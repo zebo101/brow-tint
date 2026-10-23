@@ -7,7 +7,7 @@
   "stepper": {
     "step1": "사진 업로드",
     "step2": "스타일 선택",
-    "step3": "미리보기 & 저장"
+    "step3": "미리보기 및 저장"
   },
   "step1": {
     "eyebrow": "1단계 · 내 사진",
@@ -30,12 +30,12 @@
     "continue": "스타일로 이동"
   },
   "step2": {
-    "title": "눈썹 룩 선택",
+    "title": "눈썹 스타일 선택",
     "subtitle": "엄선된 {total}개 중 {shown}개 · 탭하면 내 사진에서 미리볼 수 있어요",
     "your_photo": "내 사진",
     "search": "스타일 검색…",
     "filters": {
-      "shade": "눈썹 모양",
+      "shade": "색상",
       "shape": "모양",
       "intensity": "강도",
       "sort": "정렬"
@@ -63,7 +63,7 @@
     "download": "다운로드",
     "details": {
       "title": "룩 상세",
-      "shade": "눈썹 모양",
+      "shade": "색상",
       "shape": "모양",
       "intensity": "강도",
       "tags": "태그"
@@ -83,8 +83,8 @@
     "signin": "로그인하고 생성하기"
   },
   "studio": {
-    "title": "나에게 어울리는 눈썹 모양을 보여주는 앱",
-    "subtitle": "사진을 업로드하고 AI로 내 눈썹을 확인하세요. 무료 분석, 가입 불필요.",
+    "title": "나에게 어울리는 눈썹 모양, 사진으로 비교하세요",
+    "subtitle": "사진을 올려 눈썹 위치와 두께를 조정하세요. 윤곽 미리보기는 가입 없이 무료로 체험할 수 있으며, AI 사진 생성에는 로그인과 크레딧이 필요합니다.",
     "checking": "계정 확인 중...",
     "left": {
       "photo_title": "내 사진",
@@ -205,7 +205,7 @@
     "available": "{n}크레딧 사용 가능",
     "confirm_shape": "눈썹 모양 선택 및 확인",
     "eyebrow_filter": "눈썹 필터",
-    "filter_title": "눈썹 필터로 내 얼굴에 어울리는 다양한 모양을 확인하세요",
+    "filter_title": "눈썹 필터로 내 사진에서 모양 비교하기",
     "filter_subtitle": "사진을 업로드하고 눈썹 모양을 골라 나다운 스타일을 찾으세요.",
     "upload": "사진 업로드",
     "feature_analysis": "AI 눈썹 모양 분석",
