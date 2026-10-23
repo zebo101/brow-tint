@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Eyebrow Filter — Virtual Brow Try-On | Browlens",
-    "description": "Try the Browlens brow filter and eyebrow simulator on your photo. Choose a shape, preview your look, compare before and after, and download your result."
+    "description": "Browlens is a photo-based eyebrow shape generator for virtual eyebrow try on. Outline previews are free; AI photos require sign-in and credits."
   },
   "page": {
     "show_sections": ["filter_benefits", "guide", "faq", "cta"],
@@ -133,6 +133,10 @@
             "answer": "Yes. You can upload a photo and use the brow mapping and shape analysis tools without an account. Generating a new try-on image requires sign-in and credits; the tool shows the credit cost before you generate."
           },
           {
+            "question": "Is there an eyebrow shape generator or app I can use to try on eyebrows?",
+            "answer": "Yes. Browlens works in your browser as an eyebrow shape generator for photos—no download needed. The outline preview for virtual eyebrow try on is free to try. Generating a new AI photo uses credits and requires sign-in. If you want an eyebrow shape app with manual controls and a brow balance report, use the full brow app on the homepage."
+          },
+          {
             "question": "What photo should I upload?",
             "answer": "Use a clear, front-facing photo with even lighting and both eyebrows visible. Choose a JPG, PNG, or WebP file up to 15 MB."
           },
@@ -161,7 +165,7 @@
             "answer": "The local shape outline updates instantly after detection. Creating a new AI photo is a separate step and takes time; it is not a live camera filter."
           }
         ],
-        "tip": "For six-point editing and your brow balance report, use the <a href=\"/#brow-app\" class=\"underline\">full brow app</a>. Explore our <a href=\"/blog/eyebrow-shapes-guide\" class=\"underline\">eyebrow shapes guide</a> before choosing a look."
+        "tip": "For six-point editing and your brow balance report, use the <a href=\"/#brow-app\" class=\"underline\">full brow app</a>. Explore our <a href=\"/blog/eyebrow-shapes-guide\" class=\"underline\">eyebrow shapes guide</a> before choosing a look. For more ideas, see <a href=\"/blog/eyebrow-shapes-for-men\" class=\"underline\">eyebrow shapes for men</a> and <a href=\"/blog/eyebrow-shapes-for-women\" class=\"underline\">eyebrow shapes for women</a>."
       },
       "cta": {
         "id": "cta",
@@ -270,7 +274,7 @@
   },
   "product": {
     "name": "Browlens Eyebrow Filter",
-    "description": "Try the Browlens brow filter and eyebrow simulator on your photo. Choose a shape, preview your look, compare before and after, and download your result."
+    "description": "Browlens is a photo-based eyebrow shape generator for virtual eyebrow try on. Outline previews are free; AI photos require sign-in and credits."
   },
   "breadcrumb": {
     "home": "Home",

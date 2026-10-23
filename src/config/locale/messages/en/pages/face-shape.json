@@ -160,7 +160,7 @@
             "link": {
               "prefix": "Explore ",
               "title": "eyebrow shapes for round face",
-              "url": "/blog/eyebrow-shapes-for-round-face",
+              "url": "/blog/eyebrow-shapes-for-round-faces",
               "suffix": " in the dedicated guide."
             }
           },
@@ -173,7 +173,7 @@
             "link": {
               "prefix": "Read the guide to ",
               "title": "eyebrow shapes for oval faces",
-              "url": "/blog/eyebrow-shapes-for-oval-face",
+              "url": "/blog/eyebrow-shapes-for-oval-faces",
               "suffix": "."
             }
           },
@@ -186,7 +186,7 @@
             "link": {
               "prefix": "See more on ",
               "title": "eyebrow shapes for square faces",
-              "url": "/blog/eyebrow-shapes-for-square-face",
+              "url": "/blog/eyebrow-shapes-for-square-faces",
               "suffix": "."
             }
           },
@@ -199,7 +199,7 @@
             "link": {
               "prefix": "Explore ",
               "title": "eyebrow shapes for heart-shaped faces",
-              "url": "/blog/eyebrow-shapes-for-heart-shaped-face",
+              "url": "/blog/eyebrow-shapes-for-heart-shaped-faces",
               "suffix": "."
             }
           },
@@ -212,7 +212,7 @@
             "link": {
               "prefix": "Read about ",
               "title": "eyebrow shapes for long faces",
-              "url": "/blog/eyebrow-shapes-for-long-face",
+              "url": "/blog/eyebrow-shapes-for-long-faces",
               "suffix": "."
             }
           },
@@ -223,9 +223,9 @@
               "Compare Soft Angled and Arched in Browlens, keeping the curve gentle. Test thickness and tail length alongside the arch so the brow does not feel pinched or overly dramatic. Straight, flat brows are worth using with care for this classic guideline, but personal preference still matters. Compare a softer option before ruling any shape out."
             ],
             "link": {
-              "prefix": "Compare the outlines in the ",
-              "title": "Browlens eyebrow filter",
-              "url": "/filter",
+              "prefix": "Explore ",
+              "title": "eyebrow shapes for diamond faces",
+              "url": "/blog/eyebrow-shapes-for-diamond-faces",
               "suffix": "."
             }
           }
@@ -247,6 +247,30 @@
               "title": "eyebrow mapping",
               "url": "/blog/eyebrow-mapping-guide",
               "suffix": " guide."
+            }
+          },
+          {
+            "title": "Keep fullness in view",
+            "paragraphs": [
+              "For men's brows, compare a familiar outline with a subtle change in angle or tail length. Keeping your natural thickness helps you judge the shape without changing everything at once."
+            ],
+            "link": {
+              "prefix": "Explore ",
+              "title": "eyebrow shapes for men",
+              "url": "/blog/eyebrow-shapes-for-men",
+              "suffix": " for practical comparisons."
+            }
+          },
+          {
+            "title": "Separate contour from styling",
+            "paragraphs": [
+              "For women's brows, compare the curve before changing thickness or makeup definition. Try a small, removable adjustment first and keep the outline that feels right for your everyday style."
+            ],
+            "link": {
+              "prefix": "Read our guide to ",
+              "title": "eyebrow shapes for women",
+              "url": "/blog/eyebrow-shapes-for-women",
+              "suffix": " for a makeup-first approach."
             }
           }
         ]

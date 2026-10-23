@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import test, { type TestContext } from 'node:test';
 import * as React from 'react';
@@ -212,6 +213,48 @@ test('the reused guide and FAQ server-render a real table, every answer, and onl
   );
 });
 
+test('face-shape guide blocks render links to all three new posts', (t) => {
+  setup(t);
+  const { BrowGuide } =
+    require('@/themes/default/blocks/brow-guide') as typeof import('@/themes/default/blocks/brow-guide');
+  const markup = [
+    messages.page.sections.shape_guides,
+    messages.page.sections.guidelines,
+  ]
+    .map((section) =>
+      renderToStaticMarkup(React.createElement(BrowGuide, { section }))
+    )
+    .join('');
+  for (const slug of [
+    'eyebrow-shapes-for-men',
+    'eyebrow-shapes-for-women',
+    'eyebrow-shapes-for-diamond-faces',
+  ]) {
+    assert.ok(markup.includes(`href="/blog/${slug}"`), slug);
+  }
+});
+
+function blogUrls(value: unknown): string[] {
+  if (typeof value === 'string') {
+    return [...value.matchAll(/\/blog\/[^\s"'<>?#)]+/g)].map(([url]) => url);
+  }
+  if (!value || typeof value !== 'object') return [];
+  return Object.values(value).flatMap(blogUrls);
+}
+
+test('every blog URL in the face-shape messages points to an existing English post', () => {
+  const urls = new Set(blogUrls(messages));
+  assert.ok(urls.size > 0);
+  for (const url of urls) {
+    const slug = url.slice('/blog/'.length);
+    const file = new URL(`../../../content/posts/${slug}.mdx`, import.meta.url);
+    assert.ok(
+      existsSync(file),
+      `${url} must resolve to content/posts/${slug}.mdx`
+    );
+  }
+});
+
 function visibleStrings(value: unknown): string[] {
   if (typeof value === 'string') return [value];
   if (Array.isArray(value)) return value.flatMap(visibleStrings);
@@ -260,22 +303,25 @@ test('English copy meets the length, heading, outline, and intentional internal-
       1
     );
   }
-  const copy = JSON.stringify(messages.page);
+  const urls = new Set(blogUrls(messages.page));
   for (const slug of [
     'eyebrow-shapes-guide',
     'eyebrow-mapping-guide',
     'how-to-shape-eyebrows',
-    'eyebrow-shapes-for-round-face',
-    'eyebrow-shapes-for-square-face',
-    'eyebrow-shapes-for-heart-shaped-face',
-    'eyebrow-shapes-for-oval-face',
-    'eyebrow-shapes-for-long-face',
+    'eyebrow-shapes-for-round-faces',
+    'eyebrow-shapes-for-square-faces',
+    'eyebrow-shapes-for-heart-shaped-faces',
+    'eyebrow-shapes-for-oval-faces',
+    'eyebrow-shapes-for-long-faces',
+    'eyebrow-shapes-for-diamond-faces',
+    'eyebrow-shapes-for-men',
+    'eyebrow-shapes-for-women',
   ]) {
-    assert.ok(copy.includes(`/blog/${slug}`));
+    assert.ok(urls.has(`/blog/${slug}`), slug);
   }
   assert.equal(
     messages.page.sections.shape_guides.items[5].link.url,
-    '/filter'
+    '/blog/eyebrow-shapes-for-diamond-faces'
   );
   assert.equal(messages.page.sections.hero.buttons[0].url, '#try-on');
 });
