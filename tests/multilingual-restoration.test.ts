@@ -102,15 +102,28 @@ test('sitemap uses each route translation set', () => {
   ]);
 });
 
-test('published guide collection contains only the three guides in all eight languages', () => {
+test('published guide collection matches its translated and locale-only files', () => {
   const guideSlugs = [
     'eyebrow-mapping-guide',
     'eyebrow-shapes-guide',
     'how-to-shape-eyebrows',
   ];
-  const expected = guideSlugs.flatMap((slug) =>
-    locales.map((locale) => `${slug}${locale === 'en' ? '' : `.${locale}`}.mdx`)
-  );
+  const expected = [
+    ...guideSlugs.flatMap((slug) =>
+      locales.map(
+        (locale) => `${slug}${locale === 'en' ? '' : `.${locale}`}.mdx`
+      )
+    ),
+    'eyebrow-shapes-for-diamond-faces.mdx',
+    'eyebrow-shapes-for-heart-shaped-faces.mdx',
+    'eyebrow-shapes-for-long-faces.mdx',
+    'eyebrow-shapes-for-men.mdx',
+    'eyebrow-shapes-for-oval-faces.mdx',
+    'eyebrow-shapes-for-round-faces.mdx',
+    'eyebrow-shapes-for-square-faces.mdx',
+    'eyebrow-shapes-for-women.mdx',
+    'nunsseop-moyang-guide.ko.mdx',
+  ];
   const actual = readdirSync(path.join(process.cwd(), 'content/posts')).filter(
     (file) => file.endsWith('.mdx')
   );
