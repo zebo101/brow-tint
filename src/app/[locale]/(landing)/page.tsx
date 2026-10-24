@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getThemePage } from '@/core/theme';
+import { FeaturedOn } from '@/shared/blocks/common/featured-on';
 import { getHomepageShownSections } from '@/shared/lib/homepage-sections';
 import { getMetadata } from '@/shared/lib/seo';
 import type { DynamicPage } from '@/shared/types/blocks/landing';
@@ -25,6 +26,7 @@ export default async function LandingPage({
   setRequestLocale(locale);
 
   const t = await getTranslations('pages.index');
+  const common = await getTranslations('common');
   const pageData = t.raw('page');
   const styles = await getActiveBrowStyles();
 
@@ -44,5 +46,10 @@ export default async function LandingPage({
 
   const Page = await getThemePage('dynamic-page');
 
-  return <Page locale={locale} page={page} />;
+  return (
+    <>
+      <Page locale={locale} page={page} />
+      <FeaturedOn section={common.raw('featured_on')} />
+    </>
+  );
 }

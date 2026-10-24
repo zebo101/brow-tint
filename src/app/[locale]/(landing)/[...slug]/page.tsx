@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { pagesSource } from '@/core/docs/source';
 import { getThemePage } from '@/core/theme';
 import { defaultLocale, locales } from '@/config/locale';
+import { FeaturedOn } from '@/shared/blocks/common/featured-on';
 import { buildAlternates } from '@/shared/lib/seo-metadata';
 import { buildCanonicalUrl } from '@/shared/lib/seo-paths';
 import { getLocalPage } from '@/shared/models/post';
@@ -151,7 +152,16 @@ export default async function DynamicPage({
   if (staticPage) {
     const Page = await getThemePage('static-page');
 
-    return <Page locale={locale} post={staticPage} />;
+    return (
+      <>
+        <Page locale={locale} post={staticPage} />
+        {staticPageSlug === 'about' && (
+          <FeaturedOn
+            section={(await getTranslations('common')).raw('featured_on')}
+          />
+        )}
+      </>
+    );
   }
 
   // 2. static page not found
